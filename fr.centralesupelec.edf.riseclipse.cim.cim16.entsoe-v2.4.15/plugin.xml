@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+  Copyright (c) 2018 CentraleSupélec & EDF.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License v1.0
+  which accompanies this distribution, and is available at
+  http://www.eclipse.org/legal/epl-v10.html
+ 
+  This file is part of the RiseClipse tool
+  
+  Contributors:
+      Computer Science Department, CentraleSupélec
+      EDF R&D
+  Contacts:
+      dominique.marcadet@centralesupelec.fr
+      aurelie.dehouck-neveu@edf.fr
+  Web site:
+      http://wdi.supelec.fr/software/RiseClipse/
+ 
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated entsoe_v2_4_15 -->
+      <package
+            uri="http://iec.ch/TC57/2013/CIM-schema-cim16"
+            class="fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage"
+            genModel="model/entsoe-v2.4.15.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated entsoe_v2_4_15 -->
+      <parser
+            type="cim"
+            class="fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.util.CimResourceFactoryImpl"/>
+      <parser
+            type="cimxml"
+            class="fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.util.CimResourceFactoryImpl"/>
+      <parser
+            type="xml"
+            class="fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.util.CimResourceFactoryImpl"/>
+   </extension>
+
+   <extension
+         point="fr.centralesupelec.edf.riseclipse.main.meta_models">
+      <meta_model
+            name="ENTSOE CGMES v2.4.15 (based on CIM16)"
+            resourceFactory="fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.util.CimResourceFactoryImpl"
+            uri="http://iec.ch/TC57/2013/CIM-schema-cim16">
+      </meta_model>
+   </extension>
+
+</plugin>

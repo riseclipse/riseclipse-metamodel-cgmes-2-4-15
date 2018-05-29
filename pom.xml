@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <groupId>fr.centralesupelec.edf.riseclipse</groupId>
+  <artifactId>RiseClipseMetamodel_EntsoeCim16</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+  <parent>
+    <groupId>fr.centralesupelec.edf.riseclipse</groupId>
+    <artifactId>fr.centralesupelec.edf.riseclipse.developer.maven-root</artifactId>
+    <version>1.0.1</version>
+    <relativePath>../RiseClipseDeveloper/fr.centralesupelec.edf.riseclipse.developer.maven/pom-root.xml</relativePath>
+  </parent>
+
+  <scm>
+    <connection>scm:git:git@gitlab.centralesupelec.fr:RiseClipseGroup/RiseClipseMetamodel_EntsoeCim16.git</connection>
+    <developerConnection>scm:git:git@gitlab.centralesupelec.fr:RiseClipseGroup/RiseClipseMetamodel_EntsoeCim16.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+ 
+  <modules>
+    <module>fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe-v2.4.15</module>
+    <module>fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe-v2.4.15.edit</module>
+  </modules>
+
+</project>
