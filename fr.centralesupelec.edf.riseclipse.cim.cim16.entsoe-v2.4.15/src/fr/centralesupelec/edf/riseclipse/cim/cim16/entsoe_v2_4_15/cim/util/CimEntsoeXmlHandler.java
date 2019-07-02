@@ -27,16 +27,18 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.xmi.XMLHelper;
 import org.eclipse.emf.ecore.xmi.XMLResource;
 
-public class CimXMLHandler extends fr.centralesupelec.edf.riseclipse.cim.cim16.util.CimXMLHandler {
+import fr.centralesupelec.edf.riseclipse.cim.cim16.util.Cim16XmlHandler;
 
-    public CimXMLHandler( XMLResource xmiResource, XMLHelper helper, Map< ?, ? > options ) {
+public class CimEntsoeXmlHandler extends Cim16XmlHandler {
+
+    public CimEntsoeXmlHandler( XMLResource xmiResource, XMLHelper helper, Map< ?, ? > options ) {
         super( xmiResource, helper, options );
     }
 
     @Override
     protected EPackage getPackageForURI( String uriString ) {
-        if( CimConstants.entsoe_URI.equals( uriString )) {
-            return super.getPackageForURI( CimConstants.cimURI );
+        if( CimEntsoeConstants.entsoe_URI.equals( uriString )) {
+            return super.getPackageForURI( CimEntsoeConstants.cimURI );
         }
         return super.getPackageForURI( uriString );
     }
@@ -44,14 +46,14 @@ public class CimXMLHandler extends fr.centralesupelec.edf.riseclipse.cim.cim16.u
     // This method needs to test for the entsoe URI
     @Override
     protected boolean setEnumValue( EObject object, EStructuralFeature feature, String resource ) {
-        if( resource.startsWith( CimConstants.entsoe_URISharp ) ) {
+        if( resource.startsWith( CimEntsoeConstants.entsoe_URISharp ) ) {
             int enumNameLength = feature.getEType().getName().length();
             // do not call fr.centralesupelec.riseclipse.cim.util.cimxml.CimXMLHandler.setFeatureValue to avoid infinite recursion
             // call instead org.eclipse.emf.ecore.xmi.impl.SAXXMLHandler.setFeatureValue
             // We use the fact that SAXXMLHandler.setFeatureValue( EObject, EStructuralFeature, Object ) call
             // SAXXMLHandler.setFeatureValue( EObject, EStructuralFeature, Object, -1 )
             super.setFeatureValue( object, feature,
-                  resource.substring( CimConstants.entsoe_URISharp.length() + enumNameLength + 1 ), -1 );
+                  resource.substring( CimEntsoeConstants.entsoe_URISharp.length() + enumNameLength + 1 ), -1 );
             return true;
         }
         return super.setEnumValue( object, feature, resource );
