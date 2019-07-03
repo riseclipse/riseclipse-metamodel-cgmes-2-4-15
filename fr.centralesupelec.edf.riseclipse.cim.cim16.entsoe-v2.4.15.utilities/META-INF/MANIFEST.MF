@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe-v2.4.15.utilities
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe-v2.4.15.utilities
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: %providerName
+Require-Bundle: org.eclipse.emf.ecore,
+ fr.centralesupelec.edf.riseclipse.main,
+ fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe-v2.4.15,
+ fr.centralesupelec.edf.riseclipse.cim.cim16.util,
+ fr.centralesupelec.edf.riseclipse.cim.headerModel,
+ fr.centralesupelec.edf.riseclipse.cim.util
+Export-Package: fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.utilities
