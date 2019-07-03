@@ -49,6 +49,7 @@
       <meta_model
             name="ENTSOE CGMES v2.4.15 (based on CIM16)"
             resourceFactory="fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.util.CimResourceFactoryImpl"
+            resourceSetFactory="fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.util.CimResourceSetFactory"
             uri="http://iec.ch/TC57/2013/CIM-schema-cim16">
       </meta_model>
    </extension>

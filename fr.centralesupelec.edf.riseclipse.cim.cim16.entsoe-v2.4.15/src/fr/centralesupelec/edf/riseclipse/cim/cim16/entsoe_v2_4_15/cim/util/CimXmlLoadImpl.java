@@ -16,18 +16,19 @@
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.util;
 
 import org.eclipse.emf.ecore.xmi.XMLHelper;
-import org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl;
 import org.xml.sax.helpers.DefaultHandler;
 
-public class CimXMLLoadImpl extends XMLLoadImpl {
+import fr.centralesupelec.edf.riseclipse.cim.cim16.util.Cim16XmlLoad;
 
-    public CimXMLLoadImpl( XMLHelper helper ) {
+public class CimXmlLoadImpl extends Cim16XmlLoad {
+
+    public CimXmlLoadImpl( XMLHelper helper ) {
         super( helper );
     }
 
     @Override
     protected DefaultHandler makeDefaultHandler() {
-        return new CimXMLHandler( resource, helper, options );
+        return new CimEntsoeXmlHandler( resource, helper, options );
     }
 
 }

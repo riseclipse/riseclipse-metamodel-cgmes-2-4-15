@@ -24,6 +24,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.xmi.XMLLoad;
 
 import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimObjectWithID;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.util.AbstractCim16Resource;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimObjectW
  * @see fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.util.CimResourceFactoryImpl
  * @generated NOT
  */
-public class CimResourceImpl extends fr.centralesupelec.edf.riseclipse.cim.cim16.util.CimResourceImpl {
+public class CimResourceImpl extends AbstractCim16Resource {
 
     /**
      * Creates an instance of the resource.
@@ -49,7 +50,7 @@ public class CimResourceImpl extends fr.centralesupelec.edf.riseclipse.cim.cim16
 
     @Override
     protected XMLLoad createXMLLoad() {
-        return new CimXMLLoadImpl( createXMLHelper() );
+        return new CimXmlLoadImpl( createXMLHelper() );
     }
 
     // TODO: why do we need to override it ?
@@ -70,4 +71,4 @@ public class CimResourceImpl extends fr.centralesupelec.edf.riseclipse.cim.cim16
         super.setID( eObject, id );
     }
 
-} // CimResourceImpl
+}

@@ -19,22 +19,11 @@
  */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.util;
 
-import org.eclipse.emf.common.util.URI;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.util.Cim16Constants;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.util.AbstractCim16ResourceFactory;
-
-/**
- * <!-- begin-user-doc -->
- * The <b>Resource Factory</b> associated with the package.
- * <!-- end-user-doc -->
- * @see fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.util.CimResourceImpl
- * @generated NOT
- */
-public class CimResourceFactoryImpl extends AbstractCim16ResourceFactory {
-
-    @Override
-    protected CimResourceImpl createCimResource( URI uri ) {
-        return new CimResourceImpl( uri );
-    }
+public class CimEntsoeConstants extends Cim16Constants {
+    
+    public static final String entsoe_URI = "http://entsoe.eu/CIM/SchemaExtension/3/1";
+    public static final String entsoe_URISharp = entsoe_URI + "#";
 
 }

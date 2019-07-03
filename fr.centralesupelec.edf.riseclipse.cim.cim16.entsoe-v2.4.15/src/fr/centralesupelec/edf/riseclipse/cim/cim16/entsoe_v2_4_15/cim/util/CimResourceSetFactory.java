@@ -1,5 +1,5 @@
 /**
- *  Copyright (c) 2018 CentraleSupélec & EDF.
+ *  Copyright (c) 2019 CentraleSupélec & EDF.
  *  All rights reserved. This program and the accompanying materials
  *  are made available under the terms of the Eclipse Public License v1.0
  *  which accompanies this distribution, and is available at
@@ -19,9 +19,17 @@
  */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.util;
 
-public class CimConstants extends fr.centralesupelec.edf.riseclipse.cim.cim16.util.CimConstants {
-    
-    public static final String entsoe_URI = "http://entsoe.eu/CIM/SchemaExtension/3/1";
-    public static final String entsoe_URISharp = entsoe_URI + "#";
+import fr.centralesupelec.edf.riseclipse.cim.cim16.util.AbstractCim16ResourceSetFactory;
+import fr.centralesupelec.edf.riseclipse.util.IRiseClipseResourceSet;
 
+public class CimResourceSetFactory extends AbstractCim16ResourceSetFactory {
+
+    public CimResourceSetFactory() {
+        super();
+    }
+
+    @Override
+    public IRiseClipseResourceSet createResourceSet( boolean strictContent ) {
+        return new CimResourceSetImpl( strictContent );
+    }
 }

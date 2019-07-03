@@ -23,6 +23,7 @@
   <modules>
     <module>fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe-v2.4.15</module>
     <module>fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe-v2.4.15.edit</module>
+    <module>fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe-v2.4.15.utilities</module>
   </modules>
 
 </project>
