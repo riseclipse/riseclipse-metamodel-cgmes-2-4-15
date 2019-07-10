@@ -276,8 +276,9 @@ public class RotatingMachineImpl extends RegulatingCondEqImpl implements Rotatin
         p = newP;
         boolean oldPESet = pESet;
         pESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.ROTATING_MACHINE__P, oldP, p, !oldPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ROTATING_MACHINE__P, oldP, p,
+                    !oldPESet ) );
     }
 
     /**
@@ -291,8 +292,9 @@ public class RotatingMachineImpl extends RegulatingCondEqImpl implements Rotatin
         boolean oldPESet = pESet;
         p = P_EDEFAULT;
         pESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ROTATING_MACHINE__P, oldP, P_EDEFAULT, oldPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ROTATING_MACHINE__P, oldP, P_EDEFAULT,
+                    oldPESet ) );
     }
 
     /**
@@ -326,8 +328,9 @@ public class RotatingMachineImpl extends RegulatingCondEqImpl implements Rotatin
         q = newQ;
         boolean oldQESet = qESet;
         qESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.ROTATING_MACHINE__Q, oldQ, q, !oldQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ROTATING_MACHINE__Q, oldQ, q,
+                    !oldQESet ) );
     }
 
     /**
@@ -341,8 +344,9 @@ public class RotatingMachineImpl extends RegulatingCondEqImpl implements Rotatin
         boolean oldQESet = qESet;
         q = Q_EDEFAULT;
         qESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ROTATING_MACHINE__Q, oldQ, Q_EDEFAULT, oldQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ROTATING_MACHINE__Q, oldQ, Q_EDEFAULT,
+                    oldQESet ) );
     }
 
     /**
@@ -428,8 +432,9 @@ public class RotatingMachineImpl extends RegulatingCondEqImpl implements Rotatin
         ratedS = newRatedS;
         boolean oldRatedSESet = ratedSESet;
         ratedSESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ROTATING_MACHINE__RATED_S, oldRatedS, ratedS, !oldRatedSESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ROTATING_MACHINE__RATED_S, oldRatedS,
+                    ratedS, !oldRatedSESet ) );
     }
 
     /**
@@ -443,8 +448,9 @@ public class RotatingMachineImpl extends RegulatingCondEqImpl implements Rotatin
         boolean oldRatedSESet = ratedSESet;
         ratedS = RATED_S_EDEFAULT;
         ratedSESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ROTATING_MACHINE__RATED_S, oldRatedS, RATED_S_EDEFAULT, oldRatedSESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ROTATING_MACHINE__RATED_S, oldRatedS,
+                    RATED_S_EDEFAULT, oldRatedSESet ) );
     }
 
     /**
@@ -478,8 +484,9 @@ public class RotatingMachineImpl extends RegulatingCondEqImpl implements Rotatin
         ratedU = newRatedU;
         boolean oldRatedUESet = ratedUESet;
         ratedUESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ROTATING_MACHINE__RATED_U, oldRatedU, ratedU, !oldRatedUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ROTATING_MACHINE__RATED_U, oldRatedU,
+                    ratedU, !oldRatedUESet ) );
     }
 
     /**
@@ -493,8 +500,9 @@ public class RotatingMachineImpl extends RegulatingCondEqImpl implements Rotatin
         boolean oldRatedUESet = ratedUESet;
         ratedU = RATED_U_EDEFAULT;
         ratedUESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ROTATING_MACHINE__RATED_U, oldRatedU, RATED_U_EDEFAULT, oldRatedUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ROTATING_MACHINE__RATED_U, oldRatedU,
+                    RATED_U_EDEFAULT, oldRatedUESet ) );
     }
 
     /**
@@ -548,10 +556,12 @@ public class RotatingMachineImpl extends RegulatingCondEqImpl implements Rotatin
     public void setGeneratingUnit( GeneratingUnit newGeneratingUnit ) {
         if( newGeneratingUnit != generatingUnit ) {
             NotificationChain msgs = null;
-            if( generatingUnit != null ) msgs = ( ( InternalEObject ) generatingUnit ).eInverseRemove( this,
-                    CimPackage.GENERATING_UNIT__ROTATING_MACHINE, GeneratingUnit.class, msgs );
-            if( newGeneratingUnit != null ) msgs = ( ( InternalEObject ) newGeneratingUnit ).eInverseAdd( this,
-                    CimPackage.GENERATING_UNIT__ROTATING_MACHINE, GeneratingUnit.class, msgs );
+            if( generatingUnit != null )
+                msgs = ( ( InternalEObject ) generatingUnit ).eInverseRemove( this,
+                        CimPackage.GENERATING_UNIT__ROTATING_MACHINE, GeneratingUnit.class, msgs );
+            if( newGeneratingUnit != null )
+                msgs = ( ( InternalEObject ) newGeneratingUnit ).eInverseAdd( this,
+                        CimPackage.GENERATING_UNIT__ROTATING_MACHINE, GeneratingUnit.class, msgs );
             msgs = basicSetGeneratingUnit( newGeneratingUnit, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -602,8 +612,9 @@ public class RotatingMachineImpl extends RegulatingCondEqImpl implements Rotatin
         else {
             boolean oldGeneratingUnitESet = generatingUnitESet;
             generatingUnitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ROTATING_MACHINE__GENERATING_UNIT, null, null, oldGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ROTATING_MACHINE__GENERATING_UNIT,
+                        null, null, oldGeneratingUnitESet ) );
         }
     }
 
@@ -628,8 +639,9 @@ public class RotatingMachineImpl extends RegulatingCondEqImpl implements Rotatin
             InternalEObject oldHydroPump = ( InternalEObject ) hydroPump;
             hydroPump = ( HydroPump ) eResolveProxy( oldHydroPump );
             if( hydroPump != oldHydroPump ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.ROTATING_MACHINE__HYDRO_PUMP, oldHydroPump, hydroPump ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.ROTATING_MACHINE__HYDRO_PUMP,
+                            oldHydroPump, hydroPump ) );
             }
         }
         return hydroPump;
@@ -674,18 +686,21 @@ public class RotatingMachineImpl extends RegulatingCondEqImpl implements Rotatin
     public void setHydroPump( HydroPump newHydroPump ) {
         if( newHydroPump != hydroPump ) {
             NotificationChain msgs = null;
-            if( hydroPump != null ) msgs = ( ( InternalEObject ) hydroPump ).eInverseRemove( this,
-                    CimPackage.HYDRO_PUMP__ROTATING_MACHINE, HydroPump.class, msgs );
-            if( newHydroPump != null ) msgs = ( ( InternalEObject ) newHydroPump ).eInverseAdd( this,
-                    CimPackage.HYDRO_PUMP__ROTATING_MACHINE, HydroPump.class, msgs );
+            if( hydroPump != null )
+                msgs = ( ( InternalEObject ) hydroPump ).eInverseRemove( this, CimPackage.HYDRO_PUMP__ROTATING_MACHINE,
+                        HydroPump.class, msgs );
+            if( newHydroPump != null )
+                msgs = ( ( InternalEObject ) newHydroPump ).eInverseAdd( this, CimPackage.HYDRO_PUMP__ROTATING_MACHINE,
+                        HydroPump.class, msgs );
             msgs = basicSetHydroPump( newHydroPump, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldHydroPumpESet = hydroPumpESet;
             hydroPumpESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ROTATING_MACHINE__HYDRO_PUMP, newHydroPump, newHydroPump, !oldHydroPumpESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ROTATING_MACHINE__HYDRO_PUMP,
+                        newHydroPump, newHydroPump, !oldHydroPumpESet ) );
         }
     }
 
@@ -727,8 +742,9 @@ public class RotatingMachineImpl extends RegulatingCondEqImpl implements Rotatin
         else {
             boolean oldHydroPumpESet = hydroPumpESet;
             hydroPumpESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ROTATING_MACHINE__HYDRO_PUMP, null, null, oldHydroPumpESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ROTATING_MACHINE__HYDRO_PUMP, null,
+                        null, oldHydroPumpESet ) );
         }
     }
 
@@ -751,12 +767,14 @@ public class RotatingMachineImpl extends RegulatingCondEqImpl implements Rotatin
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ROTATING_MACHINE__GENERATING_UNIT:
-            if( generatingUnit != null ) msgs = ( ( InternalEObject ) generatingUnit ).eInverseRemove( this,
-                    CimPackage.GENERATING_UNIT__ROTATING_MACHINE, GeneratingUnit.class, msgs );
+            if( generatingUnit != null )
+                msgs = ( ( InternalEObject ) generatingUnit ).eInverseRemove( this,
+                        CimPackage.GENERATING_UNIT__ROTATING_MACHINE, GeneratingUnit.class, msgs );
             return basicSetGeneratingUnit( ( GeneratingUnit ) otherEnd, msgs );
         case CimPackage.ROTATING_MACHINE__HYDRO_PUMP:
-            if( hydroPump != null ) msgs = ( ( InternalEObject ) hydroPump ).eInverseRemove( this,
-                    CimPackage.HYDRO_PUMP__ROTATING_MACHINE, HydroPump.class, msgs );
+            if( hydroPump != null )
+                msgs = ( ( InternalEObject ) hydroPump ).eInverseRemove( this, CimPackage.HYDRO_PUMP__ROTATING_MACHINE,
+                        HydroPump.class, msgs );
             return basicSetHydroPump( ( HydroPump ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -906,7 +924,7 @@ public class RotatingMachineImpl extends RegulatingCondEqImpl implements Rotatin
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (p: " );
         if( pESet )
             result.append( p );

@@ -219,9 +219,10 @@ public class HydroGeneratingUnitImpl extends GeneratingUnitImpl implements Hydro
                 : newEnergyConversionCapability;
         boolean oldEnergyConversionCapabilityESet = energyConversionCapabilityESet;
         energyConversionCapabilityESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.HYDRO_GENERATING_UNIT__ENERGY_CONVERSION_CAPABILITY, oldEnergyConversionCapability,
-                energyConversionCapability, !oldEnergyConversionCapabilityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.HYDRO_GENERATING_UNIT__ENERGY_CONVERSION_CAPABILITY, oldEnergyConversionCapability,
+                    energyConversionCapability, !oldEnergyConversionCapabilityESet ) );
     }
 
     /**
@@ -235,9 +236,10 @@ public class HydroGeneratingUnitImpl extends GeneratingUnitImpl implements Hydro
         boolean oldEnergyConversionCapabilityESet = energyConversionCapabilityESet;
         energyConversionCapability = ENERGY_CONVERSION_CAPABILITY_EDEFAULT;
         energyConversionCapabilityESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.HYDRO_GENERATING_UNIT__ENERGY_CONVERSION_CAPABILITY, oldEnergyConversionCapability,
-                ENERGY_CONVERSION_CAPABILITY_EDEFAULT, oldEnergyConversionCapabilityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.HYDRO_GENERATING_UNIT__ENERGY_CONVERSION_CAPABILITY, oldEnergyConversionCapability,
+                    ENERGY_CONVERSION_CAPABILITY_EDEFAULT, oldEnergyConversionCapabilityESet ) );
     }
 
     /**
@@ -271,9 +273,10 @@ public class HydroGeneratingUnitImpl extends GeneratingUnitImpl implements Hydro
         hydroUnitWaterCost = newHydroUnitWaterCost;
         boolean oldHydroUnitWaterCostESet = hydroUnitWaterCostESet;
         hydroUnitWaterCostESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.HYDRO_GENERATING_UNIT__HYDRO_UNIT_WATER_COST,
-                        oldHydroUnitWaterCost, hydroUnitWaterCost, !oldHydroUnitWaterCostESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.HYDRO_GENERATING_UNIT__HYDRO_UNIT_WATER_COST, oldHydroUnitWaterCost, hydroUnitWaterCost,
+                    !oldHydroUnitWaterCostESet ) );
     }
 
     /**
@@ -287,9 +290,10 @@ public class HydroGeneratingUnitImpl extends GeneratingUnitImpl implements Hydro
         boolean oldHydroUnitWaterCostESet = hydroUnitWaterCostESet;
         hydroUnitWaterCost = HYDRO_UNIT_WATER_COST_EDEFAULT;
         hydroUnitWaterCostESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.HYDRO_GENERATING_UNIT__HYDRO_UNIT_WATER_COST, oldHydroUnitWaterCost,
-                HYDRO_UNIT_WATER_COST_EDEFAULT, oldHydroUnitWaterCostESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.HYDRO_GENERATING_UNIT__HYDRO_UNIT_WATER_COST, oldHydroUnitWaterCost,
+                    HYDRO_UNIT_WATER_COST_EDEFAULT, oldHydroUnitWaterCostESet ) );
     }
 
     /**
@@ -313,9 +317,10 @@ public class HydroGeneratingUnitImpl extends GeneratingUnitImpl implements Hydro
             InternalEObject oldPenstockLossCurve = ( InternalEObject ) penstockLossCurve;
             penstockLossCurve = ( PenstockLossCurve ) eResolveProxy( oldPenstockLossCurve );
             if( penstockLossCurve != oldPenstockLossCurve ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.HYDRO_GENERATING_UNIT__PENSTOCK_LOSS_CURVE, oldPenstockLossCurve,
-                        penstockLossCurve ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.HYDRO_GENERATING_UNIT__PENSTOCK_LOSS_CURVE, oldPenstockLossCurve,
+                            penstockLossCurve ) );
             }
         }
         return penstockLossCurve;
@@ -362,19 +367,22 @@ public class HydroGeneratingUnitImpl extends GeneratingUnitImpl implements Hydro
     public void setPenstockLossCurve( PenstockLossCurve newPenstockLossCurve ) {
         if( newPenstockLossCurve != penstockLossCurve ) {
             NotificationChain msgs = null;
-            if( penstockLossCurve != null ) msgs = ( ( InternalEObject ) penstockLossCurve ).eInverseRemove( this,
-                    CimPackage.PENSTOCK_LOSS_CURVE__HYDRO_GENERATING_UNIT, PenstockLossCurve.class, msgs );
-            if( newPenstockLossCurve != null ) msgs = ( ( InternalEObject ) newPenstockLossCurve ).eInverseAdd( this,
-                    CimPackage.PENSTOCK_LOSS_CURVE__HYDRO_GENERATING_UNIT, PenstockLossCurve.class, msgs );
+            if( penstockLossCurve != null )
+                msgs = ( ( InternalEObject ) penstockLossCurve ).eInverseRemove( this,
+                        CimPackage.PENSTOCK_LOSS_CURVE__HYDRO_GENERATING_UNIT, PenstockLossCurve.class, msgs );
+            if( newPenstockLossCurve != null )
+                msgs = ( ( InternalEObject ) newPenstockLossCurve ).eInverseAdd( this,
+                        CimPackage.PENSTOCK_LOSS_CURVE__HYDRO_GENERATING_UNIT, PenstockLossCurve.class, msgs );
             msgs = basicSetPenstockLossCurve( newPenstockLossCurve, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldPenstockLossCurveESet = penstockLossCurveESet;
             penstockLossCurveESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.HYDRO_GENERATING_UNIT__PENSTOCK_LOSS_CURVE, newPenstockLossCurve, newPenstockLossCurve,
-                    !oldPenstockLossCurveESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.HYDRO_GENERATING_UNIT__PENSTOCK_LOSS_CURVE, newPenstockLossCurve,
+                        newPenstockLossCurve, !oldPenstockLossCurveESet ) );
         }
     }
 
@@ -417,8 +425,9 @@ public class HydroGeneratingUnitImpl extends GeneratingUnitImpl implements Hydro
         else {
             boolean oldPenstockLossCurveESet = penstockLossCurveESet;
             penstockLossCurveESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.HYDRO_GENERATING_UNIT__PENSTOCK_LOSS_CURVE, null, null, oldPenstockLossCurveESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.HYDRO_GENERATING_UNIT__PENSTOCK_LOSS_CURVE, null, null, oldPenstockLossCurveESet ) );
         }
     }
 
@@ -511,19 +520,22 @@ public class HydroGeneratingUnitImpl extends GeneratingUnitImpl implements Hydro
     public void setHydroPowerPlant( HydroPowerPlant newHydroPowerPlant ) {
         if( newHydroPowerPlant != hydroPowerPlant ) {
             NotificationChain msgs = null;
-            if( hydroPowerPlant != null ) msgs = ( ( InternalEObject ) hydroPowerPlant ).eInverseRemove( this,
-                    CimPackage.HYDRO_POWER_PLANT__HYDRO_GENERATING_UNITS, HydroPowerPlant.class, msgs );
-            if( newHydroPowerPlant != null ) msgs = ( ( InternalEObject ) newHydroPowerPlant ).eInverseAdd( this,
-                    CimPackage.HYDRO_POWER_PLANT__HYDRO_GENERATING_UNITS, HydroPowerPlant.class, msgs );
+            if( hydroPowerPlant != null )
+                msgs = ( ( InternalEObject ) hydroPowerPlant ).eInverseRemove( this,
+                        CimPackage.HYDRO_POWER_PLANT__HYDRO_GENERATING_UNITS, HydroPowerPlant.class, msgs );
+            if( newHydroPowerPlant != null )
+                msgs = ( ( InternalEObject ) newHydroPowerPlant ).eInverseAdd( this,
+                        CimPackage.HYDRO_POWER_PLANT__HYDRO_GENERATING_UNITS, HydroPowerPlant.class, msgs );
             msgs = basicSetHydroPowerPlant( newHydroPowerPlant, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldHydroPowerPlantESet = hydroPowerPlantESet;
             hydroPowerPlantESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.HYDRO_GENERATING_UNIT__HYDRO_POWER_PLANT,
-                            newHydroPowerPlant, newHydroPowerPlant, !oldHydroPowerPlantESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.HYDRO_GENERATING_UNIT__HYDRO_POWER_PLANT, newHydroPowerPlant, newHydroPowerPlant,
+                        !oldHydroPowerPlantESet ) );
         }
     }
 
@@ -566,8 +578,9 @@ public class HydroGeneratingUnitImpl extends GeneratingUnitImpl implements Hydro
         else {
             boolean oldHydroPowerPlantESet = hydroPowerPlantESet;
             hydroPowerPlantESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.HYDRO_GENERATING_UNIT__HYDRO_POWER_PLANT, null, null, oldHydroPowerPlantESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.HYDRO_GENERATING_UNIT__HYDRO_POWER_PLANT, null, null, oldHydroPowerPlantESet ) );
         }
     }
 
@@ -626,12 +639,14 @@ public class HydroGeneratingUnitImpl extends GeneratingUnitImpl implements Hydro
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.HYDRO_GENERATING_UNIT__PENSTOCK_LOSS_CURVE:
-            if( penstockLossCurve != null ) msgs = ( ( InternalEObject ) penstockLossCurve ).eInverseRemove( this,
-                    CimPackage.PENSTOCK_LOSS_CURVE__HYDRO_GENERATING_UNIT, PenstockLossCurve.class, msgs );
+            if( penstockLossCurve != null )
+                msgs = ( ( InternalEObject ) penstockLossCurve ).eInverseRemove( this,
+                        CimPackage.PENSTOCK_LOSS_CURVE__HYDRO_GENERATING_UNIT, PenstockLossCurve.class, msgs );
             return basicSetPenstockLossCurve( ( PenstockLossCurve ) otherEnd, msgs );
         case CimPackage.HYDRO_GENERATING_UNIT__HYDRO_POWER_PLANT:
-            if( hydroPowerPlant != null ) msgs = ( ( InternalEObject ) hydroPowerPlant ).eInverseRemove( this,
-                    CimPackage.HYDRO_POWER_PLANT__HYDRO_GENERATING_UNITS, HydroPowerPlant.class, msgs );
+            if( hydroPowerPlant != null )
+                msgs = ( ( InternalEObject ) hydroPowerPlant ).eInverseRemove( this,
+                        CimPackage.HYDRO_POWER_PLANT__HYDRO_GENERATING_UNITS, HydroPowerPlant.class, msgs );
             return basicSetHydroPowerPlant( ( HydroPowerPlant ) otherEnd, msgs );
         case CimPackage.HYDRO_GENERATING_UNIT__TAILBAY_LOSS_CURVE:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTailbayLossCurve() )
@@ -785,7 +800,7 @@ public class HydroGeneratingUnitImpl extends GeneratingUnitImpl implements Hydro
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (energyConversionCapability: " );
         if( energyConversionCapabilityESet )
             result.append( energyConversionCapability );

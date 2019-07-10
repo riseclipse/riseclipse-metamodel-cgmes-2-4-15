@@ -176,9 +176,10 @@ public class ServiceSupplierImpl extends OrganisationRoleImpl implements Service
         issuerIdentificationNumber = newIssuerIdentificationNumber;
         boolean oldIssuerIdentificationNumberESet = issuerIdentificationNumberESet;
         issuerIdentificationNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SERVICE_SUPPLIER__ISSUER_IDENTIFICATION_NUMBER, oldIssuerIdentificationNumber,
-                issuerIdentificationNumber, !oldIssuerIdentificationNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SERVICE_SUPPLIER__ISSUER_IDENTIFICATION_NUMBER, oldIssuerIdentificationNumber,
+                    issuerIdentificationNumber, !oldIssuerIdentificationNumberESet ) );
     }
 
     /**
@@ -192,9 +193,10 @@ public class ServiceSupplierImpl extends OrganisationRoleImpl implements Service
         boolean oldIssuerIdentificationNumberESet = issuerIdentificationNumberESet;
         issuerIdentificationNumber = ISSUER_IDENTIFICATION_NUMBER_EDEFAULT;
         issuerIdentificationNumberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SERVICE_SUPPLIER__ISSUER_IDENTIFICATION_NUMBER, oldIssuerIdentificationNumber,
-                ISSUER_IDENTIFICATION_NUMBER_EDEFAULT, oldIssuerIdentificationNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SERVICE_SUPPLIER__ISSUER_IDENTIFICATION_NUMBER, oldIssuerIdentificationNumber,
+                    ISSUER_IDENTIFICATION_NUMBER_EDEFAULT, oldIssuerIdentificationNumberESet ) );
     }
 
     /**
@@ -228,8 +230,9 @@ public class ServiceSupplierImpl extends OrganisationRoleImpl implements Service
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SERVICE_SUPPLIER__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SERVICE_SUPPLIER__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -243,8 +246,9 @@ public class ServiceSupplierImpl extends OrganisationRoleImpl implements Service
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SERVICE_SUPPLIER__KIND, oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SERVICE_SUPPLIER__KIND, oldKind,
+                    KIND_EDEFAULT, oldKindESet ) );
     }
 
     /**
@@ -461,7 +465,7 @@ public class ServiceSupplierImpl extends OrganisationRoleImpl implements Service
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (issuerIdentificationNumber: " );
         if( issuerIdentificationNumberESet )
             result.append( issuerIdentificationNumber );

@@ -411,8 +411,9 @@ public class NoLoadTestImpl extends TransformerTestImpl implements NoLoadTest {
         loss = newLoss;
         boolean oldLossESet = lossESet;
         lossESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.NO_LOAD_TEST__LOSS, oldLoss, loss, !oldLossESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.NO_LOAD_TEST__LOSS, oldLoss, loss,
+                    !oldLossESet ) );
     }
 
     /**
@@ -426,8 +427,9 @@ public class NoLoadTestImpl extends TransformerTestImpl implements NoLoadTest {
         boolean oldLossESet = lossESet;
         loss = LOSS_EDEFAULT;
         lossESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.NO_LOAD_TEST__LOSS, oldLoss, LOSS_EDEFAULT, oldLossESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.NO_LOAD_TEST__LOSS, oldLoss,
+                    LOSS_EDEFAULT, oldLossESet ) );
     }
 
     /**
@@ -461,8 +463,9 @@ public class NoLoadTestImpl extends TransformerTestImpl implements NoLoadTest {
         lossZero = newLossZero;
         boolean oldLossZeroESet = lossZeroESet;
         lossZeroESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.NO_LOAD_TEST__LOSS_ZERO, oldLossZero, lossZero, !oldLossZeroESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.NO_LOAD_TEST__LOSS_ZERO, oldLossZero,
+                    lossZero, !oldLossZeroESet ) );
     }
 
     /**
@@ -476,8 +479,9 @@ public class NoLoadTestImpl extends TransformerTestImpl implements NoLoadTest {
         boolean oldLossZeroESet = lossZeroESet;
         lossZero = LOSS_ZERO_EDEFAULT;
         lossZeroESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.NO_LOAD_TEST__LOSS_ZERO, oldLossZero, LOSS_ZERO_EDEFAULT, oldLossZeroESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.NO_LOAD_TEST__LOSS_ZERO, oldLossZero,
+                    LOSS_ZERO_EDEFAULT, oldLossZeroESet ) );
     }
 
     /**
@@ -530,18 +534,21 @@ public class NoLoadTestImpl extends TransformerTestImpl implements NoLoadTest {
     public void setEnergisedEnd( TransformerEndInfo newEnergisedEnd ) {
         if( newEnergisedEnd != energisedEnd ) {
             NotificationChain msgs = null;
-            if( energisedEnd != null ) msgs = ( ( InternalEObject ) energisedEnd ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_NO_LOAD_TESTS, TransformerEndInfo.class, msgs );
-            if( newEnergisedEnd != null ) msgs = ( ( InternalEObject ) newEnergisedEnd ).eInverseAdd( this,
-                    CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_NO_LOAD_TESTS, TransformerEndInfo.class, msgs );
+            if( energisedEnd != null )
+                msgs = ( ( InternalEObject ) energisedEnd ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_NO_LOAD_TESTS, TransformerEndInfo.class, msgs );
+            if( newEnergisedEnd != null )
+                msgs = ( ( InternalEObject ) newEnergisedEnd ).eInverseAdd( this,
+                        CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_NO_LOAD_TESTS, TransformerEndInfo.class, msgs );
             msgs = basicSetEnergisedEnd( newEnergisedEnd, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldEnergisedEndESet = energisedEndESet;
             energisedEndESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.NO_LOAD_TEST__ENERGISED_END, newEnergisedEnd, newEnergisedEnd, !oldEnergisedEndESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.NO_LOAD_TEST__ENERGISED_END,
+                        newEnergisedEnd, newEnergisedEnd, !oldEnergisedEndESet ) );
         }
     }
 
@@ -583,8 +590,9 @@ public class NoLoadTestImpl extends TransformerTestImpl implements NoLoadTest {
         else {
             boolean oldEnergisedEndESet = energisedEndESet;
             energisedEndESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.NO_LOAD_TEST__ENERGISED_END, null, null, oldEnergisedEndESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.NO_LOAD_TEST__ENERGISED_END, null,
+                        null, oldEnergisedEndESet ) );
         }
     }
 
@@ -607,8 +615,9 @@ public class NoLoadTestImpl extends TransformerTestImpl implements NoLoadTest {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.NO_LOAD_TEST__ENERGISED_END:
-            if( energisedEnd != null ) msgs = ( ( InternalEObject ) energisedEnd ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_NO_LOAD_TESTS, TransformerEndInfo.class, msgs );
+            if( energisedEnd != null )
+                msgs = ( ( InternalEObject ) energisedEnd ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_NO_LOAD_TESTS, TransformerEndInfo.class, msgs );
             return basicSetEnergisedEnd( ( TransformerEndInfo ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -745,7 +754,7 @@ public class NoLoadTestImpl extends TransformerTestImpl implements NoLoadTest {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (energisedEndVoltage: " );
         if( energisedEndVoltageESet )
             result.append( energisedEndVoltage );

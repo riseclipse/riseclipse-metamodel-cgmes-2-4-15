@@ -667,8 +667,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldE1ESet = e1ESet;
         e1 = E1_EDEFAULT;
         e1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__E1, oldE1, E1_EDEFAULT, oldE1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__E1, oldE1, E1_EDEFAULT,
+                    oldE1ESet ) );
     }
 
     /**
@@ -717,8 +718,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldE2ESet = e2ESet;
         e2 = E2_EDEFAULT;
         e2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__E2, oldE2, E2_EDEFAULT, oldE2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__E2, oldE2, E2_EDEFAULT,
+                    oldE2ESet ) );
     }
 
     /**
@@ -767,8 +769,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldKaESet = kaESet;
         ka = KA_EDEFAULT;
         kaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__KA, oldKa, KA_EDEFAULT, oldKaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__KA, oldKa, KA_EDEFAULT,
+                    oldKaESet ) );
     }
 
     /**
@@ -817,8 +820,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldKcESet = kcESet;
         kc = KC_EDEFAULT;
         kcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__KC, oldKc, KC_EDEFAULT, oldKcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__KC, oldKc, KC_EDEFAULT,
+                    oldKcESet ) );
     }
 
     /**
@@ -867,8 +871,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldKdESet = kdESet;
         kd = KD_EDEFAULT;
         kdESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__KD, oldKd, KD_EDEFAULT, oldKdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__KD, oldKd, KD_EDEFAULT,
+                    oldKdESet ) );
     }
 
     /**
@@ -917,8 +922,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldKeESet = keESet;
         ke = KE_EDEFAULT;
         keESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__KE, oldKe, KE_EDEFAULT, oldKeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__KE, oldKe, KE_EDEFAULT,
+                    oldKeESet ) );
     }
 
     /**
@@ -967,8 +973,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldKfESet = kfESet;
         kf = KF_EDEFAULT;
         kfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__KF, oldKf, KF_EDEFAULT, oldKfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__KF, oldKf, KF_EDEFAULT,
+                    oldKfESet ) );
     }
 
     /**
@@ -1002,8 +1009,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         see1 = newSee1;
         boolean oldSee1ESet = see1ESet;
         see1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_OEX3T__SEE1, oldSee1, see1, !oldSee1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_OEX3T__SEE1, oldSee1, see1,
+                    !oldSee1ESet ) );
     }
 
     /**
@@ -1017,8 +1025,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldSee1ESet = see1ESet;
         see1 = SEE1_EDEFAULT;
         see1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__SEE1, oldSee1, SEE1_EDEFAULT, oldSee1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__SEE1, oldSee1,
+                    SEE1_EDEFAULT, oldSee1ESet ) );
     }
 
     /**
@@ -1052,8 +1061,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         see2 = newSee2;
         boolean oldSee2ESet = see2ESet;
         see2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_OEX3T__SEE2, oldSee2, see2, !oldSee2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_OEX3T__SEE2, oldSee2, see2,
+                    !oldSee2ESet ) );
     }
 
     /**
@@ -1067,8 +1077,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldSee2ESet = see2ESet;
         see2 = SEE2_EDEFAULT;
         see2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__SEE2, oldSee2, SEE2_EDEFAULT, oldSee2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__SEE2, oldSee2,
+                    SEE2_EDEFAULT, oldSee2ESet ) );
     }
 
     /**
@@ -1117,8 +1128,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldT1ESet = t1ESet;
         t1 = T1_EDEFAULT;
         t1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__T1, oldT1, T1_EDEFAULT, oldT1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__T1, oldT1, T1_EDEFAULT,
+                    oldT1ESet ) );
     }
 
     /**
@@ -1167,8 +1179,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldT2ESet = t2ESet;
         t2 = T2_EDEFAULT;
         t2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__T2, oldT2, T2_EDEFAULT, oldT2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__T2, oldT2, T2_EDEFAULT,
+                    oldT2ESet ) );
     }
 
     /**
@@ -1217,8 +1230,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldT3ESet = t3ESet;
         t3 = T3_EDEFAULT;
         t3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__T3, oldT3, T3_EDEFAULT, oldT3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__T3, oldT3, T3_EDEFAULT,
+                    oldT3ESet ) );
     }
 
     /**
@@ -1267,8 +1281,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldT4ESet = t4ESet;
         t4 = T4_EDEFAULT;
         t4ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__T4, oldT4, T4_EDEFAULT, oldT4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__T4, oldT4, T4_EDEFAULT,
+                    oldT4ESet ) );
     }
 
     /**
@@ -1317,8 +1332,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldT5ESet = t5ESet;
         t5 = T5_EDEFAULT;
         t5ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__T5, oldT5, T5_EDEFAULT, oldT5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__T5, oldT5, T5_EDEFAULT,
+                    oldT5ESet ) );
     }
 
     /**
@@ -1367,8 +1383,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldT6ESet = t6ESet;
         t6 = T6_EDEFAULT;
         t6ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__T6, oldT6, T6_EDEFAULT, oldT6ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__T6, oldT6, T6_EDEFAULT,
+                    oldT6ESet ) );
     }
 
     /**
@@ -1417,8 +1434,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldTeESet = teESet;
         te = TE_EDEFAULT;
         teESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__TE, oldTe, TE_EDEFAULT, oldTeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__TE, oldTe, TE_EDEFAULT,
+                    oldTeESet ) );
     }
 
     /**
@@ -1467,8 +1485,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldTfESet = tfESet;
         tf = TF_EDEFAULT;
         tfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__TF, oldTf, TF_EDEFAULT, oldTfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__TF, oldTf, TF_EDEFAULT,
+                    oldTfESet ) );
     }
 
     /**
@@ -1502,8 +1521,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         vrmax = newVrmax;
         boolean oldVrmaxESet = vrmaxESet;
         vrmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_OEX3T__VRMAX, oldVrmax, vrmax, !oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_OEX3T__VRMAX, oldVrmax, vrmax,
+                    !oldVrmaxESet ) );
     }
 
     /**
@@ -1517,8 +1537,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldVrmaxESet = vrmaxESet;
         vrmax = VRMAX_EDEFAULT;
         vrmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__VRMAX, oldVrmax, VRMAX_EDEFAULT, oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__VRMAX, oldVrmax,
+                    VRMAX_EDEFAULT, oldVrmaxESet ) );
     }
 
     /**
@@ -1552,8 +1573,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         vrmin = newVrmin;
         boolean oldVrminESet = vrminESet;
         vrminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_OEX3T__VRMIN, oldVrmin, vrmin, !oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_OEX3T__VRMIN, oldVrmin, vrmin,
+                    !oldVrminESet ) );
     }
 
     /**
@@ -1567,8 +1589,9 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
         boolean oldVrminESet = vrminESet;
         vrmin = VRMIN_EDEFAULT;
         vrminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_OEX3T__VRMIN, oldVrmin, VRMIN_EDEFAULT, oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_OEX3T__VRMIN, oldVrmin,
+                    VRMIN_EDEFAULT, oldVrminESet ) );
     }
 
     /**
@@ -1828,7 +1851,7 @@ public class ExcOEX3TImpl extends ExcitationSystemDynamicsImpl implements ExcOEX
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (e1: " );
         if( e1ESet )
             result.append( e1 );

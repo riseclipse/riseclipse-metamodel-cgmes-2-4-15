@@ -169,8 +169,9 @@ public class ShutdownCurveImpl extends CurveImpl implements ShutdownCurve {
         shutdownCost = newShutdownCost;
         boolean oldShutdownCostESet = shutdownCostESet;
         shutdownCostESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SHUTDOWN_CURVE__SHUTDOWN_COST, oldShutdownCost, shutdownCost, !oldShutdownCostESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SHUTDOWN_CURVE__SHUTDOWN_COST,
+                    oldShutdownCost, shutdownCost, !oldShutdownCostESet ) );
     }
 
     /**
@@ -220,8 +221,9 @@ public class ShutdownCurveImpl extends CurveImpl implements ShutdownCurve {
         shutdownDate = newShutdownDate;
         boolean oldShutdownDateESet = shutdownDateESet;
         shutdownDateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SHUTDOWN_CURVE__SHUTDOWN_DATE, oldShutdownDate, shutdownDate, !oldShutdownDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SHUTDOWN_CURVE__SHUTDOWN_DATE,
+                    oldShutdownDate, shutdownDate, !oldShutdownDateESet ) );
     }
 
     /**
@@ -261,9 +263,10 @@ public class ShutdownCurveImpl extends CurveImpl implements ShutdownCurve {
             InternalEObject oldThermalGeneratingUnit = ( InternalEObject ) thermalGeneratingUnit;
             thermalGeneratingUnit = ( ThermalGeneratingUnit ) eResolveProxy( oldThermalGeneratingUnit );
             if( thermalGeneratingUnit != oldThermalGeneratingUnit ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.SHUTDOWN_CURVE__THERMAL_GENERATING_UNIT, oldThermalGeneratingUnit,
-                        thermalGeneratingUnit ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.SHUTDOWN_CURVE__THERMAL_GENERATING_UNIT, oldThermalGeneratingUnit,
+                            thermalGeneratingUnit ) );
             }
         }
         return thermalGeneratingUnit;
@@ -322,9 +325,10 @@ public class ShutdownCurveImpl extends CurveImpl implements ShutdownCurve {
         else {
             boolean oldThermalGeneratingUnitESet = thermalGeneratingUnitESet;
             thermalGeneratingUnitESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.SHUTDOWN_CURVE__THERMAL_GENERATING_UNIT,
-                            newThermalGeneratingUnit, newThermalGeneratingUnit, !oldThermalGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.SHUTDOWN_CURVE__THERMAL_GENERATING_UNIT, newThermalGeneratingUnit,
+                        newThermalGeneratingUnit, !oldThermalGeneratingUnitESet ) );
         }
     }
 
@@ -367,8 +371,10 @@ public class ShutdownCurveImpl extends CurveImpl implements ShutdownCurve {
         else {
             boolean oldThermalGeneratingUnitESet = thermalGeneratingUnitESet;
             thermalGeneratingUnitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SHUTDOWN_CURVE__THERMAL_GENERATING_UNIT, null, null, oldThermalGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.SHUTDOWN_CURVE__THERMAL_GENERATING_UNIT, null, null,
+                        oldThermalGeneratingUnitESet ) );
         }
     }
 
@@ -501,7 +507,7 @@ public class ShutdownCurveImpl extends CurveImpl implements ShutdownCurve {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (shutdownCost: " );
         if( shutdownCostESet )
             result.append( shutdownCost );

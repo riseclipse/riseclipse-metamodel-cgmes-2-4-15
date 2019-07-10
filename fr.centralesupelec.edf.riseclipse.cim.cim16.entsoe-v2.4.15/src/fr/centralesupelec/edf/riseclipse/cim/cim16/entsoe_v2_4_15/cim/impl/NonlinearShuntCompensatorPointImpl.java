@@ -255,8 +255,9 @@ public class NonlinearShuntCompensatorPointImpl extends CimObjectWithIDImpl impl
         b = newB;
         boolean oldBESet = bESet;
         bESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__B, oldB, b, !oldBESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__B,
+                    oldB, b, !oldBESet ) );
     }
 
     /**
@@ -270,8 +271,9 @@ public class NonlinearShuntCompensatorPointImpl extends CimObjectWithIDImpl impl
         boolean oldBESet = bESet;
         b = B_EDEFAULT;
         bESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__B, oldB, B_EDEFAULT, oldBESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__B,
+                    oldB, B_EDEFAULT, oldBESet ) );
     }
 
     /**
@@ -305,8 +307,9 @@ public class NonlinearShuntCompensatorPointImpl extends CimObjectWithIDImpl impl
         b0 = newB0;
         boolean oldB0ESet = b0ESet;
         b0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__B0, oldB0, b0, !oldB0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__B0,
+                    oldB0, b0, !oldB0ESet ) );
     }
 
     /**
@@ -320,8 +323,9 @@ public class NonlinearShuntCompensatorPointImpl extends CimObjectWithIDImpl impl
         boolean oldB0ESet = b0ESet;
         b0 = B0_EDEFAULT;
         b0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__B0, oldB0, B0_EDEFAULT, oldB0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__B0,
+                    oldB0, B0_EDEFAULT, oldB0ESet ) );
     }
 
     /**
@@ -355,8 +359,9 @@ public class NonlinearShuntCompensatorPointImpl extends CimObjectWithIDImpl impl
         g = newG;
         boolean oldGESet = gESet;
         gESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__G, oldG, g, !oldGESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__G,
+                    oldG, g, !oldGESet ) );
     }
 
     /**
@@ -370,8 +375,9 @@ public class NonlinearShuntCompensatorPointImpl extends CimObjectWithIDImpl impl
         boolean oldGESet = gESet;
         g = G_EDEFAULT;
         gESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__G, oldG, G_EDEFAULT, oldGESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__G,
+                    oldG, G_EDEFAULT, oldGESet ) );
     }
 
     /**
@@ -405,8 +411,9 @@ public class NonlinearShuntCompensatorPointImpl extends CimObjectWithIDImpl impl
         g0 = newG0;
         boolean oldG0ESet = g0ESet;
         g0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__G0, oldG0, g0, !oldG0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__G0,
+                    oldG0, g0, !oldG0ESet ) );
     }
 
     /**
@@ -420,8 +427,9 @@ public class NonlinearShuntCompensatorPointImpl extends CimObjectWithIDImpl impl
         boolean oldG0ESet = g0ESet;
         g0 = G0_EDEFAULT;
         g0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__G0, oldG0, G0_EDEFAULT, oldG0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__G0,
+                    oldG0, G0_EDEFAULT, oldG0ESet ) );
     }
 
     /**
@@ -455,9 +463,10 @@ public class NonlinearShuntCompensatorPointImpl extends CimObjectWithIDImpl impl
         sectionNumber = newSectionNumber;
         boolean oldSectionNumberESet = sectionNumberESet;
         sectionNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__SECTION_NUMBER, oldSectionNumber, sectionNumber,
-                !oldSectionNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__SECTION_NUMBER, oldSectionNumber, sectionNumber,
+                    !oldSectionNumberESet ) );
     }
 
     /**
@@ -471,9 +480,10 @@ public class NonlinearShuntCompensatorPointImpl extends CimObjectWithIDImpl impl
         boolean oldSectionNumberESet = sectionNumberESet;
         sectionNumber = SECTION_NUMBER_EDEFAULT;
         sectionNumberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__SECTION_NUMBER, oldSectionNumber, SECTION_NUMBER_EDEFAULT,
-                oldSectionNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__SECTION_NUMBER, oldSectionNumber,
+                    SECTION_NUMBER_EDEFAULT, oldSectionNumberESet ) );
     }
 
     /**
@@ -542,9 +552,11 @@ public class NonlinearShuntCompensatorPointImpl extends CimObjectWithIDImpl impl
         else {
             boolean oldNonlinearShuntCompensatorESet = nonlinearShuntCompensatorESet;
             nonlinearShuntCompensatorESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__NONLINEAR_SHUNT_COMPENSATOR,
-                    newNonlinearShuntCompensator, newNonlinearShuntCompensator, !oldNonlinearShuntCompensatorESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__NONLINEAR_SHUNT_COMPENSATOR,
+                        newNonlinearShuntCompensator, newNonlinearShuntCompensator,
+                        !oldNonlinearShuntCompensatorESet ) );
         }
     }
 
@@ -588,9 +600,10 @@ public class NonlinearShuntCompensatorPointImpl extends CimObjectWithIDImpl impl
         else {
             boolean oldNonlinearShuntCompensatorESet = nonlinearShuntCompensatorESet;
             nonlinearShuntCompensatorESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__NONLINEAR_SHUNT_COMPENSATOR, null, null,
-                    oldNonlinearShuntCompensatorESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.NONLINEAR_SHUNT_COMPENSATOR_POINT__NONLINEAR_SHUNT_COMPENSATOR, null, null,
+                        oldNonlinearShuntCompensatorESet ) );
         }
     }
 
@@ -753,7 +766,7 @@ public class NonlinearShuntCompensatorPointImpl extends CimObjectWithIDImpl impl
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (b: " );
         if( bESet )
             result.append( b );

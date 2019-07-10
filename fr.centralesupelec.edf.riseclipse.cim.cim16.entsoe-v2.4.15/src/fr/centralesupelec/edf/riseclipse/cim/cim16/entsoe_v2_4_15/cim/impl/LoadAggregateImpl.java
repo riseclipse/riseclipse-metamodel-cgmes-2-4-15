@@ -116,8 +116,9 @@ public class LoadAggregateImpl extends LoadDynamicsImpl implements LoadAggregate
             InternalEObject oldLoadMotor = ( InternalEObject ) loadMotor;
             loadMotor = ( LoadMotor ) eResolveProxy( oldLoadMotor );
             if( loadMotor != oldLoadMotor ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.LOAD_AGGREGATE__LOAD_MOTOR, oldLoadMotor, loadMotor ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.LOAD_AGGREGATE__LOAD_MOTOR,
+                            oldLoadMotor, loadMotor ) );
             }
         }
         return loadMotor;
@@ -162,18 +163,21 @@ public class LoadAggregateImpl extends LoadDynamicsImpl implements LoadAggregate
     public void setLoadMotor( LoadMotor newLoadMotor ) {
         if( newLoadMotor != loadMotor ) {
             NotificationChain msgs = null;
-            if( loadMotor != null ) msgs = ( ( InternalEObject ) loadMotor ).eInverseRemove( this,
-                    CimPackage.LOAD_MOTOR__LOAD_AGGREGATE, LoadMotor.class, msgs );
-            if( newLoadMotor != null ) msgs = ( ( InternalEObject ) newLoadMotor ).eInverseAdd( this,
-                    CimPackage.LOAD_MOTOR__LOAD_AGGREGATE, LoadMotor.class, msgs );
+            if( loadMotor != null )
+                msgs = ( ( InternalEObject ) loadMotor ).eInverseRemove( this, CimPackage.LOAD_MOTOR__LOAD_AGGREGATE,
+                        LoadMotor.class, msgs );
+            if( newLoadMotor != null )
+                msgs = ( ( InternalEObject ) newLoadMotor ).eInverseAdd( this, CimPackage.LOAD_MOTOR__LOAD_AGGREGATE,
+                        LoadMotor.class, msgs );
             msgs = basicSetLoadMotor( newLoadMotor, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldLoadMotorESet = loadMotorESet;
             loadMotorESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.LOAD_AGGREGATE__LOAD_MOTOR, newLoadMotor, newLoadMotor, !oldLoadMotorESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_AGGREGATE__LOAD_MOTOR,
+                        newLoadMotor, newLoadMotor, !oldLoadMotorESet ) );
         }
     }
 
@@ -215,8 +219,9 @@ public class LoadAggregateImpl extends LoadDynamicsImpl implements LoadAggregate
         else {
             boolean oldLoadMotorESet = loadMotorESet;
             loadMotorESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.LOAD_AGGREGATE__LOAD_MOTOR, null, null, oldLoadMotorESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_AGGREGATE__LOAD_MOTOR, null,
+                        null, oldLoadMotorESet ) );
         }
     }
 
@@ -241,8 +246,9 @@ public class LoadAggregateImpl extends LoadDynamicsImpl implements LoadAggregate
             InternalEObject oldLoadStatic = ( InternalEObject ) loadStatic;
             loadStatic = ( LoadStatic ) eResolveProxy( oldLoadStatic );
             if( loadStatic != oldLoadStatic ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.LOAD_AGGREGATE__LOAD_STATIC, oldLoadStatic, loadStatic ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.LOAD_AGGREGATE__LOAD_STATIC,
+                            oldLoadStatic, loadStatic ) );
             }
         }
         return loadStatic;
@@ -287,18 +293,21 @@ public class LoadAggregateImpl extends LoadDynamicsImpl implements LoadAggregate
     public void setLoadStatic( LoadStatic newLoadStatic ) {
         if( newLoadStatic != loadStatic ) {
             NotificationChain msgs = null;
-            if( loadStatic != null ) msgs = ( ( InternalEObject ) loadStatic ).eInverseRemove( this,
-                    CimPackage.LOAD_STATIC__LOAD_AGGREGATE, LoadStatic.class, msgs );
-            if( newLoadStatic != null ) msgs = ( ( InternalEObject ) newLoadStatic ).eInverseAdd( this,
-                    CimPackage.LOAD_STATIC__LOAD_AGGREGATE, LoadStatic.class, msgs );
+            if( loadStatic != null )
+                msgs = ( ( InternalEObject ) loadStatic ).eInverseRemove( this, CimPackage.LOAD_STATIC__LOAD_AGGREGATE,
+                        LoadStatic.class, msgs );
+            if( newLoadStatic != null )
+                msgs = ( ( InternalEObject ) newLoadStatic ).eInverseAdd( this, CimPackage.LOAD_STATIC__LOAD_AGGREGATE,
+                        LoadStatic.class, msgs );
             msgs = basicSetLoadStatic( newLoadStatic, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldLoadStaticESet = loadStaticESet;
             loadStaticESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.LOAD_AGGREGATE__LOAD_STATIC, newLoadStatic, newLoadStatic, !oldLoadStaticESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_AGGREGATE__LOAD_STATIC,
+                        newLoadStatic, newLoadStatic, !oldLoadStaticESet ) );
         }
     }
 
@@ -340,8 +349,9 @@ public class LoadAggregateImpl extends LoadDynamicsImpl implements LoadAggregate
         else {
             boolean oldLoadStaticESet = loadStaticESet;
             loadStaticESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.LOAD_AGGREGATE__LOAD_STATIC, null, null, oldLoadStaticESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_AGGREGATE__LOAD_STATIC, null,
+                        null, oldLoadStaticESet ) );
         }
     }
 
@@ -364,12 +374,14 @@ public class LoadAggregateImpl extends LoadDynamicsImpl implements LoadAggregate
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.LOAD_AGGREGATE__LOAD_MOTOR:
-            if( loadMotor != null ) msgs = ( ( InternalEObject ) loadMotor ).eInverseRemove( this,
-                    CimPackage.LOAD_MOTOR__LOAD_AGGREGATE, LoadMotor.class, msgs );
+            if( loadMotor != null )
+                msgs = ( ( InternalEObject ) loadMotor ).eInverseRemove( this, CimPackage.LOAD_MOTOR__LOAD_AGGREGATE,
+                        LoadMotor.class, msgs );
             return basicSetLoadMotor( ( LoadMotor ) otherEnd, msgs );
         case CimPackage.LOAD_AGGREGATE__LOAD_STATIC:
-            if( loadStatic != null ) msgs = ( ( InternalEObject ) loadStatic ).eInverseRemove( this,
-                    CimPackage.LOAD_STATIC__LOAD_AGGREGATE, LoadStatic.class, msgs );
+            if( loadStatic != null )
+                msgs = ( ( InternalEObject ) loadStatic ).eInverseRemove( this, CimPackage.LOAD_STATIC__LOAD_AGGREGATE,
+                        LoadStatic.class, msgs );
             return basicSetLoadStatic( ( LoadStatic ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

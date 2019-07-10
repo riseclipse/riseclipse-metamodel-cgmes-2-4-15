@@ -476,18 +476,21 @@ public class BayImpl extends EquipmentContainerImpl implements Bay {
     public void setVoltageLevel( VoltageLevel newVoltageLevel ) {
         if( newVoltageLevel != voltageLevel ) {
             NotificationChain msgs = null;
-            if( voltageLevel != null ) msgs = ( ( InternalEObject ) voltageLevel ).eInverseRemove( this,
-                    CimPackage.VOLTAGE_LEVEL__BAYS, VoltageLevel.class, msgs );
-            if( newVoltageLevel != null ) msgs = ( ( InternalEObject ) newVoltageLevel ).eInverseAdd( this,
-                    CimPackage.VOLTAGE_LEVEL__BAYS, VoltageLevel.class, msgs );
+            if( voltageLevel != null )
+                msgs = ( ( InternalEObject ) voltageLevel ).eInverseRemove( this, CimPackage.VOLTAGE_LEVEL__BAYS,
+                        VoltageLevel.class, msgs );
+            if( newVoltageLevel != null )
+                msgs = ( ( InternalEObject ) newVoltageLevel ).eInverseAdd( this, CimPackage.VOLTAGE_LEVEL__BAYS,
+                        VoltageLevel.class, msgs );
             msgs = basicSetVoltageLevel( newVoltageLevel, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldVoltageLevelESet = voltageLevelESet;
             voltageLevelESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.BAY__VOLTAGE_LEVEL, newVoltageLevel, newVoltageLevel, !oldVoltageLevelESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BAY__VOLTAGE_LEVEL, newVoltageLevel,
+                        newVoltageLevel, !oldVoltageLevelESet ) );
         }
     }
 
@@ -529,8 +532,9 @@ public class BayImpl extends EquipmentContainerImpl implements Bay {
         else {
             boolean oldVoltageLevelESet = voltageLevelESet;
             voltageLevelESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.BAY__VOLTAGE_LEVEL, null, null, oldVoltageLevelESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BAY__VOLTAGE_LEVEL, null, null,
+                        oldVoltageLevelESet ) );
         }
     }
 
@@ -584,18 +588,21 @@ public class BayImpl extends EquipmentContainerImpl implements Bay {
     public void setSubstation( Substation newSubstation ) {
         if( newSubstation != substation ) {
             NotificationChain msgs = null;
-            if( substation != null ) msgs = ( ( InternalEObject ) substation ).eInverseRemove( this,
-                    CimPackage.SUBSTATION__BAYS, Substation.class, msgs );
-            if( newSubstation != null ) msgs = ( ( InternalEObject ) newSubstation ).eInverseAdd( this,
-                    CimPackage.SUBSTATION__BAYS, Substation.class, msgs );
+            if( substation != null )
+                msgs = ( ( InternalEObject ) substation ).eInverseRemove( this, CimPackage.SUBSTATION__BAYS,
+                        Substation.class, msgs );
+            if( newSubstation != null )
+                msgs = ( ( InternalEObject ) newSubstation ).eInverseAdd( this, CimPackage.SUBSTATION__BAYS,
+                        Substation.class, msgs );
             msgs = basicSetSubstation( newSubstation, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldSubstationESet = substationESet;
             substationESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.BAY__SUBSTATION, newSubstation, newSubstation, !oldSubstationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BAY__SUBSTATION, newSubstation,
+                        newSubstation, !oldSubstationESet ) );
         }
     }
 
@@ -637,8 +644,9 @@ public class BayImpl extends EquipmentContainerImpl implements Bay {
         else {
             boolean oldSubstationESet = substationESet;
             substationESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.BAY__SUBSTATION, null, null, oldSubstationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BAY__SUBSTATION, null, null,
+                        oldSubstationESet ) );
         }
     }
 
@@ -661,12 +669,14 @@ public class BayImpl extends EquipmentContainerImpl implements Bay {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.BAY__SUBSTATION:
-            if( substation != null ) msgs = ( ( InternalEObject ) substation ).eInverseRemove( this,
-                    CimPackage.SUBSTATION__BAYS, Substation.class, msgs );
+            if( substation != null )
+                msgs = ( ( InternalEObject ) substation ).eInverseRemove( this, CimPackage.SUBSTATION__BAYS,
+                        Substation.class, msgs );
             return basicSetSubstation( ( Substation ) otherEnd, msgs );
         case CimPackage.BAY__VOLTAGE_LEVEL:
-            if( voltageLevel != null ) msgs = ( ( InternalEObject ) voltageLevel ).eInverseRemove( this,
-                    CimPackage.VOLTAGE_LEVEL__BAYS, VoltageLevel.class, msgs );
+            if( voltageLevel != null )
+                msgs = ( ( InternalEObject ) voltageLevel ).eInverseRemove( this, CimPackage.VOLTAGE_LEVEL__BAYS,
+                        VoltageLevel.class, msgs );
             return basicSetVoltageLevel( ( VoltageLevel ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -805,7 +815,7 @@ public class BayImpl extends EquipmentContainerImpl implements Bay {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (bayEnergyMeasFlag: " );
         if( bayEnergyMeasFlagESet )
             result.append( bayEnergyMeasFlag );

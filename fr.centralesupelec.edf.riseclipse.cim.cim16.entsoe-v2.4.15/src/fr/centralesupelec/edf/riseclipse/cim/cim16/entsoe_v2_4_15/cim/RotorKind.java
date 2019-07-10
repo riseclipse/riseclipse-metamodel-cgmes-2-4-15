@@ -92,7 +92,10 @@ public enum RotorKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final RotorKind[] VALUES_ARRAY = new RotorKind[] { ROUND_ROTOR, SALIENT_POLE, };
+    private static final RotorKind[] VALUES_ARRAY = new RotorKind[] {
+            ROUND_ROTOR,
+            SALIENT_POLE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Rotor Kind</b></em>' enumerators.

@@ -1117,8 +1117,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldAESet = aESet;
         a = A_EDEFAULT;
         aESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__A,
-                oldA, A_EDEFAULT, oldAESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__A, oldA, A_EDEFAULT,
+                    oldAESet ) );
     }
 
     /**
@@ -1167,8 +1168,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldBESet = bESet;
         b = B_EDEFAULT;
         bESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__B,
-                oldB, B_EDEFAULT, oldBESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__B, oldB, B_EDEFAULT,
+                    oldBESet ) );
     }
 
     /**
@@ -1202,8 +1204,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         db1 = newDb1;
         boolean oldDb1ESet = db1ESet;
         db1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__DB1, oldDb1, db1, !oldDb1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__DB1, oldDb1, db1,
+                    !oldDb1ESet ) );
     }
 
     /**
@@ -1217,8 +1220,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldDb1ESet = db1ESet;
         db1 = DB1_EDEFAULT;
         db1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__DB1, oldDb1, DB1_EDEFAULT, oldDb1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__DB1, oldDb1, DB1_EDEFAULT,
+                    oldDb1ESet ) );
     }
 
     /**
@@ -1252,8 +1256,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         db2 = newDb2;
         boolean oldDb2ESet = db2ESet;
         db2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__DB2, oldDb2, db2, !oldDb2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__DB2, oldDb2, db2,
+                    !oldDb2ESet ) );
     }
 
     /**
@@ -1267,8 +1272,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldDb2ESet = db2ESet;
         db2 = DB2_EDEFAULT;
         db2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__DB2, oldDb2, DB2_EDEFAULT, oldDb2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__DB2, oldDb2, DB2_EDEFAULT,
+                    oldDb2ESet ) );
     }
 
     /**
@@ -1302,8 +1308,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         eps = newEps;
         boolean oldEpsESet = epsESet;
         epsESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__EPS, oldEps, eps, !oldEpsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__EPS, oldEps, eps,
+                    !oldEpsESet ) );
     }
 
     /**
@@ -1317,8 +1324,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldEpsESet = epsESet;
         eps = EPS_EDEFAULT;
         epsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__EPS, oldEps, EPS_EDEFAULT, oldEpsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__EPS, oldEps, EPS_EDEFAULT,
+                    oldEpsESet ) );
     }
 
     /**
@@ -1352,8 +1360,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         fidle = newFidle;
         boolean oldFidleESet = fidleESet;
         fidleESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_GAST1__FIDLE, oldFidle, fidle, !oldFidleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__FIDLE, oldFidle, fidle,
+                    !oldFidleESet ) );
     }
 
     /**
@@ -1367,8 +1376,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldFidleESet = fidleESet;
         fidle = FIDLE_EDEFAULT;
         fidleESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__FIDLE, oldFidle, FIDLE_EDEFAULT, oldFidleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__FIDLE, oldFidle,
+                    FIDLE_EDEFAULT, oldFidleESet ) );
     }
 
     /**
@@ -1402,8 +1412,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         gv1 = newGv1;
         boolean oldGv1ESet = gv1ESet;
         gv1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__GV1, oldGv1, gv1, !oldGv1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__GV1, oldGv1, gv1,
+                    !oldGv1ESet ) );
     }
 
     /**
@@ -1417,8 +1428,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldGv1ESet = gv1ESet;
         gv1 = GV1_EDEFAULT;
         gv1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__GV1, oldGv1, GV1_EDEFAULT, oldGv1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__GV1, oldGv1, GV1_EDEFAULT,
+                    oldGv1ESet ) );
     }
 
     /**
@@ -1452,8 +1464,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         gv2 = newGv2;
         boolean oldGv2ESet = gv2ESet;
         gv2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__GV2, oldGv2, gv2, !oldGv2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__GV2, oldGv2, gv2,
+                    !oldGv2ESet ) );
     }
 
     /**
@@ -1467,8 +1480,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldGv2ESet = gv2ESet;
         gv2 = GV2_EDEFAULT;
         gv2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__GV2, oldGv2, GV2_EDEFAULT, oldGv2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__GV2, oldGv2, GV2_EDEFAULT,
+                    oldGv2ESet ) );
     }
 
     /**
@@ -1502,8 +1516,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         gv3 = newGv3;
         boolean oldGv3ESet = gv3ESet;
         gv3ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__GV3, oldGv3, gv3, !oldGv3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__GV3, oldGv3, gv3,
+                    !oldGv3ESet ) );
     }
 
     /**
@@ -1517,8 +1532,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldGv3ESet = gv3ESet;
         gv3 = GV3_EDEFAULT;
         gv3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__GV3, oldGv3, GV3_EDEFAULT, oldGv3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__GV3, oldGv3, GV3_EDEFAULT,
+                    oldGv3ESet ) );
     }
 
     /**
@@ -1552,8 +1568,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         gv4 = newGv4;
         boolean oldGv4ESet = gv4ESet;
         gv4ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__GV4, oldGv4, gv4, !oldGv4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__GV4, oldGv4, gv4,
+                    !oldGv4ESet ) );
     }
 
     /**
@@ -1567,8 +1584,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldGv4ESet = gv4ESet;
         gv4 = GV4_EDEFAULT;
         gv4ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__GV4, oldGv4, GV4_EDEFAULT, oldGv4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__GV4, oldGv4, GV4_EDEFAULT,
+                    oldGv4ESet ) );
     }
 
     /**
@@ -1602,8 +1620,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         gv5 = newGv5;
         boolean oldGv5ESet = gv5ESet;
         gv5ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__GV5, oldGv5, gv5, !oldGv5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__GV5, oldGv5, gv5,
+                    !oldGv5ESet ) );
     }
 
     /**
@@ -1617,8 +1636,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldGv5ESet = gv5ESet;
         gv5 = GV5_EDEFAULT;
         gv5ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__GV5, oldGv5, GV5_EDEFAULT, oldGv5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__GV5, oldGv5, GV5_EDEFAULT,
+                    oldGv5ESet ) );
     }
 
     /**
@@ -1652,8 +1672,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         gv6 = newGv6;
         boolean oldGv6ESet = gv6ESet;
         gv6ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__GV6, oldGv6, gv6, !oldGv6ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__GV6, oldGv6, gv6,
+                    !oldGv6ESet ) );
     }
 
     /**
@@ -1667,8 +1688,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldGv6ESet = gv6ESet;
         gv6 = GV6_EDEFAULT;
         gv6ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__GV6, oldGv6, GV6_EDEFAULT, oldGv6ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__GV6, oldGv6, GV6_EDEFAULT,
+                    oldGv6ESet ) );
     }
 
     /**
@@ -1717,8 +1739,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldKaESet = kaESet;
         ka = KA_EDEFAULT;
         kaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__KA, oldKa, KA_EDEFAULT, oldKaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__KA, oldKa, KA_EDEFAULT,
+                    oldKaESet ) );
     }
 
     /**
@@ -1767,8 +1790,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldKtESet = ktESet;
         kt = KT_EDEFAULT;
         ktESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__KT, oldKt, KT_EDEFAULT, oldKtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__KT, oldKt, KT_EDEFAULT,
+                    oldKtESet ) );
     }
 
     /**
@@ -1802,8 +1826,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         lmax = newLmax;
         boolean oldLmaxESet = lmaxESet;
         lmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_GAST1__LMAX, oldLmax, lmax, !oldLmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__LMAX, oldLmax, lmax,
+                    !oldLmaxESet ) );
     }
 
     /**
@@ -1817,8 +1842,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldLmaxESet = lmaxESet;
         lmax = LMAX_EDEFAULT;
         lmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__LMAX, oldLmax, LMAX_EDEFAULT, oldLmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__LMAX, oldLmax,
+                    LMAX_EDEFAULT, oldLmaxESet ) );
     }
 
     /**
@@ -1852,8 +1878,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         loadinc = newLoadinc;
         boolean oldLoadincESet = loadincESet;
         loadincESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_GAST1__LOADINC, oldLoadinc, loadinc, !oldLoadincESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__LOADINC, oldLoadinc, loadinc,
+                    !oldLoadincESet ) );
     }
 
     /**
@@ -1867,8 +1894,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldLoadincESet = loadincESet;
         loadinc = LOADINC_EDEFAULT;
         loadincESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__LOADINC, oldLoadinc, LOADINC_EDEFAULT, oldLoadincESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__LOADINC, oldLoadinc,
+                    LOADINC_EDEFAULT, oldLoadincESet ) );
     }
 
     /**
@@ -1902,8 +1930,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         ltrate = newLtrate;
         boolean oldLtrateESet = ltrateESet;
         ltrateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_GAST1__LTRATE, oldLtrate, ltrate, !oldLtrateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__LTRATE, oldLtrate, ltrate,
+                    !oldLtrateESet ) );
     }
 
     /**
@@ -1917,8 +1946,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldLtrateESet = ltrateESet;
         ltrate = LTRATE_EDEFAULT;
         ltrateESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__LTRATE, oldLtrate, LTRATE_EDEFAULT, oldLtrateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__LTRATE, oldLtrate,
+                    LTRATE_EDEFAULT, oldLtrateESet ) );
     }
 
     /**
@@ -1952,8 +1982,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         mwbase = newMwbase;
         boolean oldMwbaseESet = mwbaseESet;
         mwbaseESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_GAST1__MWBASE, oldMwbase, mwbase, !oldMwbaseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__MWBASE, oldMwbase, mwbase,
+                    !oldMwbaseESet ) );
     }
 
     /**
@@ -1967,8 +1998,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldMwbaseESet = mwbaseESet;
         mwbase = MWBASE_EDEFAULT;
         mwbaseESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__MWBASE, oldMwbase, MWBASE_EDEFAULT, oldMwbaseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__MWBASE, oldMwbase,
+                    MWBASE_EDEFAULT, oldMwbaseESet ) );
     }
 
     /**
@@ -2002,8 +2034,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         pgv1 = newPgv1;
         boolean oldPgv1ESet = pgv1ESet;
         pgv1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_GAST1__PGV1, oldPgv1, pgv1, !oldPgv1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__PGV1, oldPgv1, pgv1,
+                    !oldPgv1ESet ) );
     }
 
     /**
@@ -2017,8 +2050,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldPgv1ESet = pgv1ESet;
         pgv1 = PGV1_EDEFAULT;
         pgv1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__PGV1, oldPgv1, PGV1_EDEFAULT, oldPgv1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__PGV1, oldPgv1,
+                    PGV1_EDEFAULT, oldPgv1ESet ) );
     }
 
     /**
@@ -2052,8 +2086,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         pgv2 = newPgv2;
         boolean oldPgv2ESet = pgv2ESet;
         pgv2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_GAST1__PGV2, oldPgv2, pgv2, !oldPgv2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__PGV2, oldPgv2, pgv2,
+                    !oldPgv2ESet ) );
     }
 
     /**
@@ -2067,8 +2102,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldPgv2ESet = pgv2ESet;
         pgv2 = PGV2_EDEFAULT;
         pgv2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__PGV2, oldPgv2, PGV2_EDEFAULT, oldPgv2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__PGV2, oldPgv2,
+                    PGV2_EDEFAULT, oldPgv2ESet ) );
     }
 
     /**
@@ -2102,8 +2138,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         pgv3 = newPgv3;
         boolean oldPgv3ESet = pgv3ESet;
         pgv3ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_GAST1__PGV3, oldPgv3, pgv3, !oldPgv3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__PGV3, oldPgv3, pgv3,
+                    !oldPgv3ESet ) );
     }
 
     /**
@@ -2117,8 +2154,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldPgv3ESet = pgv3ESet;
         pgv3 = PGV3_EDEFAULT;
         pgv3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__PGV3, oldPgv3, PGV3_EDEFAULT, oldPgv3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__PGV3, oldPgv3,
+                    PGV3_EDEFAULT, oldPgv3ESet ) );
     }
 
     /**
@@ -2152,8 +2190,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         pgv4 = newPgv4;
         boolean oldPgv4ESet = pgv4ESet;
         pgv4ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_GAST1__PGV4, oldPgv4, pgv4, !oldPgv4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__PGV4, oldPgv4, pgv4,
+                    !oldPgv4ESet ) );
     }
 
     /**
@@ -2167,8 +2206,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldPgv4ESet = pgv4ESet;
         pgv4 = PGV4_EDEFAULT;
         pgv4ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__PGV4, oldPgv4, PGV4_EDEFAULT, oldPgv4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__PGV4, oldPgv4,
+                    PGV4_EDEFAULT, oldPgv4ESet ) );
     }
 
     /**
@@ -2202,8 +2242,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         pgv5 = newPgv5;
         boolean oldPgv5ESet = pgv5ESet;
         pgv5ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_GAST1__PGV5, oldPgv5, pgv5, !oldPgv5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__PGV5, oldPgv5, pgv5,
+                    !oldPgv5ESet ) );
     }
 
     /**
@@ -2217,8 +2258,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldPgv5ESet = pgv5ESet;
         pgv5 = PGV5_EDEFAULT;
         pgv5ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__PGV5, oldPgv5, PGV5_EDEFAULT, oldPgv5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__PGV5, oldPgv5,
+                    PGV5_EDEFAULT, oldPgv5ESet ) );
     }
 
     /**
@@ -2252,8 +2294,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         pgv6 = newPgv6;
         boolean oldPgv6ESet = pgv6ESet;
         pgv6ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_GAST1__PGV6, oldPgv6, pgv6, !oldPgv6ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__PGV6, oldPgv6, pgv6,
+                    !oldPgv6ESet ) );
     }
 
     /**
@@ -2267,8 +2310,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldPgv6ESet = pgv6ESet;
         pgv6 = PGV6_EDEFAULT;
         pgv6ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__PGV6, oldPgv6, PGV6_EDEFAULT, oldPgv6ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__PGV6, oldPgv6,
+                    PGV6_EDEFAULT, oldPgv6ESet ) );
     }
 
     /**
@@ -2317,8 +2361,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldRESet = rESet;
         r = R_EDEFAULT;
         rESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__R,
-                oldR, R_EDEFAULT, oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__R, oldR, R_EDEFAULT,
+                    oldRESet ) );
     }
 
     /**
@@ -2352,8 +2397,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         rmax = newRmax;
         boolean oldRmaxESet = rmaxESet;
         rmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_GAST1__RMAX, oldRmax, rmax, !oldRmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__RMAX, oldRmax, rmax,
+                    !oldRmaxESet ) );
     }
 
     /**
@@ -2367,8 +2413,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldRmaxESet = rmaxESet;
         rmax = RMAX_EDEFAULT;
         rmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__RMAX, oldRmax, RMAX_EDEFAULT, oldRmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__RMAX, oldRmax,
+                    RMAX_EDEFAULT, oldRmaxESet ) );
     }
 
     /**
@@ -2417,8 +2464,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldT1ESet = t1ESet;
         t1 = T1_EDEFAULT;
         t1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__T1, oldT1, T1_EDEFAULT, oldT1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__T1, oldT1, T1_EDEFAULT,
+                    oldT1ESet ) );
     }
 
     /**
@@ -2467,8 +2515,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldT2ESet = t2ESet;
         t2 = T2_EDEFAULT;
         t2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__T2, oldT2, T2_EDEFAULT, oldT2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__T2, oldT2, T2_EDEFAULT,
+                    oldT2ESet ) );
     }
 
     /**
@@ -2517,8 +2566,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldT3ESet = t3ESet;
         t3 = T3_EDEFAULT;
         t3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__T3, oldT3, T3_EDEFAULT, oldT3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__T3, oldT3, T3_EDEFAULT,
+                    oldT3ESet ) );
     }
 
     /**
@@ -2567,8 +2617,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldT4ESet = t4ESet;
         t4 = T4_EDEFAULT;
         t4ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__T4, oldT4, T4_EDEFAULT, oldT4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__T4, oldT4, T4_EDEFAULT,
+                    oldT4ESet ) );
     }
 
     /**
@@ -2617,8 +2668,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldT5ESet = t5ESet;
         t5 = T5_EDEFAULT;
         t5ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__T5, oldT5, T5_EDEFAULT, oldT5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__T5, oldT5, T5_EDEFAULT,
+                    oldT5ESet ) );
     }
 
     /**
@@ -2652,8 +2704,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         tltr = newTltr;
         boolean oldTltrESet = tltrESet;
         tltrESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_GAST1__TLTR, oldTltr, tltr, !oldTltrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__TLTR, oldTltr, tltr,
+                    !oldTltrESet ) );
     }
 
     /**
@@ -2667,8 +2720,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldTltrESet = tltrESet;
         tltr = TLTR_EDEFAULT;
         tltrESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__TLTR, oldTltr, TLTR_EDEFAULT, oldTltrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__TLTR, oldTltr,
+                    TLTR_EDEFAULT, oldTltrESet ) );
     }
 
     /**
@@ -2702,8 +2756,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         vmax = newVmax;
         boolean oldVmaxESet = vmaxESet;
         vmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_GAST1__VMAX, oldVmax, vmax, !oldVmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__VMAX, oldVmax, vmax,
+                    !oldVmaxESet ) );
     }
 
     /**
@@ -2717,8 +2772,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldVmaxESet = vmaxESet;
         vmax = VMAX_EDEFAULT;
         vmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__VMAX, oldVmax, VMAX_EDEFAULT, oldVmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__VMAX, oldVmax,
+                    VMAX_EDEFAULT, oldVmaxESet ) );
     }
 
     /**
@@ -2752,8 +2808,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         vmin = newVmin;
         boolean oldVminESet = vminESet;
         vminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_GAST1__VMIN, oldVmin, vmin, !oldVminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_GAST1__VMIN, oldVmin, vmin,
+                    !oldVminESet ) );
     }
 
     /**
@@ -2767,8 +2824,9 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
         boolean oldVminESet = vminESet;
         vmin = VMIN_EDEFAULT;
         vminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_GAST1__VMIN, oldVmin, VMIN_EDEFAULT, oldVminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_GAST1__VMIN, oldVmin,
+                    VMIN_EDEFAULT, oldVminESet ) );
     }
 
     /**
@@ -3178,7 +3236,7 @@ public class GovGAST1Impl extends TurbineGovernorDynamicsImpl implements GovGAST
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (a: " );
         if( aESet )
             result.append( a );

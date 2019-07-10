@@ -174,9 +174,10 @@ public class TurbineGovernorDynamicsImpl extends DynamicsFunctionBlockImpl imple
             asynchronousMachineDynamics = ( AsynchronousMachineDynamics ) eResolveProxy(
                     oldAsynchronousMachineDynamics );
             if( asynchronousMachineDynamics != oldAsynchronousMachineDynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.TURBINE_GOVERNOR_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS,
-                        oldAsynchronousMachineDynamics, asynchronousMachineDynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.TURBINE_GOVERNOR_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS,
+                            oldAsynchronousMachineDynamics, asynchronousMachineDynamics ) );
             }
         }
         return asynchronousMachineDynamics;
@@ -237,9 +238,11 @@ public class TurbineGovernorDynamicsImpl extends DynamicsFunctionBlockImpl imple
         else {
             boolean oldAsynchronousMachineDynamicsESet = asynchronousMachineDynamicsESet;
             asynchronousMachineDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TURBINE_GOVERNOR_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS, newAsynchronousMachineDynamics,
-                    newAsynchronousMachineDynamics, !oldAsynchronousMachineDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.TURBINE_GOVERNOR_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS,
+                        newAsynchronousMachineDynamics, newAsynchronousMachineDynamics,
+                        !oldAsynchronousMachineDynamicsESet ) );
         }
     }
 
@@ -283,9 +286,10 @@ public class TurbineGovernorDynamicsImpl extends DynamicsFunctionBlockImpl imple
         else {
             boolean oldAsynchronousMachineDynamicsESet = asynchronousMachineDynamicsESet;
             asynchronousMachineDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TURBINE_GOVERNOR_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS, null, null,
-                    oldAsynchronousMachineDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.TURBINE_GOVERNOR_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS, null, null,
+                        oldAsynchronousMachineDynamicsESet ) );
         }
     }
 
@@ -356,10 +360,11 @@ public class TurbineGovernorDynamicsImpl extends DynamicsFunctionBlockImpl imple
         else {
             boolean oldTurbineLoadControllerDynamicsESet = turbineLoadControllerDynamicsESet;
             turbineLoadControllerDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TURBINE_GOVERNOR_DYNAMICS__TURBINE_LOAD_CONTROLLER_DYNAMICS,
-                    newTurbineLoadControllerDynamics, newTurbineLoadControllerDynamics,
-                    !oldTurbineLoadControllerDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.TURBINE_GOVERNOR_DYNAMICS__TURBINE_LOAD_CONTROLLER_DYNAMICS,
+                        newTurbineLoadControllerDynamics, newTurbineLoadControllerDynamics,
+                        !oldTurbineLoadControllerDynamicsESet ) );
         }
     }
 
@@ -403,9 +408,10 @@ public class TurbineGovernorDynamicsImpl extends DynamicsFunctionBlockImpl imple
         else {
             boolean oldTurbineLoadControllerDynamicsESet = turbineLoadControllerDynamicsESet;
             turbineLoadControllerDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TURBINE_GOVERNOR_DYNAMICS__TURBINE_LOAD_CONTROLLER_DYNAMICS, null, null,
-                    oldTurbineLoadControllerDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.TURBINE_GOVERNOR_DYNAMICS__TURBINE_LOAD_CONTROLLER_DYNAMICS, null, null,
+                        oldTurbineLoadControllerDynamicsESet ) );
         }
     }
 

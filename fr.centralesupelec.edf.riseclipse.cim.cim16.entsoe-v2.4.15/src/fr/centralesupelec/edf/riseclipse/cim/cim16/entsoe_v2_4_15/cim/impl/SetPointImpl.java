@@ -142,8 +142,9 @@ public class SetPointImpl extends AnalogControlImpl implements SetPoint {
         normalValue = newNormalValue;
         boolean oldNormalValueESet = normalValueESet;
         normalValueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SET_POINT__NORMAL_VALUE, oldNormalValue, normalValue, !oldNormalValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SET_POINT__NORMAL_VALUE, oldNormalValue,
+                    normalValue, !oldNormalValueESet ) );
     }
 
     /**
@@ -157,8 +158,9 @@ public class SetPointImpl extends AnalogControlImpl implements SetPoint {
         boolean oldNormalValueESet = normalValueESet;
         normalValue = NORMAL_VALUE_EDEFAULT;
         normalValueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SET_POINT__NORMAL_VALUE, oldNormalValue, NORMAL_VALUE_EDEFAULT, oldNormalValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SET_POINT__NORMAL_VALUE,
+                    oldNormalValue, NORMAL_VALUE_EDEFAULT, oldNormalValueESet ) );
     }
 
     /**
@@ -192,8 +194,9 @@ public class SetPointImpl extends AnalogControlImpl implements SetPoint {
         value = newValue;
         boolean oldValueESet = valueESet;
         valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SET_POINT__VALUE, oldValue, value, !oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SET_POINT__VALUE, oldValue, value,
+                    !oldValueESet ) );
     }
 
     /**
@@ -207,8 +210,9 @@ public class SetPointImpl extends AnalogControlImpl implements SetPoint {
         boolean oldValueESet = valueESet;
         value = VALUE_EDEFAULT;
         valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SET_POINT__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SET_POINT__VALUE, oldValue,
+                    VALUE_EDEFAULT, oldValueESet ) );
     }
 
     /**
@@ -298,7 +302,7 @@ public class SetPointImpl extends AnalogControlImpl implements SetPoint {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (normalValue: " );
         if( normalValueESet )
             result.append( normalValue );

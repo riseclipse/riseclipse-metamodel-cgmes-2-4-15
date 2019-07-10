@@ -149,9 +149,10 @@ public class CompositeSwitchImpl extends EquipmentImpl implements CompositeSwitc
         boolean oldCompositeSwitchTypeESet = compositeSwitchTypeESet;
         compositeSwitchType = COMPOSITE_SWITCH_TYPE_EDEFAULT;
         compositeSwitchTypeESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.COMPOSITE_SWITCH__COMPOSITE_SWITCH_TYPE,
-                        oldCompositeSwitchType, COMPOSITE_SWITCH_TYPE_EDEFAULT, oldCompositeSwitchTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.COMPOSITE_SWITCH__COMPOSITE_SWITCH_TYPE, oldCompositeSwitchType,
+                    COMPOSITE_SWITCH_TYPE_EDEFAULT, oldCompositeSwitchTypeESet ) );
     }
 
     /**
@@ -307,7 +308,7 @@ public class CompositeSwitchImpl extends EquipmentImpl implements CompositeSwitc
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (compositeSwitchType: " );
         if( compositeSwitchTypeESet )
             result.append( compositeSwitchType );

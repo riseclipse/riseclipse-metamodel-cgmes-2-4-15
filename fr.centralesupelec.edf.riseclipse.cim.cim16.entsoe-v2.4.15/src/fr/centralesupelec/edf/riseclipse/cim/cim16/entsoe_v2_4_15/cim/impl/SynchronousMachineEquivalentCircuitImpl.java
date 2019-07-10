@@ -413,8 +413,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         r1d = newR1d;
         boolean oldR1dESet = r1dESet;
         r1dESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__R1D, oldR1d, r1d, !oldR1dESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__R1D, oldR1d, r1d, !oldR1dESet ) );
     }
 
     /**
@@ -428,8 +429,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         boolean oldR1dESet = r1dESet;
         r1d = R1D_EDEFAULT;
         r1dESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__R1D, oldR1d, R1D_EDEFAULT, oldR1dESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__R1D, oldR1d, R1D_EDEFAULT, oldR1dESet ) );
     }
 
     /**
@@ -463,8 +465,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         r1q = newR1q;
         boolean oldR1qESet = r1qESet;
         r1qESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__R1Q, oldR1q, r1q, !oldR1qESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__R1Q, oldR1q, r1q, !oldR1qESet ) );
     }
 
     /**
@@ -478,8 +481,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         boolean oldR1qESet = r1qESet;
         r1q = R1Q_EDEFAULT;
         r1qESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__R1Q, oldR1q, R1Q_EDEFAULT, oldR1qESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__R1Q, oldR1q, R1Q_EDEFAULT, oldR1qESet ) );
     }
 
     /**
@@ -513,8 +517,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         r2q = newR2q;
         boolean oldR2qESet = r2qESet;
         r2qESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__R2Q, oldR2q, r2q, !oldR2qESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__R2Q, oldR2q, r2q, !oldR2qESet ) );
     }
 
     /**
@@ -528,8 +533,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         boolean oldR2qESet = r2qESet;
         r2q = R2Q_EDEFAULT;
         r2qESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__R2Q, oldR2q, R2Q_EDEFAULT, oldR2qESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__R2Q, oldR2q, R2Q_EDEFAULT, oldR2qESet ) );
     }
 
     /**
@@ -563,8 +569,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         rfd = newRfd;
         boolean oldRfdESet = rfdESet;
         rfdESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__RFD, oldRfd, rfd, !oldRfdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__RFD, oldRfd, rfd, !oldRfdESet ) );
     }
 
     /**
@@ -578,8 +585,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         boolean oldRfdESet = rfdESet;
         rfd = RFD_EDEFAULT;
         rfdESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__RFD, oldRfd, RFD_EDEFAULT, oldRfdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__RFD, oldRfd, RFD_EDEFAULT, oldRfdESet ) );
     }
 
     /**
@@ -613,8 +621,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         x1d = newX1d;
         boolean oldX1dESet = x1dESet;
         x1dESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__X1D, oldX1d, x1d, !oldX1dESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__X1D, oldX1d, x1d, !oldX1dESet ) );
     }
 
     /**
@@ -628,8 +637,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         boolean oldX1dESet = x1dESet;
         x1d = X1D_EDEFAULT;
         x1dESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__X1D, oldX1d, X1D_EDEFAULT, oldX1dESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__X1D, oldX1d, X1D_EDEFAULT, oldX1dESet ) );
     }
 
     /**
@@ -663,8 +673,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         x1q = newX1q;
         boolean oldX1qESet = x1qESet;
         x1qESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__X1Q, oldX1q, x1q, !oldX1qESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__X1Q, oldX1q, x1q, !oldX1qESet ) );
     }
 
     /**
@@ -678,8 +689,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         boolean oldX1qESet = x1qESet;
         x1q = X1Q_EDEFAULT;
         x1qESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__X1Q, oldX1q, X1Q_EDEFAULT, oldX1qESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__X1Q, oldX1q, X1Q_EDEFAULT, oldX1qESet ) );
     }
 
     /**
@@ -713,8 +725,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         x2q = newX2q;
         boolean oldX2qESet = x2qESet;
         x2qESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__X2Q, oldX2q, x2q, !oldX2qESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__X2Q, oldX2q, x2q, !oldX2qESet ) );
     }
 
     /**
@@ -728,8 +741,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         boolean oldX2qESet = x2qESet;
         x2q = X2Q_EDEFAULT;
         x2qESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__X2Q, oldX2q, X2Q_EDEFAULT, oldX2qESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__X2Q, oldX2q, X2Q_EDEFAULT, oldX2qESet ) );
     }
 
     /**
@@ -763,8 +777,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         xad = newXad;
         boolean oldXadESet = xadESet;
         xadESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XAD, oldXad, xad, !oldXadESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XAD, oldXad, xad, !oldXadESet ) );
     }
 
     /**
@@ -778,8 +793,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         boolean oldXadESet = xadESet;
         xad = XAD_EDEFAULT;
         xadESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XAD, oldXad, XAD_EDEFAULT, oldXadESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XAD, oldXad, XAD_EDEFAULT, oldXadESet ) );
     }
 
     /**
@@ -813,8 +829,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         xaq = newXaq;
         boolean oldXaqESet = xaqESet;
         xaqESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XAQ, oldXaq, xaq, !oldXaqESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XAQ, oldXaq, xaq, !oldXaqESet ) );
     }
 
     /**
@@ -828,8 +845,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         boolean oldXaqESet = xaqESet;
         xaq = XAQ_EDEFAULT;
         xaqESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XAQ, oldXaq, XAQ_EDEFAULT, oldXaqESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XAQ, oldXaq, XAQ_EDEFAULT, oldXaqESet ) );
     }
 
     /**
@@ -863,8 +881,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         xf1d = newXf1d;
         boolean oldXf1dESet = xf1dESet;
         xf1dESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XF1D, oldXf1d, xf1d, !oldXf1dESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XF1D, oldXf1d, xf1d, !oldXf1dESet ) );
     }
 
     /**
@@ -878,8 +897,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         boolean oldXf1dESet = xf1dESet;
         xf1d = XF1D_EDEFAULT;
         xf1dESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XF1D, oldXf1d, XF1D_EDEFAULT, oldXf1dESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XF1D, oldXf1d, XF1D_EDEFAULT, oldXf1dESet ) );
     }
 
     /**
@@ -913,8 +933,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         xfd = newXfd;
         boolean oldXfdESet = xfdESet;
         xfdESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XFD, oldXfd, xfd, !oldXfdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XFD, oldXfd, xfd, !oldXfdESet ) );
     }
 
     /**
@@ -928,8 +949,9 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
         boolean oldXfdESet = xfdESet;
         xfd = XFD_EDEFAULT;
         xfdESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XFD, oldXfd, XFD_EDEFAULT, oldXfdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XFD, oldXfd, XFD_EDEFAULT, oldXfdESet ) );
     }
 
     /**
@@ -1109,7 +1131,7 @@ public class SynchronousMachineEquivalentCircuitImpl extends SynchronousMachineD
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (r1d: " );
         if( r1dESet )
             result.append( r1d );

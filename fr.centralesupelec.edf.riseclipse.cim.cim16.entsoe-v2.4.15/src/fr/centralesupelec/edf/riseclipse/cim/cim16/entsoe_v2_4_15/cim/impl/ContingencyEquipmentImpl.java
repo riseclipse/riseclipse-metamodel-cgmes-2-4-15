@@ -152,9 +152,10 @@ public class ContingencyEquipmentImpl extends ContingencyElementImpl implements 
         boolean oldContingentStatusESet = contingentStatusESet;
         contingentStatus = CONTINGENT_STATUS_EDEFAULT;
         contingentStatusESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.CONTINGENCY_EQUIPMENT__CONTINGENT_STATUS,
-                        oldContingentStatus, CONTINGENT_STATUS_EDEFAULT, oldContingentStatusESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONTINGENCY_EQUIPMENT__CONTINGENT_STATUS, oldContingentStatus,
+                    CONTINGENT_STATUS_EDEFAULT, oldContingentStatusESet ) );
     }
 
     /**
@@ -207,18 +208,21 @@ public class ContingencyEquipmentImpl extends ContingencyElementImpl implements 
     public void setEquipment( Equipment newEquipment ) {
         if( newEquipment != equipment ) {
             NotificationChain msgs = null;
-            if( equipment != null ) msgs = ( ( InternalEObject ) equipment ).eInverseRemove( this,
-                    CimPackage.EQUIPMENT__CONTINGENCY_EQUIPMENT, Equipment.class, msgs );
-            if( newEquipment != null ) msgs = ( ( InternalEObject ) newEquipment ).eInverseAdd( this,
-                    CimPackage.EQUIPMENT__CONTINGENCY_EQUIPMENT, Equipment.class, msgs );
+            if( equipment != null )
+                msgs = ( ( InternalEObject ) equipment ).eInverseRemove( this,
+                        CimPackage.EQUIPMENT__CONTINGENCY_EQUIPMENT, Equipment.class, msgs );
+            if( newEquipment != null )
+                msgs = ( ( InternalEObject ) newEquipment ).eInverseAdd( this,
+                        CimPackage.EQUIPMENT__CONTINGENCY_EQUIPMENT, Equipment.class, msgs );
             msgs = basicSetEquipment( newEquipment, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldEquipmentESet = equipmentESet;
             equipmentESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CONTINGENCY_EQUIPMENT__EQUIPMENT, newEquipment, newEquipment, !oldEquipmentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONTINGENCY_EQUIPMENT__EQUIPMENT,
+                        newEquipment, newEquipment, !oldEquipmentESet ) );
         }
     }
 
@@ -260,8 +264,9 @@ public class ContingencyEquipmentImpl extends ContingencyElementImpl implements 
         else {
             boolean oldEquipmentESet = equipmentESet;
             equipmentESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONTINGENCY_EQUIPMENT__EQUIPMENT, null, null, oldEquipmentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CONTINGENCY_EQUIPMENT__EQUIPMENT,
+                        null, null, oldEquipmentESet ) );
         }
     }
 
@@ -284,8 +289,9 @@ public class ContingencyEquipmentImpl extends ContingencyElementImpl implements 
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CONTINGENCY_EQUIPMENT__EQUIPMENT:
-            if( equipment != null ) msgs = ( ( InternalEObject ) equipment ).eInverseRemove( this,
-                    CimPackage.EQUIPMENT__CONTINGENCY_EQUIPMENT, Equipment.class, msgs );
+            if( equipment != null )
+                msgs = ( ( InternalEObject ) equipment ).eInverseRemove( this,
+                        CimPackage.EQUIPMENT__CONTINGENCY_EQUIPMENT, Equipment.class, msgs );
             return basicSetEquipment( ( Equipment ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -382,7 +388,7 @@ public class ContingencyEquipmentImpl extends ContingencyElementImpl implements 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (contingentStatus: " );
         if( contingentStatusESet )
             result.append( contingentStatus );

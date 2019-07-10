@@ -236,8 +236,9 @@ public class BasicIntervalScheduleImpl extends IdentifiedObjectImpl implements B
         startTime = newStartTime;
         boolean oldStartTimeESet = startTimeESet;
         startTimeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BASIC_INTERVAL_SCHEDULE__START_TIME, oldStartTime, startTime, !oldStartTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BASIC_INTERVAL_SCHEDULE__START_TIME,
+                    oldStartTime, startTime, !oldStartTimeESet ) );
     }
 
     /**
@@ -251,8 +252,9 @@ public class BasicIntervalScheduleImpl extends IdentifiedObjectImpl implements B
         boolean oldStartTimeESet = startTimeESet;
         startTime = START_TIME_EDEFAULT;
         startTimeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BASIC_INTERVAL_SCHEDULE__START_TIME, oldStartTime, START_TIME_EDEFAULT, oldStartTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BASIC_INTERVAL_SCHEDULE__START_TIME,
+                    oldStartTime, START_TIME_EDEFAULT, oldStartTimeESet ) );
     }
 
     /**
@@ -286,9 +288,10 @@ public class BasicIntervalScheduleImpl extends IdentifiedObjectImpl implements B
         value1Multiplier = newValue1Multiplier == null ? VALUE1_MULTIPLIER_EDEFAULT : newValue1Multiplier;
         boolean oldValue1MultiplierESet = value1MultiplierESet;
         value1MultiplierESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.BASIC_INTERVAL_SCHEDULE__VALUE1_MULTIPLIER,
-                        oldValue1Multiplier, value1Multiplier, !oldValue1MultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.BASIC_INTERVAL_SCHEDULE__VALUE1_MULTIPLIER, oldValue1Multiplier, value1Multiplier,
+                    !oldValue1MultiplierESet ) );
     }
 
     /**
@@ -302,9 +305,10 @@ public class BasicIntervalScheduleImpl extends IdentifiedObjectImpl implements B
         boolean oldValue1MultiplierESet = value1MultiplierESet;
         value1Multiplier = VALUE1_MULTIPLIER_EDEFAULT;
         value1MultiplierESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.BASIC_INTERVAL_SCHEDULE__VALUE1_MULTIPLIER,
-                        oldValue1Multiplier, VALUE1_MULTIPLIER_EDEFAULT, oldValue1MultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.BASIC_INTERVAL_SCHEDULE__VALUE1_MULTIPLIER, oldValue1Multiplier,
+                    VALUE1_MULTIPLIER_EDEFAULT, oldValue1MultiplierESet ) );
     }
 
     /**
@@ -338,8 +342,9 @@ public class BasicIntervalScheduleImpl extends IdentifiedObjectImpl implements B
         value1Unit = newValue1Unit == null ? VALUE1_UNIT_EDEFAULT : newValue1Unit;
         boolean oldValue1UnitESet = value1UnitESet;
         value1UnitESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BASIC_INTERVAL_SCHEDULE__VALUE1_UNIT, oldValue1Unit, value1Unit, !oldValue1UnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BASIC_INTERVAL_SCHEDULE__VALUE1_UNIT,
+                    oldValue1Unit, value1Unit, !oldValue1UnitESet ) );
     }
 
     /**
@@ -389,9 +394,10 @@ public class BasicIntervalScheduleImpl extends IdentifiedObjectImpl implements B
         value2Multiplier = newValue2Multiplier == null ? VALUE2_MULTIPLIER_EDEFAULT : newValue2Multiplier;
         boolean oldValue2MultiplierESet = value2MultiplierESet;
         value2MultiplierESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.BASIC_INTERVAL_SCHEDULE__VALUE2_MULTIPLIER,
-                        oldValue2Multiplier, value2Multiplier, !oldValue2MultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.BASIC_INTERVAL_SCHEDULE__VALUE2_MULTIPLIER, oldValue2Multiplier, value2Multiplier,
+                    !oldValue2MultiplierESet ) );
     }
 
     /**
@@ -405,9 +411,10 @@ public class BasicIntervalScheduleImpl extends IdentifiedObjectImpl implements B
         boolean oldValue2MultiplierESet = value2MultiplierESet;
         value2Multiplier = VALUE2_MULTIPLIER_EDEFAULT;
         value2MultiplierESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.BASIC_INTERVAL_SCHEDULE__VALUE2_MULTIPLIER,
-                        oldValue2Multiplier, VALUE2_MULTIPLIER_EDEFAULT, oldValue2MultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.BASIC_INTERVAL_SCHEDULE__VALUE2_MULTIPLIER, oldValue2Multiplier,
+                    VALUE2_MULTIPLIER_EDEFAULT, oldValue2MultiplierESet ) );
     }
 
     /**
@@ -441,8 +448,9 @@ public class BasicIntervalScheduleImpl extends IdentifiedObjectImpl implements B
         value2Unit = newValue2Unit == null ? VALUE2_UNIT_EDEFAULT : newValue2Unit;
         boolean oldValue2UnitESet = value2UnitESet;
         value2UnitESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BASIC_INTERVAL_SCHEDULE__VALUE2_UNIT, oldValue2Unit, value2Unit, !oldValue2UnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BASIC_INTERVAL_SCHEDULE__VALUE2_UNIT,
+                    oldValue2Unit, value2Unit, !oldValue2UnitESet ) );
     }
 
     /**
@@ -578,7 +586,7 @@ public class BasicIntervalScheduleImpl extends IdentifiedObjectImpl implements B
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (startTime: " );
         if( startTimeESet )
             result.append( startTime );

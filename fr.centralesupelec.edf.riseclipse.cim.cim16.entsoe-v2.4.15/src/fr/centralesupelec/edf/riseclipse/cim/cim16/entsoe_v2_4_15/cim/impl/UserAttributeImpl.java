@@ -205,8 +205,9 @@ public class UserAttributeImpl extends CimObjectWithIDImpl implements UserAttrib
         name = newName;
         boolean oldNameESet = nameESet;
         nameESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.USER_ATTRIBUTE__NAME, oldName, name, !oldNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.USER_ATTRIBUTE__NAME, oldName, name,
+                    !oldNameESet ) );
     }
 
     /**
@@ -220,8 +221,9 @@ public class UserAttributeImpl extends CimObjectWithIDImpl implements UserAttrib
         boolean oldNameESet = nameESet;
         name = NAME_EDEFAULT;
         nameESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.USER_ATTRIBUTE__NAME, oldName, NAME_EDEFAULT, oldNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USER_ATTRIBUTE__NAME, oldName,
+                    NAME_EDEFAULT, oldNameESet ) );
     }
 
     /**
@@ -326,18 +328,21 @@ public class UserAttributeImpl extends CimObjectWithIDImpl implements UserAttrib
     public void setValue( StringQuantity newValue ) {
         if( newValue != value ) {
             NotificationChain msgs = null;
-            if( value != null ) msgs = ( ( InternalEObject ) value ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.USER_ATTRIBUTE__VALUE, null, msgs );
-            if( newValue != null ) msgs = ( ( InternalEObject ) newValue ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.USER_ATTRIBUTE__VALUE, null, msgs );
+            if( value != null )
+                msgs = ( ( InternalEObject ) value ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.USER_ATTRIBUTE__VALUE, null, msgs );
+            if( newValue != null )
+                msgs = ( ( InternalEObject ) newValue ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.USER_ATTRIBUTE__VALUE, null, msgs );
             msgs = basicSetValue( newValue, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldValueESet = valueESet;
             valueESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.USER_ATTRIBUTE__VALUE, newValue, newValue, !oldValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.USER_ATTRIBUTE__VALUE, newValue,
+                        newValue, !oldValueESet ) );
         }
     }
 
@@ -379,8 +384,9 @@ public class UserAttributeImpl extends CimObjectWithIDImpl implements UserAttrib
         else {
             boolean oldValueESet = valueESet;
             valueESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.USER_ATTRIBUTE__VALUE, null, null, oldValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USER_ATTRIBUTE__VALUE, null, null,
+                        oldValueESet ) );
         }
     }
 
@@ -469,18 +475,21 @@ public class UserAttributeImpl extends CimObjectWithIDImpl implements UserAttrib
     public void setTransaction( Transaction newTransaction ) {
         if( newTransaction != transaction ) {
             NotificationChain msgs = null;
-            if( transaction != null ) msgs = ( ( InternalEObject ) transaction ).eInverseRemove( this,
-                    CimPackage.TRANSACTION__USER_ATTRIBUTES, Transaction.class, msgs );
-            if( newTransaction != null ) msgs = ( ( InternalEObject ) newTransaction ).eInverseAdd( this,
-                    CimPackage.TRANSACTION__USER_ATTRIBUTES, Transaction.class, msgs );
+            if( transaction != null )
+                msgs = ( ( InternalEObject ) transaction ).eInverseRemove( this,
+                        CimPackage.TRANSACTION__USER_ATTRIBUTES, Transaction.class, msgs );
+            if( newTransaction != null )
+                msgs = ( ( InternalEObject ) newTransaction ).eInverseAdd( this,
+                        CimPackage.TRANSACTION__USER_ATTRIBUTES, Transaction.class, msgs );
             msgs = basicSetTransaction( newTransaction, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTransactionESet = transactionESet;
             transactionESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.USER_ATTRIBUTE__TRANSACTION, newTransaction, newTransaction, !oldTransactionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.USER_ATTRIBUTE__TRANSACTION,
+                        newTransaction, newTransaction, !oldTransactionESet ) );
         }
     }
 
@@ -522,8 +531,9 @@ public class UserAttributeImpl extends CimObjectWithIDImpl implements UserAttrib
         else {
             boolean oldTransactionESet = transactionESet;
             transactionESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.USER_ATTRIBUTE__TRANSACTION, null, null, oldTransactionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USER_ATTRIBUTE__TRANSACTION, null,
+                        null, oldTransactionESet ) );
         }
     }
 
@@ -547,8 +557,9 @@ public class UserAttributeImpl extends CimObjectWithIDImpl implements UserAttrib
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.USER_ATTRIBUTE__TRANSACTION:
-            if( transaction != null ) msgs = ( ( InternalEObject ) transaction ).eInverseRemove( this,
-                    CimPackage.TRANSACTION__USER_ATTRIBUTES, Transaction.class, msgs );
+            if( transaction != null )
+                msgs = ( ( InternalEObject ) transaction ).eInverseRemove( this,
+                        CimPackage.TRANSACTION__USER_ATTRIBUTES, Transaction.class, msgs );
             return basicSetTransaction( ( Transaction ) otherEnd, msgs );
         case CimPackage.USER_ATTRIBUTE__PROCEDURE_DATA_SETS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getProcedureDataSets() )
@@ -684,7 +695,7 @@ public class UserAttributeImpl extends CimObjectWithIDImpl implements UserAttrib
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (name: " );
         if( nameESet )
             result.append( name );

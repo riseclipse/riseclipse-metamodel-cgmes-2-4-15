@@ -181,9 +181,10 @@ public class TargetLevelScheduleImpl extends CurveImpl implements TargetLevelSch
         boolean oldHighLevelLimitESet = highLevelLimitESet;
         highLevelLimit = HIGH_LEVEL_LIMIT_EDEFAULT;
         highLevelLimitESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.TARGET_LEVEL_SCHEDULE__HIGH_LEVEL_LIMIT,
-                        oldHighLevelLimit, HIGH_LEVEL_LIMIT_EDEFAULT, oldHighLevelLimitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.TARGET_LEVEL_SCHEDULE__HIGH_LEVEL_LIMIT, oldHighLevelLimit, HIGH_LEVEL_LIMIT_EDEFAULT,
+                    oldHighLevelLimitESet ) );
     }
 
     /**
@@ -288,18 +289,21 @@ public class TargetLevelScheduleImpl extends CurveImpl implements TargetLevelSch
     public void setReservoir( Reservoir newReservoir ) {
         if( newReservoir != reservoir ) {
             NotificationChain msgs = null;
-            if( reservoir != null ) msgs = ( ( InternalEObject ) reservoir ).eInverseRemove( this,
-                    CimPackage.RESERVOIR__TARGET_LEVEL_SCHEDULE, Reservoir.class, msgs );
-            if( newReservoir != null ) msgs = ( ( InternalEObject ) newReservoir ).eInverseAdd( this,
-                    CimPackage.RESERVOIR__TARGET_LEVEL_SCHEDULE, Reservoir.class, msgs );
+            if( reservoir != null )
+                msgs = ( ( InternalEObject ) reservoir ).eInverseRemove( this,
+                        CimPackage.RESERVOIR__TARGET_LEVEL_SCHEDULE, Reservoir.class, msgs );
+            if( newReservoir != null )
+                msgs = ( ( InternalEObject ) newReservoir ).eInverseAdd( this,
+                        CimPackage.RESERVOIR__TARGET_LEVEL_SCHEDULE, Reservoir.class, msgs );
             msgs = basicSetReservoir( newReservoir, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldReservoirESet = reservoirESet;
             reservoirESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TARGET_LEVEL_SCHEDULE__RESERVOIR, newReservoir, newReservoir, !oldReservoirESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TARGET_LEVEL_SCHEDULE__RESERVOIR,
+                        newReservoir, newReservoir, !oldReservoirESet ) );
         }
     }
 
@@ -341,8 +345,9 @@ public class TargetLevelScheduleImpl extends CurveImpl implements TargetLevelSch
         else {
             boolean oldReservoirESet = reservoirESet;
             reservoirESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TARGET_LEVEL_SCHEDULE__RESERVOIR, null, null, oldReservoirESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TARGET_LEVEL_SCHEDULE__RESERVOIR,
+                        null, null, oldReservoirESet ) );
         }
     }
 
@@ -365,8 +370,9 @@ public class TargetLevelScheduleImpl extends CurveImpl implements TargetLevelSch
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.TARGET_LEVEL_SCHEDULE__RESERVOIR:
-            if( reservoir != null ) msgs = ( ( InternalEObject ) reservoir ).eInverseRemove( this,
-                    CimPackage.RESERVOIR__TARGET_LEVEL_SCHEDULE, Reservoir.class, msgs );
+            if( reservoir != null )
+                msgs = ( ( InternalEObject ) reservoir ).eInverseRemove( this,
+                        CimPackage.RESERVOIR__TARGET_LEVEL_SCHEDULE, Reservoir.class, msgs );
             return basicSetReservoir( ( Reservoir ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -473,7 +479,7 @@ public class TargetLevelScheduleImpl extends CurveImpl implements TargetLevelSch
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (highLevelLimit: " );
         if( highLevelLimitESet )
             result.append( highLevelLimit );

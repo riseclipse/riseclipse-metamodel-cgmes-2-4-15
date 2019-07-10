@@ -255,8 +255,9 @@ public class WindAeroLinearIECImpl extends IdentifiedObjectImpl implements WindA
         dpomega = newDpomega;
         boolean oldDpomegaESet = dpomegaESet;
         dpomegaESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_AERO_LINEAR_IEC__DPOMEGA, oldDpomega, dpomega, !oldDpomegaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_AERO_LINEAR_IEC__DPOMEGA,
+                    oldDpomega, dpomega, !oldDpomegaESet ) );
     }
 
     /**
@@ -270,8 +271,9 @@ public class WindAeroLinearIECImpl extends IdentifiedObjectImpl implements WindA
         boolean oldDpomegaESet = dpomegaESet;
         dpomega = DPOMEGA_EDEFAULT;
         dpomegaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_AERO_LINEAR_IEC__DPOMEGA, oldDpomega, DPOMEGA_EDEFAULT, oldDpomegaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_AERO_LINEAR_IEC__DPOMEGA,
+                    oldDpomega, DPOMEGA_EDEFAULT, oldDpomegaESet ) );
     }
 
     /**
@@ -305,8 +307,9 @@ public class WindAeroLinearIECImpl extends IdentifiedObjectImpl implements WindA
         dptheta = newDptheta;
         boolean oldDpthetaESet = dpthetaESet;
         dpthetaESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_AERO_LINEAR_IEC__DPTHETA, oldDptheta, dptheta, !oldDpthetaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_AERO_LINEAR_IEC__DPTHETA,
+                    oldDptheta, dptheta, !oldDpthetaESet ) );
     }
 
     /**
@@ -320,8 +323,9 @@ public class WindAeroLinearIECImpl extends IdentifiedObjectImpl implements WindA
         boolean oldDpthetaESet = dpthetaESet;
         dptheta = DPTHETA_EDEFAULT;
         dpthetaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_AERO_LINEAR_IEC__DPTHETA, oldDptheta, DPTHETA_EDEFAULT, oldDpthetaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_AERO_LINEAR_IEC__DPTHETA,
+                    oldDptheta, DPTHETA_EDEFAULT, oldDpthetaESet ) );
     }
 
     /**
@@ -355,8 +359,9 @@ public class WindAeroLinearIECImpl extends IdentifiedObjectImpl implements WindA
         omegazero = newOmegazero;
         boolean oldOmegazeroESet = omegazeroESet;
         omegazeroESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_AERO_LINEAR_IEC__OMEGAZERO, oldOmegazero, omegazero, !oldOmegazeroESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_AERO_LINEAR_IEC__OMEGAZERO,
+                    oldOmegazero, omegazero, !oldOmegazeroESet ) );
     }
 
     /**
@@ -370,8 +375,9 @@ public class WindAeroLinearIECImpl extends IdentifiedObjectImpl implements WindA
         boolean oldOmegazeroESet = omegazeroESet;
         omegazero = OMEGAZERO_EDEFAULT;
         omegazeroESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_AERO_LINEAR_IEC__OMEGAZERO, oldOmegazero, OMEGAZERO_EDEFAULT, oldOmegazeroESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_AERO_LINEAR_IEC__OMEGAZERO,
+                    oldOmegazero, OMEGAZERO_EDEFAULT, oldOmegazeroESet ) );
     }
 
     /**
@@ -405,8 +411,9 @@ public class WindAeroLinearIECImpl extends IdentifiedObjectImpl implements WindA
         pavail = newPavail;
         boolean oldPavailESet = pavailESet;
         pavailESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_AERO_LINEAR_IEC__PAVAIL, oldPavail, pavail, !oldPavailESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_AERO_LINEAR_IEC__PAVAIL, oldPavail,
+                    pavail, !oldPavailESet ) );
     }
 
     /**
@@ -420,8 +427,9 @@ public class WindAeroLinearIECImpl extends IdentifiedObjectImpl implements WindA
         boolean oldPavailESet = pavailESet;
         pavail = PAVAIL_EDEFAULT;
         pavailESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_AERO_LINEAR_IEC__PAVAIL, oldPavail, PAVAIL_EDEFAULT, oldPavailESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_AERO_LINEAR_IEC__PAVAIL,
+                    oldPavail, PAVAIL_EDEFAULT, oldPavailESet ) );
     }
 
     /**
@@ -455,8 +463,9 @@ public class WindAeroLinearIECImpl extends IdentifiedObjectImpl implements WindA
         thetazero = newThetazero;
         boolean oldThetazeroESet = thetazeroESet;
         thetazeroESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_AERO_LINEAR_IEC__THETAZERO, oldThetazero, thetazero, !oldThetazeroESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_AERO_LINEAR_IEC__THETAZERO,
+                    oldThetazero, thetazero, !oldThetazeroESet ) );
     }
 
     /**
@@ -470,8 +479,9 @@ public class WindAeroLinearIECImpl extends IdentifiedObjectImpl implements WindA
         boolean oldThetazeroESet = thetazeroESet;
         thetazero = THETAZERO_EDEFAULT;
         thetazeroESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_AERO_LINEAR_IEC__THETAZERO, oldThetazero, THETAZERO_EDEFAULT, oldThetazeroESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_AERO_LINEAR_IEC__THETAZERO,
+                    oldThetazero, THETAZERO_EDEFAULT, oldThetazeroESet ) );
     }
 
     /**
@@ -495,9 +505,10 @@ public class WindAeroLinearIECImpl extends IdentifiedObjectImpl implements WindA
             InternalEObject oldWindGenTurbineType3IEC = ( InternalEObject ) windGenTurbineType3IEC;
             windGenTurbineType3IEC = ( WindGenTurbineType3IEC ) eResolveProxy( oldWindGenTurbineType3IEC );
             if( windGenTurbineType3IEC != oldWindGenTurbineType3IEC ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.WIND_AERO_LINEAR_IEC__WIND_GEN_TURBINE_TYPE3_IEC, oldWindGenTurbineType3IEC,
-                        windGenTurbineType3IEC ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.WIND_AERO_LINEAR_IEC__WIND_GEN_TURBINE_TYPE3_IEC, oldWindGenTurbineType3IEC,
+                            windGenTurbineType3IEC ) );
             }
         }
         return windGenTurbineType3IEC;
@@ -558,9 +569,10 @@ public class WindAeroLinearIECImpl extends IdentifiedObjectImpl implements WindA
         else {
             boolean oldWindGenTurbineType3IECESet = windGenTurbineType3IECESet;
             windGenTurbineType3IECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_AERO_LINEAR_IEC__WIND_GEN_TURBINE_TYPE3_IEC, newWindGenTurbineType3IEC,
-                    newWindGenTurbineType3IEC, !oldWindGenTurbineType3IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_AERO_LINEAR_IEC__WIND_GEN_TURBINE_TYPE3_IEC, newWindGenTurbineType3IEC,
+                        newWindGenTurbineType3IEC, !oldWindGenTurbineType3IECESet ) );
         }
     }
 
@@ -603,9 +615,10 @@ public class WindAeroLinearIECImpl extends IdentifiedObjectImpl implements WindA
         else {
             boolean oldWindGenTurbineType3IECESet = windGenTurbineType3IECESet;
             windGenTurbineType3IECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_AERO_LINEAR_IEC__WIND_GEN_TURBINE_TYPE3_IEC, null, null,
-                    oldWindGenTurbineType3IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_AERO_LINEAR_IEC__WIND_GEN_TURBINE_TYPE3_IEC, null, null,
+                        oldWindGenTurbineType3IECESet ) );
         }
     }
 
@@ -769,7 +782,7 @@ public class WindAeroLinearIECImpl extends IdentifiedObjectImpl implements WindA
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (dpomega: " );
         if( dpomegaESet )
             result.append( dpomega );

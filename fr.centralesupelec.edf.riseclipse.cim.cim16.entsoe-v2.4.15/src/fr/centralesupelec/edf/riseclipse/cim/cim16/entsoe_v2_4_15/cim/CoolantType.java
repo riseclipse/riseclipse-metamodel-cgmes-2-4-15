@@ -117,7 +117,11 @@ public enum CoolantType implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final CoolantType[] VALUES_ARRAY = new CoolantType[] { AIR, HYDROGEN_GAS, WATER, };
+    private static final CoolantType[] VALUES_ARRAY = new CoolantType[] {
+            AIR,
+            HYDROGEN_GAS,
+            WATER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Coolant Type</b></em>' enumerators.

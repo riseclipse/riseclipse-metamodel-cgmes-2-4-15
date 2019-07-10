@@ -267,8 +267,17 @@ public enum WireMaterialKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final WireMaterialKind[] VALUES_ARRAY = new WireMaterialKind[] { COPPER, STEEL, ALUMINUM,
-            ALUMINUM_STEEL, ACSR, ALUMINUM_ALLOY, ALUMINUM_ALLOY_STEEL, AAAC, OTHER, };
+    private static final WireMaterialKind[] VALUES_ARRAY = new WireMaterialKind[] {
+            COPPER,
+            STEEL,
+            ALUMINUM,
+            ALUMINUM_STEEL,
+            ACSR,
+            ALUMINUM_ALLOY,
+            ALUMINUM_ALLOY_STEEL,
+            AAAC,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Wire Material Kind</b></em>' enumerators.

@@ -142,8 +142,9 @@ public class BusbarSectionInfoImpl extends AssetInfoImpl implements BusbarSectio
         ratedCurrent = newRatedCurrent;
         boolean oldRatedCurrentESet = ratedCurrentESet;
         ratedCurrentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BUSBAR_SECTION_INFO__RATED_CURRENT, oldRatedCurrent, ratedCurrent, !oldRatedCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BUSBAR_SECTION_INFO__RATED_CURRENT,
+                    oldRatedCurrent, ratedCurrent, !oldRatedCurrentESet ) );
     }
 
     /**
@@ -193,8 +194,9 @@ public class BusbarSectionInfoImpl extends AssetInfoImpl implements BusbarSectio
         ratedVoltage = newRatedVoltage;
         boolean oldRatedVoltageESet = ratedVoltageESet;
         ratedVoltageESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BUSBAR_SECTION_INFO__RATED_VOLTAGE, oldRatedVoltage, ratedVoltage, !oldRatedVoltageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BUSBAR_SECTION_INFO__RATED_VOLTAGE,
+                    oldRatedVoltage, ratedVoltage, !oldRatedVoltageESet ) );
     }
 
     /**
@@ -300,7 +302,7 @@ public class BusbarSectionInfoImpl extends AssetInfoImpl implements BusbarSectio
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (ratedCurrent: " );
         if( ratedCurrentESet )
             result.append( ratedCurrent );

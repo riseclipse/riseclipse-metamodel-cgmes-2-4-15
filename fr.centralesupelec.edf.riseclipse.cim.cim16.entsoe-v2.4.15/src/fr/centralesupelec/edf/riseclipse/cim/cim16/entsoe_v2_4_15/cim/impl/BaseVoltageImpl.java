@@ -169,8 +169,9 @@ public class BaseVoltageImpl extends IdentifiedObjectImpl implements BaseVoltage
         nominalVoltage = newNominalVoltage;
         boolean oldNominalVoltageESet = nominalVoltageESet;
         nominalVoltageESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BASE_VOLTAGE__NOMINAL_VOLTAGE, oldNominalVoltage, nominalVoltage, !oldNominalVoltageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BASE_VOLTAGE__NOMINAL_VOLTAGE,
+                    oldNominalVoltage, nominalVoltage, !oldNominalVoltageESet ) );
     }
 
     /**
@@ -493,7 +494,7 @@ public class BaseVoltageImpl extends IdentifiedObjectImpl implements BaseVoltage
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (nominalVoltage: " );
         if( nominalVoltageESet )
             result.append( nominalVoltage );

@@ -217,8 +217,15 @@ public enum RevenueKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final RevenueKind[] VALUES_ARRAY = new RevenueKind[] { RESIDENTIAL, NON_RESIDENTIAL, COMMERCIAL,
-            INDUSTRIAL, IRRIGATION, STREET_LIGHT, OTHER, };
+    private static final RevenueKind[] VALUES_ARRAY = new RevenueKind[] {
+            RESIDENTIAL,
+            NON_RESIDENTIAL,
+            COMMERCIAL,
+            INDUSTRIAL,
+            IRRIGATION,
+            STREET_LIGHT,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Revenue Kind</b></em>' enumerators.

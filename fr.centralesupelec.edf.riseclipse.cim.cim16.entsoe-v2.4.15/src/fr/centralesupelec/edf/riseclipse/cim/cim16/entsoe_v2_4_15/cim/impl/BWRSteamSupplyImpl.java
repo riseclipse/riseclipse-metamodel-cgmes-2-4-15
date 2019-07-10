@@ -816,8 +816,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         integralGain = newIntegralGain;
         boolean oldIntegralGainESet = integralGainESet;
         integralGainESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BWR_STEAM_SUPPLY__INTEGRAL_GAIN, oldIntegralGain, integralGain, !oldIntegralGainESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BWR_STEAM_SUPPLY__INTEGRAL_GAIN,
+                    oldIntegralGain, integralGain, !oldIntegralGainESet ) );
     }
 
     /**
@@ -867,8 +868,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         lowerLimit = newLowerLimit;
         boolean oldLowerLimitESet = lowerLimitESet;
         lowerLimitESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BWR_STEAM_SUPPLY__LOWER_LIMIT, oldLowerLimit, lowerLimit, !oldLowerLimitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BWR_STEAM_SUPPLY__LOWER_LIMIT,
+                    oldLowerLimit, lowerLimit, !oldLowerLimitESet ) );
     }
 
     /**
@@ -882,8 +884,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         boolean oldLowerLimitESet = lowerLimitESet;
         lowerLimit = LOWER_LIMIT_EDEFAULT;
         lowerLimitESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BWR_STEAM_SUPPLY__LOWER_LIMIT, oldLowerLimit, LOWER_LIMIT_EDEFAULT, oldLowerLimitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BWR_STEAM_SUPPLY__LOWER_LIMIT,
+                    oldLowerLimit, LOWER_LIMIT_EDEFAULT, oldLowerLimitESet ) );
     }
 
     /**
@@ -969,8 +972,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         pressureLimit = newPressureLimit;
         boolean oldPressureLimitESet = pressureLimitESet;
         pressureLimitESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BWR_STEAM_SUPPLY__PRESSURE_LIMIT, oldPressureLimit, pressureLimit, !oldPressureLimitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BWR_STEAM_SUPPLY__PRESSURE_LIMIT,
+                    oldPressureLimit, pressureLimit, !oldPressureLimitESet ) );
     }
 
     /**
@@ -1088,9 +1092,10 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         boolean oldPressureSetpointTC1ESet = pressureSetpointTC1ESet;
         pressureSetpointTC1 = PRESSURE_SETPOINT_TC1_EDEFAULT;
         pressureSetpointTC1ESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.BWR_STEAM_SUPPLY__PRESSURE_SETPOINT_TC1,
-                        oldPressureSetpointTC1, PRESSURE_SETPOINT_TC1_EDEFAULT, oldPressureSetpointTC1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.BWR_STEAM_SUPPLY__PRESSURE_SETPOINT_TC1, oldPressureSetpointTC1,
+                    PRESSURE_SETPOINT_TC1_EDEFAULT, oldPressureSetpointTC1ESet ) );
     }
 
     /**
@@ -1140,9 +1145,10 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         boolean oldPressureSetpointTC2ESet = pressureSetpointTC2ESet;
         pressureSetpointTC2 = PRESSURE_SETPOINT_TC2_EDEFAULT;
         pressureSetpointTC2ESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.BWR_STEAM_SUPPLY__PRESSURE_SETPOINT_TC2,
-                        oldPressureSetpointTC2, PRESSURE_SETPOINT_TC2_EDEFAULT, oldPressureSetpointTC2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.BWR_STEAM_SUPPLY__PRESSURE_SETPOINT_TC2, oldPressureSetpointTC2,
+                    PRESSURE_SETPOINT_TC2_EDEFAULT, oldPressureSetpointTC2ESet ) );
     }
 
     /**
@@ -1228,8 +1234,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         rfAux1 = newRfAux1;
         boolean oldRfAux1ESet = rfAux1ESet;
         rfAux1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BWR_STEAM_SUPPLY__RF_AUX1, oldRfAux1, rfAux1, !oldRfAux1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BWR_STEAM_SUPPLY__RF_AUX1, oldRfAux1,
+                    rfAux1, !oldRfAux1ESet ) );
     }
 
     /**
@@ -1243,8 +1250,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         boolean oldRfAux1ESet = rfAux1ESet;
         rfAux1 = RF_AUX1_EDEFAULT;
         rfAux1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BWR_STEAM_SUPPLY__RF_AUX1, oldRfAux1, RF_AUX1_EDEFAULT, oldRfAux1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BWR_STEAM_SUPPLY__RF_AUX1, oldRfAux1,
+                    RF_AUX1_EDEFAULT, oldRfAux1ESet ) );
     }
 
     /**
@@ -1278,8 +1286,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         rfAux2 = newRfAux2;
         boolean oldRfAux2ESet = rfAux2ESet;
         rfAux2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BWR_STEAM_SUPPLY__RF_AUX2, oldRfAux2, rfAux2, !oldRfAux2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BWR_STEAM_SUPPLY__RF_AUX2, oldRfAux2,
+                    rfAux2, !oldRfAux2ESet ) );
     }
 
     /**
@@ -1293,8 +1302,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         boolean oldRfAux2ESet = rfAux2ESet;
         rfAux2 = RF_AUX2_EDEFAULT;
         rfAux2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BWR_STEAM_SUPPLY__RF_AUX2, oldRfAux2, RF_AUX2_EDEFAULT, oldRfAux2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BWR_STEAM_SUPPLY__RF_AUX2, oldRfAux2,
+                    RF_AUX2_EDEFAULT, oldRfAux2ESet ) );
     }
 
     /**
@@ -1328,8 +1338,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         rfAux3 = newRfAux3;
         boolean oldRfAux3ESet = rfAux3ESet;
         rfAux3ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BWR_STEAM_SUPPLY__RF_AUX3, oldRfAux3, rfAux3, !oldRfAux3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BWR_STEAM_SUPPLY__RF_AUX3, oldRfAux3,
+                    rfAux3, !oldRfAux3ESet ) );
     }
 
     /**
@@ -1343,8 +1354,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         boolean oldRfAux3ESet = rfAux3ESet;
         rfAux3 = RF_AUX3_EDEFAULT;
         rfAux3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BWR_STEAM_SUPPLY__RF_AUX3, oldRfAux3, RF_AUX3_EDEFAULT, oldRfAux3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BWR_STEAM_SUPPLY__RF_AUX3, oldRfAux3,
+                    RF_AUX3_EDEFAULT, oldRfAux3ESet ) );
     }
 
     /**
@@ -1378,8 +1390,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         rfAux4 = newRfAux4;
         boolean oldRfAux4ESet = rfAux4ESet;
         rfAux4ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BWR_STEAM_SUPPLY__RF_AUX4, oldRfAux4, rfAux4, !oldRfAux4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BWR_STEAM_SUPPLY__RF_AUX4, oldRfAux4,
+                    rfAux4, !oldRfAux4ESet ) );
     }
 
     /**
@@ -1393,8 +1406,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         boolean oldRfAux4ESet = rfAux4ESet;
         rfAux4 = RF_AUX4_EDEFAULT;
         rfAux4ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BWR_STEAM_SUPPLY__RF_AUX4, oldRfAux4, RF_AUX4_EDEFAULT, oldRfAux4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BWR_STEAM_SUPPLY__RF_AUX4, oldRfAux4,
+                    RF_AUX4_EDEFAULT, oldRfAux4ESet ) );
     }
 
     /**
@@ -1428,8 +1442,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         rfAux5 = newRfAux5;
         boolean oldRfAux5ESet = rfAux5ESet;
         rfAux5ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BWR_STEAM_SUPPLY__RF_AUX5, oldRfAux5, rfAux5, !oldRfAux5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BWR_STEAM_SUPPLY__RF_AUX5, oldRfAux5,
+                    rfAux5, !oldRfAux5ESet ) );
     }
 
     /**
@@ -1443,8 +1458,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         boolean oldRfAux5ESet = rfAux5ESet;
         rfAux5 = RF_AUX5_EDEFAULT;
         rfAux5ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BWR_STEAM_SUPPLY__RF_AUX5, oldRfAux5, RF_AUX5_EDEFAULT, oldRfAux5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BWR_STEAM_SUPPLY__RF_AUX5, oldRfAux5,
+                    RF_AUX5_EDEFAULT, oldRfAux5ESet ) );
     }
 
     /**
@@ -1478,8 +1494,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         rfAux6 = newRfAux6;
         boolean oldRfAux6ESet = rfAux6ESet;
         rfAux6ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BWR_STEAM_SUPPLY__RF_AUX6, oldRfAux6, rfAux6, !oldRfAux6ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BWR_STEAM_SUPPLY__RF_AUX6, oldRfAux6,
+                    rfAux6, !oldRfAux6ESet ) );
     }
 
     /**
@@ -1493,8 +1510,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         boolean oldRfAux6ESet = rfAux6ESet;
         rfAux6 = RF_AUX6_EDEFAULT;
         rfAux6ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BWR_STEAM_SUPPLY__RF_AUX6, oldRfAux6, RF_AUX6_EDEFAULT, oldRfAux6ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BWR_STEAM_SUPPLY__RF_AUX6, oldRfAux6,
+                    RF_AUX6_EDEFAULT, oldRfAux6ESet ) );
     }
 
     /**
@@ -1528,8 +1546,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         rfAux7 = newRfAux7;
         boolean oldRfAux7ESet = rfAux7ESet;
         rfAux7ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BWR_STEAM_SUPPLY__RF_AUX7, oldRfAux7, rfAux7, !oldRfAux7ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BWR_STEAM_SUPPLY__RF_AUX7, oldRfAux7,
+                    rfAux7, !oldRfAux7ESet ) );
     }
 
     /**
@@ -1543,8 +1562,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         boolean oldRfAux7ESet = rfAux7ESet;
         rfAux7 = RF_AUX7_EDEFAULT;
         rfAux7ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BWR_STEAM_SUPPLY__RF_AUX7, oldRfAux7, RF_AUX7_EDEFAULT, oldRfAux7ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BWR_STEAM_SUPPLY__RF_AUX7, oldRfAux7,
+                    RF_AUX7_EDEFAULT, oldRfAux7ESet ) );
     }
 
     /**
@@ -1578,8 +1598,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         rfAux8 = newRfAux8;
         boolean oldRfAux8ESet = rfAux8ESet;
         rfAux8ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BWR_STEAM_SUPPLY__RF_AUX8, oldRfAux8, rfAux8, !oldRfAux8ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BWR_STEAM_SUPPLY__RF_AUX8, oldRfAux8,
+                    rfAux8, !oldRfAux8ESet ) );
     }
 
     /**
@@ -1593,8 +1614,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         boolean oldRfAux8ESet = rfAux8ESet;
         rfAux8 = RF_AUX8_EDEFAULT;
         rfAux8ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BWR_STEAM_SUPPLY__RF_AUX8, oldRfAux8, RF_AUX8_EDEFAULT, oldRfAux8ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BWR_STEAM_SUPPLY__RF_AUX8, oldRfAux8,
+                    RF_AUX8_EDEFAULT, oldRfAux8ESet ) );
     }
 
     /**
@@ -1628,8 +1650,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         rodPattern = newRodPattern;
         boolean oldRodPatternESet = rodPatternESet;
         rodPatternESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BWR_STEAM_SUPPLY__ROD_PATTERN, oldRodPattern, rodPattern, !oldRodPatternESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BWR_STEAM_SUPPLY__ROD_PATTERN,
+                    oldRodPattern, rodPattern, !oldRodPatternESet ) );
     }
 
     /**
@@ -1643,8 +1666,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         boolean oldRodPatternESet = rodPatternESet;
         rodPattern = ROD_PATTERN_EDEFAULT;
         rodPatternESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BWR_STEAM_SUPPLY__ROD_PATTERN, oldRodPattern, ROD_PATTERN_EDEFAULT, oldRodPatternESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BWR_STEAM_SUPPLY__ROD_PATTERN,
+                    oldRodPattern, ROD_PATTERN_EDEFAULT, oldRodPatternESet ) );
     }
 
     /**
@@ -1730,8 +1754,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         upperLimit = newUpperLimit;
         boolean oldUpperLimitESet = upperLimitESet;
         upperLimitESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BWR_STEAM_SUPPLY__UPPER_LIMIT, oldUpperLimit, upperLimit, !oldUpperLimitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BWR_STEAM_SUPPLY__UPPER_LIMIT,
+                    oldUpperLimit, upperLimit, !oldUpperLimitESet ) );
     }
 
     /**
@@ -1745,8 +1770,9 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
         boolean oldUpperLimitESet = upperLimitESet;
         upperLimit = UPPER_LIMIT_EDEFAULT;
         upperLimitESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BWR_STEAM_SUPPLY__UPPER_LIMIT, oldUpperLimit, UPPER_LIMIT_EDEFAULT, oldUpperLimitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BWR_STEAM_SUPPLY__UPPER_LIMIT,
+                    oldUpperLimit, UPPER_LIMIT_EDEFAULT, oldUpperLimitESet ) );
     }
 
     /**
@@ -2026,7 +2052,7 @@ public class BWRSteamSupplyImpl extends SteamSupplyImpl implements BWRSteamSuppl
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (highPowerLimit: " );
         if( highPowerLimitESet )
             result.append( highPowerLimit );

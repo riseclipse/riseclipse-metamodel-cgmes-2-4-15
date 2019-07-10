@@ -95,9 +95,10 @@ public class WindGenTurbineType1IECImpl extends WindTurbineType1or2IECImpl imple
             InternalEObject oldWindAeroConstIEC = ( InternalEObject ) windAeroConstIEC;
             windAeroConstIEC = ( WindAeroConstIEC ) eResolveProxy( oldWindAeroConstIEC );
             if( windAeroConstIEC != oldWindAeroConstIEC ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.WIND_GEN_TURBINE_TYPE1_IEC__WIND_AERO_CONST_IEC, oldWindAeroConstIEC,
-                        windAeroConstIEC ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.WIND_GEN_TURBINE_TYPE1_IEC__WIND_AERO_CONST_IEC, oldWindAeroConstIEC,
+                            windAeroConstIEC ) );
             }
         }
         return windAeroConstIEC;
@@ -143,19 +144,22 @@ public class WindGenTurbineType1IECImpl extends WindTurbineType1or2IECImpl imple
     public void setWindAeroConstIEC( WindAeroConstIEC newWindAeroConstIEC ) {
         if( newWindAeroConstIEC != windAeroConstIEC ) {
             NotificationChain msgs = null;
-            if( windAeroConstIEC != null ) msgs = ( ( InternalEObject ) windAeroConstIEC ).eInverseRemove( this,
-                    CimPackage.WIND_AERO_CONST_IEC__WIND_GEN_TURBINE_TYPE1_IEC, WindAeroConstIEC.class, msgs );
-            if( newWindAeroConstIEC != null ) msgs = ( ( InternalEObject ) newWindAeroConstIEC ).eInverseAdd( this,
-                    CimPackage.WIND_AERO_CONST_IEC__WIND_GEN_TURBINE_TYPE1_IEC, WindAeroConstIEC.class, msgs );
+            if( windAeroConstIEC != null )
+                msgs = ( ( InternalEObject ) windAeroConstIEC ).eInverseRemove( this,
+                        CimPackage.WIND_AERO_CONST_IEC__WIND_GEN_TURBINE_TYPE1_IEC, WindAeroConstIEC.class, msgs );
+            if( newWindAeroConstIEC != null )
+                msgs = ( ( InternalEObject ) newWindAeroConstIEC ).eInverseAdd( this,
+                        CimPackage.WIND_AERO_CONST_IEC__WIND_GEN_TURBINE_TYPE1_IEC, WindAeroConstIEC.class, msgs );
             msgs = basicSetWindAeroConstIEC( newWindAeroConstIEC, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWindAeroConstIECESet = windAeroConstIECESet;
             windAeroConstIECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_GEN_TURBINE_TYPE1_IEC__WIND_AERO_CONST_IEC, newWindAeroConstIEC,
-                    newWindAeroConstIEC, !oldWindAeroConstIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_GEN_TURBINE_TYPE1_IEC__WIND_AERO_CONST_IEC, newWindAeroConstIEC,
+                        newWindAeroConstIEC, !oldWindAeroConstIECESet ) );
         }
     }
 
@@ -198,8 +202,10 @@ public class WindGenTurbineType1IECImpl extends WindTurbineType1or2IECImpl imple
         else {
             boolean oldWindAeroConstIECESet = windAeroConstIECESet;
             windAeroConstIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_GEN_TURBINE_TYPE1_IEC__WIND_AERO_CONST_IEC, null, null, oldWindAeroConstIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_GEN_TURBINE_TYPE1_IEC__WIND_AERO_CONST_IEC, null, null,
+                        oldWindAeroConstIECESet ) );
         }
     }
 
@@ -222,8 +228,9 @@ public class WindGenTurbineType1IECImpl extends WindTurbineType1or2IECImpl imple
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.WIND_GEN_TURBINE_TYPE1_IEC__WIND_AERO_CONST_IEC:
-            if( windAeroConstIEC != null ) msgs = ( ( InternalEObject ) windAeroConstIEC ).eInverseRemove( this,
-                    CimPackage.WIND_AERO_CONST_IEC__WIND_GEN_TURBINE_TYPE1_IEC, WindAeroConstIEC.class, msgs );
+            if( windAeroConstIEC != null )
+                msgs = ( ( InternalEObject ) windAeroConstIEC ).eInverseRemove( this,
+                        CimPackage.WIND_AERO_CONST_IEC__WIND_GEN_TURBINE_TYPE1_IEC, WindAeroConstIEC.class, msgs );
             return basicSetWindAeroConstIEC( ( WindAeroConstIEC ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

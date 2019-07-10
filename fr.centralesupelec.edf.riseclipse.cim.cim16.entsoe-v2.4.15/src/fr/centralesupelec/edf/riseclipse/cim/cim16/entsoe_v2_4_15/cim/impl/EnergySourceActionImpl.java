@@ -157,8 +157,9 @@ public class EnergySourceActionImpl extends SwitchingStepImpl implements EnergyS
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ENERGY_SOURCE_ACTION__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_SOURCE_ACTION__KIND, oldKind,
+                    kind, !oldKindESet ) );
     }
 
     /**
@@ -172,8 +173,9 @@ public class EnergySourceActionImpl extends SwitchingStepImpl implements EnergyS
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_SOURCE_ACTION__KIND, oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_SOURCE_ACTION__KIND, oldKind,
+                    KIND_EDEFAULT, oldKindESet ) );
     }
 
     /**
@@ -227,10 +229,12 @@ public class EnergySourceActionImpl extends SwitchingStepImpl implements EnergyS
     public void setEnergySource( EnergySource newEnergySource ) {
         if( newEnergySource != energySource ) {
             NotificationChain msgs = null;
-            if( energySource != null ) msgs = ( ( InternalEObject ) energySource ).eInverseRemove( this,
-                    CimPackage.ENERGY_SOURCE__ENERGY_SOURCE_ACTION, EnergySource.class, msgs );
-            if( newEnergySource != null ) msgs = ( ( InternalEObject ) newEnergySource ).eInverseAdd( this,
-                    CimPackage.ENERGY_SOURCE__ENERGY_SOURCE_ACTION, EnergySource.class, msgs );
+            if( energySource != null )
+                msgs = ( ( InternalEObject ) energySource ).eInverseRemove( this,
+                        CimPackage.ENERGY_SOURCE__ENERGY_SOURCE_ACTION, EnergySource.class, msgs );
+            if( newEnergySource != null )
+                msgs = ( ( InternalEObject ) newEnergySource ).eInverseAdd( this,
+                        CimPackage.ENERGY_SOURCE__ENERGY_SOURCE_ACTION, EnergySource.class, msgs );
             msgs = basicSetEnergySource( newEnergySource, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -281,8 +285,9 @@ public class EnergySourceActionImpl extends SwitchingStepImpl implements EnergyS
         else {
             boolean oldEnergySourceESet = energySourceESet;
             energySourceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ENERGY_SOURCE_ACTION__ENERGY_SOURCE, null, null, oldEnergySourceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.ENERGY_SOURCE_ACTION__ENERGY_SOURCE, null, null, oldEnergySourceESet ) );
         }
     }
 
@@ -338,19 +343,22 @@ public class EnergySourceActionImpl extends SwitchingStepImpl implements EnergyS
     public void setSwitchingStepGroup( SwitchingStepGroup newSwitchingStepGroup ) {
         if( newSwitchingStepGroup != switchingStepGroup ) {
             NotificationChain msgs = null;
-            if( switchingStepGroup != null ) msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
-                    CimPackage.SWITCHING_STEP_GROUP__ENERGY_SOURCE_ACTIONS, SwitchingStepGroup.class, msgs );
-            if( newSwitchingStepGroup != null ) msgs = ( ( InternalEObject ) newSwitchingStepGroup ).eInverseAdd( this,
-                    CimPackage.SWITCHING_STEP_GROUP__ENERGY_SOURCE_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( switchingStepGroup != null )
+                msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
+                        CimPackage.SWITCHING_STEP_GROUP__ENERGY_SOURCE_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( newSwitchingStepGroup != null )
+                msgs = ( ( InternalEObject ) newSwitchingStepGroup ).eInverseAdd( this,
+                        CimPackage.SWITCHING_STEP_GROUP__ENERGY_SOURCE_ACTIONS, SwitchingStepGroup.class, msgs );
             msgs = basicSetSwitchingStepGroup( newSwitchingStepGroup, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldSwitchingStepGroupESet = switchingStepGroupESet;
             switchingStepGroupESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ENERGY_SOURCE_ACTION__SWITCHING_STEP_GROUP, newSwitchingStepGroup, newSwitchingStepGroup,
-                    !oldSwitchingStepGroupESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.ENERGY_SOURCE_ACTION__SWITCHING_STEP_GROUP, newSwitchingStepGroup,
+                        newSwitchingStepGroup, !oldSwitchingStepGroupESet ) );
         }
     }
 
@@ -393,8 +401,10 @@ public class EnergySourceActionImpl extends SwitchingStepImpl implements EnergyS
         else {
             boolean oldSwitchingStepGroupESet = switchingStepGroupESet;
             switchingStepGroupESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ENERGY_SOURCE_ACTION__SWITCHING_STEP_GROUP, null, null, oldSwitchingStepGroupESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.ENERGY_SOURCE_ACTION__SWITCHING_STEP_GROUP, null, null,
+                        oldSwitchingStepGroupESet ) );
         }
     }
 
@@ -417,12 +427,14 @@ public class EnergySourceActionImpl extends SwitchingStepImpl implements EnergyS
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ENERGY_SOURCE_ACTION__ENERGY_SOURCE:
-            if( energySource != null ) msgs = ( ( InternalEObject ) energySource ).eInverseRemove( this,
-                    CimPackage.ENERGY_SOURCE__ENERGY_SOURCE_ACTION, EnergySource.class, msgs );
+            if( energySource != null )
+                msgs = ( ( InternalEObject ) energySource ).eInverseRemove( this,
+                        CimPackage.ENERGY_SOURCE__ENERGY_SOURCE_ACTION, EnergySource.class, msgs );
             return basicSetEnergySource( ( EnergySource ) otherEnd, msgs );
         case CimPackage.ENERGY_SOURCE_ACTION__SWITCHING_STEP_GROUP:
-            if( switchingStepGroup != null ) msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
-                    CimPackage.SWITCHING_STEP_GROUP__ENERGY_SOURCE_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( switchingStepGroup != null )
+                msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
+                        CimPackage.SWITCHING_STEP_GROUP__ENERGY_SOURCE_ACTIONS, SwitchingStepGroup.class, msgs );
             return basicSetSwitchingStepGroup( ( SwitchingStepGroup ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -531,7 +543,7 @@ public class EnergySourceActionImpl extends SwitchingStepImpl implements EnergyS
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kind: " );
         if( kindESet )
             result.append( kind );

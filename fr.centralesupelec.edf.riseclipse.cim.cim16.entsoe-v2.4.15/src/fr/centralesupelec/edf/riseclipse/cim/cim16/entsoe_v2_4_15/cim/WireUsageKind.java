@@ -142,8 +142,12 @@ public enum WireUsageKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final WireUsageKind[] VALUES_ARRAY = new WireUsageKind[] { TRANSMISSION, DISTRIBUTION, SECONDARY,
-            OTHER, };
+    private static final WireUsageKind[] VALUES_ARRAY = new WireUsageKind[] {
+            TRANSMISSION,
+            DISTRIBUTION,
+            SECONDARY,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Wire Usage Kind</b></em>' enumerators.

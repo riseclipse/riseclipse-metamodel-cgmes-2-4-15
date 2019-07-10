@@ -277,9 +277,10 @@ public class ProductAssetModelImpl extends AssetModelImpl implements ProductAsse
                 : newCorporateStandardKind;
         boolean oldCorporateStandardKindESet = corporateStandardKindESet;
         corporateStandardKindESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PRODUCT_ASSET_MODEL__CORPORATE_STANDARD_KIND,
-                        oldCorporateStandardKind, corporateStandardKind, !oldCorporateStandardKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PRODUCT_ASSET_MODEL__CORPORATE_STANDARD_KIND, oldCorporateStandardKind,
+                    corporateStandardKind, !oldCorporateStandardKindESet ) );
     }
 
     /**
@@ -293,9 +294,10 @@ public class ProductAssetModelImpl extends AssetModelImpl implements ProductAsse
         boolean oldCorporateStandardKindESet = corporateStandardKindESet;
         corporateStandardKind = CORPORATE_STANDARD_KIND_EDEFAULT;
         corporateStandardKindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PRODUCT_ASSET_MODEL__CORPORATE_STANDARD_KIND, oldCorporateStandardKind,
-                CORPORATE_STANDARD_KIND_EDEFAULT, oldCorporateStandardKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PRODUCT_ASSET_MODEL__CORPORATE_STANDARD_KIND, oldCorporateStandardKind,
+                    CORPORATE_STANDARD_KIND_EDEFAULT, oldCorporateStandardKindESet ) );
     }
 
     /**
@@ -329,8 +331,9 @@ public class ProductAssetModelImpl extends AssetModelImpl implements ProductAsse
         modelNumber = newModelNumber;
         boolean oldModelNumberESet = modelNumberESet;
         modelNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PRODUCT_ASSET_MODEL__MODEL_NUMBER, oldModelNumber, modelNumber, !oldModelNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PRODUCT_ASSET_MODEL__MODEL_NUMBER,
+                    oldModelNumber, modelNumber, !oldModelNumberESet ) );
     }
 
     /**
@@ -380,8 +383,9 @@ public class ProductAssetModelImpl extends AssetModelImpl implements ProductAsse
         modelVersion = newModelVersion;
         boolean oldModelVersionESet = modelVersionESet;
         modelVersionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PRODUCT_ASSET_MODEL__MODEL_VERSION, oldModelVersion, modelVersion, !oldModelVersionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PRODUCT_ASSET_MODEL__MODEL_VERSION,
+                    oldModelVersion, modelVersion, !oldModelVersionESet ) );
     }
 
     /**
@@ -431,8 +435,9 @@ public class ProductAssetModelImpl extends AssetModelImpl implements ProductAsse
         usageKind = newUsageKind == null ? USAGE_KIND_EDEFAULT : newUsageKind;
         boolean oldUsageKindESet = usageKindESet;
         usageKindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PRODUCT_ASSET_MODEL__USAGE_KIND, oldUsageKind, usageKind, !oldUsageKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PRODUCT_ASSET_MODEL__USAGE_KIND,
+                    oldUsageKind, usageKind, !oldUsageKindESet ) );
     }
 
     /**
@@ -446,8 +451,9 @@ public class ProductAssetModelImpl extends AssetModelImpl implements ProductAsse
         boolean oldUsageKindESet = usageKindESet;
         usageKind = USAGE_KIND_EDEFAULT;
         usageKindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PRODUCT_ASSET_MODEL__USAGE_KIND, oldUsageKind, USAGE_KIND_EDEFAULT, oldUsageKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PRODUCT_ASSET_MODEL__USAGE_KIND,
+                    oldUsageKind, USAGE_KIND_EDEFAULT, oldUsageKindESet ) );
     }
 
     /**
@@ -481,8 +487,9 @@ public class ProductAssetModelImpl extends AssetModelImpl implements ProductAsse
         weightTotal = newWeightTotal;
         boolean oldWeightTotalESet = weightTotalESet;
         weightTotalESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PRODUCT_ASSET_MODEL__WEIGHT_TOTAL, oldWeightTotal, weightTotal, !oldWeightTotalESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PRODUCT_ASSET_MODEL__WEIGHT_TOTAL,
+                    oldWeightTotal, weightTotal, !oldWeightTotalESet ) );
     }
 
     /**
@@ -587,10 +594,12 @@ public class ProductAssetModelImpl extends AssetModelImpl implements ProductAsse
     public void setManufacturer( Manufacturer newManufacturer ) {
         if( newManufacturer != manufacturer ) {
             NotificationChain msgs = null;
-            if( manufacturer != null ) msgs = ( ( InternalEObject ) manufacturer ).eInverseRemove( this,
-                    CimPackage.MANUFACTURER__PRODUCT_ASSET_MODELS, Manufacturer.class, msgs );
-            if( newManufacturer != null ) msgs = ( ( InternalEObject ) newManufacturer ).eInverseAdd( this,
-                    CimPackage.MANUFACTURER__PRODUCT_ASSET_MODELS, Manufacturer.class, msgs );
+            if( manufacturer != null )
+                msgs = ( ( InternalEObject ) manufacturer ).eInverseRemove( this,
+                        CimPackage.MANUFACTURER__PRODUCT_ASSET_MODELS, Manufacturer.class, msgs );
+            if( newManufacturer != null )
+                msgs = ( ( InternalEObject ) newManufacturer ).eInverseAdd( this,
+                        CimPackage.MANUFACTURER__PRODUCT_ASSET_MODELS, Manufacturer.class, msgs );
             msgs = basicSetManufacturer( newManufacturer, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -641,8 +650,9 @@ public class ProductAssetModelImpl extends AssetModelImpl implements ProductAsse
         else {
             boolean oldManufacturerESet = manufacturerESet;
             manufacturerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PRODUCT_ASSET_MODEL__MANUFACTURER, null, null, oldManufacturerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PRODUCT_ASSET_MODEL__MANUFACTURER,
+                        null, null, oldManufacturerESet ) );
         }
     }
 
@@ -669,8 +679,9 @@ public class ProductAssetModelImpl extends AssetModelImpl implements ProductAsse
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getOperationalRestrictions() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.PRODUCT_ASSET_MODEL__MANUFACTURER:
-            if( manufacturer != null ) msgs = ( ( InternalEObject ) manufacturer ).eInverseRemove( this,
-                    CimPackage.MANUFACTURER__PRODUCT_ASSET_MODELS, Manufacturer.class, msgs );
+            if( manufacturer != null )
+                msgs = ( ( InternalEObject ) manufacturer ).eInverseRemove( this,
+                        CimPackage.MANUFACTURER__PRODUCT_ASSET_MODELS, Manufacturer.class, msgs );
             return basicSetManufacturer( ( Manufacturer ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -821,7 +832,7 @@ public class ProductAssetModelImpl extends AssetModelImpl implements ProductAsse
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (corporateStandardKind: " );
         if( corporateStandardKindESet )
             result.append( corporateStandardKind );

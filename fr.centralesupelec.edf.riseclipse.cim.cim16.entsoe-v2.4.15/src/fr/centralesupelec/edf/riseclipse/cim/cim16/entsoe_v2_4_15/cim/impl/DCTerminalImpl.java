@@ -183,8 +183,9 @@ public class DCTerminalImpl extends DCBaseTerminalImpl implements DCTerminal {
         else {
             boolean oldDCConductingEquipmentESet = dcConductingEquipmentESet;
             dcConductingEquipmentESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.DC_TERMINAL__DC_CONDUCTING_EQUIPMENT, null, null, oldDCConductingEquipmentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.DC_TERMINAL__DC_CONDUCTING_EQUIPMENT, null, null, oldDCConductingEquipmentESet ) );
         }
     }
 

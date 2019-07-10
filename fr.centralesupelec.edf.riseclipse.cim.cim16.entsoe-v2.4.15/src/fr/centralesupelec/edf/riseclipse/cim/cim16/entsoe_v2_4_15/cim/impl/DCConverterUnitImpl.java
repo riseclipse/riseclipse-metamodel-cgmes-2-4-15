@@ -207,18 +207,21 @@ public class DCConverterUnitImpl extends DCEquipmentContainerImpl implements DCC
     public void setSubstation( Substation newSubstation ) {
         if( newSubstation != substation ) {
             NotificationChain msgs = null;
-            if( substation != null ) msgs = ( ( InternalEObject ) substation ).eInverseRemove( this,
-                    CimPackage.SUBSTATION__DC_CONVERTER_UNIT, Substation.class, msgs );
-            if( newSubstation != null ) msgs = ( ( InternalEObject ) newSubstation ).eInverseAdd( this,
-                    CimPackage.SUBSTATION__DC_CONVERTER_UNIT, Substation.class, msgs );
+            if( substation != null )
+                msgs = ( ( InternalEObject ) substation ).eInverseRemove( this,
+                        CimPackage.SUBSTATION__DC_CONVERTER_UNIT, Substation.class, msgs );
+            if( newSubstation != null )
+                msgs = ( ( InternalEObject ) newSubstation ).eInverseAdd( this,
+                        CimPackage.SUBSTATION__DC_CONVERTER_UNIT, Substation.class, msgs );
             msgs = basicSetSubstation( newSubstation, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldSubstationESet = substationESet;
             substationESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.DC_CONVERTER_UNIT__SUBSTATION, newSubstation, newSubstation, !oldSubstationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DC_CONVERTER_UNIT__SUBSTATION,
+                        newSubstation, newSubstation, !oldSubstationESet ) );
         }
     }
 
@@ -260,8 +263,9 @@ public class DCConverterUnitImpl extends DCEquipmentContainerImpl implements DCC
         else {
             boolean oldSubstationESet = substationESet;
             substationESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.DC_CONVERTER_UNIT__SUBSTATION, null, null, oldSubstationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DC_CONVERTER_UNIT__SUBSTATION,
+                        null, null, oldSubstationESet ) );
         }
     }
 
@@ -284,8 +288,9 @@ public class DCConverterUnitImpl extends DCEquipmentContainerImpl implements DCC
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.DC_CONVERTER_UNIT__SUBSTATION:
-            if( substation != null ) msgs = ( ( InternalEObject ) substation ).eInverseRemove( this,
-                    CimPackage.SUBSTATION__DC_CONVERTER_UNIT, Substation.class, msgs );
+            if( substation != null )
+                msgs = ( ( InternalEObject ) substation ).eInverseRemove( this,
+                        CimPackage.SUBSTATION__DC_CONVERTER_UNIT, Substation.class, msgs );
             return basicSetSubstation( ( Substation ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -382,7 +387,7 @@ public class DCConverterUnitImpl extends DCEquipmentContainerImpl implements DCC
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (operationMode: " );
         if( operationModeESet )
             result.append( operationMode );

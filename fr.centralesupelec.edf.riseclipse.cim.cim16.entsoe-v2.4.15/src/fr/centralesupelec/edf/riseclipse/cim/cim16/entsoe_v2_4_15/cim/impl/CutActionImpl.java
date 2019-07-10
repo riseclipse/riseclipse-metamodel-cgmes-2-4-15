@@ -157,8 +157,9 @@ public class CutActionImpl extends SwitchingStepImpl implements CutAction {
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CUT_ACTION__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUT_ACTION__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -172,8 +173,9 @@ public class CutActionImpl extends SwitchingStepImpl implements CutAction {
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CUT_ACTION__KIND, oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUT_ACTION__KIND, oldKind,
+                    KIND_EDEFAULT, oldKindESet ) );
     }
 
     /**
@@ -236,8 +238,9 @@ public class CutActionImpl extends SwitchingStepImpl implements CutAction {
         else {
             boolean oldCutESet = cutESet;
             cutESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CUT_ACTION__CUT, newCut, newCut, !oldCutESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUT_ACTION__CUT, newCut, newCut,
+                        !oldCutESet ) );
         }
     }
 
@@ -278,8 +281,9 @@ public class CutActionImpl extends SwitchingStepImpl implements CutAction {
         else {
             boolean oldCutESet = cutESet;
             cutESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CUT_ACTION__CUT, null, null, oldCutESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUT_ACTION__CUT, null, null,
+                        oldCutESet ) );
         }
     }
 
@@ -335,10 +339,12 @@ public class CutActionImpl extends SwitchingStepImpl implements CutAction {
     public void setSwitchingStepGroup( SwitchingStepGroup newSwitchingStepGroup ) {
         if( newSwitchingStepGroup != switchingStepGroup ) {
             NotificationChain msgs = null;
-            if( switchingStepGroup != null ) msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
-                    CimPackage.SWITCHING_STEP_GROUP__CUT_ACTIONS, SwitchingStepGroup.class, msgs );
-            if( newSwitchingStepGroup != null ) msgs = ( ( InternalEObject ) newSwitchingStepGroup ).eInverseAdd( this,
-                    CimPackage.SWITCHING_STEP_GROUP__CUT_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( switchingStepGroup != null )
+                msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
+                        CimPackage.SWITCHING_STEP_GROUP__CUT_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( newSwitchingStepGroup != null )
+                msgs = ( ( InternalEObject ) newSwitchingStepGroup ).eInverseAdd( this,
+                        CimPackage.SWITCHING_STEP_GROUP__CUT_ACTIONS, SwitchingStepGroup.class, msgs );
             msgs = basicSetSwitchingStepGroup( newSwitchingStepGroup, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -390,8 +396,9 @@ public class CutActionImpl extends SwitchingStepImpl implements CutAction {
         else {
             boolean oldSwitchingStepGroupESet = switchingStepGroupESet;
             switchingStepGroupESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CUT_ACTION__SWITCHING_STEP_GROUP, null, null, oldSwitchingStepGroupESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUT_ACTION__SWITCHING_STEP_GROUP,
+                        null, null, oldSwitchingStepGroupESet ) );
         }
     }
 
@@ -414,8 +421,9 @@ public class CutActionImpl extends SwitchingStepImpl implements CutAction {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CUT_ACTION__SWITCHING_STEP_GROUP:
-            if( switchingStepGroup != null ) msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
-                    CimPackage.SWITCHING_STEP_GROUP__CUT_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( switchingStepGroup != null )
+                msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
+                        CimPackage.SWITCHING_STEP_GROUP__CUT_ACTIONS, SwitchingStepGroup.class, msgs );
             return basicSetSwitchingStepGroup( ( SwitchingStepGroup ) otherEnd, msgs );
         case CimPackage.CUT_ACTION__CUT:
             if( cut != null )
@@ -528,7 +536,7 @@ public class CutActionImpl extends SwitchingStepImpl implements CutAction {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kind: " );
         if( kindESet )
             result.append( kind );

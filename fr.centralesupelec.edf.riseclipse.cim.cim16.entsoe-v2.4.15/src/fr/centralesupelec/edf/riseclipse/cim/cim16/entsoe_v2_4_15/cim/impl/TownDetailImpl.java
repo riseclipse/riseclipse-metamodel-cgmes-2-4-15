@@ -233,8 +233,9 @@ public class TownDetailImpl extends MinimalEObjectImpl.Container implements Town
         code = newCode;
         boolean oldCodeESet = codeESet;
         codeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TOWN_DETAIL__CODE, oldCode, code, !oldCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TOWN_DETAIL__CODE, oldCode, code,
+                    !oldCodeESet ) );
     }
 
     /**
@@ -248,8 +249,9 @@ public class TownDetailImpl extends MinimalEObjectImpl.Container implements Town
         boolean oldCodeESet = codeESet;
         code = CODE_EDEFAULT;
         codeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TOWN_DETAIL__CODE, oldCode, CODE_EDEFAULT, oldCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TOWN_DETAIL__CODE, oldCode,
+                    CODE_EDEFAULT, oldCodeESet ) );
     }
 
     /**
@@ -283,8 +285,9 @@ public class TownDetailImpl extends MinimalEObjectImpl.Container implements Town
         country = newCountry;
         boolean oldCountryESet = countryESet;
         countryESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TOWN_DETAIL__COUNTRY, oldCountry, country, !oldCountryESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TOWN_DETAIL__COUNTRY, oldCountry,
+                    country, !oldCountryESet ) );
     }
 
     /**
@@ -298,8 +301,9 @@ public class TownDetailImpl extends MinimalEObjectImpl.Container implements Town
         boolean oldCountryESet = countryESet;
         country = COUNTRY_EDEFAULT;
         countryESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TOWN_DETAIL__COUNTRY, oldCountry, COUNTRY_EDEFAULT, oldCountryESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TOWN_DETAIL__COUNTRY, oldCountry,
+                    COUNTRY_EDEFAULT, oldCountryESet ) );
     }
 
     /**
@@ -333,8 +337,9 @@ public class TownDetailImpl extends MinimalEObjectImpl.Container implements Town
         name = newName;
         boolean oldNameESet = nameESet;
         nameESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TOWN_DETAIL__NAME, oldName, name, !oldNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TOWN_DETAIL__NAME, oldName, name,
+                    !oldNameESet ) );
     }
 
     /**
@@ -348,8 +353,9 @@ public class TownDetailImpl extends MinimalEObjectImpl.Container implements Town
         boolean oldNameESet = nameESet;
         name = NAME_EDEFAULT;
         nameESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TOWN_DETAIL__NAME, oldName, NAME_EDEFAULT, oldNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TOWN_DETAIL__NAME, oldName,
+                    NAME_EDEFAULT, oldNameESet ) );
     }
 
     /**
@@ -383,8 +389,9 @@ public class TownDetailImpl extends MinimalEObjectImpl.Container implements Town
         section = newSection;
         boolean oldSectionESet = sectionESet;
         sectionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TOWN_DETAIL__SECTION, oldSection, section, !oldSectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TOWN_DETAIL__SECTION, oldSection,
+                    section, !oldSectionESet ) );
     }
 
     /**
@@ -398,8 +405,9 @@ public class TownDetailImpl extends MinimalEObjectImpl.Container implements Town
         boolean oldSectionESet = sectionESet;
         section = SECTION_EDEFAULT;
         sectionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TOWN_DETAIL__SECTION, oldSection, SECTION_EDEFAULT, oldSectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TOWN_DETAIL__SECTION, oldSection,
+                    SECTION_EDEFAULT, oldSectionESet ) );
     }
 
     /**
@@ -571,7 +579,7 @@ public class TownDetailImpl extends MinimalEObjectImpl.Container implements Town
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (code: " );
         if( codeESet )
             result.append( code );

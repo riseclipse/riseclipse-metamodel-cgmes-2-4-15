@@ -180,8 +180,9 @@ public class MeterImpl extends EndDeviceImpl implements Meter {
         formNumber = newFormNumber;
         boolean oldFormNumberESet = formNumberESet;
         formNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.METER__FORM_NUMBER, oldFormNumber, formNumber, !oldFormNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.METER__FORM_NUMBER, oldFormNumber,
+                    formNumber, !oldFormNumberESet ) );
     }
 
     /**
@@ -195,8 +196,9 @@ public class MeterImpl extends EndDeviceImpl implements Meter {
         boolean oldFormNumberESet = formNumberESet;
         formNumber = FORM_NUMBER_EDEFAULT;
         formNumberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.METER__FORM_NUMBER, oldFormNumber, FORM_NUMBER_EDEFAULT, oldFormNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.METER__FORM_NUMBER, oldFormNumber,
+                    FORM_NUMBER_EDEFAULT, oldFormNumberESet ) );
     }
 
     /**
@@ -555,7 +557,7 @@ public class MeterImpl extends EndDeviceImpl implements Meter {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (formNumber: " );
         if( formNumberESet )
             result.append( formNumber );

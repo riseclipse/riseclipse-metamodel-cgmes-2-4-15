@@ -754,8 +754,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         dpmax = newDpmax;
         boolean oldDpmaxESet = dpmaxESet;
         dpmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__DPMAX, oldDpmax, dpmax, !oldDpmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__DPMAX, oldDpmax,
+                    dpmax, !oldDpmaxESet ) );
     }
 
     /**
@@ -769,8 +770,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldDpmaxESet = dpmaxESet;
         dpmax = DPMAX_EDEFAULT;
         dpmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__DPMAX, oldDpmax, DPMAX_EDEFAULT, oldDpmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__DPMAX, oldDpmax,
+                    DPMAX_EDEFAULT, oldDpmaxESet ) );
     }
 
     /**
@@ -856,8 +858,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         kdtd = newKdtd;
         boolean oldKdtdESet = kdtdESet;
         kdtdESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__KDTD, oldKdtd, kdtd, !oldKdtdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__KDTD, oldKdtd,
+                    kdtd, !oldKdtdESet ) );
     }
 
     /**
@@ -871,8 +874,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldKdtdESet = kdtdESet;
         kdtd = KDTD_EDEFAULT;
         kdtdESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__KDTD, oldKdtd, KDTD_EDEFAULT, oldKdtdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__KDTD, oldKdtd,
+                    KDTD_EDEFAULT, oldKdtdESet ) );
     }
 
     /**
@@ -906,8 +910,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         kip = newKip;
         boolean oldKipESet = kipESet;
         kipESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__KIP, oldKip, kip, !oldKipESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__KIP, oldKip, kip,
+                    !oldKipESet ) );
     }
 
     /**
@@ -921,8 +926,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldKipESet = kipESet;
         kip = KIP_EDEFAULT;
         kipESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__KIP, oldKip, KIP_EDEFAULT, oldKipESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__KIP, oldKip,
+                    KIP_EDEFAULT, oldKipESet ) );
     }
 
     /**
@@ -956,8 +962,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         kpp = newKpp;
         boolean oldKppESet = kppESet;
         kppESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__KPP, oldKpp, kpp, !oldKppESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__KPP, oldKpp, kpp,
+                    !oldKppESet ) );
     }
 
     /**
@@ -971,8 +978,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldKppESet = kppESet;
         kpp = KPP_EDEFAULT;
         kppESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__KPP, oldKpp, KPP_EDEFAULT, oldKppESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__KPP, oldKpp,
+                    KPP_EDEFAULT, oldKppESet ) );
     }
 
     /**
@@ -1006,8 +1014,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         mplvrt = newMplvrt;
         boolean oldMplvrtESet = mplvrtESet;
         mplvrtESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__MPLVRT, oldMplvrt, mplvrt, !oldMplvrtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__MPLVRT, oldMplvrt,
+                    mplvrt, !oldMplvrtESet ) );
     }
 
     /**
@@ -1021,8 +1030,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldMplvrtESet = mplvrtESet;
         mplvrt = MPLVRT_EDEFAULT;
         mplvrtESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__MPLVRT, oldMplvrt, MPLVRT_EDEFAULT, oldMplvrtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__MPLVRT,
+                    oldMplvrt, MPLVRT_EDEFAULT, oldMplvrtESet ) );
     }
 
     /**
@@ -1056,8 +1066,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         omegaoffset = newOmegaoffset;
         boolean oldOmegaoffsetESet = omegaoffsetESet;
         omegaoffsetESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__OMEGAOFFSET, oldOmegaoffset, omegaoffset, !oldOmegaoffsetESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__OMEGAOFFSET,
+                    oldOmegaoffset, omegaoffset, !oldOmegaoffsetESet ) );
     }
 
     /**
@@ -1107,8 +1118,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         pdtdmax = newPdtdmax;
         boolean oldPdtdmaxESet = pdtdmaxESet;
         pdtdmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__PDTDMAX, oldPdtdmax, pdtdmax, !oldPdtdmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__PDTDMAX,
+                    oldPdtdmax, pdtdmax, !oldPdtdmaxESet ) );
     }
 
     /**
@@ -1122,8 +1134,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldPdtdmaxESet = pdtdmaxESet;
         pdtdmax = PDTDMAX_EDEFAULT;
         pdtdmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__PDTDMAX, oldPdtdmax, PDTDMAX_EDEFAULT, oldPdtdmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__PDTDMAX,
+                    oldPdtdmax, PDTDMAX_EDEFAULT, oldPdtdmaxESet ) );
     }
 
     /**
@@ -1157,8 +1170,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         rramp = newRramp;
         boolean oldRrampESet = rrampESet;
         rrampESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__RRAMP, oldRramp, rramp, !oldRrampESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__RRAMP, oldRramp,
+                    rramp, !oldRrampESet ) );
     }
 
     /**
@@ -1172,8 +1186,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldRrampESet = rrampESet;
         rramp = RRAMP_EDEFAULT;
         rrampESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__RRAMP, oldRramp, RRAMP_EDEFAULT, oldRrampESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__RRAMP, oldRramp,
+                    RRAMP_EDEFAULT, oldRrampESet ) );
     }
 
     /**
@@ -1207,8 +1222,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         tdvs = newTdvs;
         boolean oldTdvsESet = tdvsESet;
         tdvsESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__TDVS, oldTdvs, tdvs, !oldTdvsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__TDVS, oldTdvs,
+                    tdvs, !oldTdvsESet ) );
     }
 
     /**
@@ -1222,8 +1238,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldTdvsESet = tdvsESet;
         tdvs = TDVS_EDEFAULT;
         tdvsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__TDVS, oldTdvs, TDVS_EDEFAULT, oldTdvsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__TDVS, oldTdvs,
+                    TDVS_EDEFAULT, oldTdvsESet ) );
     }
 
     /**
@@ -1257,8 +1274,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         temin = newTemin;
         boolean oldTeminESet = teminESet;
         teminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__TEMIN, oldTemin, temin, !oldTeminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__TEMIN, oldTemin,
+                    temin, !oldTeminESet ) );
     }
 
     /**
@@ -1272,8 +1290,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldTeminESet = teminESet;
         temin = TEMIN_EDEFAULT;
         teminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__TEMIN, oldTemin, TEMIN_EDEFAULT, oldTeminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__TEMIN, oldTemin,
+                    TEMIN_EDEFAULT, oldTeminESet ) );
     }
 
     /**
@@ -1307,8 +1326,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         tomegafilt = newTomegafilt;
         boolean oldTomegafiltESet = tomegafiltESet;
         tomegafiltESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__TOMEGAFILT, oldTomegafilt, tomegafilt, !oldTomegafiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__TOMEGAFILT,
+                    oldTomegafilt, tomegafilt, !oldTomegafiltESet ) );
     }
 
     /**
@@ -1322,8 +1342,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldTomegafiltESet = tomegafiltESet;
         tomegafilt = TOMEGAFILT_EDEFAULT;
         tomegafiltESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__TOMEGAFILT, oldTomegafilt, TOMEGAFILT_EDEFAULT, oldTomegafiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__TOMEGAFILT,
+                    oldTomegafilt, TOMEGAFILT_EDEFAULT, oldTomegafiltESet ) );
     }
 
     /**
@@ -1357,8 +1378,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         tpfilt = newTpfilt;
         boolean oldTpfiltESet = tpfiltESet;
         tpfiltESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__TPFILT, oldTpfilt, tpfilt, !oldTpfiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__TPFILT, oldTpfilt,
+                    tpfilt, !oldTpfiltESet ) );
     }
 
     /**
@@ -1372,8 +1394,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldTpfiltESet = tpfiltESet;
         tpfilt = TPFILT_EDEFAULT;
         tpfiltESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__TPFILT, oldTpfilt, TPFILT_EDEFAULT, oldTpfiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__TPFILT,
+                    oldTpfilt, TPFILT_EDEFAULT, oldTpfiltESet ) );
     }
 
     /**
@@ -1407,8 +1430,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         tpord = newTpord;
         boolean oldTpordESet = tpordESet;
         tpordESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__TPORD, oldTpord, tpord, !oldTpordESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__TPORD, oldTpord,
+                    tpord, !oldTpordESet ) );
     }
 
     /**
@@ -1422,8 +1446,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldTpordESet = tpordESet;
         tpord = TPORD_EDEFAULT;
         tpordESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__TPORD, oldTpord, TPORD_EDEFAULT, oldTpordESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__TPORD, oldTpord,
+                    TPORD_EDEFAULT, oldTpordESet ) );
     }
 
     /**
@@ -1457,8 +1482,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         tufilt = newTufilt;
         boolean oldTufiltESet = tufiltESet;
         tufiltESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__TUFILT, oldTufilt, tufilt, !oldTufiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__TUFILT, oldTufilt,
+                    tufilt, !oldTufiltESet ) );
     }
 
     /**
@@ -1472,8 +1498,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldTufiltESet = tufiltESet;
         tufilt = TUFILT_EDEFAULT;
         tufiltESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__TUFILT, oldTufilt, TUFILT_EDEFAULT, oldTufiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__TUFILT,
+                    oldTufilt, TUFILT_EDEFAULT, oldTufiltESet ) );
     }
 
     /**
@@ -1507,8 +1534,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         tuscale = newTuscale;
         boolean oldTuscaleESet = tuscaleESet;
         tuscaleESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__TUSCALE, oldTuscale, tuscale, !oldTuscaleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__TUSCALE,
+                    oldTuscale, tuscale, !oldTuscaleESet ) );
     }
 
     /**
@@ -1522,8 +1550,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldTuscaleESet = tuscaleESet;
         tuscale = TUSCALE_EDEFAULT;
         tuscaleESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__TUSCALE, oldTuscale, TUSCALE_EDEFAULT, oldTuscaleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__TUSCALE,
+                    oldTuscale, TUSCALE_EDEFAULT, oldTuscaleESet ) );
     }
 
     /**
@@ -1557,8 +1586,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         twref = newTwref;
         boolean oldTwrefESet = twrefESet;
         twrefESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__TWREF, oldTwref, twref, !oldTwrefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__TWREF, oldTwref,
+                    twref, !oldTwrefESet ) );
     }
 
     /**
@@ -1572,8 +1602,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldTwrefESet = twrefESet;
         twref = TWREF_EDEFAULT;
         twrefESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__TWREF, oldTwref, TWREF_EDEFAULT, oldTwrefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__TWREF, oldTwref,
+                    TWREF_EDEFAULT, oldTwrefESet ) );
     }
 
     /**
@@ -1607,8 +1638,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         udvs = newUdvs;
         boolean oldUdvsESet = udvsESet;
         udvsESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__UDVS, oldUdvs, udvs, !oldUdvsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__UDVS, oldUdvs,
+                    udvs, !oldUdvsESet ) );
     }
 
     /**
@@ -1622,8 +1654,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldUdvsESet = udvsESet;
         udvs = UDVS_EDEFAULT;
         udvsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__UDVS, oldUdvs, UDVS_EDEFAULT, oldUdvsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__UDVS, oldUdvs,
+                    UDVS_EDEFAULT, oldUdvsESet ) );
     }
 
     /**
@@ -1657,8 +1690,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         updip = newUpdip;
         boolean oldUpdipESet = updipESet;
         updipESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__UPDIP, oldUpdip, updip, !oldUpdipESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__UPDIP, oldUpdip,
+                    updip, !oldUpdipESet ) );
     }
 
     /**
@@ -1672,8 +1706,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldUpdipESet = updipESet;
         updip = UPDIP_EDEFAULT;
         updipESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__UPDIP, oldUpdip, UPDIP_EDEFAULT, oldUpdipESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__UPDIP, oldUpdip,
+                    UPDIP_EDEFAULT, oldUpdipESet ) );
     }
 
     /**
@@ -1707,8 +1742,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         wdtd = newWdtd;
         boolean oldWdtdESet = wdtdESet;
         wdtdESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__WDTD, oldWdtd, wdtd, !oldWdtdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__WDTD, oldWdtd,
+                    wdtd, !oldWdtdESet ) );
     }
 
     /**
@@ -1722,8 +1758,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldWdtdESet = wdtdESet;
         wdtd = WDTD_EDEFAULT;
         wdtdESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__WDTD, oldWdtd, WDTD_EDEFAULT, oldWdtdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__WDTD, oldWdtd,
+                    WDTD_EDEFAULT, oldWdtdESet ) );
     }
 
     /**
@@ -1757,8 +1794,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         zeta = newZeta;
         boolean oldZetaESet = zetaESet;
         zetaESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__ZETA, oldZeta, zeta, !oldZetaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE3_IEC__ZETA, oldZeta,
+                    zeta, !oldZetaESet ) );
     }
 
     /**
@@ -1772,8 +1810,9 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldZetaESet = zetaESet;
         zeta = ZETA_EDEFAULT;
         zetaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE3_IEC__ZETA, oldZeta, ZETA_EDEFAULT, oldZetaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE3_IEC__ZETA, oldZeta,
+                    ZETA_EDEFAULT, oldZetaESet ) );
     }
 
     /**
@@ -1797,9 +1836,10 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
             InternalEObject oldWindGenTurbineType3IEC = ( InternalEObject ) windGenTurbineType3IEC;
             windGenTurbineType3IEC = ( WindGenTurbineType3IEC ) eResolveProxy( oldWindGenTurbineType3IEC );
             if( windGenTurbineType3IEC != oldWindGenTurbineType3IEC ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.WIND_CONT_PTYPE3_IEC__WIND_GEN_TURBINE_TYPE3_IEC, oldWindGenTurbineType3IEC,
-                        windGenTurbineType3IEC ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.WIND_CONT_PTYPE3_IEC__WIND_GEN_TURBINE_TYPE3_IEC, oldWindGenTurbineType3IEC,
+                            windGenTurbineType3IEC ) );
             }
         }
         return windGenTurbineType3IEC;
@@ -1860,9 +1900,10 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         else {
             boolean oldWindGenTurbineType3IECESet = windGenTurbineType3IECESet;
             windGenTurbineType3IECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_CONT_PTYPE3_IEC__WIND_GEN_TURBINE_TYPE3_IEC, newWindGenTurbineType3IEC,
-                    newWindGenTurbineType3IEC, !oldWindGenTurbineType3IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_CONT_PTYPE3_IEC__WIND_GEN_TURBINE_TYPE3_IEC, newWindGenTurbineType3IEC,
+                        newWindGenTurbineType3IEC, !oldWindGenTurbineType3IECESet ) );
         }
     }
 
@@ -1905,9 +1946,10 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
         else {
             boolean oldWindGenTurbineType3IECESet = windGenTurbineType3IECESet;
             windGenTurbineType3IECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_CONT_PTYPE3_IEC__WIND_GEN_TURBINE_TYPE3_IEC, null, null,
-                    oldWindGenTurbineType3IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_CONT_PTYPE3_IEC__WIND_GEN_TURBINE_TYPE3_IEC, null, null,
+                        oldWindGenTurbineType3IECESet ) );
         }
     }
 
@@ -2284,7 +2326,7 @@ public class WindContPType3IECImpl extends IdentifiedObjectImpl implements WindC
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (dpmax: " );
         if( dpmaxESet )
             result.append( dpmax );

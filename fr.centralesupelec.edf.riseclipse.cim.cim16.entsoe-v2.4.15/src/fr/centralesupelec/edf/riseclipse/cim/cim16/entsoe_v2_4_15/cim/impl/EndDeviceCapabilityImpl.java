@@ -727,9 +727,10 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         connectDisconnect = newConnectDisconnect;
         boolean oldConnectDisconnectESet = connectDisconnectESet;
         connectDisconnectESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_CAPABILITY__CONNECT_DISCONNECT,
-                        oldConnectDisconnect, connectDisconnect, !oldConnectDisconnectESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.END_DEVICE_CAPABILITY__CONNECT_DISCONNECT, oldConnectDisconnect, connectDisconnect,
+                    !oldConnectDisconnectESet ) );
     }
 
     /**
@@ -743,9 +744,10 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         boolean oldConnectDisconnectESet = connectDisconnectESet;
         connectDisconnect = CONNECT_DISCONNECT_EDEFAULT;
         connectDisconnectESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_CAPABILITY__CONNECT_DISCONNECT,
-                        oldConnectDisconnect, CONNECT_DISCONNECT_EDEFAULT, oldConnectDisconnectESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.END_DEVICE_CAPABILITY__CONNECT_DISCONNECT, oldConnectDisconnect,
+                    CONNECT_DISCONNECT_EDEFAULT, oldConnectDisconnectESet ) );
     }
 
     /**
@@ -847,9 +849,10 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         boolean oldElectricMeteringESet = electricMeteringESet;
         electricMetering = ELECTRIC_METERING_EDEFAULT;
         electricMeteringESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_CAPABILITY__ELECTRIC_METERING,
-                        oldElectricMetering, ELECTRIC_METERING_EDEFAULT, oldElectricMeteringESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.END_DEVICE_CAPABILITY__ELECTRIC_METERING, oldElectricMetering,
+                    ELECTRIC_METERING_EDEFAULT, oldElectricMeteringESet ) );
     }
 
     /**
@@ -883,8 +886,9 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         gasMetering = newGasMetering;
         boolean oldGasMeteringESet = gasMeteringESet;
         gasMeteringESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_CAPABILITY__GAS_METERING, oldGasMetering, gasMetering, !oldGasMeteringESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_CAPABILITY__GAS_METERING,
+                    oldGasMetering, gasMetering, !oldGasMeteringESet ) );
     }
 
     /**
@@ -934,8 +938,9 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         metrology = newMetrology;
         boolean oldMetrologyESet = metrologyESet;
         metrologyESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_CAPABILITY__METROLOGY, oldMetrology, metrology, !oldMetrologyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_CAPABILITY__METROLOGY,
+                    oldMetrology, metrology, !oldMetrologyESet ) );
     }
 
     /**
@@ -949,8 +954,9 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         boolean oldMetrologyESet = metrologyESet;
         metrology = METROLOGY_EDEFAULT;
         metrologyESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_CAPABILITY__METROLOGY, oldMetrology, METROLOGY_EDEFAULT, oldMetrologyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_CAPABILITY__METROLOGY,
+                    oldMetrology, METROLOGY_EDEFAULT, oldMetrologyESet ) );
     }
 
     /**
@@ -1088,9 +1094,10 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         pressureCompensation = newPressureCompensation;
         boolean oldPressureCompensationESet = pressureCompensationESet;
         pressureCompensationESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_CAPABILITY__PRESSURE_COMPENSATION,
-                        oldPressureCompensation, pressureCompensation, !oldPressureCompensationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.END_DEVICE_CAPABILITY__PRESSURE_COMPENSATION, oldPressureCompensation,
+                    pressureCompensation, !oldPressureCompensationESet ) );
     }
 
     /**
@@ -1104,9 +1111,10 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         boolean oldPressureCompensationESet = pressureCompensationESet;
         pressureCompensation = PRESSURE_COMPENSATION_EDEFAULT;
         pressureCompensationESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_CAPABILITY__PRESSURE_COMPENSATION, oldPressureCompensation,
-                PRESSURE_COMPENSATION_EDEFAULT, oldPressureCompensationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.END_DEVICE_CAPABILITY__PRESSURE_COMPENSATION, oldPressureCompensation,
+                    PRESSURE_COMPENSATION_EDEFAULT, oldPressureCompensationESet ) );
     }
 
     /**
@@ -1140,8 +1148,9 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         pricingInfo = newPricingInfo;
         boolean oldPricingInfoESet = pricingInfoESet;
         pricingInfoESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_CAPABILITY__PRICING_INFO, oldPricingInfo, pricingInfo, !oldPricingInfoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_CAPABILITY__PRICING_INFO,
+                    oldPricingInfo, pricingInfo, !oldPricingInfoESet ) );
     }
 
     /**
@@ -1191,8 +1200,9 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         pulseOutput = newPulseOutput;
         boolean oldPulseOutputESet = pulseOutputESet;
         pulseOutputESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_CAPABILITY__PULSE_OUTPUT, oldPulseOutput, pulseOutput, !oldPulseOutputESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_CAPABILITY__PULSE_OUTPUT,
+                    oldPulseOutput, pulseOutput, !oldPulseOutputESet ) );
     }
 
     /**
@@ -1242,9 +1252,10 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         relaysProgramming = newRelaysProgramming;
         boolean oldRelaysProgrammingESet = relaysProgrammingESet;
         relaysProgrammingESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_CAPABILITY__RELAYS_PROGRAMMING,
-                        oldRelaysProgramming, relaysProgramming, !oldRelaysProgrammingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.END_DEVICE_CAPABILITY__RELAYS_PROGRAMMING, oldRelaysProgramming, relaysProgramming,
+                    !oldRelaysProgrammingESet ) );
     }
 
     /**
@@ -1258,9 +1269,10 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         boolean oldRelaysProgrammingESet = relaysProgrammingESet;
         relaysProgramming = RELAYS_PROGRAMMING_EDEFAULT;
         relaysProgrammingESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_CAPABILITY__RELAYS_PROGRAMMING,
-                        oldRelaysProgramming, RELAYS_PROGRAMMING_EDEFAULT, oldRelaysProgrammingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.END_DEVICE_CAPABILITY__RELAYS_PROGRAMMING, oldRelaysProgramming,
+                    RELAYS_PROGRAMMING_EDEFAULT, oldRelaysProgrammingESet ) );
     }
 
     /**
@@ -1294,8 +1306,9 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         reverseFlow = newReverseFlow;
         boolean oldReverseFlowESet = reverseFlowESet;
         reverseFlowESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_CAPABILITY__REVERSE_FLOW, oldReverseFlow, reverseFlow, !oldReverseFlowESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_CAPABILITY__REVERSE_FLOW,
+                    oldReverseFlow, reverseFlow, !oldReverseFlowESet ) );
     }
 
     /**
@@ -1345,10 +1358,11 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         superCompressibilityCompensation = newSuperCompressibilityCompensation;
         boolean oldSuperCompressibilityCompensationESet = superCompressibilityCompensationESet;
         superCompressibilityCompensationESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_CAPABILITY__SUPER_COMPRESSIBILITY_COMPENSATION,
-                oldSuperCompressibilityCompensation, superCompressibilityCompensation,
-                !oldSuperCompressibilityCompensationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.END_DEVICE_CAPABILITY__SUPER_COMPRESSIBILITY_COMPENSATION,
+                    oldSuperCompressibilityCompensation, superCompressibilityCompensation,
+                    !oldSuperCompressibilityCompensationESet ) );
     }
 
     /**
@@ -1362,10 +1376,11 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         boolean oldSuperCompressibilityCompensationESet = superCompressibilityCompensationESet;
         superCompressibilityCompensation = SUPER_COMPRESSIBILITY_COMPENSATION_EDEFAULT;
         superCompressibilityCompensationESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_CAPABILITY__SUPER_COMPRESSIBILITY_COMPENSATION,
-                oldSuperCompressibilityCompensation, SUPER_COMPRESSIBILITY_COMPENSATION_EDEFAULT,
-                oldSuperCompressibilityCompensationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.END_DEVICE_CAPABILITY__SUPER_COMPRESSIBILITY_COMPENSATION,
+                    oldSuperCompressibilityCompensation, SUPER_COMPRESSIBILITY_COMPENSATION_EDEFAULT,
+                    oldSuperCompressibilityCompensationESet ) );
     }
 
     /**
@@ -1399,9 +1414,10 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         temperatureCompensation = newTemperatureCompensation;
         boolean oldTemperatureCompensationESet = temperatureCompensationESet;
         temperatureCompensationESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_CAPABILITY__TEMPERATURE_COMPENSATION, oldTemperatureCompensation,
-                temperatureCompensation, !oldTemperatureCompensationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.END_DEVICE_CAPABILITY__TEMPERATURE_COMPENSATION, oldTemperatureCompensation,
+                    temperatureCompensation, !oldTemperatureCompensationESet ) );
     }
 
     /**
@@ -1415,9 +1431,10 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         boolean oldTemperatureCompensationESet = temperatureCompensationESet;
         temperatureCompensation = TEMPERATURE_COMPENSATION_EDEFAULT;
         temperatureCompensationESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_CAPABILITY__TEMPERATURE_COMPENSATION, oldTemperatureCompensation,
-                TEMPERATURE_COMPENSATION_EDEFAULT, oldTemperatureCompensationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.END_DEVICE_CAPABILITY__TEMPERATURE_COMPENSATION, oldTemperatureCompensation,
+                    TEMPERATURE_COMPENSATION_EDEFAULT, oldTemperatureCompensationESet ) );
     }
 
     /**
@@ -1451,8 +1468,9 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
         textMessage = newTextMessage;
         boolean oldTextMessageESet = textMessageESet;
         textMessageESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_CAPABILITY__TEXT_MESSAGE, oldTextMessage, textMessage, !oldTextMessageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_CAPABILITY__TEXT_MESSAGE,
+                    oldTextMessage, textMessage, !oldTextMessageESet ) );
     }
 
     /**
@@ -1770,7 +1788,7 @@ public class EndDeviceCapabilityImpl extends MinimalEObjectImpl.Container implem
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (autonomousDst: " );
         if( autonomousDstESet )
             result.append( autonomousDst );

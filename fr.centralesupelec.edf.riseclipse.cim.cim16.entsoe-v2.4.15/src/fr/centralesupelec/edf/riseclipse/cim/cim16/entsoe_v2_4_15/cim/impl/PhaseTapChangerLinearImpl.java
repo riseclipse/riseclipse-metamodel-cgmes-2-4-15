@@ -172,9 +172,10 @@ public class PhaseTapChangerLinearImpl extends PhaseTapChangerImpl implements Ph
         stepPhaseShiftIncrement = newStepPhaseShiftIncrement;
         boolean oldStepPhaseShiftIncrementESet = stepPhaseShiftIncrementESet;
         stepPhaseShiftIncrementESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PHASE_TAP_CHANGER_LINEAR__STEP_PHASE_SHIFT_INCREMENT, oldStepPhaseShiftIncrement,
-                stepPhaseShiftIncrement, !oldStepPhaseShiftIncrementESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PHASE_TAP_CHANGER_LINEAR__STEP_PHASE_SHIFT_INCREMENT, oldStepPhaseShiftIncrement,
+                    stepPhaseShiftIncrement, !oldStepPhaseShiftIncrementESet ) );
     }
 
     /**
@@ -188,9 +189,10 @@ public class PhaseTapChangerLinearImpl extends PhaseTapChangerImpl implements Ph
         boolean oldStepPhaseShiftIncrementESet = stepPhaseShiftIncrementESet;
         stepPhaseShiftIncrement = STEP_PHASE_SHIFT_INCREMENT_EDEFAULT;
         stepPhaseShiftIncrementESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PHASE_TAP_CHANGER_LINEAR__STEP_PHASE_SHIFT_INCREMENT, oldStepPhaseShiftIncrement,
-                STEP_PHASE_SHIFT_INCREMENT_EDEFAULT, oldStepPhaseShiftIncrementESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PHASE_TAP_CHANGER_LINEAR__STEP_PHASE_SHIFT_INCREMENT, oldStepPhaseShiftIncrement,
+                    STEP_PHASE_SHIFT_INCREMENT_EDEFAULT, oldStepPhaseShiftIncrementESet ) );
     }
 
     /**
@@ -224,8 +226,9 @@ public class PhaseTapChangerLinearImpl extends PhaseTapChangerImpl implements Ph
         xMax = newXMax;
         boolean oldXMaxESet = xMaxESet;
         xMaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PHASE_TAP_CHANGER_LINEAR__XMAX, oldXMax, xMax, !oldXMaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PHASE_TAP_CHANGER_LINEAR__XMAX, oldXMax,
+                    xMax, !oldXMaxESet ) );
     }
 
     /**
@@ -239,8 +242,9 @@ public class PhaseTapChangerLinearImpl extends PhaseTapChangerImpl implements Ph
         boolean oldXMaxESet = xMaxESet;
         xMax = XMAX_EDEFAULT;
         xMaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PHASE_TAP_CHANGER_LINEAR__XMAX, oldXMax, XMAX_EDEFAULT, oldXMaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PHASE_TAP_CHANGER_LINEAR__XMAX,
+                    oldXMax, XMAX_EDEFAULT, oldXMaxESet ) );
     }
 
     /**
@@ -274,8 +278,9 @@ public class PhaseTapChangerLinearImpl extends PhaseTapChangerImpl implements Ph
         xMin = newXMin;
         boolean oldXMinESet = xMinESet;
         xMinESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PHASE_TAP_CHANGER_LINEAR__XMIN, oldXMin, xMin, !oldXMinESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PHASE_TAP_CHANGER_LINEAR__XMIN, oldXMin,
+                    xMin, !oldXMinESet ) );
     }
 
     /**
@@ -289,8 +294,9 @@ public class PhaseTapChangerLinearImpl extends PhaseTapChangerImpl implements Ph
         boolean oldXMinESet = xMinESet;
         xMin = XMIN_EDEFAULT;
         xMinESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PHASE_TAP_CHANGER_LINEAR__XMIN, oldXMin, XMIN_EDEFAULT, oldXMinESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PHASE_TAP_CHANGER_LINEAR__XMIN,
+                    oldXMin, XMIN_EDEFAULT, oldXMinESet ) );
     }
 
     /**
@@ -390,7 +396,7 @@ public class PhaseTapChangerLinearImpl extends PhaseTapChangerImpl implements Ph
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (stepPhaseShiftIncrement: " );
         if( stepPhaseShiftIncrementESet )
             result.append( stepPhaseShiftIncrement );

@@ -142,8 +142,12 @@ public enum ExcST7BUELselectorKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final ExcST7BUELselectorKind[] VALUES_ARRAY = new ExcST7BUELselectorKind[] { NO_UE_LINPUT, ADD_VREF,
-            INPUT_HVGATE, OUTPUT_HVGATE, };
+    private static final ExcST7BUELselectorKind[] VALUES_ARRAY = new ExcST7BUELselectorKind[] {
+            NO_UE_LINPUT,
+            ADD_VREF,
+            INPUT_HVGATE,
+            OUTPUT_HVGATE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Exc ST7BUE Lselector Kind</b></em>' enumerators.

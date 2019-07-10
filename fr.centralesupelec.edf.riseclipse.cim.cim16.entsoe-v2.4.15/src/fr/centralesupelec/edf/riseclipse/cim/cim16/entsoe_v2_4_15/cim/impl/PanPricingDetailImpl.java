@@ -499,9 +499,10 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
         alternateCostDelivered = newAlternateCostDelivered;
         boolean oldAlternateCostDeliveredESet = alternateCostDeliveredESet;
         alternateCostDeliveredESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PAN_PRICING_DETAIL__ALTERNATE_COST_DELIVERED,
-                        oldAlternateCostDelivered, alternateCostDelivered, !oldAlternateCostDeliveredESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PAN_PRICING_DETAIL__ALTERNATE_COST_DELIVERED, oldAlternateCostDelivered,
+                    alternateCostDelivered, !oldAlternateCostDeliveredESet ) );
     }
 
     /**
@@ -515,9 +516,10 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
         boolean oldAlternateCostDeliveredESet = alternateCostDeliveredESet;
         alternateCostDelivered = ALTERNATE_COST_DELIVERED_EDEFAULT;
         alternateCostDeliveredESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PAN_PRICING_DETAIL__ALTERNATE_COST_DELIVERED, oldAlternateCostDelivered,
-                ALTERNATE_COST_DELIVERED_EDEFAULT, oldAlternateCostDeliveredESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PAN_PRICING_DETAIL__ALTERNATE_COST_DELIVERED, oldAlternateCostDelivered,
+                    ALTERNATE_COST_DELIVERED_EDEFAULT, oldAlternateCostDeliveredESet ) );
     }
 
     /**
@@ -567,9 +569,10 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
         boolean oldAlternateCostUnitESet = alternateCostUnitESet;
         alternateCostUnit = ALTERNATE_COST_UNIT_EDEFAULT;
         alternateCostUnitESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PAN_PRICING_DETAIL__ALTERNATE_COST_UNIT,
-                        oldAlternateCostUnit, ALTERNATE_COST_UNIT_EDEFAULT, oldAlternateCostUnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PAN_PRICING_DETAIL__ALTERNATE_COST_UNIT, oldAlternateCostUnit,
+                    ALTERNATE_COST_UNIT_EDEFAULT, oldAlternateCostUnitESet ) );
     }
 
     /**
@@ -707,9 +710,10 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
         generationPriceRatio = newGenerationPriceRatio;
         boolean oldGenerationPriceRatioESet = generationPriceRatioESet;
         generationPriceRatioESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PAN_PRICING_DETAIL__GENERATION_PRICE_RATIO,
-                        oldGenerationPriceRatio, generationPriceRatio, !oldGenerationPriceRatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PAN_PRICING_DETAIL__GENERATION_PRICE_RATIO, oldGenerationPriceRatio,
+                    generationPriceRatio, !oldGenerationPriceRatioESet ) );
     }
 
     /**
@@ -723,9 +727,10 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
         boolean oldGenerationPriceRatioESet = generationPriceRatioESet;
         generationPriceRatio = GENERATION_PRICE_RATIO_EDEFAULT;
         generationPriceRatioESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PAN_PRICING_DETAIL__GENERATION_PRICE_RATIO,
-                        oldGenerationPriceRatio, GENERATION_PRICE_RATIO_EDEFAULT, oldGenerationPriceRatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PAN_PRICING_DETAIL__GENERATION_PRICE_RATIO, oldGenerationPriceRatio,
+                    GENERATION_PRICE_RATIO_EDEFAULT, oldGenerationPriceRatioESet ) );
     }
 
     /**
@@ -759,8 +764,9 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
         price = newPrice;
         boolean oldPriceESet = priceESet;
         priceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PAN_PRICING_DETAIL__PRICE, oldPrice, price, !oldPriceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PAN_PRICING_DETAIL__PRICE, oldPrice,
+                    price, !oldPriceESet ) );
     }
 
     /**
@@ -774,8 +780,9 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
         boolean oldPriceESet = priceESet;
         price = PRICE_EDEFAULT;
         priceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PAN_PRICING_DETAIL__PRICE, oldPrice, PRICE_EDEFAULT, oldPriceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PAN_PRICING_DETAIL__PRICE, oldPrice,
+                    PRICE_EDEFAULT, oldPriceESet ) );
     }
 
     /**
@@ -809,8 +816,9 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
         priceRatio = newPriceRatio;
         boolean oldPriceRatioESet = priceRatioESet;
         priceRatioESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PAN_PRICING_DETAIL__PRICE_RATIO, oldPriceRatio, priceRatio, !oldPriceRatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PAN_PRICING_DETAIL__PRICE_RATIO,
+                    oldPriceRatio, priceRatio, !oldPriceRatioESet ) );
     }
 
     /**
@@ -824,8 +832,9 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
         boolean oldPriceRatioESet = priceRatioESet;
         priceRatio = PRICE_RATIO_EDEFAULT;
         priceRatioESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PAN_PRICING_DETAIL__PRICE_RATIO, oldPriceRatio, PRICE_RATIO_EDEFAULT, oldPriceRatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PAN_PRICING_DETAIL__PRICE_RATIO,
+                    oldPriceRatio, PRICE_RATIO_EDEFAULT, oldPriceRatioESet ) );
     }
 
     /**
@@ -859,8 +868,9 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
         priceTier = newPriceTier;
         boolean oldPriceTierESet = priceTierESet;
         priceTierESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PAN_PRICING_DETAIL__PRICE_TIER, oldPriceTier, priceTier, !oldPriceTierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PAN_PRICING_DETAIL__PRICE_TIER,
+                    oldPriceTier, priceTier, !oldPriceTierESet ) );
     }
 
     /**
@@ -874,8 +884,9 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
         boolean oldPriceTierESet = priceTierESet;
         priceTier = PRICE_TIER_EDEFAULT;
         priceTierESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PAN_PRICING_DETAIL__PRICE_TIER, oldPriceTier, PRICE_TIER_EDEFAULT, oldPriceTierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PAN_PRICING_DETAIL__PRICE_TIER,
+                    oldPriceTier, PRICE_TIER_EDEFAULT, oldPriceTierESet ) );
     }
 
     /**
@@ -1013,8 +1024,9 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
         rateLabel = newRateLabel;
         boolean oldRateLabelESet = rateLabelESet;
         rateLabelESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PAN_PRICING_DETAIL__RATE_LABEL, oldRateLabel, rateLabel, !oldRateLabelESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PAN_PRICING_DETAIL__RATE_LABEL,
+                    oldRateLabel, rateLabel, !oldRateLabelESet ) );
     }
 
     /**
@@ -1028,8 +1040,9 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
         boolean oldRateLabelESet = rateLabelESet;
         rateLabel = RATE_LABEL_EDEFAULT;
         rateLabelESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PAN_PRICING_DETAIL__RATE_LABEL, oldRateLabel, RATE_LABEL_EDEFAULT, oldRateLabelESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PAN_PRICING_DETAIL__RATE_LABEL,
+                    oldRateLabel, RATE_LABEL_EDEFAULT, oldRateLabelESet ) );
     }
 
     /**
@@ -1063,8 +1076,9 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
         registerTier = newRegisterTier;
         boolean oldRegisterTierESet = registerTierESet;
         registerTierESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PAN_PRICING_DETAIL__REGISTER_TIER, oldRegisterTier, registerTier, !oldRegisterTierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PAN_PRICING_DETAIL__REGISTER_TIER,
+                    oldRegisterTier, registerTier, !oldRegisterTierESet ) );
     }
 
     /**
@@ -1185,18 +1199,21 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
     public void setPanPricing( PanPricing newPanPricing ) {
         if( newPanPricing != panPricing ) {
             NotificationChain msgs = null;
-            if( panPricing != null ) msgs = ( ( InternalEObject ) panPricing ).eInverseRemove( this,
-                    CimPackage.PAN_PRICING__PAN_PRICING_DETAILS, PanPricing.class, msgs );
-            if( newPanPricing != null ) msgs = ( ( InternalEObject ) newPanPricing ).eInverseAdd( this,
-                    CimPackage.PAN_PRICING__PAN_PRICING_DETAILS, PanPricing.class, msgs );
+            if( panPricing != null )
+                msgs = ( ( InternalEObject ) panPricing ).eInverseRemove( this,
+                        CimPackage.PAN_PRICING__PAN_PRICING_DETAILS, PanPricing.class, msgs );
+            if( newPanPricing != null )
+                msgs = ( ( InternalEObject ) newPanPricing ).eInverseAdd( this,
+                        CimPackage.PAN_PRICING__PAN_PRICING_DETAILS, PanPricing.class, msgs );
             msgs = basicSetPanPricing( newPanPricing, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldPanPricingESet = panPricingESet;
             panPricingESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PAN_PRICING_DETAIL__PAN_PRICING, newPanPricing, newPanPricing, !oldPanPricingESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PAN_PRICING_DETAIL__PAN_PRICING,
+                        newPanPricing, newPanPricing, !oldPanPricingESet ) );
         }
     }
 
@@ -1238,8 +1255,9 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
         else {
             boolean oldPanPricingESet = panPricingESet;
             panPricingESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PAN_PRICING_DETAIL__PAN_PRICING, null, null, oldPanPricingESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PAN_PRICING_DETAIL__PAN_PRICING,
+                        null, null, oldPanPricingESet ) );
         }
     }
 
@@ -1262,8 +1280,9 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.PAN_PRICING_DETAIL__PAN_PRICING:
-            if( panPricing != null ) msgs = ( ( InternalEObject ) panPricing ).eInverseRemove( this,
-                    CimPackage.PAN_PRICING__PAN_PRICING_DETAILS, PanPricing.class, msgs );
+            if( panPricing != null )
+                msgs = ( ( InternalEObject ) panPricing ).eInverseRemove( this,
+                        CimPackage.PAN_PRICING__PAN_PRICING_DETAILS, PanPricing.class, msgs );
             return basicSetPanPricing( ( PanPricing ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1480,7 +1499,7 @@ public class PanPricingDetailImpl extends CimObjectWithIDImpl implements PanPric
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (alternateCostDelivered: " );
         if( alternateCostDeliveredESet )
             result.append( alternateCostDelivered );

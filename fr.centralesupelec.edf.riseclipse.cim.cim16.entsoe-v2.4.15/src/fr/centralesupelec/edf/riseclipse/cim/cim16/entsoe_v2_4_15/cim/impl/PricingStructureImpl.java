@@ -342,8 +342,9 @@ public class PricingStructureImpl extends DocumentImpl implements PricingStructu
         code = newCode;
         boolean oldCodeESet = codeESet;
         codeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PRICING_STRUCTURE__CODE, oldCode, code, !oldCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PRICING_STRUCTURE__CODE, oldCode, code,
+                    !oldCodeESet ) );
     }
 
     /**
@@ -357,8 +358,9 @@ public class PricingStructureImpl extends DocumentImpl implements PricingStructu
         boolean oldCodeESet = codeESet;
         code = CODE_EDEFAULT;
         codeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PRICING_STRUCTURE__CODE, oldCode, CODE_EDEFAULT, oldCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PRICING_STRUCTURE__CODE, oldCode,
+                    CODE_EDEFAULT, oldCodeESet ) );
     }
 
     /**
@@ -460,9 +462,10 @@ public class PricingStructureImpl extends DocumentImpl implements PricingStructu
         boolean oldDailyEstimatedUsageESet = dailyEstimatedUsageESet;
         dailyEstimatedUsage = DAILY_ESTIMATED_USAGE_EDEFAULT;
         dailyEstimatedUsageESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PRICING_STRUCTURE__DAILY_ESTIMATED_USAGE,
-                        oldDailyEstimatedUsage, DAILY_ESTIMATED_USAGE_EDEFAULT, oldDailyEstimatedUsageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PRICING_STRUCTURE__DAILY_ESTIMATED_USAGE, oldDailyEstimatedUsage,
+                    DAILY_ESTIMATED_USAGE_EDEFAULT, oldDailyEstimatedUsageESet ) );
     }
 
     /**
@@ -548,8 +551,9 @@ public class PricingStructureImpl extends DocumentImpl implements PricingStructu
         revenueKind = newRevenueKind == null ? REVENUE_KIND_EDEFAULT : newRevenueKind;
         boolean oldRevenueKindESet = revenueKindESet;
         revenueKindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PRICING_STRUCTURE__REVENUE_KIND, oldRevenueKind, revenueKind, !oldRevenueKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PRICING_STRUCTURE__REVENUE_KIND,
+                    oldRevenueKind, revenueKind, !oldRevenueKindESet ) );
     }
 
     /**
@@ -599,8 +603,9 @@ public class PricingStructureImpl extends DocumentImpl implements PricingStructu
         taxExemption = newTaxExemption;
         boolean oldTaxExemptionESet = taxExemptionESet;
         taxExemptionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PRICING_STRUCTURE__TAX_EXEMPTION, oldTaxExemption, taxExemption, !oldTaxExemptionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PRICING_STRUCTURE__TAX_EXEMPTION,
+                    oldTaxExemption, taxExemption, !oldTaxExemptionESet ) );
     }
 
     /**
@@ -705,10 +710,12 @@ public class PricingStructureImpl extends DocumentImpl implements PricingStructu
     public void setServiceCategory( ServiceCategory newServiceCategory ) {
         if( newServiceCategory != serviceCategory ) {
             NotificationChain msgs = null;
-            if( serviceCategory != null ) msgs = ( ( InternalEObject ) serviceCategory ).eInverseRemove( this,
-                    CimPackage.SERVICE_CATEGORY__PRICING_STRUCTURES, ServiceCategory.class, msgs );
-            if( newServiceCategory != null ) msgs = ( ( InternalEObject ) newServiceCategory ).eInverseAdd( this,
-                    CimPackage.SERVICE_CATEGORY__PRICING_STRUCTURES, ServiceCategory.class, msgs );
+            if( serviceCategory != null )
+                msgs = ( ( InternalEObject ) serviceCategory ).eInverseRemove( this,
+                        CimPackage.SERVICE_CATEGORY__PRICING_STRUCTURES, ServiceCategory.class, msgs );
+            if( newServiceCategory != null )
+                msgs = ( ( InternalEObject ) newServiceCategory ).eInverseAdd( this,
+                        CimPackage.SERVICE_CATEGORY__PRICING_STRUCTURES, ServiceCategory.class, msgs );
             msgs = basicSetServiceCategory( newServiceCategory, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -759,8 +766,9 @@ public class PricingStructureImpl extends DocumentImpl implements PricingStructu
         else {
             boolean oldServiceCategoryESet = serviceCategoryESet;
             serviceCategoryESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PRICING_STRUCTURE__SERVICE_CATEGORY, null, null, oldServiceCategoryESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PRICING_STRUCTURE__SERVICE_CATEGORY, null, null, oldServiceCategoryESet ) );
         }
     }
 
@@ -886,8 +894,9 @@ public class PricingStructureImpl extends DocumentImpl implements PricingStructu
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.PRICING_STRUCTURE__SERVICE_CATEGORY:
-            if( serviceCategory != null ) msgs = ( ( InternalEObject ) serviceCategory ).eInverseRemove( this,
-                    CimPackage.SERVICE_CATEGORY__PRICING_STRUCTURES, ServiceCategory.class, msgs );
+            if( serviceCategory != null )
+                msgs = ( ( InternalEObject ) serviceCategory ).eInverseRemove( this,
+                        CimPackage.SERVICE_CATEGORY__PRICING_STRUCTURES, ServiceCategory.class, msgs );
             return basicSetServiceCategory( ( ServiceCategory ) otherEnd, msgs );
         case CimPackage.PRICING_STRUCTURE__TRANSACTIONS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTransactions() ).basicAdd( otherEnd,
@@ -1099,7 +1108,7 @@ public class PricingStructureImpl extends DocumentImpl implements PricingStructu
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (code: " );
         if( codeESet )
             result.append( code );

@@ -324,10 +324,12 @@ public class MerchantAccountImpl extends DocumentImpl implements MerchantAccount
     public void setMerchantAgreement( MerchantAgreement newMerchantAgreement ) {
         if( newMerchantAgreement != merchantAgreement ) {
             NotificationChain msgs = null;
-            if( merchantAgreement != null ) msgs = ( ( InternalEObject ) merchantAgreement ).eInverseRemove( this,
-                    CimPackage.MERCHANT_AGREEMENT__MERCHANT_ACCOUNTS, MerchantAgreement.class, msgs );
-            if( newMerchantAgreement != null ) msgs = ( ( InternalEObject ) newMerchantAgreement ).eInverseAdd( this,
-                    CimPackage.MERCHANT_AGREEMENT__MERCHANT_ACCOUNTS, MerchantAgreement.class, msgs );
+            if( merchantAgreement != null )
+                msgs = ( ( InternalEObject ) merchantAgreement ).eInverseRemove( this,
+                        CimPackage.MERCHANT_AGREEMENT__MERCHANT_ACCOUNTS, MerchantAgreement.class, msgs );
+            if( newMerchantAgreement != null )
+                msgs = ( ( InternalEObject ) newMerchantAgreement ).eInverseAdd( this,
+                        CimPackage.MERCHANT_AGREEMENT__MERCHANT_ACCOUNTS, MerchantAgreement.class, msgs );
             msgs = basicSetMerchantAgreement( newMerchantAgreement, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -379,8 +381,9 @@ public class MerchantAccountImpl extends DocumentImpl implements MerchantAccount
         else {
             boolean oldMerchantAgreementESet = merchantAgreementESet;
             merchantAgreementESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.MERCHANT_ACCOUNT__MERCHANT_AGREEMENT, null, null, oldMerchantAgreementESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.MERCHANT_ACCOUNT__MERCHANT_AGREEMENT, null, null, oldMerchantAgreementESet ) );
         }
     }
 
@@ -478,8 +481,9 @@ public class MerchantAccountImpl extends DocumentImpl implements MerchantAccount
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTransactors() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.MERCHANT_ACCOUNT__MERCHANT_AGREEMENT:
-            if( merchantAgreement != null ) msgs = ( ( InternalEObject ) merchantAgreement ).eInverseRemove( this,
-                    CimPackage.MERCHANT_AGREEMENT__MERCHANT_ACCOUNTS, MerchantAgreement.class, msgs );
+            if( merchantAgreement != null )
+                msgs = ( ( InternalEObject ) merchantAgreement ).eInverseRemove( this,
+                        CimPackage.MERCHANT_AGREEMENT__MERCHANT_ACCOUNTS, MerchantAgreement.class, msgs );
             return basicSetMerchantAgreement( ( MerchantAgreement ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -613,7 +617,7 @@ public class MerchantAccountImpl extends DocumentImpl implements MerchantAccount
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (currentBalance: " );
         if( currentBalanceESet )
             result.append( currentBalance );

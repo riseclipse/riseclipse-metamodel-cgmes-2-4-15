@@ -227,8 +227,9 @@ public class VehicleImpl extends WorkAssetImpl implements Vehicle {
         odometerReading = newOdometerReading;
         boolean oldOdometerReadingESet = odometerReadingESet;
         odometerReadingESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VEHICLE__ODOMETER_READING, oldOdometerReading, odometerReading, !oldOdometerReadingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VEHICLE__ODOMETER_READING,
+                    oldOdometerReading, odometerReading, !oldOdometerReadingESet ) );
     }
 
     /**
@@ -278,8 +279,9 @@ public class VehicleImpl extends WorkAssetImpl implements Vehicle {
         usageKind = newUsageKind == null ? USAGE_KIND_EDEFAULT : newUsageKind;
         boolean oldUsageKindESet = usageKindESet;
         usageKindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VEHICLE__USAGE_KIND, oldUsageKind, usageKind, !oldUsageKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VEHICLE__USAGE_KIND, oldUsageKind,
+                    usageKind, !oldUsageKindESet ) );
     }
 
     /**
@@ -293,8 +295,9 @@ public class VehicleImpl extends WorkAssetImpl implements Vehicle {
         boolean oldUsageKindESet = usageKindESet;
         usageKind = USAGE_KIND_EDEFAULT;
         usageKindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VEHICLE__USAGE_KIND, oldUsageKind, USAGE_KIND_EDEFAULT, oldUsageKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VEHICLE__USAGE_KIND, oldUsageKind,
+                    USAGE_KIND_EDEFAULT, oldUsageKindESet ) );
     }
 
     /**
@@ -394,7 +397,7 @@ public class VehicleImpl extends WorkAssetImpl implements Vehicle {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (odometerReadDateTime: " );
         if( odometerReadDateTimeESet )
             result.append( odometerReadDateTime );

@@ -170,8 +170,9 @@ public class WorkImpl extends BaseWorkImpl implements Work {
         requestDateTime = newRequestDateTime;
         boolean oldRequestDateTimeESet = requestDateTimeESet;
         requestDateTimeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WORK__REQUEST_DATE_TIME, oldRequestDateTime, requestDateTime, !oldRequestDateTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WORK__REQUEST_DATE_TIME,
+                    oldRequestDateTime, requestDateTime, !oldRequestDateTimeESet ) );
     }
 
     /**
@@ -493,7 +494,7 @@ public class WorkImpl extends BaseWorkImpl implements Work {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (requestDateTime: " );
         if( requestDateTimeESet )
             result.append( requestDateTime );

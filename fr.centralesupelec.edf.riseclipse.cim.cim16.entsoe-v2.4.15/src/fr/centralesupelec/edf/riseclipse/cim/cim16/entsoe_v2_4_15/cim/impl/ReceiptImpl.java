@@ -208,8 +208,9 @@ public class ReceiptImpl extends IdentifiedObjectImpl implements Receipt {
         isBankable = newIsBankable;
         boolean oldIsBankableESet = isBankableESet;
         isBankableESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.RECEIPT__IS_BANKABLE, oldIsBankable, isBankable, !oldIsBankableESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.RECEIPT__IS_BANKABLE, oldIsBankable,
+                    isBankable, !oldIsBankableESet ) );
     }
 
     /**
@@ -223,8 +224,9 @@ public class ReceiptImpl extends IdentifiedObjectImpl implements Receipt {
         boolean oldIsBankableESet = isBankableESet;
         isBankable = IS_BANKABLE_EDEFAULT;
         isBankableESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.RECEIPT__IS_BANKABLE, oldIsBankable, IS_BANKABLE_EDEFAULT, oldIsBankableESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.RECEIPT__IS_BANKABLE, oldIsBankable,
+                    IS_BANKABLE_EDEFAULT, oldIsBankableESet ) );
     }
 
     /**
@@ -277,18 +279,21 @@ public class ReceiptImpl extends IdentifiedObjectImpl implements Receipt {
     public void setLine( LineDetail newLine ) {
         if( newLine != line ) {
             NotificationChain msgs = null;
-            if( line != null ) msgs = ( ( InternalEObject ) line ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.RECEIPT__LINE, null, msgs );
-            if( newLine != null ) msgs = ( ( InternalEObject ) newLine ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.RECEIPT__LINE, null, msgs );
+            if( line != null )
+                msgs = ( ( InternalEObject ) line ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.RECEIPT__LINE, null, msgs );
+            if( newLine != null )
+                msgs = ( ( InternalEObject ) newLine ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.RECEIPT__LINE, null, msgs );
             msgs = basicSetLine( newLine, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldLineESet = lineESet;
             lineESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.RECEIPT__LINE, newLine, newLine, !oldLineESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.RECEIPT__LINE, newLine, newLine,
+                        !oldLineESet ) );
         }
     }
 
@@ -330,8 +335,9 @@ public class ReceiptImpl extends IdentifiedObjectImpl implements Receipt {
         else {
             boolean oldLineESet = lineESet;
             lineESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.RECEIPT__LINE, null, null, oldLineESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.RECEIPT__LINE, null, null,
+                        oldLineESet ) );
         }
     }
 
@@ -419,18 +425,21 @@ public class ReceiptImpl extends IdentifiedObjectImpl implements Receipt {
     public void setCashierShift( CashierShift newCashierShift ) {
         if( newCashierShift != cashierShift ) {
             NotificationChain msgs = null;
-            if( cashierShift != null ) msgs = ( ( InternalEObject ) cashierShift ).eInverseRemove( this,
-                    CimPackage.CASHIER_SHIFT__RECEIPTS, CashierShift.class, msgs );
-            if( newCashierShift != null ) msgs = ( ( InternalEObject ) newCashierShift ).eInverseAdd( this,
-                    CimPackage.CASHIER_SHIFT__RECEIPTS, CashierShift.class, msgs );
+            if( cashierShift != null )
+                msgs = ( ( InternalEObject ) cashierShift ).eInverseRemove( this, CimPackage.CASHIER_SHIFT__RECEIPTS,
+                        CashierShift.class, msgs );
+            if( newCashierShift != null )
+                msgs = ( ( InternalEObject ) newCashierShift ).eInverseAdd( this, CimPackage.CASHIER_SHIFT__RECEIPTS,
+                        CashierShift.class, msgs );
             msgs = basicSetCashierShift( newCashierShift, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCashierShiftESet = cashierShiftESet;
             cashierShiftESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.RECEIPT__CASHIER_SHIFT, newCashierShift, newCashierShift, !oldCashierShiftESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.RECEIPT__CASHIER_SHIFT,
+                        newCashierShift, newCashierShift, !oldCashierShiftESet ) );
         }
     }
 
@@ -472,8 +481,9 @@ public class ReceiptImpl extends IdentifiedObjectImpl implements Receipt {
         else {
             boolean oldCashierShiftESet = cashierShiftESet;
             cashierShiftESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.RECEIPT__CASHIER_SHIFT, null, null, oldCashierShiftESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.RECEIPT__CASHIER_SHIFT, null, null,
+                        oldCashierShiftESet ) );
         }
     }
 
@@ -561,18 +571,21 @@ public class ReceiptImpl extends IdentifiedObjectImpl implements Receipt {
     public void setVendorShift( VendorShift newVendorShift ) {
         if( newVendorShift != vendorShift ) {
             NotificationChain msgs = null;
-            if( vendorShift != null ) msgs = ( ( InternalEObject ) vendorShift ).eInverseRemove( this,
-                    CimPackage.VENDOR_SHIFT__RECEIPTS, VendorShift.class, msgs );
-            if( newVendorShift != null ) msgs = ( ( InternalEObject ) newVendorShift ).eInverseAdd( this,
-                    CimPackage.VENDOR_SHIFT__RECEIPTS, VendorShift.class, msgs );
+            if( vendorShift != null )
+                msgs = ( ( InternalEObject ) vendorShift ).eInverseRemove( this, CimPackage.VENDOR_SHIFT__RECEIPTS,
+                        VendorShift.class, msgs );
+            if( newVendorShift != null )
+                msgs = ( ( InternalEObject ) newVendorShift ).eInverseAdd( this, CimPackage.VENDOR_SHIFT__RECEIPTS,
+                        VendorShift.class, msgs );
             msgs = basicSetVendorShift( newVendorShift, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldVendorShiftESet = vendorShiftESet;
             vendorShiftESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.RECEIPT__VENDOR_SHIFT, newVendorShift, newVendorShift, !oldVendorShiftESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.RECEIPT__VENDOR_SHIFT,
+                        newVendorShift, newVendorShift, !oldVendorShiftESet ) );
         }
     }
 
@@ -614,8 +627,9 @@ public class ReceiptImpl extends IdentifiedObjectImpl implements Receipt {
         else {
             boolean oldVendorShiftESet = vendorShiftESet;
             vendorShiftESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.RECEIPT__VENDOR_SHIFT, null, null, oldVendorShiftESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.RECEIPT__VENDOR_SHIFT, null, null,
+                        oldVendorShiftESet ) );
         }
     }
 
@@ -639,15 +653,17 @@ public class ReceiptImpl extends IdentifiedObjectImpl implements Receipt {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.RECEIPT__CASHIER_SHIFT:
-            if( cashierShift != null ) msgs = ( ( InternalEObject ) cashierShift ).eInverseRemove( this,
-                    CimPackage.CASHIER_SHIFT__RECEIPTS, CashierShift.class, msgs );
+            if( cashierShift != null )
+                msgs = ( ( InternalEObject ) cashierShift ).eInverseRemove( this, CimPackage.CASHIER_SHIFT__RECEIPTS,
+                        CashierShift.class, msgs );
             return basicSetCashierShift( ( CashierShift ) otherEnd, msgs );
         case CimPackage.RECEIPT__TRANSACTIONS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTransactions() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.RECEIPT__VENDOR_SHIFT:
-            if( vendorShift != null ) msgs = ( ( InternalEObject ) vendorShift ).eInverseRemove( this,
-                    CimPackage.VENDOR_SHIFT__RECEIPTS, VendorShift.class, msgs );
+            if( vendorShift != null )
+                msgs = ( ( InternalEObject ) vendorShift ).eInverseRemove( this, CimPackage.VENDOR_SHIFT__RECEIPTS,
+                        VendorShift.class, msgs );
             return basicSetVendorShift( ( VendorShift ) otherEnd, msgs );
         case CimPackage.RECEIPT__TENDERS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTenders() ).basicAdd( otherEnd,
@@ -798,7 +814,7 @@ public class ReceiptImpl extends IdentifiedObjectImpl implements Receipt {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (isBankable: " );
         if( isBankableESet )
             result.append( isBankable );

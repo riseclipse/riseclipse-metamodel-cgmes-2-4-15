@@ -145,18 +145,21 @@ public class DCBaseTerminalImpl extends ACDCTerminalImpl implements DCBaseTermin
     public void setDCNode( DCNode newDCNode ) {
         if( newDCNode != dcNode ) {
             NotificationChain msgs = null;
-            if( dcNode != null ) msgs = ( ( InternalEObject ) dcNode ).eInverseRemove( this,
-                    CimPackage.DC_NODE__DC_TERMINALS, DCNode.class, msgs );
-            if( newDCNode != null ) msgs = ( ( InternalEObject ) newDCNode ).eInverseAdd( this,
-                    CimPackage.DC_NODE__DC_TERMINALS, DCNode.class, msgs );
+            if( dcNode != null )
+                msgs = ( ( InternalEObject ) dcNode ).eInverseRemove( this, CimPackage.DC_NODE__DC_TERMINALS,
+                        DCNode.class, msgs );
+            if( newDCNode != null )
+                msgs = ( ( InternalEObject ) newDCNode ).eInverseAdd( this, CimPackage.DC_NODE__DC_TERMINALS,
+                        DCNode.class, msgs );
             msgs = basicSetDCNode( newDCNode, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldDCNodeESet = dcNodeESet;
             dcNodeESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.DC_BASE_TERMINAL__DC_NODE, newDCNode, newDCNode, !oldDCNodeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DC_BASE_TERMINAL__DC_NODE, newDCNode,
+                        newDCNode, !oldDCNodeESet ) );
         }
     }
 
@@ -198,8 +201,9 @@ public class DCBaseTerminalImpl extends ACDCTerminalImpl implements DCBaseTermin
         else {
             boolean oldDCNodeESet = dcNodeESet;
             dcNodeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.DC_BASE_TERMINAL__DC_NODE, null, null, oldDCNodeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DC_BASE_TERMINAL__DC_NODE, null,
+                        null, oldDCNodeESet ) );
         }
     }
 
@@ -255,19 +259,22 @@ public class DCBaseTerminalImpl extends ACDCTerminalImpl implements DCBaseTermin
     public void setDCTopologicalNode( DCTopologicalNode newDCTopologicalNode ) {
         if( newDCTopologicalNode != dcTopologicalNode ) {
             NotificationChain msgs = null;
-            if( dcTopologicalNode != null ) msgs = ( ( InternalEObject ) dcTopologicalNode ).eInverseRemove( this,
-                    CimPackage.DC_TOPOLOGICAL_NODE__DC_TERMINALS, DCTopologicalNode.class, msgs );
-            if( newDCTopologicalNode != null ) msgs = ( ( InternalEObject ) newDCTopologicalNode ).eInverseAdd( this,
-                    CimPackage.DC_TOPOLOGICAL_NODE__DC_TERMINALS, DCTopologicalNode.class, msgs );
+            if( dcTopologicalNode != null )
+                msgs = ( ( InternalEObject ) dcTopologicalNode ).eInverseRemove( this,
+                        CimPackage.DC_TOPOLOGICAL_NODE__DC_TERMINALS, DCTopologicalNode.class, msgs );
+            if( newDCTopologicalNode != null )
+                msgs = ( ( InternalEObject ) newDCTopologicalNode ).eInverseAdd( this,
+                        CimPackage.DC_TOPOLOGICAL_NODE__DC_TERMINALS, DCTopologicalNode.class, msgs );
             msgs = basicSetDCTopologicalNode( newDCTopologicalNode, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldDCTopologicalNodeESet = dcTopologicalNodeESet;
             dcTopologicalNodeESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.DC_BASE_TERMINAL__DC_TOPOLOGICAL_NODE,
-                            newDCTopologicalNode, newDCTopologicalNode, !oldDCTopologicalNodeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.DC_BASE_TERMINAL__DC_TOPOLOGICAL_NODE, newDCTopologicalNode, newDCTopologicalNode,
+                        !oldDCTopologicalNodeESet ) );
         }
     }
 
@@ -310,8 +317,9 @@ public class DCBaseTerminalImpl extends ACDCTerminalImpl implements DCBaseTermin
         else {
             boolean oldDCTopologicalNodeESet = dcTopologicalNodeESet;
             dcTopologicalNodeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.DC_BASE_TERMINAL__DC_TOPOLOGICAL_NODE, null, null, oldDCTopologicalNodeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.DC_BASE_TERMINAL__DC_TOPOLOGICAL_NODE, null, null, oldDCTopologicalNodeESet ) );
         }
     }
 
@@ -334,12 +342,14 @@ public class DCBaseTerminalImpl extends ACDCTerminalImpl implements DCBaseTermin
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.DC_BASE_TERMINAL__DC_TOPOLOGICAL_NODE:
-            if( dcTopologicalNode != null ) msgs = ( ( InternalEObject ) dcTopologicalNode ).eInverseRemove( this,
-                    CimPackage.DC_TOPOLOGICAL_NODE__DC_TERMINALS, DCTopologicalNode.class, msgs );
+            if( dcTopologicalNode != null )
+                msgs = ( ( InternalEObject ) dcTopologicalNode ).eInverseRemove( this,
+                        CimPackage.DC_TOPOLOGICAL_NODE__DC_TERMINALS, DCTopologicalNode.class, msgs );
             return basicSetDCTopologicalNode( ( DCTopologicalNode ) otherEnd, msgs );
         case CimPackage.DC_BASE_TERMINAL__DC_NODE:
-            if( dcNode != null ) msgs = ( ( InternalEObject ) dcNode ).eInverseRemove( this,
-                    CimPackage.DC_NODE__DC_TERMINALS, DCNode.class, msgs );
+            if( dcNode != null )
+                msgs = ( ( InternalEObject ) dcNode ).eInverseRemove( this, CimPackage.DC_NODE__DC_TERMINALS,
+                        DCNode.class, msgs );
             return basicSetDCNode( ( DCNode ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

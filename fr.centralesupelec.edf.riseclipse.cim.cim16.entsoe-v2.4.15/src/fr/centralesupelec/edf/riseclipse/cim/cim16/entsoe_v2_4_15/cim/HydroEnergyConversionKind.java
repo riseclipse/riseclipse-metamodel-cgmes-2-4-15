@@ -92,8 +92,10 @@ public enum HydroEnergyConversionKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final HydroEnergyConversionKind[] VALUES_ARRAY = new HydroEnergyConversionKind[] { GENERATOR,
-            PUMP_AND_GENERATOR, };
+    private static final HydroEnergyConversionKind[] VALUES_ARRAY = new HydroEnergyConversionKind[] {
+            GENERATOR,
+            PUMP_AND_GENERATOR,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Hydro Energy Conversion Kind</b></em>' enumerators.

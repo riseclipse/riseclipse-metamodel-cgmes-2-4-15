@@ -187,8 +187,9 @@ public class PostalAddressImpl extends MinimalEObjectImpl.Container implements P
         poBox = newPoBox;
         boolean oldPoBoxESet = poBoxESet;
         poBoxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POSTAL_ADDRESS__PO_BOX, oldPoBox, poBox, !oldPoBoxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POSTAL_ADDRESS__PO_BOX, oldPoBox, poBox,
+                    !oldPoBoxESet ) );
     }
 
     /**
@@ -202,8 +203,9 @@ public class PostalAddressImpl extends MinimalEObjectImpl.Container implements P
         boolean oldPoBoxESet = poBoxESet;
         poBox = PO_BOX_EDEFAULT;
         poBoxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POSTAL_ADDRESS__PO_BOX, oldPoBox, PO_BOX_EDEFAULT, oldPoBoxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POSTAL_ADDRESS__PO_BOX, oldPoBox,
+                    PO_BOX_EDEFAULT, oldPoBoxESet ) );
     }
 
     /**
@@ -237,8 +239,9 @@ public class PostalAddressImpl extends MinimalEObjectImpl.Container implements P
         postalCode = newPostalCode;
         boolean oldPostalCodeESet = postalCodeESet;
         postalCodeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POSTAL_ADDRESS__POSTAL_CODE, oldPostalCode, postalCode, !oldPostalCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POSTAL_ADDRESS__POSTAL_CODE,
+                    oldPostalCode, postalCode, !oldPostalCodeESet ) );
     }
 
     /**
@@ -252,8 +255,9 @@ public class PostalAddressImpl extends MinimalEObjectImpl.Container implements P
         boolean oldPostalCodeESet = postalCodeESet;
         postalCode = POSTAL_CODE_EDEFAULT;
         postalCodeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POSTAL_ADDRESS__POSTAL_CODE, oldPostalCode, POSTAL_CODE_EDEFAULT, oldPostalCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POSTAL_ADDRESS__POSTAL_CODE,
+                    oldPostalCode, POSTAL_CODE_EDEFAULT, oldPostalCodeESet ) );
     }
 
     /**
@@ -306,10 +310,12 @@ public class PostalAddressImpl extends MinimalEObjectImpl.Container implements P
     public void setStreetDetail( StreetDetail newStreetDetail ) {
         if( newStreetDetail != streetDetail ) {
             NotificationChain msgs = null;
-            if( streetDetail != null ) msgs = ( ( InternalEObject ) streetDetail ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.POSTAL_ADDRESS__STREET_DETAIL, null, msgs );
-            if( newStreetDetail != null ) msgs = ( ( InternalEObject ) newStreetDetail ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.POSTAL_ADDRESS__STREET_DETAIL, null, msgs );
+            if( streetDetail != null )
+                msgs = ( ( InternalEObject ) streetDetail ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.POSTAL_ADDRESS__STREET_DETAIL, null, msgs );
+            if( newStreetDetail != null )
+                msgs = ( ( InternalEObject ) newStreetDetail ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.POSTAL_ADDRESS__STREET_DETAIL, null, msgs );
             msgs = basicSetStreetDetail( newStreetDetail, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -360,8 +366,9 @@ public class PostalAddressImpl extends MinimalEObjectImpl.Container implements P
         else {
             boolean oldStreetDetailESet = streetDetailESet;
             streetDetailESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.POSTAL_ADDRESS__STREET_DETAIL, null, null, oldStreetDetailESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POSTAL_ADDRESS__STREET_DETAIL,
+                        null, null, oldStreetDetailESet ) );
         }
     }
 
@@ -415,18 +422,21 @@ public class PostalAddressImpl extends MinimalEObjectImpl.Container implements P
     public void setTownDetail( TownDetail newTownDetail ) {
         if( newTownDetail != townDetail ) {
             NotificationChain msgs = null;
-            if( townDetail != null ) msgs = ( ( InternalEObject ) townDetail ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.POSTAL_ADDRESS__TOWN_DETAIL, null, msgs );
-            if( newTownDetail != null ) msgs = ( ( InternalEObject ) newTownDetail ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.POSTAL_ADDRESS__TOWN_DETAIL, null, msgs );
+            if( townDetail != null )
+                msgs = ( ( InternalEObject ) townDetail ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.POSTAL_ADDRESS__TOWN_DETAIL, null, msgs );
+            if( newTownDetail != null )
+                msgs = ( ( InternalEObject ) newTownDetail ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.POSTAL_ADDRESS__TOWN_DETAIL, null, msgs );
             msgs = basicSetTownDetail( newTownDetail, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTownDetailESet = townDetailESet;
             townDetailESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.POSTAL_ADDRESS__TOWN_DETAIL, newTownDetail, newTownDetail, !oldTownDetailESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POSTAL_ADDRESS__TOWN_DETAIL,
+                        newTownDetail, newTownDetail, !oldTownDetailESet ) );
         }
     }
 
@@ -468,8 +478,9 @@ public class PostalAddressImpl extends MinimalEObjectImpl.Container implements P
         else {
             boolean oldTownDetailESet = townDetailESet;
             townDetailESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.POSTAL_ADDRESS__TOWN_DETAIL, null, null, oldTownDetailESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POSTAL_ADDRESS__TOWN_DETAIL, null,
+                        null, oldTownDetailESet ) );
         }
     }
 
@@ -596,7 +607,7 @@ public class PostalAddressImpl extends MinimalEObjectImpl.Container implements P
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (poBox: " );
         if( poBoxESet )
             result.append( poBox );

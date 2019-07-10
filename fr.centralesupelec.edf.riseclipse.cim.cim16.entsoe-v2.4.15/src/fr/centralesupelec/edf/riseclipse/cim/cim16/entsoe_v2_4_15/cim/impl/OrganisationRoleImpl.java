@@ -179,10 +179,12 @@ public class OrganisationRoleImpl extends IdentifiedObjectImpl implements Organi
     public void setOrganisation( Organisation newOrganisation ) {
         if( newOrganisation != organisation ) {
             NotificationChain msgs = null;
-            if( organisation != null ) msgs = ( ( InternalEObject ) organisation ).eInverseRemove( this,
-                    CimPackage.ORGANISATION__ROLES, Organisation.class, msgs );
-            if( newOrganisation != null ) msgs = ( ( InternalEObject ) newOrganisation ).eInverseAdd( this,
-                    CimPackage.ORGANISATION__ROLES, Organisation.class, msgs );
+            if( organisation != null )
+                msgs = ( ( InternalEObject ) organisation ).eInverseRemove( this, CimPackage.ORGANISATION__ROLES,
+                        Organisation.class, msgs );
+            if( newOrganisation != null )
+                msgs = ( ( InternalEObject ) newOrganisation ).eInverseAdd( this, CimPackage.ORGANISATION__ROLES,
+                        Organisation.class, msgs );
             msgs = basicSetOrganisation( newOrganisation, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -233,8 +235,9 @@ public class OrganisationRoleImpl extends IdentifiedObjectImpl implements Organi
         else {
             boolean oldOrganisationESet = organisationESet;
             organisationESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ORGANISATION_ROLE__ORGANISATION, null, null, oldOrganisationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ORGANISATION_ROLE__ORGANISATION,
+                        null, null, oldOrganisationESet ) );
         }
     }
 
@@ -258,8 +261,9 @@ public class OrganisationRoleImpl extends IdentifiedObjectImpl implements Organi
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ORGANISATION_ROLE__ORGANISATION:
-            if( organisation != null ) msgs = ( ( InternalEObject ) organisation ).eInverseRemove( this,
-                    CimPackage.ORGANISATION__ROLES, Organisation.class, msgs );
+            if( organisation != null )
+                msgs = ( ( InternalEObject ) organisation ).eInverseRemove( this, CimPackage.ORGANISATION__ROLES,
+                        Organisation.class, msgs );
             return basicSetOrganisation( ( Organisation ) otherEnd, msgs );
         case CimPackage.ORGANISATION_ROLE__CONFIGURATION_EVENTS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getConfigurationEvents() )

@@ -502,8 +502,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         blint = newBlint;
         boolean oldBlintESet = blintESet;
         blintESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ANS__BLINT,
-                oldBlint, blint, !oldBlintESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ANS__BLINT, oldBlint, blint,
+                    !oldBlintESet ) );
     }
 
     /**
@@ -517,8 +518,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         boolean oldBlintESet = blintESet;
         blint = BLINT_EDEFAULT;
         blintESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ANS__BLINT, oldBlint, BLINT_EDEFAULT, oldBlintESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__BLINT, oldBlint,
+                    BLINT_EDEFAULT, oldBlintESet ) );
     }
 
     /**
@@ -552,8 +554,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         ifmn = newIfmn;
         boolean oldIfmnESet = ifmnESet;
         ifmnESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ANS__IFMN,
-                oldIfmn, ifmn, !oldIfmnESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ANS__IFMN, oldIfmn, ifmn,
+                    !oldIfmnESet ) );
     }
 
     /**
@@ -567,8 +570,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         boolean oldIfmnESet = ifmnESet;
         ifmn = IFMN_EDEFAULT;
         ifmnESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ANS__IFMN, oldIfmn, IFMN_EDEFAULT, oldIfmnESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__IFMN, oldIfmn, IFMN_EDEFAULT,
+                    oldIfmnESet ) );
     }
 
     /**
@@ -602,8 +606,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         ifmx = newIfmx;
         boolean oldIfmxESet = ifmxESet;
         ifmxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ANS__IFMX,
-                oldIfmx, ifmx, !oldIfmxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ANS__IFMX, oldIfmx, ifmx,
+                    !oldIfmxESet ) );
     }
 
     /**
@@ -617,8 +622,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         boolean oldIfmxESet = ifmxESet;
         ifmx = IFMX_EDEFAULT;
         ifmxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ANS__IFMX, oldIfmx, IFMX_EDEFAULT, oldIfmxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__IFMX, oldIfmx, IFMX_EDEFAULT,
+                    oldIfmxESet ) );
     }
 
     /**
@@ -667,8 +673,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         boolean oldK2ESet = k2ESet;
         k2 = K2_EDEFAULT;
         k2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__K2,
-                oldK2, K2_EDEFAULT, oldK2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__K2, oldK2, K2_EDEFAULT,
+                    oldK2ESet ) );
     }
 
     /**
@@ -717,8 +724,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         boolean oldK3ESet = k3ESet;
         k3 = K3_EDEFAULT;
         k3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__K3,
-                oldK3, K3_EDEFAULT, oldK3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__K3, oldK3, K3_EDEFAULT,
+                    oldK3ESet ) );
     }
 
     /**
@@ -752,8 +760,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         kce = newKce;
         boolean oldKceESet = kceESet;
         kceESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ANS__KCE, oldKce, kce, !oldKceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ANS__KCE, oldKce, kce,
+                    !oldKceESet ) );
     }
 
     /**
@@ -767,8 +776,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         boolean oldKceESet = kceESet;
         kce = KCE_EDEFAULT;
         kceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__KCE,
-                oldKce, KCE_EDEFAULT, oldKceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__KCE, oldKce, KCE_EDEFAULT,
+                    oldKceESet ) );
     }
 
     /**
@@ -802,8 +812,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         krvecc = newKrvecc;
         boolean oldKrveccESet = krveccESet;
         krveccESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_ANS__KRVECC, oldKrvecc, krvecc, !oldKrveccESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ANS__KRVECC, oldKrvecc, krvecc,
+                    !oldKrveccESet ) );
     }
 
     /**
@@ -817,8 +828,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         boolean oldKrveccESet = krveccESet;
         krvecc = KRVECC_EDEFAULT;
         krveccESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ANS__KRVECC, oldKrvecc, KRVECC_EDEFAULT, oldKrveccESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__KRVECC, oldKrvecc,
+                    KRVECC_EDEFAULT, oldKrveccESet ) );
     }
 
     /**
@@ -852,8 +864,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         kvfif = newKvfif;
         boolean oldKvfifESet = kvfifESet;
         kvfifESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ANS__KVFIF,
-                oldKvfif, kvfif, !oldKvfifESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ANS__KVFIF, oldKvfif, kvfif,
+                    !oldKvfifESet ) );
     }
 
     /**
@@ -867,8 +880,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         boolean oldKvfifESet = kvfifESet;
         kvfif = KVFIF_EDEFAULT;
         kvfifESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ANS__KVFIF, oldKvfif, KVFIF_EDEFAULT, oldKvfifESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__KVFIF, oldKvfif,
+                    KVFIF_EDEFAULT, oldKvfifESet ) );
     }
 
     /**
@@ -917,8 +931,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         boolean oldT1ESet = t1ESet;
         t1 = T1_EDEFAULT;
         t1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__T1,
-                oldT1, T1_EDEFAULT, oldT1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__T1, oldT1, T1_EDEFAULT,
+                    oldT1ESet ) );
     }
 
     /**
@@ -967,8 +982,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         boolean oldT2ESet = t2ESet;
         t2 = T2_EDEFAULT;
         t2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__T2,
-                oldT2, T2_EDEFAULT, oldT2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__T2, oldT2, T2_EDEFAULT,
+                    oldT2ESet ) );
     }
 
     /**
@@ -1017,8 +1033,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         boolean oldT3ESet = t3ESet;
         t3 = T3_EDEFAULT;
         t3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__T3,
-                oldT3, T3_EDEFAULT, oldT3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__T3, oldT3, T3_EDEFAULT,
+                    oldT3ESet ) );
     }
 
     /**
@@ -1067,8 +1084,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         boolean oldTbESet = tbESet;
         tb = TB_EDEFAULT;
         tbESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__TB,
-                oldTb, TB_EDEFAULT, oldTbESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__TB, oldTb, TB_EDEFAULT,
+                    oldTbESet ) );
     }
 
     /**
@@ -1102,8 +1120,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         vrmn = newVrmn;
         boolean oldVrmnESet = vrmnESet;
         vrmnESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ANS__VRMN,
-                oldVrmn, vrmn, !oldVrmnESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ANS__VRMN, oldVrmn, vrmn,
+                    !oldVrmnESet ) );
     }
 
     /**
@@ -1117,8 +1136,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         boolean oldVrmnESet = vrmnESet;
         vrmn = VRMN_EDEFAULT;
         vrmnESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ANS__VRMN, oldVrmn, VRMN_EDEFAULT, oldVrmnESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__VRMN, oldVrmn, VRMN_EDEFAULT,
+                    oldVrmnESet ) );
     }
 
     /**
@@ -1152,8 +1172,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         vrmx = newVrmx;
         boolean oldVrmxESet = vrmxESet;
         vrmxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ANS__VRMX,
-                oldVrmx, vrmx, !oldVrmxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ANS__VRMX, oldVrmx, vrmx,
+                    !oldVrmxESet ) );
     }
 
     /**
@@ -1167,8 +1188,9 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
         boolean oldVrmxESet = vrmxESet;
         vrmx = VRMX_EDEFAULT;
         vrmxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ANS__VRMX, oldVrmx, VRMX_EDEFAULT, oldVrmxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ANS__VRMX, oldVrmx, VRMX_EDEFAULT,
+                    oldVrmxESet ) );
     }
 
     /**
@@ -1378,7 +1400,7 @@ public class ExcANSImpl extends ExcitationSystemDynamicsImpl implements ExcANS {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (blint: " );
         if( blintESet )
             result.append( blint );

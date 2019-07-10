@@ -167,8 +167,13 @@ public enum ChargeKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final ChargeKind[] VALUES_ARRAY = new ChargeKind[] { CONSUMPTION_CHARGE, DEMAND_CHARGE,
-            AUXILIARY_CHARGE, TAX_CHARGE, OTHER, };
+    private static final ChargeKind[] VALUES_ARRAY = new ChargeKind[] {
+            CONSUMPTION_CHARGE,
+            DEMAND_CHARGE,
+            AUXILIARY_CHARGE,
+            TAX_CHARGE,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Charge Kind</b></em>' enumerators.

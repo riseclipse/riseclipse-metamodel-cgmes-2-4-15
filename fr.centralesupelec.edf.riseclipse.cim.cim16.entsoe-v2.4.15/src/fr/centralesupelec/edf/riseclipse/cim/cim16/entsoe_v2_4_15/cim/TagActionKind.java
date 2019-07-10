@@ -117,7 +117,11 @@ public enum TagActionKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final TagActionKind[] VALUES_ARRAY = new TagActionKind[] { PLACE, REMOVE, VERIFY, };
+    private static final TagActionKind[] VALUES_ARRAY = new TagActionKind[] {
+            PLACE,
+            REMOVE,
+            VERIFY,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Tag Action Kind</b></em>' enumerators.

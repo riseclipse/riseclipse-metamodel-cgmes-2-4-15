@@ -92,7 +92,10 @@ public enum TurbineType implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final TurbineType[] VALUES_ARRAY = new TurbineType[] { PELTON, KAPLAN, };
+    private static final TurbineType[] VALUES_ARRAY = new TurbineType[] {
+            PELTON,
+            KAPLAN,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Turbine Type</b></em>' enumerators.

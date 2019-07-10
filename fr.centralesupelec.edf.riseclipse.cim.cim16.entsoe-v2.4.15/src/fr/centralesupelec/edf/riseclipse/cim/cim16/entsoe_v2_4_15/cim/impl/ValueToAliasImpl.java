@@ -135,8 +135,9 @@ public class ValueToAliasImpl extends IdentifiedObjectImpl implements ValueToAli
         value = newValue;
         boolean oldValueESet = valueESet;
         valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VALUE_TO_ALIAS__VALUE, oldValue, value, !oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VALUE_TO_ALIAS__VALUE, oldValue, value,
+                    !oldValueESet ) );
     }
 
     /**
@@ -150,8 +151,9 @@ public class ValueToAliasImpl extends IdentifiedObjectImpl implements ValueToAli
         boolean oldValueESet = valueESet;
         value = VALUE_EDEFAULT;
         valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VALUE_TO_ALIAS__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VALUE_TO_ALIAS__VALUE, oldValue,
+                    VALUE_EDEFAULT, oldValueESet ) );
     }
 
     /**
@@ -205,10 +207,12 @@ public class ValueToAliasImpl extends IdentifiedObjectImpl implements ValueToAli
     public void setValueAliasSet( ValueAliasSet newValueAliasSet ) {
         if( newValueAliasSet != valueAliasSet ) {
             NotificationChain msgs = null;
-            if( valueAliasSet != null ) msgs = ( ( InternalEObject ) valueAliasSet ).eInverseRemove( this,
-                    CimPackage.VALUE_ALIAS_SET__VALUES, ValueAliasSet.class, msgs );
-            if( newValueAliasSet != null ) msgs = ( ( InternalEObject ) newValueAliasSet ).eInverseAdd( this,
-                    CimPackage.VALUE_ALIAS_SET__VALUES, ValueAliasSet.class, msgs );
+            if( valueAliasSet != null )
+                msgs = ( ( InternalEObject ) valueAliasSet ).eInverseRemove( this, CimPackage.VALUE_ALIAS_SET__VALUES,
+                        ValueAliasSet.class, msgs );
+            if( newValueAliasSet != null )
+                msgs = ( ( InternalEObject ) newValueAliasSet ).eInverseAdd( this, CimPackage.VALUE_ALIAS_SET__VALUES,
+                        ValueAliasSet.class, msgs );
             msgs = basicSetValueAliasSet( newValueAliasSet, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -259,8 +263,9 @@ public class ValueToAliasImpl extends IdentifiedObjectImpl implements ValueToAli
         else {
             boolean oldValueAliasSetESet = valueAliasSetESet;
             valueAliasSetESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.VALUE_TO_ALIAS__VALUE_ALIAS_SET, null, null, oldValueAliasSetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VALUE_TO_ALIAS__VALUE_ALIAS_SET,
+                        null, null, oldValueAliasSetESet ) );
         }
     }
 
@@ -283,8 +288,9 @@ public class ValueToAliasImpl extends IdentifiedObjectImpl implements ValueToAli
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.VALUE_TO_ALIAS__VALUE_ALIAS_SET:
-            if( valueAliasSet != null ) msgs = ( ( InternalEObject ) valueAliasSet ).eInverseRemove( this,
-                    CimPackage.VALUE_ALIAS_SET__VALUES, ValueAliasSet.class, msgs );
+            if( valueAliasSet != null )
+                msgs = ( ( InternalEObject ) valueAliasSet ).eInverseRemove( this, CimPackage.VALUE_ALIAS_SET__VALUES,
+                        ValueAliasSet.class, msgs );
             return basicSetValueAliasSet( ( ValueAliasSet ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -381,7 +387,7 @@ public class ValueToAliasImpl extends IdentifiedObjectImpl implements ValueToAli
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (value: " );
         if( valueESet )
             result.append( value );

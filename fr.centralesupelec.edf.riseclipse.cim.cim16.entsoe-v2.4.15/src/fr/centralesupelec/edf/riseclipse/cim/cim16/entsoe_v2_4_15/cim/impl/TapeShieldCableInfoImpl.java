@@ -142,8 +142,9 @@ public class TapeShieldCableInfoImpl extends CableInfoImpl implements TapeShield
         tapeLap = newTapeLap;
         boolean oldTapeLapESet = tapeLapESet;
         tapeLapESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAPE_SHIELD_CABLE_INFO__TAPE_LAP, oldTapeLap, tapeLap, !oldTapeLapESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAPE_SHIELD_CABLE_INFO__TAPE_LAP,
+                    oldTapeLap, tapeLap, !oldTapeLapESet ) );
     }
 
     /**
@@ -157,8 +158,9 @@ public class TapeShieldCableInfoImpl extends CableInfoImpl implements TapeShield
         boolean oldTapeLapESet = tapeLapESet;
         tapeLap = TAPE_LAP_EDEFAULT;
         tapeLapESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAPE_SHIELD_CABLE_INFO__TAPE_LAP, oldTapeLap, TAPE_LAP_EDEFAULT, oldTapeLapESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAPE_SHIELD_CABLE_INFO__TAPE_LAP,
+                    oldTapeLap, TAPE_LAP_EDEFAULT, oldTapeLapESet ) );
     }
 
     /**
@@ -300,7 +302,7 @@ public class TapeShieldCableInfoImpl extends CableInfoImpl implements TapeShield
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (tapeLap: " );
         if( tapeLapESet )
             result.append( tapeLap );

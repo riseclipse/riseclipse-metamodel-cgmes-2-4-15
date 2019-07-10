@@ -112,8 +112,9 @@ public class GroundingImpedanceImpl extends EarthFaultCompensatorImpl implements
         x = newX;
         boolean oldXESet = xESet;
         xESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GROUNDING_IMPEDANCE__X, oldX, x, !oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GROUNDING_IMPEDANCE__X, oldX, x,
+                    !oldXESet ) );
     }
 
     /**
@@ -127,8 +128,9 @@ public class GroundingImpedanceImpl extends EarthFaultCompensatorImpl implements
         boolean oldXESet = xESet;
         x = X_EDEFAULT;
         xESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GROUNDING_IMPEDANCE__X, oldX, X_EDEFAULT, oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GROUNDING_IMPEDANCE__X, oldX,
+                    X_EDEFAULT, oldXESet ) );
     }
 
     /**
@@ -208,7 +210,7 @@ public class GroundingImpedanceImpl extends EarthFaultCompensatorImpl implements
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (x: " );
         if( xESet )
             result.append( x );

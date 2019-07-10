@@ -124,18 +124,21 @@ public class WorkAssetImpl extends AssetImpl implements WorkAsset {
     public void setCrew( Crew newCrew ) {
         if( newCrew != crew ) {
             NotificationChain msgs = null;
-            if( crew != null ) msgs = ( ( InternalEObject ) crew ).eInverseRemove( this, CimPackage.CREW__WORK_ASSETS,
-                    Crew.class, msgs );
-            if( newCrew != null ) msgs = ( ( InternalEObject ) newCrew ).eInverseAdd( this,
-                    CimPackage.CREW__WORK_ASSETS, Crew.class, msgs );
+            if( crew != null )
+                msgs = ( ( InternalEObject ) crew ).eInverseRemove( this, CimPackage.CREW__WORK_ASSETS, Crew.class,
+                        msgs );
+            if( newCrew != null )
+                msgs = ( ( InternalEObject ) newCrew ).eInverseAdd( this, CimPackage.CREW__WORK_ASSETS, Crew.class,
+                        msgs );
             msgs = basicSetCrew( newCrew, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCrewESet = crewESet;
             crewESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WORK_ASSET__CREW, newCrew, newCrew, !oldCrewESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WORK_ASSET__CREW, newCrew, newCrew,
+                        !oldCrewESet ) );
         }
     }
 
@@ -176,8 +179,9 @@ public class WorkAssetImpl extends AssetImpl implements WorkAsset {
         else {
             boolean oldCrewESet = crewESet;
             crewESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WORK_ASSET__CREW, null, null, oldCrewESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WORK_ASSET__CREW, null, null,
+                        oldCrewESet ) );
         }
     }
 
@@ -200,8 +204,9 @@ public class WorkAssetImpl extends AssetImpl implements WorkAsset {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.WORK_ASSET__CREW:
-            if( crew != null ) msgs = ( ( InternalEObject ) crew ).eInverseRemove( this, CimPackage.CREW__WORK_ASSETS,
-                    Crew.class, msgs );
+            if( crew != null )
+                msgs = ( ( InternalEObject ) crew ).eInverseRemove( this, CimPackage.CREW__WORK_ASSETS, Crew.class,
+                        msgs );
             return basicSetCrew( ( Crew ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

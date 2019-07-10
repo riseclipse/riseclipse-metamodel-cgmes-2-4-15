@@ -293,8 +293,9 @@ public class PetersenCoilImpl extends EarthFaultCompensatorImpl implements Peter
         mode = newMode == null ? MODE_EDEFAULT : newMode;
         boolean oldModeESet = modeESet;
         modeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PETERSEN_COIL__MODE, oldMode, mode, !oldModeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PETERSEN_COIL__MODE, oldMode, mode,
+                    !oldModeESet ) );
     }
 
     /**
@@ -308,8 +309,9 @@ public class PetersenCoilImpl extends EarthFaultCompensatorImpl implements Peter
         boolean oldModeESet = modeESet;
         mode = MODE_EDEFAULT;
         modeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PETERSEN_COIL__MODE, oldMode, MODE_EDEFAULT, oldModeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PETERSEN_COIL__MODE, oldMode,
+                    MODE_EDEFAULT, oldModeESet ) );
     }
 
     /**
@@ -343,8 +345,9 @@ public class PetersenCoilImpl extends EarthFaultCompensatorImpl implements Peter
         nominalU = newNominalU;
         boolean oldNominalUESet = nominalUESet;
         nominalUESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PETERSEN_COIL__NOMINAL_U, oldNominalU, nominalU, !oldNominalUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PETERSEN_COIL__NOMINAL_U, oldNominalU,
+                    nominalU, !oldNominalUESet ) );
     }
 
     /**
@@ -358,8 +361,9 @@ public class PetersenCoilImpl extends EarthFaultCompensatorImpl implements Peter
         boolean oldNominalUESet = nominalUESet;
         nominalU = NOMINAL_U_EDEFAULT;
         nominalUESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PETERSEN_COIL__NOMINAL_U, oldNominalU, NOMINAL_U_EDEFAULT, oldNominalUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PETERSEN_COIL__NOMINAL_U, oldNominalU,
+                    NOMINAL_U_EDEFAULT, oldNominalUESet ) );
     }
 
     /**
@@ -393,8 +397,9 @@ public class PetersenCoilImpl extends EarthFaultCompensatorImpl implements Peter
         offsetCurrent = newOffsetCurrent;
         boolean oldOffsetCurrentESet = offsetCurrentESet;
         offsetCurrentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PETERSEN_COIL__OFFSET_CURRENT, oldOffsetCurrent, offsetCurrent, !oldOffsetCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PETERSEN_COIL__OFFSET_CURRENT,
+                    oldOffsetCurrent, offsetCurrent, !oldOffsetCurrentESet ) );
     }
 
     /**
@@ -496,8 +501,9 @@ public class PetersenCoilImpl extends EarthFaultCompensatorImpl implements Peter
         xGroundMax = newXGroundMax;
         boolean oldXGroundMaxESet = xGroundMaxESet;
         xGroundMaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PETERSEN_COIL__XGROUND_MAX, oldXGroundMax, xGroundMax, !oldXGroundMaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PETERSEN_COIL__XGROUND_MAX,
+                    oldXGroundMax, xGroundMax, !oldXGroundMaxESet ) );
     }
 
     /**
@@ -511,8 +517,9 @@ public class PetersenCoilImpl extends EarthFaultCompensatorImpl implements Peter
         boolean oldXGroundMaxESet = xGroundMaxESet;
         xGroundMax = XGROUND_MAX_EDEFAULT;
         xGroundMaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PETERSEN_COIL__XGROUND_MAX, oldXGroundMax, XGROUND_MAX_EDEFAULT, oldXGroundMaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PETERSEN_COIL__XGROUND_MAX,
+                    oldXGroundMax, XGROUND_MAX_EDEFAULT, oldXGroundMaxESet ) );
     }
 
     /**
@@ -546,8 +553,9 @@ public class PetersenCoilImpl extends EarthFaultCompensatorImpl implements Peter
         xGroundMin = newXGroundMin;
         boolean oldXGroundMinESet = xGroundMinESet;
         xGroundMinESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PETERSEN_COIL__XGROUND_MIN, oldXGroundMin, xGroundMin, !oldXGroundMinESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PETERSEN_COIL__XGROUND_MIN,
+                    oldXGroundMin, xGroundMin, !oldXGroundMinESet ) );
     }
 
     /**
@@ -561,8 +569,9 @@ public class PetersenCoilImpl extends EarthFaultCompensatorImpl implements Peter
         boolean oldXGroundMinESet = xGroundMinESet;
         xGroundMin = XGROUND_MIN_EDEFAULT;
         xGroundMinESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PETERSEN_COIL__XGROUND_MIN, oldXGroundMin, XGROUND_MIN_EDEFAULT, oldXGroundMinESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PETERSEN_COIL__XGROUND_MIN,
+                    oldXGroundMin, XGROUND_MIN_EDEFAULT, oldXGroundMinESet ) );
     }
 
     /**
@@ -754,7 +763,7 @@ public class PetersenCoilImpl extends EarthFaultCompensatorImpl implements Peter
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (mode: " );
         if( modeESet )
             result.append( mode );

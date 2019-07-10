@@ -167,8 +167,13 @@ public enum WindLookupTableFunctionKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final WindLookupTableFunctionKind[] VALUES_ARRAY = new WindLookupTableFunctionKind[] { FPSLIP,
-            FPOMEGA, IPVDL, IQVDL, FDPF, };
+    private static final WindLookupTableFunctionKind[] VALUES_ARRAY = new WindLookupTableFunctionKind[] {
+            FPSLIP,
+            FPOMEGA,
+            IPVDL,
+            IQVDL,
+            FDPF,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Wind Lookup Table Function Kind</b></em>' enumerators.

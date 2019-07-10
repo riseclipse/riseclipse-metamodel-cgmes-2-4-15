@@ -187,9 +187,10 @@ public class RatioTapChangerImpl extends TapChangerImpl implements RatioTapChang
         stepVoltageIncrement = newStepVoltageIncrement;
         boolean oldStepVoltageIncrementESet = stepVoltageIncrementESet;
         stepVoltageIncrementESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.RATIO_TAP_CHANGER__STEP_VOLTAGE_INCREMENT,
-                        oldStepVoltageIncrement, stepVoltageIncrement, !oldStepVoltageIncrementESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.RATIO_TAP_CHANGER__STEP_VOLTAGE_INCREMENT, oldStepVoltageIncrement, stepVoltageIncrement,
+                    !oldStepVoltageIncrementESet ) );
     }
 
     /**
@@ -203,9 +204,10 @@ public class RatioTapChangerImpl extends TapChangerImpl implements RatioTapChang
         boolean oldStepVoltageIncrementESet = stepVoltageIncrementESet;
         stepVoltageIncrement = STEP_VOLTAGE_INCREMENT_EDEFAULT;
         stepVoltageIncrementESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.RATIO_TAP_CHANGER__STEP_VOLTAGE_INCREMENT,
-                        oldStepVoltageIncrement, STEP_VOLTAGE_INCREMENT_EDEFAULT, oldStepVoltageIncrementESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.RATIO_TAP_CHANGER__STEP_VOLTAGE_INCREMENT, oldStepVoltageIncrement,
+                    STEP_VOLTAGE_INCREMENT_EDEFAULT, oldStepVoltageIncrementESet ) );
     }
 
     /**
@@ -281,8 +283,9 @@ public class RatioTapChangerImpl extends TapChangerImpl implements RatioTapChang
             InternalEObject oldTransformerEnd = ( InternalEObject ) transformerEnd;
             transformerEnd = ( TransformerEnd ) eResolveProxy( oldTransformerEnd );
             if( transformerEnd != oldTransformerEnd ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.RATIO_TAP_CHANGER__TRANSFORMER_END, oldTransformerEnd, transformerEnd ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.RATIO_TAP_CHANGER__TRANSFORMER_END, oldTransformerEnd, transformerEnd ) );
             }
         }
         return transformerEnd;
@@ -328,10 +331,12 @@ public class RatioTapChangerImpl extends TapChangerImpl implements RatioTapChang
     public void setTransformerEnd( TransformerEnd newTransformerEnd ) {
         if( newTransformerEnd != transformerEnd ) {
             NotificationChain msgs = null;
-            if( transformerEnd != null ) msgs = ( ( InternalEObject ) transformerEnd ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_END__RATIO_TAP_CHANGER, TransformerEnd.class, msgs );
-            if( newTransformerEnd != null ) msgs = ( ( InternalEObject ) newTransformerEnd ).eInverseAdd( this,
-                    CimPackage.TRANSFORMER_END__RATIO_TAP_CHANGER, TransformerEnd.class, msgs );
+            if( transformerEnd != null )
+                msgs = ( ( InternalEObject ) transformerEnd ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_END__RATIO_TAP_CHANGER, TransformerEnd.class, msgs );
+            if( newTransformerEnd != null )
+                msgs = ( ( InternalEObject ) newTransformerEnd ).eInverseAdd( this,
+                        CimPackage.TRANSFORMER_END__RATIO_TAP_CHANGER, TransformerEnd.class, msgs );
             msgs = basicSetTransformerEnd( newTransformerEnd, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -382,8 +387,9 @@ public class RatioTapChangerImpl extends TapChangerImpl implements RatioTapChang
         else {
             boolean oldTransformerEndESet = transformerEndESet;
             transformerEndESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.RATIO_TAP_CHANGER__TRANSFORMER_END, null, null, oldTransformerEndESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.RATIO_TAP_CHANGER__TRANSFORMER_END,
+                        null, null, oldTransformerEndESet ) );
         }
     }
 
@@ -439,8 +445,9 @@ public class RatioTapChangerImpl extends TapChangerImpl implements RatioTapChang
     public void setRatioTapChangerTable( RatioTapChangerTable newRatioTapChangerTable ) {
         if( newRatioTapChangerTable != ratioTapChangerTable ) {
             NotificationChain msgs = null;
-            if( ratioTapChangerTable != null ) msgs = ( ( InternalEObject ) ratioTapChangerTable ).eInverseRemove( this,
-                    CimPackage.RATIO_TAP_CHANGER_TABLE__RATIO_TAP_CHANGER, RatioTapChangerTable.class, msgs );
+            if( ratioTapChangerTable != null )
+                msgs = ( ( InternalEObject ) ratioTapChangerTable ).eInverseRemove( this,
+                        CimPackage.RATIO_TAP_CHANGER_TABLE__RATIO_TAP_CHANGER, RatioTapChangerTable.class, msgs );
             if( newRatioTapChangerTable != null )
                 msgs = ( ( InternalEObject ) newRatioTapChangerTable ).eInverseAdd( this,
                         CimPackage.RATIO_TAP_CHANGER_TABLE__RATIO_TAP_CHANGER, RatioTapChangerTable.class, msgs );
@@ -450,9 +457,10 @@ public class RatioTapChangerImpl extends TapChangerImpl implements RatioTapChang
         else {
             boolean oldRatioTapChangerTableESet = ratioTapChangerTableESet;
             ratioTapChangerTableESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.RATIO_TAP_CHANGER__RATIO_TAP_CHANGER_TABLE, newRatioTapChangerTable,
-                    newRatioTapChangerTable, !oldRatioTapChangerTableESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.RATIO_TAP_CHANGER__RATIO_TAP_CHANGER_TABLE, newRatioTapChangerTable,
+                        newRatioTapChangerTable, !oldRatioTapChangerTableESet ) );
         }
     }
 
@@ -495,8 +503,10 @@ public class RatioTapChangerImpl extends TapChangerImpl implements RatioTapChang
         else {
             boolean oldRatioTapChangerTableESet = ratioTapChangerTableESet;
             ratioTapChangerTableESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.RATIO_TAP_CHANGER__RATIO_TAP_CHANGER_TABLE, null, null, oldRatioTapChangerTableESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.RATIO_TAP_CHANGER__RATIO_TAP_CHANGER_TABLE, null, null,
+                        oldRatioTapChangerTableESet ) );
         }
     }
 
@@ -519,12 +529,14 @@ public class RatioTapChangerImpl extends TapChangerImpl implements RatioTapChang
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.RATIO_TAP_CHANGER__TRANSFORMER_END:
-            if( transformerEnd != null ) msgs = ( ( InternalEObject ) transformerEnd ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_END__RATIO_TAP_CHANGER, TransformerEnd.class, msgs );
+            if( transformerEnd != null )
+                msgs = ( ( InternalEObject ) transformerEnd ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_END__RATIO_TAP_CHANGER, TransformerEnd.class, msgs );
             return basicSetTransformerEnd( ( TransformerEnd ) otherEnd, msgs );
         case CimPackage.RATIO_TAP_CHANGER__RATIO_TAP_CHANGER_TABLE:
-            if( ratioTapChangerTable != null ) msgs = ( ( InternalEObject ) ratioTapChangerTable ).eInverseRemove( this,
-                    CimPackage.RATIO_TAP_CHANGER_TABLE__RATIO_TAP_CHANGER, RatioTapChangerTable.class, msgs );
+            if( ratioTapChangerTable != null )
+                msgs = ( ( InternalEObject ) ratioTapChangerTable ).eInverseRemove( this,
+                        CimPackage.RATIO_TAP_CHANGER_TABLE__RATIO_TAP_CHANGER, RatioTapChangerTable.class, msgs );
             return basicSetRatioTapChangerTable( ( RatioTapChangerTable ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -644,7 +656,7 @@ public class RatioTapChangerImpl extends TapChangerImpl implements RatioTapChang
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (stepVoltageIncrement: " );
         if( stepVoltageIncrementESet )
             result.append( stepVoltageIncrement );

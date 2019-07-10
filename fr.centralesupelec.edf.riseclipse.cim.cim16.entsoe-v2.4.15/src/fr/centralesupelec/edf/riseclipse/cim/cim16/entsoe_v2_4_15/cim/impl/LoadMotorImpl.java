@@ -510,8 +510,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         boolean oldDESet = dESet;
         d = D_EDEFAULT;
         dESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_MOTOR__D, oldD, D_EDEFAULT, oldDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_MOTOR__D, oldD, D_EDEFAULT,
+                    oldDESet ) );
     }
 
     /**
@@ -560,8 +561,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         boolean oldHESet = hESet;
         h = H_EDEFAULT;
         hESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_MOTOR__H, oldH, H_EDEFAULT, oldHESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_MOTOR__H, oldH, H_EDEFAULT,
+                    oldHESet ) );
     }
 
     /**
@@ -595,8 +597,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         lfac = newLfac;
         boolean oldLfacESet = lfacESet;
         lfacESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_MOTOR__LFAC, oldLfac, lfac, !oldLfacESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__LFAC, oldLfac, lfac,
+                    !oldLfacESet ) );
     }
 
     /**
@@ -610,8 +613,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         boolean oldLfacESet = lfacESet;
         lfac = LFAC_EDEFAULT;
         lfacESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_MOTOR__LFAC, oldLfac, LFAC_EDEFAULT, oldLfacESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_MOTOR__LFAC, oldLfac,
+                    LFAC_EDEFAULT, oldLfacESet ) );
     }
 
     /**
@@ -645,8 +649,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         lp = newLp;
         boolean oldLpESet = lpESet;
         lpESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__LP, oldLp, lp, !oldLpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__LP, oldLp, lp,
+                    !oldLpESet ) );
     }
 
     /**
@@ -660,8 +665,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         boolean oldLpESet = lpESet;
         lp = LP_EDEFAULT;
         lpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_MOTOR__LP, oldLp, LP_EDEFAULT, oldLpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_MOTOR__LP, oldLp, LP_EDEFAULT,
+                    oldLpESet ) );
     }
 
     /**
@@ -695,8 +701,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         lpp = newLpp;
         boolean oldLppESet = lppESet;
         lppESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__LPP, oldLpp, lpp, !oldLppESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__LPP, oldLpp, lpp,
+                    !oldLppESet ) );
     }
 
     /**
@@ -710,8 +717,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         boolean oldLppESet = lppESet;
         lpp = LPP_EDEFAULT;
         lppESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_MOTOR__LPP, oldLpp, LPP_EDEFAULT, oldLppESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_MOTOR__LPP, oldLpp, LPP_EDEFAULT,
+                    oldLppESet ) );
     }
 
     /**
@@ -745,8 +753,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         ls = newLs;
         boolean oldLsESet = lsESet;
         lsESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__LS, oldLs, ls, !oldLsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__LS, oldLs, ls,
+                    !oldLsESet ) );
     }
 
     /**
@@ -760,8 +769,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         boolean oldLsESet = lsESet;
         ls = LS_EDEFAULT;
         lsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_MOTOR__LS, oldLs, LS_EDEFAULT, oldLsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_MOTOR__LS, oldLs, LS_EDEFAULT,
+                    oldLsESet ) );
     }
 
     /**
@@ -795,8 +805,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         pfrac = newPfrac;
         boolean oldPfracESet = pfracESet;
         pfracESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_MOTOR__PFRAC, oldPfrac, pfrac, !oldPfracESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__PFRAC, oldPfrac, pfrac,
+                    !oldPfracESet ) );
     }
 
     /**
@@ -810,8 +821,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         boolean oldPfracESet = pfracESet;
         pfrac = PFRAC_EDEFAULT;
         pfracESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_MOTOR__PFRAC, oldPfrac, PFRAC_EDEFAULT, oldPfracESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_MOTOR__PFRAC, oldPfrac,
+                    PFRAC_EDEFAULT, oldPfracESet ) );
     }
 
     /**
@@ -845,8 +857,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         ra = newRa;
         boolean oldRaESet = raESet;
         raESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__RA, oldRa, ra, !oldRaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__RA, oldRa, ra,
+                    !oldRaESet ) );
     }
 
     /**
@@ -860,8 +873,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         boolean oldRaESet = raESet;
         ra = RA_EDEFAULT;
         raESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_MOTOR__RA, oldRa, RA_EDEFAULT, oldRaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_MOTOR__RA, oldRa, RA_EDEFAULT,
+                    oldRaESet ) );
     }
 
     /**
@@ -895,8 +909,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         tbkr = newTbkr;
         boolean oldTbkrESet = tbkrESet;
         tbkrESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_MOTOR__TBKR, oldTbkr, tbkr, !oldTbkrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__TBKR, oldTbkr, tbkr,
+                    !oldTbkrESet ) );
     }
 
     /**
@@ -910,8 +925,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         boolean oldTbkrESet = tbkrESet;
         tbkr = TBKR_EDEFAULT;
         tbkrESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_MOTOR__TBKR, oldTbkr, TBKR_EDEFAULT, oldTbkrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_MOTOR__TBKR, oldTbkr,
+                    TBKR_EDEFAULT, oldTbkrESet ) );
     }
 
     /**
@@ -945,8 +961,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         tpo = newTpo;
         boolean oldTpoESet = tpoESet;
         tpoESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__TPO, oldTpo, tpo, !oldTpoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__TPO, oldTpo, tpo,
+                    !oldTpoESet ) );
     }
 
     /**
@@ -960,8 +977,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         boolean oldTpoESet = tpoESet;
         tpo = TPO_EDEFAULT;
         tpoESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_MOTOR__TPO, oldTpo, TPO_EDEFAULT, oldTpoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_MOTOR__TPO, oldTpo, TPO_EDEFAULT,
+                    oldTpoESet ) );
     }
 
     /**
@@ -995,8 +1013,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         tppo = newTppo;
         boolean oldTppoESet = tppoESet;
         tppoESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_MOTOR__TPPO, oldTppo, tppo, !oldTppoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__TPPO, oldTppo, tppo,
+                    !oldTppoESet ) );
     }
 
     /**
@@ -1010,8 +1029,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         boolean oldTppoESet = tppoESet;
         tppo = TPPO_EDEFAULT;
         tppoESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_MOTOR__TPPO, oldTppo, TPPO_EDEFAULT, oldTppoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_MOTOR__TPPO, oldTppo,
+                    TPPO_EDEFAULT, oldTppoESet ) );
     }
 
     /**
@@ -1045,8 +1065,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         tv = newTv;
         boolean oldTvESet = tvESet;
         tvESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__TV, oldTv, tv, !oldTvESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__TV, oldTv, tv,
+                    !oldTvESet ) );
     }
 
     /**
@@ -1060,8 +1081,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         boolean oldTvESet = tvESet;
         tv = TV_EDEFAULT;
         tvESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_MOTOR__TV, oldTv, TV_EDEFAULT, oldTvESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_MOTOR__TV, oldTv, TV_EDEFAULT,
+                    oldTvESet ) );
     }
 
     /**
@@ -1095,8 +1117,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         vt = newVt;
         boolean oldVtESet = vtESet;
         vtESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__VT, oldVt, vt, !oldVtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_MOTOR__VT, oldVt, vt,
+                    !oldVtESet ) );
     }
 
     /**
@@ -1110,8 +1133,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         boolean oldVtESet = vtESet;
         vt = VT_EDEFAULT;
         vtESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_MOTOR__VT, oldVt, VT_EDEFAULT, oldVtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_MOTOR__VT, oldVt, VT_EDEFAULT,
+                    oldVtESet ) );
     }
 
     /**
@@ -1164,10 +1188,12 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
     public void setLoadAggregate( LoadAggregate newLoadAggregate ) {
         if( newLoadAggregate != loadAggregate ) {
             NotificationChain msgs = null;
-            if( loadAggregate != null ) msgs = ( ( InternalEObject ) loadAggregate ).eInverseRemove( this,
-                    CimPackage.LOAD_AGGREGATE__LOAD_MOTOR, LoadAggregate.class, msgs );
-            if( newLoadAggregate != null ) msgs = ( ( InternalEObject ) newLoadAggregate ).eInverseAdd( this,
-                    CimPackage.LOAD_AGGREGATE__LOAD_MOTOR, LoadAggregate.class, msgs );
+            if( loadAggregate != null )
+                msgs = ( ( InternalEObject ) loadAggregate ).eInverseRemove( this,
+                        CimPackage.LOAD_AGGREGATE__LOAD_MOTOR, LoadAggregate.class, msgs );
+            if( newLoadAggregate != null )
+                msgs = ( ( InternalEObject ) newLoadAggregate ).eInverseAdd( this,
+                        CimPackage.LOAD_AGGREGATE__LOAD_MOTOR, LoadAggregate.class, msgs );
             msgs = basicSetLoadAggregate( newLoadAggregate, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1218,8 +1244,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
         else {
             boolean oldLoadAggregateESet = loadAggregateESet;
             loadAggregateESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.LOAD_MOTOR__LOAD_AGGREGATE, null, null, oldLoadAggregateESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_MOTOR__LOAD_AGGREGATE, null,
+                        null, oldLoadAggregateESet ) );
         }
     }
 
@@ -1242,8 +1269,9 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.LOAD_MOTOR__LOAD_AGGREGATE:
-            if( loadAggregate != null ) msgs = ( ( InternalEObject ) loadAggregate ).eInverseRemove( this,
-                    CimPackage.LOAD_AGGREGATE__LOAD_MOTOR, LoadAggregate.class, msgs );
+            if( loadAggregate != null )
+                msgs = ( ( InternalEObject ) loadAggregate ).eInverseRemove( this,
+                        CimPackage.LOAD_AGGREGATE__LOAD_MOTOR, LoadAggregate.class, msgs );
             return basicSetLoadAggregate( ( LoadAggregate ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1460,7 +1488,7 @@ public class LoadMotorImpl extends IdentifiedObjectImpl implements LoadMotor {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (d: " );
         if( dESet )
             result.append( d );

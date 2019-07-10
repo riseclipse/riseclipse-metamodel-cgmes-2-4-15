@@ -186,9 +186,10 @@ public class OperationalLimitTypeImpl extends IdentifiedObjectImpl implements Op
         acceptableDuration = newAcceptableDuration;
         boolean oldAcceptableDurationESet = acceptableDurationESet;
         acceptableDurationESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.OPERATIONAL_LIMIT_TYPE__ACCEPTABLE_DURATION,
-                        oldAcceptableDuration, acceptableDuration, !oldAcceptableDurationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.OPERATIONAL_LIMIT_TYPE__ACCEPTABLE_DURATION, oldAcceptableDuration, acceptableDuration,
+                    !oldAcceptableDurationESet ) );
     }
 
     /**
@@ -202,9 +203,10 @@ public class OperationalLimitTypeImpl extends IdentifiedObjectImpl implements Op
         boolean oldAcceptableDurationESet = acceptableDurationESet;
         acceptableDuration = ACCEPTABLE_DURATION_EDEFAULT;
         acceptableDurationESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.OPERATIONAL_LIMIT_TYPE__ACCEPTABLE_DURATION,
-                        oldAcceptableDuration, ACCEPTABLE_DURATION_EDEFAULT, oldAcceptableDurationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.OPERATIONAL_LIMIT_TYPE__ACCEPTABLE_DURATION, oldAcceptableDuration,
+                    ACCEPTABLE_DURATION_EDEFAULT, oldAcceptableDurationESet ) );
     }
 
     /**
@@ -238,8 +240,9 @@ public class OperationalLimitTypeImpl extends IdentifiedObjectImpl implements Op
         direction = newDirection == null ? DIRECTION_EDEFAULT : newDirection;
         boolean oldDirectionESet = directionESet;
         directionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OPERATIONAL_LIMIT_TYPE__DIRECTION, oldDirection, direction, !oldDirectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OPERATIONAL_LIMIT_TYPE__DIRECTION,
+                    oldDirection, direction, !oldDirectionESet ) );
     }
 
     /**
@@ -253,8 +256,9 @@ public class OperationalLimitTypeImpl extends IdentifiedObjectImpl implements Op
         boolean oldDirectionESet = directionESet;
         direction = DIRECTION_EDEFAULT;
         directionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.OPERATIONAL_LIMIT_TYPE__DIRECTION, oldDirection, DIRECTION_EDEFAULT, oldDirectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OPERATIONAL_LIMIT_TYPE__DIRECTION,
+                    oldDirection, DIRECTION_EDEFAULT, oldDirectionESet ) );
     }
 
     /**
@@ -321,8 +325,9 @@ public class OperationalLimitTypeImpl extends IdentifiedObjectImpl implements Op
     public void setLimitType( LimitTypeKind newLimitType ) {
         LimitTypeKind oldLimitType = limitType;
         limitType = newLimitType == null ? LIMIT_TYPE_EDEFAULT : newLimitType;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OPERATIONAL_LIMIT_TYPE__LIMIT_TYPE, oldLimitType, limitType ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OPERATIONAL_LIMIT_TYPE__LIMIT_TYPE,
+                    oldLimitType, limitType ) );
     }
 
     /**
@@ -454,7 +459,7 @@ public class OperationalLimitTypeImpl extends IdentifiedObjectImpl implements Op
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (acceptableDuration: " );
         if( acceptableDurationESet )
             result.append( acceptableDuration );

@@ -426,8 +426,9 @@ public class ShuntCompensatorImpl extends RegulatingCondEqImpl implements ShuntC
         aVRDelay = newAVRDelay;
         boolean oldAVRDelayESet = aVRDelayESet;
         aVRDelayESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SHUNT_COMPENSATOR__AVR_DELAY, oldAVRDelay, aVRDelay, !oldAVRDelayESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SHUNT_COMPENSATOR__AVR_DELAY,
+                    oldAVRDelay, aVRDelay, !oldAVRDelayESet ) );
     }
 
     /**
@@ -441,8 +442,9 @@ public class ShuntCompensatorImpl extends RegulatingCondEqImpl implements ShuntC
         boolean oldAVRDelayESet = aVRDelayESet;
         aVRDelay = AVR_DELAY_EDEFAULT;
         aVRDelayESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SHUNT_COMPENSATOR__AVR_DELAY, oldAVRDelay, AVR_DELAY_EDEFAULT, oldAVRDelayESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SHUNT_COMPENSATOR__AVR_DELAY,
+                    oldAVRDelay, AVR_DELAY_EDEFAULT, oldAVRDelayESet ) );
     }
 
     /**
@@ -476,8 +478,9 @@ public class ShuntCompensatorImpl extends RegulatingCondEqImpl implements ShuntC
         grounded = newGrounded;
         boolean oldGroundedESet = groundedESet;
         groundedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SHUNT_COMPENSATOR__GROUNDED, oldGrounded, grounded, !oldGroundedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SHUNT_COMPENSATOR__GROUNDED, oldGrounded,
+                    grounded, !oldGroundedESet ) );
     }
 
     /**
@@ -491,8 +494,9 @@ public class ShuntCompensatorImpl extends RegulatingCondEqImpl implements ShuntC
         boolean oldGroundedESet = groundedESet;
         grounded = GROUNDED_EDEFAULT;
         groundedESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SHUNT_COMPENSATOR__GROUNDED, oldGrounded, GROUNDED_EDEFAULT, oldGroundedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SHUNT_COMPENSATOR__GROUNDED,
+                    oldGrounded, GROUNDED_EDEFAULT, oldGroundedESet ) );
     }
 
     /**
@@ -578,8 +582,9 @@ public class ShuntCompensatorImpl extends RegulatingCondEqImpl implements ShuntC
         nomU = newNomU;
         boolean oldNomUESet = nomUESet;
         nomUESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SHUNT_COMPENSATOR__NOM_U, oldNomU, nomU, !oldNomUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SHUNT_COMPENSATOR__NOM_U, oldNomU, nomU,
+                    !oldNomUESet ) );
     }
 
     /**
@@ -593,8 +598,9 @@ public class ShuntCompensatorImpl extends RegulatingCondEqImpl implements ShuntC
         boolean oldNomUESet = nomUESet;
         nomU = NOM_U_EDEFAULT;
         nomUESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SHUNT_COMPENSATOR__NOM_U, oldNomU, NOM_U_EDEFAULT, oldNomUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SHUNT_COMPENSATOR__NOM_U, oldNomU,
+                    NOM_U_EDEFAULT, oldNomUESet ) );
     }
 
     /**
@@ -732,8 +738,9 @@ public class ShuntCompensatorImpl extends RegulatingCondEqImpl implements ShuntC
         sections = newSections;
         boolean oldSectionsESet = sectionsESet;
         sectionsESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SHUNT_COMPENSATOR__SECTIONS, oldSections, sections, !oldSectionsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SHUNT_COMPENSATOR__SECTIONS, oldSections,
+                    sections, !oldSectionsESet ) );
     }
 
     /**
@@ -747,8 +754,9 @@ public class ShuntCompensatorImpl extends RegulatingCondEqImpl implements ShuntC
         boolean oldSectionsESet = sectionsESet;
         sections = SECTIONS_EDEFAULT;
         sectionsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SHUNT_COMPENSATOR__SECTIONS, oldSections, SECTIONS_EDEFAULT, oldSectionsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SHUNT_COMPENSATOR__SECTIONS,
+                    oldSections, SECTIONS_EDEFAULT, oldSectionsESet ) );
     }
 
     /**
@@ -834,8 +842,9 @@ public class ShuntCompensatorImpl extends RegulatingCondEqImpl implements ShuntC
         switchOnDate = newSwitchOnDate;
         boolean oldSwitchOnDateESet = switchOnDateESet;
         switchOnDateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SHUNT_COMPENSATOR__SWITCH_ON_DATE, oldSwitchOnDate, switchOnDate, !oldSwitchOnDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SHUNT_COMPENSATOR__SWITCH_ON_DATE,
+                    oldSwitchOnDate, switchOnDate, !oldSwitchOnDateESet ) );
     }
 
     /**
@@ -1007,9 +1016,10 @@ public class ShuntCompensatorImpl extends RegulatingCondEqImpl implements ShuntC
         else {
             boolean oldSvShuntCompensatorSectionsESet = svShuntCompensatorSectionsESet;
             svShuntCompensatorSectionsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SHUNT_COMPENSATOR__SV_SHUNT_COMPENSATOR_SECTIONS, newSvShuntCompensatorSections,
-                    newSvShuntCompensatorSections, !oldSvShuntCompensatorSectionsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.SHUNT_COMPENSATOR__SV_SHUNT_COMPENSATOR_SECTIONS, newSvShuntCompensatorSections,
+                        newSvShuntCompensatorSections, !oldSvShuntCompensatorSectionsESet ) );
         }
     }
 
@@ -1053,9 +1063,10 @@ public class ShuntCompensatorImpl extends RegulatingCondEqImpl implements ShuntC
         else {
             boolean oldSvShuntCompensatorSectionsESet = svShuntCompensatorSectionsESet;
             svShuntCompensatorSectionsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SHUNT_COMPENSATOR__SV_SHUNT_COMPENSATOR_SECTIONS, null, null,
-                    oldSvShuntCompensatorSectionsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.SHUNT_COMPENSATOR__SV_SHUNT_COMPENSATOR_SECTIONS, null, null,
+                        oldSvShuntCompensatorSectionsESet ) );
         }
     }
 
@@ -1286,7 +1297,7 @@ public class ShuntCompensatorImpl extends RegulatingCondEqImpl implements ShuntC
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (aVRDelay: " );
         if( aVRDelayESet )
             result.append( aVRDelay );

@@ -156,8 +156,9 @@ public class EndDeviceEventDetailImpl extends CimObjectWithIDImpl implements End
         name = newName;
         boolean oldNameESet = nameESet;
         nameESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_EVENT_DETAIL__NAME, oldName, name, !oldNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_EVENT_DETAIL__NAME, oldName,
+                    name, !oldNameESet ) );
     }
 
     /**
@@ -171,8 +172,9 @@ public class EndDeviceEventDetailImpl extends CimObjectWithIDImpl implements End
         boolean oldNameESet = nameESet;
         name = NAME_EDEFAULT;
         nameESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_EVENT_DETAIL__NAME, oldName, NAME_EDEFAULT, oldNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_EVENT_DETAIL__NAME, oldName,
+                    NAME_EDEFAULT, oldNameESet ) );
     }
 
     /**
@@ -225,18 +227,21 @@ public class EndDeviceEventDetailImpl extends CimObjectWithIDImpl implements End
     public void setValue( StringQuantity newValue ) {
         if( newValue != value ) {
             NotificationChain msgs = null;
-            if( value != null ) msgs = ( ( InternalEObject ) value ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.END_DEVICE_EVENT_DETAIL__VALUE, null, msgs );
-            if( newValue != null ) msgs = ( ( InternalEObject ) newValue ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.END_DEVICE_EVENT_DETAIL__VALUE, null, msgs );
+            if( value != null )
+                msgs = ( ( InternalEObject ) value ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.END_DEVICE_EVENT_DETAIL__VALUE, null, msgs );
+            if( newValue != null )
+                msgs = ( ( InternalEObject ) newValue ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.END_DEVICE_EVENT_DETAIL__VALUE, null, msgs );
             msgs = basicSetValue( newValue, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldValueESet = valueESet;
             valueESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.END_DEVICE_EVENT_DETAIL__VALUE, newValue, newValue, !oldValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_EVENT_DETAIL__VALUE,
+                        newValue, newValue, !oldValueESet ) );
         }
     }
 
@@ -278,8 +283,9 @@ public class EndDeviceEventDetailImpl extends CimObjectWithIDImpl implements End
         else {
             boolean oldValueESet = valueESet;
             valueESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.END_DEVICE_EVENT_DETAIL__VALUE, null, null, oldValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_EVENT_DETAIL__VALUE,
+                        null, null, oldValueESet ) );
         }
     }
 
@@ -334,19 +340,22 @@ public class EndDeviceEventDetailImpl extends CimObjectWithIDImpl implements End
     public void setEndDeviceEvent( EndDeviceEvent newEndDeviceEvent ) {
         if( newEndDeviceEvent != endDeviceEvent ) {
             NotificationChain msgs = null;
-            if( endDeviceEvent != null ) msgs = ( ( InternalEObject ) endDeviceEvent ).eInverseRemove( this,
-                    CimPackage.END_DEVICE_EVENT__END_DEVICE_EVENT_DETAILS, EndDeviceEvent.class, msgs );
-            if( newEndDeviceEvent != null ) msgs = ( ( InternalEObject ) newEndDeviceEvent ).eInverseAdd( this,
-                    CimPackage.END_DEVICE_EVENT__END_DEVICE_EVENT_DETAILS, EndDeviceEvent.class, msgs );
+            if( endDeviceEvent != null )
+                msgs = ( ( InternalEObject ) endDeviceEvent ).eInverseRemove( this,
+                        CimPackage.END_DEVICE_EVENT__END_DEVICE_EVENT_DETAILS, EndDeviceEvent.class, msgs );
+            if( newEndDeviceEvent != null )
+                msgs = ( ( InternalEObject ) newEndDeviceEvent ).eInverseAdd( this,
+                        CimPackage.END_DEVICE_EVENT__END_DEVICE_EVENT_DETAILS, EndDeviceEvent.class, msgs );
             msgs = basicSetEndDeviceEvent( newEndDeviceEvent, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldEndDeviceEventESet = endDeviceEventESet;
             endDeviceEventESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_EVENT_DETAIL__END_DEVICE_EVENT,
-                            newEndDeviceEvent, newEndDeviceEvent, !oldEndDeviceEventESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.END_DEVICE_EVENT_DETAIL__END_DEVICE_EVENT, newEndDeviceEvent, newEndDeviceEvent,
+                        !oldEndDeviceEventESet ) );
         }
     }
 
@@ -389,8 +398,9 @@ public class EndDeviceEventDetailImpl extends CimObjectWithIDImpl implements End
         else {
             boolean oldEndDeviceEventESet = endDeviceEventESet;
             endDeviceEventESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.END_DEVICE_EVENT_DETAIL__END_DEVICE_EVENT, null, null, oldEndDeviceEventESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.END_DEVICE_EVENT_DETAIL__END_DEVICE_EVENT, null, null, oldEndDeviceEventESet ) );
         }
     }
 
@@ -413,8 +423,9 @@ public class EndDeviceEventDetailImpl extends CimObjectWithIDImpl implements End
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.END_DEVICE_EVENT_DETAIL__END_DEVICE_EVENT:
-            if( endDeviceEvent != null ) msgs = ( ( InternalEObject ) endDeviceEvent ).eInverseRemove( this,
-                    CimPackage.END_DEVICE_EVENT__END_DEVICE_EVENT_DETAILS, EndDeviceEvent.class, msgs );
+            if( endDeviceEvent != null )
+                msgs = ( ( InternalEObject ) endDeviceEvent ).eInverseRemove( this,
+                        CimPackage.END_DEVICE_EVENT__END_DEVICE_EVENT_DETAILS, EndDeviceEvent.class, msgs );
             return basicSetEndDeviceEvent( ( EndDeviceEvent ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -523,7 +534,7 @@ public class EndDeviceEventDetailImpl extends CimObjectWithIDImpl implements End
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (name: " );
         if( nameESet )
             result.append( name );

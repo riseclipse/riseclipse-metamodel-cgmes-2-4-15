@@ -354,8 +354,9 @@ public class MeasurementImpl extends IdentifiedObjectImpl implements Measurement
         phases = newPhases == null ? PHASES_EDEFAULT : newPhases;
         boolean oldPhasesESet = phasesESet;
         phasesESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.MEASUREMENT__PHASES, oldPhases, phases, !oldPhasesESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MEASUREMENT__PHASES, oldPhases, phases,
+                    !oldPhasesESet ) );
     }
 
     /**
@@ -369,8 +370,9 @@ public class MeasurementImpl extends IdentifiedObjectImpl implements Measurement
         boolean oldPhasesESet = phasesESet;
         phases = PHASES_EDEFAULT;
         phasesESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MEASUREMENT__PHASES, oldPhases, PHASES_EDEFAULT, oldPhasesESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MEASUREMENT__PHASES, oldPhases,
+                    PHASES_EDEFAULT, oldPhasesESet ) );
     }
 
     /**
@@ -404,8 +406,9 @@ public class MeasurementImpl extends IdentifiedObjectImpl implements Measurement
         unitMultiplier = newUnitMultiplier == null ? UNIT_MULTIPLIER_EDEFAULT : newUnitMultiplier;
         boolean oldUnitMultiplierESet = unitMultiplierESet;
         unitMultiplierESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.MEASUREMENT__UNIT_MULTIPLIER, oldUnitMultiplier, unitMultiplier, !oldUnitMultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MEASUREMENT__UNIT_MULTIPLIER,
+                    oldUnitMultiplier, unitMultiplier, !oldUnitMultiplierESet ) );
     }
 
     /**
@@ -455,8 +458,9 @@ public class MeasurementImpl extends IdentifiedObjectImpl implements Measurement
         unitSymbol = newUnitSymbol == null ? UNIT_SYMBOL_EDEFAULT : newUnitSymbol;
         boolean oldUnitSymbolESet = unitSymbolESet;
         unitSymbolESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.MEASUREMENT__UNIT_SYMBOL, oldUnitSymbol, unitSymbol, !oldUnitSymbolESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MEASUREMENT__UNIT_SYMBOL, oldUnitSymbol,
+                    unitSymbol, !oldUnitSymbolESet ) );
     }
 
     /**
@@ -470,8 +474,9 @@ public class MeasurementImpl extends IdentifiedObjectImpl implements Measurement
         boolean oldUnitSymbolESet = unitSymbolESet;
         unitSymbol = UNIT_SYMBOL_EDEFAULT;
         unitSymbolESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MEASUREMENT__UNIT_SYMBOL, oldUnitSymbol, UNIT_SYMBOL_EDEFAULT, oldUnitSymbolESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MEASUREMENT__UNIT_SYMBOL,
+                    oldUnitSymbol, UNIT_SYMBOL_EDEFAULT, oldUnitSymbolESet ) );
     }
 
     /**
@@ -524,18 +529,21 @@ public class MeasurementImpl extends IdentifiedObjectImpl implements Measurement
     public void setTerminal( ACDCTerminal newTerminal ) {
         if( newTerminal != terminal ) {
             NotificationChain msgs = null;
-            if( terminal != null ) msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
-                    CimPackage.ACDC_TERMINAL__MEASUREMENTS, ACDCTerminal.class, msgs );
-            if( newTerminal != null ) msgs = ( ( InternalEObject ) newTerminal ).eInverseAdd( this,
-                    CimPackage.ACDC_TERMINAL__MEASUREMENTS, ACDCTerminal.class, msgs );
+            if( terminal != null )
+                msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this, CimPackage.ACDC_TERMINAL__MEASUREMENTS,
+                        ACDCTerminal.class, msgs );
+            if( newTerminal != null )
+                msgs = ( ( InternalEObject ) newTerminal ).eInverseAdd( this, CimPackage.ACDC_TERMINAL__MEASUREMENTS,
+                        ACDCTerminal.class, msgs );
             msgs = basicSetTerminal( newTerminal, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTerminalESet = terminalESet;
             terminalESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.MEASUREMENT__TERMINAL, newTerminal, newTerminal, !oldTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MEASUREMENT__TERMINAL, newTerminal,
+                        newTerminal, !oldTerminalESet ) );
         }
     }
 
@@ -577,8 +585,9 @@ public class MeasurementImpl extends IdentifiedObjectImpl implements Measurement
         else {
             boolean oldTerminalESet = terminalESet;
             terminalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.MEASUREMENT__TERMINAL, null, null, oldTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MEASUREMENT__TERMINAL, null, null,
+                        oldTerminalESet ) );
         }
     }
 
@@ -634,8 +643,9 @@ public class MeasurementImpl extends IdentifiedObjectImpl implements Measurement
     public void setPowerSystemResource( PowerSystemResource newPowerSystemResource ) {
         if( newPowerSystemResource != powerSystemResource ) {
             NotificationChain msgs = null;
-            if( powerSystemResource != null ) msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
-                    CimPackage.POWER_SYSTEM_RESOURCE__MEASUREMENTS, PowerSystemResource.class, msgs );
+            if( powerSystemResource != null )
+                msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
+                        CimPackage.POWER_SYSTEM_RESOURCE__MEASUREMENTS, PowerSystemResource.class, msgs );
             if( newPowerSystemResource != null )
                 msgs = ( ( InternalEObject ) newPowerSystemResource ).eInverseAdd( this,
                         CimPackage.POWER_SYSTEM_RESOURCE__MEASUREMENTS, PowerSystemResource.class, msgs );
@@ -690,8 +700,9 @@ public class MeasurementImpl extends IdentifiedObjectImpl implements Measurement
         else {
             boolean oldPowerSystemResourceESet = powerSystemResourceESet;
             powerSystemResourceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.MEASUREMENT__POWER_SYSTEM_RESOURCE, null, null, oldPowerSystemResourceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MEASUREMENT__POWER_SYSTEM_RESOURCE,
+                        null, null, oldPowerSystemResourceESet ) );
         }
     }
 
@@ -813,18 +824,21 @@ public class MeasurementImpl extends IdentifiedObjectImpl implements Measurement
     public void setAsset( Asset newAsset ) {
         if( newAsset != asset ) {
             NotificationChain msgs = null;
-            if( asset != null ) msgs = ( ( InternalEObject ) asset ).eInverseRemove( this,
-                    CimPackage.ASSET__MEASUREMENTS, Asset.class, msgs );
-            if( newAsset != null ) msgs = ( ( InternalEObject ) newAsset ).eInverseAdd( this,
-                    CimPackage.ASSET__MEASUREMENTS, Asset.class, msgs );
+            if( asset != null )
+                msgs = ( ( InternalEObject ) asset ).eInverseRemove( this, CimPackage.ASSET__MEASUREMENTS, Asset.class,
+                        msgs );
+            if( newAsset != null )
+                msgs = ( ( InternalEObject ) newAsset ).eInverseAdd( this, CimPackage.ASSET__MEASUREMENTS, Asset.class,
+                        msgs );
             msgs = basicSetAsset( newAsset, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldAssetESet = assetESet;
             assetESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.MEASUREMENT__ASSET, newAsset, newAsset, !oldAssetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MEASUREMENT__ASSET, newAsset,
+                        newAsset, !oldAssetESet ) );
         }
     }
 
@@ -866,8 +880,9 @@ public class MeasurementImpl extends IdentifiedObjectImpl implements Measurement
         else {
             boolean oldAssetESet = assetESet;
             assetESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.MEASUREMENT__ASSET, null, null, oldAssetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MEASUREMENT__ASSET, null, null,
+                        oldAssetESet ) );
         }
     }
 
@@ -894,19 +909,22 @@ public class MeasurementImpl extends IdentifiedObjectImpl implements Measurement
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getLocations() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.MEASUREMENT__POWER_SYSTEM_RESOURCE:
-            if( powerSystemResource != null ) msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
-                    CimPackage.POWER_SYSTEM_RESOURCE__MEASUREMENTS, PowerSystemResource.class, msgs );
+            if( powerSystemResource != null )
+                msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
+                        CimPackage.POWER_SYSTEM_RESOURCE__MEASUREMENTS, PowerSystemResource.class, msgs );
             return basicSetPowerSystemResource( ( PowerSystemResource ) otherEnd, msgs );
         case CimPackage.MEASUREMENT__PROCEDURES:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getProcedures() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.MEASUREMENT__TERMINAL:
-            if( terminal != null ) msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
-                    CimPackage.ACDC_TERMINAL__MEASUREMENTS, ACDCTerminal.class, msgs );
+            if( terminal != null )
+                msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this, CimPackage.ACDC_TERMINAL__MEASUREMENTS,
+                        ACDCTerminal.class, msgs );
             return basicSetTerminal( ( ACDCTerminal ) otherEnd, msgs );
         case CimPackage.MEASUREMENT__ASSET:
-            if( asset != null ) msgs = ( ( InternalEObject ) asset ).eInverseRemove( this,
-                    CimPackage.ASSET__MEASUREMENTS, Asset.class, msgs );
+            if( asset != null )
+                msgs = ( ( InternalEObject ) asset ).eInverseRemove( this, CimPackage.ASSET__MEASUREMENTS, Asset.class,
+                        msgs );
             return basicSetAsset( ( Asset ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1084,7 +1102,7 @@ public class MeasurementImpl extends IdentifiedObjectImpl implements Measurement
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (measurementType: " );
         if( measurementTypeESet )
             result.append( measurementType );

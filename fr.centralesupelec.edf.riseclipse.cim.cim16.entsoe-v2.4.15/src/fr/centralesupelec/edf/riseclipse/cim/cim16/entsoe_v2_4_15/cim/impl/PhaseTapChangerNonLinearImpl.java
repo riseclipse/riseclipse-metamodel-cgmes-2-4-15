@@ -172,9 +172,10 @@ public class PhaseTapChangerNonLinearImpl extends PhaseTapChangerImpl implements
         voltageStepIncrement = newVoltageStepIncrement;
         boolean oldVoltageStepIncrementESet = voltageStepIncrementESet;
         voltageStepIncrementESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PHASE_TAP_CHANGER_NON_LINEAR__VOLTAGE_STEP_INCREMENT, oldVoltageStepIncrement,
-                voltageStepIncrement, !oldVoltageStepIncrementESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PHASE_TAP_CHANGER_NON_LINEAR__VOLTAGE_STEP_INCREMENT, oldVoltageStepIncrement,
+                    voltageStepIncrement, !oldVoltageStepIncrementESet ) );
     }
 
     /**
@@ -188,9 +189,10 @@ public class PhaseTapChangerNonLinearImpl extends PhaseTapChangerImpl implements
         boolean oldVoltageStepIncrementESet = voltageStepIncrementESet;
         voltageStepIncrement = VOLTAGE_STEP_INCREMENT_EDEFAULT;
         voltageStepIncrementESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PHASE_TAP_CHANGER_NON_LINEAR__VOLTAGE_STEP_INCREMENT, oldVoltageStepIncrement,
-                VOLTAGE_STEP_INCREMENT_EDEFAULT, oldVoltageStepIncrementESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PHASE_TAP_CHANGER_NON_LINEAR__VOLTAGE_STEP_INCREMENT, oldVoltageStepIncrement,
+                    VOLTAGE_STEP_INCREMENT_EDEFAULT, oldVoltageStepIncrementESet ) );
     }
 
     /**
@@ -224,8 +226,9 @@ public class PhaseTapChangerNonLinearImpl extends PhaseTapChangerImpl implements
         xMax = newXMax;
         boolean oldXMaxESet = xMaxESet;
         xMaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PHASE_TAP_CHANGER_NON_LINEAR__XMAX, oldXMax, xMax, !oldXMaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PHASE_TAP_CHANGER_NON_LINEAR__XMAX,
+                    oldXMax, xMax, !oldXMaxESet ) );
     }
 
     /**
@@ -239,8 +242,9 @@ public class PhaseTapChangerNonLinearImpl extends PhaseTapChangerImpl implements
         boolean oldXMaxESet = xMaxESet;
         xMax = XMAX_EDEFAULT;
         xMaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PHASE_TAP_CHANGER_NON_LINEAR__XMAX, oldXMax, XMAX_EDEFAULT, oldXMaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PHASE_TAP_CHANGER_NON_LINEAR__XMAX,
+                    oldXMax, XMAX_EDEFAULT, oldXMaxESet ) );
     }
 
     /**
@@ -274,8 +278,9 @@ public class PhaseTapChangerNonLinearImpl extends PhaseTapChangerImpl implements
         xMin = newXMin;
         boolean oldXMinESet = xMinESet;
         xMinESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PHASE_TAP_CHANGER_NON_LINEAR__XMIN, oldXMin, xMin, !oldXMinESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PHASE_TAP_CHANGER_NON_LINEAR__XMIN,
+                    oldXMin, xMin, !oldXMinESet ) );
     }
 
     /**
@@ -289,8 +294,9 @@ public class PhaseTapChangerNonLinearImpl extends PhaseTapChangerImpl implements
         boolean oldXMinESet = xMinESet;
         xMin = XMIN_EDEFAULT;
         xMinESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PHASE_TAP_CHANGER_NON_LINEAR__XMIN, oldXMin, XMIN_EDEFAULT, oldXMinESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PHASE_TAP_CHANGER_NON_LINEAR__XMIN,
+                    oldXMin, XMIN_EDEFAULT, oldXMinESet ) );
     }
 
     /**
@@ -390,7 +396,7 @@ public class PhaseTapChangerNonLinearImpl extends PhaseTapChangerImpl implements
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (voltageStepIncrement: " );
         if( voltageStepIncrementESet )
             result.append( voltageStepIncrement );

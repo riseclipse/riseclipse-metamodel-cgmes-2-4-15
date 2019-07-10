@@ -1378,8 +1378,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         baseP = newBaseP;
         boolean oldBasePESet = basePESet;
         basePESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__BASE_P, oldBaseP, baseP, !oldBasePESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__BASE_P, oldBaseP, baseP,
+                    !oldBasePESet ) );
     }
 
     /**
@@ -1393,8 +1394,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         boolean oldBasePESet = basePESet;
         baseP = BASE_P_EDEFAULT;
         basePESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GENERATING_UNIT__BASE_P, oldBaseP, BASE_P_EDEFAULT, oldBasePESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GENERATING_UNIT__BASE_P, oldBaseP,
+                    BASE_P_EDEFAULT, oldBasePESet ) );
     }
 
     /**
@@ -1636,8 +1638,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         efficiency = newEfficiency;
         boolean oldEfficiencyESet = efficiencyESet;
         efficiencyESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__EFFICIENCY, oldEfficiency, efficiency, !oldEfficiencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__EFFICIENCY,
+                    oldEfficiency, efficiency, !oldEfficiencyESet ) );
     }
 
     /**
@@ -1651,8 +1654,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         boolean oldEfficiencyESet = efficiencyESet;
         efficiency = EFFICIENCY_EDEFAULT;
         efficiencyESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GENERATING_UNIT__EFFICIENCY, oldEfficiency, EFFICIENCY_EDEFAULT, oldEfficiencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GENERATING_UNIT__EFFICIENCY,
+                    oldEfficiency, EFFICIENCY_EDEFAULT, oldEfficiencyESet ) );
     }
 
     /**
@@ -1790,8 +1794,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         governorMPL = newGovernorMPL;
         boolean oldGovernorMPLESet = governorMPLESet;
         governorMPLESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__GOVERNOR_MPL, oldGovernorMPL, governorMPL, !oldGovernorMPLESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__GOVERNOR_MPL,
+                    oldGovernorMPL, governorMPL, !oldGovernorMPLESet ) );
     }
 
     /**
@@ -1805,8 +1810,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         boolean oldGovernorMPLESet = governorMPLESet;
         governorMPL = GOVERNOR_MPL_EDEFAULT;
         governorMPLESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GENERATING_UNIT__GOVERNOR_MPL, oldGovernorMPL, GOVERNOR_MPL_EDEFAULT, oldGovernorMPLESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GENERATING_UNIT__GOVERNOR_MPL,
+                    oldGovernorMPL, GOVERNOR_MPL_EDEFAULT, oldGovernorMPLESet ) );
     }
 
     /**
@@ -1840,8 +1846,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         governorSCD = newGovernorSCD;
         boolean oldGovernorSCDESet = governorSCDESet;
         governorSCDESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__GOVERNOR_SCD, oldGovernorSCD, governorSCD, !oldGovernorSCDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__GOVERNOR_SCD,
+                    oldGovernorSCD, governorSCD, !oldGovernorSCDESet ) );
     }
 
     /**
@@ -1855,8 +1862,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         boolean oldGovernorSCDESet = governorSCDESet;
         governorSCD = GOVERNOR_SCD_EDEFAULT;
         governorSCDESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GENERATING_UNIT__GOVERNOR_SCD, oldGovernorSCD, GOVERNOR_SCD_EDEFAULT, oldGovernorSCDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GENERATING_UNIT__GOVERNOR_SCD,
+                    oldGovernorSCD, GOVERNOR_SCD_EDEFAULT, oldGovernorSCDESet ) );
     }
 
     /**
@@ -1942,8 +1950,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         initialP = newInitialP;
         boolean oldInitialPESet = initialPESet;
         initialPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__INITIAL_P, oldInitialP, initialP, !oldInitialPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__INITIAL_P, oldInitialP,
+                    initialP, !oldInitialPESet ) );
     }
 
     /**
@@ -1957,8 +1966,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         boolean oldInitialPESet = initialPESet;
         initialP = INITIAL_P_EDEFAULT;
         initialPESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GENERATING_UNIT__INITIAL_P, oldInitialP, INITIAL_P_EDEFAULT, oldInitialPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GENERATING_UNIT__INITIAL_P,
+                    oldInitialP, INITIAL_P_EDEFAULT, oldInitialPESet ) );
     }
 
     /**
@@ -1992,8 +2002,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         longPF = newLongPF;
         boolean oldLongPFESet = longPFESet;
         longPFESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__LONG_PF, oldLongPF, longPF, !oldLongPFESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__LONG_PF, oldLongPF,
+                    longPF, !oldLongPFESet ) );
     }
 
     /**
@@ -2007,8 +2018,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         boolean oldLongPFESet = longPFESet;
         longPF = LONG_PF_EDEFAULT;
         longPFESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GENERATING_UNIT__LONG_PF, oldLongPF, LONG_PF_EDEFAULT, oldLongPFESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GENERATING_UNIT__LONG_PF, oldLongPF,
+                    LONG_PF_EDEFAULT, oldLongPFESet ) );
     }
 
     /**
@@ -2094,8 +2106,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         lowerRampRate = newLowerRampRate;
         boolean oldLowerRampRateESet = lowerRampRateESet;
         lowerRampRateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__LOWER_RAMP_RATE, oldLowerRampRate, lowerRampRate, !oldLowerRampRateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__LOWER_RAMP_RATE,
+                    oldLowerRampRate, lowerRampRate, !oldLowerRampRateESet ) );
     }
 
     /**
@@ -2145,8 +2158,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         maxEconomicP = newMaxEconomicP;
         boolean oldMaxEconomicPESet = maxEconomicPESet;
         maxEconomicPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__MAX_ECONOMIC_P, oldMaxEconomicP, maxEconomicP, !oldMaxEconomicPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__MAX_ECONOMIC_P,
+                    oldMaxEconomicP, maxEconomicP, !oldMaxEconomicPESet ) );
     }
 
     /**
@@ -2196,9 +2210,10 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         maximumAllowableSpinningReserve = newMaximumAllowableSpinningReserve;
         boolean oldMaximumAllowableSpinningReserveESet = maximumAllowableSpinningReserveESet;
         maximumAllowableSpinningReserveESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__MAXIMUM_ALLOWABLE_SPINNING_RESERVE, oldMaximumAllowableSpinningReserve,
-                maximumAllowableSpinningReserve, !oldMaximumAllowableSpinningReserveESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.GENERATING_UNIT__MAXIMUM_ALLOWABLE_SPINNING_RESERVE, oldMaximumAllowableSpinningReserve,
+                    maximumAllowableSpinningReserve, !oldMaximumAllowableSpinningReserveESet ) );
     }
 
     /**
@@ -2212,9 +2227,10 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         boolean oldMaximumAllowableSpinningReserveESet = maximumAllowableSpinningReserveESet;
         maximumAllowableSpinningReserve = MAXIMUM_ALLOWABLE_SPINNING_RESERVE_EDEFAULT;
         maximumAllowableSpinningReserveESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GENERATING_UNIT__MAXIMUM_ALLOWABLE_SPINNING_RESERVE, oldMaximumAllowableSpinningReserve,
-                MAXIMUM_ALLOWABLE_SPINNING_RESERVE_EDEFAULT, oldMaximumAllowableSpinningReserveESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.GENERATING_UNIT__MAXIMUM_ALLOWABLE_SPINNING_RESERVE, oldMaximumAllowableSpinningReserve,
+                    MAXIMUM_ALLOWABLE_SPINNING_RESERVE_EDEFAULT, oldMaximumAllowableSpinningReserveESet ) );
     }
 
     /**
@@ -2248,8 +2264,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         maxOperatingP = newMaxOperatingP;
         boolean oldMaxOperatingPESet = maxOperatingPESet;
         maxOperatingPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__MAX_OPERATING_P, oldMaxOperatingP, maxOperatingP, !oldMaxOperatingPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__MAX_OPERATING_P,
+                    oldMaxOperatingP, maxOperatingP, !oldMaxOperatingPESet ) );
     }
 
     /**
@@ -2299,8 +2316,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         minEconomicP = newMinEconomicP;
         boolean oldMinEconomicPESet = minEconomicPESet;
         minEconomicPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__MIN_ECONOMIC_P, oldMinEconomicP, minEconomicP, !oldMinEconomicPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__MIN_ECONOMIC_P,
+                    oldMinEconomicP, minEconomicP, !oldMinEconomicPESet ) );
     }
 
     /**
@@ -2402,8 +2420,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         minOperatingP = newMinOperatingP;
         boolean oldMinOperatingPESet = minOperatingPESet;
         minOperatingPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__MIN_OPERATING_P, oldMinOperatingP, minOperatingP, !oldMinOperatingPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__MIN_OPERATING_P,
+                    oldMinOperatingP, minOperatingP, !oldMinOperatingPESet ) );
     }
 
     /**
@@ -2453,8 +2472,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         modelDetail = newModelDetail;
         boolean oldModelDetailESet = modelDetailESet;
         modelDetailESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__MODEL_DETAIL, oldModelDetail, modelDetail, !oldModelDetailESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__MODEL_DETAIL,
+                    oldModelDetail, modelDetail, !oldModelDetailESet ) );
     }
 
     /**
@@ -2468,8 +2488,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         boolean oldModelDetailESet = modelDetailESet;
         modelDetail = MODEL_DETAIL_EDEFAULT;
         modelDetailESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GENERATING_UNIT__MODEL_DETAIL, oldModelDetail, MODEL_DETAIL_EDEFAULT, oldModelDetailESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GENERATING_UNIT__MODEL_DETAIL,
+                    oldModelDetail, MODEL_DETAIL_EDEFAULT, oldModelDetailESet ) );
     }
 
     /**
@@ -2503,8 +2524,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         nominalP = newNominalP;
         boolean oldNominalPESet = nominalPESet;
         nominalPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__NOMINAL_P, oldNominalP, nominalP, !oldNominalPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__NOMINAL_P, oldNominalP,
+                    nominalP, !oldNominalPESet ) );
     }
 
     /**
@@ -2518,8 +2540,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         boolean oldNominalPESet = nominalPESet;
         nominalP = NOMINAL_P_EDEFAULT;
         nominalPESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GENERATING_UNIT__NOMINAL_P, oldNominalP, NOMINAL_P_EDEFAULT, oldNominalPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GENERATING_UNIT__NOMINAL_P,
+                    oldNominalP, NOMINAL_P_EDEFAULT, oldNominalPESet ) );
     }
 
     /**
@@ -2553,8 +2576,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         normalPF = newNormalPF;
         boolean oldNormalPFESet = normalPFESet;
         normalPFESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__NORMAL_PF, oldNormalPF, normalPF, !oldNormalPFESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__NORMAL_PF, oldNormalPF,
+                    normalPF, !oldNormalPFESet ) );
     }
 
     /**
@@ -2568,8 +2592,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         boolean oldNormalPFESet = normalPFESet;
         normalPF = NORMAL_PF_EDEFAULT;
         normalPFESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GENERATING_UNIT__NORMAL_PF, oldNormalPF, NORMAL_PF_EDEFAULT, oldNormalPFESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GENERATING_UNIT__NORMAL_PF,
+                    oldNormalPF, NORMAL_PF_EDEFAULT, oldNormalPFESet ) );
     }
 
     /**
@@ -2603,8 +2628,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         penaltyFactor = newPenaltyFactor;
         boolean oldPenaltyFactorESet = penaltyFactorESet;
         penaltyFactorESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__PENALTY_FACTOR, oldPenaltyFactor, penaltyFactor, !oldPenaltyFactorESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__PENALTY_FACTOR,
+                    oldPenaltyFactor, penaltyFactor, !oldPenaltyFactorESet ) );
     }
 
     /**
@@ -2654,8 +2680,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         raiseRampRate = newRaiseRampRate;
         boolean oldRaiseRampRateESet = raiseRampRateESet;
         raiseRampRateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__RAISE_RAMP_RATE, oldRaiseRampRate, raiseRampRate, !oldRaiseRampRateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__RAISE_RAMP_RATE,
+                    oldRaiseRampRate, raiseRampRate, !oldRaiseRampRateESet ) );
     }
 
     /**
@@ -2809,8 +2836,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         ratedNetMaxP = newRatedNetMaxP;
         boolean oldRatedNetMaxPESet = ratedNetMaxPESet;
         ratedNetMaxPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__RATED_NET_MAX_P, oldRatedNetMaxP, ratedNetMaxP, !oldRatedNetMaxPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__RATED_NET_MAX_P,
+                    oldRatedNetMaxP, ratedNetMaxP, !oldRatedNetMaxPESet ) );
     }
 
     /**
@@ -2860,8 +2888,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         shortPF = newShortPF;
         boolean oldShortPFESet = shortPFESet;
         shortPFESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__SHORT_PF, oldShortPF, shortPF, !oldShortPFESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__SHORT_PF, oldShortPF,
+                    shortPF, !oldShortPFESet ) );
     }
 
     /**
@@ -2875,8 +2904,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         boolean oldShortPFESet = shortPFESet;
         shortPF = SHORT_PF_EDEFAULT;
         shortPFESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GENERATING_UNIT__SHORT_PF, oldShortPF, SHORT_PF_EDEFAULT, oldShortPFESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GENERATING_UNIT__SHORT_PF, oldShortPF,
+                    SHORT_PF_EDEFAULT, oldShortPFESet ) );
     }
 
     /**
@@ -2910,8 +2940,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         startupCost = newStartupCost;
         boolean oldStartupCostESet = startupCostESet;
         startupCostESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__STARTUP_COST, oldStartupCost, startupCost, !oldStartupCostESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__STARTUP_COST,
+                    oldStartupCost, startupCost, !oldStartupCostESet ) );
     }
 
     /**
@@ -2925,8 +2956,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         boolean oldStartupCostESet = startupCostESet;
         startupCost = STARTUP_COST_EDEFAULT;
         startupCostESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GENERATING_UNIT__STARTUP_COST, oldStartupCost, STARTUP_COST_EDEFAULT, oldStartupCostESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GENERATING_UNIT__STARTUP_COST,
+                    oldStartupCost, STARTUP_COST_EDEFAULT, oldStartupCostESet ) );
     }
 
     /**
@@ -2960,8 +2992,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         startupTime = newStartupTime;
         boolean oldStartupTimeESet = startupTimeESet;
         startupTimeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__STARTUP_TIME, oldStartupTime, startupTime, !oldStartupTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__STARTUP_TIME,
+                    oldStartupTime, startupTime, !oldStartupTimeESet ) );
     }
 
     /**
@@ -2975,8 +3008,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         boolean oldStartupTimeESet = startupTimeESet;
         startupTime = STARTUP_TIME_EDEFAULT;
         startupTimeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GENERATING_UNIT__STARTUP_TIME, oldStartupTime, STARTUP_TIME_EDEFAULT, oldStartupTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GENERATING_UNIT__STARTUP_TIME,
+                    oldStartupTime, STARTUP_TIME_EDEFAULT, oldStartupTimeESet ) );
     }
 
     /**
@@ -3010,8 +3044,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         tieLinePF = newTieLinePF;
         boolean oldTieLinePFESet = tieLinePFESet;
         tieLinePFESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__TIE_LINE_PF, oldTieLinePF, tieLinePF, !oldTieLinePFESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__TIE_LINE_PF,
+                    oldTieLinePF, tieLinePF, !oldTieLinePFESet ) );
     }
 
     /**
@@ -3025,8 +3060,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         boolean oldTieLinePFESet = tieLinePFESet;
         tieLinePF = TIE_LINE_PF_EDEFAULT;
         tieLinePFESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GENERATING_UNIT__TIE_LINE_PF, oldTieLinePF, TIE_LINE_PF_EDEFAULT, oldTieLinePFESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GENERATING_UNIT__TIE_LINE_PF,
+                    oldTieLinePF, TIE_LINE_PF_EDEFAULT, oldTieLinePFESet ) );
     }
 
     /**
@@ -3112,8 +3148,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         variableCost = newVariableCost;
         boolean oldVariableCostESet = variableCostESet;
         variableCostESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GENERATING_UNIT__VARIABLE_COST, oldVariableCost, variableCost, !oldVariableCostESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__VARIABLE_COST,
+                    oldVariableCost, variableCost, !oldVariableCostESet ) );
     }
 
     /**
@@ -3258,8 +3295,10 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
             InternalEObject oldGenUnitOpSchedule = ( InternalEObject ) genUnitOpSchedule;
             genUnitOpSchedule = ( GenUnitOpSchedule ) eResolveProxy( oldGenUnitOpSchedule );
             if( genUnitOpSchedule != oldGenUnitOpSchedule ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.GENERATING_UNIT__GEN_UNIT_OP_SCHEDULE, oldGenUnitOpSchedule, genUnitOpSchedule ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.GENERATING_UNIT__GEN_UNIT_OP_SCHEDULE, oldGenUnitOpSchedule,
+                            genUnitOpSchedule ) );
             }
         }
         return genUnitOpSchedule;
@@ -3306,19 +3345,22 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
     public void setGenUnitOpSchedule( GenUnitOpSchedule newGenUnitOpSchedule ) {
         if( newGenUnitOpSchedule != genUnitOpSchedule ) {
             NotificationChain msgs = null;
-            if( genUnitOpSchedule != null ) msgs = ( ( InternalEObject ) genUnitOpSchedule ).eInverseRemove( this,
-                    CimPackage.GEN_UNIT_OP_SCHEDULE__GENERATING_UNIT, GenUnitOpSchedule.class, msgs );
-            if( newGenUnitOpSchedule != null ) msgs = ( ( InternalEObject ) newGenUnitOpSchedule ).eInverseAdd( this,
-                    CimPackage.GEN_UNIT_OP_SCHEDULE__GENERATING_UNIT, GenUnitOpSchedule.class, msgs );
+            if( genUnitOpSchedule != null )
+                msgs = ( ( InternalEObject ) genUnitOpSchedule ).eInverseRemove( this,
+                        CimPackage.GEN_UNIT_OP_SCHEDULE__GENERATING_UNIT, GenUnitOpSchedule.class, msgs );
+            if( newGenUnitOpSchedule != null )
+                msgs = ( ( InternalEObject ) newGenUnitOpSchedule ).eInverseAdd( this,
+                        CimPackage.GEN_UNIT_OP_SCHEDULE__GENERATING_UNIT, GenUnitOpSchedule.class, msgs );
             msgs = basicSetGenUnitOpSchedule( newGenUnitOpSchedule, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldGenUnitOpScheduleESet = genUnitOpScheduleESet;
             genUnitOpScheduleESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.GENERATING_UNIT__GEN_UNIT_OP_SCHEDULE,
-                            newGenUnitOpSchedule, newGenUnitOpSchedule, !oldGenUnitOpScheduleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.GENERATING_UNIT__GEN_UNIT_OP_SCHEDULE, newGenUnitOpSchedule, newGenUnitOpSchedule,
+                        !oldGenUnitOpScheduleESet ) );
         }
     }
 
@@ -3361,8 +3403,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
         else {
             boolean oldGenUnitOpScheduleESet = genUnitOpScheduleESet;
             genUnitOpScheduleESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.GENERATING_UNIT__GEN_UNIT_OP_SCHEDULE, null, null, oldGenUnitOpScheduleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.GENERATING_UNIT__GEN_UNIT_OP_SCHEDULE, null, null, oldGenUnitOpScheduleESet ) );
         }
     }
 
@@ -3436,8 +3479,9 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getRotatingMachine() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.GENERATING_UNIT__GEN_UNIT_OP_SCHEDULE:
-            if( genUnitOpSchedule != null ) msgs = ( ( InternalEObject ) genUnitOpSchedule ).eInverseRemove( this,
-                    CimPackage.GEN_UNIT_OP_SCHEDULE__GENERATING_UNIT, GenUnitOpSchedule.class, msgs );
+            if( genUnitOpSchedule != null )
+                msgs = ( ( InternalEObject ) genUnitOpSchedule ).eInverseRemove( this,
+                        CimPackage.GEN_UNIT_OP_SCHEDULE__GENERATING_UNIT, GenUnitOpSchedule.class, msgs );
             return basicSetGenUnitOpSchedule( ( GenUnitOpSchedule ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -3948,7 +3992,7 @@ public class GeneratingUnitImpl extends EquipmentImpl implements GeneratingUnit 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (allocSpinResP: " );
         if( allocSpinResPESet )
             result.append( allocSpinResP );

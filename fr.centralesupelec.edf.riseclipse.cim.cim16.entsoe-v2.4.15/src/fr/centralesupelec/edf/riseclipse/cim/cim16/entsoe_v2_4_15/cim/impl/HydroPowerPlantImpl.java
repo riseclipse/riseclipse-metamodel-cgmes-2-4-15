@@ -427,9 +427,10 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
         dischargeTravelDelay = newDischargeTravelDelay;
         boolean oldDischargeTravelDelayESet = dischargeTravelDelayESet;
         dischargeTravelDelayESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.HYDRO_POWER_PLANT__DISCHARGE_TRAVEL_DELAY,
-                        oldDischargeTravelDelay, dischargeTravelDelay, !oldDischargeTravelDelayESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.HYDRO_POWER_PLANT__DISCHARGE_TRAVEL_DELAY, oldDischargeTravelDelay, dischargeTravelDelay,
+                    !oldDischargeTravelDelayESet ) );
     }
 
     /**
@@ -443,9 +444,10 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
         boolean oldDischargeTravelDelayESet = dischargeTravelDelayESet;
         dischargeTravelDelay = DISCHARGE_TRAVEL_DELAY_EDEFAULT;
         dischargeTravelDelayESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.HYDRO_POWER_PLANT__DISCHARGE_TRAVEL_DELAY,
-                        oldDischargeTravelDelay, DISCHARGE_TRAVEL_DELAY_EDEFAULT, oldDischargeTravelDelayESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.HYDRO_POWER_PLANT__DISCHARGE_TRAVEL_DELAY, oldDischargeTravelDelay,
+                    DISCHARGE_TRAVEL_DELAY_EDEFAULT, oldDischargeTravelDelayESet ) );
     }
 
     /**
@@ -479,8 +481,9 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
         genRatedP = newGenRatedP;
         boolean oldGenRatedPESet = genRatedPESet;
         genRatedPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.HYDRO_POWER_PLANT__GEN_RATED_P, oldGenRatedP, genRatedP, !oldGenRatedPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.HYDRO_POWER_PLANT__GEN_RATED_P,
+                    oldGenRatedP, genRatedP, !oldGenRatedPESet ) );
     }
 
     /**
@@ -494,8 +497,9 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
         boolean oldGenRatedPESet = genRatedPESet;
         genRatedP = GEN_RATED_P_EDEFAULT;
         genRatedPESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.HYDRO_POWER_PLANT__GEN_RATED_P, oldGenRatedP, GEN_RATED_P_EDEFAULT, oldGenRatedPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.HYDRO_POWER_PLANT__GEN_RATED_P,
+                    oldGenRatedP, GEN_RATED_P_EDEFAULT, oldGenRatedPESet ) );
     }
 
     /**
@@ -530,9 +534,10 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
                 : newHydroPlantStorageType;
         boolean oldHydroPlantStorageTypeESet = hydroPlantStorageTypeESet;
         hydroPlantStorageTypeESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.HYDRO_POWER_PLANT__HYDRO_PLANT_STORAGE_TYPE,
-                        oldHydroPlantStorageType, hydroPlantStorageType, !oldHydroPlantStorageTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.HYDRO_POWER_PLANT__HYDRO_PLANT_STORAGE_TYPE, oldHydroPlantStorageType,
+                    hydroPlantStorageType, !oldHydroPlantStorageTypeESet ) );
     }
 
     /**
@@ -546,9 +551,10 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
         boolean oldHydroPlantStorageTypeESet = hydroPlantStorageTypeESet;
         hydroPlantStorageType = HYDRO_PLANT_STORAGE_TYPE_EDEFAULT;
         hydroPlantStorageTypeESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.HYDRO_POWER_PLANT__HYDRO_PLANT_STORAGE_TYPE,
-                        oldHydroPlantStorageType, HYDRO_PLANT_STORAGE_TYPE_EDEFAULT, oldHydroPlantStorageTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.HYDRO_POWER_PLANT__HYDRO_PLANT_STORAGE_TYPE, oldHydroPlantStorageType,
+                    HYDRO_PLANT_STORAGE_TYPE_EDEFAULT, oldHydroPlantStorageTypeESet ) );
     }
 
     /**
@@ -582,8 +588,9 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
         penstockType = newPenstockType;
         boolean oldPenstockTypeESet = penstockTypeESet;
         penstockTypeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.HYDRO_POWER_PLANT__PENSTOCK_TYPE, oldPenstockType, penstockType, !oldPenstockTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.HYDRO_POWER_PLANT__PENSTOCK_TYPE,
+                    oldPenstockType, penstockType, !oldPenstockTypeESet ) );
     }
 
     /**
@@ -633,9 +640,10 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
         plantDischargeCapacity = newPlantDischargeCapacity;
         boolean oldPlantDischargeCapacityESet = plantDischargeCapacityESet;
         plantDischargeCapacityESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.HYDRO_POWER_PLANT__PLANT_DISCHARGE_CAPACITY,
-                        oldPlantDischargeCapacity, plantDischargeCapacity, !oldPlantDischargeCapacityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.HYDRO_POWER_PLANT__PLANT_DISCHARGE_CAPACITY, oldPlantDischargeCapacity,
+                    plantDischargeCapacity, !oldPlantDischargeCapacityESet ) );
     }
 
     /**
@@ -649,9 +657,10 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
         boolean oldPlantDischargeCapacityESet = plantDischargeCapacityESet;
         plantDischargeCapacity = PLANT_DISCHARGE_CAPACITY_EDEFAULT;
         plantDischargeCapacityESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.HYDRO_POWER_PLANT__PLANT_DISCHARGE_CAPACITY,
-                        oldPlantDischargeCapacity, PLANT_DISCHARGE_CAPACITY_EDEFAULT, oldPlantDischargeCapacityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.HYDRO_POWER_PLANT__PLANT_DISCHARGE_CAPACITY, oldPlantDischargeCapacity,
+                    PLANT_DISCHARGE_CAPACITY_EDEFAULT, oldPlantDischargeCapacityESet ) );
     }
 
     /**
@@ -737,8 +746,9 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
         pumpRatedP = newPumpRatedP;
         boolean oldPumpRatedPESet = pumpRatedPESet;
         pumpRatedPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.HYDRO_POWER_PLANT__PUMP_RATED_P, oldPumpRatedP, pumpRatedP, !oldPumpRatedPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.HYDRO_POWER_PLANT__PUMP_RATED_P,
+                    oldPumpRatedP, pumpRatedP, !oldPumpRatedPESet ) );
     }
 
     /**
@@ -752,8 +762,9 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
         boolean oldPumpRatedPESet = pumpRatedPESet;
         pumpRatedP = PUMP_RATED_P_EDEFAULT;
         pumpRatedPESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.HYDRO_POWER_PLANT__PUMP_RATED_P, oldPumpRatedP, PUMP_RATED_P_EDEFAULT, oldPumpRatedPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.HYDRO_POWER_PLANT__PUMP_RATED_P,
+                    oldPumpRatedP, PUMP_RATED_P_EDEFAULT, oldPumpRatedPESet ) );
     }
 
     /**
@@ -839,9 +850,10 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
         surgeTankCrestLevel = newSurgeTankCrestLevel;
         boolean oldSurgeTankCrestLevelESet = surgeTankCrestLevelESet;
         surgeTankCrestLevelESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.HYDRO_POWER_PLANT__SURGE_TANK_CREST_LEVEL,
-                        oldSurgeTankCrestLevel, surgeTankCrestLevel, !oldSurgeTankCrestLevelESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.HYDRO_POWER_PLANT__SURGE_TANK_CREST_LEVEL, oldSurgeTankCrestLevel, surgeTankCrestLevel,
+                    !oldSurgeTankCrestLevelESet ) );
     }
 
     /**
@@ -855,9 +867,10 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
         boolean oldSurgeTankCrestLevelESet = surgeTankCrestLevelESet;
         surgeTankCrestLevel = SURGE_TANK_CREST_LEVEL_EDEFAULT;
         surgeTankCrestLevelESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.HYDRO_POWER_PLANT__SURGE_TANK_CREST_LEVEL,
-                        oldSurgeTankCrestLevel, SURGE_TANK_CREST_LEVEL_EDEFAULT, oldSurgeTankCrestLevelESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.HYDRO_POWER_PLANT__SURGE_TANK_CREST_LEVEL, oldSurgeTankCrestLevel,
+                    SURGE_TANK_CREST_LEVEL_EDEFAULT, oldSurgeTankCrestLevelESet ) );
     }
 
     /**
@@ -910,18 +923,21 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
     public void setReservoir( Reservoir newReservoir ) {
         if( newReservoir != reservoir ) {
             NotificationChain msgs = null;
-            if( reservoir != null ) msgs = ( ( InternalEObject ) reservoir ).eInverseRemove( this,
-                    CimPackage.RESERVOIR__HYDRO_POWER_PLANTS, Reservoir.class, msgs );
-            if( newReservoir != null ) msgs = ( ( InternalEObject ) newReservoir ).eInverseAdd( this,
-                    CimPackage.RESERVOIR__HYDRO_POWER_PLANTS, Reservoir.class, msgs );
+            if( reservoir != null )
+                msgs = ( ( InternalEObject ) reservoir ).eInverseRemove( this, CimPackage.RESERVOIR__HYDRO_POWER_PLANTS,
+                        Reservoir.class, msgs );
+            if( newReservoir != null )
+                msgs = ( ( InternalEObject ) newReservoir ).eInverseAdd( this, CimPackage.RESERVOIR__HYDRO_POWER_PLANTS,
+                        Reservoir.class, msgs );
             msgs = basicSetReservoir( newReservoir, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldReservoirESet = reservoirESet;
             reservoirESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.HYDRO_POWER_PLANT__RESERVOIR, newReservoir, newReservoir, !oldReservoirESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.HYDRO_POWER_PLANT__RESERVOIR,
+                        newReservoir, newReservoir, !oldReservoirESet ) );
         }
     }
 
@@ -963,8 +979,9 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
         else {
             boolean oldReservoirESet = reservoirESet;
             reservoirESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.HYDRO_POWER_PLANT__RESERVOIR, null, null, oldReservoirESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.HYDRO_POWER_PLANT__RESERVOIR, null,
+                        null, oldReservoirESet ) );
         }
     }
 
@@ -1067,10 +1084,11 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
         else {
             boolean oldGenSourcePumpDischargeReservoirESet = genSourcePumpDischargeReservoirESet;
             genSourcePumpDischargeReservoirESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.HYDRO_POWER_PLANT__GEN_SOURCE_PUMP_DISCHARGE_RESERVOIR,
-                    newGenSourcePumpDischargeReservoir, newGenSourcePumpDischargeReservoir,
-                    !oldGenSourcePumpDischargeReservoirESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.HYDRO_POWER_PLANT__GEN_SOURCE_PUMP_DISCHARGE_RESERVOIR,
+                        newGenSourcePumpDischargeReservoir, newGenSourcePumpDischargeReservoir,
+                        !oldGenSourcePumpDischargeReservoirESet ) );
         }
     }
 
@@ -1113,9 +1131,10 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
         else {
             boolean oldGenSourcePumpDischargeReservoirESet = genSourcePumpDischargeReservoirESet;
             genSourcePumpDischargeReservoirESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.HYDRO_POWER_PLANT__GEN_SOURCE_PUMP_DISCHARGE_RESERVOIR, null, null,
-                    oldGenSourcePumpDischargeReservoirESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.HYDRO_POWER_PLANT__GEN_SOURCE_PUMP_DISCHARGE_RESERVOIR, null, null,
+                        oldGenSourcePumpDischargeReservoirESet ) );
         }
     }
 
@@ -1179,8 +1198,9 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
                         CimPackage.RESERVOIR__UPSTREAM_FROM_HYDRO_POWER_PLANTS, Reservoir.class, msgs );
             return basicSetGenSourcePumpDischargeReservoir( ( Reservoir ) otherEnd, msgs );
         case CimPackage.HYDRO_POWER_PLANT__RESERVOIR:
-            if( reservoir != null ) msgs = ( ( InternalEObject ) reservoir ).eInverseRemove( this,
-                    CimPackage.RESERVOIR__HYDRO_POWER_PLANTS, Reservoir.class, msgs );
+            if( reservoir != null )
+                msgs = ( ( InternalEObject ) reservoir ).eInverseRemove( this, CimPackage.RESERVOIR__HYDRO_POWER_PLANTS,
+                        Reservoir.class, msgs );
             return basicSetReservoir( ( Reservoir ) otherEnd, msgs );
         case CimPackage.HYDRO_POWER_PLANT__HYDRO_GENERATING_UNITS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getHydroGeneratingUnits() )
@@ -1402,7 +1422,7 @@ public class HydroPowerPlantImpl extends PowerSystemResourceImpl implements Hydr
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (dischargeTravelDelay: " );
         if( dischargeTravelDelayESet )
             result.append( dischargeTravelDelay );

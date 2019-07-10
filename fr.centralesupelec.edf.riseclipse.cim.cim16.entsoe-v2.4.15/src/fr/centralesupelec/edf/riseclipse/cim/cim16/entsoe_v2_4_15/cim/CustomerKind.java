@@ -342,10 +342,20 @@ public enum CustomerKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final CustomerKind[] VALUES_ARRAY = new CustomerKind[] { RESIDENTIAL, RESIDENTIAL_AND_COMMERCIAL,
-            RESIDENTIAL_AND_STREETLIGHT, RESIDENTIAL_STREETLIGHT_OTHERS, RESIDENTIAL_FARM_SERVICE,
-            COMMERCIAL_INDUSTRIAL, PUMPING_LOAD, WIND_MACHINE, ENERGY_SERVICE_SUPPLIER, ENERGY_SERVICE_SCHEDULER,
-            INTERNAL_USE, OTHER, };
+    private static final CustomerKind[] VALUES_ARRAY = new CustomerKind[] {
+            RESIDENTIAL,
+            RESIDENTIAL_AND_COMMERCIAL,
+            RESIDENTIAL_AND_STREETLIGHT,
+            RESIDENTIAL_STREETLIGHT_OTHERS,
+            RESIDENTIAL_FARM_SERVICE,
+            COMMERCIAL_INDUSTRIAL,
+            PUMPING_LOAD,
+            WIND_MACHINE,
+            ENERGY_SERVICE_SUPPLIER,
+            ENERGY_SERVICE_SCHEDULER,
+            INTERNAL_USE,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Customer Kind</b></em>' enumerators.

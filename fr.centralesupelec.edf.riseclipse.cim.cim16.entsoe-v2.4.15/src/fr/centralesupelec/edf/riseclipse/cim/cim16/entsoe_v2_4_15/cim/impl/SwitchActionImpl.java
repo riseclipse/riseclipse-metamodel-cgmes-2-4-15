@@ -178,8 +178,9 @@ public class SwitchActionImpl extends SwitchingStepImpl implements SwitchAction 
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SWITCH_ACTION__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH_ACTION__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -193,8 +194,9 @@ public class SwitchActionImpl extends SwitchingStepImpl implements SwitchAction 
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SWITCH_ACTION__KIND, oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH_ACTION__KIND, oldKind,
+                    KIND_EDEFAULT, oldKindESet ) );
     }
 
     /**
@@ -249,10 +251,12 @@ public class SwitchActionImpl extends SwitchingStepImpl implements SwitchAction 
     public void setSwitchingStepGroup( SwitchingStepGroup newSwitchingStepGroup ) {
         if( newSwitchingStepGroup != switchingStepGroup ) {
             NotificationChain msgs = null;
-            if( switchingStepGroup != null ) msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
-                    CimPackage.SWITCHING_STEP_GROUP__SWITCH_ACTIONS, SwitchingStepGroup.class, msgs );
-            if( newSwitchingStepGroup != null ) msgs = ( ( InternalEObject ) newSwitchingStepGroup ).eInverseAdd( this,
-                    CimPackage.SWITCHING_STEP_GROUP__SWITCH_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( switchingStepGroup != null )
+                msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
+                        CimPackage.SWITCHING_STEP_GROUP__SWITCH_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( newSwitchingStepGroup != null )
+                msgs = ( ( InternalEObject ) newSwitchingStepGroup ).eInverseAdd( this,
+                        CimPackage.SWITCHING_STEP_GROUP__SWITCH_ACTIONS, SwitchingStepGroup.class, msgs );
             msgs = basicSetSwitchingStepGroup( newSwitchingStepGroup, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -304,8 +308,9 @@ public class SwitchActionImpl extends SwitchingStepImpl implements SwitchAction 
         else {
             boolean oldSwitchingStepGroupESet = switchingStepGroupESet;
             switchingStepGroupESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SWITCH_ACTION__SWITCHING_STEP_GROUP, null, null, oldSwitchingStepGroupESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.SWITCH_ACTION__SWITCHING_STEP_GROUP, null, null, oldSwitchingStepGroupESet ) );
         }
     }
 
@@ -330,8 +335,9 @@ public class SwitchActionImpl extends SwitchingStepImpl implements SwitchAction 
             InternalEObject oldOperatedSwitch = ( InternalEObject ) operatedSwitch;
             operatedSwitch = ( Switch ) eResolveProxy( oldOperatedSwitch );
             if( operatedSwitch != oldOperatedSwitch ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.SWITCH_ACTION__OPERATED_SWITCH, oldOperatedSwitch, operatedSwitch ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.SWITCH_ACTION__OPERATED_SWITCH, oldOperatedSwitch, operatedSwitch ) );
             }
         }
         return operatedSwitch;
@@ -377,10 +383,12 @@ public class SwitchActionImpl extends SwitchingStepImpl implements SwitchAction 
     public void setOperatedSwitch( Switch newOperatedSwitch ) {
         if( newOperatedSwitch != operatedSwitch ) {
             NotificationChain msgs = null;
-            if( operatedSwitch != null ) msgs = ( ( InternalEObject ) operatedSwitch ).eInverseRemove( this,
-                    CimPackage.SWITCH__SWITCH_ACTION, Switch.class, msgs );
-            if( newOperatedSwitch != null ) msgs = ( ( InternalEObject ) newOperatedSwitch ).eInverseAdd( this,
-                    CimPackage.SWITCH__SWITCH_ACTION, Switch.class, msgs );
+            if( operatedSwitch != null )
+                msgs = ( ( InternalEObject ) operatedSwitch ).eInverseRemove( this, CimPackage.SWITCH__SWITCH_ACTION,
+                        Switch.class, msgs );
+            if( newOperatedSwitch != null )
+                msgs = ( ( InternalEObject ) newOperatedSwitch ).eInverseAdd( this, CimPackage.SWITCH__SWITCH_ACTION,
+                        Switch.class, msgs );
             msgs = basicSetOperatedSwitch( newOperatedSwitch, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -431,8 +439,9 @@ public class SwitchActionImpl extends SwitchingStepImpl implements SwitchAction 
         else {
             boolean oldOperatedSwitchESet = operatedSwitchESet;
             operatedSwitchESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SWITCH_ACTION__OPERATED_SWITCH, null, null, oldOperatedSwitchESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH_ACTION__OPERATED_SWITCH,
+                        null, null, oldOperatedSwitchESet ) );
         }
     }
 
@@ -487,10 +496,12 @@ public class SwitchActionImpl extends SwitchingStepImpl implements SwitchAction 
     public void setPlannedOutage( Outage newPlannedOutage ) {
         if( newPlannedOutage != plannedOutage ) {
             NotificationChain msgs = null;
-            if( plannedOutage != null ) msgs = ( ( InternalEObject ) plannedOutage ).eInverseRemove( this,
-                    CimPackage.OUTAGE__PLANNED_SWITCH_ACTIONS, Outage.class, msgs );
-            if( newPlannedOutage != null ) msgs = ( ( InternalEObject ) newPlannedOutage ).eInverseAdd( this,
-                    CimPackage.OUTAGE__PLANNED_SWITCH_ACTIONS, Outage.class, msgs );
+            if( plannedOutage != null )
+                msgs = ( ( InternalEObject ) plannedOutage ).eInverseRemove( this,
+                        CimPackage.OUTAGE__PLANNED_SWITCH_ACTIONS, Outage.class, msgs );
+            if( newPlannedOutage != null )
+                msgs = ( ( InternalEObject ) newPlannedOutage ).eInverseAdd( this,
+                        CimPackage.OUTAGE__PLANNED_SWITCH_ACTIONS, Outage.class, msgs );
             msgs = basicSetPlannedOutage( newPlannedOutage, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -541,8 +552,9 @@ public class SwitchActionImpl extends SwitchingStepImpl implements SwitchAction 
         else {
             boolean oldPlannedOutageESet = plannedOutageESet;
             plannedOutageESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SWITCH_ACTION__PLANNED_OUTAGE, null, null, oldPlannedOutageESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH_ACTION__PLANNED_OUTAGE,
+                        null, null, oldPlannedOutageESet ) );
         }
     }
 
@@ -565,16 +577,19 @@ public class SwitchActionImpl extends SwitchingStepImpl implements SwitchAction 
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.SWITCH_ACTION__PLANNED_OUTAGE:
-            if( plannedOutage != null ) msgs = ( ( InternalEObject ) plannedOutage ).eInverseRemove( this,
-                    CimPackage.OUTAGE__PLANNED_SWITCH_ACTIONS, Outage.class, msgs );
+            if( plannedOutage != null )
+                msgs = ( ( InternalEObject ) plannedOutage ).eInverseRemove( this,
+                        CimPackage.OUTAGE__PLANNED_SWITCH_ACTIONS, Outage.class, msgs );
             return basicSetPlannedOutage( ( Outage ) otherEnd, msgs );
         case CimPackage.SWITCH_ACTION__SWITCHING_STEP_GROUP:
-            if( switchingStepGroup != null ) msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
-                    CimPackage.SWITCHING_STEP_GROUP__SWITCH_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( switchingStepGroup != null )
+                msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
+                        CimPackage.SWITCHING_STEP_GROUP__SWITCH_ACTIONS, SwitchingStepGroup.class, msgs );
             return basicSetSwitchingStepGroup( ( SwitchingStepGroup ) otherEnd, msgs );
         case CimPackage.SWITCH_ACTION__OPERATED_SWITCH:
-            if( operatedSwitch != null ) msgs = ( ( InternalEObject ) operatedSwitch ).eInverseRemove( this,
-                    CimPackage.SWITCH__SWITCH_ACTION, Switch.class, msgs );
+            if( operatedSwitch != null )
+                msgs = ( ( InternalEObject ) operatedSwitch ).eInverseRemove( this, CimPackage.SWITCH__SWITCH_ACTION,
+                        Switch.class, msgs );
             return basicSetOperatedSwitch( ( Switch ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -696,7 +711,7 @@ public class SwitchActionImpl extends SwitchingStepImpl implements SwitchAction 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kind: " );
         if( kindESet )
             result.append( kind );

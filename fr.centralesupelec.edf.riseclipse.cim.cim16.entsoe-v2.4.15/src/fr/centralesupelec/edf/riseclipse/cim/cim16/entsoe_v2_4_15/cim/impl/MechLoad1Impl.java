@@ -217,8 +217,9 @@ public class MechLoad1Impl extends MechanicalLoadDynamicsImpl implements MechLoa
         boolean oldAESet = aESet;
         a = A_EDEFAULT;
         aESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MECH_LOAD1__A, oldA, A_EDEFAULT, oldAESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MECH_LOAD1__A, oldA, A_EDEFAULT,
+                    oldAESet ) );
     }
 
     /**
@@ -267,8 +268,9 @@ public class MechLoad1Impl extends MechanicalLoadDynamicsImpl implements MechLoa
         boolean oldBESet = bESet;
         b = B_EDEFAULT;
         bESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MECH_LOAD1__B, oldB, B_EDEFAULT, oldBESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MECH_LOAD1__B, oldB, B_EDEFAULT,
+                    oldBESet ) );
     }
 
     /**
@@ -317,8 +319,9 @@ public class MechLoad1Impl extends MechanicalLoadDynamicsImpl implements MechLoa
         boolean oldDESet = dESet;
         d = D_EDEFAULT;
         dESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MECH_LOAD1__D, oldD, D_EDEFAULT, oldDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MECH_LOAD1__D, oldD, D_EDEFAULT,
+                    oldDESet ) );
     }
 
     /**
@@ -367,8 +370,9 @@ public class MechLoad1Impl extends MechanicalLoadDynamicsImpl implements MechLoa
         boolean oldEESet = eESet;
         e = E_EDEFAULT;
         eESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MECH_LOAD1__E, oldE, E_EDEFAULT, oldEESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MECH_LOAD1__E, oldE, E_EDEFAULT,
+                    oldEESet ) );
     }
 
     /**
@@ -478,7 +482,7 @@ public class MechLoad1Impl extends MechanicalLoadDynamicsImpl implements MechLoa
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (a: " );
         if( aESet )
             result.append( a );

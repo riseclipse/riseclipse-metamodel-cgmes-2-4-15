@@ -463,8 +463,9 @@ public class SteamTurbineImpl extends PrimeMoverImpl implements SteamTurbine {
         crossoverTC = newCrossoverTC;
         boolean oldCrossoverTCESet = crossoverTCESet;
         crossoverTCESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STEAM_TURBINE__CROSSOVER_TC, oldCrossoverTC, crossoverTC, !oldCrossoverTCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STEAM_TURBINE__CROSSOVER_TC,
+                    oldCrossoverTC, crossoverTC, !oldCrossoverTCESet ) );
     }
 
     /**
@@ -478,8 +479,9 @@ public class SteamTurbineImpl extends PrimeMoverImpl implements SteamTurbine {
         boolean oldCrossoverTCESet = crossoverTCESet;
         crossoverTC = CROSSOVER_TC_EDEFAULT;
         crossoverTCESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STEAM_TURBINE__CROSSOVER_TC, oldCrossoverTC, CROSSOVER_TC_EDEFAULT, oldCrossoverTCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STEAM_TURBINE__CROSSOVER_TC,
+                    oldCrossoverTC, CROSSOVER_TC_EDEFAULT, oldCrossoverTCESet ) );
     }
 
     /**
@@ -513,8 +515,9 @@ public class SteamTurbineImpl extends PrimeMoverImpl implements SteamTurbine {
         reheater1TC = newReheater1TC;
         boolean oldReheater1TCESet = reheater1TCESet;
         reheater1TCESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STEAM_TURBINE__REHEATER1_TC, oldReheater1TC, reheater1TC, !oldReheater1TCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STEAM_TURBINE__REHEATER1_TC,
+                    oldReheater1TC, reheater1TC, !oldReheater1TCESet ) );
     }
 
     /**
@@ -528,8 +531,9 @@ public class SteamTurbineImpl extends PrimeMoverImpl implements SteamTurbine {
         boolean oldReheater1TCESet = reheater1TCESet;
         reheater1TC = REHEATER1_TC_EDEFAULT;
         reheater1TCESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STEAM_TURBINE__REHEATER1_TC, oldReheater1TC, REHEATER1_TC_EDEFAULT, oldReheater1TCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STEAM_TURBINE__REHEATER1_TC,
+                    oldReheater1TC, REHEATER1_TC_EDEFAULT, oldReheater1TCESet ) );
     }
 
     /**
@@ -563,8 +567,9 @@ public class SteamTurbineImpl extends PrimeMoverImpl implements SteamTurbine {
         reheater2TC = newReheater2TC;
         boolean oldReheater2TCESet = reheater2TCESet;
         reheater2TCESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STEAM_TURBINE__REHEATER2_TC, oldReheater2TC, reheater2TC, !oldReheater2TCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STEAM_TURBINE__REHEATER2_TC,
+                    oldReheater2TC, reheater2TC, !oldReheater2TCESet ) );
     }
 
     /**
@@ -578,8 +583,9 @@ public class SteamTurbineImpl extends PrimeMoverImpl implements SteamTurbine {
         boolean oldReheater2TCESet = reheater2TCESet;
         reheater2TC = REHEATER2_TC_EDEFAULT;
         reheater2TCESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STEAM_TURBINE__REHEATER2_TC, oldReheater2TC, REHEATER2_TC_EDEFAULT, oldReheater2TCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STEAM_TURBINE__REHEATER2_TC,
+                    oldReheater2TC, REHEATER2_TC_EDEFAULT, oldReheater2TCESet ) );
     }
 
     /**
@@ -613,8 +619,9 @@ public class SteamTurbineImpl extends PrimeMoverImpl implements SteamTurbine {
         shaft1PowerHP = newShaft1PowerHP;
         boolean oldShaft1PowerHPESet = shaft1PowerHPESet;
         shaft1PowerHPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STEAM_TURBINE__SHAFT1_POWER_HP, oldShaft1PowerHP, shaft1PowerHP, !oldShaft1PowerHPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STEAM_TURBINE__SHAFT1_POWER_HP,
+                    oldShaft1PowerHP, shaft1PowerHP, !oldShaft1PowerHPESet ) );
     }
 
     /**
@@ -664,8 +671,9 @@ public class SteamTurbineImpl extends PrimeMoverImpl implements SteamTurbine {
         shaft1PowerIP = newShaft1PowerIP;
         boolean oldShaft1PowerIPESet = shaft1PowerIPESet;
         shaft1PowerIPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STEAM_TURBINE__SHAFT1_POWER_IP, oldShaft1PowerIP, shaft1PowerIP, !oldShaft1PowerIPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STEAM_TURBINE__SHAFT1_POWER_IP,
+                    oldShaft1PowerIP, shaft1PowerIP, !oldShaft1PowerIPESet ) );
     }
 
     /**
@@ -819,8 +827,9 @@ public class SteamTurbineImpl extends PrimeMoverImpl implements SteamTurbine {
         shaft2PowerHP = newShaft2PowerHP;
         boolean oldShaft2PowerHPESet = shaft2PowerHPESet;
         shaft2PowerHPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STEAM_TURBINE__SHAFT2_POWER_HP, oldShaft2PowerHP, shaft2PowerHP, !oldShaft2PowerHPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STEAM_TURBINE__SHAFT2_POWER_HP,
+                    oldShaft2PowerHP, shaft2PowerHP, !oldShaft2PowerHPESet ) );
     }
 
     /**
@@ -870,8 +879,9 @@ public class SteamTurbineImpl extends PrimeMoverImpl implements SteamTurbine {
         shaft2PowerIP = newShaft2PowerIP;
         boolean oldShaft2PowerIPESet = shaft2PowerIPESet;
         shaft2PowerIPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STEAM_TURBINE__SHAFT2_POWER_IP, oldShaft2PowerIP, shaft2PowerIP, !oldShaft2PowerIPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STEAM_TURBINE__SHAFT2_POWER_IP,
+                    oldShaft2PowerIP, shaft2PowerIP, !oldShaft2PowerIPESet ) );
     }
 
     /**
@@ -1025,8 +1035,9 @@ public class SteamTurbineImpl extends PrimeMoverImpl implements SteamTurbine {
         steamChestTC = newSteamChestTC;
         boolean oldSteamChestTCESet = steamChestTCESet;
         steamChestTCESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STEAM_TURBINE__STEAM_CHEST_TC, oldSteamChestTC, steamChestTC, !oldSteamChestTCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STEAM_TURBINE__STEAM_CHEST_TC,
+                    oldSteamChestTC, steamChestTC, !oldSteamChestTCESet ) );
     }
 
     /**
@@ -1309,7 +1320,7 @@ public class SteamTurbineImpl extends PrimeMoverImpl implements SteamTurbine {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (crossoverTC: " );
         if( crossoverTCESet )
             result.append( crossoverTC );

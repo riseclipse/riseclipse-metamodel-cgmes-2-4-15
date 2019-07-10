@@ -145,8 +145,9 @@ public class RemoteUnitImpl extends PowerSystemResourceImpl implements RemoteUni
         remoteUnitType = newRemoteUnitType == null ? REMOTE_UNIT_TYPE_EDEFAULT : newRemoteUnitType;
         boolean oldRemoteUnitTypeESet = remoteUnitTypeESet;
         remoteUnitTypeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REMOTE_UNIT__REMOTE_UNIT_TYPE, oldRemoteUnitType, remoteUnitType, !oldRemoteUnitTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REMOTE_UNIT__REMOTE_UNIT_TYPE,
+                    oldRemoteUnitType, remoteUnitType, !oldRemoteUnitTypeESet ) );
     }
 
     /**
@@ -369,7 +370,7 @@ public class RemoteUnitImpl extends PowerSystemResourceImpl implements RemoteUni
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (remoteUnitType: " );
         if( remoteUnitTypeESet )
             result.append( remoteUnitType );

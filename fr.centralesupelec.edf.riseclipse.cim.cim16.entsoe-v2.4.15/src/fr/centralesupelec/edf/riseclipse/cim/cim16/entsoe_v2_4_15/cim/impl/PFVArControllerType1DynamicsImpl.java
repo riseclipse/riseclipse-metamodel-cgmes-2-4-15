@@ -183,9 +183,10 @@ public class PFVArControllerType1DynamicsImpl extends DynamicsFunctionBlockImpl
         else {
             boolean oldExcitationSystemDynamicsESet = excitationSystemDynamicsESet;
             excitationSystemDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PFV_AR_CONTROLLER_TYPE1_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS,
-                    newExcitationSystemDynamics, newExcitationSystemDynamics, !oldExcitationSystemDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PFV_AR_CONTROLLER_TYPE1_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS,
+                        newExcitationSystemDynamics, newExcitationSystemDynamics, !oldExcitationSystemDynamicsESet ) );
         }
     }
 
@@ -229,9 +230,10 @@ public class PFVArControllerType1DynamicsImpl extends DynamicsFunctionBlockImpl
         else {
             boolean oldExcitationSystemDynamicsESet = excitationSystemDynamicsESet;
             excitationSystemDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PFV_AR_CONTROLLER_TYPE1_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS, null, null,
-                    oldExcitationSystemDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PFV_AR_CONTROLLER_TYPE1_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS, null, null,
+                        oldExcitationSystemDynamicsESet ) );
         }
     }
 
@@ -256,9 +258,10 @@ public class PFVArControllerType1DynamicsImpl extends DynamicsFunctionBlockImpl
             InternalEObject oldVoltageAdjusterDynamics = ( InternalEObject ) voltageAdjusterDynamics;
             voltageAdjusterDynamics = ( VoltageAdjusterDynamics ) eResolveProxy( oldVoltageAdjusterDynamics );
             if( voltageAdjusterDynamics != oldVoltageAdjusterDynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.PFV_AR_CONTROLLER_TYPE1_DYNAMICS__VOLTAGE_ADJUSTER_DYNAMICS,
-                        oldVoltageAdjusterDynamics, voltageAdjusterDynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.PFV_AR_CONTROLLER_TYPE1_DYNAMICS__VOLTAGE_ADJUSTER_DYNAMICS,
+                            oldVoltageAdjusterDynamics, voltageAdjusterDynamics ) );
             }
         }
         return voltageAdjusterDynamics;
@@ -319,9 +322,10 @@ public class PFVArControllerType1DynamicsImpl extends DynamicsFunctionBlockImpl
         else {
             boolean oldVoltageAdjusterDynamicsESet = voltageAdjusterDynamicsESet;
             voltageAdjusterDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PFV_AR_CONTROLLER_TYPE1_DYNAMICS__VOLTAGE_ADJUSTER_DYNAMICS, newVoltageAdjusterDynamics,
-                    newVoltageAdjusterDynamics, !oldVoltageAdjusterDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PFV_AR_CONTROLLER_TYPE1_DYNAMICS__VOLTAGE_ADJUSTER_DYNAMICS,
+                        newVoltageAdjusterDynamics, newVoltageAdjusterDynamics, !oldVoltageAdjusterDynamicsESet ) );
         }
     }
 
@@ -365,9 +369,10 @@ public class PFVArControllerType1DynamicsImpl extends DynamicsFunctionBlockImpl
         else {
             boolean oldVoltageAdjusterDynamicsESet = voltageAdjusterDynamicsESet;
             voltageAdjusterDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PFV_AR_CONTROLLER_TYPE1_DYNAMICS__VOLTAGE_ADJUSTER_DYNAMICS, null, null,
-                    oldVoltageAdjusterDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PFV_AR_CONTROLLER_TYPE1_DYNAMICS__VOLTAGE_ADJUSTER_DYNAMICS, null, null,
+                        oldVoltageAdjusterDynamicsESet ) );
         }
     }
 
@@ -423,19 +428,24 @@ public class PFVArControllerType1DynamicsImpl extends DynamicsFunctionBlockImpl
     public void setRemoteInputSignal( RemoteInputSignal newRemoteInputSignal ) {
         if( newRemoteInputSignal != remoteInputSignal ) {
             NotificationChain msgs = null;
-            if( remoteInputSignal != null ) msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__PFV_AR_CONTROLLER_TYPE1_DYNAMICS, RemoteInputSignal.class, msgs );
-            if( newRemoteInputSignal != null ) msgs = ( ( InternalEObject ) newRemoteInputSignal ).eInverseAdd( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__PFV_AR_CONTROLLER_TYPE1_DYNAMICS, RemoteInputSignal.class, msgs );
+            if( remoteInputSignal != null )
+                msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__PFV_AR_CONTROLLER_TYPE1_DYNAMICS, RemoteInputSignal.class,
+                        msgs );
+            if( newRemoteInputSignal != null )
+                msgs = ( ( InternalEObject ) newRemoteInputSignal ).eInverseAdd( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__PFV_AR_CONTROLLER_TYPE1_DYNAMICS, RemoteInputSignal.class,
+                        msgs );
             msgs = basicSetRemoteInputSignal( newRemoteInputSignal, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldRemoteInputSignalESet = remoteInputSignalESet;
             remoteInputSignalESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PFV_AR_CONTROLLER_TYPE1_DYNAMICS__REMOTE_INPUT_SIGNAL, newRemoteInputSignal,
-                    newRemoteInputSignal, !oldRemoteInputSignalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PFV_AR_CONTROLLER_TYPE1_DYNAMICS__REMOTE_INPUT_SIGNAL, newRemoteInputSignal,
+                        newRemoteInputSignal, !oldRemoteInputSignalESet ) );
         }
     }
 
@@ -478,9 +488,10 @@ public class PFVArControllerType1DynamicsImpl extends DynamicsFunctionBlockImpl
         else {
             boolean oldRemoteInputSignalESet = remoteInputSignalESet;
             remoteInputSignalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PFV_AR_CONTROLLER_TYPE1_DYNAMICS__REMOTE_INPUT_SIGNAL, null, null,
-                    oldRemoteInputSignalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PFV_AR_CONTROLLER_TYPE1_DYNAMICS__REMOTE_INPUT_SIGNAL, null, null,
+                        oldRemoteInputSignalESet ) );
         }
     }
 
@@ -503,8 +514,10 @@ public class PFVArControllerType1DynamicsImpl extends DynamicsFunctionBlockImpl
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.PFV_AR_CONTROLLER_TYPE1_DYNAMICS__REMOTE_INPUT_SIGNAL:
-            if( remoteInputSignal != null ) msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__PFV_AR_CONTROLLER_TYPE1_DYNAMICS, RemoteInputSignal.class, msgs );
+            if( remoteInputSignal != null )
+                msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__PFV_AR_CONTROLLER_TYPE1_DYNAMICS, RemoteInputSignal.class,
+                        msgs );
             return basicSetRemoteInputSignal( ( RemoteInputSignal ) otherEnd, msgs );
         case CimPackage.PFV_AR_CONTROLLER_TYPE1_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS:
             if( excitationSystemDynamics != null )

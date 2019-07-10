@@ -712,8 +712,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         k = newK;
         boolean oldKESet = kESet;
         kESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__K, oldK, k, !oldKESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__K, oldK, k,
+                    !oldKESet ) );
     }
 
     /**
@@ -727,8 +728,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldKESet = kESet;
         k = K_EDEFAULT;
         kESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__K, oldK, K_EDEFAULT, oldKESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__K, oldK, K_EDEFAULT,
+                    oldKESet ) );
     }
 
     /**
@@ -762,8 +764,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         k1 = newK1;
         boolean oldK1ESet = k1ESet;
         k1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__K1, oldK1, k1, !oldK1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__K1, oldK1, k1,
+                    !oldK1ESet ) );
     }
 
     /**
@@ -777,8 +780,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldK1ESet = k1ESet;
         k1 = K1_EDEFAULT;
         k1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__K1, oldK1, K1_EDEFAULT, oldK1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__K1, oldK1,
+                    K1_EDEFAULT, oldK1ESet ) );
     }
 
     /**
@@ -812,8 +816,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         k2 = newK2;
         boolean oldK2ESet = k2ESet;
         k2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__K2, oldK2, k2, !oldK2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__K2, oldK2, k2,
+                    !oldK2ESet ) );
     }
 
     /**
@@ -827,8 +832,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldK2ESet = k2ESet;
         k2 = K2_EDEFAULT;
         k2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__K2, oldK2, K2_EDEFAULT, oldK2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__K2, oldK2,
+                    K2_EDEFAULT, oldK2ESet ) );
     }
 
     /**
@@ -862,8 +868,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         k3 = newK3;
         boolean oldK3ESet = k3ESet;
         k3ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__K3, oldK3, k3, !oldK3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__K3, oldK3, k3,
+                    !oldK3ESet ) );
     }
 
     /**
@@ -877,8 +884,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldK3ESet = k3ESet;
         k3 = K3_EDEFAULT;
         k3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__K3, oldK3, K3_EDEFAULT, oldK3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__K3, oldK3,
+                    K3_EDEFAULT, oldK3ESet ) );
     }
 
     /**
@@ -912,8 +920,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         k4 = newK4;
         boolean oldK4ESet = k4ESet;
         k4ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__K4, oldK4, k4, !oldK4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__K4, oldK4, k4,
+                    !oldK4ESet ) );
     }
 
     /**
@@ -927,8 +936,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldK4ESet = k4ESet;
         k4 = K4_EDEFAULT;
         k4ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__K4, oldK4, K4_EDEFAULT, oldK4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__K4, oldK4,
+                    K4_EDEFAULT, oldK4ESet ) );
     }
 
     /**
@@ -962,8 +972,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         k5 = newK5;
         boolean oldK5ESet = k5ESet;
         k5ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__K5, oldK5, k5, !oldK5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__K5, oldK5, k5,
+                    !oldK5ESet ) );
     }
 
     /**
@@ -977,8 +988,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldK5ESet = k5ESet;
         k5 = K5_EDEFAULT;
         k5ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__K5, oldK5, K5_EDEFAULT, oldK5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__K5, oldK5,
+                    K5_EDEFAULT, oldK5ESet ) );
     }
 
     /**
@@ -1012,8 +1024,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         k6 = newK6;
         boolean oldK6ESet = k6ESet;
         k6ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__K6, oldK6, k6, !oldK6ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__K6, oldK6, k6,
+                    !oldK6ESet ) );
     }
 
     /**
@@ -1027,8 +1040,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldK6ESet = k6ESet;
         k6 = K6_EDEFAULT;
         k6ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__K6, oldK6, K6_EDEFAULT, oldK6ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__K6, oldK6,
+                    K6_EDEFAULT, oldK6ESet ) );
     }
 
     /**
@@ -1062,8 +1076,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         k7 = newK7;
         boolean oldK7ESet = k7ESet;
         k7ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__K7, oldK7, k7, !oldK7ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__K7, oldK7, k7,
+                    !oldK7ESet ) );
     }
 
     /**
@@ -1077,8 +1092,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldK7ESet = k7ESet;
         k7 = K7_EDEFAULT;
         k7ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__K7, oldK7, K7_EDEFAULT, oldK7ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__K7, oldK7,
+                    K7_EDEFAULT, oldK7ESet ) );
     }
 
     /**
@@ -1112,8 +1128,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         k8 = newK8;
         boolean oldK8ESet = k8ESet;
         k8ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__K8, oldK8, k8, !oldK8ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__K8, oldK8, k8,
+                    !oldK8ESet ) );
     }
 
     /**
@@ -1127,8 +1144,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldK8ESet = k8ESet;
         k8 = K8_EDEFAULT;
         k8ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__K8, oldK8, K8_EDEFAULT, oldK8ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__K8, oldK8,
+                    K8_EDEFAULT, oldK8ESet ) );
     }
 
     /**
@@ -1162,8 +1180,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         mwbase = newMwbase;
         boolean oldMwbaseESet = mwbaseESet;
         mwbaseESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__MWBASE, oldMwbase, mwbase, !oldMwbaseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__MWBASE, oldMwbase,
+                    mwbase, !oldMwbaseESet ) );
     }
 
     /**
@@ -1177,8 +1196,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldMwbaseESet = mwbaseESet;
         mwbase = MWBASE_EDEFAULT;
         mwbaseESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__MWBASE, oldMwbase, MWBASE_EDEFAULT, oldMwbaseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__MWBASE, oldMwbase,
+                    MWBASE_EDEFAULT, oldMwbaseESet ) );
     }
 
     /**
@@ -1212,8 +1232,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         pmax = newPmax;
         boolean oldPmaxESet = pmaxESet;
         pmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__PMAX, oldPmax, pmax, !oldPmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__PMAX, oldPmax, pmax,
+                    !oldPmaxESet ) );
     }
 
     /**
@@ -1227,8 +1248,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldPmaxESet = pmaxESet;
         pmax = PMAX_EDEFAULT;
         pmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__PMAX, oldPmax, PMAX_EDEFAULT, oldPmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__PMAX, oldPmax,
+                    PMAX_EDEFAULT, oldPmaxESet ) );
     }
 
     /**
@@ -1262,8 +1284,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         pmin = newPmin;
         boolean oldPminESet = pminESet;
         pminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__PMIN, oldPmin, pmin, !oldPminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__PMIN, oldPmin, pmin,
+                    !oldPminESet ) );
     }
 
     /**
@@ -1277,8 +1300,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldPminESet = pminESet;
         pmin = PMIN_EDEFAULT;
         pminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__PMIN, oldPmin, PMIN_EDEFAULT, oldPminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__PMIN, oldPmin,
+                    PMIN_EDEFAULT, oldPminESet ) );
     }
 
     /**
@@ -1312,8 +1336,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         t1 = newT1;
         boolean oldT1ESet = t1ESet;
         t1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__T1, oldT1, t1, !oldT1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__T1, oldT1, t1,
+                    !oldT1ESet ) );
     }
 
     /**
@@ -1327,8 +1352,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldT1ESet = t1ESet;
         t1 = T1_EDEFAULT;
         t1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__T1, oldT1, T1_EDEFAULT, oldT1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__T1, oldT1,
+                    T1_EDEFAULT, oldT1ESet ) );
     }
 
     /**
@@ -1362,8 +1388,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         t2 = newT2;
         boolean oldT2ESet = t2ESet;
         t2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__T2, oldT2, t2, !oldT2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__T2, oldT2, t2,
+                    !oldT2ESet ) );
     }
 
     /**
@@ -1377,8 +1404,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldT2ESet = t2ESet;
         t2 = T2_EDEFAULT;
         t2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__T2, oldT2, T2_EDEFAULT, oldT2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__T2, oldT2,
+                    T2_EDEFAULT, oldT2ESet ) );
     }
 
     /**
@@ -1412,8 +1440,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         t3 = newT3;
         boolean oldT3ESet = t3ESet;
         t3ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__T3, oldT3, t3, !oldT3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__T3, oldT3, t3,
+                    !oldT3ESet ) );
     }
 
     /**
@@ -1427,8 +1456,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldT3ESet = t3ESet;
         t3 = T3_EDEFAULT;
         t3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__T3, oldT3, T3_EDEFAULT, oldT3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__T3, oldT3,
+                    T3_EDEFAULT, oldT3ESet ) );
     }
 
     /**
@@ -1462,8 +1492,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         t4 = newT4;
         boolean oldT4ESet = t4ESet;
         t4ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__T4, oldT4, t4, !oldT4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__T4, oldT4, t4,
+                    !oldT4ESet ) );
     }
 
     /**
@@ -1477,8 +1508,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldT4ESet = t4ESet;
         t4 = T4_EDEFAULT;
         t4ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__T4, oldT4, T4_EDEFAULT, oldT4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__T4, oldT4,
+                    T4_EDEFAULT, oldT4ESet ) );
     }
 
     /**
@@ -1512,8 +1544,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         t5 = newT5;
         boolean oldT5ESet = t5ESet;
         t5ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__T5, oldT5, t5, !oldT5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__T5, oldT5, t5,
+                    !oldT5ESet ) );
     }
 
     /**
@@ -1527,8 +1560,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldT5ESet = t5ESet;
         t5 = T5_EDEFAULT;
         t5ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__T5, oldT5, T5_EDEFAULT, oldT5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__T5, oldT5,
+                    T5_EDEFAULT, oldT5ESet ) );
     }
 
     /**
@@ -1562,8 +1596,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         t6 = newT6;
         boolean oldT6ESet = t6ESet;
         t6ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__T6, oldT6, t6, !oldT6ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__T6, oldT6, t6,
+                    !oldT6ESet ) );
     }
 
     /**
@@ -1577,8 +1612,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldT6ESet = t6ESet;
         t6 = T6_EDEFAULT;
         t6ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__T6, oldT6, T6_EDEFAULT, oldT6ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__T6, oldT6,
+                    T6_EDEFAULT, oldT6ESet ) );
     }
 
     /**
@@ -1612,8 +1648,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         t7 = newT7;
         boolean oldT7ESet = t7ESet;
         t7ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__T7, oldT7, t7, !oldT7ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__T7, oldT7, t7,
+                    !oldT7ESet ) );
     }
 
     /**
@@ -1627,8 +1664,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldT7ESet = t7ESet;
         t7 = T7_EDEFAULT;
         t7ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__T7, oldT7, T7_EDEFAULT, oldT7ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__T7, oldT7,
+                    T7_EDEFAULT, oldT7ESet ) );
     }
 
     /**
@@ -1662,8 +1700,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         uc = newUc;
         boolean oldUcESet = ucESet;
         ucESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__UC, oldUc, uc, !oldUcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__UC, oldUc, uc,
+                    !oldUcESet ) );
     }
 
     /**
@@ -1677,8 +1716,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldUcESet = ucESet;
         uc = UC_EDEFAULT;
         ucESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__UC, oldUc, UC_EDEFAULT, oldUcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__UC, oldUc,
+                    UC_EDEFAULT, oldUcESet ) );
     }
 
     /**
@@ -1712,8 +1752,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         uo = newUo;
         boolean oldUoESet = uoESet;
         uoESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM_IEEE1__UO, oldUo, uo, !oldUoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM_IEEE1__UO, oldUo, uo,
+                    !oldUoESet ) );
     }
 
     /**
@@ -1727,8 +1768,9 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
         boolean oldUoESet = uoESet;
         uo = UO_EDEFAULT;
         uoESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM_IEEE1__UO, oldUo, UO_EDEFAULT, oldUoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM_IEEE1__UO, oldUo,
+                    UO_EDEFAULT, oldUoESet ) );
     }
 
     /**
@@ -2008,7 +2050,7 @@ public class GovSteamIEEE1Impl extends TurbineGovernorDynamicsImpl implements Go
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (k: " );
         if( kESet )
             result.append( k );

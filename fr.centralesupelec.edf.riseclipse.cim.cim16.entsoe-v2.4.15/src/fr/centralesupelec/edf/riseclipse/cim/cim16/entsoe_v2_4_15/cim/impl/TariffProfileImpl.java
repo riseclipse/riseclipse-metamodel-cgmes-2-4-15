@@ -157,8 +157,9 @@ public class TariffProfileImpl extends DocumentImpl implements TariffProfile {
         tariffCycle = newTariffCycle;
         boolean oldTariffCycleESet = tariffCycleESet;
         tariffCycleESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TARIFF_PROFILE__TARIFF_CYCLE, oldTariffCycle, tariffCycle, !oldTariffCycleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TARIFF_PROFILE__TARIFF_CYCLE,
+                    oldTariffCycle, tariffCycle, !oldTariffCycleESet ) );
     }
 
     /**
@@ -172,8 +173,9 @@ public class TariffProfileImpl extends DocumentImpl implements TariffProfile {
         boolean oldTariffCycleESet = tariffCycleESet;
         tariffCycle = TARIFF_CYCLE_EDEFAULT;
         tariffCycleESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TARIFF_PROFILE__TARIFF_CYCLE, oldTariffCycle, TARIFF_CYCLE_EDEFAULT, oldTariffCycleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TARIFF_PROFILE__TARIFF_CYCLE,
+                    oldTariffCycle, TARIFF_CYCLE_EDEFAULT, oldTariffCycleESet ) );
     }
 
     /**
@@ -433,7 +435,7 @@ public class TariffProfileImpl extends DocumentImpl implements TariffProfile {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (tariffCycle: " );
         if( tariffCycleESet )
             result.append( tariffCycle );

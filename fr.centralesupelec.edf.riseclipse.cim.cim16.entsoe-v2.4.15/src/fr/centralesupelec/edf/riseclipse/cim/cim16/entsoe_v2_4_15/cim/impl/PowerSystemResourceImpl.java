@@ -258,18 +258,21 @@ public class PowerSystemResourceImpl extends IdentifiedObjectImpl implements Pow
     public void setPSRType( PSRType newPSRType ) {
         if( newPSRType != psrType ) {
             NotificationChain msgs = null;
-            if( psrType != null ) msgs = ( ( InternalEObject ) psrType ).eInverseRemove( this,
-                    CimPackage.PSR_TYPE__POWER_SYSTEM_RESOURCES, PSRType.class, msgs );
-            if( newPSRType != null ) msgs = ( ( InternalEObject ) newPSRType ).eInverseAdd( this,
-                    CimPackage.PSR_TYPE__POWER_SYSTEM_RESOURCES, PSRType.class, msgs );
+            if( psrType != null )
+                msgs = ( ( InternalEObject ) psrType ).eInverseRemove( this,
+                        CimPackage.PSR_TYPE__POWER_SYSTEM_RESOURCES, PSRType.class, msgs );
+            if( newPSRType != null )
+                msgs = ( ( InternalEObject ) newPSRType ).eInverseAdd( this,
+                        CimPackage.PSR_TYPE__POWER_SYSTEM_RESOURCES, PSRType.class, msgs );
             msgs = basicSetPSRType( newPSRType, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldPSRTypeESet = psrTypeESet;
             psrTypeESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.POWER_SYSTEM_RESOURCE__PSR_TYPE, newPSRType, newPSRType, !oldPSRTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POWER_SYSTEM_RESOURCE__PSR_TYPE,
+                        newPSRType, newPSRType, !oldPSRTypeESet ) );
         }
     }
 
@@ -311,8 +314,9 @@ public class PowerSystemResourceImpl extends IdentifiedObjectImpl implements Pow
         else {
             boolean oldPSRTypeESet = psrTypeESet;
             psrTypeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.POWER_SYSTEM_RESOURCE__PSR_TYPE, null, null, oldPSRTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POWER_SYSTEM_RESOURCE__PSR_TYPE,
+                        null, null, oldPSRTypeESet ) );
         }
     }
 
@@ -503,18 +507,21 @@ public class PowerSystemResourceImpl extends IdentifiedObjectImpl implements Pow
     public void setLocation( Location newLocation ) {
         if( newLocation != location ) {
             NotificationChain msgs = null;
-            if( location != null ) msgs = ( ( InternalEObject ) location ).eInverseRemove( this,
-                    CimPackage.LOCATION__POWER_SYSTEM_RESOURCES, Location.class, msgs );
-            if( newLocation != null ) msgs = ( ( InternalEObject ) newLocation ).eInverseAdd( this,
-                    CimPackage.LOCATION__POWER_SYSTEM_RESOURCES, Location.class, msgs );
+            if( location != null )
+                msgs = ( ( InternalEObject ) location ).eInverseRemove( this,
+                        CimPackage.LOCATION__POWER_SYSTEM_RESOURCES, Location.class, msgs );
+            if( newLocation != null )
+                msgs = ( ( InternalEObject ) newLocation ).eInverseAdd( this,
+                        CimPackage.LOCATION__POWER_SYSTEM_RESOURCES, Location.class, msgs );
             msgs = basicSetLocation( newLocation, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldLocationESet = locationESet;
             locationESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.POWER_SYSTEM_RESOURCE__LOCATION, newLocation, newLocation, !oldLocationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POWER_SYSTEM_RESOURCE__LOCATION,
+                        newLocation, newLocation, !oldLocationESet ) );
         }
     }
 
@@ -556,8 +563,9 @@ public class PowerSystemResourceImpl extends IdentifiedObjectImpl implements Pow
         else {
             boolean oldLocationESet = locationESet;
             locationESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.POWER_SYSTEM_RESOURCE__LOCATION, null, null, oldLocationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POWER_SYSTEM_RESOURCE__LOCATION,
+                        null, null, oldLocationESet ) );
         }
     }
 
@@ -715,19 +723,22 @@ public class PowerSystemResourceImpl extends IdentifiedObjectImpl implements Pow
     public void setAssetDatasheet( AssetInfo newAssetDatasheet ) {
         if( newAssetDatasheet != assetDatasheet ) {
             NotificationChain msgs = null;
-            if( assetDatasheet != null ) msgs = ( ( InternalEObject ) assetDatasheet ).eInverseRemove( this,
-                    CimPackage.ASSET_INFO__POWER_SYSTEM_RESOURCES, AssetInfo.class, msgs );
-            if( newAssetDatasheet != null ) msgs = ( ( InternalEObject ) newAssetDatasheet ).eInverseAdd( this,
-                    CimPackage.ASSET_INFO__POWER_SYSTEM_RESOURCES, AssetInfo.class, msgs );
+            if( assetDatasheet != null )
+                msgs = ( ( InternalEObject ) assetDatasheet ).eInverseRemove( this,
+                        CimPackage.ASSET_INFO__POWER_SYSTEM_RESOURCES, AssetInfo.class, msgs );
+            if( newAssetDatasheet != null )
+                msgs = ( ( InternalEObject ) newAssetDatasheet ).eInverseAdd( this,
+                        CimPackage.ASSET_INFO__POWER_SYSTEM_RESOURCES, AssetInfo.class, msgs );
             msgs = basicSetAssetDatasheet( newAssetDatasheet, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldAssetDatasheetESet = assetDatasheetESet;
             assetDatasheetESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.POWER_SYSTEM_RESOURCE__ASSET_DATASHEET,
-                            newAssetDatasheet, newAssetDatasheet, !oldAssetDatasheetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.POWER_SYSTEM_RESOURCE__ASSET_DATASHEET, newAssetDatasheet, newAssetDatasheet,
+                        !oldAssetDatasheetESet ) );
         }
     }
 
@@ -769,8 +780,9 @@ public class PowerSystemResourceImpl extends IdentifiedObjectImpl implements Pow
         else {
             boolean oldAssetDatasheetESet = assetDatasheetESet;
             assetDatasheetESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.POWER_SYSTEM_RESOURCE__ASSET_DATASHEET, null, null, oldAssetDatasheetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.POWER_SYSTEM_RESOURCE__ASSET_DATASHEET, null, null, oldAssetDatasheetESet ) );
         }
     }
 
@@ -800,8 +812,9 @@ public class PowerSystemResourceImpl extends IdentifiedObjectImpl implements Pow
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getOperatingShare() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.POWER_SYSTEM_RESOURCE__PSR_TYPE:
-            if( psrType != null ) msgs = ( ( InternalEObject ) psrType ).eInverseRemove( this,
-                    CimPackage.PSR_TYPE__POWER_SYSTEM_RESOURCES, PSRType.class, msgs );
+            if( psrType != null )
+                msgs = ( ( InternalEObject ) psrType ).eInverseRemove( this,
+                        CimPackage.PSR_TYPE__POWER_SYSTEM_RESOURCES, PSRType.class, msgs );
             return basicSetPSRType( ( PSRType ) otherEnd, msgs );
         case CimPackage.POWER_SYSTEM_RESOURCE__MEASUREMENTS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getMeasurements() ).basicAdd( otherEnd,
@@ -813,12 +826,14 @@ public class PowerSystemResourceImpl extends IdentifiedObjectImpl implements Pow
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getPSREvents() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.POWER_SYSTEM_RESOURCE__LOCATION:
-            if( location != null ) msgs = ( ( InternalEObject ) location ).eInverseRemove( this,
-                    CimPackage.LOCATION__POWER_SYSTEM_RESOURCES, Location.class, msgs );
+            if( location != null )
+                msgs = ( ( InternalEObject ) location ).eInverseRemove( this,
+                        CimPackage.LOCATION__POWER_SYSTEM_RESOURCES, Location.class, msgs );
             return basicSetLocation( ( Location ) otherEnd, msgs );
         case CimPackage.POWER_SYSTEM_RESOURCE__ASSET_DATASHEET:
-            if( assetDatasheet != null ) msgs = ( ( InternalEObject ) assetDatasheet ).eInverseRemove( this,
-                    CimPackage.ASSET_INFO__POWER_SYSTEM_RESOURCES, AssetInfo.class, msgs );
+            if( assetDatasheet != null )
+                msgs = ( ( InternalEObject ) assetDatasheet ).eInverseRemove( this,
+                        CimPackage.ASSET_INFO__POWER_SYSTEM_RESOURCES, AssetInfo.class, msgs );
             return basicSetAssetDatasheet( ( AssetInfo ) otherEnd, msgs );
         case CimPackage.POWER_SYSTEM_RESOURCE__ASSETS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getAssets() ).basicAdd( otherEnd,

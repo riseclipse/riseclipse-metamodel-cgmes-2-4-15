@@ -616,8 +616,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         ep1 = newEp1;
         boolean oldEp1ESet = ep1ESet;
         ep1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_STATIC__EP1, oldEp1, ep1, !oldEp1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_STATIC__EP1, oldEp1, ep1,
+                    !oldEp1ESet ) );
     }
 
     /**
@@ -631,8 +632,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         boolean oldEp1ESet = ep1ESet;
         ep1 = EP1_EDEFAULT;
         ep1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_STATIC__EP1, oldEp1, EP1_EDEFAULT, oldEp1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_STATIC__EP1, oldEp1, EP1_EDEFAULT,
+                    oldEp1ESet ) );
     }
 
     /**
@@ -666,8 +668,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         ep2 = newEp2;
         boolean oldEp2ESet = ep2ESet;
         ep2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_STATIC__EP2, oldEp2, ep2, !oldEp2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_STATIC__EP2, oldEp2, ep2,
+                    !oldEp2ESet ) );
     }
 
     /**
@@ -681,8 +684,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         boolean oldEp2ESet = ep2ESet;
         ep2 = EP2_EDEFAULT;
         ep2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_STATIC__EP2, oldEp2, EP2_EDEFAULT, oldEp2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_STATIC__EP2, oldEp2, EP2_EDEFAULT,
+                    oldEp2ESet ) );
     }
 
     /**
@@ -716,8 +720,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         ep3 = newEp3;
         boolean oldEp3ESet = ep3ESet;
         ep3ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_STATIC__EP3, oldEp3, ep3, !oldEp3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_STATIC__EP3, oldEp3, ep3,
+                    !oldEp3ESet ) );
     }
 
     /**
@@ -731,8 +736,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         boolean oldEp3ESet = ep3ESet;
         ep3 = EP3_EDEFAULT;
         ep3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_STATIC__EP3, oldEp3, EP3_EDEFAULT, oldEp3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_STATIC__EP3, oldEp3, EP3_EDEFAULT,
+                    oldEp3ESet ) );
     }
 
     /**
@@ -766,8 +772,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         eq1 = newEq1;
         boolean oldEq1ESet = eq1ESet;
         eq1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_STATIC__EQ1, oldEq1, eq1, !oldEq1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_STATIC__EQ1, oldEq1, eq1,
+                    !oldEq1ESet ) );
     }
 
     /**
@@ -781,8 +788,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         boolean oldEq1ESet = eq1ESet;
         eq1 = EQ1_EDEFAULT;
         eq1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_STATIC__EQ1, oldEq1, EQ1_EDEFAULT, oldEq1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_STATIC__EQ1, oldEq1, EQ1_EDEFAULT,
+                    oldEq1ESet ) );
     }
 
     /**
@@ -816,8 +824,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         eq2 = newEq2;
         boolean oldEq2ESet = eq2ESet;
         eq2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_STATIC__EQ2, oldEq2, eq2, !oldEq2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_STATIC__EQ2, oldEq2, eq2,
+                    !oldEq2ESet ) );
     }
 
     /**
@@ -831,8 +840,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         boolean oldEq2ESet = eq2ESet;
         eq2 = EQ2_EDEFAULT;
         eq2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_STATIC__EQ2, oldEq2, EQ2_EDEFAULT, oldEq2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_STATIC__EQ2, oldEq2, EQ2_EDEFAULT,
+                    oldEq2ESet ) );
     }
 
     /**
@@ -866,8 +876,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         eq3 = newEq3;
         boolean oldEq3ESet = eq3ESet;
         eq3ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_STATIC__EQ3, oldEq3, eq3, !oldEq3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_STATIC__EQ3, oldEq3, eq3,
+                    !oldEq3ESet ) );
     }
 
     /**
@@ -881,8 +892,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         boolean oldEq3ESet = eq3ESet;
         eq3 = EQ3_EDEFAULT;
         eq3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_STATIC__EQ3, oldEq3, EQ3_EDEFAULT, oldEq3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_STATIC__EQ3, oldEq3, EQ3_EDEFAULT,
+                    oldEq3ESet ) );
     }
 
     /**
@@ -916,8 +928,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         kp1 = newKp1;
         boolean oldKp1ESet = kp1ESet;
         kp1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_STATIC__KP1, oldKp1, kp1, !oldKp1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_STATIC__KP1, oldKp1, kp1,
+                    !oldKp1ESet ) );
     }
 
     /**
@@ -931,8 +944,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         boolean oldKp1ESet = kp1ESet;
         kp1 = KP1_EDEFAULT;
         kp1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_STATIC__KP1, oldKp1, KP1_EDEFAULT, oldKp1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_STATIC__KP1, oldKp1, KP1_EDEFAULT,
+                    oldKp1ESet ) );
     }
 
     /**
@@ -966,8 +980,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         kp2 = newKp2;
         boolean oldKp2ESet = kp2ESet;
         kp2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_STATIC__KP2, oldKp2, kp2, !oldKp2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_STATIC__KP2, oldKp2, kp2,
+                    !oldKp2ESet ) );
     }
 
     /**
@@ -981,8 +996,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         boolean oldKp2ESet = kp2ESet;
         kp2 = KP2_EDEFAULT;
         kp2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_STATIC__KP2, oldKp2, KP2_EDEFAULT, oldKp2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_STATIC__KP2, oldKp2, KP2_EDEFAULT,
+                    oldKp2ESet ) );
     }
 
     /**
@@ -1016,8 +1032,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         kp3 = newKp3;
         boolean oldKp3ESet = kp3ESet;
         kp3ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_STATIC__KP3, oldKp3, kp3, !oldKp3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_STATIC__KP3, oldKp3, kp3,
+                    !oldKp3ESet ) );
     }
 
     /**
@@ -1031,8 +1048,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         boolean oldKp3ESet = kp3ESet;
         kp3 = KP3_EDEFAULT;
         kp3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_STATIC__KP3, oldKp3, KP3_EDEFAULT, oldKp3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_STATIC__KP3, oldKp3, KP3_EDEFAULT,
+                    oldKp3ESet ) );
     }
 
     /**
@@ -1066,8 +1084,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         kp4 = newKp4;
         boolean oldKp4ESet = kp4ESet;
         kp4ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_STATIC__KP4, oldKp4, kp4, !oldKp4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_STATIC__KP4, oldKp4, kp4,
+                    !oldKp4ESet ) );
     }
 
     /**
@@ -1081,8 +1100,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         boolean oldKp4ESet = kp4ESet;
         kp4 = KP4_EDEFAULT;
         kp4ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_STATIC__KP4, oldKp4, KP4_EDEFAULT, oldKp4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_STATIC__KP4, oldKp4, KP4_EDEFAULT,
+                    oldKp4ESet ) );
     }
 
     /**
@@ -1116,8 +1136,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         kpf = newKpf;
         boolean oldKpfESet = kpfESet;
         kpfESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_STATIC__KPF, oldKpf, kpf, !oldKpfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_STATIC__KPF, oldKpf, kpf,
+                    !oldKpfESet ) );
     }
 
     /**
@@ -1131,8 +1152,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         boolean oldKpfESet = kpfESet;
         kpf = KPF_EDEFAULT;
         kpfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_STATIC__KPF, oldKpf, KPF_EDEFAULT, oldKpfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_STATIC__KPF, oldKpf, KPF_EDEFAULT,
+                    oldKpfESet ) );
     }
 
     /**
@@ -1166,8 +1188,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         kq1 = newKq1;
         boolean oldKq1ESet = kq1ESet;
         kq1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_STATIC__KQ1, oldKq1, kq1, !oldKq1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_STATIC__KQ1, oldKq1, kq1,
+                    !oldKq1ESet ) );
     }
 
     /**
@@ -1181,8 +1204,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         boolean oldKq1ESet = kq1ESet;
         kq1 = KQ1_EDEFAULT;
         kq1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_STATIC__KQ1, oldKq1, KQ1_EDEFAULT, oldKq1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_STATIC__KQ1, oldKq1, KQ1_EDEFAULT,
+                    oldKq1ESet ) );
     }
 
     /**
@@ -1216,8 +1240,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         kq2 = newKq2;
         boolean oldKq2ESet = kq2ESet;
         kq2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_STATIC__KQ2, oldKq2, kq2, !oldKq2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_STATIC__KQ2, oldKq2, kq2,
+                    !oldKq2ESet ) );
     }
 
     /**
@@ -1231,8 +1256,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         boolean oldKq2ESet = kq2ESet;
         kq2 = KQ2_EDEFAULT;
         kq2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_STATIC__KQ2, oldKq2, KQ2_EDEFAULT, oldKq2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_STATIC__KQ2, oldKq2, KQ2_EDEFAULT,
+                    oldKq2ESet ) );
     }
 
     /**
@@ -1266,8 +1292,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         kq3 = newKq3;
         boolean oldKq3ESet = kq3ESet;
         kq3ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_STATIC__KQ3, oldKq3, kq3, !oldKq3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_STATIC__KQ3, oldKq3, kq3,
+                    !oldKq3ESet ) );
     }
 
     /**
@@ -1281,8 +1308,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         boolean oldKq3ESet = kq3ESet;
         kq3 = KQ3_EDEFAULT;
         kq3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_STATIC__KQ3, oldKq3, KQ3_EDEFAULT, oldKq3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_STATIC__KQ3, oldKq3, KQ3_EDEFAULT,
+                    oldKq3ESet ) );
     }
 
     /**
@@ -1316,8 +1344,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         kq4 = newKq4;
         boolean oldKq4ESet = kq4ESet;
         kq4ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_STATIC__KQ4, oldKq4, kq4, !oldKq4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_STATIC__KQ4, oldKq4, kq4,
+                    !oldKq4ESet ) );
     }
 
     /**
@@ -1331,8 +1360,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         boolean oldKq4ESet = kq4ESet;
         kq4 = KQ4_EDEFAULT;
         kq4ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_STATIC__KQ4, oldKq4, KQ4_EDEFAULT, oldKq4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_STATIC__KQ4, oldKq4, KQ4_EDEFAULT,
+                    oldKq4ESet ) );
     }
 
     /**
@@ -1366,8 +1396,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         kqf = newKqf;
         boolean oldKqfESet = kqfESet;
         kqfESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_STATIC__KQF, oldKqf, kqf, !oldKqfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_STATIC__KQF, oldKqf, kqf,
+                    !oldKqfESet ) );
     }
 
     /**
@@ -1381,8 +1412,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         boolean oldKqfESet = kqfESet;
         kqf = KQF_EDEFAULT;
         kqfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_STATIC__KQF, oldKqf, KQF_EDEFAULT, oldKqfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_STATIC__KQF, oldKqf, KQF_EDEFAULT,
+                    oldKqfESet ) );
     }
 
     /**
@@ -1487,10 +1519,12 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
     public void setLoadAggregate( LoadAggregate newLoadAggregate ) {
         if( newLoadAggregate != loadAggregate ) {
             NotificationChain msgs = null;
-            if( loadAggregate != null ) msgs = ( ( InternalEObject ) loadAggregate ).eInverseRemove( this,
-                    CimPackage.LOAD_AGGREGATE__LOAD_STATIC, LoadAggregate.class, msgs );
-            if( newLoadAggregate != null ) msgs = ( ( InternalEObject ) newLoadAggregate ).eInverseAdd( this,
-                    CimPackage.LOAD_AGGREGATE__LOAD_STATIC, LoadAggregate.class, msgs );
+            if( loadAggregate != null )
+                msgs = ( ( InternalEObject ) loadAggregate ).eInverseRemove( this,
+                        CimPackage.LOAD_AGGREGATE__LOAD_STATIC, LoadAggregate.class, msgs );
+            if( newLoadAggregate != null )
+                msgs = ( ( InternalEObject ) newLoadAggregate ).eInverseAdd( this,
+                        CimPackage.LOAD_AGGREGATE__LOAD_STATIC, LoadAggregate.class, msgs );
             msgs = basicSetLoadAggregate( newLoadAggregate, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1541,8 +1575,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
         else {
             boolean oldLoadAggregateESet = loadAggregateESet;
             loadAggregateESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.LOAD_STATIC__LOAD_AGGREGATE, null, null, oldLoadAggregateESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_STATIC__LOAD_AGGREGATE, null,
+                        null, oldLoadAggregateESet ) );
         }
     }
 
@@ -1565,8 +1600,9 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.LOAD_STATIC__LOAD_AGGREGATE:
-            if( loadAggregate != null ) msgs = ( ( InternalEObject ) loadAggregate ).eInverseRemove( this,
-                    CimPackage.LOAD_AGGREGATE__LOAD_STATIC, LoadAggregate.class, msgs );
+            if( loadAggregate != null )
+                msgs = ( ( InternalEObject ) loadAggregate ).eInverseRemove( this,
+                        CimPackage.LOAD_AGGREGATE__LOAD_STATIC, LoadAggregate.class, msgs );
             return basicSetLoadAggregate( ( LoadAggregate ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1823,7 +1859,7 @@ public class LoadStaticImpl extends IdentifiedObjectImpl implements LoadStatic {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (ep1: " );
         if( ep1ESet )
             result.append( ep1 );

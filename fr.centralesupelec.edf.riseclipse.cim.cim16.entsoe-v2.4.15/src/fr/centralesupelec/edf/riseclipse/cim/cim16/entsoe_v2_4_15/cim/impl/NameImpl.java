@@ -156,8 +156,9 @@ public class NameImpl extends CimObjectWithIDImpl implements Name {
         name = newName;
         boolean oldNameESet = nameESet;
         nameESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.NAME__NAME, oldName, name, !oldNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.NAME__NAME, oldName, name,
+                    !oldNameESet ) );
     }
 
     /**
@@ -171,8 +172,9 @@ public class NameImpl extends CimObjectWithIDImpl implements Name {
         boolean oldNameESet = nameESet;
         name = NAME_EDEFAULT;
         nameESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.NAME__NAME,
-                oldName, NAME_EDEFAULT, oldNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.NAME__NAME, oldName, NAME_EDEFAULT,
+                    oldNameESet ) );
     }
 
     /**
@@ -225,18 +227,21 @@ public class NameImpl extends CimObjectWithIDImpl implements Name {
     public void setNameType( NameType newNameType ) {
         if( newNameType != nameType ) {
             NotificationChain msgs = null;
-            if( nameType != null ) msgs = ( ( InternalEObject ) nameType ).eInverseRemove( this,
-                    CimPackage.NAME_TYPE__NAMES, NameType.class, msgs );
-            if( newNameType != null ) msgs = ( ( InternalEObject ) newNameType ).eInverseAdd( this,
-                    CimPackage.NAME_TYPE__NAMES, NameType.class, msgs );
+            if( nameType != null )
+                msgs = ( ( InternalEObject ) nameType ).eInverseRemove( this, CimPackage.NAME_TYPE__NAMES,
+                        NameType.class, msgs );
+            if( newNameType != null )
+                msgs = ( ( InternalEObject ) newNameType ).eInverseAdd( this, CimPackage.NAME_TYPE__NAMES,
+                        NameType.class, msgs );
             msgs = basicSetNameType( newNameType, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldNameTypeESet = nameTypeESet;
             nameTypeESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.NAME__NAME_TYPE, newNameType, newNameType, !oldNameTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.NAME__NAME_TYPE, newNameType,
+                        newNameType, !oldNameTypeESet ) );
         }
     }
 
@@ -278,8 +283,9 @@ public class NameImpl extends CimObjectWithIDImpl implements Name {
         else {
             boolean oldNameTypeESet = nameTypeESet;
             nameTypeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.NAME__NAME_TYPE, null, null, oldNameTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.NAME__NAME_TYPE, null, null,
+                        oldNameTypeESet ) );
         }
     }
 
@@ -334,10 +340,12 @@ public class NameImpl extends CimObjectWithIDImpl implements Name {
     public void setIdentifiedObject( IdentifiedObject newIdentifiedObject ) {
         if( newIdentifiedObject != identifiedObject ) {
             NotificationChain msgs = null;
-            if( identifiedObject != null ) msgs = ( ( InternalEObject ) identifiedObject ).eInverseRemove( this,
-                    CimPackage.IDENTIFIED_OBJECT__NAMES, IdentifiedObject.class, msgs );
-            if( newIdentifiedObject != null ) msgs = ( ( InternalEObject ) newIdentifiedObject ).eInverseAdd( this,
-                    CimPackage.IDENTIFIED_OBJECT__NAMES, IdentifiedObject.class, msgs );
+            if( identifiedObject != null )
+                msgs = ( ( InternalEObject ) identifiedObject ).eInverseRemove( this,
+                        CimPackage.IDENTIFIED_OBJECT__NAMES, IdentifiedObject.class, msgs );
+            if( newIdentifiedObject != null )
+                msgs = ( ( InternalEObject ) newIdentifiedObject ).eInverseAdd( this,
+                        CimPackage.IDENTIFIED_OBJECT__NAMES, IdentifiedObject.class, msgs );
             msgs = basicSetIdentifiedObject( newIdentifiedObject, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -388,8 +396,9 @@ public class NameImpl extends CimObjectWithIDImpl implements Name {
         else {
             boolean oldIdentifiedObjectESet = identifiedObjectESet;
             identifiedObjectESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.NAME__IDENTIFIED_OBJECT, null, null, oldIdentifiedObjectESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.NAME__IDENTIFIED_OBJECT, null,
+                        null, oldIdentifiedObjectESet ) );
         }
     }
 
@@ -412,12 +421,14 @@ public class NameImpl extends CimObjectWithIDImpl implements Name {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.NAME__IDENTIFIED_OBJECT:
-            if( identifiedObject != null ) msgs = ( ( InternalEObject ) identifiedObject ).eInverseRemove( this,
-                    CimPackage.IDENTIFIED_OBJECT__NAMES, IdentifiedObject.class, msgs );
+            if( identifiedObject != null )
+                msgs = ( ( InternalEObject ) identifiedObject ).eInverseRemove( this,
+                        CimPackage.IDENTIFIED_OBJECT__NAMES, IdentifiedObject.class, msgs );
             return basicSetIdentifiedObject( ( IdentifiedObject ) otherEnd, msgs );
         case CimPackage.NAME__NAME_TYPE:
-            if( nameType != null ) msgs = ( ( InternalEObject ) nameType ).eInverseRemove( this,
-                    CimPackage.NAME_TYPE__NAMES, NameType.class, msgs );
+            if( nameType != null )
+                msgs = ( ( InternalEObject ) nameType ).eInverseRemove( this, CimPackage.NAME_TYPE__NAMES,
+                        NameType.class, msgs );
             return basicSetNameType( ( NameType ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -526,7 +537,7 @@ public class NameImpl extends CimObjectWithIDImpl implements Name {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (name: " );
         if( nameESet )
             result.append( name );

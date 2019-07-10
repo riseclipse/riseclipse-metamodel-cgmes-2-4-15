@@ -312,10 +312,12 @@ public class ConnectivityNodeImpl extends IdentifiedObjectImpl implements Connec
     public void setTopologicalNode( TopologicalNode newTopologicalNode ) {
         if( newTopologicalNode != topologicalNode ) {
             NotificationChain msgs = null;
-            if( topologicalNode != null ) msgs = ( ( InternalEObject ) topologicalNode ).eInverseRemove( this,
-                    CimPackage.TOPOLOGICAL_NODE__CONNECTIVITY_NODES, TopologicalNode.class, msgs );
-            if( newTopologicalNode != null ) msgs = ( ( InternalEObject ) newTopologicalNode ).eInverseAdd( this,
-                    CimPackage.TOPOLOGICAL_NODE__CONNECTIVITY_NODES, TopologicalNode.class, msgs );
+            if( topologicalNode != null )
+                msgs = ( ( InternalEObject ) topologicalNode ).eInverseRemove( this,
+                        CimPackage.TOPOLOGICAL_NODE__CONNECTIVITY_NODES, TopologicalNode.class, msgs );
+            if( newTopologicalNode != null )
+                msgs = ( ( InternalEObject ) newTopologicalNode ).eInverseAdd( this,
+                        CimPackage.TOPOLOGICAL_NODE__CONNECTIVITY_NODES, TopologicalNode.class, msgs );
             msgs = basicSetTopologicalNode( newTopologicalNode, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -366,8 +368,9 @@ public class ConnectivityNodeImpl extends IdentifiedObjectImpl implements Connec
         else {
             boolean oldTopologicalNodeESet = topologicalNodeESet;
             topologicalNodeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONNECTIVITY_NODE__TOPOLOGICAL_NODE, null, null, oldTopologicalNodeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CONNECTIVITY_NODE__TOPOLOGICAL_NODE, null, null, oldTopologicalNodeESet ) );
         }
     }
 
@@ -471,9 +474,10 @@ public class ConnectivityNodeImpl extends IdentifiedObjectImpl implements Connec
         else {
             boolean oldConnectivityNodeContainerESet = connectivityNodeContainerESet;
             connectivityNodeContainerESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CONNECTIVITY_NODE__CONNECTIVITY_NODE_CONTAINER, newConnectivityNodeContainer,
-                    newConnectivityNodeContainer, !oldConnectivityNodeContainerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.CONNECTIVITY_NODE__CONNECTIVITY_NODE_CONTAINER, newConnectivityNodeContainer,
+                        newConnectivityNodeContainer, !oldConnectivityNodeContainerESet ) );
         }
     }
 
@@ -516,9 +520,10 @@ public class ConnectivityNodeImpl extends IdentifiedObjectImpl implements Connec
         else {
             boolean oldConnectivityNodeContainerESet = connectivityNodeContainerESet;
             connectivityNodeContainerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONNECTIVITY_NODE__CONNECTIVITY_NODE_CONTAINER, null, null,
-                    oldConnectivityNodeContainerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CONNECTIVITY_NODE__CONNECTIVITY_NODE_CONTAINER, null, null,
+                        oldConnectivityNodeContainerESet ) );
         }
     }
 
@@ -551,8 +556,9 @@ public class ConnectivityNodeImpl extends IdentifiedObjectImpl implements Connec
     public void setBoundaryPoint( boolean newBoundaryPoint ) {
         boolean oldBoundaryPoint = boundaryPoint;
         boundaryPoint = newBoundaryPoint;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONNECTIVITY_NODE__BOUNDARY_POINT, oldBoundaryPoint, boundaryPoint ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONNECTIVITY_NODE__BOUNDARY_POINT,
+                    oldBoundaryPoint, boundaryPoint ) );
     }
 
     /**
@@ -574,8 +580,9 @@ public class ConnectivityNodeImpl extends IdentifiedObjectImpl implements Connec
     public void setFromEndIsoCode( String newFromEndIsoCode ) {
         String oldFromEndIsoCode = fromEndIsoCode;
         fromEndIsoCode = newFromEndIsoCode;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONNECTIVITY_NODE__FROM_END_ISO_CODE, oldFromEndIsoCode, fromEndIsoCode ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONNECTIVITY_NODE__FROM_END_ISO_CODE,
+                    oldFromEndIsoCode, fromEndIsoCode ) );
     }
 
     /**
@@ -597,8 +604,9 @@ public class ConnectivityNodeImpl extends IdentifiedObjectImpl implements Connec
     public void setFromEndName( String newFromEndName ) {
         String oldFromEndName = fromEndName;
         fromEndName = newFromEndName;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONNECTIVITY_NODE__FROM_END_NAME, oldFromEndName, fromEndName ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONNECTIVITY_NODE__FROM_END_NAME,
+                    oldFromEndName, fromEndName ) );
     }
 
     /**
@@ -620,8 +628,9 @@ public class ConnectivityNodeImpl extends IdentifiedObjectImpl implements Connec
     public void setFromEndNameTso( String newFromEndNameTso ) {
         String oldFromEndNameTso = fromEndNameTso;
         fromEndNameTso = newFromEndNameTso;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONNECTIVITY_NODE__FROM_END_NAME_TSO, oldFromEndNameTso, fromEndNameTso ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONNECTIVITY_NODE__FROM_END_NAME_TSO,
+                    oldFromEndNameTso, fromEndNameTso ) );
     }
 
     /**
@@ -643,8 +652,9 @@ public class ConnectivityNodeImpl extends IdentifiedObjectImpl implements Connec
     public void setToEndIsoCode( String newToEndIsoCode ) {
         String oldToEndIsoCode = toEndIsoCode;
         toEndIsoCode = newToEndIsoCode;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONNECTIVITY_NODE__TO_END_ISO_CODE, oldToEndIsoCode, toEndIsoCode ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONNECTIVITY_NODE__TO_END_ISO_CODE,
+                    oldToEndIsoCode, toEndIsoCode ) );
     }
 
     /**
@@ -666,8 +676,9 @@ public class ConnectivityNodeImpl extends IdentifiedObjectImpl implements Connec
     public void setToEndName( String newToEndName ) {
         String oldToEndName = toEndName;
         toEndName = newToEndName;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONNECTIVITY_NODE__TO_END_NAME, oldToEndName, toEndName ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONNECTIVITY_NODE__TO_END_NAME,
+                    oldToEndName, toEndName ) );
     }
 
     /**
@@ -689,8 +700,9 @@ public class ConnectivityNodeImpl extends IdentifiedObjectImpl implements Connec
     public void setToEndNameTso( String newToEndNameTso ) {
         String oldToEndNameTso = toEndNameTso;
         toEndNameTso = newToEndNameTso;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONNECTIVITY_NODE__TO_END_NAME_TSO, oldToEndNameTso, toEndNameTso ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONNECTIVITY_NODE__TO_END_NAME_TSO,
+                    oldToEndNameTso, toEndNameTso ) );
     }
 
     /**
@@ -703,8 +715,9 @@ public class ConnectivityNodeImpl extends IdentifiedObjectImpl implements Connec
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CONNECTIVITY_NODE__TOPOLOGICAL_NODE:
-            if( topologicalNode != null ) msgs = ( ( InternalEObject ) topologicalNode ).eInverseRemove( this,
-                    CimPackage.TOPOLOGICAL_NODE__CONNECTIVITY_NODES, TopologicalNode.class, msgs );
+            if( topologicalNode != null )
+                msgs = ( ( InternalEObject ) topologicalNode ).eInverseRemove( this,
+                        CimPackage.TOPOLOGICAL_NODE__CONNECTIVITY_NODES, TopologicalNode.class, msgs );
             return basicSetTopologicalNode( ( TopologicalNode ) otherEnd, msgs );
         case CimPackage.CONNECTIVITY_NODE__TERMINALS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTerminals() ).basicAdd( otherEnd,
@@ -900,7 +913,7 @@ public class ConnectivityNodeImpl extends IdentifiedObjectImpl implements Connec
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (boundaryPoint: " );
         result.append( boundaryPoint );
         result.append( ", fromEndIsoCode: " );

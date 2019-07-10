@@ -1178,8 +1178,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldE1ESet = e1ESet;
         e1 = E1_EDEFAULT;
         e1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__E1,
-                oldE1, E1_EDEFAULT, oldE1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__E1, oldE1, E1_EDEFAULT,
+                    oldE1ESet ) );
     }
 
     /**
@@ -1228,8 +1229,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldE2ESet = e2ESet;
         e2 = E2_EDEFAULT;
         e2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__E2,
-                oldE2, E2_EDEFAULT, oldE2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__E2, oldE2, E2_EDEFAULT,
+                    oldE2ESet ) );
     }
 
     /**
@@ -1263,8 +1265,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         fbf = newFbf == null ? FBF_EDEFAULT : newFbf;
         boolean oldFbfESet = fbfESet;
         fbfESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__FBF, oldFbf, fbf, !oldFbfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__FBF, oldFbf, fbf,
+                    !oldFbfESet ) );
     }
 
     /**
@@ -1278,8 +1281,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldFbfESet = fbfESet;
         fbf = FBF_EDEFAULT;
         fbfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__FBF, oldFbf, FBF_EDEFAULT, oldFbfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__FBF, oldFbf, FBF_EDEFAULT,
+                    oldFbfESet ) );
     }
 
     /**
@@ -1313,8 +1317,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         flimf = newFlimf;
         boolean oldFlimfESet = flimfESet;
         flimfESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_REXS__FLIMF, oldFlimf, flimf, !oldFlimfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__FLIMF, oldFlimf, flimf,
+                    !oldFlimfESet ) );
     }
 
     /**
@@ -1328,8 +1333,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldFlimfESet = flimfESet;
         flimf = FLIMF_EDEFAULT;
         flimfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__FLIMF, oldFlimf, FLIMF_EDEFAULT, oldFlimfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__FLIMF, oldFlimf,
+                    FLIMF_EDEFAULT, oldFlimfESet ) );
     }
 
     /**
@@ -1378,8 +1384,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldKcESet = kcESet;
         kc = KC_EDEFAULT;
         kcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KC,
-                oldKc, KC_EDEFAULT, oldKcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KC, oldKc, KC_EDEFAULT,
+                    oldKcESet ) );
     }
 
     /**
@@ -1428,8 +1435,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldKdESet = kdESet;
         kd = KD_EDEFAULT;
         kdESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KD,
-                oldKd, KD_EDEFAULT, oldKdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KD, oldKd, KD_EDEFAULT,
+                    oldKdESet ) );
     }
 
     /**
@@ -1478,8 +1486,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldKeESet = keESet;
         ke = KE_EDEFAULT;
         keESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KE,
-                oldKe, KE_EDEFAULT, oldKeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KE, oldKe, KE_EDEFAULT,
+                    oldKeESet ) );
     }
 
     /**
@@ -1513,8 +1522,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         kefd = newKefd;
         boolean oldKefdESet = kefdESet;
         kefdESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__KEFD,
-                oldKefd, kefd, !oldKefdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__KEFD, oldKefd, kefd,
+                    !oldKefdESet ) );
     }
 
     /**
@@ -1528,8 +1538,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldKefdESet = kefdESet;
         kefd = KEFD_EDEFAULT;
         kefdESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__KEFD, oldKefd, KEFD_EDEFAULT, oldKefdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KEFD, oldKefd, KEFD_EDEFAULT,
+                    oldKefdESet ) );
     }
 
     /**
@@ -1578,8 +1589,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldKfESet = kfESet;
         kf = KF_EDEFAULT;
         kfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KF,
-                oldKf, KF_EDEFAULT, oldKfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KF, oldKf, KF_EDEFAULT,
+                    oldKfESet ) );
     }
 
     /**
@@ -1628,8 +1640,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldKhESet = khESet;
         kh = KH_EDEFAULT;
         khESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KH,
-                oldKh, KH_EDEFAULT, oldKhESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KH, oldKh, KH_EDEFAULT,
+                    oldKhESet ) );
     }
 
     /**
@@ -1663,8 +1676,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         kii = newKii;
         boolean oldKiiESet = kiiESet;
         kiiESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__KII, oldKii, kii, !oldKiiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__KII, oldKii, kii,
+                    !oldKiiESet ) );
     }
 
     /**
@@ -1678,8 +1692,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldKiiESet = kiiESet;
         kii = KII_EDEFAULT;
         kiiESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__KII, oldKii, KII_EDEFAULT, oldKiiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KII, oldKii, KII_EDEFAULT,
+                    oldKiiESet ) );
     }
 
     /**
@@ -1713,8 +1728,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         kip = newKip;
         boolean oldKipESet = kipESet;
         kipESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__KIP, oldKip, kip, !oldKipESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__KIP, oldKip, kip,
+                    !oldKipESet ) );
     }
 
     /**
@@ -1728,8 +1744,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldKipESet = kipESet;
         kip = KIP_EDEFAULT;
         kipESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__KIP, oldKip, KIP_EDEFAULT, oldKipESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KIP, oldKip, KIP_EDEFAULT,
+                    oldKipESet ) );
     }
 
     /**
@@ -1778,8 +1795,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldKsESet = ksESet;
         ks = KS_EDEFAULT;
         ksESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KS,
-                oldKs, KS_EDEFAULT, oldKsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KS, oldKs, KS_EDEFAULT,
+                    oldKsESet ) );
     }
 
     /**
@@ -1813,8 +1831,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         kvi = newKvi;
         boolean oldKviESet = kviESet;
         kviESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__KVI, oldKvi, kvi, !oldKviESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__KVI, oldKvi, kvi,
+                    !oldKviESet ) );
     }
 
     /**
@@ -1828,8 +1847,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldKviESet = kviESet;
         kvi = KVI_EDEFAULT;
         kviESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__KVI, oldKvi, KVI_EDEFAULT, oldKviESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KVI, oldKvi, KVI_EDEFAULT,
+                    oldKviESet ) );
     }
 
     /**
@@ -1863,8 +1883,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         kvp = newKvp;
         boolean oldKvpESet = kvpESet;
         kvpESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__KVP, oldKvp, kvp, !oldKvpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__KVP, oldKvp, kvp,
+                    !oldKvpESet ) );
     }
 
     /**
@@ -1878,8 +1899,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldKvpESet = kvpESet;
         kvp = KVP_EDEFAULT;
         kvpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__KVP, oldKvp, KVP_EDEFAULT, oldKvpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KVP, oldKvp, KVP_EDEFAULT,
+                    oldKvpESet ) );
     }
 
     /**
@@ -1913,8 +1935,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         kvphz = newKvphz;
         boolean oldKvphzESet = kvphzESet;
         kvphzESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_REXS__KVPHZ, oldKvphz, kvphz, !oldKvphzESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__KVPHZ, oldKvphz, kvphz,
+                    !oldKvphzESet ) );
     }
 
     /**
@@ -1928,8 +1951,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldKvphzESet = kvphzESet;
         kvphz = KVPHZ_EDEFAULT;
         kvphzESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__KVPHZ, oldKvphz, KVPHZ_EDEFAULT, oldKvphzESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__KVPHZ, oldKvphz,
+                    KVPHZ_EDEFAULT, oldKvphzESet ) );
     }
 
     /**
@@ -1963,8 +1987,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         nvphz = newNvphz;
         boolean oldNvphzESet = nvphzESet;
         nvphzESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_REXS__NVPHZ, oldNvphz, nvphz, !oldNvphzESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__NVPHZ, oldNvphz, nvphz,
+                    !oldNvphzESet ) );
     }
 
     /**
@@ -1978,8 +2003,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldNvphzESet = nvphzESet;
         nvphz = NVPHZ_EDEFAULT;
         nvphzESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__NVPHZ, oldNvphz, NVPHZ_EDEFAULT, oldNvphzESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__NVPHZ, oldNvphz,
+                    NVPHZ_EDEFAULT, oldNvphzESet ) );
     }
 
     /**
@@ -2013,8 +2039,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         se1 = newSe1;
         boolean oldSe1ESet = se1ESet;
         se1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__SE1, oldSe1, se1, !oldSe1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__SE1, oldSe1, se1,
+                    !oldSe1ESet ) );
     }
 
     /**
@@ -2028,8 +2055,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldSe1ESet = se1ESet;
         se1 = SE1_EDEFAULT;
         se1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__SE1, oldSe1, SE1_EDEFAULT, oldSe1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__SE1, oldSe1, SE1_EDEFAULT,
+                    oldSe1ESet ) );
     }
 
     /**
@@ -2063,8 +2091,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         se2 = newSe2;
         boolean oldSe2ESet = se2ESet;
         se2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__SE2, oldSe2, se2, !oldSe2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__SE2, oldSe2, se2,
+                    !oldSe2ESet ) );
     }
 
     /**
@@ -2078,8 +2107,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldSe2ESet = se2ESet;
         se2 = SE2_EDEFAULT;
         se2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__SE2, oldSe2, SE2_EDEFAULT, oldSe2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__SE2, oldSe2, SE2_EDEFAULT,
+                    oldSe2ESet ) );
     }
 
     /**
@@ -2128,8 +2158,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldTaESet = taESet;
         ta = TA_EDEFAULT;
         taESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__TA,
-                oldTa, TA_EDEFAULT, oldTaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__TA, oldTa, TA_EDEFAULT,
+                    oldTaESet ) );
     }
 
     /**
@@ -2163,8 +2194,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         tb1 = newTb1;
         boolean oldTb1ESet = tb1ESet;
         tb1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__TB1, oldTb1, tb1, !oldTb1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__TB1, oldTb1, tb1,
+                    !oldTb1ESet ) );
     }
 
     /**
@@ -2178,8 +2210,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldTb1ESet = tb1ESet;
         tb1 = TB1_EDEFAULT;
         tb1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__TB1, oldTb1, TB1_EDEFAULT, oldTb1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__TB1, oldTb1, TB1_EDEFAULT,
+                    oldTb1ESet ) );
     }
 
     /**
@@ -2213,8 +2246,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         tb2 = newTb2;
         boolean oldTb2ESet = tb2ESet;
         tb2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__TB2, oldTb2, tb2, !oldTb2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__TB2, oldTb2, tb2,
+                    !oldTb2ESet ) );
     }
 
     /**
@@ -2228,8 +2262,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldTb2ESet = tb2ESet;
         tb2 = TB2_EDEFAULT;
         tb2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__TB2, oldTb2, TB2_EDEFAULT, oldTb2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__TB2, oldTb2, TB2_EDEFAULT,
+                    oldTb2ESet ) );
     }
 
     /**
@@ -2263,8 +2298,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         tc1 = newTc1;
         boolean oldTc1ESet = tc1ESet;
         tc1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__TC1, oldTc1, tc1, !oldTc1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__TC1, oldTc1, tc1,
+                    !oldTc1ESet ) );
     }
 
     /**
@@ -2278,8 +2314,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldTc1ESet = tc1ESet;
         tc1 = TC1_EDEFAULT;
         tc1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__TC1, oldTc1, TC1_EDEFAULT, oldTc1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__TC1, oldTc1, TC1_EDEFAULT,
+                    oldTc1ESet ) );
     }
 
     /**
@@ -2313,8 +2350,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         tc2 = newTc2;
         boolean oldTc2ESet = tc2ESet;
         tc2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__TC2, oldTc2, tc2, !oldTc2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__TC2, oldTc2, tc2,
+                    !oldTc2ESet ) );
     }
 
     /**
@@ -2328,8 +2366,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldTc2ESet = tc2ESet;
         tc2 = TC2_EDEFAULT;
         tc2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__TC2, oldTc2, TC2_EDEFAULT, oldTc2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__TC2, oldTc2, TC2_EDEFAULT,
+                    oldTc2ESet ) );
     }
 
     /**
@@ -2378,8 +2417,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldTeESet = teESet;
         te = TE_EDEFAULT;
         teESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__TE,
-                oldTe, TE_EDEFAULT, oldTeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__TE, oldTe, TE_EDEFAULT,
+                    oldTeESet ) );
     }
 
     /**
@@ -2428,8 +2468,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldTfESet = tfESet;
         tf = TF_EDEFAULT;
         tfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__TF,
-                oldTf, TF_EDEFAULT, oldTfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__TF, oldTf, TF_EDEFAULT,
+                    oldTfESet ) );
     }
 
     /**
@@ -2463,8 +2504,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         tf1 = newTf1;
         boolean oldTf1ESet = tf1ESet;
         tf1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__TF1, oldTf1, tf1, !oldTf1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__TF1, oldTf1, tf1,
+                    !oldTf1ESet ) );
     }
 
     /**
@@ -2478,8 +2520,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldTf1ESet = tf1ESet;
         tf1 = TF1_EDEFAULT;
         tf1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__TF1, oldTf1, TF1_EDEFAULT, oldTf1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__TF1, oldTf1, TF1_EDEFAULT,
+                    oldTf1ESet ) );
     }
 
     /**
@@ -2513,8 +2556,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         tf2 = newTf2;
         boolean oldTf2ESet = tf2ESet;
         tf2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__TF2, oldTf2, tf2, !oldTf2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__TF2, oldTf2, tf2,
+                    !oldTf2ESet ) );
     }
 
     /**
@@ -2528,8 +2572,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldTf2ESet = tf2ESet;
         tf2 = TF2_EDEFAULT;
         tf2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__TF2, oldTf2, TF2_EDEFAULT, oldTf2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__TF2, oldTf2, TF2_EDEFAULT,
+                    oldTf2ESet ) );
     }
 
     /**
@@ -2578,8 +2623,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldTpESet = tpESet;
         tp = TP_EDEFAULT;
         tpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__TP,
-                oldTp, TP_EDEFAULT, oldTpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__TP, oldTp, TP_EDEFAULT,
+                    oldTpESet ) );
     }
 
     /**
@@ -2613,8 +2659,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         vcmax = newVcmax;
         boolean oldVcmaxESet = vcmaxESet;
         vcmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_REXS__VCMAX, oldVcmax, vcmax, !oldVcmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__VCMAX, oldVcmax, vcmax,
+                    !oldVcmaxESet ) );
     }
 
     /**
@@ -2628,8 +2675,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldVcmaxESet = vcmaxESet;
         vcmax = VCMAX_EDEFAULT;
         vcmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__VCMAX, oldVcmax, VCMAX_EDEFAULT, oldVcmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__VCMAX, oldVcmax,
+                    VCMAX_EDEFAULT, oldVcmaxESet ) );
     }
 
     /**
@@ -2663,8 +2711,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         vfmax = newVfmax;
         boolean oldVfmaxESet = vfmaxESet;
         vfmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_REXS__VFMAX, oldVfmax, vfmax, !oldVfmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__VFMAX, oldVfmax, vfmax,
+                    !oldVfmaxESet ) );
     }
 
     /**
@@ -2678,8 +2727,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldVfmaxESet = vfmaxESet;
         vfmax = VFMAX_EDEFAULT;
         vfmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__VFMAX, oldVfmax, VFMAX_EDEFAULT, oldVfmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__VFMAX, oldVfmax,
+                    VFMAX_EDEFAULT, oldVfmaxESet ) );
     }
 
     /**
@@ -2713,8 +2763,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         vfmin = newVfmin;
         boolean oldVfminESet = vfminESet;
         vfminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_REXS__VFMIN, oldVfmin, vfmin, !oldVfminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__VFMIN, oldVfmin, vfmin,
+                    !oldVfminESet ) );
     }
 
     /**
@@ -2728,8 +2779,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldVfminESet = vfminESet;
         vfmin = VFMIN_EDEFAULT;
         vfminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__VFMIN, oldVfmin, VFMIN_EDEFAULT, oldVfminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__VFMIN, oldVfmin,
+                    VFMIN_EDEFAULT, oldVfminESet ) );
     }
 
     /**
@@ -2763,8 +2815,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         vimax = newVimax;
         boolean oldVimaxESet = vimaxESet;
         vimaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_REXS__VIMAX, oldVimax, vimax, !oldVimaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__VIMAX, oldVimax, vimax,
+                    !oldVimaxESet ) );
     }
 
     /**
@@ -2778,8 +2831,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldVimaxESet = vimaxESet;
         vimax = VIMAX_EDEFAULT;
         vimaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__VIMAX, oldVimax, VIMAX_EDEFAULT, oldVimaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__VIMAX, oldVimax,
+                    VIMAX_EDEFAULT, oldVimaxESet ) );
     }
 
     /**
@@ -2813,8 +2867,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         vrmax = newVrmax;
         boolean oldVrmaxESet = vrmaxESet;
         vrmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_REXS__VRMAX, oldVrmax, vrmax, !oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__VRMAX, oldVrmax, vrmax,
+                    !oldVrmaxESet ) );
     }
 
     /**
@@ -2828,8 +2883,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldVrmaxESet = vrmaxESet;
         vrmax = VRMAX_EDEFAULT;
         vrmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__VRMAX, oldVrmax, VRMAX_EDEFAULT, oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__VRMAX, oldVrmax,
+                    VRMAX_EDEFAULT, oldVrmaxESet ) );
     }
 
     /**
@@ -2863,8 +2919,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         vrmin = newVrmin;
         boolean oldVrminESet = vrminESet;
         vrminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_REXS__VRMIN, oldVrmin, vrmin, !oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_REXS__VRMIN, oldVrmin, vrmin,
+                    !oldVrminESet ) );
     }
 
     /**
@@ -2878,8 +2935,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldVrminESet = vrminESet;
         vrmin = VRMIN_EDEFAULT;
         vrminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_REXS__VRMIN, oldVrmin, VRMIN_EDEFAULT, oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__VRMIN, oldVrmin,
+                    VRMIN_EDEFAULT, oldVrminESet ) );
     }
 
     /**
@@ -2928,8 +2986,9 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
         boolean oldXcESet = xcESet;
         xc = XC_EDEFAULT;
         xcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__XC,
-                oldXc, XC_EDEFAULT, oldXcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_REXS__XC, oldXc, XC_EDEFAULT,
+                    oldXcESet ) );
     }
 
     /**
@@ -3359,7 +3418,7 @@ public class ExcREXSImpl extends ExcitationSystemDynamicsImpl implements ExcREXS
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (e1: " );
         if( e1ESet )
             result.append( e1 );

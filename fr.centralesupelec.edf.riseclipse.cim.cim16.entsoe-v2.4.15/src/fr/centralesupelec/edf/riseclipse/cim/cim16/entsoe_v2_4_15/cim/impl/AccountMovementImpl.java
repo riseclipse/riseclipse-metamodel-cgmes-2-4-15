@@ -177,8 +177,9 @@ public class AccountMovementImpl extends MinimalEObjectImpl.Container implements
         amount = newAmount;
         boolean oldAmountESet = amountESet;
         amountESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACCOUNT_MOVEMENT__AMOUNT, oldAmount, amount, !oldAmountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACCOUNT_MOVEMENT__AMOUNT, oldAmount,
+                    amount, !oldAmountESet ) );
     }
 
     /**
@@ -192,8 +193,9 @@ public class AccountMovementImpl extends MinimalEObjectImpl.Container implements
         boolean oldAmountESet = amountESet;
         amount = AMOUNT_EDEFAULT;
         amountESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACCOUNT_MOVEMENT__AMOUNT, oldAmount, AMOUNT_EDEFAULT, oldAmountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACCOUNT_MOVEMENT__AMOUNT, oldAmount,
+                    AMOUNT_EDEFAULT, oldAmountESet ) );
     }
 
     /**
@@ -227,8 +229,9 @@ public class AccountMovementImpl extends MinimalEObjectImpl.Container implements
         dateTime = newDateTime;
         boolean oldDateTimeESet = dateTimeESet;
         dateTimeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACCOUNT_MOVEMENT__DATE_TIME, oldDateTime, dateTime, !oldDateTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACCOUNT_MOVEMENT__DATE_TIME, oldDateTime,
+                    dateTime, !oldDateTimeESet ) );
     }
 
     /**
@@ -242,8 +245,9 @@ public class AccountMovementImpl extends MinimalEObjectImpl.Container implements
         boolean oldDateTimeESet = dateTimeESet;
         dateTime = DATE_TIME_EDEFAULT;
         dateTimeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACCOUNT_MOVEMENT__DATE_TIME, oldDateTime, DATE_TIME_EDEFAULT, oldDateTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACCOUNT_MOVEMENT__DATE_TIME,
+                    oldDateTime, DATE_TIME_EDEFAULT, oldDateTimeESet ) );
     }
 
     /**
@@ -277,8 +281,9 @@ public class AccountMovementImpl extends MinimalEObjectImpl.Container implements
         reason = newReason;
         boolean oldReasonESet = reasonESet;
         reasonESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACCOUNT_MOVEMENT__REASON, oldReason, reason, !oldReasonESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACCOUNT_MOVEMENT__REASON, oldReason,
+                    reason, !oldReasonESet ) );
     }
 
     /**
@@ -292,8 +297,9 @@ public class AccountMovementImpl extends MinimalEObjectImpl.Container implements
         boolean oldReasonESet = reasonESet;
         reason = REASON_EDEFAULT;
         reasonESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACCOUNT_MOVEMENT__REASON, oldReason, REASON_EDEFAULT, oldReasonESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACCOUNT_MOVEMENT__REASON, oldReason,
+                    REASON_EDEFAULT, oldReasonESet ) );
     }
 
     /**
@@ -393,7 +399,7 @@ public class AccountMovementImpl extends MinimalEObjectImpl.Container implements
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (amount: " );
         if( amountESet )
             result.append( amount );

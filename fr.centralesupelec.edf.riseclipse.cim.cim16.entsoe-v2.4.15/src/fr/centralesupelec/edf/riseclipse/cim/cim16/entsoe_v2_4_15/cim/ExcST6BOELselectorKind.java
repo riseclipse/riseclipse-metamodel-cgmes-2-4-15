@@ -117,8 +117,11 @@ public enum ExcST6BOELselectorKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final ExcST6BOELselectorKind[] VALUES_ARRAY = new ExcST6BOELselectorKind[] { NO_OE_LINPUT,
-            BEFORE_UEL, AFTER_UEL, };
+    private static final ExcST6BOELselectorKind[] VALUES_ARRAY = new ExcST6BOELselectorKind[] {
+            NO_OE_LINPUT,
+            BEFORE_UEL,
+            AFTER_UEL,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Exc ST6BOE Lselector Kind</b></em>' enumerators.

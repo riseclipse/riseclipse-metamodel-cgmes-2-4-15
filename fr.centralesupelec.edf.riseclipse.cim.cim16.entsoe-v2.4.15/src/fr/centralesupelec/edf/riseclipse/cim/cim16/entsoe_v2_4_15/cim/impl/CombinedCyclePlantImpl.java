@@ -133,9 +133,10 @@ public class CombinedCyclePlantImpl extends PowerSystemResourceImpl implements C
         combCyclePlantRating = newCombCyclePlantRating;
         boolean oldCombCyclePlantRatingESet = combCyclePlantRatingESet;
         combCyclePlantRatingESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.COMBINED_CYCLE_PLANT__COMB_CYCLE_PLANT_RATING,
-                        oldCombCyclePlantRating, combCyclePlantRating, !oldCombCyclePlantRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.COMBINED_CYCLE_PLANT__COMB_CYCLE_PLANT_RATING, oldCombCyclePlantRating,
+                    combCyclePlantRating, !oldCombCyclePlantRatingESet ) );
     }
 
     /**
@@ -149,9 +150,10 @@ public class CombinedCyclePlantImpl extends PowerSystemResourceImpl implements C
         boolean oldCombCyclePlantRatingESet = combCyclePlantRatingESet;
         combCyclePlantRating = COMB_CYCLE_PLANT_RATING_EDEFAULT;
         combCyclePlantRatingESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.COMBINED_CYCLE_PLANT__COMB_CYCLE_PLANT_RATING, oldCombCyclePlantRating,
-                COMB_CYCLE_PLANT_RATING_EDEFAULT, oldCombCyclePlantRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.COMBINED_CYCLE_PLANT__COMB_CYCLE_PLANT_RATING, oldCombCyclePlantRating,
+                    COMB_CYCLE_PLANT_RATING_EDEFAULT, oldCombCyclePlantRatingESet ) );
     }
 
     /**
@@ -308,7 +310,7 @@ public class CombinedCyclePlantImpl extends PowerSystemResourceImpl implements C
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (combCyclePlantRating: " );
         if( combCyclePlantRatingESet )
             result.append( combCyclePlantRating );

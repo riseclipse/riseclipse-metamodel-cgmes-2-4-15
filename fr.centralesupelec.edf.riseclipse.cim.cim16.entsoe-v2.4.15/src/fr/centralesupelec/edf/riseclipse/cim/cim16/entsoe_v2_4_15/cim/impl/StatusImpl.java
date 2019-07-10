@@ -205,8 +205,9 @@ public class StatusImpl extends MinimalEObjectImpl.Container implements Status {
         dateTime = newDateTime;
         boolean oldDateTimeESet = dateTimeESet;
         dateTimeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STATUS__DATE_TIME, oldDateTime, dateTime, !oldDateTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STATUS__DATE_TIME, oldDateTime, dateTime,
+                    !oldDateTimeESet ) );
     }
 
     /**
@@ -220,8 +221,9 @@ public class StatusImpl extends MinimalEObjectImpl.Container implements Status {
         boolean oldDateTimeESet = dateTimeESet;
         dateTime = DATE_TIME_EDEFAULT;
         dateTimeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STATUS__DATE_TIME, oldDateTime, DATE_TIME_EDEFAULT, oldDateTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STATUS__DATE_TIME, oldDateTime,
+                    DATE_TIME_EDEFAULT, oldDateTimeESet ) );
     }
 
     /**
@@ -255,8 +257,9 @@ public class StatusImpl extends MinimalEObjectImpl.Container implements Status {
         reason = newReason;
         boolean oldReasonESet = reasonESet;
         reasonESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STATUS__REASON,
-                oldReason, reason, !oldReasonESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STATUS__REASON, oldReason, reason,
+                    !oldReasonESet ) );
     }
 
     /**
@@ -270,8 +273,9 @@ public class StatusImpl extends MinimalEObjectImpl.Container implements Status {
         boolean oldReasonESet = reasonESet;
         reason = REASON_EDEFAULT;
         reasonESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STATUS__REASON, oldReason, REASON_EDEFAULT, oldReasonESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STATUS__REASON, oldReason,
+                    REASON_EDEFAULT, oldReasonESet ) );
     }
 
     /**
@@ -305,8 +309,9 @@ public class StatusImpl extends MinimalEObjectImpl.Container implements Status {
         remark = newRemark;
         boolean oldRemarkESet = remarkESet;
         remarkESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STATUS__REMARK,
-                oldRemark, remark, !oldRemarkESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STATUS__REMARK, oldRemark, remark,
+                    !oldRemarkESet ) );
     }
 
     /**
@@ -320,8 +325,9 @@ public class StatusImpl extends MinimalEObjectImpl.Container implements Status {
         boolean oldRemarkESet = remarkESet;
         remark = REMARK_EDEFAULT;
         remarkESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STATUS__REMARK, oldRemark, REMARK_EDEFAULT, oldRemarkESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STATUS__REMARK, oldRemark,
+                    REMARK_EDEFAULT, oldRemarkESet ) );
     }
 
     /**
@@ -355,8 +361,9 @@ public class StatusImpl extends MinimalEObjectImpl.Container implements Status {
         value = newValue;
         boolean oldValueESet = valueESet;
         valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STATUS__VALUE,
-                oldValue, value, !oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STATUS__VALUE, oldValue, value,
+                    !oldValueESet ) );
     }
 
     /**
@@ -370,8 +377,9 @@ public class StatusImpl extends MinimalEObjectImpl.Container implements Status {
         boolean oldValueESet = valueESet;
         value = VALUE_EDEFAULT;
         valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STATUS__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STATUS__VALUE, oldValue,
+                    VALUE_EDEFAULT, oldValueESet ) );
     }
 
     /**
@@ -481,7 +489,7 @@ public class StatusImpl extends MinimalEObjectImpl.Container implements Status {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (dateTime: " );
         if( dateTimeESet )
             result.append( dateTime );

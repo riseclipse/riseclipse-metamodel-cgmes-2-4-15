@@ -262,8 +262,9 @@ public class VAdjIEEEImpl extends VoltageAdjusterDynamicsImpl implements VAdjIEE
         adjslew = newAdjslew;
         boolean oldAdjslewESet = adjslewESet;
         adjslewESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VADJ_IEEE__ADJSLEW, oldAdjslew, adjslew, !oldAdjslewESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VADJ_IEEE__ADJSLEW, oldAdjslew, adjslew,
+                    !oldAdjslewESet ) );
     }
 
     /**
@@ -277,8 +278,9 @@ public class VAdjIEEEImpl extends VoltageAdjusterDynamicsImpl implements VAdjIEE
         boolean oldAdjslewESet = adjslewESet;
         adjslew = ADJSLEW_EDEFAULT;
         adjslewESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VADJ_IEEE__ADJSLEW, oldAdjslew, ADJSLEW_EDEFAULT, oldAdjslewESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VADJ_IEEE__ADJSLEW, oldAdjslew,
+                    ADJSLEW_EDEFAULT, oldAdjslewESet ) );
     }
 
     /**
@@ -312,8 +314,9 @@ public class VAdjIEEEImpl extends VoltageAdjusterDynamicsImpl implements VAdjIEE
         taoff = newTaoff;
         boolean oldTaoffESet = taoffESet;
         taoffESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VADJ_IEEE__TAOFF, oldTaoff, taoff, !oldTaoffESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VADJ_IEEE__TAOFF, oldTaoff, taoff,
+                    !oldTaoffESet ) );
     }
 
     /**
@@ -327,8 +330,9 @@ public class VAdjIEEEImpl extends VoltageAdjusterDynamicsImpl implements VAdjIEE
         boolean oldTaoffESet = taoffESet;
         taoff = TAOFF_EDEFAULT;
         taoffESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VADJ_IEEE__TAOFF, oldTaoff, TAOFF_EDEFAULT, oldTaoffESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VADJ_IEEE__TAOFF, oldTaoff,
+                    TAOFF_EDEFAULT, oldTaoffESet ) );
     }
 
     /**
@@ -362,8 +366,9 @@ public class VAdjIEEEImpl extends VoltageAdjusterDynamicsImpl implements VAdjIEE
         taon = newTaon;
         boolean oldTaonESet = taonESet;
         taonESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VADJ_IEEE__TAON, oldTaon, taon, !oldTaonESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VADJ_IEEE__TAON, oldTaon, taon,
+                    !oldTaonESet ) );
     }
 
     /**
@@ -377,8 +382,9 @@ public class VAdjIEEEImpl extends VoltageAdjusterDynamicsImpl implements VAdjIEE
         boolean oldTaonESet = taonESet;
         taon = TAON_EDEFAULT;
         taonESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VADJ_IEEE__TAON, oldTaon, TAON_EDEFAULT, oldTaonESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VADJ_IEEE__TAON, oldTaon,
+                    TAON_EDEFAULT, oldTaonESet ) );
     }
 
     /**
@@ -412,8 +418,9 @@ public class VAdjIEEEImpl extends VoltageAdjusterDynamicsImpl implements VAdjIEE
         vadjf = newVadjf;
         boolean oldVadjfESet = vadjfESet;
         vadjfESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VADJ_IEEE__VADJF, oldVadjf, vadjf, !oldVadjfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VADJ_IEEE__VADJF, oldVadjf, vadjf,
+                    !oldVadjfESet ) );
     }
 
     /**
@@ -427,8 +434,9 @@ public class VAdjIEEEImpl extends VoltageAdjusterDynamicsImpl implements VAdjIEE
         boolean oldVadjfESet = vadjfESet;
         vadjf = VADJF_EDEFAULT;
         vadjfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VADJ_IEEE__VADJF, oldVadjf, VADJF_EDEFAULT, oldVadjfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VADJ_IEEE__VADJF, oldVadjf,
+                    VADJF_EDEFAULT, oldVadjfESet ) );
     }
 
     /**
@@ -462,8 +470,9 @@ public class VAdjIEEEImpl extends VoltageAdjusterDynamicsImpl implements VAdjIEE
         vadjmax = newVadjmax;
         boolean oldVadjmaxESet = vadjmaxESet;
         vadjmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VADJ_IEEE__VADJMAX, oldVadjmax, vadjmax, !oldVadjmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VADJ_IEEE__VADJMAX, oldVadjmax, vadjmax,
+                    !oldVadjmaxESet ) );
     }
 
     /**
@@ -477,8 +486,9 @@ public class VAdjIEEEImpl extends VoltageAdjusterDynamicsImpl implements VAdjIEE
         boolean oldVadjmaxESet = vadjmaxESet;
         vadjmax = VADJMAX_EDEFAULT;
         vadjmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VADJ_IEEE__VADJMAX, oldVadjmax, VADJMAX_EDEFAULT, oldVadjmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VADJ_IEEE__VADJMAX, oldVadjmax,
+                    VADJMAX_EDEFAULT, oldVadjmaxESet ) );
     }
 
     /**
@@ -512,8 +522,9 @@ public class VAdjIEEEImpl extends VoltageAdjusterDynamicsImpl implements VAdjIEE
         vadjmin = newVadjmin;
         boolean oldVadjminESet = vadjminESet;
         vadjminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VADJ_IEEE__VADJMIN, oldVadjmin, vadjmin, !oldVadjminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VADJ_IEEE__VADJMIN, oldVadjmin, vadjmin,
+                    !oldVadjminESet ) );
     }
 
     /**
@@ -527,8 +538,9 @@ public class VAdjIEEEImpl extends VoltageAdjusterDynamicsImpl implements VAdjIEE
         boolean oldVadjminESet = vadjminESet;
         vadjmin = VADJMIN_EDEFAULT;
         vadjminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VADJ_IEEE__VADJMIN, oldVadjmin, VADJMIN_EDEFAULT, oldVadjminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VADJ_IEEE__VADJMIN, oldVadjmin,
+                    VADJMIN_EDEFAULT, oldVadjminESet ) );
     }
 
     /**
@@ -658,7 +670,7 @@ public class VAdjIEEEImpl extends VoltageAdjusterDynamicsImpl implements VAdjIEE
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (adjslew: " );
         if( adjslewESet )
             result.append( adjslew );

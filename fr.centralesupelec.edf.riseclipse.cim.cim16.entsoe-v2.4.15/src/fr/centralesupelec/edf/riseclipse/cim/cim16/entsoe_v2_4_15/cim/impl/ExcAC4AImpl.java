@@ -367,8 +367,9 @@ public class ExcAC4AImpl extends ExcitationSystemDynamicsImpl implements ExcAC4A
         boolean oldKaESet = kaESet;
         ka = KA_EDEFAULT;
         kaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC4A__KA,
-                oldKa, KA_EDEFAULT, oldKaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC4A__KA, oldKa, KA_EDEFAULT,
+                    oldKaESet ) );
     }
 
     /**
@@ -417,8 +418,9 @@ public class ExcAC4AImpl extends ExcitationSystemDynamicsImpl implements ExcAC4A
         boolean oldKcESet = kcESet;
         kc = KC_EDEFAULT;
         kcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC4A__KC,
-                oldKc, KC_EDEFAULT, oldKcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC4A__KC, oldKc, KC_EDEFAULT,
+                    oldKcESet ) );
     }
 
     /**
@@ -467,8 +469,9 @@ public class ExcAC4AImpl extends ExcitationSystemDynamicsImpl implements ExcAC4A
         boolean oldTaESet = taESet;
         ta = TA_EDEFAULT;
         taESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC4A__TA,
-                oldTa, TA_EDEFAULT, oldTaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC4A__TA, oldTa, TA_EDEFAULT,
+                    oldTaESet ) );
     }
 
     /**
@@ -517,8 +520,9 @@ public class ExcAC4AImpl extends ExcitationSystemDynamicsImpl implements ExcAC4A
         boolean oldTbESet = tbESet;
         tb = TB_EDEFAULT;
         tbESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC4A__TB,
-                oldTb, TB_EDEFAULT, oldTbESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC4A__TB, oldTb, TB_EDEFAULT,
+                    oldTbESet ) );
     }
 
     /**
@@ -567,8 +571,9 @@ public class ExcAC4AImpl extends ExcitationSystemDynamicsImpl implements ExcAC4A
         boolean oldTcESet = tcESet;
         tc = TC_EDEFAULT;
         tcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC4A__TC,
-                oldTc, TC_EDEFAULT, oldTcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC4A__TC, oldTc, TC_EDEFAULT,
+                    oldTcESet ) );
     }
 
     /**
@@ -602,8 +607,9 @@ public class ExcAC4AImpl extends ExcitationSystemDynamicsImpl implements ExcAC4A
         vimax = newVimax;
         boolean oldVimaxESet = vimaxESet;
         vimaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_AC4A__VIMAX, oldVimax, vimax, !oldVimaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC4A__VIMAX, oldVimax, vimax,
+                    !oldVimaxESet ) );
     }
 
     /**
@@ -617,8 +623,9 @@ public class ExcAC4AImpl extends ExcitationSystemDynamicsImpl implements ExcAC4A
         boolean oldVimaxESet = vimaxESet;
         vimax = VIMAX_EDEFAULT;
         vimaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AC4A__VIMAX, oldVimax, VIMAX_EDEFAULT, oldVimaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC4A__VIMAX, oldVimax,
+                    VIMAX_EDEFAULT, oldVimaxESet ) );
     }
 
     /**
@@ -652,8 +659,9 @@ public class ExcAC4AImpl extends ExcitationSystemDynamicsImpl implements ExcAC4A
         vimin = newVimin;
         boolean oldViminESet = viminESet;
         viminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_AC4A__VIMIN, oldVimin, vimin, !oldViminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC4A__VIMIN, oldVimin, vimin,
+                    !oldViminESet ) );
     }
 
     /**
@@ -667,8 +675,9 @@ public class ExcAC4AImpl extends ExcitationSystemDynamicsImpl implements ExcAC4A
         boolean oldViminESet = viminESet;
         vimin = VIMIN_EDEFAULT;
         viminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AC4A__VIMIN, oldVimin, VIMIN_EDEFAULT, oldViminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC4A__VIMIN, oldVimin,
+                    VIMIN_EDEFAULT, oldViminESet ) );
     }
 
     /**
@@ -702,8 +711,9 @@ public class ExcAC4AImpl extends ExcitationSystemDynamicsImpl implements ExcAC4A
         vrmax = newVrmax;
         boolean oldVrmaxESet = vrmaxESet;
         vrmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_AC4A__VRMAX, oldVrmax, vrmax, !oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC4A__VRMAX, oldVrmax, vrmax,
+                    !oldVrmaxESet ) );
     }
 
     /**
@@ -717,8 +727,9 @@ public class ExcAC4AImpl extends ExcitationSystemDynamicsImpl implements ExcAC4A
         boolean oldVrmaxESet = vrmaxESet;
         vrmax = VRMAX_EDEFAULT;
         vrmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AC4A__VRMAX, oldVrmax, VRMAX_EDEFAULT, oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC4A__VRMAX, oldVrmax,
+                    VRMAX_EDEFAULT, oldVrmaxESet ) );
     }
 
     /**
@@ -752,8 +763,9 @@ public class ExcAC4AImpl extends ExcitationSystemDynamicsImpl implements ExcAC4A
         vrmin = newVrmin;
         boolean oldVrminESet = vrminESet;
         vrminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_AC4A__VRMIN, oldVrmin, vrmin, !oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC4A__VRMIN, oldVrmin, vrmin,
+                    !oldVrminESet ) );
     }
 
     /**
@@ -767,8 +779,9 @@ public class ExcAC4AImpl extends ExcitationSystemDynamicsImpl implements ExcAC4A
         boolean oldVrminESet = vrminESet;
         vrmin = VRMIN_EDEFAULT;
         vrminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AC4A__VRMIN, oldVrmin, VRMIN_EDEFAULT, oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC4A__VRMIN, oldVrmin,
+                    VRMIN_EDEFAULT, oldVrminESet ) );
     }
 
     /**
@@ -928,7 +941,7 @@ public class ExcAC4AImpl extends ExcitationSystemDynamicsImpl implements ExcAC4A
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (ka: " );
         if( kaESet )
             result.append( ka );

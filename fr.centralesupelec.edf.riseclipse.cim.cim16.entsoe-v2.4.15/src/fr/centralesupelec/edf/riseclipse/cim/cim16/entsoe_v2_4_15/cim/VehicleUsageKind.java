@@ -142,7 +142,12 @@ public enum VehicleUsageKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final VehicleUsageKind[] VALUES_ARRAY = new VehicleUsageKind[] { CREW, USER, CONTRACTOR, OTHER, };
+    private static final VehicleUsageKind[] VALUES_ARRAY = new VehicleUsageKind[] {
+            CREW,
+            USER,
+            CONTRACTOR,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Vehicle Usage Kind</b></em>' enumerators.

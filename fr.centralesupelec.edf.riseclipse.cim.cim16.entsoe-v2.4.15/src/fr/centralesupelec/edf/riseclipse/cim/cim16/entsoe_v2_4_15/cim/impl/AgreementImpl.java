@@ -137,8 +137,9 @@ public class AgreementImpl extends DocumentImpl implements Agreement {
         signDate = newSignDate;
         boolean oldSignDateESet = signDateESet;
         signDateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.AGREEMENT__SIGN_DATE, oldSignDate, signDate, !oldSignDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AGREEMENT__SIGN_DATE, oldSignDate,
+                    signDate, !oldSignDateESet ) );
     }
 
     /**
@@ -152,8 +153,9 @@ public class AgreementImpl extends DocumentImpl implements Agreement {
         boolean oldSignDateESet = signDateESet;
         signDate = SIGN_DATE_EDEFAULT;
         signDateESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.AGREEMENT__SIGN_DATE, oldSignDate, SIGN_DATE_EDEFAULT, oldSignDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AGREEMENT__SIGN_DATE, oldSignDate,
+                    SIGN_DATE_EDEFAULT, oldSignDateESet ) );
     }
 
     /**
@@ -207,10 +209,12 @@ public class AgreementImpl extends DocumentImpl implements Agreement {
     public void setValidityInterval( DateTimeInterval newValidityInterval ) {
         if( newValidityInterval != validityInterval ) {
             NotificationChain msgs = null;
-            if( validityInterval != null ) msgs = ( ( InternalEObject ) validityInterval ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.AGREEMENT__VALIDITY_INTERVAL, null, msgs );
-            if( newValidityInterval != null ) msgs = ( ( InternalEObject ) newValidityInterval ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.AGREEMENT__VALIDITY_INTERVAL, null, msgs );
+            if( validityInterval != null )
+                msgs = ( ( InternalEObject ) validityInterval ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.AGREEMENT__VALIDITY_INTERVAL, null, msgs );
+            if( newValidityInterval != null )
+                msgs = ( ( InternalEObject ) newValidityInterval ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.AGREEMENT__VALIDITY_INTERVAL, null, msgs );
             msgs = basicSetValidityInterval( newValidityInterval, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -261,8 +265,9 @@ public class AgreementImpl extends DocumentImpl implements Agreement {
         else {
             boolean oldValidityIntervalESet = validityIntervalESet;
             validityIntervalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.AGREEMENT__VALIDITY_INTERVAL, null, null, oldValidityIntervalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AGREEMENT__VALIDITY_INTERVAL, null,
+                        null, oldValidityIntervalESet ) );
         }
     }
 
@@ -367,7 +372,7 @@ public class AgreementImpl extends DocumentImpl implements Agreement {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (signDate: " );
         if( signDateESet )
             result.append( signDate );

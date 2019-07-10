@@ -125,19 +125,22 @@ public class GenUnitOpScheduleImpl extends RegularIntervalScheduleImpl implement
     public void setGeneratingUnit( GeneratingUnit newGeneratingUnit ) {
         if( newGeneratingUnit != generatingUnit ) {
             NotificationChain msgs = null;
-            if( generatingUnit != null ) msgs = ( ( InternalEObject ) generatingUnit ).eInverseRemove( this,
-                    CimPackage.GENERATING_UNIT__GEN_UNIT_OP_SCHEDULE, GeneratingUnit.class, msgs );
-            if( newGeneratingUnit != null ) msgs = ( ( InternalEObject ) newGeneratingUnit ).eInverseAdd( this,
-                    CimPackage.GENERATING_UNIT__GEN_UNIT_OP_SCHEDULE, GeneratingUnit.class, msgs );
+            if( generatingUnit != null )
+                msgs = ( ( InternalEObject ) generatingUnit ).eInverseRemove( this,
+                        CimPackage.GENERATING_UNIT__GEN_UNIT_OP_SCHEDULE, GeneratingUnit.class, msgs );
+            if( newGeneratingUnit != null )
+                msgs = ( ( InternalEObject ) newGeneratingUnit ).eInverseAdd( this,
+                        CimPackage.GENERATING_UNIT__GEN_UNIT_OP_SCHEDULE, GeneratingUnit.class, msgs );
             msgs = basicSetGeneratingUnit( newGeneratingUnit, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldGeneratingUnitESet = generatingUnitESet;
             generatingUnitESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.GEN_UNIT_OP_SCHEDULE__GENERATING_UNIT,
-                            newGeneratingUnit, newGeneratingUnit, !oldGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.GEN_UNIT_OP_SCHEDULE__GENERATING_UNIT, newGeneratingUnit, newGeneratingUnit,
+                        !oldGeneratingUnitESet ) );
         }
     }
 
@@ -179,8 +182,9 @@ public class GenUnitOpScheduleImpl extends RegularIntervalScheduleImpl implement
         else {
             boolean oldGeneratingUnitESet = generatingUnitESet;
             generatingUnitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.GEN_UNIT_OP_SCHEDULE__GENERATING_UNIT, null, null, oldGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.GEN_UNIT_OP_SCHEDULE__GENERATING_UNIT, null, null, oldGeneratingUnitESet ) );
         }
     }
 
@@ -203,8 +207,9 @@ public class GenUnitOpScheduleImpl extends RegularIntervalScheduleImpl implement
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.GEN_UNIT_OP_SCHEDULE__GENERATING_UNIT:
-            if( generatingUnit != null ) msgs = ( ( InternalEObject ) generatingUnit ).eInverseRemove( this,
-                    CimPackage.GENERATING_UNIT__GEN_UNIT_OP_SCHEDULE, GeneratingUnit.class, msgs );
+            if( generatingUnit != null )
+                msgs = ( ( InternalEObject ) generatingUnit ).eInverseRemove( this,
+                        CimPackage.GENERATING_UNIT__GEN_UNIT_OP_SCHEDULE, GeneratingUnit.class, msgs );
             return basicSetGeneratingUnit( ( GeneratingUnit ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

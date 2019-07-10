@@ -125,19 +125,22 @@ public class ConformLoadScheduleImpl extends SeasonDayTypeScheduleImpl implement
     public void setConformLoadGroup( ConformLoadGroup newConformLoadGroup ) {
         if( newConformLoadGroup != conformLoadGroup ) {
             NotificationChain msgs = null;
-            if( conformLoadGroup != null ) msgs = ( ( InternalEObject ) conformLoadGroup ).eInverseRemove( this,
-                    CimPackage.CONFORM_LOAD_GROUP__CONFORM_LOAD_SCHEDULES, ConformLoadGroup.class, msgs );
-            if( newConformLoadGroup != null ) msgs = ( ( InternalEObject ) newConformLoadGroup ).eInverseAdd( this,
-                    CimPackage.CONFORM_LOAD_GROUP__CONFORM_LOAD_SCHEDULES, ConformLoadGroup.class, msgs );
+            if( conformLoadGroup != null )
+                msgs = ( ( InternalEObject ) conformLoadGroup ).eInverseRemove( this,
+                        CimPackage.CONFORM_LOAD_GROUP__CONFORM_LOAD_SCHEDULES, ConformLoadGroup.class, msgs );
+            if( newConformLoadGroup != null )
+                msgs = ( ( InternalEObject ) newConformLoadGroup ).eInverseAdd( this,
+                        CimPackage.CONFORM_LOAD_GROUP__CONFORM_LOAD_SCHEDULES, ConformLoadGroup.class, msgs );
             msgs = basicSetConformLoadGroup( newConformLoadGroup, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldConformLoadGroupESet = conformLoadGroupESet;
             conformLoadGroupESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.CONFORM_LOAD_SCHEDULE__CONFORM_LOAD_GROUP,
-                            newConformLoadGroup, newConformLoadGroup, !oldConformLoadGroupESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.CONFORM_LOAD_SCHEDULE__CONFORM_LOAD_GROUP, newConformLoadGroup, newConformLoadGroup,
+                        !oldConformLoadGroupESet ) );
         }
     }
 
@@ -180,8 +183,9 @@ public class ConformLoadScheduleImpl extends SeasonDayTypeScheduleImpl implement
         else {
             boolean oldConformLoadGroupESet = conformLoadGroupESet;
             conformLoadGroupESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONFORM_LOAD_SCHEDULE__CONFORM_LOAD_GROUP, null, null, oldConformLoadGroupESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CONFORM_LOAD_SCHEDULE__CONFORM_LOAD_GROUP, null, null, oldConformLoadGroupESet ) );
         }
     }
 
@@ -204,8 +208,9 @@ public class ConformLoadScheduleImpl extends SeasonDayTypeScheduleImpl implement
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CONFORM_LOAD_SCHEDULE__CONFORM_LOAD_GROUP:
-            if( conformLoadGroup != null ) msgs = ( ( InternalEObject ) conformLoadGroup ).eInverseRemove( this,
-                    CimPackage.CONFORM_LOAD_GROUP__CONFORM_LOAD_SCHEDULES, ConformLoadGroup.class, msgs );
+            if( conformLoadGroup != null )
+                msgs = ( ( InternalEObject ) conformLoadGroup ).eInverseRemove( this,
+                        CimPackage.CONFORM_LOAD_GROUP__CONFORM_LOAD_SCHEDULES, ConformLoadGroup.class, msgs );
             return basicSetConformLoadGroup( ( ConformLoadGroup ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

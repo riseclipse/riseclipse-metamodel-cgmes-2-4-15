@@ -92,7 +92,10 @@ public enum OrientationKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final OrientationKind[] VALUES_ARRAY = new OrientationKind[] { POSITIVE, NEGATIVE, };
+    private static final OrientationKind[] VALUES_ARRAY = new OrientationKind[] {
+            POSITIVE,
+            NEGATIVE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Orientation Kind</b></em>' enumerators.

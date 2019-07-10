@@ -218,8 +218,9 @@ public class ReadingQualityImpl extends CimObjectWithIDImpl implements ReadingQu
         comment = newComment;
         boolean oldCommentESet = commentESet;
         commentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_QUALITY__COMMENT, oldComment, comment, !oldCommentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_QUALITY__COMMENT, oldComment,
+                    comment, !oldCommentESet ) );
     }
 
     /**
@@ -233,8 +234,9 @@ public class ReadingQualityImpl extends CimObjectWithIDImpl implements ReadingQu
         boolean oldCommentESet = commentESet;
         comment = COMMENT_EDEFAULT;
         commentESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.READING_QUALITY__COMMENT, oldComment, COMMENT_EDEFAULT, oldCommentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_QUALITY__COMMENT, oldComment,
+                    COMMENT_EDEFAULT, oldCommentESet ) );
     }
 
     /**
@@ -268,8 +270,9 @@ public class ReadingQualityImpl extends CimObjectWithIDImpl implements ReadingQu
         source = newSource;
         boolean oldSourceESet = sourceESet;
         sourceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_QUALITY__SOURCE, oldSource, source, !oldSourceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_QUALITY__SOURCE, oldSource,
+                    source, !oldSourceESet ) );
     }
 
     /**
@@ -283,8 +286,9 @@ public class ReadingQualityImpl extends CimObjectWithIDImpl implements ReadingQu
         boolean oldSourceESet = sourceESet;
         source = SOURCE_EDEFAULT;
         sourceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.READING_QUALITY__SOURCE, oldSource, SOURCE_EDEFAULT, oldSourceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_QUALITY__SOURCE, oldSource,
+                    SOURCE_EDEFAULT, oldSourceESet ) );
     }
 
     /**
@@ -318,8 +322,9 @@ public class ReadingQualityImpl extends CimObjectWithIDImpl implements ReadingQu
         timeStamp = newTimeStamp;
         boolean oldTimeStampESet = timeStampESet;
         timeStampESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_QUALITY__TIME_STAMP, oldTimeStamp, timeStamp, !oldTimeStampESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_QUALITY__TIME_STAMP,
+                    oldTimeStamp, timeStamp, !oldTimeStampESet ) );
     }
 
     /**
@@ -333,8 +338,9 @@ public class ReadingQualityImpl extends CimObjectWithIDImpl implements ReadingQu
         boolean oldTimeStampESet = timeStampESet;
         timeStamp = TIME_STAMP_EDEFAULT;
         timeStampESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.READING_QUALITY__TIME_STAMP, oldTimeStamp, TIME_STAMP_EDEFAULT, oldTimeStampESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_QUALITY__TIME_STAMP,
+                    oldTimeStamp, TIME_STAMP_EDEFAULT, oldTimeStampESet ) );
     }
 
     /**
@@ -387,18 +393,21 @@ public class ReadingQualityImpl extends CimObjectWithIDImpl implements ReadingQu
     public void setReading( BaseReading newReading ) {
         if( newReading != reading ) {
             NotificationChain msgs = null;
-            if( reading != null ) msgs = ( ( InternalEObject ) reading ).eInverseRemove( this,
-                    CimPackage.BASE_READING__READING_QUALITIES, BaseReading.class, msgs );
-            if( newReading != null ) msgs = ( ( InternalEObject ) newReading ).eInverseAdd( this,
-                    CimPackage.BASE_READING__READING_QUALITIES, BaseReading.class, msgs );
+            if( reading != null )
+                msgs = ( ( InternalEObject ) reading ).eInverseRemove( this, CimPackage.BASE_READING__READING_QUALITIES,
+                        BaseReading.class, msgs );
+            if( newReading != null )
+                msgs = ( ( InternalEObject ) newReading ).eInverseAdd( this, CimPackage.BASE_READING__READING_QUALITIES,
+                        BaseReading.class, msgs );
             msgs = basicSetReading( newReading, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldReadingESet = readingESet;
             readingESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.READING_QUALITY__READING, newReading, newReading, !oldReadingESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_QUALITY__READING, newReading,
+                        newReading, !oldReadingESet ) );
         }
     }
 
@@ -440,8 +449,9 @@ public class ReadingQualityImpl extends CimObjectWithIDImpl implements ReadingQu
         else {
             boolean oldReadingESet = readingESet;
             readingESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.READING_QUALITY__READING, null, null, oldReadingESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_QUALITY__READING, null,
+                        null, oldReadingESet ) );
         }
     }
 
@@ -497,19 +507,22 @@ public class ReadingQualityImpl extends CimObjectWithIDImpl implements ReadingQu
     public void setReadingQualityType( ReadingQualityType newReadingQualityType ) {
         if( newReadingQualityType != readingQualityType ) {
             NotificationChain msgs = null;
-            if( readingQualityType != null ) msgs = ( ( InternalEObject ) readingQualityType ).eInverseRemove( this,
-                    CimPackage.READING_QUALITY_TYPE__READING_QUALITIES, ReadingQualityType.class, msgs );
-            if( newReadingQualityType != null ) msgs = ( ( InternalEObject ) newReadingQualityType ).eInverseAdd( this,
-                    CimPackage.READING_QUALITY_TYPE__READING_QUALITIES, ReadingQualityType.class, msgs );
+            if( readingQualityType != null )
+                msgs = ( ( InternalEObject ) readingQualityType ).eInverseRemove( this,
+                        CimPackage.READING_QUALITY_TYPE__READING_QUALITIES, ReadingQualityType.class, msgs );
+            if( newReadingQualityType != null )
+                msgs = ( ( InternalEObject ) newReadingQualityType ).eInverseAdd( this,
+                        CimPackage.READING_QUALITY_TYPE__READING_QUALITIES, ReadingQualityType.class, msgs );
             msgs = basicSetReadingQualityType( newReadingQualityType, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldReadingQualityTypeESet = readingQualityTypeESet;
             readingQualityTypeESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.READING_QUALITY__READING_QUALITY_TYPE,
-                            newReadingQualityType, newReadingQualityType, !oldReadingQualityTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.READING_QUALITY__READING_QUALITY_TYPE, newReadingQualityType, newReadingQualityType,
+                        !oldReadingQualityTypeESet ) );
         }
     }
 
@@ -552,8 +565,9 @@ public class ReadingQualityImpl extends CimObjectWithIDImpl implements ReadingQu
         else {
             boolean oldReadingQualityTypeESet = readingQualityTypeESet;
             readingQualityTypeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.READING_QUALITY__READING_QUALITY_TYPE, null, null, oldReadingQualityTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.READING_QUALITY__READING_QUALITY_TYPE, null, null, oldReadingQualityTypeESet ) );
         }
     }
 
@@ -576,12 +590,14 @@ public class ReadingQualityImpl extends CimObjectWithIDImpl implements ReadingQu
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.READING_QUALITY__READING:
-            if( reading != null ) msgs = ( ( InternalEObject ) reading ).eInverseRemove( this,
-                    CimPackage.BASE_READING__READING_QUALITIES, BaseReading.class, msgs );
+            if( reading != null )
+                msgs = ( ( InternalEObject ) reading ).eInverseRemove( this, CimPackage.BASE_READING__READING_QUALITIES,
+                        BaseReading.class, msgs );
             return basicSetReading( ( BaseReading ) otherEnd, msgs );
         case CimPackage.READING_QUALITY__READING_QUALITY_TYPE:
-            if( readingQualityType != null ) msgs = ( ( InternalEObject ) readingQualityType ).eInverseRemove( this,
-                    CimPackage.READING_QUALITY_TYPE__READING_QUALITIES, ReadingQualityType.class, msgs );
+            if( readingQualityType != null )
+                msgs = ( ( InternalEObject ) readingQualityType ).eInverseRemove( this,
+                        CimPackage.READING_QUALITY_TYPE__READING_QUALITIES, ReadingQualityType.class, msgs );
             return basicSetReadingQualityType( ( ReadingQualityType ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -710,7 +726,7 @@ public class ReadingQualityImpl extends CimObjectWithIDImpl implements ReadingQu
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (comment: " );
         if( commentESet )
             result.append( comment );

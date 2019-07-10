@@ -274,8 +274,9 @@ public class WindContCurrLimIECImpl extends IdentifiedObjectImpl implements Wind
         imax = newImax;
         boolean oldImaxESet = imaxESet;
         imaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_CURR_LIM_IEC__IMAX, oldImax, imax, !oldImaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_CURR_LIM_IEC__IMAX, oldImax,
+                    imax, !oldImaxESet ) );
     }
 
     /**
@@ -289,8 +290,9 @@ public class WindContCurrLimIECImpl extends IdentifiedObjectImpl implements Wind
         boolean oldImaxESet = imaxESet;
         imax = IMAX_EDEFAULT;
         imaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_CURR_LIM_IEC__IMAX, oldImax, IMAX_EDEFAULT, oldImaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_CURR_LIM_IEC__IMAX, oldImax,
+                    IMAX_EDEFAULT, oldImaxESet ) );
     }
 
     /**
@@ -324,8 +326,9 @@ public class WindContCurrLimIECImpl extends IdentifiedObjectImpl implements Wind
         imaxdip = newImaxdip;
         boolean oldImaxdipESet = imaxdipESet;
         imaxdipESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_CURR_LIM_IEC__IMAXDIP, oldImaxdip, imaxdip, !oldImaxdipESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_CURR_LIM_IEC__IMAXDIP,
+                    oldImaxdip, imaxdip, !oldImaxdipESet ) );
     }
 
     /**
@@ -339,8 +342,9 @@ public class WindContCurrLimIECImpl extends IdentifiedObjectImpl implements Wind
         boolean oldImaxdipESet = imaxdipESet;
         imaxdip = IMAXDIP_EDEFAULT;
         imaxdipESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_CURR_LIM_IEC__IMAXDIP, oldImaxdip, IMAXDIP_EDEFAULT, oldImaxdipESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_CURR_LIM_IEC__IMAXDIP,
+                    oldImaxdip, IMAXDIP_EDEFAULT, oldImaxdipESet ) );
     }
 
     /**
@@ -374,8 +378,9 @@ public class WindContCurrLimIECImpl extends IdentifiedObjectImpl implements Wind
         mdfslim = newMdfslim;
         boolean oldMdfslimESet = mdfslimESet;
         mdfslimESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_CURR_LIM_IEC__MDFSLIM, oldMdfslim, mdfslim, !oldMdfslimESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_CURR_LIM_IEC__MDFSLIM,
+                    oldMdfslim, mdfslim, !oldMdfslimESet ) );
     }
 
     /**
@@ -389,8 +394,9 @@ public class WindContCurrLimIECImpl extends IdentifiedObjectImpl implements Wind
         boolean oldMdfslimESet = mdfslimESet;
         mdfslim = MDFSLIM_EDEFAULT;
         mdfslimESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_CURR_LIM_IEC__MDFSLIM, oldMdfslim, MDFSLIM_EDEFAULT, oldMdfslimESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_CURR_LIM_IEC__MDFSLIM,
+                    oldMdfslim, MDFSLIM_EDEFAULT, oldMdfslimESet ) );
     }
 
     /**
@@ -424,8 +430,9 @@ public class WindContCurrLimIECImpl extends IdentifiedObjectImpl implements Wind
         mqpri = newMqpri;
         boolean oldMqpriESet = mqpriESet;
         mqpriESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_CURR_LIM_IEC__MQPRI, oldMqpri, mqpri, !oldMqpriESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_CURR_LIM_IEC__MQPRI, oldMqpri,
+                    mqpri, !oldMqpriESet ) );
     }
 
     /**
@@ -439,8 +446,9 @@ public class WindContCurrLimIECImpl extends IdentifiedObjectImpl implements Wind
         boolean oldMqpriESet = mqpriESet;
         mqpri = MQPRI_EDEFAULT;
         mqpriESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_CURR_LIM_IEC__MQPRI, oldMqpri, MQPRI_EDEFAULT, oldMqpriESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_CURR_LIM_IEC__MQPRI,
+                    oldMqpri, MQPRI_EDEFAULT, oldMqpriESet ) );
     }
 
     /**
@@ -474,8 +482,9 @@ public class WindContCurrLimIECImpl extends IdentifiedObjectImpl implements Wind
         tufilt = newTufilt;
         boolean oldTufiltESet = tufiltESet;
         tufiltESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_CURR_LIM_IEC__TUFILT, oldTufilt, tufilt, !oldTufiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_CURR_LIM_IEC__TUFILT,
+                    oldTufilt, tufilt, !oldTufiltESet ) );
     }
 
     /**
@@ -489,8 +498,9 @@ public class WindContCurrLimIECImpl extends IdentifiedObjectImpl implements Wind
         boolean oldTufiltESet = tufiltESet;
         tufilt = TUFILT_EDEFAULT;
         tufiltESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_CURR_LIM_IEC__TUFILT, oldTufilt, TUFILT_EDEFAULT, oldTufiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_CURR_LIM_IEC__TUFILT,
+                    oldTufilt, TUFILT_EDEFAULT, oldTufiltESet ) );
     }
 
     /**
@@ -594,9 +604,10 @@ public class WindContCurrLimIECImpl extends IdentifiedObjectImpl implements Wind
         else {
             boolean oldWindTurbineType3or4IECESet = windTurbineType3or4IECESet;
             windTurbineType3or4IECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_CONT_CURR_LIM_IEC__WIND_TURBINE_TYPE3OR4_IEC, newWindTurbineType3or4IEC,
-                    newWindTurbineType3or4IEC, !oldWindTurbineType3or4IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_CONT_CURR_LIM_IEC__WIND_TURBINE_TYPE3OR4_IEC, newWindTurbineType3or4IEC,
+                        newWindTurbineType3or4IEC, !oldWindTurbineType3or4IECESet ) );
         }
     }
 
@@ -639,9 +650,10 @@ public class WindContCurrLimIECImpl extends IdentifiedObjectImpl implements Wind
         else {
             boolean oldWindTurbineType3or4IECESet = windTurbineType3or4IECESet;
             windTurbineType3or4IECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_CONT_CURR_LIM_IEC__WIND_TURBINE_TYPE3OR4_IEC, null, null,
-                    oldWindTurbineType3or4IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_CONT_CURR_LIM_IEC__WIND_TURBINE_TYPE3OR4_IEC, null, null,
+                        oldWindTurbineType3or4IECESet ) );
         }
     }
 
@@ -822,7 +834,7 @@ public class WindContCurrLimIECImpl extends IdentifiedObjectImpl implements Wind
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (imax: " );
         if( imaxESet )
             result.append( imax );

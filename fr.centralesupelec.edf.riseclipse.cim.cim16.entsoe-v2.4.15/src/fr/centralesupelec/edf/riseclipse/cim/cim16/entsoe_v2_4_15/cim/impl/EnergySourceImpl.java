@@ -477,8 +477,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         activePower = newActivePower;
         boolean oldActivePowerESet = activePowerESet;
         activePowerESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ENERGY_SOURCE__ACTIVE_POWER, oldActivePower, activePower, !oldActivePowerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_SOURCE__ACTIVE_POWER,
+                    oldActivePower, activePower, !oldActivePowerESet ) );
     }
 
     /**
@@ -492,8 +493,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         boolean oldActivePowerESet = activePowerESet;
         activePower = ACTIVE_POWER_EDEFAULT;
         activePowerESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_SOURCE__ACTIVE_POWER, oldActivePower, ACTIVE_POWER_EDEFAULT, oldActivePowerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_SOURCE__ACTIVE_POWER,
+                    oldActivePower, ACTIVE_POWER_EDEFAULT, oldActivePowerESet ) );
     }
 
     /**
@@ -594,8 +596,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         boolean oldRESet = rESet;
         r = R_EDEFAULT;
         rESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_SOURCE__R, oldR, R_EDEFAULT, oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_SOURCE__R, oldR, R_EDEFAULT,
+                    oldRESet ) );
     }
 
     /**
@@ -629,8 +632,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         r0 = newR0;
         boolean oldR0ESet = r0ESet;
         r0ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_SOURCE__R0, oldR0, r0, !oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_SOURCE__R0, oldR0, r0,
+                    !oldR0ESet ) );
     }
 
     /**
@@ -644,8 +648,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         boolean oldR0ESet = r0ESet;
         r0 = R0_EDEFAULT;
         r0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_SOURCE__R0, oldR0, R0_EDEFAULT, oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_SOURCE__R0, oldR0, R0_EDEFAULT,
+                    oldR0ESet ) );
     }
 
     /**
@@ -679,8 +684,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         reactivePower = newReactivePower;
         boolean oldReactivePowerESet = reactivePowerESet;
         reactivePowerESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ENERGY_SOURCE__REACTIVE_POWER, oldReactivePower, reactivePower, !oldReactivePowerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_SOURCE__REACTIVE_POWER,
+                    oldReactivePower, reactivePower, !oldReactivePowerESet ) );
     }
 
     /**
@@ -730,8 +736,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         rn = newRn;
         boolean oldRnESet = rnESet;
         rnESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_SOURCE__RN, oldRn, rn, !oldRnESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_SOURCE__RN, oldRn, rn,
+                    !oldRnESet ) );
     }
 
     /**
@@ -745,8 +752,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         boolean oldRnESet = rnESet;
         rn = RN_EDEFAULT;
         rnESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_SOURCE__RN, oldRn, RN_EDEFAULT, oldRnESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_SOURCE__RN, oldRn, RN_EDEFAULT,
+                    oldRnESet ) );
     }
 
     /**
@@ -780,8 +788,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         voltageAngle = newVoltageAngle;
         boolean oldVoltageAngleESet = voltageAngleESet;
         voltageAngleESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ENERGY_SOURCE__VOLTAGE_ANGLE, oldVoltageAngle, voltageAngle, !oldVoltageAngleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_SOURCE__VOLTAGE_ANGLE,
+                    oldVoltageAngle, voltageAngle, !oldVoltageAngleESet ) );
     }
 
     /**
@@ -898,8 +907,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         boolean oldXESet = xESet;
         x = X_EDEFAULT;
         xESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_SOURCE__X, oldX, X_EDEFAULT, oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_SOURCE__X, oldX, X_EDEFAULT,
+                    oldXESet ) );
     }
 
     /**
@@ -933,8 +943,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         x0 = newX0;
         boolean oldX0ESet = x0ESet;
         x0ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_SOURCE__X0, oldX0, x0, !oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_SOURCE__X0, oldX0, x0,
+                    !oldX0ESet ) );
     }
 
     /**
@@ -948,8 +959,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         boolean oldX0ESet = x0ESet;
         x0 = X0_EDEFAULT;
         x0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_SOURCE__X0, oldX0, X0_EDEFAULT, oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_SOURCE__X0, oldX0, X0_EDEFAULT,
+                    oldX0ESet ) );
     }
 
     /**
@@ -983,8 +995,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         xn = newXn;
         boolean oldXnESet = xnESet;
         xnESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_SOURCE__XN, oldXn, xn, !oldXnESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_SOURCE__XN, oldXn, xn,
+                    !oldXnESet ) );
     }
 
     /**
@@ -998,8 +1011,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         boolean oldXnESet = xnESet;
         xn = XN_EDEFAULT;
         xnESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_SOURCE__XN, oldXn, XN_EDEFAULT, oldXnESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_SOURCE__XN, oldXn, XN_EDEFAULT,
+                    oldXnESet ) );
     }
 
     /**
@@ -1068,9 +1082,10 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         else {
             boolean oldWindTurbineType3or4DynamicsESet = windTurbineType3or4DynamicsESet;
             windTurbineType3or4DynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ENERGY_SOURCE__WIND_TURBINE_TYPE3OR4_DYNAMICS, newWindTurbineType3or4Dynamics,
-                    newWindTurbineType3or4Dynamics, !oldWindTurbineType3or4DynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.ENERGY_SOURCE__WIND_TURBINE_TYPE3OR4_DYNAMICS, newWindTurbineType3or4Dynamics,
+                        newWindTurbineType3or4Dynamics, !oldWindTurbineType3or4DynamicsESet ) );
         }
     }
 
@@ -1113,9 +1128,10 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         else {
             boolean oldWindTurbineType3or4DynamicsESet = windTurbineType3or4DynamicsESet;
             windTurbineType3or4DynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ENERGY_SOURCE__WIND_TURBINE_TYPE3OR4_DYNAMICS, null, null,
-                    oldWindTurbineType3or4DynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.ENERGY_SOURCE__WIND_TURBINE_TYPE3OR4_DYNAMICS, null, null,
+                        oldWindTurbineType3or4DynamicsESet ) );
         }
     }
 
@@ -1140,8 +1156,10 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
             InternalEObject oldEnergySourceAction = ( InternalEObject ) energySourceAction;
             energySourceAction = ( EnergySourceAction ) eResolveProxy( oldEnergySourceAction );
             if( energySourceAction != oldEnergySourceAction ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.ENERGY_SOURCE__ENERGY_SOURCE_ACTION, oldEnergySourceAction, energySourceAction ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.ENERGY_SOURCE__ENERGY_SOURCE_ACTION, oldEnergySourceAction,
+                            energySourceAction ) );
             }
         }
         return energySourceAction;
@@ -1188,10 +1206,12 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
     public void setEnergySourceAction( EnergySourceAction newEnergySourceAction ) {
         if( newEnergySourceAction != energySourceAction ) {
             NotificationChain msgs = null;
-            if( energySourceAction != null ) msgs = ( ( InternalEObject ) energySourceAction ).eInverseRemove( this,
-                    CimPackage.ENERGY_SOURCE_ACTION__ENERGY_SOURCE, EnergySourceAction.class, msgs );
-            if( newEnergySourceAction != null ) msgs = ( ( InternalEObject ) newEnergySourceAction ).eInverseAdd( this,
-                    CimPackage.ENERGY_SOURCE_ACTION__ENERGY_SOURCE, EnergySourceAction.class, msgs );
+            if( energySourceAction != null )
+                msgs = ( ( InternalEObject ) energySourceAction ).eInverseRemove( this,
+                        CimPackage.ENERGY_SOURCE_ACTION__ENERGY_SOURCE, EnergySourceAction.class, msgs );
+            if( newEnergySourceAction != null )
+                msgs = ( ( InternalEObject ) newEnergySourceAction ).eInverseAdd( this,
+                        CimPackage.ENERGY_SOURCE_ACTION__ENERGY_SOURCE, EnergySourceAction.class, msgs );
             msgs = basicSetEnergySourceAction( newEnergySourceAction, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1243,8 +1263,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         else {
             boolean oldEnergySourceActionESet = energySourceActionESet;
             energySourceActionESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ENERGY_SOURCE__ENERGY_SOURCE_ACTION, null, null, oldEnergySourceActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.ENERGY_SOURCE__ENERGY_SOURCE_ACTION, null, null, oldEnergySourceActionESet ) );
         }
     }
 
@@ -1300,8 +1321,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
     public void setEnergySchedulingType( EnergySchedulingType newEnergySchedulingType ) {
         if( newEnergySchedulingType != energySchedulingType ) {
             NotificationChain msgs = null;
-            if( energySchedulingType != null ) msgs = ( ( InternalEObject ) energySchedulingType ).eInverseRemove( this,
-                    CimPackage.ENERGY_SCHEDULING_TYPE__ENERGY_SOURCE, EnergySchedulingType.class, msgs );
+            if( energySchedulingType != null )
+                msgs = ( ( InternalEObject ) energySchedulingType ).eInverseRemove( this,
+                        CimPackage.ENERGY_SCHEDULING_TYPE__ENERGY_SOURCE, EnergySchedulingType.class, msgs );
             if( newEnergySchedulingType != null )
                 msgs = ( ( InternalEObject ) newEnergySchedulingType ).eInverseAdd( this,
                         CimPackage.ENERGY_SCHEDULING_TYPE__ENERGY_SOURCE, EnergySchedulingType.class, msgs );
@@ -1311,9 +1333,10 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         else {
             boolean oldEnergySchedulingTypeESet = energySchedulingTypeESet;
             energySchedulingTypeESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_SOURCE__ENERGY_SCHEDULING_TYPE,
-                            newEnergySchedulingType, newEnergySchedulingType, !oldEnergySchedulingTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.ENERGY_SOURCE__ENERGY_SCHEDULING_TYPE, newEnergySchedulingType,
+                        newEnergySchedulingType, !oldEnergySchedulingTypeESet ) );
         }
     }
 
@@ -1356,8 +1379,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
         else {
             boolean oldEnergySchedulingTypeESet = energySchedulingTypeESet;
             energySchedulingTypeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ENERGY_SOURCE__ENERGY_SCHEDULING_TYPE, null, null, oldEnergySchedulingTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.ENERGY_SOURCE__ENERGY_SCHEDULING_TYPE, null, null, oldEnergySchedulingTypeESet ) );
         }
     }
 
@@ -1380,8 +1404,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ENERGY_SOURCE__ENERGY_SOURCE_ACTION:
-            if( energySourceAction != null ) msgs = ( ( InternalEObject ) energySourceAction ).eInverseRemove( this,
-                    CimPackage.ENERGY_SOURCE_ACTION__ENERGY_SOURCE, EnergySourceAction.class, msgs );
+            if( energySourceAction != null )
+                msgs = ( ( InternalEObject ) energySourceAction ).eInverseRemove( this,
+                        CimPackage.ENERGY_SOURCE_ACTION__ENERGY_SOURCE, EnergySourceAction.class, msgs );
             return basicSetEnergySourceAction( ( EnergySourceAction ) otherEnd, msgs );
         case CimPackage.ENERGY_SOURCE__WIND_TURBINE_TYPE3OR4_DYNAMICS:
             if( windTurbineType3or4Dynamics != null )
@@ -1390,8 +1415,9 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
                         msgs );
             return basicSetWindTurbineType3or4Dynamics( ( WindTurbineType3or4Dynamics ) otherEnd, msgs );
         case CimPackage.ENERGY_SOURCE__ENERGY_SCHEDULING_TYPE:
-            if( energySchedulingType != null ) msgs = ( ( InternalEObject ) energySchedulingType ).eInverseRemove( this,
-                    CimPackage.ENERGY_SCHEDULING_TYPE__ENERGY_SOURCE, EnergySchedulingType.class, msgs );
+            if( energySchedulingType != null )
+                msgs = ( ( InternalEObject ) energySchedulingType ).eInverseRemove( this,
+                        CimPackage.ENERGY_SCHEDULING_TYPE__ENERGY_SOURCE, EnergySchedulingType.class, msgs );
             return basicSetEnergySchedulingType( ( EnergySchedulingType ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1613,7 +1639,7 @@ public class EnergySourceImpl extends ConductingEquipmentImpl implements EnergyS
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (activePower: " );
         if( activePowerESet )
             result.append( activePower );

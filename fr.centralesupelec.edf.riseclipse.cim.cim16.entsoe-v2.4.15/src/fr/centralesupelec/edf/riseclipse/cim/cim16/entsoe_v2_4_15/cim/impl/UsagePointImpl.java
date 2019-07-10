@@ -906,8 +906,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         checkBilling = newCheckBilling;
         boolean oldCheckBillingESet = checkBillingESet;
         checkBillingESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.USAGE_POINT__CHECK_BILLING, oldCheckBilling, checkBilling, !oldCheckBillingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.USAGE_POINT__CHECK_BILLING,
+                    oldCheckBilling, checkBilling, !oldCheckBillingESet ) );
     }
 
     /**
@@ -921,8 +922,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         boolean oldCheckBillingESet = checkBillingESet;
         checkBilling = CHECK_BILLING_EDEFAULT;
         checkBillingESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.USAGE_POINT__CHECK_BILLING, oldCheckBilling, CHECK_BILLING_EDEFAULT, oldCheckBillingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USAGE_POINT__CHECK_BILLING,
+                    oldCheckBilling, CHECK_BILLING_EDEFAULT, oldCheckBillingESet ) );
     }
 
     /**
@@ -1008,8 +1010,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         estimatedLoad = newEstimatedLoad;
         boolean oldEstimatedLoadESet = estimatedLoadESet;
         estimatedLoadESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.USAGE_POINT__ESTIMATED_LOAD, oldEstimatedLoad, estimatedLoad, !oldEstimatedLoadESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.USAGE_POINT__ESTIMATED_LOAD,
+                    oldEstimatedLoad, estimatedLoad, !oldEstimatedLoadESet ) );
     }
 
     /**
@@ -1059,8 +1062,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         grounded = newGrounded;
         boolean oldGroundedESet = groundedESet;
         groundedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.USAGE_POINT__GROUNDED, oldGrounded, grounded, !oldGroundedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.USAGE_POINT__GROUNDED, oldGrounded,
+                    grounded, !oldGroundedESet ) );
     }
 
     /**
@@ -1074,8 +1078,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         boolean oldGroundedESet = groundedESet;
         grounded = GROUNDED_EDEFAULT;
         groundedESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.USAGE_POINT__GROUNDED, oldGrounded, GROUNDED_EDEFAULT, oldGroundedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USAGE_POINT__GROUNDED, oldGrounded,
+                    GROUNDED_EDEFAULT, oldGroundedESet ) );
     }
 
     /**
@@ -1109,8 +1114,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         isSdp = newIsSdp;
         boolean oldIsSdpESet = isSdpESet;
         isSdpESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.USAGE_POINT__IS_SDP, oldIsSdp, isSdp, !oldIsSdpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.USAGE_POINT__IS_SDP, oldIsSdp, isSdp,
+                    !oldIsSdpESet ) );
     }
 
     /**
@@ -1124,8 +1130,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         boolean oldIsSdpESet = isSdpESet;
         isSdp = IS_SDP_EDEFAULT;
         isSdpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.USAGE_POINT__IS_SDP, oldIsSdp, IS_SDP_EDEFAULT, oldIsSdpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USAGE_POINT__IS_SDP, oldIsSdp,
+                    IS_SDP_EDEFAULT, oldIsSdpESet ) );
     }
 
     /**
@@ -1159,8 +1166,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         isVirtual = newIsVirtual;
         boolean oldIsVirtualESet = isVirtualESet;
         isVirtualESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.USAGE_POINT__IS_VIRTUAL, oldIsVirtual, isVirtual, !oldIsVirtualESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.USAGE_POINT__IS_VIRTUAL, oldIsVirtual,
+                    isVirtual, !oldIsVirtualESet ) );
     }
 
     /**
@@ -1174,8 +1182,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         boolean oldIsVirtualESet = isVirtualESet;
         isVirtual = IS_VIRTUAL_EDEFAULT;
         isVirtualESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.USAGE_POINT__IS_VIRTUAL, oldIsVirtual, IS_VIRTUAL_EDEFAULT, oldIsVirtualESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USAGE_POINT__IS_VIRTUAL, oldIsVirtual,
+                    IS_VIRTUAL_EDEFAULT, oldIsVirtualESet ) );
     }
 
     /**
@@ -1313,8 +1322,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         outageRegion = newOutageRegion;
         boolean oldOutageRegionESet = outageRegionESet;
         outageRegionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.USAGE_POINT__OUTAGE_REGION, oldOutageRegion, outageRegion, !oldOutageRegionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.USAGE_POINT__OUTAGE_REGION,
+                    oldOutageRegion, outageRegion, !oldOutageRegionESet ) );
     }
 
     /**
@@ -1328,8 +1338,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         boolean oldOutageRegionESet = outageRegionESet;
         outageRegion = OUTAGE_REGION_EDEFAULT;
         outageRegionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.USAGE_POINT__OUTAGE_REGION, oldOutageRegion, OUTAGE_REGION_EDEFAULT, oldOutageRegionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USAGE_POINT__OUTAGE_REGION,
+                    oldOutageRegion, OUTAGE_REGION_EDEFAULT, oldOutageRegionESet ) );
     }
 
     /**
@@ -1363,8 +1374,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         phaseCode = newPhaseCode == null ? PHASE_CODE_EDEFAULT : newPhaseCode;
         boolean oldPhaseCodeESet = phaseCodeESet;
         phaseCodeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.USAGE_POINT__PHASE_CODE, oldPhaseCode, phaseCode, !oldPhaseCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.USAGE_POINT__PHASE_CODE, oldPhaseCode,
+                    phaseCode, !oldPhaseCodeESet ) );
     }
 
     /**
@@ -1378,8 +1390,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         boolean oldPhaseCodeESet = phaseCodeESet;
         phaseCode = PHASE_CODE_EDEFAULT;
         phaseCodeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.USAGE_POINT__PHASE_CODE, oldPhaseCode, PHASE_CODE_EDEFAULT, oldPhaseCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USAGE_POINT__PHASE_CODE, oldPhaseCode,
+                    PHASE_CODE_EDEFAULT, oldPhaseCodeESet ) );
     }
 
     /**
@@ -1413,8 +1426,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         ratedCurrent = newRatedCurrent;
         boolean oldRatedCurrentESet = ratedCurrentESet;
         ratedCurrentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.USAGE_POINT__RATED_CURRENT, oldRatedCurrent, ratedCurrent, !oldRatedCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.USAGE_POINT__RATED_CURRENT,
+                    oldRatedCurrent, ratedCurrent, !oldRatedCurrentESet ) );
     }
 
     /**
@@ -1428,8 +1442,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         boolean oldRatedCurrentESet = ratedCurrentESet;
         ratedCurrent = RATED_CURRENT_EDEFAULT;
         ratedCurrentESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.USAGE_POINT__RATED_CURRENT, oldRatedCurrent, RATED_CURRENT_EDEFAULT, oldRatedCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USAGE_POINT__RATED_CURRENT,
+                    oldRatedCurrent, RATED_CURRENT_EDEFAULT, oldRatedCurrentESet ) );
     }
 
     /**
@@ -1463,8 +1478,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         ratedPower = newRatedPower;
         boolean oldRatedPowerESet = ratedPowerESet;
         ratedPowerESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.USAGE_POINT__RATED_POWER, oldRatedPower, ratedPower, !oldRatedPowerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.USAGE_POINT__RATED_POWER, oldRatedPower,
+                    ratedPower, !oldRatedPowerESet ) );
     }
 
     /**
@@ -1478,8 +1494,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         boolean oldRatedPowerESet = ratedPowerESet;
         ratedPower = RATED_POWER_EDEFAULT;
         ratedPowerESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.USAGE_POINT__RATED_POWER, oldRatedPower, RATED_POWER_EDEFAULT, oldRatedPowerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USAGE_POINT__RATED_POWER,
+                    oldRatedPower, RATED_POWER_EDEFAULT, oldRatedPowerESet ) );
     }
 
     /**
@@ -1513,8 +1530,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         readCycle = newReadCycle;
         boolean oldReadCycleESet = readCycleESet;
         readCycleESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.USAGE_POINT__READ_CYCLE, oldReadCycle, readCycle, !oldReadCycleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.USAGE_POINT__READ_CYCLE, oldReadCycle,
+                    readCycle, !oldReadCycleESet ) );
     }
 
     /**
@@ -1528,8 +1546,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         boolean oldReadCycleESet = readCycleESet;
         readCycle = READ_CYCLE_EDEFAULT;
         readCycleESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.USAGE_POINT__READ_CYCLE, oldReadCycle, READ_CYCLE_EDEFAULT, oldReadCycleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USAGE_POINT__READ_CYCLE, oldReadCycle,
+                    READ_CYCLE_EDEFAULT, oldReadCycleESet ) );
     }
 
     /**
@@ -1563,8 +1582,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         readRoute = newReadRoute;
         boolean oldReadRouteESet = readRouteESet;
         readRouteESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.USAGE_POINT__READ_ROUTE, oldReadRoute, readRoute, !oldReadRouteESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.USAGE_POINT__READ_ROUTE, oldReadRoute,
+                    readRoute, !oldReadRouteESet ) );
     }
 
     /**
@@ -1578,8 +1598,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         boolean oldReadRouteESet = readRouteESet;
         readRoute = READ_ROUTE_EDEFAULT;
         readRouteESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.USAGE_POINT__READ_ROUTE, oldReadRoute, READ_ROUTE_EDEFAULT, oldReadRouteESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USAGE_POINT__READ_ROUTE, oldReadRoute,
+                    READ_ROUTE_EDEFAULT, oldReadRouteESet ) );
     }
 
     /**
@@ -1842,10 +1863,12 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
     public void setUsagePointLocation( UsagePointLocation newUsagePointLocation ) {
         if( newUsagePointLocation != usagePointLocation ) {
             NotificationChain msgs = null;
-            if( usagePointLocation != null ) msgs = ( ( InternalEObject ) usagePointLocation ).eInverseRemove( this,
-                    CimPackage.USAGE_POINT_LOCATION__USAGE_POINTS, UsagePointLocation.class, msgs );
-            if( newUsagePointLocation != null ) msgs = ( ( InternalEObject ) newUsagePointLocation ).eInverseAdd( this,
-                    CimPackage.USAGE_POINT_LOCATION__USAGE_POINTS, UsagePointLocation.class, msgs );
+            if( usagePointLocation != null )
+                msgs = ( ( InternalEObject ) usagePointLocation ).eInverseRemove( this,
+                        CimPackage.USAGE_POINT_LOCATION__USAGE_POINTS, UsagePointLocation.class, msgs );
+            if( newUsagePointLocation != null )
+                msgs = ( ( InternalEObject ) newUsagePointLocation ).eInverseAdd( this,
+                        CimPackage.USAGE_POINT_LOCATION__USAGE_POINTS, UsagePointLocation.class, msgs );
             msgs = basicSetUsagePointLocation( newUsagePointLocation, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1897,8 +1920,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         else {
             boolean oldUsagePointLocationESet = usagePointLocationESet;
             usagePointLocationESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.USAGE_POINT__USAGE_POINT_LOCATION, null, null, oldUsagePointLocationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USAGE_POINT__USAGE_POINT_LOCATION,
+                        null, null, oldUsagePointLocationESet ) );
         }
     }
 
@@ -2163,10 +2187,12 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
     public void setCustomerAgreement( CustomerAgreement newCustomerAgreement ) {
         if( newCustomerAgreement != customerAgreement ) {
             NotificationChain msgs = null;
-            if( customerAgreement != null ) msgs = ( ( InternalEObject ) customerAgreement ).eInverseRemove( this,
-                    CimPackage.CUSTOMER_AGREEMENT__USAGE_POINTS, CustomerAgreement.class, msgs );
-            if( newCustomerAgreement != null ) msgs = ( ( InternalEObject ) newCustomerAgreement ).eInverseAdd( this,
-                    CimPackage.CUSTOMER_AGREEMENT__USAGE_POINTS, CustomerAgreement.class, msgs );
+            if( customerAgreement != null )
+                msgs = ( ( InternalEObject ) customerAgreement ).eInverseRemove( this,
+                        CimPackage.CUSTOMER_AGREEMENT__USAGE_POINTS, CustomerAgreement.class, msgs );
+            if( newCustomerAgreement != null )
+                msgs = ( ( InternalEObject ) newCustomerAgreement ).eInverseAdd( this,
+                        CimPackage.CUSTOMER_AGREEMENT__USAGE_POINTS, CustomerAgreement.class, msgs );
             msgs = basicSetCustomerAgreement( newCustomerAgreement, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -2217,8 +2243,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         else {
             boolean oldCustomerAgreementESet = customerAgreementESet;
             customerAgreementESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.USAGE_POINT__CUSTOMER_AGREEMENT, null, null, oldCustomerAgreementESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USAGE_POINT__CUSTOMER_AGREEMENT,
+                        null, null, oldCustomerAgreementESet ) );
         }
     }
 
@@ -2341,10 +2368,12 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
     public void setServiceLocation( ServiceLocation newServiceLocation ) {
         if( newServiceLocation != serviceLocation ) {
             NotificationChain msgs = null;
-            if( serviceLocation != null ) msgs = ( ( InternalEObject ) serviceLocation ).eInverseRemove( this,
-                    CimPackage.SERVICE_LOCATION__USAGE_POINTS, ServiceLocation.class, msgs );
-            if( newServiceLocation != null ) msgs = ( ( InternalEObject ) newServiceLocation ).eInverseAdd( this,
-                    CimPackage.SERVICE_LOCATION__USAGE_POINTS, ServiceLocation.class, msgs );
+            if( serviceLocation != null )
+                msgs = ( ( InternalEObject ) serviceLocation ).eInverseRemove( this,
+                        CimPackage.SERVICE_LOCATION__USAGE_POINTS, ServiceLocation.class, msgs );
+            if( newServiceLocation != null )
+                msgs = ( ( InternalEObject ) newServiceLocation ).eInverseAdd( this,
+                        CimPackage.SERVICE_LOCATION__USAGE_POINTS, ServiceLocation.class, msgs );
             msgs = basicSetServiceLocation( newServiceLocation, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -2395,8 +2424,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         else {
             boolean oldServiceLocationESet = serviceLocationESet;
             serviceLocationESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.USAGE_POINT__SERVICE_LOCATION, null, null, oldServiceLocationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USAGE_POINT__SERVICE_LOCATION,
+                        null, null, oldServiceLocationESet ) );
         }
     }
 
@@ -2485,10 +2515,12 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
     public void setServiceSupplier( ServiceSupplier newServiceSupplier ) {
         if( newServiceSupplier != serviceSupplier ) {
             NotificationChain msgs = null;
-            if( serviceSupplier != null ) msgs = ( ( InternalEObject ) serviceSupplier ).eInverseRemove( this,
-                    CimPackage.SERVICE_SUPPLIER__USAGE_POINTS, ServiceSupplier.class, msgs );
-            if( newServiceSupplier != null ) msgs = ( ( InternalEObject ) newServiceSupplier ).eInverseAdd( this,
-                    CimPackage.SERVICE_SUPPLIER__USAGE_POINTS, ServiceSupplier.class, msgs );
+            if( serviceSupplier != null )
+                msgs = ( ( InternalEObject ) serviceSupplier ).eInverseRemove( this,
+                        CimPackage.SERVICE_SUPPLIER__USAGE_POINTS, ServiceSupplier.class, msgs );
+            if( newServiceSupplier != null )
+                msgs = ( ( InternalEObject ) newServiceSupplier ).eInverseAdd( this,
+                        CimPackage.SERVICE_SUPPLIER__USAGE_POINTS, ServiceSupplier.class, msgs );
             msgs = basicSetServiceSupplier( newServiceSupplier, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -2539,8 +2571,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         else {
             boolean oldServiceSupplierESet = serviceSupplierESet;
             serviceSupplierESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.USAGE_POINT__SERVICE_SUPPLIER, null, null, oldServiceSupplierESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USAGE_POINT__SERVICE_SUPPLIER,
+                        null, null, oldServiceSupplierESet ) );
         }
     }
 
@@ -2595,10 +2628,12 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
     public void setServiceCategory( ServiceCategory newServiceCategory ) {
         if( newServiceCategory != serviceCategory ) {
             NotificationChain msgs = null;
-            if( serviceCategory != null ) msgs = ( ( InternalEObject ) serviceCategory ).eInverseRemove( this,
-                    CimPackage.SERVICE_CATEGORY__USAGE_POINTS, ServiceCategory.class, msgs );
-            if( newServiceCategory != null ) msgs = ( ( InternalEObject ) newServiceCategory ).eInverseAdd( this,
-                    CimPackage.SERVICE_CATEGORY__USAGE_POINTS, ServiceCategory.class, msgs );
+            if( serviceCategory != null )
+                msgs = ( ( InternalEObject ) serviceCategory ).eInverseRemove( this,
+                        CimPackage.SERVICE_CATEGORY__USAGE_POINTS, ServiceCategory.class, msgs );
+            if( newServiceCategory != null )
+                msgs = ( ( InternalEObject ) newServiceCategory ).eInverseAdd( this,
+                        CimPackage.SERVICE_CATEGORY__USAGE_POINTS, ServiceCategory.class, msgs );
             msgs = basicSetServiceCategory( newServiceCategory, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -2649,8 +2684,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
         else {
             boolean oldServiceCategoryESet = serviceCategoryESet;
             serviceCategoryESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.USAGE_POINT__SERVICE_CATEGORY, null, null, oldServiceCategoryESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USAGE_POINT__SERVICE_CATEGORY,
+                        null, null, oldServiceCategoryESet ) );
         }
     }
 
@@ -2677,12 +2713,14 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getMeterReadings() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.USAGE_POINT__USAGE_POINT_LOCATION:
-            if( usagePointLocation != null ) msgs = ( ( InternalEObject ) usagePointLocation ).eInverseRemove( this,
-                    CimPackage.USAGE_POINT_LOCATION__USAGE_POINTS, UsagePointLocation.class, msgs );
+            if( usagePointLocation != null )
+                msgs = ( ( InternalEObject ) usagePointLocation ).eInverseRemove( this,
+                        CimPackage.USAGE_POINT_LOCATION__USAGE_POINTS, UsagePointLocation.class, msgs );
             return basicSetUsagePointLocation( ( UsagePointLocation ) otherEnd, msgs );
         case CimPackage.USAGE_POINT__SERVICE_LOCATION:
-            if( serviceLocation != null ) msgs = ( ( InternalEObject ) serviceLocation ).eInverseRemove( this,
-                    CimPackage.SERVICE_LOCATION__USAGE_POINTS, ServiceLocation.class, msgs );
+            if( serviceLocation != null )
+                msgs = ( ( InternalEObject ) serviceLocation ).eInverseRemove( this,
+                        CimPackage.SERVICE_LOCATION__USAGE_POINTS, ServiceLocation.class, msgs );
             return basicSetServiceLocation( ( ServiceLocation ) otherEnd, msgs );
         case CimPackage.USAGE_POINT__EQUIPMENTS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getEquipments() ).basicAdd( otherEnd,
@@ -2700,8 +2738,9 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getEndDevices() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.USAGE_POINT__SERVICE_CATEGORY:
-            if( serviceCategory != null ) msgs = ( ( InternalEObject ) serviceCategory ).eInverseRemove( this,
-                    CimPackage.SERVICE_CATEGORY__USAGE_POINTS, ServiceCategory.class, msgs );
+            if( serviceCategory != null )
+                msgs = ( ( InternalEObject ) serviceCategory ).eInverseRemove( this,
+                        CimPackage.SERVICE_CATEGORY__USAGE_POINTS, ServiceCategory.class, msgs );
             return basicSetServiceCategory( ( ServiceCategory ) otherEnd, msgs );
         case CimPackage.USAGE_POINT__USAGE_POINT_GROUPS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getUsagePointGroups() )
@@ -2716,15 +2755,17 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getServiceMultipliers() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.USAGE_POINT__CUSTOMER_AGREEMENT:
-            if( customerAgreement != null ) msgs = ( ( InternalEObject ) customerAgreement ).eInverseRemove( this,
-                    CimPackage.CUSTOMER_AGREEMENT__USAGE_POINTS, CustomerAgreement.class, msgs );
+            if( customerAgreement != null )
+                msgs = ( ( InternalEObject ) customerAgreement ).eInverseRemove( this,
+                        CimPackage.CUSTOMER_AGREEMENT__USAGE_POINTS, CustomerAgreement.class, msgs );
             return basicSetCustomerAgreement( ( CustomerAgreement ) otherEnd, msgs );
         case CimPackage.USAGE_POINT__METER_SERVICE_WORKS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getMeterServiceWorks() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.USAGE_POINT__SERVICE_SUPPLIER:
-            if( serviceSupplier != null ) msgs = ( ( InternalEObject ) serviceSupplier ).eInverseRemove( this,
-                    CimPackage.SERVICE_SUPPLIER__USAGE_POINTS, ServiceSupplier.class, msgs );
+            if( serviceSupplier != null )
+                msgs = ( ( InternalEObject ) serviceSupplier ).eInverseRemove( this,
+                        CimPackage.SERVICE_SUPPLIER__USAGE_POINTS, ServiceSupplier.class, msgs );
             return basicSetServiceSupplier( ( ServiceSupplier ) otherEnd, msgs );
         case CimPackage.USAGE_POINT__OUTAGES:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getOutages() ).basicAdd( otherEnd,
@@ -3189,7 +3230,7 @@ public class UsagePointImpl extends IdentifiedObjectImpl implements UsagePoint {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (amiBillingReady: " );
         if( amiBillingReadyESet )
             result.append( amiBillingReady );

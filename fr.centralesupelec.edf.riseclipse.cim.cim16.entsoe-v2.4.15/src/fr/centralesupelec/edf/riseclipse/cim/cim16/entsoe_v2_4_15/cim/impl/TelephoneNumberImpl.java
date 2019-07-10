@@ -233,8 +233,9 @@ public class TelephoneNumberImpl extends MinimalEObjectImpl.Container implements
         areaCode = newAreaCode;
         boolean oldAreaCodeESet = areaCodeESet;
         areaCodeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TELEPHONE_NUMBER__AREA_CODE, oldAreaCode, areaCode, !oldAreaCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TELEPHONE_NUMBER__AREA_CODE, oldAreaCode,
+                    areaCode, !oldAreaCodeESet ) );
     }
 
     /**
@@ -248,8 +249,9 @@ public class TelephoneNumberImpl extends MinimalEObjectImpl.Container implements
         boolean oldAreaCodeESet = areaCodeESet;
         areaCode = AREA_CODE_EDEFAULT;
         areaCodeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TELEPHONE_NUMBER__AREA_CODE, oldAreaCode, AREA_CODE_EDEFAULT, oldAreaCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TELEPHONE_NUMBER__AREA_CODE,
+                    oldAreaCode, AREA_CODE_EDEFAULT, oldAreaCodeESet ) );
     }
 
     /**
@@ -283,8 +285,9 @@ public class TelephoneNumberImpl extends MinimalEObjectImpl.Container implements
         cityCode = newCityCode;
         boolean oldCityCodeESet = cityCodeESet;
         cityCodeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TELEPHONE_NUMBER__CITY_CODE, oldCityCode, cityCode, !oldCityCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TELEPHONE_NUMBER__CITY_CODE, oldCityCode,
+                    cityCode, !oldCityCodeESet ) );
     }
 
     /**
@@ -298,8 +301,9 @@ public class TelephoneNumberImpl extends MinimalEObjectImpl.Container implements
         boolean oldCityCodeESet = cityCodeESet;
         cityCode = CITY_CODE_EDEFAULT;
         cityCodeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TELEPHONE_NUMBER__CITY_CODE, oldCityCode, CITY_CODE_EDEFAULT, oldCityCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TELEPHONE_NUMBER__CITY_CODE,
+                    oldCityCode, CITY_CODE_EDEFAULT, oldCityCodeESet ) );
     }
 
     /**
@@ -333,8 +337,9 @@ public class TelephoneNumberImpl extends MinimalEObjectImpl.Container implements
         countryCode = newCountryCode;
         boolean oldCountryCodeESet = countryCodeESet;
         countryCodeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TELEPHONE_NUMBER__COUNTRY_CODE, oldCountryCode, countryCode, !oldCountryCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TELEPHONE_NUMBER__COUNTRY_CODE,
+                    oldCountryCode, countryCode, !oldCountryCodeESet ) );
     }
 
     /**
@@ -384,8 +389,9 @@ public class TelephoneNumberImpl extends MinimalEObjectImpl.Container implements
         extension = newExtension;
         boolean oldExtensionESet = extensionESet;
         extensionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TELEPHONE_NUMBER__EXTENSION, oldExtension, extension, !oldExtensionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TELEPHONE_NUMBER__EXTENSION,
+                    oldExtension, extension, !oldExtensionESet ) );
     }
 
     /**
@@ -399,8 +405,9 @@ public class TelephoneNumberImpl extends MinimalEObjectImpl.Container implements
         boolean oldExtensionESet = extensionESet;
         extension = EXTENSION_EDEFAULT;
         extensionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TELEPHONE_NUMBER__EXTENSION, oldExtension, EXTENSION_EDEFAULT, oldExtensionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TELEPHONE_NUMBER__EXTENSION,
+                    oldExtension, EXTENSION_EDEFAULT, oldExtensionESet ) );
     }
 
     /**
@@ -434,8 +441,9 @@ public class TelephoneNumberImpl extends MinimalEObjectImpl.Container implements
         localNumber = newLocalNumber;
         boolean oldLocalNumberESet = localNumberESet;
         localNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TELEPHONE_NUMBER__LOCAL_NUMBER, oldLocalNumber, localNumber, !oldLocalNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TELEPHONE_NUMBER__LOCAL_NUMBER,
+                    oldLocalNumber, localNumber, !oldLocalNumberESet ) );
     }
 
     /**
@@ -571,7 +579,7 @@ public class TelephoneNumberImpl extends MinimalEObjectImpl.Container implements
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (areaCode: " );
         if( areaCodeESet )
             result.append( areaCode );

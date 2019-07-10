@@ -202,8 +202,9 @@ public class OverexcLim2Impl extends OverexcitationLimiterDynamicsImpl implement
         ifdlim = newIfdlim;
         boolean oldIfdlimESet = ifdlimESet;
         ifdlimESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OVEREXC_LIM2__IFDLIM, oldIfdlim, ifdlim, !oldIfdlimESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OVEREXC_LIM2__IFDLIM, oldIfdlim, ifdlim,
+                    !oldIfdlimESet ) );
     }
 
     /**
@@ -217,8 +218,9 @@ public class OverexcLim2Impl extends OverexcitationLimiterDynamicsImpl implement
         boolean oldIfdlimESet = ifdlimESet;
         ifdlim = IFDLIM_EDEFAULT;
         ifdlimESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.OVEREXC_LIM2__IFDLIM, oldIfdlim, IFDLIM_EDEFAULT, oldIfdlimESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OVEREXC_LIM2__IFDLIM, oldIfdlim,
+                    IFDLIM_EDEFAULT, oldIfdlimESet ) );
     }
 
     /**
@@ -252,8 +254,9 @@ public class OverexcLim2Impl extends OverexcitationLimiterDynamicsImpl implement
         koi = newKoi;
         boolean oldKoiESet = koiESet;
         koiESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OVEREXC_LIM2__KOI, oldKoi, koi, !oldKoiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OVEREXC_LIM2__KOI, oldKoi, koi,
+                    !oldKoiESet ) );
     }
 
     /**
@@ -267,8 +270,9 @@ public class OverexcLim2Impl extends OverexcitationLimiterDynamicsImpl implement
         boolean oldKoiESet = koiESet;
         koi = KOI_EDEFAULT;
         koiESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.OVEREXC_LIM2__KOI, oldKoi, KOI_EDEFAULT, oldKoiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OVEREXC_LIM2__KOI, oldKoi,
+                    KOI_EDEFAULT, oldKoiESet ) );
     }
 
     /**
@@ -302,8 +306,9 @@ public class OverexcLim2Impl extends OverexcitationLimiterDynamicsImpl implement
         voimax = newVoimax;
         boolean oldVoimaxESet = voimaxESet;
         voimaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OVEREXC_LIM2__VOIMAX, oldVoimax, voimax, !oldVoimaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OVEREXC_LIM2__VOIMAX, oldVoimax, voimax,
+                    !oldVoimaxESet ) );
     }
 
     /**
@@ -317,8 +322,9 @@ public class OverexcLim2Impl extends OverexcitationLimiterDynamicsImpl implement
         boolean oldVoimaxESet = voimaxESet;
         voimax = VOIMAX_EDEFAULT;
         voimaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.OVEREXC_LIM2__VOIMAX, oldVoimax, VOIMAX_EDEFAULT, oldVoimaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OVEREXC_LIM2__VOIMAX, oldVoimax,
+                    VOIMAX_EDEFAULT, oldVoimaxESet ) );
     }
 
     /**
@@ -352,8 +358,9 @@ public class OverexcLim2Impl extends OverexcitationLimiterDynamicsImpl implement
         voimin = newVoimin;
         boolean oldVoiminESet = voiminESet;
         voiminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OVEREXC_LIM2__VOIMIN, oldVoimin, voimin, !oldVoiminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OVEREXC_LIM2__VOIMIN, oldVoimin, voimin,
+                    !oldVoiminESet ) );
     }
 
     /**
@@ -367,8 +374,9 @@ public class OverexcLim2Impl extends OverexcitationLimiterDynamicsImpl implement
         boolean oldVoiminESet = voiminESet;
         voimin = VOIMIN_EDEFAULT;
         voiminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.OVEREXC_LIM2__VOIMIN, oldVoimin, VOIMIN_EDEFAULT, oldVoiminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OVEREXC_LIM2__VOIMIN, oldVoimin,
+                    VOIMIN_EDEFAULT, oldVoiminESet ) );
     }
 
     /**
@@ -478,7 +486,7 @@ public class OverexcLim2Impl extends OverexcitationLimiterDynamicsImpl implement
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (ifdlim: " );
         if( ifdlimESet )
             result.append( ifdlim );

@@ -244,8 +244,9 @@ public class TimeScheduleImpl extends DocumentImpl implements TimeSchedule {
         disabled = newDisabled;
         boolean oldDisabledESet = disabledESet;
         disabledESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TIME_SCHEDULE__DISABLED, oldDisabled, disabled, !oldDisabledESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TIME_SCHEDULE__DISABLED, oldDisabled,
+                    disabled, !oldDisabledESet ) );
     }
 
     /**
@@ -259,8 +260,9 @@ public class TimeScheduleImpl extends DocumentImpl implements TimeSchedule {
         boolean oldDisabledESet = disabledESet;
         disabled = DISABLED_EDEFAULT;
         disabledESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TIME_SCHEDULE__DISABLED, oldDisabled, DISABLED_EDEFAULT, oldDisabledESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TIME_SCHEDULE__DISABLED, oldDisabled,
+                    DISABLED_EDEFAULT, oldDisabledESet ) );
     }
 
     /**
@@ -294,8 +296,9 @@ public class TimeScheduleImpl extends DocumentImpl implements TimeSchedule {
         offset = newOffset;
         boolean oldOffsetESet = offsetESet;
         offsetESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TIME_SCHEDULE__OFFSET, oldOffset, offset, !oldOffsetESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TIME_SCHEDULE__OFFSET, oldOffset, offset,
+                    !oldOffsetESet ) );
     }
 
     /**
@@ -309,8 +312,9 @@ public class TimeScheduleImpl extends DocumentImpl implements TimeSchedule {
         boolean oldOffsetESet = offsetESet;
         offset = OFFSET_EDEFAULT;
         offsetESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TIME_SCHEDULE__OFFSET, oldOffset, OFFSET_EDEFAULT, oldOffsetESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TIME_SCHEDULE__OFFSET, oldOffset,
+                    OFFSET_EDEFAULT, oldOffsetESet ) );
     }
 
     /**
@@ -468,10 +472,12 @@ public class TimeScheduleImpl extends DocumentImpl implements TimeSchedule {
     public void setScheduleInterval( DateTimeInterval newScheduleInterval ) {
         if( newScheduleInterval != scheduleInterval ) {
             NotificationChain msgs = null;
-            if( scheduleInterval != null ) msgs = ( ( InternalEObject ) scheduleInterval ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.TIME_SCHEDULE__SCHEDULE_INTERVAL, null, msgs );
-            if( newScheduleInterval != null ) msgs = ( ( InternalEObject ) newScheduleInterval ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.TIME_SCHEDULE__SCHEDULE_INTERVAL, null, msgs );
+            if( scheduleInterval != null )
+                msgs = ( ( InternalEObject ) scheduleInterval ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.TIME_SCHEDULE__SCHEDULE_INTERVAL, null, msgs );
+            if( newScheduleInterval != null )
+                msgs = ( ( InternalEObject ) newScheduleInterval ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.TIME_SCHEDULE__SCHEDULE_INTERVAL, null, msgs );
             msgs = basicSetScheduleInterval( newScheduleInterval, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -522,8 +528,9 @@ public class TimeScheduleImpl extends DocumentImpl implements TimeSchedule {
         else {
             boolean oldScheduleIntervalESet = scheduleIntervalESet;
             scheduleIntervalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TIME_SCHEDULE__SCHEDULE_INTERVAL, null, null, oldScheduleIntervalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TIME_SCHEDULE__SCHEDULE_INTERVAL,
+                        null, null, oldScheduleIntervalESet ) );
         }
     }
 
@@ -722,7 +729,7 @@ public class TimeScheduleImpl extends DocumentImpl implements TimeSchedule {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (disabled: " );
         if( disabledESet )
             result.append( disabled );

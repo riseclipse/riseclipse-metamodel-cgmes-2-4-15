@@ -863,9 +863,10 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         auxPowerVersusFrequency = newAuxPowerVersusFrequency;
         boolean oldAuxPowerVersusFrequencyESet = auxPowerVersusFrequencyESet;
         auxPowerVersusFrequencyESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FOSSIL_STEAM_SUPPLY__AUX_POWER_VERSUS_FREQUENCY, oldAuxPowerVersusFrequency,
-                auxPowerVersusFrequency, !oldAuxPowerVersusFrequencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.FOSSIL_STEAM_SUPPLY__AUX_POWER_VERSUS_FREQUENCY, oldAuxPowerVersusFrequency,
+                    auxPowerVersusFrequency, !oldAuxPowerVersusFrequencyESet ) );
     }
 
     /**
@@ -879,9 +880,10 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         boolean oldAuxPowerVersusFrequencyESet = auxPowerVersusFrequencyESet;
         auxPowerVersusFrequency = AUX_POWER_VERSUS_FREQUENCY_EDEFAULT;
         auxPowerVersusFrequencyESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FOSSIL_STEAM_SUPPLY__AUX_POWER_VERSUS_FREQUENCY, oldAuxPowerVersusFrequency,
-                AUX_POWER_VERSUS_FREQUENCY_EDEFAULT, oldAuxPowerVersusFrequencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.FOSSIL_STEAM_SUPPLY__AUX_POWER_VERSUS_FREQUENCY, oldAuxPowerVersusFrequency,
+                    AUX_POWER_VERSUS_FREQUENCY_EDEFAULT, oldAuxPowerVersusFrequencyESet ) );
     }
 
     /**
@@ -915,9 +917,10 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         auxPowerVersusVoltage = newAuxPowerVersusVoltage;
         boolean oldAuxPowerVersusVoltageESet = auxPowerVersusVoltageESet;
         auxPowerVersusVoltageESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_STEAM_SUPPLY__AUX_POWER_VERSUS_VOLTAGE,
-                        oldAuxPowerVersusVoltage, auxPowerVersusVoltage, !oldAuxPowerVersusVoltageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.FOSSIL_STEAM_SUPPLY__AUX_POWER_VERSUS_VOLTAGE, oldAuxPowerVersusVoltage,
+                    auxPowerVersusVoltage, !oldAuxPowerVersusVoltageESet ) );
     }
 
     /**
@@ -931,9 +934,10 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         boolean oldAuxPowerVersusVoltageESet = auxPowerVersusVoltageESet;
         auxPowerVersusVoltage = AUX_POWER_VERSUS_VOLTAGE_EDEFAULT;
         auxPowerVersusVoltageESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FOSSIL_STEAM_SUPPLY__AUX_POWER_VERSUS_VOLTAGE, oldAuxPowerVersusVoltage,
-                AUX_POWER_VERSUS_VOLTAGE_EDEFAULT, oldAuxPowerVersusVoltageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.FOSSIL_STEAM_SUPPLY__AUX_POWER_VERSUS_VOLTAGE, oldAuxPowerVersusVoltage,
+                    AUX_POWER_VERSUS_VOLTAGE_EDEFAULT, oldAuxPowerVersusVoltageESet ) );
     }
 
     /**
@@ -983,9 +987,10 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         boolean oldBoilerControlModeESet = boilerControlModeESet;
         boilerControlMode = BOILER_CONTROL_MODE_EDEFAULT;
         boilerControlModeESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.FOSSIL_STEAM_SUPPLY__BOILER_CONTROL_MODE,
-                        oldBoilerControlMode, BOILER_CONTROL_MODE_EDEFAULT, oldBoilerControlModeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.FOSSIL_STEAM_SUPPLY__BOILER_CONTROL_MODE, oldBoilerControlMode,
+                    BOILER_CONTROL_MODE_EDEFAULT, oldBoilerControlModeESet ) );
     }
 
     /**
@@ -1019,9 +1024,10 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         controlErrorBiasP = newControlErrorBiasP;
         boolean oldControlErrorBiasPESet = controlErrorBiasPESet;
         controlErrorBiasPESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_ERROR_BIAS_P,
-                        oldControlErrorBiasP, controlErrorBiasP, !oldControlErrorBiasPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_ERROR_BIAS_P, oldControlErrorBiasP, controlErrorBiasP,
+                    !oldControlErrorBiasPESet ) );
     }
 
     /**
@@ -1035,9 +1041,10 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         boolean oldControlErrorBiasPESet = controlErrorBiasPESet;
         controlErrorBiasP = CONTROL_ERROR_BIAS_P_EDEFAULT;
         controlErrorBiasPESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_ERROR_BIAS_P,
-                        oldControlErrorBiasP, CONTROL_ERROR_BIAS_P_EDEFAULT, oldControlErrorBiasPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_ERROR_BIAS_P, oldControlErrorBiasP,
+                    CONTROL_ERROR_BIAS_P_EDEFAULT, oldControlErrorBiasPESet ) );
     }
 
     /**
@@ -1071,8 +1078,9 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         controlIC = newControlIC;
         boolean oldControlICESet = controlICESet;
         controlICESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_IC, oldControlIC, controlIC, !oldControlICESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_IC,
+                    oldControlIC, controlIC, !oldControlICESet ) );
     }
 
     /**
@@ -1086,8 +1094,9 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         boolean oldControlICESet = controlICESet;
         controlIC = CONTROL_IC_EDEFAULT;
         controlICESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_IC, oldControlIC, CONTROL_IC_EDEFAULT, oldControlICESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_IC,
+                    oldControlIC, CONTROL_IC_EDEFAULT, oldControlICESet ) );
     }
 
     /**
@@ -1121,8 +1130,9 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         controlPC = newControlPC;
         boolean oldControlPCESet = controlPCESet;
         controlPCESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_PC, oldControlPC, controlPC, !oldControlPCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_PC,
+                    oldControlPC, controlPC, !oldControlPCESet ) );
     }
 
     /**
@@ -1136,8 +1146,9 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         boolean oldControlPCESet = controlPCESet;
         controlPC = CONTROL_PC_EDEFAULT;
         controlPCESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_PC, oldControlPC, CONTROL_PC_EDEFAULT, oldControlPCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_PC,
+                    oldControlPC, CONTROL_PC_EDEFAULT, oldControlPCESet ) );
     }
 
     /**
@@ -1171,8 +1182,9 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         controlPEB = newControlPEB;
         boolean oldControlPEBESet = controlPEBESet;
         controlPEBESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_PEB, oldControlPEB, controlPEB, !oldControlPEBESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_PEB,
+                    oldControlPEB, controlPEB, !oldControlPEBESet ) );
     }
 
     /**
@@ -1186,8 +1198,9 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         boolean oldControlPEBESet = controlPEBESet;
         controlPEB = CONTROL_PEB_EDEFAULT;
         controlPEBESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_PEB, oldControlPEB, CONTROL_PEB_EDEFAULT, oldControlPEBESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_PEB,
+                    oldControlPEB, CONTROL_PEB_EDEFAULT, oldControlPEBESet ) );
     }
 
     /**
@@ -1221,8 +1234,9 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         controlPED = newControlPED;
         boolean oldControlPEDESet = controlPEDESet;
         controlPEDESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_PED, oldControlPED, controlPED, !oldControlPEDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_PED,
+                    oldControlPED, controlPED, !oldControlPEDESet ) );
     }
 
     /**
@@ -1236,8 +1250,9 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         boolean oldControlPEDESet = controlPEDESet;
         controlPED = CONTROL_PED_EDEFAULT;
         controlPEDESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_PED, oldControlPED, CONTROL_PED_EDEFAULT, oldControlPEDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_PED,
+                    oldControlPED, CONTROL_PED_EDEFAULT, oldControlPEDESet ) );
     }
 
     /**
@@ -1271,8 +1286,9 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         controlTC = newControlTC;
         boolean oldControlTCESet = controlTCESet;
         controlTCESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_TC, oldControlTC, controlTC, !oldControlTCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_TC,
+                    oldControlTC, controlTC, !oldControlTCESet ) );
     }
 
     /**
@@ -1286,8 +1302,9 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         boolean oldControlTCESet = controlTCESet;
         controlTC = CONTROL_TC_EDEFAULT;
         controlTCESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_TC, oldControlTC, CONTROL_TC_EDEFAULT, oldControlTCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FOSSIL_STEAM_SUPPLY__CONTROL_TC,
+                    oldControlTC, CONTROL_TC_EDEFAULT, oldControlTCESet ) );
     }
 
     /**
@@ -1321,8 +1338,9 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         feedWaterIG = newFeedWaterIG;
         boolean oldFeedWaterIGESet = feedWaterIGESet;
         feedWaterIGESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FOSSIL_STEAM_SUPPLY__FEED_WATER_IG, oldFeedWaterIG, feedWaterIG, !oldFeedWaterIGESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_STEAM_SUPPLY__FEED_WATER_IG,
+                    oldFeedWaterIG, feedWaterIG, !oldFeedWaterIGESet ) );
     }
 
     /**
@@ -1372,8 +1390,9 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         feedWaterPG = newFeedWaterPG;
         boolean oldFeedWaterPGESet = feedWaterPGESet;
         feedWaterPGESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FOSSIL_STEAM_SUPPLY__FEED_WATER_PG, oldFeedWaterPG, feedWaterPG, !oldFeedWaterPGESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_STEAM_SUPPLY__FEED_WATER_PG,
+                    oldFeedWaterPG, feedWaterPG, !oldFeedWaterPGESet ) );
     }
 
     /**
@@ -1423,8 +1442,9 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         feedWaterTC = newFeedWaterTC;
         boolean oldFeedWaterTCESet = feedWaterTCESet;
         feedWaterTCESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FOSSIL_STEAM_SUPPLY__FEED_WATER_TC, oldFeedWaterTC, feedWaterTC, !oldFeedWaterTCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_STEAM_SUPPLY__FEED_WATER_TC,
+                    oldFeedWaterTC, feedWaterTC, !oldFeedWaterTCESet ) );
     }
 
     /**
@@ -1578,8 +1598,9 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         fuelSupplyTC = newFuelSupplyTC;
         boolean oldFuelSupplyTCESet = fuelSupplyTCESet;
         fuelSupplyTCESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FOSSIL_STEAM_SUPPLY__FUEL_SUPPLY_TC, oldFuelSupplyTC, fuelSupplyTC, !oldFuelSupplyTCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_STEAM_SUPPLY__FUEL_SUPPLY_TC,
+                    oldFuelSupplyTC, fuelSupplyTC, !oldFuelSupplyTCESet ) );
     }
 
     /**
@@ -1681,9 +1702,10 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         mechPowerSensorLag = newMechPowerSensorLag;
         boolean oldMechPowerSensorLagESet = mechPowerSensorLagESet;
         mechPowerSensorLagESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_STEAM_SUPPLY__MECH_POWER_SENSOR_LAG,
-                        oldMechPowerSensorLag, mechPowerSensorLag, !oldMechPowerSensorLagESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.FOSSIL_STEAM_SUPPLY__MECH_POWER_SENSOR_LAG, oldMechPowerSensorLag, mechPowerSensorLag,
+                    !oldMechPowerSensorLagESet ) );
     }
 
     /**
@@ -1697,9 +1719,10 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         boolean oldMechPowerSensorLagESet = mechPowerSensorLagESet;
         mechPowerSensorLag = MECH_POWER_SENSOR_LAG_EDEFAULT;
         mechPowerSensorLagESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.FOSSIL_STEAM_SUPPLY__MECH_POWER_SENSOR_LAG,
-                        oldMechPowerSensorLag, MECH_POWER_SENSOR_LAG_EDEFAULT, oldMechPowerSensorLagESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.FOSSIL_STEAM_SUPPLY__MECH_POWER_SENSOR_LAG, oldMechPowerSensorLag,
+                    MECH_POWER_SENSOR_LAG_EDEFAULT, oldMechPowerSensorLagESet ) );
     }
 
     /**
@@ -1993,9 +2016,10 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         superHeater1Capacity = newSuperHeater1Capacity;
         boolean oldSuperHeater1CapacityESet = superHeater1CapacityESet;
         superHeater1CapacityESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_STEAM_SUPPLY__SUPER_HEATER1_CAPACITY,
-                        oldSuperHeater1Capacity, superHeater1Capacity, !oldSuperHeater1CapacityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.FOSSIL_STEAM_SUPPLY__SUPER_HEATER1_CAPACITY, oldSuperHeater1Capacity,
+                    superHeater1Capacity, !oldSuperHeater1CapacityESet ) );
     }
 
     /**
@@ -2009,9 +2033,10 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         boolean oldSuperHeater1CapacityESet = superHeater1CapacityESet;
         superHeater1Capacity = SUPER_HEATER1_CAPACITY_EDEFAULT;
         superHeater1CapacityESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.FOSSIL_STEAM_SUPPLY__SUPER_HEATER1_CAPACITY,
-                        oldSuperHeater1Capacity, SUPER_HEATER1_CAPACITY_EDEFAULT, oldSuperHeater1CapacityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.FOSSIL_STEAM_SUPPLY__SUPER_HEATER1_CAPACITY, oldSuperHeater1Capacity,
+                    SUPER_HEATER1_CAPACITY_EDEFAULT, oldSuperHeater1CapacityESet ) );
     }
 
     /**
@@ -2045,9 +2070,10 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         superHeater2Capacity = newSuperHeater2Capacity;
         boolean oldSuperHeater2CapacityESet = superHeater2CapacityESet;
         superHeater2CapacityESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_STEAM_SUPPLY__SUPER_HEATER2_CAPACITY,
-                        oldSuperHeater2Capacity, superHeater2Capacity, !oldSuperHeater2CapacityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.FOSSIL_STEAM_SUPPLY__SUPER_HEATER2_CAPACITY, oldSuperHeater2Capacity,
+                    superHeater2Capacity, !oldSuperHeater2CapacityESet ) );
     }
 
     /**
@@ -2061,9 +2087,10 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         boolean oldSuperHeater2CapacityESet = superHeater2CapacityESet;
         superHeater2Capacity = SUPER_HEATER2_CAPACITY_EDEFAULT;
         superHeater2CapacityESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.FOSSIL_STEAM_SUPPLY__SUPER_HEATER2_CAPACITY,
-                        oldSuperHeater2Capacity, SUPER_HEATER2_CAPACITY_EDEFAULT, oldSuperHeater2CapacityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.FOSSIL_STEAM_SUPPLY__SUPER_HEATER2_CAPACITY, oldSuperHeater2Capacity,
+                    SUPER_HEATER2_CAPACITY_EDEFAULT, oldSuperHeater2CapacityESet ) );
     }
 
     /**
@@ -2097,9 +2124,10 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         superHeaterPipePD = newSuperHeaterPipePD;
         boolean oldSuperHeaterPipePDESet = superHeaterPipePDESet;
         superHeaterPipePDESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_STEAM_SUPPLY__SUPER_HEATER_PIPE_PD,
-                        oldSuperHeaterPipePD, superHeaterPipePD, !oldSuperHeaterPipePDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.FOSSIL_STEAM_SUPPLY__SUPER_HEATER_PIPE_PD, oldSuperHeaterPipePD, superHeaterPipePD,
+                    !oldSuperHeaterPipePDESet ) );
     }
 
     /**
@@ -2113,9 +2141,10 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         boolean oldSuperHeaterPipePDESet = superHeaterPipePDESet;
         superHeaterPipePD = SUPER_HEATER_PIPE_PD_EDEFAULT;
         superHeaterPipePDESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.FOSSIL_STEAM_SUPPLY__SUPER_HEATER_PIPE_PD,
-                        oldSuperHeaterPipePD, SUPER_HEATER_PIPE_PD_EDEFAULT, oldSuperHeaterPipePDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.FOSSIL_STEAM_SUPPLY__SUPER_HEATER_PIPE_PD, oldSuperHeaterPipePD,
+                    SUPER_HEATER_PIPE_PD_EDEFAULT, oldSuperHeaterPipePDESet ) );
     }
 
     /**
@@ -2149,9 +2178,10 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         throttlePressureSP = newThrottlePressureSP;
         boolean oldThrottlePressureSPESet = throttlePressureSPESet;
         throttlePressureSPESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_STEAM_SUPPLY__THROTTLE_PRESSURE_SP,
-                        oldThrottlePressureSP, throttlePressureSP, !oldThrottlePressureSPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.FOSSIL_STEAM_SUPPLY__THROTTLE_PRESSURE_SP, oldThrottlePressureSP, throttlePressureSP,
+                    !oldThrottlePressureSPESet ) );
     }
 
     /**
@@ -2165,9 +2195,10 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
         boolean oldThrottlePressureSPESet = throttlePressureSPESet;
         throttlePressureSP = THROTTLE_PRESSURE_SP_EDEFAULT;
         throttlePressureSPESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.FOSSIL_STEAM_SUPPLY__THROTTLE_PRESSURE_SP,
-                        oldThrottlePressureSP, THROTTLE_PRESSURE_SP_EDEFAULT, oldThrottlePressureSPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.FOSSIL_STEAM_SUPPLY__THROTTLE_PRESSURE_SP, oldThrottlePressureSP,
+                    THROTTLE_PRESSURE_SP_EDEFAULT, oldThrottlePressureSPESet ) );
     }
 
     /**
@@ -2497,7 +2528,7 @@ public class FossilSteamSupplyImpl extends SteamSupplyImpl implements FossilStea
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (auxPowerVersusFrequency: " );
         if( auxPowerVersusFrequencyESet )
             result.append( auxPowerVersusFrequency );

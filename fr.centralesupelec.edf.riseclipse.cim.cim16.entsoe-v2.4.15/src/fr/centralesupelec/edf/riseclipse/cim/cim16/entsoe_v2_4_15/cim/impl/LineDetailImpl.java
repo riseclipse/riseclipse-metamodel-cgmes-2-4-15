@@ -207,8 +207,9 @@ public class LineDetailImpl extends MinimalEObjectImpl.Container implements Line
         amount = newAmount;
         boolean oldAmountESet = amountESet;
         amountESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LINE_DETAIL__AMOUNT, oldAmount, amount, !oldAmountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LINE_DETAIL__AMOUNT, oldAmount, amount,
+                    !oldAmountESet ) );
     }
 
     /**
@@ -222,8 +223,9 @@ public class LineDetailImpl extends MinimalEObjectImpl.Container implements Line
         boolean oldAmountESet = amountESet;
         amount = AMOUNT_EDEFAULT;
         amountESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LINE_DETAIL__AMOUNT, oldAmount, AMOUNT_EDEFAULT, oldAmountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LINE_DETAIL__AMOUNT, oldAmount,
+                    AMOUNT_EDEFAULT, oldAmountESet ) );
     }
 
     /**
@@ -257,8 +259,9 @@ public class LineDetailImpl extends MinimalEObjectImpl.Container implements Line
         dateTime = newDateTime;
         boolean oldDateTimeESet = dateTimeESet;
         dateTimeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LINE_DETAIL__DATE_TIME, oldDateTime, dateTime, !oldDateTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LINE_DETAIL__DATE_TIME, oldDateTime,
+                    dateTime, !oldDateTimeESet ) );
     }
 
     /**
@@ -272,8 +275,9 @@ public class LineDetailImpl extends MinimalEObjectImpl.Container implements Line
         boolean oldDateTimeESet = dateTimeESet;
         dateTime = DATE_TIME_EDEFAULT;
         dateTimeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LINE_DETAIL__DATE_TIME, oldDateTime, DATE_TIME_EDEFAULT, oldDateTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LINE_DETAIL__DATE_TIME, oldDateTime,
+                    DATE_TIME_EDEFAULT, oldDateTimeESet ) );
     }
 
     /**
@@ -307,8 +311,9 @@ public class LineDetailImpl extends MinimalEObjectImpl.Container implements Line
         note = newNote;
         boolean oldNoteESet = noteESet;
         noteESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LINE_DETAIL__NOTE, oldNote, note, !oldNoteESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LINE_DETAIL__NOTE, oldNote, note,
+                    !oldNoteESet ) );
     }
 
     /**
@@ -322,8 +327,9 @@ public class LineDetailImpl extends MinimalEObjectImpl.Container implements Line
         boolean oldNoteESet = noteESet;
         note = NOTE_EDEFAULT;
         noteESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LINE_DETAIL__NOTE, oldNote, NOTE_EDEFAULT, oldNoteESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LINE_DETAIL__NOTE, oldNote,
+                    NOTE_EDEFAULT, oldNoteESet ) );
     }
 
     /**
@@ -357,8 +363,9 @@ public class LineDetailImpl extends MinimalEObjectImpl.Container implements Line
         rounding = newRounding;
         boolean oldRoundingESet = roundingESet;
         roundingESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LINE_DETAIL__ROUNDING, oldRounding, rounding, !oldRoundingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LINE_DETAIL__ROUNDING, oldRounding,
+                    rounding, !oldRoundingESet ) );
     }
 
     /**
@@ -372,8 +379,9 @@ public class LineDetailImpl extends MinimalEObjectImpl.Container implements Line
         boolean oldRoundingESet = roundingESet;
         rounding = ROUNDING_EDEFAULT;
         roundingESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LINE_DETAIL__ROUNDING, oldRounding, ROUNDING_EDEFAULT, oldRoundingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LINE_DETAIL__ROUNDING, oldRounding,
+                    ROUNDING_EDEFAULT, oldRoundingESet ) );
     }
 
     /**
@@ -483,7 +491,7 @@ public class LineDetailImpl extends MinimalEObjectImpl.Container implements Line
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (amount: " );
         if( amountESet )
             result.append( amount );

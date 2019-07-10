@@ -567,8 +567,29 @@ public enum PhaseCode implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final PhaseCode[] VALUES_ARRAY = new PhaseCode[] { ABCN, ABC, ABN, ACN, BCN, AB, AC, BC, AN, BN, CN,
-            A, B, C, N, S1_N, S2_N, S12_N, S1, S2, S12, };
+    private static final PhaseCode[] VALUES_ARRAY = new PhaseCode[] {
+            ABCN,
+            ABC,
+            ABN,
+            ACN,
+            BCN,
+            AB,
+            AC,
+            BC,
+            AN,
+            BN,
+            CN,
+            A,
+            B,
+            C,
+            N,
+            S1_N,
+            S2_N,
+            S12_N,
+            S1,
+            S2,
+            S12,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Phase Code</b></em>' enumerators.

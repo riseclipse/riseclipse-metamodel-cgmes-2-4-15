@@ -232,9 +232,10 @@ public class ConcentricNeutralCableInfoImpl extends CableInfoImpl implements Con
         diameterOverNeutral = newDiameterOverNeutral;
         boolean oldDiameterOverNeutralESet = diameterOverNeutralESet;
         diameterOverNeutralESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__DIAMETER_OVER_NEUTRAL, oldDiameterOverNeutral,
-                diameterOverNeutral, !oldDiameterOverNeutralESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__DIAMETER_OVER_NEUTRAL, oldDiameterOverNeutral,
+                    diameterOverNeutral, !oldDiameterOverNeutralESet ) );
     }
 
     /**
@@ -248,9 +249,10 @@ public class ConcentricNeutralCableInfoImpl extends CableInfoImpl implements Con
         boolean oldDiameterOverNeutralESet = diameterOverNeutralESet;
         diameterOverNeutral = DIAMETER_OVER_NEUTRAL_EDEFAULT;
         diameterOverNeutralESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__DIAMETER_OVER_NEUTRAL, oldDiameterOverNeutral,
-                DIAMETER_OVER_NEUTRAL_EDEFAULT, oldDiameterOverNeutralESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__DIAMETER_OVER_NEUTRAL, oldDiameterOverNeutral,
+                    DIAMETER_OVER_NEUTRAL_EDEFAULT, oldDiameterOverNeutralESet ) );
     }
 
     /**
@@ -284,9 +286,10 @@ public class ConcentricNeutralCableInfoImpl extends CableInfoImpl implements Con
         neutralStrandCount = newNeutralStrandCount;
         boolean oldNeutralStrandCountESet = neutralStrandCountESet;
         neutralStrandCountESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__NEUTRAL_STRAND_COUNT, oldNeutralStrandCount,
-                neutralStrandCount, !oldNeutralStrandCountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__NEUTRAL_STRAND_COUNT, oldNeutralStrandCount,
+                    neutralStrandCount, !oldNeutralStrandCountESet ) );
     }
 
     /**
@@ -300,9 +303,10 @@ public class ConcentricNeutralCableInfoImpl extends CableInfoImpl implements Con
         boolean oldNeutralStrandCountESet = neutralStrandCountESet;
         neutralStrandCount = NEUTRAL_STRAND_COUNT_EDEFAULT;
         neutralStrandCountESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__NEUTRAL_STRAND_COUNT, oldNeutralStrandCount,
-                NEUTRAL_STRAND_COUNT_EDEFAULT, oldNeutralStrandCountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__NEUTRAL_STRAND_COUNT, oldNeutralStrandCount,
+                    NEUTRAL_STRAND_COUNT_EDEFAULT, oldNeutralStrandCountESet ) );
     }
 
     /**
@@ -336,9 +340,10 @@ public class ConcentricNeutralCableInfoImpl extends CableInfoImpl implements Con
         neutralStrandGmr = newNeutralStrandGmr;
         boolean oldNeutralStrandGmrESet = neutralStrandGmrESet;
         neutralStrandGmrESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__NEUTRAL_STRAND_GMR, oldNeutralStrandGmr, neutralStrandGmr,
-                !oldNeutralStrandGmrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__NEUTRAL_STRAND_GMR, oldNeutralStrandGmr, neutralStrandGmr,
+                    !oldNeutralStrandGmrESet ) );
     }
 
     /**
@@ -352,9 +357,10 @@ public class ConcentricNeutralCableInfoImpl extends CableInfoImpl implements Con
         boolean oldNeutralStrandGmrESet = neutralStrandGmrESet;
         neutralStrandGmr = NEUTRAL_STRAND_GMR_EDEFAULT;
         neutralStrandGmrESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__NEUTRAL_STRAND_GMR, oldNeutralStrandGmr,
-                NEUTRAL_STRAND_GMR_EDEFAULT, oldNeutralStrandGmrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__NEUTRAL_STRAND_GMR, oldNeutralStrandGmr,
+                    NEUTRAL_STRAND_GMR_EDEFAULT, oldNeutralStrandGmrESet ) );
     }
 
     /**
@@ -388,9 +394,10 @@ public class ConcentricNeutralCableInfoImpl extends CableInfoImpl implements Con
         neutralStrandRadius = newNeutralStrandRadius;
         boolean oldNeutralStrandRadiusESet = neutralStrandRadiusESet;
         neutralStrandRadiusESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__NEUTRAL_STRAND_RADIUS, oldNeutralStrandRadius,
-                neutralStrandRadius, !oldNeutralStrandRadiusESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__NEUTRAL_STRAND_RADIUS, oldNeutralStrandRadius,
+                    neutralStrandRadius, !oldNeutralStrandRadiusESet ) );
     }
 
     /**
@@ -404,9 +411,10 @@ public class ConcentricNeutralCableInfoImpl extends CableInfoImpl implements Con
         boolean oldNeutralStrandRadiusESet = neutralStrandRadiusESet;
         neutralStrandRadius = NEUTRAL_STRAND_RADIUS_EDEFAULT;
         neutralStrandRadiusESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__NEUTRAL_STRAND_RADIUS, oldNeutralStrandRadius,
-                NEUTRAL_STRAND_RADIUS_EDEFAULT, oldNeutralStrandRadiusESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__NEUTRAL_STRAND_RADIUS, oldNeutralStrandRadius,
+                    NEUTRAL_STRAND_RADIUS_EDEFAULT, oldNeutralStrandRadiusESet ) );
     }
 
     /**
@@ -440,9 +448,10 @@ public class ConcentricNeutralCableInfoImpl extends CableInfoImpl implements Con
         neutralStrandRDC20 = newNeutralStrandRDC20;
         boolean oldNeutralStrandRDC20ESet = neutralStrandRDC20ESet;
         neutralStrandRDC20ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__NEUTRAL_STRAND_RDC20, oldNeutralStrandRDC20,
-                neutralStrandRDC20, !oldNeutralStrandRDC20ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__NEUTRAL_STRAND_RDC20, oldNeutralStrandRDC20,
+                    neutralStrandRDC20, !oldNeutralStrandRDC20ESet ) );
     }
 
     /**
@@ -456,9 +465,10 @@ public class ConcentricNeutralCableInfoImpl extends CableInfoImpl implements Con
         boolean oldNeutralStrandRDC20ESet = neutralStrandRDC20ESet;
         neutralStrandRDC20 = NEUTRAL_STRAND_RDC20_EDEFAULT;
         neutralStrandRDC20ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__NEUTRAL_STRAND_RDC20, oldNeutralStrandRDC20,
-                NEUTRAL_STRAND_RDC20_EDEFAULT, oldNeutralStrandRDC20ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONCENTRIC_NEUTRAL_CABLE_INFO__NEUTRAL_STRAND_RDC20, oldNeutralStrandRDC20,
+                    NEUTRAL_STRAND_RDC20_EDEFAULT, oldNeutralStrandRDC20ESet ) );
     }
 
     /**
@@ -578,7 +588,7 @@ public class ConcentricNeutralCableInfoImpl extends CableInfoImpl implements Con
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (diameterOverNeutral: " );
         if( diameterOverNeutralESet )
             result.append( diameterOverNeutral );

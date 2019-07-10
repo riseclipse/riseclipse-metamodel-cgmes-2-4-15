@@ -136,8 +136,9 @@ public class ACDCConverterDCTerminalImpl extends DCBaseTerminalImpl implements A
         polarity = newPolarity == null ? POLARITY_EDEFAULT : newPolarity;
         boolean oldPolarityESet = polarityESet;
         polarityESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACDC_CONVERTER_DC_TERMINAL__POLARITY, oldPolarity, polarity, !oldPolarityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER_DC_TERMINAL__POLARITY,
+                    oldPolarity, polarity, !oldPolarityESet ) );
     }
 
     /**
@@ -151,8 +152,9 @@ public class ACDCConverterDCTerminalImpl extends DCBaseTerminalImpl implements A
         boolean oldPolarityESet = polarityESet;
         polarity = POLARITY_EDEFAULT;
         polarityESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACDC_CONVERTER_DC_TERMINAL__POLARITY, oldPolarity, POLARITY_EDEFAULT, oldPolarityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_CONVERTER_DC_TERMINAL__POLARITY,
+                    oldPolarity, POLARITY_EDEFAULT, oldPolarityESet ) );
     }
 
     /**
@@ -207,19 +209,22 @@ public class ACDCConverterDCTerminalImpl extends DCBaseTerminalImpl implements A
     public void setDCConductingEquipment( ACDCConverter newDCConductingEquipment ) {
         if( newDCConductingEquipment != dcConductingEquipment ) {
             NotificationChain msgs = null;
-            if( dcConductingEquipment != null ) msgs = ( ( InternalEObject ) dcConductingEquipment )
-                    .eInverseRemove( this, CimPackage.ACDC_CONVERTER__DC_TERMINALS, ACDCConverter.class, msgs );
-            if( newDCConductingEquipment != null ) msgs = ( ( InternalEObject ) newDCConductingEquipment )
-                    .eInverseAdd( this, CimPackage.ACDC_CONVERTER__DC_TERMINALS, ACDCConverter.class, msgs );
+            if( dcConductingEquipment != null )
+                msgs = ( ( InternalEObject ) dcConductingEquipment ).eInverseRemove( this,
+                        CimPackage.ACDC_CONVERTER__DC_TERMINALS, ACDCConverter.class, msgs );
+            if( newDCConductingEquipment != null )
+                msgs = ( ( InternalEObject ) newDCConductingEquipment ).eInverseAdd( this,
+                        CimPackage.ACDC_CONVERTER__DC_TERMINALS, ACDCConverter.class, msgs );
             msgs = basicSetDCConductingEquipment( newDCConductingEquipment, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldDCConductingEquipmentESet = dcConductingEquipmentESet;
             dcConductingEquipmentESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ACDC_CONVERTER_DC_TERMINAL__DC_CONDUCTING_EQUIPMENT, newDCConductingEquipment,
-                    newDCConductingEquipment, !oldDCConductingEquipmentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.ACDC_CONVERTER_DC_TERMINAL__DC_CONDUCTING_EQUIPMENT, newDCConductingEquipment,
+                        newDCConductingEquipment, !oldDCConductingEquipmentESet ) );
         }
     }
 
@@ -262,9 +267,10 @@ public class ACDCConverterDCTerminalImpl extends DCBaseTerminalImpl implements A
         else {
             boolean oldDCConductingEquipmentESet = dcConductingEquipmentESet;
             dcConductingEquipmentESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ACDC_CONVERTER_DC_TERMINAL__DC_CONDUCTING_EQUIPMENT, null, null,
-                    oldDCConductingEquipmentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.ACDC_CONVERTER_DC_TERMINAL__DC_CONDUCTING_EQUIPMENT, null, null,
+                        oldDCConductingEquipmentESet ) );
         }
     }
 
@@ -287,8 +293,9 @@ public class ACDCConverterDCTerminalImpl extends DCBaseTerminalImpl implements A
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ACDC_CONVERTER_DC_TERMINAL__DC_CONDUCTING_EQUIPMENT:
-            if( dcConductingEquipment != null ) msgs = ( ( InternalEObject ) dcConductingEquipment )
-                    .eInverseRemove( this, CimPackage.ACDC_CONVERTER__DC_TERMINALS, ACDCConverter.class, msgs );
+            if( dcConductingEquipment != null )
+                msgs = ( ( InternalEObject ) dcConductingEquipment ).eInverseRemove( this,
+                        CimPackage.ACDC_CONVERTER__DC_TERMINALS, ACDCConverter.class, msgs );
             return basicSetDCConductingEquipment( ( ACDCConverter ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -385,7 +392,7 @@ public class ACDCConverterDCTerminalImpl extends DCBaseTerminalImpl implements A
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (polarity: " );
         if( polarityESet )
             result.append( polarity );

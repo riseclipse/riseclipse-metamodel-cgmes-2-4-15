@@ -143,8 +143,9 @@ public class MonthDayIntervalImpl extends MinimalEObjectImpl.Container implement
         end = newEnd;
         boolean oldEndESet = endESet;
         endESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.MONTH_DAY_INTERVAL__END, oldEnd, end, !oldEndESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MONTH_DAY_INTERVAL__END, oldEnd, end,
+                    !oldEndESet ) );
     }
 
     /**
@@ -158,8 +159,9 @@ public class MonthDayIntervalImpl extends MinimalEObjectImpl.Container implement
         boolean oldEndESet = endESet;
         end = END_EDEFAULT;
         endESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MONTH_DAY_INTERVAL__END, oldEnd, END_EDEFAULT, oldEndESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MONTH_DAY_INTERVAL__END, oldEnd,
+                    END_EDEFAULT, oldEndESet ) );
     }
 
     /**
@@ -193,8 +195,9 @@ public class MonthDayIntervalImpl extends MinimalEObjectImpl.Container implement
         start = newStart;
         boolean oldStartESet = startESet;
         startESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.MONTH_DAY_INTERVAL__START, oldStart, start, !oldStartESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MONTH_DAY_INTERVAL__START, oldStart,
+                    start, !oldStartESet ) );
     }
 
     /**
@@ -208,8 +211,9 @@ public class MonthDayIntervalImpl extends MinimalEObjectImpl.Container implement
         boolean oldStartESet = startESet;
         start = START_EDEFAULT;
         startESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MONTH_DAY_INTERVAL__START, oldStart, START_EDEFAULT, oldStartESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MONTH_DAY_INTERVAL__START, oldStart,
+                    START_EDEFAULT, oldStartESet ) );
     }
 
     /**
@@ -299,7 +303,7 @@ public class MonthDayIntervalImpl extends MinimalEObjectImpl.Container implement
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (end: " );
         if( endESet )
             result.append( end );

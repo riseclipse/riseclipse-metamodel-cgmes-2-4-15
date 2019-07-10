@@ -196,8 +196,9 @@ public class NonlinearShuntCompensatorPhasePointImpl extends CimObjectWithIDImpl
         b = newB;
         boolean oldBESet = bESet;
         bESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.NONLINEAR_SHUNT_COMPENSATOR_PHASE_POINT__B, oldB, b, !oldBESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.NONLINEAR_SHUNT_COMPENSATOR_PHASE_POINT__B, oldB, b, !oldBESet ) );
     }
 
     /**
@@ -211,8 +212,9 @@ public class NonlinearShuntCompensatorPhasePointImpl extends CimObjectWithIDImpl
         boolean oldBESet = bESet;
         b = B_EDEFAULT;
         bESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.NONLINEAR_SHUNT_COMPENSATOR_PHASE_POINT__B, oldB, B_EDEFAULT, oldBESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.NONLINEAR_SHUNT_COMPENSATOR_PHASE_POINT__B, oldB, B_EDEFAULT, oldBESet ) );
     }
 
     /**
@@ -246,8 +248,9 @@ public class NonlinearShuntCompensatorPhasePointImpl extends CimObjectWithIDImpl
         g = newG;
         boolean oldGESet = gESet;
         gESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.NONLINEAR_SHUNT_COMPENSATOR_PHASE_POINT__G, oldG, g, !oldGESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.NONLINEAR_SHUNT_COMPENSATOR_PHASE_POINT__G, oldG, g, !oldGESet ) );
     }
 
     /**
@@ -261,8 +264,9 @@ public class NonlinearShuntCompensatorPhasePointImpl extends CimObjectWithIDImpl
         boolean oldGESet = gESet;
         g = G_EDEFAULT;
         gESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.NONLINEAR_SHUNT_COMPENSATOR_PHASE_POINT__G, oldG, G_EDEFAULT, oldGESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.NONLINEAR_SHUNT_COMPENSATOR_PHASE_POINT__G, oldG, G_EDEFAULT, oldGESet ) );
     }
 
     /**
@@ -296,9 +300,10 @@ public class NonlinearShuntCompensatorPhasePointImpl extends CimObjectWithIDImpl
         sectionNumber = newSectionNumber;
         boolean oldSectionNumberESet = sectionNumberESet;
         sectionNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.NONLINEAR_SHUNT_COMPENSATOR_PHASE_POINT__SECTION_NUMBER, oldSectionNumber, sectionNumber,
-                !oldSectionNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.NONLINEAR_SHUNT_COMPENSATOR_PHASE_POINT__SECTION_NUMBER, oldSectionNumber, sectionNumber,
+                    !oldSectionNumberESet ) );
     }
 
     /**
@@ -312,9 +317,10 @@ public class NonlinearShuntCompensatorPhasePointImpl extends CimObjectWithIDImpl
         boolean oldSectionNumberESet = sectionNumberESet;
         sectionNumber = SECTION_NUMBER_EDEFAULT;
         sectionNumberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.NONLINEAR_SHUNT_COMPENSATOR_PHASE_POINT__SECTION_NUMBER, oldSectionNumber,
-                SECTION_NUMBER_EDEFAULT, oldSectionNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.NONLINEAR_SHUNT_COMPENSATOR_PHASE_POINT__SECTION_NUMBER, oldSectionNumber,
+                    SECTION_NUMBER_EDEFAULT, oldSectionNumberESet ) );
     }
 
     /**
@@ -384,10 +390,11 @@ public class NonlinearShuntCompensatorPhasePointImpl extends CimObjectWithIDImpl
         else {
             boolean oldNonlinearShuntCompensatorPhaseESet = nonlinearShuntCompensatorPhaseESet;
             nonlinearShuntCompensatorPhaseESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.NONLINEAR_SHUNT_COMPENSATOR_PHASE_POINT__NONLINEAR_SHUNT_COMPENSATOR_PHASE,
-                    newNonlinearShuntCompensatorPhase, newNonlinearShuntCompensatorPhase,
-                    !oldNonlinearShuntCompensatorPhaseESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.NONLINEAR_SHUNT_COMPENSATOR_PHASE_POINT__NONLINEAR_SHUNT_COMPENSATOR_PHASE,
+                        newNonlinearShuntCompensatorPhase, newNonlinearShuntCompensatorPhase,
+                        !oldNonlinearShuntCompensatorPhaseESet ) );
         }
     }
 
@@ -431,9 +438,10 @@ public class NonlinearShuntCompensatorPhasePointImpl extends CimObjectWithIDImpl
         else {
             boolean oldNonlinearShuntCompensatorPhaseESet = nonlinearShuntCompensatorPhaseESet;
             nonlinearShuntCompensatorPhaseESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.NONLINEAR_SHUNT_COMPENSATOR_PHASE_POINT__NONLINEAR_SHUNT_COMPENSATOR_PHASE, null, null,
-                    oldNonlinearShuntCompensatorPhaseESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.NONLINEAR_SHUNT_COMPENSATOR_PHASE_POINT__NONLINEAR_SHUNT_COMPENSATOR_PHASE, null,
+                        null, oldNonlinearShuntCompensatorPhaseESet ) );
         }
     }
 
@@ -576,7 +584,7 @@ public class NonlinearShuntCompensatorPhasePointImpl extends CimObjectWithIDImpl
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (b: " );
         if( bESet )
             result.append( b );

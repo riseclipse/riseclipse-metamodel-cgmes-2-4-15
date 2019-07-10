@@ -126,19 +126,22 @@ public class CTTempActivePowerCurveImpl extends CurveImpl implements CTTempActiv
     public void setCombustionTurbine( CombustionTurbine newCombustionTurbine ) {
         if( newCombustionTurbine != combustionTurbine ) {
             NotificationChain msgs = null;
-            if( combustionTurbine != null ) msgs = ( ( InternalEObject ) combustionTurbine ).eInverseRemove( this,
-                    CimPackage.COMBUSTION_TURBINE__CT_TEMP_ACTIVE_POWER_CURVE, CombustionTurbine.class, msgs );
-            if( newCombustionTurbine != null ) msgs = ( ( InternalEObject ) newCombustionTurbine ).eInverseAdd( this,
-                    CimPackage.COMBUSTION_TURBINE__CT_TEMP_ACTIVE_POWER_CURVE, CombustionTurbine.class, msgs );
+            if( combustionTurbine != null )
+                msgs = ( ( InternalEObject ) combustionTurbine ).eInverseRemove( this,
+                        CimPackage.COMBUSTION_TURBINE__CT_TEMP_ACTIVE_POWER_CURVE, CombustionTurbine.class, msgs );
+            if( newCombustionTurbine != null )
+                msgs = ( ( InternalEObject ) newCombustionTurbine ).eInverseAdd( this,
+                        CimPackage.COMBUSTION_TURBINE__CT_TEMP_ACTIVE_POWER_CURVE, CombustionTurbine.class, msgs );
             msgs = basicSetCombustionTurbine( newCombustionTurbine, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCombustionTurbineESet = combustionTurbineESet;
             combustionTurbineESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CT_TEMP_ACTIVE_POWER_CURVE__COMBUSTION_TURBINE, newCombustionTurbine,
-                    newCombustionTurbine, !oldCombustionTurbineESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.CT_TEMP_ACTIVE_POWER_CURVE__COMBUSTION_TURBINE, newCombustionTurbine,
+                        newCombustionTurbine, !oldCombustionTurbineESet ) );
         }
     }
 
@@ -181,8 +184,10 @@ public class CTTempActivePowerCurveImpl extends CurveImpl implements CTTempActiv
         else {
             boolean oldCombustionTurbineESet = combustionTurbineESet;
             combustionTurbineESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CT_TEMP_ACTIVE_POWER_CURVE__COMBUSTION_TURBINE, null, null, oldCombustionTurbineESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CT_TEMP_ACTIVE_POWER_CURVE__COMBUSTION_TURBINE, null, null,
+                        oldCombustionTurbineESet ) );
         }
     }
 
@@ -205,8 +210,9 @@ public class CTTempActivePowerCurveImpl extends CurveImpl implements CTTempActiv
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CT_TEMP_ACTIVE_POWER_CURVE__COMBUSTION_TURBINE:
-            if( combustionTurbine != null ) msgs = ( ( InternalEObject ) combustionTurbine ).eInverseRemove( this,
-                    CimPackage.COMBUSTION_TURBINE__CT_TEMP_ACTIVE_POWER_CURVE, CombustionTurbine.class, msgs );
+            if( combustionTurbine != null )
+                msgs = ( ( InternalEObject ) combustionTurbine ).eInverseRemove( this,
+                        CimPackage.COMBUSTION_TURBINE__CT_TEMP_ACTIVE_POWER_CURVE, CombustionTurbine.class, msgs );
             return basicSetCombustionTurbine( ( CombustionTurbine ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

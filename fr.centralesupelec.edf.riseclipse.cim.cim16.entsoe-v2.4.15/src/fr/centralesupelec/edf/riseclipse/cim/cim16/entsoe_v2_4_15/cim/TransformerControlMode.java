@@ -92,7 +92,10 @@ public enum TransformerControlMode implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final TransformerControlMode[] VALUES_ARRAY = new TransformerControlMode[] { VOLT, REACTIVE, };
+    private static final TransformerControlMode[] VALUES_ARRAY = new TransformerControlMode[] {
+            VOLT,
+            REACTIVE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Transformer Control Mode</b></em>' enumerators.

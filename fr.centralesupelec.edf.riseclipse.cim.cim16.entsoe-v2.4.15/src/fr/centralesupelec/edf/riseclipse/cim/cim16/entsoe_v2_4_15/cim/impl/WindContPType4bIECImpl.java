@@ -225,8 +225,9 @@ public class WindContPType4bIECImpl extends IdentifiedObjectImpl implements Wind
         dpmax = newDpmax;
         boolean oldDpmaxESet = dpmaxESet;
         dpmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE4B_IEC__DPMAX, oldDpmax, dpmax, !oldDpmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE4B_IEC__DPMAX, oldDpmax,
+                    dpmax, !oldDpmaxESet ) );
     }
 
     /**
@@ -240,8 +241,9 @@ public class WindContPType4bIECImpl extends IdentifiedObjectImpl implements Wind
         boolean oldDpmaxESet = dpmaxESet;
         dpmax = DPMAX_EDEFAULT;
         dpmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE4B_IEC__DPMAX, oldDpmax, DPMAX_EDEFAULT, oldDpmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE4B_IEC__DPMAX, oldDpmax,
+                    DPMAX_EDEFAULT, oldDpmaxESet ) );
     }
 
     /**
@@ -275,8 +277,9 @@ public class WindContPType4bIECImpl extends IdentifiedObjectImpl implements Wind
         tpaero = newTpaero;
         boolean oldTpaeroESet = tpaeroESet;
         tpaeroESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE4B_IEC__TPAERO, oldTpaero, tpaero, !oldTpaeroESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE4B_IEC__TPAERO, oldTpaero,
+                    tpaero, !oldTpaeroESet ) );
     }
 
     /**
@@ -290,8 +293,9 @@ public class WindContPType4bIECImpl extends IdentifiedObjectImpl implements Wind
         boolean oldTpaeroESet = tpaeroESet;
         tpaero = TPAERO_EDEFAULT;
         tpaeroESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE4B_IEC__TPAERO, oldTpaero, TPAERO_EDEFAULT, oldTpaeroESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE4B_IEC__TPAERO,
+                    oldTpaero, TPAERO_EDEFAULT, oldTpaeroESet ) );
     }
 
     /**
@@ -325,8 +329,9 @@ public class WindContPType4bIECImpl extends IdentifiedObjectImpl implements Wind
         tpord = newTpord;
         boolean oldTpordESet = tpordESet;
         tpordESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE4B_IEC__TPORD, oldTpord, tpord, !oldTpordESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE4B_IEC__TPORD, oldTpord,
+                    tpord, !oldTpordESet ) );
     }
 
     /**
@@ -340,8 +345,9 @@ public class WindContPType4bIECImpl extends IdentifiedObjectImpl implements Wind
         boolean oldTpordESet = tpordESet;
         tpord = TPORD_EDEFAULT;
         tpordESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE4B_IEC__TPORD, oldTpord, TPORD_EDEFAULT, oldTpordESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE4B_IEC__TPORD, oldTpord,
+                    TPORD_EDEFAULT, oldTpordESet ) );
     }
 
     /**
@@ -375,8 +381,9 @@ public class WindContPType4bIECImpl extends IdentifiedObjectImpl implements Wind
         tufilt = newTufilt;
         boolean oldTufiltESet = tufiltESet;
         tufiltESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PTYPE4B_IEC__TUFILT, oldTufilt, tufilt, !oldTufiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PTYPE4B_IEC__TUFILT, oldTufilt,
+                    tufilt, !oldTufiltESet ) );
     }
 
     /**
@@ -390,8 +397,9 @@ public class WindContPType4bIECImpl extends IdentifiedObjectImpl implements Wind
         boolean oldTufiltESet = tufiltESet;
         tufilt = TUFILT_EDEFAULT;
         tufiltESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PTYPE4B_IEC__TUFILT, oldTufilt, TUFILT_EDEFAULT, oldTufiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PTYPE4B_IEC__TUFILT,
+                    oldTufilt, TUFILT_EDEFAULT, oldTufiltESet ) );
     }
 
     /**
@@ -446,8 +454,9 @@ public class WindContPType4bIECImpl extends IdentifiedObjectImpl implements Wind
     public void setWindTurbineType4bIEC( WindTurbineType4bIEC newWindTurbineType4bIEC ) {
         if( newWindTurbineType4bIEC != windTurbineType4bIEC ) {
             NotificationChain msgs = null;
-            if( windTurbineType4bIEC != null ) msgs = ( ( InternalEObject ) windTurbineType4bIEC ).eInverseRemove( this,
-                    CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_CONT_PTYPE4B_IEC, WindTurbineType4bIEC.class, msgs );
+            if( windTurbineType4bIEC != null )
+                msgs = ( ( InternalEObject ) windTurbineType4bIEC ).eInverseRemove( this,
+                        CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_CONT_PTYPE4B_IEC, WindTurbineType4bIEC.class, msgs );
             if( newWindTurbineType4bIEC != null )
                 msgs = ( ( InternalEObject ) newWindTurbineType4bIEC ).eInverseAdd( this,
                         CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_CONT_PTYPE4B_IEC, WindTurbineType4bIEC.class, msgs );
@@ -457,9 +466,10 @@ public class WindContPType4bIECImpl extends IdentifiedObjectImpl implements Wind
         else {
             boolean oldWindTurbineType4bIECESet = windTurbineType4bIECESet;
             windTurbineType4bIECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_CONT_PTYPE4B_IEC__WIND_TURBINE_TYPE4B_IEC, newWindTurbineType4bIEC,
-                    newWindTurbineType4bIEC, !oldWindTurbineType4bIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_CONT_PTYPE4B_IEC__WIND_TURBINE_TYPE4B_IEC, newWindTurbineType4bIEC,
+                        newWindTurbineType4bIEC, !oldWindTurbineType4bIECESet ) );
         }
     }
 
@@ -502,9 +512,10 @@ public class WindContPType4bIECImpl extends IdentifiedObjectImpl implements Wind
         else {
             boolean oldWindTurbineType4bIECESet = windTurbineType4bIECESet;
             windTurbineType4bIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_CONT_PTYPE4B_IEC__WIND_TURBINE_TYPE4B_IEC, null, null,
-                    oldWindTurbineType4bIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_CONT_PTYPE4B_IEC__WIND_TURBINE_TYPE4B_IEC, null, null,
+                        oldWindTurbineType4bIECESet ) );
         }
     }
 
@@ -527,8 +538,9 @@ public class WindContPType4bIECImpl extends IdentifiedObjectImpl implements Wind
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.WIND_CONT_PTYPE4B_IEC__WIND_TURBINE_TYPE4B_IEC:
-            if( windTurbineType4bIEC != null ) msgs = ( ( InternalEObject ) windTurbineType4bIEC ).eInverseRemove( this,
-                    CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_CONT_PTYPE4B_IEC, WindTurbineType4bIEC.class, msgs );
+            if( windTurbineType4bIEC != null )
+                msgs = ( ( InternalEObject ) windTurbineType4bIEC ).eInverseRemove( this,
+                        CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_CONT_PTYPE4B_IEC, WindTurbineType4bIEC.class, msgs );
             return basicSetWindTurbineType4bIEC( ( WindTurbineType4bIEC ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -655,7 +667,7 @@ public class WindContPType4bIECImpl extends IdentifiedObjectImpl implements Wind
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (dpmax: " );
         if( dpmaxESet )
             result.append( dpmax );

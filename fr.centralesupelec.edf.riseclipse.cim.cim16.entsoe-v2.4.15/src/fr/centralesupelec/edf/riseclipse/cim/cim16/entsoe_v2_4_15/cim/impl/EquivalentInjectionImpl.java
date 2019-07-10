@@ -555,8 +555,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         maxP = newMaxP;
         boolean oldMaxPESet = maxPESet;
         maxPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_INJECTION__MAX_P, oldMaxP, maxP, !oldMaxPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_INJECTION__MAX_P, oldMaxP,
+                    maxP, !oldMaxPESet ) );
     }
 
     /**
@@ -570,8 +571,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         boolean oldMaxPESet = maxPESet;
         maxP = MAX_P_EDEFAULT;
         maxPESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_INJECTION__MAX_P, oldMaxP, MAX_P_EDEFAULT, oldMaxPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_INJECTION__MAX_P, oldMaxP,
+                    MAX_P_EDEFAULT, oldMaxPESet ) );
     }
 
     /**
@@ -605,8 +607,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         maxQ = newMaxQ;
         boolean oldMaxQESet = maxQESet;
         maxQESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_INJECTION__MAX_Q, oldMaxQ, maxQ, !oldMaxQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_INJECTION__MAX_Q, oldMaxQ,
+                    maxQ, !oldMaxQESet ) );
     }
 
     /**
@@ -620,8 +623,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         boolean oldMaxQESet = maxQESet;
         maxQ = MAX_Q_EDEFAULT;
         maxQESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_INJECTION__MAX_Q, oldMaxQ, MAX_Q_EDEFAULT, oldMaxQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_INJECTION__MAX_Q, oldMaxQ,
+                    MAX_Q_EDEFAULT, oldMaxQESet ) );
     }
 
     /**
@@ -655,8 +659,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         minP = newMinP;
         boolean oldMinPESet = minPESet;
         minPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_INJECTION__MIN_P, oldMinP, minP, !oldMinPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_INJECTION__MIN_P, oldMinP,
+                    minP, !oldMinPESet ) );
     }
 
     /**
@@ -670,8 +675,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         boolean oldMinPESet = minPESet;
         minP = MIN_P_EDEFAULT;
         minPESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_INJECTION__MIN_P, oldMinP, MIN_P_EDEFAULT, oldMinPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_INJECTION__MIN_P, oldMinP,
+                    MIN_P_EDEFAULT, oldMinPESet ) );
     }
 
     /**
@@ -705,8 +711,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         minQ = newMinQ;
         boolean oldMinQESet = minQESet;
         minQESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_INJECTION__MIN_Q, oldMinQ, minQ, !oldMinQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_INJECTION__MIN_Q, oldMinQ,
+                    minQ, !oldMinQESet ) );
     }
 
     /**
@@ -720,8 +727,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         boolean oldMinQESet = minQESet;
         minQ = MIN_Q_EDEFAULT;
         minQESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_INJECTION__MIN_Q, oldMinQ, MIN_Q_EDEFAULT, oldMinQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_INJECTION__MIN_Q, oldMinQ,
+                    MIN_Q_EDEFAULT, oldMinQESet ) );
     }
 
     /**
@@ -755,8 +763,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         p = newP;
         boolean oldPESet = pESet;
         pESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_INJECTION__P, oldP, p, !oldPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_INJECTION__P, oldP, p,
+                    !oldPESet ) );
     }
 
     /**
@@ -770,8 +779,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         boolean oldPESet = pESet;
         p = P_EDEFAULT;
         pESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_INJECTION__P, oldP, P_EDEFAULT, oldPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_INJECTION__P, oldP,
+                    P_EDEFAULT, oldPESet ) );
     }
 
     /**
@@ -805,8 +815,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         q = newQ;
         boolean oldQESet = qESet;
         qESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_INJECTION__Q, oldQ, q, !oldQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_INJECTION__Q, oldQ, q,
+                    !oldQESet ) );
     }
 
     /**
@@ -820,8 +831,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         boolean oldQESet = qESet;
         q = Q_EDEFAULT;
         qESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_INJECTION__Q, oldQ, Q_EDEFAULT, oldQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_INJECTION__Q, oldQ,
+                    Q_EDEFAULT, oldQESet ) );
     }
 
     /**
@@ -855,8 +867,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         r = newR;
         boolean oldRESet = rESet;
         rESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_INJECTION__R, oldR, r, !oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_INJECTION__R, oldR, r,
+                    !oldRESet ) );
     }
 
     /**
@@ -870,8 +883,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         boolean oldRESet = rESet;
         r = R_EDEFAULT;
         rESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_INJECTION__R, oldR, R_EDEFAULT, oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_INJECTION__R, oldR,
+                    R_EDEFAULT, oldRESet ) );
     }
 
     /**
@@ -905,8 +919,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         r0 = newR0;
         boolean oldR0ESet = r0ESet;
         r0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_INJECTION__R0, oldR0, r0, !oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_INJECTION__R0, oldR0, r0,
+                    !oldR0ESet ) );
     }
 
     /**
@@ -920,8 +935,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         boolean oldR0ESet = r0ESet;
         r0 = R0_EDEFAULT;
         r0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_INJECTION__R0, oldR0, R0_EDEFAULT, oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_INJECTION__R0, oldR0,
+                    R0_EDEFAULT, oldR0ESet ) );
     }
 
     /**
@@ -955,8 +971,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         r2 = newR2;
         boolean oldR2ESet = r2ESet;
         r2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_INJECTION__R2, oldR2, r2, !oldR2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_INJECTION__R2, oldR2, r2,
+                    !oldR2ESet ) );
     }
 
     /**
@@ -970,8 +987,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         boolean oldR2ESet = r2ESet;
         r2 = R2_EDEFAULT;
         r2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_INJECTION__R2, oldR2, R2_EDEFAULT, oldR2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_INJECTION__R2, oldR2,
+                    R2_EDEFAULT, oldR2ESet ) );
     }
 
     /**
@@ -1005,9 +1023,10 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         regulationCapability = newRegulationCapability;
         boolean oldRegulationCapabilityESet = regulationCapabilityESet;
         regulationCapabilityESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_INJECTION__REGULATION_CAPABILITY,
-                        oldRegulationCapability, regulationCapability, !oldRegulationCapabilityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.EQUIVALENT_INJECTION__REGULATION_CAPABILITY, oldRegulationCapability,
+                    regulationCapability, !oldRegulationCapabilityESet ) );
     }
 
     /**
@@ -1021,9 +1040,10 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         boolean oldRegulationCapabilityESet = regulationCapabilityESet;
         regulationCapability = REGULATION_CAPABILITY_EDEFAULT;
         regulationCapabilityESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_INJECTION__REGULATION_CAPABILITY,
-                        oldRegulationCapability, REGULATION_CAPABILITY_EDEFAULT, oldRegulationCapabilityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.EQUIVALENT_INJECTION__REGULATION_CAPABILITY, oldRegulationCapability,
+                    REGULATION_CAPABILITY_EDEFAULT, oldRegulationCapabilityESet ) );
     }
 
     /**
@@ -1073,9 +1093,10 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         boolean oldRegulationStatusESet = regulationStatusESet;
         regulationStatus = REGULATION_STATUS_EDEFAULT;
         regulationStatusESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_INJECTION__REGULATION_STATUS,
-                        oldRegulationStatus, REGULATION_STATUS_EDEFAULT, oldRegulationStatusESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.EQUIVALENT_INJECTION__REGULATION_STATUS, oldRegulationStatus, REGULATION_STATUS_EDEFAULT,
+                    oldRegulationStatusESet ) );
     }
 
     /**
@@ -1125,9 +1146,10 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         boolean oldRegulationTargetESet = regulationTargetESet;
         regulationTarget = REGULATION_TARGET_EDEFAULT;
         regulationTargetESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_INJECTION__REGULATION_TARGET,
-                        oldRegulationTarget, REGULATION_TARGET_EDEFAULT, oldRegulationTargetESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.EQUIVALENT_INJECTION__REGULATION_TARGET, oldRegulationTarget, REGULATION_TARGET_EDEFAULT,
+                    oldRegulationTargetESet ) );
     }
 
     /**
@@ -1161,8 +1183,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         x = newX;
         boolean oldXESet = xESet;
         xESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_INJECTION__X, oldX, x, !oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_INJECTION__X, oldX, x,
+                    !oldXESet ) );
     }
 
     /**
@@ -1176,8 +1199,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         boolean oldXESet = xESet;
         x = X_EDEFAULT;
         xESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_INJECTION__X, oldX, X_EDEFAULT, oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_INJECTION__X, oldX,
+                    X_EDEFAULT, oldXESet ) );
     }
 
     /**
@@ -1211,8 +1235,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         x0 = newX0;
         boolean oldX0ESet = x0ESet;
         x0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_INJECTION__X0, oldX0, x0, !oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_INJECTION__X0, oldX0, x0,
+                    !oldX0ESet ) );
     }
 
     /**
@@ -1226,8 +1251,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         boolean oldX0ESet = x0ESet;
         x0 = X0_EDEFAULT;
         x0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_INJECTION__X0, oldX0, X0_EDEFAULT, oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_INJECTION__X0, oldX0,
+                    X0_EDEFAULT, oldX0ESet ) );
     }
 
     /**
@@ -1261,8 +1287,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         x2 = newX2;
         boolean oldX2ESet = x2ESet;
         x2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_INJECTION__X2, oldX2, x2, !oldX2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_INJECTION__X2, oldX2, x2,
+                    !oldX2ESet ) );
     }
 
     /**
@@ -1276,8 +1303,9 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         boolean oldX2ESet = x2ESet;
         x2 = X2_EDEFAULT;
         x2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_INJECTION__X2, oldX2, X2_EDEFAULT, oldX2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_INJECTION__X2, oldX2,
+                    X2_EDEFAULT, oldX2ESet ) );
     }
 
     /**
@@ -1346,9 +1374,10 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         else {
             boolean oldReactiveCapabilityCurveESet = reactiveCapabilityCurveESet;
             reactiveCapabilityCurveESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.EQUIVALENT_INJECTION__REACTIVE_CAPABILITY_CURVE, newReactiveCapabilityCurve,
-                    newReactiveCapabilityCurve, !oldReactiveCapabilityCurveESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.EQUIVALENT_INJECTION__REACTIVE_CAPABILITY_CURVE, newReactiveCapabilityCurve,
+                        newReactiveCapabilityCurve, !oldReactiveCapabilityCurveESet ) );
         }
     }
 
@@ -1391,9 +1420,10 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
         else {
             boolean oldReactiveCapabilityCurveESet = reactiveCapabilityCurveESet;
             reactiveCapabilityCurveESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.EQUIVALENT_INJECTION__REACTIVE_CAPABILITY_CURVE, null, null,
-                    oldReactiveCapabilityCurveESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.EQUIVALENT_INJECTION__REACTIVE_CAPABILITY_CURVE, null, null,
+                        oldReactiveCapabilityCurveESet ) );
         }
     }
 
@@ -1656,7 +1686,7 @@ public class EquivalentInjectionImpl extends EquivalentEquipmentImpl implements 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (maxP: " );
         if( maxPESet )
             result.append( maxP );

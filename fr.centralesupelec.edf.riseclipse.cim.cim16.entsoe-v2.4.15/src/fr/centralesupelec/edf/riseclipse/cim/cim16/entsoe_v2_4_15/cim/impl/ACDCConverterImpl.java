@@ -634,8 +634,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         baseS = newBaseS;
         boolean oldBaseSESet = baseSESet;
         baseSESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACDC_CONVERTER__BASE_S, oldBaseS, baseS, !oldBaseSESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__BASE_S, oldBaseS, baseS,
+                    !oldBaseSESet ) );
     }
 
     /**
@@ -649,8 +650,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         boolean oldBaseSESet = baseSESet;
         baseS = BASE_S_EDEFAULT;
         baseSESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACDC_CONVERTER__BASE_S, oldBaseS, BASE_S_EDEFAULT, oldBaseSESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_CONVERTER__BASE_S, oldBaseS,
+                    BASE_S_EDEFAULT, oldBaseSESet ) );
     }
 
     /**
@@ -684,8 +686,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         idc = newIdc;
         boolean oldIdcESet = idcESet;
         idcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACDC_CONVERTER__IDC, oldIdc, idc, !oldIdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__IDC, oldIdc, idc,
+                    !oldIdcESet ) );
     }
 
     /**
@@ -699,8 +702,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         boolean oldIdcESet = idcESet;
         idc = IDC_EDEFAULT;
         idcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACDC_CONVERTER__IDC, oldIdc, IDC_EDEFAULT, oldIdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_CONVERTER__IDC, oldIdc,
+                    IDC_EDEFAULT, oldIdcESet ) );
     }
 
     /**
@@ -734,8 +738,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         idleLoss = newIdleLoss;
         boolean oldIdleLossESet = idleLossESet;
         idleLossESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACDC_CONVERTER__IDLE_LOSS, oldIdleLoss, idleLoss, !oldIdleLossESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__IDLE_LOSS, oldIdleLoss,
+                    idleLoss, !oldIdleLossESet ) );
     }
 
     /**
@@ -749,8 +754,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         boolean oldIdleLossESet = idleLossESet;
         idleLoss = IDLE_LOSS_EDEFAULT;
         idleLossESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACDC_CONVERTER__IDLE_LOSS, oldIdleLoss, IDLE_LOSS_EDEFAULT, oldIdleLossESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_CONVERTER__IDLE_LOSS, oldIdleLoss,
+                    IDLE_LOSS_EDEFAULT, oldIdleLossESet ) );
     }
 
     /**
@@ -784,8 +790,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         maxUdc = newMaxUdc;
         boolean oldMaxUdcESet = maxUdcESet;
         maxUdcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACDC_CONVERTER__MAX_UDC, oldMaxUdc, maxUdc, !oldMaxUdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__MAX_UDC, oldMaxUdc,
+                    maxUdc, !oldMaxUdcESet ) );
     }
 
     /**
@@ -799,8 +806,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         boolean oldMaxUdcESet = maxUdcESet;
         maxUdc = MAX_UDC_EDEFAULT;
         maxUdcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACDC_CONVERTER__MAX_UDC, oldMaxUdc, MAX_UDC_EDEFAULT, oldMaxUdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_CONVERTER__MAX_UDC, oldMaxUdc,
+                    MAX_UDC_EDEFAULT, oldMaxUdcESet ) );
     }
 
     /**
@@ -834,8 +842,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         minUdc = newMinUdc;
         boolean oldMinUdcESet = minUdcESet;
         minUdcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACDC_CONVERTER__MIN_UDC, oldMinUdc, minUdc, !oldMinUdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__MIN_UDC, oldMinUdc,
+                    minUdc, !oldMinUdcESet ) );
     }
 
     /**
@@ -849,8 +858,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         boolean oldMinUdcESet = minUdcESet;
         minUdc = MIN_UDC_EDEFAULT;
         minUdcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACDC_CONVERTER__MIN_UDC, oldMinUdc, MIN_UDC_EDEFAULT, oldMinUdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_CONVERTER__MIN_UDC, oldMinUdc,
+                    MIN_UDC_EDEFAULT, oldMinUdcESet ) );
     }
 
     /**
@@ -936,8 +946,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         p = newP;
         boolean oldPESet = pESet;
         pESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__P, oldP, p, !oldPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__P, oldP, p,
+                    !oldPESet ) );
     }
 
     /**
@@ -951,8 +962,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         boolean oldPESet = pESet;
         p = P_EDEFAULT;
         pESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACDC_CONVERTER__P, oldP, P_EDEFAULT, oldPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_CONVERTER__P, oldP, P_EDEFAULT,
+                    oldPESet ) );
     }
 
     /**
@@ -986,8 +998,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         poleLossP = newPoleLossP;
         boolean oldPoleLossPESet = poleLossPESet;
         poleLossPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACDC_CONVERTER__POLE_LOSS_P, oldPoleLossP, poleLossP, !oldPoleLossPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__POLE_LOSS_P,
+                    oldPoleLossP, poleLossP, !oldPoleLossPESet ) );
     }
 
     /**
@@ -1001,8 +1014,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         boolean oldPoleLossPESet = poleLossPESet;
         poleLossP = POLE_LOSS_P_EDEFAULT;
         poleLossPESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACDC_CONVERTER__POLE_LOSS_P, oldPoleLossP, POLE_LOSS_P_EDEFAULT, oldPoleLossPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_CONVERTER__POLE_LOSS_P,
+                    oldPoleLossP, POLE_LOSS_P_EDEFAULT, oldPoleLossPESet ) );
     }
 
     /**
@@ -1036,8 +1050,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         q = newQ;
         boolean oldQESet = qESet;
         qESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__Q, oldQ, q, !oldQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__Q, oldQ, q,
+                    !oldQESet ) );
     }
 
     /**
@@ -1051,8 +1066,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         boolean oldQESet = qESet;
         q = Q_EDEFAULT;
         qESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACDC_CONVERTER__Q, oldQ, Q_EDEFAULT, oldQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_CONVERTER__Q, oldQ, Q_EDEFAULT,
+                    oldQESet ) );
     }
 
     /**
@@ -1086,8 +1102,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         ratedUdc = newRatedUdc;
         boolean oldRatedUdcESet = ratedUdcESet;
         ratedUdcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACDC_CONVERTER__RATED_UDC, oldRatedUdc, ratedUdc, !oldRatedUdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__RATED_UDC, oldRatedUdc,
+                    ratedUdc, !oldRatedUdcESet ) );
     }
 
     /**
@@ -1101,8 +1118,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         boolean oldRatedUdcESet = ratedUdcESet;
         ratedUdc = RATED_UDC_EDEFAULT;
         ratedUdcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACDC_CONVERTER__RATED_UDC, oldRatedUdc, RATED_UDC_EDEFAULT, oldRatedUdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_CONVERTER__RATED_UDC, oldRatedUdc,
+                    RATED_UDC_EDEFAULT, oldRatedUdcESet ) );
     }
 
     /**
@@ -1136,8 +1154,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         resistiveLoss = newResistiveLoss;
         boolean oldResistiveLossESet = resistiveLossESet;
         resistiveLossESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACDC_CONVERTER__RESISTIVE_LOSS, oldResistiveLoss, resistiveLoss, !oldResistiveLossESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__RESISTIVE_LOSS,
+                    oldResistiveLoss, resistiveLoss, !oldResistiveLossESet ) );
     }
 
     /**
@@ -1187,8 +1206,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         switchingLoss = newSwitchingLoss;
         boolean oldSwitchingLossESet = switchingLossESet;
         switchingLossESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACDC_CONVERTER__SWITCHING_LOSS, oldSwitchingLoss, switchingLoss, !oldSwitchingLossESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__SWITCHING_LOSS,
+                    oldSwitchingLoss, switchingLoss, !oldSwitchingLossESet ) );
     }
 
     /**
@@ -1238,8 +1258,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         targetPpcc = newTargetPpcc;
         boolean oldTargetPpccESet = targetPpccESet;
         targetPpccESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACDC_CONVERTER__TARGET_PPCC, oldTargetPpcc, targetPpcc, !oldTargetPpccESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__TARGET_PPCC,
+                    oldTargetPpcc, targetPpcc, !oldTargetPpccESet ) );
     }
 
     /**
@@ -1253,8 +1274,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         boolean oldTargetPpccESet = targetPpccESet;
         targetPpcc = TARGET_PPCC_EDEFAULT;
         targetPpccESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACDC_CONVERTER__TARGET_PPCC, oldTargetPpcc, TARGET_PPCC_EDEFAULT, oldTargetPpccESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_CONVERTER__TARGET_PPCC,
+                    oldTargetPpcc, TARGET_PPCC_EDEFAULT, oldTargetPpccESet ) );
     }
 
     /**
@@ -1288,8 +1310,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         targetUdc = newTargetUdc;
         boolean oldTargetUdcESet = targetUdcESet;
         targetUdcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACDC_CONVERTER__TARGET_UDC, oldTargetUdc, targetUdc, !oldTargetUdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__TARGET_UDC, oldTargetUdc,
+                    targetUdc, !oldTargetUdcESet ) );
     }
 
     /**
@@ -1303,8 +1326,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         boolean oldTargetUdcESet = targetUdcESet;
         targetUdc = TARGET_UDC_EDEFAULT;
         targetUdcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACDC_CONVERTER__TARGET_UDC, oldTargetUdc, TARGET_UDC_EDEFAULT, oldTargetUdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_CONVERTER__TARGET_UDC,
+                    oldTargetUdc, TARGET_UDC_EDEFAULT, oldTargetUdcESet ) );
     }
 
     /**
@@ -1338,8 +1362,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         uc = newUc;
         boolean oldUcESet = ucESet;
         ucESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__UC, oldUc, uc, !oldUcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__UC, oldUc, uc,
+                    !oldUcESet ) );
     }
 
     /**
@@ -1353,8 +1378,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         boolean oldUcESet = ucESet;
         uc = UC_EDEFAULT;
         ucESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACDC_CONVERTER__UC, oldUc, UC_EDEFAULT, oldUcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_CONVERTER__UC, oldUc, UC_EDEFAULT,
+                    oldUcESet ) );
     }
 
     /**
@@ -1388,8 +1414,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         udc = newUdc;
         boolean oldUdcESet = udcESet;
         udcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACDC_CONVERTER__UDC, oldUdc, udc, !oldUdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__UDC, oldUdc, udc,
+                    !oldUdcESet ) );
     }
 
     /**
@@ -1403,8 +1430,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         boolean oldUdcESet = udcESet;
         udc = UDC_EDEFAULT;
         udcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACDC_CONVERTER__UDC, oldUdc, UDC_EDEFAULT, oldUdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_CONVERTER__UDC, oldUdc,
+                    UDC_EDEFAULT, oldUdcESet ) );
     }
 
     /**
@@ -1438,8 +1466,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         valveU0 = newValveU0;
         boolean oldValveU0ESet = valveU0ESet;
         valveU0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACDC_CONVERTER__VALVE_U0, oldValveU0, valveU0, !oldValveU0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__VALVE_U0, oldValveU0,
+                    valveU0, !oldValveU0ESet ) );
     }
 
     /**
@@ -1453,8 +1482,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         boolean oldValveU0ESet = valveU0ESet;
         valveU0 = VALVE_U0_EDEFAULT;
         valveU0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACDC_CONVERTER__VALVE_U0, oldValveU0, VALVE_U0_EDEFAULT, oldValveU0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_CONVERTER__VALVE_U0, oldValveU0,
+                    VALVE_U0_EDEFAULT, oldValveU0ESet ) );
     }
 
     /**
@@ -1542,18 +1572,21 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
     public void setPccTerminal( Terminal newPccTerminal ) {
         if( newPccTerminal != pccTerminal ) {
             NotificationChain msgs = null;
-            if( pccTerminal != null ) msgs = ( ( InternalEObject ) pccTerminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__CONVERTER_DC_SIDES, Terminal.class, msgs );
-            if( newPccTerminal != null ) msgs = ( ( InternalEObject ) newPccTerminal ).eInverseAdd( this,
-                    CimPackage.TERMINAL__CONVERTER_DC_SIDES, Terminal.class, msgs );
+            if( pccTerminal != null )
+                msgs = ( ( InternalEObject ) pccTerminal ).eInverseRemove( this,
+                        CimPackage.TERMINAL__CONVERTER_DC_SIDES, Terminal.class, msgs );
+            if( newPccTerminal != null )
+                msgs = ( ( InternalEObject ) newPccTerminal ).eInverseAdd( this,
+                        CimPackage.TERMINAL__CONVERTER_DC_SIDES, Terminal.class, msgs );
             msgs = basicSetPccTerminal( newPccTerminal, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldPccTerminalESet = pccTerminalESet;
             pccTerminalESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ACDC_CONVERTER__PCC_TERMINAL, newPccTerminal, newPccTerminal, !oldPccTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_CONVERTER__PCC_TERMINAL,
+                        newPccTerminal, newPccTerminal, !oldPccTerminalESet ) );
         }
     }
 
@@ -1595,8 +1628,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
         else {
             boolean oldPccTerminalESet = pccTerminalESet;
             pccTerminalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ACDC_CONVERTER__PCC_TERMINAL, null, null, oldPccTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_CONVERTER__PCC_TERMINAL, null,
+                        null, oldPccTerminalESet ) );
         }
     }
 
@@ -1620,8 +1654,9 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ACDC_CONVERTER__PCC_TERMINAL:
-            if( pccTerminal != null ) msgs = ( ( InternalEObject ) pccTerminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__CONVERTER_DC_SIDES, Terminal.class, msgs );
+            if( pccTerminal != null )
+                msgs = ( ( InternalEObject ) pccTerminal ).eInverseRemove( this,
+                        CimPackage.TERMINAL__CONVERTER_DC_SIDES, Terminal.class, msgs );
             return basicSetPccTerminal( ( Terminal ) otherEnd, msgs );
         case CimPackage.ACDC_CONVERTER__DC_TERMINALS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getDCTerminals() ).basicAdd( otherEnd,
@@ -1895,7 +1930,7 @@ public class ACDCConverterImpl extends ConductingEquipmentImpl implements ACDCCo
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (baseS: " );
         if( baseSESet )
             result.append( baseS );

@@ -143,8 +143,9 @@ public class RationalNumberImpl extends MinimalEObjectImpl.Container implements 
         denominator = newDenominator;
         boolean oldDenominatorESet = denominatorESet;
         denominatorESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.RATIONAL_NUMBER__DENOMINATOR, oldDenominator, denominator, !oldDenominatorESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.RATIONAL_NUMBER__DENOMINATOR,
+                    oldDenominator, denominator, !oldDenominatorESet ) );
     }
 
     /**
@@ -158,8 +159,9 @@ public class RationalNumberImpl extends MinimalEObjectImpl.Container implements 
         boolean oldDenominatorESet = denominatorESet;
         denominator = DENOMINATOR_EDEFAULT;
         denominatorESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.RATIONAL_NUMBER__DENOMINATOR, oldDenominator, DENOMINATOR_EDEFAULT, oldDenominatorESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.RATIONAL_NUMBER__DENOMINATOR,
+                    oldDenominator, DENOMINATOR_EDEFAULT, oldDenominatorESet ) );
     }
 
     /**
@@ -193,8 +195,9 @@ public class RationalNumberImpl extends MinimalEObjectImpl.Container implements 
         numerator = newNumerator;
         boolean oldNumeratorESet = numeratorESet;
         numeratorESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.RATIONAL_NUMBER__NUMERATOR, oldNumerator, numerator, !oldNumeratorESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.RATIONAL_NUMBER__NUMERATOR, oldNumerator,
+                    numerator, !oldNumeratorESet ) );
     }
 
     /**
@@ -208,8 +211,9 @@ public class RationalNumberImpl extends MinimalEObjectImpl.Container implements 
         boolean oldNumeratorESet = numeratorESet;
         numerator = NUMERATOR_EDEFAULT;
         numeratorESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.RATIONAL_NUMBER__NUMERATOR, oldNumerator, NUMERATOR_EDEFAULT, oldNumeratorESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.RATIONAL_NUMBER__NUMERATOR,
+                    oldNumerator, NUMERATOR_EDEFAULT, oldNumeratorESet ) );
     }
 
     /**
@@ -299,7 +303,7 @@ public class RationalNumberImpl extends MinimalEObjectImpl.Container implements 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (denominator: " );
         if( denominatorESet )
             result.append( denominator );

@@ -228,8 +228,9 @@ public class WindGenTurbineType3IECImpl extends WindTurbineType3or4IECImpl imple
         dipmax = newDipmax;
         boolean oldDipmaxESet = dipmaxESet;
         dipmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__DIPMAX, oldDipmax, dipmax, !oldDipmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__DIPMAX,
+                    oldDipmax, dipmax, !oldDipmaxESet ) );
     }
 
     /**
@@ -243,8 +244,9 @@ public class WindGenTurbineType3IECImpl extends WindTurbineType3or4IECImpl imple
         boolean oldDipmaxESet = dipmaxESet;
         dipmax = DIPMAX_EDEFAULT;
         dipmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__DIPMAX, oldDipmax, DIPMAX_EDEFAULT, oldDipmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__DIPMAX,
+                    oldDipmax, DIPMAX_EDEFAULT, oldDipmaxESet ) );
     }
 
     /**
@@ -278,8 +280,9 @@ public class WindGenTurbineType3IECImpl extends WindTurbineType3or4IECImpl imple
         diqmax = newDiqmax;
         boolean oldDiqmaxESet = diqmaxESet;
         diqmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__DIQMAX, oldDiqmax, diqmax, !oldDiqmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__DIQMAX,
+                    oldDiqmax, diqmax, !oldDiqmaxESet ) );
     }
 
     /**
@@ -293,8 +296,9 @@ public class WindGenTurbineType3IECImpl extends WindTurbineType3or4IECImpl imple
         boolean oldDiqmaxESet = diqmaxESet;
         diqmax = DIQMAX_EDEFAULT;
         diqmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__DIQMAX, oldDiqmax, DIQMAX_EDEFAULT, oldDiqmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__DIQMAX,
+                    oldDiqmax, DIQMAX_EDEFAULT, oldDiqmaxESet ) );
     }
 
     /**
@@ -349,19 +353,22 @@ public class WindGenTurbineType3IECImpl extends WindTurbineType3or4IECImpl imple
     public void setWindAeroLinearIEC( WindAeroLinearIEC newWindAeroLinearIEC ) {
         if( newWindAeroLinearIEC != windAeroLinearIEC ) {
             NotificationChain msgs = null;
-            if( windAeroLinearIEC != null ) msgs = ( ( InternalEObject ) windAeroLinearIEC ).eInverseRemove( this,
-                    CimPackage.WIND_AERO_LINEAR_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindAeroLinearIEC.class, msgs );
-            if( newWindAeroLinearIEC != null ) msgs = ( ( InternalEObject ) newWindAeroLinearIEC ).eInverseAdd( this,
-                    CimPackage.WIND_AERO_LINEAR_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindAeroLinearIEC.class, msgs );
+            if( windAeroLinearIEC != null )
+                msgs = ( ( InternalEObject ) windAeroLinearIEC ).eInverseRemove( this,
+                        CimPackage.WIND_AERO_LINEAR_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindAeroLinearIEC.class, msgs );
+            if( newWindAeroLinearIEC != null )
+                msgs = ( ( InternalEObject ) newWindAeroLinearIEC ).eInverseAdd( this,
+                        CimPackage.WIND_AERO_LINEAR_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindAeroLinearIEC.class, msgs );
             msgs = basicSetWindAeroLinearIEC( newWindAeroLinearIEC, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWindAeroLinearIECESet = windAeroLinearIECESet;
             windAeroLinearIECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_AERO_LINEAR_IEC, newWindAeroLinearIEC,
-                    newWindAeroLinearIEC, !oldWindAeroLinearIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_AERO_LINEAR_IEC, newWindAeroLinearIEC,
+                        newWindAeroLinearIEC, !oldWindAeroLinearIECESet ) );
         }
     }
 
@@ -404,9 +411,10 @@ public class WindGenTurbineType3IECImpl extends WindTurbineType3or4IECImpl imple
         else {
             boolean oldWindAeroLinearIECESet = windAeroLinearIECESet;
             windAeroLinearIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_AERO_LINEAR_IEC, null, null,
-                    oldWindAeroLinearIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_AERO_LINEAR_IEC, null, null,
+                        oldWindAeroLinearIECESet ) );
         }
     }
 
@@ -431,8 +439,9 @@ public class WindGenTurbineType3IECImpl extends WindTurbineType3or4IECImpl imple
             InternalEObject oldWindMechIEC = ( InternalEObject ) windMechIEC;
             windMechIEC = ( WindMechIEC ) eResolveProxy( oldWindMechIEC );
             if( windMechIEC != oldWindMechIEC ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_MECH_IEC, oldWindMechIEC, windMechIEC ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_MECH_IEC, oldWindMechIEC, windMechIEC ) );
             }
         }
         return windMechIEC;
@@ -478,19 +487,22 @@ public class WindGenTurbineType3IECImpl extends WindTurbineType3or4IECImpl imple
     public void setWindMechIEC( WindMechIEC newWindMechIEC ) {
         if( newWindMechIEC != windMechIEC ) {
             NotificationChain msgs = null;
-            if( windMechIEC != null ) msgs = ( ( InternalEObject ) windMechIEC ).eInverseRemove( this,
-                    CimPackage.WIND_MECH_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindMechIEC.class, msgs );
-            if( newWindMechIEC != null ) msgs = ( ( InternalEObject ) newWindMechIEC ).eInverseAdd( this,
-                    CimPackage.WIND_MECH_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindMechIEC.class, msgs );
+            if( windMechIEC != null )
+                msgs = ( ( InternalEObject ) windMechIEC ).eInverseRemove( this,
+                        CimPackage.WIND_MECH_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindMechIEC.class, msgs );
+            if( newWindMechIEC != null )
+                msgs = ( ( InternalEObject ) newWindMechIEC ).eInverseAdd( this,
+                        CimPackage.WIND_MECH_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindMechIEC.class, msgs );
             msgs = basicSetWindMechIEC( newWindMechIEC, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWindMechIECESet = windMechIECESet;
             windMechIECESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_MECH_IEC,
-                            newWindMechIEC, newWindMechIEC, !oldWindMechIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_MECH_IEC, newWindMechIEC, newWindMechIEC,
+                        !oldWindMechIECESet ) );
         }
     }
 
@@ -532,8 +544,9 @@ public class WindGenTurbineType3IECImpl extends WindTurbineType3or4IECImpl imple
         else {
             boolean oldWindMechIECESet = windMechIECESet;
             windMechIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_MECH_IEC, null, null, oldWindMechIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_MECH_IEC, null, null, oldWindMechIECESet ) );
         }
     }
 
@@ -589,19 +602,22 @@ public class WindGenTurbineType3IECImpl extends WindTurbineType3or4IECImpl imple
     public void setWindContPType3IEC( WindContPType3IEC newWindContPType3IEC ) {
         if( newWindContPType3IEC != windContPType3IEC ) {
             NotificationChain msgs = null;
-            if( windContPType3IEC != null ) msgs = ( ( InternalEObject ) windContPType3IEC ).eInverseRemove( this,
-                    CimPackage.WIND_CONT_PTYPE3_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindContPType3IEC.class, msgs );
-            if( newWindContPType3IEC != null ) msgs = ( ( InternalEObject ) newWindContPType3IEC ).eInverseAdd( this,
-                    CimPackage.WIND_CONT_PTYPE3_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindContPType3IEC.class, msgs );
+            if( windContPType3IEC != null )
+                msgs = ( ( InternalEObject ) windContPType3IEC ).eInverseRemove( this,
+                        CimPackage.WIND_CONT_PTYPE3_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindContPType3IEC.class, msgs );
+            if( newWindContPType3IEC != null )
+                msgs = ( ( InternalEObject ) newWindContPType3IEC ).eInverseAdd( this,
+                        CimPackage.WIND_CONT_PTYPE3_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindContPType3IEC.class, msgs );
             msgs = basicSetWindContPType3IEC( newWindContPType3IEC, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWindContPType3IECESet = windContPType3IECESet;
             windContPType3IECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_CONT_PTYPE3_IEC, newWindContPType3IEC,
-                    newWindContPType3IEC, !oldWindContPType3IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_CONT_PTYPE3_IEC, newWindContPType3IEC,
+                        newWindContPType3IEC, !oldWindContPType3IECESet ) );
         }
     }
 
@@ -644,9 +660,10 @@ public class WindGenTurbineType3IECImpl extends WindTurbineType3or4IECImpl imple
         else {
             boolean oldWindContPType3IECESet = windContPType3IECESet;
             windContPType3IECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_CONT_PTYPE3_IEC, null, null,
-                    oldWindContPType3IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_CONT_PTYPE3_IEC, null, null,
+                        oldWindContPType3IECESet ) );
         }
     }
 
@@ -716,9 +733,10 @@ public class WindGenTurbineType3IECImpl extends WindTurbineType3or4IECImpl imple
         else {
             boolean oldWindContPitchAngleIECESet = windContPitchAngleIECESet;
             windContPitchAngleIECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_CONT_PITCH_ANGLE_IEC, newWindContPitchAngleIEC,
-                    newWindContPitchAngleIEC, !oldWindContPitchAngleIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_CONT_PITCH_ANGLE_IEC, newWindContPitchAngleIEC,
+                        newWindContPitchAngleIEC, !oldWindContPitchAngleIECESet ) );
         }
     }
 
@@ -762,9 +780,10 @@ public class WindGenTurbineType3IECImpl extends WindTurbineType3or4IECImpl imple
         else {
             boolean oldWindContPitchAngleIECESet = windContPitchAngleIECESet;
             windContPitchAngleIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_CONT_PITCH_ANGLE_IEC, null, null,
-                    oldWindContPitchAngleIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_CONT_PITCH_ANGLE_IEC, null, null,
+                        oldWindContPitchAngleIECESet ) );
         }
     }
 
@@ -793,16 +812,19 @@ public class WindGenTurbineType3IECImpl extends WindTurbineType3or4IECImpl imple
                         msgs );
             return basicSetWindContPitchAngleIEC( ( WindContPitchAngleIEC ) otherEnd, msgs );
         case CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_AERO_LINEAR_IEC:
-            if( windAeroLinearIEC != null ) msgs = ( ( InternalEObject ) windAeroLinearIEC ).eInverseRemove( this,
-                    CimPackage.WIND_AERO_LINEAR_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindAeroLinearIEC.class, msgs );
+            if( windAeroLinearIEC != null )
+                msgs = ( ( InternalEObject ) windAeroLinearIEC ).eInverseRemove( this,
+                        CimPackage.WIND_AERO_LINEAR_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindAeroLinearIEC.class, msgs );
             return basicSetWindAeroLinearIEC( ( WindAeroLinearIEC ) otherEnd, msgs );
         case CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_MECH_IEC:
-            if( windMechIEC != null ) msgs = ( ( InternalEObject ) windMechIEC ).eInverseRemove( this,
-                    CimPackage.WIND_MECH_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindMechIEC.class, msgs );
+            if( windMechIEC != null )
+                msgs = ( ( InternalEObject ) windMechIEC ).eInverseRemove( this,
+                        CimPackage.WIND_MECH_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindMechIEC.class, msgs );
             return basicSetWindMechIEC( ( WindMechIEC ) otherEnd, msgs );
         case CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_CONT_PTYPE3_IEC:
-            if( windContPType3IEC != null ) msgs = ( ( InternalEObject ) windContPType3IEC ).eInverseRemove( this,
-                    CimPackage.WIND_CONT_PTYPE3_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindContPType3IEC.class, msgs );
+            if( windContPType3IEC != null )
+                msgs = ( ( InternalEObject ) windContPType3IEC ).eInverseRemove( this,
+                        CimPackage.WIND_CONT_PTYPE3_IEC__WIND_GEN_TURBINE_TYPE3_IEC, WindContPType3IEC.class, msgs );
             return basicSetWindContPType3IEC( ( WindContPType3IEC ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -946,7 +968,7 @@ public class WindGenTurbineType3IECImpl extends WindTurbineType3or4IECImpl imple
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (dipmax: " );
         if( dipmaxESet )
             result.append( dipmax );

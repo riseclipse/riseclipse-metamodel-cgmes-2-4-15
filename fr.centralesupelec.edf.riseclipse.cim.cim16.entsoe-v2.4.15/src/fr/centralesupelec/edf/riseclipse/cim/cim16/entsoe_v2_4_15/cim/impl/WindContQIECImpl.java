@@ -887,8 +887,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         iqh1 = newIqh1;
         boolean oldIqh1ESet = iqh1ESet;
         iqh1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__IQH1, oldIqh1, iqh1, !oldIqh1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__IQH1, oldIqh1, iqh1,
+                    !oldIqh1ESet ) );
     }
 
     /**
@@ -902,8 +903,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldIqh1ESet = iqh1ESet;
         iqh1 = IQH1_EDEFAULT;
         iqh1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__IQH1, oldIqh1, IQH1_EDEFAULT, oldIqh1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__IQH1, oldIqh1,
+                    IQH1_EDEFAULT, oldIqh1ESet ) );
     }
 
     /**
@@ -937,8 +939,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         iqmax = newIqmax;
         boolean oldIqmaxESet = iqmaxESet;
         iqmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__IQMAX, oldIqmax, iqmax, !oldIqmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__IQMAX, oldIqmax, iqmax,
+                    !oldIqmaxESet ) );
     }
 
     /**
@@ -952,8 +955,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldIqmaxESet = iqmaxESet;
         iqmax = IQMAX_EDEFAULT;
         iqmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__IQMAX, oldIqmax, IQMAX_EDEFAULT, oldIqmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__IQMAX, oldIqmax,
+                    IQMAX_EDEFAULT, oldIqmaxESet ) );
     }
 
     /**
@@ -987,8 +991,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         iqmin = newIqmin;
         boolean oldIqminESet = iqminESet;
         iqminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__IQMIN, oldIqmin, iqmin, !oldIqminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__IQMIN, oldIqmin, iqmin,
+                    !oldIqminESet ) );
     }
 
     /**
@@ -1002,8 +1007,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldIqminESet = iqminESet;
         iqmin = IQMIN_EDEFAULT;
         iqminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__IQMIN, oldIqmin, IQMIN_EDEFAULT, oldIqminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__IQMIN, oldIqmin,
+                    IQMIN_EDEFAULT, oldIqminESet ) );
     }
 
     /**
@@ -1037,8 +1043,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         iqpost = newIqpost;
         boolean oldIqpostESet = iqpostESet;
         iqpostESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__IQPOST, oldIqpost, iqpost, !oldIqpostESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__IQPOST, oldIqpost,
+                    iqpost, !oldIqpostESet ) );
     }
 
     /**
@@ -1052,8 +1059,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldIqpostESet = iqpostESet;
         iqpost = IQPOST_EDEFAULT;
         iqpostESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__IQPOST, oldIqpost, IQPOST_EDEFAULT, oldIqpostESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__IQPOST, oldIqpost,
+                    IQPOST_EDEFAULT, oldIqpostESet ) );
     }
 
     /**
@@ -1087,8 +1095,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         kiq = newKiq;
         boolean oldKiqESet = kiqESet;
         kiqESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__KIQ, oldKiq, kiq, !oldKiqESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__KIQ, oldKiq, kiq,
+                    !oldKiqESet ) );
     }
 
     /**
@@ -1102,8 +1111,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldKiqESet = kiqESet;
         kiq = KIQ_EDEFAULT;
         kiqESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__KIQ, oldKiq, KIQ_EDEFAULT, oldKiqESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__KIQ, oldKiq,
+                    KIQ_EDEFAULT, oldKiqESet ) );
     }
 
     /**
@@ -1137,8 +1147,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         kiu = newKiu;
         boolean oldKiuESet = kiuESet;
         kiuESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__KIU, oldKiu, kiu, !oldKiuESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__KIU, oldKiu, kiu,
+                    !oldKiuESet ) );
     }
 
     /**
@@ -1152,8 +1163,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldKiuESet = kiuESet;
         kiu = KIU_EDEFAULT;
         kiuESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__KIU, oldKiu, KIU_EDEFAULT, oldKiuESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__KIU, oldKiu,
+                    KIU_EDEFAULT, oldKiuESet ) );
     }
 
     /**
@@ -1187,8 +1199,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         kpq = newKpq;
         boolean oldKpqESet = kpqESet;
         kpqESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__KPQ, oldKpq, kpq, !oldKpqESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__KPQ, oldKpq, kpq,
+                    !oldKpqESet ) );
     }
 
     /**
@@ -1202,8 +1215,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldKpqESet = kpqESet;
         kpq = KPQ_EDEFAULT;
         kpqESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__KPQ, oldKpq, KPQ_EDEFAULT, oldKpqESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__KPQ, oldKpq,
+                    KPQ_EDEFAULT, oldKpqESet ) );
     }
 
     /**
@@ -1237,8 +1251,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         kpu = newKpu;
         boolean oldKpuESet = kpuESet;
         kpuESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__KPU, oldKpu, kpu, !oldKpuESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__KPU, oldKpu, kpu,
+                    !oldKpuESet ) );
     }
 
     /**
@@ -1252,8 +1267,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldKpuESet = kpuESet;
         kpu = KPU_EDEFAULT;
         kpuESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__KPU, oldKpu, KPU_EDEFAULT, oldKpuESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__KPU, oldKpu,
+                    KPU_EDEFAULT, oldKpuESet ) );
     }
 
     /**
@@ -1287,8 +1303,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         kqv = newKqv;
         boolean oldKqvESet = kqvESet;
         kqvESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__KQV, oldKqv, kqv, !oldKqvESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__KQV, oldKqv, kqv,
+                    !oldKqvESet ) );
     }
 
     /**
@@ -1302,8 +1319,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldKqvESet = kqvESet;
         kqv = KQV_EDEFAULT;
         kqvESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__KQV, oldKqv, KQV_EDEFAULT, oldKqvESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__KQV, oldKqv,
+                    KQV_EDEFAULT, oldKqvESet ) );
     }
 
     /**
@@ -1337,8 +1355,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         qmax = newQmax;
         boolean oldQmaxESet = qmaxESet;
         qmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__QMAX, oldQmax, qmax, !oldQmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__QMAX, oldQmax, qmax,
+                    !oldQmaxESet ) );
     }
 
     /**
@@ -1352,8 +1371,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldQmaxESet = qmaxESet;
         qmax = QMAX_EDEFAULT;
         qmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__QMAX, oldQmax, QMAX_EDEFAULT, oldQmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__QMAX, oldQmax,
+                    QMAX_EDEFAULT, oldQmaxESet ) );
     }
 
     /**
@@ -1387,8 +1407,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         qmin = newQmin;
         boolean oldQminESet = qminESet;
         qminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__QMIN, oldQmin, qmin, !oldQminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__QMIN, oldQmin, qmin,
+                    !oldQminESet ) );
     }
 
     /**
@@ -1402,8 +1423,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldQminESet = qminESet;
         qmin = QMIN_EDEFAULT;
         qminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__QMIN, oldQmin, QMIN_EDEFAULT, oldQminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__QMIN, oldQmin,
+                    QMIN_EDEFAULT, oldQminESet ) );
     }
 
     /**
@@ -1437,8 +1459,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         rdroop = newRdroop;
         boolean oldRdroopESet = rdroopESet;
         rdroopESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__RDROOP, oldRdroop, rdroop, !oldRdroopESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__RDROOP, oldRdroop,
+                    rdroop, !oldRdroopESet ) );
     }
 
     /**
@@ -1452,8 +1475,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldRdroopESet = rdroopESet;
         rdroop = RDROOP_EDEFAULT;
         rdroopESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__RDROOP, oldRdroop, RDROOP_EDEFAULT, oldRdroopESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__RDROOP, oldRdroop,
+                    RDROOP_EDEFAULT, oldRdroopESet ) );
     }
 
     /**
@@ -1487,8 +1511,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         tiq = newTiq;
         boolean oldTiqESet = tiqESet;
         tiqESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__TIQ, oldTiq, tiq, !oldTiqESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__TIQ, oldTiq, tiq,
+                    !oldTiqESet ) );
     }
 
     /**
@@ -1502,8 +1527,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldTiqESet = tiqESet;
         tiq = TIQ_EDEFAULT;
         tiqESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__TIQ, oldTiq, TIQ_EDEFAULT, oldTiqESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__TIQ, oldTiq,
+                    TIQ_EDEFAULT, oldTiqESet ) );
     }
 
     /**
@@ -1537,8 +1563,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         tpfilt = newTpfilt;
         boolean oldTpfiltESet = tpfiltESet;
         tpfiltESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__TPFILT, oldTpfilt, tpfilt, !oldTpfiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__TPFILT, oldTpfilt,
+                    tpfilt, !oldTpfiltESet ) );
     }
 
     /**
@@ -1552,8 +1579,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldTpfiltESet = tpfiltESet;
         tpfilt = TPFILT_EDEFAULT;
         tpfiltESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__TPFILT, oldTpfilt, TPFILT_EDEFAULT, oldTpfiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__TPFILT, oldTpfilt,
+                    TPFILT_EDEFAULT, oldTpfiltESet ) );
     }
 
     /**
@@ -1587,8 +1615,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         tpost = newTpost;
         boolean oldTpostESet = tpostESet;
         tpostESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__TPOST, oldTpost, tpost, !oldTpostESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__TPOST, oldTpost, tpost,
+                    !oldTpostESet ) );
     }
 
     /**
@@ -1602,8 +1631,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldTpostESet = tpostESet;
         tpost = TPOST_EDEFAULT;
         tpostESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__TPOST, oldTpost, TPOST_EDEFAULT, oldTpostESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__TPOST, oldTpost,
+                    TPOST_EDEFAULT, oldTpostESet ) );
     }
 
     /**
@@ -1637,8 +1667,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         tqord = newTqord;
         boolean oldTqordESet = tqordESet;
         tqordESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__TQORD, oldTqord, tqord, !oldTqordESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__TQORD, oldTqord, tqord,
+                    !oldTqordESet ) );
     }
 
     /**
@@ -1652,8 +1683,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldTqordESet = tqordESet;
         tqord = TQORD_EDEFAULT;
         tqordESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__TQORD, oldTqord, TQORD_EDEFAULT, oldTqordESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__TQORD, oldTqord,
+                    TQORD_EDEFAULT, oldTqordESet ) );
     }
 
     /**
@@ -1687,8 +1719,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         tufilt = newTufilt;
         boolean oldTufiltESet = tufiltESet;
         tufiltESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__TUFILT, oldTufilt, tufilt, !oldTufiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__TUFILT, oldTufilt,
+                    tufilt, !oldTufiltESet ) );
     }
 
     /**
@@ -1702,8 +1735,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldTufiltESet = tufiltESet;
         tufilt = TUFILT_EDEFAULT;
         tufiltESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__TUFILT, oldTufilt, TUFILT_EDEFAULT, oldTufiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__TUFILT, oldTufilt,
+                    TUFILT_EDEFAULT, oldTufiltESet ) );
     }
 
     /**
@@ -1737,8 +1771,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         udb1 = newUdb1;
         boolean oldUdb1ESet = udb1ESet;
         udb1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__UDB1, oldUdb1, udb1, !oldUdb1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__UDB1, oldUdb1, udb1,
+                    !oldUdb1ESet ) );
     }
 
     /**
@@ -1752,8 +1787,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldUdb1ESet = udb1ESet;
         udb1 = UDB1_EDEFAULT;
         udb1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__UDB1, oldUdb1, UDB1_EDEFAULT, oldUdb1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__UDB1, oldUdb1,
+                    UDB1_EDEFAULT, oldUdb1ESet ) );
     }
 
     /**
@@ -1787,8 +1823,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         udb2 = newUdb2;
         boolean oldUdb2ESet = udb2ESet;
         udb2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__UDB2, oldUdb2, udb2, !oldUdb2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__UDB2, oldUdb2, udb2,
+                    !oldUdb2ESet ) );
     }
 
     /**
@@ -1802,8 +1839,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldUdb2ESet = udb2ESet;
         udb2 = UDB2_EDEFAULT;
         udb2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__UDB2, oldUdb2, UDB2_EDEFAULT, oldUdb2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__UDB2, oldUdb2,
+                    UDB2_EDEFAULT, oldUdb2ESet ) );
     }
 
     /**
@@ -1837,8 +1875,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         umax = newUmax;
         boolean oldUmaxESet = umaxESet;
         umaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__UMAX, oldUmax, umax, !oldUmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__UMAX, oldUmax, umax,
+                    !oldUmaxESet ) );
     }
 
     /**
@@ -1852,8 +1891,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldUmaxESet = umaxESet;
         umax = UMAX_EDEFAULT;
         umaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__UMAX, oldUmax, UMAX_EDEFAULT, oldUmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__UMAX, oldUmax,
+                    UMAX_EDEFAULT, oldUmaxESet ) );
     }
 
     /**
@@ -1887,8 +1927,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         umin = newUmin;
         boolean oldUminESet = uminESet;
         uminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__UMIN, oldUmin, umin, !oldUminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__UMIN, oldUmin, umin,
+                    !oldUminESet ) );
     }
 
     /**
@@ -1902,8 +1943,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldUminESet = uminESet;
         umin = UMIN_EDEFAULT;
         uminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__UMIN, oldUmin, UMIN_EDEFAULT, oldUminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__UMIN, oldUmin,
+                    UMIN_EDEFAULT, oldUminESet ) );
     }
 
     /**
@@ -1937,8 +1979,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         uqdip = newUqdip;
         boolean oldUqdipESet = uqdipESet;
         uqdipESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__UQDIP, oldUqdip, uqdip, !oldUqdipESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__UQDIP, oldUqdip, uqdip,
+                    !oldUqdipESet ) );
     }
 
     /**
@@ -1952,8 +1995,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldUqdipESet = uqdipESet;
         uqdip = UQDIP_EDEFAULT;
         uqdipESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__UQDIP, oldUqdip, UQDIP_EDEFAULT, oldUqdipESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__UQDIP, oldUqdip,
+                    UQDIP_EDEFAULT, oldUqdipESet ) );
     }
 
     /**
@@ -1987,8 +2031,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         uref0 = newUref0;
         boolean oldUref0ESet = uref0ESet;
         uref0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__UREF0, oldUref0, uref0, !oldUref0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__UREF0, oldUref0, uref0,
+                    !oldUref0ESet ) );
     }
 
     /**
@@ -2002,8 +2047,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldUref0ESet = uref0ESet;
         uref0 = UREF0_EDEFAULT;
         uref0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__UREF0, oldUref0, UREF0_EDEFAULT, oldUref0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__UREF0, oldUref0,
+                    UREF0_EDEFAULT, oldUref0ESet ) );
     }
 
     /**
@@ -2038,9 +2084,10 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
                 : newWindLVRTQcontrolModesType;
         boolean oldWindLVRTQcontrolModesTypeESet = windLVRTQcontrolModesTypeESet;
         windLVRTQcontrolModesTypeESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__WIND_LVRT_QCONTROL_MODES_TYPE,
-                        oldWindLVRTQcontrolModesType, windLVRTQcontrolModesType, !oldWindLVRTQcontrolModesTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.WIND_CONT_QIEC__WIND_LVRT_QCONTROL_MODES_TYPE, oldWindLVRTQcontrolModesType,
+                    windLVRTQcontrolModesType, !oldWindLVRTQcontrolModesTypeESet ) );
     }
 
     /**
@@ -2054,9 +2101,10 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldWindLVRTQcontrolModesTypeESet = windLVRTQcontrolModesTypeESet;
         windLVRTQcontrolModesType = WIND_LVRT_QCONTROL_MODES_TYPE_EDEFAULT;
         windLVRTQcontrolModesTypeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__WIND_LVRT_QCONTROL_MODES_TYPE, oldWindLVRTQcontrolModesType,
-                WIND_LVRT_QCONTROL_MODES_TYPE_EDEFAULT, oldWindLVRTQcontrolModesTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.WIND_CONT_QIEC__WIND_LVRT_QCONTROL_MODES_TYPE, oldWindLVRTQcontrolModesType,
+                    WIND_LVRT_QCONTROL_MODES_TYPE_EDEFAULT, oldWindLVRTQcontrolModesTypeESet ) );
     }
 
     /**
@@ -2107,9 +2155,10 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldWindQcontrolModesTypeESet = windQcontrolModesTypeESet;
         windQcontrolModesType = WIND_QCONTROL_MODES_TYPE_EDEFAULT;
         windQcontrolModesTypeESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__WIND_QCONTROL_MODES_TYPE,
-                        oldWindQcontrolModesType, WIND_QCONTROL_MODES_TYPE_EDEFAULT, oldWindQcontrolModesTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.WIND_CONT_QIEC__WIND_QCONTROL_MODES_TYPE, oldWindQcontrolModesType,
+                    WIND_QCONTROL_MODES_TYPE_EDEFAULT, oldWindQcontrolModesTypeESet ) );
     }
 
     /**
@@ -2143,8 +2192,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         xdroop = newXdroop;
         boolean oldXdroopESet = xdroopESet;
         xdroopESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_QIEC__XDROOP, oldXdroop, xdroop, !oldXdroopESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__XDROOP, oldXdroop,
+                    xdroop, !oldXdroopESet ) );
     }
 
     /**
@@ -2158,8 +2208,9 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         boolean oldXdroopESet = xdroopESet;
         xdroop = XDROOP_EDEFAULT;
         xdroopESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_QIEC__XDROOP, oldXdroop, XDROOP_EDEFAULT, oldXdroopESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_QIEC__XDROOP, oldXdroop,
+                    XDROOP_EDEFAULT, oldXdroopESet ) );
     }
 
     /**
@@ -2226,9 +2277,10 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         else {
             boolean oldWindTurbineType3or4IECESet = windTurbineType3or4IECESet;
             windTurbineType3or4IECESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_QIEC__WIND_TURBINE_TYPE3OR4_IEC,
-                            newWindTurbineType3or4IEC, newWindTurbineType3or4IEC, !oldWindTurbineType3or4IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_CONT_QIEC__WIND_TURBINE_TYPE3OR4_IEC, newWindTurbineType3or4IEC,
+                        newWindTurbineType3or4IEC, !oldWindTurbineType3or4IECESet ) );
         }
     }
 
@@ -2271,8 +2323,10 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
         else {
             boolean oldWindTurbineType3or4IECESet = windTurbineType3or4IECESet;
             windTurbineType3or4IECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_CONT_QIEC__WIND_TURBINE_TYPE3OR4_IEC, null, null, oldWindTurbineType3or4IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_CONT_QIEC__WIND_TURBINE_TYPE3OR4_IEC, null, null,
+                        oldWindTurbineType3or4IECESet ) );
         }
     }
 
@@ -2644,7 +2698,7 @@ public class WindContQIECImpl extends IdentifiedObjectImpl implements WindContQI
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (iqh1: " );
         if( iqh1ESet )
             result.append( iqh1 );

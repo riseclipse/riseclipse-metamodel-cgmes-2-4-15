@@ -142,8 +142,9 @@ public class TransformerTestImpl extends IdentifiedObjectImpl implements Transfo
         basePower = newBasePower;
         boolean oldBasePowerESet = basePowerESet;
         basePowerESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_TEST__BASE_POWER, oldBasePower, basePower, !oldBasePowerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_TEST__BASE_POWER,
+                    oldBasePower, basePower, !oldBasePowerESet ) );
     }
 
     /**
@@ -157,8 +158,9 @@ public class TransformerTestImpl extends IdentifiedObjectImpl implements Transfo
         boolean oldBasePowerESet = basePowerESet;
         basePower = BASE_POWER_EDEFAULT;
         basePowerESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_TEST__BASE_POWER, oldBasePower, BASE_POWER_EDEFAULT, oldBasePowerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_TEST__BASE_POWER,
+                    oldBasePower, BASE_POWER_EDEFAULT, oldBasePowerESet ) );
     }
 
     /**
@@ -192,8 +194,9 @@ public class TransformerTestImpl extends IdentifiedObjectImpl implements Transfo
         temperature = newTemperature;
         boolean oldTemperatureESet = temperatureESet;
         temperatureESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_TEST__TEMPERATURE, oldTemperature, temperature, !oldTemperatureESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_TEST__TEMPERATURE,
+                    oldTemperature, temperature, !oldTemperatureESet ) );
     }
 
     /**
@@ -207,8 +210,9 @@ public class TransformerTestImpl extends IdentifiedObjectImpl implements Transfo
         boolean oldTemperatureESet = temperatureESet;
         temperature = TEMPERATURE_EDEFAULT;
         temperatureESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_TEST__TEMPERATURE, oldTemperature, TEMPERATURE_EDEFAULT, oldTemperatureESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_TEST__TEMPERATURE,
+                    oldTemperature, TEMPERATURE_EDEFAULT, oldTemperatureESet ) );
     }
 
     /**
@@ -298,7 +302,7 @@ public class TransformerTestImpl extends IdentifiedObjectImpl implements Transfo
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (basePower: " );
         if( basePowerESet )
             result.append( basePower );

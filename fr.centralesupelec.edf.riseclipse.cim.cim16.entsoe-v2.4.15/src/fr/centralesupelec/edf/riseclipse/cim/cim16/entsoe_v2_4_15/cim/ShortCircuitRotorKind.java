@@ -142,8 +142,12 @@ public enum ShortCircuitRotorKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final ShortCircuitRotorKind[] VALUES_ARRAY = new ShortCircuitRotorKind[] { SALIENT_POLE1,
-            SALIENT_POLE2, TURBO_SERIES1, TURBO_SERIES2, };
+    private static final ShortCircuitRotorKind[] VALUES_ARRAY = new ShortCircuitRotorKind[] {
+            SALIENT_POLE1,
+            SALIENT_POLE2,
+            TURBO_SERIES1,
+            TURBO_SERIES2,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Short Circuit Rotor Kind</b></em>' enumerators.

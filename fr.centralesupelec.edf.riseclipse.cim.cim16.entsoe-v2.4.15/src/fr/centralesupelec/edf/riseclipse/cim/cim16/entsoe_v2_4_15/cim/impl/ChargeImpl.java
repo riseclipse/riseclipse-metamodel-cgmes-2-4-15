@@ -241,8 +241,9 @@ public class ChargeImpl extends IdentifiedObjectImpl implements Charge {
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.CHARGE__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CHARGE__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -256,8 +257,9 @@ public class ChargeImpl extends IdentifiedObjectImpl implements Charge {
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CHARGE__KIND,
-                oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CHARGE__KIND, oldKind, KIND_EDEFAULT,
+                    oldKindESet ) );
     }
 
     /**
@@ -291,8 +293,9 @@ public class ChargeImpl extends IdentifiedObjectImpl implements Charge {
         variablePortion = newVariablePortion;
         boolean oldVariablePortionESet = variablePortionESet;
         variablePortionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CHARGE__VARIABLE_PORTION, oldVariablePortion, variablePortion, !oldVariablePortionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CHARGE__VARIABLE_PORTION,
+                    oldVariablePortion, variablePortion, !oldVariablePortionESet ) );
     }
 
     /**
@@ -361,18 +364,21 @@ public class ChargeImpl extends IdentifiedObjectImpl implements Charge {
     public void setFixedPortion( AccountingUnit newFixedPortion ) {
         if( newFixedPortion != fixedPortion ) {
             NotificationChain msgs = null;
-            if( fixedPortion != null ) msgs = ( ( InternalEObject ) fixedPortion ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.CHARGE__FIXED_PORTION, null, msgs );
-            if( newFixedPortion != null ) msgs = ( ( InternalEObject ) newFixedPortion ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.CHARGE__FIXED_PORTION, null, msgs );
+            if( fixedPortion != null )
+                msgs = ( ( InternalEObject ) fixedPortion ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.CHARGE__FIXED_PORTION, null, msgs );
+            if( newFixedPortion != null )
+                msgs = ( ( InternalEObject ) newFixedPortion ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.CHARGE__FIXED_PORTION, null, msgs );
             msgs = basicSetFixedPortion( newFixedPortion, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldFixedPortionESet = fixedPortionESet;
             fixedPortionESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CHARGE__FIXED_PORTION, newFixedPortion, newFixedPortion, !oldFixedPortionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CHARGE__FIXED_PORTION,
+                        newFixedPortion, newFixedPortion, !oldFixedPortionESet ) );
         }
     }
 
@@ -414,8 +420,9 @@ public class ChargeImpl extends IdentifiedObjectImpl implements Charge {
         else {
             boolean oldFixedPortionESet = fixedPortionESet;
             fixedPortionESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CHARGE__FIXED_PORTION, null, null, oldFixedPortionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CHARGE__FIXED_PORTION, null, null,
+                        oldFixedPortionESet ) );
         }
     }
 
@@ -576,18 +583,21 @@ public class ChargeImpl extends IdentifiedObjectImpl implements Charge {
     public void setParentCharge( Charge newParentCharge ) {
         if( newParentCharge != parentCharge ) {
             NotificationChain msgs = null;
-            if( parentCharge != null ) msgs = ( ( InternalEObject ) parentCharge ).eInverseRemove( this,
-                    CimPackage.CHARGE__CHILD_CHARGES, Charge.class, msgs );
-            if( newParentCharge != null ) msgs = ( ( InternalEObject ) newParentCharge ).eInverseAdd( this,
-                    CimPackage.CHARGE__CHILD_CHARGES, Charge.class, msgs );
+            if( parentCharge != null )
+                msgs = ( ( InternalEObject ) parentCharge ).eInverseRemove( this, CimPackage.CHARGE__CHILD_CHARGES,
+                        Charge.class, msgs );
+            if( newParentCharge != null )
+                msgs = ( ( InternalEObject ) newParentCharge ).eInverseAdd( this, CimPackage.CHARGE__CHILD_CHARGES,
+                        Charge.class, msgs );
             msgs = basicSetParentCharge( newParentCharge, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldParentChargeESet = parentChargeESet;
             parentChargeESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CHARGE__PARENT_CHARGE, newParentCharge, newParentCharge, !oldParentChargeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CHARGE__PARENT_CHARGE,
+                        newParentCharge, newParentCharge, !oldParentChargeESet ) );
         }
     }
 
@@ -629,8 +639,9 @@ public class ChargeImpl extends IdentifiedObjectImpl implements Charge {
         else {
             boolean oldParentChargeESet = parentChargeESet;
             parentChargeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CHARGE__PARENT_CHARGE, null, null, oldParentChargeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CHARGE__PARENT_CHARGE, null, null,
+                        oldParentChargeESet ) );
         }
     }
 
@@ -691,8 +702,9 @@ public class ChargeImpl extends IdentifiedObjectImpl implements Charge {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getChildCharges() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.CHARGE__PARENT_CHARGE:
-            if( parentCharge != null ) msgs = ( ( InternalEObject ) parentCharge ).eInverseRemove( this,
-                    CimPackage.CHARGE__CHILD_CHARGES, Charge.class, msgs );
+            if( parentCharge != null )
+                msgs = ( ( InternalEObject ) parentCharge ).eInverseRemove( this, CimPackage.CHARGE__CHILD_CHARGES,
+                        Charge.class, msgs );
             return basicSetParentCharge( ( Charge ) otherEnd, msgs );
         case CimPackage.CHARGE__TIME_TARIFF_INTERVALS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTimeTariffIntervals() )
@@ -873,7 +885,7 @@ public class ChargeImpl extends IdentifiedObjectImpl implements Charge {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kind: " );
         if( kindESet )
             result.append( kind );

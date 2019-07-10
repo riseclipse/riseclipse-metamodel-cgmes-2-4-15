@@ -200,9 +200,10 @@ public class ClearanceDocumentImpl extends SafetyDocumentImpl implements Clearan
         boolean oldMustBeDeenergisedESet = mustBeDeenergisedESet;
         mustBeDeenergised = MUST_BE_DEENERGISED_EDEFAULT;
         mustBeDeenergisedESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.CLEARANCE_DOCUMENT__MUST_BE_DEENERGISED,
-                        oldMustBeDeenergised, MUST_BE_DEENERGISED_EDEFAULT, oldMustBeDeenergisedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CLEARANCE_DOCUMENT__MUST_BE_DEENERGISED, oldMustBeDeenergised,
+                    MUST_BE_DEENERGISED_EDEFAULT, oldMustBeDeenergisedESet ) );
     }
 
     /**
@@ -313,8 +314,9 @@ public class ClearanceDocumentImpl extends SafetyDocumentImpl implements Clearan
             InternalEObject oldClearanceAction = ( InternalEObject ) clearanceAction;
             clearanceAction = ( ClearanceAction ) eResolveProxy( oldClearanceAction );
             if( clearanceAction != oldClearanceAction ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.CLEARANCE_DOCUMENT__CLEARANCE_ACTION, oldClearanceAction, clearanceAction ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.CLEARANCE_DOCUMENT__CLEARANCE_ACTION, oldClearanceAction, clearanceAction ) );
             }
         }
         return clearanceAction;
@@ -360,10 +362,12 @@ public class ClearanceDocumentImpl extends SafetyDocumentImpl implements Clearan
     public void setClearanceAction( ClearanceAction newClearanceAction ) {
         if( newClearanceAction != clearanceAction ) {
             NotificationChain msgs = null;
-            if( clearanceAction != null ) msgs = ( ( InternalEObject ) clearanceAction ).eInverseRemove( this,
-                    CimPackage.CLEARANCE_ACTION__CLEARANCE, ClearanceAction.class, msgs );
-            if( newClearanceAction != null ) msgs = ( ( InternalEObject ) newClearanceAction ).eInverseAdd( this,
-                    CimPackage.CLEARANCE_ACTION__CLEARANCE, ClearanceAction.class, msgs );
+            if( clearanceAction != null )
+                msgs = ( ( InternalEObject ) clearanceAction ).eInverseRemove( this,
+                        CimPackage.CLEARANCE_ACTION__CLEARANCE, ClearanceAction.class, msgs );
+            if( newClearanceAction != null )
+                msgs = ( ( InternalEObject ) newClearanceAction ).eInverseAdd( this,
+                        CimPackage.CLEARANCE_ACTION__CLEARANCE, ClearanceAction.class, msgs );
             msgs = basicSetClearanceAction( newClearanceAction, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -414,8 +418,9 @@ public class ClearanceDocumentImpl extends SafetyDocumentImpl implements Clearan
         else {
             boolean oldClearanceActionESet = clearanceActionESet;
             clearanceActionESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CLEARANCE_DOCUMENT__CLEARANCE_ACTION, null, null, oldClearanceActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CLEARANCE_DOCUMENT__CLEARANCE_ACTION, null, null, oldClearanceActionESet ) );
         }
     }
 
@@ -439,8 +444,9 @@ public class ClearanceDocumentImpl extends SafetyDocumentImpl implements Clearan
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CLEARANCE_DOCUMENT__CLEARANCE_ACTION:
-            if( clearanceAction != null ) msgs = ( ( InternalEObject ) clearanceAction ).eInverseRemove( this,
-                    CimPackage.CLEARANCE_ACTION__CLEARANCE, ClearanceAction.class, msgs );
+            if( clearanceAction != null )
+                msgs = ( ( InternalEObject ) clearanceAction ).eInverseRemove( this,
+                        CimPackage.CLEARANCE_ACTION__CLEARANCE, ClearanceAction.class, msgs );
             return basicSetClearanceAction( ( ClearanceAction ) otherEnd, msgs );
         case CimPackage.CLEARANCE_DOCUMENT__TAGGED_PS_RS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTaggedPSRs() ).basicAdd( otherEnd,
@@ -565,7 +571,7 @@ public class ClearanceDocumentImpl extends SafetyDocumentImpl implements Clearan
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (mustBeDeenergised: " );
         if( mustBeDeenergisedESet )
             result.append( mustBeDeenergised );

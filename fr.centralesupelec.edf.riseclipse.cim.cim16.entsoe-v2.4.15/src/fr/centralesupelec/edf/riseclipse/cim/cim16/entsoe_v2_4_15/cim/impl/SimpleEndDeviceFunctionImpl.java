@@ -113,8 +113,9 @@ public class SimpleEndDeviceFunctionImpl extends EndDeviceFunctionImpl implement
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SIMPLE_END_DEVICE_FUNCTION__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SIMPLE_END_DEVICE_FUNCTION__KIND,
+                    oldKind, kind, !oldKindESet ) );
     }
 
     /**
@@ -128,8 +129,9 @@ public class SimpleEndDeviceFunctionImpl extends EndDeviceFunctionImpl implement
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SIMPLE_END_DEVICE_FUNCTION__KIND, oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SIMPLE_END_DEVICE_FUNCTION__KIND,
+                    oldKind, KIND_EDEFAULT, oldKindESet ) );
     }
 
     /**
@@ -209,7 +211,7 @@ public class SimpleEndDeviceFunctionImpl extends EndDeviceFunctionImpl implement
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kind: " );
         if( kindESet )
             result.append( kind );

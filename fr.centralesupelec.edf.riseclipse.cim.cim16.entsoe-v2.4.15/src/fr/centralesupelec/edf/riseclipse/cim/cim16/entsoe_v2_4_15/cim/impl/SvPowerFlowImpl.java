@@ -180,8 +180,9 @@ public class SvPowerFlowImpl extends StateVariableImpl implements SvPowerFlow {
         boolean oldPESet = pESet;
         p = P_EDEFAULT;
         pESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SV_POWER_FLOW__P, oldP, P_EDEFAULT, oldPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SV_POWER_FLOW__P, oldP, P_EDEFAULT,
+                    oldPESet ) );
     }
 
     /**
@@ -230,8 +231,9 @@ public class SvPowerFlowImpl extends StateVariableImpl implements SvPowerFlow {
         boolean oldQESet = qESet;
         q = Q_EDEFAULT;
         qESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SV_POWER_FLOW__Q, oldQ, Q_EDEFAULT, oldQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SV_POWER_FLOW__Q, oldQ, Q_EDEFAULT,
+                    oldQESet ) );
     }
 
     /**
@@ -255,8 +257,9 @@ public class SvPowerFlowImpl extends StateVariableImpl implements SvPowerFlow {
             InternalEObject oldTerminal = ( InternalEObject ) terminal;
             terminal = ( Terminal ) eResolveProxy( oldTerminal );
             if( terminal != oldTerminal ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.SV_POWER_FLOW__TERMINAL, oldTerminal, terminal ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.SV_POWER_FLOW__TERMINAL,
+                            oldTerminal, terminal ) );
             }
         }
         return terminal;
@@ -301,18 +304,21 @@ public class SvPowerFlowImpl extends StateVariableImpl implements SvPowerFlow {
     public void setTerminal( Terminal newTerminal ) {
         if( newTerminal != terminal ) {
             NotificationChain msgs = null;
-            if( terminal != null ) msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__SV_POWER_FLOW, Terminal.class, msgs );
-            if( newTerminal != null ) msgs = ( ( InternalEObject ) newTerminal ).eInverseAdd( this,
-                    CimPackage.TERMINAL__SV_POWER_FLOW, Terminal.class, msgs );
+            if( terminal != null )
+                msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this, CimPackage.TERMINAL__SV_POWER_FLOW,
+                        Terminal.class, msgs );
+            if( newTerminal != null )
+                msgs = ( ( InternalEObject ) newTerminal ).eInverseAdd( this, CimPackage.TERMINAL__SV_POWER_FLOW,
+                        Terminal.class, msgs );
             msgs = basicSetTerminal( newTerminal, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTerminalESet = terminalESet;
             terminalESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SV_POWER_FLOW__TERMINAL, newTerminal, newTerminal, !oldTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SV_POWER_FLOW__TERMINAL, newTerminal,
+                        newTerminal, !oldTerminalESet ) );
         }
     }
 
@@ -354,8 +360,9 @@ public class SvPowerFlowImpl extends StateVariableImpl implements SvPowerFlow {
         else {
             boolean oldTerminalESet = terminalESet;
             terminalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SV_POWER_FLOW__TERMINAL, null, null, oldTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SV_POWER_FLOW__TERMINAL, null,
+                        null, oldTerminalESet ) );
         }
     }
 
@@ -378,8 +385,9 @@ public class SvPowerFlowImpl extends StateVariableImpl implements SvPowerFlow {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.SV_POWER_FLOW__TERMINAL:
-            if( terminal != null ) msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__SV_POWER_FLOW, Terminal.class, msgs );
+            if( terminal != null )
+                msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this, CimPackage.TERMINAL__SV_POWER_FLOW,
+                        Terminal.class, msgs );
             return basicSetTerminal( ( Terminal ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -487,7 +495,7 @@ public class SvPowerFlowImpl extends StateVariableImpl implements SvPowerFlow {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (p: " );
         if( pESet )
             result.append( p );

@@ -117,9 +117,10 @@ public class UnderexcitationLimiterDynamicsImpl extends DynamicsFunctionBlockImp
             InternalEObject oldExcitationSystemDynamics = ( InternalEObject ) excitationSystemDynamics;
             excitationSystemDynamics = ( ExcitationSystemDynamics ) eResolveProxy( oldExcitationSystemDynamics );
             if( excitationSystemDynamics != oldExcitationSystemDynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.UNDEREXCITATION_LIMITER_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS,
-                        oldExcitationSystemDynamics, excitationSystemDynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.UNDEREXCITATION_LIMITER_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS,
+                            oldExcitationSystemDynamics, excitationSystemDynamics ) );
             }
         }
         return excitationSystemDynamics;
@@ -180,9 +181,10 @@ public class UnderexcitationLimiterDynamicsImpl extends DynamicsFunctionBlockImp
         else {
             boolean oldExcitationSystemDynamicsESet = excitationSystemDynamicsESet;
             excitationSystemDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.UNDEREXCITATION_LIMITER_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS,
-                    newExcitationSystemDynamics, newExcitationSystemDynamics, !oldExcitationSystemDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.UNDEREXCITATION_LIMITER_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS,
+                        newExcitationSystemDynamics, newExcitationSystemDynamics, !oldExcitationSystemDynamicsESet ) );
         }
     }
 
@@ -226,9 +228,10 @@ public class UnderexcitationLimiterDynamicsImpl extends DynamicsFunctionBlockImp
         else {
             boolean oldExcitationSystemDynamicsESet = excitationSystemDynamicsESet;
             excitationSystemDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.UNDEREXCITATION_LIMITER_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS, null, null,
-                    oldExcitationSystemDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.UNDEREXCITATION_LIMITER_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS, null, null,
+                        oldExcitationSystemDynamicsESet ) );
         }
     }
 
@@ -253,9 +256,10 @@ public class UnderexcitationLimiterDynamicsImpl extends DynamicsFunctionBlockImp
             InternalEObject oldRemoteInputSignal = ( InternalEObject ) remoteInputSignal;
             remoteInputSignal = ( RemoteInputSignal ) eResolveProxy( oldRemoteInputSignal );
             if( remoteInputSignal != oldRemoteInputSignal ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.UNDEREXCITATION_LIMITER_DYNAMICS__REMOTE_INPUT_SIGNAL, oldRemoteInputSignal,
-                        remoteInputSignal ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.UNDEREXCITATION_LIMITER_DYNAMICS__REMOTE_INPUT_SIGNAL, oldRemoteInputSignal,
+                            remoteInputSignal ) );
             }
         }
         return remoteInputSignal;
@@ -302,19 +306,24 @@ public class UnderexcitationLimiterDynamicsImpl extends DynamicsFunctionBlockImp
     public void setRemoteInputSignal( RemoteInputSignal newRemoteInputSignal ) {
         if( newRemoteInputSignal != remoteInputSignal ) {
             NotificationChain msgs = null;
-            if( remoteInputSignal != null ) msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__UNDEREXCITATION_LIMITER_DYNAMICS, RemoteInputSignal.class, msgs );
-            if( newRemoteInputSignal != null ) msgs = ( ( InternalEObject ) newRemoteInputSignal ).eInverseAdd( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__UNDEREXCITATION_LIMITER_DYNAMICS, RemoteInputSignal.class, msgs );
+            if( remoteInputSignal != null )
+                msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__UNDEREXCITATION_LIMITER_DYNAMICS, RemoteInputSignal.class,
+                        msgs );
+            if( newRemoteInputSignal != null )
+                msgs = ( ( InternalEObject ) newRemoteInputSignal ).eInverseAdd( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__UNDEREXCITATION_LIMITER_DYNAMICS, RemoteInputSignal.class,
+                        msgs );
             msgs = basicSetRemoteInputSignal( newRemoteInputSignal, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldRemoteInputSignalESet = remoteInputSignalESet;
             remoteInputSignalESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.UNDEREXCITATION_LIMITER_DYNAMICS__REMOTE_INPUT_SIGNAL, newRemoteInputSignal,
-                    newRemoteInputSignal, !oldRemoteInputSignalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.UNDEREXCITATION_LIMITER_DYNAMICS__REMOTE_INPUT_SIGNAL, newRemoteInputSignal,
+                        newRemoteInputSignal, !oldRemoteInputSignalESet ) );
         }
     }
 
@@ -357,9 +366,10 @@ public class UnderexcitationLimiterDynamicsImpl extends DynamicsFunctionBlockImp
         else {
             boolean oldRemoteInputSignalESet = remoteInputSignalESet;
             remoteInputSignalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.UNDEREXCITATION_LIMITER_DYNAMICS__REMOTE_INPUT_SIGNAL, null, null,
-                    oldRemoteInputSignalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.UNDEREXCITATION_LIMITER_DYNAMICS__REMOTE_INPUT_SIGNAL, null, null,
+                        oldRemoteInputSignalESet ) );
         }
     }
 
@@ -388,8 +398,10 @@ public class UnderexcitationLimiterDynamicsImpl extends DynamicsFunctionBlockImp
                         ExcitationSystemDynamics.class, msgs );
             return basicSetExcitationSystemDynamics( ( ExcitationSystemDynamics ) otherEnd, msgs );
         case CimPackage.UNDEREXCITATION_LIMITER_DYNAMICS__REMOTE_INPUT_SIGNAL:
-            if( remoteInputSignal != null ) msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__UNDEREXCITATION_LIMITER_DYNAMICS, RemoteInputSignal.class, msgs );
+            if( remoteInputSignal != null )
+                msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__UNDEREXCITATION_LIMITER_DYNAMICS, RemoteInputSignal.class,
+                        msgs );
             return basicSetRemoteInputSignal( ( RemoteInputSignal ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

@@ -172,9 +172,10 @@ public class BranchGroupTerminalImpl extends CimObjectWithIDImpl implements Bran
         boolean oldPositiveFlowInESet = positiveFlowInESet;
         positiveFlowIn = POSITIVE_FLOW_IN_EDEFAULT;
         positiveFlowInESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.BRANCH_GROUP_TERMINAL__POSITIVE_FLOW_IN,
-                        oldPositiveFlowIn, POSITIVE_FLOW_IN_EDEFAULT, oldPositiveFlowInESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.BRANCH_GROUP_TERMINAL__POSITIVE_FLOW_IN, oldPositiveFlowIn, POSITIVE_FLOW_IN_EDEFAULT,
+                    oldPositiveFlowInESet ) );
     }
 
     /**
@@ -227,18 +228,21 @@ public class BranchGroupTerminalImpl extends CimObjectWithIDImpl implements Bran
     public void setTerminal( Terminal newTerminal ) {
         if( newTerminal != terminal ) {
             NotificationChain msgs = null;
-            if( terminal != null ) msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__BRANCH_GROUP_TERMINAL, Terminal.class, msgs );
-            if( newTerminal != null ) msgs = ( ( InternalEObject ) newTerminal ).eInverseAdd( this,
-                    CimPackage.TERMINAL__BRANCH_GROUP_TERMINAL, Terminal.class, msgs );
+            if( terminal != null )
+                msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
+                        CimPackage.TERMINAL__BRANCH_GROUP_TERMINAL, Terminal.class, msgs );
+            if( newTerminal != null )
+                msgs = ( ( InternalEObject ) newTerminal ).eInverseAdd( this,
+                        CimPackage.TERMINAL__BRANCH_GROUP_TERMINAL, Terminal.class, msgs );
             msgs = basicSetTerminal( newTerminal, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTerminalESet = terminalESet;
             terminalESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.BRANCH_GROUP_TERMINAL__TERMINAL, newTerminal, newTerminal, !oldTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BRANCH_GROUP_TERMINAL__TERMINAL,
+                        newTerminal, newTerminal, !oldTerminalESet ) );
         }
     }
 
@@ -280,8 +284,9 @@ public class BranchGroupTerminalImpl extends CimObjectWithIDImpl implements Bran
         else {
             boolean oldTerminalESet = terminalESet;
             terminalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.BRANCH_GROUP_TERMINAL__TERMINAL, null, null, oldTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BRANCH_GROUP_TERMINAL__TERMINAL,
+                        null, null, oldTerminalESet ) );
         }
     }
 
@@ -336,10 +341,12 @@ public class BranchGroupTerminalImpl extends CimObjectWithIDImpl implements Bran
     public void setBranchGroup( BranchGroup newBranchGroup ) {
         if( newBranchGroup != branchGroup ) {
             NotificationChain msgs = null;
-            if( branchGroup != null ) msgs = ( ( InternalEObject ) branchGroup ).eInverseRemove( this,
-                    CimPackage.BRANCH_GROUP__BRANCH_GROUP_TERMINAL, BranchGroup.class, msgs );
-            if( newBranchGroup != null ) msgs = ( ( InternalEObject ) newBranchGroup ).eInverseAdd( this,
-                    CimPackage.BRANCH_GROUP__BRANCH_GROUP_TERMINAL, BranchGroup.class, msgs );
+            if( branchGroup != null )
+                msgs = ( ( InternalEObject ) branchGroup ).eInverseRemove( this,
+                        CimPackage.BRANCH_GROUP__BRANCH_GROUP_TERMINAL, BranchGroup.class, msgs );
+            if( newBranchGroup != null )
+                msgs = ( ( InternalEObject ) newBranchGroup ).eInverseAdd( this,
+                        CimPackage.BRANCH_GROUP__BRANCH_GROUP_TERMINAL, BranchGroup.class, msgs );
             msgs = basicSetBranchGroup( newBranchGroup, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -390,8 +397,9 @@ public class BranchGroupTerminalImpl extends CimObjectWithIDImpl implements Bran
         else {
             boolean oldBranchGroupESet = branchGroupESet;
             branchGroupESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.BRANCH_GROUP_TERMINAL__BRANCH_GROUP, null, null, oldBranchGroupESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.BRANCH_GROUP_TERMINAL__BRANCH_GROUP, null, null, oldBranchGroupESet ) );
         }
     }
 
@@ -414,12 +422,14 @@ public class BranchGroupTerminalImpl extends CimObjectWithIDImpl implements Bran
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.BRANCH_GROUP_TERMINAL__TERMINAL:
-            if( terminal != null ) msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__BRANCH_GROUP_TERMINAL, Terminal.class, msgs );
+            if( terminal != null )
+                msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
+                        CimPackage.TERMINAL__BRANCH_GROUP_TERMINAL, Terminal.class, msgs );
             return basicSetTerminal( ( Terminal ) otherEnd, msgs );
         case CimPackage.BRANCH_GROUP_TERMINAL__BRANCH_GROUP:
-            if( branchGroup != null ) msgs = ( ( InternalEObject ) branchGroup ).eInverseRemove( this,
-                    CimPackage.BRANCH_GROUP__BRANCH_GROUP_TERMINAL, BranchGroup.class, msgs );
+            if( branchGroup != null )
+                msgs = ( ( InternalEObject ) branchGroup ).eInverseRemove( this,
+                        CimPackage.BRANCH_GROUP__BRANCH_GROUP_TERMINAL, BranchGroup.class, msgs );
             return basicSetBranchGroup( ( BranchGroup ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -528,7 +538,7 @@ public class BranchGroupTerminalImpl extends CimObjectWithIDImpl implements Bran
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (positiveFlowIn: " );
         if( positiveFlowInESet )
             result.append( positiveFlowIn );

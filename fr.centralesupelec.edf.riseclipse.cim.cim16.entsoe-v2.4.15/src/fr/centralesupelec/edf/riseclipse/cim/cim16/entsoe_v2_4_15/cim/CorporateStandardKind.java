@@ -142,8 +142,12 @@ public enum CorporateStandardKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final CorporateStandardKind[] VALUES_ARRAY = new CorporateStandardKind[] { STANDARD, EXPERIMENTAL,
-            UNDER_EVALUATION, OTHER, };
+    private static final CorporateStandardKind[] VALUES_ARRAY = new CorporateStandardKind[] {
+            STANDARD,
+            EXPERIMENTAL,
+            UNDER_EVALUATION,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Corporate Standard Kind</b></em>' enumerators.

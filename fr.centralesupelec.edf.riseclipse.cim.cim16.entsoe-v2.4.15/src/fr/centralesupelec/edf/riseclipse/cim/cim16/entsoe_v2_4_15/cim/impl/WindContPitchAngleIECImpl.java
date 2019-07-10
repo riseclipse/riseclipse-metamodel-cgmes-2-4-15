@@ -405,8 +405,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         dthetamax = newDthetamax;
         boolean oldDthetamaxESet = dthetamaxESet;
         dthetamaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__DTHETAMAX, oldDthetamax, dthetamax, !oldDthetamaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__DTHETAMAX,
+                    oldDthetamax, dthetamax, !oldDthetamaxESet ) );
     }
 
     /**
@@ -420,8 +421,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         boolean oldDthetamaxESet = dthetamaxESet;
         dthetamax = DTHETAMAX_EDEFAULT;
         dthetamaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__DTHETAMAX, oldDthetamax, DTHETAMAX_EDEFAULT, oldDthetamaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__DTHETAMAX,
+                    oldDthetamax, DTHETAMAX_EDEFAULT, oldDthetamaxESet ) );
     }
 
     /**
@@ -455,8 +457,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         dthetamin = newDthetamin;
         boolean oldDthetaminESet = dthetaminESet;
         dthetaminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__DTHETAMIN, oldDthetamin, dthetamin, !oldDthetaminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__DTHETAMIN,
+                    oldDthetamin, dthetamin, !oldDthetaminESet ) );
     }
 
     /**
@@ -470,8 +473,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         boolean oldDthetaminESet = dthetaminESet;
         dthetamin = DTHETAMIN_EDEFAULT;
         dthetaminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__DTHETAMIN, oldDthetamin, DTHETAMIN_EDEFAULT, oldDthetaminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__DTHETAMIN,
+                    oldDthetamin, DTHETAMIN_EDEFAULT, oldDthetaminESet ) );
     }
 
     /**
@@ -505,8 +509,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         kic = newKic;
         boolean oldKicESet = kicESet;
         kicESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KIC, oldKic, kic, !oldKicESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KIC, oldKic,
+                    kic, !oldKicESet ) );
     }
 
     /**
@@ -520,8 +525,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         boolean oldKicESet = kicESet;
         kic = KIC_EDEFAULT;
         kicESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KIC, oldKic, KIC_EDEFAULT, oldKicESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KIC, oldKic,
+                    KIC_EDEFAULT, oldKicESet ) );
     }
 
     /**
@@ -555,8 +561,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         kiomega = newKiomega;
         boolean oldKiomegaESet = kiomegaESet;
         kiomegaESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KIOMEGA, oldKiomega, kiomega, !oldKiomegaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KIOMEGA,
+                    oldKiomega, kiomega, !oldKiomegaESet ) );
     }
 
     /**
@@ -570,8 +577,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         boolean oldKiomegaESet = kiomegaESet;
         kiomega = KIOMEGA_EDEFAULT;
         kiomegaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KIOMEGA, oldKiomega, KIOMEGA_EDEFAULT, oldKiomegaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KIOMEGA,
+                    oldKiomega, KIOMEGA_EDEFAULT, oldKiomegaESet ) );
     }
 
     /**
@@ -605,8 +613,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         kpc = newKpc;
         boolean oldKpcESet = kpcESet;
         kpcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KPC, oldKpc, kpc, !oldKpcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KPC, oldKpc,
+                    kpc, !oldKpcESet ) );
     }
 
     /**
@@ -620,8 +629,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         boolean oldKpcESet = kpcESet;
         kpc = KPC_EDEFAULT;
         kpcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KPC, oldKpc, KPC_EDEFAULT, oldKpcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KPC, oldKpc,
+                    KPC_EDEFAULT, oldKpcESet ) );
     }
 
     /**
@@ -655,8 +665,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         kpomega = newKpomega;
         boolean oldKpomegaESet = kpomegaESet;
         kpomegaESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KPOMEGA, oldKpomega, kpomega, !oldKpomegaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KPOMEGA,
+                    oldKpomega, kpomega, !oldKpomegaESet ) );
     }
 
     /**
@@ -670,8 +681,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         boolean oldKpomegaESet = kpomegaESet;
         kpomega = KPOMEGA_EDEFAULT;
         kpomegaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KPOMEGA, oldKpomega, KPOMEGA_EDEFAULT, oldKpomegaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KPOMEGA,
+                    oldKpomega, KPOMEGA_EDEFAULT, oldKpomegaESet ) );
     }
 
     /**
@@ -705,8 +717,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         kpx = newKpx;
         boolean oldKpxESet = kpxESet;
         kpxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KPX, oldKpx, kpx, !oldKpxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KPX, oldKpx,
+                    kpx, !oldKpxESet ) );
     }
 
     /**
@@ -720,8 +733,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         boolean oldKpxESet = kpxESet;
         kpx = KPX_EDEFAULT;
         kpxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KPX, oldKpx, KPX_EDEFAULT, oldKpxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__KPX, oldKpx,
+                    KPX_EDEFAULT, oldKpxESet ) );
     }
 
     /**
@@ -755,8 +769,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         thetamax = newThetamax;
         boolean oldThetamaxESet = thetamaxESet;
         thetamaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__THETAMAX, oldThetamax, thetamax, !oldThetamaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__THETAMAX,
+                    oldThetamax, thetamax, !oldThetamaxESet ) );
     }
 
     /**
@@ -770,8 +785,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         boolean oldThetamaxESet = thetamaxESet;
         thetamax = THETAMAX_EDEFAULT;
         thetamaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__THETAMAX, oldThetamax, THETAMAX_EDEFAULT, oldThetamaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__THETAMAX,
+                    oldThetamax, THETAMAX_EDEFAULT, oldThetamaxESet ) );
     }
 
     /**
@@ -805,8 +821,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         thetamin = newThetamin;
         boolean oldThetaminESet = thetaminESet;
         thetaminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__THETAMIN, oldThetamin, thetamin, !oldThetaminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__THETAMIN,
+                    oldThetamin, thetamin, !oldThetaminESet ) );
     }
 
     /**
@@ -820,8 +837,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         boolean oldThetaminESet = thetaminESet;
         thetamin = THETAMIN_EDEFAULT;
         thetaminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__THETAMIN, oldThetamin, THETAMIN_EDEFAULT, oldThetaminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__THETAMIN,
+                    oldThetamin, THETAMIN_EDEFAULT, oldThetaminESet ) );
     }
 
     /**
@@ -855,8 +873,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         ttheta = newTtheta;
         boolean oldTthetaESet = tthetaESet;
         tthetaESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__TTHETA, oldTtheta, ttheta, !oldTthetaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__TTHETA,
+                    oldTtheta, ttheta, !oldTthetaESet ) );
     }
 
     /**
@@ -870,8 +889,9 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         boolean oldTthetaESet = tthetaESet;
         ttheta = TTHETA_EDEFAULT;
         tthetaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_PITCH_ANGLE_IEC__TTHETA, oldTtheta, TTHETA_EDEFAULT, oldTthetaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_PITCH_ANGLE_IEC__TTHETA,
+                    oldTtheta, TTHETA_EDEFAULT, oldTthetaESet ) );
     }
 
     /**
@@ -895,9 +915,10 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
             InternalEObject oldWindGenTurbineType3IEC = ( InternalEObject ) windGenTurbineType3IEC;
             windGenTurbineType3IEC = ( WindGenTurbineType3IEC ) eResolveProxy( oldWindGenTurbineType3IEC );
             if( windGenTurbineType3IEC != oldWindGenTurbineType3IEC ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.WIND_CONT_PITCH_ANGLE_IEC__WIND_GEN_TURBINE_TYPE3_IEC, oldWindGenTurbineType3IEC,
-                        windGenTurbineType3IEC ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.WIND_CONT_PITCH_ANGLE_IEC__WIND_GEN_TURBINE_TYPE3_IEC, oldWindGenTurbineType3IEC,
+                            windGenTurbineType3IEC ) );
             }
         }
         return windGenTurbineType3IEC;
@@ -958,9 +979,10 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         else {
             boolean oldWindGenTurbineType3IECESet = windGenTurbineType3IECESet;
             windGenTurbineType3IECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_CONT_PITCH_ANGLE_IEC__WIND_GEN_TURBINE_TYPE3_IEC, newWindGenTurbineType3IEC,
-                    newWindGenTurbineType3IEC, !oldWindGenTurbineType3IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_CONT_PITCH_ANGLE_IEC__WIND_GEN_TURBINE_TYPE3_IEC, newWindGenTurbineType3IEC,
+                        newWindGenTurbineType3IEC, !oldWindGenTurbineType3IECESet ) );
         }
     }
 
@@ -1004,9 +1026,10 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
         else {
             boolean oldWindGenTurbineType3IECESet = windGenTurbineType3IECESet;
             windGenTurbineType3IECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_CONT_PITCH_ANGLE_IEC__WIND_GEN_TURBINE_TYPE3_IEC, null, null,
-                    oldWindGenTurbineType3IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_CONT_PITCH_ANGLE_IEC__WIND_GEN_TURBINE_TYPE3_IEC, null, null,
+                        oldWindGenTurbineType3IECESet ) );
         }
     }
 
@@ -1220,7 +1243,7 @@ public class WindContPitchAngleIECImpl extends IdentifiedObjectImpl implements W
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (dthetamax: " );
         if( dthetamaxESet )
             result.append( dthetamax );

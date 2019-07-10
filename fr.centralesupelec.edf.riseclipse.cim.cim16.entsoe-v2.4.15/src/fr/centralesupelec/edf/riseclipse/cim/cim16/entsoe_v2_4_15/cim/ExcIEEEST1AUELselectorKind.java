@@ -143,7 +143,11 @@ public enum ExcIEEEST1AUELselectorKind implements Enumerator {
      * @generated
      */
     private static final ExcIEEEST1AUELselectorKind[] VALUES_ARRAY = new ExcIEEEST1AUELselectorKind[] {
-            IGNORE_UE_LSIGNAL, INPUT_HVGATE_VOLTAGE_OUTPUT, INPUT_HVGATE_ERROR_SIGNAL, INPUT_ADDED_TO_ERROR_SIGNAL, };
+            IGNORE_UE_LSIGNAL,
+            INPUT_HVGATE_VOLTAGE_OUTPUT,
+            INPUT_HVGATE_ERROR_SIGNAL,
+            INPUT_ADDED_TO_ERROR_SIGNAL,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Exc IEEEST1AUE Lselector Kind</b></em>' enumerators.

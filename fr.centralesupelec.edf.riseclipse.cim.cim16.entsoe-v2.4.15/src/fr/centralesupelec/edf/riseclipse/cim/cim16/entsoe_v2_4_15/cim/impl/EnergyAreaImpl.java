@@ -124,18 +124,21 @@ public class EnergyAreaImpl extends IdentifiedObjectImpl implements EnergyArea {
     public void setControlArea( ControlArea newControlArea ) {
         if( newControlArea != controlArea ) {
             NotificationChain msgs = null;
-            if( controlArea != null ) msgs = ( ( InternalEObject ) controlArea ).eInverseRemove( this,
-                    CimPackage.CONTROL_AREA__ENERGY_AREA, ControlArea.class, msgs );
-            if( newControlArea != null ) msgs = ( ( InternalEObject ) newControlArea ).eInverseAdd( this,
-                    CimPackage.CONTROL_AREA__ENERGY_AREA, ControlArea.class, msgs );
+            if( controlArea != null )
+                msgs = ( ( InternalEObject ) controlArea ).eInverseRemove( this, CimPackage.CONTROL_AREA__ENERGY_AREA,
+                        ControlArea.class, msgs );
+            if( newControlArea != null )
+                msgs = ( ( InternalEObject ) newControlArea ).eInverseAdd( this, CimPackage.CONTROL_AREA__ENERGY_AREA,
+                        ControlArea.class, msgs );
             msgs = basicSetControlArea( newControlArea, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldControlAreaESet = controlAreaESet;
             controlAreaESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ENERGY_AREA__CONTROL_AREA, newControlArea, newControlArea, !oldControlAreaESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_AREA__CONTROL_AREA,
+                        newControlArea, newControlArea, !oldControlAreaESet ) );
         }
     }
 
@@ -177,8 +180,9 @@ public class EnergyAreaImpl extends IdentifiedObjectImpl implements EnergyArea {
         else {
             boolean oldControlAreaESet = controlAreaESet;
             controlAreaESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ENERGY_AREA__CONTROL_AREA, null, null, oldControlAreaESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_AREA__CONTROL_AREA, null,
+                        null, oldControlAreaESet ) );
         }
     }
 
@@ -201,8 +205,9 @@ public class EnergyAreaImpl extends IdentifiedObjectImpl implements EnergyArea {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ENERGY_AREA__CONTROL_AREA:
-            if( controlArea != null ) msgs = ( ( InternalEObject ) controlArea ).eInverseRemove( this,
-                    CimPackage.CONTROL_AREA__ENERGY_AREA, ControlArea.class, msgs );
+            if( controlArea != null )
+                msgs = ( ( InternalEObject ) controlArea ).eInverseRemove( this, CimPackage.CONTROL_AREA__ENERGY_AREA,
+                        ControlArea.class, msgs );
             return basicSetControlArea( ( ControlArea ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

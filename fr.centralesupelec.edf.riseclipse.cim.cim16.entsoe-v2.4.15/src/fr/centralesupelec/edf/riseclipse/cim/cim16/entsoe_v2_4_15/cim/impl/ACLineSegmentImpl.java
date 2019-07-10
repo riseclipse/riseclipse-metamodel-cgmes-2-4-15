@@ -472,8 +472,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         b0ch = newB0ch;
         boolean oldB0chESet = b0chESet;
         b0chESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.AC_LINE_SEGMENT__B0CH, oldB0ch, b0ch, !oldB0chESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AC_LINE_SEGMENT__B0CH, oldB0ch, b0ch,
+                    !oldB0chESet ) );
     }
 
     /**
@@ -487,8 +488,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         boolean oldB0chESet = b0chESet;
         b0ch = B0CH_EDEFAULT;
         b0chESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.AC_LINE_SEGMENT__B0CH, oldB0ch, B0CH_EDEFAULT, oldB0chESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AC_LINE_SEGMENT__B0CH, oldB0ch,
+                    B0CH_EDEFAULT, oldB0chESet ) );
     }
 
     /**
@@ -522,8 +524,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         bch = newBch;
         boolean oldBchESet = bchESet;
         bchESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.AC_LINE_SEGMENT__BCH, oldBch, bch, !oldBchESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AC_LINE_SEGMENT__BCH, oldBch, bch,
+                    !oldBchESet ) );
     }
 
     /**
@@ -537,8 +540,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         boolean oldBchESet = bchESet;
         bch = BCH_EDEFAULT;
         bchESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.AC_LINE_SEGMENT__BCH, oldBch, BCH_EDEFAULT, oldBchESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AC_LINE_SEGMENT__BCH, oldBch,
+                    BCH_EDEFAULT, oldBchESet ) );
     }
 
     /**
@@ -572,8 +576,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         g0ch = newG0ch;
         boolean oldG0chESet = g0chESet;
         g0chESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.AC_LINE_SEGMENT__G0CH, oldG0ch, g0ch, !oldG0chESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AC_LINE_SEGMENT__G0CH, oldG0ch, g0ch,
+                    !oldG0chESet ) );
     }
 
     /**
@@ -587,8 +592,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         boolean oldG0chESet = g0chESet;
         g0ch = G0CH_EDEFAULT;
         g0chESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.AC_LINE_SEGMENT__G0CH, oldG0ch, G0CH_EDEFAULT, oldG0chESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AC_LINE_SEGMENT__G0CH, oldG0ch,
+                    G0CH_EDEFAULT, oldG0chESet ) );
     }
 
     /**
@@ -622,8 +628,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         gch = newGch;
         boolean oldGchESet = gchESet;
         gchESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.AC_LINE_SEGMENT__GCH, oldGch, gch, !oldGchESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AC_LINE_SEGMENT__GCH, oldGch, gch,
+                    !oldGchESet ) );
     }
 
     /**
@@ -637,8 +644,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         boolean oldGchESet = gchESet;
         gch = GCH_EDEFAULT;
         gchESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.AC_LINE_SEGMENT__GCH, oldGch, GCH_EDEFAULT, oldGchESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AC_LINE_SEGMENT__GCH, oldGch,
+                    GCH_EDEFAULT, oldGchESet ) );
     }
 
     /**
@@ -672,8 +680,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         r = newR;
         boolean oldRESet = rESet;
         rESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.AC_LINE_SEGMENT__R, oldR, r, !oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AC_LINE_SEGMENT__R, oldR, r,
+                    !oldRESet ) );
     }
 
     /**
@@ -687,8 +696,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         boolean oldRESet = rESet;
         r = R_EDEFAULT;
         rESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.AC_LINE_SEGMENT__R, oldR, R_EDEFAULT, oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AC_LINE_SEGMENT__R, oldR, R_EDEFAULT,
+                    oldRESet ) );
     }
 
     /**
@@ -722,8 +732,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         r0 = newR0;
         boolean oldR0ESet = r0ESet;
         r0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.AC_LINE_SEGMENT__R0, oldR0, r0, !oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AC_LINE_SEGMENT__R0, oldR0, r0,
+                    !oldR0ESet ) );
     }
 
     /**
@@ -737,8 +748,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         boolean oldR0ESet = r0ESet;
         r0 = R0_EDEFAULT;
         r0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.AC_LINE_SEGMENT__R0, oldR0, R0_EDEFAULT, oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AC_LINE_SEGMENT__R0, oldR0,
+                    R0_EDEFAULT, oldR0ESet ) );
     }
 
     /**
@@ -772,9 +784,10 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         shortCircuitEndTemperature = newShortCircuitEndTemperature;
         boolean oldShortCircuitEndTemperatureESet = shortCircuitEndTemperatureESet;
         shortCircuitEndTemperatureESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.AC_LINE_SEGMENT__SHORT_CIRCUIT_END_TEMPERATURE, oldShortCircuitEndTemperature,
-                shortCircuitEndTemperature, !oldShortCircuitEndTemperatureESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.AC_LINE_SEGMENT__SHORT_CIRCUIT_END_TEMPERATURE, oldShortCircuitEndTemperature,
+                    shortCircuitEndTemperature, !oldShortCircuitEndTemperatureESet ) );
     }
 
     /**
@@ -788,9 +801,10 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         boolean oldShortCircuitEndTemperatureESet = shortCircuitEndTemperatureESet;
         shortCircuitEndTemperature = SHORT_CIRCUIT_END_TEMPERATURE_EDEFAULT;
         shortCircuitEndTemperatureESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.AC_LINE_SEGMENT__SHORT_CIRCUIT_END_TEMPERATURE, oldShortCircuitEndTemperature,
-                SHORT_CIRCUIT_END_TEMPERATURE_EDEFAULT, oldShortCircuitEndTemperatureESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.AC_LINE_SEGMENT__SHORT_CIRCUIT_END_TEMPERATURE, oldShortCircuitEndTemperature,
+                    SHORT_CIRCUIT_END_TEMPERATURE_EDEFAULT, oldShortCircuitEndTemperatureESet ) );
     }
 
     /**
@@ -824,8 +838,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         x = newX;
         boolean oldXESet = xESet;
         xESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.AC_LINE_SEGMENT__X, oldX, x, !oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AC_LINE_SEGMENT__X, oldX, x,
+                    !oldXESet ) );
     }
 
     /**
@@ -839,8 +854,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         boolean oldXESet = xESet;
         x = X_EDEFAULT;
         xESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.AC_LINE_SEGMENT__X, oldX, X_EDEFAULT, oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AC_LINE_SEGMENT__X, oldX, X_EDEFAULT,
+                    oldXESet ) );
     }
 
     /**
@@ -874,8 +890,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         x0 = newX0;
         boolean oldX0ESet = x0ESet;
         x0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.AC_LINE_SEGMENT__X0, oldX0, x0, !oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AC_LINE_SEGMENT__X0, oldX0, x0,
+                    !oldX0ESet ) );
     }
 
     /**
@@ -889,8 +906,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         boolean oldX0ESet = x0ESet;
         x0 = X0_EDEFAULT;
         x0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.AC_LINE_SEGMENT__X0, oldX0, X0_EDEFAULT, oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AC_LINE_SEGMENT__X0, oldX0,
+                    X0_EDEFAULT, oldX0ESet ) );
     }
 
     /**
@@ -1013,19 +1031,22 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
     public void setPerLengthImpedance( PerLengthImpedance newPerLengthImpedance ) {
         if( newPerLengthImpedance != perLengthImpedance ) {
             NotificationChain msgs = null;
-            if( perLengthImpedance != null ) msgs = ( ( InternalEObject ) perLengthImpedance ).eInverseRemove( this,
-                    CimPackage.PER_LENGTH_IMPEDANCE__AC_LINE_SEGMENTS, PerLengthImpedance.class, msgs );
-            if( newPerLengthImpedance != null ) msgs = ( ( InternalEObject ) newPerLengthImpedance ).eInverseAdd( this,
-                    CimPackage.PER_LENGTH_IMPEDANCE__AC_LINE_SEGMENTS, PerLengthImpedance.class, msgs );
+            if( perLengthImpedance != null )
+                msgs = ( ( InternalEObject ) perLengthImpedance ).eInverseRemove( this,
+                        CimPackage.PER_LENGTH_IMPEDANCE__AC_LINE_SEGMENTS, PerLengthImpedance.class, msgs );
+            if( newPerLengthImpedance != null )
+                msgs = ( ( InternalEObject ) newPerLengthImpedance ).eInverseAdd( this,
+                        CimPackage.PER_LENGTH_IMPEDANCE__AC_LINE_SEGMENTS, PerLengthImpedance.class, msgs );
             msgs = basicSetPerLengthImpedance( newPerLengthImpedance, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldPerLengthImpedanceESet = perLengthImpedanceESet;
             perLengthImpedanceESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.AC_LINE_SEGMENT__PER_LENGTH_IMPEDANCE,
-                            newPerLengthImpedance, newPerLengthImpedance, !oldPerLengthImpedanceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.AC_LINE_SEGMENT__PER_LENGTH_IMPEDANCE, newPerLengthImpedance, newPerLengthImpedance,
+                        !oldPerLengthImpedanceESet ) );
         }
     }
 
@@ -1068,8 +1089,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         else {
             boolean oldPerLengthImpedanceESet = perLengthImpedanceESet;
             perLengthImpedanceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.AC_LINE_SEGMENT__PER_LENGTH_IMPEDANCE, null, null, oldPerLengthImpedanceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.AC_LINE_SEGMENT__PER_LENGTH_IMPEDANCE, null, null, oldPerLengthImpedanceESet ) );
         }
     }
 
@@ -1124,10 +1146,12 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
     public void setLineJumpingAction( JumperAction newLineJumpingAction ) {
         if( newLineJumpingAction != lineJumpingAction ) {
             NotificationChain msgs = null;
-            if( lineJumpingAction != null ) msgs = ( ( InternalEObject ) lineJumpingAction ).eInverseRemove( this,
-                    CimPackage.JUMPER_ACTION__ALONG_AC_LINE_SEGMENTS, JumperAction.class, msgs );
-            if( newLineJumpingAction != null ) msgs = ( ( InternalEObject ) newLineJumpingAction ).eInverseAdd( this,
-                    CimPackage.JUMPER_ACTION__ALONG_AC_LINE_SEGMENTS, JumperAction.class, msgs );
+            if( lineJumpingAction != null )
+                msgs = ( ( InternalEObject ) lineJumpingAction ).eInverseRemove( this,
+                        CimPackage.JUMPER_ACTION__ALONG_AC_LINE_SEGMENTS, JumperAction.class, msgs );
+            if( newLineJumpingAction != null )
+                msgs = ( ( InternalEObject ) newLineJumpingAction ).eInverseAdd( this,
+                        CimPackage.JUMPER_ACTION__ALONG_AC_LINE_SEGMENTS, JumperAction.class, msgs );
             msgs = basicSetLineJumpingAction( newLineJumpingAction, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1179,8 +1203,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         else {
             boolean oldLineJumpingActionESet = lineJumpingActionESet;
             lineJumpingActionESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.AC_LINE_SEGMENT__LINE_JUMPING_ACTION, null, null, oldLineJumpingActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.AC_LINE_SEGMENT__LINE_JUMPING_ACTION, null, null, oldLineJumpingActionESet ) );
         }
     }
 
@@ -1270,19 +1295,22 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
     public void setLineGroundingAction( GroundAction newLineGroundingAction ) {
         if( newLineGroundingAction != lineGroundingAction ) {
             NotificationChain msgs = null;
-            if( lineGroundingAction != null ) msgs = ( ( InternalEObject ) lineGroundingAction ).eInverseRemove( this,
-                    CimPackage.GROUND_ACTION__ALONG_AC_LINE_SEGMENT, GroundAction.class, msgs );
-            if( newLineGroundingAction != null ) msgs = ( ( InternalEObject ) newLineGroundingAction )
-                    .eInverseAdd( this, CimPackage.GROUND_ACTION__ALONG_AC_LINE_SEGMENT, GroundAction.class, msgs );
+            if( lineGroundingAction != null )
+                msgs = ( ( InternalEObject ) lineGroundingAction ).eInverseRemove( this,
+                        CimPackage.GROUND_ACTION__ALONG_AC_LINE_SEGMENT, GroundAction.class, msgs );
+            if( newLineGroundingAction != null )
+                msgs = ( ( InternalEObject ) newLineGroundingAction ).eInverseAdd( this,
+                        CimPackage.GROUND_ACTION__ALONG_AC_LINE_SEGMENT, GroundAction.class, msgs );
             msgs = basicSetLineGroundingAction( newLineGroundingAction, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldLineGroundingActionESet = lineGroundingActionESet;
             lineGroundingActionESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.AC_LINE_SEGMENT__LINE_GROUNDING_ACTION,
-                            newLineGroundingAction, newLineGroundingAction, !oldLineGroundingActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.AC_LINE_SEGMENT__LINE_GROUNDING_ACTION, newLineGroundingAction,
+                        newLineGroundingAction, !oldLineGroundingActionESet ) );
         }
     }
 
@@ -1325,8 +1353,9 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
         else {
             boolean oldLineGroundingActionESet = lineGroundingActionESet;
             lineGroundingActionESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.AC_LINE_SEGMENT__LINE_GROUNDING_ACTION, null, null, oldLineGroundingActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.AC_LINE_SEGMENT__LINE_GROUNDING_ACTION, null, null, oldLineGroundingActionESet ) );
         }
     }
 
@@ -1385,16 +1414,19 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.AC_LINE_SEGMENT__LINE_JUMPING_ACTION:
-            if( lineJumpingAction != null ) msgs = ( ( InternalEObject ) lineJumpingAction ).eInverseRemove( this,
-                    CimPackage.JUMPER_ACTION__ALONG_AC_LINE_SEGMENTS, JumperAction.class, msgs );
+            if( lineJumpingAction != null )
+                msgs = ( ( InternalEObject ) lineJumpingAction ).eInverseRemove( this,
+                        CimPackage.JUMPER_ACTION__ALONG_AC_LINE_SEGMENTS, JumperAction.class, msgs );
             return basicSetLineJumpingAction( ( JumperAction ) otherEnd, msgs );
         case CimPackage.AC_LINE_SEGMENT__PER_LENGTH_IMPEDANCE:
-            if( perLengthImpedance != null ) msgs = ( ( InternalEObject ) perLengthImpedance ).eInverseRemove( this,
-                    CimPackage.PER_LENGTH_IMPEDANCE__AC_LINE_SEGMENTS, PerLengthImpedance.class, msgs );
+            if( perLengthImpedance != null )
+                msgs = ( ( InternalEObject ) perLengthImpedance ).eInverseRemove( this,
+                        CimPackage.PER_LENGTH_IMPEDANCE__AC_LINE_SEGMENTS, PerLengthImpedance.class, msgs );
             return basicSetPerLengthImpedance( ( PerLengthImpedance ) otherEnd, msgs );
         case CimPackage.AC_LINE_SEGMENT__LINE_GROUNDING_ACTION:
-            if( lineGroundingAction != null ) msgs = ( ( InternalEObject ) lineGroundingAction ).eInverseRemove( this,
-                    CimPackage.GROUND_ACTION__ALONG_AC_LINE_SEGMENT, GroundAction.class, msgs );
+            if( lineGroundingAction != null )
+                msgs = ( ( InternalEObject ) lineGroundingAction ).eInverseRemove( this,
+                        CimPackage.GROUND_ACTION__ALONG_AC_LINE_SEGMENT, GroundAction.class, msgs );
             return basicSetLineGroundingAction( ( GroundAction ) otherEnd, msgs );
         case CimPackage.AC_LINE_SEGMENT__CLAMP:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getClamp() ).basicAdd( otherEnd,
@@ -1659,7 +1691,7 @@ public class ACLineSegmentImpl extends ConductorImpl implements ACLineSegment {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (b0ch: " );
         if( b0chESet )
             result.append( b0ch );

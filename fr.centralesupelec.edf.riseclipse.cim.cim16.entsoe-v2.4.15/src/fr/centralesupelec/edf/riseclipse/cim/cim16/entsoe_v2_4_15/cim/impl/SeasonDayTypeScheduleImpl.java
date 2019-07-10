@@ -145,18 +145,21 @@ public class SeasonDayTypeScheduleImpl extends RegularIntervalScheduleImpl imple
     public void setSeason( Season newSeason ) {
         if( newSeason != season ) {
             NotificationChain msgs = null;
-            if( season != null ) msgs = ( ( InternalEObject ) season ).eInverseRemove( this,
-                    CimPackage.SEASON__SEASON_DAY_TYPE_SCHEDULES, Season.class, msgs );
-            if( newSeason != null ) msgs = ( ( InternalEObject ) newSeason ).eInverseAdd( this,
-                    CimPackage.SEASON__SEASON_DAY_TYPE_SCHEDULES, Season.class, msgs );
+            if( season != null )
+                msgs = ( ( InternalEObject ) season ).eInverseRemove( this,
+                        CimPackage.SEASON__SEASON_DAY_TYPE_SCHEDULES, Season.class, msgs );
+            if( newSeason != null )
+                msgs = ( ( InternalEObject ) newSeason ).eInverseAdd( this,
+                        CimPackage.SEASON__SEASON_DAY_TYPE_SCHEDULES, Season.class, msgs );
             msgs = basicSetSeason( newSeason, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldSeasonESet = seasonESet;
             seasonESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SEASON_DAY_TYPE_SCHEDULE__SEASON, newSeason, newSeason, !oldSeasonESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SEASON_DAY_TYPE_SCHEDULE__SEASON,
+                        newSeason, newSeason, !oldSeasonESet ) );
         }
     }
 
@@ -198,8 +201,9 @@ public class SeasonDayTypeScheduleImpl extends RegularIntervalScheduleImpl imple
         else {
             boolean oldSeasonESet = seasonESet;
             seasonESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SEASON_DAY_TYPE_SCHEDULE__SEASON, null, null, oldSeasonESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SEASON_DAY_TYPE_SCHEDULE__SEASON,
+                        null, null, oldSeasonESet ) );
         }
     }
 
@@ -253,18 +257,21 @@ public class SeasonDayTypeScheduleImpl extends RegularIntervalScheduleImpl imple
     public void setDayType( DayType newDayType ) {
         if( newDayType != dayType ) {
             NotificationChain msgs = null;
-            if( dayType != null ) msgs = ( ( InternalEObject ) dayType ).eInverseRemove( this,
-                    CimPackage.DAY_TYPE__SEASON_DAY_TYPE_SCHEDULES, DayType.class, msgs );
-            if( newDayType != null ) msgs = ( ( InternalEObject ) newDayType ).eInverseAdd( this,
-                    CimPackage.DAY_TYPE__SEASON_DAY_TYPE_SCHEDULES, DayType.class, msgs );
+            if( dayType != null )
+                msgs = ( ( InternalEObject ) dayType ).eInverseRemove( this,
+                        CimPackage.DAY_TYPE__SEASON_DAY_TYPE_SCHEDULES, DayType.class, msgs );
+            if( newDayType != null )
+                msgs = ( ( InternalEObject ) newDayType ).eInverseAdd( this,
+                        CimPackage.DAY_TYPE__SEASON_DAY_TYPE_SCHEDULES, DayType.class, msgs );
             msgs = basicSetDayType( newDayType, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldDayTypeESet = dayTypeESet;
             dayTypeESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SEASON_DAY_TYPE_SCHEDULE__DAY_TYPE, newDayType, newDayType, !oldDayTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SEASON_DAY_TYPE_SCHEDULE__DAY_TYPE,
+                        newDayType, newDayType, !oldDayTypeESet ) );
         }
     }
 
@@ -306,8 +313,9 @@ public class SeasonDayTypeScheduleImpl extends RegularIntervalScheduleImpl imple
         else {
             boolean oldDayTypeESet = dayTypeESet;
             dayTypeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SEASON_DAY_TYPE_SCHEDULE__DAY_TYPE, null, null, oldDayTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SEASON_DAY_TYPE_SCHEDULE__DAY_TYPE,
+                        null, null, oldDayTypeESet ) );
         }
     }
 
@@ -330,12 +338,14 @@ public class SeasonDayTypeScheduleImpl extends RegularIntervalScheduleImpl imple
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.SEASON_DAY_TYPE_SCHEDULE__SEASON:
-            if( season != null ) msgs = ( ( InternalEObject ) season ).eInverseRemove( this,
-                    CimPackage.SEASON__SEASON_DAY_TYPE_SCHEDULES, Season.class, msgs );
+            if( season != null )
+                msgs = ( ( InternalEObject ) season ).eInverseRemove( this,
+                        CimPackage.SEASON__SEASON_DAY_TYPE_SCHEDULES, Season.class, msgs );
             return basicSetSeason( ( Season ) otherEnd, msgs );
         case CimPackage.SEASON_DAY_TYPE_SCHEDULE__DAY_TYPE:
-            if( dayType != null ) msgs = ( ( InternalEObject ) dayType ).eInverseRemove( this,
-                    CimPackage.DAY_TYPE__SEASON_DAY_TYPE_SCHEDULES, DayType.class, msgs );
+            if( dayType != null )
+                msgs = ( ( InternalEObject ) dayType ).eInverseRemove( this,
+                        CimPackage.DAY_TYPE__SEASON_DAY_TYPE_SCHEDULES, DayType.class, msgs );
             return basicSetDayType( ( DayType ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

@@ -92,7 +92,10 @@ public enum TempEquipActionKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final TempEquipActionKind[] VALUES_ARRAY = new TempEquipActionKind[] { PLACE, REMOVE, };
+    private static final TempEquipActionKind[] VALUES_ARRAY = new TempEquipActionKind[] {
+            PLACE,
+            REMOVE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Temp Equip Action Kind</b></em>' enumerators.

@@ -136,8 +136,9 @@ public class PSREventImpl extends ActivityRecordImpl implements PSREvent {
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PSR_EVENT__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSR_EVENT__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -151,8 +152,9 @@ public class PSREventImpl extends ActivityRecordImpl implements PSREvent {
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSR_EVENT__KIND, oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSR_EVENT__KIND, oldKind,
+                    KIND_EDEFAULT, oldKindESet ) );
     }
 
     /**
@@ -207,10 +209,12 @@ public class PSREventImpl extends ActivityRecordImpl implements PSREvent {
     public void setPowerSystemResource( PowerSystemResource newPowerSystemResource ) {
         if( newPowerSystemResource != powerSystemResource ) {
             NotificationChain msgs = null;
-            if( powerSystemResource != null ) msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
-                    CimPackage.POWER_SYSTEM_RESOURCE__PSR_EVENTS, PowerSystemResource.class, msgs );
-            if( newPowerSystemResource != null ) msgs = ( ( InternalEObject ) newPowerSystemResource )
-                    .eInverseAdd( this, CimPackage.POWER_SYSTEM_RESOURCE__PSR_EVENTS, PowerSystemResource.class, msgs );
+            if( powerSystemResource != null )
+                msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
+                        CimPackage.POWER_SYSTEM_RESOURCE__PSR_EVENTS, PowerSystemResource.class, msgs );
+            if( newPowerSystemResource != null )
+                msgs = ( ( InternalEObject ) newPowerSystemResource ).eInverseAdd( this,
+                        CimPackage.POWER_SYSTEM_RESOURCE__PSR_EVENTS, PowerSystemResource.class, msgs );
             msgs = basicSetPowerSystemResource( newPowerSystemResource, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -262,8 +266,9 @@ public class PSREventImpl extends ActivityRecordImpl implements PSREvent {
         else {
             boolean oldPowerSystemResourceESet = powerSystemResourceESet;
             powerSystemResourceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PSR_EVENT__POWER_SYSTEM_RESOURCE, null, null, oldPowerSystemResourceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSR_EVENT__POWER_SYSTEM_RESOURCE,
+                        null, null, oldPowerSystemResourceESet ) );
         }
     }
 
@@ -286,8 +291,9 @@ public class PSREventImpl extends ActivityRecordImpl implements PSREvent {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.PSR_EVENT__POWER_SYSTEM_RESOURCE:
-            if( powerSystemResource != null ) msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
-                    CimPackage.POWER_SYSTEM_RESOURCE__PSR_EVENTS, PowerSystemResource.class, msgs );
+            if( powerSystemResource != null )
+                msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
+                        CimPackage.POWER_SYSTEM_RESOURCE__PSR_EVENTS, PowerSystemResource.class, msgs );
             return basicSetPowerSystemResource( ( PowerSystemResource ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -384,7 +390,7 @@ public class PSREventImpl extends ActivityRecordImpl implements PSREvent {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kind: " );
         if( kindESet )
             result.append( kind );

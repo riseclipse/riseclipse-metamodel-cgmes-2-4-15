@@ -166,18 +166,21 @@ public class OperationTagImpl extends DocumentImpl implements OperationTag {
     public void setAsset( Asset newAsset ) {
         if( newAsset != asset ) {
             NotificationChain msgs = null;
-            if( asset != null ) msgs = ( ( InternalEObject ) asset ).eInverseRemove( this,
-                    CimPackage.ASSET__OPERATION_TAGS, Asset.class, msgs );
-            if( newAsset != null ) msgs = ( ( InternalEObject ) newAsset ).eInverseAdd( this,
-                    CimPackage.ASSET__OPERATION_TAGS, Asset.class, msgs );
+            if( asset != null )
+                msgs = ( ( InternalEObject ) asset ).eInverseRemove( this, CimPackage.ASSET__OPERATION_TAGS,
+                        Asset.class, msgs );
+            if( newAsset != null )
+                msgs = ( ( InternalEObject ) newAsset ).eInverseAdd( this, CimPackage.ASSET__OPERATION_TAGS,
+                        Asset.class, msgs );
             msgs = basicSetAsset( newAsset, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldAssetESet = assetESet;
             assetESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.OPERATION_TAG__ASSET, newAsset, newAsset, !oldAssetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OPERATION_TAG__ASSET, newAsset,
+                        newAsset, !oldAssetESet ) );
         }
     }
 
@@ -219,8 +222,9 @@ public class OperationTagImpl extends DocumentImpl implements OperationTag {
         else {
             boolean oldAssetESet = assetESet;
             assetESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OPERATION_TAG__ASSET, null, null, oldAssetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OPERATION_TAG__ASSET, null, null,
+                        oldAssetESet ) );
         }
     }
 
@@ -276,8 +280,9 @@ public class OperationTagImpl extends DocumentImpl implements OperationTag {
     public void setPowerSystemResource( PowerSystemResource newPowerSystemResource ) {
         if( newPowerSystemResource != powerSystemResource ) {
             NotificationChain msgs = null;
-            if( powerSystemResource != null ) msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
-                    CimPackage.POWER_SYSTEM_RESOURCE__OPERATION_TAGS, PowerSystemResource.class, msgs );
+            if( powerSystemResource != null )
+                msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
+                        CimPackage.POWER_SYSTEM_RESOURCE__OPERATION_TAGS, PowerSystemResource.class, msgs );
             if( newPowerSystemResource != null )
                 msgs = ( ( InternalEObject ) newPowerSystemResource ).eInverseAdd( this,
                         CimPackage.POWER_SYSTEM_RESOURCE__OPERATION_TAGS, PowerSystemResource.class, msgs );
@@ -332,8 +337,9 @@ public class OperationTagImpl extends DocumentImpl implements OperationTag {
         else {
             boolean oldPowerSystemResourceESet = powerSystemResourceESet;
             powerSystemResourceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OPERATION_TAG__POWER_SYSTEM_RESOURCE, null, null, oldPowerSystemResourceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.OPERATION_TAG__POWER_SYSTEM_RESOURCE, null, null, oldPowerSystemResourceESet ) );
         }
     }
 
@@ -387,18 +393,21 @@ public class OperationTagImpl extends DocumentImpl implements OperationTag {
     public void setTagAction( TagAction newTagAction ) {
         if( newTagAction != tagAction ) {
             NotificationChain msgs = null;
-            if( tagAction != null ) msgs = ( ( InternalEObject ) tagAction ).eInverseRemove( this,
-                    CimPackage.TAG_ACTION__OPERATION_TAG, TagAction.class, msgs );
-            if( newTagAction != null ) msgs = ( ( InternalEObject ) newTagAction ).eInverseAdd( this,
-                    CimPackage.TAG_ACTION__OPERATION_TAG, TagAction.class, msgs );
+            if( tagAction != null )
+                msgs = ( ( InternalEObject ) tagAction ).eInverseRemove( this, CimPackage.TAG_ACTION__OPERATION_TAG,
+                        TagAction.class, msgs );
+            if( newTagAction != null )
+                msgs = ( ( InternalEObject ) newTagAction ).eInverseAdd( this, CimPackage.TAG_ACTION__OPERATION_TAG,
+                        TagAction.class, msgs );
             msgs = basicSetTagAction( newTagAction, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTagActionESet = tagActionESet;
             tagActionESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.OPERATION_TAG__TAG_ACTION, newTagAction, newTagAction, !oldTagActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OPERATION_TAG__TAG_ACTION,
+                        newTagAction, newTagAction, !oldTagActionESet ) );
         }
     }
 
@@ -440,8 +449,9 @@ public class OperationTagImpl extends DocumentImpl implements OperationTag {
         else {
             boolean oldTagActionESet = tagActionESet;
             tagActionESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OPERATION_TAG__TAG_ACTION, null, null, oldTagActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OPERATION_TAG__TAG_ACTION, null,
+                        null, oldTagActionESet ) );
         }
     }
 
@@ -464,16 +474,19 @@ public class OperationTagImpl extends DocumentImpl implements OperationTag {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.OPERATION_TAG__ASSET:
-            if( asset != null ) msgs = ( ( InternalEObject ) asset ).eInverseRemove( this,
-                    CimPackage.ASSET__OPERATION_TAGS, Asset.class, msgs );
+            if( asset != null )
+                msgs = ( ( InternalEObject ) asset ).eInverseRemove( this, CimPackage.ASSET__OPERATION_TAGS,
+                        Asset.class, msgs );
             return basicSetAsset( ( Asset ) otherEnd, msgs );
         case CimPackage.OPERATION_TAG__TAG_ACTION:
-            if( tagAction != null ) msgs = ( ( InternalEObject ) tagAction ).eInverseRemove( this,
-                    CimPackage.TAG_ACTION__OPERATION_TAG, TagAction.class, msgs );
+            if( tagAction != null )
+                msgs = ( ( InternalEObject ) tagAction ).eInverseRemove( this, CimPackage.TAG_ACTION__OPERATION_TAG,
+                        TagAction.class, msgs );
             return basicSetTagAction( ( TagAction ) otherEnd, msgs );
         case CimPackage.OPERATION_TAG__POWER_SYSTEM_RESOURCE:
-            if( powerSystemResource != null ) msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
-                    CimPackage.POWER_SYSTEM_RESOURCE__OPERATION_TAGS, PowerSystemResource.class, msgs );
+            if( powerSystemResource != null )
+                msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
+                        CimPackage.POWER_SYSTEM_RESOURCE__OPERATION_TAGS, PowerSystemResource.class, msgs );
             return basicSetPowerSystemResource( ( PowerSystemResource ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

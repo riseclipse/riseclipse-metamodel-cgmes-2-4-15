@@ -223,8 +223,9 @@ public class EndDeviceEventTypeImpl extends IdentifiedObjectImpl implements EndD
         domain = newDomain;
         boolean oldDomainESet = domainESet;
         domainESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_EVENT_TYPE__DOMAIN, oldDomain, domain, !oldDomainESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_EVENT_TYPE__DOMAIN, oldDomain,
+                    domain, !oldDomainESet ) );
     }
 
     /**
@@ -238,8 +239,9 @@ public class EndDeviceEventTypeImpl extends IdentifiedObjectImpl implements EndD
         boolean oldDomainESet = domainESet;
         domain = DOMAIN_EDEFAULT;
         domainESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_EVENT_TYPE__DOMAIN, oldDomain, DOMAIN_EDEFAULT, oldDomainESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_EVENT_TYPE__DOMAIN,
+                    oldDomain, DOMAIN_EDEFAULT, oldDomainESet ) );
     }
 
     /**
@@ -325,8 +327,9 @@ public class EndDeviceEventTypeImpl extends IdentifiedObjectImpl implements EndD
         subDomain = newSubDomain;
         boolean oldSubDomainESet = subDomainESet;
         subDomainESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_EVENT_TYPE__SUB_DOMAIN, oldSubDomain, subDomain, !oldSubDomainESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_EVENT_TYPE__SUB_DOMAIN,
+                    oldSubDomain, subDomain, !oldSubDomainESet ) );
     }
 
     /**
@@ -340,8 +343,9 @@ public class EndDeviceEventTypeImpl extends IdentifiedObjectImpl implements EndD
         boolean oldSubDomainESet = subDomainESet;
         subDomain = SUB_DOMAIN_EDEFAULT;
         subDomainESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_EVENT_TYPE__SUB_DOMAIN, oldSubDomain, SUB_DOMAIN_EDEFAULT, oldSubDomainESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_EVENT_TYPE__SUB_DOMAIN,
+                    oldSubDomain, SUB_DOMAIN_EDEFAULT, oldSubDomainESet ) );
     }
 
     /**
@@ -375,8 +379,9 @@ public class EndDeviceEventTypeImpl extends IdentifiedObjectImpl implements EndD
         type = newType;
         boolean oldTypeESet = typeESet;
         typeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_EVENT_TYPE__TYPE, oldType, type, !oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_EVENT_TYPE__TYPE, oldType,
+                    type, !oldTypeESet ) );
     }
 
     /**
@@ -390,8 +395,9 @@ public class EndDeviceEventTypeImpl extends IdentifiedObjectImpl implements EndD
         boolean oldTypeESet = typeESet;
         type = TYPE_EDEFAULT;
         typeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_EVENT_TYPE__TYPE, oldType, TYPE_EDEFAULT, oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_EVENT_TYPE__TYPE, oldType,
+                    TYPE_EDEFAULT, oldTypeESet ) );
     }
 
     /**
@@ -578,7 +584,7 @@ public class EndDeviceEventTypeImpl extends IdentifiedObjectImpl implements EndD
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (domain: " );
         if( domainESet )
             result.append( domain );

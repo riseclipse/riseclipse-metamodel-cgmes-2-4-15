@@ -185,9 +185,10 @@ public class ReactiveCapabilityCurveImpl extends CurveImpl implements ReactiveCa
         coolantTemperature = newCoolantTemperature;
         boolean oldCoolantTemperatureESet = coolantTemperatureESet;
         coolantTemperatureESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REACTIVE_CAPABILITY_CURVE__COOLANT_TEMPERATURE, oldCoolantTemperature, coolantTemperature,
-                !oldCoolantTemperatureESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.REACTIVE_CAPABILITY_CURVE__COOLANT_TEMPERATURE, oldCoolantTemperature,
+                    coolantTemperature, !oldCoolantTemperatureESet ) );
     }
 
     /**
@@ -201,9 +202,10 @@ public class ReactiveCapabilityCurveImpl extends CurveImpl implements ReactiveCa
         boolean oldCoolantTemperatureESet = coolantTemperatureESet;
         coolantTemperature = COOLANT_TEMPERATURE_EDEFAULT;
         coolantTemperatureESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REACTIVE_CAPABILITY_CURVE__COOLANT_TEMPERATURE, oldCoolantTemperature,
-                COOLANT_TEMPERATURE_EDEFAULT, oldCoolantTemperatureESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.REACTIVE_CAPABILITY_CURVE__COOLANT_TEMPERATURE, oldCoolantTemperature,
+                    COOLANT_TEMPERATURE_EDEFAULT, oldCoolantTemperatureESet ) );
     }
 
     /**
@@ -237,9 +239,10 @@ public class ReactiveCapabilityCurveImpl extends CurveImpl implements ReactiveCa
         hydrogenPressure = newHydrogenPressure;
         boolean oldHydrogenPressureESet = hydrogenPressureESet;
         hydrogenPressureESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.REACTIVE_CAPABILITY_CURVE__HYDROGEN_PRESSURE,
-                        oldHydrogenPressure, hydrogenPressure, !oldHydrogenPressureESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.REACTIVE_CAPABILITY_CURVE__HYDROGEN_PRESSURE, oldHydrogenPressure, hydrogenPressure,
+                    !oldHydrogenPressureESet ) );
     }
 
     /**
@@ -253,9 +256,10 @@ public class ReactiveCapabilityCurveImpl extends CurveImpl implements ReactiveCa
         boolean oldHydrogenPressureESet = hydrogenPressureESet;
         hydrogenPressure = HYDROGEN_PRESSURE_EDEFAULT;
         hydrogenPressureESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REACTIVE_CAPABILITY_CURVE__HYDROGEN_PRESSURE, oldHydrogenPressure,
-                HYDROGEN_PRESSURE_EDEFAULT, oldHydrogenPressureESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.REACTIVE_CAPABILITY_CURVE__HYDROGEN_PRESSURE, oldHydrogenPressure,
+                    HYDROGEN_PRESSURE_EDEFAULT, oldHydrogenPressureESet ) );
     }
 
     /**
@@ -527,7 +531,7 @@ public class ReactiveCapabilityCurveImpl extends CurveImpl implements ReactiveCa
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (coolantTemperature: " );
         if( coolantTemperatureESet )
             result.append( coolantTemperature );

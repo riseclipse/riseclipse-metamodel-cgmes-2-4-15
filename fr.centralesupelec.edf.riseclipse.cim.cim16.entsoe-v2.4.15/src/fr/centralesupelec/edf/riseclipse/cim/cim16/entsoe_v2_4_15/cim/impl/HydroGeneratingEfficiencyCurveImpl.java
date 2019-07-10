@@ -126,9 +126,10 @@ public class HydroGeneratingEfficiencyCurveImpl extends CurveImpl implements Hyd
     public void setHydroGeneratingUnit( HydroGeneratingUnit newHydroGeneratingUnit ) {
         if( newHydroGeneratingUnit != hydroGeneratingUnit ) {
             NotificationChain msgs = null;
-            if( hydroGeneratingUnit != null ) msgs = ( ( InternalEObject ) hydroGeneratingUnit ).eInverseRemove( this,
-                    CimPackage.HYDRO_GENERATING_UNIT__HYDRO_GENERATING_EFFICIENCY_CURVES, HydroGeneratingUnit.class,
-                    msgs );
+            if( hydroGeneratingUnit != null )
+                msgs = ( ( InternalEObject ) hydroGeneratingUnit ).eInverseRemove( this,
+                        CimPackage.HYDRO_GENERATING_UNIT__HYDRO_GENERATING_EFFICIENCY_CURVES, HydroGeneratingUnit.class,
+                        msgs );
             if( newHydroGeneratingUnit != null )
                 msgs = ( ( InternalEObject ) newHydroGeneratingUnit ).eInverseAdd( this,
                         CimPackage.HYDRO_GENERATING_UNIT__HYDRO_GENERATING_EFFICIENCY_CURVES, HydroGeneratingUnit.class,
@@ -139,9 +140,10 @@ public class HydroGeneratingEfficiencyCurveImpl extends CurveImpl implements Hyd
         else {
             boolean oldHydroGeneratingUnitESet = hydroGeneratingUnitESet;
             hydroGeneratingUnitESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.HYDRO_GENERATING_EFFICIENCY_CURVE__HYDRO_GENERATING_UNIT, newHydroGeneratingUnit,
-                    newHydroGeneratingUnit, !oldHydroGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.HYDRO_GENERATING_EFFICIENCY_CURVE__HYDRO_GENERATING_UNIT, newHydroGeneratingUnit,
+                        newHydroGeneratingUnit, !oldHydroGeneratingUnitESet ) );
         }
     }
 
@@ -185,9 +187,10 @@ public class HydroGeneratingEfficiencyCurveImpl extends CurveImpl implements Hyd
         else {
             boolean oldHydroGeneratingUnitESet = hydroGeneratingUnitESet;
             hydroGeneratingUnitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.HYDRO_GENERATING_EFFICIENCY_CURVE__HYDRO_GENERATING_UNIT, null, null,
-                    oldHydroGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.HYDRO_GENERATING_EFFICIENCY_CURVE__HYDRO_GENERATING_UNIT, null, null,
+                        oldHydroGeneratingUnitESet ) );
         }
     }
 
@@ -210,9 +213,10 @@ public class HydroGeneratingEfficiencyCurveImpl extends CurveImpl implements Hyd
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.HYDRO_GENERATING_EFFICIENCY_CURVE__HYDRO_GENERATING_UNIT:
-            if( hydroGeneratingUnit != null ) msgs = ( ( InternalEObject ) hydroGeneratingUnit ).eInverseRemove( this,
-                    CimPackage.HYDRO_GENERATING_UNIT__HYDRO_GENERATING_EFFICIENCY_CURVES, HydroGeneratingUnit.class,
-                    msgs );
+            if( hydroGeneratingUnit != null )
+                msgs = ( ( InternalEObject ) hydroGeneratingUnit ).eInverseRemove( this,
+                        CimPackage.HYDRO_GENERATING_UNIT__HYDRO_GENERATING_EFFICIENCY_CURVES, HydroGeneratingUnit.class,
+                        msgs );
             return basicSetHydroGeneratingUnit( ( HydroGeneratingUnit ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

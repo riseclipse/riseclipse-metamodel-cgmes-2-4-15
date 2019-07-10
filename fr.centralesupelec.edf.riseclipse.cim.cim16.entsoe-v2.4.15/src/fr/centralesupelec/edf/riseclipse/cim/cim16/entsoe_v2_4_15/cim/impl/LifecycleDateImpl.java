@@ -369,8 +369,9 @@ public class LifecycleDateImpl extends MinimalEObjectImpl.Container implements L
         purchaseDate = newPurchaseDate;
         boolean oldPurchaseDateESet = purchaseDateESet;
         purchaseDateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LIFECYCLE_DATE__PURCHASE_DATE, oldPurchaseDate, purchaseDate, !oldPurchaseDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LIFECYCLE_DATE__PURCHASE_DATE,
+                    oldPurchaseDate, purchaseDate, !oldPurchaseDateESet ) );
     }
 
     /**
@@ -420,8 +421,9 @@ public class LifecycleDateImpl extends MinimalEObjectImpl.Container implements L
         receivedDate = newReceivedDate;
         boolean oldReceivedDateESet = receivedDateESet;
         receivedDateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LIFECYCLE_DATE__RECEIVED_DATE, oldReceivedDate, receivedDate, !oldReceivedDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LIFECYCLE_DATE__RECEIVED_DATE,
+                    oldReceivedDate, receivedDate, !oldReceivedDateESet ) );
     }
 
     /**
@@ -471,8 +473,9 @@ public class LifecycleDateImpl extends MinimalEObjectImpl.Container implements L
         removalDate = newRemovalDate;
         boolean oldRemovalDateESet = removalDateESet;
         removalDateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LIFECYCLE_DATE__REMOVAL_DATE, oldRemovalDate, removalDate, !oldRemovalDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LIFECYCLE_DATE__REMOVAL_DATE,
+                    oldRemovalDate, removalDate, !oldRemovalDateESet ) );
     }
 
     /**
@@ -486,8 +489,9 @@ public class LifecycleDateImpl extends MinimalEObjectImpl.Container implements L
         boolean oldRemovalDateESet = removalDateESet;
         removalDate = REMOVAL_DATE_EDEFAULT;
         removalDateESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LIFECYCLE_DATE__REMOVAL_DATE, oldRemovalDate, REMOVAL_DATE_EDEFAULT, oldRemovalDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LIFECYCLE_DATE__REMOVAL_DATE,
+                    oldRemovalDate, REMOVAL_DATE_EDEFAULT, oldRemovalDateESet ) );
     }
 
     /**
@@ -521,8 +525,9 @@ public class LifecycleDateImpl extends MinimalEObjectImpl.Container implements L
         retiredDate = newRetiredDate;
         boolean oldRetiredDateESet = retiredDateESet;
         retiredDateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LIFECYCLE_DATE__RETIRED_DATE, oldRetiredDate, retiredDate, !oldRetiredDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LIFECYCLE_DATE__RETIRED_DATE,
+                    oldRetiredDate, retiredDate, !oldRetiredDateESet ) );
     }
 
     /**
@@ -536,8 +541,9 @@ public class LifecycleDateImpl extends MinimalEObjectImpl.Container implements L
         boolean oldRetiredDateESet = retiredDateESet;
         retiredDate = RETIRED_DATE_EDEFAULT;
         retiredDateESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LIFECYCLE_DATE__RETIRED_DATE, oldRetiredDate, RETIRED_DATE_EDEFAULT, oldRetiredDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LIFECYCLE_DATE__RETIRED_DATE,
+                    oldRetiredDate, RETIRED_DATE_EDEFAULT, oldRetiredDateESet ) );
     }
 
     /**
@@ -667,7 +673,7 @@ public class LifecycleDateImpl extends MinimalEObjectImpl.Container implements L
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (installationDate: " );
         if( installationDateESet )
             result.append( installationDate );

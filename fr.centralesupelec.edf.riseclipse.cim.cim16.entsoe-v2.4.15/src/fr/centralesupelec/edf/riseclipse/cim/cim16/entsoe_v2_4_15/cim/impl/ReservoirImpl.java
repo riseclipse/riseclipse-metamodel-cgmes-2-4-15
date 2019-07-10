@@ -676,8 +676,9 @@ public class ReservoirImpl extends PowerSystemResourceImpl implements Reservoir 
         grossCapacity = newGrossCapacity;
         boolean oldGrossCapacityESet = grossCapacityESet;
         grossCapacityESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.RESERVOIR__GROSS_CAPACITY, oldGrossCapacity, grossCapacity, !oldGrossCapacityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.RESERVOIR__GROSS_CAPACITY,
+                    oldGrossCapacity, grossCapacity, !oldGrossCapacityESet ) );
     }
 
     /**
@@ -1217,10 +1218,12 @@ public class ReservoirImpl extends PowerSystemResourceImpl implements Reservoir 
     public void setSpillsFromReservoir( Reservoir newSpillsFromReservoir ) {
         if( newSpillsFromReservoir != spillsFromReservoir ) {
             NotificationChain msgs = null;
-            if( spillsFromReservoir != null ) msgs = ( ( InternalEObject ) spillsFromReservoir ).eInverseRemove( this,
-                    CimPackage.RESERVOIR__SPILLS_INTO_RESERVOIRS, Reservoir.class, msgs );
-            if( newSpillsFromReservoir != null ) msgs = ( ( InternalEObject ) newSpillsFromReservoir )
-                    .eInverseAdd( this, CimPackage.RESERVOIR__SPILLS_INTO_RESERVOIRS, Reservoir.class, msgs );
+            if( spillsFromReservoir != null )
+                msgs = ( ( InternalEObject ) spillsFromReservoir ).eInverseRemove( this,
+                        CimPackage.RESERVOIR__SPILLS_INTO_RESERVOIRS, Reservoir.class, msgs );
+            if( newSpillsFromReservoir != null )
+                msgs = ( ( InternalEObject ) newSpillsFromReservoir ).eInverseAdd( this,
+                        CimPackage.RESERVOIR__SPILLS_INTO_RESERVOIRS, Reservoir.class, msgs );
             msgs = basicSetSpillsFromReservoir( newSpillsFromReservoir, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1272,8 +1275,9 @@ public class ReservoirImpl extends PowerSystemResourceImpl implements Reservoir 
         else {
             boolean oldSpillsFromReservoirESet = spillsFromReservoirESet;
             spillsFromReservoirESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.RESERVOIR__SPILLS_FROM_RESERVOIR, null, null, oldSpillsFromReservoirESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.RESERVOIR__SPILLS_FROM_RESERVOIR,
+                        null, null, oldSpillsFromReservoirESet ) );
         }
     }
 
@@ -1298,8 +1302,10 @@ public class ReservoirImpl extends PowerSystemResourceImpl implements Reservoir 
             InternalEObject oldTargetLevelSchedule = ( InternalEObject ) targetLevelSchedule;
             targetLevelSchedule = ( TargetLevelSchedule ) eResolveProxy( oldTargetLevelSchedule );
             if( targetLevelSchedule != oldTargetLevelSchedule ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.RESERVOIR__TARGET_LEVEL_SCHEDULE, oldTargetLevelSchedule, targetLevelSchedule ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.RESERVOIR__TARGET_LEVEL_SCHEDULE, oldTargetLevelSchedule,
+                            targetLevelSchedule ) );
             }
         }
         return targetLevelSchedule;
@@ -1346,10 +1352,12 @@ public class ReservoirImpl extends PowerSystemResourceImpl implements Reservoir 
     public void setTargetLevelSchedule( TargetLevelSchedule newTargetLevelSchedule ) {
         if( newTargetLevelSchedule != targetLevelSchedule ) {
             NotificationChain msgs = null;
-            if( targetLevelSchedule != null ) msgs = ( ( InternalEObject ) targetLevelSchedule ).eInverseRemove( this,
-                    CimPackage.TARGET_LEVEL_SCHEDULE__RESERVOIR, TargetLevelSchedule.class, msgs );
-            if( newTargetLevelSchedule != null ) msgs = ( ( InternalEObject ) newTargetLevelSchedule )
-                    .eInverseAdd( this, CimPackage.TARGET_LEVEL_SCHEDULE__RESERVOIR, TargetLevelSchedule.class, msgs );
+            if( targetLevelSchedule != null )
+                msgs = ( ( InternalEObject ) targetLevelSchedule ).eInverseRemove( this,
+                        CimPackage.TARGET_LEVEL_SCHEDULE__RESERVOIR, TargetLevelSchedule.class, msgs );
+            if( newTargetLevelSchedule != null )
+                msgs = ( ( InternalEObject ) newTargetLevelSchedule ).eInverseAdd( this,
+                        CimPackage.TARGET_LEVEL_SCHEDULE__RESERVOIR, TargetLevelSchedule.class, msgs );
             msgs = basicSetTargetLevelSchedule( newTargetLevelSchedule, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1401,8 +1409,9 @@ public class ReservoirImpl extends PowerSystemResourceImpl implements Reservoir 
         else {
             boolean oldTargetLevelScheduleESet = targetLevelScheduleESet;
             targetLevelScheduleESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.RESERVOIR__TARGET_LEVEL_SCHEDULE, null, null, oldTargetLevelScheduleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.RESERVOIR__TARGET_LEVEL_SCHEDULE,
+                        null, null, oldTargetLevelScheduleESet ) );
         }
     }
 
@@ -1495,12 +1504,14 @@ public class ReservoirImpl extends PowerSystemResourceImpl implements Reservoir 
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.RESERVOIR__SPILLS_FROM_RESERVOIR:
-            if( spillsFromReservoir != null ) msgs = ( ( InternalEObject ) spillsFromReservoir ).eInverseRemove( this,
-                    CimPackage.RESERVOIR__SPILLS_INTO_RESERVOIRS, Reservoir.class, msgs );
+            if( spillsFromReservoir != null )
+                msgs = ( ( InternalEObject ) spillsFromReservoir ).eInverseRemove( this,
+                        CimPackage.RESERVOIR__SPILLS_INTO_RESERVOIRS, Reservoir.class, msgs );
             return basicSetSpillsFromReservoir( ( Reservoir ) otherEnd, msgs );
         case CimPackage.RESERVOIR__TARGET_LEVEL_SCHEDULE:
-            if( targetLevelSchedule != null ) msgs = ( ( InternalEObject ) targetLevelSchedule ).eInverseRemove( this,
-                    CimPackage.TARGET_LEVEL_SCHEDULE__RESERVOIR, TargetLevelSchedule.class, msgs );
+            if( targetLevelSchedule != null )
+                msgs = ( ( InternalEObject ) targetLevelSchedule ).eInverseRemove( this,
+                        CimPackage.TARGET_LEVEL_SCHEDULE__RESERVOIR, TargetLevelSchedule.class, msgs );
             return basicSetTargetLevelSchedule( ( TargetLevelSchedule ) otherEnd, msgs );
         case CimPackage.RESERVOIR__HYDRO_POWER_PLANTS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getHydroPowerPlants() )
@@ -1791,7 +1802,7 @@ public class ReservoirImpl extends PowerSystemResourceImpl implements Reservoir 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (activeStorageCapacity: " );
         if( activeStorageCapacityESet )
             result.append( activeStorageCapacity );

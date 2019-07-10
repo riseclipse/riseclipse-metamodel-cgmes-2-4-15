@@ -437,8 +437,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
         delta = newDelta;
         boolean oldDeltaESet = deltaESet;
         deltaESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VS_CONVERTER__DELTA, oldDelta, delta, !oldDeltaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VS_CONVERTER__DELTA, oldDelta, delta,
+                    !oldDeltaESet ) );
     }
 
     /**
@@ -452,8 +453,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
         boolean oldDeltaESet = deltaESet;
         delta = DELTA_EDEFAULT;
         deltaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VS_CONVERTER__DELTA, oldDelta, DELTA_EDEFAULT, oldDeltaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VS_CONVERTER__DELTA, oldDelta,
+                    DELTA_EDEFAULT, oldDeltaESet ) );
     }
 
     /**
@@ -487,8 +489,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
         droop = newDroop;
         boolean oldDroopESet = droopESet;
         droopESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VS_CONVERTER__DROOP, oldDroop, droop, !oldDroopESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VS_CONVERTER__DROOP, oldDroop, droop,
+                    !oldDroopESet ) );
     }
 
     /**
@@ -502,8 +505,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
         boolean oldDroopESet = droopESet;
         droop = DROOP_EDEFAULT;
         droopESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VS_CONVERTER__DROOP, oldDroop, DROOP_EDEFAULT, oldDroopESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VS_CONVERTER__DROOP, oldDroop,
+                    DROOP_EDEFAULT, oldDroopESet ) );
     }
 
     /**
@@ -693,8 +697,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
         pPccControl = newPPccControl == null ? PPCC_CONTROL_EDEFAULT : newPPccControl;
         boolean oldPPccControlESet = pPccControlESet;
         pPccControlESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VS_CONVERTER__PPCC_CONTROL, oldPPccControl, pPccControl, !oldPPccControlESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VS_CONVERTER__PPCC_CONTROL,
+                    oldPPccControl, pPccControl, !oldPPccControlESet ) );
     }
 
     /**
@@ -708,8 +713,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
         boolean oldPPccControlESet = pPccControlESet;
         pPccControl = PPCC_CONTROL_EDEFAULT;
         pPccControlESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VS_CONVERTER__PPCC_CONTROL, oldPPccControl, PPCC_CONTROL_EDEFAULT, oldPPccControlESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VS_CONVERTER__PPCC_CONTROL,
+                    oldPPccControl, PPCC_CONTROL_EDEFAULT, oldPPccControlESet ) );
     }
 
     /**
@@ -743,8 +749,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
         qPccControl = newQPccControl == null ? QPCC_CONTROL_EDEFAULT : newQPccControl;
         boolean oldQPccControlESet = qPccControlESet;
         qPccControlESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VS_CONVERTER__QPCC_CONTROL, oldQPccControl, qPccControl, !oldQPccControlESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VS_CONVERTER__QPCC_CONTROL,
+                    oldQPccControl, qPccControl, !oldQPccControlESet ) );
     }
 
     /**
@@ -758,8 +765,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
         boolean oldQPccControlESet = qPccControlESet;
         qPccControl = QPCC_CONTROL_EDEFAULT;
         qPccControlESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VS_CONVERTER__QPCC_CONTROL, oldQPccControl, QPCC_CONTROL_EDEFAULT, oldQPccControlESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VS_CONVERTER__QPCC_CONTROL,
+                    oldQPccControl, QPCC_CONTROL_EDEFAULT, oldQPccControlESet ) );
     }
 
     /**
@@ -793,8 +801,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
         qShare = newQShare;
         boolean oldQShareESet = qShareESet;
         qShareESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VS_CONVERTER__QSHARE, oldQShare, qShare, !oldQShareESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VS_CONVERTER__QSHARE, oldQShare, qShare,
+                    !oldQShareESet ) );
     }
 
     /**
@@ -808,8 +817,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
         boolean oldQShareESet = qShareESet;
         qShare = QSHARE_EDEFAULT;
         qShareESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VS_CONVERTER__QSHARE, oldQShare, QSHARE_EDEFAULT, oldQShareESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VS_CONVERTER__QSHARE, oldQShare,
+                    QSHARE_EDEFAULT, oldQShareESet ) );
     }
 
     /**
@@ -843,8 +853,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
         targetQpcc = newTargetQpcc;
         boolean oldTargetQpccESet = targetQpccESet;
         targetQpccESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VS_CONVERTER__TARGET_QPCC, oldTargetQpcc, targetQpcc, !oldTargetQpccESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VS_CONVERTER__TARGET_QPCC, oldTargetQpcc,
+                    targetQpcc, !oldTargetQpccESet ) );
     }
 
     /**
@@ -858,8 +869,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
         boolean oldTargetQpccESet = targetQpccESet;
         targetQpcc = TARGET_QPCC_EDEFAULT;
         targetQpccESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VS_CONVERTER__TARGET_QPCC, oldTargetQpcc, TARGET_QPCC_EDEFAULT, oldTargetQpccESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VS_CONVERTER__TARGET_QPCC,
+                    oldTargetQpcc, TARGET_QPCC_EDEFAULT, oldTargetQpccESet ) );
     }
 
     /**
@@ -893,8 +905,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
         targetUpcc = newTargetUpcc;
         boolean oldTargetUpccESet = targetUpccESet;
         targetUpccESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VS_CONVERTER__TARGET_UPCC, oldTargetUpcc, targetUpcc, !oldTargetUpccESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VS_CONVERTER__TARGET_UPCC, oldTargetUpcc,
+                    targetUpcc, !oldTargetUpccESet ) );
     }
 
     /**
@@ -908,8 +921,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
         boolean oldTargetUpccESet = targetUpccESet;
         targetUpcc = TARGET_UPCC_EDEFAULT;
         targetUpccESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VS_CONVERTER__TARGET_UPCC, oldTargetUpcc, TARGET_UPCC_EDEFAULT, oldTargetUpccESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VS_CONVERTER__TARGET_UPCC,
+                    oldTargetUpcc, TARGET_UPCC_EDEFAULT, oldTargetUpccESet ) );
     }
 
     /**
@@ -943,8 +957,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
         uf = newUf;
         boolean oldUfESet = ufESet;
         ufESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.VS_CONVERTER__UF, oldUf, uf, !oldUfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VS_CONVERTER__UF, oldUf, uf,
+                    !oldUfESet ) );
     }
 
     /**
@@ -958,8 +973,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
         boolean oldUfESet = ufESet;
         uf = UF_EDEFAULT;
         ufESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VS_CONVERTER__UF, oldUf, UF_EDEFAULT, oldUfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VS_CONVERTER__UF, oldUf, UF_EDEFAULT,
+                    oldUfESet ) );
     }
 
     /**
@@ -1013,10 +1029,12 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
     public void setCapabilityCurve( VsCapabilityCurve newCapabilityCurve ) {
         if( newCapabilityCurve != capabilityCurve ) {
             NotificationChain msgs = null;
-            if( capabilityCurve != null ) msgs = ( ( InternalEObject ) capabilityCurve ).eInverseRemove( this,
-                    CimPackage.VS_CAPABILITY_CURVE__VS_CONVERTER_DC_SIDES, VsCapabilityCurve.class, msgs );
-            if( newCapabilityCurve != null ) msgs = ( ( InternalEObject ) newCapabilityCurve ).eInverseAdd( this,
-                    CimPackage.VS_CAPABILITY_CURVE__VS_CONVERTER_DC_SIDES, VsCapabilityCurve.class, msgs );
+            if( capabilityCurve != null )
+                msgs = ( ( InternalEObject ) capabilityCurve ).eInverseRemove( this,
+                        CimPackage.VS_CAPABILITY_CURVE__VS_CONVERTER_DC_SIDES, VsCapabilityCurve.class, msgs );
+            if( newCapabilityCurve != null )
+                msgs = ( ( InternalEObject ) newCapabilityCurve ).eInverseAdd( this,
+                        CimPackage.VS_CAPABILITY_CURVE__VS_CONVERTER_DC_SIDES, VsCapabilityCurve.class, msgs );
             msgs = basicSetCapabilityCurve( newCapabilityCurve, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1067,8 +1085,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
         else {
             boolean oldCapabilityCurveESet = capabilityCurveESet;
             capabilityCurveESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.VS_CONVERTER__CAPABILITY_CURVE, null, null, oldCapabilityCurveESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VS_CONVERTER__CAPABILITY_CURVE,
+                        null, null, oldCapabilityCurveESet ) );
         }
     }
 
@@ -1091,8 +1110,9 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.VS_CONVERTER__CAPABILITY_CURVE:
-            if( capabilityCurve != null ) msgs = ( ( InternalEObject ) capabilityCurve ).eInverseRemove( this,
-                    CimPackage.VS_CAPABILITY_CURVE__VS_CONVERTER_DC_SIDES, VsCapabilityCurve.class, msgs );
+            if( capabilityCurve != null )
+                msgs = ( ( InternalEObject ) capabilityCurve ).eInverseRemove( this,
+                        CimPackage.VS_CAPABILITY_CURVE__VS_CONVERTER_DC_SIDES, VsCapabilityCurve.class, msgs );
             return basicSetCapabilityCurve( ( VsCapabilityCurve ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1289,7 +1309,7 @@ public class VsConverterImpl extends ACDCConverterImpl implements VsConverter {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (delta: " );
         if( deltaESet )
             result.append( delta );

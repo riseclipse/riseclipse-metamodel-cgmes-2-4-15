@@ -289,8 +289,9 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
         input = newInput;
         boolean oldInputESet = inputESet;
         inputESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__INPUT, oldInput, input, !oldInputESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__INPUT,
+                    oldInput, input, !oldInputESet ) );
     }
 
     /**
@@ -304,8 +305,9 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
         boolean oldInputESet = inputESet;
         input = INPUT_EDEFAULT;
         inputESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__INPUT, oldInput, INPUT_EDEFAULT, oldInputESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__INPUT,
+                    oldInput, INPUT_EDEFAULT, oldInputESet ) );
     }
 
     /**
@@ -340,9 +342,10 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
                 : newLookupTableFunctionType;
         boolean oldLookupTableFunctionTypeESet = lookupTableFunctionTypeESet;
         lookupTableFunctionTypeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__LOOKUP_TABLE_FUNCTION_TYPE, oldLookupTableFunctionType,
-                lookupTableFunctionType, !oldLookupTableFunctionTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__LOOKUP_TABLE_FUNCTION_TYPE, oldLookupTableFunctionType,
+                    lookupTableFunctionType, !oldLookupTableFunctionTypeESet ) );
     }
 
     /**
@@ -356,9 +359,10 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
         boolean oldLookupTableFunctionTypeESet = lookupTableFunctionTypeESet;
         lookupTableFunctionType = LOOKUP_TABLE_FUNCTION_TYPE_EDEFAULT;
         lookupTableFunctionTypeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__LOOKUP_TABLE_FUNCTION_TYPE, oldLookupTableFunctionType,
-                LOOKUP_TABLE_FUNCTION_TYPE_EDEFAULT, oldLookupTableFunctionTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__LOOKUP_TABLE_FUNCTION_TYPE, oldLookupTableFunctionType,
+                    LOOKUP_TABLE_FUNCTION_TYPE_EDEFAULT, oldLookupTableFunctionTypeESet ) );
     }
 
     /**
@@ -392,8 +396,9 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
         output = newOutput;
         boolean oldOutputESet = outputESet;
         outputESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__OUTPUT, oldOutput, output, !oldOutputESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__OUTPUT,
+                    oldOutput, output, !oldOutputESet ) );
     }
 
     /**
@@ -407,8 +412,9 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
         boolean oldOutputESet = outputESet;
         output = OUTPUT_EDEFAULT;
         outputESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__OUTPUT, oldOutput, OUTPUT_EDEFAULT, oldOutputESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__OUTPUT,
+                    oldOutput, OUTPUT_EDEFAULT, oldOutputESet ) );
     }
 
     /**
@@ -442,8 +448,9 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
         sequence = newSequence;
         boolean oldSequenceESet = sequenceESet;
         sequenceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__SEQUENCE, oldSequence, sequence, !oldSequenceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__SEQUENCE,
+                    oldSequence, sequence, !oldSequenceESet ) );
     }
 
     /**
@@ -457,8 +464,9 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
         boolean oldSequenceESet = sequenceESet;
         sequence = SEQUENCE_EDEFAULT;
         sequenceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__SEQUENCE, oldSequence, SEQUENCE_EDEFAULT, oldSequenceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__SEQUENCE,
+                    oldSequence, SEQUENCE_EDEFAULT, oldSequenceESet ) );
     }
 
     /**
@@ -527,9 +535,10 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
         else {
             boolean oldWindPlantFreqPcontrolIECESet = windPlantFreqPcontrolIECESet;
             windPlantFreqPcontrolIECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_PLANT_FREQ_PCONTROL_IEC, newWindPlantFreqPcontrolIEC,
-                    newWindPlantFreqPcontrolIEC, !oldWindPlantFreqPcontrolIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_PLANT_FREQ_PCONTROL_IEC,
+                        newWindPlantFreqPcontrolIEC, newWindPlantFreqPcontrolIEC, !oldWindPlantFreqPcontrolIECESet ) );
         }
     }
 
@@ -573,9 +582,10 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
         else {
             boolean oldWindPlantFreqPcontrolIECESet = windPlantFreqPcontrolIECESet;
             windPlantFreqPcontrolIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_PLANT_FREQ_PCONTROL_IEC, null, null,
-                    oldWindPlantFreqPcontrolIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_PLANT_FREQ_PCONTROL_IEC, null, null,
+                        oldWindPlantFreqPcontrolIECESet ) );
         }
     }
 
@@ -631,19 +641,22 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
     public void setWindContRotorRIEC( WindContRotorRIEC newWindContRotorRIEC ) {
         if( newWindContRotorRIEC != windContRotorRIEC ) {
             NotificationChain msgs = null;
-            if( windContRotorRIEC != null ) msgs = ( ( InternalEObject ) windContRotorRIEC ).eInverseRemove( this,
-                    CimPackage.WIND_CONT_ROTOR_RIEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContRotorRIEC.class, msgs );
-            if( newWindContRotorRIEC != null ) msgs = ( ( InternalEObject ) newWindContRotorRIEC ).eInverseAdd( this,
-                    CimPackage.WIND_CONT_ROTOR_RIEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContRotorRIEC.class, msgs );
+            if( windContRotorRIEC != null )
+                msgs = ( ( InternalEObject ) windContRotorRIEC ).eInverseRemove( this,
+                        CimPackage.WIND_CONT_ROTOR_RIEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContRotorRIEC.class, msgs );
+            if( newWindContRotorRIEC != null )
+                msgs = ( ( InternalEObject ) newWindContRotorRIEC ).eInverseAdd( this,
+                        CimPackage.WIND_CONT_ROTOR_RIEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContRotorRIEC.class, msgs );
             msgs = basicSetWindContRotorRIEC( newWindContRotorRIEC, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWindContRotorRIECESet = windContRotorRIECESet;
             windContRotorRIECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_CONT_ROTOR_RIEC, newWindContRotorRIEC,
-                    newWindContRotorRIEC, !oldWindContRotorRIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_CONT_ROTOR_RIEC, newWindContRotorRIEC,
+                        newWindContRotorRIEC, !oldWindContRotorRIECESet ) );
         }
     }
 
@@ -686,9 +699,10 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
         else {
             boolean oldWindContRotorRIECESet = windContRotorRIECESet;
             windContRotorRIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_CONT_ROTOR_RIEC, null, null,
-                    oldWindContRotorRIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_CONT_ROTOR_RIEC, null, null,
+                        oldWindContRotorRIECESet ) );
         }
     }
 
@@ -744,19 +758,22 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
     public void setWindContPType3IEC( WindContPType3IEC newWindContPType3IEC ) {
         if( newWindContPType3IEC != windContPType3IEC ) {
             NotificationChain msgs = null;
-            if( windContPType3IEC != null ) msgs = ( ( InternalEObject ) windContPType3IEC ).eInverseRemove( this,
-                    CimPackage.WIND_CONT_PTYPE3_IEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContPType3IEC.class, msgs );
-            if( newWindContPType3IEC != null ) msgs = ( ( InternalEObject ) newWindContPType3IEC ).eInverseAdd( this,
-                    CimPackage.WIND_CONT_PTYPE3_IEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContPType3IEC.class, msgs );
+            if( windContPType3IEC != null )
+                msgs = ( ( InternalEObject ) windContPType3IEC ).eInverseRemove( this,
+                        CimPackage.WIND_CONT_PTYPE3_IEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContPType3IEC.class, msgs );
+            if( newWindContPType3IEC != null )
+                msgs = ( ( InternalEObject ) newWindContPType3IEC ).eInverseAdd( this,
+                        CimPackage.WIND_CONT_PTYPE3_IEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContPType3IEC.class, msgs );
             msgs = basicSetWindContPType3IEC( newWindContPType3IEC, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWindContPType3IECESet = windContPType3IECESet;
             windContPType3IECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_CONT_PTYPE3_IEC, newWindContPType3IEC,
-                    newWindContPType3IEC, !oldWindContPType3IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_CONT_PTYPE3_IEC, newWindContPType3IEC,
+                        newWindContPType3IEC, !oldWindContPType3IECESet ) );
         }
     }
 
@@ -799,9 +816,10 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
         else {
             boolean oldWindContPType3IECESet = windContPType3IECESet;
             windContPType3IECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_CONT_PTYPE3_IEC, null, null,
-                    oldWindContPType3IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_CONT_PTYPE3_IEC, null, null,
+                        oldWindContPType3IECESet ) );
         }
     }
 
@@ -857,19 +875,22 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
     public void setWindContCurrLimIEC( WindContCurrLimIEC newWindContCurrLimIEC ) {
         if( newWindContCurrLimIEC != windContCurrLimIEC ) {
             NotificationChain msgs = null;
-            if( windContCurrLimIEC != null ) msgs = ( ( InternalEObject ) windContCurrLimIEC ).eInverseRemove( this,
-                    CimPackage.WIND_CONT_CURR_LIM_IEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContCurrLimIEC.class, msgs );
-            if( newWindContCurrLimIEC != null ) msgs = ( ( InternalEObject ) newWindContCurrLimIEC ).eInverseAdd( this,
-                    CimPackage.WIND_CONT_CURR_LIM_IEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContCurrLimIEC.class, msgs );
+            if( windContCurrLimIEC != null )
+                msgs = ( ( InternalEObject ) windContCurrLimIEC ).eInverseRemove( this,
+                        CimPackage.WIND_CONT_CURR_LIM_IEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContCurrLimIEC.class, msgs );
+            if( newWindContCurrLimIEC != null )
+                msgs = ( ( InternalEObject ) newWindContCurrLimIEC ).eInverseAdd( this,
+                        CimPackage.WIND_CONT_CURR_LIM_IEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContCurrLimIEC.class, msgs );
             msgs = basicSetWindContCurrLimIEC( newWindContCurrLimIEC, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWindContCurrLimIECESet = windContCurrLimIECESet;
             windContCurrLimIECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_CONT_CURR_LIM_IEC, newWindContCurrLimIEC,
-                    newWindContCurrLimIEC, !oldWindContCurrLimIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_CONT_CURR_LIM_IEC, newWindContCurrLimIEC,
+                        newWindContCurrLimIEC, !oldWindContCurrLimIECESet ) );
         }
     }
 
@@ -912,9 +933,10 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
         else {
             boolean oldWindContCurrLimIECESet = windContCurrLimIECESet;
             windContCurrLimIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_CONT_CURR_LIM_IEC, null, null,
-                    oldWindContCurrLimIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_CONT_CURR_LIM_IEC, null, null,
+                        oldWindContCurrLimIECESet ) );
         }
     }
 
@@ -943,16 +965,19 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
                         WindPlantFreqPcontrolIEC.class, msgs );
             return basicSetWindPlantFreqPcontrolIEC( ( WindPlantFreqPcontrolIEC ) otherEnd, msgs );
         case CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_CONT_ROTOR_RIEC:
-            if( windContRotorRIEC != null ) msgs = ( ( InternalEObject ) windContRotorRIEC ).eInverseRemove( this,
-                    CimPackage.WIND_CONT_ROTOR_RIEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContRotorRIEC.class, msgs );
+            if( windContRotorRIEC != null )
+                msgs = ( ( InternalEObject ) windContRotorRIEC ).eInverseRemove( this,
+                        CimPackage.WIND_CONT_ROTOR_RIEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContRotorRIEC.class, msgs );
             return basicSetWindContRotorRIEC( ( WindContRotorRIEC ) otherEnd, msgs );
         case CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_CONT_PTYPE3_IEC:
-            if( windContPType3IEC != null ) msgs = ( ( InternalEObject ) windContPType3IEC ).eInverseRemove( this,
-                    CimPackage.WIND_CONT_PTYPE3_IEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContPType3IEC.class, msgs );
+            if( windContPType3IEC != null )
+                msgs = ( ( InternalEObject ) windContPType3IEC ).eInverseRemove( this,
+                        CimPackage.WIND_CONT_PTYPE3_IEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContPType3IEC.class, msgs );
             return basicSetWindContPType3IEC( ( WindContPType3IEC ) otherEnd, msgs );
         case CimPackage.WIND_DYNAMICS_LOOKUP_TABLE__WIND_CONT_CURR_LIM_IEC:
-            if( windContCurrLimIEC != null ) msgs = ( ( InternalEObject ) windContCurrLimIEC ).eInverseRemove( this,
-                    CimPackage.WIND_CONT_CURR_LIM_IEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContCurrLimIEC.class, msgs );
+            if( windContCurrLimIEC != null )
+                msgs = ( ( InternalEObject ) windContCurrLimIEC ).eInverseRemove( this,
+                        CimPackage.WIND_CONT_CURR_LIM_IEC__WIND_DYNAMICS_LOOKUP_TABLE, WindContCurrLimIEC.class, msgs );
             return basicSetWindContCurrLimIEC( ( WindContCurrLimIEC ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1115,7 +1140,7 @@ public class WindDynamicsLookupTableImpl extends IdentifiedObjectImpl implements
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (input: " );
         if( inputESet )
             result.append( input );

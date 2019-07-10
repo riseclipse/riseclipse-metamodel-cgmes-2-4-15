@@ -323,8 +323,9 @@ public class PFVArType1IEEEPFControllerImpl extends PFVArControllerType1Dynamics
         ovex = newOvex;
         boolean oldOvexESet = ovexESet;
         ovexESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__OVEX, oldOvex, ovex, !oldOvexESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__OVEX,
+                    oldOvex, ovex, !oldOvexESet ) );
     }
 
     /**
@@ -338,8 +339,9 @@ public class PFVArType1IEEEPFControllerImpl extends PFVArControllerType1Dynamics
         boolean oldOvexESet = ovexESet;
         ovex = OVEX_EDEFAULT;
         ovexESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__OVEX, oldOvex, OVEX_EDEFAULT, oldOvexESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__OVEX,
+                    oldOvex, OVEX_EDEFAULT, oldOvexESet ) );
     }
 
     /**
@@ -373,8 +375,9 @@ public class PFVArType1IEEEPFControllerImpl extends PFVArControllerType1Dynamics
         tpfc = newTpfc;
         boolean oldTpfcESet = tpfcESet;
         tpfcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__TPFC, oldTpfc, tpfc, !oldTpfcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__TPFC,
+                    oldTpfc, tpfc, !oldTpfcESet ) );
     }
 
     /**
@@ -388,8 +391,9 @@ public class PFVArType1IEEEPFControllerImpl extends PFVArControllerType1Dynamics
         boolean oldTpfcESet = tpfcESet;
         tpfc = TPFC_EDEFAULT;
         tpfcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__TPFC, oldTpfc, TPFC_EDEFAULT, oldTpfcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__TPFC,
+                    oldTpfc, TPFC_EDEFAULT, oldTpfcESet ) );
     }
 
     /**
@@ -423,8 +427,9 @@ public class PFVArType1IEEEPFControllerImpl extends PFVArControllerType1Dynamics
         vitmin = newVitmin;
         boolean oldVitminESet = vitminESet;
         vitminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VITMIN, oldVitmin, vitmin, !oldVitminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VITMIN,
+                    oldVitmin, vitmin, !oldVitminESet ) );
     }
 
     /**
@@ -438,8 +443,9 @@ public class PFVArType1IEEEPFControllerImpl extends PFVArControllerType1Dynamics
         boolean oldVitminESet = vitminESet;
         vitmin = VITMIN_EDEFAULT;
         vitminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VITMIN, oldVitmin, VITMIN_EDEFAULT, oldVitminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VITMIN,
+                    oldVitmin, VITMIN_EDEFAULT, oldVitminESet ) );
     }
 
     /**
@@ -473,8 +479,9 @@ public class PFVArType1IEEEPFControllerImpl extends PFVArControllerType1Dynamics
         vpf = newVpf;
         boolean oldVpfESet = vpfESet;
         vpfESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VPF, oldVpf, vpf, !oldVpfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VPF,
+                    oldVpf, vpf, !oldVpfESet ) );
     }
 
     /**
@@ -488,8 +495,9 @@ public class PFVArType1IEEEPFControllerImpl extends PFVArControllerType1Dynamics
         boolean oldVpfESet = vpfESet;
         vpf = VPF_EDEFAULT;
         vpfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VPF, oldVpf, VPF_EDEFAULT, oldVpfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VPF,
+                    oldVpf, VPF_EDEFAULT, oldVpfESet ) );
     }
 
     /**
@@ -523,8 +531,9 @@ public class PFVArType1IEEEPFControllerImpl extends PFVArControllerType1Dynamics
         vpfcbw = newVpfcbw;
         boolean oldVpfcbwESet = vpfcbwESet;
         vpfcbwESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VPFCBW, oldVpfcbw, vpfcbw, !oldVpfcbwESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VPFCBW,
+                    oldVpfcbw, vpfcbw, !oldVpfcbwESet ) );
     }
 
     /**
@@ -538,8 +547,9 @@ public class PFVArType1IEEEPFControllerImpl extends PFVArControllerType1Dynamics
         boolean oldVpfcbwESet = vpfcbwESet;
         vpfcbw = VPFCBW_EDEFAULT;
         vpfcbwESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VPFCBW, oldVpfcbw, VPFCBW_EDEFAULT, oldVpfcbwESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VPFCBW,
+                    oldVpfcbw, VPFCBW_EDEFAULT, oldVpfcbwESet ) );
     }
 
     /**
@@ -573,8 +583,9 @@ public class PFVArType1IEEEPFControllerImpl extends PFVArControllerType1Dynamics
         vpfref = newVpfref;
         boolean oldVpfrefESet = vpfrefESet;
         vpfrefESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VPFREF, oldVpfref, vpfref, !oldVpfrefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VPFREF,
+                    oldVpfref, vpfref, !oldVpfrefESet ) );
     }
 
     /**
@@ -588,8 +599,9 @@ public class PFVArType1IEEEPFControllerImpl extends PFVArControllerType1Dynamics
         boolean oldVpfrefESet = vpfrefESet;
         vpfref = VPFREF_EDEFAULT;
         vpfrefESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VPFREF, oldVpfref, VPFREF_EDEFAULT, oldVpfrefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VPFREF,
+                    oldVpfref, VPFREF_EDEFAULT, oldVpfrefESet ) );
     }
 
     /**
@@ -623,8 +635,9 @@ public class PFVArType1IEEEPFControllerImpl extends PFVArControllerType1Dynamics
         vvtmax = newVvtmax;
         boolean oldVvtmaxESet = vvtmaxESet;
         vvtmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VVTMAX, oldVvtmax, vvtmax, !oldVvtmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VVTMAX,
+                    oldVvtmax, vvtmax, !oldVvtmaxESet ) );
     }
 
     /**
@@ -638,8 +651,9 @@ public class PFVArType1IEEEPFControllerImpl extends PFVArControllerType1Dynamics
         boolean oldVvtmaxESet = vvtmaxESet;
         vvtmax = VVTMAX_EDEFAULT;
         vvtmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VVTMAX, oldVvtmax, VVTMAX_EDEFAULT, oldVvtmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VVTMAX,
+                    oldVvtmax, VVTMAX_EDEFAULT, oldVvtmaxESet ) );
     }
 
     /**
@@ -673,8 +687,9 @@ public class PFVArType1IEEEPFControllerImpl extends PFVArControllerType1Dynamics
         vvtmin = newVvtmin;
         boolean oldVvtminESet = vvtminESet;
         vvtminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VVTMIN, oldVvtmin, vvtmin, !oldVvtminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VVTMIN,
+                    oldVvtmin, vvtmin, !oldVvtminESet ) );
     }
 
     /**
@@ -688,8 +703,9 @@ public class PFVArType1IEEEPFControllerImpl extends PFVArControllerType1Dynamics
         boolean oldVvtminESet = vvtminESet;
         vvtmin = VVTMIN_EDEFAULT;
         vvtminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VVTMIN, oldVvtmin, VVTMIN_EDEFAULT, oldVvtminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE1_IEEEPF_CONTROLLER__VVTMIN,
+                    oldVvtmin, VVTMIN_EDEFAULT, oldVvtminESet ) );
     }
 
     /**
@@ -839,7 +855,7 @@ public class PFVArType1IEEEPFControllerImpl extends PFVArControllerType1Dynamics
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (ovex: " );
         if( ovexESet )
             result.append( ovex );

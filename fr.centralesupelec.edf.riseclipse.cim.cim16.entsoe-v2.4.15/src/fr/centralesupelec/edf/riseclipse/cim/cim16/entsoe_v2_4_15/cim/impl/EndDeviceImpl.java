@@ -374,8 +374,9 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
         amrSystem = newAmrSystem;
         boolean oldAmrSystemESet = amrSystemESet;
         amrSystemESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE__AMR_SYSTEM, oldAmrSystem, amrSystem, !oldAmrSystemESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE__AMR_SYSTEM, oldAmrSystem,
+                    amrSystem, !oldAmrSystemESet ) );
     }
 
     /**
@@ -389,8 +390,9 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
         boolean oldAmrSystemESet = amrSystemESet;
         amrSystem = AMR_SYSTEM_EDEFAULT;
         amrSystemESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE__AMR_SYSTEM, oldAmrSystem, AMR_SYSTEM_EDEFAULT, oldAmrSystemESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE__AMR_SYSTEM, oldAmrSystem,
+                    AMR_SYSTEM_EDEFAULT, oldAmrSystemESet ) );
     }
 
     /**
@@ -424,8 +426,9 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
         installCode = newInstallCode;
         boolean oldInstallCodeESet = installCodeESet;
         installCodeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE__INSTALL_CODE, oldInstallCode, installCode, !oldInstallCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE__INSTALL_CODE, oldInstallCode,
+                    installCode, !oldInstallCodeESet ) );
     }
 
     /**
@@ -439,8 +442,9 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
         boolean oldInstallCodeESet = installCodeESet;
         installCode = INSTALL_CODE_EDEFAULT;
         installCodeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE__INSTALL_CODE, oldInstallCode, INSTALL_CODE_EDEFAULT, oldInstallCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE__INSTALL_CODE,
+                    oldInstallCode, INSTALL_CODE_EDEFAULT, oldInstallCodeESet ) );
     }
 
     /**
@@ -474,8 +478,9 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
         isPan = newIsPan;
         boolean oldIsPanESet = isPanESet;
         isPanESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE__IS_PAN, oldIsPan, isPan, !oldIsPanESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE__IS_PAN, oldIsPan, isPan,
+                    !oldIsPanESet ) );
     }
 
     /**
@@ -489,8 +494,9 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
         boolean oldIsPanESet = isPanESet;
         isPan = IS_PAN_EDEFAULT;
         isPanESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE__IS_PAN, oldIsPan, IS_PAN_EDEFAULT, oldIsPanESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE__IS_PAN, oldIsPan,
+                    IS_PAN_EDEFAULT, oldIsPanESet ) );
     }
 
     /**
@@ -524,8 +530,9 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
         isVirtual = newIsVirtual;
         boolean oldIsVirtualESet = isVirtualESet;
         isVirtualESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE__IS_VIRTUAL, oldIsVirtual, isVirtual, !oldIsVirtualESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE__IS_VIRTUAL, oldIsVirtual,
+                    isVirtual, !oldIsVirtualESet ) );
     }
 
     /**
@@ -539,8 +546,9 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
         boolean oldIsVirtualESet = isVirtualESet;
         isVirtual = IS_VIRTUAL_EDEFAULT;
         isVirtualESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE__IS_VIRTUAL, oldIsVirtual, IS_VIRTUAL_EDEFAULT, oldIsVirtualESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE__IS_VIRTUAL, oldIsVirtual,
+                    IS_VIRTUAL_EDEFAULT, oldIsVirtualESet ) );
     }
 
     /**
@@ -574,8 +582,9 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
         timeZoneOffset = newTimeZoneOffset;
         boolean oldTimeZoneOffsetESet = timeZoneOffsetESet;
         timeZoneOffsetESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE__TIME_ZONE_OFFSET, oldTimeZoneOffset, timeZoneOffset, !oldTimeZoneOffsetESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE__TIME_ZONE_OFFSET,
+                    oldTimeZoneOffset, timeZoneOffset, !oldTimeZoneOffsetESet ) );
     }
 
     /**
@@ -644,18 +653,21 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
     public void setCustomer( Customer newCustomer ) {
         if( newCustomer != customer ) {
             NotificationChain msgs = null;
-            if( customer != null ) msgs = ( ( InternalEObject ) customer ).eInverseRemove( this,
-                    CimPackage.CUSTOMER__END_DEVICES, Customer.class, msgs );
-            if( newCustomer != null ) msgs = ( ( InternalEObject ) newCustomer ).eInverseAdd( this,
-                    CimPackage.CUSTOMER__END_DEVICES, Customer.class, msgs );
+            if( customer != null )
+                msgs = ( ( InternalEObject ) customer ).eInverseRemove( this, CimPackage.CUSTOMER__END_DEVICES,
+                        Customer.class, msgs );
+            if( newCustomer != null )
+                msgs = ( ( InternalEObject ) newCustomer ).eInverseAdd( this, CimPackage.CUSTOMER__END_DEVICES,
+                        Customer.class, msgs );
             msgs = basicSetCustomer( newCustomer, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCustomerESet = customerESet;
             customerESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.END_DEVICE__CUSTOMER, newCustomer, newCustomer, !oldCustomerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE__CUSTOMER, newCustomer,
+                        newCustomer, !oldCustomerESet ) );
         }
     }
 
@@ -697,8 +709,9 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
         else {
             boolean oldCustomerESet = customerESet;
             customerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.END_DEVICE__CUSTOMER, null, null, oldCustomerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE__CUSTOMER, null, null,
+                        oldCustomerESet ) );
         }
     }
 
@@ -822,10 +835,12 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
     public void setEndDeviceInfo( EndDeviceInfo newEndDeviceInfo ) {
         if( newEndDeviceInfo != endDeviceInfo ) {
             NotificationChain msgs = null;
-            if( endDeviceInfo != null ) msgs = ( ( InternalEObject ) endDeviceInfo ).eInverseRemove( this,
-                    CimPackage.END_DEVICE_INFO__END_DEVICES, EndDeviceInfo.class, msgs );
-            if( newEndDeviceInfo != null ) msgs = ( ( InternalEObject ) newEndDeviceInfo ).eInverseAdd( this,
-                    CimPackage.END_DEVICE_INFO__END_DEVICES, EndDeviceInfo.class, msgs );
+            if( endDeviceInfo != null )
+                msgs = ( ( InternalEObject ) endDeviceInfo ).eInverseRemove( this,
+                        CimPackage.END_DEVICE_INFO__END_DEVICES, EndDeviceInfo.class, msgs );
+            if( newEndDeviceInfo != null )
+                msgs = ( ( InternalEObject ) newEndDeviceInfo ).eInverseAdd( this,
+                        CimPackage.END_DEVICE_INFO__END_DEVICES, EndDeviceInfo.class, msgs );
             msgs = basicSetEndDeviceInfo( newEndDeviceInfo, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -876,8 +891,9 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
         else {
             boolean oldEndDeviceInfoESet = endDeviceInfoESet;
             endDeviceInfoESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.END_DEVICE__END_DEVICE_INFO, null, null, oldEndDeviceInfoESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE__END_DEVICE_INFO, null,
+                        null, oldEndDeviceInfoESet ) );
         }
     }
 
@@ -931,18 +947,21 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
     public void setUsagePoint( UsagePoint newUsagePoint ) {
         if( newUsagePoint != usagePoint ) {
             NotificationChain msgs = null;
-            if( usagePoint != null ) msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this,
-                    CimPackage.USAGE_POINT__END_DEVICES, UsagePoint.class, msgs );
-            if( newUsagePoint != null ) msgs = ( ( InternalEObject ) newUsagePoint ).eInverseAdd( this,
-                    CimPackage.USAGE_POINT__END_DEVICES, UsagePoint.class, msgs );
+            if( usagePoint != null )
+                msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this, CimPackage.USAGE_POINT__END_DEVICES,
+                        UsagePoint.class, msgs );
+            if( newUsagePoint != null )
+                msgs = ( ( InternalEObject ) newUsagePoint ).eInverseAdd( this, CimPackage.USAGE_POINT__END_DEVICES,
+                        UsagePoint.class, msgs );
             msgs = basicSetUsagePoint( newUsagePoint, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldUsagePointESet = usagePointESet;
             usagePointESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.END_DEVICE__USAGE_POINT, newUsagePoint, newUsagePoint, !oldUsagePointESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE__USAGE_POINT,
+                        newUsagePoint, newUsagePoint, !oldUsagePointESet ) );
         }
     }
 
@@ -984,8 +1003,9 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
         else {
             boolean oldUsagePointESet = usagePointESet;
             usagePointESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.END_DEVICE__USAGE_POINT, null, null, oldUsagePointESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE__USAGE_POINT, null,
+                        null, oldUsagePointESet ) );
         }
     }
 
@@ -1075,10 +1095,12 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
     public void setServiceLocation( ServiceLocation newServiceLocation ) {
         if( newServiceLocation != serviceLocation ) {
             NotificationChain msgs = null;
-            if( serviceLocation != null ) msgs = ( ( InternalEObject ) serviceLocation ).eInverseRemove( this,
-                    CimPackage.SERVICE_LOCATION__END_DEVICES, ServiceLocation.class, msgs );
-            if( newServiceLocation != null ) msgs = ( ( InternalEObject ) newServiceLocation ).eInverseAdd( this,
-                    CimPackage.SERVICE_LOCATION__END_DEVICES, ServiceLocation.class, msgs );
+            if( serviceLocation != null )
+                msgs = ( ( InternalEObject ) serviceLocation ).eInverseRemove( this,
+                        CimPackage.SERVICE_LOCATION__END_DEVICES, ServiceLocation.class, msgs );
+            if( newServiceLocation != null )
+                msgs = ( ( InternalEObject ) newServiceLocation ).eInverseAdd( this,
+                        CimPackage.SERVICE_LOCATION__END_DEVICES, ServiceLocation.class, msgs );
             msgs = basicSetServiceLocation( newServiceLocation, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1129,8 +1151,9 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
         else {
             boolean oldServiceLocationESet = serviceLocationESet;
             serviceLocationESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.END_DEVICE__SERVICE_LOCATION, null, null, oldServiceLocationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE__SERVICE_LOCATION, null,
+                        null, oldServiceLocationESet ) );
         }
     }
 
@@ -1188,8 +1211,9 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.END_DEVICE__CUSTOMER:
-            if( customer != null ) msgs = ( ( InternalEObject ) customer ).eInverseRemove( this,
-                    CimPackage.CUSTOMER__END_DEVICES, Customer.class, msgs );
+            if( customer != null )
+                msgs = ( ( InternalEObject ) customer ).eInverseRemove( this, CimPackage.CUSTOMER__END_DEVICES,
+                        Customer.class, msgs );
             return basicSetCustomer( ( Customer ) otherEnd, msgs );
         case CimPackage.END_DEVICE__END_DEVICE_EVENTS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getEndDeviceEvents() )
@@ -1198,19 +1222,22 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getEndDeviceFunctions() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.END_DEVICE__USAGE_POINT:
-            if( usagePoint != null ) msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this,
-                    CimPackage.USAGE_POINT__END_DEVICES, UsagePoint.class, msgs );
+            if( usagePoint != null )
+                msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this, CimPackage.USAGE_POINT__END_DEVICES,
+                        UsagePoint.class, msgs );
             return basicSetUsagePoint( ( UsagePoint ) otherEnd, msgs );
         case CimPackage.END_DEVICE__SERVICE_LOCATION:
-            if( serviceLocation != null ) msgs = ( ( InternalEObject ) serviceLocation ).eInverseRemove( this,
-                    CimPackage.SERVICE_LOCATION__END_DEVICES, ServiceLocation.class, msgs );
+            if( serviceLocation != null )
+                msgs = ( ( InternalEObject ) serviceLocation ).eInverseRemove( this,
+                        CimPackage.SERVICE_LOCATION__END_DEVICES, ServiceLocation.class, msgs );
             return basicSetServiceLocation( ( ServiceLocation ) otherEnd, msgs );
         case CimPackage.END_DEVICE__END_DEVICE_GROUPS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getEndDeviceGroups() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.END_DEVICE__END_DEVICE_INFO:
-            if( endDeviceInfo != null ) msgs = ( ( InternalEObject ) endDeviceInfo ).eInverseRemove( this,
-                    CimPackage.END_DEVICE_INFO__END_DEVICES, EndDeviceInfo.class, msgs );
+            if( endDeviceInfo != null )
+                msgs = ( ( InternalEObject ) endDeviceInfo ).eInverseRemove( this,
+                        CimPackage.END_DEVICE_INFO__END_DEVICES, EndDeviceInfo.class, msgs );
             return basicSetEndDeviceInfo( ( EndDeviceInfo ) otherEnd, msgs );
         case CimPackage.END_DEVICE__END_DEVICE_CONTROLS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getEndDeviceControls() )
@@ -1439,7 +1466,7 @@ public class EndDeviceImpl extends AssetContainerImpl implements EndDevice {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (amrSystem: " );
         if( amrSystemESet )
             result.append( amrSystem );

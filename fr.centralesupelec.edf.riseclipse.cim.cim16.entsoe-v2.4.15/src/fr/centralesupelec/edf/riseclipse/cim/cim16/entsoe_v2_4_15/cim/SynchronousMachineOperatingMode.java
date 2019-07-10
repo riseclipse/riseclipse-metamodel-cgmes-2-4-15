@@ -118,7 +118,10 @@ public enum SynchronousMachineOperatingMode implements Enumerator {
      * @generated
      */
     private static final SynchronousMachineOperatingMode[] VALUES_ARRAY = new SynchronousMachineOperatingMode[] {
-            GENERATOR, CONDENSER, MOTOR, };
+            GENERATOR,
+            CONDENSER,
+            MOTOR,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Synchronous Machine Operating Mode</b></em>' enumerators.

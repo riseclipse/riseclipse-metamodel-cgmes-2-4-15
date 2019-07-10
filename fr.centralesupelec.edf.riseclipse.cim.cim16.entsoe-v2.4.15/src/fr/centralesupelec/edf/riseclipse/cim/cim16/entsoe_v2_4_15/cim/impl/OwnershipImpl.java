@@ -156,8 +156,9 @@ public class OwnershipImpl extends IdentifiedObjectImpl implements Ownership {
         share = newShare;
         boolean oldShareESet = shareESet;
         shareESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OWNERSHIP__SHARE, oldShare, share, !oldShareESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OWNERSHIP__SHARE, oldShare, share,
+                    !oldShareESet ) );
     }
 
     /**
@@ -171,8 +172,9 @@ public class OwnershipImpl extends IdentifiedObjectImpl implements Ownership {
         boolean oldShareESet = shareESet;
         share = SHARE_EDEFAULT;
         shareESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.OWNERSHIP__SHARE, oldShare, SHARE_EDEFAULT, oldShareESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OWNERSHIP__SHARE, oldShare,
+                    SHARE_EDEFAULT, oldShareESet ) );
     }
 
     /**
@@ -225,18 +227,21 @@ public class OwnershipImpl extends IdentifiedObjectImpl implements Ownership {
     public void setAssetOwner( AssetOwner newAssetOwner ) {
         if( newAssetOwner != assetOwner ) {
             NotificationChain msgs = null;
-            if( assetOwner != null ) msgs = ( ( InternalEObject ) assetOwner ).eInverseRemove( this,
-                    CimPackage.ASSET_OWNER__OWNERSHIPS, AssetOwner.class, msgs );
-            if( newAssetOwner != null ) msgs = ( ( InternalEObject ) newAssetOwner ).eInverseAdd( this,
-                    CimPackage.ASSET_OWNER__OWNERSHIPS, AssetOwner.class, msgs );
+            if( assetOwner != null )
+                msgs = ( ( InternalEObject ) assetOwner ).eInverseRemove( this, CimPackage.ASSET_OWNER__OWNERSHIPS,
+                        AssetOwner.class, msgs );
+            if( newAssetOwner != null )
+                msgs = ( ( InternalEObject ) newAssetOwner ).eInverseAdd( this, CimPackage.ASSET_OWNER__OWNERSHIPS,
+                        AssetOwner.class, msgs );
             msgs = basicSetAssetOwner( newAssetOwner, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldAssetOwnerESet = assetOwnerESet;
             assetOwnerESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.OWNERSHIP__ASSET_OWNER, newAssetOwner, newAssetOwner, !oldAssetOwnerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OWNERSHIP__ASSET_OWNER,
+                        newAssetOwner, newAssetOwner, !oldAssetOwnerESet ) );
         }
     }
 
@@ -278,8 +283,9 @@ public class OwnershipImpl extends IdentifiedObjectImpl implements Ownership {
         else {
             boolean oldAssetOwnerESet = assetOwnerESet;
             assetOwnerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OWNERSHIP__ASSET_OWNER, null, null, oldAssetOwnerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OWNERSHIP__ASSET_OWNER, null, null,
+                        oldAssetOwnerESet ) );
         }
     }
 
@@ -333,18 +339,21 @@ public class OwnershipImpl extends IdentifiedObjectImpl implements Ownership {
     public void setAsset( Asset newAsset ) {
         if( newAsset != asset ) {
             NotificationChain msgs = null;
-            if( asset != null ) msgs = ( ( InternalEObject ) asset ).eInverseRemove( this, CimPackage.ASSET__OWNERSHIPS,
-                    Asset.class, msgs );
-            if( newAsset != null ) msgs = ( ( InternalEObject ) newAsset ).eInverseAdd( this,
-                    CimPackage.ASSET__OWNERSHIPS, Asset.class, msgs );
+            if( asset != null )
+                msgs = ( ( InternalEObject ) asset ).eInverseRemove( this, CimPackage.ASSET__OWNERSHIPS, Asset.class,
+                        msgs );
+            if( newAsset != null )
+                msgs = ( ( InternalEObject ) newAsset ).eInverseAdd( this, CimPackage.ASSET__OWNERSHIPS, Asset.class,
+                        msgs );
             msgs = basicSetAsset( newAsset, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldAssetESet = assetESet;
             assetESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.OWNERSHIP__ASSET, newAsset, newAsset, !oldAssetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OWNERSHIP__ASSET, newAsset, newAsset,
+                        !oldAssetESet ) );
         }
     }
 
@@ -386,8 +395,9 @@ public class OwnershipImpl extends IdentifiedObjectImpl implements Ownership {
         else {
             boolean oldAssetESet = assetESet;
             assetESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OWNERSHIP__ASSET, null, null, oldAssetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OWNERSHIP__ASSET, null, null,
+                        oldAssetESet ) );
         }
     }
 
@@ -410,12 +420,14 @@ public class OwnershipImpl extends IdentifiedObjectImpl implements Ownership {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.OWNERSHIP__ASSET_OWNER:
-            if( assetOwner != null ) msgs = ( ( InternalEObject ) assetOwner ).eInverseRemove( this,
-                    CimPackage.ASSET_OWNER__OWNERSHIPS, AssetOwner.class, msgs );
+            if( assetOwner != null )
+                msgs = ( ( InternalEObject ) assetOwner ).eInverseRemove( this, CimPackage.ASSET_OWNER__OWNERSHIPS,
+                        AssetOwner.class, msgs );
             return basicSetAssetOwner( ( AssetOwner ) otherEnd, msgs );
         case CimPackage.OWNERSHIP__ASSET:
-            if( asset != null ) msgs = ( ( InternalEObject ) asset ).eInverseRemove( this, CimPackage.ASSET__OWNERSHIPS,
-                    Asset.class, msgs );
+            if( asset != null )
+                msgs = ( ( InternalEObject ) asset ).eInverseRemove( this, CimPackage.ASSET__OWNERSHIPS, Asset.class,
+                        msgs );
             return basicSetAsset( ( Asset ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -524,7 +536,7 @@ public class OwnershipImpl extends IdentifiedObjectImpl implements Ownership {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (share: " );
         if( shareESet )
             result.append( share );

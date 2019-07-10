@@ -163,8 +163,9 @@ public class SeasonImpl extends IdentifiedObjectImpl implements Season {
         endDate = newEndDate;
         boolean oldEndDateESet = endDateESet;
         endDateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SEASON__END_DATE, oldEndDate, endDate, !oldEndDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SEASON__END_DATE, oldEndDate, endDate,
+                    !oldEndDateESet ) );
     }
 
     /**
@@ -178,8 +179,9 @@ public class SeasonImpl extends IdentifiedObjectImpl implements Season {
         boolean oldEndDateESet = endDateESet;
         endDate = END_DATE_EDEFAULT;
         endDateESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SEASON__END_DATE, oldEndDate, END_DATE_EDEFAULT, oldEndDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SEASON__END_DATE, oldEndDate,
+                    END_DATE_EDEFAULT, oldEndDateESet ) );
     }
 
     /**
@@ -213,8 +215,9 @@ public class SeasonImpl extends IdentifiedObjectImpl implements Season {
         startDate = newStartDate;
         boolean oldStartDateESet = startDateESet;
         startDateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SEASON__START_DATE, oldStartDate, startDate, !oldStartDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SEASON__START_DATE, oldStartDate,
+                    startDate, !oldStartDateESet ) );
     }
 
     /**
@@ -228,8 +231,9 @@ public class SeasonImpl extends IdentifiedObjectImpl implements Season {
         boolean oldStartDateESet = startDateESet;
         startDate = START_DATE_EDEFAULT;
         startDateESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SEASON__START_DATE, oldStartDate, START_DATE_EDEFAULT, oldStartDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SEASON__START_DATE, oldStartDate,
+                    START_DATE_EDEFAULT, oldStartDateESet ) );
     }
 
     /**
@@ -396,7 +400,7 @@ public class SeasonImpl extends IdentifiedObjectImpl implements Season {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (endDate: " );
         if( endDateESet )
             result.append( endDate );

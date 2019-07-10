@@ -142,8 +142,12 @@ public enum BusbarConfiguration implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final BusbarConfiguration[] VALUES_ARRAY = new BusbarConfiguration[] { SINGLE_BUS, DOUBLE_BUS,
-            MAIN_WITH_TRANSFER, RING_BUS, };
+    private static final BusbarConfiguration[] VALUES_ARRAY = new BusbarConfiguration[] {
+            SINGLE_BUS,
+            DOUBLE_BUS,
+            MAIN_WITH_TRANSFER,
+            RING_BUS,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Busbar Configuration</b></em>' enumerators.

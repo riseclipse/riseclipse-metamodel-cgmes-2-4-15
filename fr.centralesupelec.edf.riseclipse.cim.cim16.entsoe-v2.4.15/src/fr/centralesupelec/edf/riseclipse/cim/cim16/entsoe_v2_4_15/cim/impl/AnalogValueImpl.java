@@ -187,8 +187,9 @@ public class AnalogValueImpl extends MeasurementValueImpl implements AnalogValue
         value = newValue;
         boolean oldValueESet = valueESet;
         valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ANALOG_VALUE__VALUE, oldValue, value, !oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ANALOG_VALUE__VALUE, oldValue, value,
+                    !oldValueESet ) );
     }
 
     /**
@@ -202,8 +203,9 @@ public class AnalogValueImpl extends MeasurementValueImpl implements AnalogValue
         boolean oldValueESet = valueESet;
         value = VALUE_EDEFAULT;
         valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ANALOG_VALUE__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ANALOG_VALUE__VALUE, oldValue,
+                    VALUE_EDEFAULT, oldValueESet ) );
     }
 
     /**
@@ -256,18 +258,21 @@ public class AnalogValueImpl extends MeasurementValueImpl implements AnalogValue
     public void setAnalog( Analog newAnalog ) {
         if( newAnalog != analog ) {
             NotificationChain msgs = null;
-            if( analog != null ) msgs = ( ( InternalEObject ) analog ).eInverseRemove( this,
-                    CimPackage.ANALOG__ANALOG_VALUES, Analog.class, msgs );
-            if( newAnalog != null ) msgs = ( ( InternalEObject ) newAnalog ).eInverseAdd( this,
-                    CimPackage.ANALOG__ANALOG_VALUES, Analog.class, msgs );
+            if( analog != null )
+                msgs = ( ( InternalEObject ) analog ).eInverseRemove( this, CimPackage.ANALOG__ANALOG_VALUES,
+                        Analog.class, msgs );
+            if( newAnalog != null )
+                msgs = ( ( InternalEObject ) newAnalog ).eInverseAdd( this, CimPackage.ANALOG__ANALOG_VALUES,
+                        Analog.class, msgs );
             msgs = basicSetAnalog( newAnalog, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldAnalogESet = analogESet;
             analogESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ANALOG_VALUE__ANALOG, newAnalog, newAnalog, !oldAnalogESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ANALOG_VALUE__ANALOG, newAnalog,
+                        newAnalog, !oldAnalogESet ) );
         }
     }
 
@@ -309,8 +314,9 @@ public class AnalogValueImpl extends MeasurementValueImpl implements AnalogValue
         else {
             boolean oldAnalogESet = analogESet;
             analogESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ANALOG_VALUE__ANALOG, null, null, oldAnalogESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ANALOG_VALUE__ANALOG, null, null,
+                        oldAnalogESet ) );
         }
     }
 
@@ -399,10 +405,12 @@ public class AnalogValueImpl extends MeasurementValueImpl implements AnalogValue
     public void setAnalogControl( AnalogControl newAnalogControl ) {
         if( newAnalogControl != analogControl ) {
             NotificationChain msgs = null;
-            if( analogControl != null ) msgs = ( ( InternalEObject ) analogControl ).eInverseRemove( this,
-                    CimPackage.ANALOG_CONTROL__ANALOG_VALUE, AnalogControl.class, msgs );
-            if( newAnalogControl != null ) msgs = ( ( InternalEObject ) newAnalogControl ).eInverseAdd( this,
-                    CimPackage.ANALOG_CONTROL__ANALOG_VALUE, AnalogControl.class, msgs );
+            if( analogControl != null )
+                msgs = ( ( InternalEObject ) analogControl ).eInverseRemove( this,
+                        CimPackage.ANALOG_CONTROL__ANALOG_VALUE, AnalogControl.class, msgs );
+            if( newAnalogControl != null )
+                msgs = ( ( InternalEObject ) newAnalogControl ).eInverseAdd( this,
+                        CimPackage.ANALOG_CONTROL__ANALOG_VALUE, AnalogControl.class, msgs );
             msgs = basicSetAnalogControl( newAnalogControl, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -453,8 +461,9 @@ public class AnalogValueImpl extends MeasurementValueImpl implements AnalogValue
         else {
             boolean oldAnalogControlESet = analogControlESet;
             analogControlESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ANALOG_VALUE__ANALOG_CONTROL, null, null, oldAnalogControlESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ANALOG_VALUE__ANALOG_CONTROL, null,
+                        null, oldAnalogControlESet ) );
         }
     }
 
@@ -513,15 +522,17 @@ public class AnalogValueImpl extends MeasurementValueImpl implements AnalogValue
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ANALOG_VALUE__ANALOG_CONTROL:
-            if( analogControl != null ) msgs = ( ( InternalEObject ) analogControl ).eInverseRemove( this,
-                    CimPackage.ANALOG_CONTROL__ANALOG_VALUE, AnalogControl.class, msgs );
+            if( analogControl != null )
+                msgs = ( ( InternalEObject ) analogControl ).eInverseRemove( this,
+                        CimPackage.ANALOG_CONTROL__ANALOG_VALUE, AnalogControl.class, msgs );
             return basicSetAnalogControl( ( AnalogControl ) otherEnd, msgs );
         case CimPackage.ANALOG_VALUE__ALT_GENERATING_UNIT:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getAltGeneratingUnit() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.ANALOG_VALUE__ANALOG:
-            if( analog != null ) msgs = ( ( InternalEObject ) analog ).eInverseRemove( this,
-                    CimPackage.ANALOG__ANALOG_VALUES, Analog.class, msgs );
+            if( analog != null )
+                msgs = ( ( InternalEObject ) analog ).eInverseRemove( this, CimPackage.ANALOG__ANALOG_VALUES,
+                        Analog.class, msgs );
             return basicSetAnalog( ( Analog ) otherEnd, msgs );
         case CimPackage.ANALOG_VALUE__ALT_TIE_MEAS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getAltTieMeas() ).basicAdd( otherEnd,
@@ -660,7 +671,7 @@ public class AnalogValueImpl extends MeasurementValueImpl implements AnalogValue
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (value: " );
         if( valueESet )
             result.append( value );

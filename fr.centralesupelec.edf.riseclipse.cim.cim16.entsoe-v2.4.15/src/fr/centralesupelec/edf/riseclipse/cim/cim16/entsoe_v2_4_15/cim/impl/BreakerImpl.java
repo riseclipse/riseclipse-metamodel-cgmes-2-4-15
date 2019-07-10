@@ -112,8 +112,9 @@ public class BreakerImpl extends ProtectedSwitchImpl implements Breaker {
         inTransitTime = newInTransitTime;
         boolean oldInTransitTimeESet = inTransitTimeESet;
         inTransitTimeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BREAKER__IN_TRANSIT_TIME, oldInTransitTime, inTransitTime, !oldInTransitTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BREAKER__IN_TRANSIT_TIME,
+                    oldInTransitTime, inTransitTime, !oldInTransitTimeESet ) );
     }
 
     /**
@@ -209,7 +210,7 @@ public class BreakerImpl extends ProtectedSwitchImpl implements Breaker {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (inTransitTime: " );
         if( inTransitTimeESet )
             result.append( inTransitTime );

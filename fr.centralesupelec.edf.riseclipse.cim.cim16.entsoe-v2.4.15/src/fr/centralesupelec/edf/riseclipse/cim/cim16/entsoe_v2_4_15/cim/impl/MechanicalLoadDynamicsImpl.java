@@ -117,9 +117,10 @@ public class MechanicalLoadDynamicsImpl extends DynamicsFunctionBlockImpl implem
             asynchronousMachineDynamics = ( AsynchronousMachineDynamics ) eResolveProxy(
                     oldAsynchronousMachineDynamics );
             if( asynchronousMachineDynamics != oldAsynchronousMachineDynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.MECHANICAL_LOAD_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS,
-                        oldAsynchronousMachineDynamics, asynchronousMachineDynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.MECHANICAL_LOAD_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS,
+                            oldAsynchronousMachineDynamics, asynchronousMachineDynamics ) );
             }
         }
         return asynchronousMachineDynamics;
@@ -180,9 +181,11 @@ public class MechanicalLoadDynamicsImpl extends DynamicsFunctionBlockImpl implem
         else {
             boolean oldAsynchronousMachineDynamicsESet = asynchronousMachineDynamicsESet;
             asynchronousMachineDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.MECHANICAL_LOAD_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS, newAsynchronousMachineDynamics,
-                    newAsynchronousMachineDynamics, !oldAsynchronousMachineDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.MECHANICAL_LOAD_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS,
+                        newAsynchronousMachineDynamics, newAsynchronousMachineDynamics,
+                        !oldAsynchronousMachineDynamicsESet ) );
         }
     }
 
@@ -226,9 +229,10 @@ public class MechanicalLoadDynamicsImpl extends DynamicsFunctionBlockImpl implem
         else {
             boolean oldAsynchronousMachineDynamicsESet = asynchronousMachineDynamicsESet;
             asynchronousMachineDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.MECHANICAL_LOAD_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS, null, null,
-                    oldAsynchronousMachineDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.MECHANICAL_LOAD_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS, null, null,
+                        oldAsynchronousMachineDynamicsESet ) );
         }
     }
 
@@ -253,9 +257,10 @@ public class MechanicalLoadDynamicsImpl extends DynamicsFunctionBlockImpl implem
             InternalEObject oldSynchronousMachineDynamics = ( InternalEObject ) synchronousMachineDynamics;
             synchronousMachineDynamics = ( SynchronousMachineDynamics ) eResolveProxy( oldSynchronousMachineDynamics );
             if( synchronousMachineDynamics != oldSynchronousMachineDynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.MECHANICAL_LOAD_DYNAMICS__SYNCHRONOUS_MACHINE_DYNAMICS,
-                        oldSynchronousMachineDynamics, synchronousMachineDynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.MECHANICAL_LOAD_DYNAMICS__SYNCHRONOUS_MACHINE_DYNAMICS,
+                            oldSynchronousMachineDynamics, synchronousMachineDynamics ) );
             }
         }
         return synchronousMachineDynamics;
@@ -316,9 +321,11 @@ public class MechanicalLoadDynamicsImpl extends DynamicsFunctionBlockImpl implem
         else {
             boolean oldSynchronousMachineDynamicsESet = synchronousMachineDynamicsESet;
             synchronousMachineDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.MECHANICAL_LOAD_DYNAMICS__SYNCHRONOUS_MACHINE_DYNAMICS, newSynchronousMachineDynamics,
-                    newSynchronousMachineDynamics, !oldSynchronousMachineDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.MECHANICAL_LOAD_DYNAMICS__SYNCHRONOUS_MACHINE_DYNAMICS,
+                        newSynchronousMachineDynamics, newSynchronousMachineDynamics,
+                        !oldSynchronousMachineDynamicsESet ) );
         }
     }
 
@@ -362,9 +369,10 @@ public class MechanicalLoadDynamicsImpl extends DynamicsFunctionBlockImpl implem
         else {
             boolean oldSynchronousMachineDynamicsESet = synchronousMachineDynamicsESet;
             synchronousMachineDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.MECHANICAL_LOAD_DYNAMICS__SYNCHRONOUS_MACHINE_DYNAMICS, null, null,
-                    oldSynchronousMachineDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.MECHANICAL_LOAD_DYNAMICS__SYNCHRONOUS_MACHINE_DYNAMICS, null, null,
+                        oldSynchronousMachineDynamicsESet ) );
         }
     }
 

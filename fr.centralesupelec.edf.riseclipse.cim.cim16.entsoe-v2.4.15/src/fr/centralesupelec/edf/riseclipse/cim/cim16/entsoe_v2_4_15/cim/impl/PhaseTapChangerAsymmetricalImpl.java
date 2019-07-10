@@ -113,9 +113,10 @@ public class PhaseTapChangerAsymmetricalImpl extends PhaseTapChangerNonLinearImp
         windingConnectionAngle = newWindingConnectionAngle;
         boolean oldWindingConnectionAngleESet = windingConnectionAngleESet;
         windingConnectionAngleESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PHASE_TAP_CHANGER_ASYMMETRICAL__WINDING_CONNECTION_ANGLE, oldWindingConnectionAngle,
-                windingConnectionAngle, !oldWindingConnectionAngleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PHASE_TAP_CHANGER_ASYMMETRICAL__WINDING_CONNECTION_ANGLE, oldWindingConnectionAngle,
+                    windingConnectionAngle, !oldWindingConnectionAngleESet ) );
     }
 
     /**
@@ -129,9 +130,10 @@ public class PhaseTapChangerAsymmetricalImpl extends PhaseTapChangerNonLinearImp
         boolean oldWindingConnectionAngleESet = windingConnectionAngleESet;
         windingConnectionAngle = WINDING_CONNECTION_ANGLE_EDEFAULT;
         windingConnectionAngleESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PHASE_TAP_CHANGER_ASYMMETRICAL__WINDING_CONNECTION_ANGLE, oldWindingConnectionAngle,
-                WINDING_CONNECTION_ANGLE_EDEFAULT, oldWindingConnectionAngleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PHASE_TAP_CHANGER_ASYMMETRICAL__WINDING_CONNECTION_ANGLE, oldWindingConnectionAngle,
+                    WINDING_CONNECTION_ANGLE_EDEFAULT, oldWindingConnectionAngleESet ) );
     }
 
     /**
@@ -211,7 +213,7 @@ public class PhaseTapChangerAsymmetricalImpl extends PhaseTapChangerNonLinearImp
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (windingConnectionAngle: " );
         if( windingConnectionAngleESet )
             result.append( windingConnectionAngle );

@@ -185,19 +185,22 @@ public class ScheduledEventDataImpl extends CimObjectWithIDImpl implements Sched
     public void setEstimatedWindow( DateTimeInterval newEstimatedWindow ) {
         if( newEstimatedWindow != estimatedWindow ) {
             NotificationChain msgs = null;
-            if( estimatedWindow != null ) msgs = ( ( InternalEObject ) estimatedWindow ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.SCHEDULED_EVENT_DATA__ESTIMATED_WINDOW, null, msgs );
-            if( newEstimatedWindow != null ) msgs = ( ( InternalEObject ) newEstimatedWindow ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.SCHEDULED_EVENT_DATA__ESTIMATED_WINDOW, null, msgs );
+            if( estimatedWindow != null )
+                msgs = ( ( InternalEObject ) estimatedWindow ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.SCHEDULED_EVENT_DATA__ESTIMATED_WINDOW, null, msgs );
+            if( newEstimatedWindow != null )
+                msgs = ( ( InternalEObject ) newEstimatedWindow ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.SCHEDULED_EVENT_DATA__ESTIMATED_WINDOW, null, msgs );
             msgs = basicSetEstimatedWindow( newEstimatedWindow, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldEstimatedWindowESet = estimatedWindowESet;
             estimatedWindowESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.SCHEDULED_EVENT_DATA__ESTIMATED_WINDOW,
-                            newEstimatedWindow, newEstimatedWindow, !oldEstimatedWindowESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.SCHEDULED_EVENT_DATA__ESTIMATED_WINDOW, newEstimatedWindow, newEstimatedWindow,
+                        !oldEstimatedWindowESet ) );
         }
     }
 
@@ -240,8 +243,9 @@ public class ScheduledEventDataImpl extends CimObjectWithIDImpl implements Sched
         else {
             boolean oldEstimatedWindowESet = estimatedWindowESet;
             estimatedWindowESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SCHEDULED_EVENT_DATA__ESTIMATED_WINDOW, null, null, oldEstimatedWindowESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.SCHEDULED_EVENT_DATA__ESTIMATED_WINDOW, null, null, oldEstimatedWindowESet ) );
         }
     }
 
@@ -296,19 +300,22 @@ public class ScheduledEventDataImpl extends CimObjectWithIDImpl implements Sched
     public void setRequestedWindow( DateTimeInterval newRequestedWindow ) {
         if( newRequestedWindow != requestedWindow ) {
             NotificationChain msgs = null;
-            if( requestedWindow != null ) msgs = ( ( InternalEObject ) requestedWindow ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.SCHEDULED_EVENT_DATA__REQUESTED_WINDOW, null, msgs );
-            if( newRequestedWindow != null ) msgs = ( ( InternalEObject ) newRequestedWindow ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.SCHEDULED_EVENT_DATA__REQUESTED_WINDOW, null, msgs );
+            if( requestedWindow != null )
+                msgs = ( ( InternalEObject ) requestedWindow ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.SCHEDULED_EVENT_DATA__REQUESTED_WINDOW, null, msgs );
+            if( newRequestedWindow != null )
+                msgs = ( ( InternalEObject ) newRequestedWindow ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.SCHEDULED_EVENT_DATA__REQUESTED_WINDOW, null, msgs );
             msgs = basicSetRequestedWindow( newRequestedWindow, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldRequestedWindowESet = requestedWindowESet;
             requestedWindowESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.SCHEDULED_EVENT_DATA__REQUESTED_WINDOW,
-                            newRequestedWindow, newRequestedWindow, !oldRequestedWindowESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.SCHEDULED_EVENT_DATA__REQUESTED_WINDOW, newRequestedWindow, newRequestedWindow,
+                        !oldRequestedWindowESet ) );
         }
     }
 
@@ -351,8 +358,9 @@ public class ScheduledEventDataImpl extends CimObjectWithIDImpl implements Sched
         else {
             boolean oldRequestedWindowESet = requestedWindowESet;
             requestedWindowESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SCHEDULED_EVENT_DATA__REQUESTED_WINDOW, null, null, oldRequestedWindowESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.SCHEDULED_EVENT_DATA__REQUESTED_WINDOW, null, null, oldRequestedWindowESet ) );
         }
     }
 
@@ -406,18 +414,21 @@ public class ScheduledEventDataImpl extends CimObjectWithIDImpl implements Sched
     public void setStatus( Status newStatus ) {
         if( newStatus != status ) {
             NotificationChain msgs = null;
-            if( status != null ) msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.SCHEDULED_EVENT_DATA__STATUS, null, msgs );
-            if( newStatus != null ) msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.SCHEDULED_EVENT_DATA__STATUS, null, msgs );
+            if( status != null )
+                msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.SCHEDULED_EVENT_DATA__STATUS, null, msgs );
+            if( newStatus != null )
+                msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.SCHEDULED_EVENT_DATA__STATUS, null, msgs );
             msgs = basicSetStatus( newStatus, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldStatusESet = statusESet;
             statusESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SCHEDULED_EVENT_DATA__STATUS, newStatus, newStatus, !oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SCHEDULED_EVENT_DATA__STATUS,
+                        newStatus, newStatus, !oldStatusESet ) );
         }
     }
 
@@ -459,8 +470,9 @@ public class ScheduledEventDataImpl extends CimObjectWithIDImpl implements Sched
         else {
             boolean oldStatusESet = statusESet;
             statusESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SCHEDULED_EVENT_DATA__STATUS, null, null, oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SCHEDULED_EVENT_DATA__STATUS, null,
+                        null, oldStatusESet ) );
         }
     }
 

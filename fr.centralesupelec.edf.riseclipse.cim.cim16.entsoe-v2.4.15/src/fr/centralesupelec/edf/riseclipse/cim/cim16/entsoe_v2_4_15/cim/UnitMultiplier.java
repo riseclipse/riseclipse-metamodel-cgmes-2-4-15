@@ -317,8 +317,19 @@ public enum UnitMultiplier implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final UnitMultiplier[] VALUES_ARRAY = new UnitMultiplier[] { PICO, N, MICRO, MILLI, C, D, K, M, G, T,
-            NONE, };
+    private static final UnitMultiplier[] VALUES_ARRAY = new UnitMultiplier[] {
+            PICO,
+            N,
+            MICRO,
+            MILLI,
+            C,
+            D,
+            K,
+            M,
+            G,
+            T,
+            NONE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Unit Multiplier</b></em>' enumerators.

@@ -117,8 +117,11 @@ public enum ComDirectionKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final ComDirectionKind[] VALUES_ARRAY = new ComDirectionKind[] { FROM_DEVICE, TO_DEVICE,
-            BI_DIRECTIONAL, };
+    private static final ComDirectionKind[] VALUES_ARRAY = new ComDirectionKind[] {
+            FROM_DEVICE,
+            TO_DEVICE,
+            BI_DIRECTIONAL,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Com Direction Kind</b></em>' enumerators.

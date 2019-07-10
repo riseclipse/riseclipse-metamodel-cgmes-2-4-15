@@ -235,8 +235,9 @@ public class AnalogImpl extends MeasurementImpl implements Analog {
         maxValue = newMaxValue;
         boolean oldMaxValueESet = maxValueESet;
         maxValueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ANALOG__MAX_VALUE, oldMaxValue, maxValue, !oldMaxValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ANALOG__MAX_VALUE, oldMaxValue, maxValue,
+                    !oldMaxValueESet ) );
     }
 
     /**
@@ -250,8 +251,9 @@ public class AnalogImpl extends MeasurementImpl implements Analog {
         boolean oldMaxValueESet = maxValueESet;
         maxValue = MAX_VALUE_EDEFAULT;
         maxValueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ANALOG__MAX_VALUE, oldMaxValue, MAX_VALUE_EDEFAULT, oldMaxValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ANALOG__MAX_VALUE, oldMaxValue,
+                    MAX_VALUE_EDEFAULT, oldMaxValueESet ) );
     }
 
     /**
@@ -285,8 +287,9 @@ public class AnalogImpl extends MeasurementImpl implements Analog {
         minValue = newMinValue;
         boolean oldMinValueESet = minValueESet;
         minValueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ANALOG__MIN_VALUE, oldMinValue, minValue, !oldMinValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ANALOG__MIN_VALUE, oldMinValue, minValue,
+                    !oldMinValueESet ) );
     }
 
     /**
@@ -300,8 +303,9 @@ public class AnalogImpl extends MeasurementImpl implements Analog {
         boolean oldMinValueESet = minValueESet;
         minValue = MIN_VALUE_EDEFAULT;
         minValueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ANALOG__MIN_VALUE, oldMinValue, MIN_VALUE_EDEFAULT, oldMinValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ANALOG__MIN_VALUE, oldMinValue,
+                    MIN_VALUE_EDEFAULT, oldMinValueESet ) );
     }
 
     /**
@@ -335,8 +339,9 @@ public class AnalogImpl extends MeasurementImpl implements Analog {
         normalValue = newNormalValue;
         boolean oldNormalValueESet = normalValueESet;
         normalValueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ANALOG__NORMAL_VALUE, oldNormalValue, normalValue, !oldNormalValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ANALOG__NORMAL_VALUE, oldNormalValue,
+                    normalValue, !oldNormalValueESet ) );
     }
 
     /**
@@ -350,8 +355,9 @@ public class AnalogImpl extends MeasurementImpl implements Analog {
         boolean oldNormalValueESet = normalValueESet;
         normalValue = NORMAL_VALUE_EDEFAULT;
         normalValueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ANALOG__NORMAL_VALUE, oldNormalValue, NORMAL_VALUE_EDEFAULT, oldNormalValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ANALOG__NORMAL_VALUE, oldNormalValue,
+                    NORMAL_VALUE_EDEFAULT, oldNormalValueESet ) );
     }
 
     /**
@@ -385,8 +391,9 @@ public class AnalogImpl extends MeasurementImpl implements Analog {
         positiveFlowIn = newPositiveFlowIn;
         boolean oldPositiveFlowInESet = positiveFlowInESet;
         positiveFlowInESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ANALOG__POSITIVE_FLOW_IN, oldPositiveFlowIn, positiveFlowIn, !oldPositiveFlowInESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ANALOG__POSITIVE_FLOW_IN,
+                    oldPositiveFlowIn, positiveFlowIn, !oldPositiveFlowInESet ) );
     }
 
     /**
@@ -639,7 +646,7 @@ public class AnalogImpl extends MeasurementImpl implements Analog {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (maxValue: " );
         if( maxValueESet )
             result.append( maxValue );

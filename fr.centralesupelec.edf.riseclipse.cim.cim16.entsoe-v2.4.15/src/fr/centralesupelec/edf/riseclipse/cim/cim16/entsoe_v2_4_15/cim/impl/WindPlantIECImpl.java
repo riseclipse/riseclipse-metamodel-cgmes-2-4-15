@@ -116,9 +116,10 @@ public class WindPlantIECImpl extends WindPlantDynamicsImpl implements WindPlant
             InternalEObject oldWindPlantFreqPcontrolIEC = ( InternalEObject ) windPlantFreqPcontrolIEC;
             windPlantFreqPcontrolIEC = ( WindPlantFreqPcontrolIEC ) eResolveProxy( oldWindPlantFreqPcontrolIEC );
             if( windPlantFreqPcontrolIEC != oldWindPlantFreqPcontrolIEC ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.WIND_PLANT_IEC__WIND_PLANT_FREQ_PCONTROL_IEC, oldWindPlantFreqPcontrolIEC,
-                        windPlantFreqPcontrolIEC ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.WIND_PLANT_IEC__WIND_PLANT_FREQ_PCONTROL_IEC, oldWindPlantFreqPcontrolIEC,
+                            windPlantFreqPcontrolIEC ) );
             }
         }
         return windPlantFreqPcontrolIEC;
@@ -177,9 +178,10 @@ public class WindPlantIECImpl extends WindPlantDynamicsImpl implements WindPlant
         else {
             boolean oldWindPlantFreqPcontrolIECESet = windPlantFreqPcontrolIECESet;
             windPlantFreqPcontrolIECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_PLANT_IEC__WIND_PLANT_FREQ_PCONTROL_IEC, newWindPlantFreqPcontrolIEC,
-                    newWindPlantFreqPcontrolIEC, !oldWindPlantFreqPcontrolIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_PLANT_IEC__WIND_PLANT_FREQ_PCONTROL_IEC, newWindPlantFreqPcontrolIEC,
+                        newWindPlantFreqPcontrolIEC, !oldWindPlantFreqPcontrolIECESet ) );
         }
     }
 
@@ -222,9 +224,10 @@ public class WindPlantIECImpl extends WindPlantDynamicsImpl implements WindPlant
         else {
             boolean oldWindPlantFreqPcontrolIECESet = windPlantFreqPcontrolIECESet;
             windPlantFreqPcontrolIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_PLANT_IEC__WIND_PLANT_FREQ_PCONTROL_IEC, null, null,
-                    oldWindPlantFreqPcontrolIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_PLANT_IEC__WIND_PLANT_FREQ_PCONTROL_IEC, null, null,
+                        oldWindPlantFreqPcontrolIECESet ) );
         }
     }
 
@@ -294,9 +297,10 @@ public class WindPlantIECImpl extends WindPlantDynamicsImpl implements WindPlant
         else {
             boolean oldWindPlantReactiveControlIECESet = windPlantReactiveControlIECESet;
             windPlantReactiveControlIECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_PLANT_IEC__WIND_PLANT_REACTIVE_CONTROL_IEC, newWindPlantReactiveControlIEC,
-                    newWindPlantReactiveControlIEC, !oldWindPlantReactiveControlIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_PLANT_IEC__WIND_PLANT_REACTIVE_CONTROL_IEC, newWindPlantReactiveControlIEC,
+                        newWindPlantReactiveControlIEC, !oldWindPlantReactiveControlIECESet ) );
         }
     }
 
@@ -340,9 +344,10 @@ public class WindPlantIECImpl extends WindPlantDynamicsImpl implements WindPlant
         else {
             boolean oldWindPlantReactiveControlIECESet = windPlantReactiveControlIECESet;
             windPlantReactiveControlIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_PLANT_IEC__WIND_PLANT_REACTIVE_CONTROL_IEC, null, null,
-                    oldWindPlantReactiveControlIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_PLANT_IEC__WIND_PLANT_REACTIVE_CONTROL_IEC, null, null,
+                        oldWindPlantReactiveControlIECESet ) );
         }
     }
 

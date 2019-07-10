@@ -206,10 +206,12 @@ public class LineFaultImpl extends FaultImpl implements LineFault {
     public void setACLineSegment( ACLineSegment newACLineSegment ) {
         if( newACLineSegment != acLineSegment ) {
             NotificationChain msgs = null;
-            if( acLineSegment != null ) msgs = ( ( InternalEObject ) acLineSegment ).eInverseRemove( this,
-                    CimPackage.AC_LINE_SEGMENT__LINE_FAULTS, ACLineSegment.class, msgs );
-            if( newACLineSegment != null ) msgs = ( ( InternalEObject ) newACLineSegment ).eInverseAdd( this,
-                    CimPackage.AC_LINE_SEGMENT__LINE_FAULTS, ACLineSegment.class, msgs );
+            if( acLineSegment != null )
+                msgs = ( ( InternalEObject ) acLineSegment ).eInverseRemove( this,
+                        CimPackage.AC_LINE_SEGMENT__LINE_FAULTS, ACLineSegment.class, msgs );
+            if( newACLineSegment != null )
+                msgs = ( ( InternalEObject ) newACLineSegment ).eInverseAdd( this,
+                        CimPackage.AC_LINE_SEGMENT__LINE_FAULTS, ACLineSegment.class, msgs );
             msgs = basicSetACLineSegment( newACLineSegment, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -260,8 +262,9 @@ public class LineFaultImpl extends FaultImpl implements LineFault {
         else {
             boolean oldACLineSegmentESet = acLineSegmentESet;
             acLineSegmentESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.LINE_FAULT__AC_LINE_SEGMENT, null, null, oldACLineSegmentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LINE_FAULT__AC_LINE_SEGMENT, null,
+                        null, oldACLineSegmentESet ) );
         }
     }
 
@@ -284,8 +287,9 @@ public class LineFaultImpl extends FaultImpl implements LineFault {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.LINE_FAULT__AC_LINE_SEGMENT:
-            if( acLineSegment != null ) msgs = ( ( InternalEObject ) acLineSegment ).eInverseRemove( this,
-                    CimPackage.AC_LINE_SEGMENT__LINE_FAULTS, ACLineSegment.class, msgs );
+            if( acLineSegment != null )
+                msgs = ( ( InternalEObject ) acLineSegment ).eInverseRemove( this,
+                        CimPackage.AC_LINE_SEGMENT__LINE_FAULTS, ACLineSegment.class, msgs );
             return basicSetACLineSegment( ( ACLineSegment ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -382,7 +386,7 @@ public class LineFaultImpl extends FaultImpl implements LineFault {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (lengthFromTerminal1: " );
         if( lengthFromTerminal1ESet )
             result.append( lengthFromTerminal1 );

@@ -193,8 +193,9 @@ public class UsagePointLocationImpl extends LocationImpl implements UsagePointLo
         accessMethod = newAccessMethod;
         boolean oldAccessMethodESet = accessMethodESet;
         accessMethodESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.USAGE_POINT_LOCATION__ACCESS_METHOD, oldAccessMethod, accessMethod, !oldAccessMethodESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.USAGE_POINT_LOCATION__ACCESS_METHOD,
+                    oldAccessMethod, accessMethod, !oldAccessMethodESet ) );
     }
 
     /**
@@ -244,8 +245,9 @@ public class UsagePointLocationImpl extends LocationImpl implements UsagePointLo
         remark = newRemark;
         boolean oldRemarkESet = remarkESet;
         remarkESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.USAGE_POINT_LOCATION__REMARK, oldRemark, remark, !oldRemarkESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.USAGE_POINT_LOCATION__REMARK, oldRemark,
+                    remark, !oldRemarkESet ) );
     }
 
     /**
@@ -259,8 +261,9 @@ public class UsagePointLocationImpl extends LocationImpl implements UsagePointLo
         boolean oldRemarkESet = remarkESet;
         remark = REMARK_EDEFAULT;
         remarkESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.USAGE_POINT_LOCATION__REMARK, oldRemark, REMARK_EDEFAULT, oldRemarkESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.USAGE_POINT_LOCATION__REMARK,
+                    oldRemark, REMARK_EDEFAULT, oldRemarkESet ) );
     }
 
     /**
@@ -294,9 +297,10 @@ public class UsagePointLocationImpl extends LocationImpl implements UsagePointLo
         siteAccessProblem = newSiteAccessProblem;
         boolean oldSiteAccessProblemESet = siteAccessProblemESet;
         siteAccessProblemESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.USAGE_POINT_LOCATION__SITE_ACCESS_PROBLEM,
-                        oldSiteAccessProblem, siteAccessProblem, !oldSiteAccessProblemESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.USAGE_POINT_LOCATION__SITE_ACCESS_PROBLEM, oldSiteAccessProblem, siteAccessProblem,
+                    !oldSiteAccessProblemESet ) );
     }
 
     /**
@@ -310,9 +314,10 @@ public class UsagePointLocationImpl extends LocationImpl implements UsagePointLo
         boolean oldSiteAccessProblemESet = siteAccessProblemESet;
         siteAccessProblem = SITE_ACCESS_PROBLEM_EDEFAULT;
         siteAccessProblemESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.USAGE_POINT_LOCATION__SITE_ACCESS_PROBLEM,
-                        oldSiteAccessProblem, SITE_ACCESS_PROBLEM_EDEFAULT, oldSiteAccessProblemESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.USAGE_POINT_LOCATION__SITE_ACCESS_PROBLEM, oldSiteAccessProblem,
+                    SITE_ACCESS_PROBLEM_EDEFAULT, oldSiteAccessProblemESet ) );
     }
 
     /**
@@ -488,7 +493,7 @@ public class UsagePointLocationImpl extends LocationImpl implements UsagePointLo
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (accessMethod: " );
         if( accessMethodESet )
             result.append( accessMethod );

@@ -218,9 +218,10 @@ public class LinearShuntCompensatorImpl extends ShuntCompensatorImpl implements 
         boolean oldB0PerSectionESet = b0PerSectionESet;
         b0PerSection = B0_PER_SECTION_EDEFAULT;
         b0PerSectionESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.LINEAR_SHUNT_COMPENSATOR__B0_PER_SECTION,
-                        oldB0PerSection, B0_PER_SECTION_EDEFAULT, oldB0PerSectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.LINEAR_SHUNT_COMPENSATOR__B0_PER_SECTION, oldB0PerSection, B0_PER_SECTION_EDEFAULT,
+                    oldB0PerSectionESet ) );
     }
 
     /**
@@ -254,8 +255,9 @@ public class LinearShuntCompensatorImpl extends ShuntCompensatorImpl implements 
         bPerSection = newBPerSection;
         boolean oldBPerSectionESet = bPerSectionESet;
         bPerSectionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LINEAR_SHUNT_COMPENSATOR__BPER_SECTION, oldBPerSection, bPerSection, !oldBPerSectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LINEAR_SHUNT_COMPENSATOR__BPER_SECTION,
+                    oldBPerSection, bPerSection, !oldBPerSectionESet ) );
     }
 
     /**
@@ -321,9 +323,10 @@ public class LinearShuntCompensatorImpl extends ShuntCompensatorImpl implements 
         boolean oldG0PerSectionESet = g0PerSectionESet;
         g0PerSection = G0_PER_SECTION_EDEFAULT;
         g0PerSectionESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.LINEAR_SHUNT_COMPENSATOR__G0_PER_SECTION,
-                        oldG0PerSection, G0_PER_SECTION_EDEFAULT, oldG0PerSectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.LINEAR_SHUNT_COMPENSATOR__G0_PER_SECTION, oldG0PerSection, G0_PER_SECTION_EDEFAULT,
+                    oldG0PerSectionESet ) );
     }
 
     /**
@@ -357,8 +360,9 @@ public class LinearShuntCompensatorImpl extends ShuntCompensatorImpl implements 
         gPerSection = newGPerSection;
         boolean oldGPerSectionESet = gPerSectionESet;
         gPerSectionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LINEAR_SHUNT_COMPENSATOR__GPER_SECTION, oldGPerSection, gPerSection, !oldGPerSectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LINEAR_SHUNT_COMPENSATOR__GPER_SECTION,
+                    oldGPerSection, gPerSection, !oldGPerSectionESet ) );
     }
 
     /**
@@ -484,7 +488,7 @@ public class LinearShuntCompensatorImpl extends ShuntCompensatorImpl implements 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (b0PerSection: " );
         if( b0PerSectionESet )
             result.append( b0PerSection );

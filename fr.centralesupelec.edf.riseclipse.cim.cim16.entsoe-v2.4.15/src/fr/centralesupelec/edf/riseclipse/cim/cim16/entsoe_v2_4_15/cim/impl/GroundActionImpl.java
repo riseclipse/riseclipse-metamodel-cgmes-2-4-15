@@ -199,8 +199,9 @@ public class GroundActionImpl extends SwitchingStepImpl implements GroundAction 
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GROUND_ACTION__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GROUND_ACTION__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -214,8 +215,9 @@ public class GroundActionImpl extends SwitchingStepImpl implements GroundAction 
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GROUND_ACTION__KIND, oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GROUND_ACTION__KIND, oldKind,
+                    KIND_EDEFAULT, oldKindESet ) );
     }
 
     /**
@@ -239,8 +241,9 @@ public class GroundActionImpl extends SwitchingStepImpl implements GroundAction 
             InternalEObject oldGround = ( InternalEObject ) ground;
             ground = ( Ground ) eResolveProxy( oldGround );
             if( ground != oldGround ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.GROUND_ACTION__GROUND, oldGround, ground ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.GROUND_ACTION__GROUND,
+                            oldGround, ground ) );
             }
         }
         return ground;
@@ -285,18 +288,21 @@ public class GroundActionImpl extends SwitchingStepImpl implements GroundAction 
     public void setGround( Ground newGround ) {
         if( newGround != ground ) {
             NotificationChain msgs = null;
-            if( ground != null ) msgs = ( ( InternalEObject ) ground ).eInverseRemove( this,
-                    CimPackage.GROUND__GROUND_ACTION, Ground.class, msgs );
-            if( newGround != null ) msgs = ( ( InternalEObject ) newGround ).eInverseAdd( this,
-                    CimPackage.GROUND__GROUND_ACTION, Ground.class, msgs );
+            if( ground != null )
+                msgs = ( ( InternalEObject ) ground ).eInverseRemove( this, CimPackage.GROUND__GROUND_ACTION,
+                        Ground.class, msgs );
+            if( newGround != null )
+                msgs = ( ( InternalEObject ) newGround ).eInverseAdd( this, CimPackage.GROUND__GROUND_ACTION,
+                        Ground.class, msgs );
             msgs = basicSetGround( newGround, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldGroundESet = groundESet;
             groundESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.GROUND_ACTION__GROUND, newGround, newGround, !oldGroundESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GROUND_ACTION__GROUND, newGround,
+                        newGround, !oldGroundESet ) );
         }
     }
 
@@ -338,8 +344,9 @@ public class GroundActionImpl extends SwitchingStepImpl implements GroundAction 
         else {
             boolean oldGroundESet = groundESet;
             groundESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.GROUND_ACTION__GROUND, null, null, oldGroundESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GROUND_ACTION__GROUND, null, null,
+                        oldGroundESet ) );
         }
     }
 
@@ -395,10 +402,12 @@ public class GroundActionImpl extends SwitchingStepImpl implements GroundAction 
     public void setGroundedEquipment( ConductingEquipment newGroundedEquipment ) {
         if( newGroundedEquipment != groundedEquipment ) {
             NotificationChain msgs = null;
-            if( groundedEquipment != null ) msgs = ( ( InternalEObject ) groundedEquipment ).eInverseRemove( this,
-                    CimPackage.CONDUCTING_EQUIPMENT__GROUNDING_ACTION, ConductingEquipment.class, msgs );
-            if( newGroundedEquipment != null ) msgs = ( ( InternalEObject ) newGroundedEquipment ).eInverseAdd( this,
-                    CimPackage.CONDUCTING_EQUIPMENT__GROUNDING_ACTION, ConductingEquipment.class, msgs );
+            if( groundedEquipment != null )
+                msgs = ( ( InternalEObject ) groundedEquipment ).eInverseRemove( this,
+                        CimPackage.CONDUCTING_EQUIPMENT__GROUNDING_ACTION, ConductingEquipment.class, msgs );
+            if( newGroundedEquipment != null )
+                msgs = ( ( InternalEObject ) newGroundedEquipment ).eInverseAdd( this,
+                        CimPackage.CONDUCTING_EQUIPMENT__GROUNDING_ACTION, ConductingEquipment.class, msgs );
             msgs = basicSetGroundedEquipment( newGroundedEquipment, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -450,8 +459,9 @@ public class GroundActionImpl extends SwitchingStepImpl implements GroundAction 
         else {
             boolean oldGroundedEquipmentESet = groundedEquipmentESet;
             groundedEquipmentESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.GROUND_ACTION__GROUNDED_EQUIPMENT, null, null, oldGroundedEquipmentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GROUND_ACTION__GROUNDED_EQUIPMENT,
+                        null, null, oldGroundedEquipmentESet ) );
         }
     }
 
@@ -507,10 +517,12 @@ public class GroundActionImpl extends SwitchingStepImpl implements GroundAction 
     public void setSwitchingStepGroup( SwitchingStepGroup newSwitchingStepGroup ) {
         if( newSwitchingStepGroup != switchingStepGroup ) {
             NotificationChain msgs = null;
-            if( switchingStepGroup != null ) msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
-                    CimPackage.SWITCHING_STEP_GROUP__GROUND_ACTIONS, SwitchingStepGroup.class, msgs );
-            if( newSwitchingStepGroup != null ) msgs = ( ( InternalEObject ) newSwitchingStepGroup ).eInverseAdd( this,
-                    CimPackage.SWITCHING_STEP_GROUP__GROUND_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( switchingStepGroup != null )
+                msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
+                        CimPackage.SWITCHING_STEP_GROUP__GROUND_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( newSwitchingStepGroup != null )
+                msgs = ( ( InternalEObject ) newSwitchingStepGroup ).eInverseAdd( this,
+                        CimPackage.SWITCHING_STEP_GROUP__GROUND_ACTIONS, SwitchingStepGroup.class, msgs );
             msgs = basicSetSwitchingStepGroup( newSwitchingStepGroup, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -562,8 +574,9 @@ public class GroundActionImpl extends SwitchingStepImpl implements GroundAction 
         else {
             boolean oldSwitchingStepGroupESet = switchingStepGroupESet;
             switchingStepGroupESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.GROUND_ACTION__SWITCHING_STEP_GROUP, null, null, oldSwitchingStepGroupESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.GROUND_ACTION__SWITCHING_STEP_GROUP, null, null, oldSwitchingStepGroupESet ) );
         }
     }
 
@@ -588,8 +601,10 @@ public class GroundActionImpl extends SwitchingStepImpl implements GroundAction 
             InternalEObject oldAlongACLineSegment = ( InternalEObject ) alongACLineSegment;
             alongACLineSegment = ( ACLineSegment ) eResolveProxy( oldAlongACLineSegment );
             if( alongACLineSegment != oldAlongACLineSegment ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.GROUND_ACTION__ALONG_AC_LINE_SEGMENT, oldAlongACLineSegment, alongACLineSegment ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.GROUND_ACTION__ALONG_AC_LINE_SEGMENT, oldAlongACLineSegment,
+                            alongACLineSegment ) );
             }
         }
         return alongACLineSegment;
@@ -635,10 +650,12 @@ public class GroundActionImpl extends SwitchingStepImpl implements GroundAction 
     public void setAlongACLineSegment( ACLineSegment newAlongACLineSegment ) {
         if( newAlongACLineSegment != alongACLineSegment ) {
             NotificationChain msgs = null;
-            if( alongACLineSegment != null ) msgs = ( ( InternalEObject ) alongACLineSegment ).eInverseRemove( this,
-                    CimPackage.AC_LINE_SEGMENT__LINE_GROUNDING_ACTION, ACLineSegment.class, msgs );
-            if( newAlongACLineSegment != null ) msgs = ( ( InternalEObject ) newAlongACLineSegment ).eInverseAdd( this,
-                    CimPackage.AC_LINE_SEGMENT__LINE_GROUNDING_ACTION, ACLineSegment.class, msgs );
+            if( alongACLineSegment != null )
+                msgs = ( ( InternalEObject ) alongACLineSegment ).eInverseRemove( this,
+                        CimPackage.AC_LINE_SEGMENT__LINE_GROUNDING_ACTION, ACLineSegment.class, msgs );
+            if( newAlongACLineSegment != null )
+                msgs = ( ( InternalEObject ) newAlongACLineSegment ).eInverseAdd( this,
+                        CimPackage.AC_LINE_SEGMENT__LINE_GROUNDING_ACTION, ACLineSegment.class, msgs );
             msgs = basicSetAlongACLineSegment( newAlongACLineSegment, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -690,8 +707,9 @@ public class GroundActionImpl extends SwitchingStepImpl implements GroundAction 
         else {
             boolean oldAlongACLineSegmentESet = alongACLineSegmentESet;
             alongACLineSegmentESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.GROUND_ACTION__ALONG_AC_LINE_SEGMENT, null, null, oldAlongACLineSegmentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.GROUND_ACTION__ALONG_AC_LINE_SEGMENT, null, null, oldAlongACLineSegmentESet ) );
         }
     }
 
@@ -714,20 +732,24 @@ public class GroundActionImpl extends SwitchingStepImpl implements GroundAction 
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.GROUND_ACTION__GROUNDED_EQUIPMENT:
-            if( groundedEquipment != null ) msgs = ( ( InternalEObject ) groundedEquipment ).eInverseRemove( this,
-                    CimPackage.CONDUCTING_EQUIPMENT__GROUNDING_ACTION, ConductingEquipment.class, msgs );
+            if( groundedEquipment != null )
+                msgs = ( ( InternalEObject ) groundedEquipment ).eInverseRemove( this,
+                        CimPackage.CONDUCTING_EQUIPMENT__GROUNDING_ACTION, ConductingEquipment.class, msgs );
             return basicSetGroundedEquipment( ( ConductingEquipment ) otherEnd, msgs );
         case CimPackage.GROUND_ACTION__ALONG_AC_LINE_SEGMENT:
-            if( alongACLineSegment != null ) msgs = ( ( InternalEObject ) alongACLineSegment ).eInverseRemove( this,
-                    CimPackage.AC_LINE_SEGMENT__LINE_GROUNDING_ACTION, ACLineSegment.class, msgs );
+            if( alongACLineSegment != null )
+                msgs = ( ( InternalEObject ) alongACLineSegment ).eInverseRemove( this,
+                        CimPackage.AC_LINE_SEGMENT__LINE_GROUNDING_ACTION, ACLineSegment.class, msgs );
             return basicSetAlongACLineSegment( ( ACLineSegment ) otherEnd, msgs );
         case CimPackage.GROUND_ACTION__SWITCHING_STEP_GROUP:
-            if( switchingStepGroup != null ) msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
-                    CimPackage.SWITCHING_STEP_GROUP__GROUND_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( switchingStepGroup != null )
+                msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
+                        CimPackage.SWITCHING_STEP_GROUP__GROUND_ACTIONS, SwitchingStepGroup.class, msgs );
             return basicSetSwitchingStepGroup( ( SwitchingStepGroup ) otherEnd, msgs );
         case CimPackage.GROUND_ACTION__GROUND:
-            if( ground != null ) msgs = ( ( InternalEObject ) ground ).eInverseRemove( this,
-                    CimPackage.GROUND__GROUND_ACTION, Ground.class, msgs );
+            if( ground != null )
+                msgs = ( ( InternalEObject ) ground ).eInverseRemove( this, CimPackage.GROUND__GROUND_ACTION,
+                        Ground.class, msgs );
             return basicSetGround( ( Ground ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -862,7 +884,7 @@ public class GroundActionImpl extends SwitchingStepImpl implements GroundAction 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kind: " );
         if( kindESet )
             result.append( kind );

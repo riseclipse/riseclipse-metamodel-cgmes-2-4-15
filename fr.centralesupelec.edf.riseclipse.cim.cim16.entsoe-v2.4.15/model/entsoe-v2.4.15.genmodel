@@ -12,7 +12,7 @@
     language="" operationReflection="true" importOrganizing="true" pluginKey="entsoe-v2.4.15"
     cleanup="true">
   <foreignModel>entsoe-v2.4.15.ecore</foreignModel>
-  <genPackages prefix="Cim" basePackage="fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe-v2.4.15"
+  <genPackages prefix="Cim" basePackage="fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15"
       resource="XML" disposableProviderFactory="true" loadInitialization="true" literalsInterface="false"
       fileExtensions="cim,cimxml,xml" ecorePackage="entsoe-v2.4.15.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="entsoe-v2.4.15.ecore#//ContingencyEquipmentStatusKind">

@@ -133,9 +133,10 @@ public class PerLengthPhaseImpedanceImpl extends PerLengthImpedanceImpl implemen
         conductorCount = newConductorCount;
         boolean oldConductorCountESet = conductorCountESet;
         conductorCountESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PER_LENGTH_PHASE_IMPEDANCE__CONDUCTOR_COUNT,
-                        oldConductorCount, conductorCount, !oldConductorCountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PER_LENGTH_PHASE_IMPEDANCE__CONDUCTOR_COUNT, oldConductorCount, conductorCount,
+                    !oldConductorCountESet ) );
     }
 
     /**
@@ -149,9 +150,10 @@ public class PerLengthPhaseImpedanceImpl extends PerLengthImpedanceImpl implemen
         boolean oldConductorCountESet = conductorCountESet;
         conductorCount = CONDUCTOR_COUNT_EDEFAULT;
         conductorCountESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PER_LENGTH_PHASE_IMPEDANCE__CONDUCTOR_COUNT,
-                        oldConductorCount, CONDUCTOR_COUNT_EDEFAULT, oldConductorCountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PER_LENGTH_PHASE_IMPEDANCE__CONDUCTOR_COUNT, oldConductorCount, CONDUCTOR_COUNT_EDEFAULT,
+                    oldConductorCountESet ) );
     }
 
     /**
@@ -308,7 +310,7 @@ public class PerLengthPhaseImpedanceImpl extends PerLengthImpedanceImpl implemen
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (conductorCount: " );
         if( conductorCountESet )
             result.append( conductorCount );

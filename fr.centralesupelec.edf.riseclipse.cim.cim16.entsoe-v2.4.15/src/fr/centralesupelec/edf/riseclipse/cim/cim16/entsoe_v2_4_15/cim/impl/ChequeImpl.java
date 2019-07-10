@@ -249,8 +249,9 @@ public class ChequeImpl extends CimObjectWithIDImpl implements Cheque {
         chequeNumber = newChequeNumber;
         boolean oldChequeNumberESet = chequeNumberESet;
         chequeNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CHEQUE__CHEQUE_NUMBER, oldChequeNumber, chequeNumber, !oldChequeNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CHEQUE__CHEQUE_NUMBER, oldChequeNumber,
+                    chequeNumber, !oldChequeNumberESet ) );
     }
 
     /**
@@ -264,8 +265,9 @@ public class ChequeImpl extends CimObjectWithIDImpl implements Cheque {
         boolean oldChequeNumberESet = chequeNumberESet;
         chequeNumber = CHEQUE_NUMBER_EDEFAULT;
         chequeNumberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CHEQUE__CHEQUE_NUMBER, oldChequeNumber, CHEQUE_NUMBER_EDEFAULT, oldChequeNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CHEQUE__CHEQUE_NUMBER, oldChequeNumber,
+                    CHEQUE_NUMBER_EDEFAULT, oldChequeNumberESet ) );
     }
 
     /**
@@ -299,8 +301,9 @@ public class ChequeImpl extends CimObjectWithIDImpl implements Cheque {
         date = newDate;
         boolean oldDateESet = dateESet;
         dateESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.CHEQUE__DATE, oldDate, date, !oldDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CHEQUE__DATE, oldDate, date,
+                    !oldDateESet ) );
     }
 
     /**
@@ -314,8 +317,9 @@ public class ChequeImpl extends CimObjectWithIDImpl implements Cheque {
         boolean oldDateESet = dateESet;
         date = DATE_EDEFAULT;
         dateESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CHEQUE__DATE,
-                oldDate, DATE_EDEFAULT, oldDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CHEQUE__DATE, oldDate, DATE_EDEFAULT,
+                    oldDateESet ) );
     }
 
     /**
@@ -349,8 +353,9 @@ public class ChequeImpl extends CimObjectWithIDImpl implements Cheque {
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.CHEQUE__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CHEQUE__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -364,8 +369,9 @@ public class ChequeImpl extends CimObjectWithIDImpl implements Cheque {
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CHEQUE__KIND,
-                oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CHEQUE__KIND, oldKind, KIND_EDEFAULT,
+                    oldKindESet ) );
     }
 
     /**
@@ -399,8 +405,9 @@ public class ChequeImpl extends CimObjectWithIDImpl implements Cheque {
         micrNumber = newMicrNumber;
         boolean oldMicrNumberESet = micrNumberESet;
         micrNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CHEQUE__MICR_NUMBER, oldMicrNumber, micrNumber, !oldMicrNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CHEQUE__MICR_NUMBER, oldMicrNumber,
+                    micrNumber, !oldMicrNumberESet ) );
     }
 
     /**
@@ -414,8 +421,9 @@ public class ChequeImpl extends CimObjectWithIDImpl implements Cheque {
         boolean oldMicrNumberESet = micrNumberESet;
         micrNumber = MICR_NUMBER_EDEFAULT;
         micrNumberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CHEQUE__MICR_NUMBER, oldMicrNumber, MICR_NUMBER_EDEFAULT, oldMicrNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CHEQUE__MICR_NUMBER, oldMicrNumber,
+                    MICR_NUMBER_EDEFAULT, oldMicrNumberESet ) );
     }
 
     /**
@@ -470,10 +478,12 @@ public class ChequeImpl extends CimObjectWithIDImpl implements Cheque {
     public void setBankAccountDetail( BankAccountDetail newBankAccountDetail ) {
         if( newBankAccountDetail != bankAccountDetail ) {
             NotificationChain msgs = null;
-            if( bankAccountDetail != null ) msgs = ( ( InternalEObject ) bankAccountDetail ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.CHEQUE__BANK_ACCOUNT_DETAIL, null, msgs );
-            if( newBankAccountDetail != null ) msgs = ( ( InternalEObject ) newBankAccountDetail ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.CHEQUE__BANK_ACCOUNT_DETAIL, null, msgs );
+            if( bankAccountDetail != null )
+                msgs = ( ( InternalEObject ) bankAccountDetail ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.CHEQUE__BANK_ACCOUNT_DETAIL, null, msgs );
+            if( newBankAccountDetail != null )
+                msgs = ( ( InternalEObject ) newBankAccountDetail ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.CHEQUE__BANK_ACCOUNT_DETAIL, null, msgs );
             msgs = basicSetBankAccountDetail( newBankAccountDetail, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -524,8 +534,9 @@ public class ChequeImpl extends CimObjectWithIDImpl implements Cheque {
         else {
             boolean oldBankAccountDetailESet = bankAccountDetailESet;
             bankAccountDetailESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CHEQUE__BANK_ACCOUNT_DETAIL, null, null, oldBankAccountDetailESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CHEQUE__BANK_ACCOUNT_DETAIL, null,
+                        null, oldBankAccountDetailESet ) );
         }
     }
 
@@ -579,18 +590,21 @@ public class ChequeImpl extends CimObjectWithIDImpl implements Cheque {
     public void setTender( Tender newTender ) {
         if( newTender != tender ) {
             NotificationChain msgs = null;
-            if( tender != null ) msgs = ( ( InternalEObject ) tender ).eInverseRemove( this, CimPackage.TENDER__CHEQUE,
-                    Tender.class, msgs );
-            if( newTender != null ) msgs = ( ( InternalEObject ) newTender ).eInverseAdd( this,
-                    CimPackage.TENDER__CHEQUE, Tender.class, msgs );
+            if( tender != null )
+                msgs = ( ( InternalEObject ) tender ).eInverseRemove( this, CimPackage.TENDER__CHEQUE, Tender.class,
+                        msgs );
+            if( newTender != null )
+                msgs = ( ( InternalEObject ) newTender ).eInverseAdd( this, CimPackage.TENDER__CHEQUE, Tender.class,
+                        msgs );
             msgs = basicSetTender( newTender, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTenderESet = tenderESet;
             tenderESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CHEQUE__TENDER, newTender, newTender, !oldTenderESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CHEQUE__TENDER, newTender, newTender,
+                        !oldTenderESet ) );
         }
     }
 
@@ -631,8 +645,9 @@ public class ChequeImpl extends CimObjectWithIDImpl implements Cheque {
         else {
             boolean oldTenderESet = tenderESet;
             tenderESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CHEQUE__TENDER, null, null, oldTenderESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CHEQUE__TENDER, null, null,
+                        oldTenderESet ) );
         }
     }
 
@@ -655,8 +670,9 @@ public class ChequeImpl extends CimObjectWithIDImpl implements Cheque {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CHEQUE__TENDER:
-            if( tender != null ) msgs = ( ( InternalEObject ) tender ).eInverseRemove( this, CimPackage.TENDER__CHEQUE,
-                    Tender.class, msgs );
+            if( tender != null )
+                msgs = ( ( InternalEObject ) tender ).eInverseRemove( this, CimPackage.TENDER__CHEQUE, Tender.class,
+                        msgs );
             return basicSetTender( ( Tender ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -795,7 +811,7 @@ public class ChequeImpl extends CimObjectWithIDImpl implements Cheque {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (chequeNumber: " );
         if( chequeNumberESet )
             result.append( chequeNumber );

@@ -367,10 +367,21 @@ public enum TransactionKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final TransactionKind[] VALUES_ARRAY = new TransactionKind[] { SERVICE_CHARGE_PAYMENT,
-            TAX_CHARGE_PAYMENT, AUXILIARY_CHARGE_PAYMENT, ACCOUNT_PAYMENT, DIVERSE_PAYMENT, TRANSACTION_REVERSAL,
-            TOKEN_SALE_PAYMENT, TOKEN_FREE_ISSUE, TOKEN_GRANT, TOKEN_EXCHANGE, TOKEN_CANCELLATION,
-            METER_CONFIGURATION_TOKEN, OTHER, };
+    private static final TransactionKind[] VALUES_ARRAY = new TransactionKind[] {
+            SERVICE_CHARGE_PAYMENT,
+            TAX_CHARGE_PAYMENT,
+            AUXILIARY_CHARGE_PAYMENT,
+            ACCOUNT_PAYMENT,
+            DIVERSE_PAYMENT,
+            TRANSACTION_REVERSAL,
+            TOKEN_SALE_PAYMENT,
+            TOKEN_FREE_ISSUE,
+            TOKEN_GRANT,
+            TOKEN_EXCHANGE,
+            TOKEN_CANCELLATION,
+            METER_CONFIGURATION_TOKEN,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Transaction Kind</b></em>' enumerators.

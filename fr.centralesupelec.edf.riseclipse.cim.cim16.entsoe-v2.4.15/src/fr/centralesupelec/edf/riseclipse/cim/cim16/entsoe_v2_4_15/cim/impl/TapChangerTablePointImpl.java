@@ -262,8 +262,9 @@ public class TapChangerTablePointImpl extends CimObjectWithIDImpl implements Tap
         b = newB;
         boolean oldBESet = bESet;
         bESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_TABLE_POINT__B, oldB, b, !oldBESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_TABLE_POINT__B, oldB, b,
+                    !oldBESet ) );
     }
 
     /**
@@ -277,8 +278,9 @@ public class TapChangerTablePointImpl extends CimObjectWithIDImpl implements Tap
         boolean oldBESet = bESet;
         b = B_EDEFAULT;
         bESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER_TABLE_POINT__B, oldB, B_EDEFAULT, oldBESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_TABLE_POINT__B, oldB,
+                    B_EDEFAULT, oldBESet ) );
     }
 
     /**
@@ -312,8 +314,9 @@ public class TapChangerTablePointImpl extends CimObjectWithIDImpl implements Tap
         g = newG;
         boolean oldGESet = gESet;
         gESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_TABLE_POINT__G, oldG, g, !oldGESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_TABLE_POINT__G, oldG, g,
+                    !oldGESet ) );
     }
 
     /**
@@ -327,8 +330,9 @@ public class TapChangerTablePointImpl extends CimObjectWithIDImpl implements Tap
         boolean oldGESet = gESet;
         g = G_EDEFAULT;
         gESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER_TABLE_POINT__G, oldG, G_EDEFAULT, oldGESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_TABLE_POINT__G, oldG,
+                    G_EDEFAULT, oldGESet ) );
     }
 
     /**
@@ -362,8 +366,9 @@ public class TapChangerTablePointImpl extends CimObjectWithIDImpl implements Tap
         r = newR;
         boolean oldRESet = rESet;
         rESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_TABLE_POINT__R, oldR, r, !oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_TABLE_POINT__R, oldR, r,
+                    !oldRESet ) );
     }
 
     /**
@@ -377,8 +382,9 @@ public class TapChangerTablePointImpl extends CimObjectWithIDImpl implements Tap
         boolean oldRESet = rESet;
         r = R_EDEFAULT;
         rESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER_TABLE_POINT__R, oldR, R_EDEFAULT, oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_TABLE_POINT__R, oldR,
+                    R_EDEFAULT, oldRESet ) );
     }
 
     /**
@@ -412,8 +418,9 @@ public class TapChangerTablePointImpl extends CimObjectWithIDImpl implements Tap
         ratio = newRatio;
         boolean oldRatioESet = ratioESet;
         ratioESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_TABLE_POINT__RATIO, oldRatio, ratio, !oldRatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_TABLE_POINT__RATIO, oldRatio,
+                    ratio, !oldRatioESet ) );
     }
 
     /**
@@ -427,8 +434,9 @@ public class TapChangerTablePointImpl extends CimObjectWithIDImpl implements Tap
         boolean oldRatioESet = ratioESet;
         ratio = RATIO_EDEFAULT;
         ratioESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER_TABLE_POINT__RATIO, oldRatio, RATIO_EDEFAULT, oldRatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_TABLE_POINT__RATIO,
+                    oldRatio, RATIO_EDEFAULT, oldRatioESet ) );
     }
 
     /**
@@ -462,8 +470,9 @@ public class TapChangerTablePointImpl extends CimObjectWithIDImpl implements Tap
         step = newStep;
         boolean oldStepESet = stepESet;
         stepESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_TABLE_POINT__STEP, oldStep, step, !oldStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_TABLE_POINT__STEP, oldStep,
+                    step, !oldStepESet ) );
     }
 
     /**
@@ -477,8 +486,9 @@ public class TapChangerTablePointImpl extends CimObjectWithIDImpl implements Tap
         boolean oldStepESet = stepESet;
         step = STEP_EDEFAULT;
         stepESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER_TABLE_POINT__STEP, oldStep, STEP_EDEFAULT, oldStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_TABLE_POINT__STEP, oldStep,
+                    STEP_EDEFAULT, oldStepESet ) );
     }
 
     /**
@@ -512,8 +522,9 @@ public class TapChangerTablePointImpl extends CimObjectWithIDImpl implements Tap
         x = newX;
         boolean oldXESet = xESet;
         xESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_TABLE_POINT__X, oldX, x, !oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_TABLE_POINT__X, oldX, x,
+                    !oldXESet ) );
     }
 
     /**
@@ -527,8 +538,9 @@ public class TapChangerTablePointImpl extends CimObjectWithIDImpl implements Tap
         boolean oldXESet = xESet;
         x = X_EDEFAULT;
         xESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER_TABLE_POINT__X, oldX, X_EDEFAULT, oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_TABLE_POINT__X, oldX,
+                    X_EDEFAULT, oldXESet ) );
     }
 
     /**
@@ -658,7 +670,7 @@ public class TapChangerTablePointImpl extends CimObjectWithIDImpl implements Tap
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (b: " );
         if( bESet )
             result.append( b );

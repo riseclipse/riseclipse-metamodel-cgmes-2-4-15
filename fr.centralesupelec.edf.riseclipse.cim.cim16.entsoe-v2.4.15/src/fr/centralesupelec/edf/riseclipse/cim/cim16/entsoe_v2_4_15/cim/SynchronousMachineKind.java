@@ -217,8 +217,15 @@ public enum SynchronousMachineKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final SynchronousMachineKind[] VALUES_ARRAY = new SynchronousMachineKind[] { GENERATOR, CONDENSER,
-            GENERATOR_OR_CONDENSER, MOTOR, GENERATOR_OR_MOTOR, MOTOR_OR_CONDENSER, GENERATOR_OR_CONDENSER_OR_MOTOR, };
+    private static final SynchronousMachineKind[] VALUES_ARRAY = new SynchronousMachineKind[] {
+            GENERATOR,
+            CONDENSER,
+            GENERATOR_OR_CONDENSER,
+            MOTOR,
+            GENERATOR_OR_MOTOR,
+            MOTOR_OR_CONDENSER,
+            GENERATOR_OR_CONDENSER_OR_MOTOR,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Synchronous Machine Kind</b></em>' enumerators.

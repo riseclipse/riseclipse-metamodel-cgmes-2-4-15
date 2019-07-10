@@ -1102,8 +1102,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         a0 = newA0;
         boolean oldA0ESet = a0ESet;
         a0ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__A0, oldA0, a0, !oldA0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__A0, oldA0, a0,
+                    !oldA0ESet ) );
     }
 
     /**
@@ -1117,8 +1118,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldA0ESet = a0ESet;
         a0 = A0_EDEFAULT;
         a0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__A0, oldA0, A0_EDEFAULT, oldA0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__A0, oldA0, A0_EDEFAULT,
+                    oldA0ESet ) );
     }
 
     /**
@@ -1152,8 +1154,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         a1 = newA1;
         boolean oldA1ESet = a1ESet;
         a1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__A1, oldA1, a1, !oldA1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__A1, oldA1, a1,
+                    !oldA1ESet ) );
     }
 
     /**
@@ -1167,8 +1170,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldA1ESet = a1ESet;
         a1 = A1_EDEFAULT;
         a1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__A1, oldA1, A1_EDEFAULT, oldA1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__A1, oldA1, A1_EDEFAULT,
+                    oldA1ESet ) );
     }
 
     /**
@@ -1202,8 +1206,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         a2 = newA2;
         boolean oldA2ESet = a2ESet;
         a2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__A2, oldA2, a2, !oldA2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__A2, oldA2, a2,
+                    !oldA2ESet ) );
     }
 
     /**
@@ -1217,8 +1222,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldA2ESet = a2ESet;
         a2 = A2_EDEFAULT;
         a2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__A2, oldA2, A2_EDEFAULT, oldA2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__A2, oldA2, A2_EDEFAULT,
+                    oldA2ESet ) );
     }
 
     /**
@@ -1252,8 +1258,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         a3 = newA3;
         boolean oldA3ESet = a3ESet;
         a3ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__A3, oldA3, a3, !oldA3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__A3, oldA3, a3,
+                    !oldA3ESet ) );
     }
 
     /**
@@ -1267,8 +1274,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldA3ESet = a3ESet;
         a3 = A3_EDEFAULT;
         a3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__A3, oldA3, A3_EDEFAULT, oldA3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__A3, oldA3, A3_EDEFAULT,
+                    oldA3ESet ) );
     }
 
     /**
@@ -1302,8 +1310,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         a4 = newA4;
         boolean oldA4ESet = a4ESet;
         a4ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__A4, oldA4, a4, !oldA4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__A4, oldA4, a4,
+                    !oldA4ESet ) );
     }
 
     /**
@@ -1317,8 +1326,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldA4ESet = a4ESet;
         a4 = A4_EDEFAULT;
         a4ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__A4, oldA4, A4_EDEFAULT, oldA4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__A4, oldA4, A4_EDEFAULT,
+                    oldA4ESet ) );
     }
 
     /**
@@ -1352,8 +1362,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         a5 = newA5;
         boolean oldA5ESet = a5ESet;
         a5ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__A5, oldA5, a5, !oldA5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__A5, oldA5, a5,
+                    !oldA5ESet ) );
     }
 
     /**
@@ -1367,8 +1378,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldA5ESet = a5ESet;
         a5 = A5_EDEFAULT;
         a5ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__A5, oldA5, A5_EDEFAULT, oldA5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__A5, oldA5, A5_EDEFAULT,
+                    oldA5ESet ) );
     }
 
     /**
@@ -1402,8 +1414,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         al = newAl;
         boolean oldAlESet = alESet;
         alESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__AL, oldAl, al, !oldAlESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__AL, oldAl, al,
+                    !oldAlESet ) );
     }
 
     /**
@@ -1417,8 +1430,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldAlESet = alESet;
         al = AL_EDEFAULT;
         alESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__AL, oldAl, AL_EDEFAULT, oldAlESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__AL, oldAl, AL_EDEFAULT,
+                    oldAlESet ) );
     }
 
     /**
@@ -1452,8 +1466,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         athres = newAthres;
         boolean oldAthresESet = athresESet;
         athresESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PSS_PTIST3__ATHRES, oldAthres, athres, !oldAthresESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__ATHRES, oldAthres, athres,
+                    !oldAthresESet ) );
     }
 
     /**
@@ -1467,8 +1482,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldAthresESet = athresESet;
         athres = ATHRES_EDEFAULT;
         athresESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__ATHRES, oldAthres, ATHRES_EDEFAULT, oldAthresESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__ATHRES, oldAthres,
+                    ATHRES_EDEFAULT, oldAthresESet ) );
     }
 
     /**
@@ -1502,8 +1518,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         b0 = newB0;
         boolean oldB0ESet = b0ESet;
         b0ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__B0, oldB0, b0, !oldB0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__B0, oldB0, b0,
+                    !oldB0ESet ) );
     }
 
     /**
@@ -1517,8 +1534,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldB0ESet = b0ESet;
         b0 = B0_EDEFAULT;
         b0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__B0, oldB0, B0_EDEFAULT, oldB0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__B0, oldB0, B0_EDEFAULT,
+                    oldB0ESet ) );
     }
 
     /**
@@ -1552,8 +1570,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         b1 = newB1;
         boolean oldB1ESet = b1ESet;
         b1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__B1, oldB1, b1, !oldB1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__B1, oldB1, b1,
+                    !oldB1ESet ) );
     }
 
     /**
@@ -1567,8 +1586,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldB1ESet = b1ESet;
         b1 = B1_EDEFAULT;
         b1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__B1, oldB1, B1_EDEFAULT, oldB1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__B1, oldB1, B1_EDEFAULT,
+                    oldB1ESet ) );
     }
 
     /**
@@ -1602,8 +1622,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         b2 = newB2;
         boolean oldB2ESet = b2ESet;
         b2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__B2, oldB2, b2, !oldB2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__B2, oldB2, b2,
+                    !oldB2ESet ) );
     }
 
     /**
@@ -1617,8 +1638,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldB2ESet = b2ESet;
         b2 = B2_EDEFAULT;
         b2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__B2, oldB2, B2_EDEFAULT, oldB2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__B2, oldB2, B2_EDEFAULT,
+                    oldB2ESet ) );
     }
 
     /**
@@ -1652,8 +1674,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         b3 = newB3;
         boolean oldB3ESet = b3ESet;
         b3ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__B3, oldB3, b3, !oldB3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__B3, oldB3, b3,
+                    !oldB3ESet ) );
     }
 
     /**
@@ -1667,8 +1690,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldB3ESet = b3ESet;
         b3 = B3_EDEFAULT;
         b3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__B3, oldB3, B3_EDEFAULT, oldB3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__B3, oldB3, B3_EDEFAULT,
+                    oldB3ESet ) );
     }
 
     /**
@@ -1702,8 +1726,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         b4 = newB4;
         boolean oldB4ESet = b4ESet;
         b4ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__B4, oldB4, b4, !oldB4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__B4, oldB4, b4,
+                    !oldB4ESet ) );
     }
 
     /**
@@ -1717,8 +1742,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldB4ESet = b4ESet;
         b4 = B4_EDEFAULT;
         b4ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__B4, oldB4, B4_EDEFAULT, oldB4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__B4, oldB4, B4_EDEFAULT,
+                    oldB4ESet ) );
     }
 
     /**
@@ -1752,8 +1778,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         b5 = newB5;
         boolean oldB5ESet = b5ESet;
         b5ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__B5, oldB5, b5, !oldB5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__B5, oldB5, b5,
+                    !oldB5ESet ) );
     }
 
     /**
@@ -1767,8 +1794,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldB5ESet = b5ESet;
         b5 = B5_EDEFAULT;
         b5ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__B5, oldB5, B5_EDEFAULT, oldB5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__B5, oldB5, B5_EDEFAULT,
+                    oldB5ESet ) );
     }
 
     /**
@@ -1802,8 +1830,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         dl = newDl;
         boolean oldDlESet = dlESet;
         dlESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__DL, oldDl, dl, !oldDlESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__DL, oldDl, dl,
+                    !oldDlESet ) );
     }
 
     /**
@@ -1817,8 +1846,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldDlESet = dlESet;
         dl = DL_EDEFAULT;
         dlESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__DL, oldDl, DL_EDEFAULT, oldDlESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__DL, oldDl, DL_EDEFAULT,
+                    oldDlESet ) );
     }
 
     /**
@@ -1852,8 +1882,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         dtc = newDtc;
         boolean oldDtcESet = dtcESet;
         dtcESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__DTC, oldDtc, dtc, !oldDtcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__DTC, oldDtc, dtc,
+                    !oldDtcESet ) );
     }
 
     /**
@@ -1867,8 +1898,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldDtcESet = dtcESet;
         dtc = DTC_EDEFAULT;
         dtcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__DTC, oldDtc, DTC_EDEFAULT, oldDtcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__DTC, oldDtc, DTC_EDEFAULT,
+                    oldDtcESet ) );
     }
 
     /**
@@ -1902,8 +1934,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         dtf = newDtf;
         boolean oldDtfESet = dtfESet;
         dtfESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__DTF, oldDtf, dtf, !oldDtfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__DTF, oldDtf, dtf,
+                    !oldDtfESet ) );
     }
 
     /**
@@ -1917,8 +1950,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldDtfESet = dtfESet;
         dtf = DTF_EDEFAULT;
         dtfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__DTF, oldDtf, DTF_EDEFAULT, oldDtfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__DTF, oldDtf, DTF_EDEFAULT,
+                    oldDtfESet ) );
     }
 
     /**
@@ -1952,8 +1986,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         dtp = newDtp;
         boolean oldDtpESet = dtpESet;
         dtpESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__DTP, oldDtp, dtp, !oldDtpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__DTP, oldDtp, dtp,
+                    !oldDtpESet ) );
     }
 
     /**
@@ -1967,8 +2002,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldDtpESet = dtpESet;
         dtp = DTP_EDEFAULT;
         dtpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__DTP, oldDtp, DTP_EDEFAULT, oldDtpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__DTP, oldDtp, DTP_EDEFAULT,
+                    oldDtpESet ) );
     }
 
     /**
@@ -2002,8 +2038,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         isw = newIsw;
         boolean oldIswESet = iswESet;
         iswESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__ISW, oldIsw, isw, !oldIswESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__ISW, oldIsw, isw,
+                    !oldIswESet ) );
     }
 
     /**
@@ -2017,8 +2054,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldIswESet = iswESet;
         isw = ISW_EDEFAULT;
         iswESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__ISW, oldIsw, ISW_EDEFAULT, oldIswESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__ISW, oldIsw, ISW_EDEFAULT,
+                    oldIswESet ) );
     }
 
     /**
@@ -2067,8 +2105,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldKESet = kESet;
         k = K_EDEFAULT;
         kESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__K, oldK, K_EDEFAULT, oldKESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__K, oldK, K_EDEFAULT,
+                    oldKESet ) );
     }
 
     /**
@@ -2102,8 +2141,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         lthres = newLthres;
         boolean oldLthresESet = lthresESet;
         lthresESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PSS_PTIST3__LTHRES, oldLthres, lthres, !oldLthresESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__LTHRES, oldLthres, lthres,
+                    !oldLthresESet ) );
     }
 
     /**
@@ -2117,8 +2157,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldLthresESet = lthresESet;
         lthres = LTHRES_EDEFAULT;
         lthresESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__LTHRES, oldLthres, LTHRES_EDEFAULT, oldLthresESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__LTHRES, oldLthres,
+                    LTHRES_EDEFAULT, oldLthresESet ) );
     }
 
     /**
@@ -2167,8 +2208,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldMESet = mESet;
         m = M_EDEFAULT;
         mESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__M, oldM, M_EDEFAULT, oldMESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__M, oldM, M_EDEFAULT,
+                    oldMESet ) );
     }
 
     /**
@@ -2202,8 +2244,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         nav = newNav;
         boolean oldNavESet = navESet;
         navESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__NAV, oldNav, nav, !oldNavESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__NAV, oldNav, nav,
+                    !oldNavESet ) );
     }
 
     /**
@@ -2217,8 +2260,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldNavESet = navESet;
         nav = NAV_EDEFAULT;
         navESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__NAV, oldNav, NAV_EDEFAULT, oldNavESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__NAV, oldNav, NAV_EDEFAULT,
+                    oldNavESet ) );
     }
 
     /**
@@ -2252,8 +2296,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         ncl = newNcl;
         boolean oldNclESet = nclESet;
         nclESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__NCL, oldNcl, ncl, !oldNclESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__NCL, oldNcl, ncl,
+                    !oldNclESet ) );
     }
 
     /**
@@ -2267,8 +2312,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldNclESet = nclESet;
         ncl = NCL_EDEFAULT;
         nclESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__NCL, oldNcl, NCL_EDEFAULT, oldNclESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__NCL, oldNcl, NCL_EDEFAULT,
+                    oldNclESet ) );
     }
 
     /**
@@ -2302,8 +2348,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         ncr = newNcr;
         boolean oldNcrESet = ncrESet;
         ncrESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__NCR, oldNcr, ncr, !oldNcrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__NCR, oldNcr, ncr,
+                    !oldNcrESet ) );
     }
 
     /**
@@ -2317,8 +2364,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldNcrESet = ncrESet;
         ncr = NCR_EDEFAULT;
         ncrESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__NCR, oldNcr, NCR_EDEFAULT, oldNcrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__NCR, oldNcr, NCR_EDEFAULT,
+                    oldNcrESet ) );
     }
 
     /**
@@ -2352,8 +2400,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         pmin = newPmin;
         boolean oldPminESet = pminESet;
         pminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PSS_PTIST3__PMIN, oldPmin, pmin, !oldPminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__PMIN, oldPmin, pmin,
+                    !oldPminESet ) );
     }
 
     /**
@@ -2367,8 +2416,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldPminESet = pminESet;
         pmin = PMIN_EDEFAULT;
         pminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__PMIN, oldPmin, PMIN_EDEFAULT, oldPminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__PMIN, oldPmin,
+                    PMIN_EDEFAULT, oldPminESet ) );
     }
 
     /**
@@ -2402,8 +2452,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         t1 = newT1;
         boolean oldT1ESet = t1ESet;
         t1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__T1, oldT1, t1, !oldT1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__T1, oldT1, t1,
+                    !oldT1ESet ) );
     }
 
     /**
@@ -2417,8 +2468,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldT1ESet = t1ESet;
         t1 = T1_EDEFAULT;
         t1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__T1, oldT1, T1_EDEFAULT, oldT1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__T1, oldT1, T1_EDEFAULT,
+                    oldT1ESet ) );
     }
 
     /**
@@ -2452,8 +2504,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         t2 = newT2;
         boolean oldT2ESet = t2ESet;
         t2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__T2, oldT2, t2, !oldT2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__T2, oldT2, t2,
+                    !oldT2ESet ) );
     }
 
     /**
@@ -2467,8 +2520,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldT2ESet = t2ESet;
         t2 = T2_EDEFAULT;
         t2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__T2, oldT2, T2_EDEFAULT, oldT2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__T2, oldT2, T2_EDEFAULT,
+                    oldT2ESet ) );
     }
 
     /**
@@ -2502,8 +2556,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         t3 = newT3;
         boolean oldT3ESet = t3ESet;
         t3ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__T3, oldT3, t3, !oldT3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__T3, oldT3, t3,
+                    !oldT3ESet ) );
     }
 
     /**
@@ -2517,8 +2572,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldT3ESet = t3ESet;
         t3 = T3_EDEFAULT;
         t3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__T3, oldT3, T3_EDEFAULT, oldT3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__T3, oldT3, T3_EDEFAULT,
+                    oldT3ESet ) );
     }
 
     /**
@@ -2552,8 +2608,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         t4 = newT4;
         boolean oldT4ESet = t4ESet;
         t4ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__T4, oldT4, t4, !oldT4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__T4, oldT4, t4,
+                    !oldT4ESet ) );
     }
 
     /**
@@ -2567,8 +2624,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldT4ESet = t4ESet;
         t4 = T4_EDEFAULT;
         t4ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__T4, oldT4, T4_EDEFAULT, oldT4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__T4, oldT4, T4_EDEFAULT,
+                    oldT4ESet ) );
     }
 
     /**
@@ -2602,8 +2660,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         t5 = newT5;
         boolean oldT5ESet = t5ESet;
         t5ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__T5, oldT5, t5, !oldT5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__T5, oldT5, t5,
+                    !oldT5ESet ) );
     }
 
     /**
@@ -2617,8 +2676,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldT5ESet = t5ESet;
         t5 = T5_EDEFAULT;
         t5ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__T5, oldT5, T5_EDEFAULT, oldT5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__T5, oldT5, T5_EDEFAULT,
+                    oldT5ESet ) );
     }
 
     /**
@@ -2652,8 +2712,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         t6 = newT6;
         boolean oldT6ESet = t6ESet;
         t6ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__T6, oldT6, t6, !oldT6ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__T6, oldT6, t6,
+                    !oldT6ESet ) );
     }
 
     /**
@@ -2667,8 +2728,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldT6ESet = t6ESet;
         t6 = T6_EDEFAULT;
         t6ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__T6, oldT6, T6_EDEFAULT, oldT6ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__T6, oldT6, T6_EDEFAULT,
+                    oldT6ESet ) );
     }
 
     /**
@@ -2702,8 +2764,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         tf = newTf;
         boolean oldTfESet = tfESet;
         tfESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__TF, oldTf, tf, !oldTfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__TF, oldTf, tf,
+                    !oldTfESet ) );
     }
 
     /**
@@ -2717,8 +2780,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldTfESet = tfESet;
         tf = TF_EDEFAULT;
         tfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__TF, oldTf, TF_EDEFAULT, oldTfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__TF, oldTf, TF_EDEFAULT,
+                    oldTfESet ) );
     }
 
     /**
@@ -2752,8 +2816,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         tp = newTp;
         boolean oldTpESet = tpESet;
         tpESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__TP, oldTp, tp, !oldTpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_PTIST3__TP, oldTp, tp,
+                    !oldTpESet ) );
     }
 
     /**
@@ -2767,8 +2832,9 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
         boolean oldTpESet = tpESet;
         tp = TP_EDEFAULT;
         tpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_PTIST3__TP, oldTp, TP_EDEFAULT, oldTpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_PTIST3__TP, oldTp, TP_EDEFAULT,
+                    oldTpESet ) );
     }
 
     /**
@@ -3178,7 +3244,7 @@ public class PssPTIST3Impl extends PowerSystemStabilizerDynamicsImpl implements 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (a0: " );
         if( a0ESet )
             result.append( a0 );

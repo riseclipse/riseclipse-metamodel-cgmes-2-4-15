@@ -157,8 +157,9 @@ public class TagActionImpl extends SwitchingStepImpl implements TagAction {
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAG_ACTION__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAG_ACTION__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -172,8 +173,9 @@ public class TagActionImpl extends SwitchingStepImpl implements TagAction {
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAG_ACTION__KIND, oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAG_ACTION__KIND, oldKind,
+                    KIND_EDEFAULT, oldKindESet ) );
     }
 
     /**
@@ -197,8 +199,9 @@ public class TagActionImpl extends SwitchingStepImpl implements TagAction {
             InternalEObject oldOperationTag = ( InternalEObject ) operationTag;
             operationTag = ( OperationTag ) eResolveProxy( oldOperationTag );
             if( operationTag != oldOperationTag ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.TAG_ACTION__OPERATION_TAG, oldOperationTag, operationTag ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.TAG_ACTION__OPERATION_TAG,
+                            oldOperationTag, operationTag ) );
             }
         }
         return operationTag;
@@ -243,18 +246,21 @@ public class TagActionImpl extends SwitchingStepImpl implements TagAction {
     public void setOperationTag( OperationTag newOperationTag ) {
         if( newOperationTag != operationTag ) {
             NotificationChain msgs = null;
-            if( operationTag != null ) msgs = ( ( InternalEObject ) operationTag ).eInverseRemove( this,
-                    CimPackage.OPERATION_TAG__TAG_ACTION, OperationTag.class, msgs );
-            if( newOperationTag != null ) msgs = ( ( InternalEObject ) newOperationTag ).eInverseAdd( this,
-                    CimPackage.OPERATION_TAG__TAG_ACTION, OperationTag.class, msgs );
+            if( operationTag != null )
+                msgs = ( ( InternalEObject ) operationTag ).eInverseRemove( this, CimPackage.OPERATION_TAG__TAG_ACTION,
+                        OperationTag.class, msgs );
+            if( newOperationTag != null )
+                msgs = ( ( InternalEObject ) newOperationTag ).eInverseAdd( this, CimPackage.OPERATION_TAG__TAG_ACTION,
+                        OperationTag.class, msgs );
             msgs = basicSetOperationTag( newOperationTag, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldOperationTagESet = operationTagESet;
             operationTagESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TAG_ACTION__OPERATION_TAG, newOperationTag, newOperationTag, !oldOperationTagESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAG_ACTION__OPERATION_TAG,
+                        newOperationTag, newOperationTag, !oldOperationTagESet ) );
         }
     }
 
@@ -296,8 +302,9 @@ public class TagActionImpl extends SwitchingStepImpl implements TagAction {
         else {
             boolean oldOperationTagESet = operationTagESet;
             operationTagESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TAG_ACTION__OPERATION_TAG, null, null, oldOperationTagESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAG_ACTION__OPERATION_TAG, null,
+                        null, oldOperationTagESet ) );
         }
     }
 
@@ -353,10 +360,12 @@ public class TagActionImpl extends SwitchingStepImpl implements TagAction {
     public void setSwitchingStepGroup( SwitchingStepGroup newSwitchingStepGroup ) {
         if( newSwitchingStepGroup != switchingStepGroup ) {
             NotificationChain msgs = null;
-            if( switchingStepGroup != null ) msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
-                    CimPackage.SWITCHING_STEP_GROUP__TAG_ACTIONS, SwitchingStepGroup.class, msgs );
-            if( newSwitchingStepGroup != null ) msgs = ( ( InternalEObject ) newSwitchingStepGroup ).eInverseAdd( this,
-                    CimPackage.SWITCHING_STEP_GROUP__TAG_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( switchingStepGroup != null )
+                msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
+                        CimPackage.SWITCHING_STEP_GROUP__TAG_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( newSwitchingStepGroup != null )
+                msgs = ( ( InternalEObject ) newSwitchingStepGroup ).eInverseAdd( this,
+                        CimPackage.SWITCHING_STEP_GROUP__TAG_ACTIONS, SwitchingStepGroup.class, msgs );
             msgs = basicSetSwitchingStepGroup( newSwitchingStepGroup, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -408,8 +417,9 @@ public class TagActionImpl extends SwitchingStepImpl implements TagAction {
         else {
             boolean oldSwitchingStepGroupESet = switchingStepGroupESet;
             switchingStepGroupESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TAG_ACTION__SWITCHING_STEP_GROUP, null, null, oldSwitchingStepGroupESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAG_ACTION__SWITCHING_STEP_GROUP,
+                        null, null, oldSwitchingStepGroupESet ) );
         }
     }
 
@@ -432,12 +442,14 @@ public class TagActionImpl extends SwitchingStepImpl implements TagAction {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.TAG_ACTION__OPERATION_TAG:
-            if( operationTag != null ) msgs = ( ( InternalEObject ) operationTag ).eInverseRemove( this,
-                    CimPackage.OPERATION_TAG__TAG_ACTION, OperationTag.class, msgs );
+            if( operationTag != null )
+                msgs = ( ( InternalEObject ) operationTag ).eInverseRemove( this, CimPackage.OPERATION_TAG__TAG_ACTION,
+                        OperationTag.class, msgs );
             return basicSetOperationTag( ( OperationTag ) otherEnd, msgs );
         case CimPackage.TAG_ACTION__SWITCHING_STEP_GROUP:
-            if( switchingStepGroup != null ) msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
-                    CimPackage.SWITCHING_STEP_GROUP__TAG_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( switchingStepGroup != null )
+                msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
+                        CimPackage.SWITCHING_STEP_GROUP__TAG_ACTIONS, SwitchingStepGroup.class, msgs );
             return basicSetSwitchingStepGroup( ( SwitchingStepGroup ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -547,7 +559,7 @@ public class TagActionImpl extends SwitchingStepImpl implements TagAction {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kind: " );
         if( kindESet )
             result.append( kind );

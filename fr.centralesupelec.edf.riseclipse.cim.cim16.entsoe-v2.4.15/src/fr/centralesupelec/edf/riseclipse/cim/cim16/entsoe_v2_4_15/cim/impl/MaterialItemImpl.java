@@ -145,18 +145,21 @@ public class MaterialItemImpl extends IdentifiedObjectImpl implements MaterialIt
     public void setQuantity( IntegerQuantity newQuantity ) {
         if( newQuantity != quantity ) {
             NotificationChain msgs = null;
-            if( quantity != null ) msgs = ( ( InternalEObject ) quantity ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.MATERIAL_ITEM__QUANTITY, null, msgs );
-            if( newQuantity != null ) msgs = ( ( InternalEObject ) newQuantity ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.MATERIAL_ITEM__QUANTITY, null, msgs );
+            if( quantity != null )
+                msgs = ( ( InternalEObject ) quantity ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.MATERIAL_ITEM__QUANTITY, null, msgs );
+            if( newQuantity != null )
+                msgs = ( ( InternalEObject ) newQuantity ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.MATERIAL_ITEM__QUANTITY, null, msgs );
             msgs = basicSetQuantity( newQuantity, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldQuantityESet = quantityESet;
             quantityESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.MATERIAL_ITEM__QUANTITY, newQuantity, newQuantity, !oldQuantityESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MATERIAL_ITEM__QUANTITY, newQuantity,
+                        newQuantity, !oldQuantityESet ) );
         }
     }
 
@@ -198,8 +201,9 @@ public class MaterialItemImpl extends IdentifiedObjectImpl implements MaterialIt
         else {
             boolean oldQuantityESet = quantityESet;
             quantityESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.MATERIAL_ITEM__QUANTITY, null, null, oldQuantityESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MATERIAL_ITEM__QUANTITY, null,
+                        null, oldQuantityESet ) );
         }
     }
 
@@ -253,18 +257,21 @@ public class MaterialItemImpl extends IdentifiedObjectImpl implements MaterialIt
     public void setWorkTask( WorkTask newWorkTask ) {
         if( newWorkTask != workTask ) {
             NotificationChain msgs = null;
-            if( workTask != null ) msgs = ( ( InternalEObject ) workTask ).eInverseRemove( this,
-                    CimPackage.WORK_TASK__MATERIAL_ITEMS, WorkTask.class, msgs );
-            if( newWorkTask != null ) msgs = ( ( InternalEObject ) newWorkTask ).eInverseAdd( this,
-                    CimPackage.WORK_TASK__MATERIAL_ITEMS, WorkTask.class, msgs );
+            if( workTask != null )
+                msgs = ( ( InternalEObject ) workTask ).eInverseRemove( this, CimPackage.WORK_TASK__MATERIAL_ITEMS,
+                        WorkTask.class, msgs );
+            if( newWorkTask != null )
+                msgs = ( ( InternalEObject ) newWorkTask ).eInverseAdd( this, CimPackage.WORK_TASK__MATERIAL_ITEMS,
+                        WorkTask.class, msgs );
             msgs = basicSetWorkTask( newWorkTask, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWorkTaskESet = workTaskESet;
             workTaskESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.MATERIAL_ITEM__WORK_TASK, newWorkTask, newWorkTask, !oldWorkTaskESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MATERIAL_ITEM__WORK_TASK,
+                        newWorkTask, newWorkTask, !oldWorkTaskESet ) );
         }
     }
 
@@ -306,8 +313,9 @@ public class MaterialItemImpl extends IdentifiedObjectImpl implements MaterialIt
         else {
             boolean oldWorkTaskESet = workTaskESet;
             workTaskESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.MATERIAL_ITEM__WORK_TASK, null, null, oldWorkTaskESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MATERIAL_ITEM__WORK_TASK, null,
+                        null, oldWorkTaskESet ) );
         }
     }
 
@@ -330,8 +338,9 @@ public class MaterialItemImpl extends IdentifiedObjectImpl implements MaterialIt
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.MATERIAL_ITEM__WORK_TASK:
-            if( workTask != null ) msgs = ( ( InternalEObject ) workTask ).eInverseRemove( this,
-                    CimPackage.WORK_TASK__MATERIAL_ITEMS, WorkTask.class, msgs );
+            if( workTask != null )
+                msgs = ( ( InternalEObject ) workTask ).eInverseRemove( this, CimPackage.WORK_TASK__MATERIAL_ITEMS,
+                        WorkTask.class, msgs );
             return basicSetWorkTask( ( WorkTask ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

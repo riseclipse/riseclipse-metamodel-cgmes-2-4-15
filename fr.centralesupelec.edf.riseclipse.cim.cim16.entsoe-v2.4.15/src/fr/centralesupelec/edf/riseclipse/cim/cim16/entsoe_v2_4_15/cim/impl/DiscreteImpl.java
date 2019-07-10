@@ -214,8 +214,9 @@ public class DiscreteImpl extends MeasurementImpl implements Discrete {
         maxValue = newMaxValue;
         boolean oldMaxValueESet = maxValueESet;
         maxValueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISCRETE__MAX_VALUE, oldMaxValue, maxValue, !oldMaxValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISCRETE__MAX_VALUE, oldMaxValue,
+                    maxValue, !oldMaxValueESet ) );
     }
 
     /**
@@ -229,8 +230,9 @@ public class DiscreteImpl extends MeasurementImpl implements Discrete {
         boolean oldMaxValueESet = maxValueESet;
         maxValue = MAX_VALUE_EDEFAULT;
         maxValueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISCRETE__MAX_VALUE, oldMaxValue, MAX_VALUE_EDEFAULT, oldMaxValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISCRETE__MAX_VALUE, oldMaxValue,
+                    MAX_VALUE_EDEFAULT, oldMaxValueESet ) );
     }
 
     /**
@@ -264,8 +266,9 @@ public class DiscreteImpl extends MeasurementImpl implements Discrete {
         minValue = newMinValue;
         boolean oldMinValueESet = minValueESet;
         minValueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISCRETE__MIN_VALUE, oldMinValue, minValue, !oldMinValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISCRETE__MIN_VALUE, oldMinValue,
+                    minValue, !oldMinValueESet ) );
     }
 
     /**
@@ -279,8 +282,9 @@ public class DiscreteImpl extends MeasurementImpl implements Discrete {
         boolean oldMinValueESet = minValueESet;
         minValue = MIN_VALUE_EDEFAULT;
         minValueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISCRETE__MIN_VALUE, oldMinValue, MIN_VALUE_EDEFAULT, oldMinValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISCRETE__MIN_VALUE, oldMinValue,
+                    MIN_VALUE_EDEFAULT, oldMinValueESet ) );
     }
 
     /**
@@ -314,8 +318,9 @@ public class DiscreteImpl extends MeasurementImpl implements Discrete {
         normalValue = newNormalValue;
         boolean oldNormalValueESet = normalValueESet;
         normalValueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISCRETE__NORMAL_VALUE, oldNormalValue, normalValue, !oldNormalValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISCRETE__NORMAL_VALUE, oldNormalValue,
+                    normalValue, !oldNormalValueESet ) );
     }
 
     /**
@@ -329,8 +334,9 @@ public class DiscreteImpl extends MeasurementImpl implements Discrete {
         boolean oldNormalValueESet = normalValueESet;
         normalValue = NORMAL_VALUE_EDEFAULT;
         normalValueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISCRETE__NORMAL_VALUE, oldNormalValue, NORMAL_VALUE_EDEFAULT, oldNormalValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISCRETE__NORMAL_VALUE, oldNormalValue,
+                    NORMAL_VALUE_EDEFAULT, oldNormalValueESet ) );
     }
 
     /**
@@ -383,18 +389,21 @@ public class DiscreteImpl extends MeasurementImpl implements Discrete {
     public void setValueAliasSet( ValueAliasSet newValueAliasSet ) {
         if( newValueAliasSet != valueAliasSet ) {
             NotificationChain msgs = null;
-            if( valueAliasSet != null ) msgs = ( ( InternalEObject ) valueAliasSet ).eInverseRemove( this,
-                    CimPackage.VALUE_ALIAS_SET__DISCRETES, ValueAliasSet.class, msgs );
-            if( newValueAliasSet != null ) msgs = ( ( InternalEObject ) newValueAliasSet ).eInverseAdd( this,
-                    CimPackage.VALUE_ALIAS_SET__DISCRETES, ValueAliasSet.class, msgs );
+            if( valueAliasSet != null )
+                msgs = ( ( InternalEObject ) valueAliasSet ).eInverseRemove( this,
+                        CimPackage.VALUE_ALIAS_SET__DISCRETES, ValueAliasSet.class, msgs );
+            if( newValueAliasSet != null )
+                msgs = ( ( InternalEObject ) newValueAliasSet ).eInverseAdd( this,
+                        CimPackage.VALUE_ALIAS_SET__DISCRETES, ValueAliasSet.class, msgs );
             msgs = basicSetValueAliasSet( newValueAliasSet, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldValueAliasSetESet = valueAliasSetESet;
             valueAliasSetESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.DISCRETE__VALUE_ALIAS_SET, newValueAliasSet, newValueAliasSet, !oldValueAliasSetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISCRETE__VALUE_ALIAS_SET,
+                        newValueAliasSet, newValueAliasSet, !oldValueAliasSetESet ) );
         }
     }
 
@@ -436,8 +445,9 @@ public class DiscreteImpl extends MeasurementImpl implements Discrete {
         else {
             boolean oldValueAliasSetESet = valueAliasSetESet;
             valueAliasSetESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.DISCRETE__VALUE_ALIAS_SET, null, null, oldValueAliasSetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISCRETE__VALUE_ALIAS_SET, null,
+                        null, oldValueAliasSetESet ) );
         }
     }
 
@@ -495,8 +505,9 @@ public class DiscreteImpl extends MeasurementImpl implements Discrete {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.DISCRETE__VALUE_ALIAS_SET:
-            if( valueAliasSet != null ) msgs = ( ( InternalEObject ) valueAliasSet ).eInverseRemove( this,
-                    CimPackage.VALUE_ALIAS_SET__DISCRETES, ValueAliasSet.class, msgs );
+            if( valueAliasSet != null )
+                msgs = ( ( InternalEObject ) valueAliasSet ).eInverseRemove( this,
+                        CimPackage.VALUE_ALIAS_SET__DISCRETES, ValueAliasSet.class, msgs );
             return basicSetValueAliasSet( ( ValueAliasSet ) otherEnd, msgs );
         case CimPackage.DISCRETE__DISCRETE_VALUES:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getDiscreteValues() )
@@ -630,7 +641,7 @@ public class DiscreteImpl extends MeasurementImpl implements Discrete {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (maxValue: " );
         if( maxValueESet )
             result.append( maxValue );

@@ -117,8 +117,11 @@ public enum PetersenCoilModeKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final PetersenCoilModeKind[] VALUES_ARRAY = new PetersenCoilModeKind[] { FIXED, MANUAL,
-            AUTOMATIC_POSITIONING, };
+    private static final PetersenCoilModeKind[] VALUES_ARRAY = new PetersenCoilModeKind[] {
+            FIXED,
+            MANUAL,
+            AUTOMATIC_POSITIONING,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Petersen Coil Mode Kind</b></em>' enumerators.

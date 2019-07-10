@@ -95,8 +95,9 @@ public class JumperImpl extends SwitchImpl implements Jumper {
             InternalEObject oldJumperAction = ( InternalEObject ) jumperAction;
             jumperAction = ( JumperAction ) eResolveProxy( oldJumperAction );
             if( jumperAction != oldJumperAction ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.JUMPER__JUMPER_ACTION, oldJumperAction, jumperAction ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.JUMPER__JUMPER_ACTION,
+                            oldJumperAction, jumperAction ) );
             }
         }
         return jumperAction;
@@ -141,18 +142,21 @@ public class JumperImpl extends SwitchImpl implements Jumper {
     public void setJumperAction( JumperAction newJumperAction ) {
         if( newJumperAction != jumperAction ) {
             NotificationChain msgs = null;
-            if( jumperAction != null ) msgs = ( ( InternalEObject ) jumperAction ).eInverseRemove( this,
-                    CimPackage.JUMPER_ACTION__JUMPER, JumperAction.class, msgs );
-            if( newJumperAction != null ) msgs = ( ( InternalEObject ) newJumperAction ).eInverseAdd( this,
-                    CimPackage.JUMPER_ACTION__JUMPER, JumperAction.class, msgs );
+            if( jumperAction != null )
+                msgs = ( ( InternalEObject ) jumperAction ).eInverseRemove( this, CimPackage.JUMPER_ACTION__JUMPER,
+                        JumperAction.class, msgs );
+            if( newJumperAction != null )
+                msgs = ( ( InternalEObject ) newJumperAction ).eInverseAdd( this, CimPackage.JUMPER_ACTION__JUMPER,
+                        JumperAction.class, msgs );
             msgs = basicSetJumperAction( newJumperAction, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldJumperActionESet = jumperActionESet;
             jumperActionESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.JUMPER__JUMPER_ACTION, newJumperAction, newJumperAction, !oldJumperActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.JUMPER__JUMPER_ACTION,
+                        newJumperAction, newJumperAction, !oldJumperActionESet ) );
         }
     }
 
@@ -194,8 +198,9 @@ public class JumperImpl extends SwitchImpl implements Jumper {
         else {
             boolean oldJumperActionESet = jumperActionESet;
             jumperActionESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.JUMPER__JUMPER_ACTION, null, null, oldJumperActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.JUMPER__JUMPER_ACTION, null, null,
+                        oldJumperActionESet ) );
         }
     }
 
@@ -218,8 +223,9 @@ public class JumperImpl extends SwitchImpl implements Jumper {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.JUMPER__JUMPER_ACTION:
-            if( jumperAction != null ) msgs = ( ( InternalEObject ) jumperAction ).eInverseRemove( this,
-                    CimPackage.JUMPER_ACTION__JUMPER, JumperAction.class, msgs );
+            if( jumperAction != null )
+                msgs = ( ( InternalEObject ) jumperAction ).eInverseRemove( this, CimPackage.JUMPER_ACTION__JUMPER,
+                        JumperAction.class, msgs );
             return basicSetJumperAction( ( JumperAction ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

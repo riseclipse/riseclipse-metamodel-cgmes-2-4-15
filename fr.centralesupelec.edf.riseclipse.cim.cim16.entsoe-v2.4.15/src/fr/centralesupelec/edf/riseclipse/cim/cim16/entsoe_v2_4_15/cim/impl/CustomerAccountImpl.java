@@ -196,8 +196,9 @@ public class CustomerAccountImpl extends DocumentImpl implements CustomerAccount
         billingCycle = newBillingCycle;
         boolean oldBillingCycleESet = billingCycleESet;
         billingCycleESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CUSTOMER_ACCOUNT__BILLING_CYCLE, oldBillingCycle, billingCycle, !oldBillingCycleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER_ACCOUNT__BILLING_CYCLE,
+                    oldBillingCycle, billingCycle, !oldBillingCycleESet ) );
     }
 
     /**
@@ -247,8 +248,9 @@ public class CustomerAccountImpl extends DocumentImpl implements CustomerAccount
         budgetBill = newBudgetBill;
         boolean oldBudgetBillESet = budgetBillESet;
         budgetBillESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CUSTOMER_ACCOUNT__BUDGET_BILL, oldBudgetBill, budgetBill, !oldBudgetBillESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER_ACCOUNT__BUDGET_BILL,
+                    oldBudgetBill, budgetBill, !oldBudgetBillESet ) );
     }
 
     /**
@@ -262,8 +264,9 @@ public class CustomerAccountImpl extends DocumentImpl implements CustomerAccount
         boolean oldBudgetBillESet = budgetBillESet;
         budgetBill = BUDGET_BILL_EDEFAULT;
         budgetBillESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CUSTOMER_ACCOUNT__BUDGET_BILL, oldBudgetBill, BUDGET_BILL_EDEFAULT, oldBudgetBillESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUSTOMER_ACCOUNT__BUDGET_BILL,
+                    oldBudgetBill, BUDGET_BILL_EDEFAULT, oldBudgetBillESet ) );
     }
 
     /**
@@ -316,18 +319,21 @@ public class CustomerAccountImpl extends DocumentImpl implements CustomerAccount
     public void setCustomer( Customer newCustomer ) {
         if( newCustomer != customer ) {
             NotificationChain msgs = null;
-            if( customer != null ) msgs = ( ( InternalEObject ) customer ).eInverseRemove( this,
-                    CimPackage.CUSTOMER__CUSTOMER_ACCOUNTS, Customer.class, msgs );
-            if( newCustomer != null ) msgs = ( ( InternalEObject ) newCustomer ).eInverseAdd( this,
-                    CimPackage.CUSTOMER__CUSTOMER_ACCOUNTS, Customer.class, msgs );
+            if( customer != null )
+                msgs = ( ( InternalEObject ) customer ).eInverseRemove( this, CimPackage.CUSTOMER__CUSTOMER_ACCOUNTS,
+                        Customer.class, msgs );
+            if( newCustomer != null )
+                msgs = ( ( InternalEObject ) newCustomer ).eInverseAdd( this, CimPackage.CUSTOMER__CUSTOMER_ACCOUNTS,
+                        Customer.class, msgs );
             msgs = basicSetCustomer( newCustomer, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCustomerESet = customerESet;
             customerESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CUSTOMER_ACCOUNT__CUSTOMER, newCustomer, newCustomer, !oldCustomerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER_ACCOUNT__CUSTOMER,
+                        newCustomer, newCustomer, !oldCustomerESet ) );
         }
     }
 
@@ -369,8 +375,9 @@ public class CustomerAccountImpl extends DocumentImpl implements CustomerAccount
         else {
             boolean oldCustomerESet = customerESet;
             customerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CUSTOMER_ACCOUNT__CUSTOMER, null, null, oldCustomerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUSTOMER_ACCOUNT__CUSTOMER, null,
+                        null, oldCustomerESet ) );
         }
     }
 
@@ -469,8 +476,9 @@ public class CustomerAccountImpl extends DocumentImpl implements CustomerAccount
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getCustomerAgreements() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.CUSTOMER_ACCOUNT__CUSTOMER:
-            if( customer != null ) msgs = ( ( InternalEObject ) customer ).eInverseRemove( this,
-                    CimPackage.CUSTOMER__CUSTOMER_ACCOUNTS, Customer.class, msgs );
+            if( customer != null )
+                msgs = ( ( InternalEObject ) customer ).eInverseRemove( this, CimPackage.CUSTOMER__CUSTOMER_ACCOUNTS,
+                        Customer.class, msgs );
             return basicSetCustomer( ( Customer ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -604,7 +612,7 @@ public class CustomerAccountImpl extends DocumentImpl implements CustomerAccount
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (billingCycle: " );
         if( billingCycleESet )
             result.append( billingCycle );

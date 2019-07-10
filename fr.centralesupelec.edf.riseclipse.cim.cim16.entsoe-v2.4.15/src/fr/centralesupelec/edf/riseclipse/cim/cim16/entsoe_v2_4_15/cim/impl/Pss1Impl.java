@@ -547,8 +547,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         boolean oldKfESet = kfESet;
         kf = KF_EDEFAULT;
         kfESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__KF, oldKf, KF_EDEFAULT, oldKfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__KF, oldKf, KF_EDEFAULT,
+                    oldKfESet ) );
     }
 
     /**
@@ -597,8 +598,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         boolean oldKpeESet = kpeESet;
         kpe = KPE_EDEFAULT;
         kpeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__KPE,
-                oldKpe, KPE_EDEFAULT, oldKpeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__KPE, oldKpe, KPE_EDEFAULT,
+                    oldKpeESet ) );
     }
 
     /**
@@ -647,8 +649,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         boolean oldKsESet = ksESet;
         ks = KS_EDEFAULT;
         ksESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__KS, oldKs, KS_EDEFAULT, oldKsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__KS, oldKs, KS_EDEFAULT,
+                    oldKsESet ) );
     }
 
     /**
@@ -697,8 +700,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         boolean oldKwESet = kwESet;
         kw = KW_EDEFAULT;
         kwESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__KW, oldKw, KW_EDEFAULT, oldKwESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__KW, oldKw, KW_EDEFAULT,
+                    oldKwESet ) );
     }
 
     /**
@@ -732,8 +736,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         pmin = newPmin;
         boolean oldPminESet = pminESet;
         pminESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS1__PMIN, oldPmin, pmin, !oldPminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS1__PMIN, oldPmin, pmin,
+                    !oldPminESet ) );
     }
 
     /**
@@ -747,8 +752,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         boolean oldPminESet = pminESet;
         pmin = PMIN_EDEFAULT;
         pminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__PMIN,
-                oldPmin, PMIN_EDEFAULT, oldPminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__PMIN, oldPmin, PMIN_EDEFAULT,
+                    oldPminESet ) );
     }
 
     /**
@@ -797,8 +803,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         boolean oldT10ESet = t10ESet;
         t10 = T10_EDEFAULT;
         t10ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__T10,
-                oldT10, T10_EDEFAULT, oldT10ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__T10, oldT10, T10_EDEFAULT,
+                    oldT10ESet ) );
     }
 
     /**
@@ -847,8 +854,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         boolean oldT5ESet = t5ESet;
         t5 = T5_EDEFAULT;
         t5ESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__T5, oldT5, T5_EDEFAULT, oldT5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__T5, oldT5, T5_EDEFAULT,
+                    oldT5ESet ) );
     }
 
     /**
@@ -897,8 +905,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         boolean oldT6ESet = t6ESet;
         t6 = T6_EDEFAULT;
         t6ESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__T6, oldT6, T6_EDEFAULT, oldT6ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__T6, oldT6, T6_EDEFAULT,
+                    oldT6ESet ) );
     }
 
     /**
@@ -947,8 +956,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         boolean oldT7ESet = t7ESet;
         t7 = T7_EDEFAULT;
         t7ESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__T7, oldT7, T7_EDEFAULT, oldT7ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__T7, oldT7, T7_EDEFAULT,
+                    oldT7ESet ) );
     }
 
     /**
@@ -997,8 +1007,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         boolean oldT8ESet = t8ESet;
         t8 = T8_EDEFAULT;
         t8ESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__T8, oldT8, T8_EDEFAULT, oldT8ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__T8, oldT8, T8_EDEFAULT,
+                    oldT8ESet ) );
     }
 
     /**
@@ -1047,8 +1058,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         boolean oldT9ESet = t9ESet;
         t9 = T9_EDEFAULT;
         t9ESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__T9, oldT9, T9_EDEFAULT, oldT9ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__T9, oldT9, T9_EDEFAULT,
+                    oldT9ESet ) );
     }
 
     /**
@@ -1097,8 +1109,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         boolean oldTpeESet = tpeESet;
         tpe = TPE_EDEFAULT;
         tpeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__TPE,
-                oldTpe, TPE_EDEFAULT, oldTpeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__TPE, oldTpe, TPE_EDEFAULT,
+                    oldTpeESet ) );
     }
 
     /**
@@ -1132,8 +1145,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         vadat = newVadat;
         boolean oldVadatESet = vadatESet;
         vadatESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS1__VADAT,
-                oldVadat, vadat, !oldVadatESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS1__VADAT, oldVadat, vadat,
+                    !oldVadatESet ) );
     }
 
     /**
@@ -1147,8 +1161,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         boolean oldVadatESet = vadatESet;
         vadat = VADAT_EDEFAULT;
         vadatESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__VADAT,
-                oldVadat, VADAT_EDEFAULT, oldVadatESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__VADAT, oldVadat, VADAT_EDEFAULT,
+                    oldVadatESet ) );
     }
 
     /**
@@ -1182,8 +1197,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         vsmn = newVsmn;
         boolean oldVsmnESet = vsmnESet;
         vsmnESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS1__VSMN, oldVsmn, vsmn, !oldVsmnESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS1__VSMN, oldVsmn, vsmn,
+                    !oldVsmnESet ) );
     }
 
     /**
@@ -1197,8 +1213,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         boolean oldVsmnESet = vsmnESet;
         vsmn = VSMN_EDEFAULT;
         vsmnESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__VSMN,
-                oldVsmn, VSMN_EDEFAULT, oldVsmnESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__VSMN, oldVsmn, VSMN_EDEFAULT,
+                    oldVsmnESet ) );
     }
 
     /**
@@ -1232,8 +1249,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         vsmx = newVsmx;
         boolean oldVsmxESet = vsmxESet;
         vsmxESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS1__VSMX, oldVsmx, vsmx, !oldVsmxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS1__VSMX, oldVsmx, vsmx,
+                    !oldVsmxESet ) );
     }
 
     /**
@@ -1247,8 +1265,9 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
         boolean oldVsmxESet = vsmxESet;
         vsmx = VSMX_EDEFAULT;
         vsmxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__VSMX,
-                oldVsmx, VSMX_EDEFAULT, oldVsmxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS1__VSMX, oldVsmx, VSMX_EDEFAULT,
+                    oldVsmxESet ) );
     }
 
     /**
@@ -1468,7 +1487,7 @@ public class Pss1Impl extends PowerSystemStabilizerDynamicsImpl implements Pss1 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kf: " );
         if( kfESet )
             result.append( kf );

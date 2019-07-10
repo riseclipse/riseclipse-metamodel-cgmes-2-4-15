@@ -787,8 +787,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldE1ESet = e1ESet;
         e1 = E1_EDEFAULT;
         e1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__E1,
-                oldE1, E1_EDEFAULT, oldE1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__E1, oldE1, E1_EDEFAULT,
+                    oldE1ESet ) );
     }
 
     /**
@@ -837,8 +838,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldE2ESet = e2ESet;
         e2 = E2_EDEFAULT;
         e2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__E2,
-                oldE2, E2_EDEFAULT, oldE2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__E2, oldE2, E2_EDEFAULT,
+                    oldE2ESet ) );
     }
 
     /**
@@ -872,8 +874,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         efdmax = newEfdmax;
         boolean oldEfdmaxESet = efdmaxESet;
         efdmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_PIC__EFDMAX, oldEfdmax, efdmax, !oldEfdmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__EFDMAX, oldEfdmax, efdmax,
+                    !oldEfdmaxESet ) );
     }
 
     /**
@@ -887,8 +890,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldEfdmaxESet = efdmaxESet;
         efdmax = EFDMAX_EDEFAULT;
         efdmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_PIC__EFDMAX, oldEfdmax, EFDMAX_EDEFAULT, oldEfdmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__EFDMAX, oldEfdmax,
+                    EFDMAX_EDEFAULT, oldEfdmaxESet ) );
     }
 
     /**
@@ -922,8 +926,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         efdmin = newEfdmin;
         boolean oldEfdminESet = efdminESet;
         efdminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_PIC__EFDMIN, oldEfdmin, efdmin, !oldEfdminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__EFDMIN, oldEfdmin, efdmin,
+                    !oldEfdminESet ) );
     }
 
     /**
@@ -937,8 +942,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldEfdminESet = efdminESet;
         efdmin = EFDMIN_EDEFAULT;
         efdminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_PIC__EFDMIN, oldEfdmin, EFDMIN_EDEFAULT, oldEfdminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__EFDMIN, oldEfdmin,
+                    EFDMIN_EDEFAULT, oldEfdminESet ) );
     }
 
     /**
@@ -987,8 +993,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldKaESet = kaESet;
         ka = KA_EDEFAULT;
         kaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__KA,
-                oldKa, KA_EDEFAULT, oldKaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__KA, oldKa, KA_EDEFAULT,
+                    oldKaESet ) );
     }
 
     /**
@@ -1037,8 +1044,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldKcESet = kcESet;
         kc = KC_EDEFAULT;
         kcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__KC,
-                oldKc, KC_EDEFAULT, oldKcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__KC, oldKc, KC_EDEFAULT,
+                    oldKcESet ) );
     }
 
     /**
@@ -1087,8 +1095,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldKeESet = keESet;
         ke = KE_EDEFAULT;
         keESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__KE,
-                oldKe, KE_EDEFAULT, oldKeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__KE, oldKe, KE_EDEFAULT,
+                    oldKeESet ) );
     }
 
     /**
@@ -1137,8 +1146,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldKfESet = kfESet;
         kf = KF_EDEFAULT;
         kfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__KF,
-                oldKf, KF_EDEFAULT, oldKfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__KF, oldKf, KF_EDEFAULT,
+                    oldKfESet ) );
     }
 
     /**
@@ -1187,8 +1197,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldKiESet = kiESet;
         ki = KI_EDEFAULT;
         kiESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__KI,
-                oldKi, KI_EDEFAULT, oldKiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__KI, oldKi, KI_EDEFAULT,
+                    oldKiESet ) );
     }
 
     /**
@@ -1237,8 +1248,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldKpESet = kpESet;
         kp = KP_EDEFAULT;
         kpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__KP,
-                oldKp, KP_EDEFAULT, oldKpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__KP, oldKp, KP_EDEFAULT,
+                    oldKpESet ) );
     }
 
     /**
@@ -1272,8 +1284,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         se1 = newSe1;
         boolean oldSe1ESet = se1ESet;
         se1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__SE1, oldSe1, se1, !oldSe1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__SE1, oldSe1, se1,
+                    !oldSe1ESet ) );
     }
 
     /**
@@ -1287,8 +1300,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldSe1ESet = se1ESet;
         se1 = SE1_EDEFAULT;
         se1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__SE1,
-                oldSe1, SE1_EDEFAULT, oldSe1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__SE1, oldSe1, SE1_EDEFAULT,
+                    oldSe1ESet ) );
     }
 
     /**
@@ -1322,8 +1336,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         se2 = newSe2;
         boolean oldSe2ESet = se2ESet;
         se2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__SE2, oldSe2, se2, !oldSe2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__SE2, oldSe2, se2,
+                    !oldSe2ESet ) );
     }
 
     /**
@@ -1337,8 +1352,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldSe2ESet = se2ESet;
         se2 = SE2_EDEFAULT;
         se2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__SE2,
-                oldSe2, SE2_EDEFAULT, oldSe2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__SE2, oldSe2, SE2_EDEFAULT,
+                    oldSe2ESet ) );
     }
 
     /**
@@ -1372,8 +1388,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         ta1 = newTa1;
         boolean oldTa1ESet = ta1ESet;
         ta1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__TA1, oldTa1, ta1, !oldTa1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__TA1, oldTa1, ta1,
+                    !oldTa1ESet ) );
     }
 
     /**
@@ -1387,8 +1404,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldTa1ESet = ta1ESet;
         ta1 = TA1_EDEFAULT;
         ta1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__TA1,
-                oldTa1, TA1_EDEFAULT, oldTa1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__TA1, oldTa1, TA1_EDEFAULT,
+                    oldTa1ESet ) );
     }
 
     /**
@@ -1422,8 +1440,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         ta2 = newTa2;
         boolean oldTa2ESet = ta2ESet;
         ta2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__TA2, oldTa2, ta2, !oldTa2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__TA2, oldTa2, ta2,
+                    !oldTa2ESet ) );
     }
 
     /**
@@ -1437,8 +1456,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldTa2ESet = ta2ESet;
         ta2 = TA2_EDEFAULT;
         ta2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__TA2,
-                oldTa2, TA2_EDEFAULT, oldTa2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__TA2, oldTa2, TA2_EDEFAULT,
+                    oldTa2ESet ) );
     }
 
     /**
@@ -1472,8 +1492,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         ta3 = newTa3;
         boolean oldTa3ESet = ta3ESet;
         ta3ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__TA3, oldTa3, ta3, !oldTa3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__TA3, oldTa3, ta3,
+                    !oldTa3ESet ) );
     }
 
     /**
@@ -1487,8 +1508,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldTa3ESet = ta3ESet;
         ta3 = TA3_EDEFAULT;
         ta3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__TA3,
-                oldTa3, TA3_EDEFAULT, oldTa3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__TA3, oldTa3, TA3_EDEFAULT,
+                    oldTa3ESet ) );
     }
 
     /**
@@ -1522,8 +1544,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         ta4 = newTa4;
         boolean oldTa4ESet = ta4ESet;
         ta4ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__TA4, oldTa4, ta4, !oldTa4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__TA4, oldTa4, ta4,
+                    !oldTa4ESet ) );
     }
 
     /**
@@ -1537,8 +1560,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldTa4ESet = ta4ESet;
         ta4 = TA4_EDEFAULT;
         ta4ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__TA4,
-                oldTa4, TA4_EDEFAULT, oldTa4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__TA4, oldTa4, TA4_EDEFAULT,
+                    oldTa4ESet ) );
     }
 
     /**
@@ -1587,8 +1611,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldTeESet = teESet;
         te = TE_EDEFAULT;
         teESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__TE,
-                oldTe, TE_EDEFAULT, oldTeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__TE, oldTe, TE_EDEFAULT,
+                    oldTeESet ) );
     }
 
     /**
@@ -1622,8 +1647,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         tf1 = newTf1;
         boolean oldTf1ESet = tf1ESet;
         tf1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__TF1, oldTf1, tf1, !oldTf1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__TF1, oldTf1, tf1,
+                    !oldTf1ESet ) );
     }
 
     /**
@@ -1637,8 +1663,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldTf1ESet = tf1ESet;
         tf1 = TF1_EDEFAULT;
         tf1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__TF1,
-                oldTf1, TF1_EDEFAULT, oldTf1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__TF1, oldTf1, TF1_EDEFAULT,
+                    oldTf1ESet ) );
     }
 
     /**
@@ -1672,8 +1699,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         tf2 = newTf2;
         boolean oldTf2ESet = tf2ESet;
         tf2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__TF2, oldTf2, tf2, !oldTf2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__TF2, oldTf2, tf2,
+                    !oldTf2ESet ) );
     }
 
     /**
@@ -1687,8 +1715,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldTf2ESet = tf2ESet;
         tf2 = TF2_EDEFAULT;
         tf2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__TF2,
-                oldTf2, TF2_EDEFAULT, oldTf2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__TF2, oldTf2, TF2_EDEFAULT,
+                    oldTf2ESet ) );
     }
 
     /**
@@ -1722,8 +1751,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         vr1 = newVr1;
         boolean oldVr1ESet = vr1ESet;
         vr1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__VR1, oldVr1, vr1, !oldVr1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__VR1, oldVr1, vr1,
+                    !oldVr1ESet ) );
     }
 
     /**
@@ -1737,8 +1767,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldVr1ESet = vr1ESet;
         vr1 = VR1_EDEFAULT;
         vr1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__VR1,
-                oldVr1, VR1_EDEFAULT, oldVr1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__VR1, oldVr1, VR1_EDEFAULT,
+                    oldVr1ESet ) );
     }
 
     /**
@@ -1772,8 +1803,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         vr2 = newVr2;
         boolean oldVr2ESet = vr2ESet;
         vr2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__VR2, oldVr2, vr2, !oldVr2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__VR2, oldVr2, vr2,
+                    !oldVr2ESet ) );
     }
 
     /**
@@ -1787,8 +1819,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldVr2ESet = vr2ESet;
         vr2 = VR2_EDEFAULT;
         vr2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__VR2,
-                oldVr2, VR2_EDEFAULT, oldVr2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__VR2, oldVr2, VR2_EDEFAULT,
+                    oldVr2ESet ) );
     }
 
     /**
@@ -1822,8 +1855,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         vrmax = newVrmax;
         boolean oldVrmaxESet = vrmaxESet;
         vrmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__VRMAX,
-                oldVrmax, vrmax, !oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__VRMAX, oldVrmax, vrmax,
+                    !oldVrmaxESet ) );
     }
 
     /**
@@ -1837,8 +1871,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldVrmaxESet = vrmaxESet;
         vrmax = VRMAX_EDEFAULT;
         vrmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_PIC__VRMAX, oldVrmax, VRMAX_EDEFAULT, oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__VRMAX, oldVrmax,
+                    VRMAX_EDEFAULT, oldVrmaxESet ) );
     }
 
     /**
@@ -1872,8 +1907,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         vrmin = newVrmin;
         boolean oldVrminESet = vrminESet;
         vrminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__VRMIN,
-                oldVrmin, vrmin, !oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_PIC__VRMIN, oldVrmin, vrmin,
+                    !oldVrminESet ) );
     }
 
     /**
@@ -1887,8 +1923,9 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
         boolean oldVrminESet = vrminESet;
         vrmin = VRMIN_EDEFAULT;
         vrminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_PIC__VRMIN, oldVrmin, VRMIN_EDEFAULT, oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_PIC__VRMIN, oldVrmin,
+                    VRMIN_EDEFAULT, oldVrminESet ) );
     }
 
     /**
@@ -2188,7 +2225,7 @@ public class ExcPICImpl extends ExcitationSystemDynamicsImpl implements ExcPIC {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (e1: " );
         if( e1ESet )
             result.append( e1 );

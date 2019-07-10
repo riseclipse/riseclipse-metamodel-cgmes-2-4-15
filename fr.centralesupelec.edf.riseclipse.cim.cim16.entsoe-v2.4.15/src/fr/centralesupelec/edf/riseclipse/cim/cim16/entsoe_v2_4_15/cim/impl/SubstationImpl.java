@@ -201,18 +201,21 @@ public class SubstationImpl extends EquipmentContainerImpl implements Substation
     public void setRegion( SubGeographicalRegion newRegion ) {
         if( newRegion != region ) {
             NotificationChain msgs = null;
-            if( region != null ) msgs = ( ( InternalEObject ) region ).eInverseRemove( this,
-                    CimPackage.SUB_GEOGRAPHICAL_REGION__SUBSTATIONS, SubGeographicalRegion.class, msgs );
-            if( newRegion != null ) msgs = ( ( InternalEObject ) newRegion ).eInverseAdd( this,
-                    CimPackage.SUB_GEOGRAPHICAL_REGION__SUBSTATIONS, SubGeographicalRegion.class, msgs );
+            if( region != null )
+                msgs = ( ( InternalEObject ) region ).eInverseRemove( this,
+                        CimPackage.SUB_GEOGRAPHICAL_REGION__SUBSTATIONS, SubGeographicalRegion.class, msgs );
+            if( newRegion != null )
+                msgs = ( ( InternalEObject ) newRegion ).eInverseAdd( this,
+                        CimPackage.SUB_GEOGRAPHICAL_REGION__SUBSTATIONS, SubGeographicalRegion.class, msgs );
             msgs = basicSetRegion( newRegion, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldRegionESet = regionESet;
             regionESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SUBSTATION__REGION, newRegion, newRegion, !oldRegionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SUBSTATION__REGION, newRegion,
+                        newRegion, !oldRegionESet ) );
         }
     }
 
@@ -254,8 +257,9 @@ public class SubstationImpl extends EquipmentContainerImpl implements Substation
         else {
             boolean oldRegionESet = regionESet;
             regionESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SUBSTATION__REGION, null, null, oldRegionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SUBSTATION__REGION, null, null,
+                        oldRegionESet ) );
         }
     }
 
@@ -355,8 +359,9 @@ public class SubstationImpl extends EquipmentContainerImpl implements Substation
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getVoltageLevels() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.SUBSTATION__REGION:
-            if( region != null ) msgs = ( ( InternalEObject ) region ).eInverseRemove( this,
-                    CimPackage.SUB_GEOGRAPHICAL_REGION__SUBSTATIONS, SubGeographicalRegion.class, msgs );
+            if( region != null )
+                msgs = ( ( InternalEObject ) region ).eInverseRemove( this,
+                        CimPackage.SUB_GEOGRAPHICAL_REGION__SUBSTATIONS, SubGeographicalRegion.class, msgs );
             return basicSetRegion( ( SubGeographicalRegion ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

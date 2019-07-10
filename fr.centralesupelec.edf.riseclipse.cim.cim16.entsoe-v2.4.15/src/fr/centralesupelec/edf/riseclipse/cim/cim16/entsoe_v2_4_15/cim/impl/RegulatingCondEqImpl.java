@@ -208,19 +208,22 @@ public class RegulatingCondEqImpl extends ConductingEquipmentImpl implements Reg
     public void setRegulatingControl( RegulatingControl newRegulatingControl ) {
         if( newRegulatingControl != regulatingControl ) {
             NotificationChain msgs = null;
-            if( regulatingControl != null ) msgs = ( ( InternalEObject ) regulatingControl ).eInverseRemove( this,
-                    CimPackage.REGULATING_CONTROL__REGULATING_COND_EQ, RegulatingControl.class, msgs );
-            if( newRegulatingControl != null ) msgs = ( ( InternalEObject ) newRegulatingControl ).eInverseAdd( this,
-                    CimPackage.REGULATING_CONTROL__REGULATING_COND_EQ, RegulatingControl.class, msgs );
+            if( regulatingControl != null )
+                msgs = ( ( InternalEObject ) regulatingControl ).eInverseRemove( this,
+                        CimPackage.REGULATING_CONTROL__REGULATING_COND_EQ, RegulatingControl.class, msgs );
+            if( newRegulatingControl != null )
+                msgs = ( ( InternalEObject ) newRegulatingControl ).eInverseAdd( this,
+                        CimPackage.REGULATING_CONTROL__REGULATING_COND_EQ, RegulatingControl.class, msgs );
             msgs = basicSetRegulatingControl( newRegulatingControl, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldRegulatingControlESet = regulatingControlESet;
             regulatingControlESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.REGULATING_COND_EQ__REGULATING_CONTROL,
-                            newRegulatingControl, newRegulatingControl, !oldRegulatingControlESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.REGULATING_COND_EQ__REGULATING_CONTROL, newRegulatingControl, newRegulatingControl,
+                        !oldRegulatingControlESet ) );
         }
     }
 
@@ -263,8 +266,9 @@ public class RegulatingCondEqImpl extends ConductingEquipmentImpl implements Reg
         else {
             boolean oldRegulatingControlESet = regulatingControlESet;
             regulatingControlESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REGULATING_COND_EQ__REGULATING_CONTROL, null, null, oldRegulatingControlESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.REGULATING_COND_EQ__REGULATING_CONTROL, null, null, oldRegulatingControlESet ) );
         }
     }
 
@@ -287,8 +291,9 @@ public class RegulatingCondEqImpl extends ConductingEquipmentImpl implements Reg
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.REGULATING_COND_EQ__REGULATING_CONTROL:
-            if( regulatingControl != null ) msgs = ( ( InternalEObject ) regulatingControl ).eInverseRemove( this,
-                    CimPackage.REGULATING_CONTROL__REGULATING_COND_EQ, RegulatingControl.class, msgs );
+            if( regulatingControl != null )
+                msgs = ( ( InternalEObject ) regulatingControl ).eInverseRemove( this,
+                        CimPackage.REGULATING_CONTROL__REGULATING_COND_EQ, RegulatingControl.class, msgs );
             return basicSetRegulatingControl( ( RegulatingControl ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -385,7 +390,7 @@ public class RegulatingCondEqImpl extends ConductingEquipmentImpl implements Reg
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (controlEnabled: " );
         if( controlEnabledESet )
             result.append( controlEnabled );

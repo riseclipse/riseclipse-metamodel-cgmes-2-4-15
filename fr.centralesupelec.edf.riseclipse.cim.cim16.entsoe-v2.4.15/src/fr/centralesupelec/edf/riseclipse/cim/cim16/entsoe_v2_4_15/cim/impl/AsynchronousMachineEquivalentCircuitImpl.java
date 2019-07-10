@@ -233,8 +233,9 @@ public class AsynchronousMachineEquivalentCircuitImpl extends AsynchronousMachin
         rr1 = newRr1;
         boolean oldRr1ESet = rr1ESet;
         rr1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__RR1, oldRr1, rr1, !oldRr1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__RR1, oldRr1, rr1, !oldRr1ESet ) );
     }
 
     /**
@@ -248,8 +249,9 @@ public class AsynchronousMachineEquivalentCircuitImpl extends AsynchronousMachin
         boolean oldRr1ESet = rr1ESet;
         rr1 = RR1_EDEFAULT;
         rr1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__RR1, oldRr1, RR1_EDEFAULT, oldRr1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__RR1, oldRr1, RR1_EDEFAULT, oldRr1ESet ) );
     }
 
     /**
@@ -283,8 +285,9 @@ public class AsynchronousMachineEquivalentCircuitImpl extends AsynchronousMachin
         rr2 = newRr2;
         boolean oldRr2ESet = rr2ESet;
         rr2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__RR2, oldRr2, rr2, !oldRr2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__RR2, oldRr2, rr2, !oldRr2ESet ) );
     }
 
     /**
@@ -298,8 +301,9 @@ public class AsynchronousMachineEquivalentCircuitImpl extends AsynchronousMachin
         boolean oldRr2ESet = rr2ESet;
         rr2 = RR2_EDEFAULT;
         rr2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__RR2, oldRr2, RR2_EDEFAULT, oldRr2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__RR2, oldRr2, RR2_EDEFAULT, oldRr2ESet ) );
     }
 
     /**
@@ -333,8 +337,9 @@ public class AsynchronousMachineEquivalentCircuitImpl extends AsynchronousMachin
         xlr1 = newXlr1;
         boolean oldXlr1ESet = xlr1ESet;
         xlr1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XLR1, oldXlr1, xlr1, !oldXlr1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XLR1, oldXlr1, xlr1, !oldXlr1ESet ) );
     }
 
     /**
@@ -348,8 +353,9 @@ public class AsynchronousMachineEquivalentCircuitImpl extends AsynchronousMachin
         boolean oldXlr1ESet = xlr1ESet;
         xlr1 = XLR1_EDEFAULT;
         xlr1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XLR1, oldXlr1, XLR1_EDEFAULT, oldXlr1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XLR1, oldXlr1, XLR1_EDEFAULT, oldXlr1ESet ) );
     }
 
     /**
@@ -383,8 +389,9 @@ public class AsynchronousMachineEquivalentCircuitImpl extends AsynchronousMachin
         xlr2 = newXlr2;
         boolean oldXlr2ESet = xlr2ESet;
         xlr2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XLR2, oldXlr2, xlr2, !oldXlr2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XLR2, oldXlr2, xlr2, !oldXlr2ESet ) );
     }
 
     /**
@@ -398,8 +405,9 @@ public class AsynchronousMachineEquivalentCircuitImpl extends AsynchronousMachin
         boolean oldXlr2ESet = xlr2ESet;
         xlr2 = XLR2_EDEFAULT;
         xlr2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XLR2, oldXlr2, XLR2_EDEFAULT, oldXlr2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XLR2, oldXlr2, XLR2_EDEFAULT, oldXlr2ESet ) );
     }
 
     /**
@@ -433,8 +441,9 @@ public class AsynchronousMachineEquivalentCircuitImpl extends AsynchronousMachin
         xm = newXm;
         boolean oldXmESet = xmESet;
         xmESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XM, oldXm, xm, !oldXmESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XM, oldXm, xm, !oldXmESet ) );
     }
 
     /**
@@ -448,8 +457,9 @@ public class AsynchronousMachineEquivalentCircuitImpl extends AsynchronousMachin
         boolean oldXmESet = xmESet;
         xm = XM_EDEFAULT;
         xmESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XM, oldXm, XM_EDEFAULT, oldXmESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_EQUIVALENT_CIRCUIT__XM, oldXm, XM_EDEFAULT, oldXmESet ) );
     }
 
     /**
@@ -569,7 +579,7 @@ public class AsynchronousMachineEquivalentCircuitImpl extends AsynchronousMachin
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (rr1: " );
         if( rr1ESet )
             result.append( rr1 );

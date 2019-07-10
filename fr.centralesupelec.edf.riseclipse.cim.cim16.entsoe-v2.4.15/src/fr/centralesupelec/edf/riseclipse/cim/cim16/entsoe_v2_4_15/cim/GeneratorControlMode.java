@@ -92,7 +92,10 @@ public enum GeneratorControlMode implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final GeneratorControlMode[] VALUES_ARRAY = new GeneratorControlMode[] { SETPOINT, PULSE, };
+    private static final GeneratorControlMode[] VALUES_ARRAY = new GeneratorControlMode[] {
+            SETPOINT,
+            PULSE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Generator Control Mode</b></em>' enumerators.

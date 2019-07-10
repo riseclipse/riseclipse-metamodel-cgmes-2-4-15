@@ -292,9 +292,18 @@ public enum InputSignalKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final InputSignalKind[] VALUES_ARRAY = new InputSignalKind[] { ROTOR_SPEED,
-            ROTOR_ANGULAR_FREQUENCY_DEVIATION, BUS_FREQUENCY, BUS_FREQUENCY_DEVIATION, GENERATOR_ELECTRICAL_POWER,
-            GENERATOR_ACCELERATING_POWER, BUS_VOLTAGE, BUS_VOLTAGE_DERIVATIVE, BRANCH_CURRENT, FIELD_CURRENT, };
+    private static final InputSignalKind[] VALUES_ARRAY = new InputSignalKind[] {
+            ROTOR_SPEED,
+            ROTOR_ANGULAR_FREQUENCY_DEVIATION,
+            BUS_FREQUENCY,
+            BUS_FREQUENCY_DEVIATION,
+            GENERATOR_ELECTRICAL_POWER,
+            GENERATOR_ACCELERATING_POWER,
+            BUS_VOLTAGE,
+            BUS_VOLTAGE_DERIVATIVE,
+            BRANCH_CURRENT,
+            FIELD_CURRENT,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Input Signal Kind</b></em>' enumerators.

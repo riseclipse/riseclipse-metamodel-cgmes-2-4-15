@@ -142,7 +142,12 @@ public enum IfdBaseKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final IfdBaseKind[] VALUES_ARRAY = new IfdBaseKind[] { IFAG, IFNL, IFFL, OTHER, };
+    private static final IfdBaseKind[] VALUES_ARRAY = new IfdBaseKind[] {
+            IFAG,
+            IFNL,
+            IFFL,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Ifd Base Kind</b></em>' enumerators.

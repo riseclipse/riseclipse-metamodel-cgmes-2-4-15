@@ -124,18 +124,21 @@ public class InflowForecastImpl extends RegularIntervalScheduleImpl implements I
     public void setReservoir( Reservoir newReservoir ) {
         if( newReservoir != reservoir ) {
             NotificationChain msgs = null;
-            if( reservoir != null ) msgs = ( ( InternalEObject ) reservoir ).eInverseRemove( this,
-                    CimPackage.RESERVOIR__INFLOW_FORECASTS, Reservoir.class, msgs );
-            if( newReservoir != null ) msgs = ( ( InternalEObject ) newReservoir ).eInverseAdd( this,
-                    CimPackage.RESERVOIR__INFLOW_FORECASTS, Reservoir.class, msgs );
+            if( reservoir != null )
+                msgs = ( ( InternalEObject ) reservoir ).eInverseRemove( this, CimPackage.RESERVOIR__INFLOW_FORECASTS,
+                        Reservoir.class, msgs );
+            if( newReservoir != null )
+                msgs = ( ( InternalEObject ) newReservoir ).eInverseAdd( this, CimPackage.RESERVOIR__INFLOW_FORECASTS,
+                        Reservoir.class, msgs );
             msgs = basicSetReservoir( newReservoir, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldReservoirESet = reservoirESet;
             reservoirESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.INFLOW_FORECAST__RESERVOIR, newReservoir, newReservoir, !oldReservoirESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.INFLOW_FORECAST__RESERVOIR,
+                        newReservoir, newReservoir, !oldReservoirESet ) );
         }
     }
 
@@ -177,8 +180,9 @@ public class InflowForecastImpl extends RegularIntervalScheduleImpl implements I
         else {
             boolean oldReservoirESet = reservoirESet;
             reservoirESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.INFLOW_FORECAST__RESERVOIR, null, null, oldReservoirESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.INFLOW_FORECAST__RESERVOIR, null,
+                        null, oldReservoirESet ) );
         }
     }
 
@@ -201,8 +205,9 @@ public class InflowForecastImpl extends RegularIntervalScheduleImpl implements I
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.INFLOW_FORECAST__RESERVOIR:
-            if( reservoir != null ) msgs = ( ( InternalEObject ) reservoir ).eInverseRemove( this,
-                    CimPackage.RESERVOIR__INFLOW_FORECASTS, Reservoir.class, msgs );
+            if( reservoir != null )
+                msgs = ( ( InternalEObject ) reservoir ).eInverseRemove( this, CimPackage.RESERVOIR__INFLOW_FORECASTS,
+                        Reservoir.class, msgs );
             return basicSetReservoir( ( Reservoir ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

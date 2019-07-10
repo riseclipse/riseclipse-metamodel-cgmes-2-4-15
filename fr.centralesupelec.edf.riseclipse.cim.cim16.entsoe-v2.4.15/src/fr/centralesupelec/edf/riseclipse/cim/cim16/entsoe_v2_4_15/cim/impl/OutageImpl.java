@@ -422,8 +422,9 @@ public class OutageImpl extends DocumentImpl implements Outage {
         cause = newCause;
         boolean oldCauseESet = causeESet;
         causeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OUTAGE__CAUSE,
-                oldCause, cause, !oldCauseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OUTAGE__CAUSE, oldCause, cause,
+                    !oldCauseESet ) );
     }
 
     /**
@@ -437,8 +438,9 @@ public class OutageImpl extends DocumentImpl implements Outage {
         boolean oldCauseESet = causeESet;
         cause = CAUSE_EDEFAULT;
         causeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.OUTAGE__CAUSE, oldCause, CAUSE_EDEFAULT, oldCauseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OUTAGE__CAUSE, oldCause,
+                    CAUSE_EDEFAULT, oldCauseESet ) );
     }
 
     /**
@@ -472,8 +474,9 @@ public class OutageImpl extends DocumentImpl implements Outage {
         isPlanned = newIsPlanned;
         boolean oldIsPlannedESet = isPlannedESet;
         isPlannedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OUTAGE__IS_PLANNED, oldIsPlanned, isPlanned, !oldIsPlannedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OUTAGE__IS_PLANNED, oldIsPlanned,
+                    isPlanned, !oldIsPlannedESet ) );
     }
 
     /**
@@ -487,8 +490,9 @@ public class OutageImpl extends DocumentImpl implements Outage {
         boolean oldIsPlannedESet = isPlannedESet;
         isPlanned = IS_PLANNED_EDEFAULT;
         isPlannedESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.OUTAGE__IS_PLANNED, oldIsPlanned, IS_PLANNED_EDEFAULT, oldIsPlannedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OUTAGE__IS_PLANNED, oldIsPlanned,
+                    IS_PLANNED_EDEFAULT, oldIsPlannedESet ) );
     }
 
     /**
@@ -541,18 +545,21 @@ public class OutageImpl extends DocumentImpl implements Outage {
     public void setActualPeriod( DateTimeInterval newActualPeriod ) {
         if( newActualPeriod != actualPeriod ) {
             NotificationChain msgs = null;
-            if( actualPeriod != null ) msgs = ( ( InternalEObject ) actualPeriod ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.OUTAGE__ACTUAL_PERIOD, null, msgs );
-            if( newActualPeriod != null ) msgs = ( ( InternalEObject ) newActualPeriod ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.OUTAGE__ACTUAL_PERIOD, null, msgs );
+            if( actualPeriod != null )
+                msgs = ( ( InternalEObject ) actualPeriod ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.OUTAGE__ACTUAL_PERIOD, null, msgs );
+            if( newActualPeriod != null )
+                msgs = ( ( InternalEObject ) newActualPeriod ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.OUTAGE__ACTUAL_PERIOD, null, msgs );
             msgs = basicSetActualPeriod( newActualPeriod, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldActualPeriodESet = actualPeriodESet;
             actualPeriodESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.OUTAGE__ACTUAL_PERIOD, newActualPeriod, newActualPeriod, !oldActualPeriodESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OUTAGE__ACTUAL_PERIOD,
+                        newActualPeriod, newActualPeriod, !oldActualPeriodESet ) );
         }
     }
 
@@ -594,8 +601,9 @@ public class OutageImpl extends DocumentImpl implements Outage {
         else {
             boolean oldActualPeriodESet = actualPeriodESet;
             actualPeriodESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OUTAGE__ACTUAL_PERIOD, null, null, oldActualPeriodESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OUTAGE__ACTUAL_PERIOD, null, null,
+                        oldActualPeriodESet ) );
         }
     }
 
@@ -650,10 +658,12 @@ public class OutageImpl extends DocumentImpl implements Outage {
     public void setEstimatedPeriod( DateTimeInterval newEstimatedPeriod ) {
         if( newEstimatedPeriod != estimatedPeriod ) {
             NotificationChain msgs = null;
-            if( estimatedPeriod != null ) msgs = ( ( InternalEObject ) estimatedPeriod ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.OUTAGE__ESTIMATED_PERIOD, null, msgs );
-            if( newEstimatedPeriod != null ) msgs = ( ( InternalEObject ) newEstimatedPeriod ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.OUTAGE__ESTIMATED_PERIOD, null, msgs );
+            if( estimatedPeriod != null )
+                msgs = ( ( InternalEObject ) estimatedPeriod ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.OUTAGE__ESTIMATED_PERIOD, null, msgs );
+            if( newEstimatedPeriod != null )
+                msgs = ( ( InternalEObject ) newEstimatedPeriod ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.OUTAGE__ESTIMATED_PERIOD, null, msgs );
             msgs = basicSetEstimatedPeriod( newEstimatedPeriod, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -704,8 +714,9 @@ public class OutageImpl extends DocumentImpl implements Outage {
         else {
             boolean oldEstimatedPeriodESet = estimatedPeriodESet;
             estimatedPeriodESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OUTAGE__ESTIMATED_PERIOD, null, null, oldEstimatedPeriodESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OUTAGE__ESTIMATED_PERIOD, null,
+                        null, oldEstimatedPeriodESet ) );
         }
     }
 
@@ -759,18 +770,21 @@ public class OutageImpl extends DocumentImpl implements Outage {
     public void setSummary( ServicePointOutageSummary newSummary ) {
         if( newSummary != summary ) {
             NotificationChain msgs = null;
-            if( summary != null ) msgs = ( ( InternalEObject ) summary ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.OUTAGE__SUMMARY, null, msgs );
-            if( newSummary != null ) msgs = ( ( InternalEObject ) newSummary ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.OUTAGE__SUMMARY, null, msgs );
+            if( summary != null )
+                msgs = ( ( InternalEObject ) summary ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.OUTAGE__SUMMARY, null, msgs );
+            if( newSummary != null )
+                msgs = ( ( InternalEObject ) newSummary ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.OUTAGE__SUMMARY, null, msgs );
             msgs = basicSetSummary( newSummary, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldSummaryESet = summaryESet;
             summaryESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.OUTAGE__SUMMARY, newSummary, newSummary, !oldSummaryESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OUTAGE__SUMMARY, newSummary,
+                        newSummary, !oldSummaryESet ) );
         }
     }
 
@@ -812,8 +826,9 @@ public class OutageImpl extends DocumentImpl implements Outage {
         else {
             boolean oldSummaryESet = summaryESet;
             summaryESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OUTAGE__SUMMARY, null, null, oldSummaryESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OUTAGE__SUMMARY, null, null,
+                        oldSummaryESet ) );
         }
     }
 
@@ -1009,8 +1024,9 @@ public class OutageImpl extends DocumentImpl implements Outage {
             InternalEObject oldIncident = ( InternalEObject ) incident;
             incident = ( Incident ) eResolveProxy( oldIncident );
             if( incident != oldIncident ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.OUTAGE__INCIDENT, oldIncident, incident ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.OUTAGE__INCIDENT,
+                            oldIncident, incident ) );
             }
         }
         return incident;
@@ -1055,18 +1071,21 @@ public class OutageImpl extends DocumentImpl implements Outage {
     public void setIncident( Incident newIncident ) {
         if( newIncident != incident ) {
             NotificationChain msgs = null;
-            if( incident != null ) msgs = ( ( InternalEObject ) incident ).eInverseRemove( this,
-                    CimPackage.INCIDENT__OUTAGE, Incident.class, msgs );
-            if( newIncident != null ) msgs = ( ( InternalEObject ) newIncident ).eInverseAdd( this,
-                    CimPackage.INCIDENT__OUTAGE, Incident.class, msgs );
+            if( incident != null )
+                msgs = ( ( InternalEObject ) incident ).eInverseRemove( this, CimPackage.INCIDENT__OUTAGE,
+                        Incident.class, msgs );
+            if( newIncident != null )
+                msgs = ( ( InternalEObject ) newIncident ).eInverseAdd( this, CimPackage.INCIDENT__OUTAGE,
+                        Incident.class, msgs );
             msgs = basicSetIncident( newIncident, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldIncidentESet = incidentESet;
             incidentESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.OUTAGE__INCIDENT, newIncident, newIncident, !oldIncidentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OUTAGE__INCIDENT, newIncident,
+                        newIncident, !oldIncidentESet ) );
         }
     }
 
@@ -1108,8 +1127,9 @@ public class OutageImpl extends DocumentImpl implements Outage {
         else {
             boolean oldIncidentESet = incidentESet;
             incidentESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OUTAGE__INCIDENT, null, null, oldIncidentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OUTAGE__INCIDENT, null, null,
+                        oldIncidentESet ) );
         }
     }
 
@@ -1197,10 +1217,12 @@ public class OutageImpl extends DocumentImpl implements Outage {
     public void setOutageSchedule( OutageSchedule newOutageSchedule ) {
         if( newOutageSchedule != outageSchedule ) {
             NotificationChain msgs = null;
-            if( outageSchedule != null ) msgs = ( ( InternalEObject ) outageSchedule ).eInverseRemove( this,
-                    CimPackage.OUTAGE_SCHEDULE__PLANNED_OUTAGES, OutageSchedule.class, msgs );
-            if( newOutageSchedule != null ) msgs = ( ( InternalEObject ) newOutageSchedule ).eInverseAdd( this,
-                    CimPackage.OUTAGE_SCHEDULE__PLANNED_OUTAGES, OutageSchedule.class, msgs );
+            if( outageSchedule != null )
+                msgs = ( ( InternalEObject ) outageSchedule ).eInverseRemove( this,
+                        CimPackage.OUTAGE_SCHEDULE__PLANNED_OUTAGES, OutageSchedule.class, msgs );
+            if( newOutageSchedule != null )
+                msgs = ( ( InternalEObject ) newOutageSchedule ).eInverseAdd( this,
+                        CimPackage.OUTAGE_SCHEDULE__PLANNED_OUTAGES, OutageSchedule.class, msgs );
             msgs = basicSetOutageSchedule( newOutageSchedule, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1251,8 +1273,9 @@ public class OutageImpl extends DocumentImpl implements Outage {
         else {
             boolean oldOutageScheduleESet = outageScheduleESet;
             outageScheduleESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OUTAGE__OUTAGE_SCHEDULE, null, null, oldOutageScheduleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OUTAGE__OUTAGE_SCHEDULE, null,
+                        null, oldOutageScheduleESet ) );
         }
     }
 
@@ -1310,8 +1333,9 @@ public class OutageImpl extends DocumentImpl implements Outage {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.OUTAGE__INCIDENT:
-            if( incident != null ) msgs = ( ( InternalEObject ) incident ).eInverseRemove( this,
-                    CimPackage.INCIDENT__OUTAGE, Incident.class, msgs );
+            if( incident != null )
+                msgs = ( ( InternalEObject ) incident ).eInverseRemove( this, CimPackage.INCIDENT__OUTAGE,
+                        Incident.class, msgs );
             return basicSetIncident( ( Incident ) otherEnd, msgs );
         case CimPackage.OUTAGE__SWITCHING_PLANS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getSwitchingPlans() )
@@ -1332,8 +1356,9 @@ public class OutageImpl extends DocumentImpl implements Outage {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getUsagePoints() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.OUTAGE__OUTAGE_SCHEDULE:
-            if( outageSchedule != null ) msgs = ( ( InternalEObject ) outageSchedule ).eInverseRemove( this,
-                    CimPackage.OUTAGE_SCHEDULE__PLANNED_OUTAGES, OutageSchedule.class, msgs );
+            if( outageSchedule != null )
+                msgs = ( ( InternalEObject ) outageSchedule ).eInverseRemove( this,
+                        CimPackage.OUTAGE_SCHEDULE__PLANNED_OUTAGES, OutageSchedule.class, msgs );
             return basicSetOutageSchedule( ( OutageSchedule ) otherEnd, msgs );
         case CimPackage.OUTAGE__PLANNED_SWITCH_ACTIONS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getPlannedSwitchActions() )
@@ -1594,7 +1619,7 @@ public class OutageImpl extends DocumentImpl implements Outage {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (cancelledDateTime: " );
         if( cancelledDateTimeESet )
             result.append( cancelledDateTime );

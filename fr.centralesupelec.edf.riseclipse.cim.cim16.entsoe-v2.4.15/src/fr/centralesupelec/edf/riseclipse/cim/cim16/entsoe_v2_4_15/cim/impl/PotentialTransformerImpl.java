@@ -307,8 +307,9 @@ public class PotentialTransformerImpl extends SensorImpl implements PotentialTra
         ptClass = newPtClass;
         boolean oldPtClassESet = ptClassESet;
         ptClassESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POTENTIAL_TRANSFORMER__PT_CLASS, oldPtClass, ptClass, !oldPtClassESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POTENTIAL_TRANSFORMER__PT_CLASS,
+                    oldPtClass, ptClass, !oldPtClassESet ) );
     }
 
     /**
@@ -322,8 +323,9 @@ public class PotentialTransformerImpl extends SensorImpl implements PotentialTra
         boolean oldPtClassESet = ptClassESet;
         ptClass = PT_CLASS_EDEFAULT;
         ptClassESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POTENTIAL_TRANSFORMER__PT_CLASS, oldPtClass, PT_CLASS_EDEFAULT, oldPtClassESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POTENTIAL_TRANSFORMER__PT_CLASS,
+                    oldPtClass, PT_CLASS_EDEFAULT, oldPtClassESet ) );
     }
 
     /**
@@ -357,8 +359,9 @@ public class PotentialTransformerImpl extends SensorImpl implements PotentialTra
         type = newType == null ? TYPE_EDEFAULT : newType;
         boolean oldTypeESet = typeESet;
         typeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POTENTIAL_TRANSFORMER__TYPE, oldType, type, !oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POTENTIAL_TRANSFORMER__TYPE, oldType,
+                    type, !oldTypeESet ) );
     }
 
     /**
@@ -372,8 +375,9 @@ public class PotentialTransformerImpl extends SensorImpl implements PotentialTra
         boolean oldTypeESet = typeESet;
         type = TYPE_EDEFAULT;
         typeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POTENTIAL_TRANSFORMER__TYPE, oldType, TYPE_EDEFAULT, oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POTENTIAL_TRANSFORMER__TYPE, oldType,
+                    TYPE_EDEFAULT, oldTypeESet ) );
     }
 
     /**
@@ -483,7 +487,7 @@ public class PotentialTransformerImpl extends SensorImpl implements PotentialTra
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (accuracyClass: " );
         if( accuracyClassESet )
             result.append( accuracyClass );

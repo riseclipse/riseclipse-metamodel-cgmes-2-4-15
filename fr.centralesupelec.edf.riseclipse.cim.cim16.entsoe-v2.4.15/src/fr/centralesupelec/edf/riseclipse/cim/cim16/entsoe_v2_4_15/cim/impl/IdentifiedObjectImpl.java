@@ -257,8 +257,9 @@ public class IdentifiedObjectImpl extends CimObjectWithIDImpl implements Identif
         aliasName = newAliasName;
         boolean oldAliasNameESet = aliasNameESet;
         aliasNameESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.IDENTIFIED_OBJECT__ALIAS_NAME, oldAliasName, aliasName, !oldAliasNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.IDENTIFIED_OBJECT__ALIAS_NAME,
+                    oldAliasName, aliasName, !oldAliasNameESet ) );
     }
 
     /**
@@ -272,8 +273,9 @@ public class IdentifiedObjectImpl extends CimObjectWithIDImpl implements Identif
         boolean oldAliasNameESet = aliasNameESet;
         aliasName = ALIAS_NAME_EDEFAULT;
         aliasNameESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.IDENTIFIED_OBJECT__ALIAS_NAME, oldAliasName, ALIAS_NAME_EDEFAULT, oldAliasNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.IDENTIFIED_OBJECT__ALIAS_NAME,
+                    oldAliasName, ALIAS_NAME_EDEFAULT, oldAliasNameESet ) );
     }
 
     /**
@@ -307,8 +309,9 @@ public class IdentifiedObjectImpl extends CimObjectWithIDImpl implements Identif
         description = newDescription;
         boolean oldDescriptionESet = descriptionESet;
         descriptionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.IDENTIFIED_OBJECT__DESCRIPTION, oldDescription, description, !oldDescriptionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.IDENTIFIED_OBJECT__DESCRIPTION,
+                    oldDescription, description, !oldDescriptionESet ) );
     }
 
     /**
@@ -322,8 +325,9 @@ public class IdentifiedObjectImpl extends CimObjectWithIDImpl implements Identif
         boolean oldDescriptionESet = descriptionESet;
         description = DESCRIPTION_EDEFAULT;
         descriptionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.IDENTIFIED_OBJECT__DESCRIPTION, oldDescription, DESCRIPTION_EDEFAULT, oldDescriptionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.IDENTIFIED_OBJECT__DESCRIPTION,
+                    oldDescription, DESCRIPTION_EDEFAULT, oldDescriptionESet ) );
     }
 
     /**
@@ -397,8 +401,9 @@ public class IdentifiedObjectImpl extends CimObjectWithIDImpl implements Identif
         name = newName;
         boolean oldNameESet = nameESet;
         nameESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.IDENTIFIED_OBJECT__NAME, oldName, name, !oldNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.IDENTIFIED_OBJECT__NAME, oldName, name,
+                    !oldNameESet ) );
     }
 
     /**
@@ -412,8 +417,9 @@ public class IdentifiedObjectImpl extends CimObjectWithIDImpl implements Identif
         boolean oldNameESet = nameESet;
         name = NAME_EDEFAULT;
         nameESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.IDENTIFIED_OBJECT__NAME, oldName, NAME_EDEFAULT, oldNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.IDENTIFIED_OBJECT__NAME, oldName,
+                    NAME_EDEFAULT, oldNameESet ) );
     }
 
     /**
@@ -513,8 +519,9 @@ public class IdentifiedObjectImpl extends CimObjectWithIDImpl implements Identif
     public void setEnergyIdentCodeEic( String newEnergyIdentCodeEic ) {
         String oldEnergyIdentCodeEic = energyIdentCodeEic;
         energyIdentCodeEic = newEnergyIdentCodeEic;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.IDENTIFIED_OBJECT__ENERGY_IDENT_CODE_EIC, oldEnergyIdentCodeEic, energyIdentCodeEic ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.IDENTIFIED_OBJECT__ENERGY_IDENT_CODE_EIC,
+                    oldEnergyIdentCodeEic, energyIdentCodeEic ) );
     }
 
     /**
@@ -536,8 +543,9 @@ public class IdentifiedObjectImpl extends CimObjectWithIDImpl implements Identif
     public void setShortName( String newShortName ) {
         String oldShortName = shortName;
         shortName = newShortName;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.IDENTIFIED_OBJECT__SHORT_NAME, oldShortName, shortName ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.IDENTIFIED_OBJECT__SHORT_NAME,
+                    oldShortName, shortName ) );
     }
 
     /**
@@ -716,7 +724,7 @@ public class IdentifiedObjectImpl extends CimObjectWithIDImpl implements Identif
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (aliasName: " );
         if( aliasNameESet )
             result.append( aliasName );

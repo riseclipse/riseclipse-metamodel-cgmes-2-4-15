@@ -262,8 +262,9 @@ public class RotatingMachineDynamicsImpl extends DynamicsFunctionBlockImpl imple
         damping = newDamping;
         boolean oldDampingESet = dampingESet;
         dampingESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ROTATING_MACHINE_DYNAMICS__DAMPING, oldDamping, damping, !oldDampingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ROTATING_MACHINE_DYNAMICS__DAMPING,
+                    oldDamping, damping, !oldDampingESet ) );
     }
 
     /**
@@ -277,8 +278,9 @@ public class RotatingMachineDynamicsImpl extends DynamicsFunctionBlockImpl imple
         boolean oldDampingESet = dampingESet;
         damping = DAMPING_EDEFAULT;
         dampingESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ROTATING_MACHINE_DYNAMICS__DAMPING, oldDamping, DAMPING_EDEFAULT, oldDampingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ROTATING_MACHINE_DYNAMICS__DAMPING,
+                    oldDamping, DAMPING_EDEFAULT, oldDampingESet ) );
     }
 
     /**
@@ -312,8 +314,9 @@ public class RotatingMachineDynamicsImpl extends DynamicsFunctionBlockImpl imple
         inertia = newInertia;
         boolean oldInertiaESet = inertiaESet;
         inertiaESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ROTATING_MACHINE_DYNAMICS__INERTIA, oldInertia, inertia, !oldInertiaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ROTATING_MACHINE_DYNAMICS__INERTIA,
+                    oldInertia, inertia, !oldInertiaESet ) );
     }
 
     /**
@@ -327,8 +330,9 @@ public class RotatingMachineDynamicsImpl extends DynamicsFunctionBlockImpl imple
         boolean oldInertiaESet = inertiaESet;
         inertia = INERTIA_EDEFAULT;
         inertiaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ROTATING_MACHINE_DYNAMICS__INERTIA, oldInertia, INERTIA_EDEFAULT, oldInertiaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ROTATING_MACHINE_DYNAMICS__INERTIA,
+                    oldInertia, INERTIA_EDEFAULT, oldInertiaESet ) );
     }
 
     /**
@@ -362,9 +366,10 @@ public class RotatingMachineDynamicsImpl extends DynamicsFunctionBlockImpl imple
         saturationFactor = newSaturationFactor;
         boolean oldSaturationFactorESet = saturationFactorESet;
         saturationFactorESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.ROTATING_MACHINE_DYNAMICS__SATURATION_FACTOR,
-                        oldSaturationFactor, saturationFactor, !oldSaturationFactorESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ROTATING_MACHINE_DYNAMICS__SATURATION_FACTOR, oldSaturationFactor, saturationFactor,
+                    !oldSaturationFactorESet ) );
     }
 
     /**
@@ -378,9 +383,10 @@ public class RotatingMachineDynamicsImpl extends DynamicsFunctionBlockImpl imple
         boolean oldSaturationFactorESet = saturationFactorESet;
         saturationFactor = SATURATION_FACTOR_EDEFAULT;
         saturationFactorESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ROTATING_MACHINE_DYNAMICS__SATURATION_FACTOR, oldSaturationFactor,
-                SATURATION_FACTOR_EDEFAULT, oldSaturationFactorESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ROTATING_MACHINE_DYNAMICS__SATURATION_FACTOR, oldSaturationFactor,
+                    SATURATION_FACTOR_EDEFAULT, oldSaturationFactorESet ) );
     }
 
     /**
@@ -414,9 +420,10 @@ public class RotatingMachineDynamicsImpl extends DynamicsFunctionBlockImpl imple
         saturationFactor120 = newSaturationFactor120;
         boolean oldSaturationFactor120ESet = saturationFactor120ESet;
         saturationFactor120ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ROTATING_MACHINE_DYNAMICS__SATURATION_FACTOR120, oldSaturationFactor120, saturationFactor120,
-                !oldSaturationFactor120ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ROTATING_MACHINE_DYNAMICS__SATURATION_FACTOR120, oldSaturationFactor120,
+                    saturationFactor120, !oldSaturationFactor120ESet ) );
     }
 
     /**
@@ -430,9 +437,10 @@ public class RotatingMachineDynamicsImpl extends DynamicsFunctionBlockImpl imple
         boolean oldSaturationFactor120ESet = saturationFactor120ESet;
         saturationFactor120 = SATURATION_FACTOR120_EDEFAULT;
         saturationFactor120ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ROTATING_MACHINE_DYNAMICS__SATURATION_FACTOR120, oldSaturationFactor120,
-                SATURATION_FACTOR120_EDEFAULT, oldSaturationFactor120ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ROTATING_MACHINE_DYNAMICS__SATURATION_FACTOR120, oldSaturationFactor120,
+                    SATURATION_FACTOR120_EDEFAULT, oldSaturationFactor120ESet ) );
     }
 
     /**
@@ -466,9 +474,10 @@ public class RotatingMachineDynamicsImpl extends DynamicsFunctionBlockImpl imple
         statorLeakageReactance = newStatorLeakageReactance;
         boolean oldStatorLeakageReactanceESet = statorLeakageReactanceESet;
         statorLeakageReactanceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ROTATING_MACHINE_DYNAMICS__STATOR_LEAKAGE_REACTANCE, oldStatorLeakageReactance,
-                statorLeakageReactance, !oldStatorLeakageReactanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ROTATING_MACHINE_DYNAMICS__STATOR_LEAKAGE_REACTANCE, oldStatorLeakageReactance,
+                    statorLeakageReactance, !oldStatorLeakageReactanceESet ) );
     }
 
     /**
@@ -482,9 +491,10 @@ public class RotatingMachineDynamicsImpl extends DynamicsFunctionBlockImpl imple
         boolean oldStatorLeakageReactanceESet = statorLeakageReactanceESet;
         statorLeakageReactance = STATOR_LEAKAGE_REACTANCE_EDEFAULT;
         statorLeakageReactanceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ROTATING_MACHINE_DYNAMICS__STATOR_LEAKAGE_REACTANCE, oldStatorLeakageReactance,
-                STATOR_LEAKAGE_REACTANCE_EDEFAULT, oldStatorLeakageReactanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ROTATING_MACHINE_DYNAMICS__STATOR_LEAKAGE_REACTANCE, oldStatorLeakageReactance,
+                    STATOR_LEAKAGE_REACTANCE_EDEFAULT, oldStatorLeakageReactanceESet ) );
     }
 
     /**
@@ -518,9 +528,10 @@ public class RotatingMachineDynamicsImpl extends DynamicsFunctionBlockImpl imple
         statorResistance = newStatorResistance;
         boolean oldStatorResistanceESet = statorResistanceESet;
         statorResistanceESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.ROTATING_MACHINE_DYNAMICS__STATOR_RESISTANCE,
-                        oldStatorResistance, statorResistance, !oldStatorResistanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ROTATING_MACHINE_DYNAMICS__STATOR_RESISTANCE, oldStatorResistance, statorResistance,
+                    !oldStatorResistanceESet ) );
     }
 
     /**
@@ -534,9 +545,10 @@ public class RotatingMachineDynamicsImpl extends DynamicsFunctionBlockImpl imple
         boolean oldStatorResistanceESet = statorResistanceESet;
         statorResistance = STATOR_RESISTANCE_EDEFAULT;
         statorResistanceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ROTATING_MACHINE_DYNAMICS__STATOR_RESISTANCE, oldStatorResistance,
-                STATOR_RESISTANCE_EDEFAULT, oldStatorResistanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ROTATING_MACHINE_DYNAMICS__STATOR_RESISTANCE, oldStatorResistance,
+                    STATOR_RESISTANCE_EDEFAULT, oldStatorResistanceESet ) );
     }
 
     /**
@@ -666,7 +678,7 @@ public class RotatingMachineDynamicsImpl extends DynamicsFunctionBlockImpl imple
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (damping: " );
         if( dampingESet )
             result.append( damping );

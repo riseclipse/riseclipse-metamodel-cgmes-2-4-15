@@ -192,8 +192,14 @@ public enum MeterMultiplierKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final MeterMultiplierKind[] VALUES_ARRAY = new MeterMultiplierKind[] { KH, KR, KE, CT_RATIO,
-            PT_RATIO, TRANSFORMER_RATIO, };
+    private static final MeterMultiplierKind[] VALUES_ARRAY = new MeterMultiplierKind[] {
+            KH,
+            KR,
+            KE,
+            CT_RATIO,
+            PT_RATIO,
+            TRANSFORMER_RATIO,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Meter Multiplier Kind</b></em>' enumerators.

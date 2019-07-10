@@ -112,8 +112,9 @@ public class EarthFaultCompensatorImpl extends ConductingEquipmentImpl implement
         r = newR;
         boolean oldRESet = rESet;
         rESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EARTH_FAULT_COMPENSATOR__R, oldR, r, !oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EARTH_FAULT_COMPENSATOR__R, oldR, r,
+                    !oldRESet ) );
     }
 
     /**
@@ -127,8 +128,9 @@ public class EarthFaultCompensatorImpl extends ConductingEquipmentImpl implement
         boolean oldRESet = rESet;
         r = R_EDEFAULT;
         rESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EARTH_FAULT_COMPENSATOR__R, oldR, R_EDEFAULT, oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EARTH_FAULT_COMPENSATOR__R, oldR,
+                    R_EDEFAULT, oldRESet ) );
     }
 
     /**
@@ -208,7 +210,7 @@ public class EarthFaultCompensatorImpl extends ConductingEquipmentImpl implement
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (r: " );
         if( rESet )
             result.append( r );

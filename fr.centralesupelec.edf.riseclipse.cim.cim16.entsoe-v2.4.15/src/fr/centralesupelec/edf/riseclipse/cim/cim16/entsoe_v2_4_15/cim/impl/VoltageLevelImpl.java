@@ -328,18 +328,21 @@ public class VoltageLevelImpl extends EquipmentContainerImpl implements VoltageL
     public void setSubstation( Substation newSubstation ) {
         if( newSubstation != substation ) {
             NotificationChain msgs = null;
-            if( substation != null ) msgs = ( ( InternalEObject ) substation ).eInverseRemove( this,
-                    CimPackage.SUBSTATION__VOLTAGE_LEVELS, Substation.class, msgs );
-            if( newSubstation != null ) msgs = ( ( InternalEObject ) newSubstation ).eInverseAdd( this,
-                    CimPackage.SUBSTATION__VOLTAGE_LEVELS, Substation.class, msgs );
+            if( substation != null )
+                msgs = ( ( InternalEObject ) substation ).eInverseRemove( this, CimPackage.SUBSTATION__VOLTAGE_LEVELS,
+                        Substation.class, msgs );
+            if( newSubstation != null )
+                msgs = ( ( InternalEObject ) newSubstation ).eInverseAdd( this, CimPackage.SUBSTATION__VOLTAGE_LEVELS,
+                        Substation.class, msgs );
             msgs = basicSetSubstation( newSubstation, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldSubstationESet = substationESet;
             substationESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.VOLTAGE_LEVEL__SUBSTATION, newSubstation, newSubstation, !oldSubstationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VOLTAGE_LEVEL__SUBSTATION,
+                        newSubstation, newSubstation, !oldSubstationESet ) );
         }
     }
 
@@ -381,8 +384,9 @@ public class VoltageLevelImpl extends EquipmentContainerImpl implements VoltageL
         else {
             boolean oldSubstationESet = substationESet;
             substationESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.VOLTAGE_LEVEL__SUBSTATION, null, null, oldSubstationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VOLTAGE_LEVEL__SUBSTATION, null,
+                        null, oldSubstationESet ) );
         }
     }
 
@@ -470,18 +474,21 @@ public class VoltageLevelImpl extends EquipmentContainerImpl implements VoltageL
     public void setBaseVoltage( BaseVoltage newBaseVoltage ) {
         if( newBaseVoltage != baseVoltage ) {
             NotificationChain msgs = null;
-            if( baseVoltage != null ) msgs = ( ( InternalEObject ) baseVoltage ).eInverseRemove( this,
-                    CimPackage.BASE_VOLTAGE__VOLTAGE_LEVEL, BaseVoltage.class, msgs );
-            if( newBaseVoltage != null ) msgs = ( ( InternalEObject ) newBaseVoltage ).eInverseAdd( this,
-                    CimPackage.BASE_VOLTAGE__VOLTAGE_LEVEL, BaseVoltage.class, msgs );
+            if( baseVoltage != null )
+                msgs = ( ( InternalEObject ) baseVoltage ).eInverseRemove( this, CimPackage.BASE_VOLTAGE__VOLTAGE_LEVEL,
+                        BaseVoltage.class, msgs );
+            if( newBaseVoltage != null )
+                msgs = ( ( InternalEObject ) newBaseVoltage ).eInverseAdd( this, CimPackage.BASE_VOLTAGE__VOLTAGE_LEVEL,
+                        BaseVoltage.class, msgs );
             msgs = basicSetBaseVoltage( newBaseVoltage, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldBaseVoltageESet = baseVoltageESet;
             baseVoltageESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.VOLTAGE_LEVEL__BASE_VOLTAGE, newBaseVoltage, newBaseVoltage, !oldBaseVoltageESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VOLTAGE_LEVEL__BASE_VOLTAGE,
+                        newBaseVoltage, newBaseVoltage, !oldBaseVoltageESet ) );
         }
     }
 
@@ -523,8 +530,9 @@ public class VoltageLevelImpl extends EquipmentContainerImpl implements VoltageL
         else {
             boolean oldBaseVoltageESet = baseVoltageESet;
             baseVoltageESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.VOLTAGE_LEVEL__BASE_VOLTAGE, null, null, oldBaseVoltageESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VOLTAGE_LEVEL__BASE_VOLTAGE, null,
+                        null, oldBaseVoltageESet ) );
         }
     }
 
@@ -548,12 +556,14 @@ public class VoltageLevelImpl extends EquipmentContainerImpl implements VoltageL
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.VOLTAGE_LEVEL__BASE_VOLTAGE:
-            if( baseVoltage != null ) msgs = ( ( InternalEObject ) baseVoltage ).eInverseRemove( this,
-                    CimPackage.BASE_VOLTAGE__VOLTAGE_LEVEL, BaseVoltage.class, msgs );
+            if( baseVoltage != null )
+                msgs = ( ( InternalEObject ) baseVoltage ).eInverseRemove( this, CimPackage.BASE_VOLTAGE__VOLTAGE_LEVEL,
+                        BaseVoltage.class, msgs );
             return basicSetBaseVoltage( ( BaseVoltage ) otherEnd, msgs );
         case CimPackage.VOLTAGE_LEVEL__SUBSTATION:
-            if( substation != null ) msgs = ( ( InternalEObject ) substation ).eInverseRemove( this,
-                    CimPackage.SUBSTATION__VOLTAGE_LEVELS, Substation.class, msgs );
+            if( substation != null )
+                msgs = ( ( InternalEObject ) substation ).eInverseRemove( this, CimPackage.SUBSTATION__VOLTAGE_LEVELS,
+                        Substation.class, msgs );
             return basicSetSubstation( ( Substation ) otherEnd, msgs );
         case CimPackage.VOLTAGE_LEVEL__BAYS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getBays() ).basicAdd( otherEnd, msgs );
@@ -688,7 +698,7 @@ public class VoltageLevelImpl extends EquipmentContainerImpl implements VoltageL
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (highVoltageLimit: " );
         if( highVoltageLimitESet )
             result.append( highVoltageLimit );

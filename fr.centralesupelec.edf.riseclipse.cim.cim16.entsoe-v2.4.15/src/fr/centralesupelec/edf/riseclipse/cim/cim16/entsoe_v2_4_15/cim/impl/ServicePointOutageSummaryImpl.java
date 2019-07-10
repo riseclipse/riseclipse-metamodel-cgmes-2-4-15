@@ -143,9 +143,10 @@ public class ServicePointOutageSummaryImpl extends MinimalEObjectImpl.Container 
         criticalCount = newCriticalCount;
         boolean oldCriticalCountESet = criticalCountESet;
         criticalCountESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.SERVICE_POINT_OUTAGE_SUMMARY__CRITICAL_COUNT,
-                        oldCriticalCount, criticalCount, !oldCriticalCountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SERVICE_POINT_OUTAGE_SUMMARY__CRITICAL_COUNT, oldCriticalCount, criticalCount,
+                    !oldCriticalCountESet ) );
     }
 
     /**
@@ -159,9 +160,10 @@ public class ServicePointOutageSummaryImpl extends MinimalEObjectImpl.Container 
         boolean oldCriticalCountESet = criticalCountESet;
         criticalCount = CRITICAL_COUNT_EDEFAULT;
         criticalCountESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SERVICE_POINT_OUTAGE_SUMMARY__CRITICAL_COUNT, oldCriticalCount, CRITICAL_COUNT_EDEFAULT,
-                oldCriticalCountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SERVICE_POINT_OUTAGE_SUMMARY__CRITICAL_COUNT, oldCriticalCount, CRITICAL_COUNT_EDEFAULT,
+                    oldCriticalCountESet ) );
     }
 
     /**
@@ -195,8 +197,10 @@ public class ServicePointOutageSummaryImpl extends MinimalEObjectImpl.Container 
         totalCount = newTotalCount;
         boolean oldTotalCountESet = totalCountESet;
         totalCountESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SERVICE_POINT_OUTAGE_SUMMARY__TOTAL_COUNT, oldTotalCount, totalCount, !oldTotalCountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SERVICE_POINT_OUTAGE_SUMMARY__TOTAL_COUNT, oldTotalCount, totalCount,
+                    !oldTotalCountESet ) );
     }
 
     /**
@@ -210,9 +214,10 @@ public class ServicePointOutageSummaryImpl extends MinimalEObjectImpl.Container 
         boolean oldTotalCountESet = totalCountESet;
         totalCount = TOTAL_COUNT_EDEFAULT;
         totalCountESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.SERVICE_POINT_OUTAGE_SUMMARY__TOTAL_COUNT,
-                        oldTotalCount, TOTAL_COUNT_EDEFAULT, oldTotalCountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SERVICE_POINT_OUTAGE_SUMMARY__TOTAL_COUNT, oldTotalCount, TOTAL_COUNT_EDEFAULT,
+                    oldTotalCountESet ) );
     }
 
     /**
@@ -302,7 +307,7 @@ public class ServicePointOutageSummaryImpl extends MinimalEObjectImpl.Container 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (criticalCount: " );
         if( criticalCountESet )
             result.append( criticalCount );

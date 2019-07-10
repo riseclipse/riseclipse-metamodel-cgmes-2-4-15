@@ -427,8 +427,9 @@ public class PssSB4Impl extends PowerSystemStabilizerDynamicsImpl implements Pss
         boolean oldKxESet = kxESet;
         kx = KX_EDEFAULT;
         kxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__KX,
-                oldKx, KX_EDEFAULT, oldKxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__KX, oldKx, KX_EDEFAULT,
+                    oldKxESet ) );
     }
 
     /**
@@ -477,8 +478,9 @@ public class PssSB4Impl extends PowerSystemStabilizerDynamicsImpl implements Pss
         boolean oldTaESet = taESet;
         ta = TA_EDEFAULT;
         taESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__TA,
-                oldTa, TA_EDEFAULT, oldTaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__TA, oldTa, TA_EDEFAULT,
+                    oldTaESet ) );
     }
 
     /**
@@ -527,8 +529,9 @@ public class PssSB4Impl extends PowerSystemStabilizerDynamicsImpl implements Pss
         boolean oldTbESet = tbESet;
         tb = TB_EDEFAULT;
         tbESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__TB,
-                oldTb, TB_EDEFAULT, oldTbESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__TB, oldTb, TB_EDEFAULT,
+                    oldTbESet ) );
     }
 
     /**
@@ -577,8 +580,9 @@ public class PssSB4Impl extends PowerSystemStabilizerDynamicsImpl implements Pss
         boolean oldTcESet = tcESet;
         tc = TC_EDEFAULT;
         tcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__TC,
-                oldTc, TC_EDEFAULT, oldTcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__TC, oldTc, TC_EDEFAULT,
+                    oldTcESet ) );
     }
 
     /**
@@ -627,8 +631,9 @@ public class PssSB4Impl extends PowerSystemStabilizerDynamicsImpl implements Pss
         boolean oldTdESet = tdESet;
         td = TD_EDEFAULT;
         tdESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__TD,
-                oldTd, TD_EDEFAULT, oldTdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__TD, oldTd, TD_EDEFAULT,
+                    oldTdESet ) );
     }
 
     /**
@@ -677,8 +682,9 @@ public class PssSB4Impl extends PowerSystemStabilizerDynamicsImpl implements Pss
         boolean oldTeESet = teESet;
         te = TE_EDEFAULT;
         teESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__TE,
-                oldTe, TE_EDEFAULT, oldTeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__TE, oldTe, TE_EDEFAULT,
+                    oldTeESet ) );
     }
 
     /**
@@ -727,8 +733,9 @@ public class PssSB4Impl extends PowerSystemStabilizerDynamicsImpl implements Pss
         boolean oldTtESet = ttESet;
         tt = TT_EDEFAULT;
         ttESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__TT,
-                oldTt, TT_EDEFAULT, oldTtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__TT, oldTt, TT_EDEFAULT,
+                    oldTtESet ) );
     }
 
     /**
@@ -762,8 +769,9 @@ public class PssSB4Impl extends PowerSystemStabilizerDynamicsImpl implements Pss
         tx1 = newTx1;
         boolean oldTx1ESet = tx1ESet;
         tx1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_SB4__TX1, oldTx1, tx1, !oldTx1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_SB4__TX1, oldTx1, tx1,
+                    !oldTx1ESet ) );
     }
 
     /**
@@ -777,8 +785,9 @@ public class PssSB4Impl extends PowerSystemStabilizerDynamicsImpl implements Pss
         boolean oldTx1ESet = tx1ESet;
         tx1 = TX1_EDEFAULT;
         tx1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__TX1,
-                oldTx1, TX1_EDEFAULT, oldTx1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__TX1, oldTx1, TX1_EDEFAULT,
+                    oldTx1ESet ) );
     }
 
     /**
@@ -812,8 +821,9 @@ public class PssSB4Impl extends PowerSystemStabilizerDynamicsImpl implements Pss
         tx2 = newTx2;
         boolean oldTx2ESet = tx2ESet;
         tx2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PSS_SB4__TX2, oldTx2, tx2, !oldTx2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_SB4__TX2, oldTx2, tx2,
+                    !oldTx2ESet ) );
     }
 
     /**
@@ -827,8 +837,9 @@ public class PssSB4Impl extends PowerSystemStabilizerDynamicsImpl implements Pss
         boolean oldTx2ESet = tx2ESet;
         tx2 = TX2_EDEFAULT;
         tx2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__TX2,
-                oldTx2, TX2_EDEFAULT, oldTx2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__TX2, oldTx2, TX2_EDEFAULT,
+                    oldTx2ESet ) );
     }
 
     /**
@@ -862,8 +873,9 @@ public class PssSB4Impl extends PowerSystemStabilizerDynamicsImpl implements Pss
         vsmax = newVsmax;
         boolean oldVsmaxESet = vsmaxESet;
         vsmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_SB4__VSMAX,
-                oldVsmax, vsmax, !oldVsmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_SB4__VSMAX, oldVsmax, vsmax,
+                    !oldVsmaxESet ) );
     }
 
     /**
@@ -877,8 +889,9 @@ public class PssSB4Impl extends PowerSystemStabilizerDynamicsImpl implements Pss
         boolean oldVsmaxESet = vsmaxESet;
         vsmax = VSMAX_EDEFAULT;
         vsmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_SB4__VSMAX, oldVsmax, VSMAX_EDEFAULT, oldVsmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__VSMAX, oldVsmax,
+                    VSMAX_EDEFAULT, oldVsmaxESet ) );
     }
 
     /**
@@ -912,8 +925,9 @@ public class PssSB4Impl extends PowerSystemStabilizerDynamicsImpl implements Pss
         vsmin = newVsmin;
         boolean oldVsminESet = vsminESet;
         vsminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_SB4__VSMIN,
-                oldVsmin, vsmin, !oldVsminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PSS_SB4__VSMIN, oldVsmin, vsmin,
+                    !oldVsminESet ) );
     }
 
     /**
@@ -927,8 +941,9 @@ public class PssSB4Impl extends PowerSystemStabilizerDynamicsImpl implements Pss
         boolean oldVsminESet = vsminESet;
         vsmin = VSMIN_EDEFAULT;
         vsminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PSS_SB4__VSMIN, oldVsmin, VSMIN_EDEFAULT, oldVsminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PSS_SB4__VSMIN, oldVsmin,
+                    VSMIN_EDEFAULT, oldVsminESet ) );
     }
 
     /**
@@ -1108,7 +1123,7 @@ public class PssSB4Impl extends PowerSystemStabilizerDynamicsImpl implements Pss
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kx: " );
         if( kxESet )
             result.append( kx );

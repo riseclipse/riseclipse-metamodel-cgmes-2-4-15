@@ -156,8 +156,9 @@ public class OperatingShareImpl extends CimObjectWithIDImpl implements Operating
         percentage = newPercentage;
         boolean oldPercentageESet = percentageESet;
         percentageESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OPERATING_SHARE__PERCENTAGE, oldPercentage, percentage, !oldPercentageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OPERATING_SHARE__PERCENTAGE,
+                    oldPercentage, percentage, !oldPercentageESet ) );
     }
 
     /**
@@ -171,8 +172,9 @@ public class OperatingShareImpl extends CimObjectWithIDImpl implements Operating
         boolean oldPercentageESet = percentageESet;
         percentage = PERCENTAGE_EDEFAULT;
         percentageESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.OPERATING_SHARE__PERCENTAGE, oldPercentage, PERCENTAGE_EDEFAULT, oldPercentageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OPERATING_SHARE__PERCENTAGE,
+                    oldPercentage, PERCENTAGE_EDEFAULT, oldPercentageESet ) );
     }
 
     /**
@@ -227,8 +229,9 @@ public class OperatingShareImpl extends CimObjectWithIDImpl implements Operating
     public void setOperatingParticipant( OperatingParticipant newOperatingParticipant ) {
         if( newOperatingParticipant != operatingParticipant ) {
             NotificationChain msgs = null;
-            if( operatingParticipant != null ) msgs = ( ( InternalEObject ) operatingParticipant ).eInverseRemove( this,
-                    CimPackage.OPERATING_PARTICIPANT__OPERATING_SHARE, OperatingParticipant.class, msgs );
+            if( operatingParticipant != null )
+                msgs = ( ( InternalEObject ) operatingParticipant ).eInverseRemove( this,
+                        CimPackage.OPERATING_PARTICIPANT__OPERATING_SHARE, OperatingParticipant.class, msgs );
             if( newOperatingParticipant != null )
                 msgs = ( ( InternalEObject ) newOperatingParticipant ).eInverseAdd( this,
                         CimPackage.OPERATING_PARTICIPANT__OPERATING_SHARE, OperatingParticipant.class, msgs );
@@ -238,9 +241,10 @@ public class OperatingShareImpl extends CimObjectWithIDImpl implements Operating
         else {
             boolean oldOperatingParticipantESet = operatingParticipantESet;
             operatingParticipantESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.OPERATING_SHARE__OPERATING_PARTICIPANT,
-                            newOperatingParticipant, newOperatingParticipant, !oldOperatingParticipantESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.OPERATING_SHARE__OPERATING_PARTICIPANT, newOperatingParticipant,
+                        newOperatingParticipant, !oldOperatingParticipantESet ) );
         }
     }
 
@@ -283,8 +287,9 @@ public class OperatingShareImpl extends CimObjectWithIDImpl implements Operating
         else {
             boolean oldOperatingParticipantESet = operatingParticipantESet;
             operatingParticipantESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OPERATING_SHARE__OPERATING_PARTICIPANT, null, null, oldOperatingParticipantESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.OPERATING_SHARE__OPERATING_PARTICIPANT, null, null, oldOperatingParticipantESet ) );
         }
     }
 
@@ -340,8 +345,9 @@ public class OperatingShareImpl extends CimObjectWithIDImpl implements Operating
     public void setPowerSystemResource( PowerSystemResource newPowerSystemResource ) {
         if( newPowerSystemResource != powerSystemResource ) {
             NotificationChain msgs = null;
-            if( powerSystemResource != null ) msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
-                    CimPackage.POWER_SYSTEM_RESOURCE__OPERATING_SHARE, PowerSystemResource.class, msgs );
+            if( powerSystemResource != null )
+                msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
+                        CimPackage.POWER_SYSTEM_RESOURCE__OPERATING_SHARE, PowerSystemResource.class, msgs );
             if( newPowerSystemResource != null )
                 msgs = ( ( InternalEObject ) newPowerSystemResource ).eInverseAdd( this,
                         CimPackage.POWER_SYSTEM_RESOURCE__OPERATING_SHARE, PowerSystemResource.class, msgs );
@@ -351,9 +357,10 @@ public class OperatingShareImpl extends CimObjectWithIDImpl implements Operating
         else {
             boolean oldPowerSystemResourceESet = powerSystemResourceESet;
             powerSystemResourceESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.OPERATING_SHARE__POWER_SYSTEM_RESOURCE,
-                            newPowerSystemResource, newPowerSystemResource, !oldPowerSystemResourceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.OPERATING_SHARE__POWER_SYSTEM_RESOURCE, newPowerSystemResource,
+                        newPowerSystemResource, !oldPowerSystemResourceESet ) );
         }
     }
 
@@ -396,8 +403,9 @@ public class OperatingShareImpl extends CimObjectWithIDImpl implements Operating
         else {
             boolean oldPowerSystemResourceESet = powerSystemResourceESet;
             powerSystemResourceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OPERATING_SHARE__POWER_SYSTEM_RESOURCE, null, null, oldPowerSystemResourceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.OPERATING_SHARE__POWER_SYSTEM_RESOURCE, null, null, oldPowerSystemResourceESet ) );
         }
     }
 
@@ -420,12 +428,14 @@ public class OperatingShareImpl extends CimObjectWithIDImpl implements Operating
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.OPERATING_SHARE__OPERATING_PARTICIPANT:
-            if( operatingParticipant != null ) msgs = ( ( InternalEObject ) operatingParticipant ).eInverseRemove( this,
-                    CimPackage.OPERATING_PARTICIPANT__OPERATING_SHARE, OperatingParticipant.class, msgs );
+            if( operatingParticipant != null )
+                msgs = ( ( InternalEObject ) operatingParticipant ).eInverseRemove( this,
+                        CimPackage.OPERATING_PARTICIPANT__OPERATING_SHARE, OperatingParticipant.class, msgs );
             return basicSetOperatingParticipant( ( OperatingParticipant ) otherEnd, msgs );
         case CimPackage.OPERATING_SHARE__POWER_SYSTEM_RESOURCE:
-            if( powerSystemResource != null ) msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
-                    CimPackage.POWER_SYSTEM_RESOURCE__OPERATING_SHARE, PowerSystemResource.class, msgs );
+            if( powerSystemResource != null )
+                msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
+                        CimPackage.POWER_SYSTEM_RESOURCE__OPERATING_SHARE, PowerSystemResource.class, msgs );
             return basicSetPowerSystemResource( ( PowerSystemResource ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -534,7 +544,7 @@ public class OperatingShareImpl extends CimObjectWithIDImpl implements Operating
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (percentage: " );
         if( percentageESet )
             result.append( percentage );

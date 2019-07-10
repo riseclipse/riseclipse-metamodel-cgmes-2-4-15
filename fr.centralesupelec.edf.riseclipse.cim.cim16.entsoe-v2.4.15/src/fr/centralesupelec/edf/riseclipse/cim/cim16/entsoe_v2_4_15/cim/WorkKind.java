@@ -292,8 +292,18 @@ public enum WorkKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final WorkKind[] VALUES_ARRAY = new WorkKind[] { CONSTRUCTION, INSPECTION, MAINTENANCE, REPAIR, TEST,
-            SERVICE, DISCONNECT, RECONNECT, CONNECT, OTHER, };
+    private static final WorkKind[] VALUES_ARRAY = new WorkKind[] {
+            CONSTRUCTION,
+            INSPECTION,
+            MAINTENANCE,
+            REPAIR,
+            TEST,
+            SERVICE,
+            DISCONNECT,
+            RECONNECT,
+            CONNECT,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Work Kind</b></em>' enumerators.

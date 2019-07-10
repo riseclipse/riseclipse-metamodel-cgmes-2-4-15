@@ -95,9 +95,10 @@ public class SteamSendoutScheduleImpl extends RegularIntervalScheduleImpl implem
             InternalEObject oldCogenerationPlant = ( InternalEObject ) cogenerationPlant;
             cogenerationPlant = ( CogenerationPlant ) eResolveProxy( oldCogenerationPlant );
             if( cogenerationPlant != oldCogenerationPlant ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.STEAM_SENDOUT_SCHEDULE__COGENERATION_PLANT, oldCogenerationPlant,
-                        cogenerationPlant ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.STEAM_SENDOUT_SCHEDULE__COGENERATION_PLANT, oldCogenerationPlant,
+                            cogenerationPlant ) );
             }
         }
         return cogenerationPlant;
@@ -144,19 +145,22 @@ public class SteamSendoutScheduleImpl extends RegularIntervalScheduleImpl implem
     public void setCogenerationPlant( CogenerationPlant newCogenerationPlant ) {
         if( newCogenerationPlant != cogenerationPlant ) {
             NotificationChain msgs = null;
-            if( cogenerationPlant != null ) msgs = ( ( InternalEObject ) cogenerationPlant ).eInverseRemove( this,
-                    CimPackage.COGENERATION_PLANT__STEAM_SENDOUT_SCHEDULE, CogenerationPlant.class, msgs );
-            if( newCogenerationPlant != null ) msgs = ( ( InternalEObject ) newCogenerationPlant ).eInverseAdd( this,
-                    CimPackage.COGENERATION_PLANT__STEAM_SENDOUT_SCHEDULE, CogenerationPlant.class, msgs );
+            if( cogenerationPlant != null )
+                msgs = ( ( InternalEObject ) cogenerationPlant ).eInverseRemove( this,
+                        CimPackage.COGENERATION_PLANT__STEAM_SENDOUT_SCHEDULE, CogenerationPlant.class, msgs );
+            if( newCogenerationPlant != null )
+                msgs = ( ( InternalEObject ) newCogenerationPlant ).eInverseAdd( this,
+                        CimPackage.COGENERATION_PLANT__STEAM_SENDOUT_SCHEDULE, CogenerationPlant.class, msgs );
             msgs = basicSetCogenerationPlant( newCogenerationPlant, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCogenerationPlantESet = cogenerationPlantESet;
             cogenerationPlantESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.STEAM_SENDOUT_SCHEDULE__COGENERATION_PLANT, newCogenerationPlant, newCogenerationPlant,
-                    !oldCogenerationPlantESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.STEAM_SENDOUT_SCHEDULE__COGENERATION_PLANT, newCogenerationPlant,
+                        newCogenerationPlant, !oldCogenerationPlantESet ) );
         }
     }
 
@@ -199,8 +203,9 @@ public class SteamSendoutScheduleImpl extends RegularIntervalScheduleImpl implem
         else {
             boolean oldCogenerationPlantESet = cogenerationPlantESet;
             cogenerationPlantESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.STEAM_SENDOUT_SCHEDULE__COGENERATION_PLANT, null, null, oldCogenerationPlantESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.STEAM_SENDOUT_SCHEDULE__COGENERATION_PLANT, null, null, oldCogenerationPlantESet ) );
         }
     }
 
@@ -223,8 +228,9 @@ public class SteamSendoutScheduleImpl extends RegularIntervalScheduleImpl implem
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.STEAM_SENDOUT_SCHEDULE__COGENERATION_PLANT:
-            if( cogenerationPlant != null ) msgs = ( ( InternalEObject ) cogenerationPlant ).eInverseRemove( this,
-                    CimPackage.COGENERATION_PLANT__STEAM_SENDOUT_SCHEDULE, CogenerationPlant.class, msgs );
+            if( cogenerationPlant != null )
+                msgs = ( ( InternalEObject ) cogenerationPlant ).eInverseRemove( this,
+                        CimPackage.COGENERATION_PLANT__STEAM_SENDOUT_SCHEDULE, CogenerationPlant.class, msgs );
             return basicSetCogenerationPlant( ( CogenerationPlant ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

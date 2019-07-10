@@ -167,8 +167,13 @@ public enum EmissionType implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final EmissionType[] VALUES_ARRAY = new EmissionType[] { CARBON_DIOXIDE, NITROGEN_OXIDE,
-            HYDROGEN_SULFIDE, CHLORINE, CARBON_DISULFIDE, };
+    private static final EmissionType[] VALUES_ARRAY = new EmissionType[] {
+            CARBON_DIOXIDE,
+            NITROGEN_OXIDE,
+            HYDROGEN_SULFIDE,
+            CHLORINE,
+            CARBON_DISULFIDE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Emission Type</b></em>' enumerators.

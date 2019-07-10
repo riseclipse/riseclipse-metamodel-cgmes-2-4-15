@@ -133,8 +133,9 @@ public class VCompIEEEType2Impl extends VoltageCompensatorDynamicsImpl implement
         tr = newTr;
         boolean oldTrESet = trESet;
         trESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VCOMP_IEEE_TYPE2__TR, oldTr, tr, !oldTrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VCOMP_IEEE_TYPE2__TR, oldTr, tr,
+                    !oldTrESet ) );
     }
 
     /**
@@ -148,8 +149,9 @@ public class VCompIEEEType2Impl extends VoltageCompensatorDynamicsImpl implement
         boolean oldTrESet = trESet;
         tr = TR_EDEFAULT;
         trESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VCOMP_IEEE_TYPE2__TR, oldTr, TR_EDEFAULT, oldTrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VCOMP_IEEE_TYPE2__TR, oldTr,
+                    TR_EDEFAULT, oldTrESet ) );
     }
 
     /**
@@ -306,7 +308,7 @@ public class VCompIEEEType2Impl extends VoltageCompensatorDynamicsImpl implement
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (tr: " );
         if( trESet )
             result.append( tr );

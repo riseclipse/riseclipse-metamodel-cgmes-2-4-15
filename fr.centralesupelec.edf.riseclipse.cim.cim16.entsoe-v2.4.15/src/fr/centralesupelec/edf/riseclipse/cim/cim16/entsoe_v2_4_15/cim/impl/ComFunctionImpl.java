@@ -227,8 +227,9 @@ public class ComFunctionImpl extends EndDeviceFunctionImpl implements ComFunctio
         amrAddress = newAmrAddress;
         boolean oldAmrAddressESet = amrAddressESet;
         amrAddressESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.COM_FUNCTION__AMR_ADDRESS, oldAmrAddress, amrAddress, !oldAmrAddressESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.COM_FUNCTION__AMR_ADDRESS, oldAmrAddress,
+                    amrAddress, !oldAmrAddressESet ) );
     }
 
     /**
@@ -242,8 +243,9 @@ public class ComFunctionImpl extends EndDeviceFunctionImpl implements ComFunctio
         boolean oldAmrAddressESet = amrAddressESet;
         amrAddress = AMR_ADDRESS_EDEFAULT;
         amrAddressESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.COM_FUNCTION__AMR_ADDRESS, oldAmrAddress, AMR_ADDRESS_EDEFAULT, oldAmrAddressESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.COM_FUNCTION__AMR_ADDRESS,
+                    oldAmrAddress, AMR_ADDRESS_EDEFAULT, oldAmrAddressESet ) );
     }
 
     /**
@@ -277,8 +279,9 @@ public class ComFunctionImpl extends EndDeviceFunctionImpl implements ComFunctio
         amrRouter = newAmrRouter;
         boolean oldAmrRouterESet = amrRouterESet;
         amrRouterESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.COM_FUNCTION__AMR_ROUTER, oldAmrRouter, amrRouter, !oldAmrRouterESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.COM_FUNCTION__AMR_ROUTER, oldAmrRouter,
+                    amrRouter, !oldAmrRouterESet ) );
     }
 
     /**
@@ -292,8 +295,9 @@ public class ComFunctionImpl extends EndDeviceFunctionImpl implements ComFunctio
         boolean oldAmrRouterESet = amrRouterESet;
         amrRouter = AMR_ROUTER_EDEFAULT;
         amrRouterESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.COM_FUNCTION__AMR_ROUTER, oldAmrRouter, AMR_ROUTER_EDEFAULT, oldAmrRouterESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.COM_FUNCTION__AMR_ROUTER, oldAmrRouter,
+                    AMR_ROUTER_EDEFAULT, oldAmrRouterESet ) );
     }
 
     /**
@@ -327,8 +331,9 @@ public class ComFunctionImpl extends EndDeviceFunctionImpl implements ComFunctio
         direction = newDirection == null ? DIRECTION_EDEFAULT : newDirection;
         boolean oldDirectionESet = directionESet;
         directionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.COM_FUNCTION__DIRECTION, oldDirection, direction, !oldDirectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.COM_FUNCTION__DIRECTION, oldDirection,
+                    direction, !oldDirectionESet ) );
     }
 
     /**
@@ -342,8 +347,9 @@ public class ComFunctionImpl extends EndDeviceFunctionImpl implements ComFunctio
         boolean oldDirectionESet = directionESet;
         direction = DIRECTION_EDEFAULT;
         directionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.COM_FUNCTION__DIRECTION, oldDirection, DIRECTION_EDEFAULT, oldDirectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.COM_FUNCTION__DIRECTION, oldDirection,
+                    DIRECTION_EDEFAULT, oldDirectionESet ) );
     }
 
     /**
@@ -377,8 +383,9 @@ public class ComFunctionImpl extends EndDeviceFunctionImpl implements ComFunctio
         technology = newTechnology == null ? TECHNOLOGY_EDEFAULT : newTechnology;
         boolean oldTechnologyESet = technologyESet;
         technologyESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.COM_FUNCTION__TECHNOLOGY, oldTechnology, technology, !oldTechnologyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.COM_FUNCTION__TECHNOLOGY, oldTechnology,
+                    technology, !oldTechnologyESet ) );
     }
 
     /**
@@ -392,8 +399,9 @@ public class ComFunctionImpl extends EndDeviceFunctionImpl implements ComFunctio
         boolean oldTechnologyESet = technologyESet;
         technology = TECHNOLOGY_EDEFAULT;
         technologyESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.COM_FUNCTION__TECHNOLOGY, oldTechnology, TECHNOLOGY_EDEFAULT, oldTechnologyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.COM_FUNCTION__TECHNOLOGY,
+                    oldTechnology, TECHNOLOGY_EDEFAULT, oldTechnologyESet ) );
     }
 
     /**
@@ -446,18 +454,21 @@ public class ComFunctionImpl extends EndDeviceFunctionImpl implements ComFunctio
     public void setComModule( ComModule newComModule ) {
         if( newComModule != comModule ) {
             NotificationChain msgs = null;
-            if( comModule != null ) msgs = ( ( InternalEObject ) comModule ).eInverseRemove( this,
-                    CimPackage.COM_MODULE__COM_FUNCTIONS, ComModule.class, msgs );
-            if( newComModule != null ) msgs = ( ( InternalEObject ) newComModule ).eInverseAdd( this,
-                    CimPackage.COM_MODULE__COM_FUNCTIONS, ComModule.class, msgs );
+            if( comModule != null )
+                msgs = ( ( InternalEObject ) comModule ).eInverseRemove( this, CimPackage.COM_MODULE__COM_FUNCTIONS,
+                        ComModule.class, msgs );
+            if( newComModule != null )
+                msgs = ( ( InternalEObject ) newComModule ).eInverseAdd( this, CimPackage.COM_MODULE__COM_FUNCTIONS,
+                        ComModule.class, msgs );
             msgs = basicSetComModule( newComModule, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldComModuleESet = comModuleESet;
             comModuleESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.COM_FUNCTION__COM_MODULE, newComModule, newComModule, !oldComModuleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.COM_FUNCTION__COM_MODULE,
+                        newComModule, newComModule, !oldComModuleESet ) );
         }
     }
 
@@ -499,8 +510,9 @@ public class ComFunctionImpl extends EndDeviceFunctionImpl implements ComFunctio
         else {
             boolean oldComModuleESet = comModuleESet;
             comModuleESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.COM_FUNCTION__COM_MODULE, null, null, oldComModuleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.COM_FUNCTION__COM_MODULE, null,
+                        null, oldComModuleESet ) );
         }
     }
 
@@ -523,8 +535,9 @@ public class ComFunctionImpl extends EndDeviceFunctionImpl implements ComFunctio
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.COM_FUNCTION__COM_MODULE:
-            if( comModule != null ) msgs = ( ( InternalEObject ) comModule ).eInverseRemove( this,
-                    CimPackage.COM_MODULE__COM_FUNCTIONS, ComModule.class, msgs );
+            if( comModule != null )
+                msgs = ( ( InternalEObject ) comModule ).eInverseRemove( this, CimPackage.COM_MODULE__COM_FUNCTIONS,
+                        ComModule.class, msgs );
             return basicSetComModule( ( ComModule ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -651,7 +664,7 @@ public class ComFunctionImpl extends EndDeviceFunctionImpl implements ComFunctio
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (amrAddress: " );
         if( amrAddressESet )
             result.append( amrAddress );

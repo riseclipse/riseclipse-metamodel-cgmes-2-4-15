@@ -444,8 +444,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         badReference = newBadReference;
         boolean oldBadReferenceESet = badReferenceESet;
         badReferenceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.QUALITY61850__BAD_REFERENCE, oldBadReference, badReference, !oldBadReferenceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.QUALITY61850__BAD_REFERENCE,
+                    oldBadReference, badReference, !oldBadReferenceESet ) );
     }
 
     /**
@@ -547,8 +548,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         failure = newFailure;
         boolean oldFailureESet = failureESet;
         failureESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.QUALITY61850__FAILURE, oldFailure, failure, !oldFailureESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.QUALITY61850__FAILURE, oldFailure,
+                    failure, !oldFailureESet ) );
     }
 
     /**
@@ -562,8 +564,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         boolean oldFailureESet = failureESet;
         failure = FAILURE_EDEFAULT;
         failureESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.QUALITY61850__FAILURE, oldFailure, FAILURE_EDEFAULT, oldFailureESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.QUALITY61850__FAILURE, oldFailure,
+                    FAILURE_EDEFAULT, oldFailureESet ) );
     }
 
     /**
@@ -597,8 +600,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         oldData = newOldData;
         boolean oldOldDataESet = oldDataESet;
         oldDataESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.QUALITY61850__OLD_DATA, oldOldData, oldData, !oldOldDataESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.QUALITY61850__OLD_DATA, oldOldData,
+                    oldData, !oldOldDataESet ) );
     }
 
     /**
@@ -612,8 +616,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         boolean oldOldDataESet = oldDataESet;
         oldData = OLD_DATA_EDEFAULT;
         oldDataESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.QUALITY61850__OLD_DATA, oldOldData, OLD_DATA_EDEFAULT, oldOldDataESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.QUALITY61850__OLD_DATA, oldOldData,
+                    OLD_DATA_EDEFAULT, oldOldDataESet ) );
     }
 
     /**
@@ -699,8 +704,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         oscillatory = newOscillatory;
         boolean oldOscillatoryESet = oscillatoryESet;
         oscillatoryESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.QUALITY61850__OSCILLATORY, oldOscillatory, oscillatory, !oldOscillatoryESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.QUALITY61850__OSCILLATORY,
+                    oldOscillatory, oscillatory, !oldOscillatoryESet ) );
     }
 
     /**
@@ -714,8 +720,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         boolean oldOscillatoryESet = oscillatoryESet;
         oscillatory = OSCILLATORY_EDEFAULT;
         oscillatoryESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.QUALITY61850__OSCILLATORY, oldOscillatory, OSCILLATORY_EDEFAULT, oldOscillatoryESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.QUALITY61850__OSCILLATORY,
+                    oldOscillatory, OSCILLATORY_EDEFAULT, oldOscillatoryESet ) );
     }
 
     /**
@@ -749,8 +756,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         outOfRange = newOutOfRange;
         boolean oldOutOfRangeESet = outOfRangeESet;
         outOfRangeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.QUALITY61850__OUT_OF_RANGE, oldOutOfRange, outOfRange, !oldOutOfRangeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.QUALITY61850__OUT_OF_RANGE,
+                    oldOutOfRange, outOfRange, !oldOutOfRangeESet ) );
     }
 
     /**
@@ -764,8 +772,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         boolean oldOutOfRangeESet = outOfRangeESet;
         outOfRange = OUT_OF_RANGE_EDEFAULT;
         outOfRangeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.QUALITY61850__OUT_OF_RANGE, oldOutOfRange, OUT_OF_RANGE_EDEFAULT, oldOutOfRangeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.QUALITY61850__OUT_OF_RANGE,
+                    oldOutOfRange, OUT_OF_RANGE_EDEFAULT, oldOutOfRangeESet ) );
     }
 
     /**
@@ -799,8 +808,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         overFlow = newOverFlow;
         boolean oldOverFlowESet = overFlowESet;
         overFlowESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.QUALITY61850__OVER_FLOW, oldOverFlow, overFlow, !oldOverFlowESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.QUALITY61850__OVER_FLOW, oldOverFlow,
+                    overFlow, !oldOverFlowESet ) );
     }
 
     /**
@@ -814,8 +824,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         boolean oldOverFlowESet = overFlowESet;
         overFlow = OVER_FLOW_EDEFAULT;
         overFlowESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.QUALITY61850__OVER_FLOW, oldOverFlow, OVER_FLOW_EDEFAULT, oldOverFlowESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.QUALITY61850__OVER_FLOW, oldOverFlow,
+                    OVER_FLOW_EDEFAULT, oldOverFlowESet ) );
     }
 
     /**
@@ -849,8 +860,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         source = newSource == null ? SOURCE_EDEFAULT : newSource;
         boolean oldSourceESet = sourceESet;
         sourceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.QUALITY61850__SOURCE, oldSource, source, !oldSourceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.QUALITY61850__SOURCE, oldSource, source,
+                    !oldSourceESet ) );
     }
 
     /**
@@ -864,8 +876,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         boolean oldSourceESet = sourceESet;
         source = SOURCE_EDEFAULT;
         sourceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.QUALITY61850__SOURCE, oldSource, SOURCE_EDEFAULT, oldSourceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.QUALITY61850__SOURCE, oldSource,
+                    SOURCE_EDEFAULT, oldSourceESet ) );
     }
 
     /**
@@ -899,8 +912,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         suspect = newSuspect;
         boolean oldSuspectESet = suspectESet;
         suspectESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.QUALITY61850__SUSPECT, oldSuspect, suspect, !oldSuspectESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.QUALITY61850__SUSPECT, oldSuspect,
+                    suspect, !oldSuspectESet ) );
     }
 
     /**
@@ -914,8 +928,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         boolean oldSuspectESet = suspectESet;
         suspect = SUSPECT_EDEFAULT;
         suspectESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.QUALITY61850__SUSPECT, oldSuspect, SUSPECT_EDEFAULT, oldSuspectESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.QUALITY61850__SUSPECT, oldSuspect,
+                    SUSPECT_EDEFAULT, oldSuspectESet ) );
     }
 
     /**
@@ -949,8 +964,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         test = newTest;
         boolean oldTestESet = testESet;
         testESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.QUALITY61850__TEST, oldTest, test, !oldTestESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.QUALITY61850__TEST, oldTest, test,
+                    !oldTestESet ) );
     }
 
     /**
@@ -964,8 +980,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         boolean oldTestESet = testESet;
         test = TEST_EDEFAULT;
         testESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.QUALITY61850__TEST, oldTest, TEST_EDEFAULT, oldTestESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.QUALITY61850__TEST, oldTest,
+                    TEST_EDEFAULT, oldTestESet ) );
     }
 
     /**
@@ -999,8 +1016,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         validity = newValidity == null ? VALIDITY_EDEFAULT : newValidity;
         boolean oldValidityESet = validityESet;
         validityESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.QUALITY61850__VALIDITY, oldValidity, validity, !oldValidityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.QUALITY61850__VALIDITY, oldValidity,
+                    validity, !oldValidityESet ) );
     }
 
     /**
@@ -1014,8 +1032,9 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
         boolean oldValidityESet = validityESet;
         validity = VALIDITY_EDEFAULT;
         validityESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.QUALITY61850__VALIDITY, oldValidity, VALIDITY_EDEFAULT, oldValidityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.QUALITY61850__VALIDITY, oldValidity,
+                    VALIDITY_EDEFAULT, oldValidityESet ) );
     }
 
     /**
@@ -1205,7 +1224,7 @@ public class Quality61850Impl extends CimObjectWithIDImpl implements Quality6185
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (badReference: " );
         if( badReferenceESet )
             result.append( badReference );

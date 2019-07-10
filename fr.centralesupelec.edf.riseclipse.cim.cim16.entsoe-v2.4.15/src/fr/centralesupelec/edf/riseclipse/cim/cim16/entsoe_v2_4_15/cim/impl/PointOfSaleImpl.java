@@ -133,8 +133,9 @@ public class PointOfSaleImpl extends IdentifiedObjectImpl implements PointOfSale
         location = newLocation;
         boolean oldLocationESet = locationESet;
         locationESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POINT_OF_SALE__LOCATION, oldLocation, location, !oldLocationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POINT_OF_SALE__LOCATION, oldLocation,
+                    location, !oldLocationESet ) );
     }
 
     /**
@@ -148,8 +149,9 @@ public class PointOfSaleImpl extends IdentifiedObjectImpl implements PointOfSale
         boolean oldLocationESet = locationESet;
         location = LOCATION_EDEFAULT;
         locationESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POINT_OF_SALE__LOCATION, oldLocation, LOCATION_EDEFAULT, oldLocationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POINT_OF_SALE__LOCATION, oldLocation,
+                    LOCATION_EDEFAULT, oldLocationESet ) );
     }
 
     /**
@@ -305,7 +307,7 @@ public class PointOfSaleImpl extends IdentifiedObjectImpl implements PointOfSale
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (location: " );
         if( locationESet )
             result.append( location );

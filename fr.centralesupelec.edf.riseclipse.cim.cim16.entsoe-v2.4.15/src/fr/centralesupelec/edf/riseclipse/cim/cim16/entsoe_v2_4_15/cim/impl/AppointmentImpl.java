@@ -166,8 +166,9 @@ public class AppointmentImpl extends IdentifiedObjectImpl implements Appointment
         callAhead = newCallAhead;
         boolean oldCallAheadESet = callAheadESet;
         callAheadESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.APPOINTMENT__CALL_AHEAD, oldCallAhead, callAhead, !oldCallAheadESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.APPOINTMENT__CALL_AHEAD, oldCallAhead,
+                    callAhead, !oldCallAheadESet ) );
     }
 
     /**
@@ -181,8 +182,9 @@ public class AppointmentImpl extends IdentifiedObjectImpl implements Appointment
         boolean oldCallAheadESet = callAheadESet;
         callAhead = CALL_AHEAD_EDEFAULT;
         callAheadESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.APPOINTMENT__CALL_AHEAD, oldCallAhead, CALL_AHEAD_EDEFAULT, oldCallAheadESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.APPOINTMENT__CALL_AHEAD, oldCallAhead,
+                    CALL_AHEAD_EDEFAULT, oldCallAheadESet ) );
     }
 
     /**
@@ -236,10 +238,12 @@ public class AppointmentImpl extends IdentifiedObjectImpl implements Appointment
     public void setMeetingInterval( DateTimeInterval newMeetingInterval ) {
         if( newMeetingInterval != meetingInterval ) {
             NotificationChain msgs = null;
-            if( meetingInterval != null ) msgs = ( ( InternalEObject ) meetingInterval ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.APPOINTMENT__MEETING_INTERVAL, null, msgs );
-            if( newMeetingInterval != null ) msgs = ( ( InternalEObject ) newMeetingInterval ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.APPOINTMENT__MEETING_INTERVAL, null, msgs );
+            if( meetingInterval != null )
+                msgs = ( ( InternalEObject ) meetingInterval ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.APPOINTMENT__MEETING_INTERVAL, null, msgs );
+            if( newMeetingInterval != null )
+                msgs = ( ( InternalEObject ) newMeetingInterval ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.APPOINTMENT__MEETING_INTERVAL, null, msgs );
             msgs = basicSetMeetingInterval( newMeetingInterval, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -290,8 +294,9 @@ public class AppointmentImpl extends IdentifiedObjectImpl implements Appointment
         else {
             boolean oldMeetingIntervalESet = meetingIntervalESet;
             meetingIntervalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.APPOINTMENT__MEETING_INTERVAL, null, null, oldMeetingIntervalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.APPOINTMENT__MEETING_INTERVAL,
+                        null, null, oldMeetingIntervalESet ) );
         }
     }
 
@@ -510,7 +515,7 @@ public class AppointmentImpl extends IdentifiedObjectImpl implements Appointment
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (callAhead: " );
         if( callAheadESet )
             result.append( callAhead );

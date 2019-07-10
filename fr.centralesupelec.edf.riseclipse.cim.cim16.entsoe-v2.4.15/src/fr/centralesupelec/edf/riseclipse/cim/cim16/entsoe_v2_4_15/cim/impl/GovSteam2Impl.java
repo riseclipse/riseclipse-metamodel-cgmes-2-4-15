@@ -322,8 +322,9 @@ public class GovSteam2Impl extends TurbineGovernorDynamicsImpl implements GovSte
         dbf = newDbf;
         boolean oldDbfESet = dbfESet;
         dbfESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM2__DBF, oldDbf, dbf, !oldDbfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM2__DBF, oldDbf, dbf,
+                    !oldDbfESet ) );
     }
 
     /**
@@ -337,8 +338,9 @@ public class GovSteam2Impl extends TurbineGovernorDynamicsImpl implements GovSte
         boolean oldDbfESet = dbfESet;
         dbf = DBF_EDEFAULT;
         dbfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM2__DBF, oldDbf, DBF_EDEFAULT, oldDbfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM2__DBF, oldDbf, DBF_EDEFAULT,
+                    oldDbfESet ) );
     }
 
     /**
@@ -387,8 +389,9 @@ public class GovSteam2Impl extends TurbineGovernorDynamicsImpl implements GovSte
         boolean oldKESet = kESet;
         k = K_EDEFAULT;
         kESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM2__K, oldK, K_EDEFAULT, oldKESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM2__K, oldK, K_EDEFAULT,
+                    oldKESet ) );
     }
 
     /**
@@ -422,8 +425,9 @@ public class GovSteam2Impl extends TurbineGovernorDynamicsImpl implements GovSte
         mnef = newMnef;
         boolean oldMnefESet = mnefESet;
         mnefESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM2__MNEF, oldMnef, mnef, !oldMnefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM2__MNEF, oldMnef, mnef,
+                    !oldMnefESet ) );
     }
 
     /**
@@ -437,8 +441,9 @@ public class GovSteam2Impl extends TurbineGovernorDynamicsImpl implements GovSte
         boolean oldMnefESet = mnefESet;
         mnef = MNEF_EDEFAULT;
         mnefESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM2__MNEF, oldMnef, MNEF_EDEFAULT, oldMnefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM2__MNEF, oldMnef,
+                    MNEF_EDEFAULT, oldMnefESet ) );
     }
 
     /**
@@ -472,8 +477,9 @@ public class GovSteam2Impl extends TurbineGovernorDynamicsImpl implements GovSte
         mxef = newMxef;
         boolean oldMxefESet = mxefESet;
         mxefESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM2__MXEF, oldMxef, mxef, !oldMxefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM2__MXEF, oldMxef, mxef,
+                    !oldMxefESet ) );
     }
 
     /**
@@ -487,8 +493,9 @@ public class GovSteam2Impl extends TurbineGovernorDynamicsImpl implements GovSte
         boolean oldMxefESet = mxefESet;
         mxef = MXEF_EDEFAULT;
         mxefESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM2__MXEF, oldMxef, MXEF_EDEFAULT, oldMxefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM2__MXEF, oldMxef,
+                    MXEF_EDEFAULT, oldMxefESet ) );
     }
 
     /**
@@ -522,8 +529,9 @@ public class GovSteam2Impl extends TurbineGovernorDynamicsImpl implements GovSte
         pmax = newPmax;
         boolean oldPmaxESet = pmaxESet;
         pmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM2__PMAX, oldPmax, pmax, !oldPmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM2__PMAX, oldPmax, pmax,
+                    !oldPmaxESet ) );
     }
 
     /**
@@ -537,8 +545,9 @@ public class GovSteam2Impl extends TurbineGovernorDynamicsImpl implements GovSte
         boolean oldPmaxESet = pmaxESet;
         pmax = PMAX_EDEFAULT;
         pmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM2__PMAX, oldPmax, PMAX_EDEFAULT, oldPmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM2__PMAX, oldPmax,
+                    PMAX_EDEFAULT, oldPmaxESet ) );
     }
 
     /**
@@ -572,8 +581,9 @@ public class GovSteam2Impl extends TurbineGovernorDynamicsImpl implements GovSte
         pmin = newPmin;
         boolean oldPminESet = pminESet;
         pminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_STEAM2__PMIN, oldPmin, pmin, !oldPminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM2__PMIN, oldPmin, pmin,
+                    !oldPminESet ) );
     }
 
     /**
@@ -587,8 +597,9 @@ public class GovSteam2Impl extends TurbineGovernorDynamicsImpl implements GovSte
         boolean oldPminESet = pminESet;
         pmin = PMIN_EDEFAULT;
         pminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM2__PMIN, oldPmin, PMIN_EDEFAULT, oldPminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM2__PMIN, oldPmin,
+                    PMIN_EDEFAULT, oldPminESet ) );
     }
 
     /**
@@ -622,8 +633,9 @@ public class GovSteam2Impl extends TurbineGovernorDynamicsImpl implements GovSte
         t1 = newT1;
         boolean oldT1ESet = t1ESet;
         t1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM2__T1, oldT1, t1, !oldT1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM2__T1, oldT1, t1,
+                    !oldT1ESet ) );
     }
 
     /**
@@ -637,8 +649,9 @@ public class GovSteam2Impl extends TurbineGovernorDynamicsImpl implements GovSte
         boolean oldT1ESet = t1ESet;
         t1 = T1_EDEFAULT;
         t1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM2__T1, oldT1, T1_EDEFAULT, oldT1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM2__T1, oldT1, T1_EDEFAULT,
+                    oldT1ESet ) );
     }
 
     /**
@@ -672,8 +685,9 @@ public class GovSteam2Impl extends TurbineGovernorDynamicsImpl implements GovSte
         t2 = newT2;
         boolean oldT2ESet = t2ESet;
         t2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM2__T2, oldT2, t2, !oldT2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_STEAM2__T2, oldT2, t2,
+                    !oldT2ESet ) );
     }
 
     /**
@@ -687,8 +701,9 @@ public class GovSteam2Impl extends TurbineGovernorDynamicsImpl implements GovSte
         boolean oldT2ESet = t2ESet;
         t2 = T2_EDEFAULT;
         t2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_STEAM2__T2, oldT2, T2_EDEFAULT, oldT2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_STEAM2__T2, oldT2, T2_EDEFAULT,
+                    oldT2ESet ) );
     }
 
     /**
@@ -838,7 +853,7 @@ public class GovSteam2Impl extends TurbineGovernorDynamicsImpl implements GovSte
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (dbf: " );
         if( dbfESet )
             result.append( dbf );

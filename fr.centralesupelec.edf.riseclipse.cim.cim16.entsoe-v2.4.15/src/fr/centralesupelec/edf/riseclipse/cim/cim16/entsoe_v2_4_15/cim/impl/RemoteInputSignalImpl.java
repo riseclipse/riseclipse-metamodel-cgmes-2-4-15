@@ -320,9 +320,10 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
         boolean oldRemoteSignalTypeESet = remoteSignalTypeESet;
         remoteSignalType = REMOTE_SIGNAL_TYPE_EDEFAULT;
         remoteSignalTypeESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.REMOTE_INPUT_SIGNAL__REMOTE_SIGNAL_TYPE,
-                        oldRemoteSignalType, REMOTE_SIGNAL_TYPE_EDEFAULT, oldRemoteSignalTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.REMOTE_INPUT_SIGNAL__REMOTE_SIGNAL_TYPE, oldRemoteSignalType,
+                    REMOTE_SIGNAL_TYPE_EDEFAULT, oldRemoteSignalTypeESet ) );
     }
 
     /**
@@ -391,9 +392,11 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
         else {
             boolean oldUnderexcitationLimiterDynamicsESet = underexcitationLimiterDynamicsESet;
             underexcitationLimiterDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.REMOTE_INPUT_SIGNAL__UNDEREXCITATION_LIMITER_DYNAMICS, newUnderexcitationLimiterDynamics,
-                    newUnderexcitationLimiterDynamics, !oldUnderexcitationLimiterDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.REMOTE_INPUT_SIGNAL__UNDEREXCITATION_LIMITER_DYNAMICS,
+                        newUnderexcitationLimiterDynamics, newUnderexcitationLimiterDynamics,
+                        !oldUnderexcitationLimiterDynamicsESet ) );
         }
     }
 
@@ -437,9 +440,10 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
         else {
             boolean oldUnderexcitationLimiterDynamicsESet = underexcitationLimiterDynamicsESet;
             underexcitationLimiterDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REMOTE_INPUT_SIGNAL__UNDEREXCITATION_LIMITER_DYNAMICS, null, null,
-                    oldUnderexcitationLimiterDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.REMOTE_INPUT_SIGNAL__UNDEREXCITATION_LIMITER_DYNAMICS, null, null,
+                        oldUnderexcitationLimiterDynamicsESet ) );
         }
     }
 
@@ -465,9 +469,10 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
             discontinuousExcitationControlDynamics = ( DiscontinuousExcitationControlDynamics ) eResolveProxy(
                     oldDiscontinuousExcitationControlDynamics );
             if( discontinuousExcitationControlDynamics != oldDiscontinuousExcitationControlDynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.REMOTE_INPUT_SIGNAL__DISCONTINUOUS_EXCITATION_CONTROL_DYNAMICS,
-                        oldDiscontinuousExcitationControlDynamics, discontinuousExcitationControlDynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.REMOTE_INPUT_SIGNAL__DISCONTINUOUS_EXCITATION_CONTROL_DYNAMICS,
+                            oldDiscontinuousExcitationControlDynamics, discontinuousExcitationControlDynamics ) );
             }
         }
         return discontinuousExcitationControlDynamics;
@@ -530,10 +535,11 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
         else {
             boolean oldDiscontinuousExcitationControlDynamicsESet = discontinuousExcitationControlDynamicsESet;
             discontinuousExcitationControlDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.REMOTE_INPUT_SIGNAL__DISCONTINUOUS_EXCITATION_CONTROL_DYNAMICS,
-                    newDiscontinuousExcitationControlDynamics, newDiscontinuousExcitationControlDynamics,
-                    !oldDiscontinuousExcitationControlDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.REMOTE_INPUT_SIGNAL__DISCONTINUOUS_EXCITATION_CONTROL_DYNAMICS,
+                        newDiscontinuousExcitationControlDynamics, newDiscontinuousExcitationControlDynamics,
+                        !oldDiscontinuousExcitationControlDynamicsESet ) );
         }
     }
 
@@ -577,9 +583,10 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
         else {
             boolean oldDiscontinuousExcitationControlDynamicsESet = discontinuousExcitationControlDynamicsESet;
             discontinuousExcitationControlDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REMOTE_INPUT_SIGNAL__DISCONTINUOUS_EXCITATION_CONTROL_DYNAMICS, null, null,
-                    oldDiscontinuousExcitationControlDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.REMOTE_INPUT_SIGNAL__DISCONTINUOUS_EXCITATION_CONTROL_DYNAMICS, null, null,
+                        oldDiscontinuousExcitationControlDynamicsESet ) );
         }
     }
 
@@ -605,9 +612,10 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
             pfvArControllerType1Dynamics = ( PFVArControllerType1Dynamics ) eResolveProxy(
                     oldPFVArControllerType1Dynamics );
             if( pfvArControllerType1Dynamics != oldPFVArControllerType1Dynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.REMOTE_INPUT_SIGNAL__PFV_AR_CONTROLLER_TYPE1_DYNAMICS,
-                        oldPFVArControllerType1Dynamics, pfvArControllerType1Dynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.REMOTE_INPUT_SIGNAL__PFV_AR_CONTROLLER_TYPE1_DYNAMICS,
+                            oldPFVArControllerType1Dynamics, pfvArControllerType1Dynamics ) );
             }
         }
         return pfvArControllerType1Dynamics;
@@ -668,9 +676,11 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
         else {
             boolean oldPFVArControllerType1DynamicsESet = pfvArControllerType1DynamicsESet;
             pfvArControllerType1DynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.REMOTE_INPUT_SIGNAL__PFV_AR_CONTROLLER_TYPE1_DYNAMICS, newPFVArControllerType1Dynamics,
-                    newPFVArControllerType1Dynamics, !oldPFVArControllerType1DynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.REMOTE_INPUT_SIGNAL__PFV_AR_CONTROLLER_TYPE1_DYNAMICS,
+                        newPFVArControllerType1Dynamics, newPFVArControllerType1Dynamics,
+                        !oldPFVArControllerType1DynamicsESet ) );
         }
     }
 
@@ -714,9 +724,10 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
         else {
             boolean oldPFVArControllerType1DynamicsESet = pfvArControllerType1DynamicsESet;
             pfvArControllerType1DynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REMOTE_INPUT_SIGNAL__PFV_AR_CONTROLLER_TYPE1_DYNAMICS, null, null,
-                    oldPFVArControllerType1DynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.REMOTE_INPUT_SIGNAL__PFV_AR_CONTROLLER_TYPE1_DYNAMICS, null, null,
+                        oldPFVArControllerType1DynamicsESet ) );
         }
     }
 
@@ -741,9 +752,10 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
             InternalEObject oldVoltageCompensatorDynamics = ( InternalEObject ) voltageCompensatorDynamics;
             voltageCompensatorDynamics = ( VoltageCompensatorDynamics ) eResolveProxy( oldVoltageCompensatorDynamics );
             if( voltageCompensatorDynamics != oldVoltageCompensatorDynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.REMOTE_INPUT_SIGNAL__VOLTAGE_COMPENSATOR_DYNAMICS, oldVoltageCompensatorDynamics,
-                        voltageCompensatorDynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.REMOTE_INPUT_SIGNAL__VOLTAGE_COMPENSATOR_DYNAMICS, oldVoltageCompensatorDynamics,
+                            voltageCompensatorDynamics ) );
             }
         }
         return voltageCompensatorDynamics;
@@ -804,9 +816,10 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
         else {
             boolean oldVoltageCompensatorDynamicsESet = voltageCompensatorDynamicsESet;
             voltageCompensatorDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.REMOTE_INPUT_SIGNAL__VOLTAGE_COMPENSATOR_DYNAMICS, newVoltageCompensatorDynamics,
-                    newVoltageCompensatorDynamics, !oldVoltageCompensatorDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.REMOTE_INPUT_SIGNAL__VOLTAGE_COMPENSATOR_DYNAMICS, newVoltageCompensatorDynamics,
+                        newVoltageCompensatorDynamics, !oldVoltageCompensatorDynamicsESet ) );
         }
     }
 
@@ -850,9 +863,10 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
         else {
             boolean oldVoltageCompensatorDynamicsESet = voltageCompensatorDynamicsESet;
             voltageCompensatorDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REMOTE_INPUT_SIGNAL__VOLTAGE_COMPENSATOR_DYNAMICS, null, null,
-                    oldVoltageCompensatorDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.REMOTE_INPUT_SIGNAL__VOLTAGE_COMPENSATOR_DYNAMICS, null, null,
+                        oldVoltageCompensatorDynamicsESet ) );
         }
     }
 
@@ -878,9 +892,10 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
             windTurbineType1or2Dynamics = ( WindTurbineType1or2Dynamics ) eResolveProxy(
                     oldWindTurbineType1or2Dynamics );
             if( windTurbineType1or2Dynamics != oldWindTurbineType1or2Dynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE1OR2_DYNAMICS, oldWindTurbineType1or2Dynamics,
-                        windTurbineType1or2Dynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE1OR2_DYNAMICS,
+                            oldWindTurbineType1or2Dynamics, windTurbineType1or2Dynamics ) );
             }
         }
         return windTurbineType1or2Dynamics;
@@ -941,9 +956,10 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
         else {
             boolean oldWindTurbineType1or2DynamicsESet = windTurbineType1or2DynamicsESet;
             windTurbineType1or2DynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE1OR2_DYNAMICS, newWindTurbineType1or2Dynamics,
-                    newWindTurbineType1or2Dynamics, !oldWindTurbineType1or2DynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE1OR2_DYNAMICS, newWindTurbineType1or2Dynamics,
+                        newWindTurbineType1or2Dynamics, !oldWindTurbineType1or2DynamicsESet ) );
         }
     }
 
@@ -987,9 +1003,10 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
         else {
             boolean oldWindTurbineType1or2DynamicsESet = windTurbineType1or2DynamicsESet;
             windTurbineType1or2DynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE1OR2_DYNAMICS, null, null,
-                    oldWindTurbineType1or2DynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE1OR2_DYNAMICS, null, null,
+                        oldWindTurbineType1or2DynamicsESet ) );
         }
     }
 
@@ -1015,9 +1032,10 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
             windTurbineType3or4Dynamics = ( WindTurbineType3or4Dynamics ) eResolveProxy(
                     oldWindTurbineType3or4Dynamics );
             if( windTurbineType3or4Dynamics != oldWindTurbineType3or4Dynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE3OR4_DYNAMICS, oldWindTurbineType3or4Dynamics,
-                        windTurbineType3or4Dynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE3OR4_DYNAMICS,
+                            oldWindTurbineType3or4Dynamics, windTurbineType3or4Dynamics ) );
             }
         }
         return windTurbineType3or4Dynamics;
@@ -1078,9 +1096,10 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
         else {
             boolean oldWindTurbineType3or4DynamicsESet = windTurbineType3or4DynamicsESet;
             windTurbineType3or4DynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE3OR4_DYNAMICS, newWindTurbineType3or4Dynamics,
-                    newWindTurbineType3or4Dynamics, !oldWindTurbineType3or4DynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE3OR4_DYNAMICS, newWindTurbineType3or4Dynamics,
+                        newWindTurbineType3or4Dynamics, !oldWindTurbineType3or4DynamicsESet ) );
         }
     }
 
@@ -1124,9 +1143,10 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
         else {
             boolean oldWindTurbineType3or4DynamicsESet = windTurbineType3or4DynamicsESet;
             windTurbineType3or4DynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE3OR4_DYNAMICS, null, null,
-                    oldWindTurbineType3or4DynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE3OR4_DYNAMICS, null, null,
+                        oldWindTurbineType3or4DynamicsESet ) );
         }
     }
 
@@ -1180,18 +1200,21 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
     public void setTerminal( Terminal newTerminal ) {
         if( newTerminal != terminal ) {
             NotificationChain msgs = null;
-            if( terminal != null ) msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__REMOTE_INPUT_SIGNAL, Terminal.class, msgs );
-            if( newTerminal != null ) msgs = ( ( InternalEObject ) newTerminal ).eInverseAdd( this,
-                    CimPackage.TERMINAL__REMOTE_INPUT_SIGNAL, Terminal.class, msgs );
+            if( terminal != null )
+                msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this, CimPackage.TERMINAL__REMOTE_INPUT_SIGNAL,
+                        Terminal.class, msgs );
+            if( newTerminal != null )
+                msgs = ( ( InternalEObject ) newTerminal ).eInverseAdd( this, CimPackage.TERMINAL__REMOTE_INPUT_SIGNAL,
+                        Terminal.class, msgs );
             msgs = basicSetTerminal( newTerminal, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTerminalESet = terminalESet;
             terminalESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.REMOTE_INPUT_SIGNAL__TERMINAL, newTerminal, newTerminal, !oldTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REMOTE_INPUT_SIGNAL__TERMINAL,
+                        newTerminal, newTerminal, !oldTerminalESet ) );
         }
     }
 
@@ -1233,8 +1256,9 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
         else {
             boolean oldTerminalESet = terminalESet;
             terminalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REMOTE_INPUT_SIGNAL__TERMINAL, null, null, oldTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.REMOTE_INPUT_SIGNAL__TERMINAL,
+                        null, null, oldTerminalESet ) );
         }
     }
 
@@ -1304,9 +1328,11 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
         else {
             boolean oldPowerSystemStabilizerDynamicsESet = powerSystemStabilizerDynamicsESet;
             powerSystemStabilizerDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.REMOTE_INPUT_SIGNAL__POWER_SYSTEM_STABILIZER_DYNAMICS, newPowerSystemStabilizerDynamics,
-                    newPowerSystemStabilizerDynamics, !oldPowerSystemStabilizerDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.REMOTE_INPUT_SIGNAL__POWER_SYSTEM_STABILIZER_DYNAMICS,
+                        newPowerSystemStabilizerDynamics, newPowerSystemStabilizerDynamics,
+                        !oldPowerSystemStabilizerDynamicsESet ) );
         }
     }
 
@@ -1350,9 +1376,10 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
         else {
             boolean oldPowerSystemStabilizerDynamicsESet = powerSystemStabilizerDynamicsESet;
             powerSystemStabilizerDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REMOTE_INPUT_SIGNAL__POWER_SYSTEM_STABILIZER_DYNAMICS, null, null,
-                    oldPowerSystemStabilizerDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.REMOTE_INPUT_SIGNAL__POWER_SYSTEM_STABILIZER_DYNAMICS, null, null,
+                        oldPowerSystemStabilizerDynamicsESet ) );
         }
     }
 
@@ -1408,19 +1435,22 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
     public void setWindPlantDynamics( WindPlantDynamics newWindPlantDynamics ) {
         if( newWindPlantDynamics != windPlantDynamics ) {
             NotificationChain msgs = null;
-            if( windPlantDynamics != null ) msgs = ( ( InternalEObject ) windPlantDynamics ).eInverseRemove( this,
-                    CimPackage.WIND_PLANT_DYNAMICS__REMOTE_INPUT_SIGNAL, WindPlantDynamics.class, msgs );
-            if( newWindPlantDynamics != null ) msgs = ( ( InternalEObject ) newWindPlantDynamics ).eInverseAdd( this,
-                    CimPackage.WIND_PLANT_DYNAMICS__REMOTE_INPUT_SIGNAL, WindPlantDynamics.class, msgs );
+            if( windPlantDynamics != null )
+                msgs = ( ( InternalEObject ) windPlantDynamics ).eInverseRemove( this,
+                        CimPackage.WIND_PLANT_DYNAMICS__REMOTE_INPUT_SIGNAL, WindPlantDynamics.class, msgs );
+            if( newWindPlantDynamics != null )
+                msgs = ( ( InternalEObject ) newWindPlantDynamics ).eInverseAdd( this,
+                        CimPackage.WIND_PLANT_DYNAMICS__REMOTE_INPUT_SIGNAL, WindPlantDynamics.class, msgs );
             msgs = basicSetWindPlantDynamics( newWindPlantDynamics, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWindPlantDynamicsESet = windPlantDynamicsESet;
             windPlantDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.REMOTE_INPUT_SIGNAL__WIND_PLANT_DYNAMICS,
-                            newWindPlantDynamics, newWindPlantDynamics, !oldWindPlantDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.REMOTE_INPUT_SIGNAL__WIND_PLANT_DYNAMICS, newWindPlantDynamics, newWindPlantDynamics,
+                        !oldWindPlantDynamicsESet ) );
         }
     }
 
@@ -1463,8 +1493,9 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
         else {
             boolean oldWindPlantDynamicsESet = windPlantDynamicsESet;
             windPlantDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REMOTE_INPUT_SIGNAL__WIND_PLANT_DYNAMICS, null, null, oldWindPlantDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.REMOTE_INPUT_SIGNAL__WIND_PLANT_DYNAMICS, null, null, oldWindPlantDynamicsESet ) );
         }
     }
 
@@ -1524,12 +1555,14 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
                         msgs );
             return basicSetVoltageCompensatorDynamics( ( VoltageCompensatorDynamics ) otherEnd, msgs );
         case CimPackage.REMOTE_INPUT_SIGNAL__TERMINAL:
-            if( terminal != null ) msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__REMOTE_INPUT_SIGNAL, Terminal.class, msgs );
+            if( terminal != null )
+                msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this, CimPackage.TERMINAL__REMOTE_INPUT_SIGNAL,
+                        Terminal.class, msgs );
             return basicSetTerminal( ( Terminal ) otherEnd, msgs );
         case CimPackage.REMOTE_INPUT_SIGNAL__WIND_PLANT_DYNAMICS:
-            if( windPlantDynamics != null ) msgs = ( ( InternalEObject ) windPlantDynamics ).eInverseRemove( this,
-                    CimPackage.WIND_PLANT_DYNAMICS__REMOTE_INPUT_SIGNAL, WindPlantDynamics.class, msgs );
+            if( windPlantDynamics != null )
+                msgs = ( ( InternalEObject ) windPlantDynamics ).eInverseRemove( this,
+                        CimPackage.WIND_PLANT_DYNAMICS__REMOTE_INPUT_SIGNAL, WindPlantDynamics.class, msgs );
             return basicSetWindPlantDynamics( ( WindPlantDynamics ) otherEnd, msgs );
         case CimPackage.REMOTE_INPUT_SIGNAL__UNDEREXCITATION_LIMITER_DYNAMICS:
             if( underexcitationLimiterDynamics != null )
@@ -1733,7 +1766,7 @@ public class RemoteInputSignalImpl extends IdentifiedObjectImpl implements Remot
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (remoteSignalType: " );
         if( remoteSignalTypeESet )
             result.append( remoteSignalType );

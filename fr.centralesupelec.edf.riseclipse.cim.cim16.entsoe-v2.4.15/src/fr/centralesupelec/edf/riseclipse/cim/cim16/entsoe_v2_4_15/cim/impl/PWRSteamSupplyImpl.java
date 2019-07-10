@@ -838,8 +838,9 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         coldLegFG1 = newColdLegFG1;
         boolean oldColdLegFG1ESet = coldLegFG1ESet;
         coldLegFG1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PWR_STEAM_SUPPLY__COLD_LEG_FG1, oldColdLegFG1, coldLegFG1, !oldColdLegFG1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PWR_STEAM_SUPPLY__COLD_LEG_FG1,
+                    oldColdLegFG1, coldLegFG1, !oldColdLegFG1ESet ) );
     }
 
     /**
@@ -853,8 +854,9 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         boolean oldColdLegFG1ESet = coldLegFG1ESet;
         coldLegFG1 = COLD_LEG_FG1_EDEFAULT;
         coldLegFG1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PWR_STEAM_SUPPLY__COLD_LEG_FG1, oldColdLegFG1, COLD_LEG_FG1_EDEFAULT, oldColdLegFG1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PWR_STEAM_SUPPLY__COLD_LEG_FG1,
+                    oldColdLegFG1, COLD_LEG_FG1_EDEFAULT, oldColdLegFG1ESet ) );
     }
 
     /**
@@ -888,8 +890,9 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         coldLegFG2 = newColdLegFG2;
         boolean oldColdLegFG2ESet = coldLegFG2ESet;
         coldLegFG2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PWR_STEAM_SUPPLY__COLD_LEG_FG2, oldColdLegFG2, coldLegFG2, !oldColdLegFG2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PWR_STEAM_SUPPLY__COLD_LEG_FG2,
+                    oldColdLegFG2, coldLegFG2, !oldColdLegFG2ESet ) );
     }
 
     /**
@@ -903,8 +906,9 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         boolean oldColdLegFG2ESet = coldLegFG2ESet;
         coldLegFG2 = COLD_LEG_FG2_EDEFAULT;
         coldLegFG2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PWR_STEAM_SUPPLY__COLD_LEG_FG2, oldColdLegFG2, COLD_LEG_FG2_EDEFAULT, oldColdLegFG2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PWR_STEAM_SUPPLY__COLD_LEG_FG2,
+                    oldColdLegFG2, COLD_LEG_FG2_EDEFAULT, oldColdLegFG2ESet ) );
     }
 
     /**
@@ -938,8 +942,9 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         coldLegLagTC = newColdLegLagTC;
         boolean oldColdLegLagTCESet = coldLegLagTCESet;
         coldLegLagTCESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PWR_STEAM_SUPPLY__COLD_LEG_LAG_TC, oldColdLegLagTC, coldLegLagTC, !oldColdLegLagTCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PWR_STEAM_SUPPLY__COLD_LEG_LAG_TC,
+                    oldColdLegLagTC, coldLegLagTC, !oldColdLegLagTCESet ) );
     }
 
     /**
@@ -989,8 +994,9 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         coreHTLagTC1 = newCoreHTLagTC1;
         boolean oldCoreHTLagTC1ESet = coreHTLagTC1ESet;
         coreHTLagTC1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PWR_STEAM_SUPPLY__CORE_HT_LAG_TC1, oldCoreHTLagTC1, coreHTLagTC1, !oldCoreHTLagTC1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PWR_STEAM_SUPPLY__CORE_HT_LAG_TC1,
+                    oldCoreHTLagTC1, coreHTLagTC1, !oldCoreHTLagTC1ESet ) );
     }
 
     /**
@@ -1040,8 +1046,9 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         coreHTLagTC2 = newCoreHTLagTC2;
         boolean oldCoreHTLagTC2ESet = coreHTLagTC2ESet;
         coreHTLagTC2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PWR_STEAM_SUPPLY__CORE_HT_LAG_TC2, oldCoreHTLagTC2, coreHTLagTC2, !oldCoreHTLagTC2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PWR_STEAM_SUPPLY__CORE_HT_LAG_TC2,
+                    oldCoreHTLagTC2, coreHTLagTC2, !oldCoreHTLagTC2ESet ) );
     }
 
     /**
@@ -1107,9 +1114,10 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         boolean oldCoreNeutronicsEffTCESet = coreNeutronicsEffTCESet;
         coreNeutronicsEffTC = CORE_NEUTRONICS_EFF_TC_EDEFAULT;
         coreNeutronicsEffTCESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PWR_STEAM_SUPPLY__CORE_NEUTRONICS_EFF_TC,
-                        oldCoreNeutronicsEffTC, CORE_NEUTRONICS_EFF_TC_EDEFAULT, oldCoreNeutronicsEffTCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PWR_STEAM_SUPPLY__CORE_NEUTRONICS_EFF_TC, oldCoreNeutronicsEffTC,
+                    CORE_NEUTRONICS_EFF_TC_EDEFAULT, oldCoreNeutronicsEffTCESet ) );
     }
 
     /**
@@ -1247,8 +1255,9 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         hotLegLagTC = newHotLegLagTC;
         boolean oldHotLegLagTCESet = hotLegLagTCESet;
         hotLegLagTCESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PWR_STEAM_SUPPLY__HOT_LEG_LAG_TC, oldHotLegLagTC, hotLegLagTC, !oldHotLegLagTCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PWR_STEAM_SUPPLY__HOT_LEG_LAG_TC,
+                    oldHotLegLagTC, hotLegLagTC, !oldHotLegLagTCESet ) );
     }
 
     /**
@@ -1350,9 +1359,10 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         hotLegToColdLegGain = newHotLegToColdLegGain;
         boolean oldHotLegToColdLegGainESet = hotLegToColdLegGainESet;
         hotLegToColdLegGainESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PWR_STEAM_SUPPLY__HOT_LEG_TO_COLD_LEG_GAIN,
-                        oldHotLegToColdLegGain, hotLegToColdLegGain, !oldHotLegToColdLegGainESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PWR_STEAM_SUPPLY__HOT_LEG_TO_COLD_LEG_GAIN, oldHotLegToColdLegGain, hotLegToColdLegGain,
+                    !oldHotLegToColdLegGainESet ) );
     }
 
     /**
@@ -1366,9 +1376,10 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         boolean oldHotLegToColdLegGainESet = hotLegToColdLegGainESet;
         hotLegToColdLegGain = HOT_LEG_TO_COLD_LEG_GAIN_EDEFAULT;
         hotLegToColdLegGainESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PWR_STEAM_SUPPLY__HOT_LEG_TO_COLD_LEG_GAIN,
-                        oldHotLegToColdLegGain, HOT_LEG_TO_COLD_LEG_GAIN_EDEFAULT, oldHotLegToColdLegGainESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PWR_STEAM_SUPPLY__HOT_LEG_TO_COLD_LEG_GAIN, oldHotLegToColdLegGain,
+                    HOT_LEG_TO_COLD_LEG_GAIN_EDEFAULT, oldHotLegToColdLegGainESet ) );
     }
 
     /**
@@ -1402,8 +1413,9 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         pressureCG = newPressureCG;
         boolean oldPressureCGESet = pressureCGESet;
         pressureCGESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PWR_STEAM_SUPPLY__PRESSURE_CG, oldPressureCG, pressureCG, !oldPressureCGESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PWR_STEAM_SUPPLY__PRESSURE_CG,
+                    oldPressureCG, pressureCG, !oldPressureCGESet ) );
     }
 
     /**
@@ -1417,8 +1429,9 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         boolean oldPressureCGESet = pressureCGESet;
         pressureCG = PRESSURE_CG_EDEFAULT;
         pressureCGESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PWR_STEAM_SUPPLY__PRESSURE_CG, oldPressureCG, PRESSURE_CG_EDEFAULT, oldPressureCGESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PWR_STEAM_SUPPLY__PRESSURE_CG,
+                    oldPressureCG, PRESSURE_CG_EDEFAULT, oldPressureCGESet ) );
     }
 
     /**
@@ -1452,8 +1465,9 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         steamFlowFG = newSteamFlowFG;
         boolean oldSteamFlowFGESet = steamFlowFGESet;
         steamFlowFGESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PWR_STEAM_SUPPLY__STEAM_FLOW_FG, oldSteamFlowFG, steamFlowFG, !oldSteamFlowFGESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PWR_STEAM_SUPPLY__STEAM_FLOW_FG,
+                    oldSteamFlowFG, steamFlowFG, !oldSteamFlowFGESet ) );
     }
 
     /**
@@ -1503,9 +1517,10 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         steamPressureDropLagTC = newSteamPressureDropLagTC;
         boolean oldSteamPressureDropLagTCESet = steamPressureDropLagTCESet;
         steamPressureDropLagTCESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PWR_STEAM_SUPPLY__STEAM_PRESSURE_DROP_LAG_TC,
-                        oldSteamPressureDropLagTC, steamPressureDropLagTC, !oldSteamPressureDropLagTCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PWR_STEAM_SUPPLY__STEAM_PRESSURE_DROP_LAG_TC, oldSteamPressureDropLagTC,
+                    steamPressureDropLagTC, !oldSteamPressureDropLagTCESet ) );
     }
 
     /**
@@ -1519,9 +1534,10 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         boolean oldSteamPressureDropLagTCESet = steamPressureDropLagTCESet;
         steamPressureDropLagTC = STEAM_PRESSURE_DROP_LAG_TC_EDEFAULT;
         steamPressureDropLagTCESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PWR_STEAM_SUPPLY__STEAM_PRESSURE_DROP_LAG_TC, oldSteamPressureDropLagTC,
-                STEAM_PRESSURE_DROP_LAG_TC_EDEFAULT, oldSteamPressureDropLagTCESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PWR_STEAM_SUPPLY__STEAM_PRESSURE_DROP_LAG_TC, oldSteamPressureDropLagTC,
+                    STEAM_PRESSURE_DROP_LAG_TC_EDEFAULT, oldSteamPressureDropLagTCESet ) );
     }
 
     /**
@@ -1607,9 +1623,10 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         throttlePressureFactor = newThrottlePressureFactor;
         boolean oldThrottlePressureFactorESet = throttlePressureFactorESet;
         throttlePressureFactorESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PWR_STEAM_SUPPLY__THROTTLE_PRESSURE_FACTOR,
-                        oldThrottlePressureFactor, throttlePressureFactor, !oldThrottlePressureFactorESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PWR_STEAM_SUPPLY__THROTTLE_PRESSURE_FACTOR, oldThrottlePressureFactor,
+                    throttlePressureFactor, !oldThrottlePressureFactorESet ) );
     }
 
     /**
@@ -1623,9 +1640,10 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
         boolean oldThrottlePressureFactorESet = throttlePressureFactorESet;
         throttlePressureFactor = THROTTLE_PRESSURE_FACTOR_EDEFAULT;
         throttlePressureFactorESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PWR_STEAM_SUPPLY__THROTTLE_PRESSURE_FACTOR,
-                        oldThrottlePressureFactor, THROTTLE_PRESSURE_FACTOR_EDEFAULT, oldThrottlePressureFactorESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PWR_STEAM_SUPPLY__THROTTLE_PRESSURE_FACTOR, oldThrottlePressureFactor,
+                    THROTTLE_PRESSURE_FACTOR_EDEFAULT, oldThrottlePressureFactorESet ) );
     }
 
     /**
@@ -1947,7 +1965,7 @@ public class PWRSteamSupplyImpl extends SteamSupplyImpl implements PWRSteamSuppl
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (coldLegFBLagTC: " );
         if( coldLegFBLagTCESet )
             result.append( coldLegFBLagTC );

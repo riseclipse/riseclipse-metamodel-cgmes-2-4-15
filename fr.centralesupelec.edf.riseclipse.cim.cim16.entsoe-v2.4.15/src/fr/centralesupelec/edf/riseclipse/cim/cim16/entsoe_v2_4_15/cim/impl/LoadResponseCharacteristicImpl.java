@@ -433,9 +433,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         exponentModel = newExponentModel;
         boolean oldExponentModelESet = exponentModelESet;
         exponentModelESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_RESPONSE_CHARACTERISTIC__EXPONENT_MODEL,
-                        oldExponentModel, exponentModel, !oldExponentModelESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__EXPONENT_MODEL, oldExponentModel, exponentModel,
+                    !oldExponentModelESet ) );
     }
 
     /**
@@ -449,9 +450,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         boolean oldExponentModelESet = exponentModelESet;
         exponentModel = EXPONENT_MODEL_EDEFAULT;
         exponentModelESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__EXPONENT_MODEL, oldExponentModel, EXPONENT_MODEL_EDEFAULT,
-                oldExponentModelESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__EXPONENT_MODEL, oldExponentModel, EXPONENT_MODEL_EDEFAULT,
+                    oldExponentModelESet ) );
     }
 
     /**
@@ -485,9 +487,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         pConstantCurrent = newPConstantCurrent;
         boolean oldPConstantCurrentESet = pConstantCurrentESet;
         pConstantCurrentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PCONSTANT_CURRENT, oldPConstantCurrent, pConstantCurrent,
-                !oldPConstantCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PCONSTANT_CURRENT, oldPConstantCurrent, pConstantCurrent,
+                    !oldPConstantCurrentESet ) );
     }
 
     /**
@@ -501,9 +504,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         boolean oldPConstantCurrentESet = pConstantCurrentESet;
         pConstantCurrent = PCONSTANT_CURRENT_EDEFAULT;
         pConstantCurrentESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PCONSTANT_CURRENT, oldPConstantCurrent,
-                PCONSTANT_CURRENT_EDEFAULT, oldPConstantCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PCONSTANT_CURRENT, oldPConstantCurrent,
+                    PCONSTANT_CURRENT_EDEFAULT, oldPConstantCurrentESet ) );
     }
 
     /**
@@ -537,9 +541,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         pConstantImpedance = newPConstantImpedance;
         boolean oldPConstantImpedanceESet = pConstantImpedanceESet;
         pConstantImpedanceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PCONSTANT_IMPEDANCE, oldPConstantImpedance, pConstantImpedance,
-                !oldPConstantImpedanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PCONSTANT_IMPEDANCE, oldPConstantImpedance,
+                    pConstantImpedance, !oldPConstantImpedanceESet ) );
     }
 
     /**
@@ -553,9 +558,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         boolean oldPConstantImpedanceESet = pConstantImpedanceESet;
         pConstantImpedance = PCONSTANT_IMPEDANCE_EDEFAULT;
         pConstantImpedanceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PCONSTANT_IMPEDANCE, oldPConstantImpedance,
-                PCONSTANT_IMPEDANCE_EDEFAULT, oldPConstantImpedanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PCONSTANT_IMPEDANCE, oldPConstantImpedance,
+                    PCONSTANT_IMPEDANCE_EDEFAULT, oldPConstantImpedanceESet ) );
     }
 
     /**
@@ -589,9 +595,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         pConstantPower = newPConstantPower;
         boolean oldPConstantPowerESet = pConstantPowerESet;
         pConstantPowerESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PCONSTANT_POWER,
-                        oldPConstantPower, pConstantPower, !oldPConstantPowerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PCONSTANT_POWER, oldPConstantPower, pConstantPower,
+                    !oldPConstantPowerESet ) );
     }
 
     /**
@@ -605,9 +612,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         boolean oldPConstantPowerESet = pConstantPowerESet;
         pConstantPower = PCONSTANT_POWER_EDEFAULT;
         pConstantPowerESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PCONSTANT_POWER, oldPConstantPower, PCONSTANT_POWER_EDEFAULT,
-                oldPConstantPowerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PCONSTANT_POWER, oldPConstantPower,
+                    PCONSTANT_POWER_EDEFAULT, oldPConstantPowerESet ) );
     }
 
     /**
@@ -641,9 +649,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         pFrequencyExponent = newPFrequencyExponent;
         boolean oldPFrequencyExponentESet = pFrequencyExponentESet;
         pFrequencyExponentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PFREQUENCY_EXPONENT, oldPFrequencyExponent, pFrequencyExponent,
-                !oldPFrequencyExponentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PFREQUENCY_EXPONENT, oldPFrequencyExponent,
+                    pFrequencyExponent, !oldPFrequencyExponentESet ) );
     }
 
     /**
@@ -657,9 +666,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         boolean oldPFrequencyExponentESet = pFrequencyExponentESet;
         pFrequencyExponent = PFREQUENCY_EXPONENT_EDEFAULT;
         pFrequencyExponentESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PFREQUENCY_EXPONENT, oldPFrequencyExponent,
-                PFREQUENCY_EXPONENT_EDEFAULT, oldPFrequencyExponentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PFREQUENCY_EXPONENT, oldPFrequencyExponent,
+                    PFREQUENCY_EXPONENT_EDEFAULT, oldPFrequencyExponentESet ) );
     }
 
     /**
@@ -693,9 +703,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         pVoltageExponent = newPVoltageExponent;
         boolean oldPVoltageExponentESet = pVoltageExponentESet;
         pVoltageExponentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PVOLTAGE_EXPONENT, oldPVoltageExponent, pVoltageExponent,
-                !oldPVoltageExponentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PVOLTAGE_EXPONENT, oldPVoltageExponent, pVoltageExponent,
+                    !oldPVoltageExponentESet ) );
     }
 
     /**
@@ -709,9 +720,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         boolean oldPVoltageExponentESet = pVoltageExponentESet;
         pVoltageExponent = PVOLTAGE_EXPONENT_EDEFAULT;
         pVoltageExponentESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PVOLTAGE_EXPONENT, oldPVoltageExponent,
-                PVOLTAGE_EXPONENT_EDEFAULT, oldPVoltageExponentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__PVOLTAGE_EXPONENT, oldPVoltageExponent,
+                    PVOLTAGE_EXPONENT_EDEFAULT, oldPVoltageExponentESet ) );
     }
 
     /**
@@ -745,9 +757,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         qConstantCurrent = newQConstantCurrent;
         boolean oldQConstantCurrentESet = qConstantCurrentESet;
         qConstantCurrentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QCONSTANT_CURRENT, oldQConstantCurrent, qConstantCurrent,
-                !oldQConstantCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QCONSTANT_CURRENT, oldQConstantCurrent, qConstantCurrent,
+                    !oldQConstantCurrentESet ) );
     }
 
     /**
@@ -761,9 +774,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         boolean oldQConstantCurrentESet = qConstantCurrentESet;
         qConstantCurrent = QCONSTANT_CURRENT_EDEFAULT;
         qConstantCurrentESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QCONSTANT_CURRENT, oldQConstantCurrent,
-                QCONSTANT_CURRENT_EDEFAULT, oldQConstantCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QCONSTANT_CURRENT, oldQConstantCurrent,
+                    QCONSTANT_CURRENT_EDEFAULT, oldQConstantCurrentESet ) );
     }
 
     /**
@@ -797,9 +811,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         qConstantImpedance = newQConstantImpedance;
         boolean oldQConstantImpedanceESet = qConstantImpedanceESet;
         qConstantImpedanceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QCONSTANT_IMPEDANCE, oldQConstantImpedance, qConstantImpedance,
-                !oldQConstantImpedanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QCONSTANT_IMPEDANCE, oldQConstantImpedance,
+                    qConstantImpedance, !oldQConstantImpedanceESet ) );
     }
 
     /**
@@ -813,9 +828,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         boolean oldQConstantImpedanceESet = qConstantImpedanceESet;
         qConstantImpedance = QCONSTANT_IMPEDANCE_EDEFAULT;
         qConstantImpedanceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QCONSTANT_IMPEDANCE, oldQConstantImpedance,
-                QCONSTANT_IMPEDANCE_EDEFAULT, oldQConstantImpedanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QCONSTANT_IMPEDANCE, oldQConstantImpedance,
+                    QCONSTANT_IMPEDANCE_EDEFAULT, oldQConstantImpedanceESet ) );
     }
 
     /**
@@ -849,9 +865,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         qConstantPower = newQConstantPower;
         boolean oldQConstantPowerESet = qConstantPowerESet;
         qConstantPowerESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QCONSTANT_POWER,
-                        oldQConstantPower, qConstantPower, !oldQConstantPowerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QCONSTANT_POWER, oldQConstantPower, qConstantPower,
+                    !oldQConstantPowerESet ) );
     }
 
     /**
@@ -865,9 +882,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         boolean oldQConstantPowerESet = qConstantPowerESet;
         qConstantPower = QCONSTANT_POWER_EDEFAULT;
         qConstantPowerESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QCONSTANT_POWER, oldQConstantPower, QCONSTANT_POWER_EDEFAULT,
-                oldQConstantPowerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QCONSTANT_POWER, oldQConstantPower,
+                    QCONSTANT_POWER_EDEFAULT, oldQConstantPowerESet ) );
     }
 
     /**
@@ -901,9 +919,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         qFrequencyExponent = newQFrequencyExponent;
         boolean oldQFrequencyExponentESet = qFrequencyExponentESet;
         qFrequencyExponentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QFREQUENCY_EXPONENT, oldQFrequencyExponent, qFrequencyExponent,
-                !oldQFrequencyExponentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QFREQUENCY_EXPONENT, oldQFrequencyExponent,
+                    qFrequencyExponent, !oldQFrequencyExponentESet ) );
     }
 
     /**
@@ -917,9 +936,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         boolean oldQFrequencyExponentESet = qFrequencyExponentESet;
         qFrequencyExponent = QFREQUENCY_EXPONENT_EDEFAULT;
         qFrequencyExponentESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QFREQUENCY_EXPONENT, oldQFrequencyExponent,
-                QFREQUENCY_EXPONENT_EDEFAULT, oldQFrequencyExponentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QFREQUENCY_EXPONENT, oldQFrequencyExponent,
+                    QFREQUENCY_EXPONENT_EDEFAULT, oldQFrequencyExponentESet ) );
     }
 
     /**
@@ -953,9 +973,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         qVoltageExponent = newQVoltageExponent;
         boolean oldQVoltageExponentESet = qVoltageExponentESet;
         qVoltageExponentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QVOLTAGE_EXPONENT, oldQVoltageExponent, qVoltageExponent,
-                !oldQVoltageExponentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QVOLTAGE_EXPONENT, oldQVoltageExponent, qVoltageExponent,
+                    !oldQVoltageExponentESet ) );
     }
 
     /**
@@ -969,9 +990,10 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
         boolean oldQVoltageExponentESet = qVoltageExponentESet;
         qVoltageExponent = QVOLTAGE_EXPONENT_EDEFAULT;
         qVoltageExponentESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QVOLTAGE_EXPONENT, oldQVoltageExponent,
-                QVOLTAGE_EXPONENT_EDEFAULT, oldQVoltageExponentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__QVOLTAGE_EXPONENT, oldQVoltageExponent,
+                    QVOLTAGE_EXPONENT_EDEFAULT, oldQVoltageExponentESet ) );
     }
 
     /**
@@ -1228,7 +1250,7 @@ public class LoadResponseCharacteristicImpl extends IdentifiedObjectImpl impleme
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (exponentModel: " );
         if( exponentModelESet )
             result.append( exponentModel );

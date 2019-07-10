@@ -243,9 +243,10 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
             powerSystemStabilizerDynamics = ( PowerSystemStabilizerDynamics ) eResolveProxy(
                     oldPowerSystemStabilizerDynamics );
             if( powerSystemStabilizerDynamics != oldPowerSystemStabilizerDynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__POWER_SYSTEM_STABILIZER_DYNAMICS,
-                        oldPowerSystemStabilizerDynamics, powerSystemStabilizerDynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.EXCITATION_SYSTEM_DYNAMICS__POWER_SYSTEM_STABILIZER_DYNAMICS,
+                            oldPowerSystemStabilizerDynamics, powerSystemStabilizerDynamics ) );
             }
         }
         return powerSystemStabilizerDynamics;
@@ -307,10 +308,11 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
         else {
             boolean oldPowerSystemStabilizerDynamicsESet = powerSystemStabilizerDynamicsESet;
             powerSystemStabilizerDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.EXCITATION_SYSTEM_DYNAMICS__POWER_SYSTEM_STABILIZER_DYNAMICS,
-                    newPowerSystemStabilizerDynamics, newPowerSystemStabilizerDynamics,
-                    !oldPowerSystemStabilizerDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__POWER_SYSTEM_STABILIZER_DYNAMICS,
+                        newPowerSystemStabilizerDynamics, newPowerSystemStabilizerDynamics,
+                        !oldPowerSystemStabilizerDynamicsESet ) );
         }
     }
 
@@ -354,9 +356,10 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
         else {
             boolean oldPowerSystemStabilizerDynamicsESet = powerSystemStabilizerDynamicsESet;
             powerSystemStabilizerDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.EXCITATION_SYSTEM_DYNAMICS__POWER_SYSTEM_STABILIZER_DYNAMICS, null, null,
-                    oldPowerSystemStabilizerDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__POWER_SYSTEM_STABILIZER_DYNAMICS, null, null,
+                        oldPowerSystemStabilizerDynamicsESet ) );
         }
     }
 
@@ -382,9 +385,10 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
             overexcitationLimiterDynamics = ( OverexcitationLimiterDynamics ) eResolveProxy(
                     oldOverexcitationLimiterDynamics );
             if( overexcitationLimiterDynamics != oldOverexcitationLimiterDynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__OVEREXCITATION_LIMITER_DYNAMICS,
-                        oldOverexcitationLimiterDynamics, overexcitationLimiterDynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.EXCITATION_SYSTEM_DYNAMICS__OVEREXCITATION_LIMITER_DYNAMICS,
+                            oldOverexcitationLimiterDynamics, overexcitationLimiterDynamics ) );
             }
         }
         return overexcitationLimiterDynamics;
@@ -446,10 +450,11 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
         else {
             boolean oldOverexcitationLimiterDynamicsESet = overexcitationLimiterDynamicsESet;
             overexcitationLimiterDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.EXCITATION_SYSTEM_DYNAMICS__OVEREXCITATION_LIMITER_DYNAMICS,
-                    newOverexcitationLimiterDynamics, newOverexcitationLimiterDynamics,
-                    !oldOverexcitationLimiterDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__OVEREXCITATION_LIMITER_DYNAMICS,
+                        newOverexcitationLimiterDynamics, newOverexcitationLimiterDynamics,
+                        !oldOverexcitationLimiterDynamicsESet ) );
         }
     }
 
@@ -493,9 +498,10 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
         else {
             boolean oldOverexcitationLimiterDynamicsESet = overexcitationLimiterDynamicsESet;
             overexcitationLimiterDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.EXCITATION_SYSTEM_DYNAMICS__OVEREXCITATION_LIMITER_DYNAMICS, null, null,
-                    oldOverexcitationLimiterDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__OVEREXCITATION_LIMITER_DYNAMICS, null, null,
+                        oldOverexcitationLimiterDynamicsESet ) );
         }
     }
 
@@ -520,9 +526,10 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
             InternalEObject oldSynchronousMachineDynamics = ( InternalEObject ) synchronousMachineDynamics;
             synchronousMachineDynamics = ( SynchronousMachineDynamics ) eResolveProxy( oldSynchronousMachineDynamics );
             if( synchronousMachineDynamics != oldSynchronousMachineDynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__SYNCHRONOUS_MACHINE_DYNAMICS,
-                        oldSynchronousMachineDynamics, synchronousMachineDynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.EXCITATION_SYSTEM_DYNAMICS__SYNCHRONOUS_MACHINE_DYNAMICS,
+                            oldSynchronousMachineDynamics, synchronousMachineDynamics ) );
             }
         }
         return synchronousMachineDynamics;
@@ -583,9 +590,11 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
         else {
             boolean oldSynchronousMachineDynamicsESet = synchronousMachineDynamicsESet;
             synchronousMachineDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.EXCITATION_SYSTEM_DYNAMICS__SYNCHRONOUS_MACHINE_DYNAMICS, newSynchronousMachineDynamics,
-                    newSynchronousMachineDynamics, !oldSynchronousMachineDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__SYNCHRONOUS_MACHINE_DYNAMICS,
+                        newSynchronousMachineDynamics, newSynchronousMachineDynamics,
+                        !oldSynchronousMachineDynamicsESet ) );
         }
     }
 
@@ -629,9 +638,10 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
         else {
             boolean oldSynchronousMachineDynamicsESet = synchronousMachineDynamicsESet;
             synchronousMachineDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.EXCITATION_SYSTEM_DYNAMICS__SYNCHRONOUS_MACHINE_DYNAMICS, null, null,
-                    oldSynchronousMachineDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__SYNCHRONOUS_MACHINE_DYNAMICS, null, null,
+                        oldSynchronousMachineDynamicsESet ) );
         }
     }
 
@@ -657,9 +667,10 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
             discontinuousExcitationControlDynamics = ( DiscontinuousExcitationControlDynamics ) eResolveProxy(
                     oldDiscontinuousExcitationControlDynamics );
             if( discontinuousExcitationControlDynamics != oldDiscontinuousExcitationControlDynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__DISCONTINUOUS_EXCITATION_CONTROL_DYNAMICS,
-                        oldDiscontinuousExcitationControlDynamics, discontinuousExcitationControlDynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.EXCITATION_SYSTEM_DYNAMICS__DISCONTINUOUS_EXCITATION_CONTROL_DYNAMICS,
+                            oldDiscontinuousExcitationControlDynamics, discontinuousExcitationControlDynamics ) );
             }
         }
         return discontinuousExcitationControlDynamics;
@@ -722,10 +733,11 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
         else {
             boolean oldDiscontinuousExcitationControlDynamicsESet = discontinuousExcitationControlDynamicsESet;
             discontinuousExcitationControlDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.EXCITATION_SYSTEM_DYNAMICS__DISCONTINUOUS_EXCITATION_CONTROL_DYNAMICS,
-                    newDiscontinuousExcitationControlDynamics, newDiscontinuousExcitationControlDynamics,
-                    !oldDiscontinuousExcitationControlDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__DISCONTINUOUS_EXCITATION_CONTROL_DYNAMICS,
+                        newDiscontinuousExcitationControlDynamics, newDiscontinuousExcitationControlDynamics,
+                        !oldDiscontinuousExcitationControlDynamicsESet ) );
         }
     }
 
@@ -769,9 +781,10 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
         else {
             boolean oldDiscontinuousExcitationControlDynamicsESet = discontinuousExcitationControlDynamicsESet;
             discontinuousExcitationControlDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.EXCITATION_SYSTEM_DYNAMICS__DISCONTINUOUS_EXCITATION_CONTROL_DYNAMICS, null, null,
-                    oldDiscontinuousExcitationControlDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__DISCONTINUOUS_EXCITATION_CONTROL_DYNAMICS, null, null,
+                        oldDiscontinuousExcitationControlDynamicsESet ) );
         }
     }
 
@@ -796,9 +809,10 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
             InternalEObject oldVoltageCompensatorDynamics = ( InternalEObject ) voltageCompensatorDynamics;
             voltageCompensatorDynamics = ( VoltageCompensatorDynamics ) eResolveProxy( oldVoltageCompensatorDynamics );
             if( voltageCompensatorDynamics != oldVoltageCompensatorDynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__VOLTAGE_COMPENSATOR_DYNAMICS,
-                        oldVoltageCompensatorDynamics, voltageCompensatorDynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.EXCITATION_SYSTEM_DYNAMICS__VOLTAGE_COMPENSATOR_DYNAMICS,
+                            oldVoltageCompensatorDynamics, voltageCompensatorDynamics ) );
             }
         }
         return voltageCompensatorDynamics;
@@ -859,9 +873,11 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
         else {
             boolean oldVoltageCompensatorDynamicsESet = voltageCompensatorDynamicsESet;
             voltageCompensatorDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.EXCITATION_SYSTEM_DYNAMICS__VOLTAGE_COMPENSATOR_DYNAMICS, newVoltageCompensatorDynamics,
-                    newVoltageCompensatorDynamics, !oldVoltageCompensatorDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__VOLTAGE_COMPENSATOR_DYNAMICS,
+                        newVoltageCompensatorDynamics, newVoltageCompensatorDynamics,
+                        !oldVoltageCompensatorDynamicsESet ) );
         }
     }
 
@@ -905,9 +921,10 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
         else {
             boolean oldVoltageCompensatorDynamicsESet = voltageCompensatorDynamicsESet;
             voltageCompensatorDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.EXCITATION_SYSTEM_DYNAMICS__VOLTAGE_COMPENSATOR_DYNAMICS, null, null,
-                    oldVoltageCompensatorDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__VOLTAGE_COMPENSATOR_DYNAMICS, null, null,
+                        oldVoltageCompensatorDynamicsESet ) );
         }
     }
 
@@ -933,9 +950,10 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
             pfvArControllerType1Dynamics = ( PFVArControllerType1Dynamics ) eResolveProxy(
                     oldPFVArControllerType1Dynamics );
             if( pfvArControllerType1Dynamics != oldPFVArControllerType1Dynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__PFV_AR_CONTROLLER_TYPE1_DYNAMICS,
-                        oldPFVArControllerType1Dynamics, pfvArControllerType1Dynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.EXCITATION_SYSTEM_DYNAMICS__PFV_AR_CONTROLLER_TYPE1_DYNAMICS,
+                            oldPFVArControllerType1Dynamics, pfvArControllerType1Dynamics ) );
             }
         }
         return pfvArControllerType1Dynamics;
@@ -997,10 +1015,11 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
         else {
             boolean oldPFVArControllerType1DynamicsESet = pfvArControllerType1DynamicsESet;
             pfvArControllerType1DynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.EXCITATION_SYSTEM_DYNAMICS__PFV_AR_CONTROLLER_TYPE1_DYNAMICS,
-                    newPFVArControllerType1Dynamics, newPFVArControllerType1Dynamics,
-                    !oldPFVArControllerType1DynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__PFV_AR_CONTROLLER_TYPE1_DYNAMICS,
+                        newPFVArControllerType1Dynamics, newPFVArControllerType1Dynamics,
+                        !oldPFVArControllerType1DynamicsESet ) );
         }
     }
 
@@ -1044,9 +1063,10 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
         else {
             boolean oldPFVArControllerType1DynamicsESet = pfvArControllerType1DynamicsESet;
             pfvArControllerType1DynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.EXCITATION_SYSTEM_DYNAMICS__PFV_AR_CONTROLLER_TYPE1_DYNAMICS, null, null,
-                    oldPFVArControllerType1DynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__PFV_AR_CONTROLLER_TYPE1_DYNAMICS, null, null,
+                        oldPFVArControllerType1DynamicsESet ) );
         }
     }
 
@@ -1117,10 +1137,11 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
         else {
             boolean oldPFVArControllerType2DynamicsESet = pfvArControllerType2DynamicsESet;
             pfvArControllerType2DynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.EXCITATION_SYSTEM_DYNAMICS__PFV_AR_CONTROLLER_TYPE2_DYNAMICS,
-                    newPFVArControllerType2Dynamics, newPFVArControllerType2Dynamics,
-                    !oldPFVArControllerType2DynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__PFV_AR_CONTROLLER_TYPE2_DYNAMICS,
+                        newPFVArControllerType2Dynamics, newPFVArControllerType2Dynamics,
+                        !oldPFVArControllerType2DynamicsESet ) );
         }
     }
 
@@ -1164,9 +1185,10 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
         else {
             boolean oldPFVArControllerType2DynamicsESet = pfvArControllerType2DynamicsESet;
             pfvArControllerType2DynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.EXCITATION_SYSTEM_DYNAMICS__PFV_AR_CONTROLLER_TYPE2_DYNAMICS, null, null,
-                    oldPFVArControllerType2DynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__PFV_AR_CONTROLLER_TYPE2_DYNAMICS, null, null,
+                        oldPFVArControllerType2DynamicsESet ) );
         }
     }
 
@@ -1237,10 +1259,11 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
         else {
             boolean oldUnderexcitationLimiterDynamicsESet = underexcitationLimiterDynamicsESet;
             underexcitationLimiterDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.EXCITATION_SYSTEM_DYNAMICS__UNDEREXCITATION_LIMITER_DYNAMICS,
-                    newUnderexcitationLimiterDynamics, newUnderexcitationLimiterDynamics,
-                    !oldUnderexcitationLimiterDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__UNDEREXCITATION_LIMITER_DYNAMICS,
+                        newUnderexcitationLimiterDynamics, newUnderexcitationLimiterDynamics,
+                        !oldUnderexcitationLimiterDynamicsESet ) );
         }
     }
 
@@ -1284,9 +1307,10 @@ public class ExcitationSystemDynamicsImpl extends DynamicsFunctionBlockImpl impl
         else {
             boolean oldUnderexcitationLimiterDynamicsESet = underexcitationLimiterDynamicsESet;
             underexcitationLimiterDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.EXCITATION_SYSTEM_DYNAMICS__UNDEREXCITATION_LIMITER_DYNAMICS, null, null,
-                    oldUnderexcitationLimiterDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.EXCITATION_SYSTEM_DYNAMICS__UNDEREXCITATION_LIMITER_DYNAMICS, null, null,
+                        oldUnderexcitationLimiterDynamicsESet ) );
         }
     }
 

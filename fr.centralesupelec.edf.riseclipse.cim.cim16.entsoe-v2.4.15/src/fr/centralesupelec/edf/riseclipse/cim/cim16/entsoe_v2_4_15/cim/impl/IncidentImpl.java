@@ -212,8 +212,9 @@ public class IncidentImpl extends DocumentImpl implements Incident {
         cause = newCause;
         boolean oldCauseESet = causeESet;
         causeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.INCIDENT__CAUSE, oldCause, cause, !oldCauseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.INCIDENT__CAUSE, oldCause, cause,
+                    !oldCauseESet ) );
     }
 
     /**
@@ -227,8 +228,9 @@ public class IncidentImpl extends DocumentImpl implements Incident {
         boolean oldCauseESet = causeESet;
         cause = CAUSE_EDEFAULT;
         causeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.INCIDENT__CAUSE, oldCause, CAUSE_EDEFAULT, oldCauseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.INCIDENT__CAUSE, oldCause,
+                    CAUSE_EDEFAULT, oldCauseESet ) );
     }
 
     /**
@@ -349,18 +351,21 @@ public class IncidentImpl extends DocumentImpl implements Incident {
     public void setOutage( Outage newOutage ) {
         if( newOutage != outage ) {
             NotificationChain msgs = null;
-            if( outage != null ) msgs = ( ( InternalEObject ) outage ).eInverseRemove( this,
-                    CimPackage.OUTAGE__INCIDENT, Outage.class, msgs );
-            if( newOutage != null ) msgs = ( ( InternalEObject ) newOutage ).eInverseAdd( this,
-                    CimPackage.OUTAGE__INCIDENT, Outage.class, msgs );
+            if( outage != null )
+                msgs = ( ( InternalEObject ) outage ).eInverseRemove( this, CimPackage.OUTAGE__INCIDENT, Outage.class,
+                        msgs );
+            if( newOutage != null )
+                msgs = ( ( InternalEObject ) newOutage ).eInverseAdd( this, CimPackage.OUTAGE__INCIDENT, Outage.class,
+                        msgs );
             msgs = basicSetOutage( newOutage, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldOutageESet = outageESet;
             outageESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.INCIDENT__OUTAGE, newOutage, newOutage, !oldOutageESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.INCIDENT__OUTAGE, newOutage,
+                        newOutage, !oldOutageESet ) );
         }
     }
 
@@ -402,8 +407,9 @@ public class IncidentImpl extends DocumentImpl implements Incident {
         else {
             boolean oldOutageESet = outageESet;
             outageESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.INCIDENT__OUTAGE, null, null, oldOutageESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.INCIDENT__OUTAGE, null, null,
+                        oldOutageESet ) );
         }
     }
 
@@ -526,18 +532,21 @@ public class IncidentImpl extends DocumentImpl implements Incident {
     public void setOwner( Operator newOwner ) {
         if( newOwner != owner ) {
             NotificationChain msgs = null;
-            if( owner != null ) msgs = ( ( InternalEObject ) owner ).eInverseRemove( this,
-                    CimPackage.OPERATOR__INCIDENTS, Operator.class, msgs );
-            if( newOwner != null ) msgs = ( ( InternalEObject ) newOwner ).eInverseAdd( this,
-                    CimPackage.OPERATOR__INCIDENTS, Operator.class, msgs );
+            if( owner != null )
+                msgs = ( ( InternalEObject ) owner ).eInverseRemove( this, CimPackage.OPERATOR__INCIDENTS,
+                        Operator.class, msgs );
+            if( newOwner != null )
+                msgs = ( ( InternalEObject ) newOwner ).eInverseAdd( this, CimPackage.OPERATOR__INCIDENTS,
+                        Operator.class, msgs );
             msgs = basicSetOwner( newOwner, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldOwnerESet = ownerESet;
             ownerESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.INCIDENT__OWNER, newOwner, newOwner, !oldOwnerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.INCIDENT__OWNER, newOwner, newOwner,
+                        !oldOwnerESet ) );
         }
     }
 
@@ -579,8 +588,9 @@ public class IncidentImpl extends DocumentImpl implements Incident {
         else {
             boolean oldOwnerESet = ownerESet;
             ownerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.INCIDENT__OWNER, null, null, oldOwnerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.INCIDENT__OWNER, null, null,
+                        oldOwnerESet ) );
         }
     }
 
@@ -604,8 +614,9 @@ public class IncidentImpl extends DocumentImpl implements Incident {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.INCIDENT__OUTAGE:
-            if( outage != null ) msgs = ( ( InternalEObject ) outage ).eInverseRemove( this,
-                    CimPackage.OUTAGE__INCIDENT, Outage.class, msgs );
+            if( outage != null )
+                msgs = ( ( InternalEObject ) outage ).eInverseRemove( this, CimPackage.OUTAGE__INCIDENT, Outage.class,
+                        msgs );
             return basicSetOutage( ( Outage ) otherEnd, msgs );
         case CimPackage.INCIDENT__WORKS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getWorks() ).basicAdd( otherEnd,
@@ -620,8 +631,9 @@ public class IncidentImpl extends DocumentImpl implements Incident {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getHazards() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.INCIDENT__OWNER:
-            if( owner != null ) msgs = ( ( InternalEObject ) owner ).eInverseRemove( this,
-                    CimPackage.OPERATOR__INCIDENTS, Operator.class, msgs );
+            if( owner != null )
+                msgs = ( ( InternalEObject ) owner ).eInverseRemove( this, CimPackage.OPERATOR__INCIDENTS,
+                        Operator.class, msgs );
             return basicSetOwner( ( Operator ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -783,7 +795,7 @@ public class IncidentImpl extends DocumentImpl implements Incident {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (cause: " );
         if( causeESet )
             result.append( cause );

@@ -125,10 +125,12 @@ public class AccumulatorResetImpl extends ControlImpl implements AccumulatorRese
     public void setAccumulatorValue( AccumulatorValue newAccumulatorValue ) {
         if( newAccumulatorValue != accumulatorValue ) {
             NotificationChain msgs = null;
-            if( accumulatorValue != null ) msgs = ( ( InternalEObject ) accumulatorValue ).eInverseRemove( this,
-                    CimPackage.ACCUMULATOR_VALUE__ACCUMULATOR_RESET, AccumulatorValue.class, msgs );
-            if( newAccumulatorValue != null ) msgs = ( ( InternalEObject ) newAccumulatorValue ).eInverseAdd( this,
-                    CimPackage.ACCUMULATOR_VALUE__ACCUMULATOR_RESET, AccumulatorValue.class, msgs );
+            if( accumulatorValue != null )
+                msgs = ( ( InternalEObject ) accumulatorValue ).eInverseRemove( this,
+                        CimPackage.ACCUMULATOR_VALUE__ACCUMULATOR_RESET, AccumulatorValue.class, msgs );
+            if( newAccumulatorValue != null )
+                msgs = ( ( InternalEObject ) newAccumulatorValue ).eInverseAdd( this,
+                        CimPackage.ACCUMULATOR_VALUE__ACCUMULATOR_RESET, AccumulatorValue.class, msgs );
             msgs = basicSetAccumulatorValue( newAccumulatorValue, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -180,8 +182,9 @@ public class AccumulatorResetImpl extends ControlImpl implements AccumulatorRese
         else {
             boolean oldAccumulatorValueESet = accumulatorValueESet;
             accumulatorValueESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ACCUMULATOR_RESET__ACCUMULATOR_VALUE, null, null, oldAccumulatorValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.ACCUMULATOR_RESET__ACCUMULATOR_VALUE, null, null, oldAccumulatorValueESet ) );
         }
     }
 
@@ -204,8 +207,9 @@ public class AccumulatorResetImpl extends ControlImpl implements AccumulatorRese
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ACCUMULATOR_RESET__ACCUMULATOR_VALUE:
-            if( accumulatorValue != null ) msgs = ( ( InternalEObject ) accumulatorValue ).eInverseRemove( this,
-                    CimPackage.ACCUMULATOR_VALUE__ACCUMULATOR_RESET, AccumulatorValue.class, msgs );
+            if( accumulatorValue != null )
+                msgs = ( ( InternalEObject ) accumulatorValue ).eInverseRemove( this,
+                        CimPackage.ACCUMULATOR_VALUE__ACCUMULATOR_RESET, AccumulatorValue.class, msgs );
             return basicSetAccumulatorValue( ( AccumulatorValue ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

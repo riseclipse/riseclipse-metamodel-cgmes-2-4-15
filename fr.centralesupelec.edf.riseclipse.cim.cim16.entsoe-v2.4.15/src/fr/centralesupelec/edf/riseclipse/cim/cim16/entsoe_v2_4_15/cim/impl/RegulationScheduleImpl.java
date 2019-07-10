@@ -180,19 +180,22 @@ public class RegulationScheduleImpl extends SeasonDayTypeScheduleImpl implements
     public void setRegulatingControl( RegulatingControl newRegulatingControl ) {
         if( newRegulatingControl != regulatingControl ) {
             NotificationChain msgs = null;
-            if( regulatingControl != null ) msgs = ( ( InternalEObject ) regulatingControl ).eInverseRemove( this,
-                    CimPackage.REGULATING_CONTROL__REGULATION_SCHEDULE, RegulatingControl.class, msgs );
-            if( newRegulatingControl != null ) msgs = ( ( InternalEObject ) newRegulatingControl ).eInverseAdd( this,
-                    CimPackage.REGULATING_CONTROL__REGULATION_SCHEDULE, RegulatingControl.class, msgs );
+            if( regulatingControl != null )
+                msgs = ( ( InternalEObject ) regulatingControl ).eInverseRemove( this,
+                        CimPackage.REGULATING_CONTROL__REGULATION_SCHEDULE, RegulatingControl.class, msgs );
+            if( newRegulatingControl != null )
+                msgs = ( ( InternalEObject ) newRegulatingControl ).eInverseAdd( this,
+                        CimPackage.REGULATING_CONTROL__REGULATION_SCHEDULE, RegulatingControl.class, msgs );
             msgs = basicSetRegulatingControl( newRegulatingControl, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldRegulatingControlESet = regulatingControlESet;
             regulatingControlESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.REGULATION_SCHEDULE__REGULATING_CONTROL,
-                            newRegulatingControl, newRegulatingControl, !oldRegulatingControlESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.REGULATION_SCHEDULE__REGULATING_CONTROL, newRegulatingControl, newRegulatingControl,
+                        !oldRegulatingControlESet ) );
         }
     }
 
@@ -235,8 +238,9 @@ public class RegulationScheduleImpl extends SeasonDayTypeScheduleImpl implements
         else {
             boolean oldRegulatingControlESet = regulatingControlESet;
             regulatingControlESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REGULATION_SCHEDULE__REGULATING_CONTROL, null, null, oldRegulatingControlESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.REGULATION_SCHEDULE__REGULATING_CONTROL, null, null, oldRegulatingControlESet ) );
         }
     }
 
@@ -263,8 +267,9 @@ public class RegulationScheduleImpl extends SeasonDayTypeScheduleImpl implements
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getVoltageControlZones() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.REGULATION_SCHEDULE__REGULATING_CONTROL:
-            if( regulatingControl != null ) msgs = ( ( InternalEObject ) regulatingControl ).eInverseRemove( this,
-                    CimPackage.REGULATING_CONTROL__REGULATION_SCHEDULE, RegulatingControl.class, msgs );
+            if( regulatingControl != null )
+                msgs = ( ( InternalEObject ) regulatingControl ).eInverseRemove( this,
+                        CimPackage.REGULATING_CONTROL__REGULATION_SCHEDULE, RegulatingControl.class, msgs );
             return basicSetRegulatingControl( ( RegulatingControl ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

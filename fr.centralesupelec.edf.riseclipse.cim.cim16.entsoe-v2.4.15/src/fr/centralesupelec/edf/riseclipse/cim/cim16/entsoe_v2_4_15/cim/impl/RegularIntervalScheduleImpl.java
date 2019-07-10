@@ -164,8 +164,9 @@ public class RegularIntervalScheduleImpl extends BasicIntervalScheduleImpl imple
         endTime = newEndTime;
         boolean oldEndTimeESet = endTimeESet;
         endTimeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REGULAR_INTERVAL_SCHEDULE__END_TIME, oldEndTime, endTime, !oldEndTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REGULAR_INTERVAL_SCHEDULE__END_TIME,
+                    oldEndTime, endTime, !oldEndTimeESet ) );
     }
 
     /**
@@ -179,8 +180,9 @@ public class RegularIntervalScheduleImpl extends BasicIntervalScheduleImpl imple
         boolean oldEndTimeESet = endTimeESet;
         endTime = END_TIME_EDEFAULT;
         endTimeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REGULAR_INTERVAL_SCHEDULE__END_TIME, oldEndTime, END_TIME_EDEFAULT, oldEndTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.REGULAR_INTERVAL_SCHEDULE__END_TIME,
+                    oldEndTime, END_TIME_EDEFAULT, oldEndTimeESet ) );
     }
 
     /**
@@ -214,8 +216,9 @@ public class RegularIntervalScheduleImpl extends BasicIntervalScheduleImpl imple
         timeStep = newTimeStep;
         boolean oldTimeStepESet = timeStepESet;
         timeStepESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REGULAR_INTERVAL_SCHEDULE__TIME_STEP, oldTimeStep, timeStep, !oldTimeStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REGULAR_INTERVAL_SCHEDULE__TIME_STEP,
+                    oldTimeStep, timeStep, !oldTimeStepESet ) );
     }
 
     /**
@@ -229,8 +232,9 @@ public class RegularIntervalScheduleImpl extends BasicIntervalScheduleImpl imple
         boolean oldTimeStepESet = timeStepESet;
         timeStep = TIME_STEP_EDEFAULT;
         timeStepESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REGULAR_INTERVAL_SCHEDULE__TIME_STEP, oldTimeStep, TIME_STEP_EDEFAULT, oldTimeStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.REGULAR_INTERVAL_SCHEDULE__TIME_STEP,
+                    oldTimeStep, TIME_STEP_EDEFAULT, oldTimeStepESet ) );
     }
 
     /**
@@ -397,7 +401,7 @@ public class RegularIntervalScheduleImpl extends BasicIntervalScheduleImpl imple
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (endTime: " );
         if( endTimeESet )
             result.append( endTime );

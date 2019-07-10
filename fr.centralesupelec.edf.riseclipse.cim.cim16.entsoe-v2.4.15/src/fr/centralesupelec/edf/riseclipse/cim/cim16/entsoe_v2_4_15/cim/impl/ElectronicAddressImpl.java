@@ -323,8 +323,9 @@ public class ElectronicAddressImpl extends MinimalEObjectImpl.Container implemen
         email1 = newEmail1;
         boolean oldEmail1ESet = email1ESet;
         email1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ELECTRONIC_ADDRESS__EMAIL1, oldEmail1, email1, !oldEmail1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ELECTRONIC_ADDRESS__EMAIL1, oldEmail1,
+                    email1, !oldEmail1ESet ) );
     }
 
     /**
@@ -338,8 +339,9 @@ public class ElectronicAddressImpl extends MinimalEObjectImpl.Container implemen
         boolean oldEmail1ESet = email1ESet;
         email1 = EMAIL1_EDEFAULT;
         email1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ELECTRONIC_ADDRESS__EMAIL1, oldEmail1, EMAIL1_EDEFAULT, oldEmail1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ELECTRONIC_ADDRESS__EMAIL1, oldEmail1,
+                    EMAIL1_EDEFAULT, oldEmail1ESet ) );
     }
 
     /**
@@ -373,8 +375,9 @@ public class ElectronicAddressImpl extends MinimalEObjectImpl.Container implemen
         email2 = newEmail2;
         boolean oldEmail2ESet = email2ESet;
         email2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ELECTRONIC_ADDRESS__EMAIL2, oldEmail2, email2, !oldEmail2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ELECTRONIC_ADDRESS__EMAIL2, oldEmail2,
+                    email2, !oldEmail2ESet ) );
     }
 
     /**
@@ -388,8 +391,9 @@ public class ElectronicAddressImpl extends MinimalEObjectImpl.Container implemen
         boolean oldEmail2ESet = email2ESet;
         email2 = EMAIL2_EDEFAULT;
         email2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ELECTRONIC_ADDRESS__EMAIL2, oldEmail2, EMAIL2_EDEFAULT, oldEmail2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ELECTRONIC_ADDRESS__EMAIL2, oldEmail2,
+                    EMAIL2_EDEFAULT, oldEmail2ESet ) );
     }
 
     /**
@@ -423,8 +427,9 @@ public class ElectronicAddressImpl extends MinimalEObjectImpl.Container implemen
         lan = newLan;
         boolean oldLanESet = lanESet;
         lanESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ELECTRONIC_ADDRESS__LAN, oldLan, lan, !oldLanESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ELECTRONIC_ADDRESS__LAN, oldLan, lan,
+                    !oldLanESet ) );
     }
 
     /**
@@ -438,8 +443,9 @@ public class ElectronicAddressImpl extends MinimalEObjectImpl.Container implemen
         boolean oldLanESet = lanESet;
         lan = LAN_EDEFAULT;
         lanESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ELECTRONIC_ADDRESS__LAN, oldLan, LAN_EDEFAULT, oldLanESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ELECTRONIC_ADDRESS__LAN, oldLan,
+                    LAN_EDEFAULT, oldLanESet ) );
     }
 
     /**
@@ -473,8 +479,9 @@ public class ElectronicAddressImpl extends MinimalEObjectImpl.Container implemen
         mac = newMac;
         boolean oldMacESet = macESet;
         macESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ELECTRONIC_ADDRESS__MAC, oldMac, mac, !oldMacESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ELECTRONIC_ADDRESS__MAC, oldMac, mac,
+                    !oldMacESet ) );
     }
 
     /**
@@ -488,8 +495,9 @@ public class ElectronicAddressImpl extends MinimalEObjectImpl.Container implemen
         boolean oldMacESet = macESet;
         mac = MAC_EDEFAULT;
         macESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ELECTRONIC_ADDRESS__MAC, oldMac, MAC_EDEFAULT, oldMacESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ELECTRONIC_ADDRESS__MAC, oldMac,
+                    MAC_EDEFAULT, oldMacESet ) );
     }
 
     /**
@@ -523,8 +531,9 @@ public class ElectronicAddressImpl extends MinimalEObjectImpl.Container implemen
         password = newPassword;
         boolean oldPasswordESet = passwordESet;
         passwordESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ELECTRONIC_ADDRESS__PASSWORD, oldPassword, password, !oldPasswordESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ELECTRONIC_ADDRESS__PASSWORD,
+                    oldPassword, password, !oldPasswordESet ) );
     }
 
     /**
@@ -538,8 +547,9 @@ public class ElectronicAddressImpl extends MinimalEObjectImpl.Container implemen
         boolean oldPasswordESet = passwordESet;
         password = PASSWORD_EDEFAULT;
         passwordESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ELECTRONIC_ADDRESS__PASSWORD, oldPassword, PASSWORD_EDEFAULT, oldPasswordESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ELECTRONIC_ADDRESS__PASSWORD,
+                    oldPassword, PASSWORD_EDEFAULT, oldPasswordESet ) );
     }
 
     /**
@@ -573,8 +583,9 @@ public class ElectronicAddressImpl extends MinimalEObjectImpl.Container implemen
         radio = newRadio;
         boolean oldRadioESet = radioESet;
         radioESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ELECTRONIC_ADDRESS__RADIO, oldRadio, radio, !oldRadioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ELECTRONIC_ADDRESS__RADIO, oldRadio,
+                    radio, !oldRadioESet ) );
     }
 
     /**
@@ -588,8 +599,9 @@ public class ElectronicAddressImpl extends MinimalEObjectImpl.Container implemen
         boolean oldRadioESet = radioESet;
         radio = RADIO_EDEFAULT;
         radioESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ELECTRONIC_ADDRESS__RADIO, oldRadio, RADIO_EDEFAULT, oldRadioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ELECTRONIC_ADDRESS__RADIO, oldRadio,
+                    RADIO_EDEFAULT, oldRadioESet ) );
     }
 
     /**
@@ -623,8 +635,9 @@ public class ElectronicAddressImpl extends MinimalEObjectImpl.Container implemen
         userID = newUserID;
         boolean oldUserIDESet = userIDESet;
         userIDESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ELECTRONIC_ADDRESS__USER_ID, oldUserID, userID, !oldUserIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ELECTRONIC_ADDRESS__USER_ID, oldUserID,
+                    userID, !oldUserIDESet ) );
     }
 
     /**
@@ -638,8 +651,9 @@ public class ElectronicAddressImpl extends MinimalEObjectImpl.Container implemen
         boolean oldUserIDESet = userIDESet;
         userID = USER_ID_EDEFAULT;
         userIDESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ELECTRONIC_ADDRESS__USER_ID, oldUserID, USER_ID_EDEFAULT, oldUserIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ELECTRONIC_ADDRESS__USER_ID, oldUserID,
+                    USER_ID_EDEFAULT, oldUserIDESet ) );
     }
 
     /**
@@ -673,8 +687,9 @@ public class ElectronicAddressImpl extends MinimalEObjectImpl.Container implemen
         web = newWeb;
         boolean oldWebESet = webESet;
         webESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ELECTRONIC_ADDRESS__WEB, oldWeb, web, !oldWebESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ELECTRONIC_ADDRESS__WEB, oldWeb, web,
+                    !oldWebESet ) );
     }
 
     /**
@@ -688,8 +703,9 @@ public class ElectronicAddressImpl extends MinimalEObjectImpl.Container implemen
         boolean oldWebESet = webESet;
         web = WEB_EDEFAULT;
         webESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ELECTRONIC_ADDRESS__WEB, oldWeb, WEB_EDEFAULT, oldWebESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ELECTRONIC_ADDRESS__WEB, oldWeb,
+                    WEB_EDEFAULT, oldWebESet ) );
     }
 
     /**
@@ -839,7 +855,7 @@ public class ElectronicAddressImpl extends MinimalEObjectImpl.Container implemen
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (email1: " );
         if( email1ESet )
             result.append( email1 );

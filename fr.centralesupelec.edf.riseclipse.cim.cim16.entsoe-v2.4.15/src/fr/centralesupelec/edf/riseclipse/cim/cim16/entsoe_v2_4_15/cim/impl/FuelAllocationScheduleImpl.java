@@ -279,9 +279,10 @@ public class FuelAllocationScheduleImpl extends CurveImpl implements FuelAllocat
         fuelAllocationEndDate = newFuelAllocationEndDate;
         boolean oldFuelAllocationEndDateESet = fuelAllocationEndDateESet;
         fuelAllocationEndDateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FUEL_ALLOCATION_SCHEDULE__FUEL_ALLOCATION_END_DATE, oldFuelAllocationEndDate,
-                fuelAllocationEndDate, !oldFuelAllocationEndDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.FUEL_ALLOCATION_SCHEDULE__FUEL_ALLOCATION_END_DATE, oldFuelAllocationEndDate,
+                    fuelAllocationEndDate, !oldFuelAllocationEndDateESet ) );
     }
 
     /**
@@ -295,9 +296,10 @@ public class FuelAllocationScheduleImpl extends CurveImpl implements FuelAllocat
         boolean oldFuelAllocationEndDateESet = fuelAllocationEndDateESet;
         fuelAllocationEndDate = FUEL_ALLOCATION_END_DATE_EDEFAULT;
         fuelAllocationEndDateESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FUEL_ALLOCATION_SCHEDULE__FUEL_ALLOCATION_END_DATE, oldFuelAllocationEndDate,
-                FUEL_ALLOCATION_END_DATE_EDEFAULT, oldFuelAllocationEndDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.FUEL_ALLOCATION_SCHEDULE__FUEL_ALLOCATION_END_DATE, oldFuelAllocationEndDate,
+                    FUEL_ALLOCATION_END_DATE_EDEFAULT, oldFuelAllocationEndDateESet ) );
     }
 
     /**
@@ -331,9 +333,10 @@ public class FuelAllocationScheduleImpl extends CurveImpl implements FuelAllocat
         fuelAllocationStartDate = newFuelAllocationStartDate;
         boolean oldFuelAllocationStartDateESet = fuelAllocationStartDateESet;
         fuelAllocationStartDateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FUEL_ALLOCATION_SCHEDULE__FUEL_ALLOCATION_START_DATE, oldFuelAllocationStartDate,
-                fuelAllocationStartDate, !oldFuelAllocationStartDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.FUEL_ALLOCATION_SCHEDULE__FUEL_ALLOCATION_START_DATE, oldFuelAllocationStartDate,
+                    fuelAllocationStartDate, !oldFuelAllocationStartDateESet ) );
     }
 
     /**
@@ -347,9 +350,10 @@ public class FuelAllocationScheduleImpl extends CurveImpl implements FuelAllocat
         boolean oldFuelAllocationStartDateESet = fuelAllocationStartDateESet;
         fuelAllocationStartDate = FUEL_ALLOCATION_START_DATE_EDEFAULT;
         fuelAllocationStartDateESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FUEL_ALLOCATION_SCHEDULE__FUEL_ALLOCATION_START_DATE, oldFuelAllocationStartDate,
-                FUEL_ALLOCATION_START_DATE_EDEFAULT, oldFuelAllocationStartDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.FUEL_ALLOCATION_SCHEDULE__FUEL_ALLOCATION_START_DATE, oldFuelAllocationStartDate,
+                    FUEL_ALLOCATION_START_DATE_EDEFAULT, oldFuelAllocationStartDateESet ) );
     }
 
     /**
@@ -383,8 +387,9 @@ public class FuelAllocationScheduleImpl extends CurveImpl implements FuelAllocat
         fuelType = newFuelType == null ? FUEL_TYPE_EDEFAULT : newFuelType;
         boolean oldFuelTypeESet = fuelTypeESet;
         fuelTypeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FUEL_ALLOCATION_SCHEDULE__FUEL_TYPE, oldFuelType, fuelType, !oldFuelTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FUEL_ALLOCATION_SCHEDULE__FUEL_TYPE,
+                    oldFuelType, fuelType, !oldFuelTypeESet ) );
     }
 
     /**
@@ -398,8 +403,9 @@ public class FuelAllocationScheduleImpl extends CurveImpl implements FuelAllocat
         boolean oldFuelTypeESet = fuelTypeESet;
         fuelType = FUEL_TYPE_EDEFAULT;
         fuelTypeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FUEL_ALLOCATION_SCHEDULE__FUEL_TYPE, oldFuelType, FUEL_TYPE_EDEFAULT, oldFuelTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FUEL_ALLOCATION_SCHEDULE__FUEL_TYPE,
+                    oldFuelType, FUEL_TYPE_EDEFAULT, oldFuelTypeESet ) );
     }
 
     /**
@@ -433,9 +439,10 @@ public class FuelAllocationScheduleImpl extends CurveImpl implements FuelAllocat
         maxFuelAllocation = newMaxFuelAllocation;
         boolean oldMaxFuelAllocationESet = maxFuelAllocationESet;
         maxFuelAllocationESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.FUEL_ALLOCATION_SCHEDULE__MAX_FUEL_ALLOCATION,
-                        oldMaxFuelAllocation, maxFuelAllocation, !oldMaxFuelAllocationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.FUEL_ALLOCATION_SCHEDULE__MAX_FUEL_ALLOCATION, oldMaxFuelAllocation, maxFuelAllocation,
+                    !oldMaxFuelAllocationESet ) );
     }
 
     /**
@@ -449,9 +456,10 @@ public class FuelAllocationScheduleImpl extends CurveImpl implements FuelAllocat
         boolean oldMaxFuelAllocationESet = maxFuelAllocationESet;
         maxFuelAllocation = MAX_FUEL_ALLOCATION_EDEFAULT;
         maxFuelAllocationESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FUEL_ALLOCATION_SCHEDULE__MAX_FUEL_ALLOCATION, oldMaxFuelAllocation,
-                MAX_FUEL_ALLOCATION_EDEFAULT, oldMaxFuelAllocationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.FUEL_ALLOCATION_SCHEDULE__MAX_FUEL_ALLOCATION, oldMaxFuelAllocation,
+                    MAX_FUEL_ALLOCATION_EDEFAULT, oldMaxFuelAllocationESet ) );
     }
 
     /**
@@ -485,9 +493,10 @@ public class FuelAllocationScheduleImpl extends CurveImpl implements FuelAllocat
         minFuelAllocation = newMinFuelAllocation;
         boolean oldMinFuelAllocationESet = minFuelAllocationESet;
         minFuelAllocationESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.FUEL_ALLOCATION_SCHEDULE__MIN_FUEL_ALLOCATION,
-                        oldMinFuelAllocation, minFuelAllocation, !oldMinFuelAllocationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.FUEL_ALLOCATION_SCHEDULE__MIN_FUEL_ALLOCATION, oldMinFuelAllocation, minFuelAllocation,
+                    !oldMinFuelAllocationESet ) );
     }
 
     /**
@@ -501,9 +510,10 @@ public class FuelAllocationScheduleImpl extends CurveImpl implements FuelAllocat
         boolean oldMinFuelAllocationESet = minFuelAllocationESet;
         minFuelAllocation = MIN_FUEL_ALLOCATION_EDEFAULT;
         minFuelAllocationESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FUEL_ALLOCATION_SCHEDULE__MIN_FUEL_ALLOCATION, oldMinFuelAllocation,
-                MIN_FUEL_ALLOCATION_EDEFAULT, oldMinFuelAllocationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.FUEL_ALLOCATION_SCHEDULE__MIN_FUEL_ALLOCATION, oldMinFuelAllocation,
+                    MIN_FUEL_ALLOCATION_EDEFAULT, oldMinFuelAllocationESet ) );
     }
 
     /**
@@ -572,9 +582,10 @@ public class FuelAllocationScheduleImpl extends CurveImpl implements FuelAllocat
         else {
             boolean oldThermalGeneratingUnitESet = thermalGeneratingUnitESet;
             thermalGeneratingUnitESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.FUEL_ALLOCATION_SCHEDULE__THERMAL_GENERATING_UNIT, newThermalGeneratingUnit,
-                    newThermalGeneratingUnit, !oldThermalGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.FUEL_ALLOCATION_SCHEDULE__THERMAL_GENERATING_UNIT, newThermalGeneratingUnit,
+                        newThermalGeneratingUnit, !oldThermalGeneratingUnitESet ) );
         }
     }
 
@@ -617,9 +628,10 @@ public class FuelAllocationScheduleImpl extends CurveImpl implements FuelAllocat
         else {
             boolean oldThermalGeneratingUnitESet = thermalGeneratingUnitESet;
             thermalGeneratingUnitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.FUEL_ALLOCATION_SCHEDULE__THERMAL_GENERATING_UNIT, null, null,
-                    oldThermalGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.FUEL_ALLOCATION_SCHEDULE__THERMAL_GENERATING_UNIT, null, null,
+                        oldThermalGeneratingUnitESet ) );
         }
     }
 
@@ -674,19 +686,22 @@ public class FuelAllocationScheduleImpl extends CurveImpl implements FuelAllocat
     public void setFossilFuel( FossilFuel newFossilFuel ) {
         if( newFossilFuel != fossilFuel ) {
             NotificationChain msgs = null;
-            if( fossilFuel != null ) msgs = ( ( InternalEObject ) fossilFuel ).eInverseRemove( this,
-                    CimPackage.FOSSIL_FUEL__FUEL_ALLOCATION_SCHEDULES, FossilFuel.class, msgs );
-            if( newFossilFuel != null ) msgs = ( ( InternalEObject ) newFossilFuel ).eInverseAdd( this,
-                    CimPackage.FOSSIL_FUEL__FUEL_ALLOCATION_SCHEDULES, FossilFuel.class, msgs );
+            if( fossilFuel != null )
+                msgs = ( ( InternalEObject ) fossilFuel ).eInverseRemove( this,
+                        CimPackage.FOSSIL_FUEL__FUEL_ALLOCATION_SCHEDULES, FossilFuel.class, msgs );
+            if( newFossilFuel != null )
+                msgs = ( ( InternalEObject ) newFossilFuel ).eInverseAdd( this,
+                        CimPackage.FOSSIL_FUEL__FUEL_ALLOCATION_SCHEDULES, FossilFuel.class, msgs );
             msgs = basicSetFossilFuel( newFossilFuel, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldFossilFuelESet = fossilFuelESet;
             fossilFuelESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.FUEL_ALLOCATION_SCHEDULE__FOSSIL_FUEL,
-                            newFossilFuel, newFossilFuel, !oldFossilFuelESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.FUEL_ALLOCATION_SCHEDULE__FOSSIL_FUEL, newFossilFuel, newFossilFuel,
+                        !oldFossilFuelESet ) );
         }
     }
 
@@ -728,8 +743,9 @@ public class FuelAllocationScheduleImpl extends CurveImpl implements FuelAllocat
         else {
             boolean oldFossilFuelESet = fossilFuelESet;
             fossilFuelESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.FUEL_ALLOCATION_SCHEDULE__FOSSIL_FUEL, null, null, oldFossilFuelESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.FUEL_ALLOCATION_SCHEDULE__FOSSIL_FUEL, null, null, oldFossilFuelESet ) );
         }
     }
 
@@ -752,8 +768,9 @@ public class FuelAllocationScheduleImpl extends CurveImpl implements FuelAllocat
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.FUEL_ALLOCATION_SCHEDULE__FOSSIL_FUEL:
-            if( fossilFuel != null ) msgs = ( ( InternalEObject ) fossilFuel ).eInverseRemove( this,
-                    CimPackage.FOSSIL_FUEL__FUEL_ALLOCATION_SCHEDULES, FossilFuel.class, msgs );
+            if( fossilFuel != null )
+                msgs = ( ( InternalEObject ) fossilFuel ).eInverseRemove( this,
+                        CimPackage.FOSSIL_FUEL__FUEL_ALLOCATION_SCHEDULES, FossilFuel.class, msgs );
             return basicSetFossilFuel( ( FossilFuel ) otherEnd, msgs );
         case CimPackage.FUEL_ALLOCATION_SCHEDULE__THERMAL_GENERATING_UNIT:
             if( thermalGeneratingUnit != null )
@@ -908,7 +925,7 @@ public class FuelAllocationScheduleImpl extends CurveImpl implements FuelAllocat
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (fuelAllocationEndDate: " );
         if( fuelAllocationEndDateESet )
             result.append( fuelAllocationEndDate );

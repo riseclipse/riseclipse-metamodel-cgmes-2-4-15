@@ -147,8 +147,9 @@ public class MetrologyRequirementImpl extends IdentifiedObjectImpl implements Me
         reason = newReason == null ? REASON_EDEFAULT : newReason;
         boolean oldReasonESet = reasonESet;
         reasonESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.METROLOGY_REQUIREMENT__REASON, oldReason, reason, !oldReasonESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.METROLOGY_REQUIREMENT__REASON, oldReason,
+                    reason, !oldReasonESet ) );
     }
 
     /**
@@ -162,8 +163,9 @@ public class MetrologyRequirementImpl extends IdentifiedObjectImpl implements Me
         boolean oldReasonESet = reasonESet;
         reason = REASON_EDEFAULT;
         reasonESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.METROLOGY_REQUIREMENT__REASON, oldReason, REASON_EDEFAULT, oldReasonESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.METROLOGY_REQUIREMENT__REASON,
+                    oldReason, REASON_EDEFAULT, oldReasonESet ) );
     }
 
     /**
@@ -370,7 +372,7 @@ public class MetrologyRequirementImpl extends IdentifiedObjectImpl implements Me
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (reason: " );
         if( reasonESet )
             result.append( reason );

@@ -117,9 +117,10 @@ public class WindTurbineType1or2DynamicsImpl extends DynamicsFunctionBlockImpl i
             asynchronousMachineDynamics = ( AsynchronousMachineDynamics ) eResolveProxy(
                     oldAsynchronousMachineDynamics );
             if( asynchronousMachineDynamics != oldAsynchronousMachineDynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.WIND_TURBINE_TYPE1OR2_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS,
-                        oldAsynchronousMachineDynamics, asynchronousMachineDynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.WIND_TURBINE_TYPE1OR2_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS,
+                            oldAsynchronousMachineDynamics, asynchronousMachineDynamics ) );
             }
         }
         return asynchronousMachineDynamics;
@@ -181,10 +182,11 @@ public class WindTurbineType1or2DynamicsImpl extends DynamicsFunctionBlockImpl i
         else {
             boolean oldAsynchronousMachineDynamicsESet = asynchronousMachineDynamicsESet;
             asynchronousMachineDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_TURBINE_TYPE1OR2_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS,
-                    newAsynchronousMachineDynamics, newAsynchronousMachineDynamics,
-                    !oldAsynchronousMachineDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_TURBINE_TYPE1OR2_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS,
+                        newAsynchronousMachineDynamics, newAsynchronousMachineDynamics,
+                        !oldAsynchronousMachineDynamicsESet ) );
         }
     }
 
@@ -228,9 +230,10 @@ public class WindTurbineType1or2DynamicsImpl extends DynamicsFunctionBlockImpl i
         else {
             boolean oldAsynchronousMachineDynamicsESet = asynchronousMachineDynamicsESet;
             asynchronousMachineDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_TURBINE_TYPE1OR2_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS, null, null,
-                    oldAsynchronousMachineDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_TURBINE_TYPE1OR2_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS, null, null,
+                        oldAsynchronousMachineDynamicsESet ) );
         }
     }
 
@@ -286,19 +289,22 @@ public class WindTurbineType1or2DynamicsImpl extends DynamicsFunctionBlockImpl i
     public void setRemoteInputSignal( RemoteInputSignal newRemoteInputSignal ) {
         if( newRemoteInputSignal != remoteInputSignal ) {
             NotificationChain msgs = null;
-            if( remoteInputSignal != null ) msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE1OR2_DYNAMICS, RemoteInputSignal.class, msgs );
-            if( newRemoteInputSignal != null ) msgs = ( ( InternalEObject ) newRemoteInputSignal ).eInverseAdd( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE1OR2_DYNAMICS, RemoteInputSignal.class, msgs );
+            if( remoteInputSignal != null )
+                msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE1OR2_DYNAMICS, RemoteInputSignal.class, msgs );
+            if( newRemoteInputSignal != null )
+                msgs = ( ( InternalEObject ) newRemoteInputSignal ).eInverseAdd( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE1OR2_DYNAMICS, RemoteInputSignal.class, msgs );
             msgs = basicSetRemoteInputSignal( newRemoteInputSignal, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldRemoteInputSignalESet = remoteInputSignalESet;
             remoteInputSignalESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_TURBINE_TYPE1OR2_DYNAMICS__REMOTE_INPUT_SIGNAL, newRemoteInputSignal,
-                    newRemoteInputSignal, !oldRemoteInputSignalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_TURBINE_TYPE1OR2_DYNAMICS__REMOTE_INPUT_SIGNAL, newRemoteInputSignal,
+                        newRemoteInputSignal, !oldRemoteInputSignalESet ) );
         }
     }
 
@@ -341,9 +347,10 @@ public class WindTurbineType1or2DynamicsImpl extends DynamicsFunctionBlockImpl i
         else {
             boolean oldRemoteInputSignalESet = remoteInputSignalESet;
             remoteInputSignalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_TURBINE_TYPE1OR2_DYNAMICS__REMOTE_INPUT_SIGNAL, null, null,
-                    oldRemoteInputSignalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_TURBINE_TYPE1OR2_DYNAMICS__REMOTE_INPUT_SIGNAL, null, null,
+                        oldRemoteInputSignalESet ) );
         }
     }
 
@@ -366,8 +373,9 @@ public class WindTurbineType1or2DynamicsImpl extends DynamicsFunctionBlockImpl i
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.WIND_TURBINE_TYPE1OR2_DYNAMICS__REMOTE_INPUT_SIGNAL:
-            if( remoteInputSignal != null ) msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE1OR2_DYNAMICS, RemoteInputSignal.class, msgs );
+            if( remoteInputSignal != null )
+                msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE1OR2_DYNAMICS, RemoteInputSignal.class, msgs );
             return basicSetRemoteInputSignal( ( RemoteInputSignal ) otherEnd, msgs );
         case CimPackage.WIND_TURBINE_TYPE1OR2_DYNAMICS__ASYNCHRONOUS_MACHINE_DYNAMICS:
             if( asynchronousMachineDynamics != null )

@@ -165,8 +165,9 @@ public class SvInjectionImpl extends StateVariableImpl implements SvInjection {
         pInjection = newPInjection;
         boolean oldPInjectionESet = pInjectionESet;
         pInjectionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SV_INJECTION__PINJECTION, oldPInjection, pInjection, !oldPInjectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SV_INJECTION__PINJECTION, oldPInjection,
+                    pInjection, !oldPInjectionESet ) );
     }
 
     /**
@@ -180,8 +181,9 @@ public class SvInjectionImpl extends StateVariableImpl implements SvInjection {
         boolean oldPInjectionESet = pInjectionESet;
         pInjection = PINJECTION_EDEFAULT;
         pInjectionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SV_INJECTION__PINJECTION, oldPInjection, PINJECTION_EDEFAULT, oldPInjectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SV_INJECTION__PINJECTION,
+                    oldPInjection, PINJECTION_EDEFAULT, oldPInjectionESet ) );
     }
 
     /**
@@ -215,8 +217,9 @@ public class SvInjectionImpl extends StateVariableImpl implements SvInjection {
         qInjection = newQInjection;
         boolean oldQInjectionESet = qInjectionESet;
         qInjectionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SV_INJECTION__QINJECTION, oldQInjection, qInjection, !oldQInjectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SV_INJECTION__QINJECTION, oldQInjection,
+                    qInjection, !oldQInjectionESet ) );
     }
 
     /**
@@ -230,8 +233,9 @@ public class SvInjectionImpl extends StateVariableImpl implements SvInjection {
         boolean oldQInjectionESet = qInjectionESet;
         qInjection = QINJECTION_EDEFAULT;
         qInjectionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SV_INJECTION__QINJECTION, oldQInjection, QINJECTION_EDEFAULT, oldQInjectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SV_INJECTION__QINJECTION,
+                    oldQInjection, QINJECTION_EDEFAULT, oldQInjectionESet ) );
     }
 
     /**
@@ -285,10 +289,12 @@ public class SvInjectionImpl extends StateVariableImpl implements SvInjection {
     public void setTopologicalNode( TopologicalNode newTopologicalNode ) {
         if( newTopologicalNode != topologicalNode ) {
             NotificationChain msgs = null;
-            if( topologicalNode != null ) msgs = ( ( InternalEObject ) topologicalNode ).eInverseRemove( this,
-                    CimPackage.TOPOLOGICAL_NODE__SV_INJECTION, TopologicalNode.class, msgs );
-            if( newTopologicalNode != null ) msgs = ( ( InternalEObject ) newTopologicalNode ).eInverseAdd( this,
-                    CimPackage.TOPOLOGICAL_NODE__SV_INJECTION, TopologicalNode.class, msgs );
+            if( topologicalNode != null )
+                msgs = ( ( InternalEObject ) topologicalNode ).eInverseRemove( this,
+                        CimPackage.TOPOLOGICAL_NODE__SV_INJECTION, TopologicalNode.class, msgs );
+            if( newTopologicalNode != null )
+                msgs = ( ( InternalEObject ) newTopologicalNode ).eInverseAdd( this,
+                        CimPackage.TOPOLOGICAL_NODE__SV_INJECTION, TopologicalNode.class, msgs );
             msgs = basicSetTopologicalNode( newTopologicalNode, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -339,8 +345,9 @@ public class SvInjectionImpl extends StateVariableImpl implements SvInjection {
         else {
             boolean oldTopologicalNodeESet = topologicalNodeESet;
             topologicalNodeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SV_INJECTION__TOPOLOGICAL_NODE, null, null, oldTopologicalNodeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SV_INJECTION__TOPOLOGICAL_NODE,
+                        null, null, oldTopologicalNodeESet ) );
         }
     }
 
@@ -363,8 +370,9 @@ public class SvInjectionImpl extends StateVariableImpl implements SvInjection {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.SV_INJECTION__TOPOLOGICAL_NODE:
-            if( topologicalNode != null ) msgs = ( ( InternalEObject ) topologicalNode ).eInverseRemove( this,
-                    CimPackage.TOPOLOGICAL_NODE__SV_INJECTION, TopologicalNode.class, msgs );
+            if( topologicalNode != null )
+                msgs = ( ( InternalEObject ) topologicalNode ).eInverseRemove( this,
+                        CimPackage.TOPOLOGICAL_NODE__SV_INJECTION, TopologicalNode.class, msgs );
             return basicSetTopologicalNode( ( TopologicalNode ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -471,7 +479,7 @@ public class SvInjectionImpl extends StateVariableImpl implements SvInjection {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (pInjection: " );
         if( pInjectionESet )
             result.append( pInjection );

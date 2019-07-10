@@ -133,8 +133,9 @@ public class PanPricingImpl extends EndDeviceActionImpl implements PanPricing {
         providerID = newProviderID;
         boolean oldProviderIDESet = providerIDESet;
         providerIDESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PAN_PRICING__PROVIDER_ID, oldProviderID, providerID, !oldProviderIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PAN_PRICING__PROVIDER_ID, oldProviderID,
+                    providerID, !oldProviderIDESet ) );
     }
 
     /**
@@ -148,8 +149,9 @@ public class PanPricingImpl extends EndDeviceActionImpl implements PanPricing {
         boolean oldProviderIDESet = providerIDESet;
         providerID = PROVIDER_ID_EDEFAULT;
         providerIDESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PAN_PRICING__PROVIDER_ID, oldProviderID, PROVIDER_ID_EDEFAULT, oldProviderIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PAN_PRICING__PROVIDER_ID,
+                    oldProviderID, PROVIDER_ID_EDEFAULT, oldProviderIDESet ) );
     }
 
     /**
@@ -306,7 +308,7 @@ public class PanPricingImpl extends EndDeviceActionImpl implements PanPricing {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (providerID: " );
         if( providerIDESet )
             result.append( providerID );

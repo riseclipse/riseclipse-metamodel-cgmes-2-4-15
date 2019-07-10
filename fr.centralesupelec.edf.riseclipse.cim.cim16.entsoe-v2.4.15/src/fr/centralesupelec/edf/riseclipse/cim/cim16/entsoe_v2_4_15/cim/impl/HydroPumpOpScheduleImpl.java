@@ -95,8 +95,9 @@ public class HydroPumpOpScheduleImpl extends RegularIntervalScheduleImpl impleme
             InternalEObject oldHydroPump = ( InternalEObject ) hydroPump;
             hydroPump = ( HydroPump ) eResolveProxy( oldHydroPump );
             if( hydroPump != oldHydroPump ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.HYDRO_PUMP_OP_SCHEDULE__HYDRO_PUMP, oldHydroPump, hydroPump ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.HYDRO_PUMP_OP_SCHEDULE__HYDRO_PUMP, oldHydroPump, hydroPump ) );
             }
         }
         return hydroPump;
@@ -141,18 +142,21 @@ public class HydroPumpOpScheduleImpl extends RegularIntervalScheduleImpl impleme
     public void setHydroPump( HydroPump newHydroPump ) {
         if( newHydroPump != hydroPump ) {
             NotificationChain msgs = null;
-            if( hydroPump != null ) msgs = ( ( InternalEObject ) hydroPump ).eInverseRemove( this,
-                    CimPackage.HYDRO_PUMP__HYDRO_PUMP_OP_SCHEDULE, HydroPump.class, msgs );
-            if( newHydroPump != null ) msgs = ( ( InternalEObject ) newHydroPump ).eInverseAdd( this,
-                    CimPackage.HYDRO_PUMP__HYDRO_PUMP_OP_SCHEDULE, HydroPump.class, msgs );
+            if( hydroPump != null )
+                msgs = ( ( InternalEObject ) hydroPump ).eInverseRemove( this,
+                        CimPackage.HYDRO_PUMP__HYDRO_PUMP_OP_SCHEDULE, HydroPump.class, msgs );
+            if( newHydroPump != null )
+                msgs = ( ( InternalEObject ) newHydroPump ).eInverseAdd( this,
+                        CimPackage.HYDRO_PUMP__HYDRO_PUMP_OP_SCHEDULE, HydroPump.class, msgs );
             msgs = basicSetHydroPump( newHydroPump, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldHydroPumpESet = hydroPumpESet;
             hydroPumpESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.HYDRO_PUMP_OP_SCHEDULE__HYDRO_PUMP, newHydroPump, newHydroPump, !oldHydroPumpESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.HYDRO_PUMP_OP_SCHEDULE__HYDRO_PUMP,
+                        newHydroPump, newHydroPump, !oldHydroPumpESet ) );
         }
     }
 
@@ -194,8 +198,9 @@ public class HydroPumpOpScheduleImpl extends RegularIntervalScheduleImpl impleme
         else {
             boolean oldHydroPumpESet = hydroPumpESet;
             hydroPumpESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.HYDRO_PUMP_OP_SCHEDULE__HYDRO_PUMP, null, null, oldHydroPumpESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.HYDRO_PUMP_OP_SCHEDULE__HYDRO_PUMP,
+                        null, null, oldHydroPumpESet ) );
         }
     }
 
@@ -218,8 +223,9 @@ public class HydroPumpOpScheduleImpl extends RegularIntervalScheduleImpl impleme
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.HYDRO_PUMP_OP_SCHEDULE__HYDRO_PUMP:
-            if( hydroPump != null ) msgs = ( ( InternalEObject ) hydroPump ).eInverseRemove( this,
-                    CimPackage.HYDRO_PUMP__HYDRO_PUMP_OP_SCHEDULE, HydroPump.class, msgs );
+            if( hydroPump != null )
+                msgs = ( ( InternalEObject ) hydroPump ).eInverseRemove( this,
+                        CimPackage.HYDRO_PUMP__HYDRO_PUMP_OP_SCHEDULE, HydroPump.class, msgs );
             return basicSetHydroPump( ( HydroPump ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

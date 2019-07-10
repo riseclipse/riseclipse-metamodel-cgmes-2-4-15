@@ -117,7 +117,11 @@ public enum TransmissionModeKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final TransmissionModeKind[] VALUES_ARRAY = new TransmissionModeKind[] { NORMAL, ANONYMOUS, BOTH, };
+    private static final TransmissionModeKind[] VALUES_ARRAY = new TransmissionModeKind[] {
+            NORMAL,
+            ANONYMOUS,
+            BOTH,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Transmission Mode Kind</b></em>' enumerators.

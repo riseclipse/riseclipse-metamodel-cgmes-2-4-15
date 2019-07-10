@@ -156,8 +156,9 @@ public class DiscreteValueImpl extends MeasurementValueImpl implements DiscreteV
         value = newValue;
         boolean oldValueESet = valueESet;
         valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISCRETE_VALUE__VALUE, oldValue, value, !oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISCRETE_VALUE__VALUE, oldValue, value,
+                    !oldValueESet ) );
     }
 
     /**
@@ -171,8 +172,9 @@ public class DiscreteValueImpl extends MeasurementValueImpl implements DiscreteV
         boolean oldValueESet = valueESet;
         value = VALUE_EDEFAULT;
         valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISCRETE_VALUE__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISCRETE_VALUE__VALUE, oldValue,
+                    VALUE_EDEFAULT, oldValueESet ) );
     }
 
     /**
@@ -225,18 +227,21 @@ public class DiscreteValueImpl extends MeasurementValueImpl implements DiscreteV
     public void setDiscrete( Discrete newDiscrete ) {
         if( newDiscrete != discrete ) {
             NotificationChain msgs = null;
-            if( discrete != null ) msgs = ( ( InternalEObject ) discrete ).eInverseRemove( this,
-                    CimPackage.DISCRETE__DISCRETE_VALUES, Discrete.class, msgs );
-            if( newDiscrete != null ) msgs = ( ( InternalEObject ) newDiscrete ).eInverseAdd( this,
-                    CimPackage.DISCRETE__DISCRETE_VALUES, Discrete.class, msgs );
+            if( discrete != null )
+                msgs = ( ( InternalEObject ) discrete ).eInverseRemove( this, CimPackage.DISCRETE__DISCRETE_VALUES,
+                        Discrete.class, msgs );
+            if( newDiscrete != null )
+                msgs = ( ( InternalEObject ) newDiscrete ).eInverseAdd( this, CimPackage.DISCRETE__DISCRETE_VALUES,
+                        Discrete.class, msgs );
             msgs = basicSetDiscrete( newDiscrete, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldDiscreteESet = discreteESet;
             discreteESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.DISCRETE_VALUE__DISCRETE, newDiscrete, newDiscrete, !oldDiscreteESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISCRETE_VALUE__DISCRETE,
+                        newDiscrete, newDiscrete, !oldDiscreteESet ) );
         }
     }
 
@@ -278,8 +283,9 @@ public class DiscreteValueImpl extends MeasurementValueImpl implements DiscreteV
         else {
             boolean oldDiscreteESet = discreteESet;
             discreteESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.DISCRETE_VALUE__DISCRETE, null, null, oldDiscreteESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISCRETE_VALUE__DISCRETE, null,
+                        null, oldDiscreteESet ) );
         }
     }
 
@@ -333,18 +339,21 @@ public class DiscreteValueImpl extends MeasurementValueImpl implements DiscreteV
     public void setCommand( Command newCommand ) {
         if( newCommand != command ) {
             NotificationChain msgs = null;
-            if( command != null ) msgs = ( ( InternalEObject ) command ).eInverseRemove( this,
-                    CimPackage.COMMAND__DISCRETE_VALUE, Command.class, msgs );
-            if( newCommand != null ) msgs = ( ( InternalEObject ) newCommand ).eInverseAdd( this,
-                    CimPackage.COMMAND__DISCRETE_VALUE, Command.class, msgs );
+            if( command != null )
+                msgs = ( ( InternalEObject ) command ).eInverseRemove( this, CimPackage.COMMAND__DISCRETE_VALUE,
+                        Command.class, msgs );
+            if( newCommand != null )
+                msgs = ( ( InternalEObject ) newCommand ).eInverseAdd( this, CimPackage.COMMAND__DISCRETE_VALUE,
+                        Command.class, msgs );
             msgs = basicSetCommand( newCommand, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCommandESet = commandESet;
             commandESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.DISCRETE_VALUE__COMMAND, newCommand, newCommand, !oldCommandESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISCRETE_VALUE__COMMAND, newCommand,
+                        newCommand, !oldCommandESet ) );
         }
     }
 
@@ -386,8 +395,9 @@ public class DiscreteValueImpl extends MeasurementValueImpl implements DiscreteV
         else {
             boolean oldCommandESet = commandESet;
             commandESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.DISCRETE_VALUE__COMMAND, null, null, oldCommandESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISCRETE_VALUE__COMMAND, null,
+                        null, oldCommandESet ) );
         }
     }
 
@@ -410,12 +420,14 @@ public class DiscreteValueImpl extends MeasurementValueImpl implements DiscreteV
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.DISCRETE_VALUE__COMMAND:
-            if( command != null ) msgs = ( ( InternalEObject ) command ).eInverseRemove( this,
-                    CimPackage.COMMAND__DISCRETE_VALUE, Command.class, msgs );
+            if( command != null )
+                msgs = ( ( InternalEObject ) command ).eInverseRemove( this, CimPackage.COMMAND__DISCRETE_VALUE,
+                        Command.class, msgs );
             return basicSetCommand( ( Command ) otherEnd, msgs );
         case CimPackage.DISCRETE_VALUE__DISCRETE:
-            if( discrete != null ) msgs = ( ( InternalEObject ) discrete ).eInverseRemove( this,
-                    CimPackage.DISCRETE__DISCRETE_VALUES, Discrete.class, msgs );
+            if( discrete != null )
+                msgs = ( ( InternalEObject ) discrete ).eInverseRemove( this, CimPackage.DISCRETE__DISCRETE_VALUES,
+                        Discrete.class, msgs );
             return basicSetDiscrete( ( Discrete ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -524,7 +536,7 @@ public class DiscreteValueImpl extends MeasurementValueImpl implements DiscreteV
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (value: " );
         if( valueESet )
             result.append( value );

@@ -142,9 +142,10 @@ public class LinearShuntCompensatorPhaseImpl extends ShuntCompensatorPhaseImpl i
         bPerSection = newBPerSection;
         boolean oldBPerSectionESet = bPerSectionESet;
         bPerSectionESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.LINEAR_SHUNT_COMPENSATOR_PHASE__BPER_SECTION,
-                        oldBPerSection, bPerSection, !oldBPerSectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.LINEAR_SHUNT_COMPENSATOR_PHASE__BPER_SECTION, oldBPerSection, bPerSection,
+                    !oldBPerSectionESet ) );
     }
 
     /**
@@ -158,9 +159,10 @@ public class LinearShuntCompensatorPhaseImpl extends ShuntCompensatorPhaseImpl i
         boolean oldBPerSectionESet = bPerSectionESet;
         bPerSection = BPER_SECTION_EDEFAULT;
         bPerSectionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LINEAR_SHUNT_COMPENSATOR_PHASE__BPER_SECTION, oldBPerSection, BPER_SECTION_EDEFAULT,
-                oldBPerSectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.LINEAR_SHUNT_COMPENSATOR_PHASE__BPER_SECTION, oldBPerSection, BPER_SECTION_EDEFAULT,
+                    oldBPerSectionESet ) );
     }
 
     /**
@@ -194,9 +196,10 @@ public class LinearShuntCompensatorPhaseImpl extends ShuntCompensatorPhaseImpl i
         gPerSection = newGPerSection;
         boolean oldGPerSectionESet = gPerSectionESet;
         gPerSectionESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.LINEAR_SHUNT_COMPENSATOR_PHASE__GPER_SECTION,
-                        oldGPerSection, gPerSection, !oldGPerSectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.LINEAR_SHUNT_COMPENSATOR_PHASE__GPER_SECTION, oldGPerSection, gPerSection,
+                    !oldGPerSectionESet ) );
     }
 
     /**
@@ -210,9 +213,10 @@ public class LinearShuntCompensatorPhaseImpl extends ShuntCompensatorPhaseImpl i
         boolean oldGPerSectionESet = gPerSectionESet;
         gPerSection = GPER_SECTION_EDEFAULT;
         gPerSectionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LINEAR_SHUNT_COMPENSATOR_PHASE__GPER_SECTION, oldGPerSection, GPER_SECTION_EDEFAULT,
-                oldGPerSectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.LINEAR_SHUNT_COMPENSATOR_PHASE__GPER_SECTION, oldGPerSection, GPER_SECTION_EDEFAULT,
+                    oldGPerSectionESet ) );
     }
 
     /**
@@ -302,7 +306,7 @@ public class LinearShuntCompensatorPhaseImpl extends ShuntCompensatorPhaseImpl i
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (bPerSection: " );
         if( bPerSectionESet )
             result.append( bPerSection );

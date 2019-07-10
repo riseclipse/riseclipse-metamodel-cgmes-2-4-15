@@ -142,8 +142,12 @@ public enum GeneratorControlSource implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final GeneratorControlSource[] VALUES_ARRAY = new GeneratorControlSource[] { UNAVAILABLE, OFF_AGC,
-            ON_AGC, PLANT_CONTROL, };
+    private static final GeneratorControlSource[] VALUES_ARRAY = new GeneratorControlSource[] {
+            UNAVAILABLE,
+            OFF_AGC,
+            ON_AGC,
+            PLANT_CONTROL,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Generator Control Source</b></em>' enumerators.

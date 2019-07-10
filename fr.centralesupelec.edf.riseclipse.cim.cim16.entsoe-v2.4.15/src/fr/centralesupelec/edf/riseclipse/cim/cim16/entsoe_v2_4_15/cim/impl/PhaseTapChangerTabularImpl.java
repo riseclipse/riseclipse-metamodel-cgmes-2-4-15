@@ -126,8 +126,10 @@ public class PhaseTapChangerTabularImpl extends PhaseTapChangerImpl implements P
     public void setPhaseTapChangerTable( PhaseTapChangerTable newPhaseTapChangerTable ) {
         if( newPhaseTapChangerTable != phaseTapChangerTable ) {
             NotificationChain msgs = null;
-            if( phaseTapChangerTable != null ) msgs = ( ( InternalEObject ) phaseTapChangerTable ).eInverseRemove( this,
-                    CimPackage.PHASE_TAP_CHANGER_TABLE__PHASE_TAP_CHANGER_TABULAR, PhaseTapChangerTable.class, msgs );
+            if( phaseTapChangerTable != null )
+                msgs = ( ( InternalEObject ) phaseTapChangerTable ).eInverseRemove( this,
+                        CimPackage.PHASE_TAP_CHANGER_TABLE__PHASE_TAP_CHANGER_TABULAR, PhaseTapChangerTable.class,
+                        msgs );
             if( newPhaseTapChangerTable != null )
                 msgs = ( ( InternalEObject ) newPhaseTapChangerTable ).eInverseAdd( this,
                         CimPackage.PHASE_TAP_CHANGER_TABLE__PHASE_TAP_CHANGER_TABULAR, PhaseTapChangerTable.class,
@@ -138,9 +140,10 @@ public class PhaseTapChangerTabularImpl extends PhaseTapChangerImpl implements P
         else {
             boolean oldPhaseTapChangerTableESet = phaseTapChangerTableESet;
             phaseTapChangerTableESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PHASE_TAP_CHANGER_TABULAR__PHASE_TAP_CHANGER_TABLE, newPhaseTapChangerTable,
-                    newPhaseTapChangerTable, !oldPhaseTapChangerTableESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PHASE_TAP_CHANGER_TABULAR__PHASE_TAP_CHANGER_TABLE, newPhaseTapChangerTable,
+                        newPhaseTapChangerTable, !oldPhaseTapChangerTableESet ) );
         }
     }
 
@@ -183,9 +186,10 @@ public class PhaseTapChangerTabularImpl extends PhaseTapChangerImpl implements P
         else {
             boolean oldPhaseTapChangerTableESet = phaseTapChangerTableESet;
             phaseTapChangerTableESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PHASE_TAP_CHANGER_TABULAR__PHASE_TAP_CHANGER_TABLE, null, null,
-                    oldPhaseTapChangerTableESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PHASE_TAP_CHANGER_TABULAR__PHASE_TAP_CHANGER_TABLE, null, null,
+                        oldPhaseTapChangerTableESet ) );
         }
     }
 
@@ -208,8 +212,10 @@ public class PhaseTapChangerTabularImpl extends PhaseTapChangerImpl implements P
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.PHASE_TAP_CHANGER_TABULAR__PHASE_TAP_CHANGER_TABLE:
-            if( phaseTapChangerTable != null ) msgs = ( ( InternalEObject ) phaseTapChangerTable ).eInverseRemove( this,
-                    CimPackage.PHASE_TAP_CHANGER_TABLE__PHASE_TAP_CHANGER_TABULAR, PhaseTapChangerTable.class, msgs );
+            if( phaseTapChangerTable != null )
+                msgs = ( ( InternalEObject ) phaseTapChangerTable ).eInverseRemove( this,
+                        CimPackage.PHASE_TAP_CHANGER_TABLE__PHASE_TAP_CHANGER_TABULAR, PhaseTapChangerTable.class,
+                        msgs );
             return basicSetPhaseTapChangerTable( ( PhaseTapChangerTable ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

@@ -116,8 +116,9 @@ public class WindTurbineType4bIECImpl extends WindGenType4IECImpl implements Win
             InternalEObject oldWindMechIEC = ( InternalEObject ) windMechIEC;
             windMechIEC = ( WindMechIEC ) eResolveProxy( oldWindMechIEC );
             if( windMechIEC != oldWindMechIEC ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_MECH_IEC, oldWindMechIEC, windMechIEC ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_MECH_IEC, oldWindMechIEC, windMechIEC ) );
             }
         }
         return windMechIEC;
@@ -163,19 +164,22 @@ public class WindTurbineType4bIECImpl extends WindGenType4IECImpl implements Win
     public void setWindMechIEC( WindMechIEC newWindMechIEC ) {
         if( newWindMechIEC != windMechIEC ) {
             NotificationChain msgs = null;
-            if( windMechIEC != null ) msgs = ( ( InternalEObject ) windMechIEC ).eInverseRemove( this,
-                    CimPackage.WIND_MECH_IEC__WIND_TURBINE_TYPE4B_IEC, WindMechIEC.class, msgs );
-            if( newWindMechIEC != null ) msgs = ( ( InternalEObject ) newWindMechIEC ).eInverseAdd( this,
-                    CimPackage.WIND_MECH_IEC__WIND_TURBINE_TYPE4B_IEC, WindMechIEC.class, msgs );
+            if( windMechIEC != null )
+                msgs = ( ( InternalEObject ) windMechIEC ).eInverseRemove( this,
+                        CimPackage.WIND_MECH_IEC__WIND_TURBINE_TYPE4B_IEC, WindMechIEC.class, msgs );
+            if( newWindMechIEC != null )
+                msgs = ( ( InternalEObject ) newWindMechIEC ).eInverseAdd( this,
+                        CimPackage.WIND_MECH_IEC__WIND_TURBINE_TYPE4B_IEC, WindMechIEC.class, msgs );
             msgs = basicSetWindMechIEC( newWindMechIEC, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWindMechIECESet = windMechIECESet;
             windMechIECESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_MECH_IEC,
-                            newWindMechIEC, newWindMechIEC, !oldWindMechIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_MECH_IEC, newWindMechIEC, newWindMechIEC,
+                        !oldWindMechIECESet ) );
         }
     }
 
@@ -217,8 +221,9 @@ public class WindTurbineType4bIECImpl extends WindGenType4IECImpl implements Win
         else {
             boolean oldWindMechIECESet = windMechIECESet;
             windMechIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_MECH_IEC, null, null, oldWindMechIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_MECH_IEC, null, null, oldWindMechIECESet ) );
         }
     }
 
@@ -243,9 +248,10 @@ public class WindTurbineType4bIECImpl extends WindGenType4IECImpl implements Win
             InternalEObject oldWindContPType4bIEC = ( InternalEObject ) windContPType4bIEC;
             windContPType4bIEC = ( WindContPType4bIEC ) eResolveProxy( oldWindContPType4bIEC );
             if( windContPType4bIEC != oldWindContPType4bIEC ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_CONT_PTYPE4B_IEC, oldWindContPType4bIEC,
-                        windContPType4bIEC ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_CONT_PTYPE4B_IEC, oldWindContPType4bIEC,
+                            windContPType4bIEC ) );
             }
         }
         return windContPType4bIEC;
@@ -292,19 +298,22 @@ public class WindTurbineType4bIECImpl extends WindGenType4IECImpl implements Win
     public void setWindContPType4bIEC( WindContPType4bIEC newWindContPType4bIEC ) {
         if( newWindContPType4bIEC != windContPType4bIEC ) {
             NotificationChain msgs = null;
-            if( windContPType4bIEC != null ) msgs = ( ( InternalEObject ) windContPType4bIEC ).eInverseRemove( this,
-                    CimPackage.WIND_CONT_PTYPE4B_IEC__WIND_TURBINE_TYPE4B_IEC, WindContPType4bIEC.class, msgs );
-            if( newWindContPType4bIEC != null ) msgs = ( ( InternalEObject ) newWindContPType4bIEC ).eInverseAdd( this,
-                    CimPackage.WIND_CONT_PTYPE4B_IEC__WIND_TURBINE_TYPE4B_IEC, WindContPType4bIEC.class, msgs );
+            if( windContPType4bIEC != null )
+                msgs = ( ( InternalEObject ) windContPType4bIEC ).eInverseRemove( this,
+                        CimPackage.WIND_CONT_PTYPE4B_IEC__WIND_TURBINE_TYPE4B_IEC, WindContPType4bIEC.class, msgs );
+            if( newWindContPType4bIEC != null )
+                msgs = ( ( InternalEObject ) newWindContPType4bIEC ).eInverseAdd( this,
+                        CimPackage.WIND_CONT_PTYPE4B_IEC__WIND_TURBINE_TYPE4B_IEC, WindContPType4bIEC.class, msgs );
             msgs = basicSetWindContPType4bIEC( newWindContPType4bIEC, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWindContPType4bIECESet = windContPType4bIECESet;
             windContPType4bIECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_CONT_PTYPE4B_IEC, newWindContPType4bIEC,
-                    newWindContPType4bIEC, !oldWindContPType4bIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_CONT_PTYPE4B_IEC, newWindContPType4bIEC,
+                        newWindContPType4bIEC, !oldWindContPType4bIECESet ) );
         }
     }
 
@@ -347,9 +356,10 @@ public class WindTurbineType4bIECImpl extends WindGenType4IECImpl implements Win
         else {
             boolean oldWindContPType4bIECESet = windContPType4bIECESet;
             windContPType4bIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_CONT_PTYPE4B_IEC, null, null,
-                    oldWindContPType4bIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_CONT_PTYPE4B_IEC, null, null,
+                        oldWindContPType4bIECESet ) );
         }
     }
 
@@ -372,12 +382,14 @@ public class WindTurbineType4bIECImpl extends WindGenType4IECImpl implements Win
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_CONT_PTYPE4B_IEC:
-            if( windContPType4bIEC != null ) msgs = ( ( InternalEObject ) windContPType4bIEC ).eInverseRemove( this,
-                    CimPackage.WIND_CONT_PTYPE4B_IEC__WIND_TURBINE_TYPE4B_IEC, WindContPType4bIEC.class, msgs );
+            if( windContPType4bIEC != null )
+                msgs = ( ( InternalEObject ) windContPType4bIEC ).eInverseRemove( this,
+                        CimPackage.WIND_CONT_PTYPE4B_IEC__WIND_TURBINE_TYPE4B_IEC, WindContPType4bIEC.class, msgs );
             return basicSetWindContPType4bIEC( ( WindContPType4bIEC ) otherEnd, msgs );
         case CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_MECH_IEC:
-            if( windMechIEC != null ) msgs = ( ( InternalEObject ) windMechIEC ).eInverseRemove( this,
-                    CimPackage.WIND_MECH_IEC__WIND_TURBINE_TYPE4B_IEC, WindMechIEC.class, msgs );
+            if( windMechIEC != null )
+                msgs = ( ( InternalEObject ) windMechIEC ).eInverseRemove( this,
+                        CimPackage.WIND_MECH_IEC__WIND_TURBINE_TYPE4B_IEC, WindMechIEC.class, msgs );
             return basicSetWindMechIEC( ( WindMechIEC ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

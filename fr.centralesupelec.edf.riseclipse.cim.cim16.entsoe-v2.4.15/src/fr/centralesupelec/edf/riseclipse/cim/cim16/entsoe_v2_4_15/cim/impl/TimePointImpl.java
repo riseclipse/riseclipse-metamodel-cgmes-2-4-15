@@ -239,8 +239,9 @@ public class TimePointImpl extends IdentifiedObjectImpl implements TimePoint {
         dateTime = newDateTime;
         boolean oldDateTimeESet = dateTimeESet;
         dateTimeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TIME_POINT__DATE_TIME, oldDateTime, dateTime, !oldDateTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TIME_POINT__DATE_TIME, oldDateTime,
+                    dateTime, !oldDateTimeESet ) );
     }
 
     /**
@@ -254,8 +255,9 @@ public class TimePointImpl extends IdentifiedObjectImpl implements TimePoint {
         boolean oldDateTimeESet = dateTimeESet;
         dateTime = DATE_TIME_EDEFAULT;
         dateTimeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TIME_POINT__DATE_TIME, oldDateTime, DATE_TIME_EDEFAULT, oldDateTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TIME_POINT__DATE_TIME, oldDateTime,
+                    DATE_TIME_EDEFAULT, oldDateTimeESet ) );
     }
 
     /**
@@ -341,8 +343,9 @@ public class TimePointImpl extends IdentifiedObjectImpl implements TimePoint {
         sequenceNumber = newSequenceNumber;
         boolean oldSequenceNumberESet = sequenceNumberESet;
         sequenceNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TIME_POINT__SEQUENCE_NUMBER, oldSequenceNumber, sequenceNumber, !oldSequenceNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TIME_POINT__SEQUENCE_NUMBER,
+                    oldSequenceNumber, sequenceNumber, !oldSequenceNumberESet ) );
     }
 
     /**
@@ -411,18 +414,21 @@ public class TimePointImpl extends IdentifiedObjectImpl implements TimePoint {
     public void setStatus( Status newStatus ) {
         if( newStatus != status ) {
             NotificationChain msgs = null;
-            if( status != null ) msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.TIME_POINT__STATUS, null, msgs );
-            if( newStatus != null ) msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.TIME_POINT__STATUS, null, msgs );
+            if( status != null )
+                msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.TIME_POINT__STATUS, null, msgs );
+            if( newStatus != null )
+                msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.TIME_POINT__STATUS, null, msgs );
             msgs = basicSetStatus( newStatus, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldStatusESet = statusESet;
             statusESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TIME_POINT__STATUS, newStatus, newStatus, !oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TIME_POINT__STATUS, newStatus,
+                        newStatus, !oldStatusESet ) );
         }
     }
 
@@ -464,8 +470,9 @@ public class TimePointImpl extends IdentifiedObjectImpl implements TimePoint {
         else {
             boolean oldStatusESet = statusESet;
             statusESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TIME_POINT__STATUS, null, null, oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TIME_POINT__STATUS, null, null,
+                        oldStatusESet ) );
         }
     }
 
@@ -519,18 +526,21 @@ public class TimePointImpl extends IdentifiedObjectImpl implements TimePoint {
     public void setWindow( DateTimeInterval newWindow ) {
         if( newWindow != window ) {
             NotificationChain msgs = null;
-            if( window != null ) msgs = ( ( InternalEObject ) window ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.TIME_POINT__WINDOW, null, msgs );
-            if( newWindow != null ) msgs = ( ( InternalEObject ) newWindow ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.TIME_POINT__WINDOW, null, msgs );
+            if( window != null )
+                msgs = ( ( InternalEObject ) window ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.TIME_POINT__WINDOW, null, msgs );
+            if( newWindow != null )
+                msgs = ( ( InternalEObject ) newWindow ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.TIME_POINT__WINDOW, null, msgs );
             msgs = basicSetWindow( newWindow, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWindowESet = windowESet;
             windowESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TIME_POINT__WINDOW, newWindow, newWindow, !oldWindowESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TIME_POINT__WINDOW, newWindow,
+                        newWindow, !oldWindowESet ) );
         }
     }
 
@@ -572,8 +582,9 @@ public class TimePointImpl extends IdentifiedObjectImpl implements TimePoint {
         else {
             boolean oldWindowESet = windowESet;
             windowESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TIME_POINT__WINDOW, null, null, oldWindowESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TIME_POINT__WINDOW, null, null,
+                        oldWindowESet ) );
         }
     }
 
@@ -627,18 +638,21 @@ public class TimePointImpl extends IdentifiedObjectImpl implements TimePoint {
     public void setTimeSchedule( TimeSchedule newTimeSchedule ) {
         if( newTimeSchedule != timeSchedule ) {
             NotificationChain msgs = null;
-            if( timeSchedule != null ) msgs = ( ( InternalEObject ) timeSchedule ).eInverseRemove( this,
-                    CimPackage.TIME_SCHEDULE__TIME_POINTS, TimeSchedule.class, msgs );
-            if( newTimeSchedule != null ) msgs = ( ( InternalEObject ) newTimeSchedule ).eInverseAdd( this,
-                    CimPackage.TIME_SCHEDULE__TIME_POINTS, TimeSchedule.class, msgs );
+            if( timeSchedule != null )
+                msgs = ( ( InternalEObject ) timeSchedule ).eInverseRemove( this, CimPackage.TIME_SCHEDULE__TIME_POINTS,
+                        TimeSchedule.class, msgs );
+            if( newTimeSchedule != null )
+                msgs = ( ( InternalEObject ) newTimeSchedule ).eInverseAdd( this, CimPackage.TIME_SCHEDULE__TIME_POINTS,
+                        TimeSchedule.class, msgs );
             msgs = basicSetTimeSchedule( newTimeSchedule, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTimeScheduleESet = timeScheduleESet;
             timeScheduleESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TIME_POINT__TIME_SCHEDULE, newTimeSchedule, newTimeSchedule, !oldTimeScheduleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TIME_POINT__TIME_SCHEDULE,
+                        newTimeSchedule, newTimeSchedule, !oldTimeScheduleESet ) );
         }
     }
 
@@ -680,8 +694,9 @@ public class TimePointImpl extends IdentifiedObjectImpl implements TimePoint {
         else {
             boolean oldTimeScheduleESet = timeScheduleESet;
             timeScheduleESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TIME_POINT__TIME_SCHEDULE, null, null, oldTimeScheduleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TIME_POINT__TIME_SCHEDULE, null,
+                        null, oldTimeScheduleESet ) );
         }
     }
 
@@ -704,8 +719,9 @@ public class TimePointImpl extends IdentifiedObjectImpl implements TimePoint {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.TIME_POINT__TIME_SCHEDULE:
-            if( timeSchedule != null ) msgs = ( ( InternalEObject ) timeSchedule ).eInverseRemove( this,
-                    CimPackage.TIME_SCHEDULE__TIME_POINTS, TimeSchedule.class, msgs );
+            if( timeSchedule != null )
+                msgs = ( ( InternalEObject ) timeSchedule ).eInverseRemove( this, CimPackage.TIME_SCHEDULE__TIME_POINTS,
+                        TimeSchedule.class, msgs );
             return basicSetTimeSchedule( ( TimeSchedule ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -846,7 +862,7 @@ public class TimePointImpl extends IdentifiedObjectImpl implements TimePoint {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (dateTime: " );
         if( dateTimeESet )
             result.append( dateTime );

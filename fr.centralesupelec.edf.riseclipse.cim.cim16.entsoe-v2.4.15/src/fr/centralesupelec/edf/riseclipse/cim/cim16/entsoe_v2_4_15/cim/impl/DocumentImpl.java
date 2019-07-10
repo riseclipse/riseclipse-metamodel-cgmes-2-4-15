@@ -406,8 +406,9 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
         authorName = newAuthorName;
         boolean oldAuthorNameESet = authorNameESet;
         authorNameESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DOCUMENT__AUTHOR_NAME, oldAuthorName, authorName, !oldAuthorNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DOCUMENT__AUTHOR_NAME, oldAuthorName,
+                    authorName, !oldAuthorNameESet ) );
     }
 
     /**
@@ -421,8 +422,9 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
         boolean oldAuthorNameESet = authorNameESet;
         authorName = AUTHOR_NAME_EDEFAULT;
         authorNameESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DOCUMENT__AUTHOR_NAME, oldAuthorName, AUTHOR_NAME_EDEFAULT, oldAuthorNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DOCUMENT__AUTHOR_NAME, oldAuthorName,
+                    AUTHOR_NAME_EDEFAULT, oldAuthorNameESet ) );
     }
 
     /**
@@ -456,8 +458,9 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
         comment = newComment;
         boolean oldCommentESet = commentESet;
         commentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DOCUMENT__COMMENT, oldComment, comment, !oldCommentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DOCUMENT__COMMENT, oldComment, comment,
+                    !oldCommentESet ) );
     }
 
     /**
@@ -471,8 +474,9 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
         boolean oldCommentESet = commentESet;
         comment = COMMENT_EDEFAULT;
         commentESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DOCUMENT__COMMENT, oldComment, COMMENT_EDEFAULT, oldCommentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DOCUMENT__COMMENT, oldComment,
+                    COMMENT_EDEFAULT, oldCommentESet ) );
     }
 
     /**
@@ -610,8 +614,9 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
         revisionNumber = newRevisionNumber;
         boolean oldRevisionNumberESet = revisionNumberESet;
         revisionNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DOCUMENT__REVISION_NUMBER, oldRevisionNumber, revisionNumber, !oldRevisionNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DOCUMENT__REVISION_NUMBER,
+                    oldRevisionNumber, revisionNumber, !oldRevisionNumberESet ) );
     }
 
     /**
@@ -661,8 +666,9 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
         subject = newSubject;
         boolean oldSubjectESet = subjectESet;
         subjectESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DOCUMENT__SUBJECT, oldSubject, subject, !oldSubjectESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DOCUMENT__SUBJECT, oldSubject, subject,
+                    !oldSubjectESet ) );
     }
 
     /**
@@ -676,8 +682,9 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
         boolean oldSubjectESet = subjectESet;
         subject = SUBJECT_EDEFAULT;
         subjectESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DOCUMENT__SUBJECT, oldSubject, SUBJECT_EDEFAULT, oldSubjectESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DOCUMENT__SUBJECT, oldSubject,
+                    SUBJECT_EDEFAULT, oldSubjectESet ) );
     }
 
     /**
@@ -711,8 +718,9 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
         title = newTitle;
         boolean oldTitleESet = titleESet;
         titleESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DOCUMENT__TITLE, oldTitle, title, !oldTitleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DOCUMENT__TITLE, oldTitle, title,
+                    !oldTitleESet ) );
     }
 
     /**
@@ -726,8 +734,9 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
         boolean oldTitleESet = titleESet;
         title = TITLE_EDEFAULT;
         titleESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DOCUMENT__TITLE, oldTitle, TITLE_EDEFAULT, oldTitleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DOCUMENT__TITLE, oldTitle,
+                    TITLE_EDEFAULT, oldTitleESet ) );
     }
 
     /**
@@ -761,8 +770,9 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
         type = newType;
         boolean oldTypeESet = typeESet;
         typeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DOCUMENT__TYPE,
-                oldType, type, !oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DOCUMENT__TYPE, oldType, type,
+                    !oldTypeESet ) );
     }
 
     /**
@@ -776,8 +786,9 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
         boolean oldTypeESet = typeESet;
         type = TYPE_EDEFAULT;
         typeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DOCUMENT__TYPE, oldType, TYPE_EDEFAULT, oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DOCUMENT__TYPE, oldType, TYPE_EDEFAULT,
+                    oldTypeESet ) );
     }
 
     /**
@@ -830,18 +841,21 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
     public void setDocStatus( Status newDocStatus ) {
         if( newDocStatus != docStatus ) {
             NotificationChain msgs = null;
-            if( docStatus != null ) msgs = ( ( InternalEObject ) docStatus ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.DOCUMENT__DOC_STATUS, null, msgs );
-            if( newDocStatus != null ) msgs = ( ( InternalEObject ) newDocStatus ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.DOCUMENT__DOC_STATUS, null, msgs );
+            if( docStatus != null )
+                msgs = ( ( InternalEObject ) docStatus ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.DOCUMENT__DOC_STATUS, null, msgs );
+            if( newDocStatus != null )
+                msgs = ( ( InternalEObject ) newDocStatus ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.DOCUMENT__DOC_STATUS, null, msgs );
             msgs = basicSetDocStatus( newDocStatus, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldDocStatusESet = docStatusESet;
             docStatusESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.DOCUMENT__DOC_STATUS, newDocStatus, newDocStatus, !oldDocStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DOCUMENT__DOC_STATUS, newDocStatus,
+                        newDocStatus, !oldDocStatusESet ) );
         }
     }
 
@@ -883,8 +897,9 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
         else {
             boolean oldDocStatusESet = docStatusESet;
             docStatusESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.DOCUMENT__DOC_STATUS, null, null, oldDocStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DOCUMENT__DOC_STATUS, null, null,
+                        oldDocStatusESet ) );
         }
     }
 
@@ -940,10 +955,12 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
     public void setElectronicAddress( ElectronicAddress newElectronicAddress ) {
         if( newElectronicAddress != electronicAddress ) {
             NotificationChain msgs = null;
-            if( electronicAddress != null ) msgs = ( ( InternalEObject ) electronicAddress ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.DOCUMENT__ELECTRONIC_ADDRESS, null, msgs );
-            if( newElectronicAddress != null ) msgs = ( ( InternalEObject ) newElectronicAddress ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.DOCUMENT__ELECTRONIC_ADDRESS, null, msgs );
+            if( electronicAddress != null )
+                msgs = ( ( InternalEObject ) electronicAddress ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.DOCUMENT__ELECTRONIC_ADDRESS, null, msgs );
+            if( newElectronicAddress != null )
+                msgs = ( ( InternalEObject ) newElectronicAddress ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.DOCUMENT__ELECTRONIC_ADDRESS, null, msgs );
             msgs = basicSetElectronicAddress( newElectronicAddress, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -994,8 +1011,9 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
         else {
             boolean oldElectronicAddressESet = electronicAddressESet;
             electronicAddressESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.DOCUMENT__ELECTRONIC_ADDRESS, null, null, oldElectronicAddressESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DOCUMENT__ELECTRONIC_ADDRESS, null,
+                        null, oldElectronicAddressESet ) );
         }
     }
 
@@ -1049,18 +1067,21 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
     public void setStatus( Status newStatus ) {
         if( newStatus != status ) {
             NotificationChain msgs = null;
-            if( status != null ) msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.DOCUMENT__STATUS, null, msgs );
-            if( newStatus != null ) msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.DOCUMENT__STATUS, null, msgs );
+            if( status != null )
+                msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.DOCUMENT__STATUS, null, msgs );
+            if( newStatus != null )
+                msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.DOCUMENT__STATUS, null, msgs );
             msgs = basicSetStatus( newStatus, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldStatusESet = statusESet;
             statusESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.DOCUMENT__STATUS, newStatus, newStatus, !oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DOCUMENT__STATUS, newStatus,
+                        newStatus, !oldStatusESet ) );
         }
     }
 
@@ -1102,8 +1123,9 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
         else {
             boolean oldStatusESet = statusESet;
             statusESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.DOCUMENT__STATUS, null, null, oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DOCUMENT__STATUS, null, null,
+                        oldStatusESet ) );
         }
     }
 
@@ -1367,7 +1389,7 @@ public class DocumentImpl extends IdentifiedObjectImpl implements Document {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (authorName: " );
         if( authorNameESet )
             result.append( authorName );

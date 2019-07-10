@@ -142,8 +142,12 @@ public enum WindQcontrolModesKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final WindQcontrolModesKind[] VALUES_ARRAY = new WindQcontrolModesKind[] { VOLTAGE, REACTIVE_POWER,
-            OPEN_LOOP_REACTIVE_POWER, POWER_FACTOR, };
+    private static final WindQcontrolModesKind[] VALUES_ARRAY = new WindQcontrolModesKind[] {
+            VOLTAGE,
+            REACTIVE_POWER,
+            OPEN_LOOP_REACTIVE_POWER,
+            POWER_FACTOR,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Wind Qcontrol Modes Kind</b></em>' enumerators.

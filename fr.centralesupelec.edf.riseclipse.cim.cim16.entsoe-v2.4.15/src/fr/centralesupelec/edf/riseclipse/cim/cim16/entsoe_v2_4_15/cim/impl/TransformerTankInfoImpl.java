@@ -145,8 +145,9 @@ public class TransformerTankInfoImpl extends AssetInfoImpl implements Transforme
     public void setPowerTransformerInfo( PowerTransformerInfo newPowerTransformerInfo ) {
         if( newPowerTransformerInfo != powerTransformerInfo ) {
             NotificationChain msgs = null;
-            if( powerTransformerInfo != null ) msgs = ( ( InternalEObject ) powerTransformerInfo ).eInverseRemove( this,
-                    CimPackage.POWER_TRANSFORMER_INFO__TRANSFORMER_TANK_INFOS, PowerTransformerInfo.class, msgs );
+            if( powerTransformerInfo != null )
+                msgs = ( ( InternalEObject ) powerTransformerInfo ).eInverseRemove( this,
+                        CimPackage.POWER_TRANSFORMER_INFO__TRANSFORMER_TANK_INFOS, PowerTransformerInfo.class, msgs );
             if( newPowerTransformerInfo != null )
                 msgs = ( ( InternalEObject ) newPowerTransformerInfo ).eInverseAdd( this,
                         CimPackage.POWER_TRANSFORMER_INFO__TRANSFORMER_TANK_INFOS, PowerTransformerInfo.class, msgs );
@@ -156,9 +157,10 @@ public class TransformerTankInfoImpl extends AssetInfoImpl implements Transforme
         else {
             boolean oldPowerTransformerInfoESet = powerTransformerInfoESet;
             powerTransformerInfoESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TRANSFORMER_TANK_INFO__POWER_TRANSFORMER_INFO, newPowerTransformerInfo,
-                    newPowerTransformerInfo, !oldPowerTransformerInfoESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.TRANSFORMER_TANK_INFO__POWER_TRANSFORMER_INFO, newPowerTransformerInfo,
+                        newPowerTransformerInfo, !oldPowerTransformerInfoESet ) );
         }
     }
 
@@ -201,9 +203,10 @@ public class TransformerTankInfoImpl extends AssetInfoImpl implements Transforme
         else {
             boolean oldPowerTransformerInfoESet = powerTransformerInfoESet;
             powerTransformerInfoESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSFORMER_TANK_INFO__POWER_TRANSFORMER_INFO, null, null,
-                    oldPowerTransformerInfoESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.TRANSFORMER_TANK_INFO__POWER_TRANSFORMER_INFO, null, null,
+                        oldPowerTransformerInfoESet ) );
         }
     }
 
@@ -262,8 +265,9 @@ public class TransformerTankInfoImpl extends AssetInfoImpl implements Transforme
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.TRANSFORMER_TANK_INFO__POWER_TRANSFORMER_INFO:
-            if( powerTransformerInfo != null ) msgs = ( ( InternalEObject ) powerTransformerInfo ).eInverseRemove( this,
-                    CimPackage.POWER_TRANSFORMER_INFO__TRANSFORMER_TANK_INFOS, PowerTransformerInfo.class, msgs );
+            if( powerTransformerInfo != null )
+                msgs = ( ( InternalEObject ) powerTransformerInfo ).eInverseRemove( this,
+                        CimPackage.POWER_TRANSFORMER_INFO__TRANSFORMER_TANK_INFOS, PowerTransformerInfo.class, msgs );
             return basicSetPowerTransformerInfo( ( PowerTransformerInfo ) otherEnd, msgs );
         case CimPackage.TRANSFORMER_TANK_INFO__TRANSFORMER_END_INFOS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTransformerEndInfos() )

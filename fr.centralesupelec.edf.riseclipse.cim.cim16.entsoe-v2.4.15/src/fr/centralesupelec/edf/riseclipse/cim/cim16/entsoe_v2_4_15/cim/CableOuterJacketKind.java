@@ -217,8 +217,15 @@ public enum CableOuterJacketKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final CableOuterJacketKind[] VALUES_ARRAY = new CableOuterJacketKind[] { NONE,
-            LINEAR_LOW_DENSITY_POLYETHYLENE, PVC, POLYETHYLENE, INSULATING, SEMICONDUCTING, OTHER, };
+    private static final CableOuterJacketKind[] VALUES_ARRAY = new CableOuterJacketKind[] {
+            NONE,
+            LINEAR_LOW_DENSITY_POLYETHYLENE,
+            PVC,
+            POLYETHYLENE,
+            INSULATING,
+            SEMICONDUCTING,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Cable Outer Jacket Kind</b></em>' enumerators.

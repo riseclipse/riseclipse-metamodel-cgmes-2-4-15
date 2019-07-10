@@ -117,8 +117,11 @@ public enum ServiceMultiplierKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final ServiceMultiplierKind[] VALUES_ARRAY = new ServiceMultiplierKind[] { CT_RATIO, PT_RATIO,
-            TRANSFORMER_RATIO, };
+    private static final ServiceMultiplierKind[] VALUES_ARRAY = new ServiceMultiplierKind[] {
+            CT_RATIO,
+            PT_RATIO,
+            TRANSFORMER_RATIO,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Service Multiplier Kind</b></em>' enumerators.

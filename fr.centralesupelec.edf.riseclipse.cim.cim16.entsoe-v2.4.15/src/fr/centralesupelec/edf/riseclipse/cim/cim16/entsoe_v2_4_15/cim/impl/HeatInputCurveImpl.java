@@ -255,8 +255,9 @@ public class HeatInputCurveImpl extends CurveImpl implements HeatInputCurve {
         auxPowerMult = newAuxPowerMult;
         boolean oldAuxPowerMultESet = auxPowerMultESet;
         auxPowerMultESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.HEAT_INPUT_CURVE__AUX_POWER_MULT, oldAuxPowerMult, auxPowerMult, !oldAuxPowerMultESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.HEAT_INPUT_CURVE__AUX_POWER_MULT,
+                    oldAuxPowerMult, auxPowerMult, !oldAuxPowerMultESet ) );
     }
 
     /**
@@ -358,8 +359,9 @@ public class HeatInputCurveImpl extends CurveImpl implements HeatInputCurve {
         heatInputEff = newHeatInputEff;
         boolean oldHeatInputEffESet = heatInputEffESet;
         heatInputEffESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.HEAT_INPUT_CURVE__HEAT_INPUT_EFF, oldHeatInputEff, heatInputEff, !oldHeatInputEffESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.HEAT_INPUT_CURVE__HEAT_INPUT_EFF,
+                    oldHeatInputEff, heatInputEff, !oldHeatInputEffESet ) );
     }
 
     /**
@@ -461,8 +463,9 @@ public class HeatInputCurveImpl extends CurveImpl implements HeatInputCurve {
         isNetGrossP = newIsNetGrossP;
         boolean oldIsNetGrossPESet = isNetGrossPESet;
         isNetGrossPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.HEAT_INPUT_CURVE__IS_NET_GROSS_P, oldIsNetGrossP, isNetGrossP, !oldIsNetGrossPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.HEAT_INPUT_CURVE__IS_NET_GROSS_P,
+                    oldIsNetGrossP, isNetGrossP, !oldIsNetGrossPESet ) );
     }
 
     /**
@@ -545,9 +548,10 @@ public class HeatInputCurveImpl extends CurveImpl implements HeatInputCurve {
         else {
             boolean oldThermalGeneratingUnitESet = thermalGeneratingUnitESet;
             thermalGeneratingUnitESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.HEAT_INPUT_CURVE__THERMAL_GENERATING_UNIT,
-                            newThermalGeneratingUnit, newThermalGeneratingUnit, !oldThermalGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.HEAT_INPUT_CURVE__THERMAL_GENERATING_UNIT, newThermalGeneratingUnit,
+                        newThermalGeneratingUnit, !oldThermalGeneratingUnitESet ) );
         }
     }
 
@@ -590,8 +594,10 @@ public class HeatInputCurveImpl extends CurveImpl implements HeatInputCurve {
         else {
             boolean oldThermalGeneratingUnitESet = thermalGeneratingUnitESet;
             thermalGeneratingUnitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.HEAT_INPUT_CURVE__THERMAL_GENERATING_UNIT, null, null, oldThermalGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.HEAT_INPUT_CURVE__THERMAL_GENERATING_UNIT, null, null,
+                        oldThermalGeneratingUnitESet ) );
         }
     }
 
@@ -753,7 +759,7 @@ public class HeatInputCurveImpl extends CurveImpl implements HeatInputCurve {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (auxPowerMult: " );
         if( auxPowerMultESet )
             result.append( auxPowerMult );

@@ -142,8 +142,12 @@ public enum RemoteUnitType implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final RemoteUnitType[] VALUES_ARRAY = new RemoteUnitType[] { RTU, SUBSTATION_CONTROL_SYSTEM,
-            CONTROL_CENTER, IED, };
+    private static final RemoteUnitType[] VALUES_ARRAY = new RemoteUnitType[] {
+            RTU,
+            SUBSTATION_CONTROL_SYSTEM,
+            CONTROL_CENTER,
+            IED,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Remote Unit Type</b></em>' enumerators.

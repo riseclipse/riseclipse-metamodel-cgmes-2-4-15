@@ -133,8 +133,9 @@ public class CoordinateSystemImpl extends IdentifiedObjectImpl implements Coordi
         crsUrn = newCrsUrn;
         boolean oldCrsUrnESet = crsUrnESet;
         crsUrnESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.COORDINATE_SYSTEM__CRS_URN, oldCrsUrn, crsUrn, !oldCrsUrnESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.COORDINATE_SYSTEM__CRS_URN, oldCrsUrn,
+                    crsUrn, !oldCrsUrnESet ) );
     }
 
     /**
@@ -148,8 +149,9 @@ public class CoordinateSystemImpl extends IdentifiedObjectImpl implements Coordi
         boolean oldCrsUrnESet = crsUrnESet;
         crsUrn = CRS_URN_EDEFAULT;
         crsUrnESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.COORDINATE_SYSTEM__CRS_URN, oldCrsUrn, CRS_URN_EDEFAULT, oldCrsUrnESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.COORDINATE_SYSTEM__CRS_URN, oldCrsUrn,
+                    CRS_URN_EDEFAULT, oldCrsUrnESet ) );
     }
 
     /**
@@ -305,7 +307,7 @@ public class CoordinateSystemImpl extends IdentifiedObjectImpl implements Coordi
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (crsUrn: " );
         if( crsUrnESet )
             result.append( crsUrn );

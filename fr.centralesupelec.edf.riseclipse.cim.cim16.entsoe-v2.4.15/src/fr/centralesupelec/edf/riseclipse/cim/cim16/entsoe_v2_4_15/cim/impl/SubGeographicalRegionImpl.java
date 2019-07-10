@@ -167,18 +167,21 @@ public class SubGeographicalRegionImpl extends IdentifiedObjectImpl implements S
     public void setRegion( GeographicalRegion newRegion ) {
         if( newRegion != region ) {
             NotificationChain msgs = null;
-            if( region != null ) msgs = ( ( InternalEObject ) region ).eInverseRemove( this,
-                    CimPackage.GEOGRAPHICAL_REGION__REGIONS, GeographicalRegion.class, msgs );
-            if( newRegion != null ) msgs = ( ( InternalEObject ) newRegion ).eInverseAdd( this,
-                    CimPackage.GEOGRAPHICAL_REGION__REGIONS, GeographicalRegion.class, msgs );
+            if( region != null )
+                msgs = ( ( InternalEObject ) region ).eInverseRemove( this, CimPackage.GEOGRAPHICAL_REGION__REGIONS,
+                        GeographicalRegion.class, msgs );
+            if( newRegion != null )
+                msgs = ( ( InternalEObject ) newRegion ).eInverseAdd( this, CimPackage.GEOGRAPHICAL_REGION__REGIONS,
+                        GeographicalRegion.class, msgs );
             msgs = basicSetRegion( newRegion, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldRegionESet = regionESet;
             regionESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SUB_GEOGRAPHICAL_REGION__REGION, newRegion, newRegion, !oldRegionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SUB_GEOGRAPHICAL_REGION__REGION,
+                        newRegion, newRegion, !oldRegionESet ) );
         }
     }
 
@@ -220,8 +223,9 @@ public class SubGeographicalRegionImpl extends IdentifiedObjectImpl implements S
         else {
             boolean oldRegionESet = regionESet;
             regionESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SUB_GEOGRAPHICAL_REGION__REGION, null, null, oldRegionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SUB_GEOGRAPHICAL_REGION__REGION,
+                        null, null, oldRegionESet ) );
         }
     }
 
@@ -347,8 +351,9 @@ public class SubGeographicalRegionImpl extends IdentifiedObjectImpl implements S
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.SUB_GEOGRAPHICAL_REGION__REGION:
-            if( region != null ) msgs = ( ( InternalEObject ) region ).eInverseRemove( this,
-                    CimPackage.GEOGRAPHICAL_REGION__REGIONS, GeographicalRegion.class, msgs );
+            if( region != null )
+                msgs = ( ( InternalEObject ) region ).eInverseRemove( this, CimPackage.GEOGRAPHICAL_REGION__REGIONS,
+                        GeographicalRegion.class, msgs );
             return basicSetRegion( ( GeographicalRegion ) otherEnd, msgs );
         case CimPackage.SUB_GEOGRAPHICAL_REGION__DC_LINES:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getDCLines() ).basicAdd( otherEnd,

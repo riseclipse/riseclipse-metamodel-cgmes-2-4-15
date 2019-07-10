@@ -313,10 +313,12 @@ public class MeterReadingImpl extends IdentifiedObjectImpl implements MeterReadi
     public void setValuesInterval( DateTimeInterval newValuesInterval ) {
         if( newValuesInterval != valuesInterval ) {
             NotificationChain msgs = null;
-            if( valuesInterval != null ) msgs = ( ( InternalEObject ) valuesInterval ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.METER_READING__VALUES_INTERVAL, null, msgs );
-            if( newValuesInterval != null ) msgs = ( ( InternalEObject ) newValuesInterval ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.METER_READING__VALUES_INTERVAL, null, msgs );
+            if( valuesInterval != null )
+                msgs = ( ( InternalEObject ) valuesInterval ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.METER_READING__VALUES_INTERVAL, null, msgs );
+            if( newValuesInterval != null )
+                msgs = ( ( InternalEObject ) newValuesInterval ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.METER_READING__VALUES_INTERVAL, null, msgs );
             msgs = basicSetValuesInterval( newValuesInterval, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -367,8 +369,9 @@ public class MeterReadingImpl extends IdentifiedObjectImpl implements MeterReadi
         else {
             boolean oldValuesIntervalESet = valuesIntervalESet;
             valuesIntervalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.METER_READING__VALUES_INTERVAL, null, null, oldValuesIntervalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.METER_READING__VALUES_INTERVAL,
+                        null, null, oldValuesIntervalESet ) );
         }
     }
 
@@ -490,18 +493,21 @@ public class MeterReadingImpl extends IdentifiedObjectImpl implements MeterReadi
     public void setUsagePoint( UsagePoint newUsagePoint ) {
         if( newUsagePoint != usagePoint ) {
             NotificationChain msgs = null;
-            if( usagePoint != null ) msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this,
-                    CimPackage.USAGE_POINT__METER_READINGS, UsagePoint.class, msgs );
-            if( newUsagePoint != null ) msgs = ( ( InternalEObject ) newUsagePoint ).eInverseAdd( this,
-                    CimPackage.USAGE_POINT__METER_READINGS, UsagePoint.class, msgs );
+            if( usagePoint != null )
+                msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this, CimPackage.USAGE_POINT__METER_READINGS,
+                        UsagePoint.class, msgs );
+            if( newUsagePoint != null )
+                msgs = ( ( InternalEObject ) newUsagePoint ).eInverseAdd( this, CimPackage.USAGE_POINT__METER_READINGS,
+                        UsagePoint.class, msgs );
             msgs = basicSetUsagePoint( newUsagePoint, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldUsagePointESet = usagePointESet;
             usagePointESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.METER_READING__USAGE_POINT, newUsagePoint, newUsagePoint, !oldUsagePointESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.METER_READING__USAGE_POINT,
+                        newUsagePoint, newUsagePoint, !oldUsagePointESet ) );
         }
     }
 
@@ -543,8 +549,9 @@ public class MeterReadingImpl extends IdentifiedObjectImpl implements MeterReadi
         else {
             boolean oldUsagePointESet = usagePointESet;
             usagePointESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.METER_READING__USAGE_POINT, null, null, oldUsagePointESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.METER_READING__USAGE_POINT, null,
+                        null, oldUsagePointESet ) );
         }
     }
 
@@ -598,18 +605,21 @@ public class MeterReadingImpl extends IdentifiedObjectImpl implements MeterReadi
     public void setMeter( Meter newMeter ) {
         if( newMeter != meter ) {
             NotificationChain msgs = null;
-            if( meter != null ) msgs = ( ( InternalEObject ) meter ).eInverseRemove( this,
-                    CimPackage.METER__METER_READINGS, Meter.class, msgs );
-            if( newMeter != null ) msgs = ( ( InternalEObject ) newMeter ).eInverseAdd( this,
-                    CimPackage.METER__METER_READINGS, Meter.class, msgs );
+            if( meter != null )
+                msgs = ( ( InternalEObject ) meter ).eInverseRemove( this, CimPackage.METER__METER_READINGS,
+                        Meter.class, msgs );
+            if( newMeter != null )
+                msgs = ( ( InternalEObject ) newMeter ).eInverseAdd( this, CimPackage.METER__METER_READINGS,
+                        Meter.class, msgs );
             msgs = basicSetMeter( newMeter, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldMeterESet = meterESet;
             meterESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.METER_READING__METER, newMeter, newMeter, !oldMeterESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.METER_READING__METER, newMeter,
+                        newMeter, !oldMeterESet ) );
         }
     }
 
@@ -651,8 +661,9 @@ public class MeterReadingImpl extends IdentifiedObjectImpl implements MeterReadi
         else {
             boolean oldMeterESet = meterESet;
             meterESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.METER_READING__METER, null, null, oldMeterESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.METER_READING__METER, null, null,
+                        oldMeterESet ) );
         }
     }
 
@@ -742,10 +753,12 @@ public class MeterReadingImpl extends IdentifiedObjectImpl implements MeterReadi
     public void setCustomerAgreement( CustomerAgreement newCustomerAgreement ) {
         if( newCustomerAgreement != customerAgreement ) {
             NotificationChain msgs = null;
-            if( customerAgreement != null ) msgs = ( ( InternalEObject ) customerAgreement ).eInverseRemove( this,
-                    CimPackage.CUSTOMER_AGREEMENT__METER_READINGS, CustomerAgreement.class, msgs );
-            if( newCustomerAgreement != null ) msgs = ( ( InternalEObject ) newCustomerAgreement ).eInverseAdd( this,
-                    CimPackage.CUSTOMER_AGREEMENT__METER_READINGS, CustomerAgreement.class, msgs );
+            if( customerAgreement != null )
+                msgs = ( ( InternalEObject ) customerAgreement ).eInverseRemove( this,
+                        CimPackage.CUSTOMER_AGREEMENT__METER_READINGS, CustomerAgreement.class, msgs );
+            if( newCustomerAgreement != null )
+                msgs = ( ( InternalEObject ) newCustomerAgreement ).eInverseAdd( this,
+                        CimPackage.CUSTOMER_AGREEMENT__METER_READINGS, CustomerAgreement.class, msgs );
             msgs = basicSetCustomerAgreement( newCustomerAgreement, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -797,8 +810,9 @@ public class MeterReadingImpl extends IdentifiedObjectImpl implements MeterReadi
         else {
             boolean oldCustomerAgreementESet = customerAgreementESet;
             customerAgreementESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.METER_READING__CUSTOMER_AGREEMENT, null, null, oldCustomerAgreementESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.METER_READING__CUSTOMER_AGREEMENT,
+                        null, null, oldCustomerAgreementESet ) );
         }
     }
 
@@ -822,12 +836,14 @@ public class MeterReadingImpl extends IdentifiedObjectImpl implements MeterReadi
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.METER_READING__METER:
-            if( meter != null ) msgs = ( ( InternalEObject ) meter ).eInverseRemove( this,
-                    CimPackage.METER__METER_READINGS, Meter.class, msgs );
+            if( meter != null )
+                msgs = ( ( InternalEObject ) meter ).eInverseRemove( this, CimPackage.METER__METER_READINGS,
+                        Meter.class, msgs );
             return basicSetMeter( ( Meter ) otherEnd, msgs );
         case CimPackage.METER_READING__USAGE_POINT:
-            if( usagePoint != null ) msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this,
-                    CimPackage.USAGE_POINT__METER_READINGS, UsagePoint.class, msgs );
+            if( usagePoint != null )
+                msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this, CimPackage.USAGE_POINT__METER_READINGS,
+                        UsagePoint.class, msgs );
             return basicSetUsagePoint( ( UsagePoint ) otherEnd, msgs );
         case CimPackage.METER_READING__INTERVAL_BLOCKS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getIntervalBlocks() )
@@ -839,8 +855,9 @@ public class MeterReadingImpl extends IdentifiedObjectImpl implements MeterReadi
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getEndDeviceEvents() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.METER_READING__CUSTOMER_AGREEMENT:
-            if( customerAgreement != null ) msgs = ( ( InternalEObject ) customerAgreement ).eInverseRemove( this,
-                    CimPackage.CUSTOMER_AGREEMENT__METER_READINGS, CustomerAgreement.class, msgs );
+            if( customerAgreement != null )
+                msgs = ( ( InternalEObject ) customerAgreement ).eInverseRemove( this,
+                        CimPackage.CUSTOMER_AGREEMENT__METER_READINGS, CustomerAgreement.class, msgs );
             return basicSetCustomerAgreement( ( CustomerAgreement ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1013,7 +1030,7 @@ public class MeterReadingImpl extends IdentifiedObjectImpl implements MeterReadi
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (isCoincidentTrigger: " );
         if( isCoincidentTriggerESet )
             result.append( isCoincidentTrigger );

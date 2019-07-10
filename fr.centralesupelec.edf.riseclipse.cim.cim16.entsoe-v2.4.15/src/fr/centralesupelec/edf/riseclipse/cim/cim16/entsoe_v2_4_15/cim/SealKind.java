@@ -142,7 +142,12 @@ public enum SealKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final SealKind[] VALUES_ARRAY = new SealKind[] { STEEL, LEAD, LOCK, OTHER, };
+    private static final SealKind[] VALUES_ARRAY = new SealKind[] {
+            STEEL,
+            LEAD,
+            LOCK,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Seal Kind</b></em>' enumerators.

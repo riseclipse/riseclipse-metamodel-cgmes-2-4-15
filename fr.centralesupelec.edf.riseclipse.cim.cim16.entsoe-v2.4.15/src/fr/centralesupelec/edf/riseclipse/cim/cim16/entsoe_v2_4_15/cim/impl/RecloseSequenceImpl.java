@@ -165,8 +165,9 @@ public class RecloseSequenceImpl extends IdentifiedObjectImpl implements Reclose
         recloseDelay = newRecloseDelay;
         boolean oldRecloseDelayESet = recloseDelayESet;
         recloseDelayESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.RECLOSE_SEQUENCE__RECLOSE_DELAY, oldRecloseDelay, recloseDelay, !oldRecloseDelayESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.RECLOSE_SEQUENCE__RECLOSE_DELAY,
+                    oldRecloseDelay, recloseDelay, !oldRecloseDelayESet ) );
     }
 
     /**
@@ -216,8 +217,9 @@ public class RecloseSequenceImpl extends IdentifiedObjectImpl implements Reclose
         recloseStep = newRecloseStep;
         boolean oldRecloseStepESet = recloseStepESet;
         recloseStepESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.RECLOSE_SEQUENCE__RECLOSE_STEP, oldRecloseStep, recloseStep, !oldRecloseStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.RECLOSE_SEQUENCE__RECLOSE_STEP,
+                    oldRecloseStep, recloseStep, !oldRecloseStepESet ) );
     }
 
     /**
@@ -287,10 +289,12 @@ public class RecloseSequenceImpl extends IdentifiedObjectImpl implements Reclose
     public void setProtectedSwitch( ProtectedSwitch newProtectedSwitch ) {
         if( newProtectedSwitch != protectedSwitch ) {
             NotificationChain msgs = null;
-            if( protectedSwitch != null ) msgs = ( ( InternalEObject ) protectedSwitch ).eInverseRemove( this,
-                    CimPackage.PROTECTED_SWITCH__RECLOSE_SEQUENCES, ProtectedSwitch.class, msgs );
-            if( newProtectedSwitch != null ) msgs = ( ( InternalEObject ) newProtectedSwitch ).eInverseAdd( this,
-                    CimPackage.PROTECTED_SWITCH__RECLOSE_SEQUENCES, ProtectedSwitch.class, msgs );
+            if( protectedSwitch != null )
+                msgs = ( ( InternalEObject ) protectedSwitch ).eInverseRemove( this,
+                        CimPackage.PROTECTED_SWITCH__RECLOSE_SEQUENCES, ProtectedSwitch.class, msgs );
+            if( newProtectedSwitch != null )
+                msgs = ( ( InternalEObject ) newProtectedSwitch ).eInverseAdd( this,
+                        CimPackage.PROTECTED_SWITCH__RECLOSE_SEQUENCES, ProtectedSwitch.class, msgs );
             msgs = basicSetProtectedSwitch( newProtectedSwitch, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -341,8 +345,9 @@ public class RecloseSequenceImpl extends IdentifiedObjectImpl implements Reclose
         else {
             boolean oldProtectedSwitchESet = protectedSwitchESet;
             protectedSwitchESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.RECLOSE_SEQUENCE__PROTECTED_SWITCH, null, null, oldProtectedSwitchESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.RECLOSE_SEQUENCE__PROTECTED_SWITCH,
+                        null, null, oldProtectedSwitchESet ) );
         }
     }
 
@@ -365,8 +370,9 @@ public class RecloseSequenceImpl extends IdentifiedObjectImpl implements Reclose
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.RECLOSE_SEQUENCE__PROTECTED_SWITCH:
-            if( protectedSwitch != null ) msgs = ( ( InternalEObject ) protectedSwitch ).eInverseRemove( this,
-                    CimPackage.PROTECTED_SWITCH__RECLOSE_SEQUENCES, ProtectedSwitch.class, msgs );
+            if( protectedSwitch != null )
+                msgs = ( ( InternalEObject ) protectedSwitch ).eInverseRemove( this,
+                        CimPackage.PROTECTED_SWITCH__RECLOSE_SEQUENCES, ProtectedSwitch.class, msgs );
             return basicSetProtectedSwitch( ( ProtectedSwitch ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -473,7 +479,7 @@ public class RecloseSequenceImpl extends IdentifiedObjectImpl implements Reclose
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (recloseDelay: " );
         if( recloseDelayESet )
             result.append( recloseDelay );

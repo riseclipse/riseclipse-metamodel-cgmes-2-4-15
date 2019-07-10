@@ -95,8 +95,9 @@ public class PhaseTapChangerImpl extends TapChangerImpl implements PhaseTapChang
             InternalEObject oldTransformerEnd = ( InternalEObject ) transformerEnd;
             transformerEnd = ( TransformerEnd ) eResolveProxy( oldTransformerEnd );
             if( transformerEnd != oldTransformerEnd ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.PHASE_TAP_CHANGER__TRANSFORMER_END, oldTransformerEnd, transformerEnd ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.PHASE_TAP_CHANGER__TRANSFORMER_END, oldTransformerEnd, transformerEnd ) );
             }
         }
         return transformerEnd;
@@ -142,10 +143,12 @@ public class PhaseTapChangerImpl extends TapChangerImpl implements PhaseTapChang
     public void setTransformerEnd( TransformerEnd newTransformerEnd ) {
         if( newTransformerEnd != transformerEnd ) {
             NotificationChain msgs = null;
-            if( transformerEnd != null ) msgs = ( ( InternalEObject ) transformerEnd ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_END__PHASE_TAP_CHANGER, TransformerEnd.class, msgs );
-            if( newTransformerEnd != null ) msgs = ( ( InternalEObject ) newTransformerEnd ).eInverseAdd( this,
-                    CimPackage.TRANSFORMER_END__PHASE_TAP_CHANGER, TransformerEnd.class, msgs );
+            if( transformerEnd != null )
+                msgs = ( ( InternalEObject ) transformerEnd ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_END__PHASE_TAP_CHANGER, TransformerEnd.class, msgs );
+            if( newTransformerEnd != null )
+                msgs = ( ( InternalEObject ) newTransformerEnd ).eInverseAdd( this,
+                        CimPackage.TRANSFORMER_END__PHASE_TAP_CHANGER, TransformerEnd.class, msgs );
             msgs = basicSetTransformerEnd( newTransformerEnd, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -196,8 +199,9 @@ public class PhaseTapChangerImpl extends TapChangerImpl implements PhaseTapChang
         else {
             boolean oldTransformerEndESet = transformerEndESet;
             transformerEndESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PHASE_TAP_CHANGER__TRANSFORMER_END, null, null, oldTransformerEndESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PHASE_TAP_CHANGER__TRANSFORMER_END,
+                        null, null, oldTransformerEndESet ) );
         }
     }
 
@@ -220,8 +224,9 @@ public class PhaseTapChangerImpl extends TapChangerImpl implements PhaseTapChang
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.PHASE_TAP_CHANGER__TRANSFORMER_END:
-            if( transformerEnd != null ) msgs = ( ( InternalEObject ) transformerEnd ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_END__PHASE_TAP_CHANGER, TransformerEnd.class, msgs );
+            if( transformerEnd != null )
+                msgs = ( ( InternalEObject ) transformerEnd ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_END__PHASE_TAP_CHANGER, TransformerEnd.class, msgs );
             return basicSetTransformerEnd( ( TransformerEnd ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

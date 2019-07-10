@@ -562,8 +562,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         kc = newKc;
         boolean oldKcESet = kcESet;
         kcESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__KC, oldKc, kc, !oldKcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__KC, oldKc, kc,
+                    !oldKcESet ) );
     }
 
     /**
@@ -577,8 +578,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         boolean oldKcESet = kcESet;
         kc = KC_EDEFAULT;
         kcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_IEEEST4B__KC, oldKc, KC_EDEFAULT, oldKcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_IEEEST4B__KC, oldKc, KC_EDEFAULT,
+                    oldKcESet ) );
     }
 
     /**
@@ -612,8 +614,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         kg = newKg;
         boolean oldKgESet = kgESet;
         kgESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__KG, oldKg, kg, !oldKgESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__KG, oldKg, kg,
+                    !oldKgESet ) );
     }
 
     /**
@@ -627,8 +630,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         boolean oldKgESet = kgESet;
         kg = KG_EDEFAULT;
         kgESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_IEEEST4B__KG, oldKg, KG_EDEFAULT, oldKgESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_IEEEST4B__KG, oldKg, KG_EDEFAULT,
+                    oldKgESet ) );
     }
 
     /**
@@ -662,8 +666,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         ki = newKi;
         boolean oldKiESet = kiESet;
         kiESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__KI, oldKi, ki, !oldKiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__KI, oldKi, ki,
+                    !oldKiESet ) );
     }
 
     /**
@@ -677,8 +682,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         boolean oldKiESet = kiESet;
         ki = KI_EDEFAULT;
         kiESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_IEEEST4B__KI, oldKi, KI_EDEFAULT, oldKiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_IEEEST4B__KI, oldKi, KI_EDEFAULT,
+                    oldKiESet ) );
     }
 
     /**
@@ -712,8 +718,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         kim = newKim;
         boolean oldKimESet = kimESet;
         kimESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_IEEEST4B__KIM, oldKim, kim, !oldKimESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__KIM, oldKim, kim,
+                    !oldKimESet ) );
     }
 
     /**
@@ -727,8 +734,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         boolean oldKimESet = kimESet;
         kim = KIM_EDEFAULT;
         kimESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_IEEEST4B__KIM, oldKim, KIM_EDEFAULT, oldKimESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_IEEEST4B__KIM, oldKim,
+                    KIM_EDEFAULT, oldKimESet ) );
     }
 
     /**
@@ -762,8 +770,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         kir = newKir;
         boolean oldKirESet = kirESet;
         kirESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_IEEEST4B__KIR, oldKir, kir, !oldKirESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__KIR, oldKir, kir,
+                    !oldKirESet ) );
     }
 
     /**
@@ -777,8 +786,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         boolean oldKirESet = kirESet;
         kir = KIR_EDEFAULT;
         kirESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_IEEEST4B__KIR, oldKir, KIR_EDEFAULT, oldKirESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_IEEEST4B__KIR, oldKir,
+                    KIR_EDEFAULT, oldKirESet ) );
     }
 
     /**
@@ -812,8 +822,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         kp = newKp;
         boolean oldKpESet = kpESet;
         kpESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__KP, oldKp, kp, !oldKpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__KP, oldKp, kp,
+                    !oldKpESet ) );
     }
 
     /**
@@ -827,8 +838,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         boolean oldKpESet = kpESet;
         kp = KP_EDEFAULT;
         kpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_IEEEST4B__KP, oldKp, KP_EDEFAULT, oldKpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_IEEEST4B__KP, oldKp, KP_EDEFAULT,
+                    oldKpESet ) );
     }
 
     /**
@@ -862,8 +874,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         kpm = newKpm;
         boolean oldKpmESet = kpmESet;
         kpmESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_IEEEST4B__KPM, oldKpm, kpm, !oldKpmESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__KPM, oldKpm, kpm,
+                    !oldKpmESet ) );
     }
 
     /**
@@ -877,8 +890,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         boolean oldKpmESet = kpmESet;
         kpm = KPM_EDEFAULT;
         kpmESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_IEEEST4B__KPM, oldKpm, KPM_EDEFAULT, oldKpmESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_IEEEST4B__KPM, oldKpm,
+                    KPM_EDEFAULT, oldKpmESet ) );
     }
 
     /**
@@ -912,8 +926,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         kpr = newKpr;
         boolean oldKprESet = kprESet;
         kprESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_IEEEST4B__KPR, oldKpr, kpr, !oldKprESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__KPR, oldKpr, kpr,
+                    !oldKprESet ) );
     }
 
     /**
@@ -927,8 +942,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         boolean oldKprESet = kprESet;
         kpr = KPR_EDEFAULT;
         kprESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_IEEEST4B__KPR, oldKpr, KPR_EDEFAULT, oldKprESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_IEEEST4B__KPR, oldKpr,
+                    KPR_EDEFAULT, oldKprESet ) );
     }
 
     /**
@@ -962,8 +978,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         ta = newTa;
         boolean oldTaESet = taESet;
         taESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__TA, oldTa, ta, !oldTaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__TA, oldTa, ta,
+                    !oldTaESet ) );
     }
 
     /**
@@ -977,8 +994,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         boolean oldTaESet = taESet;
         ta = TA_EDEFAULT;
         taESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_IEEEST4B__TA, oldTa, TA_EDEFAULT, oldTaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_IEEEST4B__TA, oldTa, TA_EDEFAULT,
+                    oldTaESet ) );
     }
 
     /**
@@ -1012,8 +1030,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         thetap = newThetap;
         boolean oldThetapESet = thetapESet;
         thetapESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_IEEEST4B__THETAP, oldThetap, thetap, !oldThetapESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__THETAP, oldThetap, thetap,
+                    !oldThetapESet ) );
     }
 
     /**
@@ -1027,8 +1046,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         boolean oldThetapESet = thetapESet;
         thetap = THETAP_EDEFAULT;
         thetapESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_IEEEST4B__THETAP, oldThetap, THETAP_EDEFAULT, oldThetapESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_IEEEST4B__THETAP, oldThetap,
+                    THETAP_EDEFAULT, oldThetapESet ) );
     }
 
     /**
@@ -1062,8 +1082,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         vbmax = newVbmax;
         boolean oldVbmaxESet = vbmaxESet;
         vbmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_IEEEST4B__VBMAX, oldVbmax, vbmax, !oldVbmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__VBMAX, oldVbmax, vbmax,
+                    !oldVbmaxESet ) );
     }
 
     /**
@@ -1077,8 +1098,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         boolean oldVbmaxESet = vbmaxESet;
         vbmax = VBMAX_EDEFAULT;
         vbmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_IEEEST4B__VBMAX, oldVbmax, VBMAX_EDEFAULT, oldVbmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_IEEEST4B__VBMAX, oldVbmax,
+                    VBMAX_EDEFAULT, oldVbmaxESet ) );
     }
 
     /**
@@ -1112,8 +1134,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         vmmax = newVmmax;
         boolean oldVmmaxESet = vmmaxESet;
         vmmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_IEEEST4B__VMMAX, oldVmmax, vmmax, !oldVmmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__VMMAX, oldVmmax, vmmax,
+                    !oldVmmaxESet ) );
     }
 
     /**
@@ -1127,8 +1150,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         boolean oldVmmaxESet = vmmaxESet;
         vmmax = VMMAX_EDEFAULT;
         vmmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_IEEEST4B__VMMAX, oldVmmax, VMMAX_EDEFAULT, oldVmmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_IEEEST4B__VMMAX, oldVmmax,
+                    VMMAX_EDEFAULT, oldVmmaxESet ) );
     }
 
     /**
@@ -1162,8 +1186,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         vmmin = newVmmin;
         boolean oldVmminESet = vmminESet;
         vmminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_IEEEST4B__VMMIN, oldVmmin, vmmin, !oldVmminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__VMMIN, oldVmmin, vmmin,
+                    !oldVmminESet ) );
     }
 
     /**
@@ -1177,8 +1202,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         boolean oldVmminESet = vmminESet;
         vmmin = VMMIN_EDEFAULT;
         vmminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_IEEEST4B__VMMIN, oldVmmin, VMMIN_EDEFAULT, oldVmminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_IEEEST4B__VMMIN, oldVmmin,
+                    VMMIN_EDEFAULT, oldVmminESet ) );
     }
 
     /**
@@ -1212,8 +1238,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         vrmax = newVrmax;
         boolean oldVrmaxESet = vrmaxESet;
         vrmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_IEEEST4B__VRMAX, oldVrmax, vrmax, !oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__VRMAX, oldVrmax, vrmax,
+                    !oldVrmaxESet ) );
     }
 
     /**
@@ -1227,8 +1254,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         boolean oldVrmaxESet = vrmaxESet;
         vrmax = VRMAX_EDEFAULT;
         vrmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_IEEEST4B__VRMAX, oldVrmax, VRMAX_EDEFAULT, oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_IEEEST4B__VRMAX, oldVrmax,
+                    VRMAX_EDEFAULT, oldVrmaxESet ) );
     }
 
     /**
@@ -1262,8 +1290,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         vrmin = newVrmin;
         boolean oldVrminESet = vrminESet;
         vrminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_IEEEST4B__VRMIN, oldVrmin, vrmin, !oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__VRMIN, oldVrmin, vrmin,
+                    !oldVrminESet ) );
     }
 
     /**
@@ -1277,8 +1306,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         boolean oldVrminESet = vrminESet;
         vrmin = VRMIN_EDEFAULT;
         vrminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_IEEEST4B__VRMIN, oldVrmin, VRMIN_EDEFAULT, oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_IEEEST4B__VRMIN, oldVrmin,
+                    VRMIN_EDEFAULT, oldVrminESet ) );
     }
 
     /**
@@ -1312,8 +1342,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         xl = newXl;
         boolean oldXlESet = xlESet;
         xlESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__XL, oldXl, xl, !oldXlESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_IEEEST4B__XL, oldXl, xl,
+                    !oldXlESet ) );
     }
 
     /**
@@ -1327,8 +1358,9 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
         boolean oldXlESet = xlESet;
         xl = XL_EDEFAULT;
         xlESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_IEEEST4B__XL, oldXl, XL_EDEFAULT, oldXlESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_IEEEST4B__XL, oldXl, XL_EDEFAULT,
+                    oldXlESet ) );
     }
 
     /**
@@ -1558,7 +1590,7 @@ public class ExcIEEEST4BImpl extends ExcitationSystemDynamicsImpl implements Exc
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kc: " );
         if( kcESet )
             result.append( kc );

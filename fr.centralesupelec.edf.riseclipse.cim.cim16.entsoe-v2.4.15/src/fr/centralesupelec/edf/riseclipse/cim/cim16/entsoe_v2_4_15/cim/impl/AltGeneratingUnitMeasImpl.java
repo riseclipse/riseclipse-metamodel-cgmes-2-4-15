@@ -156,8 +156,9 @@ public class AltGeneratingUnitMeasImpl extends CimObjectWithIDImpl implements Al
         priority = newPriority;
         boolean oldPriorityESet = priorityESet;
         priorityESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ALT_GENERATING_UNIT_MEAS__PRIORITY, oldPriority, priority, !oldPriorityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ALT_GENERATING_UNIT_MEAS__PRIORITY,
+                    oldPriority, priority, !oldPriorityESet ) );
     }
 
     /**
@@ -171,8 +172,9 @@ public class AltGeneratingUnitMeasImpl extends CimObjectWithIDImpl implements Al
         boolean oldPriorityESet = priorityESet;
         priority = PRIORITY_EDEFAULT;
         priorityESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ALT_GENERATING_UNIT_MEAS__PRIORITY, oldPriority, PRIORITY_EDEFAULT, oldPriorityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ALT_GENERATING_UNIT_MEAS__PRIORITY,
+                    oldPriority, PRIORITY_EDEFAULT, oldPriorityESet ) );
     }
 
     /**
@@ -241,9 +243,10 @@ public class AltGeneratingUnitMeasImpl extends CimObjectWithIDImpl implements Al
         else {
             boolean oldControlAreaGeneratingUnitESet = controlAreaGeneratingUnitESet;
             controlAreaGeneratingUnitESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ALT_GENERATING_UNIT_MEAS__CONTROL_AREA_GENERATING_UNIT, newControlAreaGeneratingUnit,
-                    newControlAreaGeneratingUnit, !oldControlAreaGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.ALT_GENERATING_UNIT_MEAS__CONTROL_AREA_GENERATING_UNIT, newControlAreaGeneratingUnit,
+                        newControlAreaGeneratingUnit, !oldControlAreaGeneratingUnitESet ) );
         }
     }
 
@@ -287,9 +290,10 @@ public class AltGeneratingUnitMeasImpl extends CimObjectWithIDImpl implements Al
         else {
             boolean oldControlAreaGeneratingUnitESet = controlAreaGeneratingUnitESet;
             controlAreaGeneratingUnitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ALT_GENERATING_UNIT_MEAS__CONTROL_AREA_GENERATING_UNIT, null, null,
-                    oldControlAreaGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.ALT_GENERATING_UNIT_MEAS__CONTROL_AREA_GENERATING_UNIT, null, null,
+                        oldControlAreaGeneratingUnitESet ) );
         }
     }
 
@@ -344,19 +348,22 @@ public class AltGeneratingUnitMeasImpl extends CimObjectWithIDImpl implements Al
     public void setAnalogValue( AnalogValue newAnalogValue ) {
         if( newAnalogValue != analogValue ) {
             NotificationChain msgs = null;
-            if( analogValue != null ) msgs = ( ( InternalEObject ) analogValue ).eInverseRemove( this,
-                    CimPackage.ANALOG_VALUE__ALT_GENERATING_UNIT, AnalogValue.class, msgs );
-            if( newAnalogValue != null ) msgs = ( ( InternalEObject ) newAnalogValue ).eInverseAdd( this,
-                    CimPackage.ANALOG_VALUE__ALT_GENERATING_UNIT, AnalogValue.class, msgs );
+            if( analogValue != null )
+                msgs = ( ( InternalEObject ) analogValue ).eInverseRemove( this,
+                        CimPackage.ANALOG_VALUE__ALT_GENERATING_UNIT, AnalogValue.class, msgs );
+            if( newAnalogValue != null )
+                msgs = ( ( InternalEObject ) newAnalogValue ).eInverseAdd( this,
+                        CimPackage.ANALOG_VALUE__ALT_GENERATING_UNIT, AnalogValue.class, msgs );
             msgs = basicSetAnalogValue( newAnalogValue, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldAnalogValueESet = analogValueESet;
             analogValueESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.ALT_GENERATING_UNIT_MEAS__ANALOG_VALUE,
-                            newAnalogValue, newAnalogValue, !oldAnalogValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.ALT_GENERATING_UNIT_MEAS__ANALOG_VALUE, newAnalogValue, newAnalogValue,
+                        !oldAnalogValueESet ) );
         }
     }
 
@@ -398,8 +405,9 @@ public class AltGeneratingUnitMeasImpl extends CimObjectWithIDImpl implements Al
         else {
             boolean oldAnalogValueESet = analogValueESet;
             analogValueESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ALT_GENERATING_UNIT_MEAS__ANALOG_VALUE, null, null, oldAnalogValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.ALT_GENERATING_UNIT_MEAS__ANALOG_VALUE, null, null, oldAnalogValueESet ) );
         }
     }
 
@@ -422,8 +430,9 @@ public class AltGeneratingUnitMeasImpl extends CimObjectWithIDImpl implements Al
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ALT_GENERATING_UNIT_MEAS__ANALOG_VALUE:
-            if( analogValue != null ) msgs = ( ( InternalEObject ) analogValue ).eInverseRemove( this,
-                    CimPackage.ANALOG_VALUE__ALT_GENERATING_UNIT, AnalogValue.class, msgs );
+            if( analogValue != null )
+                msgs = ( ( InternalEObject ) analogValue ).eInverseRemove( this,
+                        CimPackage.ANALOG_VALUE__ALT_GENERATING_UNIT, AnalogValue.class, msgs );
             return basicSetAnalogValue( ( AnalogValue ) otherEnd, msgs );
         case CimPackage.ALT_GENERATING_UNIT_MEAS__CONTROL_AREA_GENERATING_UNIT:
             if( controlAreaGeneratingUnit != null )
@@ -538,7 +547,7 @@ public class AltGeneratingUnitMeasImpl extends CimObjectWithIDImpl implements Al
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (priority: " );
         if( priorityESet )
             result.append( priority );

@@ -263,9 +263,10 @@ public class StaticVarCompensatorImpl extends RegulatingCondEqImpl implements St
         capacitiveRating = newCapacitiveRating;
         boolean oldCapacitiveRatingESet = capacitiveRatingESet;
         capacitiveRatingESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.STATIC_VAR_COMPENSATOR__CAPACITIVE_RATING,
-                        oldCapacitiveRating, capacitiveRating, !oldCapacitiveRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.STATIC_VAR_COMPENSATOR__CAPACITIVE_RATING, oldCapacitiveRating, capacitiveRating,
+                    !oldCapacitiveRatingESet ) );
     }
 
     /**
@@ -279,9 +280,10 @@ public class StaticVarCompensatorImpl extends RegulatingCondEqImpl implements St
         boolean oldCapacitiveRatingESet = capacitiveRatingESet;
         capacitiveRating = CAPACITIVE_RATING_EDEFAULT;
         capacitiveRatingESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.STATIC_VAR_COMPENSATOR__CAPACITIVE_RATING,
-                        oldCapacitiveRating, CAPACITIVE_RATING_EDEFAULT, oldCapacitiveRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.STATIC_VAR_COMPENSATOR__CAPACITIVE_RATING, oldCapacitiveRating,
+                    CAPACITIVE_RATING_EDEFAULT, oldCapacitiveRatingESet ) );
     }
 
     /**
@@ -331,9 +333,10 @@ public class StaticVarCompensatorImpl extends RegulatingCondEqImpl implements St
         boolean oldInductiveRatingESet = inductiveRatingESet;
         inductiveRating = INDUCTIVE_RATING_EDEFAULT;
         inductiveRatingESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.STATIC_VAR_COMPENSATOR__INDUCTIVE_RATING,
-                        oldInductiveRating, INDUCTIVE_RATING_EDEFAULT, oldInductiveRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.STATIC_VAR_COMPENSATOR__INDUCTIVE_RATING, oldInductiveRating, INDUCTIVE_RATING_EDEFAULT,
+                    oldInductiveRatingESet ) );
     }
 
     /**
@@ -367,8 +370,9 @@ public class StaticVarCompensatorImpl extends RegulatingCondEqImpl implements St
         q = newQ;
         boolean oldQESet = qESet;
         qESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STATIC_VAR_COMPENSATOR__Q, oldQ, q, !oldQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STATIC_VAR_COMPENSATOR__Q, oldQ, q,
+                    !oldQESet ) );
     }
 
     /**
@@ -382,8 +386,9 @@ public class StaticVarCompensatorImpl extends RegulatingCondEqImpl implements St
         boolean oldQESet = qESet;
         q = Q_EDEFAULT;
         qESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STATIC_VAR_COMPENSATOR__Q, oldQ, Q_EDEFAULT, oldQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STATIC_VAR_COMPENSATOR__Q, oldQ,
+                    Q_EDEFAULT, oldQESet ) );
     }
 
     /**
@@ -417,8 +422,9 @@ public class StaticVarCompensatorImpl extends RegulatingCondEqImpl implements St
         slope = newSlope;
         boolean oldSlopeESet = slopeESet;
         slopeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STATIC_VAR_COMPENSATOR__SLOPE, oldSlope, slope, !oldSlopeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STATIC_VAR_COMPENSATOR__SLOPE, oldSlope,
+                    slope, !oldSlopeESet ) );
     }
 
     /**
@@ -432,8 +438,9 @@ public class StaticVarCompensatorImpl extends RegulatingCondEqImpl implements St
         boolean oldSlopeESet = slopeESet;
         slope = SLOPE_EDEFAULT;
         slopeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STATIC_VAR_COMPENSATOR__SLOPE, oldSlope, SLOPE_EDEFAULT, oldSlopeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STATIC_VAR_COMPENSATOR__SLOPE,
+                    oldSlope, SLOPE_EDEFAULT, oldSlopeESet ) );
     }
 
     /**
@@ -483,9 +490,10 @@ public class StaticVarCompensatorImpl extends RegulatingCondEqImpl implements St
         boolean oldSVCControlModeESet = sVCControlModeESet;
         sVCControlMode = SVC_CONTROL_MODE_EDEFAULT;
         sVCControlModeESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.STATIC_VAR_COMPENSATOR__SVC_CONTROL_MODE,
-                        oldSVCControlMode, SVC_CONTROL_MODE_EDEFAULT, oldSVCControlModeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.STATIC_VAR_COMPENSATOR__SVC_CONTROL_MODE, oldSVCControlMode, SVC_CONTROL_MODE_EDEFAULT,
+                    oldSVCControlModeESet ) );
     }
 
     /**
@@ -519,9 +527,10 @@ public class StaticVarCompensatorImpl extends RegulatingCondEqImpl implements St
         voltageSetPoint = newVoltageSetPoint;
         boolean oldVoltageSetPointESet = voltageSetPointESet;
         voltageSetPointESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.STATIC_VAR_COMPENSATOR__VOLTAGE_SET_POINT,
-                        oldVoltageSetPoint, voltageSetPoint, !oldVoltageSetPointESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.STATIC_VAR_COMPENSATOR__VOLTAGE_SET_POINT, oldVoltageSetPoint, voltageSetPoint,
+                    !oldVoltageSetPointESet ) );
     }
 
     /**
@@ -535,9 +544,10 @@ public class StaticVarCompensatorImpl extends RegulatingCondEqImpl implements St
         boolean oldVoltageSetPointESet = voltageSetPointESet;
         voltageSetPoint = VOLTAGE_SET_POINT_EDEFAULT;
         voltageSetPointESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.STATIC_VAR_COMPENSATOR__VOLTAGE_SET_POINT,
-                        oldVoltageSetPoint, VOLTAGE_SET_POINT_EDEFAULT, oldVoltageSetPointESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.STATIC_VAR_COMPENSATOR__VOLTAGE_SET_POINT, oldVoltageSetPoint,
+                    VOLTAGE_SET_POINT_EDEFAULT, oldVoltageSetPointESet ) );
     }
 
     /**
@@ -667,7 +677,7 @@ public class StaticVarCompensatorImpl extends RegulatingCondEqImpl implements St
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (capacitiveRating: " );
         if( capacitiveRatingESet )
             result.append( capacitiveRating );

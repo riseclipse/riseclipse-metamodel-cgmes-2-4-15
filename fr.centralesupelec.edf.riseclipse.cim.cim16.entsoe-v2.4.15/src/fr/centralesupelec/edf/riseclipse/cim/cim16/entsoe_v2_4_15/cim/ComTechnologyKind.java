@@ -267,8 +267,17 @@ public enum ComTechnologyKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final ComTechnologyKind[] VALUES_ARRAY = new ComTechnologyKind[] { CELLULAR, ETHERNET, HOME_PLUG,
-            PAGER, PHONE, PLC, RF, RF_MESH, ZIGBEE, };
+    private static final ComTechnologyKind[] VALUES_ARRAY = new ComTechnologyKind[] {
+            CELLULAR,
+            ETHERNET,
+            HOME_PLUG,
+            PAGER,
+            PHONE,
+            PLC,
+            RF,
+            RF_MESH,
+            ZIGBEE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Com Technology Kind</b></em>' enumerators.

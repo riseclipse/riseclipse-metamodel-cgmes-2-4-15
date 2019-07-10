@@ -292,8 +292,9 @@ public class CurrentRelayImpl extends ProtectionEquipmentImpl implements Current
         currentLimit1 = newCurrentLimit1;
         boolean oldCurrentLimit1ESet = currentLimit1ESet;
         currentLimit1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURRENT_RELAY__CURRENT_LIMIT1, oldCurrentLimit1, currentLimit1, !oldCurrentLimit1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURRENT_RELAY__CURRENT_LIMIT1,
+                    oldCurrentLimit1, currentLimit1, !oldCurrentLimit1ESet ) );
     }
 
     /**
@@ -343,8 +344,9 @@ public class CurrentRelayImpl extends ProtectionEquipmentImpl implements Current
         currentLimit2 = newCurrentLimit2;
         boolean oldCurrentLimit2ESet = currentLimit2ESet;
         currentLimit2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURRENT_RELAY__CURRENT_LIMIT2, oldCurrentLimit2, currentLimit2, !oldCurrentLimit2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURRENT_RELAY__CURRENT_LIMIT2,
+                    oldCurrentLimit2, currentLimit2, !oldCurrentLimit2ESet ) );
     }
 
     /**
@@ -394,8 +396,9 @@ public class CurrentRelayImpl extends ProtectionEquipmentImpl implements Current
         currentLimit3 = newCurrentLimit3;
         boolean oldCurrentLimit3ESet = currentLimit3ESet;
         currentLimit3ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURRENT_RELAY__CURRENT_LIMIT3, oldCurrentLimit3, currentLimit3, !oldCurrentLimit3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURRENT_RELAY__CURRENT_LIMIT3,
+                    oldCurrentLimit3, currentLimit3, !oldCurrentLimit3ESet ) );
     }
 
     /**
@@ -497,8 +500,9 @@ public class CurrentRelayImpl extends ProtectionEquipmentImpl implements Current
         timeDelay1 = newTimeDelay1;
         boolean oldTimeDelay1ESet = timeDelay1ESet;
         timeDelay1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURRENT_RELAY__TIME_DELAY1, oldTimeDelay1, timeDelay1, !oldTimeDelay1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURRENT_RELAY__TIME_DELAY1,
+                    oldTimeDelay1, timeDelay1, !oldTimeDelay1ESet ) );
     }
 
     /**
@@ -512,8 +516,9 @@ public class CurrentRelayImpl extends ProtectionEquipmentImpl implements Current
         boolean oldTimeDelay1ESet = timeDelay1ESet;
         timeDelay1 = TIME_DELAY1_EDEFAULT;
         timeDelay1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURRENT_RELAY__TIME_DELAY1, oldTimeDelay1, TIME_DELAY1_EDEFAULT, oldTimeDelay1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURRENT_RELAY__TIME_DELAY1,
+                    oldTimeDelay1, TIME_DELAY1_EDEFAULT, oldTimeDelay1ESet ) );
     }
 
     /**
@@ -547,8 +552,9 @@ public class CurrentRelayImpl extends ProtectionEquipmentImpl implements Current
         timeDelay2 = newTimeDelay2;
         boolean oldTimeDelay2ESet = timeDelay2ESet;
         timeDelay2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURRENT_RELAY__TIME_DELAY2, oldTimeDelay2, timeDelay2, !oldTimeDelay2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURRENT_RELAY__TIME_DELAY2,
+                    oldTimeDelay2, timeDelay2, !oldTimeDelay2ESet ) );
     }
 
     /**
@@ -562,8 +568,9 @@ public class CurrentRelayImpl extends ProtectionEquipmentImpl implements Current
         boolean oldTimeDelay2ESet = timeDelay2ESet;
         timeDelay2 = TIME_DELAY2_EDEFAULT;
         timeDelay2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURRENT_RELAY__TIME_DELAY2, oldTimeDelay2, TIME_DELAY2_EDEFAULT, oldTimeDelay2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURRENT_RELAY__TIME_DELAY2,
+                    oldTimeDelay2, TIME_DELAY2_EDEFAULT, oldTimeDelay2ESet ) );
     }
 
     /**
@@ -597,8 +604,9 @@ public class CurrentRelayImpl extends ProtectionEquipmentImpl implements Current
         timeDelay3 = newTimeDelay3;
         boolean oldTimeDelay3ESet = timeDelay3ESet;
         timeDelay3ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURRENT_RELAY__TIME_DELAY3, oldTimeDelay3, timeDelay3, !oldTimeDelay3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURRENT_RELAY__TIME_DELAY3,
+                    oldTimeDelay3, timeDelay3, !oldTimeDelay3ESet ) );
     }
 
     /**
@@ -612,8 +620,9 @@ public class CurrentRelayImpl extends ProtectionEquipmentImpl implements Current
         boolean oldTimeDelay3ESet = timeDelay3ESet;
         timeDelay3 = TIME_DELAY3_EDEFAULT;
         timeDelay3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURRENT_RELAY__TIME_DELAY3, oldTimeDelay3, TIME_DELAY3_EDEFAULT, oldTimeDelay3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURRENT_RELAY__TIME_DELAY3,
+                    oldTimeDelay3, TIME_DELAY3_EDEFAULT, oldTimeDelay3ESet ) );
     }
 
     /**
@@ -753,7 +762,7 @@ public class CurrentRelayImpl extends ProtectionEquipmentImpl implements Current
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (currentLimit1: " );
         if( currentLimit1ESet )
             result.append( currentLimit1 );

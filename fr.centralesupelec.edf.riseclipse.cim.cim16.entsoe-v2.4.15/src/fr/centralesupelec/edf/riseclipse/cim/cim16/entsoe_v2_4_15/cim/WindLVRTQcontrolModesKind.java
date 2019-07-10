@@ -117,8 +117,11 @@ public enum WindLVRTQcontrolModesKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final WindLVRTQcontrolModesKind[] VALUES_ARRAY = new WindLVRTQcontrolModesKind[] { MODE1, MODE2,
-            MODE3, };
+    private static final WindLVRTQcontrolModesKind[] VALUES_ARRAY = new WindLVRTQcontrolModesKind[] {
+            MODE1,
+            MODE2,
+            MODE3,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Wind LVRT Qcontrol Modes Kind</b></em>' enumerators.

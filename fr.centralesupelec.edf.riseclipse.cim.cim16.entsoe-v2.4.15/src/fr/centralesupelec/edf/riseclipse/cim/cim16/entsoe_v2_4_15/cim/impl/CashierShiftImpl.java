@@ -189,8 +189,9 @@ public class CashierShiftImpl extends ShiftImpl implements CashierShift {
         cashFloat = newCashFloat;
         boolean oldCashFloatESet = cashFloatESet;
         cashFloatESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CASHIER_SHIFT__CASH_FLOAT, oldCashFloat, cashFloat, !oldCashFloatESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CASHIER_SHIFT__CASH_FLOAT, oldCashFloat,
+                    cashFloat, !oldCashFloatESet ) );
     }
 
     /**
@@ -204,8 +205,9 @@ public class CashierShiftImpl extends ShiftImpl implements CashierShift {
         boolean oldCashFloatESet = cashFloatESet;
         cashFloat = CASH_FLOAT_EDEFAULT;
         cashFloatESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CASHIER_SHIFT__CASH_FLOAT, oldCashFloat, CASH_FLOAT_EDEFAULT, oldCashFloatESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CASHIER_SHIFT__CASH_FLOAT,
+                    oldCashFloat, CASH_FLOAT_EDEFAULT, oldCashFloatESet ) );
     }
 
     /**
@@ -292,18 +294,21 @@ public class CashierShiftImpl extends ShiftImpl implements CashierShift {
     public void setPointOfSale( PointOfSale newPointOfSale ) {
         if( newPointOfSale != pointOfSale ) {
             NotificationChain msgs = null;
-            if( pointOfSale != null ) msgs = ( ( InternalEObject ) pointOfSale ).eInverseRemove( this,
-                    CimPackage.POINT_OF_SALE__CASHIER_SHIFTS, PointOfSale.class, msgs );
-            if( newPointOfSale != null ) msgs = ( ( InternalEObject ) newPointOfSale ).eInverseAdd( this,
-                    CimPackage.POINT_OF_SALE__CASHIER_SHIFTS, PointOfSale.class, msgs );
+            if( pointOfSale != null )
+                msgs = ( ( InternalEObject ) pointOfSale ).eInverseRemove( this,
+                        CimPackage.POINT_OF_SALE__CASHIER_SHIFTS, PointOfSale.class, msgs );
+            if( newPointOfSale != null )
+                msgs = ( ( InternalEObject ) newPointOfSale ).eInverseAdd( this,
+                        CimPackage.POINT_OF_SALE__CASHIER_SHIFTS, PointOfSale.class, msgs );
             msgs = basicSetPointOfSale( newPointOfSale, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldPointOfSaleESet = pointOfSaleESet;
             pointOfSaleESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CASHIER_SHIFT__POINT_OF_SALE, newPointOfSale, newPointOfSale, !oldPointOfSaleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CASHIER_SHIFT__POINT_OF_SALE,
+                        newPointOfSale, newPointOfSale, !oldPointOfSaleESet ) );
         }
     }
 
@@ -345,8 +350,9 @@ public class CashierShiftImpl extends ShiftImpl implements CashierShift {
         else {
             boolean oldPointOfSaleESet = pointOfSaleESet;
             pointOfSaleESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CASHIER_SHIFT__POINT_OF_SALE, null, null, oldPointOfSaleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CASHIER_SHIFT__POINT_OF_SALE, null,
+                        null, oldPointOfSaleESet ) );
         }
     }
 
@@ -434,18 +440,21 @@ public class CashierShiftImpl extends ShiftImpl implements CashierShift {
     public void setCashier( Cashier newCashier ) {
         if( newCashier != cashier ) {
             NotificationChain msgs = null;
-            if( cashier != null ) msgs = ( ( InternalEObject ) cashier ).eInverseRemove( this,
-                    CimPackage.CASHIER__CASHIER_SHIFTS, Cashier.class, msgs );
-            if( newCashier != null ) msgs = ( ( InternalEObject ) newCashier ).eInverseAdd( this,
-                    CimPackage.CASHIER__CASHIER_SHIFTS, Cashier.class, msgs );
+            if( cashier != null )
+                msgs = ( ( InternalEObject ) cashier ).eInverseRemove( this, CimPackage.CASHIER__CASHIER_SHIFTS,
+                        Cashier.class, msgs );
+            if( newCashier != null )
+                msgs = ( ( InternalEObject ) newCashier ).eInverseAdd( this, CimPackage.CASHIER__CASHIER_SHIFTS,
+                        Cashier.class, msgs );
             msgs = basicSetCashier( newCashier, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCashierESet = cashierESet;
             cashierESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CASHIER_SHIFT__CASHIER, newCashier, newCashier, !oldCashierESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CASHIER_SHIFT__CASHIER, newCashier,
+                        newCashier, !oldCashierESet ) );
         }
     }
 
@@ -487,8 +496,9 @@ public class CashierShiftImpl extends ShiftImpl implements CashierShift {
         else {
             boolean oldCashierESet = cashierESet;
             cashierESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CASHIER_SHIFT__CASHIER, null, null, oldCashierESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CASHIER_SHIFT__CASHIER, null, null,
+                        oldCashierESet ) );
         }
     }
 
@@ -512,15 +522,17 @@ public class CashierShiftImpl extends ShiftImpl implements CashierShift {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CASHIER_SHIFT__POINT_OF_SALE:
-            if( pointOfSale != null ) msgs = ( ( InternalEObject ) pointOfSale ).eInverseRemove( this,
-                    CimPackage.POINT_OF_SALE__CASHIER_SHIFTS, PointOfSale.class, msgs );
+            if( pointOfSale != null )
+                msgs = ( ( InternalEObject ) pointOfSale ).eInverseRemove( this,
+                        CimPackage.POINT_OF_SALE__CASHIER_SHIFTS, PointOfSale.class, msgs );
             return basicSetPointOfSale( ( PointOfSale ) otherEnd, msgs );
         case CimPackage.CASHIER_SHIFT__RECEIPTS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getReceipts() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.CASHIER_SHIFT__CASHIER:
-            if( cashier != null ) msgs = ( ( InternalEObject ) cashier ).eInverseRemove( this,
-                    CimPackage.CASHIER__CASHIER_SHIFTS, Cashier.class, msgs );
+            if( cashier != null )
+                msgs = ( ( InternalEObject ) cashier ).eInverseRemove( this, CimPackage.CASHIER__CASHIER_SHIFTS,
+                        Cashier.class, msgs );
             return basicSetCashier( ( Cashier ) otherEnd, msgs );
         case CimPackage.CASHIER_SHIFT__TRANSACTIONS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTransactions() ).basicAdd( otherEnd,
@@ -659,7 +671,7 @@ public class CashierShiftImpl extends ShiftImpl implements CashierShift {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (cashFloat: " );
         if( cashFloatESet )
             result.append( cashFloat );

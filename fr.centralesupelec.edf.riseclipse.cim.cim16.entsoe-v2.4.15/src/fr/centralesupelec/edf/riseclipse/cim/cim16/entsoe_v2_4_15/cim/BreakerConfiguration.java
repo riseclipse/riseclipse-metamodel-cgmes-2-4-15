@@ -142,8 +142,12 @@ public enum BreakerConfiguration implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final BreakerConfiguration[] VALUES_ARRAY = new BreakerConfiguration[] { SINGLE_BREAKER,
-            BREAKER_AND_AHALF, DOUBLE_BREAKER, NO_BREAKER, };
+    private static final BreakerConfiguration[] VALUES_ARRAY = new BreakerConfiguration[] {
+            SINGLE_BREAKER,
+            BREAKER_AND_AHALF,
+            DOUBLE_BREAKER,
+            NO_BREAKER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Breaker Configuration</b></em>' enumerators.

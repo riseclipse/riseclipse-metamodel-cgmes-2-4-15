@@ -112,8 +112,9 @@ public class DynamicsFunctionBlockImpl extends IdentifiedObjectImpl implements D
         enabled = newEnabled;
         boolean oldEnabledESet = enabledESet;
         enabledESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DYNAMICS_FUNCTION_BLOCK__ENABLED, oldEnabled, enabled, !oldEnabledESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DYNAMICS_FUNCTION_BLOCK__ENABLED,
+                    oldEnabled, enabled, !oldEnabledESet ) );
     }
 
     /**
@@ -127,8 +128,9 @@ public class DynamicsFunctionBlockImpl extends IdentifiedObjectImpl implements D
         boolean oldEnabledESet = enabledESet;
         enabled = ENABLED_EDEFAULT;
         enabledESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DYNAMICS_FUNCTION_BLOCK__ENABLED, oldEnabled, ENABLED_EDEFAULT, oldEnabledESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DYNAMICS_FUNCTION_BLOCK__ENABLED,
+                    oldEnabled, ENABLED_EDEFAULT, oldEnabledESet ) );
     }
 
     /**
@@ -208,7 +210,7 @@ public class DynamicsFunctionBlockImpl extends IdentifiedObjectImpl implements D
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (enabled: " );
         if( enabledESet )
             result.append( enabled );

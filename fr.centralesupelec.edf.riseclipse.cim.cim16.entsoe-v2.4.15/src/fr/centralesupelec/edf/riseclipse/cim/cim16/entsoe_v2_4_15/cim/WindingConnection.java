@@ -217,7 +217,15 @@ public enum WindingConnection implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final WindingConnection[] VALUES_ARRAY = new WindingConnection[] { D, Y, Z, YN, ZN, A, I, };
+    private static final WindingConnection[] VALUES_ARRAY = new WindingConnection[] {
+            D,
+            Y,
+            Z,
+            YN,
+            ZN,
+            A,
+            I,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Winding Connection</b></em>' enumerators.
