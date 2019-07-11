@@ -187,9 +187,10 @@ public class ConsumptionTariffIntervalImpl extends CimObjectWithIDImpl implement
         sequenceNumber = newSequenceNumber;
         boolean oldSequenceNumberESet = sequenceNumberESet;
         sequenceNumberESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.CONSUMPTION_TARIFF_INTERVAL__SEQUENCE_NUMBER,
-                        oldSequenceNumber, sequenceNumber, !oldSequenceNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONSUMPTION_TARIFF_INTERVAL__SEQUENCE_NUMBER, oldSequenceNumber, sequenceNumber,
+                    !oldSequenceNumberESet ) );
     }
 
     /**
@@ -203,9 +204,10 @@ public class ConsumptionTariffIntervalImpl extends CimObjectWithIDImpl implement
         boolean oldSequenceNumberESet = sequenceNumberESet;
         sequenceNumber = SEQUENCE_NUMBER_EDEFAULT;
         sequenceNumberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONSUMPTION_TARIFF_INTERVAL__SEQUENCE_NUMBER, oldSequenceNumber, SEQUENCE_NUMBER_EDEFAULT,
-                oldSequenceNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONSUMPTION_TARIFF_INTERVAL__SEQUENCE_NUMBER, oldSequenceNumber,
+                    SEQUENCE_NUMBER_EDEFAULT, oldSequenceNumberESet ) );
     }
 
     /**
@@ -239,8 +241,9 @@ public class ConsumptionTariffIntervalImpl extends CimObjectWithIDImpl implement
         startValue = newStartValue;
         boolean oldStartValueESet = startValueESet;
         startValueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONSUMPTION_TARIFF_INTERVAL__START_VALUE, oldStartValue, startValue, !oldStartValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONSUMPTION_TARIFF_INTERVAL__START_VALUE,
+                    oldStartValue, startValue, !oldStartValueESet ) );
     }
 
     /**
@@ -254,9 +257,10 @@ public class ConsumptionTariffIntervalImpl extends CimObjectWithIDImpl implement
         boolean oldStartValueESet = startValueESet;
         startValue = START_VALUE_EDEFAULT;
         startValueESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.CONSUMPTION_TARIFF_INTERVAL__START_VALUE,
-                        oldStartValue, START_VALUE_EDEFAULT, oldStartValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONSUMPTION_TARIFF_INTERVAL__START_VALUE, oldStartValue, START_VALUE_EDEFAULT,
+                    oldStartValueESet ) );
     }
 
     /**
@@ -524,7 +528,7 @@ public class ConsumptionTariffIntervalImpl extends CimObjectWithIDImpl implement
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (sequenceNumber: " );
         if( sequenceNumberESet )
             result.append( sequenceNumber );

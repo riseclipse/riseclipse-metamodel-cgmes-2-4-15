@@ -236,8 +236,9 @@ public class WireSpacingInfoImpl extends AssetInfoImpl implements WireSpacingInf
         isCable = newIsCable;
         boolean oldIsCableESet = isCableESet;
         isCableESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIRE_SPACING_INFO__IS_CABLE, oldIsCable, isCable, !oldIsCableESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIRE_SPACING_INFO__IS_CABLE, oldIsCable,
+                    isCable, !oldIsCableESet ) );
     }
 
     /**
@@ -251,8 +252,9 @@ public class WireSpacingInfoImpl extends AssetInfoImpl implements WireSpacingInf
         boolean oldIsCableESet = isCableESet;
         isCable = IS_CABLE_EDEFAULT;
         isCableESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIRE_SPACING_INFO__IS_CABLE, oldIsCable, IS_CABLE_EDEFAULT, oldIsCableESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIRE_SPACING_INFO__IS_CABLE,
+                    oldIsCable, IS_CABLE_EDEFAULT, oldIsCableESet ) );
     }
 
     /**
@@ -390,8 +392,9 @@ public class WireSpacingInfoImpl extends AssetInfoImpl implements WireSpacingInf
         usage = newUsage == null ? USAGE_EDEFAULT : newUsage;
         boolean oldUsageESet = usageESet;
         usageESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIRE_SPACING_INFO__USAGE, oldUsage, usage, !oldUsageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIRE_SPACING_INFO__USAGE, oldUsage,
+                    usage, !oldUsageESet ) );
     }
 
     /**
@@ -405,8 +408,9 @@ public class WireSpacingInfoImpl extends AssetInfoImpl implements WireSpacingInf
         boolean oldUsageESet = usageESet;
         usage = USAGE_EDEFAULT;
         usageESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIRE_SPACING_INFO__USAGE, oldUsage, USAGE_EDEFAULT, oldUsageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIRE_SPACING_INFO__USAGE, oldUsage,
+                    USAGE_EDEFAULT, oldUsageESet ) );
     }
 
     /**
@@ -643,7 +647,7 @@ public class WireSpacingInfoImpl extends AssetInfoImpl implements WireSpacingInf
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (isCable: " );
         if( isCableESet )
             result.append( isCable );

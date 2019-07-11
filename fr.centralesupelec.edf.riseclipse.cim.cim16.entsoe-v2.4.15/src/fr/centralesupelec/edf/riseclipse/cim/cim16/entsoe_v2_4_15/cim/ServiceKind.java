@@ -317,8 +317,19 @@ public enum ServiceKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final ServiceKind[] VALUES_ARRAY = new ServiceKind[] { ELECTRICITY, GAS, WATER, TIME, HEAT, REFUSE,
-            SEWERAGE, RATES, TV_LICENCE, INTERNET, OTHER, };
+    private static final ServiceKind[] VALUES_ARRAY = new ServiceKind[] {
+            ELECTRICITY,
+            GAS,
+            WATER,
+            TIME,
+            HEAT,
+            REFUSE,
+            SEWERAGE,
+            RATES,
+            TV_LICENCE,
+            INTERNET,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Service Kind</b></em>' enumerators.

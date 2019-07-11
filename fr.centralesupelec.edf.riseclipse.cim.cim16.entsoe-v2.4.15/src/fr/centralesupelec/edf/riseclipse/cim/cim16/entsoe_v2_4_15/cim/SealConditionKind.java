@@ -167,8 +167,13 @@ public enum SealConditionKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final SealConditionKind[] VALUES_ARRAY = new SealConditionKind[] { LOCKED, OPEN, BROKEN, MISSING,
-            OTHER, };
+    private static final SealConditionKind[] VALUES_ARRAY = new SealConditionKind[] {
+            LOCKED,
+            OPEN,
+            BROKEN,
+            MISSING,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Seal Condition Kind</b></em>' enumerators.

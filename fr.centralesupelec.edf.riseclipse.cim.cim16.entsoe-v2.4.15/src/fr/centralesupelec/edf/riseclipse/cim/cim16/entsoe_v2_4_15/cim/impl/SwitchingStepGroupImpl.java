@@ -496,10 +496,12 @@ public class SwitchingStepGroupImpl extends DocumentImpl implements SwitchingSte
     public void setSwitchingPlan( SwitchingPlan newSwitchingPlan ) {
         if( newSwitchingPlan != switchingPlan ) {
             NotificationChain msgs = null;
-            if( switchingPlan != null ) msgs = ( ( InternalEObject ) switchingPlan ).eInverseRemove( this,
-                    CimPackage.SWITCHING_PLAN__SWITCHING_STEP_GROUPS, SwitchingPlan.class, msgs );
-            if( newSwitchingPlan != null ) msgs = ( ( InternalEObject ) newSwitchingPlan ).eInverseAdd( this,
-                    CimPackage.SWITCHING_PLAN__SWITCHING_STEP_GROUPS, SwitchingPlan.class, msgs );
+            if( switchingPlan != null )
+                msgs = ( ( InternalEObject ) switchingPlan ).eInverseRemove( this,
+                        CimPackage.SWITCHING_PLAN__SWITCHING_STEP_GROUPS, SwitchingPlan.class, msgs );
+            if( newSwitchingPlan != null )
+                msgs = ( ( InternalEObject ) newSwitchingPlan ).eInverseAdd( this,
+                        CimPackage.SWITCHING_PLAN__SWITCHING_STEP_GROUPS, SwitchingPlan.class, msgs );
             msgs = basicSetSwitchingPlan( newSwitchingPlan, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -550,8 +552,9 @@ public class SwitchingStepGroupImpl extends DocumentImpl implements SwitchingSte
         else {
             boolean oldSwitchingPlanESet = switchingPlanESet;
             switchingPlanESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SWITCHING_STEP_GROUP__SWITCHING_PLAN, null, null, oldSwitchingPlanESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.SWITCHING_STEP_GROUP__SWITCHING_PLAN, null, null, oldSwitchingPlanESet ) );
         }
     }
 
@@ -764,8 +767,9 @@ public class SwitchingStepGroupImpl extends DocumentImpl implements SwitchingSte
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getGenericActions() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.SWITCHING_STEP_GROUP__SWITCHING_PLAN:
-            if( switchingPlan != null ) msgs = ( ( InternalEObject ) switchingPlan ).eInverseRemove( this,
-                    CimPackage.SWITCHING_PLAN__SWITCHING_STEP_GROUPS, SwitchingPlan.class, msgs );
+            if( switchingPlan != null )
+                msgs = ( ( InternalEObject ) switchingPlan ).eInverseRemove( this,
+                        CimPackage.SWITCHING_PLAN__SWITCHING_STEP_GROUPS, SwitchingPlan.class, msgs );
             return basicSetSwitchingPlan( ( SwitchingPlan ) otherEnd, msgs );
         case CimPackage.SWITCHING_STEP_GROUP__JUMPER_ACTIONS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getJumperActions() )
@@ -983,7 +987,7 @@ public class SwitchingStepGroupImpl extends DocumentImpl implements SwitchingSte
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (isFreeSequence: " );
         if( isFreeSequenceESet )
             result.append( isFreeSequence );

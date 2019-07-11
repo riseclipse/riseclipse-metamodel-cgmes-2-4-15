@@ -412,8 +412,9 @@ public class ExcBBCImpl extends ExcitationSystemDynamicsImpl implements ExcBBC {
         efdmax = newEfdmax;
         boolean oldEfdmaxESet = efdmaxESet;
         efdmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_BBC__EFDMAX, oldEfdmax, efdmax, !oldEfdmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_BBC__EFDMAX, oldEfdmax, efdmax,
+                    !oldEfdmaxESet ) );
     }
 
     /**
@@ -427,8 +428,9 @@ public class ExcBBCImpl extends ExcitationSystemDynamicsImpl implements ExcBBC {
         boolean oldEfdmaxESet = efdmaxESet;
         efdmax = EFDMAX_EDEFAULT;
         efdmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_BBC__EFDMAX, oldEfdmax, EFDMAX_EDEFAULT, oldEfdmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_BBC__EFDMAX, oldEfdmax,
+                    EFDMAX_EDEFAULT, oldEfdmaxESet ) );
     }
 
     /**
@@ -462,8 +464,9 @@ public class ExcBBCImpl extends ExcitationSystemDynamicsImpl implements ExcBBC {
         efdmin = newEfdmin;
         boolean oldEfdminESet = efdminESet;
         efdminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_BBC__EFDMIN, oldEfdmin, efdmin, !oldEfdminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_BBC__EFDMIN, oldEfdmin, efdmin,
+                    !oldEfdminESet ) );
     }
 
     /**
@@ -477,8 +480,9 @@ public class ExcBBCImpl extends ExcitationSystemDynamicsImpl implements ExcBBC {
         boolean oldEfdminESet = efdminESet;
         efdmin = EFDMIN_EDEFAULT;
         efdminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_BBC__EFDMIN, oldEfdmin, EFDMIN_EDEFAULT, oldEfdminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_BBC__EFDMIN, oldEfdmin,
+                    EFDMIN_EDEFAULT, oldEfdminESet ) );
     }
 
     /**
@@ -527,8 +531,9 @@ public class ExcBBCImpl extends ExcitationSystemDynamicsImpl implements ExcBBC {
         boolean oldKESet = kESet;
         k = K_EDEFAULT;
         kESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_BBC__K, oldK, K_EDEFAULT, oldKESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_BBC__K, oldK, K_EDEFAULT,
+                    oldKESet ) );
     }
 
     /**
@@ -562,8 +567,9 @@ public class ExcBBCImpl extends ExcitationSystemDynamicsImpl implements ExcBBC {
         switch_ = newSwitch;
         boolean oldSwitchESet = switchESet;
         switchESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_BBC__SWITCH, oldSwitch, switch_, !oldSwitchESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_BBC__SWITCH, oldSwitch, switch_,
+                    !oldSwitchESet ) );
     }
 
     /**
@@ -577,8 +583,9 @@ public class ExcBBCImpl extends ExcitationSystemDynamicsImpl implements ExcBBC {
         boolean oldSwitchESet = switchESet;
         switch_ = SWITCH_EDEFAULT;
         switchESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_BBC__SWITCH, oldSwitch, SWITCH_EDEFAULT, oldSwitchESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_BBC__SWITCH, oldSwitch,
+                    SWITCH_EDEFAULT, oldSwitchESet ) );
     }
 
     /**
@@ -627,8 +634,9 @@ public class ExcBBCImpl extends ExcitationSystemDynamicsImpl implements ExcBBC {
         boolean oldT1ESet = t1ESet;
         t1 = T1_EDEFAULT;
         t1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_BBC__T1,
-                oldT1, T1_EDEFAULT, oldT1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_BBC__T1, oldT1, T1_EDEFAULT,
+                    oldT1ESet ) );
     }
 
     /**
@@ -677,8 +685,9 @@ public class ExcBBCImpl extends ExcitationSystemDynamicsImpl implements ExcBBC {
         boolean oldT2ESet = t2ESet;
         t2 = T2_EDEFAULT;
         t2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_BBC__T2,
-                oldT2, T2_EDEFAULT, oldT2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_BBC__T2, oldT2, T2_EDEFAULT,
+                    oldT2ESet ) );
     }
 
     /**
@@ -727,8 +736,9 @@ public class ExcBBCImpl extends ExcitationSystemDynamicsImpl implements ExcBBC {
         boolean oldT3ESet = t3ESet;
         t3 = T3_EDEFAULT;
         t3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_BBC__T3,
-                oldT3, T3_EDEFAULT, oldT3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_BBC__T3, oldT3, T3_EDEFAULT,
+                    oldT3ESet ) );
     }
 
     /**
@@ -777,8 +787,9 @@ public class ExcBBCImpl extends ExcitationSystemDynamicsImpl implements ExcBBC {
         boolean oldT4ESet = t4ESet;
         t4 = T4_EDEFAULT;
         t4ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_BBC__T4,
-                oldT4, T4_EDEFAULT, oldT4ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_BBC__T4, oldT4, T4_EDEFAULT,
+                    oldT4ESet ) );
     }
 
     /**
@@ -812,8 +823,9 @@ public class ExcBBCImpl extends ExcitationSystemDynamicsImpl implements ExcBBC {
         vrmax = newVrmax;
         boolean oldVrmaxESet = vrmaxESet;
         vrmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_BBC__VRMAX,
-                oldVrmax, vrmax, !oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_BBC__VRMAX, oldVrmax, vrmax,
+                    !oldVrmaxESet ) );
     }
 
     /**
@@ -827,8 +839,9 @@ public class ExcBBCImpl extends ExcitationSystemDynamicsImpl implements ExcBBC {
         boolean oldVrmaxESet = vrmaxESet;
         vrmax = VRMAX_EDEFAULT;
         vrmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_BBC__VRMAX, oldVrmax, VRMAX_EDEFAULT, oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_BBC__VRMAX, oldVrmax,
+                    VRMAX_EDEFAULT, oldVrmaxESet ) );
     }
 
     /**
@@ -862,8 +875,9 @@ public class ExcBBCImpl extends ExcitationSystemDynamicsImpl implements ExcBBC {
         vrmin = newVrmin;
         boolean oldVrminESet = vrminESet;
         vrminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_BBC__VRMIN,
-                oldVrmin, vrmin, !oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_BBC__VRMIN, oldVrmin, vrmin,
+                    !oldVrminESet ) );
     }
 
     /**
@@ -877,8 +891,9 @@ public class ExcBBCImpl extends ExcitationSystemDynamicsImpl implements ExcBBC {
         boolean oldVrminESet = vrminESet;
         vrmin = VRMIN_EDEFAULT;
         vrminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_BBC__VRMIN, oldVrmin, VRMIN_EDEFAULT, oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_BBC__VRMIN, oldVrmin,
+                    VRMIN_EDEFAULT, oldVrminESet ) );
     }
 
     /**
@@ -927,8 +942,9 @@ public class ExcBBCImpl extends ExcitationSystemDynamicsImpl implements ExcBBC {
         boolean oldXeESet = xeESet;
         xe = XE_EDEFAULT;
         xeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_BBC__XE,
-                oldXe, XE_EDEFAULT, oldXeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_BBC__XE, oldXe, XE_EDEFAULT,
+                    oldXeESet ) );
     }
 
     /**
@@ -1108,7 +1124,7 @@ public class ExcBBCImpl extends ExcitationSystemDynamicsImpl implements ExcBBC {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (efdmax: " );
         if( efdmaxESet )
             result.append( efdmax );

@@ -93,7 +93,9 @@ public enum GenericNonLinearLoadModelKind implements Enumerator {
      * @generated
      */
     private static final GenericNonLinearLoadModelKind[] VALUES_ARRAY = new GenericNonLinearLoadModelKind[] {
-            EXPONENTIAL_RECOVERY, LOAD_ADAPTIVE, };
+            EXPONENTIAL_RECOVERY,
+            LOAD_ADAPTIVE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Generic Non Linear Load Model Kind</b></em>' enumerators.

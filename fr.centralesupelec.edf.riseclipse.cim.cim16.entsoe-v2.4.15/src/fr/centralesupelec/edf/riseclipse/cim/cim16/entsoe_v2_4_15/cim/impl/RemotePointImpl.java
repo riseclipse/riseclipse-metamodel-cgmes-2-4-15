@@ -124,18 +124,21 @@ public class RemotePointImpl extends IdentifiedObjectImpl implements RemotePoint
     public void setRemoteUnit( RemoteUnit newRemoteUnit ) {
         if( newRemoteUnit != remoteUnit ) {
             NotificationChain msgs = null;
-            if( remoteUnit != null ) msgs = ( ( InternalEObject ) remoteUnit ).eInverseRemove( this,
-                    CimPackage.REMOTE_UNIT__REMOTE_POINTS, RemoteUnit.class, msgs );
-            if( newRemoteUnit != null ) msgs = ( ( InternalEObject ) newRemoteUnit ).eInverseAdd( this,
-                    CimPackage.REMOTE_UNIT__REMOTE_POINTS, RemoteUnit.class, msgs );
+            if( remoteUnit != null )
+                msgs = ( ( InternalEObject ) remoteUnit ).eInverseRemove( this, CimPackage.REMOTE_UNIT__REMOTE_POINTS,
+                        RemoteUnit.class, msgs );
+            if( newRemoteUnit != null )
+                msgs = ( ( InternalEObject ) newRemoteUnit ).eInverseAdd( this, CimPackage.REMOTE_UNIT__REMOTE_POINTS,
+                        RemoteUnit.class, msgs );
             msgs = basicSetRemoteUnit( newRemoteUnit, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldRemoteUnitESet = remoteUnitESet;
             remoteUnitESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.REMOTE_POINT__REMOTE_UNIT, newRemoteUnit, newRemoteUnit, !oldRemoteUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REMOTE_POINT__REMOTE_UNIT,
+                        newRemoteUnit, newRemoteUnit, !oldRemoteUnitESet ) );
         }
     }
 
@@ -177,8 +180,9 @@ public class RemotePointImpl extends IdentifiedObjectImpl implements RemotePoint
         else {
             boolean oldRemoteUnitESet = remoteUnitESet;
             remoteUnitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REMOTE_POINT__REMOTE_UNIT, null, null, oldRemoteUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.REMOTE_POINT__REMOTE_UNIT, null,
+                        null, oldRemoteUnitESet ) );
         }
     }
 
@@ -201,8 +205,9 @@ public class RemotePointImpl extends IdentifiedObjectImpl implements RemotePoint
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.REMOTE_POINT__REMOTE_UNIT:
-            if( remoteUnit != null ) msgs = ( ( InternalEObject ) remoteUnit ).eInverseRemove( this,
-                    CimPackage.REMOTE_UNIT__REMOTE_POINTS, RemoteUnit.class, msgs );
+            if( remoteUnit != null )
+                msgs = ( ( InternalEObject ) remoteUnit ).eInverseRemove( this, CimPackage.REMOTE_UNIT__REMOTE_POINTS,
+                        RemoteUnit.class, msgs );
             return basicSetRemoteUnit( ( RemoteUnit ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

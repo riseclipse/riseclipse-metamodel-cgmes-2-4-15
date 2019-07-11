@@ -196,9 +196,10 @@ public class ShuntCompensatorPhaseImpl extends PowerSystemResourceImpl implement
         maximumSections = newMaximumSections;
         boolean oldMaximumSectionsESet = maximumSectionsESet;
         maximumSectionsESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.SHUNT_COMPENSATOR_PHASE__MAXIMUM_SECTIONS,
-                        oldMaximumSections, maximumSections, !oldMaximumSectionsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SHUNT_COMPENSATOR_PHASE__MAXIMUM_SECTIONS, oldMaximumSections, maximumSections,
+                    !oldMaximumSectionsESet ) );
     }
 
     /**
@@ -212,9 +213,10 @@ public class ShuntCompensatorPhaseImpl extends PowerSystemResourceImpl implement
         boolean oldMaximumSectionsESet = maximumSectionsESet;
         maximumSections = MAXIMUM_SECTIONS_EDEFAULT;
         maximumSectionsESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.SHUNT_COMPENSATOR_PHASE__MAXIMUM_SECTIONS,
-                        oldMaximumSections, MAXIMUM_SECTIONS_EDEFAULT, oldMaximumSectionsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SHUNT_COMPENSATOR_PHASE__MAXIMUM_SECTIONS, oldMaximumSections, MAXIMUM_SECTIONS_EDEFAULT,
+                    oldMaximumSectionsESet ) );
     }
 
     /**
@@ -264,9 +266,10 @@ public class ShuntCompensatorPhaseImpl extends PowerSystemResourceImpl implement
         boolean oldNormalSectionsESet = normalSectionsESet;
         normalSections = NORMAL_SECTIONS_EDEFAULT;
         normalSectionsESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.SHUNT_COMPENSATOR_PHASE__NORMAL_SECTIONS,
-                        oldNormalSections, NORMAL_SECTIONS_EDEFAULT, oldNormalSectionsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SHUNT_COMPENSATOR_PHASE__NORMAL_SECTIONS, oldNormalSections, NORMAL_SECTIONS_EDEFAULT,
+                    oldNormalSectionsESet ) );
     }
 
     /**
@@ -300,8 +303,9 @@ public class ShuntCompensatorPhaseImpl extends PowerSystemResourceImpl implement
         phase = newPhase == null ? PHASE_EDEFAULT : newPhase;
         boolean oldPhaseESet = phaseESet;
         phaseESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SHUNT_COMPENSATOR_PHASE__PHASE, oldPhase, phase, !oldPhaseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SHUNT_COMPENSATOR_PHASE__PHASE, oldPhase,
+                    phase, !oldPhaseESet ) );
     }
 
     /**
@@ -315,8 +319,9 @@ public class ShuntCompensatorPhaseImpl extends PowerSystemResourceImpl implement
         boolean oldPhaseESet = phaseESet;
         phase = PHASE_EDEFAULT;
         phaseESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SHUNT_COMPENSATOR_PHASE__PHASE, oldPhase, PHASE_EDEFAULT, oldPhaseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SHUNT_COMPENSATOR_PHASE__PHASE,
+                    oldPhase, PHASE_EDEFAULT, oldPhaseESet ) );
     }
 
     /**
@@ -370,19 +375,22 @@ public class ShuntCompensatorPhaseImpl extends PowerSystemResourceImpl implement
     public void setShuntCompensator( ShuntCompensator newShuntCompensator ) {
         if( newShuntCompensator != shuntCompensator ) {
             NotificationChain msgs = null;
-            if( shuntCompensator != null ) msgs = ( ( InternalEObject ) shuntCompensator ).eInverseRemove( this,
-                    CimPackage.SHUNT_COMPENSATOR__SHUNT_COMPENSATOR_PHASE, ShuntCompensator.class, msgs );
-            if( newShuntCompensator != null ) msgs = ( ( InternalEObject ) newShuntCompensator ).eInverseAdd( this,
-                    CimPackage.SHUNT_COMPENSATOR__SHUNT_COMPENSATOR_PHASE, ShuntCompensator.class, msgs );
+            if( shuntCompensator != null )
+                msgs = ( ( InternalEObject ) shuntCompensator ).eInverseRemove( this,
+                        CimPackage.SHUNT_COMPENSATOR__SHUNT_COMPENSATOR_PHASE, ShuntCompensator.class, msgs );
+            if( newShuntCompensator != null )
+                msgs = ( ( InternalEObject ) newShuntCompensator ).eInverseAdd( this,
+                        CimPackage.SHUNT_COMPENSATOR__SHUNT_COMPENSATOR_PHASE, ShuntCompensator.class, msgs );
             msgs = basicSetShuntCompensator( newShuntCompensator, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldShuntCompensatorESet = shuntCompensatorESet;
             shuntCompensatorESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SHUNT_COMPENSATOR_PHASE__SHUNT_COMPENSATOR, newShuntCompensator, newShuntCompensator,
-                    !oldShuntCompensatorESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.SHUNT_COMPENSATOR_PHASE__SHUNT_COMPENSATOR, newShuntCompensator, newShuntCompensator,
+                        !oldShuntCompensatorESet ) );
         }
     }
 
@@ -425,8 +433,9 @@ public class ShuntCompensatorPhaseImpl extends PowerSystemResourceImpl implement
         else {
             boolean oldShuntCompensatorESet = shuntCompensatorESet;
             shuntCompensatorESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SHUNT_COMPENSATOR_PHASE__SHUNT_COMPENSATOR, null, null, oldShuntCompensatorESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.SHUNT_COMPENSATOR_PHASE__SHUNT_COMPENSATOR, null, null, oldShuntCompensatorESet ) );
         }
     }
 
@@ -449,8 +458,9 @@ public class ShuntCompensatorPhaseImpl extends PowerSystemResourceImpl implement
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.SHUNT_COMPENSATOR_PHASE__SHUNT_COMPENSATOR:
-            if( shuntCompensator != null ) msgs = ( ( InternalEObject ) shuntCompensator ).eInverseRemove( this,
-                    CimPackage.SHUNT_COMPENSATOR__SHUNT_COMPENSATOR_PHASE, ShuntCompensator.class, msgs );
+            if( shuntCompensator != null )
+                msgs = ( ( InternalEObject ) shuntCompensator ).eInverseRemove( this,
+                        CimPackage.SHUNT_COMPENSATOR__SHUNT_COMPENSATOR_PHASE, ShuntCompensator.class, msgs );
             return basicSetShuntCompensator( ( ShuntCompensator ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -567,7 +577,7 @@ public class ShuntCompensatorPhaseImpl extends PowerSystemResourceImpl implement
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (maximumSections: " );
         if( maximumSectionsESet )
             result.append( maximumSections );

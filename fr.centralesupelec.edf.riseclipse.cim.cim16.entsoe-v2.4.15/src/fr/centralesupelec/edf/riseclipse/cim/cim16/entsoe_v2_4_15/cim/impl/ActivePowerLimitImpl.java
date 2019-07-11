@@ -112,8 +112,9 @@ public class ActivePowerLimitImpl extends OperationalLimitImpl implements Active
         value = newValue;
         boolean oldValueESet = valueESet;
         valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACTIVE_POWER_LIMIT__VALUE, oldValue, value, !oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACTIVE_POWER_LIMIT__VALUE, oldValue,
+                    value, !oldValueESet ) );
     }
 
     /**
@@ -127,8 +128,9 @@ public class ActivePowerLimitImpl extends OperationalLimitImpl implements Active
         boolean oldValueESet = valueESet;
         value = VALUE_EDEFAULT;
         valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACTIVE_POWER_LIMIT__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACTIVE_POWER_LIMIT__VALUE, oldValue,
+                    VALUE_EDEFAULT, oldValueESet ) );
     }
 
     /**
@@ -208,7 +210,7 @@ public class ActivePowerLimitImpl extends OperationalLimitImpl implements Active
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (value: " );
         if( valueESet )
             result.append( value );

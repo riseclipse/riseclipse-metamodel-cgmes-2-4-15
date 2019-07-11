@@ -156,8 +156,9 @@ public class AccumulatorValueImpl extends MeasurementValueImpl implements Accumu
         value = newValue;
         boolean oldValueESet = valueESet;
         valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACCUMULATOR_VALUE__VALUE, oldValue, value, !oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACCUMULATOR_VALUE__VALUE, oldValue,
+                    value, !oldValueESet ) );
     }
 
     /**
@@ -171,8 +172,9 @@ public class AccumulatorValueImpl extends MeasurementValueImpl implements Accumu
         boolean oldValueESet = valueESet;
         value = VALUE_EDEFAULT;
         valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACCUMULATOR_VALUE__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACCUMULATOR_VALUE__VALUE, oldValue,
+                    VALUE_EDEFAULT, oldValueESet ) );
     }
 
     /**
@@ -196,8 +198,9 @@ public class AccumulatorValueImpl extends MeasurementValueImpl implements Accumu
             InternalEObject oldAccumulatorReset = ( InternalEObject ) accumulatorReset;
             accumulatorReset = ( AccumulatorReset ) eResolveProxy( oldAccumulatorReset );
             if( accumulatorReset != oldAccumulatorReset ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.ACCUMULATOR_VALUE__ACCUMULATOR_RESET, oldAccumulatorReset, accumulatorReset ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.ACCUMULATOR_VALUE__ACCUMULATOR_RESET, oldAccumulatorReset, accumulatorReset ) );
             }
         }
         return accumulatorReset;
@@ -243,10 +246,12 @@ public class AccumulatorValueImpl extends MeasurementValueImpl implements Accumu
     public void setAccumulatorReset( AccumulatorReset newAccumulatorReset ) {
         if( newAccumulatorReset != accumulatorReset ) {
             NotificationChain msgs = null;
-            if( accumulatorReset != null ) msgs = ( ( InternalEObject ) accumulatorReset ).eInverseRemove( this,
-                    CimPackage.ACCUMULATOR_RESET__ACCUMULATOR_VALUE, AccumulatorReset.class, msgs );
-            if( newAccumulatorReset != null ) msgs = ( ( InternalEObject ) newAccumulatorReset ).eInverseAdd( this,
-                    CimPackage.ACCUMULATOR_RESET__ACCUMULATOR_VALUE, AccumulatorReset.class, msgs );
+            if( accumulatorReset != null )
+                msgs = ( ( InternalEObject ) accumulatorReset ).eInverseRemove( this,
+                        CimPackage.ACCUMULATOR_RESET__ACCUMULATOR_VALUE, AccumulatorReset.class, msgs );
+            if( newAccumulatorReset != null )
+                msgs = ( ( InternalEObject ) newAccumulatorReset ).eInverseAdd( this,
+                        CimPackage.ACCUMULATOR_RESET__ACCUMULATOR_VALUE, AccumulatorReset.class, msgs );
             msgs = basicSetAccumulatorReset( newAccumulatorReset, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -298,8 +303,9 @@ public class AccumulatorValueImpl extends MeasurementValueImpl implements Accumu
         else {
             boolean oldAccumulatorResetESet = accumulatorResetESet;
             accumulatorResetESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ACCUMULATOR_VALUE__ACCUMULATOR_RESET, null, null, oldAccumulatorResetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.ACCUMULATOR_VALUE__ACCUMULATOR_RESET, null, null, oldAccumulatorResetESet ) );
         }
     }
 
@@ -353,18 +359,21 @@ public class AccumulatorValueImpl extends MeasurementValueImpl implements Accumu
     public void setAccumulator( Accumulator newAccumulator ) {
         if( newAccumulator != accumulator ) {
             NotificationChain msgs = null;
-            if( accumulator != null ) msgs = ( ( InternalEObject ) accumulator ).eInverseRemove( this,
-                    CimPackage.ACCUMULATOR__ACCUMULATOR_VALUES, Accumulator.class, msgs );
-            if( newAccumulator != null ) msgs = ( ( InternalEObject ) newAccumulator ).eInverseAdd( this,
-                    CimPackage.ACCUMULATOR__ACCUMULATOR_VALUES, Accumulator.class, msgs );
+            if( accumulator != null )
+                msgs = ( ( InternalEObject ) accumulator ).eInverseRemove( this,
+                        CimPackage.ACCUMULATOR__ACCUMULATOR_VALUES, Accumulator.class, msgs );
+            if( newAccumulator != null )
+                msgs = ( ( InternalEObject ) newAccumulator ).eInverseAdd( this,
+                        CimPackage.ACCUMULATOR__ACCUMULATOR_VALUES, Accumulator.class, msgs );
             msgs = basicSetAccumulator( newAccumulator, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldAccumulatorESet = accumulatorESet;
             accumulatorESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ACCUMULATOR_VALUE__ACCUMULATOR, newAccumulator, newAccumulator, !oldAccumulatorESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACCUMULATOR_VALUE__ACCUMULATOR,
+                        newAccumulator, newAccumulator, !oldAccumulatorESet ) );
         }
     }
 
@@ -406,8 +415,9 @@ public class AccumulatorValueImpl extends MeasurementValueImpl implements Accumu
         else {
             boolean oldAccumulatorESet = accumulatorESet;
             accumulatorESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ACCUMULATOR_VALUE__ACCUMULATOR, null, null, oldAccumulatorESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACCUMULATOR_VALUE__ACCUMULATOR,
+                        null, null, oldAccumulatorESet ) );
         }
     }
 
@@ -430,12 +440,14 @@ public class AccumulatorValueImpl extends MeasurementValueImpl implements Accumu
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ACCUMULATOR_VALUE__ACCUMULATOR_RESET:
-            if( accumulatorReset != null ) msgs = ( ( InternalEObject ) accumulatorReset ).eInverseRemove( this,
-                    CimPackage.ACCUMULATOR_RESET__ACCUMULATOR_VALUE, AccumulatorReset.class, msgs );
+            if( accumulatorReset != null )
+                msgs = ( ( InternalEObject ) accumulatorReset ).eInverseRemove( this,
+                        CimPackage.ACCUMULATOR_RESET__ACCUMULATOR_VALUE, AccumulatorReset.class, msgs );
             return basicSetAccumulatorReset( ( AccumulatorReset ) otherEnd, msgs );
         case CimPackage.ACCUMULATOR_VALUE__ACCUMULATOR:
-            if( accumulator != null ) msgs = ( ( InternalEObject ) accumulator ).eInverseRemove( this,
-                    CimPackage.ACCUMULATOR__ACCUMULATOR_VALUES, Accumulator.class, msgs );
+            if( accumulator != null )
+                msgs = ( ( InternalEObject ) accumulator ).eInverseRemove( this,
+                        CimPackage.ACCUMULATOR__ACCUMULATOR_VALUES, Accumulator.class, msgs );
             return basicSetAccumulator( ( Accumulator ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -545,7 +557,7 @@ public class AccumulatorValueImpl extends MeasurementValueImpl implements Accumu
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (value: " );
         if( valueESet )
             result.append( value );

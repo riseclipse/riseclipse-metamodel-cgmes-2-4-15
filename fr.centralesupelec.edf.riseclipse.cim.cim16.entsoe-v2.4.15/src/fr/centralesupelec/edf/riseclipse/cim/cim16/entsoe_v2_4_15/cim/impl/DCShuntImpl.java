@@ -172,8 +172,9 @@ public class DCShuntImpl extends DCConductingEquipmentImpl implements DCShunt {
         capacitance = newCapacitance;
         boolean oldCapacitanceESet = capacitanceESet;
         capacitanceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DC_SHUNT__CAPACITANCE, oldCapacitance, capacitance, !oldCapacitanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DC_SHUNT__CAPACITANCE, oldCapacitance,
+                    capacitance, !oldCapacitanceESet ) );
     }
 
     /**
@@ -187,8 +188,9 @@ public class DCShuntImpl extends DCConductingEquipmentImpl implements DCShunt {
         boolean oldCapacitanceESet = capacitanceESet;
         capacitance = CAPACITANCE_EDEFAULT;
         capacitanceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DC_SHUNT__CAPACITANCE, oldCapacitance, CAPACITANCE_EDEFAULT, oldCapacitanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DC_SHUNT__CAPACITANCE, oldCapacitance,
+                    CAPACITANCE_EDEFAULT, oldCapacitanceESet ) );
     }
 
     /**
@@ -222,8 +224,9 @@ public class DCShuntImpl extends DCConductingEquipmentImpl implements DCShunt {
         ratedUdc = newRatedUdc;
         boolean oldRatedUdcESet = ratedUdcESet;
         ratedUdcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DC_SHUNT__RATED_UDC, oldRatedUdc, ratedUdc, !oldRatedUdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DC_SHUNT__RATED_UDC, oldRatedUdc,
+                    ratedUdc, !oldRatedUdcESet ) );
     }
 
     /**
@@ -237,8 +240,9 @@ public class DCShuntImpl extends DCConductingEquipmentImpl implements DCShunt {
         boolean oldRatedUdcESet = ratedUdcESet;
         ratedUdc = RATED_UDC_EDEFAULT;
         ratedUdcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DC_SHUNT__RATED_UDC, oldRatedUdc, RATED_UDC_EDEFAULT, oldRatedUdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DC_SHUNT__RATED_UDC, oldRatedUdc,
+                    RATED_UDC_EDEFAULT, oldRatedUdcESet ) );
     }
 
     /**
@@ -272,8 +276,9 @@ public class DCShuntImpl extends DCConductingEquipmentImpl implements DCShunt {
         resistance = newResistance;
         boolean oldResistanceESet = resistanceESet;
         resistanceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DC_SHUNT__RESISTANCE, oldResistance, resistance, !oldResistanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DC_SHUNT__RESISTANCE, oldResistance,
+                    resistance, !oldResistanceESet ) );
     }
 
     /**
@@ -287,8 +292,9 @@ public class DCShuntImpl extends DCConductingEquipmentImpl implements DCShunt {
         boolean oldResistanceESet = resistanceESet;
         resistance = RESISTANCE_EDEFAULT;
         resistanceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DC_SHUNT__RESISTANCE, oldResistance, RESISTANCE_EDEFAULT, oldResistanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DC_SHUNT__RESISTANCE, oldResistance,
+                    RESISTANCE_EDEFAULT, oldResistanceESet ) );
     }
 
     /**
@@ -388,7 +394,7 @@ public class DCShuntImpl extends DCConductingEquipmentImpl implements DCShunt {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (capacitance: " );
         if( capacitanceESet )
             result.append( capacitance );

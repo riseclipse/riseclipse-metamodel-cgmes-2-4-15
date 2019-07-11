@@ -245,8 +245,9 @@ public class EquipmentImpl extends PowerSystemResourceImpl implements Equipment 
         aggregate = newAggregate;
         boolean oldAggregateESet = aggregateESet;
         aggregateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIPMENT__AGGREGATE, oldAggregate, aggregate, !oldAggregateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIPMENT__AGGREGATE, oldAggregate,
+                    aggregate, !oldAggregateESet ) );
     }
 
     /**
@@ -260,8 +261,9 @@ public class EquipmentImpl extends PowerSystemResourceImpl implements Equipment 
         boolean oldAggregateESet = aggregateESet;
         aggregate = AGGREGATE_EDEFAULT;
         aggregateESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIPMENT__AGGREGATE, oldAggregate, AGGREGATE_EDEFAULT, oldAggregateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIPMENT__AGGREGATE, oldAggregate,
+                    AGGREGATE_EDEFAULT, oldAggregateESet ) );
     }
 
     /**
@@ -471,10 +473,12 @@ public class EquipmentImpl extends PowerSystemResourceImpl implements Equipment 
     public void setEquipmentContainer( EquipmentContainer newEquipmentContainer ) {
         if( newEquipmentContainer != equipmentContainer ) {
             NotificationChain msgs = null;
-            if( equipmentContainer != null ) msgs = ( ( InternalEObject ) equipmentContainer ).eInverseRemove( this,
-                    CimPackage.EQUIPMENT_CONTAINER__EQUIPMENTS, EquipmentContainer.class, msgs );
-            if( newEquipmentContainer != null ) msgs = ( ( InternalEObject ) newEquipmentContainer ).eInverseAdd( this,
-                    CimPackage.EQUIPMENT_CONTAINER__EQUIPMENTS, EquipmentContainer.class, msgs );
+            if( equipmentContainer != null )
+                msgs = ( ( InternalEObject ) equipmentContainer ).eInverseRemove( this,
+                        CimPackage.EQUIPMENT_CONTAINER__EQUIPMENTS, EquipmentContainer.class, msgs );
+            if( newEquipmentContainer != null )
+                msgs = ( ( InternalEObject ) newEquipmentContainer ).eInverseAdd( this,
+                        CimPackage.EQUIPMENT_CONTAINER__EQUIPMENTS, EquipmentContainer.class, msgs );
             msgs = basicSetEquipmentContainer( newEquipmentContainer, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -525,8 +529,9 @@ public class EquipmentImpl extends PowerSystemResourceImpl implements Equipment 
         else {
             boolean oldEquipmentContainerESet = equipmentContainerESet;
             equipmentContainerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.EQUIPMENT__EQUIPMENT_CONTAINER, null, null, oldEquipmentContainerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIPMENT__EQUIPMENT_CONTAINER,
+                        null, null, oldEquipmentContainerESet ) );
         }
     }
 
@@ -669,8 +674,9 @@ public class EquipmentImpl extends PowerSystemResourceImpl implements Equipment 
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getOperationalRestrictions() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.EQUIPMENT__EQUIPMENT_CONTAINER:
-            if( equipmentContainer != null ) msgs = ( ( InternalEObject ) equipmentContainer ).eInverseRemove( this,
-                    CimPackage.EQUIPMENT_CONTAINER__EQUIPMENTS, EquipmentContainer.class, msgs );
+            if( equipmentContainer != null )
+                msgs = ( ( InternalEObject ) equipmentContainer ).eInverseRemove( this,
+                        CimPackage.EQUIPMENT_CONTAINER__EQUIPMENTS, EquipmentContainer.class, msgs );
             return basicSetEquipmentContainer( ( EquipmentContainer ) otherEnd, msgs );
         case CimPackage.EQUIPMENT__OUTAGES:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getOutages() ).basicAdd( otherEnd,
@@ -859,7 +865,7 @@ public class EquipmentImpl extends PowerSystemResourceImpl implements Equipment 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (aggregate: " );
         if( aggregateESet )
             result.append( aggregate );

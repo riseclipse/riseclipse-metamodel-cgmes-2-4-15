@@ -227,8 +227,9 @@ public class JunctionImpl extends ConnectorImpl implements Junction {
     public void setBoundaryPoint( boolean newBoundaryPoint ) {
         boolean oldBoundaryPoint = boundaryPoint;
         boundaryPoint = newBoundaryPoint;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.JUNCTION__BOUNDARY_POINT, oldBoundaryPoint, boundaryPoint ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.JUNCTION__BOUNDARY_POINT,
+                    oldBoundaryPoint, boundaryPoint ) );
     }
 
     /**
@@ -250,8 +251,9 @@ public class JunctionImpl extends ConnectorImpl implements Junction {
     public void setFromEndIsoCode( String newFromEndIsoCode ) {
         String oldFromEndIsoCode = fromEndIsoCode;
         fromEndIsoCode = newFromEndIsoCode;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.JUNCTION__FROM_END_ISO_CODE, oldFromEndIsoCode, fromEndIsoCode ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.JUNCTION__FROM_END_ISO_CODE,
+                    oldFromEndIsoCode, fromEndIsoCode ) );
     }
 
     /**
@@ -273,8 +275,9 @@ public class JunctionImpl extends ConnectorImpl implements Junction {
     public void setFromEndName( String newFromEndName ) {
         String oldFromEndName = fromEndName;
         fromEndName = newFromEndName;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.JUNCTION__FROM_END_NAME, oldFromEndName, fromEndName ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.JUNCTION__FROM_END_NAME, oldFromEndName,
+                    fromEndName ) );
     }
 
     /**
@@ -296,8 +299,9 @@ public class JunctionImpl extends ConnectorImpl implements Junction {
     public void setFromEndNameTso( String newFromEndNameTso ) {
         String oldFromEndNameTso = fromEndNameTso;
         fromEndNameTso = newFromEndNameTso;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.JUNCTION__FROM_END_NAME_TSO, oldFromEndNameTso, fromEndNameTso ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.JUNCTION__FROM_END_NAME_TSO,
+                    oldFromEndNameTso, fromEndNameTso ) );
     }
 
     /**
@@ -319,8 +323,9 @@ public class JunctionImpl extends ConnectorImpl implements Junction {
     public void setToEndIsoCode( String newToEndIsoCode ) {
         String oldToEndIsoCode = toEndIsoCode;
         toEndIsoCode = newToEndIsoCode;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.JUNCTION__TO_END_ISO_CODE, oldToEndIsoCode, toEndIsoCode ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.JUNCTION__TO_END_ISO_CODE,
+                    oldToEndIsoCode, toEndIsoCode ) );
     }
 
     /**
@@ -342,8 +347,9 @@ public class JunctionImpl extends ConnectorImpl implements Junction {
     public void setToEndName( String newToEndName ) {
         String oldToEndName = toEndName;
         toEndName = newToEndName;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.JUNCTION__TO_END_NAME, oldToEndName, toEndName ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.JUNCTION__TO_END_NAME, oldToEndName,
+                    toEndName ) );
     }
 
     /**
@@ -365,8 +371,9 @@ public class JunctionImpl extends ConnectorImpl implements Junction {
     public void setToEndNameTso( String newToEndNameTso ) {
         String oldToEndNameTso = toEndNameTso;
         toEndNameTso = newToEndNameTso;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.JUNCTION__TO_END_NAME_TSO, oldToEndNameTso, toEndNameTso ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.JUNCTION__TO_END_NAME_TSO,
+                    oldToEndNameTso, toEndNameTso ) );
     }
 
     /**
@@ -500,7 +507,7 @@ public class JunctionImpl extends ConnectorImpl implements Junction {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (boundaryPoint: " );
         result.append( boundaryPoint );
         result.append( ", fromEndIsoCode: " );

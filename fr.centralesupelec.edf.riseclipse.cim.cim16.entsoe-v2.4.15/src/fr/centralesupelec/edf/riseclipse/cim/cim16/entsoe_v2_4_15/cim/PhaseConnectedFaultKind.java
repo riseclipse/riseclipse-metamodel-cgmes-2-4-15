@@ -117,8 +117,11 @@ public enum PhaseConnectedFaultKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final PhaseConnectedFaultKind[] VALUES_ARRAY = new PhaseConnectedFaultKind[] { LINE_TO_GROUND,
-            LINE_TO_LINE, LINE_TO_LINE_TO_GROUND, };
+    private static final PhaseConnectedFaultKind[] VALUES_ARRAY = new PhaseConnectedFaultKind[] {
+            LINE_TO_GROUND,
+            LINE_TO_LINE,
+            LINE_TO_LINE_TO_GROUND,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Phase Connected Fault Kind</b></em>' enumerators.

@@ -217,18 +217,21 @@ public class ConductingEquipmentImpl extends EquipmentImpl implements Conducting
     public void setSvStatus( SvStatus newSvStatus ) {
         if( newSvStatus != svStatus ) {
             NotificationChain msgs = null;
-            if( svStatus != null ) msgs = ( ( InternalEObject ) svStatus ).eInverseRemove( this,
-                    CimPackage.SV_STATUS__CONDUCTING_EQUIPMENT, SvStatus.class, msgs );
-            if( newSvStatus != null ) msgs = ( ( InternalEObject ) newSvStatus ).eInverseAdd( this,
-                    CimPackage.SV_STATUS__CONDUCTING_EQUIPMENT, SvStatus.class, msgs );
+            if( svStatus != null )
+                msgs = ( ( InternalEObject ) svStatus ).eInverseRemove( this,
+                        CimPackage.SV_STATUS__CONDUCTING_EQUIPMENT, SvStatus.class, msgs );
+            if( newSvStatus != null )
+                msgs = ( ( InternalEObject ) newSvStatus ).eInverseAdd( this,
+                        CimPackage.SV_STATUS__CONDUCTING_EQUIPMENT, SvStatus.class, msgs );
             msgs = basicSetSvStatus( newSvStatus, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldSvStatusESet = svStatusESet;
             svStatusESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CONDUCTING_EQUIPMENT__SV_STATUS, newSvStatus, newSvStatus, !oldSvStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONDUCTING_EQUIPMENT__SV_STATUS,
+                        newSvStatus, newSvStatus, !oldSvStatusESet ) );
         }
     }
 
@@ -270,8 +273,9 @@ public class ConductingEquipmentImpl extends EquipmentImpl implements Conducting
         else {
             boolean oldSvStatusESet = svStatusESet;
             svStatusESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONDUCTING_EQUIPMENT__SV_STATUS, null, null, oldSvStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CONDUCTING_EQUIPMENT__SV_STATUS,
+                        null, null, oldSvStatusESet ) );
         }
     }
 
@@ -360,10 +364,12 @@ public class ConductingEquipmentImpl extends EquipmentImpl implements Conducting
     public void setBaseVoltage( BaseVoltage newBaseVoltage ) {
         if( newBaseVoltage != baseVoltage ) {
             NotificationChain msgs = null;
-            if( baseVoltage != null ) msgs = ( ( InternalEObject ) baseVoltage ).eInverseRemove( this,
-                    CimPackage.BASE_VOLTAGE__CONDUCTING_EQUIPMENT, BaseVoltage.class, msgs );
-            if( newBaseVoltage != null ) msgs = ( ( InternalEObject ) newBaseVoltage ).eInverseAdd( this,
-                    CimPackage.BASE_VOLTAGE__CONDUCTING_EQUIPMENT, BaseVoltage.class, msgs );
+            if( baseVoltage != null )
+                msgs = ( ( InternalEObject ) baseVoltage ).eInverseRemove( this,
+                        CimPackage.BASE_VOLTAGE__CONDUCTING_EQUIPMENT, BaseVoltage.class, msgs );
+            if( newBaseVoltage != null )
+                msgs = ( ( InternalEObject ) newBaseVoltage ).eInverseAdd( this,
+                        CimPackage.BASE_VOLTAGE__CONDUCTING_EQUIPMENT, BaseVoltage.class, msgs );
             msgs = basicSetBaseVoltage( newBaseVoltage, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -414,8 +420,9 @@ public class ConductingEquipmentImpl extends EquipmentImpl implements Conducting
         else {
             boolean oldBaseVoltageESet = baseVoltageESet;
             baseVoltageESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONDUCTING_EQUIPMENT__BASE_VOLTAGE, null, null, oldBaseVoltageESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CONDUCTING_EQUIPMENT__BASE_VOLTAGE,
+                        null, null, oldBaseVoltageESet ) );
         }
     }
 
@@ -440,8 +447,9 @@ public class ConductingEquipmentImpl extends EquipmentImpl implements Conducting
             InternalEObject oldGroundingAction = ( InternalEObject ) groundingAction;
             groundingAction = ( GroundAction ) eResolveProxy( oldGroundingAction );
             if( groundingAction != oldGroundingAction ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.CONDUCTING_EQUIPMENT__GROUNDING_ACTION, oldGroundingAction, groundingAction ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.CONDUCTING_EQUIPMENT__GROUNDING_ACTION, oldGroundingAction, groundingAction ) );
             }
         }
         return groundingAction;
@@ -487,19 +495,22 @@ public class ConductingEquipmentImpl extends EquipmentImpl implements Conducting
     public void setGroundingAction( GroundAction newGroundingAction ) {
         if( newGroundingAction != groundingAction ) {
             NotificationChain msgs = null;
-            if( groundingAction != null ) msgs = ( ( InternalEObject ) groundingAction ).eInverseRemove( this,
-                    CimPackage.GROUND_ACTION__GROUNDED_EQUIPMENT, GroundAction.class, msgs );
-            if( newGroundingAction != null ) msgs = ( ( InternalEObject ) newGroundingAction ).eInverseAdd( this,
-                    CimPackage.GROUND_ACTION__GROUNDED_EQUIPMENT, GroundAction.class, msgs );
+            if( groundingAction != null )
+                msgs = ( ( InternalEObject ) groundingAction ).eInverseRemove( this,
+                        CimPackage.GROUND_ACTION__GROUNDED_EQUIPMENT, GroundAction.class, msgs );
+            if( newGroundingAction != null )
+                msgs = ( ( InternalEObject ) newGroundingAction ).eInverseAdd( this,
+                        CimPackage.GROUND_ACTION__GROUNDED_EQUIPMENT, GroundAction.class, msgs );
             msgs = basicSetGroundingAction( newGroundingAction, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldGroundingActionESet = groundingActionESet;
             groundingActionESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.CONDUCTING_EQUIPMENT__GROUNDING_ACTION,
-                            newGroundingAction, newGroundingAction, !oldGroundingActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.CONDUCTING_EQUIPMENT__GROUNDING_ACTION, newGroundingAction, newGroundingAction,
+                        !oldGroundingActionESet ) );
         }
     }
 
@@ -542,8 +553,9 @@ public class ConductingEquipmentImpl extends EquipmentImpl implements Conducting
         else {
             boolean oldGroundingActionESet = groundingActionESet;
             groundingActionESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONDUCTING_EQUIPMENT__GROUNDING_ACTION, null, null, oldGroundingActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CONDUCTING_EQUIPMENT__GROUNDING_ACTION, null, null, oldGroundingActionESet ) );
         }
     }
 
@@ -633,10 +645,12 @@ public class ConductingEquipmentImpl extends EquipmentImpl implements Conducting
     public void setJumpingAction( JumperAction newJumpingAction ) {
         if( newJumpingAction != jumpingAction ) {
             NotificationChain msgs = null;
-            if( jumpingAction != null ) msgs = ( ( InternalEObject ) jumpingAction ).eInverseRemove( this,
-                    CimPackage.JUMPER_ACTION__JUMPED_EQUIPMENTS, JumperAction.class, msgs );
-            if( newJumpingAction != null ) msgs = ( ( InternalEObject ) newJumpingAction ).eInverseAdd( this,
-                    CimPackage.JUMPER_ACTION__JUMPED_EQUIPMENTS, JumperAction.class, msgs );
+            if( jumpingAction != null )
+                msgs = ( ( InternalEObject ) jumpingAction ).eInverseRemove( this,
+                        CimPackage.JUMPER_ACTION__JUMPED_EQUIPMENTS, JumperAction.class, msgs );
+            if( newJumpingAction != null )
+                msgs = ( ( InternalEObject ) newJumpingAction ).eInverseAdd( this,
+                        CimPackage.JUMPER_ACTION__JUMPED_EQUIPMENTS, JumperAction.class, msgs );
             msgs = basicSetJumpingAction( newJumpingAction, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -687,8 +701,9 @@ public class ConductingEquipmentImpl extends EquipmentImpl implements Conducting
         else {
             boolean oldJumpingActionESet = jumpingActionESet;
             jumpingActionESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONDUCTING_EQUIPMENT__JUMPING_ACTION, null, null, oldJumpingActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CONDUCTING_EQUIPMENT__JUMPING_ACTION, null, null, oldJumpingActionESet ) );
         }
     }
 
@@ -715,23 +730,27 @@ public class ConductingEquipmentImpl extends EquipmentImpl implements Conducting
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTerminals() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.CONDUCTING_EQUIPMENT__BASE_VOLTAGE:
-            if( baseVoltage != null ) msgs = ( ( InternalEObject ) baseVoltage ).eInverseRemove( this,
-                    CimPackage.BASE_VOLTAGE__CONDUCTING_EQUIPMENT, BaseVoltage.class, msgs );
+            if( baseVoltage != null )
+                msgs = ( ( InternalEObject ) baseVoltage ).eInverseRemove( this,
+                        CimPackage.BASE_VOLTAGE__CONDUCTING_EQUIPMENT, BaseVoltage.class, msgs );
             return basicSetBaseVoltage( ( BaseVoltage ) otherEnd, msgs );
         case CimPackage.CONDUCTING_EQUIPMENT__SV_STATUS:
-            if( svStatus != null ) msgs = ( ( InternalEObject ) svStatus ).eInverseRemove( this,
-                    CimPackage.SV_STATUS__CONDUCTING_EQUIPMENT, SvStatus.class, msgs );
+            if( svStatus != null )
+                msgs = ( ( InternalEObject ) svStatus ).eInverseRemove( this,
+                        CimPackage.SV_STATUS__CONDUCTING_EQUIPMENT, SvStatus.class, msgs );
             return basicSetSvStatus( ( SvStatus ) otherEnd, msgs );
         case CimPackage.CONDUCTING_EQUIPMENT__GROUNDING_ACTION:
-            if( groundingAction != null ) msgs = ( ( InternalEObject ) groundingAction ).eInverseRemove( this,
-                    CimPackage.GROUND_ACTION__GROUNDED_EQUIPMENT, GroundAction.class, msgs );
+            if( groundingAction != null )
+                msgs = ( ( InternalEObject ) groundingAction ).eInverseRemove( this,
+                        CimPackage.GROUND_ACTION__GROUNDED_EQUIPMENT, GroundAction.class, msgs );
             return basicSetGroundingAction( ( GroundAction ) otherEnd, msgs );
         case CimPackage.CONDUCTING_EQUIPMENT__PROTECTION_EQUIPMENTS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getProtectionEquipments() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.CONDUCTING_EQUIPMENT__JUMPING_ACTION:
-            if( jumpingAction != null ) msgs = ( ( InternalEObject ) jumpingAction ).eInverseRemove( this,
-                    CimPackage.JUMPER_ACTION__JUMPED_EQUIPMENTS, JumperAction.class, msgs );
+            if( jumpingAction != null )
+                msgs = ( ( InternalEObject ) jumpingAction ).eInverseRemove( this,
+                        CimPackage.JUMPER_ACTION__JUMPED_EQUIPMENTS, JumperAction.class, msgs );
             return basicSetJumpingAction( ( JumperAction ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

@@ -173,8 +173,9 @@ public class PriorityImpl extends MinimalEObjectImpl.Container implements Priori
         justification = newJustification;
         boolean oldJustificationESet = justificationESet;
         justificationESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PRIORITY__JUSTIFICATION, oldJustification, justification, !oldJustificationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PRIORITY__JUSTIFICATION,
+                    oldJustification, justification, !oldJustificationESet ) );
     }
 
     /**
@@ -188,8 +189,9 @@ public class PriorityImpl extends MinimalEObjectImpl.Container implements Priori
         boolean oldJustificationESet = justificationESet;
         justification = JUSTIFICATION_EDEFAULT;
         justificationESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PRIORITY__JUSTIFICATION, oldJustification, JUSTIFICATION_EDEFAULT, oldJustificationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PRIORITY__JUSTIFICATION,
+                    oldJustification, JUSTIFICATION_EDEFAULT, oldJustificationESet ) );
     }
 
     /**
@@ -223,8 +225,9 @@ public class PriorityImpl extends MinimalEObjectImpl.Container implements Priori
         rank = newRank;
         boolean oldRankESet = rankESet;
         rankESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PRIORITY__RANK,
-                oldRank, rank, !oldRankESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PRIORITY__RANK, oldRank, rank,
+                    !oldRankESet ) );
     }
 
     /**
@@ -238,8 +241,9 @@ public class PriorityImpl extends MinimalEObjectImpl.Container implements Priori
         boolean oldRankESet = rankESet;
         rank = RANK_EDEFAULT;
         rankESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PRIORITY__RANK, oldRank, RANK_EDEFAULT, oldRankESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PRIORITY__RANK, oldRank, RANK_EDEFAULT,
+                    oldRankESet ) );
     }
 
     /**
@@ -273,8 +277,9 @@ public class PriorityImpl extends MinimalEObjectImpl.Container implements Priori
         type = newType;
         boolean oldTypeESet = typeESet;
         typeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PRIORITY__TYPE,
-                oldType, type, !oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PRIORITY__TYPE, oldType, type,
+                    !oldTypeESet ) );
     }
 
     /**
@@ -288,8 +293,9 @@ public class PriorityImpl extends MinimalEObjectImpl.Container implements Priori
         boolean oldTypeESet = typeESet;
         type = TYPE_EDEFAULT;
         typeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PRIORITY__TYPE, oldType, TYPE_EDEFAULT, oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PRIORITY__TYPE, oldType, TYPE_EDEFAULT,
+                    oldTypeESet ) );
     }
 
     /**
@@ -389,7 +395,7 @@ public class PriorityImpl extends MinimalEObjectImpl.Container implements Priori
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (justification: " );
         if( justificationESet )
             result.append( justification );

@@ -277,8 +277,9 @@ public class EndDeviceEventImpl extends ActivityRecordImpl implements EndDeviceE
         issuerID = newIssuerID;
         boolean oldIssuerIDESet = issuerIDESet;
         issuerIDESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_EVENT__ISSUER_ID, oldIssuerID, issuerID, !oldIssuerIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_EVENT__ISSUER_ID, oldIssuerID,
+                    issuerID, !oldIssuerIDESet ) );
     }
 
     /**
@@ -292,8 +293,9 @@ public class EndDeviceEventImpl extends ActivityRecordImpl implements EndDeviceE
         boolean oldIssuerIDESet = issuerIDESet;
         issuerID = ISSUER_ID_EDEFAULT;
         issuerIDESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_EVENT__ISSUER_ID, oldIssuerID, ISSUER_ID_EDEFAULT, oldIssuerIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_EVENT__ISSUER_ID,
+                    oldIssuerID, ISSUER_ID_EDEFAULT, oldIssuerIDESet ) );
     }
 
     /**
@@ -379,8 +381,9 @@ public class EndDeviceEventImpl extends ActivityRecordImpl implements EndDeviceE
         userID = newUserID;
         boolean oldUserIDESet = userIDESet;
         userIDESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_EVENT__USER_ID, oldUserID, userID, !oldUserIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_EVENT__USER_ID, oldUserID,
+                    userID, !oldUserIDESet ) );
     }
 
     /**
@@ -394,8 +397,9 @@ public class EndDeviceEventImpl extends ActivityRecordImpl implements EndDeviceE
         boolean oldUserIDESet = userIDESet;
         userID = USER_ID_EDEFAULT;
         userIDESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_EVENT__USER_ID, oldUserID, USER_ID_EDEFAULT, oldUserIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_EVENT__USER_ID, oldUserID,
+                    USER_ID_EDEFAULT, oldUserIDESet ) );
     }
 
     /**
@@ -450,19 +454,22 @@ public class EndDeviceEventImpl extends ActivityRecordImpl implements EndDeviceE
     public void setEndDeviceEventType( EndDeviceEventType newEndDeviceEventType ) {
         if( newEndDeviceEventType != endDeviceEventType ) {
             NotificationChain msgs = null;
-            if( endDeviceEventType != null ) msgs = ( ( InternalEObject ) endDeviceEventType ).eInverseRemove( this,
-                    CimPackage.END_DEVICE_EVENT_TYPE__END_DEVICE_EVENTS, EndDeviceEventType.class, msgs );
-            if( newEndDeviceEventType != null ) msgs = ( ( InternalEObject ) newEndDeviceEventType ).eInverseAdd( this,
-                    CimPackage.END_DEVICE_EVENT_TYPE__END_DEVICE_EVENTS, EndDeviceEventType.class, msgs );
+            if( endDeviceEventType != null )
+                msgs = ( ( InternalEObject ) endDeviceEventType ).eInverseRemove( this,
+                        CimPackage.END_DEVICE_EVENT_TYPE__END_DEVICE_EVENTS, EndDeviceEventType.class, msgs );
+            if( newEndDeviceEventType != null )
+                msgs = ( ( InternalEObject ) newEndDeviceEventType ).eInverseAdd( this,
+                        CimPackage.END_DEVICE_EVENT_TYPE__END_DEVICE_EVENTS, EndDeviceEventType.class, msgs );
             msgs = basicSetEndDeviceEventType( newEndDeviceEventType, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldEndDeviceEventTypeESet = endDeviceEventTypeESet;
             endDeviceEventTypeESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_EVENT__END_DEVICE_EVENT_TYPE,
-                            newEndDeviceEventType, newEndDeviceEventType, !oldEndDeviceEventTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.END_DEVICE_EVENT__END_DEVICE_EVENT_TYPE, newEndDeviceEventType,
+                        newEndDeviceEventType, !oldEndDeviceEventTypeESet ) );
         }
     }
 
@@ -505,8 +512,9 @@ public class EndDeviceEventImpl extends ActivityRecordImpl implements EndDeviceE
         else {
             boolean oldEndDeviceEventTypeESet = endDeviceEventTypeESet;
             endDeviceEventTypeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.END_DEVICE_EVENT__END_DEVICE_EVENT_TYPE, null, null, oldEndDeviceEventTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.END_DEVICE_EVENT__END_DEVICE_EVENT_TYPE, null, null, oldEndDeviceEventTypeESet ) );
         }
     }
 
@@ -560,18 +568,21 @@ public class EndDeviceEventImpl extends ActivityRecordImpl implements EndDeviceE
     public void setUsagePoint( UsagePoint newUsagePoint ) {
         if( newUsagePoint != usagePoint ) {
             NotificationChain msgs = null;
-            if( usagePoint != null ) msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this,
-                    CimPackage.USAGE_POINT__END_DEVICE_EVENTS, UsagePoint.class, msgs );
-            if( newUsagePoint != null ) msgs = ( ( InternalEObject ) newUsagePoint ).eInverseAdd( this,
-                    CimPackage.USAGE_POINT__END_DEVICE_EVENTS, UsagePoint.class, msgs );
+            if( usagePoint != null )
+                msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this,
+                        CimPackage.USAGE_POINT__END_DEVICE_EVENTS, UsagePoint.class, msgs );
+            if( newUsagePoint != null )
+                msgs = ( ( InternalEObject ) newUsagePoint ).eInverseAdd( this,
+                        CimPackage.USAGE_POINT__END_DEVICE_EVENTS, UsagePoint.class, msgs );
             msgs = basicSetUsagePoint( newUsagePoint, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldUsagePointESet = usagePointESet;
             usagePointESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.END_DEVICE_EVENT__USAGE_POINT, newUsagePoint, newUsagePoint, !oldUsagePointESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_EVENT__USAGE_POINT,
+                        newUsagePoint, newUsagePoint, !oldUsagePointESet ) );
         }
     }
 
@@ -613,8 +624,9 @@ public class EndDeviceEventImpl extends ActivityRecordImpl implements EndDeviceE
         else {
             boolean oldUsagePointESet = usagePointESet;
             usagePointESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.END_DEVICE_EVENT__USAGE_POINT, null, null, oldUsagePointESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_EVENT__USAGE_POINT,
+                        null, null, oldUsagePointESet ) );
         }
     }
 
@@ -668,18 +680,21 @@ public class EndDeviceEventImpl extends ActivityRecordImpl implements EndDeviceE
     public void setEndDevice( EndDevice newEndDevice ) {
         if( newEndDevice != endDevice ) {
             NotificationChain msgs = null;
-            if( endDevice != null ) msgs = ( ( InternalEObject ) endDevice ).eInverseRemove( this,
-                    CimPackage.END_DEVICE__END_DEVICE_EVENTS, EndDevice.class, msgs );
-            if( newEndDevice != null ) msgs = ( ( InternalEObject ) newEndDevice ).eInverseAdd( this,
-                    CimPackage.END_DEVICE__END_DEVICE_EVENTS, EndDevice.class, msgs );
+            if( endDevice != null )
+                msgs = ( ( InternalEObject ) endDevice ).eInverseRemove( this, CimPackage.END_DEVICE__END_DEVICE_EVENTS,
+                        EndDevice.class, msgs );
+            if( newEndDevice != null )
+                msgs = ( ( InternalEObject ) newEndDevice ).eInverseAdd( this, CimPackage.END_DEVICE__END_DEVICE_EVENTS,
+                        EndDevice.class, msgs );
             msgs = basicSetEndDevice( newEndDevice, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldEndDeviceESet = endDeviceESet;
             endDeviceESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.END_DEVICE_EVENT__END_DEVICE, newEndDevice, newEndDevice, !oldEndDeviceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_EVENT__END_DEVICE,
+                        newEndDevice, newEndDevice, !oldEndDeviceESet ) );
         }
     }
 
@@ -721,8 +736,9 @@ public class EndDeviceEventImpl extends ActivityRecordImpl implements EndDeviceE
         else {
             boolean oldEndDeviceESet = endDeviceESet;
             endDeviceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.END_DEVICE_EVENT__END_DEVICE, null, null, oldEndDeviceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_EVENT__END_DEVICE, null,
+                        null, oldEndDeviceESet ) );
         }
     }
 
@@ -812,10 +828,12 @@ public class EndDeviceEventImpl extends ActivityRecordImpl implements EndDeviceE
     public void setMeterReading( MeterReading newMeterReading ) {
         if( newMeterReading != meterReading ) {
             NotificationChain msgs = null;
-            if( meterReading != null ) msgs = ( ( InternalEObject ) meterReading ).eInverseRemove( this,
-                    CimPackage.METER_READING__END_DEVICE_EVENTS, MeterReading.class, msgs );
-            if( newMeterReading != null ) msgs = ( ( InternalEObject ) newMeterReading ).eInverseAdd( this,
-                    CimPackage.METER_READING__END_DEVICE_EVENTS, MeterReading.class, msgs );
+            if( meterReading != null )
+                msgs = ( ( InternalEObject ) meterReading ).eInverseRemove( this,
+                        CimPackage.METER_READING__END_DEVICE_EVENTS, MeterReading.class, msgs );
+            if( newMeterReading != null )
+                msgs = ( ( InternalEObject ) newMeterReading ).eInverseAdd( this,
+                        CimPackage.METER_READING__END_DEVICE_EVENTS, MeterReading.class, msgs );
             msgs = basicSetMeterReading( newMeterReading, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -866,8 +884,9 @@ public class EndDeviceEventImpl extends ActivityRecordImpl implements EndDeviceE
         else {
             boolean oldMeterReadingESet = meterReadingESet;
             meterReadingESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.END_DEVICE_EVENT__METER_READING, null, null, oldMeterReadingESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_EVENT__METER_READING,
+                        null, null, oldMeterReadingESet ) );
         }
     }
 
@@ -891,20 +910,24 @@ public class EndDeviceEventImpl extends ActivityRecordImpl implements EndDeviceE
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.END_DEVICE_EVENT__METER_READING:
-            if( meterReading != null ) msgs = ( ( InternalEObject ) meterReading ).eInverseRemove( this,
-                    CimPackage.METER_READING__END_DEVICE_EVENTS, MeterReading.class, msgs );
+            if( meterReading != null )
+                msgs = ( ( InternalEObject ) meterReading ).eInverseRemove( this,
+                        CimPackage.METER_READING__END_DEVICE_EVENTS, MeterReading.class, msgs );
             return basicSetMeterReading( ( MeterReading ) otherEnd, msgs );
         case CimPackage.END_DEVICE_EVENT__END_DEVICE:
-            if( endDevice != null ) msgs = ( ( InternalEObject ) endDevice ).eInverseRemove( this,
-                    CimPackage.END_DEVICE__END_DEVICE_EVENTS, EndDevice.class, msgs );
+            if( endDevice != null )
+                msgs = ( ( InternalEObject ) endDevice ).eInverseRemove( this, CimPackage.END_DEVICE__END_DEVICE_EVENTS,
+                        EndDevice.class, msgs );
             return basicSetEndDevice( ( EndDevice ) otherEnd, msgs );
         case CimPackage.END_DEVICE_EVENT__USAGE_POINT:
-            if( usagePoint != null ) msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this,
-                    CimPackage.USAGE_POINT__END_DEVICE_EVENTS, UsagePoint.class, msgs );
+            if( usagePoint != null )
+                msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this,
+                        CimPackage.USAGE_POINT__END_DEVICE_EVENTS, UsagePoint.class, msgs );
             return basicSetUsagePoint( ( UsagePoint ) otherEnd, msgs );
         case CimPackage.END_DEVICE_EVENT__END_DEVICE_EVENT_TYPE:
-            if( endDeviceEventType != null ) msgs = ( ( InternalEObject ) endDeviceEventType ).eInverseRemove( this,
-                    CimPackage.END_DEVICE_EVENT_TYPE__END_DEVICE_EVENTS, EndDeviceEventType.class, msgs );
+            if( endDeviceEventType != null )
+                msgs = ( ( InternalEObject ) endDeviceEventType ).eInverseRemove( this,
+                        CimPackage.END_DEVICE_EVENT_TYPE__END_DEVICE_EVENTS, EndDeviceEventType.class, msgs );
             return basicSetEndDeviceEventType( ( EndDeviceEventType ) otherEnd, msgs );
         case CimPackage.END_DEVICE_EVENT__END_DEVICE_EVENT_DETAILS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getEndDeviceEventDetails() )
@@ -1074,7 +1097,7 @@ public class EndDeviceEventImpl extends ActivityRecordImpl implements EndDeviceE
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (issuerID: " );
         if( issuerIDESet )
             result.append( issuerID );

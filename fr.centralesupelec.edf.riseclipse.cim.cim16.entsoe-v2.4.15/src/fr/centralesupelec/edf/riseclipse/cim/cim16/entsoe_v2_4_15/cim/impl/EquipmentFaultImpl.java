@@ -124,18 +124,21 @@ public class EquipmentFaultImpl extends FaultImpl implements EquipmentFault {
     public void setTerminal( Terminal newTerminal ) {
         if( newTerminal != terminal ) {
             NotificationChain msgs = null;
-            if( terminal != null ) msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__EQUIPMENT_FAULTS, Terminal.class, msgs );
-            if( newTerminal != null ) msgs = ( ( InternalEObject ) newTerminal ).eInverseAdd( this,
-                    CimPackage.TERMINAL__EQUIPMENT_FAULTS, Terminal.class, msgs );
+            if( terminal != null )
+                msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this, CimPackage.TERMINAL__EQUIPMENT_FAULTS,
+                        Terminal.class, msgs );
+            if( newTerminal != null )
+                msgs = ( ( InternalEObject ) newTerminal ).eInverseAdd( this, CimPackage.TERMINAL__EQUIPMENT_FAULTS,
+                        Terminal.class, msgs );
             msgs = basicSetTerminal( newTerminal, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTerminalESet = terminalESet;
             terminalESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.EQUIPMENT_FAULT__TERMINAL, newTerminal, newTerminal, !oldTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIPMENT_FAULT__TERMINAL,
+                        newTerminal, newTerminal, !oldTerminalESet ) );
         }
     }
 
@@ -177,8 +180,9 @@ public class EquipmentFaultImpl extends FaultImpl implements EquipmentFault {
         else {
             boolean oldTerminalESet = terminalESet;
             terminalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.EQUIPMENT_FAULT__TERMINAL, null, null, oldTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIPMENT_FAULT__TERMINAL, null,
+                        null, oldTerminalESet ) );
         }
     }
 
@@ -201,8 +205,9 @@ public class EquipmentFaultImpl extends FaultImpl implements EquipmentFault {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.EQUIPMENT_FAULT__TERMINAL:
-            if( terminal != null ) msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__EQUIPMENT_FAULTS, Terminal.class, msgs );
+            if( terminal != null )
+                msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this, CimPackage.TERMINAL__EQUIPMENT_FAULTS,
+                        Terminal.class, msgs );
             return basicSetTerminal( ( Terminal ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

@@ -167,8 +167,13 @@ public enum CableShieldMaterialKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final CableShieldMaterialKind[] VALUES_ARRAY = new CableShieldMaterialKind[] { LEAD, COPPER, STEEL,
-            ALUMINUM, OTHER, };
+    private static final CableShieldMaterialKind[] VALUES_ARRAY = new CableShieldMaterialKind[] {
+            LEAD,
+            COPPER,
+            STEEL,
+            ALUMINUM,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Cable Shield Material Kind</b></em>' enumerators.

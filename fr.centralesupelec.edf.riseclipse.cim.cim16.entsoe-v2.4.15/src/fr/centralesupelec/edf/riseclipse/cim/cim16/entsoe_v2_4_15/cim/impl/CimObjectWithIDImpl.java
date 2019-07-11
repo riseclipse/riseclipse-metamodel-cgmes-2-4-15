@@ -113,8 +113,9 @@ public abstract class CimObjectWithIDImpl extends MinimalEObjectImpl.Container i
         id = newID;
         boolean oldIDESet = idESet;
         idESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CIM_OBJECT_WITH_ID__ID, oldID, id, !oldIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CIM_OBJECT_WITH_ID__ID, oldID, id,
+                    !oldIDESet ) );
     }
 
     /**
@@ -128,8 +129,9 @@ public abstract class CimObjectWithIDImpl extends MinimalEObjectImpl.Container i
         boolean oldIDESet = idESet;
         id = ID_EDEFAULT;
         idESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CIM_OBJECT_WITH_ID__ID, oldID, ID_EDEFAULT, oldIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CIM_OBJECT_WITH_ID__ID, oldID,
+                    ID_EDEFAULT, oldIDESet ) );
     }
 
     /**
@@ -209,7 +211,7 @@ public abstract class CimObjectWithIDImpl extends MinimalEObjectImpl.Container i
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (ID: " );
         if( idESet )
             result.append( id );

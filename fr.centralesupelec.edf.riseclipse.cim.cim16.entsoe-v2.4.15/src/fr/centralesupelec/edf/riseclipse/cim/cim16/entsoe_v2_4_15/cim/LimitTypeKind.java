@@ -217,8 +217,15 @@ public enum LimitTypeKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final LimitTypeKind[] VALUES_ARRAY = new LimitTypeKind[] { PATL, PATLT, TATL, TC, TCT, HIGH_VOLTAGE,
-            LOW_VOLTAGE, };
+    private static final LimitTypeKind[] VALUES_ARRAY = new LimitTypeKind[] {
+            PATL,
+            PATLT,
+            TATL,
+            TC,
+            TCT,
+            HIGH_VOLTAGE,
+            LOW_VOLTAGE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Limit Type Kind</b></em>' enumerators.

@@ -349,8 +349,9 @@ public class RegulatingControlImpl extends PowerSystemResourceImpl implements Re
         discrete = newDiscrete;
         boolean oldDiscreteESet = discreteESet;
         discreteESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REGULATING_CONTROL__DISCRETE, oldDiscrete, discrete, !oldDiscreteESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REGULATING_CONTROL__DISCRETE,
+                    oldDiscrete, discrete, !oldDiscreteESet ) );
     }
 
     /**
@@ -364,8 +365,9 @@ public class RegulatingControlImpl extends PowerSystemResourceImpl implements Re
         boolean oldDiscreteESet = discreteESet;
         discrete = DISCRETE_EDEFAULT;
         discreteESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REGULATING_CONTROL__DISCRETE, oldDiscrete, DISCRETE_EDEFAULT, oldDiscreteESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.REGULATING_CONTROL__DISCRETE,
+                    oldDiscrete, DISCRETE_EDEFAULT, oldDiscreteESet ) );
     }
 
     /**
@@ -399,8 +401,9 @@ public class RegulatingControlImpl extends PowerSystemResourceImpl implements Re
         enabled = newEnabled;
         boolean oldEnabledESet = enabledESet;
         enabledESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REGULATING_CONTROL__ENABLED, oldEnabled, enabled, !oldEnabledESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REGULATING_CONTROL__ENABLED, oldEnabled,
+                    enabled, !oldEnabledESet ) );
     }
 
     /**
@@ -414,8 +417,9 @@ public class RegulatingControlImpl extends PowerSystemResourceImpl implements Re
         boolean oldEnabledESet = enabledESet;
         enabled = ENABLED_EDEFAULT;
         enabledESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REGULATING_CONTROL__ENABLED, oldEnabled, ENABLED_EDEFAULT, oldEnabledESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.REGULATING_CONTROL__ENABLED,
+                    oldEnabled, ENABLED_EDEFAULT, oldEnabledESet ) );
     }
 
     /**
@@ -449,8 +453,9 @@ public class RegulatingControlImpl extends PowerSystemResourceImpl implements Re
         mode = newMode == null ? MODE_EDEFAULT : newMode;
         boolean oldModeESet = modeESet;
         modeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REGULATING_CONTROL__MODE, oldMode, mode, !oldModeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REGULATING_CONTROL__MODE, oldMode, mode,
+                    !oldModeESet ) );
     }
 
     /**
@@ -464,8 +469,9 @@ public class RegulatingControlImpl extends PowerSystemResourceImpl implements Re
         boolean oldModeESet = modeESet;
         mode = MODE_EDEFAULT;
         modeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REGULATING_CONTROL__MODE, oldMode, MODE_EDEFAULT, oldModeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.REGULATING_CONTROL__MODE, oldMode,
+                    MODE_EDEFAULT, oldModeESet ) );
     }
 
     /**
@@ -603,8 +609,9 @@ public class RegulatingControlImpl extends PowerSystemResourceImpl implements Re
         targetValue = newTargetValue;
         boolean oldTargetValueESet = targetValueESet;
         targetValueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REGULATING_CONTROL__TARGET_VALUE, oldTargetValue, targetValue, !oldTargetValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REGULATING_CONTROL__TARGET_VALUE,
+                    oldTargetValue, targetValue, !oldTargetValueESet ) );
     }
 
     /**
@@ -655,9 +662,10 @@ public class RegulatingControlImpl extends PowerSystemResourceImpl implements Re
                 : newTargetValueUnitMultiplier;
         boolean oldTargetValueUnitMultiplierESet = targetValueUnitMultiplierESet;
         targetValueUnitMultiplierESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REGULATING_CONTROL__TARGET_VALUE_UNIT_MULTIPLIER, oldTargetValueUnitMultiplier,
-                targetValueUnitMultiplier, !oldTargetValueUnitMultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.REGULATING_CONTROL__TARGET_VALUE_UNIT_MULTIPLIER, oldTargetValueUnitMultiplier,
+                    targetValueUnitMultiplier, !oldTargetValueUnitMultiplierESet ) );
     }
 
     /**
@@ -671,9 +679,10 @@ public class RegulatingControlImpl extends PowerSystemResourceImpl implements Re
         boolean oldTargetValueUnitMultiplierESet = targetValueUnitMultiplierESet;
         targetValueUnitMultiplier = TARGET_VALUE_UNIT_MULTIPLIER_EDEFAULT;
         targetValueUnitMultiplierESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REGULATING_CONTROL__TARGET_VALUE_UNIT_MULTIPLIER, oldTargetValueUnitMultiplier,
-                TARGET_VALUE_UNIT_MULTIPLIER_EDEFAULT, oldTargetValueUnitMultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.REGULATING_CONTROL__TARGET_VALUE_UNIT_MULTIPLIER, oldTargetValueUnitMultiplier,
+                    TARGET_VALUE_UNIT_MULTIPLIER_EDEFAULT, oldTargetValueUnitMultiplierESet ) );
     }
 
     /**
@@ -761,18 +770,21 @@ public class RegulatingControlImpl extends PowerSystemResourceImpl implements Re
     public void setTerminal( Terminal newTerminal ) {
         if( newTerminal != terminal ) {
             NotificationChain msgs = null;
-            if( terminal != null ) msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__REGULATING_CONTROL, Terminal.class, msgs );
-            if( newTerminal != null ) msgs = ( ( InternalEObject ) newTerminal ).eInverseAdd( this,
-                    CimPackage.TERMINAL__REGULATING_CONTROL, Terminal.class, msgs );
+            if( terminal != null )
+                msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this, CimPackage.TERMINAL__REGULATING_CONTROL,
+                        Terminal.class, msgs );
+            if( newTerminal != null )
+                msgs = ( ( InternalEObject ) newTerminal ).eInverseAdd( this, CimPackage.TERMINAL__REGULATING_CONTROL,
+                        Terminal.class, msgs );
             msgs = basicSetTerminal( newTerminal, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTerminalESet = terminalESet;
             terminalESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.REGULATING_CONTROL__TERMINAL, newTerminal, newTerminal, !oldTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REGULATING_CONTROL__TERMINAL,
+                        newTerminal, newTerminal, !oldTerminalESet ) );
         }
     }
 
@@ -814,8 +826,9 @@ public class RegulatingControlImpl extends PowerSystemResourceImpl implements Re
         else {
             boolean oldTerminalESet = terminalESet;
             terminalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REGULATING_CONTROL__TERMINAL, null, null, oldTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.REGULATING_CONTROL__TERMINAL, null,
+                        null, oldTerminalESet ) );
         }
     }
 
@@ -874,8 +887,9 @@ public class RegulatingControlImpl extends PowerSystemResourceImpl implements Re
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.REGULATING_CONTROL__TERMINAL:
-            if( terminal != null ) msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__REGULATING_CONTROL, Terminal.class, msgs );
+            if( terminal != null )
+                msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this, CimPackage.TERMINAL__REGULATING_CONTROL,
+                        Terminal.class, msgs );
             return basicSetTerminal( ( Terminal ) otherEnd, msgs );
         case CimPackage.REGULATING_CONTROL__REGULATION_SCHEDULE:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getRegulationSchedule() )
@@ -1065,7 +1079,7 @@ public class RegulatingControlImpl extends PowerSystemResourceImpl implements Re
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (discrete: " );
         if( discreteESet )
             result.append( discrete );

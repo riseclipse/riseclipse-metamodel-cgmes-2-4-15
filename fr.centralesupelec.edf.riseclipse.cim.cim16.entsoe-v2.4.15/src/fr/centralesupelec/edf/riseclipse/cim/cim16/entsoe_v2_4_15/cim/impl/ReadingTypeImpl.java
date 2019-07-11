@@ -631,8 +631,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         accumulation = newAccumulation;
         boolean oldAccumulationESet = accumulationESet;
         accumulationESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_TYPE__ACCUMULATION, oldAccumulation, accumulation, !oldAccumulationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_TYPE__ACCUMULATION,
+                    oldAccumulation, accumulation, !oldAccumulationESet ) );
     }
 
     /**
@@ -646,8 +647,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         boolean oldAccumulationESet = accumulationESet;
         accumulation = ACCUMULATION_EDEFAULT;
         accumulationESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.READING_TYPE__ACCUMULATION, oldAccumulation, ACCUMULATION_EDEFAULT, oldAccumulationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_TYPE__ACCUMULATION,
+                    oldAccumulation, ACCUMULATION_EDEFAULT, oldAccumulationESet ) );
     }
 
     /**
@@ -681,8 +683,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         aggregate = newAggregate;
         boolean oldAggregateESet = aggregateESet;
         aggregateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_TYPE__AGGREGATE, oldAggregate, aggregate, !oldAggregateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_TYPE__AGGREGATE, oldAggregate,
+                    aggregate, !oldAggregateESet ) );
     }
 
     /**
@@ -696,8 +699,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         boolean oldAggregateESet = aggregateESet;
         aggregate = AGGREGATE_EDEFAULT;
         aggregateESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.READING_TYPE__AGGREGATE, oldAggregate, AGGREGATE_EDEFAULT, oldAggregateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_TYPE__AGGREGATE, oldAggregate,
+                    AGGREGATE_EDEFAULT, oldAggregateESet ) );
     }
 
     /**
@@ -731,8 +735,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         commodity = newCommodity;
         boolean oldCommodityESet = commodityESet;
         commodityESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_TYPE__COMMODITY, oldCommodity, commodity, !oldCommodityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_TYPE__COMMODITY, oldCommodity,
+                    commodity, !oldCommodityESet ) );
     }
 
     /**
@@ -746,8 +751,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         boolean oldCommodityESet = commodityESet;
         commodity = COMMODITY_EDEFAULT;
         commodityESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.READING_TYPE__COMMODITY, oldCommodity, COMMODITY_EDEFAULT, oldCommodityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_TYPE__COMMODITY, oldCommodity,
+                    COMMODITY_EDEFAULT, oldCommodityESet ) );
     }
 
     /**
@@ -833,8 +839,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         cpp = newCpp;
         boolean oldCppESet = cppESet;
         cppESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_TYPE__CPP, oldCpp, cpp, !oldCppESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_TYPE__CPP, oldCpp, cpp,
+                    !oldCppESet ) );
     }
 
     /**
@@ -848,8 +855,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         boolean oldCppESet = cppESet;
         cpp = CPP_EDEFAULT;
         cppESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.READING_TYPE__CPP, oldCpp, CPP_EDEFAULT, oldCppESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_TYPE__CPP, oldCpp,
+                    CPP_EDEFAULT, oldCppESet ) );
     }
 
     /**
@@ -883,8 +891,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         currency = newCurrency;
         boolean oldCurrencyESet = currencyESet;
         currencyESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_TYPE__CURRENCY, oldCurrency, currency, !oldCurrencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_TYPE__CURRENCY, oldCurrency,
+                    currency, !oldCurrencyESet ) );
     }
 
     /**
@@ -898,8 +907,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         boolean oldCurrencyESet = currencyESet;
         currency = CURRENCY_EDEFAULT;
         currencyESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.READING_TYPE__CURRENCY, oldCurrency, CURRENCY_EDEFAULT, oldCurrencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_TYPE__CURRENCY, oldCurrency,
+                    CURRENCY_EDEFAULT, oldCurrencyESet ) );
     }
 
     /**
@@ -933,8 +943,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         flowDirection = newFlowDirection;
         boolean oldFlowDirectionESet = flowDirectionESet;
         flowDirectionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_TYPE__FLOW_DIRECTION, oldFlowDirection, flowDirection, !oldFlowDirectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_TYPE__FLOW_DIRECTION,
+                    oldFlowDirection, flowDirection, !oldFlowDirectionESet ) );
     }
 
     /**
@@ -984,8 +995,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         macroPeriod = newMacroPeriod;
         boolean oldMacroPeriodESet = macroPeriodESet;
         macroPeriodESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_TYPE__MACRO_PERIOD, oldMacroPeriod, macroPeriod, !oldMacroPeriodESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_TYPE__MACRO_PERIOD,
+                    oldMacroPeriod, macroPeriod, !oldMacroPeriodESet ) );
     }
 
     /**
@@ -999,8 +1011,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         boolean oldMacroPeriodESet = macroPeriodESet;
         macroPeriod = MACRO_PERIOD_EDEFAULT;
         macroPeriodESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.READING_TYPE__MACRO_PERIOD, oldMacroPeriod, MACRO_PERIOD_EDEFAULT, oldMacroPeriodESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_TYPE__MACRO_PERIOD,
+                    oldMacroPeriod, MACRO_PERIOD_EDEFAULT, oldMacroPeriodESet ) );
     }
 
     /**
@@ -1138,8 +1151,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         multiplier = newMultiplier;
         boolean oldMultiplierESet = multiplierESet;
         multiplierESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_TYPE__MULTIPLIER, oldMultiplier, multiplier, !oldMultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_TYPE__MULTIPLIER, oldMultiplier,
+                    multiplier, !oldMultiplierESet ) );
     }
 
     /**
@@ -1153,8 +1167,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         boolean oldMultiplierESet = multiplierESet;
         multiplier = MULTIPLIER_EDEFAULT;
         multiplierESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.READING_TYPE__MULTIPLIER, oldMultiplier, MULTIPLIER_EDEFAULT, oldMultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_TYPE__MULTIPLIER,
+                    oldMultiplier, MULTIPLIER_EDEFAULT, oldMultiplierESet ) );
     }
 
     /**
@@ -1188,8 +1203,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         phases = newPhases;
         boolean oldPhasesESet = phasesESet;
         phasesESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_TYPE__PHASES, oldPhases, phases, !oldPhasesESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_TYPE__PHASES, oldPhases, phases,
+                    !oldPhasesESet ) );
     }
 
     /**
@@ -1203,8 +1219,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         boolean oldPhasesESet = phasesESet;
         phases = PHASES_EDEFAULT;
         phasesESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.READING_TYPE__PHASES, oldPhases, PHASES_EDEFAULT, oldPhasesESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_TYPE__PHASES, oldPhases,
+                    PHASES_EDEFAULT, oldPhasesESet ) );
     }
 
     /**
@@ -1238,8 +1255,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         tou = newTou;
         boolean oldTouESet = touESet;
         touESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_TYPE__TOU, oldTou, tou, !oldTouESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_TYPE__TOU, oldTou, tou,
+                    !oldTouESet ) );
     }
 
     /**
@@ -1253,8 +1271,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         boolean oldTouESet = touESet;
         tou = TOU_EDEFAULT;
         touESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.READING_TYPE__TOU, oldTou, TOU_EDEFAULT, oldTouESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_TYPE__TOU, oldTou,
+                    TOU_EDEFAULT, oldTouESet ) );
     }
 
     /**
@@ -1288,8 +1307,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         unit = newUnit;
         boolean oldUnitESet = unitESet;
         unitESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_TYPE__UNIT, oldUnit, unit, !oldUnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_TYPE__UNIT, oldUnit, unit,
+                    !oldUnitESet ) );
     }
 
     /**
@@ -1303,8 +1323,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         boolean oldUnitESet = unitESet;
         unit = UNIT_EDEFAULT;
         unitESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.READING_TYPE__UNIT, oldUnit, UNIT_EDEFAULT, oldUnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_TYPE__UNIT, oldUnit,
+                    UNIT_EDEFAULT, oldUnitESet ) );
     }
 
     /**
@@ -1357,18 +1378,21 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
     public void setArgument( RationalNumber newArgument ) {
         if( newArgument != argument ) {
             NotificationChain msgs = null;
-            if( argument != null ) msgs = ( ( InternalEObject ) argument ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.READING_TYPE__ARGUMENT, null, msgs );
-            if( newArgument != null ) msgs = ( ( InternalEObject ) newArgument ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.READING_TYPE__ARGUMENT, null, msgs );
+            if( argument != null )
+                msgs = ( ( InternalEObject ) argument ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.READING_TYPE__ARGUMENT, null, msgs );
+            if( newArgument != null )
+                msgs = ( ( InternalEObject ) newArgument ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.READING_TYPE__ARGUMENT, null, msgs );
             msgs = basicSetArgument( newArgument, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldArgumentESet = argumentESet;
             argumentESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.READING_TYPE__ARGUMENT, newArgument, newArgument, !oldArgumentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_TYPE__ARGUMENT, newArgument,
+                        newArgument, !oldArgumentESet ) );
         }
     }
 
@@ -1410,8 +1434,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         else {
             boolean oldArgumentESet = argumentESet;
             argumentESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.READING_TYPE__ARGUMENT, null, null, oldArgumentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_TYPE__ARGUMENT, null, null,
+                        oldArgumentESet ) );
         }
     }
 
@@ -1465,10 +1490,12 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
     public void setInterharmonic( ReadingInterharmonic newInterharmonic ) {
         if( newInterharmonic != interharmonic ) {
             NotificationChain msgs = null;
-            if( interharmonic != null ) msgs = ( ( InternalEObject ) interharmonic ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.READING_TYPE__INTERHARMONIC, null, msgs );
-            if( newInterharmonic != null ) msgs = ( ( InternalEObject ) newInterharmonic ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.READING_TYPE__INTERHARMONIC, null, msgs );
+            if( interharmonic != null )
+                msgs = ( ( InternalEObject ) interharmonic ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.READING_TYPE__INTERHARMONIC, null, msgs );
+            if( newInterharmonic != null )
+                msgs = ( ( InternalEObject ) newInterharmonic ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.READING_TYPE__INTERHARMONIC, null, msgs );
             msgs = basicSetInterharmonic( newInterharmonic, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1519,8 +1546,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         else {
             boolean oldInterharmonicESet = interharmonicESet;
             interharmonicESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.READING_TYPE__INTERHARMONIC, null, null, oldInterharmonicESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_TYPE__INTERHARMONIC, null,
+                        null, oldInterharmonicESet ) );
         }
     }
 
@@ -1610,10 +1638,12 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
     public void setPendingCalculation( PendingCalculation newPendingCalculation ) {
         if( newPendingCalculation != pendingCalculation ) {
             NotificationChain msgs = null;
-            if( pendingCalculation != null ) msgs = ( ( InternalEObject ) pendingCalculation ).eInverseRemove( this,
-                    CimPackage.PENDING_CALCULATION__READING_TYPE, PendingCalculation.class, msgs );
-            if( newPendingCalculation != null ) msgs = ( ( InternalEObject ) newPendingCalculation ).eInverseAdd( this,
-                    CimPackage.PENDING_CALCULATION__READING_TYPE, PendingCalculation.class, msgs );
+            if( pendingCalculation != null )
+                msgs = ( ( InternalEObject ) pendingCalculation ).eInverseRemove( this,
+                        CimPackage.PENDING_CALCULATION__READING_TYPE, PendingCalculation.class, msgs );
+            if( newPendingCalculation != null )
+                msgs = ( ( InternalEObject ) newPendingCalculation ).eInverseAdd( this,
+                        CimPackage.PENDING_CALCULATION__READING_TYPE, PendingCalculation.class, msgs );
             msgs = basicSetPendingCalculation( newPendingCalculation, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1665,8 +1695,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         else {
             boolean oldPendingCalculationESet = pendingCalculationESet;
             pendingCalculationESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.READING_TYPE__PENDING_CALCULATION, null, null, oldPendingCalculationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_TYPE__PENDING_CALCULATION,
+                        null, null, oldPendingCalculationESet ) );
         }
     }
 
@@ -1691,8 +1722,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
             InternalEObject oldChannel = ( InternalEObject ) channel;
             channel = ( Channel ) eResolveProxy( oldChannel );
             if( channel != oldChannel ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.READING_TYPE__CHANNEL, oldChannel, channel ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.READING_TYPE__CHANNEL,
+                            oldChannel, channel ) );
             }
         }
         return channel;
@@ -1737,18 +1769,21 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
     public void setChannel( Channel newChannel ) {
         if( newChannel != channel ) {
             NotificationChain msgs = null;
-            if( channel != null ) msgs = ( ( InternalEObject ) channel ).eInverseRemove( this,
-                    CimPackage.CHANNEL__READING_TYPE, Channel.class, msgs );
-            if( newChannel != null ) msgs = ( ( InternalEObject ) newChannel ).eInverseAdd( this,
-                    CimPackage.CHANNEL__READING_TYPE, Channel.class, msgs );
+            if( channel != null )
+                msgs = ( ( InternalEObject ) channel ).eInverseRemove( this, CimPackage.CHANNEL__READING_TYPE,
+                        Channel.class, msgs );
+            if( newChannel != null )
+                msgs = ( ( InternalEObject ) newChannel ).eInverseAdd( this, CimPackage.CHANNEL__READING_TYPE,
+                        Channel.class, msgs );
             msgs = basicSetChannel( newChannel, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldChannelESet = channelESet;
             channelESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.READING_TYPE__CHANNEL, newChannel, newChannel, !oldChannelESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_TYPE__CHANNEL, newChannel,
+                        newChannel, !oldChannelESet ) );
         }
     }
 
@@ -1790,8 +1825,9 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
         else {
             boolean oldChannelESet = channelESet;
             channelESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.READING_TYPE__CHANNEL, null, null, oldChannelESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_TYPE__CHANNEL, null, null,
+                        oldChannelESet ) );
         }
     }
 
@@ -1893,12 +1929,14 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getReadings() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.READING_TYPE__CHANNEL:
-            if( channel != null ) msgs = ( ( InternalEObject ) channel ).eInverseRemove( this,
-                    CimPackage.CHANNEL__READING_TYPE, Channel.class, msgs );
+            if( channel != null )
+                msgs = ( ( InternalEObject ) channel ).eInverseRemove( this, CimPackage.CHANNEL__READING_TYPE,
+                        Channel.class, msgs );
             return basicSetChannel( ( Channel ) otherEnd, msgs );
         case CimPackage.READING_TYPE__PENDING_CALCULATION:
-            if( pendingCalculation != null ) msgs = ( ( InternalEObject ) pendingCalculation ).eInverseRemove( this,
-                    CimPackage.PENDING_CALCULATION__READING_TYPE, PendingCalculation.class, msgs );
+            if( pendingCalculation != null )
+                msgs = ( ( InternalEObject ) pendingCalculation ).eInverseRemove( this,
+                        CimPackage.PENDING_CALCULATION__READING_TYPE, PendingCalculation.class, msgs );
             return basicSetPendingCalculation( ( PendingCalculation ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -2202,7 +2240,7 @@ public class ReadingTypeImpl extends IdentifiedObjectImpl implements ReadingType
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (accumulation: " );
         if( accumulationESet )
             result.append( accumulation );

@@ -163,8 +163,9 @@ public class PowerCutZoneImpl extends PowerSystemResourceImpl implements PowerCu
         cutLevel1 = newCutLevel1;
         boolean oldCutLevel1ESet = cutLevel1ESet;
         cutLevel1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POWER_CUT_ZONE__CUT_LEVEL1, oldCutLevel1, cutLevel1, !oldCutLevel1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POWER_CUT_ZONE__CUT_LEVEL1, oldCutLevel1,
+                    cutLevel1, !oldCutLevel1ESet ) );
     }
 
     /**
@@ -178,8 +179,9 @@ public class PowerCutZoneImpl extends PowerSystemResourceImpl implements PowerCu
         boolean oldCutLevel1ESet = cutLevel1ESet;
         cutLevel1 = CUT_LEVEL1_EDEFAULT;
         cutLevel1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POWER_CUT_ZONE__CUT_LEVEL1, oldCutLevel1, CUT_LEVEL1_EDEFAULT, oldCutLevel1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POWER_CUT_ZONE__CUT_LEVEL1,
+                    oldCutLevel1, CUT_LEVEL1_EDEFAULT, oldCutLevel1ESet ) );
     }
 
     /**
@@ -213,8 +215,9 @@ public class PowerCutZoneImpl extends PowerSystemResourceImpl implements PowerCu
         cutLevel2 = newCutLevel2;
         boolean oldCutLevel2ESet = cutLevel2ESet;
         cutLevel2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POWER_CUT_ZONE__CUT_LEVEL2, oldCutLevel2, cutLevel2, !oldCutLevel2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POWER_CUT_ZONE__CUT_LEVEL2, oldCutLevel2,
+                    cutLevel2, !oldCutLevel2ESet ) );
     }
 
     /**
@@ -228,8 +231,9 @@ public class PowerCutZoneImpl extends PowerSystemResourceImpl implements PowerCu
         boolean oldCutLevel2ESet = cutLevel2ESet;
         cutLevel2 = CUT_LEVEL2_EDEFAULT;
         cutLevel2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POWER_CUT_ZONE__CUT_LEVEL2, oldCutLevel2, CUT_LEVEL2_EDEFAULT, oldCutLevel2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POWER_CUT_ZONE__CUT_LEVEL2,
+                    oldCutLevel2, CUT_LEVEL2_EDEFAULT, oldCutLevel2ESet ) );
     }
 
     /**
@@ -395,7 +399,7 @@ public class PowerCutZoneImpl extends PowerSystemResourceImpl implements PowerCu
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (cutLevel1: " );
         if( cutLevel1ESet )
             result.append( cutLevel1 );

@@ -92,7 +92,10 @@ public enum AsynchronousMachineKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final AsynchronousMachineKind[] VALUES_ARRAY = new AsynchronousMachineKind[] { GENERATOR, MOTOR, };
+    private static final AsynchronousMachineKind[] VALUES_ARRAY = new AsynchronousMachineKind[] {
+            GENERATOR,
+            MOTOR,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Asynchronous Machine Kind</b></em>' enumerators.

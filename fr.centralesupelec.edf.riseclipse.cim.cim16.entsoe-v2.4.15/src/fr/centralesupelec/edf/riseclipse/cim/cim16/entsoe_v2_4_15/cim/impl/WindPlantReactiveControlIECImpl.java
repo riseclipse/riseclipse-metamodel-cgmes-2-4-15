@@ -495,8 +495,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         kiwpx = newKiwpx;
         boolean oldKiwpxESet = kiwpxESet;
         kiwpxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__KIWPX, oldKiwpx, kiwpx, !oldKiwpxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__KIWPX,
+                    oldKiwpx, kiwpx, !oldKiwpxESet ) );
     }
 
     /**
@@ -510,8 +511,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         boolean oldKiwpxESet = kiwpxESet;
         kiwpx = KIWPX_EDEFAULT;
         kiwpxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__KIWPX, oldKiwpx, KIWPX_EDEFAULT, oldKiwpxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__KIWPX,
+                    oldKiwpx, KIWPX_EDEFAULT, oldKiwpxESet ) );
     }
 
     /**
@@ -545,8 +547,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         kpwpx = newKpwpx;
         boolean oldKpwpxESet = kpwpxESet;
         kpwpxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__KPWPX, oldKpwpx, kpwpx, !oldKpwpxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__KPWPX,
+                    oldKpwpx, kpwpx, !oldKpwpxESet ) );
     }
 
     /**
@@ -560,8 +563,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         boolean oldKpwpxESet = kpwpxESet;
         kpwpx = KPWPX_EDEFAULT;
         kpwpxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__KPWPX, oldKpwpx, KPWPX_EDEFAULT, oldKpwpxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__KPWPX,
+                    oldKpwpx, KPWPX_EDEFAULT, oldKpwpxESet ) );
     }
 
     /**
@@ -595,8 +599,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         kwpqu = newKwpqu;
         boolean oldKwpquESet = kwpquESet;
         kwpquESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__KWPQU, oldKwpqu, kwpqu, !oldKwpquESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__KWPQU,
+                    oldKwpqu, kwpqu, !oldKwpquESet ) );
     }
 
     /**
@@ -610,8 +615,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         boolean oldKwpquESet = kwpquESet;
         kwpqu = KWPQU_EDEFAULT;
         kwpquESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__KWPQU, oldKwpqu, KWPQU_EDEFAULT, oldKwpquESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__KWPQU,
+                    oldKwpqu, KWPQU_EDEFAULT, oldKwpquESet ) );
     }
 
     /**
@@ -645,8 +651,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         mwppf = newMwppf;
         boolean oldMwppfESet = mwppfESet;
         mwppfESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__MWPPF, oldMwppf, mwppf, !oldMwppfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__MWPPF,
+                    oldMwppf, mwppf, !oldMwppfESet ) );
     }
 
     /**
@@ -660,8 +667,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         boolean oldMwppfESet = mwppfESet;
         mwppf = MWPPF_EDEFAULT;
         mwppfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__MWPPF, oldMwppf, MWPPF_EDEFAULT, oldMwppfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__MWPPF,
+                    oldMwppf, MWPPF_EDEFAULT, oldMwppfESet ) );
     }
 
     /**
@@ -695,8 +703,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         mwpu = newMwpu;
         boolean oldMwpuESet = mwpuESet;
         mwpuESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__MWPU, oldMwpu, mwpu, !oldMwpuESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__MWPU,
+                    oldMwpu, mwpu, !oldMwpuESet ) );
     }
 
     /**
@@ -710,8 +719,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         boolean oldMwpuESet = mwpuESet;
         mwpu = MWPU_EDEFAULT;
         mwpuESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__MWPU, oldMwpu, MWPU_EDEFAULT, oldMwpuESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__MWPU,
+                    oldMwpu, MWPU_EDEFAULT, oldMwpuESet ) );
     }
 
     /**
@@ -745,8 +755,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         twppfilt = newTwppfilt;
         boolean oldTwppfiltESet = twppfiltESet;
         twppfiltESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TWPPFILT, oldTwppfilt, twppfilt, !oldTwppfiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TWPPFILT, oldTwppfilt, twppfilt, !oldTwppfiltESet ) );
     }
 
     /**
@@ -760,9 +771,10 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         boolean oldTwppfiltESet = twppfiltESet;
         twppfilt = TWPPFILT_EDEFAULT;
         twppfiltESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TWPPFILT,
-                        oldTwppfilt, TWPPFILT_EDEFAULT, oldTwppfiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TWPPFILT, oldTwppfilt, TWPPFILT_EDEFAULT,
+                    oldTwppfiltESet ) );
     }
 
     /**
@@ -796,8 +808,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         twpqfilt = newTwpqfilt;
         boolean oldTwpqfiltESet = twpqfiltESet;
         twpqfiltESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TWPQFILT, oldTwpqfilt, twpqfilt, !oldTwpqfiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TWPQFILT, oldTwpqfilt, twpqfilt, !oldTwpqfiltESet ) );
     }
 
     /**
@@ -811,9 +824,10 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         boolean oldTwpqfiltESet = twpqfiltESet;
         twpqfilt = TWPQFILT_EDEFAULT;
         twpqfiltESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TWPQFILT,
-                        oldTwpqfilt, TWPQFILT_EDEFAULT, oldTwpqfiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TWPQFILT, oldTwpqfilt, TWPQFILT_EDEFAULT,
+                    oldTwpqfiltESet ) );
     }
 
     /**
@@ -847,8 +861,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         twpufilt = newTwpufilt;
         boolean oldTwpufiltESet = twpufiltESet;
         twpufiltESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TWPUFILT, oldTwpufilt, twpufilt, !oldTwpufiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TWPUFILT, oldTwpufilt, twpufilt, !oldTwpufiltESet ) );
     }
 
     /**
@@ -862,9 +877,10 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         boolean oldTwpufiltESet = twpufiltESet;
         twpufilt = TWPUFILT_EDEFAULT;
         twpufiltESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TWPUFILT,
-                        oldTwpufilt, TWPUFILT_EDEFAULT, oldTwpufiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TWPUFILT, oldTwpufilt, TWPUFILT_EDEFAULT,
+                    oldTwpufiltESet ) );
     }
 
     /**
@@ -898,8 +914,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         txft = newTxft;
         boolean oldTxftESet = txftESet;
         txftESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TXFT, oldTxft, txft, !oldTxftESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TXFT,
+                    oldTxft, txft, !oldTxftESet ) );
     }
 
     /**
@@ -913,8 +930,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         boolean oldTxftESet = txftESet;
         txft = TXFT_EDEFAULT;
         txftESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TXFT, oldTxft, TXFT_EDEFAULT, oldTxftESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TXFT,
+                    oldTxft, TXFT_EDEFAULT, oldTxftESet ) );
     }
 
     /**
@@ -948,8 +966,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         txfv = newTxfv;
         boolean oldTxfvESet = txfvESet;
         txfvESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TXFV, oldTxfv, txfv, !oldTxfvESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TXFV,
+                    oldTxfv, txfv, !oldTxfvESet ) );
     }
 
     /**
@@ -963,8 +982,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         boolean oldTxfvESet = txfvESet;
         txfv = TXFV_EDEFAULT;
         txfvESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TXFV, oldTxfv, TXFV_EDEFAULT, oldTxfvESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__TXFV,
+                    oldTxfv, TXFV_EDEFAULT, oldTxfvESet ) );
     }
 
     /**
@@ -998,8 +1018,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         uwpqdip = newUwpqdip;
         boolean oldUwpqdipESet = uwpqdipESet;
         uwpqdipESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__UWPQDIP, oldUwpqdip, uwpqdip, !oldUwpqdipESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__UWPQDIP,
+                    oldUwpqdip, uwpqdip, !oldUwpqdipESet ) );
     }
 
     /**
@@ -1013,8 +1034,10 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         boolean oldUwpqdipESet = uwpqdipESet;
         uwpqdip = UWPQDIP_EDEFAULT;
         uwpqdipESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__UWPQDIP, oldUwpqdip, UWPQDIP_EDEFAULT, oldUwpqdipESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__UWPQDIP, oldUwpqdip, UWPQDIP_EDEFAULT,
+                    oldUwpqdipESet ) );
     }
 
     /**
@@ -1048,8 +1071,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         xrefmax = newXrefmax;
         boolean oldXrefmaxESet = xrefmaxESet;
         xrefmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__XREFMAX, oldXrefmax, xrefmax, !oldXrefmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__XREFMAX,
+                    oldXrefmax, xrefmax, !oldXrefmaxESet ) );
     }
 
     /**
@@ -1063,8 +1087,10 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         boolean oldXrefmaxESet = xrefmaxESet;
         xrefmax = XREFMAX_EDEFAULT;
         xrefmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__XREFMAX, oldXrefmax, XREFMAX_EDEFAULT, oldXrefmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__XREFMAX, oldXrefmax, XREFMAX_EDEFAULT,
+                    oldXrefmaxESet ) );
     }
 
     /**
@@ -1098,8 +1124,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         xrefmin = newXrefmin;
         boolean oldXrefminESet = xrefminESet;
         xrefminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__XREFMIN, oldXrefmin, xrefmin, !oldXrefminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__XREFMIN,
+                    oldXrefmin, xrefmin, !oldXrefminESet ) );
     }
 
     /**
@@ -1113,8 +1140,10 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         boolean oldXrefminESet = xrefminESet;
         xrefmin = XREFMIN_EDEFAULT;
         xrefminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__XREFMIN, oldXrefmin, XREFMIN_EDEFAULT, oldXrefminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__XREFMIN, oldXrefmin, XREFMIN_EDEFAULT,
+                    oldXrefminESet ) );
     }
 
     /**
@@ -1138,8 +1167,10 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
             InternalEObject oldWindPlantIEC = ( InternalEObject ) windPlantIEC;
             windPlantIEC = ( WindPlantIEC ) eResolveProxy( oldWindPlantIEC );
             if( windPlantIEC != oldWindPlantIEC ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__WIND_PLANT_IEC, oldWindPlantIEC, windPlantIEC ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__WIND_PLANT_IEC, oldWindPlantIEC,
+                            windPlantIEC ) );
             }
         }
         return windPlantIEC;
@@ -1185,19 +1216,22 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
     public void setWindPlantIEC( WindPlantIEC newWindPlantIEC ) {
         if( newWindPlantIEC != windPlantIEC ) {
             NotificationChain msgs = null;
-            if( windPlantIEC != null ) msgs = ( ( InternalEObject ) windPlantIEC ).eInverseRemove( this,
-                    CimPackage.WIND_PLANT_IEC__WIND_PLANT_REACTIVE_CONTROL_IEC, WindPlantIEC.class, msgs );
-            if( newWindPlantIEC != null ) msgs = ( ( InternalEObject ) newWindPlantIEC ).eInverseAdd( this,
-                    CimPackage.WIND_PLANT_IEC__WIND_PLANT_REACTIVE_CONTROL_IEC, WindPlantIEC.class, msgs );
+            if( windPlantIEC != null )
+                msgs = ( ( InternalEObject ) windPlantIEC ).eInverseRemove( this,
+                        CimPackage.WIND_PLANT_IEC__WIND_PLANT_REACTIVE_CONTROL_IEC, WindPlantIEC.class, msgs );
+            if( newWindPlantIEC != null )
+                msgs = ( ( InternalEObject ) newWindPlantIEC ).eInverseAdd( this,
+                        CimPackage.WIND_PLANT_IEC__WIND_PLANT_REACTIVE_CONTROL_IEC, WindPlantIEC.class, msgs );
             msgs = basicSetWindPlantIEC( newWindPlantIEC, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWindPlantIECESet = windPlantIECESet;
             windPlantIECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__WIND_PLANT_IEC, newWindPlantIEC, newWindPlantIEC,
-                    !oldWindPlantIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__WIND_PLANT_IEC, newWindPlantIEC, newWindPlantIEC,
+                        !oldWindPlantIECESet ) );
         }
     }
 
@@ -1240,8 +1274,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
         else {
             boolean oldWindPlantIECESet = windPlantIECESet;
             windPlantIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__WIND_PLANT_IEC, null, null, oldWindPlantIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__WIND_PLANT_IEC, null, null, oldWindPlantIECESet ) );
         }
     }
 
@@ -1264,8 +1299,9 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.WIND_PLANT_REACTIVE_CONTROL_IEC__WIND_PLANT_IEC:
-            if( windPlantIEC != null ) msgs = ( ( InternalEObject ) windPlantIEC ).eInverseRemove( this,
-                    CimPackage.WIND_PLANT_IEC__WIND_PLANT_REACTIVE_CONTROL_IEC, WindPlantIEC.class, msgs );
+            if( windPlantIEC != null )
+                msgs = ( ( InternalEObject ) windPlantIEC ).eInverseRemove( this,
+                        CimPackage.WIND_PLANT_IEC__WIND_PLANT_REACTIVE_CONTROL_IEC, WindPlantIEC.class, msgs );
             return basicSetWindPlantIEC( ( WindPlantIEC ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1483,7 +1519,7 @@ public class WindPlantReactiveControlIECImpl extends IdentifiedObjectImpl implem
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kiwpx: " );
         if( kiwpxESet )
             result.append( kiwpx );

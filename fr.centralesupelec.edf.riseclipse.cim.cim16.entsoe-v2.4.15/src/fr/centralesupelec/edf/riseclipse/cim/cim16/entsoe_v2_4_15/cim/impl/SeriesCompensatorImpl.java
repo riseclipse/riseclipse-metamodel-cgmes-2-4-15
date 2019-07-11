@@ -292,8 +292,9 @@ public class SeriesCompensatorImpl extends ConductingEquipmentImpl implements Se
         r = newR;
         boolean oldRESet = rESet;
         rESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.SERIES_COMPENSATOR__R, oldR, r, !oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SERIES_COMPENSATOR__R, oldR, r,
+                    !oldRESet ) );
     }
 
     /**
@@ -307,8 +308,9 @@ public class SeriesCompensatorImpl extends ConductingEquipmentImpl implements Se
         boolean oldRESet = rESet;
         r = R_EDEFAULT;
         rESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SERIES_COMPENSATOR__R, oldR, R_EDEFAULT, oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SERIES_COMPENSATOR__R, oldR,
+                    R_EDEFAULT, oldRESet ) );
     }
 
     /**
@@ -342,8 +344,9 @@ public class SeriesCompensatorImpl extends ConductingEquipmentImpl implements Se
         r0 = newR0;
         boolean oldR0ESet = r0ESet;
         r0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SERIES_COMPENSATOR__R0, oldR0, r0, !oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SERIES_COMPENSATOR__R0, oldR0, r0,
+                    !oldR0ESet ) );
     }
 
     /**
@@ -357,8 +360,9 @@ public class SeriesCompensatorImpl extends ConductingEquipmentImpl implements Se
         boolean oldR0ESet = r0ESet;
         r0 = R0_EDEFAULT;
         r0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SERIES_COMPENSATOR__R0, oldR0, R0_EDEFAULT, oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SERIES_COMPENSATOR__R0, oldR0,
+                    R0_EDEFAULT, oldR0ESet ) );
     }
 
     /**
@@ -444,9 +448,10 @@ public class SeriesCompensatorImpl extends ConductingEquipmentImpl implements Se
         varistorRatedCurrent = newVaristorRatedCurrent;
         boolean oldVaristorRatedCurrentESet = varistorRatedCurrentESet;
         varistorRatedCurrentESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.SERIES_COMPENSATOR__VARISTOR_RATED_CURRENT,
-                        oldVaristorRatedCurrent, varistorRatedCurrent, !oldVaristorRatedCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SERIES_COMPENSATOR__VARISTOR_RATED_CURRENT, oldVaristorRatedCurrent,
+                    varistorRatedCurrent, !oldVaristorRatedCurrentESet ) );
     }
 
     /**
@@ -460,9 +465,10 @@ public class SeriesCompensatorImpl extends ConductingEquipmentImpl implements Se
         boolean oldVaristorRatedCurrentESet = varistorRatedCurrentESet;
         varistorRatedCurrent = VARISTOR_RATED_CURRENT_EDEFAULT;
         varistorRatedCurrentESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.SERIES_COMPENSATOR__VARISTOR_RATED_CURRENT,
-                        oldVaristorRatedCurrent, VARISTOR_RATED_CURRENT_EDEFAULT, oldVaristorRatedCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SERIES_COMPENSATOR__VARISTOR_RATED_CURRENT, oldVaristorRatedCurrent,
+                    VARISTOR_RATED_CURRENT_EDEFAULT, oldVaristorRatedCurrentESet ) );
     }
 
     /**
@@ -496,9 +502,10 @@ public class SeriesCompensatorImpl extends ConductingEquipmentImpl implements Se
         varistorVoltageThreshold = newVaristorVoltageThreshold;
         boolean oldVaristorVoltageThresholdESet = varistorVoltageThresholdESet;
         varistorVoltageThresholdESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SERIES_COMPENSATOR__VARISTOR_VOLTAGE_THRESHOLD, oldVaristorVoltageThreshold,
-                varistorVoltageThreshold, !oldVaristorVoltageThresholdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SERIES_COMPENSATOR__VARISTOR_VOLTAGE_THRESHOLD, oldVaristorVoltageThreshold,
+                    varistorVoltageThreshold, !oldVaristorVoltageThresholdESet ) );
     }
 
     /**
@@ -512,9 +519,10 @@ public class SeriesCompensatorImpl extends ConductingEquipmentImpl implements Se
         boolean oldVaristorVoltageThresholdESet = varistorVoltageThresholdESet;
         varistorVoltageThreshold = VARISTOR_VOLTAGE_THRESHOLD_EDEFAULT;
         varistorVoltageThresholdESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SERIES_COMPENSATOR__VARISTOR_VOLTAGE_THRESHOLD, oldVaristorVoltageThreshold,
-                VARISTOR_VOLTAGE_THRESHOLD_EDEFAULT, oldVaristorVoltageThresholdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SERIES_COMPENSATOR__VARISTOR_VOLTAGE_THRESHOLD, oldVaristorVoltageThreshold,
+                    VARISTOR_VOLTAGE_THRESHOLD_EDEFAULT, oldVaristorVoltageThresholdESet ) );
     }
 
     /**
@@ -548,8 +556,9 @@ public class SeriesCompensatorImpl extends ConductingEquipmentImpl implements Se
         x = newX;
         boolean oldXESet = xESet;
         xESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.SERIES_COMPENSATOR__X, oldX, x, !oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SERIES_COMPENSATOR__X, oldX, x,
+                    !oldXESet ) );
     }
 
     /**
@@ -563,8 +572,9 @@ public class SeriesCompensatorImpl extends ConductingEquipmentImpl implements Se
         boolean oldXESet = xESet;
         x = X_EDEFAULT;
         xESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SERIES_COMPENSATOR__X, oldX, X_EDEFAULT, oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SERIES_COMPENSATOR__X, oldX,
+                    X_EDEFAULT, oldXESet ) );
     }
 
     /**
@@ -598,8 +608,9 @@ public class SeriesCompensatorImpl extends ConductingEquipmentImpl implements Se
         x0 = newX0;
         boolean oldX0ESet = x0ESet;
         x0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SERIES_COMPENSATOR__X0, oldX0, x0, !oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SERIES_COMPENSATOR__X0, oldX0, x0,
+                    !oldX0ESet ) );
     }
 
     /**
@@ -613,8 +624,9 @@ public class SeriesCompensatorImpl extends ConductingEquipmentImpl implements Se
         boolean oldX0ESet = x0ESet;
         x0 = X0_EDEFAULT;
         x0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SERIES_COMPENSATOR__X0, oldX0, X0_EDEFAULT, oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SERIES_COMPENSATOR__X0, oldX0,
+                    X0_EDEFAULT, oldX0ESet ) );
     }
 
     /**
@@ -754,7 +766,7 @@ public class SeriesCompensatorImpl extends ConductingEquipmentImpl implements Se
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (r: " );
         if( rESet )
             result.append( r );

@@ -117,8 +117,11 @@ public enum DCConverterOperatingModeKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final DCConverterOperatingModeKind[] VALUES_ARRAY = new DCConverterOperatingModeKind[] { BIPOLAR,
-            MONOPOLAR_METALLIC_RETURN, MONOPOLAR_GROUND_RETURN, };
+    private static final DCConverterOperatingModeKind[] VALUES_ARRAY = new DCConverterOperatingModeKind[] {
+            BIPOLAR,
+            MONOPOLAR_METALLIC_RETURN,
+            MONOPOLAR_GROUND_RETURN,
+    };
 
     /**
      * A public read-only list of all the '<em><b>DC Converter Operating Mode Kind</b></em>' enumerators.

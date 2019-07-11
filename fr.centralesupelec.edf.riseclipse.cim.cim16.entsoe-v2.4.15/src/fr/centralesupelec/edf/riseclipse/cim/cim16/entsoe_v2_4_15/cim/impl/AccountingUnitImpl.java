@@ -205,8 +205,9 @@ public class AccountingUnitImpl extends MinimalEObjectImpl.Container implements 
         energyUnit = newEnergyUnit;
         boolean oldEnergyUnitESet = energyUnitESet;
         energyUnitESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACCOUNTING_UNIT__ENERGY_UNIT, oldEnergyUnit, energyUnit, !oldEnergyUnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACCOUNTING_UNIT__ENERGY_UNIT,
+                    oldEnergyUnit, energyUnit, !oldEnergyUnitESet ) );
     }
 
     /**
@@ -220,8 +221,9 @@ public class AccountingUnitImpl extends MinimalEObjectImpl.Container implements 
         boolean oldEnergyUnitESet = energyUnitESet;
         energyUnit = ENERGY_UNIT_EDEFAULT;
         energyUnitESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACCOUNTING_UNIT__ENERGY_UNIT, oldEnergyUnit, ENERGY_UNIT_EDEFAULT, oldEnergyUnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACCOUNTING_UNIT__ENERGY_UNIT,
+                    oldEnergyUnit, ENERGY_UNIT_EDEFAULT, oldEnergyUnitESet ) );
     }
 
     /**
@@ -255,8 +257,9 @@ public class AccountingUnitImpl extends MinimalEObjectImpl.Container implements 
         monetaryUnit = newMonetaryUnit == null ? MONETARY_UNIT_EDEFAULT : newMonetaryUnit;
         boolean oldMonetaryUnitESet = monetaryUnitESet;
         monetaryUnitESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACCOUNTING_UNIT__MONETARY_UNIT, oldMonetaryUnit, monetaryUnit, !oldMonetaryUnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACCOUNTING_UNIT__MONETARY_UNIT,
+                    oldMonetaryUnit, monetaryUnit, !oldMonetaryUnitESet ) );
     }
 
     /**
@@ -306,8 +309,9 @@ public class AccountingUnitImpl extends MinimalEObjectImpl.Container implements 
         multiplier = newMultiplier == null ? MULTIPLIER_EDEFAULT : newMultiplier;
         boolean oldMultiplierESet = multiplierESet;
         multiplierESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACCOUNTING_UNIT__MULTIPLIER, oldMultiplier, multiplier, !oldMultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACCOUNTING_UNIT__MULTIPLIER,
+                    oldMultiplier, multiplier, !oldMultiplierESet ) );
     }
 
     /**
@@ -321,8 +325,9 @@ public class AccountingUnitImpl extends MinimalEObjectImpl.Container implements 
         boolean oldMultiplierESet = multiplierESet;
         multiplier = MULTIPLIER_EDEFAULT;
         multiplierESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACCOUNTING_UNIT__MULTIPLIER, oldMultiplier, MULTIPLIER_EDEFAULT, oldMultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACCOUNTING_UNIT__MULTIPLIER,
+                    oldMultiplier, MULTIPLIER_EDEFAULT, oldMultiplierESet ) );
     }
 
     /**
@@ -356,8 +361,9 @@ public class AccountingUnitImpl extends MinimalEObjectImpl.Container implements 
         value = newValue;
         boolean oldValueESet = valueESet;
         valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACCOUNTING_UNIT__VALUE, oldValue, value, !oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACCOUNTING_UNIT__VALUE, oldValue, value,
+                    !oldValueESet ) );
     }
 
     /**
@@ -371,8 +377,9 @@ public class AccountingUnitImpl extends MinimalEObjectImpl.Container implements 
         boolean oldValueESet = valueESet;
         value = VALUE_EDEFAULT;
         valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACCOUNTING_UNIT__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACCOUNTING_UNIT__VALUE, oldValue,
+                    VALUE_EDEFAULT, oldValueESet ) );
     }
 
     /**
@@ -482,7 +489,7 @@ public class AccountingUnitImpl extends MinimalEObjectImpl.Container implements 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (energyUnit: " );
         if( energyUnitESet )
             result.append( energyUnit );

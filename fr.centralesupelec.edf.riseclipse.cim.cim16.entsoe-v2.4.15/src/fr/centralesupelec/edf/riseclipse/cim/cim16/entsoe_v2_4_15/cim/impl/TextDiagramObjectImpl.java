@@ -112,8 +112,9 @@ public class TextDiagramObjectImpl extends DiagramObjectImpl implements TextDiag
         text = newText;
         boolean oldTextESet = textESet;
         textESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TEXT_DIAGRAM_OBJECT__TEXT, oldText, text, !oldTextESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TEXT_DIAGRAM_OBJECT__TEXT, oldText, text,
+                    !oldTextESet ) );
     }
 
     /**
@@ -127,8 +128,9 @@ public class TextDiagramObjectImpl extends DiagramObjectImpl implements TextDiag
         boolean oldTextESet = textESet;
         text = TEXT_EDEFAULT;
         textESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TEXT_DIAGRAM_OBJECT__TEXT, oldText, TEXT_EDEFAULT, oldTextESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TEXT_DIAGRAM_OBJECT__TEXT, oldText,
+                    TEXT_EDEFAULT, oldTextESet ) );
     }
 
     /**
@@ -208,7 +210,7 @@ public class TextDiagramObjectImpl extends DiagramObjectImpl implements TextDiag
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (text: " );
         if( textESet )
             result.append( text );

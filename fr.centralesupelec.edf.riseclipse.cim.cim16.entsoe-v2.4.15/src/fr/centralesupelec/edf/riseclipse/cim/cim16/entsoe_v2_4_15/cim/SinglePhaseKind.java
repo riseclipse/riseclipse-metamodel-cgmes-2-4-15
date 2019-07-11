@@ -192,7 +192,14 @@ public enum SinglePhaseKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final SinglePhaseKind[] VALUES_ARRAY = new SinglePhaseKind[] { A, B, C, N, S1, S2, };
+    private static final SinglePhaseKind[] VALUES_ARRAY = new SinglePhaseKind[] {
+            A,
+            B,
+            C,
+            N,
+            S1,
+            S2,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Single Phase Kind</b></em>' enumerators.

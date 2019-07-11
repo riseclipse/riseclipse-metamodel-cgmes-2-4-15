@@ -262,8 +262,9 @@ public class OverexcLimIEEEImpl extends OverexcitationLimiterDynamicsImpl implem
         hyst = newHyst;
         boolean oldHystESet = hystESet;
         hystESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OVEREXC_LIM_IEEE__HYST, oldHyst, hyst, !oldHystESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OVEREXC_LIM_IEEE__HYST, oldHyst, hyst,
+                    !oldHystESet ) );
     }
 
     /**
@@ -277,8 +278,9 @@ public class OverexcLimIEEEImpl extends OverexcitationLimiterDynamicsImpl implem
         boolean oldHystESet = hystESet;
         hyst = HYST_EDEFAULT;
         hystESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.OVEREXC_LIM_IEEE__HYST, oldHyst, HYST_EDEFAULT, oldHystESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OVEREXC_LIM_IEEE__HYST, oldHyst,
+                    HYST_EDEFAULT, oldHystESet ) );
     }
 
     /**
@@ -312,8 +314,9 @@ public class OverexcLimIEEEImpl extends OverexcitationLimiterDynamicsImpl implem
         ifdlim = newIfdlim;
         boolean oldIfdlimESet = ifdlimESet;
         ifdlimESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OVEREXC_LIM_IEEE__IFDLIM, oldIfdlim, ifdlim, !oldIfdlimESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OVEREXC_LIM_IEEE__IFDLIM, oldIfdlim,
+                    ifdlim, !oldIfdlimESet ) );
     }
 
     /**
@@ -327,8 +330,9 @@ public class OverexcLimIEEEImpl extends OverexcitationLimiterDynamicsImpl implem
         boolean oldIfdlimESet = ifdlimESet;
         ifdlim = IFDLIM_EDEFAULT;
         ifdlimESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.OVEREXC_LIM_IEEE__IFDLIM, oldIfdlim, IFDLIM_EDEFAULT, oldIfdlimESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OVEREXC_LIM_IEEE__IFDLIM, oldIfdlim,
+                    IFDLIM_EDEFAULT, oldIfdlimESet ) );
     }
 
     /**
@@ -362,8 +366,9 @@ public class OverexcLimIEEEImpl extends OverexcitationLimiterDynamicsImpl implem
         ifdmax = newIfdmax;
         boolean oldIfdmaxESet = ifdmaxESet;
         ifdmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OVEREXC_LIM_IEEE__IFDMAX, oldIfdmax, ifdmax, !oldIfdmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OVEREXC_LIM_IEEE__IFDMAX, oldIfdmax,
+                    ifdmax, !oldIfdmaxESet ) );
     }
 
     /**
@@ -377,8 +382,9 @@ public class OverexcLimIEEEImpl extends OverexcitationLimiterDynamicsImpl implem
         boolean oldIfdmaxESet = ifdmaxESet;
         ifdmax = IFDMAX_EDEFAULT;
         ifdmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.OVEREXC_LIM_IEEE__IFDMAX, oldIfdmax, IFDMAX_EDEFAULT, oldIfdmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OVEREXC_LIM_IEEE__IFDMAX, oldIfdmax,
+                    IFDMAX_EDEFAULT, oldIfdmaxESet ) );
     }
 
     /**
@@ -412,8 +418,9 @@ public class OverexcLimIEEEImpl extends OverexcitationLimiterDynamicsImpl implem
         itfpu = newItfpu;
         boolean oldItfpuESet = itfpuESet;
         itfpuESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OVEREXC_LIM_IEEE__ITFPU, oldItfpu, itfpu, !oldItfpuESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OVEREXC_LIM_IEEE__ITFPU, oldItfpu, itfpu,
+                    !oldItfpuESet ) );
     }
 
     /**
@@ -427,8 +434,9 @@ public class OverexcLimIEEEImpl extends OverexcitationLimiterDynamicsImpl implem
         boolean oldItfpuESet = itfpuESet;
         itfpu = ITFPU_EDEFAULT;
         itfpuESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.OVEREXC_LIM_IEEE__ITFPU, oldItfpu, ITFPU_EDEFAULT, oldItfpuESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OVEREXC_LIM_IEEE__ITFPU, oldItfpu,
+                    ITFPU_EDEFAULT, oldItfpuESet ) );
     }
 
     /**
@@ -462,8 +470,9 @@ public class OverexcLimIEEEImpl extends OverexcitationLimiterDynamicsImpl implem
         kcd = newKcd;
         boolean oldKcdESet = kcdESet;
         kcdESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OVEREXC_LIM_IEEE__KCD, oldKcd, kcd, !oldKcdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OVEREXC_LIM_IEEE__KCD, oldKcd, kcd,
+                    !oldKcdESet ) );
     }
 
     /**
@@ -477,8 +486,9 @@ public class OverexcLimIEEEImpl extends OverexcitationLimiterDynamicsImpl implem
         boolean oldKcdESet = kcdESet;
         kcd = KCD_EDEFAULT;
         kcdESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.OVEREXC_LIM_IEEE__KCD, oldKcd, KCD_EDEFAULT, oldKcdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OVEREXC_LIM_IEEE__KCD, oldKcd,
+                    KCD_EDEFAULT, oldKcdESet ) );
     }
 
     /**
@@ -512,8 +522,9 @@ public class OverexcLimIEEEImpl extends OverexcitationLimiterDynamicsImpl implem
         kramp = newKramp;
         boolean oldKrampESet = krampESet;
         krampESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OVEREXC_LIM_IEEE__KRAMP, oldKramp, kramp, !oldKrampESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OVEREXC_LIM_IEEE__KRAMP, oldKramp, kramp,
+                    !oldKrampESet ) );
     }
 
     /**
@@ -527,8 +538,9 @@ public class OverexcLimIEEEImpl extends OverexcitationLimiterDynamicsImpl implem
         boolean oldKrampESet = krampESet;
         kramp = KRAMP_EDEFAULT;
         krampESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.OVEREXC_LIM_IEEE__KRAMP, oldKramp, KRAMP_EDEFAULT, oldKrampESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OVEREXC_LIM_IEEE__KRAMP, oldKramp,
+                    KRAMP_EDEFAULT, oldKrampESet ) );
     }
 
     /**
@@ -658,7 +670,7 @@ public class OverexcLimIEEEImpl extends OverexcitationLimiterDynamicsImpl implem
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (hyst: " );
         if( hystESet )
             result.append( hyst );

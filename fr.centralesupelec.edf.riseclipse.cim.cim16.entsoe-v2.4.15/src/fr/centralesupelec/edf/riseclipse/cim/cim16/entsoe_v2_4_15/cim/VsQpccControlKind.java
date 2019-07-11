@@ -117,8 +117,11 @@ public enum VsQpccControlKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final VsQpccControlKind[] VALUES_ARRAY = new VsQpccControlKind[] { REACTIVE_PCC, VOLTAGE_PCC,
-            POWER_FACTOR_PCC, };
+    private static final VsQpccControlKind[] VALUES_ARRAY = new VsQpccControlKind[] {
+            REACTIVE_PCC,
+            VOLTAGE_PCC,
+            POWER_FACTOR_PCC,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Vs Qpcc Control Kind</b></em>' enumerators.

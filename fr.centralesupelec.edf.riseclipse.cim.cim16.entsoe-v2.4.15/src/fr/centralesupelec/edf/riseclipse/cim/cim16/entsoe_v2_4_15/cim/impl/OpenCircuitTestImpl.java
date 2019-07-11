@@ -343,9 +343,10 @@ public class OpenCircuitTestImpl extends TransformerTestImpl implements OpenCirc
         boolean oldEnergisedEndVoltageESet = energisedEndVoltageESet;
         energisedEndVoltage = ENERGISED_END_VOLTAGE_EDEFAULT;
         energisedEndVoltageESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.OPEN_CIRCUIT_TEST__ENERGISED_END_VOLTAGE,
-                        oldEnergisedEndVoltage, ENERGISED_END_VOLTAGE_EDEFAULT, oldEnergisedEndVoltageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.OPEN_CIRCUIT_TEST__ENERGISED_END_VOLTAGE, oldEnergisedEndVoltage,
+                    ENERGISED_END_VOLTAGE_EDEFAULT, oldEnergisedEndVoltageESet ) );
     }
 
     /**
@@ -379,8 +380,9 @@ public class OpenCircuitTestImpl extends TransformerTestImpl implements OpenCirc
         openEndStep = newOpenEndStep;
         boolean oldOpenEndStepESet = openEndStepESet;
         openEndStepESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OPEN_CIRCUIT_TEST__OPEN_END_STEP, oldOpenEndStep, openEndStep, !oldOpenEndStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OPEN_CIRCUIT_TEST__OPEN_END_STEP,
+                    oldOpenEndStep, openEndStep, !oldOpenEndStepESet ) );
     }
 
     /**
@@ -482,8 +484,9 @@ public class OpenCircuitTestImpl extends TransformerTestImpl implements OpenCirc
         phaseShift = newPhaseShift;
         boolean oldPhaseShiftESet = phaseShiftESet;
         phaseShiftESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OPEN_CIRCUIT_TEST__PHASE_SHIFT, oldPhaseShift, phaseShift, !oldPhaseShiftESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OPEN_CIRCUIT_TEST__PHASE_SHIFT,
+                    oldPhaseShift, phaseShift, !oldPhaseShiftESet ) );
     }
 
     /**
@@ -497,8 +500,9 @@ public class OpenCircuitTestImpl extends TransformerTestImpl implements OpenCirc
         boolean oldPhaseShiftESet = phaseShiftESet;
         phaseShift = PHASE_SHIFT_EDEFAULT;
         phaseShiftESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.OPEN_CIRCUIT_TEST__PHASE_SHIFT, oldPhaseShift, PHASE_SHIFT_EDEFAULT, oldPhaseShiftESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OPEN_CIRCUIT_TEST__PHASE_SHIFT,
+                    oldPhaseShift, PHASE_SHIFT_EDEFAULT, oldPhaseShiftESet ) );
     }
 
     /**
@@ -551,18 +555,21 @@ public class OpenCircuitTestImpl extends TransformerTestImpl implements OpenCirc
     public void setOpenEnd( TransformerEndInfo newOpenEnd ) {
         if( newOpenEnd != openEnd ) {
             NotificationChain msgs = null;
-            if( openEnd != null ) msgs = ( ( InternalEObject ) openEnd ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_END_INFO__OPEN_END_OPEN_CIRCUIT_TESTS, TransformerEndInfo.class, msgs );
-            if( newOpenEnd != null ) msgs = ( ( InternalEObject ) newOpenEnd ).eInverseAdd( this,
-                    CimPackage.TRANSFORMER_END_INFO__OPEN_END_OPEN_CIRCUIT_TESTS, TransformerEndInfo.class, msgs );
+            if( openEnd != null )
+                msgs = ( ( InternalEObject ) openEnd ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_END_INFO__OPEN_END_OPEN_CIRCUIT_TESTS, TransformerEndInfo.class, msgs );
+            if( newOpenEnd != null )
+                msgs = ( ( InternalEObject ) newOpenEnd ).eInverseAdd( this,
+                        CimPackage.TRANSFORMER_END_INFO__OPEN_END_OPEN_CIRCUIT_TESTS, TransformerEndInfo.class, msgs );
             msgs = basicSetOpenEnd( newOpenEnd, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldOpenEndESet = openEndESet;
             openEndESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.OPEN_CIRCUIT_TEST__OPEN_END, newOpenEnd, newOpenEnd, !oldOpenEndESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OPEN_CIRCUIT_TEST__OPEN_END,
+                        newOpenEnd, newOpenEnd, !oldOpenEndESet ) );
         }
     }
 
@@ -604,8 +611,9 @@ public class OpenCircuitTestImpl extends TransformerTestImpl implements OpenCirc
         else {
             boolean oldOpenEndESet = openEndESet;
             openEndESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OPEN_CIRCUIT_TEST__OPEN_END, null, null, oldOpenEndESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OPEN_CIRCUIT_TEST__OPEN_END, null,
+                        null, oldOpenEndESet ) );
         }
     }
 
@@ -660,10 +668,14 @@ public class OpenCircuitTestImpl extends TransformerTestImpl implements OpenCirc
     public void setEnergisedEnd( TransformerEndInfo newEnergisedEnd ) {
         if( newEnergisedEnd != energisedEnd ) {
             NotificationChain msgs = null;
-            if( energisedEnd != null ) msgs = ( ( InternalEObject ) energisedEnd ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_OPEN_CIRCUIT_TESTS, TransformerEndInfo.class, msgs );
-            if( newEnergisedEnd != null ) msgs = ( ( InternalEObject ) newEnergisedEnd ).eInverseAdd( this,
-                    CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_OPEN_CIRCUIT_TESTS, TransformerEndInfo.class, msgs );
+            if( energisedEnd != null )
+                msgs = ( ( InternalEObject ) energisedEnd ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_OPEN_CIRCUIT_TESTS, TransformerEndInfo.class,
+                        msgs );
+            if( newEnergisedEnd != null )
+                msgs = ( ( InternalEObject ) newEnergisedEnd ).eInverseAdd( this,
+                        CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_OPEN_CIRCUIT_TESTS, TransformerEndInfo.class,
+                        msgs );
             msgs = basicSetEnergisedEnd( newEnergisedEnd, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -714,8 +726,9 @@ public class OpenCircuitTestImpl extends TransformerTestImpl implements OpenCirc
         else {
             boolean oldEnergisedEndESet = energisedEndESet;
             energisedEndESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OPEN_CIRCUIT_TEST__ENERGISED_END, null, null, oldEnergisedEndESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.OPEN_CIRCUIT_TEST__ENERGISED_END,
+                        null, null, oldEnergisedEndESet ) );
         }
     }
 
@@ -738,12 +751,15 @@ public class OpenCircuitTestImpl extends TransformerTestImpl implements OpenCirc
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.OPEN_CIRCUIT_TEST__ENERGISED_END:
-            if( energisedEnd != null ) msgs = ( ( InternalEObject ) energisedEnd ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_OPEN_CIRCUIT_TESTS, TransformerEndInfo.class, msgs );
+            if( energisedEnd != null )
+                msgs = ( ( InternalEObject ) energisedEnd ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_OPEN_CIRCUIT_TESTS, TransformerEndInfo.class,
+                        msgs );
             return basicSetEnergisedEnd( ( TransformerEndInfo ) otherEnd, msgs );
         case CimPackage.OPEN_CIRCUIT_TEST__OPEN_END:
-            if( openEnd != null ) msgs = ( ( InternalEObject ) openEnd ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_END_INFO__OPEN_END_OPEN_CIRCUIT_TESTS, TransformerEndInfo.class, msgs );
+            if( openEnd != null )
+                msgs = ( ( InternalEObject ) openEnd ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_END_INFO__OPEN_END_OPEN_CIRCUIT_TESTS, TransformerEndInfo.class, msgs );
             return basicSetOpenEnd( ( TransformerEndInfo ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -892,7 +908,7 @@ public class OpenCircuitTestImpl extends TransformerTestImpl implements OpenCirc
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (energisedEndStep: " );
         if( energisedEndStepESet )
             result.append( energisedEndStep );

@@ -126,19 +126,22 @@ public class EquivalentEquipmentImpl extends ConductingEquipmentImpl implements 
     public void setEquivalentNetwork( EquivalentNetwork newEquivalentNetwork ) {
         if( newEquivalentNetwork != equivalentNetwork ) {
             NotificationChain msgs = null;
-            if( equivalentNetwork != null ) msgs = ( ( InternalEObject ) equivalentNetwork ).eInverseRemove( this,
-                    CimPackage.EQUIVALENT_NETWORK__EQUIVALENT_EQUIPMENTS, EquivalentNetwork.class, msgs );
-            if( newEquivalentNetwork != null ) msgs = ( ( InternalEObject ) newEquivalentNetwork ).eInverseAdd( this,
-                    CimPackage.EQUIVALENT_NETWORK__EQUIVALENT_EQUIPMENTS, EquivalentNetwork.class, msgs );
+            if( equivalentNetwork != null )
+                msgs = ( ( InternalEObject ) equivalentNetwork ).eInverseRemove( this,
+                        CimPackage.EQUIVALENT_NETWORK__EQUIVALENT_EQUIPMENTS, EquivalentNetwork.class, msgs );
+            if( newEquivalentNetwork != null )
+                msgs = ( ( InternalEObject ) newEquivalentNetwork ).eInverseAdd( this,
+                        CimPackage.EQUIVALENT_NETWORK__EQUIVALENT_EQUIPMENTS, EquivalentNetwork.class, msgs );
             msgs = basicSetEquivalentNetwork( newEquivalentNetwork, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldEquivalentNetworkESet = equivalentNetworkESet;
             equivalentNetworkESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_EQUIPMENT__EQUIVALENT_NETWORK,
-                            newEquivalentNetwork, newEquivalentNetwork, !oldEquivalentNetworkESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.EQUIVALENT_EQUIPMENT__EQUIVALENT_NETWORK, newEquivalentNetwork, newEquivalentNetwork,
+                        !oldEquivalentNetworkESet ) );
         }
     }
 
@@ -181,8 +184,9 @@ public class EquivalentEquipmentImpl extends ConductingEquipmentImpl implements 
         else {
             boolean oldEquivalentNetworkESet = equivalentNetworkESet;
             equivalentNetworkESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.EQUIVALENT_EQUIPMENT__EQUIVALENT_NETWORK, null, null, oldEquivalentNetworkESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.EQUIVALENT_EQUIPMENT__EQUIVALENT_NETWORK, null, null, oldEquivalentNetworkESet ) );
         }
     }
 
@@ -205,8 +209,9 @@ public class EquivalentEquipmentImpl extends ConductingEquipmentImpl implements 
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.EQUIVALENT_EQUIPMENT__EQUIVALENT_NETWORK:
-            if( equivalentNetwork != null ) msgs = ( ( InternalEObject ) equivalentNetwork ).eInverseRemove( this,
-                    CimPackage.EQUIVALENT_NETWORK__EQUIVALENT_EQUIPMENTS, EquivalentNetwork.class, msgs );
+            if( equivalentNetwork != null )
+                msgs = ( ( InternalEObject ) equivalentNetwork ).eInverseRemove( this,
+                        CimPackage.EQUIVALENT_NETWORK__EQUIVALENT_EQUIPMENTS, EquivalentNetwork.class, msgs );
             return basicSetEquivalentNetwork( ( EquivalentNetwork ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

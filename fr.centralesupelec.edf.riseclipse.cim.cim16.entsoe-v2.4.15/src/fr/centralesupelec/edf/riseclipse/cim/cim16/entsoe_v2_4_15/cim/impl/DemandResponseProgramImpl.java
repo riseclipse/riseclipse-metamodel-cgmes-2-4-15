@@ -179,8 +179,9 @@ public class DemandResponseProgramImpl extends IdentifiedObjectImpl implements D
         type = newType;
         boolean oldTypeESet = typeESet;
         typeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DEMAND_RESPONSE_PROGRAM__TYPE, oldType, type, !oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DEMAND_RESPONSE_PROGRAM__TYPE, oldType,
+                    type, !oldTypeESet ) );
     }
 
     /**
@@ -194,8 +195,9 @@ public class DemandResponseProgramImpl extends IdentifiedObjectImpl implements D
         boolean oldTypeESet = typeESet;
         type = TYPE_EDEFAULT;
         typeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DEMAND_RESPONSE_PROGRAM__TYPE, oldType, TYPE_EDEFAULT, oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DEMAND_RESPONSE_PROGRAM__TYPE, oldType,
+                    TYPE_EDEFAULT, oldTypeESet ) );
     }
 
     /**
@@ -249,19 +251,22 @@ public class DemandResponseProgramImpl extends IdentifiedObjectImpl implements D
     public void setValidityInterval( DateTimeInterval newValidityInterval ) {
         if( newValidityInterval != validityInterval ) {
             NotificationChain msgs = null;
-            if( validityInterval != null ) msgs = ( ( InternalEObject ) validityInterval ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.DEMAND_RESPONSE_PROGRAM__VALIDITY_INTERVAL, null, msgs );
-            if( newValidityInterval != null ) msgs = ( ( InternalEObject ) newValidityInterval ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.DEMAND_RESPONSE_PROGRAM__VALIDITY_INTERVAL, null, msgs );
+            if( validityInterval != null )
+                msgs = ( ( InternalEObject ) validityInterval ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.DEMAND_RESPONSE_PROGRAM__VALIDITY_INTERVAL, null, msgs );
+            if( newValidityInterval != null )
+                msgs = ( ( InternalEObject ) newValidityInterval ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.DEMAND_RESPONSE_PROGRAM__VALIDITY_INTERVAL, null, msgs );
             msgs = basicSetValidityInterval( newValidityInterval, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldValidityIntervalESet = validityIntervalESet;
             validityIntervalESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.DEMAND_RESPONSE_PROGRAM__VALIDITY_INTERVAL, newValidityInterval, newValidityInterval,
-                    !oldValidityIntervalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.DEMAND_RESPONSE_PROGRAM__VALIDITY_INTERVAL, newValidityInterval, newValidityInterval,
+                        !oldValidityIntervalESet ) );
         }
     }
 
@@ -304,8 +309,9 @@ public class DemandResponseProgramImpl extends IdentifiedObjectImpl implements D
         else {
             boolean oldValidityIntervalESet = validityIntervalESet;
             validityIntervalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.DEMAND_RESPONSE_PROGRAM__VALIDITY_INTERVAL, null, null, oldValidityIntervalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.DEMAND_RESPONSE_PROGRAM__VALIDITY_INTERVAL, null, null, oldValidityIntervalESet ) );
         }
     }
 
@@ -577,7 +583,7 @@ public class DemandResponseProgramImpl extends IdentifiedObjectImpl implements D
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (type: " );
         if( typeESet )
             result.append( type );

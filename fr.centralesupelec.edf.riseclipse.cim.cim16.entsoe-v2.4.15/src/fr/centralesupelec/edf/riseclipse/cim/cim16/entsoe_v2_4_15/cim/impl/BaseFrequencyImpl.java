@@ -112,8 +112,9 @@ public class BaseFrequencyImpl extends IdentifiedObjectImpl implements BaseFrequ
         frequency = newFrequency;
         boolean oldFrequencyESet = frequencyESet;
         frequencyESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BASE_FREQUENCY__FREQUENCY, oldFrequency, frequency, !oldFrequencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BASE_FREQUENCY__FREQUENCY, oldFrequency,
+                    frequency, !oldFrequencyESet ) );
     }
 
     /**
@@ -127,8 +128,9 @@ public class BaseFrequencyImpl extends IdentifiedObjectImpl implements BaseFrequ
         boolean oldFrequencyESet = frequencyESet;
         frequency = FREQUENCY_EDEFAULT;
         frequencyESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BASE_FREQUENCY__FREQUENCY, oldFrequency, FREQUENCY_EDEFAULT, oldFrequencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BASE_FREQUENCY__FREQUENCY,
+                    oldFrequency, FREQUENCY_EDEFAULT, oldFrequencyESet ) );
     }
 
     /**
@@ -208,7 +210,7 @@ public class BaseFrequencyImpl extends IdentifiedObjectImpl implements BaseFrequ
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (frequency: " );
         if( frequencyESet )
             result.append( frequency );

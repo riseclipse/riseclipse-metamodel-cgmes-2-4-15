@@ -201,19 +201,22 @@ public class ControlAreaGeneratingUnitImpl extends IdentifiedObjectImpl implemen
     public void setControlArea( ControlArea newControlArea ) {
         if( newControlArea != controlArea ) {
             NotificationChain msgs = null;
-            if( controlArea != null ) msgs = ( ( InternalEObject ) controlArea ).eInverseRemove( this,
-                    CimPackage.CONTROL_AREA__CONTROL_AREA_GENERATING_UNIT, ControlArea.class, msgs );
-            if( newControlArea != null ) msgs = ( ( InternalEObject ) newControlArea ).eInverseAdd( this,
-                    CimPackage.CONTROL_AREA__CONTROL_AREA_GENERATING_UNIT, ControlArea.class, msgs );
+            if( controlArea != null )
+                msgs = ( ( InternalEObject ) controlArea ).eInverseRemove( this,
+                        CimPackage.CONTROL_AREA__CONTROL_AREA_GENERATING_UNIT, ControlArea.class, msgs );
+            if( newControlArea != null )
+                msgs = ( ( InternalEObject ) newControlArea ).eInverseAdd( this,
+                        CimPackage.CONTROL_AREA__CONTROL_AREA_GENERATING_UNIT, ControlArea.class, msgs );
             msgs = basicSetControlArea( newControlArea, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldControlAreaESet = controlAreaESet;
             controlAreaESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CONTROL_AREA_GENERATING_UNIT__CONTROL_AREA, newControlArea, newControlArea,
-                    !oldControlAreaESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.CONTROL_AREA_GENERATING_UNIT__CONTROL_AREA, newControlArea, newControlArea,
+                        !oldControlAreaESet ) );
         }
     }
 
@@ -255,8 +258,9 @@ public class ControlAreaGeneratingUnitImpl extends IdentifiedObjectImpl implemen
         else {
             boolean oldControlAreaESet = controlAreaESet;
             controlAreaESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONTROL_AREA_GENERATING_UNIT__CONTROL_AREA, null, null, oldControlAreaESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CONTROL_AREA_GENERATING_UNIT__CONTROL_AREA, null, null, oldControlAreaESet ) );
         }
     }
 
@@ -311,19 +315,22 @@ public class ControlAreaGeneratingUnitImpl extends IdentifiedObjectImpl implemen
     public void setGeneratingUnit( GeneratingUnit newGeneratingUnit ) {
         if( newGeneratingUnit != generatingUnit ) {
             NotificationChain msgs = null;
-            if( generatingUnit != null ) msgs = ( ( InternalEObject ) generatingUnit ).eInverseRemove( this,
-                    CimPackage.GENERATING_UNIT__CONTROL_AREA_GENERATING_UNIT, GeneratingUnit.class, msgs );
-            if( newGeneratingUnit != null ) msgs = ( ( InternalEObject ) newGeneratingUnit ).eInverseAdd( this,
-                    CimPackage.GENERATING_UNIT__CONTROL_AREA_GENERATING_UNIT, GeneratingUnit.class, msgs );
+            if( generatingUnit != null )
+                msgs = ( ( InternalEObject ) generatingUnit ).eInverseRemove( this,
+                        CimPackage.GENERATING_UNIT__CONTROL_AREA_GENERATING_UNIT, GeneratingUnit.class, msgs );
+            if( newGeneratingUnit != null )
+                msgs = ( ( InternalEObject ) newGeneratingUnit ).eInverseAdd( this,
+                        CimPackage.GENERATING_UNIT__CONTROL_AREA_GENERATING_UNIT, GeneratingUnit.class, msgs );
             msgs = basicSetGeneratingUnit( newGeneratingUnit, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldGeneratingUnitESet = generatingUnitESet;
             generatingUnitESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CONTROL_AREA_GENERATING_UNIT__GENERATING_UNIT, newGeneratingUnit, newGeneratingUnit,
-                    !oldGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.CONTROL_AREA_GENERATING_UNIT__GENERATING_UNIT, newGeneratingUnit, newGeneratingUnit,
+                        !oldGeneratingUnitESet ) );
         }
     }
 
@@ -366,8 +373,9 @@ public class ControlAreaGeneratingUnitImpl extends IdentifiedObjectImpl implemen
         else {
             boolean oldGeneratingUnitESet = generatingUnitESet;
             generatingUnitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONTROL_AREA_GENERATING_UNIT__GENERATING_UNIT, null, null, oldGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CONTROL_AREA_GENERATING_UNIT__GENERATING_UNIT, null, null, oldGeneratingUnitESet ) );
         }
     }
 
@@ -394,12 +402,14 @@ public class ControlAreaGeneratingUnitImpl extends IdentifiedObjectImpl implemen
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getAltGeneratingUnitMeas() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.CONTROL_AREA_GENERATING_UNIT__CONTROL_AREA:
-            if( controlArea != null ) msgs = ( ( InternalEObject ) controlArea ).eInverseRemove( this,
-                    CimPackage.CONTROL_AREA__CONTROL_AREA_GENERATING_UNIT, ControlArea.class, msgs );
+            if( controlArea != null )
+                msgs = ( ( InternalEObject ) controlArea ).eInverseRemove( this,
+                        CimPackage.CONTROL_AREA__CONTROL_AREA_GENERATING_UNIT, ControlArea.class, msgs );
             return basicSetControlArea( ( ControlArea ) otherEnd, msgs );
         case CimPackage.CONTROL_AREA_GENERATING_UNIT__GENERATING_UNIT:
-            if( generatingUnit != null ) msgs = ( ( InternalEObject ) generatingUnit ).eInverseRemove( this,
-                    CimPackage.GENERATING_UNIT__CONTROL_AREA_GENERATING_UNIT, GeneratingUnit.class, msgs );
+            if( generatingUnit != null )
+                msgs = ( ( InternalEObject ) generatingUnit ).eInverseRemove( this,
+                        CimPackage.GENERATING_UNIT__CONTROL_AREA_GENERATING_UNIT, GeneratingUnit.class, msgs );
             return basicSetGeneratingUnit( ( GeneratingUnit ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

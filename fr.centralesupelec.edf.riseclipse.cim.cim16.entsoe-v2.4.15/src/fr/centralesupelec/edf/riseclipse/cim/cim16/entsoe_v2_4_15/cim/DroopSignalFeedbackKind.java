@@ -142,8 +142,12 @@ public enum DroopSignalFeedbackKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final DroopSignalFeedbackKind[] VALUES_ARRAY = new DroopSignalFeedbackKind[] { ELECTRICAL_POWER,
-            NONE, FUEL_VALVE_STROKE, GOVERNOR_OUTPUT, };
+    private static final DroopSignalFeedbackKind[] VALUES_ARRAY = new DroopSignalFeedbackKind[] {
+            ELECTRICAL_POWER,
+            NONE,
+            FUEL_VALVE_STROKE,
+            GOVERNOR_OUTPUT,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Droop Signal Feedback Kind</b></em>' enumerators.

@@ -188,8 +188,9 @@ public class JumperActionImpl extends SwitchingStepImpl implements JumperAction 
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.JUMPER_ACTION__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.JUMPER_ACTION__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -203,8 +204,9 @@ public class JumperActionImpl extends SwitchingStepImpl implements JumperAction 
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.JUMPER_ACTION__KIND, oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.JUMPER_ACTION__KIND, oldKind,
+                    KIND_EDEFAULT, oldKindESet ) );
     }
 
     /**
@@ -259,10 +261,12 @@ public class JumperActionImpl extends SwitchingStepImpl implements JumperAction 
     public void setSwitchingStepGroup( SwitchingStepGroup newSwitchingStepGroup ) {
         if( newSwitchingStepGroup != switchingStepGroup ) {
             NotificationChain msgs = null;
-            if( switchingStepGroup != null ) msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
-                    CimPackage.SWITCHING_STEP_GROUP__JUMPER_ACTIONS, SwitchingStepGroup.class, msgs );
-            if( newSwitchingStepGroup != null ) msgs = ( ( InternalEObject ) newSwitchingStepGroup ).eInverseAdd( this,
-                    CimPackage.SWITCHING_STEP_GROUP__JUMPER_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( switchingStepGroup != null )
+                msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
+                        CimPackage.SWITCHING_STEP_GROUP__JUMPER_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( newSwitchingStepGroup != null )
+                msgs = ( ( InternalEObject ) newSwitchingStepGroup ).eInverseAdd( this,
+                        CimPackage.SWITCHING_STEP_GROUP__JUMPER_ACTIONS, SwitchingStepGroup.class, msgs );
             msgs = basicSetSwitchingStepGroup( newSwitchingStepGroup, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -314,8 +318,9 @@ public class JumperActionImpl extends SwitchingStepImpl implements JumperAction 
         else {
             boolean oldSwitchingStepGroupESet = switchingStepGroupESet;
             switchingStepGroupESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.JUMPER_ACTION__SWITCHING_STEP_GROUP, null, null, oldSwitchingStepGroupESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.JUMPER_ACTION__SWITCHING_STEP_GROUP, null, null, oldSwitchingStepGroupESet ) );
         }
     }
 
@@ -404,18 +409,21 @@ public class JumperActionImpl extends SwitchingStepImpl implements JumperAction 
     public void setJumper( Jumper newJumper ) {
         if( newJumper != jumper ) {
             NotificationChain msgs = null;
-            if( jumper != null ) msgs = ( ( InternalEObject ) jumper ).eInverseRemove( this,
-                    CimPackage.JUMPER__JUMPER_ACTION, Jumper.class, msgs );
-            if( newJumper != null ) msgs = ( ( InternalEObject ) newJumper ).eInverseAdd( this,
-                    CimPackage.JUMPER__JUMPER_ACTION, Jumper.class, msgs );
+            if( jumper != null )
+                msgs = ( ( InternalEObject ) jumper ).eInverseRemove( this, CimPackage.JUMPER__JUMPER_ACTION,
+                        Jumper.class, msgs );
+            if( newJumper != null )
+                msgs = ( ( InternalEObject ) newJumper ).eInverseAdd( this, CimPackage.JUMPER__JUMPER_ACTION,
+                        Jumper.class, msgs );
             msgs = basicSetJumper( newJumper, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldJumperESet = jumperESet;
             jumperESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.JUMPER_ACTION__JUMPER, newJumper, newJumper, !oldJumperESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.JUMPER_ACTION__JUMPER, newJumper,
+                        newJumper, !oldJumperESet ) );
         }
     }
 
@@ -457,8 +465,9 @@ public class JumperActionImpl extends SwitchingStepImpl implements JumperAction 
         else {
             boolean oldJumperESet = jumperESet;
             jumperESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.JUMPER_ACTION__JUMPER, null, null, oldJumperESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.JUMPER_ACTION__JUMPER, null, null,
+                        oldJumperESet ) );
         }
     }
 
@@ -517,15 +526,17 @@ public class JumperActionImpl extends SwitchingStepImpl implements JumperAction 
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.JUMPER_ACTION__JUMPER:
-            if( jumper != null ) msgs = ( ( InternalEObject ) jumper ).eInverseRemove( this,
-                    CimPackage.JUMPER__JUMPER_ACTION, Jumper.class, msgs );
+            if( jumper != null )
+                msgs = ( ( InternalEObject ) jumper ).eInverseRemove( this, CimPackage.JUMPER__JUMPER_ACTION,
+                        Jumper.class, msgs );
             return basicSetJumper( ( Jumper ) otherEnd, msgs );
         case CimPackage.JUMPER_ACTION__JUMPED_EQUIPMENTS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getJumpedEquipments() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.JUMPER_ACTION__SWITCHING_STEP_GROUP:
-            if( switchingStepGroup != null ) msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
-                    CimPackage.SWITCHING_STEP_GROUP__JUMPER_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( switchingStepGroup != null )
+                msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
+                        CimPackage.SWITCHING_STEP_GROUP__JUMPER_ACTIONS, SwitchingStepGroup.class, msgs );
             return basicSetSwitchingStepGroup( ( SwitchingStepGroup ) otherEnd, msgs );
         case CimPackage.JUMPER_ACTION__ALONG_AC_LINE_SEGMENTS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getAlongACLineSegments() )
@@ -664,7 +675,7 @@ public class JumperActionImpl extends SwitchingStepImpl implements JumperAction 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kind: " );
         if( kindESet )
             result.append( kind );

@@ -207,8 +207,9 @@ public class BaseWorkImpl extends DocumentImpl implements BaseWork {
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BASE_WORK__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BASE_WORK__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -222,8 +223,9 @@ public class BaseWorkImpl extends DocumentImpl implements BaseWork {
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BASE_WORK__KIND, oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BASE_WORK__KIND, oldKind,
+                    KIND_EDEFAULT, oldKindESet ) );
     }
 
     /**
@@ -257,8 +259,9 @@ public class BaseWorkImpl extends DocumentImpl implements BaseWork {
         statusKind = newStatusKind == null ? STATUS_KIND_EDEFAULT : newStatusKind;
         boolean oldStatusKindESet = statusKindESet;
         statusKindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BASE_WORK__STATUS_KIND, oldStatusKind, statusKind, !oldStatusKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BASE_WORK__STATUS_KIND, oldStatusKind,
+                    statusKind, !oldStatusKindESet ) );
     }
 
     /**
@@ -272,8 +275,9 @@ public class BaseWorkImpl extends DocumentImpl implements BaseWork {
         boolean oldStatusKindESet = statusKindESet;
         statusKind = STATUS_KIND_EDEFAULT;
         statusKindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BASE_WORK__STATUS_KIND, oldStatusKind, STATUS_KIND_EDEFAULT, oldStatusKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BASE_WORK__STATUS_KIND, oldStatusKind,
+                    STATUS_KIND_EDEFAULT, oldStatusKindESet ) );
     }
 
     /**
@@ -326,18 +330,21 @@ public class BaseWorkImpl extends DocumentImpl implements BaseWork {
     public void setPriority( Priority newPriority ) {
         if( newPriority != priority ) {
             NotificationChain msgs = null;
-            if( priority != null ) msgs = ( ( InternalEObject ) priority ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.BASE_WORK__PRIORITY, null, msgs );
-            if( newPriority != null ) msgs = ( ( InternalEObject ) newPriority ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.BASE_WORK__PRIORITY, null, msgs );
+            if( priority != null )
+                msgs = ( ( InternalEObject ) priority ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.BASE_WORK__PRIORITY, null, msgs );
+            if( newPriority != null )
+                msgs = ( ( InternalEObject ) newPriority ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.BASE_WORK__PRIORITY, null, msgs );
             msgs = basicSetPriority( newPriority, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldPriorityESet = priorityESet;
             priorityESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.BASE_WORK__PRIORITY, newPriority, newPriority, !oldPriorityESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BASE_WORK__PRIORITY, newPriority,
+                        newPriority, !oldPriorityESet ) );
         }
     }
 
@@ -379,8 +386,9 @@ public class BaseWorkImpl extends DocumentImpl implements BaseWork {
         else {
             boolean oldPriorityESet = priorityESet;
             priorityESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.BASE_WORK__PRIORITY, null, null, oldPriorityESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BASE_WORK__PRIORITY, null, null,
+                        oldPriorityESet ) );
         }
     }
 
@@ -468,18 +476,21 @@ public class BaseWorkImpl extends DocumentImpl implements BaseWork {
     public void setWorkLocation( WorkLocation newWorkLocation ) {
         if( newWorkLocation != workLocation ) {
             NotificationChain msgs = null;
-            if( workLocation != null ) msgs = ( ( InternalEObject ) workLocation ).eInverseRemove( this,
-                    CimPackage.WORK_LOCATION__BASE_WORKS, WorkLocation.class, msgs );
-            if( newWorkLocation != null ) msgs = ( ( InternalEObject ) newWorkLocation ).eInverseAdd( this,
-                    CimPackage.WORK_LOCATION__BASE_WORKS, WorkLocation.class, msgs );
+            if( workLocation != null )
+                msgs = ( ( InternalEObject ) workLocation ).eInverseRemove( this, CimPackage.WORK_LOCATION__BASE_WORKS,
+                        WorkLocation.class, msgs );
+            if( newWorkLocation != null )
+                msgs = ( ( InternalEObject ) newWorkLocation ).eInverseAdd( this, CimPackage.WORK_LOCATION__BASE_WORKS,
+                        WorkLocation.class, msgs );
             msgs = basicSetWorkLocation( newWorkLocation, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWorkLocationESet = workLocationESet;
             workLocationESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.BASE_WORK__WORK_LOCATION, newWorkLocation, newWorkLocation, !oldWorkLocationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BASE_WORK__WORK_LOCATION,
+                        newWorkLocation, newWorkLocation, !oldWorkLocationESet ) );
         }
     }
 
@@ -521,8 +532,9 @@ public class BaseWorkImpl extends DocumentImpl implements BaseWork {
         else {
             boolean oldWorkLocationESet = workLocationESet;
             workLocationESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.BASE_WORK__WORK_LOCATION, null, null, oldWorkLocationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BASE_WORK__WORK_LOCATION, null,
+                        null, oldWorkLocationESet ) );
         }
     }
 
@@ -546,8 +558,9 @@ public class BaseWorkImpl extends DocumentImpl implements BaseWork {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.BASE_WORK__WORK_LOCATION:
-            if( workLocation != null ) msgs = ( ( InternalEObject ) workLocation ).eInverseRemove( this,
-                    CimPackage.WORK_LOCATION__BASE_WORKS, WorkLocation.class, msgs );
+            if( workLocation != null )
+                msgs = ( ( InternalEObject ) workLocation ).eInverseRemove( this, CimPackage.WORK_LOCATION__BASE_WORKS,
+                        WorkLocation.class, msgs );
             return basicSetWorkLocation( ( WorkLocation ) otherEnd, msgs );
         case CimPackage.BASE_WORK__TIME_SCHEDULES:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTimeSchedules() )
@@ -683,7 +696,7 @@ public class BaseWorkImpl extends DocumentImpl implements BaseWork {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kind: " );
         if( kindESet )
             result.append( kind );

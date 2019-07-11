@@ -442,8 +442,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         db = newDb;
         boolean oldDbESet = dbESet;
         dbESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.TURB_LCFB1__DB, oldDb, db, !oldDbESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TURB_LCFB1__DB, oldDb, db,
+                    !oldDbESet ) );
     }
 
     /**
@@ -457,8 +458,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         boolean oldDbESet = dbESet;
         db = DB_EDEFAULT;
         dbESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TURB_LCFB1__DB, oldDb, DB_EDEFAULT, oldDbESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TURB_LCFB1__DB, oldDb, DB_EDEFAULT,
+                    oldDbESet ) );
     }
 
     /**
@@ -492,8 +494,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         emax = newEmax;
         boolean oldEmaxESet = emaxESet;
         emaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TURB_LCFB1__EMAX, oldEmax, emax, !oldEmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TURB_LCFB1__EMAX, oldEmax, emax,
+                    !oldEmaxESet ) );
     }
 
     /**
@@ -507,8 +510,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         boolean oldEmaxESet = emaxESet;
         emax = EMAX_EDEFAULT;
         emaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TURB_LCFB1__EMAX, oldEmax, EMAX_EDEFAULT, oldEmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TURB_LCFB1__EMAX, oldEmax,
+                    EMAX_EDEFAULT, oldEmaxESet ) );
     }
 
     /**
@@ -542,8 +546,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         fb = newFb;
         boolean oldFbESet = fbESet;
         fbESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.TURB_LCFB1__FB, oldFb, fb, !oldFbESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TURB_LCFB1__FB, oldFb, fb,
+                    !oldFbESet ) );
     }
 
     /**
@@ -557,8 +562,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         boolean oldFbESet = fbESet;
         fb = FB_EDEFAULT;
         fbESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TURB_LCFB1__FB, oldFb, FB_EDEFAULT, oldFbESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TURB_LCFB1__FB, oldFb, FB_EDEFAULT,
+                    oldFbESet ) );
     }
 
     /**
@@ -592,8 +598,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         fbf = newFbf;
         boolean oldFbfESet = fbfESet;
         fbfESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.TURB_LCFB1__FBF, oldFbf, fbf, !oldFbfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TURB_LCFB1__FBF, oldFbf, fbf,
+                    !oldFbfESet ) );
     }
 
     /**
@@ -607,8 +614,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         boolean oldFbfESet = fbfESet;
         fbf = FBF_EDEFAULT;
         fbfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TURB_LCFB1__FBF, oldFbf, FBF_EDEFAULT, oldFbfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TURB_LCFB1__FBF, oldFbf, FBF_EDEFAULT,
+                    oldFbfESet ) );
     }
 
     /**
@@ -642,8 +650,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         irmax = newIrmax;
         boolean oldIrmaxESet = irmaxESet;
         irmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TURB_LCFB1__IRMAX, oldIrmax, irmax, !oldIrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TURB_LCFB1__IRMAX, oldIrmax, irmax,
+                    !oldIrmaxESet ) );
     }
 
     /**
@@ -657,8 +666,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         boolean oldIrmaxESet = irmaxESet;
         irmax = IRMAX_EDEFAULT;
         irmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TURB_LCFB1__IRMAX, oldIrmax, IRMAX_EDEFAULT, oldIrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TURB_LCFB1__IRMAX, oldIrmax,
+                    IRMAX_EDEFAULT, oldIrmaxESet ) );
     }
 
     /**
@@ -692,8 +702,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         ki = newKi;
         boolean oldKiESet = kiESet;
         kiESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.TURB_LCFB1__KI, oldKi, ki, !oldKiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TURB_LCFB1__KI, oldKi, ki,
+                    !oldKiESet ) );
     }
 
     /**
@@ -707,8 +718,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         boolean oldKiESet = kiESet;
         ki = KI_EDEFAULT;
         kiESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TURB_LCFB1__KI, oldKi, KI_EDEFAULT, oldKiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TURB_LCFB1__KI, oldKi, KI_EDEFAULT,
+                    oldKiESet ) );
     }
 
     /**
@@ -742,8 +754,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         kp = newKp;
         boolean oldKpESet = kpESet;
         kpESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.TURB_LCFB1__KP, oldKp, kp, !oldKpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TURB_LCFB1__KP, oldKp, kp,
+                    !oldKpESet ) );
     }
 
     /**
@@ -757,8 +770,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         boolean oldKpESet = kpESet;
         kp = KP_EDEFAULT;
         kpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TURB_LCFB1__KP, oldKp, KP_EDEFAULT, oldKpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TURB_LCFB1__KP, oldKp, KP_EDEFAULT,
+                    oldKpESet ) );
     }
 
     /**
@@ -792,8 +806,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         mwbase = newMwbase;
         boolean oldMwbaseESet = mwbaseESet;
         mwbaseESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TURB_LCFB1__MWBASE, oldMwbase, mwbase, !oldMwbaseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TURB_LCFB1__MWBASE, oldMwbase, mwbase,
+                    !oldMwbaseESet ) );
     }
 
     /**
@@ -807,8 +822,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         boolean oldMwbaseESet = mwbaseESet;
         mwbase = MWBASE_EDEFAULT;
         mwbaseESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TURB_LCFB1__MWBASE, oldMwbase, MWBASE_EDEFAULT, oldMwbaseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TURB_LCFB1__MWBASE, oldMwbase,
+                    MWBASE_EDEFAULT, oldMwbaseESet ) );
     }
 
     /**
@@ -842,8 +858,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         pbf = newPbf;
         boolean oldPbfESet = pbfESet;
         pbfESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.TURB_LCFB1__PBF, oldPbf, pbf, !oldPbfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TURB_LCFB1__PBF, oldPbf, pbf,
+                    !oldPbfESet ) );
     }
 
     /**
@@ -857,8 +874,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         boolean oldPbfESet = pbfESet;
         pbf = PBF_EDEFAULT;
         pbfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TURB_LCFB1__PBF, oldPbf, PBF_EDEFAULT, oldPbfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TURB_LCFB1__PBF, oldPbf, PBF_EDEFAULT,
+                    oldPbfESet ) );
     }
 
     /**
@@ -892,8 +910,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         pmwset = newPmwset;
         boolean oldPmwsetESet = pmwsetESet;
         pmwsetESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TURB_LCFB1__PMWSET, oldPmwset, pmwset, !oldPmwsetESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TURB_LCFB1__PMWSET, oldPmwset, pmwset,
+                    !oldPmwsetESet ) );
     }
 
     /**
@@ -907,8 +926,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         boolean oldPmwsetESet = pmwsetESet;
         pmwset = PMWSET_EDEFAULT;
         pmwsetESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TURB_LCFB1__PMWSET, oldPmwset, PMWSET_EDEFAULT, oldPmwsetESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TURB_LCFB1__PMWSET, oldPmwset,
+                    PMWSET_EDEFAULT, oldPmwsetESet ) );
     }
 
     /**
@@ -994,8 +1014,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         tpelec = newTpelec;
         boolean oldTpelecESet = tpelecESet;
         tpelecESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TURB_LCFB1__TPELEC, oldTpelec, tpelec, !oldTpelecESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TURB_LCFB1__TPELEC, oldTpelec, tpelec,
+                    !oldTpelecESet ) );
     }
 
     /**
@@ -1009,8 +1030,9 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
         boolean oldTpelecESet = tpelecESet;
         tpelec = TPELEC_EDEFAULT;
         tpelecESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TURB_LCFB1__TPELEC, oldTpelec, TPELEC_EDEFAULT, oldTpelecESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TURB_LCFB1__TPELEC, oldTpelec,
+                    TPELEC_EDEFAULT, oldTpelecESet ) );
     }
 
     /**
@@ -1200,7 +1222,7 @@ public class TurbLCFB1Impl extends TurbineLoadControllerDynamicsImpl implements 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (db: " );
         if( dbESet )
             result.append( db );

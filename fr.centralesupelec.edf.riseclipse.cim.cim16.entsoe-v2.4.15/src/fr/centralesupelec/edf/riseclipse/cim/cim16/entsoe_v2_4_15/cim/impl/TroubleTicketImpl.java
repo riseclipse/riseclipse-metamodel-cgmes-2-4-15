@@ -422,8 +422,9 @@ public class TroubleTicketImpl extends DocumentImpl implements TroubleTicket {
         reportingKind = newReportingKind == null ? REPORTING_KIND_EDEFAULT : newReportingKind;
         boolean oldReportingKindESet = reportingKindESet;
         reportingKindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TROUBLE_TICKET__REPORTING_KIND, oldReportingKind, reportingKind, !oldReportingKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TROUBLE_TICKET__REPORTING_KIND,
+                    oldReportingKind, reportingKind, !oldReportingKindESet ) );
     }
 
     /**
@@ -525,8 +526,9 @@ public class TroubleTicketImpl extends DocumentImpl implements TroubleTicket {
         troubleCode = newTroubleCode;
         boolean oldTroubleCodeESet = troubleCodeESet;
         troubleCodeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TROUBLE_TICKET__TROUBLE_CODE, oldTroubleCode, troubleCode, !oldTroubleCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TROUBLE_TICKET__TROUBLE_CODE,
+                    oldTroubleCode, troubleCode, !oldTroubleCodeESet ) );
     }
 
     /**
@@ -540,8 +542,9 @@ public class TroubleTicketImpl extends DocumentImpl implements TroubleTicket {
         boolean oldTroubleCodeESet = troubleCodeESet;
         troubleCode = TROUBLE_CODE_EDEFAULT;
         troubleCodeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TROUBLE_TICKET__TROUBLE_CODE, oldTroubleCode, TROUBLE_CODE_EDEFAULT, oldTroubleCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TROUBLE_TICKET__TROUBLE_CODE,
+                    oldTroubleCode, TROUBLE_CODE_EDEFAULT, oldTroubleCodeESet ) );
     }
 
     /**
@@ -594,18 +597,21 @@ public class TroubleTicketImpl extends DocumentImpl implements TroubleTicket {
     public void setNotification( CustomerNotification newNotification ) {
         if( newNotification != notification ) {
             NotificationChain msgs = null;
-            if( notification != null ) msgs = ( ( InternalEObject ) notification ).eInverseRemove( this,
-                    CimPackage.CUSTOMER_NOTIFICATION__TROUBLE_TICKETS, CustomerNotification.class, msgs );
-            if( newNotification != null ) msgs = ( ( InternalEObject ) newNotification ).eInverseAdd( this,
-                    CimPackage.CUSTOMER_NOTIFICATION__TROUBLE_TICKETS, CustomerNotification.class, msgs );
+            if( notification != null )
+                msgs = ( ( InternalEObject ) notification ).eInverseRemove( this,
+                        CimPackage.CUSTOMER_NOTIFICATION__TROUBLE_TICKETS, CustomerNotification.class, msgs );
+            if( newNotification != null )
+                msgs = ( ( InternalEObject ) newNotification ).eInverseAdd( this,
+                        CimPackage.CUSTOMER_NOTIFICATION__TROUBLE_TICKETS, CustomerNotification.class, msgs );
             msgs = basicSetNotification( newNotification, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldNotificationESet = notificationESet;
             notificationESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TROUBLE_TICKET__NOTIFICATION, newNotification, newNotification, !oldNotificationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TROUBLE_TICKET__NOTIFICATION,
+                        newNotification, newNotification, !oldNotificationESet ) );
         }
     }
 
@@ -647,8 +653,9 @@ public class TroubleTicketImpl extends DocumentImpl implements TroubleTicket {
         else {
             boolean oldNotificationESet = notificationESet;
             notificationESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TROUBLE_TICKET__NOTIFICATION, null, null, oldNotificationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TROUBLE_TICKET__NOTIFICATION, null,
+                        null, oldNotificationESet ) );
         }
     }
 
@@ -736,18 +743,21 @@ public class TroubleTicketImpl extends DocumentImpl implements TroubleTicket {
     public void setIncident( Incident newIncident ) {
         if( newIncident != incident ) {
             NotificationChain msgs = null;
-            if( incident != null ) msgs = ( ( InternalEObject ) incident ).eInverseRemove( this,
-                    CimPackage.INCIDENT__TROUBLE_TICKETS, Incident.class, msgs );
-            if( newIncident != null ) msgs = ( ( InternalEObject ) newIncident ).eInverseAdd( this,
-                    CimPackage.INCIDENT__TROUBLE_TICKETS, Incident.class, msgs );
+            if( incident != null )
+                msgs = ( ( InternalEObject ) incident ).eInverseRemove( this, CimPackage.INCIDENT__TROUBLE_TICKETS,
+                        Incident.class, msgs );
+            if( newIncident != null )
+                msgs = ( ( InternalEObject ) newIncident ).eInverseAdd( this, CimPackage.INCIDENT__TROUBLE_TICKETS,
+                        Incident.class, msgs );
             msgs = basicSetIncident( newIncident, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldIncidentESet = incidentESet;
             incidentESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TROUBLE_TICKET__INCIDENT, newIncident, newIncident, !oldIncidentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TROUBLE_TICKET__INCIDENT,
+                        newIncident, newIncident, !oldIncidentESet ) );
         }
     }
 
@@ -789,8 +799,9 @@ public class TroubleTicketImpl extends DocumentImpl implements TroubleTicket {
         else {
             boolean oldIncidentESet = incidentESet;
             incidentESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TROUBLE_TICKET__INCIDENT, null, null, oldIncidentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TROUBLE_TICKET__INCIDENT, null,
+                        null, oldIncidentESet ) );
         }
     }
 
@@ -844,18 +855,21 @@ public class TroubleTicketImpl extends DocumentImpl implements TroubleTicket {
     public void setCustomer( Customer newCustomer ) {
         if( newCustomer != customer ) {
             NotificationChain msgs = null;
-            if( customer != null ) msgs = ( ( InternalEObject ) customer ).eInverseRemove( this,
-                    CimPackage.CUSTOMER__TROUBLE_TICKETS, Customer.class, msgs );
-            if( newCustomer != null ) msgs = ( ( InternalEObject ) newCustomer ).eInverseAdd( this,
-                    CimPackage.CUSTOMER__TROUBLE_TICKETS, Customer.class, msgs );
+            if( customer != null )
+                msgs = ( ( InternalEObject ) customer ).eInverseRemove( this, CimPackage.CUSTOMER__TROUBLE_TICKETS,
+                        Customer.class, msgs );
+            if( newCustomer != null )
+                msgs = ( ( InternalEObject ) newCustomer ).eInverseAdd( this, CimPackage.CUSTOMER__TROUBLE_TICKETS,
+                        Customer.class, msgs );
             msgs = basicSetCustomer( newCustomer, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCustomerESet = customerESet;
             customerESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TROUBLE_TICKET__CUSTOMER, newCustomer, newCustomer, !oldCustomerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TROUBLE_TICKET__CUSTOMER,
+                        newCustomer, newCustomer, !oldCustomerESet ) );
         }
     }
 
@@ -897,8 +911,9 @@ public class TroubleTicketImpl extends DocumentImpl implements TroubleTicket {
         else {
             boolean oldCustomerESet = customerESet;
             customerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TROUBLE_TICKET__CUSTOMER, null, null, oldCustomerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TROUBLE_TICKET__CUSTOMER, null,
+                        null, oldCustomerESet ) );
         }
     }
 
@@ -925,16 +940,19 @@ public class TroubleTicketImpl extends DocumentImpl implements TroubleTicket {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getHazards() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.TROUBLE_TICKET__NOTIFICATION:
-            if( notification != null ) msgs = ( ( InternalEObject ) notification ).eInverseRemove( this,
-                    CimPackage.CUSTOMER_NOTIFICATION__TROUBLE_TICKETS, CustomerNotification.class, msgs );
+            if( notification != null )
+                msgs = ( ( InternalEObject ) notification ).eInverseRemove( this,
+                        CimPackage.CUSTOMER_NOTIFICATION__TROUBLE_TICKETS, CustomerNotification.class, msgs );
             return basicSetNotification( ( CustomerNotification ) otherEnd, msgs );
         case CimPackage.TROUBLE_TICKET__INCIDENT:
-            if( incident != null ) msgs = ( ( InternalEObject ) incident ).eInverseRemove( this,
-                    CimPackage.INCIDENT__TROUBLE_TICKETS, Incident.class, msgs );
+            if( incident != null )
+                msgs = ( ( InternalEObject ) incident ).eInverseRemove( this, CimPackage.INCIDENT__TROUBLE_TICKETS,
+                        Incident.class, msgs );
             return basicSetIncident( ( Incident ) otherEnd, msgs );
         case CimPackage.TROUBLE_TICKET__CUSTOMER:
-            if( customer != null ) msgs = ( ( InternalEObject ) customer ).eInverseRemove( this,
-                    CimPackage.CUSTOMER__TROUBLE_TICKETS, Customer.class, msgs );
+            if( customer != null )
+                msgs = ( ( InternalEObject ) customer ).eInverseRemove( this, CimPackage.CUSTOMER__TROUBLE_TICKETS,
+                        Customer.class, msgs );
             return basicSetCustomer( ( Customer ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1109,7 +1127,7 @@ public class TroubleTicketImpl extends DocumentImpl implements TroubleTicket {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (dateTimeOfReport: " );
         if( dateTimeOfReportESet )
             result.append( dateTimeOfReport );

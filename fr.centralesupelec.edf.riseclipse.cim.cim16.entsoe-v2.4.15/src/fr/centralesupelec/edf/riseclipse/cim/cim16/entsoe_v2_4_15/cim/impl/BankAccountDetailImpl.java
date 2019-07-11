@@ -285,8 +285,9 @@ public class BankAccountDetailImpl extends MinimalEObjectImpl.Container implemen
         bankName = newBankName;
         boolean oldBankNameESet = bankNameESet;
         bankNameESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BANK_ACCOUNT_DETAIL__BANK_NAME, oldBankName, bankName, !oldBankNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BANK_ACCOUNT_DETAIL__BANK_NAME,
+                    oldBankName, bankName, !oldBankNameESet ) );
     }
 
     /**
@@ -300,8 +301,9 @@ public class BankAccountDetailImpl extends MinimalEObjectImpl.Container implemen
         boolean oldBankNameESet = bankNameESet;
         bankName = BANK_NAME_EDEFAULT;
         bankNameESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BANK_ACCOUNT_DETAIL__BANK_NAME, oldBankName, BANK_NAME_EDEFAULT, oldBankNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BANK_ACCOUNT_DETAIL__BANK_NAME,
+                    oldBankName, BANK_NAME_EDEFAULT, oldBankNameESet ) );
     }
 
     /**
@@ -335,8 +337,9 @@ public class BankAccountDetailImpl extends MinimalEObjectImpl.Container implemen
         branchCode = newBranchCode;
         boolean oldBranchCodeESet = branchCodeESet;
         branchCodeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BANK_ACCOUNT_DETAIL__BRANCH_CODE, oldBranchCode, branchCode, !oldBranchCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BANK_ACCOUNT_DETAIL__BRANCH_CODE,
+                    oldBranchCode, branchCode, !oldBranchCodeESet ) );
     }
 
     /**
@@ -350,8 +353,9 @@ public class BankAccountDetailImpl extends MinimalEObjectImpl.Container implemen
         boolean oldBranchCodeESet = branchCodeESet;
         branchCode = BRANCH_CODE_EDEFAULT;
         branchCodeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BANK_ACCOUNT_DETAIL__BRANCH_CODE, oldBranchCode, BRANCH_CODE_EDEFAULT, oldBranchCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BANK_ACCOUNT_DETAIL__BRANCH_CODE,
+                    oldBranchCode, BRANCH_CODE_EDEFAULT, oldBranchCodeESet ) );
     }
 
     /**
@@ -385,8 +389,9 @@ public class BankAccountDetailImpl extends MinimalEObjectImpl.Container implemen
         holderID = newHolderID;
         boolean oldHolderIDESet = holderIDESet;
         holderIDESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BANK_ACCOUNT_DETAIL__HOLDER_ID, oldHolderID, holderID, !oldHolderIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BANK_ACCOUNT_DETAIL__HOLDER_ID,
+                    oldHolderID, holderID, !oldHolderIDESet ) );
     }
 
     /**
@@ -400,8 +405,9 @@ public class BankAccountDetailImpl extends MinimalEObjectImpl.Container implemen
         boolean oldHolderIDESet = holderIDESet;
         holderID = HOLDER_ID_EDEFAULT;
         holderIDESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BANK_ACCOUNT_DETAIL__HOLDER_ID, oldHolderID, HOLDER_ID_EDEFAULT, oldHolderIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BANK_ACCOUNT_DETAIL__HOLDER_ID,
+                    oldHolderID, HOLDER_ID_EDEFAULT, oldHolderIDESet ) );
     }
 
     /**
@@ -435,8 +441,9 @@ public class BankAccountDetailImpl extends MinimalEObjectImpl.Container implemen
         holderName = newHolderName;
         boolean oldHolderNameESet = holderNameESet;
         holderNameESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BANK_ACCOUNT_DETAIL__HOLDER_NAME, oldHolderName, holderName, !oldHolderNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BANK_ACCOUNT_DETAIL__HOLDER_NAME,
+                    oldHolderName, holderName, !oldHolderNameESet ) );
     }
 
     /**
@@ -450,8 +457,9 @@ public class BankAccountDetailImpl extends MinimalEObjectImpl.Container implemen
         boolean oldHolderNameESet = holderNameESet;
         holderName = HOLDER_NAME_EDEFAULT;
         holderNameESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BANK_ACCOUNT_DETAIL__HOLDER_NAME, oldHolderName, HOLDER_NAME_EDEFAULT, oldHolderNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BANK_ACCOUNT_DETAIL__HOLDER_NAME,
+                    oldHolderName, HOLDER_NAME_EDEFAULT, oldHolderNameESet ) );
     }
 
     /**
@@ -571,7 +579,7 @@ public class BankAccountDetailImpl extends MinimalEObjectImpl.Container implemen
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (accountNumber: " );
         if( accountNumberESet )
             result.append( accountNumber );

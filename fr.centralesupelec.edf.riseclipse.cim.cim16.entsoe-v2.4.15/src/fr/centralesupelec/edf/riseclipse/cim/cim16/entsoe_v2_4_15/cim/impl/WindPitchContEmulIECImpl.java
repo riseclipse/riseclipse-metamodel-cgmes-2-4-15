@@ -405,8 +405,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         kdroop = newKdroop;
         boolean oldKdroopESet = kdroopESet;
         kdroopESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__KDROOP, oldKdroop, kdroop, !oldKdroopESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__KDROOP,
+                    oldKdroop, kdroop, !oldKdroopESet ) );
     }
 
     /**
@@ -420,8 +421,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         boolean oldKdroopESet = kdroopESet;
         kdroop = KDROOP_EDEFAULT;
         kdroopESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__KDROOP, oldKdroop, KDROOP_EDEFAULT, oldKdroopESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__KDROOP,
+                    oldKdroop, KDROOP_EDEFAULT, oldKdroopESet ) );
     }
 
     /**
@@ -455,8 +457,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         kipce = newKipce;
         boolean oldKipceESet = kipceESet;
         kipceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__KIPCE, oldKipce, kipce, !oldKipceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__KIPCE,
+                    oldKipce, kipce, !oldKipceESet ) );
     }
 
     /**
@@ -470,8 +473,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         boolean oldKipceESet = kipceESet;
         kipce = KIPCE_EDEFAULT;
         kipceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__KIPCE, oldKipce, KIPCE_EDEFAULT, oldKipceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__KIPCE,
+                    oldKipce, KIPCE_EDEFAULT, oldKipceESet ) );
     }
 
     /**
@@ -505,8 +509,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         komegaaero = newKomegaaero;
         boolean oldKomegaaeroESet = komegaaeroESet;
         komegaaeroESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__KOMEGAAERO, oldKomegaaero, komegaaero, !oldKomegaaeroESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__KOMEGAAERO,
+                    oldKomegaaero, komegaaero, !oldKomegaaeroESet ) );
     }
 
     /**
@@ -556,8 +561,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         kppce = newKppce;
         boolean oldKppceESet = kppceESet;
         kppceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__KPPCE, oldKppce, kppce, !oldKppceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__KPPCE,
+                    oldKppce, kppce, !oldKppceESet ) );
     }
 
     /**
@@ -571,8 +577,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         boolean oldKppceESet = kppceESet;
         kppce = KPPCE_EDEFAULT;
         kppceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__KPPCE, oldKppce, KPPCE_EDEFAULT, oldKppceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__KPPCE,
+                    oldKppce, KPPCE_EDEFAULT, oldKppceESet ) );
     }
 
     /**
@@ -606,8 +613,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         omegaref = newOmegaref;
         boolean oldOmegarefESet = omegarefESet;
         omegarefESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__OMEGAREF, oldOmegaref, omegaref, !oldOmegarefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__OMEGAREF,
+                    oldOmegaref, omegaref, !oldOmegarefESet ) );
     }
 
     /**
@@ -621,8 +629,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         boolean oldOmegarefESet = omegarefESet;
         omegaref = OMEGAREF_EDEFAULT;
         omegarefESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__OMEGAREF, oldOmegaref, OMEGAREF_EDEFAULT, oldOmegarefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__OMEGAREF,
+                    oldOmegaref, OMEGAREF_EDEFAULT, oldOmegarefESet ) );
     }
 
     /**
@@ -656,8 +665,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         pimax = newPimax;
         boolean oldPimaxESet = pimaxESet;
         pimaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__PIMAX, oldPimax, pimax, !oldPimaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__PIMAX,
+                    oldPimax, pimax, !oldPimaxESet ) );
     }
 
     /**
@@ -671,8 +681,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         boolean oldPimaxESet = pimaxESet;
         pimax = PIMAX_EDEFAULT;
         pimaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__PIMAX, oldPimax, PIMAX_EDEFAULT, oldPimaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__PIMAX,
+                    oldPimax, PIMAX_EDEFAULT, oldPimaxESet ) );
     }
 
     /**
@@ -706,8 +717,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         pimin = newPimin;
         boolean oldPiminESet = piminESet;
         piminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__PIMIN, oldPimin, pimin, !oldPiminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__PIMIN,
+                    oldPimin, pimin, !oldPiminESet ) );
     }
 
     /**
@@ -721,8 +733,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         boolean oldPiminESet = piminESet;
         pimin = PIMIN_EDEFAULT;
         piminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__PIMIN, oldPimin, PIMIN_EDEFAULT, oldPiminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__PIMIN,
+                    oldPimin, PIMIN_EDEFAULT, oldPiminESet ) );
     }
 
     /**
@@ -756,8 +769,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         t1 = newT1;
         boolean oldT1ESet = t1ESet;
         t1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__T1, oldT1, t1, !oldT1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__T1, oldT1, t1,
+                    !oldT1ESet ) );
     }
 
     /**
@@ -771,8 +785,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         boolean oldT1ESet = t1ESet;
         t1 = T1_EDEFAULT;
         t1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__T1, oldT1, T1_EDEFAULT, oldT1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__T1, oldT1,
+                    T1_EDEFAULT, oldT1ESet ) );
     }
 
     /**
@@ -806,8 +821,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         t2 = newT2;
         boolean oldT2ESet = t2ESet;
         t2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__T2, oldT2, t2, !oldT2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__T2, oldT2, t2,
+                    !oldT2ESet ) );
     }
 
     /**
@@ -821,8 +837,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         boolean oldT2ESet = t2ESet;
         t2 = T2_EDEFAULT;
         t2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__T2, oldT2, T2_EDEFAULT, oldT2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__T2, oldT2,
+                    T2_EDEFAULT, oldT2ESet ) );
     }
 
     /**
@@ -856,8 +873,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         tpe = newTpe;
         boolean oldTpeESet = tpeESet;
         tpeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__TPE, oldTpe, tpe, !oldTpeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__TPE, oldTpe,
+                    tpe, !oldTpeESet ) );
     }
 
     /**
@@ -871,8 +889,9 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         boolean oldTpeESet = tpeESet;
         tpe = TPE_EDEFAULT;
         tpeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PITCH_CONT_EMUL_IEC__TPE, oldTpe, TPE_EDEFAULT, oldTpeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PITCH_CONT_EMUL_IEC__TPE, oldTpe,
+                    TPE_EDEFAULT, oldTpeESet ) );
     }
 
     /**
@@ -941,9 +960,10 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         else {
             boolean oldWindGenTurbineType2IECESet = windGenTurbineType2IECESet;
             windGenTurbineType2IECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_PITCH_CONT_EMUL_IEC__WIND_GEN_TURBINE_TYPE2_IEC, newWindGenTurbineType2IEC,
-                    newWindGenTurbineType2IEC, !oldWindGenTurbineType2IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_PITCH_CONT_EMUL_IEC__WIND_GEN_TURBINE_TYPE2_IEC, newWindGenTurbineType2IEC,
+                        newWindGenTurbineType2IEC, !oldWindGenTurbineType2IECESet ) );
         }
     }
 
@@ -987,9 +1007,10 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
         else {
             boolean oldWindGenTurbineType2IECESet = windGenTurbineType2IECESet;
             windGenTurbineType2IECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_PITCH_CONT_EMUL_IEC__WIND_GEN_TURBINE_TYPE2_IEC, null, null,
-                    oldWindGenTurbineType2IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_PITCH_CONT_EMUL_IEC__WIND_GEN_TURBINE_TYPE2_IEC, null, null,
+                        oldWindGenTurbineType2IECESet ) );
         }
     }
 
@@ -1202,7 +1223,7 @@ public class WindPitchContEmulIECImpl extends IdentifiedObjectImpl implements Wi
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kdroop: " );
         if( kdroopESet )
             result.append( kdroop );

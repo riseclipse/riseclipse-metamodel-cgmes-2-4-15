@@ -382,8 +382,9 @@ public class ExcCZImpl extends ExcitationSystemDynamicsImpl implements ExcCZ {
         efdmax = newEfdmax;
         boolean oldEfdmaxESet = efdmaxESet;
         efdmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_CZ__EFDMAX,
-                oldEfdmax, efdmax, !oldEfdmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_CZ__EFDMAX, oldEfdmax, efdmax,
+                    !oldEfdmaxESet ) );
     }
 
     /**
@@ -397,8 +398,9 @@ public class ExcCZImpl extends ExcitationSystemDynamicsImpl implements ExcCZ {
         boolean oldEfdmaxESet = efdmaxESet;
         efdmax = EFDMAX_EDEFAULT;
         efdmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_CZ__EFDMAX, oldEfdmax, EFDMAX_EDEFAULT, oldEfdmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_CZ__EFDMAX, oldEfdmax,
+                    EFDMAX_EDEFAULT, oldEfdmaxESet ) );
     }
 
     /**
@@ -432,8 +434,9 @@ public class ExcCZImpl extends ExcitationSystemDynamicsImpl implements ExcCZ {
         efdmin = newEfdmin;
         boolean oldEfdminESet = efdminESet;
         efdminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_CZ__EFDMIN,
-                oldEfdmin, efdmin, !oldEfdminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_CZ__EFDMIN, oldEfdmin, efdmin,
+                    !oldEfdminESet ) );
     }
 
     /**
@@ -447,8 +450,9 @@ public class ExcCZImpl extends ExcitationSystemDynamicsImpl implements ExcCZ {
         boolean oldEfdminESet = efdminESet;
         efdmin = EFDMIN_EDEFAULT;
         efdminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_CZ__EFDMIN, oldEfdmin, EFDMIN_EDEFAULT, oldEfdminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_CZ__EFDMIN, oldEfdmin,
+                    EFDMIN_EDEFAULT, oldEfdminESet ) );
     }
 
     /**
@@ -497,8 +501,9 @@ public class ExcCZImpl extends ExcitationSystemDynamicsImpl implements ExcCZ {
         boolean oldKaESet = kaESet;
         ka = KA_EDEFAULT;
         kaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_CZ__KA,
-                oldKa, KA_EDEFAULT, oldKaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_CZ__KA, oldKa, KA_EDEFAULT,
+                    oldKaESet ) );
     }
 
     /**
@@ -547,8 +552,9 @@ public class ExcCZImpl extends ExcitationSystemDynamicsImpl implements ExcCZ {
         boolean oldKeESet = keESet;
         ke = KE_EDEFAULT;
         keESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_CZ__KE,
-                oldKe, KE_EDEFAULT, oldKeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_CZ__KE, oldKe, KE_EDEFAULT,
+                    oldKeESet ) );
     }
 
     /**
@@ -597,8 +603,9 @@ public class ExcCZImpl extends ExcitationSystemDynamicsImpl implements ExcCZ {
         boolean oldKpESet = kpESet;
         kp = KP_EDEFAULT;
         kpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_CZ__KP,
-                oldKp, KP_EDEFAULT, oldKpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_CZ__KP, oldKp, KP_EDEFAULT,
+                    oldKpESet ) );
     }
 
     /**
@@ -647,8 +654,9 @@ public class ExcCZImpl extends ExcitationSystemDynamicsImpl implements ExcCZ {
         boolean oldTaESet = taESet;
         ta = TA_EDEFAULT;
         taESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_CZ__TA,
-                oldTa, TA_EDEFAULT, oldTaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_CZ__TA, oldTa, TA_EDEFAULT,
+                    oldTaESet ) );
     }
 
     /**
@@ -697,8 +705,9 @@ public class ExcCZImpl extends ExcitationSystemDynamicsImpl implements ExcCZ {
         boolean oldTcESet = tcESet;
         tc = TC_EDEFAULT;
         tcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_CZ__TC,
-                oldTc, TC_EDEFAULT, oldTcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_CZ__TC, oldTc, TC_EDEFAULT,
+                    oldTcESet ) );
     }
 
     /**
@@ -747,8 +756,9 @@ public class ExcCZImpl extends ExcitationSystemDynamicsImpl implements ExcCZ {
         boolean oldTeESet = teESet;
         te = TE_EDEFAULT;
         teESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_CZ__TE,
-                oldTe, TE_EDEFAULT, oldTeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_CZ__TE, oldTe, TE_EDEFAULT,
+                    oldTeESet ) );
     }
 
     /**
@@ -782,8 +792,9 @@ public class ExcCZImpl extends ExcitationSystemDynamicsImpl implements ExcCZ {
         vrmax = newVrmax;
         boolean oldVrmaxESet = vrmaxESet;
         vrmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_CZ__VRMAX,
-                oldVrmax, vrmax, !oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_CZ__VRMAX, oldVrmax, vrmax,
+                    !oldVrmaxESet ) );
     }
 
     /**
@@ -797,8 +808,9 @@ public class ExcCZImpl extends ExcitationSystemDynamicsImpl implements ExcCZ {
         boolean oldVrmaxESet = vrmaxESet;
         vrmax = VRMAX_EDEFAULT;
         vrmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_CZ__VRMAX, oldVrmax, VRMAX_EDEFAULT, oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_CZ__VRMAX, oldVrmax,
+                    VRMAX_EDEFAULT, oldVrmaxESet ) );
     }
 
     /**
@@ -832,8 +844,9 @@ public class ExcCZImpl extends ExcitationSystemDynamicsImpl implements ExcCZ {
         vrmin = newVrmin;
         boolean oldVrminESet = vrminESet;
         vrminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_CZ__VRMIN,
-                oldVrmin, vrmin, !oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_CZ__VRMIN, oldVrmin, vrmin,
+                    !oldVrminESet ) );
     }
 
     /**
@@ -847,8 +860,9 @@ public class ExcCZImpl extends ExcitationSystemDynamicsImpl implements ExcCZ {
         boolean oldVrminESet = vrminESet;
         vrmin = VRMIN_EDEFAULT;
         vrminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_CZ__VRMIN, oldVrmin, VRMIN_EDEFAULT, oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_CZ__VRMIN, oldVrmin,
+                    VRMIN_EDEFAULT, oldVrminESet ) );
     }
 
     /**
@@ -1018,7 +1032,7 @@ public class ExcCZImpl extends ExcitationSystemDynamicsImpl implements ExcCZ {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (efdmax: " );
         if( efdmaxESet )
             result.append( efdmax );

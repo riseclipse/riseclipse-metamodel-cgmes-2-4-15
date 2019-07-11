@@ -437,8 +437,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         customerCount = newCustomerCount;
         boolean oldCustomerCountESet = customerCountESet;
         customerCountESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ENERGY_CONSUMER__CUSTOMER_COUNT, oldCustomerCount, customerCount, !oldCustomerCountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_CONSUMER__CUSTOMER_COUNT,
+                    oldCustomerCount, customerCount, !oldCustomerCountESet ) );
     }
 
     /**
@@ -488,8 +489,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         grounded = newGrounded;
         boolean oldGroundedESet = groundedESet;
         groundedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ENERGY_CONSUMER__GROUNDED, oldGrounded, grounded, !oldGroundedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_CONSUMER__GROUNDED, oldGrounded,
+                    grounded, !oldGroundedESet ) );
     }
 
     /**
@@ -503,8 +505,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         boolean oldGroundedESet = groundedESet;
         grounded = GROUNDED_EDEFAULT;
         groundedESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_CONSUMER__GROUNDED, oldGrounded, GROUNDED_EDEFAULT, oldGroundedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_CONSUMER__GROUNDED, oldGrounded,
+                    GROUNDED_EDEFAULT, oldGroundedESet ) );
     }
 
     /**
@@ -538,8 +541,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         p = newP;
         boolean oldPESet = pESet;
         pESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_CONSUMER__P, oldP, p, !oldPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_CONSUMER__P, oldP, p,
+                    !oldPESet ) );
     }
 
     /**
@@ -553,8 +557,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         boolean oldPESet = pESet;
         p = P_EDEFAULT;
         pESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_CONSUMER__P, oldP, P_EDEFAULT, oldPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_CONSUMER__P, oldP, P_EDEFAULT,
+                    oldPESet ) );
     }
 
     /**
@@ -588,8 +593,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         pfixed = newPfixed;
         boolean oldPfixedESet = pfixedESet;
         pfixedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ENERGY_CONSUMER__PFIXED, oldPfixed, pfixed, !oldPfixedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_CONSUMER__PFIXED, oldPfixed,
+                    pfixed, !oldPfixedESet ) );
     }
 
     /**
@@ -603,8 +609,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         boolean oldPfixedESet = pfixedESet;
         pfixed = PFIXED_EDEFAULT;
         pfixedESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_CONSUMER__PFIXED, oldPfixed, PFIXED_EDEFAULT, oldPfixedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_CONSUMER__PFIXED, oldPfixed,
+                    PFIXED_EDEFAULT, oldPfixedESet ) );
     }
 
     /**
@@ -638,8 +645,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         pfixedPct = newPfixedPct;
         boolean oldPfixedPctESet = pfixedPctESet;
         pfixedPctESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ENERGY_CONSUMER__PFIXED_PCT, oldPfixedPct, pfixedPct, !oldPfixedPctESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_CONSUMER__PFIXED_PCT,
+                    oldPfixedPct, pfixedPct, !oldPfixedPctESet ) );
     }
 
     /**
@@ -653,8 +661,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         boolean oldPfixedPctESet = pfixedPctESet;
         pfixedPct = PFIXED_PCT_EDEFAULT;
         pfixedPctESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_CONSUMER__PFIXED_PCT, oldPfixedPct, PFIXED_PCT_EDEFAULT, oldPfixedPctESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_CONSUMER__PFIXED_PCT,
+                    oldPfixedPct, PFIXED_PCT_EDEFAULT, oldPfixedPctESet ) );
     }
 
     /**
@@ -740,8 +749,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         q = newQ;
         boolean oldQESet = qESet;
         qESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_CONSUMER__Q, oldQ, q, !oldQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_CONSUMER__Q, oldQ, q,
+                    !oldQESet ) );
     }
 
     /**
@@ -755,8 +765,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         boolean oldQESet = qESet;
         q = Q_EDEFAULT;
         qESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_CONSUMER__Q, oldQ, Q_EDEFAULT, oldQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_CONSUMER__Q, oldQ, Q_EDEFAULT,
+                    oldQESet ) );
     }
 
     /**
@@ -790,8 +801,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         qfixed = newQfixed;
         boolean oldQfixedESet = qfixedESet;
         qfixedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ENERGY_CONSUMER__QFIXED, oldQfixed, qfixed, !oldQfixedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_CONSUMER__QFIXED, oldQfixed,
+                    qfixed, !oldQfixedESet ) );
     }
 
     /**
@@ -805,8 +817,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         boolean oldQfixedESet = qfixedESet;
         qfixed = QFIXED_EDEFAULT;
         qfixedESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_CONSUMER__QFIXED, oldQfixed, QFIXED_EDEFAULT, oldQfixedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_CONSUMER__QFIXED, oldQfixed,
+                    QFIXED_EDEFAULT, oldQfixedESet ) );
     }
 
     /**
@@ -840,8 +853,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         qfixedPct = newQfixedPct;
         boolean oldQfixedPctESet = qfixedPctESet;
         qfixedPctESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ENERGY_CONSUMER__QFIXED_PCT, oldQfixedPct, qfixedPct, !oldQfixedPctESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_CONSUMER__QFIXED_PCT,
+                    oldQfixedPct, qfixedPct, !oldQfixedPctESet ) );
     }
 
     /**
@@ -855,8 +869,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         boolean oldQfixedPctESet = qfixedPctESet;
         qfixedPct = QFIXED_PCT_EDEFAULT;
         qfixedPctESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_CONSUMER__QFIXED_PCT, oldQfixedPct, QFIXED_PCT_EDEFAULT, oldQfixedPctESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_CONSUMER__QFIXED_PCT,
+                    oldQfixedPct, QFIXED_PCT_EDEFAULT, oldQfixedPctESet ) );
     }
 
     /**
@@ -944,10 +959,12 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
     public void setLoadDynamics( LoadDynamics newLoadDynamics ) {
         if( newLoadDynamics != loadDynamics ) {
             NotificationChain msgs = null;
-            if( loadDynamics != null ) msgs = ( ( InternalEObject ) loadDynamics ).eInverseRemove( this,
-                    CimPackage.LOAD_DYNAMICS__ENERGY_CONSUMER, LoadDynamics.class, msgs );
-            if( newLoadDynamics != null ) msgs = ( ( InternalEObject ) newLoadDynamics ).eInverseAdd( this,
-                    CimPackage.LOAD_DYNAMICS__ENERGY_CONSUMER, LoadDynamics.class, msgs );
+            if( loadDynamics != null )
+                msgs = ( ( InternalEObject ) loadDynamics ).eInverseRemove( this,
+                        CimPackage.LOAD_DYNAMICS__ENERGY_CONSUMER, LoadDynamics.class, msgs );
+            if( newLoadDynamics != null )
+                msgs = ( ( InternalEObject ) newLoadDynamics ).eInverseAdd( this,
+                        CimPackage.LOAD_DYNAMICS__ENERGY_CONSUMER, LoadDynamics.class, msgs );
             msgs = basicSetLoadDynamics( newLoadDynamics, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -998,8 +1015,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         else {
             boolean oldLoadDynamicsESet = loadDynamicsESet;
             loadDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ENERGY_CONSUMER__LOAD_DYNAMICS, null, null, oldLoadDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_CONSUMER__LOAD_DYNAMICS,
+                        null, null, oldLoadDynamicsESet ) );
         }
     }
 
@@ -1054,10 +1072,14 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
     public void setLoadResponse( LoadResponseCharacteristic newLoadResponse ) {
         if( newLoadResponse != loadResponse ) {
             NotificationChain msgs = null;
-            if( loadResponse != null ) msgs = ( ( InternalEObject ) loadResponse ).eInverseRemove( this,
-                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__ENERGY_CONSUMER, LoadResponseCharacteristic.class, msgs );
-            if( newLoadResponse != null ) msgs = ( ( InternalEObject ) newLoadResponse ).eInverseAdd( this,
-                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__ENERGY_CONSUMER, LoadResponseCharacteristic.class, msgs );
+            if( loadResponse != null )
+                msgs = ( ( InternalEObject ) loadResponse ).eInverseRemove( this,
+                        CimPackage.LOAD_RESPONSE_CHARACTERISTIC__ENERGY_CONSUMER, LoadResponseCharacteristic.class,
+                        msgs );
+            if( newLoadResponse != null )
+                msgs = ( ( InternalEObject ) newLoadResponse ).eInverseAdd( this,
+                        CimPackage.LOAD_RESPONSE_CHARACTERISTIC__ENERGY_CONSUMER, LoadResponseCharacteristic.class,
+                        msgs );
             msgs = basicSetLoadResponse( newLoadResponse, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1108,8 +1130,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         else {
             boolean oldLoadResponseESet = loadResponseESet;
             loadResponseESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ENERGY_CONSUMER__LOAD_RESPONSE, null, null, oldLoadResponseESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_CONSUMER__LOAD_RESPONSE,
+                        null, null, oldLoadResponseESet ) );
         }
     }
 
@@ -1164,10 +1187,12 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
     public void setPowerCutZone( PowerCutZone newPowerCutZone ) {
         if( newPowerCutZone != powerCutZone ) {
             NotificationChain msgs = null;
-            if( powerCutZone != null ) msgs = ( ( InternalEObject ) powerCutZone ).eInverseRemove( this,
-                    CimPackage.POWER_CUT_ZONE__ENERGY_CONSUMERS, PowerCutZone.class, msgs );
-            if( newPowerCutZone != null ) msgs = ( ( InternalEObject ) newPowerCutZone ).eInverseAdd( this,
-                    CimPackage.POWER_CUT_ZONE__ENERGY_CONSUMERS, PowerCutZone.class, msgs );
+            if( powerCutZone != null )
+                msgs = ( ( InternalEObject ) powerCutZone ).eInverseRemove( this,
+                        CimPackage.POWER_CUT_ZONE__ENERGY_CONSUMERS, PowerCutZone.class, msgs );
+            if( newPowerCutZone != null )
+                msgs = ( ( InternalEObject ) newPowerCutZone ).eInverseAdd( this,
+                        CimPackage.POWER_CUT_ZONE__ENERGY_CONSUMERS, PowerCutZone.class, msgs );
             msgs = basicSetPowerCutZone( newPowerCutZone, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1218,8 +1243,9 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
         else {
             boolean oldPowerCutZoneESet = powerCutZoneESet;
             powerCutZoneESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ENERGY_CONSUMER__POWER_CUT_ZONE, null, null, oldPowerCutZoneESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_CONSUMER__POWER_CUT_ZONE,
+                        null, null, oldPowerCutZoneESet ) );
         }
     }
 
@@ -1243,19 +1269,23 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ENERGY_CONSUMER__POWER_CUT_ZONE:
-            if( powerCutZone != null ) msgs = ( ( InternalEObject ) powerCutZone ).eInverseRemove( this,
-                    CimPackage.POWER_CUT_ZONE__ENERGY_CONSUMERS, PowerCutZone.class, msgs );
+            if( powerCutZone != null )
+                msgs = ( ( InternalEObject ) powerCutZone ).eInverseRemove( this,
+                        CimPackage.POWER_CUT_ZONE__ENERGY_CONSUMERS, PowerCutZone.class, msgs );
             return basicSetPowerCutZone( ( PowerCutZone ) otherEnd, msgs );
         case CimPackage.ENERGY_CONSUMER__LOAD_RESPONSE:
-            if( loadResponse != null ) msgs = ( ( InternalEObject ) loadResponse ).eInverseRemove( this,
-                    CimPackage.LOAD_RESPONSE_CHARACTERISTIC__ENERGY_CONSUMER, LoadResponseCharacteristic.class, msgs );
+            if( loadResponse != null )
+                msgs = ( ( InternalEObject ) loadResponse ).eInverseRemove( this,
+                        CimPackage.LOAD_RESPONSE_CHARACTERISTIC__ENERGY_CONSUMER, LoadResponseCharacteristic.class,
+                        msgs );
             return basicSetLoadResponse( ( LoadResponseCharacteristic ) otherEnd, msgs );
         case CimPackage.ENERGY_CONSUMER__ENERGY_CONSUMER_PHASE:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getEnergyConsumerPhase() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.ENERGY_CONSUMER__LOAD_DYNAMICS:
-            if( loadDynamics != null ) msgs = ( ( InternalEObject ) loadDynamics ).eInverseRemove( this,
-                    CimPackage.LOAD_DYNAMICS__ENERGY_CONSUMER, LoadDynamics.class, msgs );
+            if( loadDynamics != null )
+                msgs = ( ( InternalEObject ) loadDynamics ).eInverseRemove( this,
+                        CimPackage.LOAD_DYNAMICS__ENERGY_CONSUMER, LoadDynamics.class, msgs );
             return basicSetLoadDynamics( ( LoadDynamics ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1470,7 +1500,7 @@ public class EnergyConsumerImpl extends ConductingEquipmentImpl implements Energ
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (customerCount: " );
         if( customerCountESet )
             result.append( customerCount );

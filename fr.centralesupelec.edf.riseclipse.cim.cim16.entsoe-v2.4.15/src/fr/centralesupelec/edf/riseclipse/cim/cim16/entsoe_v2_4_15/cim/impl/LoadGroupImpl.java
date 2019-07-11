@@ -124,18 +124,21 @@ public class LoadGroupImpl extends IdentifiedObjectImpl implements LoadGroup {
     public void setSubLoadArea( SubLoadArea newSubLoadArea ) {
         if( newSubLoadArea != subLoadArea ) {
             NotificationChain msgs = null;
-            if( subLoadArea != null ) msgs = ( ( InternalEObject ) subLoadArea ).eInverseRemove( this,
-                    CimPackage.SUB_LOAD_AREA__LOAD_GROUPS, SubLoadArea.class, msgs );
-            if( newSubLoadArea != null ) msgs = ( ( InternalEObject ) newSubLoadArea ).eInverseAdd( this,
-                    CimPackage.SUB_LOAD_AREA__LOAD_GROUPS, SubLoadArea.class, msgs );
+            if( subLoadArea != null )
+                msgs = ( ( InternalEObject ) subLoadArea ).eInverseRemove( this, CimPackage.SUB_LOAD_AREA__LOAD_GROUPS,
+                        SubLoadArea.class, msgs );
+            if( newSubLoadArea != null )
+                msgs = ( ( InternalEObject ) newSubLoadArea ).eInverseAdd( this, CimPackage.SUB_LOAD_AREA__LOAD_GROUPS,
+                        SubLoadArea.class, msgs );
             msgs = basicSetSubLoadArea( newSubLoadArea, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldSubLoadAreaESet = subLoadAreaESet;
             subLoadAreaESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.LOAD_GROUP__SUB_LOAD_AREA, newSubLoadArea, newSubLoadArea, !oldSubLoadAreaESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_GROUP__SUB_LOAD_AREA,
+                        newSubLoadArea, newSubLoadArea, !oldSubLoadAreaESet ) );
         }
     }
 
@@ -177,8 +180,9 @@ public class LoadGroupImpl extends IdentifiedObjectImpl implements LoadGroup {
         else {
             boolean oldSubLoadAreaESet = subLoadAreaESet;
             subLoadAreaESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.LOAD_GROUP__SUB_LOAD_AREA, null, null, oldSubLoadAreaESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_GROUP__SUB_LOAD_AREA, null,
+                        null, oldSubLoadAreaESet ) );
         }
     }
 
@@ -201,8 +205,9 @@ public class LoadGroupImpl extends IdentifiedObjectImpl implements LoadGroup {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.LOAD_GROUP__SUB_LOAD_AREA:
-            if( subLoadArea != null ) msgs = ( ( InternalEObject ) subLoadArea ).eInverseRemove( this,
-                    CimPackage.SUB_LOAD_AREA__LOAD_GROUPS, SubLoadArea.class, msgs );
+            if( subLoadArea != null )
+                msgs = ( ( InternalEObject ) subLoadArea ).eInverseRemove( this, CimPackage.SUB_LOAD_AREA__LOAD_GROUPS,
+                        SubLoadArea.class, msgs );
             return basicSetSubLoadArea( ( SubLoadArea ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

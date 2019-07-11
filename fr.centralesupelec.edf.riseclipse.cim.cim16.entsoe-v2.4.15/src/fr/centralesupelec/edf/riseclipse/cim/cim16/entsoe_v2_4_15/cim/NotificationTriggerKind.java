@@ -167,8 +167,13 @@ public enum NotificationTriggerKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final NotificationTriggerKind[] VALUES_ARRAY = new NotificationTriggerKind[] { INITIAL_ETR,
-            ETR_CHANGE, POWER_RESTORED, POWER_OUT, INFORM_DISPATCHED, };
+    private static final NotificationTriggerKind[] VALUES_ARRAY = new NotificationTriggerKind[] {
+            INITIAL_ETR,
+            ETR_CHANGE,
+            POWER_RESTORED,
+            POWER_OUT,
+            INFORM_DISPATCHED,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Notification Trigger Kind</b></em>' enumerators.

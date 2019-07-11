@@ -140,9 +140,10 @@ public class WindAeroConstIECImpl extends IdentifiedObjectImpl implements WindAe
         else {
             boolean oldWindGenTurbineType1IECESet = windGenTurbineType1IECESet;
             windGenTurbineType1IECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_AERO_CONST_IEC__WIND_GEN_TURBINE_TYPE1_IEC, newWindGenTurbineType1IEC,
-                    newWindGenTurbineType1IEC, !oldWindGenTurbineType1IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_AERO_CONST_IEC__WIND_GEN_TURBINE_TYPE1_IEC, newWindGenTurbineType1IEC,
+                        newWindGenTurbineType1IEC, !oldWindGenTurbineType1IECESet ) );
         }
     }
 
@@ -185,9 +186,10 @@ public class WindAeroConstIECImpl extends IdentifiedObjectImpl implements WindAe
         else {
             boolean oldWindGenTurbineType1IECESet = windGenTurbineType1IECESet;
             windGenTurbineType1IECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_AERO_CONST_IEC__WIND_GEN_TURBINE_TYPE1_IEC, null, null,
-                    oldWindGenTurbineType1IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_AERO_CONST_IEC__WIND_GEN_TURBINE_TYPE1_IEC, null, null,
+                        oldWindGenTurbineType1IECESet ) );
         }
     }
 

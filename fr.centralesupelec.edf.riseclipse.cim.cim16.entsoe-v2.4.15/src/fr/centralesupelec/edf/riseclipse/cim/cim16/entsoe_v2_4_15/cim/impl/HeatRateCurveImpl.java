@@ -135,8 +135,9 @@ public class HeatRateCurveImpl extends CurveImpl implements HeatRateCurve {
         isNetGrossP = newIsNetGrossP;
         boolean oldIsNetGrossPESet = isNetGrossPESet;
         isNetGrossPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.HEAT_RATE_CURVE__IS_NET_GROSS_P, oldIsNetGrossP, isNetGrossP, !oldIsNetGrossPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.HEAT_RATE_CURVE__IS_NET_GROSS_P,
+                    oldIsNetGrossP, isNetGrossP, !oldIsNetGrossPESet ) );
     }
 
     /**
@@ -219,9 +220,10 @@ public class HeatRateCurveImpl extends CurveImpl implements HeatRateCurve {
         else {
             boolean oldThermalGeneratingUnitESet = thermalGeneratingUnitESet;
             thermalGeneratingUnitESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.HEAT_RATE_CURVE__THERMAL_GENERATING_UNIT,
-                            newThermalGeneratingUnit, newThermalGeneratingUnit, !oldThermalGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.HEAT_RATE_CURVE__THERMAL_GENERATING_UNIT, newThermalGeneratingUnit,
+                        newThermalGeneratingUnit, !oldThermalGeneratingUnitESet ) );
         }
     }
 
@@ -264,8 +266,10 @@ public class HeatRateCurveImpl extends CurveImpl implements HeatRateCurve {
         else {
             boolean oldThermalGeneratingUnitESet = thermalGeneratingUnitESet;
             thermalGeneratingUnitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.HEAT_RATE_CURVE__THERMAL_GENERATING_UNIT, null, null, oldThermalGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.HEAT_RATE_CURVE__THERMAL_GENERATING_UNIT, null, null,
+                        oldThermalGeneratingUnitESet ) );
         }
     }
 
@@ -387,7 +391,7 @@ public class HeatRateCurveImpl extends CurveImpl implements HeatRateCurve {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (isNetGrossP: " );
         if( isNetGrossPESet )
             result.append( isNetGrossP );

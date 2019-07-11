@@ -124,18 +124,21 @@ public class LevelVsVolumeCurveImpl extends CurveImpl implements LevelVsVolumeCu
     public void setReservoir( Reservoir newReservoir ) {
         if( newReservoir != reservoir ) {
             NotificationChain msgs = null;
-            if( reservoir != null ) msgs = ( ( InternalEObject ) reservoir ).eInverseRemove( this,
-                    CimPackage.RESERVOIR__LEVEL_VS_VOLUME_CURVES, Reservoir.class, msgs );
-            if( newReservoir != null ) msgs = ( ( InternalEObject ) newReservoir ).eInverseAdd( this,
-                    CimPackage.RESERVOIR__LEVEL_VS_VOLUME_CURVES, Reservoir.class, msgs );
+            if( reservoir != null )
+                msgs = ( ( InternalEObject ) reservoir ).eInverseRemove( this,
+                        CimPackage.RESERVOIR__LEVEL_VS_VOLUME_CURVES, Reservoir.class, msgs );
+            if( newReservoir != null )
+                msgs = ( ( InternalEObject ) newReservoir ).eInverseAdd( this,
+                        CimPackage.RESERVOIR__LEVEL_VS_VOLUME_CURVES, Reservoir.class, msgs );
             msgs = basicSetReservoir( newReservoir, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldReservoirESet = reservoirESet;
             reservoirESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.LEVEL_VS_VOLUME_CURVE__RESERVOIR, newReservoir, newReservoir, !oldReservoirESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LEVEL_VS_VOLUME_CURVE__RESERVOIR,
+                        newReservoir, newReservoir, !oldReservoirESet ) );
         }
     }
 
@@ -177,8 +180,9 @@ public class LevelVsVolumeCurveImpl extends CurveImpl implements LevelVsVolumeCu
         else {
             boolean oldReservoirESet = reservoirESet;
             reservoirESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.LEVEL_VS_VOLUME_CURVE__RESERVOIR, null, null, oldReservoirESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LEVEL_VS_VOLUME_CURVE__RESERVOIR,
+                        null, null, oldReservoirESet ) );
         }
     }
 
@@ -201,8 +205,9 @@ public class LevelVsVolumeCurveImpl extends CurveImpl implements LevelVsVolumeCu
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.LEVEL_VS_VOLUME_CURVE__RESERVOIR:
-            if( reservoir != null ) msgs = ( ( InternalEObject ) reservoir ).eInverseRemove( this,
-                    CimPackage.RESERVOIR__LEVEL_VS_VOLUME_CURVES, Reservoir.class, msgs );
+            if( reservoir != null )
+                msgs = ( ( InternalEObject ) reservoir ).eInverseRemove( this,
+                        CimPackage.RESERVOIR__LEVEL_VS_VOLUME_CURVES, Reservoir.class, msgs );
             return basicSetReservoir( ( Reservoir ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

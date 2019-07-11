@@ -333,8 +333,9 @@ public class ConnectDisconnectFunctionImpl extends EndDeviceFunctionImpl impleme
         eventCount = newEventCount;
         boolean oldEventCountESet = eventCountESet;
         eventCountESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONNECT_DISCONNECT_FUNCTION__EVENT_COUNT, oldEventCount, eventCount, !oldEventCountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONNECT_DISCONNECT_FUNCTION__EVENT_COUNT,
+                    oldEventCount, eventCount, !oldEventCountESet ) );
     }
 
     /**
@@ -348,9 +349,10 @@ public class ConnectDisconnectFunctionImpl extends EndDeviceFunctionImpl impleme
         boolean oldEventCountESet = eventCountESet;
         eventCount = EVENT_COUNT_EDEFAULT;
         eventCountESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.CONNECT_DISCONNECT_FUNCTION__EVENT_COUNT,
-                        oldEventCount, EVENT_COUNT_EDEFAULT, oldEventCountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONNECT_DISCONNECT_FUNCTION__EVENT_COUNT, oldEventCount, EVENT_COUNT_EDEFAULT,
+                    oldEventCountESet ) );
     }
 
     /**
@@ -384,9 +386,10 @@ public class ConnectDisconnectFunctionImpl extends EndDeviceFunctionImpl impleme
         isConnected = newIsConnected;
         boolean oldIsConnectedESet = isConnectedESet;
         isConnectedESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_CONNECTED,
-                        oldIsConnected, isConnected, !oldIsConnectedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_CONNECTED, oldIsConnected, isConnected,
+                    !oldIsConnectedESet ) );
     }
 
     /**
@@ -400,9 +403,10 @@ public class ConnectDisconnectFunctionImpl extends EndDeviceFunctionImpl impleme
         boolean oldIsConnectedESet = isConnectedESet;
         isConnected = IS_CONNECTED_EDEFAULT;
         isConnectedESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_CONNECTED,
-                        oldIsConnected, IS_CONNECTED_EDEFAULT, oldIsConnectedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_CONNECTED, oldIsConnected, IS_CONNECTED_EDEFAULT,
+                    oldIsConnectedESet ) );
     }
 
     /**
@@ -436,9 +440,10 @@ public class ConnectDisconnectFunctionImpl extends EndDeviceFunctionImpl impleme
         isDelayedDiscon = newIsDelayedDiscon;
         boolean oldIsDelayedDisconESet = isDelayedDisconESet;
         isDelayedDisconESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_DELAYED_DISCON, oldIsDelayedDiscon, isDelayedDiscon,
-                !oldIsDelayedDisconESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_DELAYED_DISCON, oldIsDelayedDiscon, isDelayedDiscon,
+                    !oldIsDelayedDisconESet ) );
     }
 
     /**
@@ -452,9 +457,10 @@ public class ConnectDisconnectFunctionImpl extends EndDeviceFunctionImpl impleme
         boolean oldIsDelayedDisconESet = isDelayedDisconESet;
         isDelayedDiscon = IS_DELAYED_DISCON_EDEFAULT;
         isDelayedDisconESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_DELAYED_DISCON, oldIsDelayedDiscon,
-                IS_DELAYED_DISCON_EDEFAULT, oldIsDelayedDisconESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_DELAYED_DISCON, oldIsDelayedDiscon,
+                    IS_DELAYED_DISCON_EDEFAULT, oldIsDelayedDisconESet ) );
     }
 
     /**
@@ -488,9 +494,10 @@ public class ConnectDisconnectFunctionImpl extends EndDeviceFunctionImpl impleme
         isLocalAutoDisconOp = newIsLocalAutoDisconOp;
         boolean oldIsLocalAutoDisconOpESet = isLocalAutoDisconOpESet;
         isLocalAutoDisconOpESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_LOCAL_AUTO_DISCON_OP, oldIsLocalAutoDisconOp,
-                isLocalAutoDisconOp, !oldIsLocalAutoDisconOpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_LOCAL_AUTO_DISCON_OP, oldIsLocalAutoDisconOp,
+                    isLocalAutoDisconOp, !oldIsLocalAutoDisconOpESet ) );
     }
 
     /**
@@ -504,9 +511,10 @@ public class ConnectDisconnectFunctionImpl extends EndDeviceFunctionImpl impleme
         boolean oldIsLocalAutoDisconOpESet = isLocalAutoDisconOpESet;
         isLocalAutoDisconOp = IS_LOCAL_AUTO_DISCON_OP_EDEFAULT;
         isLocalAutoDisconOpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_LOCAL_AUTO_DISCON_OP, oldIsLocalAutoDisconOp,
-                IS_LOCAL_AUTO_DISCON_OP_EDEFAULT, oldIsLocalAutoDisconOpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_LOCAL_AUTO_DISCON_OP, oldIsLocalAutoDisconOp,
+                    IS_LOCAL_AUTO_DISCON_OP_EDEFAULT, oldIsLocalAutoDisconOpESet ) );
     }
 
     /**
@@ -540,9 +548,10 @@ public class ConnectDisconnectFunctionImpl extends EndDeviceFunctionImpl impleme
         isLocalAutoReconOp = newIsLocalAutoReconOp;
         boolean oldIsLocalAutoReconOpESet = isLocalAutoReconOpESet;
         isLocalAutoReconOpESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_LOCAL_AUTO_RECON_OP, oldIsLocalAutoReconOp,
-                isLocalAutoReconOp, !oldIsLocalAutoReconOpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_LOCAL_AUTO_RECON_OP, oldIsLocalAutoReconOp,
+                    isLocalAutoReconOp, !oldIsLocalAutoReconOpESet ) );
     }
 
     /**
@@ -556,9 +565,10 @@ public class ConnectDisconnectFunctionImpl extends EndDeviceFunctionImpl impleme
         boolean oldIsLocalAutoReconOpESet = isLocalAutoReconOpESet;
         isLocalAutoReconOp = IS_LOCAL_AUTO_RECON_OP_EDEFAULT;
         isLocalAutoReconOpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_LOCAL_AUTO_RECON_OP, oldIsLocalAutoReconOp,
-                IS_LOCAL_AUTO_RECON_OP_EDEFAULT, oldIsLocalAutoReconOpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_LOCAL_AUTO_RECON_OP, oldIsLocalAutoReconOp,
+                    IS_LOCAL_AUTO_RECON_OP_EDEFAULT, oldIsLocalAutoReconOpESet ) );
     }
 
     /**
@@ -592,9 +602,10 @@ public class ConnectDisconnectFunctionImpl extends EndDeviceFunctionImpl impleme
         isRemoteAutoDisconOp = newIsRemoteAutoDisconOp;
         boolean oldIsRemoteAutoDisconOpESet = isRemoteAutoDisconOpESet;
         isRemoteAutoDisconOpESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_REMOTE_AUTO_DISCON_OP, oldIsRemoteAutoDisconOp,
-                isRemoteAutoDisconOp, !oldIsRemoteAutoDisconOpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_REMOTE_AUTO_DISCON_OP, oldIsRemoteAutoDisconOp,
+                    isRemoteAutoDisconOp, !oldIsRemoteAutoDisconOpESet ) );
     }
 
     /**
@@ -608,9 +619,10 @@ public class ConnectDisconnectFunctionImpl extends EndDeviceFunctionImpl impleme
         boolean oldIsRemoteAutoDisconOpESet = isRemoteAutoDisconOpESet;
         isRemoteAutoDisconOp = IS_REMOTE_AUTO_DISCON_OP_EDEFAULT;
         isRemoteAutoDisconOpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_REMOTE_AUTO_DISCON_OP, oldIsRemoteAutoDisconOp,
-                IS_REMOTE_AUTO_DISCON_OP_EDEFAULT, oldIsRemoteAutoDisconOpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_REMOTE_AUTO_DISCON_OP, oldIsRemoteAutoDisconOp,
+                    IS_REMOTE_AUTO_DISCON_OP_EDEFAULT, oldIsRemoteAutoDisconOpESet ) );
     }
 
     /**
@@ -644,9 +656,10 @@ public class ConnectDisconnectFunctionImpl extends EndDeviceFunctionImpl impleme
         isRemoteAutoReconOp = newIsRemoteAutoReconOp;
         boolean oldIsRemoteAutoReconOpESet = isRemoteAutoReconOpESet;
         isRemoteAutoReconOpESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_REMOTE_AUTO_RECON_OP, oldIsRemoteAutoReconOp,
-                isRemoteAutoReconOp, !oldIsRemoteAutoReconOpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_REMOTE_AUTO_RECON_OP, oldIsRemoteAutoReconOp,
+                    isRemoteAutoReconOp, !oldIsRemoteAutoReconOpESet ) );
     }
 
     /**
@@ -660,9 +673,10 @@ public class ConnectDisconnectFunctionImpl extends EndDeviceFunctionImpl impleme
         boolean oldIsRemoteAutoReconOpESet = isRemoteAutoReconOpESet;
         isRemoteAutoReconOp = IS_REMOTE_AUTO_RECON_OP_EDEFAULT;
         isRemoteAutoReconOpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_REMOTE_AUTO_RECON_OP, oldIsRemoteAutoReconOp,
-                IS_REMOTE_AUTO_RECON_OP_EDEFAULT, oldIsRemoteAutoReconOpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONNECT_DISCONNECT_FUNCTION__IS_REMOTE_AUTO_RECON_OP, oldIsRemoteAutoReconOp,
+                    IS_REMOTE_AUTO_RECON_OP_EDEFAULT, oldIsRemoteAutoReconOpESet ) );
     }
 
     /**
@@ -715,18 +729,21 @@ public class ConnectDisconnectFunctionImpl extends EndDeviceFunctionImpl impleme
     public void setRcdInfo( RemoteConnectDisconnectInfo newRcdInfo ) {
         if( newRcdInfo != rcdInfo ) {
             NotificationChain msgs = null;
-            if( rcdInfo != null ) msgs = ( ( InternalEObject ) rcdInfo ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.CONNECT_DISCONNECT_FUNCTION__RCD_INFO, null, msgs );
-            if( newRcdInfo != null ) msgs = ( ( InternalEObject ) newRcdInfo ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.CONNECT_DISCONNECT_FUNCTION__RCD_INFO, null, msgs );
+            if( rcdInfo != null )
+                msgs = ( ( InternalEObject ) rcdInfo ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.CONNECT_DISCONNECT_FUNCTION__RCD_INFO, null, msgs );
+            if( newRcdInfo != null )
+                msgs = ( ( InternalEObject ) newRcdInfo ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.CONNECT_DISCONNECT_FUNCTION__RCD_INFO, null, msgs );
             msgs = basicSetRcdInfo( newRcdInfo, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldRcdInfoESet = rcdInfoESet;
             rcdInfoESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CONNECT_DISCONNECT_FUNCTION__RCD_INFO, newRcdInfo, newRcdInfo, !oldRcdInfoESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.CONNECT_DISCONNECT_FUNCTION__RCD_INFO, newRcdInfo, newRcdInfo, !oldRcdInfoESet ) );
         }
     }
 
@@ -768,8 +785,9 @@ public class ConnectDisconnectFunctionImpl extends EndDeviceFunctionImpl impleme
         else {
             boolean oldRcdInfoESet = rcdInfoESet;
             rcdInfoESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONNECT_DISCONNECT_FUNCTION__RCD_INFO, null, null, oldRcdInfoESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CONNECT_DISCONNECT_FUNCTION__RCD_INFO, null, null, oldRcdInfoESet ) );
         }
     }
 
@@ -998,7 +1016,7 @@ public class ConnectDisconnectFunctionImpl extends EndDeviceFunctionImpl impleme
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (eventCount: " );
         if( eventCountESet )
             result.append( eventCount );

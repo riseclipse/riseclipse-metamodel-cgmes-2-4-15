@@ -412,8 +412,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         epfd = newEpfd;
         boolean oldEpfdESet = epfdESet;
         epfdESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_COMPOSITE__EPFD, oldEpfd, epfd, !oldEpfdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_COMPOSITE__EPFD, oldEpfd, epfd,
+                    !oldEpfdESet ) );
     }
 
     /**
@@ -427,8 +428,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         boolean oldEpfdESet = epfdESet;
         epfd = EPFD_EDEFAULT;
         epfdESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_COMPOSITE__EPFD, oldEpfd, EPFD_EDEFAULT, oldEpfdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_COMPOSITE__EPFD, oldEpfd,
+                    EPFD_EDEFAULT, oldEpfdESet ) );
     }
 
     /**
@@ -462,8 +464,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         epfs = newEpfs;
         boolean oldEpfsESet = epfsESet;
         epfsESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_COMPOSITE__EPFS, oldEpfs, epfs, !oldEpfsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_COMPOSITE__EPFS, oldEpfs, epfs,
+                    !oldEpfsESet ) );
     }
 
     /**
@@ -477,8 +480,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         boolean oldEpfsESet = epfsESet;
         epfs = EPFS_EDEFAULT;
         epfsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_COMPOSITE__EPFS, oldEpfs, EPFS_EDEFAULT, oldEpfsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_COMPOSITE__EPFS, oldEpfs,
+                    EPFS_EDEFAULT, oldEpfsESet ) );
     }
 
     /**
@@ -512,8 +516,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         epvd = newEpvd;
         boolean oldEpvdESet = epvdESet;
         epvdESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_COMPOSITE__EPVD, oldEpvd, epvd, !oldEpvdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_COMPOSITE__EPVD, oldEpvd, epvd,
+                    !oldEpvdESet ) );
     }
 
     /**
@@ -527,8 +532,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         boolean oldEpvdESet = epvdESet;
         epvd = EPVD_EDEFAULT;
         epvdESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_COMPOSITE__EPVD, oldEpvd, EPVD_EDEFAULT, oldEpvdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_COMPOSITE__EPVD, oldEpvd,
+                    EPVD_EDEFAULT, oldEpvdESet ) );
     }
 
     /**
@@ -562,8 +568,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         epvs = newEpvs;
         boolean oldEpvsESet = epvsESet;
         epvsESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_COMPOSITE__EPVS, oldEpvs, epvs, !oldEpvsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_COMPOSITE__EPVS, oldEpvs, epvs,
+                    !oldEpvsESet ) );
     }
 
     /**
@@ -577,8 +584,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         boolean oldEpvsESet = epvsESet;
         epvs = EPVS_EDEFAULT;
         epvsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_COMPOSITE__EPVS, oldEpvs, EPVS_EDEFAULT, oldEpvsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_COMPOSITE__EPVS, oldEpvs,
+                    EPVS_EDEFAULT, oldEpvsESet ) );
     }
 
     /**
@@ -612,8 +620,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         eqfd = newEqfd;
         boolean oldEqfdESet = eqfdESet;
         eqfdESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_COMPOSITE__EQFD, oldEqfd, eqfd, !oldEqfdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_COMPOSITE__EQFD, oldEqfd, eqfd,
+                    !oldEqfdESet ) );
     }
 
     /**
@@ -627,8 +636,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         boolean oldEqfdESet = eqfdESet;
         eqfd = EQFD_EDEFAULT;
         eqfdESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_COMPOSITE__EQFD, oldEqfd, EQFD_EDEFAULT, oldEqfdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_COMPOSITE__EQFD, oldEqfd,
+                    EQFD_EDEFAULT, oldEqfdESet ) );
     }
 
     /**
@@ -662,8 +672,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         eqfs = newEqfs;
         boolean oldEqfsESet = eqfsESet;
         eqfsESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_COMPOSITE__EQFS, oldEqfs, eqfs, !oldEqfsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_COMPOSITE__EQFS, oldEqfs, eqfs,
+                    !oldEqfsESet ) );
     }
 
     /**
@@ -677,8 +688,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         boolean oldEqfsESet = eqfsESet;
         eqfs = EQFS_EDEFAULT;
         eqfsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_COMPOSITE__EQFS, oldEqfs, EQFS_EDEFAULT, oldEqfsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_COMPOSITE__EQFS, oldEqfs,
+                    EQFS_EDEFAULT, oldEqfsESet ) );
     }
 
     /**
@@ -712,8 +724,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         eqvd = newEqvd;
         boolean oldEqvdESet = eqvdESet;
         eqvdESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_COMPOSITE__EQVD, oldEqvd, eqvd, !oldEqvdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_COMPOSITE__EQVD, oldEqvd, eqvd,
+                    !oldEqvdESet ) );
     }
 
     /**
@@ -727,8 +740,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         boolean oldEqvdESet = eqvdESet;
         eqvd = EQVD_EDEFAULT;
         eqvdESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_COMPOSITE__EQVD, oldEqvd, EQVD_EDEFAULT, oldEqvdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_COMPOSITE__EQVD, oldEqvd,
+                    EQVD_EDEFAULT, oldEqvdESet ) );
     }
 
     /**
@@ -762,8 +776,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         eqvs = newEqvs;
         boolean oldEqvsESet = eqvsESet;
         eqvsESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_COMPOSITE__EQVS, oldEqvs, eqvs, !oldEqvsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_COMPOSITE__EQVS, oldEqvs, eqvs,
+                    !oldEqvsESet ) );
     }
 
     /**
@@ -777,8 +792,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         boolean oldEqvsESet = eqvsESet;
         eqvs = EQVS_EDEFAULT;
         eqvsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_COMPOSITE__EQVS, oldEqvs, EQVS_EDEFAULT, oldEqvsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_COMPOSITE__EQVS, oldEqvs,
+                    EQVS_EDEFAULT, oldEqvsESet ) );
     }
 
     /**
@@ -812,8 +828,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         h = newH;
         boolean oldHESet = hESet;
         hESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_COMPOSITE__H, oldH, h, !oldHESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_COMPOSITE__H, oldH, h,
+                    !oldHESet ) );
     }
 
     /**
@@ -827,8 +844,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         boolean oldHESet = hESet;
         h = H_EDEFAULT;
         hESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_COMPOSITE__H, oldH, H_EDEFAULT, oldHESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_COMPOSITE__H, oldH, H_EDEFAULT,
+                    oldHESet ) );
     }
 
     /**
@@ -862,8 +880,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         lfrac = newLfrac;
         boolean oldLfracESet = lfracESet;
         lfracESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_COMPOSITE__LFRAC, oldLfrac, lfrac, !oldLfracESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_COMPOSITE__LFRAC, oldLfrac, lfrac,
+                    !oldLfracESet ) );
     }
 
     /**
@@ -877,8 +896,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         boolean oldLfracESet = lfracESet;
         lfrac = LFRAC_EDEFAULT;
         lfracESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_COMPOSITE__LFRAC, oldLfrac, LFRAC_EDEFAULT, oldLfracESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_COMPOSITE__LFRAC, oldLfrac,
+                    LFRAC_EDEFAULT, oldLfracESet ) );
     }
 
     /**
@@ -912,8 +932,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         pfrac = newPfrac;
         boolean oldPfracESet = pfracESet;
         pfracESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_COMPOSITE__PFRAC, oldPfrac, pfrac, !oldPfracESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_COMPOSITE__PFRAC, oldPfrac, pfrac,
+                    !oldPfracESet ) );
     }
 
     /**
@@ -927,8 +948,9 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
         boolean oldPfracESet = pfracESet;
         pfrac = PFRAC_EDEFAULT;
         pfracESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_COMPOSITE__PFRAC, oldPfrac, PFRAC_EDEFAULT, oldPfracESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_COMPOSITE__PFRAC, oldPfrac,
+                    PFRAC_EDEFAULT, oldPfracESet ) );
     }
 
     /**
@@ -1108,7 +1130,7 @@ public class LoadCompositeImpl extends LoadDynamicsImpl implements LoadComposite
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (epfd: " );
         if( epfdESet )
             result.append( epfd );

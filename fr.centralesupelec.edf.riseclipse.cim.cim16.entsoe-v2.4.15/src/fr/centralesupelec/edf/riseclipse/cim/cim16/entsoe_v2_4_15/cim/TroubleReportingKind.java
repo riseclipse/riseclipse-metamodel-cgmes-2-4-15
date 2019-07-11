@@ -167,8 +167,13 @@ public enum TroubleReportingKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final TroubleReportingKind[] VALUES_ARRAY = new TroubleReportingKind[] { CALL, EMAIL, LETTER, OTHER,
-            IVR, };
+    private static final TroubleReportingKind[] VALUES_ARRAY = new TroubleReportingKind[] {
+            CALL,
+            EMAIL,
+            LETTER,
+            OTHER,
+            IVR,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Trouble Reporting Kind</b></em>' enumerators.

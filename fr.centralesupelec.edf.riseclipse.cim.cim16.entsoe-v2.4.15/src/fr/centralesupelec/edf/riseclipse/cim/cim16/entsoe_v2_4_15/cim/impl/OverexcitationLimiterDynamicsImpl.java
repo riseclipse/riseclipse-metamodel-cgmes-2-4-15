@@ -141,9 +141,10 @@ public class OverexcitationLimiterDynamicsImpl extends DynamicsFunctionBlockImpl
         else {
             boolean oldExcitationSystemDynamicsESet = excitationSystemDynamicsESet;
             excitationSystemDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.OVEREXCITATION_LIMITER_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS, newExcitationSystemDynamics,
-                    newExcitationSystemDynamics, !oldExcitationSystemDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.OVEREXCITATION_LIMITER_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS,
+                        newExcitationSystemDynamics, newExcitationSystemDynamics, !oldExcitationSystemDynamicsESet ) );
         }
     }
 
@@ -187,9 +188,10 @@ public class OverexcitationLimiterDynamicsImpl extends DynamicsFunctionBlockImpl
         else {
             boolean oldExcitationSystemDynamicsESet = excitationSystemDynamicsESet;
             excitationSystemDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OVEREXCITATION_LIMITER_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS, null, null,
-                    oldExcitationSystemDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.OVEREXCITATION_LIMITER_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS, null, null,
+                        oldExcitationSystemDynamicsESet ) );
         }
     }
 

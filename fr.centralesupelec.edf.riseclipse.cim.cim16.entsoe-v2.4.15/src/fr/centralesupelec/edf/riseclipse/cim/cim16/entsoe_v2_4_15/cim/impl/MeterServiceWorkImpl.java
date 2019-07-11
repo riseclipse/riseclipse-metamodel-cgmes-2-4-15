@@ -165,18 +165,21 @@ public class MeterServiceWorkImpl extends WorkImpl implements MeterServiceWork {
     public void setOldMeter( Meter newOldMeter ) {
         if( newOldMeter != oldMeter ) {
             NotificationChain msgs = null;
-            if( oldMeter != null ) msgs = ( ( InternalEObject ) oldMeter ).eInverseRemove( this,
-                    CimPackage.METER__METER_REPLACEMENT_WORKS, Meter.class, msgs );
-            if( newOldMeter != null ) msgs = ( ( InternalEObject ) newOldMeter ).eInverseAdd( this,
-                    CimPackage.METER__METER_REPLACEMENT_WORKS, Meter.class, msgs );
+            if( oldMeter != null )
+                msgs = ( ( InternalEObject ) oldMeter ).eInverseRemove( this, CimPackage.METER__METER_REPLACEMENT_WORKS,
+                        Meter.class, msgs );
+            if( newOldMeter != null )
+                msgs = ( ( InternalEObject ) newOldMeter ).eInverseAdd( this, CimPackage.METER__METER_REPLACEMENT_WORKS,
+                        Meter.class, msgs );
             msgs = basicSetOldMeter( newOldMeter, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldOldMeterESet = oldMeterESet;
             oldMeterESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.METER_SERVICE_WORK__OLD_METER, newOldMeter, newOldMeter, !oldOldMeterESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.METER_SERVICE_WORK__OLD_METER,
+                        newOldMeter, newOldMeter, !oldOldMeterESet ) );
         }
     }
 
@@ -218,8 +221,9 @@ public class MeterServiceWorkImpl extends WorkImpl implements MeterServiceWork {
         else {
             boolean oldOldMeterESet = oldMeterESet;
             oldMeterESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.METER_SERVICE_WORK__OLD_METER, null, null, oldOldMeterESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.METER_SERVICE_WORK__OLD_METER,
+                        null, null, oldOldMeterESet ) );
         }
     }
 
@@ -273,18 +277,21 @@ public class MeterServiceWorkImpl extends WorkImpl implements MeterServiceWork {
     public void setMeter( Meter newMeter ) {
         if( newMeter != meter ) {
             NotificationChain msgs = null;
-            if( meter != null ) msgs = ( ( InternalEObject ) meter ).eInverseRemove( this,
-                    CimPackage.METER__METER_SERVICE_WORKS, Meter.class, msgs );
-            if( newMeter != null ) msgs = ( ( InternalEObject ) newMeter ).eInverseAdd( this,
-                    CimPackage.METER__METER_SERVICE_WORKS, Meter.class, msgs );
+            if( meter != null )
+                msgs = ( ( InternalEObject ) meter ).eInverseRemove( this, CimPackage.METER__METER_SERVICE_WORKS,
+                        Meter.class, msgs );
+            if( newMeter != null )
+                msgs = ( ( InternalEObject ) newMeter ).eInverseAdd( this, CimPackage.METER__METER_SERVICE_WORKS,
+                        Meter.class, msgs );
             msgs = basicSetMeter( newMeter, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldMeterESet = meterESet;
             meterESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.METER_SERVICE_WORK__METER, newMeter, newMeter, !oldMeterESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.METER_SERVICE_WORK__METER, newMeter,
+                        newMeter, !oldMeterESet ) );
         }
     }
 
@@ -326,8 +333,9 @@ public class MeterServiceWorkImpl extends WorkImpl implements MeterServiceWork {
         else {
             boolean oldMeterESet = meterESet;
             meterESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.METER_SERVICE_WORK__METER, null, null, oldMeterESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.METER_SERVICE_WORK__METER, null,
+                        null, oldMeterESet ) );
         }
     }
 
@@ -381,18 +389,21 @@ public class MeterServiceWorkImpl extends WorkImpl implements MeterServiceWork {
     public void setUsagePoint( UsagePoint newUsagePoint ) {
         if( newUsagePoint != usagePoint ) {
             NotificationChain msgs = null;
-            if( usagePoint != null ) msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this,
-                    CimPackage.USAGE_POINT__METER_SERVICE_WORKS, UsagePoint.class, msgs );
-            if( newUsagePoint != null ) msgs = ( ( InternalEObject ) newUsagePoint ).eInverseAdd( this,
-                    CimPackage.USAGE_POINT__METER_SERVICE_WORKS, UsagePoint.class, msgs );
+            if( usagePoint != null )
+                msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this,
+                        CimPackage.USAGE_POINT__METER_SERVICE_WORKS, UsagePoint.class, msgs );
+            if( newUsagePoint != null )
+                msgs = ( ( InternalEObject ) newUsagePoint ).eInverseAdd( this,
+                        CimPackage.USAGE_POINT__METER_SERVICE_WORKS, UsagePoint.class, msgs );
             msgs = basicSetUsagePoint( newUsagePoint, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldUsagePointESet = usagePointESet;
             usagePointESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.METER_SERVICE_WORK__USAGE_POINT, newUsagePoint, newUsagePoint, !oldUsagePointESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.METER_SERVICE_WORK__USAGE_POINT,
+                        newUsagePoint, newUsagePoint, !oldUsagePointESet ) );
         }
     }
 
@@ -434,8 +445,9 @@ public class MeterServiceWorkImpl extends WorkImpl implements MeterServiceWork {
         else {
             boolean oldUsagePointESet = usagePointESet;
             usagePointESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.METER_SERVICE_WORK__USAGE_POINT, null, null, oldUsagePointESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.METER_SERVICE_WORK__USAGE_POINT,
+                        null, null, oldUsagePointESet ) );
         }
     }
 
@@ -458,16 +470,19 @@ public class MeterServiceWorkImpl extends WorkImpl implements MeterServiceWork {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.METER_SERVICE_WORK__USAGE_POINT:
-            if( usagePoint != null ) msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this,
-                    CimPackage.USAGE_POINT__METER_SERVICE_WORKS, UsagePoint.class, msgs );
+            if( usagePoint != null )
+                msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this,
+                        CimPackage.USAGE_POINT__METER_SERVICE_WORKS, UsagePoint.class, msgs );
             return basicSetUsagePoint( ( UsagePoint ) otherEnd, msgs );
         case CimPackage.METER_SERVICE_WORK__OLD_METER:
-            if( oldMeter != null ) msgs = ( ( InternalEObject ) oldMeter ).eInverseRemove( this,
-                    CimPackage.METER__METER_REPLACEMENT_WORKS, Meter.class, msgs );
+            if( oldMeter != null )
+                msgs = ( ( InternalEObject ) oldMeter ).eInverseRemove( this, CimPackage.METER__METER_REPLACEMENT_WORKS,
+                        Meter.class, msgs );
             return basicSetOldMeter( ( Meter ) otherEnd, msgs );
         case CimPackage.METER_SERVICE_WORK__METER:
-            if( meter != null ) msgs = ( ( InternalEObject ) meter ).eInverseRemove( this,
-                    CimPackage.METER__METER_SERVICE_WORKS, Meter.class, msgs );
+            if( meter != null )
+                msgs = ( ( InternalEObject ) meter ).eInverseRemove( this, CimPackage.METER__METER_SERVICE_WORKS,
+                        Meter.class, msgs );
             return basicSetMeter( ( Meter ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

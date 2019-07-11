@@ -214,9 +214,10 @@ public class SynchronousMachineDynamicsImpl extends RotatingMachineDynamicsImpl 
         else {
             boolean oldMechanicalLoadDynamicsESet = mechanicalLoadDynamicsESet;
             mechanicalLoadDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SYNCHRONOUS_MACHINE_DYNAMICS__MECHANICAL_LOAD_DYNAMICS, newMechanicalLoadDynamics,
-                    newMechanicalLoadDynamics, !oldMechanicalLoadDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.SYNCHRONOUS_MACHINE_DYNAMICS__MECHANICAL_LOAD_DYNAMICS, newMechanicalLoadDynamics,
+                        newMechanicalLoadDynamics, !oldMechanicalLoadDynamicsESet ) );
         }
     }
 
@@ -260,9 +261,10 @@ public class SynchronousMachineDynamicsImpl extends RotatingMachineDynamicsImpl 
         else {
             boolean oldMechanicalLoadDynamicsESet = mechanicalLoadDynamicsESet;
             mechanicalLoadDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SYNCHRONOUS_MACHINE_DYNAMICS__MECHANICAL_LOAD_DYNAMICS, null, null,
-                    oldMechanicalLoadDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.SYNCHRONOUS_MACHINE_DYNAMICS__MECHANICAL_LOAD_DYNAMICS, null, null,
+                        oldMechanicalLoadDynamicsESet ) );
         }
     }
 
@@ -354,19 +356,22 @@ public class SynchronousMachineDynamicsImpl extends RotatingMachineDynamicsImpl 
     public void setSynchronousMachine( SynchronousMachine newSynchronousMachine ) {
         if( newSynchronousMachine != synchronousMachine ) {
             NotificationChain msgs = null;
-            if( synchronousMachine != null ) msgs = ( ( InternalEObject ) synchronousMachine ).eInverseRemove( this,
-                    CimPackage.SYNCHRONOUS_MACHINE__SYNCHRONOUS_MACHINE_DYNAMICS, SynchronousMachine.class, msgs );
-            if( newSynchronousMachine != null ) msgs = ( ( InternalEObject ) newSynchronousMachine ).eInverseAdd( this,
-                    CimPackage.SYNCHRONOUS_MACHINE__SYNCHRONOUS_MACHINE_DYNAMICS, SynchronousMachine.class, msgs );
+            if( synchronousMachine != null )
+                msgs = ( ( InternalEObject ) synchronousMachine ).eInverseRemove( this,
+                        CimPackage.SYNCHRONOUS_MACHINE__SYNCHRONOUS_MACHINE_DYNAMICS, SynchronousMachine.class, msgs );
+            if( newSynchronousMachine != null )
+                msgs = ( ( InternalEObject ) newSynchronousMachine ).eInverseAdd( this,
+                        CimPackage.SYNCHRONOUS_MACHINE__SYNCHRONOUS_MACHINE_DYNAMICS, SynchronousMachine.class, msgs );
             msgs = basicSetSynchronousMachine( newSynchronousMachine, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldSynchronousMachineESet = synchronousMachineESet;
             synchronousMachineESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SYNCHRONOUS_MACHINE_DYNAMICS__SYNCHRONOUS_MACHINE, newSynchronousMachine,
-                    newSynchronousMachine, !oldSynchronousMachineESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.SYNCHRONOUS_MACHINE_DYNAMICS__SYNCHRONOUS_MACHINE, newSynchronousMachine,
+                        newSynchronousMachine, !oldSynchronousMachineESet ) );
         }
     }
 
@@ -409,9 +414,10 @@ public class SynchronousMachineDynamicsImpl extends RotatingMachineDynamicsImpl 
         else {
             boolean oldSynchronousMachineESet = synchronousMachineESet;
             synchronousMachineESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SYNCHRONOUS_MACHINE_DYNAMICS__SYNCHRONOUS_MACHINE, null, null,
-                    oldSynchronousMachineESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.SYNCHRONOUS_MACHINE_DYNAMICS__SYNCHRONOUS_MACHINE, null, null,
+                        oldSynchronousMachineESet ) );
         }
     }
 
@@ -517,9 +523,10 @@ public class SynchronousMachineDynamicsImpl extends RotatingMachineDynamicsImpl 
         else {
             boolean oldExcitationSystemDynamicsESet = excitationSystemDynamicsESet;
             excitationSystemDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SYNCHRONOUS_MACHINE_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS, newExcitationSystemDynamics,
-                    newExcitationSystemDynamics, !oldExcitationSystemDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.SYNCHRONOUS_MACHINE_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS,
+                        newExcitationSystemDynamics, newExcitationSystemDynamics, !oldExcitationSystemDynamicsESet ) );
         }
     }
 
@@ -563,9 +570,10 @@ public class SynchronousMachineDynamicsImpl extends RotatingMachineDynamicsImpl 
         else {
             boolean oldExcitationSystemDynamicsESet = excitationSystemDynamicsESet;
             excitationSystemDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SYNCHRONOUS_MACHINE_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS, null, null,
-                    oldExcitationSystemDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.SYNCHRONOUS_MACHINE_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS, null, null,
+                        oldExcitationSystemDynamicsESet ) );
         }
     }
 
@@ -604,8 +612,9 @@ public class SynchronousMachineDynamicsImpl extends RotatingMachineDynamicsImpl 
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getGenICompensationForGenJ() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.SYNCHRONOUS_MACHINE_DYNAMICS__SYNCHRONOUS_MACHINE:
-            if( synchronousMachine != null ) msgs = ( ( InternalEObject ) synchronousMachine ).eInverseRemove( this,
-                    CimPackage.SYNCHRONOUS_MACHINE__SYNCHRONOUS_MACHINE_DYNAMICS, SynchronousMachine.class, msgs );
+            if( synchronousMachine != null )
+                msgs = ( ( InternalEObject ) synchronousMachine ).eInverseRemove( this,
+                        CimPackage.SYNCHRONOUS_MACHINE__SYNCHRONOUS_MACHINE_DYNAMICS, SynchronousMachine.class, msgs );
             return basicSetSynchronousMachine( ( SynchronousMachine ) otherEnd, msgs );
         case CimPackage.SYNCHRONOUS_MACHINE_DYNAMICS__TURBINE_GOVERNOR_DYNAMICS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTurbineGovernorDynamics() )

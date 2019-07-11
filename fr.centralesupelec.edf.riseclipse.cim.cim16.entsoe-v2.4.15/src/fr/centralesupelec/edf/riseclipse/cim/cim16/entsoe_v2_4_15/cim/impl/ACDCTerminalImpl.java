@@ -196,8 +196,9 @@ public class ACDCTerminalImpl extends IdentifiedObjectImpl implements ACDCTermin
         connected = newConnected;
         boolean oldConnectedESet = connectedESet;
         connectedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACDC_TERMINAL__CONNECTED, oldConnected, connected, !oldConnectedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACDC_TERMINAL__CONNECTED, oldConnected,
+                    connected, !oldConnectedESet ) );
     }
 
     /**
@@ -211,8 +212,9 @@ public class ACDCTerminalImpl extends IdentifiedObjectImpl implements ACDCTermin
         boolean oldConnectedESet = connectedESet;
         connected = CONNECTED_EDEFAULT;
         connectedESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACDC_TERMINAL__CONNECTED, oldConnected, CONNECTED_EDEFAULT, oldConnectedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_TERMINAL__CONNECTED, oldConnected,
+                    CONNECTED_EDEFAULT, oldConnectedESet ) );
     }
 
     /**
@@ -387,10 +389,12 @@ public class ACDCTerminalImpl extends IdentifiedObjectImpl implements ACDCTermin
     public void setBusNameMarker( BusNameMarker newBusNameMarker ) {
         if( newBusNameMarker != busNameMarker ) {
             NotificationChain msgs = null;
-            if( busNameMarker != null ) msgs = ( ( InternalEObject ) busNameMarker ).eInverseRemove( this,
-                    CimPackage.BUS_NAME_MARKER__TERMINAL, BusNameMarker.class, msgs );
-            if( newBusNameMarker != null ) msgs = ( ( InternalEObject ) newBusNameMarker ).eInverseAdd( this,
-                    CimPackage.BUS_NAME_MARKER__TERMINAL, BusNameMarker.class, msgs );
+            if( busNameMarker != null )
+                msgs = ( ( InternalEObject ) busNameMarker ).eInverseRemove( this, CimPackage.BUS_NAME_MARKER__TERMINAL,
+                        BusNameMarker.class, msgs );
+            if( newBusNameMarker != null )
+                msgs = ( ( InternalEObject ) newBusNameMarker ).eInverseAdd( this, CimPackage.BUS_NAME_MARKER__TERMINAL,
+                        BusNameMarker.class, msgs );
             msgs = basicSetBusNameMarker( newBusNameMarker, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -441,8 +445,9 @@ public class ACDCTerminalImpl extends IdentifiedObjectImpl implements ACDCTermin
         else {
             boolean oldBusNameMarkerESet = busNameMarkerESet;
             busNameMarkerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ACDC_TERMINAL__BUS_NAME_MARKER, null, null, oldBusNameMarkerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACDC_TERMINAL__BUS_NAME_MARKER,
+                        null, null, oldBusNameMarkerESet ) );
         }
     }
 
@@ -472,8 +477,9 @@ public class ACDCTerminalImpl extends IdentifiedObjectImpl implements ACDCTermin
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getMeasurements() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.ACDC_TERMINAL__BUS_NAME_MARKER:
-            if( busNameMarker != null ) msgs = ( ( InternalEObject ) busNameMarker ).eInverseRemove( this,
-                    CimPackage.BUS_NAME_MARKER__TERMINAL, BusNameMarker.class, msgs );
+            if( busNameMarker != null )
+                msgs = ( ( InternalEObject ) busNameMarker ).eInverseRemove( this, CimPackage.BUS_NAME_MARKER__TERMINAL,
+                        BusNameMarker.class, msgs );
             return basicSetBusNameMarker( ( BusNameMarker ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -607,7 +613,7 @@ public class ACDCTerminalImpl extends IdentifiedObjectImpl implements ACDCTermin
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (connected: " );
         if( connectedESet )
             result.append( connected );

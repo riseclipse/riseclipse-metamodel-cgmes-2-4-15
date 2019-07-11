@@ -147,8 +147,9 @@ public class OperationalLimitImpl extends IdentifiedObjectImpl implements Operat
     public void setOperationalLimitType( OperationalLimitType newOperationalLimitType ) {
         if( newOperationalLimitType != operationalLimitType ) {
             NotificationChain msgs = null;
-            if( operationalLimitType != null ) msgs = ( ( InternalEObject ) operationalLimitType ).eInverseRemove( this,
-                    CimPackage.OPERATIONAL_LIMIT_TYPE__OPERATIONAL_LIMIT, OperationalLimitType.class, msgs );
+            if( operationalLimitType != null )
+                msgs = ( ( InternalEObject ) operationalLimitType ).eInverseRemove( this,
+                        CimPackage.OPERATIONAL_LIMIT_TYPE__OPERATIONAL_LIMIT, OperationalLimitType.class, msgs );
             if( newOperationalLimitType != null )
                 msgs = ( ( InternalEObject ) newOperationalLimitType ).eInverseAdd( this,
                         CimPackage.OPERATIONAL_LIMIT_TYPE__OPERATIONAL_LIMIT, OperationalLimitType.class, msgs );
@@ -158,9 +159,10 @@ public class OperationalLimitImpl extends IdentifiedObjectImpl implements Operat
         else {
             boolean oldOperationalLimitTypeESet = operationalLimitTypeESet;
             operationalLimitTypeESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.OPERATIONAL_LIMIT__OPERATIONAL_LIMIT_TYPE,
-                            newOperationalLimitType, newOperationalLimitType, !oldOperationalLimitTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.OPERATIONAL_LIMIT__OPERATIONAL_LIMIT_TYPE, newOperationalLimitType,
+                        newOperationalLimitType, !oldOperationalLimitTypeESet ) );
         }
     }
 
@@ -203,8 +205,10 @@ public class OperationalLimitImpl extends IdentifiedObjectImpl implements Operat
         else {
             boolean oldOperationalLimitTypeESet = operationalLimitTypeESet;
             operationalLimitTypeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OPERATIONAL_LIMIT__OPERATIONAL_LIMIT_TYPE, null, null, oldOperationalLimitTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.OPERATIONAL_LIMIT__OPERATIONAL_LIMIT_TYPE, null, null,
+                        oldOperationalLimitTypeESet ) );
         }
     }
 
@@ -260,8 +264,9 @@ public class OperationalLimitImpl extends IdentifiedObjectImpl implements Operat
     public void setOperationalLimitSet( OperationalLimitSet newOperationalLimitSet ) {
         if( newOperationalLimitSet != operationalLimitSet ) {
             NotificationChain msgs = null;
-            if( operationalLimitSet != null ) msgs = ( ( InternalEObject ) operationalLimitSet ).eInverseRemove( this,
-                    CimPackage.OPERATIONAL_LIMIT_SET__OPERATIONAL_LIMIT_VALUE, OperationalLimitSet.class, msgs );
+            if( operationalLimitSet != null )
+                msgs = ( ( InternalEObject ) operationalLimitSet ).eInverseRemove( this,
+                        CimPackage.OPERATIONAL_LIMIT_SET__OPERATIONAL_LIMIT_VALUE, OperationalLimitSet.class, msgs );
             if( newOperationalLimitSet != null )
                 msgs = ( ( InternalEObject ) newOperationalLimitSet ).eInverseAdd( this,
                         CimPackage.OPERATIONAL_LIMIT_SET__OPERATIONAL_LIMIT_VALUE, OperationalLimitSet.class, msgs );
@@ -271,9 +276,10 @@ public class OperationalLimitImpl extends IdentifiedObjectImpl implements Operat
         else {
             boolean oldOperationalLimitSetESet = operationalLimitSetESet;
             operationalLimitSetESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.OPERATIONAL_LIMIT__OPERATIONAL_LIMIT_SET,
-                            newOperationalLimitSet, newOperationalLimitSet, !oldOperationalLimitSetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.OPERATIONAL_LIMIT__OPERATIONAL_LIMIT_SET, newOperationalLimitSet,
+                        newOperationalLimitSet, !oldOperationalLimitSetESet ) );
         }
     }
 
@@ -316,8 +322,9 @@ public class OperationalLimitImpl extends IdentifiedObjectImpl implements Operat
         else {
             boolean oldOperationalLimitSetESet = operationalLimitSetESet;
             operationalLimitSetESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OPERATIONAL_LIMIT__OPERATIONAL_LIMIT_SET, null, null, oldOperationalLimitSetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.OPERATIONAL_LIMIT__OPERATIONAL_LIMIT_SET, null, null, oldOperationalLimitSetESet ) );
         }
     }
 
@@ -340,12 +347,14 @@ public class OperationalLimitImpl extends IdentifiedObjectImpl implements Operat
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.OPERATIONAL_LIMIT__OPERATIONAL_LIMIT_SET:
-            if( operationalLimitSet != null ) msgs = ( ( InternalEObject ) operationalLimitSet ).eInverseRemove( this,
-                    CimPackage.OPERATIONAL_LIMIT_SET__OPERATIONAL_LIMIT_VALUE, OperationalLimitSet.class, msgs );
+            if( operationalLimitSet != null )
+                msgs = ( ( InternalEObject ) operationalLimitSet ).eInverseRemove( this,
+                        CimPackage.OPERATIONAL_LIMIT_SET__OPERATIONAL_LIMIT_VALUE, OperationalLimitSet.class, msgs );
             return basicSetOperationalLimitSet( ( OperationalLimitSet ) otherEnd, msgs );
         case CimPackage.OPERATIONAL_LIMIT__OPERATIONAL_LIMIT_TYPE:
-            if( operationalLimitType != null ) msgs = ( ( InternalEObject ) operationalLimitType ).eInverseRemove( this,
-                    CimPackage.OPERATIONAL_LIMIT_TYPE__OPERATIONAL_LIMIT, OperationalLimitType.class, msgs );
+            if( operationalLimitType != null )
+                msgs = ( ( InternalEObject ) operationalLimitType ).eInverseRemove( this,
+                        CimPackage.OPERATIONAL_LIMIT_TYPE__OPERATIONAL_LIMIT, OperationalLimitType.class, msgs );
             return basicSetOperationalLimitType( ( OperationalLimitType ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

@@ -133,8 +133,9 @@ public class ContingencyImpl extends IdentifiedObjectImpl implements Contingency
         mustStudy = newMustStudy;
         boolean oldMustStudyESet = mustStudyESet;
         mustStudyESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONTINGENCY__MUST_STUDY, oldMustStudy, mustStudy, !oldMustStudyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONTINGENCY__MUST_STUDY, oldMustStudy,
+                    mustStudy, !oldMustStudyESet ) );
     }
 
     /**
@@ -148,8 +149,9 @@ public class ContingencyImpl extends IdentifiedObjectImpl implements Contingency
         boolean oldMustStudyESet = mustStudyESet;
         mustStudy = MUST_STUDY_EDEFAULT;
         mustStudyESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONTINGENCY__MUST_STUDY, oldMustStudy, MUST_STUDY_EDEFAULT, oldMustStudyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CONTINGENCY__MUST_STUDY, oldMustStudy,
+                    MUST_STUDY_EDEFAULT, oldMustStudyESet ) );
     }
 
     /**
@@ -306,7 +308,7 @@ public class ContingencyImpl extends IdentifiedObjectImpl implements Contingency
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (mustStudy: " );
         if( mustStudyESet )
             result.append( mustStudy );

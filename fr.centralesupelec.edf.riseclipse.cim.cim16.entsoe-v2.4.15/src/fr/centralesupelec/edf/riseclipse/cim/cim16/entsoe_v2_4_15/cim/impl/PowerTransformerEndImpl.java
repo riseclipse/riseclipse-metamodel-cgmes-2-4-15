@@ -466,8 +466,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         b = newB;
         boolean oldBESet = bESet;
         bESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POWER_TRANSFORMER_END__B, oldB, b, !oldBESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POWER_TRANSFORMER_END__B, oldB, b,
+                    !oldBESet ) );
     }
 
     /**
@@ -481,8 +482,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         boolean oldBESet = bESet;
         b = B_EDEFAULT;
         bESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POWER_TRANSFORMER_END__B, oldB, B_EDEFAULT, oldBESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POWER_TRANSFORMER_END__B, oldB,
+                    B_EDEFAULT, oldBESet ) );
     }
 
     /**
@@ -516,8 +518,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         b0 = newB0;
         boolean oldB0ESet = b0ESet;
         b0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POWER_TRANSFORMER_END__B0, oldB0, b0, !oldB0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POWER_TRANSFORMER_END__B0, oldB0, b0,
+                    !oldB0ESet ) );
     }
 
     /**
@@ -531,8 +534,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         boolean oldB0ESet = b0ESet;
         b0 = B0_EDEFAULT;
         b0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POWER_TRANSFORMER_END__B0, oldB0, B0_EDEFAULT, oldB0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POWER_TRANSFORMER_END__B0, oldB0,
+                    B0_EDEFAULT, oldB0ESet ) );
     }
 
     /**
@@ -618,8 +622,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         g = newG;
         boolean oldGESet = gESet;
         gESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POWER_TRANSFORMER_END__G, oldG, g, !oldGESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POWER_TRANSFORMER_END__G, oldG, g,
+                    !oldGESet ) );
     }
 
     /**
@@ -633,8 +638,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         boolean oldGESet = gESet;
         g = G_EDEFAULT;
         gESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POWER_TRANSFORMER_END__G, oldG, G_EDEFAULT, oldGESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POWER_TRANSFORMER_END__G, oldG,
+                    G_EDEFAULT, oldGESet ) );
     }
 
     /**
@@ -668,8 +674,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         g0 = newG0;
         boolean oldG0ESet = g0ESet;
         g0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POWER_TRANSFORMER_END__G0, oldG0, g0, !oldG0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POWER_TRANSFORMER_END__G0, oldG0, g0,
+                    !oldG0ESet ) );
     }
 
     /**
@@ -683,8 +690,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         boolean oldG0ESet = g0ESet;
         g0 = G0_EDEFAULT;
         g0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POWER_TRANSFORMER_END__G0, oldG0, G0_EDEFAULT, oldG0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POWER_TRANSFORMER_END__G0, oldG0,
+                    G0_EDEFAULT, oldG0ESet ) );
     }
 
     /**
@@ -734,9 +742,10 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         boolean oldPhaseAngleClockESet = phaseAngleClockESet;
         phaseAngleClock = PHASE_ANGLE_CLOCK_EDEFAULT;
         phaseAngleClockESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.POWER_TRANSFORMER_END__PHASE_ANGLE_CLOCK,
-                        oldPhaseAngleClock, PHASE_ANGLE_CLOCK_EDEFAULT, oldPhaseAngleClockESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.POWER_TRANSFORMER_END__PHASE_ANGLE_CLOCK, oldPhaseAngleClock, PHASE_ANGLE_CLOCK_EDEFAULT,
+                    oldPhaseAngleClockESet ) );
     }
 
     /**
@@ -770,8 +779,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         r = newR;
         boolean oldRESet = rESet;
         rESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POWER_TRANSFORMER_END__R, oldR, r, !oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POWER_TRANSFORMER_END__R, oldR, r,
+                    !oldRESet ) );
     }
 
     /**
@@ -785,8 +795,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         boolean oldRESet = rESet;
         r = R_EDEFAULT;
         rESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POWER_TRANSFORMER_END__R, oldR, R_EDEFAULT, oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POWER_TRANSFORMER_END__R, oldR,
+                    R_EDEFAULT, oldRESet ) );
     }
 
     /**
@@ -820,8 +831,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         r0 = newR0;
         boolean oldR0ESet = r0ESet;
         r0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POWER_TRANSFORMER_END__R0, oldR0, r0, !oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POWER_TRANSFORMER_END__R0, oldR0, r0,
+                    !oldR0ESet ) );
     }
 
     /**
@@ -835,8 +847,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         boolean oldR0ESet = r0ESet;
         r0 = R0_EDEFAULT;
         r0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POWER_TRANSFORMER_END__R0, oldR0, R0_EDEFAULT, oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POWER_TRANSFORMER_END__R0, oldR0,
+                    R0_EDEFAULT, oldR0ESet ) );
     }
 
     /**
@@ -870,8 +883,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         ratedS = newRatedS;
         boolean oldRatedSESet = ratedSESet;
         ratedSESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POWER_TRANSFORMER_END__RATED_S, oldRatedS, ratedS, !oldRatedSESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POWER_TRANSFORMER_END__RATED_S,
+                    oldRatedS, ratedS, !oldRatedSESet ) );
     }
 
     /**
@@ -885,8 +899,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         boolean oldRatedSESet = ratedSESet;
         ratedS = RATED_S_EDEFAULT;
         ratedSESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POWER_TRANSFORMER_END__RATED_S, oldRatedS, RATED_S_EDEFAULT, oldRatedSESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POWER_TRANSFORMER_END__RATED_S,
+                    oldRatedS, RATED_S_EDEFAULT, oldRatedSESet ) );
     }
 
     /**
@@ -920,8 +935,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         ratedU = newRatedU;
         boolean oldRatedUESet = ratedUESet;
         ratedUESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POWER_TRANSFORMER_END__RATED_U, oldRatedU, ratedU, !oldRatedUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POWER_TRANSFORMER_END__RATED_U,
+                    oldRatedU, ratedU, !oldRatedUESet ) );
     }
 
     /**
@@ -935,8 +951,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         boolean oldRatedUESet = ratedUESet;
         ratedU = RATED_U_EDEFAULT;
         ratedUESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POWER_TRANSFORMER_END__RATED_U, oldRatedU, RATED_U_EDEFAULT, oldRatedUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POWER_TRANSFORMER_END__RATED_U,
+                    oldRatedU, RATED_U_EDEFAULT, oldRatedUESet ) );
     }
 
     /**
@@ -970,8 +987,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         x = newX;
         boolean oldXESet = xESet;
         xESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POWER_TRANSFORMER_END__X, oldX, x, !oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POWER_TRANSFORMER_END__X, oldX, x,
+                    !oldXESet ) );
     }
 
     /**
@@ -985,8 +1003,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         boolean oldXESet = xESet;
         x = X_EDEFAULT;
         xESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POWER_TRANSFORMER_END__X, oldX, X_EDEFAULT, oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POWER_TRANSFORMER_END__X, oldX,
+                    X_EDEFAULT, oldXESet ) );
     }
 
     /**
@@ -1020,8 +1039,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         x0 = newX0;
         boolean oldX0ESet = x0ESet;
         x0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POWER_TRANSFORMER_END__X0, oldX0, x0, !oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POWER_TRANSFORMER_END__X0, oldX0, x0,
+                    !oldX0ESet ) );
     }
 
     /**
@@ -1035,8 +1055,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         boolean oldX0ESet = x0ESet;
         x0 = X0_EDEFAULT;
         x0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POWER_TRANSFORMER_END__X0, oldX0, X0_EDEFAULT, oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POWER_TRANSFORMER_END__X0, oldX0,
+                    X0_EDEFAULT, oldX0ESet ) );
     }
 
     /**
@@ -1090,19 +1111,22 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
     public void setPowerTransformer( PowerTransformer newPowerTransformer ) {
         if( newPowerTransformer != powerTransformer ) {
             NotificationChain msgs = null;
-            if( powerTransformer != null ) msgs = ( ( InternalEObject ) powerTransformer ).eInverseRemove( this,
-                    CimPackage.POWER_TRANSFORMER__POWER_TRANSFORMER_END, PowerTransformer.class, msgs );
-            if( newPowerTransformer != null ) msgs = ( ( InternalEObject ) newPowerTransformer ).eInverseAdd( this,
-                    CimPackage.POWER_TRANSFORMER__POWER_TRANSFORMER_END, PowerTransformer.class, msgs );
+            if( powerTransformer != null )
+                msgs = ( ( InternalEObject ) powerTransformer ).eInverseRemove( this,
+                        CimPackage.POWER_TRANSFORMER__POWER_TRANSFORMER_END, PowerTransformer.class, msgs );
+            if( newPowerTransformer != null )
+                msgs = ( ( InternalEObject ) newPowerTransformer ).eInverseAdd( this,
+                        CimPackage.POWER_TRANSFORMER__POWER_TRANSFORMER_END, PowerTransformer.class, msgs );
             msgs = basicSetPowerTransformer( newPowerTransformer, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldPowerTransformerESet = powerTransformerESet;
             powerTransformerESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.POWER_TRANSFORMER_END__POWER_TRANSFORMER,
-                            newPowerTransformer, newPowerTransformer, !oldPowerTransformerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.POWER_TRANSFORMER_END__POWER_TRANSFORMER, newPowerTransformer, newPowerTransformer,
+                        !oldPowerTransformerESet ) );
         }
     }
 
@@ -1145,8 +1169,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
         else {
             boolean oldPowerTransformerESet = powerTransformerESet;
             powerTransformerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.POWER_TRANSFORMER_END__POWER_TRANSFORMER, null, null, oldPowerTransformerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.POWER_TRANSFORMER_END__POWER_TRANSFORMER, null, null, oldPowerTransformerESet ) );
         }
     }
 
@@ -1169,8 +1194,9 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.POWER_TRANSFORMER_END__POWER_TRANSFORMER:
-            if( powerTransformer != null ) msgs = ( ( InternalEObject ) powerTransformer ).eInverseRemove( this,
-                    CimPackage.POWER_TRANSFORMER__POWER_TRANSFORMER_END, PowerTransformer.class, msgs );
+            if( powerTransformer != null )
+                msgs = ( ( InternalEObject ) powerTransformer ).eInverseRemove( this,
+                        CimPackage.POWER_TRANSFORMER__POWER_TRANSFORMER_END, PowerTransformer.class, msgs );
             return basicSetPowerTransformer( ( PowerTransformer ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1377,7 +1403,7 @@ public class PowerTransformerEndImpl extends TransformerEndImpl implements Power
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (b: " );
         if( bESet )
             result.append( b );

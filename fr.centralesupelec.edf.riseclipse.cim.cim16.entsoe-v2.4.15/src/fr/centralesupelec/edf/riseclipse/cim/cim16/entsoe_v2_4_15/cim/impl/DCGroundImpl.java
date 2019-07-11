@@ -142,8 +142,9 @@ public class DCGroundImpl extends DCConductingEquipmentImpl implements DCGround 
         inductance = newInductance;
         boolean oldInductanceESet = inductanceESet;
         inductanceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DC_GROUND__INDUCTANCE, oldInductance, inductance, !oldInductanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DC_GROUND__INDUCTANCE, oldInductance,
+                    inductance, !oldInductanceESet ) );
     }
 
     /**
@@ -157,8 +158,9 @@ public class DCGroundImpl extends DCConductingEquipmentImpl implements DCGround 
         boolean oldInductanceESet = inductanceESet;
         inductance = INDUCTANCE_EDEFAULT;
         inductanceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DC_GROUND__INDUCTANCE, oldInductance, INDUCTANCE_EDEFAULT, oldInductanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DC_GROUND__INDUCTANCE, oldInductance,
+                    INDUCTANCE_EDEFAULT, oldInductanceESet ) );
     }
 
     /**
@@ -207,8 +209,9 @@ public class DCGroundImpl extends DCConductingEquipmentImpl implements DCGround 
         boolean oldRESet = rESet;
         r = R_EDEFAULT;
         rESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DC_GROUND__R,
-                oldR, R_EDEFAULT, oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DC_GROUND__R, oldR, R_EDEFAULT,
+                    oldRESet ) );
     }
 
     /**
@@ -298,7 +301,7 @@ public class DCGroundImpl extends DCConductingEquipmentImpl implements DCGround 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (inductance: " );
         if( inductanceESet )
             result.append( inductance );

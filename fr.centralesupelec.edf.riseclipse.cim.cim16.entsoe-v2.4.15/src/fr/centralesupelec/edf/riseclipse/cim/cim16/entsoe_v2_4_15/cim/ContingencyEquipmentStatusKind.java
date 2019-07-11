@@ -93,7 +93,9 @@ public enum ContingencyEquipmentStatusKind implements Enumerator {
      * @generated
      */
     private static final ContingencyEquipmentStatusKind[] VALUES_ARRAY = new ContingencyEquipmentStatusKind[] {
-            IN_SERVICE, OUT_OF_SERVICE, };
+            IN_SERVICE,
+            OUT_OF_SERVICE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Contingency Equipment Status Kind</b></em>' enumerators.

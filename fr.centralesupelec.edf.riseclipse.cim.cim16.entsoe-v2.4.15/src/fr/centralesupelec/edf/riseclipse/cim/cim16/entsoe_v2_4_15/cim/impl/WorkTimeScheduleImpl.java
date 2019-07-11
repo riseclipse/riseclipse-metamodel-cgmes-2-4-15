@@ -136,8 +136,9 @@ public class WorkTimeScheduleImpl extends TimeScheduleImpl implements WorkTimeSc
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WORK_TIME_SCHEDULE__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WORK_TIME_SCHEDULE__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -151,8 +152,9 @@ public class WorkTimeScheduleImpl extends TimeScheduleImpl implements WorkTimeSc
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WORK_TIME_SCHEDULE__KIND, oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WORK_TIME_SCHEDULE__KIND, oldKind,
+                    KIND_EDEFAULT, oldKindESet ) );
     }
 
     /**
@@ -205,18 +207,21 @@ public class WorkTimeScheduleImpl extends TimeScheduleImpl implements WorkTimeSc
     public void setBaseWork( BaseWork newBaseWork ) {
         if( newBaseWork != baseWork ) {
             NotificationChain msgs = null;
-            if( baseWork != null ) msgs = ( ( InternalEObject ) baseWork ).eInverseRemove( this,
-                    CimPackage.BASE_WORK__TIME_SCHEDULES, BaseWork.class, msgs );
-            if( newBaseWork != null ) msgs = ( ( InternalEObject ) newBaseWork ).eInverseAdd( this,
-                    CimPackage.BASE_WORK__TIME_SCHEDULES, BaseWork.class, msgs );
+            if( baseWork != null )
+                msgs = ( ( InternalEObject ) baseWork ).eInverseRemove( this, CimPackage.BASE_WORK__TIME_SCHEDULES,
+                        BaseWork.class, msgs );
+            if( newBaseWork != null )
+                msgs = ( ( InternalEObject ) newBaseWork ).eInverseAdd( this, CimPackage.BASE_WORK__TIME_SCHEDULES,
+                        BaseWork.class, msgs );
             msgs = basicSetBaseWork( newBaseWork, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldBaseWorkESet = baseWorkESet;
             baseWorkESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WORK_TIME_SCHEDULE__BASE_WORK, newBaseWork, newBaseWork, !oldBaseWorkESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WORK_TIME_SCHEDULE__BASE_WORK,
+                        newBaseWork, newBaseWork, !oldBaseWorkESet ) );
         }
     }
 
@@ -258,8 +263,9 @@ public class WorkTimeScheduleImpl extends TimeScheduleImpl implements WorkTimeSc
         else {
             boolean oldBaseWorkESet = baseWorkESet;
             baseWorkESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WORK_TIME_SCHEDULE__BASE_WORK, null, null, oldBaseWorkESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WORK_TIME_SCHEDULE__BASE_WORK,
+                        null, null, oldBaseWorkESet ) );
         }
     }
 
@@ -282,8 +288,9 @@ public class WorkTimeScheduleImpl extends TimeScheduleImpl implements WorkTimeSc
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.WORK_TIME_SCHEDULE__BASE_WORK:
-            if( baseWork != null ) msgs = ( ( InternalEObject ) baseWork ).eInverseRemove( this,
-                    CimPackage.BASE_WORK__TIME_SCHEDULES, BaseWork.class, msgs );
+            if( baseWork != null )
+                msgs = ( ( InternalEObject ) baseWork ).eInverseRemove( this, CimPackage.BASE_WORK__TIME_SCHEDULES,
+                        BaseWork.class, msgs );
             return basicSetBaseWork( ( BaseWork ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -380,7 +387,7 @@ public class WorkTimeScheduleImpl extends TimeScheduleImpl implements WorkTimeSc
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kind: " );
         if( kindESet )
             result.append( kind );

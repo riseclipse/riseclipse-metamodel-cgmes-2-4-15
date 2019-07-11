@@ -117,7 +117,11 @@ public enum ClearanceActionKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final ClearanceActionKind[] VALUES_ARRAY = new ClearanceActionKind[] { ISSUE, UPDATE, RELEASE, };
+    private static final ClearanceActionKind[] VALUES_ARRAY = new ClearanceActionKind[] {
+            ISSUE,
+            UPDATE,
+            RELEASE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Clearance Action Kind</b></em>' enumerators.

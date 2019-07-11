@@ -156,8 +156,9 @@ public class AltTieMeasImpl extends CimObjectWithIDImpl implements AltTieMeas {
         priority = newPriority;
         boolean oldPriorityESet = priorityESet;
         priorityESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ALT_TIE_MEAS__PRIORITY, oldPriority, priority, !oldPriorityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ALT_TIE_MEAS__PRIORITY, oldPriority,
+                    priority, !oldPriorityESet ) );
     }
 
     /**
@@ -171,8 +172,9 @@ public class AltTieMeasImpl extends CimObjectWithIDImpl implements AltTieMeas {
         boolean oldPriorityESet = priorityESet;
         priority = PRIORITY_EDEFAULT;
         priorityESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ALT_TIE_MEAS__PRIORITY, oldPriority, PRIORITY_EDEFAULT, oldPriorityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ALT_TIE_MEAS__PRIORITY, oldPriority,
+                    PRIORITY_EDEFAULT, oldPriorityESet ) );
     }
 
     /**
@@ -225,18 +227,21 @@ public class AltTieMeasImpl extends CimObjectWithIDImpl implements AltTieMeas {
     public void setAnalogValue( AnalogValue newAnalogValue ) {
         if( newAnalogValue != analogValue ) {
             NotificationChain msgs = null;
-            if( analogValue != null ) msgs = ( ( InternalEObject ) analogValue ).eInverseRemove( this,
-                    CimPackage.ANALOG_VALUE__ALT_TIE_MEAS, AnalogValue.class, msgs );
-            if( newAnalogValue != null ) msgs = ( ( InternalEObject ) newAnalogValue ).eInverseAdd( this,
-                    CimPackage.ANALOG_VALUE__ALT_TIE_MEAS, AnalogValue.class, msgs );
+            if( analogValue != null )
+                msgs = ( ( InternalEObject ) analogValue ).eInverseRemove( this, CimPackage.ANALOG_VALUE__ALT_TIE_MEAS,
+                        AnalogValue.class, msgs );
+            if( newAnalogValue != null )
+                msgs = ( ( InternalEObject ) newAnalogValue ).eInverseAdd( this, CimPackage.ANALOG_VALUE__ALT_TIE_MEAS,
+                        AnalogValue.class, msgs );
             msgs = basicSetAnalogValue( newAnalogValue, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldAnalogValueESet = analogValueESet;
             analogValueESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ALT_TIE_MEAS__ANALOG_VALUE, newAnalogValue, newAnalogValue, !oldAnalogValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ALT_TIE_MEAS__ANALOG_VALUE,
+                        newAnalogValue, newAnalogValue, !oldAnalogValueESet ) );
         }
     }
 
@@ -278,8 +283,9 @@ public class AltTieMeasImpl extends CimObjectWithIDImpl implements AltTieMeas {
         else {
             boolean oldAnalogValueESet = analogValueESet;
             analogValueESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ALT_TIE_MEAS__ANALOG_VALUE, null, null, oldAnalogValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ALT_TIE_MEAS__ANALOG_VALUE, null,
+                        null, oldAnalogValueESet ) );
         }
     }
 
@@ -333,18 +339,21 @@ public class AltTieMeasImpl extends CimObjectWithIDImpl implements AltTieMeas {
     public void setTieFlow( TieFlow newTieFlow ) {
         if( newTieFlow != tieFlow ) {
             NotificationChain msgs = null;
-            if( tieFlow != null ) msgs = ( ( InternalEObject ) tieFlow ).eInverseRemove( this,
-                    CimPackage.TIE_FLOW__ALT_TIE_MEAS, TieFlow.class, msgs );
-            if( newTieFlow != null ) msgs = ( ( InternalEObject ) newTieFlow ).eInverseAdd( this,
-                    CimPackage.TIE_FLOW__ALT_TIE_MEAS, TieFlow.class, msgs );
+            if( tieFlow != null )
+                msgs = ( ( InternalEObject ) tieFlow ).eInverseRemove( this, CimPackage.TIE_FLOW__ALT_TIE_MEAS,
+                        TieFlow.class, msgs );
+            if( newTieFlow != null )
+                msgs = ( ( InternalEObject ) newTieFlow ).eInverseAdd( this, CimPackage.TIE_FLOW__ALT_TIE_MEAS,
+                        TieFlow.class, msgs );
             msgs = basicSetTieFlow( newTieFlow, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTieFlowESet = tieFlowESet;
             tieFlowESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ALT_TIE_MEAS__TIE_FLOW, newTieFlow, newTieFlow, !oldTieFlowESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ALT_TIE_MEAS__TIE_FLOW, newTieFlow,
+                        newTieFlow, !oldTieFlowESet ) );
         }
     }
 
@@ -386,8 +395,9 @@ public class AltTieMeasImpl extends CimObjectWithIDImpl implements AltTieMeas {
         else {
             boolean oldTieFlowESet = tieFlowESet;
             tieFlowESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ALT_TIE_MEAS__TIE_FLOW, null, null, oldTieFlowESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ALT_TIE_MEAS__TIE_FLOW, null, null,
+                        oldTieFlowESet ) );
         }
     }
 
@@ -410,12 +420,14 @@ public class AltTieMeasImpl extends CimObjectWithIDImpl implements AltTieMeas {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ALT_TIE_MEAS__ANALOG_VALUE:
-            if( analogValue != null ) msgs = ( ( InternalEObject ) analogValue ).eInverseRemove( this,
-                    CimPackage.ANALOG_VALUE__ALT_TIE_MEAS, AnalogValue.class, msgs );
+            if( analogValue != null )
+                msgs = ( ( InternalEObject ) analogValue ).eInverseRemove( this, CimPackage.ANALOG_VALUE__ALT_TIE_MEAS,
+                        AnalogValue.class, msgs );
             return basicSetAnalogValue( ( AnalogValue ) otherEnd, msgs );
         case CimPackage.ALT_TIE_MEAS__TIE_FLOW:
-            if( tieFlow != null ) msgs = ( ( InternalEObject ) tieFlow ).eInverseRemove( this,
-                    CimPackage.TIE_FLOW__ALT_TIE_MEAS, TieFlow.class, msgs );
+            if( tieFlow != null )
+                msgs = ( ( InternalEObject ) tieFlow ).eInverseRemove( this, CimPackage.TIE_FLOW__ALT_TIE_MEAS,
+                        TieFlow.class, msgs );
             return basicSetTieFlow( ( TieFlow ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -524,7 +536,7 @@ public class AltTieMeasImpl extends CimObjectWithIDImpl implements AltTieMeas {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (priority: " );
         if( priorityESet )
             result.append( priority );

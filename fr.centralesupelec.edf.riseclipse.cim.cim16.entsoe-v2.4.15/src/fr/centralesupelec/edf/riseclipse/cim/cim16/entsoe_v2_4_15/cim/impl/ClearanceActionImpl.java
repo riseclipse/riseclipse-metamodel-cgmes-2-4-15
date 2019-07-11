@@ -157,8 +157,9 @@ public class ClearanceActionImpl extends SwitchingStepImpl implements ClearanceA
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CLEARANCE_ACTION__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CLEARANCE_ACTION__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -172,8 +173,9 @@ public class ClearanceActionImpl extends SwitchingStepImpl implements ClearanceA
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CLEARANCE_ACTION__KIND, oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CLEARANCE_ACTION__KIND, oldKind,
+                    KIND_EDEFAULT, oldKindESet ) );
     }
 
     /**
@@ -226,18 +228,21 @@ public class ClearanceActionImpl extends SwitchingStepImpl implements ClearanceA
     public void setClearance( ClearanceDocument newClearance ) {
         if( newClearance != clearance ) {
             NotificationChain msgs = null;
-            if( clearance != null ) msgs = ( ( InternalEObject ) clearance ).eInverseRemove( this,
-                    CimPackage.CLEARANCE_DOCUMENT__CLEARANCE_ACTION, ClearanceDocument.class, msgs );
-            if( newClearance != null ) msgs = ( ( InternalEObject ) newClearance ).eInverseAdd( this,
-                    CimPackage.CLEARANCE_DOCUMENT__CLEARANCE_ACTION, ClearanceDocument.class, msgs );
+            if( clearance != null )
+                msgs = ( ( InternalEObject ) clearance ).eInverseRemove( this,
+                        CimPackage.CLEARANCE_DOCUMENT__CLEARANCE_ACTION, ClearanceDocument.class, msgs );
+            if( newClearance != null )
+                msgs = ( ( InternalEObject ) newClearance ).eInverseAdd( this,
+                        CimPackage.CLEARANCE_DOCUMENT__CLEARANCE_ACTION, ClearanceDocument.class, msgs );
             msgs = basicSetClearance( newClearance, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldClearanceESet = clearanceESet;
             clearanceESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CLEARANCE_ACTION__CLEARANCE, newClearance, newClearance, !oldClearanceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CLEARANCE_ACTION__CLEARANCE,
+                        newClearance, newClearance, !oldClearanceESet ) );
         }
     }
 
@@ -279,8 +284,9 @@ public class ClearanceActionImpl extends SwitchingStepImpl implements ClearanceA
         else {
             boolean oldClearanceESet = clearanceESet;
             clearanceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CLEARANCE_ACTION__CLEARANCE, null, null, oldClearanceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CLEARANCE_ACTION__CLEARANCE, null,
+                        null, oldClearanceESet ) );
         }
     }
 
@@ -336,19 +342,22 @@ public class ClearanceActionImpl extends SwitchingStepImpl implements ClearanceA
     public void setSwitchingStepGroup( SwitchingStepGroup newSwitchingStepGroup ) {
         if( newSwitchingStepGroup != switchingStepGroup ) {
             NotificationChain msgs = null;
-            if( switchingStepGroup != null ) msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
-                    CimPackage.SWITCHING_STEP_GROUP__CLEARANCE_ACTIONS, SwitchingStepGroup.class, msgs );
-            if( newSwitchingStepGroup != null ) msgs = ( ( InternalEObject ) newSwitchingStepGroup ).eInverseAdd( this,
-                    CimPackage.SWITCHING_STEP_GROUP__CLEARANCE_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( switchingStepGroup != null )
+                msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
+                        CimPackage.SWITCHING_STEP_GROUP__CLEARANCE_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( newSwitchingStepGroup != null )
+                msgs = ( ( InternalEObject ) newSwitchingStepGroup ).eInverseAdd( this,
+                        CimPackage.SWITCHING_STEP_GROUP__CLEARANCE_ACTIONS, SwitchingStepGroup.class, msgs );
             msgs = basicSetSwitchingStepGroup( newSwitchingStepGroup, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldSwitchingStepGroupESet = switchingStepGroupESet;
             switchingStepGroupESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.CLEARANCE_ACTION__SWITCHING_STEP_GROUP,
-                            newSwitchingStepGroup, newSwitchingStepGroup, !oldSwitchingStepGroupESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.CLEARANCE_ACTION__SWITCHING_STEP_GROUP, newSwitchingStepGroup, newSwitchingStepGroup,
+                        !oldSwitchingStepGroupESet ) );
         }
     }
 
@@ -391,8 +400,9 @@ public class ClearanceActionImpl extends SwitchingStepImpl implements ClearanceA
         else {
             boolean oldSwitchingStepGroupESet = switchingStepGroupESet;
             switchingStepGroupESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CLEARANCE_ACTION__SWITCHING_STEP_GROUP, null, null, oldSwitchingStepGroupESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CLEARANCE_ACTION__SWITCHING_STEP_GROUP, null, null, oldSwitchingStepGroupESet ) );
         }
     }
 
@@ -415,12 +425,14 @@ public class ClearanceActionImpl extends SwitchingStepImpl implements ClearanceA
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CLEARANCE_ACTION__CLEARANCE:
-            if( clearance != null ) msgs = ( ( InternalEObject ) clearance ).eInverseRemove( this,
-                    CimPackage.CLEARANCE_DOCUMENT__CLEARANCE_ACTION, ClearanceDocument.class, msgs );
+            if( clearance != null )
+                msgs = ( ( InternalEObject ) clearance ).eInverseRemove( this,
+                        CimPackage.CLEARANCE_DOCUMENT__CLEARANCE_ACTION, ClearanceDocument.class, msgs );
             return basicSetClearance( ( ClearanceDocument ) otherEnd, msgs );
         case CimPackage.CLEARANCE_ACTION__SWITCHING_STEP_GROUP:
-            if( switchingStepGroup != null ) msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
-                    CimPackage.SWITCHING_STEP_GROUP__CLEARANCE_ACTIONS, SwitchingStepGroup.class, msgs );
+            if( switchingStepGroup != null )
+                msgs = ( ( InternalEObject ) switchingStepGroup ).eInverseRemove( this,
+                        CimPackage.SWITCHING_STEP_GROUP__CLEARANCE_ACTIONS, SwitchingStepGroup.class, msgs );
             return basicSetSwitchingStepGroup( ( SwitchingStepGroup ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -529,7 +541,7 @@ public class ClearanceActionImpl extends SwitchingStepImpl implements ClearanceA
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kind: " );
         if( kindESet )
             result.append( kind );

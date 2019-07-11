@@ -168,19 +168,22 @@ public class WindTurbineType3or4DynamicsImpl extends DynamicsFunctionBlockImpl i
     public void setRemoteInputSignal( RemoteInputSignal newRemoteInputSignal ) {
         if( newRemoteInputSignal != remoteInputSignal ) {
             NotificationChain msgs = null;
-            if( remoteInputSignal != null ) msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE3OR4_DYNAMICS, RemoteInputSignal.class, msgs );
-            if( newRemoteInputSignal != null ) msgs = ( ( InternalEObject ) newRemoteInputSignal ).eInverseAdd( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE3OR4_DYNAMICS, RemoteInputSignal.class, msgs );
+            if( remoteInputSignal != null )
+                msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE3OR4_DYNAMICS, RemoteInputSignal.class, msgs );
+            if( newRemoteInputSignal != null )
+                msgs = ( ( InternalEObject ) newRemoteInputSignal ).eInverseAdd( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE3OR4_DYNAMICS, RemoteInputSignal.class, msgs );
             msgs = basicSetRemoteInputSignal( newRemoteInputSignal, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldRemoteInputSignalESet = remoteInputSignalESet;
             remoteInputSignalESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_TURBINE_TYPE3OR4_DYNAMICS__REMOTE_INPUT_SIGNAL, newRemoteInputSignal,
-                    newRemoteInputSignal, !oldRemoteInputSignalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_TURBINE_TYPE3OR4_DYNAMICS__REMOTE_INPUT_SIGNAL, newRemoteInputSignal,
+                        newRemoteInputSignal, !oldRemoteInputSignalESet ) );
         }
     }
 
@@ -223,9 +226,10 @@ public class WindTurbineType3or4DynamicsImpl extends DynamicsFunctionBlockImpl i
         else {
             boolean oldRemoteInputSignalESet = remoteInputSignalESet;
             remoteInputSignalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_TURBINE_TYPE3OR4_DYNAMICS__REMOTE_INPUT_SIGNAL, null, null,
-                    oldRemoteInputSignalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_TURBINE_TYPE3OR4_DYNAMICS__REMOTE_INPUT_SIGNAL, null, null,
+                        oldRemoteInputSignalESet ) );
         }
     }
 
@@ -281,19 +285,22 @@ public class WindTurbineType3or4DynamicsImpl extends DynamicsFunctionBlockImpl i
     public void setWindPlantDynamics( WindPlantDynamics newWindPlantDynamics ) {
         if( newWindPlantDynamics != windPlantDynamics ) {
             NotificationChain msgs = null;
-            if( windPlantDynamics != null ) msgs = ( ( InternalEObject ) windPlantDynamics ).eInverseRemove( this,
-                    CimPackage.WIND_PLANT_DYNAMICS__WIND_TURBINE_TYPE3OR4_DYNAMICS, WindPlantDynamics.class, msgs );
-            if( newWindPlantDynamics != null ) msgs = ( ( InternalEObject ) newWindPlantDynamics ).eInverseAdd( this,
-                    CimPackage.WIND_PLANT_DYNAMICS__WIND_TURBINE_TYPE3OR4_DYNAMICS, WindPlantDynamics.class, msgs );
+            if( windPlantDynamics != null )
+                msgs = ( ( InternalEObject ) windPlantDynamics ).eInverseRemove( this,
+                        CimPackage.WIND_PLANT_DYNAMICS__WIND_TURBINE_TYPE3OR4_DYNAMICS, WindPlantDynamics.class, msgs );
+            if( newWindPlantDynamics != null )
+                msgs = ( ( InternalEObject ) newWindPlantDynamics ).eInverseAdd( this,
+                        CimPackage.WIND_PLANT_DYNAMICS__WIND_TURBINE_TYPE3OR4_DYNAMICS, WindPlantDynamics.class, msgs );
             msgs = basicSetWindPlantDynamics( newWindPlantDynamics, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWindPlantDynamicsESet = windPlantDynamicsESet;
             windPlantDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_TURBINE_TYPE3OR4_DYNAMICS__WIND_PLANT_DYNAMICS, newWindPlantDynamics,
-                    newWindPlantDynamics, !oldWindPlantDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_TURBINE_TYPE3OR4_DYNAMICS__WIND_PLANT_DYNAMICS, newWindPlantDynamics,
+                        newWindPlantDynamics, !oldWindPlantDynamicsESet ) );
         }
     }
 
@@ -336,9 +343,10 @@ public class WindTurbineType3or4DynamicsImpl extends DynamicsFunctionBlockImpl i
         else {
             boolean oldWindPlantDynamicsESet = windPlantDynamicsESet;
             windPlantDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_TURBINE_TYPE3OR4_DYNAMICS__WIND_PLANT_DYNAMICS, null, null,
-                    oldWindPlantDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_TURBINE_TYPE3OR4_DYNAMICS__WIND_PLANT_DYNAMICS, null, null,
+                        oldWindPlantDynamicsESet ) );
         }
     }
 
@@ -363,8 +371,9 @@ public class WindTurbineType3or4DynamicsImpl extends DynamicsFunctionBlockImpl i
             InternalEObject oldEnergySource = ( InternalEObject ) energySource;
             energySource = ( EnergySource ) eResolveProxy( oldEnergySource );
             if( energySource != oldEnergySource ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.WIND_TURBINE_TYPE3OR4_DYNAMICS__ENERGY_SOURCE, oldEnergySource, energySource ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.WIND_TURBINE_TYPE3OR4_DYNAMICS__ENERGY_SOURCE, oldEnergySource, energySource ) );
             }
         }
         return energySource;
@@ -410,19 +419,22 @@ public class WindTurbineType3or4DynamicsImpl extends DynamicsFunctionBlockImpl i
     public void setEnergySource( EnergySource newEnergySource ) {
         if( newEnergySource != energySource ) {
             NotificationChain msgs = null;
-            if( energySource != null ) msgs = ( ( InternalEObject ) energySource ).eInverseRemove( this,
-                    CimPackage.ENERGY_SOURCE__WIND_TURBINE_TYPE3OR4_DYNAMICS, EnergySource.class, msgs );
-            if( newEnergySource != null ) msgs = ( ( InternalEObject ) newEnergySource ).eInverseAdd( this,
-                    CimPackage.ENERGY_SOURCE__WIND_TURBINE_TYPE3OR4_DYNAMICS, EnergySource.class, msgs );
+            if( energySource != null )
+                msgs = ( ( InternalEObject ) energySource ).eInverseRemove( this,
+                        CimPackage.ENERGY_SOURCE__WIND_TURBINE_TYPE3OR4_DYNAMICS, EnergySource.class, msgs );
+            if( newEnergySource != null )
+                msgs = ( ( InternalEObject ) newEnergySource ).eInverseAdd( this,
+                        CimPackage.ENERGY_SOURCE__WIND_TURBINE_TYPE3OR4_DYNAMICS, EnergySource.class, msgs );
             msgs = basicSetEnergySource( newEnergySource, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldEnergySourceESet = energySourceESet;
             energySourceESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_TURBINE_TYPE3OR4_DYNAMICS__ENERGY_SOURCE, newEnergySource, newEnergySource,
-                    !oldEnergySourceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_TURBINE_TYPE3OR4_DYNAMICS__ENERGY_SOURCE, newEnergySource, newEnergySource,
+                        !oldEnergySourceESet ) );
         }
     }
 
@@ -465,8 +477,9 @@ public class WindTurbineType3or4DynamicsImpl extends DynamicsFunctionBlockImpl i
         else {
             boolean oldEnergySourceESet = energySourceESet;
             energySourceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_TURBINE_TYPE3OR4_DYNAMICS__ENERGY_SOURCE, null, null, oldEnergySourceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_TURBINE_TYPE3OR4_DYNAMICS__ENERGY_SOURCE, null, null, oldEnergySourceESet ) );
         }
     }
 
@@ -489,16 +502,19 @@ public class WindTurbineType3or4DynamicsImpl extends DynamicsFunctionBlockImpl i
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.WIND_TURBINE_TYPE3OR4_DYNAMICS__ENERGY_SOURCE:
-            if( energySource != null ) msgs = ( ( InternalEObject ) energySource ).eInverseRemove( this,
-                    CimPackage.ENERGY_SOURCE__WIND_TURBINE_TYPE3OR4_DYNAMICS, EnergySource.class, msgs );
+            if( energySource != null )
+                msgs = ( ( InternalEObject ) energySource ).eInverseRemove( this,
+                        CimPackage.ENERGY_SOURCE__WIND_TURBINE_TYPE3OR4_DYNAMICS, EnergySource.class, msgs );
             return basicSetEnergySource( ( EnergySource ) otherEnd, msgs );
         case CimPackage.WIND_TURBINE_TYPE3OR4_DYNAMICS__REMOTE_INPUT_SIGNAL:
-            if( remoteInputSignal != null ) msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE3OR4_DYNAMICS, RemoteInputSignal.class, msgs );
+            if( remoteInputSignal != null )
+                msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__WIND_TURBINE_TYPE3OR4_DYNAMICS, RemoteInputSignal.class, msgs );
             return basicSetRemoteInputSignal( ( RemoteInputSignal ) otherEnd, msgs );
         case CimPackage.WIND_TURBINE_TYPE3OR4_DYNAMICS__WIND_PLANT_DYNAMICS:
-            if( windPlantDynamics != null ) msgs = ( ( InternalEObject ) windPlantDynamics ).eInverseRemove( this,
-                    CimPackage.WIND_PLANT_DYNAMICS__WIND_TURBINE_TYPE3OR4_DYNAMICS, WindPlantDynamics.class, msgs );
+            if( windPlantDynamics != null )
+                msgs = ( ( InternalEObject ) windPlantDynamics ).eInverseRemove( this,
+                        CimPackage.WIND_PLANT_DYNAMICS__WIND_TURBINE_TYPE3OR4_DYNAMICS, WindPlantDynamics.class, msgs );
             return basicSetWindPlantDynamics( ( WindPlantDynamics ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

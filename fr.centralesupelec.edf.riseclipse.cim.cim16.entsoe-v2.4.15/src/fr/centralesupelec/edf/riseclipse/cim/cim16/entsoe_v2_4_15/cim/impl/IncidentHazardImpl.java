@@ -145,18 +145,21 @@ public class IncidentHazardImpl extends HazardImpl implements IncidentHazard {
     public void setIncident( Incident newIncident ) {
         if( newIncident != incident ) {
             NotificationChain msgs = null;
-            if( incident != null ) msgs = ( ( InternalEObject ) incident ).eInverseRemove( this,
-                    CimPackage.INCIDENT__HAZARDS, Incident.class, msgs );
-            if( newIncident != null ) msgs = ( ( InternalEObject ) newIncident ).eInverseAdd( this,
-                    CimPackage.INCIDENT__HAZARDS, Incident.class, msgs );
+            if( incident != null )
+                msgs = ( ( InternalEObject ) incident ).eInverseRemove( this, CimPackage.INCIDENT__HAZARDS,
+                        Incident.class, msgs );
+            if( newIncident != null )
+                msgs = ( ( InternalEObject ) newIncident ).eInverseAdd( this, CimPackage.INCIDENT__HAZARDS,
+                        Incident.class, msgs );
             msgs = basicSetIncident( newIncident, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldIncidentESet = incidentESet;
             incidentESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.INCIDENT_HAZARD__INCIDENT, newIncident, newIncident, !oldIncidentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.INCIDENT_HAZARD__INCIDENT,
+                        newIncident, newIncident, !oldIncidentESet ) );
         }
     }
 
@@ -198,8 +201,9 @@ public class IncidentHazardImpl extends HazardImpl implements IncidentHazard {
         else {
             boolean oldIncidentESet = incidentESet;
             incidentESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.INCIDENT_HAZARD__INCIDENT, null, null, oldIncidentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.INCIDENT_HAZARD__INCIDENT, null,
+                        null, oldIncidentESet ) );
         }
     }
 
@@ -254,10 +258,12 @@ public class IncidentHazardImpl extends HazardImpl implements IncidentHazard {
     public void setTroubleTicket( TroubleTicket newTroubleTicket ) {
         if( newTroubleTicket != troubleTicket ) {
             NotificationChain msgs = null;
-            if( troubleTicket != null ) msgs = ( ( InternalEObject ) troubleTicket ).eInverseRemove( this,
-                    CimPackage.TROUBLE_TICKET__HAZARDS, TroubleTicket.class, msgs );
-            if( newTroubleTicket != null ) msgs = ( ( InternalEObject ) newTroubleTicket ).eInverseAdd( this,
-                    CimPackage.TROUBLE_TICKET__HAZARDS, TroubleTicket.class, msgs );
+            if( troubleTicket != null )
+                msgs = ( ( InternalEObject ) troubleTicket ).eInverseRemove( this, CimPackage.TROUBLE_TICKET__HAZARDS,
+                        TroubleTicket.class, msgs );
+            if( newTroubleTicket != null )
+                msgs = ( ( InternalEObject ) newTroubleTicket ).eInverseAdd( this, CimPackage.TROUBLE_TICKET__HAZARDS,
+                        TroubleTicket.class, msgs );
             msgs = basicSetTroubleTicket( newTroubleTicket, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -308,8 +314,9 @@ public class IncidentHazardImpl extends HazardImpl implements IncidentHazard {
         else {
             boolean oldTroubleTicketESet = troubleTicketESet;
             troubleTicketESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.INCIDENT_HAZARD__TROUBLE_TICKET, null, null, oldTroubleTicketESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.INCIDENT_HAZARD__TROUBLE_TICKET,
+                        null, null, oldTroubleTicketESet ) );
         }
     }
 
@@ -332,12 +339,14 @@ public class IncidentHazardImpl extends HazardImpl implements IncidentHazard {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.INCIDENT_HAZARD__INCIDENT:
-            if( incident != null ) msgs = ( ( InternalEObject ) incident ).eInverseRemove( this,
-                    CimPackage.INCIDENT__HAZARDS, Incident.class, msgs );
+            if( incident != null )
+                msgs = ( ( InternalEObject ) incident ).eInverseRemove( this, CimPackage.INCIDENT__HAZARDS,
+                        Incident.class, msgs );
             return basicSetIncident( ( Incident ) otherEnd, msgs );
         case CimPackage.INCIDENT_HAZARD__TROUBLE_TICKET:
-            if( troubleTicket != null ) msgs = ( ( InternalEObject ) troubleTicket ).eInverseRemove( this,
-                    CimPackage.TROUBLE_TICKET__HAZARDS, TroubleTicket.class, msgs );
+            if( troubleTicket != null )
+                msgs = ( ( InternalEObject ) troubleTicket ).eInverseRemove( this, CimPackage.TROUBLE_TICKET__HAZARDS,
+                        TroubleTicket.class, msgs );
             return basicSetTroubleTicket( ( TroubleTicket ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

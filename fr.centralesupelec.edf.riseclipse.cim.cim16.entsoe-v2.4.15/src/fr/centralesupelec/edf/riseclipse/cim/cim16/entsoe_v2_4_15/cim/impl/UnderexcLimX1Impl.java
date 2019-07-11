@@ -262,8 +262,9 @@ public class UnderexcLimX1Impl extends UnderexcitationLimiterDynamicsImpl implem
         k = newK;
         boolean oldKESet = kESet;
         kESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.UNDEREXC_LIM_X1__K, oldK, k, !oldKESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.UNDEREXC_LIM_X1__K, oldK, k,
+                    !oldKESet ) );
     }
 
     /**
@@ -277,8 +278,9 @@ public class UnderexcLimX1Impl extends UnderexcitationLimiterDynamicsImpl implem
         boolean oldKESet = kESet;
         k = K_EDEFAULT;
         kESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.UNDEREXC_LIM_X1__K, oldK, K_EDEFAULT, oldKESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.UNDEREXC_LIM_X1__K, oldK, K_EDEFAULT,
+                    oldKESet ) );
     }
 
     /**
@@ -312,8 +314,9 @@ public class UnderexcLimX1Impl extends UnderexcitationLimiterDynamicsImpl implem
         kf2 = newKf2;
         boolean oldKf2ESet = kf2ESet;
         kf2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.UNDEREXC_LIM_X1__KF2, oldKf2, kf2, !oldKf2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.UNDEREXC_LIM_X1__KF2, oldKf2, kf2,
+                    !oldKf2ESet ) );
     }
 
     /**
@@ -327,8 +330,9 @@ public class UnderexcLimX1Impl extends UnderexcitationLimiterDynamicsImpl implem
         boolean oldKf2ESet = kf2ESet;
         kf2 = KF2_EDEFAULT;
         kf2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.UNDEREXC_LIM_X1__KF2, oldKf2, KF2_EDEFAULT, oldKf2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.UNDEREXC_LIM_X1__KF2, oldKf2,
+                    KF2_EDEFAULT, oldKf2ESet ) );
     }
 
     /**
@@ -362,8 +366,9 @@ public class UnderexcLimX1Impl extends UnderexcitationLimiterDynamicsImpl implem
         km = newKm;
         boolean oldKmESet = kmESet;
         kmESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.UNDEREXC_LIM_X1__KM, oldKm, km, !oldKmESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.UNDEREXC_LIM_X1__KM, oldKm, km,
+                    !oldKmESet ) );
     }
 
     /**
@@ -377,8 +382,9 @@ public class UnderexcLimX1Impl extends UnderexcitationLimiterDynamicsImpl implem
         boolean oldKmESet = kmESet;
         km = KM_EDEFAULT;
         kmESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.UNDEREXC_LIM_X1__KM, oldKm, KM_EDEFAULT, oldKmESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.UNDEREXC_LIM_X1__KM, oldKm,
+                    KM_EDEFAULT, oldKmESet ) );
     }
 
     /**
@@ -412,8 +418,9 @@ public class UnderexcLimX1Impl extends UnderexcitationLimiterDynamicsImpl implem
         melmax = newMelmax;
         boolean oldMelmaxESet = melmaxESet;
         melmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.UNDEREXC_LIM_X1__MELMAX, oldMelmax, melmax, !oldMelmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.UNDEREXC_LIM_X1__MELMAX, oldMelmax,
+                    melmax, !oldMelmaxESet ) );
     }
 
     /**
@@ -427,8 +434,9 @@ public class UnderexcLimX1Impl extends UnderexcitationLimiterDynamicsImpl implem
         boolean oldMelmaxESet = melmaxESet;
         melmax = MELMAX_EDEFAULT;
         melmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.UNDEREXC_LIM_X1__MELMAX, oldMelmax, MELMAX_EDEFAULT, oldMelmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.UNDEREXC_LIM_X1__MELMAX, oldMelmax,
+                    MELMAX_EDEFAULT, oldMelmaxESet ) );
     }
 
     /**
@@ -462,8 +470,9 @@ public class UnderexcLimX1Impl extends UnderexcitationLimiterDynamicsImpl implem
         tf2 = newTf2;
         boolean oldTf2ESet = tf2ESet;
         tf2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.UNDEREXC_LIM_X1__TF2, oldTf2, tf2, !oldTf2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.UNDEREXC_LIM_X1__TF2, oldTf2, tf2,
+                    !oldTf2ESet ) );
     }
 
     /**
@@ -477,8 +486,9 @@ public class UnderexcLimX1Impl extends UnderexcitationLimiterDynamicsImpl implem
         boolean oldTf2ESet = tf2ESet;
         tf2 = TF2_EDEFAULT;
         tf2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.UNDEREXC_LIM_X1__TF2, oldTf2, TF2_EDEFAULT, oldTf2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.UNDEREXC_LIM_X1__TF2, oldTf2,
+                    TF2_EDEFAULT, oldTf2ESet ) );
     }
 
     /**
@@ -512,8 +522,9 @@ public class UnderexcLimX1Impl extends UnderexcitationLimiterDynamicsImpl implem
         tm = newTm;
         boolean oldTmESet = tmESet;
         tmESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.UNDEREXC_LIM_X1__TM, oldTm, tm, !oldTmESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.UNDEREXC_LIM_X1__TM, oldTm, tm,
+                    !oldTmESet ) );
     }
 
     /**
@@ -527,8 +538,9 @@ public class UnderexcLimX1Impl extends UnderexcitationLimiterDynamicsImpl implem
         boolean oldTmESet = tmESet;
         tm = TM_EDEFAULT;
         tmESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.UNDEREXC_LIM_X1__TM, oldTm, TM_EDEFAULT, oldTmESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.UNDEREXC_LIM_X1__TM, oldTm,
+                    TM_EDEFAULT, oldTmESet ) );
     }
 
     /**
@@ -658,7 +670,7 @@ public class UnderexcLimX1Impl extends UnderexcitationLimiterDynamicsImpl implem
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (k: " );
         if( kESet )
             result.append( k );

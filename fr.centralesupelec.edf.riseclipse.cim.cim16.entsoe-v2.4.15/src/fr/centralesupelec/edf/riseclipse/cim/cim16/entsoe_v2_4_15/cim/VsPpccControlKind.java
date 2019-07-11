@@ -167,8 +167,13 @@ public enum VsPpccControlKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final VsPpccControlKind[] VALUES_ARRAY = new VsPpccControlKind[] { PPCC, UDC, PPCC_AND_UDC_DROOP,
-            PPCC_AND_UDC_DROOP_WITH_COMPENSATION, PPCC_AND_UDC_DROOP_PILOT, };
+    private static final VsPpccControlKind[] VALUES_ARRAY = new VsPpccControlKind[] {
+            PPCC,
+            UDC,
+            PPCC_AND_UDC_DROOP,
+            PPCC_AND_UDC_DROOP_WITH_COMPENSATION,
+            PPCC_AND_UDC_DROOP_PILOT,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Vs Ppcc Control Kind</b></em>' enumerators.

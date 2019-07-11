@@ -494,12 +494,26 @@ public enum WireInsulationKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final WireInsulationKind[] VALUES_ARRAY = new WireInsulationKind[] { ASBESTOS_AND_VARNISHED_CAMBRIC,
-            BUTYL, ETHYLENE_PROPYLENE_RUBBER, HIGH_MOLECULAR_WEIGHT_POLYETHYLENE,
-            TREE_RESISTANT_HIGH_MOLECULAR_WEIGHT_POLYETHYLENE, LOW_CAPACITANCE_RUBBER, OIL_PAPER,
-            OZONE_RESISTANT_RUBBER, BELTED_PILC, UNBELTED_PILC, RUBBER, SILICON_RUBBER, VARNISHED_CAMBRIC_CLOTH,
-            VARNISHED_DACRON_GLASS, CROSSLINKED_POLYETHYLENE, TREE_RETARDANT_CROSSLINKED_POLYETHYLENE,
-            HIGH_PRESSURE_FLUID_FILLED, OTHER, };
+    private static final WireInsulationKind[] VALUES_ARRAY = new WireInsulationKind[] {
+            ASBESTOS_AND_VARNISHED_CAMBRIC,
+            BUTYL,
+            ETHYLENE_PROPYLENE_RUBBER,
+            HIGH_MOLECULAR_WEIGHT_POLYETHYLENE,
+            TREE_RESISTANT_HIGH_MOLECULAR_WEIGHT_POLYETHYLENE,
+            LOW_CAPACITANCE_RUBBER,
+            OIL_PAPER,
+            OZONE_RESISTANT_RUBBER,
+            BELTED_PILC,
+            UNBELTED_PILC,
+            RUBBER,
+            SILICON_RUBBER,
+            VARNISHED_CAMBRIC_CLOTH,
+            VARNISHED_DACRON_GLASS,
+            CROSSLINKED_POLYETHYLENE,
+            TREE_RETARDANT_CROSSLINKED_POLYETHYLENE,
+            HIGH_PRESSURE_FLUID_FILLED,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Wire Insulation Kind</b></em>' enumerators.

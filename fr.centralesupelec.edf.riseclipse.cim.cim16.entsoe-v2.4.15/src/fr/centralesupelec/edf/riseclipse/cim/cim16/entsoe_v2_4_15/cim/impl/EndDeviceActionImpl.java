@@ -227,8 +227,9 @@ public class EndDeviceActionImpl extends CimObjectWithIDImpl implements EndDevic
         command = newCommand;
         boolean oldCommandESet = commandESet;
         commandESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_ACTION__COMMAND, oldCommand, command, !oldCommandESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_ACTION__COMMAND, oldCommand,
+                    command, !oldCommandESet ) );
     }
 
     /**
@@ -242,8 +243,9 @@ public class EndDeviceActionImpl extends CimObjectWithIDImpl implements EndDevic
         boolean oldCommandESet = commandESet;
         command = COMMAND_EDEFAULT;
         commandESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_ACTION__COMMAND, oldCommand, COMMAND_EDEFAULT, oldCommandESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_ACTION__COMMAND, oldCommand,
+                    COMMAND_EDEFAULT, oldCommandESet ) );
     }
 
     /**
@@ -277,8 +279,9 @@ public class EndDeviceActionImpl extends CimObjectWithIDImpl implements EndDevic
         duration = newDuration;
         boolean oldDurationESet = durationESet;
         durationESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_ACTION__DURATION, oldDuration, duration, !oldDurationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_ACTION__DURATION, oldDuration,
+                    duration, !oldDurationESet ) );
     }
 
     /**
@@ -292,8 +295,9 @@ public class EndDeviceActionImpl extends CimObjectWithIDImpl implements EndDevic
         boolean oldDurationESet = durationESet;
         duration = DURATION_EDEFAULT;
         durationESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_ACTION__DURATION, oldDuration, DURATION_EDEFAULT, oldDurationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_ACTION__DURATION,
+                    oldDuration, DURATION_EDEFAULT, oldDurationESet ) );
     }
 
     /**
@@ -421,8 +425,9 @@ public class EndDeviceActionImpl extends CimObjectWithIDImpl implements EndDevic
             InternalEObject oldEndDeviceControl = ( InternalEObject ) endDeviceControl;
             endDeviceControl = ( EndDeviceControl ) eResolveProxy( oldEndDeviceControl );
             if( endDeviceControl != oldEndDeviceControl ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.END_DEVICE_ACTION__END_DEVICE_CONTROL, oldEndDeviceControl, endDeviceControl ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.END_DEVICE_ACTION__END_DEVICE_CONTROL, oldEndDeviceControl, endDeviceControl ) );
             }
         }
         return endDeviceControl;
@@ -468,19 +473,22 @@ public class EndDeviceActionImpl extends CimObjectWithIDImpl implements EndDevic
     public void setEndDeviceControl( EndDeviceControl newEndDeviceControl ) {
         if( newEndDeviceControl != endDeviceControl ) {
             NotificationChain msgs = null;
-            if( endDeviceControl != null ) msgs = ( ( InternalEObject ) endDeviceControl ).eInverseRemove( this,
-                    CimPackage.END_DEVICE_CONTROL__END_DEVICE_ACTION, EndDeviceControl.class, msgs );
-            if( newEndDeviceControl != null ) msgs = ( ( InternalEObject ) newEndDeviceControl ).eInverseAdd( this,
-                    CimPackage.END_DEVICE_CONTROL__END_DEVICE_ACTION, EndDeviceControl.class, msgs );
+            if( endDeviceControl != null )
+                msgs = ( ( InternalEObject ) endDeviceControl ).eInverseRemove( this,
+                        CimPackage.END_DEVICE_CONTROL__END_DEVICE_ACTION, EndDeviceControl.class, msgs );
+            if( newEndDeviceControl != null )
+                msgs = ( ( InternalEObject ) newEndDeviceControl ).eInverseAdd( this,
+                        CimPackage.END_DEVICE_CONTROL__END_DEVICE_ACTION, EndDeviceControl.class, msgs );
             msgs = basicSetEndDeviceControl( newEndDeviceControl, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldEndDeviceControlESet = endDeviceControlESet;
             endDeviceControlESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_ACTION__END_DEVICE_CONTROL,
-                            newEndDeviceControl, newEndDeviceControl, !oldEndDeviceControlESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.END_DEVICE_ACTION__END_DEVICE_CONTROL, newEndDeviceControl, newEndDeviceControl,
+                        !oldEndDeviceControlESet ) );
         }
     }
 
@@ -523,8 +531,9 @@ public class EndDeviceActionImpl extends CimObjectWithIDImpl implements EndDevic
         else {
             boolean oldEndDeviceControlESet = endDeviceControlESet;
             endDeviceControlESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.END_DEVICE_ACTION__END_DEVICE_CONTROL, null, null, oldEndDeviceControlESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.END_DEVICE_ACTION__END_DEVICE_CONTROL, null, null, oldEndDeviceControlESet ) );
         }
     }
 
@@ -547,8 +556,9 @@ public class EndDeviceActionImpl extends CimObjectWithIDImpl implements EndDevic
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.END_DEVICE_ACTION__END_DEVICE_CONTROL:
-            if( endDeviceControl != null ) msgs = ( ( InternalEObject ) endDeviceControl ).eInverseRemove( this,
-                    CimPackage.END_DEVICE_CONTROL__END_DEVICE_ACTION, EndDeviceControl.class, msgs );
+            if( endDeviceControl != null )
+                msgs = ( ( InternalEObject ) endDeviceControl ).eInverseRemove( this,
+                        CimPackage.END_DEVICE_CONTROL__END_DEVICE_ACTION, EndDeviceControl.class, msgs );
             return basicSetEndDeviceControl( ( EndDeviceControl ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -676,7 +686,7 @@ public class EndDeviceActionImpl extends CimObjectWithIDImpl implements EndDevic
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (command: " );
         if( commandESet )
             result.append( command );

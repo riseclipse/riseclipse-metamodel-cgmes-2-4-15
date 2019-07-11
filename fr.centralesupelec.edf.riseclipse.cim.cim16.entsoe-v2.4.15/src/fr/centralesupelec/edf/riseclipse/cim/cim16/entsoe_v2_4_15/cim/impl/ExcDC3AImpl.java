@@ -562,8 +562,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         edfmax = newEdfmax;
         boolean oldEdfmaxESet = edfmaxESet;
         edfmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_DC3A__EDFMAX, oldEdfmax, edfmax, !oldEdfmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_DC3A__EDFMAX, oldEdfmax, edfmax,
+                    !oldEdfmaxESet ) );
     }
 
     /**
@@ -577,8 +578,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         boolean oldEdfmaxESet = edfmaxESet;
         edfmax = EDFMAX_EDEFAULT;
         edfmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_DC3A__EDFMAX, oldEdfmax, EDFMAX_EDEFAULT, oldEdfmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__EDFMAX, oldEdfmax,
+                    EDFMAX_EDEFAULT, oldEdfmaxESet ) );
     }
 
     /**
@@ -612,8 +614,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         efd1 = newEfd1;
         boolean oldEfd1ESet = efd1ESet;
         efd1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_DC3A__EFD1,
-                oldEfd1, efd1, !oldEfd1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_DC3A__EFD1, oldEfd1, efd1,
+                    !oldEfd1ESet ) );
     }
 
     /**
@@ -627,8 +630,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         boolean oldEfd1ESet = efd1ESet;
         efd1 = EFD1_EDEFAULT;
         efd1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_DC3A__EFD1, oldEfd1, EFD1_EDEFAULT, oldEfd1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__EFD1, oldEfd1, EFD1_EDEFAULT,
+                    oldEfd1ESet ) );
     }
 
     /**
@@ -662,8 +666,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         efd2 = newEfd2;
         boolean oldEfd2ESet = efd2ESet;
         efd2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_DC3A__EFD2,
-                oldEfd2, efd2, !oldEfd2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_DC3A__EFD2, oldEfd2, efd2,
+                    !oldEfd2ESet ) );
     }
 
     /**
@@ -677,8 +682,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         boolean oldEfd2ESet = efd2ESet;
         efd2 = EFD2_EDEFAULT;
         efd2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_DC3A__EFD2, oldEfd2, EFD2_EDEFAULT, oldEfd2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__EFD2, oldEfd2, EFD2_EDEFAULT,
+                    oldEfd2ESet ) );
     }
 
     /**
@@ -712,8 +718,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         efdlim = newEfdlim;
         boolean oldEfdlimESet = efdlimESet;
         efdlimESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_DC3A__EFDLIM, oldEfdlim, efdlim, !oldEfdlimESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_DC3A__EFDLIM, oldEfdlim, efdlim,
+                    !oldEfdlimESet ) );
     }
 
     /**
@@ -727,8 +734,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         boolean oldEfdlimESet = efdlimESet;
         efdlim = EFDLIM_EDEFAULT;
         efdlimESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_DC3A__EFDLIM, oldEfdlim, EFDLIM_EDEFAULT, oldEfdlimESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__EFDLIM, oldEfdlim,
+                    EFDLIM_EDEFAULT, oldEfdlimESet ) );
     }
 
     /**
@@ -762,8 +770,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         efdmin = newEfdmin;
         boolean oldEfdminESet = efdminESet;
         efdminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_DC3A__EFDMIN, oldEfdmin, efdmin, !oldEfdminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_DC3A__EFDMIN, oldEfdmin, efdmin,
+                    !oldEfdminESet ) );
     }
 
     /**
@@ -777,8 +786,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         boolean oldEfdminESet = efdminESet;
         efdmin = EFDMIN_EDEFAULT;
         efdminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_DC3A__EFDMIN, oldEfdmin, EFDMIN_EDEFAULT, oldEfdminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__EFDMIN, oldEfdmin,
+                    EFDMIN_EDEFAULT, oldEfdminESet ) );
     }
 
     /**
@@ -812,8 +822,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         exclim = newExclim;
         boolean oldExclimESet = exclimESet;
         exclimESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_DC3A__EXCLIM, oldExclim, exclim, !oldExclimESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_DC3A__EXCLIM, oldExclim, exclim,
+                    !oldExclimESet ) );
     }
 
     /**
@@ -827,8 +838,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         boolean oldExclimESet = exclimESet;
         exclim = EXCLIM_EDEFAULT;
         exclimESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_DC3A__EXCLIM, oldExclim, EXCLIM_EDEFAULT, oldExclimESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__EXCLIM, oldExclim,
+                    EXCLIM_EDEFAULT, oldExclimESet ) );
     }
 
     /**
@@ -877,8 +889,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         boolean oldKeESet = keESet;
         ke = KE_EDEFAULT;
         keESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__KE,
-                oldKe, KE_EDEFAULT, oldKeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__KE, oldKe, KE_EDEFAULT,
+                    oldKeESet ) );
     }
 
     /**
@@ -927,8 +940,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         boolean oldKrESet = krESet;
         kr = KR_EDEFAULT;
         krESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__KR,
-                oldKr, KR_EDEFAULT, oldKrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__KR, oldKr, KR_EDEFAULT,
+                    oldKrESet ) );
     }
 
     /**
@@ -977,8 +991,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         boolean oldKsESet = ksESet;
         ks = KS_EDEFAULT;
         ksESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__KS,
-                oldKs, KS_EDEFAULT, oldKsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__KS, oldKs, KS_EDEFAULT,
+                    oldKsESet ) );
     }
 
     /**
@@ -1027,8 +1042,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         boolean oldKvESet = kvESet;
         kv = KV_EDEFAULT;
         kvESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__KV,
-                oldKv, KV_EDEFAULT, oldKvESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__KV, oldKv, KV_EDEFAULT,
+                    oldKvESet ) );
     }
 
     /**
@@ -1062,8 +1078,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         seefd1 = newSeefd1;
         boolean oldSeefd1ESet = seefd1ESet;
         seefd1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_DC3A__SEEFD1, oldSeefd1, seefd1, !oldSeefd1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_DC3A__SEEFD1, oldSeefd1, seefd1,
+                    !oldSeefd1ESet ) );
     }
 
     /**
@@ -1077,8 +1094,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         boolean oldSeefd1ESet = seefd1ESet;
         seefd1 = SEEFD1_EDEFAULT;
         seefd1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_DC3A__SEEFD1, oldSeefd1, SEEFD1_EDEFAULT, oldSeefd1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__SEEFD1, oldSeefd1,
+                    SEEFD1_EDEFAULT, oldSeefd1ESet ) );
     }
 
     /**
@@ -1112,8 +1130,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         seefd2 = newSeefd2;
         boolean oldSeefd2ESet = seefd2ESet;
         seefd2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_DC3A__SEEFD2, oldSeefd2, seefd2, !oldSeefd2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_DC3A__SEEFD2, oldSeefd2, seefd2,
+                    !oldSeefd2ESet ) );
     }
 
     /**
@@ -1127,8 +1146,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         boolean oldSeefd2ESet = seefd2ESet;
         seefd2 = SEEFD2_EDEFAULT;
         seefd2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_DC3A__SEEFD2, oldSeefd2, SEEFD2_EDEFAULT, oldSeefd2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__SEEFD2, oldSeefd2,
+                    SEEFD2_EDEFAULT, oldSeefd2ESet ) );
     }
 
     /**
@@ -1177,8 +1197,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         boolean oldTeESet = teESet;
         te = TE_EDEFAULT;
         teESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__TE,
-                oldTe, TE_EDEFAULT, oldTeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__TE, oldTe, TE_EDEFAULT,
+                    oldTeESet ) );
     }
 
     /**
@@ -1212,8 +1233,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         trh = newTrh;
         boolean oldTrhESet = trhESet;
         trhESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_DC3A__TRH, oldTrh, trh, !oldTrhESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_DC3A__TRH, oldTrh, trh,
+                    !oldTrhESet ) );
     }
 
     /**
@@ -1227,8 +1249,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         boolean oldTrhESet = trhESet;
         trh = TRH_EDEFAULT;
         trhESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_DC3A__TRH, oldTrh, TRH_EDEFAULT, oldTrhESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__TRH, oldTrh, TRH_EDEFAULT,
+                    oldTrhESet ) );
     }
 
     /**
@@ -1262,8 +1285,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         vrmax = newVrmax;
         boolean oldVrmaxESet = vrmaxESet;
         vrmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_DC3A__VRMAX, oldVrmax, vrmax, !oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_DC3A__VRMAX, oldVrmax, vrmax,
+                    !oldVrmaxESet ) );
     }
 
     /**
@@ -1277,8 +1301,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         boolean oldVrmaxESet = vrmaxESet;
         vrmax = VRMAX_EDEFAULT;
         vrmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_DC3A__VRMAX, oldVrmax, VRMAX_EDEFAULT, oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__VRMAX, oldVrmax,
+                    VRMAX_EDEFAULT, oldVrmaxESet ) );
     }
 
     /**
@@ -1312,8 +1337,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         vrmin = newVrmin;
         boolean oldVrminESet = vrminESet;
         vrminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_DC3A__VRMIN, oldVrmin, vrmin, !oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_DC3A__VRMIN, oldVrmin, vrmin,
+                    !oldVrminESet ) );
     }
 
     /**
@@ -1327,8 +1353,9 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
         boolean oldVrminESet = vrminESet;
         vrmin = VRMIN_EDEFAULT;
         vrminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_DC3A__VRMIN, oldVrmin, VRMIN_EDEFAULT, oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_DC3A__VRMIN, oldVrmin,
+                    VRMIN_EDEFAULT, oldVrminESet ) );
     }
 
     /**
@@ -1558,7 +1585,7 @@ public class ExcDC3AImpl extends ExcitationSystemDynamicsImpl implements ExcDC3A
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (edfmax: " );
         if( edfmaxESet )
             result.append( edfmax );

@@ -496,8 +496,9 @@ public class HydroPumpImpl extends EquipmentImpl implements HydroPump {
     public void setHydroPumpOpSchedule( HydroPumpOpSchedule newHydroPumpOpSchedule ) {
         if( newHydroPumpOpSchedule != hydroPumpOpSchedule ) {
             NotificationChain msgs = null;
-            if( hydroPumpOpSchedule != null ) msgs = ( ( InternalEObject ) hydroPumpOpSchedule ).eInverseRemove( this,
-                    CimPackage.HYDRO_PUMP_OP_SCHEDULE__HYDRO_PUMP, HydroPumpOpSchedule.class, msgs );
+            if( hydroPumpOpSchedule != null )
+                msgs = ( ( InternalEObject ) hydroPumpOpSchedule ).eInverseRemove( this,
+                        CimPackage.HYDRO_PUMP_OP_SCHEDULE__HYDRO_PUMP, HydroPumpOpSchedule.class, msgs );
             if( newHydroPumpOpSchedule != null )
                 msgs = ( ( InternalEObject ) newHydroPumpOpSchedule ).eInverseAdd( this,
                         CimPackage.HYDRO_PUMP_OP_SCHEDULE__HYDRO_PUMP, HydroPumpOpSchedule.class, msgs );
@@ -552,8 +553,9 @@ public class HydroPumpImpl extends EquipmentImpl implements HydroPump {
         else {
             boolean oldHydroPumpOpScheduleESet = hydroPumpOpScheduleESet;
             hydroPumpOpScheduleESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.HYDRO_PUMP__HYDRO_PUMP_OP_SCHEDULE, null, null, oldHydroPumpOpScheduleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.HYDRO_PUMP__HYDRO_PUMP_OP_SCHEDULE,
+                        null, null, oldHydroPumpOpScheduleESet ) );
         }
     }
 
@@ -608,10 +610,12 @@ public class HydroPumpImpl extends EquipmentImpl implements HydroPump {
     public void setRotatingMachine( RotatingMachine newRotatingMachine ) {
         if( newRotatingMachine != rotatingMachine ) {
             NotificationChain msgs = null;
-            if( rotatingMachine != null ) msgs = ( ( InternalEObject ) rotatingMachine ).eInverseRemove( this,
-                    CimPackage.ROTATING_MACHINE__HYDRO_PUMP, RotatingMachine.class, msgs );
-            if( newRotatingMachine != null ) msgs = ( ( InternalEObject ) newRotatingMachine ).eInverseAdd( this,
-                    CimPackage.ROTATING_MACHINE__HYDRO_PUMP, RotatingMachine.class, msgs );
+            if( rotatingMachine != null )
+                msgs = ( ( InternalEObject ) rotatingMachine ).eInverseRemove( this,
+                        CimPackage.ROTATING_MACHINE__HYDRO_PUMP, RotatingMachine.class, msgs );
+            if( newRotatingMachine != null )
+                msgs = ( ( InternalEObject ) newRotatingMachine ).eInverseAdd( this,
+                        CimPackage.ROTATING_MACHINE__HYDRO_PUMP, RotatingMachine.class, msgs );
             msgs = basicSetRotatingMachine( newRotatingMachine, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -662,8 +666,9 @@ public class HydroPumpImpl extends EquipmentImpl implements HydroPump {
         else {
             boolean oldRotatingMachineESet = rotatingMachineESet;
             rotatingMachineESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.HYDRO_PUMP__ROTATING_MACHINE, null, null, oldRotatingMachineESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.HYDRO_PUMP__ROTATING_MACHINE, null,
+                        null, oldRotatingMachineESet ) );
         }
     }
 
@@ -718,10 +723,12 @@ public class HydroPumpImpl extends EquipmentImpl implements HydroPump {
     public void setHydroPowerPlant( HydroPowerPlant newHydroPowerPlant ) {
         if( newHydroPowerPlant != hydroPowerPlant ) {
             NotificationChain msgs = null;
-            if( hydroPowerPlant != null ) msgs = ( ( InternalEObject ) hydroPowerPlant ).eInverseRemove( this,
-                    CimPackage.HYDRO_POWER_PLANT__HYDRO_PUMPS, HydroPowerPlant.class, msgs );
-            if( newHydroPowerPlant != null ) msgs = ( ( InternalEObject ) newHydroPowerPlant ).eInverseAdd( this,
-                    CimPackage.HYDRO_POWER_PLANT__HYDRO_PUMPS, HydroPowerPlant.class, msgs );
+            if( hydroPowerPlant != null )
+                msgs = ( ( InternalEObject ) hydroPowerPlant ).eInverseRemove( this,
+                        CimPackage.HYDRO_POWER_PLANT__HYDRO_PUMPS, HydroPowerPlant.class, msgs );
+            if( newHydroPowerPlant != null )
+                msgs = ( ( InternalEObject ) newHydroPowerPlant ).eInverseAdd( this,
+                        CimPackage.HYDRO_POWER_PLANT__HYDRO_PUMPS, HydroPowerPlant.class, msgs );
             msgs = basicSetHydroPowerPlant( newHydroPowerPlant, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -772,8 +779,9 @@ public class HydroPumpImpl extends EquipmentImpl implements HydroPump {
         else {
             boolean oldHydroPowerPlantESet = hydroPowerPlantESet;
             hydroPowerPlantESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.HYDRO_PUMP__HYDRO_POWER_PLANT, null, null, oldHydroPowerPlantESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.HYDRO_PUMP__HYDRO_POWER_PLANT,
+                        null, null, oldHydroPowerPlantESet ) );
         }
     }
 
@@ -796,16 +804,19 @@ public class HydroPumpImpl extends EquipmentImpl implements HydroPump {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.HYDRO_PUMP__ROTATING_MACHINE:
-            if( rotatingMachine != null ) msgs = ( ( InternalEObject ) rotatingMachine ).eInverseRemove( this,
-                    CimPackage.ROTATING_MACHINE__HYDRO_PUMP, RotatingMachine.class, msgs );
+            if( rotatingMachine != null )
+                msgs = ( ( InternalEObject ) rotatingMachine ).eInverseRemove( this,
+                        CimPackage.ROTATING_MACHINE__HYDRO_PUMP, RotatingMachine.class, msgs );
             return basicSetRotatingMachine( ( RotatingMachine ) otherEnd, msgs );
         case CimPackage.HYDRO_PUMP__HYDRO_POWER_PLANT:
-            if( hydroPowerPlant != null ) msgs = ( ( InternalEObject ) hydroPowerPlant ).eInverseRemove( this,
-                    CimPackage.HYDRO_POWER_PLANT__HYDRO_PUMPS, HydroPowerPlant.class, msgs );
+            if( hydroPowerPlant != null )
+                msgs = ( ( InternalEObject ) hydroPowerPlant ).eInverseRemove( this,
+                        CimPackage.HYDRO_POWER_PLANT__HYDRO_PUMPS, HydroPowerPlant.class, msgs );
             return basicSetHydroPowerPlant( ( HydroPowerPlant ) otherEnd, msgs );
         case CimPackage.HYDRO_PUMP__HYDRO_PUMP_OP_SCHEDULE:
-            if( hydroPumpOpSchedule != null ) msgs = ( ( InternalEObject ) hydroPumpOpSchedule ).eInverseRemove( this,
-                    CimPackage.HYDRO_PUMP_OP_SCHEDULE__HYDRO_PUMP, HydroPumpOpSchedule.class, msgs );
+            if( hydroPumpOpSchedule != null )
+                msgs = ( ( InternalEObject ) hydroPumpOpSchedule ).eInverseRemove( this,
+                        CimPackage.HYDRO_PUMP_OP_SCHEDULE__HYDRO_PUMP, HydroPumpOpSchedule.class, msgs );
             return basicSetHydroPumpOpSchedule( ( HydroPumpOpSchedule ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -956,7 +967,7 @@ public class HydroPumpImpl extends EquipmentImpl implements HydroPump {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (pumpDischAtMaxHead: " );
         if( pumpDischAtMaxHeadESet )
             result.append( pumpDischAtMaxHead );

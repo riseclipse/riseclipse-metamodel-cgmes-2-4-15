@@ -175,8 +175,9 @@ public class TieFlowImpl extends CimObjectWithIDImpl implements TieFlow {
         positiveFlowIn = newPositiveFlowIn;
         boolean oldPositiveFlowInESet = positiveFlowInESet;
         positiveFlowInESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TIE_FLOW__POSITIVE_FLOW_IN, oldPositiveFlowIn, positiveFlowIn, !oldPositiveFlowInESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TIE_FLOW__POSITIVE_FLOW_IN,
+                    oldPositiveFlowIn, positiveFlowIn, !oldPositiveFlowInESet ) );
     }
 
     /**
@@ -216,8 +217,9 @@ public class TieFlowImpl extends CimObjectWithIDImpl implements TieFlow {
             InternalEObject oldTerminal = ( InternalEObject ) terminal;
             terminal = ( Terminal ) eResolveProxy( oldTerminal );
             if( terminal != oldTerminal ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.TIE_FLOW__TERMINAL, oldTerminal, terminal ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.TIE_FLOW__TERMINAL,
+                            oldTerminal, terminal ) );
             }
         }
         return terminal;
@@ -262,18 +264,21 @@ public class TieFlowImpl extends CimObjectWithIDImpl implements TieFlow {
     public void setTerminal( Terminal newTerminal ) {
         if( newTerminal != terminal ) {
             NotificationChain msgs = null;
-            if( terminal != null ) msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__TIE_FLOW, Terminal.class, msgs );
-            if( newTerminal != null ) msgs = ( ( InternalEObject ) newTerminal ).eInverseAdd( this,
-                    CimPackage.TERMINAL__TIE_FLOW, Terminal.class, msgs );
+            if( terminal != null )
+                msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this, CimPackage.TERMINAL__TIE_FLOW,
+                        Terminal.class, msgs );
+            if( newTerminal != null )
+                msgs = ( ( InternalEObject ) newTerminal ).eInverseAdd( this, CimPackage.TERMINAL__TIE_FLOW,
+                        Terminal.class, msgs );
             msgs = basicSetTerminal( newTerminal, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTerminalESet = terminalESet;
             terminalESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TIE_FLOW__TERMINAL, newTerminal, newTerminal, !oldTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TIE_FLOW__TERMINAL, newTerminal,
+                        newTerminal, !oldTerminalESet ) );
         }
     }
 
@@ -315,8 +320,9 @@ public class TieFlowImpl extends CimObjectWithIDImpl implements TieFlow {
         else {
             boolean oldTerminalESet = terminalESet;
             terminalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TIE_FLOW__TERMINAL, null, null, oldTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TIE_FLOW__TERMINAL, null, null,
+                        oldTerminalESet ) );
         }
     }
 
@@ -404,18 +410,21 @@ public class TieFlowImpl extends CimObjectWithIDImpl implements TieFlow {
     public void setControlArea( ControlArea newControlArea ) {
         if( newControlArea != controlArea ) {
             NotificationChain msgs = null;
-            if( controlArea != null ) msgs = ( ( InternalEObject ) controlArea ).eInverseRemove( this,
-                    CimPackage.CONTROL_AREA__TIE_FLOW, ControlArea.class, msgs );
-            if( newControlArea != null ) msgs = ( ( InternalEObject ) newControlArea ).eInverseAdd( this,
-                    CimPackage.CONTROL_AREA__TIE_FLOW, ControlArea.class, msgs );
+            if( controlArea != null )
+                msgs = ( ( InternalEObject ) controlArea ).eInverseRemove( this, CimPackage.CONTROL_AREA__TIE_FLOW,
+                        ControlArea.class, msgs );
+            if( newControlArea != null )
+                msgs = ( ( InternalEObject ) newControlArea ).eInverseAdd( this, CimPackage.CONTROL_AREA__TIE_FLOW,
+                        ControlArea.class, msgs );
             msgs = basicSetControlArea( newControlArea, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldControlAreaESet = controlAreaESet;
             controlAreaESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TIE_FLOW__CONTROL_AREA, newControlArea, newControlArea, !oldControlAreaESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TIE_FLOW__CONTROL_AREA,
+                        newControlArea, newControlArea, !oldControlAreaESet ) );
         }
     }
 
@@ -457,8 +466,9 @@ public class TieFlowImpl extends CimObjectWithIDImpl implements TieFlow {
         else {
             boolean oldControlAreaESet = controlAreaESet;
             controlAreaESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TIE_FLOW__CONTROL_AREA, null, null, oldControlAreaESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TIE_FLOW__CONTROL_AREA, null, null,
+                        oldControlAreaESet ) );
         }
     }
 
@@ -482,12 +492,14 @@ public class TieFlowImpl extends CimObjectWithIDImpl implements TieFlow {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.TIE_FLOW__TERMINAL:
-            if( terminal != null ) msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__TIE_FLOW, Terminal.class, msgs );
+            if( terminal != null )
+                msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this, CimPackage.TERMINAL__TIE_FLOW,
+                        Terminal.class, msgs );
             return basicSetTerminal( ( Terminal ) otherEnd, msgs );
         case CimPackage.TIE_FLOW__CONTROL_AREA:
-            if( controlArea != null ) msgs = ( ( InternalEObject ) controlArea ).eInverseRemove( this,
-                    CimPackage.CONTROL_AREA__TIE_FLOW, ControlArea.class, msgs );
+            if( controlArea != null )
+                msgs = ( ( InternalEObject ) controlArea ).eInverseRemove( this, CimPackage.CONTROL_AREA__TIE_FLOW,
+                        ControlArea.class, msgs );
             return basicSetControlArea( ( ControlArea ) otherEnd, msgs );
         case CimPackage.TIE_FLOW__ALT_TIE_MEAS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getAltTieMeas() ).basicAdd( otherEnd,
@@ -614,7 +626,7 @@ public class TieFlowImpl extends CimObjectWithIDImpl implements TieFlow {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (positiveFlowIn: " );
         if( positiveFlowInESet )
             result.append( positiveFlowIn );

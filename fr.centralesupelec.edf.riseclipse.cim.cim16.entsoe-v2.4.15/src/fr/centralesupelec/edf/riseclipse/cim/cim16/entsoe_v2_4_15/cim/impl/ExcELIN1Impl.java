@@ -532,8 +532,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         dpnf = newDpnf;
         boolean oldDpnfESet = dpnfESet;
         dpnfESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_ELIN1__DPNF, oldDpnf, dpnf, !oldDpnfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__DPNF, oldDpnf, dpnf,
+                    !oldDpnfESet ) );
     }
 
     /**
@@ -547,8 +548,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         boolean oldDpnfESet = dpnfESet;
         dpnf = DPNF_EDEFAULT;
         dpnfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ELIN1__DPNF, oldDpnf, DPNF_EDEFAULT, oldDpnfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ELIN1__DPNF, oldDpnf,
+                    DPNF_EDEFAULT, oldDpnfESet ) );
     }
 
     /**
@@ -582,8 +584,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         efmax = newEfmax;
         boolean oldEfmaxESet = efmaxESet;
         efmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_ELIN1__EFMAX, oldEfmax, efmax, !oldEfmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__EFMAX, oldEfmax, efmax,
+                    !oldEfmaxESet ) );
     }
 
     /**
@@ -597,8 +600,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         boolean oldEfmaxESet = efmaxESet;
         efmax = EFMAX_EDEFAULT;
         efmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ELIN1__EFMAX, oldEfmax, EFMAX_EDEFAULT, oldEfmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ELIN1__EFMAX, oldEfmax,
+                    EFMAX_EDEFAULT, oldEfmaxESet ) );
     }
 
     /**
@@ -632,8 +636,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         efmin = newEfmin;
         boolean oldEfminESet = efminESet;
         efminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_ELIN1__EFMIN, oldEfmin, efmin, !oldEfminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__EFMIN, oldEfmin, efmin,
+                    !oldEfminESet ) );
     }
 
     /**
@@ -647,8 +652,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         boolean oldEfminESet = efminESet;
         efmin = EFMIN_EDEFAULT;
         efminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ELIN1__EFMIN, oldEfmin, EFMIN_EDEFAULT, oldEfminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ELIN1__EFMIN, oldEfmin,
+                    EFMIN_EDEFAULT, oldEfminESet ) );
     }
 
     /**
@@ -682,8 +688,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         ks1 = newKs1;
         boolean oldKs1ESet = ks1ESet;
         ks1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__KS1, oldKs1, ks1, !oldKs1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__KS1, oldKs1, ks1,
+                    !oldKs1ESet ) );
     }
 
     /**
@@ -697,8 +704,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         boolean oldKs1ESet = ks1ESet;
         ks1 = KS1_EDEFAULT;
         ks1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ELIN1__KS1, oldKs1, KS1_EDEFAULT, oldKs1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ELIN1__KS1, oldKs1, KS1_EDEFAULT,
+                    oldKs1ESet ) );
     }
 
     /**
@@ -732,8 +740,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         ks2 = newKs2;
         boolean oldKs2ESet = ks2ESet;
         ks2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__KS2, oldKs2, ks2, !oldKs2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__KS2, oldKs2, ks2,
+                    !oldKs2ESet ) );
     }
 
     /**
@@ -747,8 +756,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         boolean oldKs2ESet = ks2ESet;
         ks2 = KS2_EDEFAULT;
         ks2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ELIN1__KS2, oldKs2, KS2_EDEFAULT, oldKs2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ELIN1__KS2, oldKs2, KS2_EDEFAULT,
+                    oldKs2ESet ) );
     }
 
     /**
@@ -782,8 +792,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         smax = newSmax;
         boolean oldSmaxESet = smaxESet;
         smaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_ELIN1__SMAX, oldSmax, smax, !oldSmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__SMAX, oldSmax, smax,
+                    !oldSmaxESet ) );
     }
 
     /**
@@ -797,8 +808,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         boolean oldSmaxESet = smaxESet;
         smax = SMAX_EDEFAULT;
         smaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ELIN1__SMAX, oldSmax, SMAX_EDEFAULT, oldSmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ELIN1__SMAX, oldSmax,
+                    SMAX_EDEFAULT, oldSmaxESet ) );
     }
 
     /**
@@ -832,8 +844,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         tfi = newTfi;
         boolean oldTfiESet = tfiESet;
         tfiESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__TFI, oldTfi, tfi, !oldTfiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__TFI, oldTfi, tfi,
+                    !oldTfiESet ) );
     }
 
     /**
@@ -847,8 +860,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         boolean oldTfiESet = tfiESet;
         tfi = TFI_EDEFAULT;
         tfiESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ELIN1__TFI, oldTfi, TFI_EDEFAULT, oldTfiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ELIN1__TFI, oldTfi, TFI_EDEFAULT,
+                    oldTfiESet ) );
     }
 
     /**
@@ -882,8 +896,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         tnu = newTnu;
         boolean oldTnuESet = tnuESet;
         tnuESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__TNU, oldTnu, tnu, !oldTnuESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__TNU, oldTnu, tnu,
+                    !oldTnuESet ) );
     }
 
     /**
@@ -897,8 +912,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         boolean oldTnuESet = tnuESet;
         tnu = TNU_EDEFAULT;
         tnuESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ELIN1__TNU, oldTnu, TNU_EDEFAULT, oldTnuESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ELIN1__TNU, oldTnu, TNU_EDEFAULT,
+                    oldTnuESet ) );
     }
 
     /**
@@ -932,8 +948,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         ts1 = newTs1;
         boolean oldTs1ESet = ts1ESet;
         ts1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__TS1, oldTs1, ts1, !oldTs1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__TS1, oldTs1, ts1,
+                    !oldTs1ESet ) );
     }
 
     /**
@@ -947,8 +964,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         boolean oldTs1ESet = ts1ESet;
         ts1 = TS1_EDEFAULT;
         ts1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ELIN1__TS1, oldTs1, TS1_EDEFAULT, oldTs1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ELIN1__TS1, oldTs1, TS1_EDEFAULT,
+                    oldTs1ESet ) );
     }
 
     /**
@@ -982,8 +1000,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         ts2 = newTs2;
         boolean oldTs2ESet = ts2ESet;
         ts2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__TS2, oldTs2, ts2, !oldTs2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__TS2, oldTs2, ts2,
+                    !oldTs2ESet ) );
     }
 
     /**
@@ -997,8 +1016,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         boolean oldTs2ESet = ts2ESet;
         ts2 = TS2_EDEFAULT;
         ts2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ELIN1__TS2, oldTs2, TS2_EDEFAULT, oldTs2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ELIN1__TS2, oldTs2, TS2_EDEFAULT,
+                    oldTs2ESet ) );
     }
 
     /**
@@ -1032,8 +1052,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         tsw = newTsw;
         boolean oldTswESet = tswESet;
         tswESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__TSW, oldTsw, tsw, !oldTswESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__TSW, oldTsw, tsw,
+                    !oldTswESet ) );
     }
 
     /**
@@ -1047,8 +1068,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         boolean oldTswESet = tswESet;
         tsw = TSW_EDEFAULT;
         tswESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ELIN1__TSW, oldTsw, TSW_EDEFAULT, oldTswESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ELIN1__TSW, oldTsw, TSW_EDEFAULT,
+                    oldTswESet ) );
     }
 
     /**
@@ -1082,8 +1104,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         vpi = newVpi;
         boolean oldVpiESet = vpiESet;
         vpiESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__VPI, oldVpi, vpi, !oldVpiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__VPI, oldVpi, vpi,
+                    !oldVpiESet ) );
     }
 
     /**
@@ -1097,8 +1120,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         boolean oldVpiESet = vpiESet;
         vpi = VPI_EDEFAULT;
         vpiESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ELIN1__VPI, oldVpi, VPI_EDEFAULT, oldVpiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ELIN1__VPI, oldVpi, VPI_EDEFAULT,
+                    oldVpiESet ) );
     }
 
     /**
@@ -1132,8 +1156,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         vpnf = newVpnf;
         boolean oldVpnfESet = vpnfESet;
         vpnfESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_ELIN1__VPNF, oldVpnf, vpnf, !oldVpnfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__VPNF, oldVpnf, vpnf,
+                    !oldVpnfESet ) );
     }
 
     /**
@@ -1147,8 +1172,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         boolean oldVpnfESet = vpnfESet;
         vpnf = VPNF_EDEFAULT;
         vpnfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ELIN1__VPNF, oldVpnf, VPNF_EDEFAULT, oldVpnfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ELIN1__VPNF, oldVpnf,
+                    VPNF_EDEFAULT, oldVpnfESet ) );
     }
 
     /**
@@ -1182,8 +1208,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         vpu = newVpu;
         boolean oldVpuESet = vpuESet;
         vpuESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__VPU, oldVpu, vpu, !oldVpuESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ELIN1__VPU, oldVpu, vpu,
+                    !oldVpuESet ) );
     }
 
     /**
@@ -1197,8 +1224,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         boolean oldVpuESet = vpuESet;
         vpu = VPU_EDEFAULT;
         vpuESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ELIN1__VPU, oldVpu, VPU_EDEFAULT, oldVpuESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ELIN1__VPU, oldVpu, VPU_EDEFAULT,
+                    oldVpuESet ) );
     }
 
     /**
@@ -1247,8 +1275,9 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
         boolean oldXeESet = xeESet;
         xe = XE_EDEFAULT;
         xeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ELIN1__XE, oldXe, XE_EDEFAULT, oldXeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ELIN1__XE, oldXe, XE_EDEFAULT,
+                    oldXeESet ) );
     }
 
     /**
@@ -1468,7 +1497,7 @@ public class ExcELIN1Impl extends ExcitationSystemDynamicsImpl implements ExcELI
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (dpnf: " );
         if( dpnfESet )
             result.append( dpnf );

@@ -457,8 +457,9 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
         boolean oldAeESet = aeESet;
         ae = AE_EDEFAULT;
         aeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__AE,
-                oldAe, AE_EDEFAULT, oldAeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__AE, oldAe, AE_EDEFAULT,
+                    oldAeESet ) );
     }
 
     /**
@@ -507,8 +508,9 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
         boolean oldAiESet = aiESet;
         ai = AI_EDEFAULT;
         aiESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__AI,
-                oldAi, AI_EDEFAULT, oldAiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__AI, oldAi, AI_EDEFAULT,
+                    oldAiESet ) );
     }
 
     /**
@@ -542,8 +544,9 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
         atr = newAtr;
         boolean oldAtrESet = atrESet;
         atrESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_HU__ATR, oldAtr, atr, !oldAtrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_HU__ATR, oldAtr, atr,
+                    !oldAtrESet ) );
     }
 
     /**
@@ -557,8 +560,9 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
         boolean oldAtrESet = atrESet;
         atr = ATR_EDEFAULT;
         atrESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__ATR,
-                oldAtr, ATR_EDEFAULT, oldAtrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__ATR, oldAtr, ATR_EDEFAULT,
+                    oldAtrESet ) );
     }
 
     /**
@@ -592,8 +596,9 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
         emax = newEmax;
         boolean oldEmaxESet = emaxESet;
         emaxESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_HU__EMAX, oldEmax, emax, !oldEmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_HU__EMAX, oldEmax, emax,
+                    !oldEmaxESet ) );
     }
 
     /**
@@ -607,8 +612,9 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
         boolean oldEmaxESet = emaxESet;
         emax = EMAX_EDEFAULT;
         emaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__EMAX,
-                oldEmax, EMAX_EDEFAULT, oldEmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__EMAX, oldEmax, EMAX_EDEFAULT,
+                    oldEmaxESet ) );
     }
 
     /**
@@ -642,8 +648,9 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
         emin = newEmin;
         boolean oldEminESet = eminESet;
         eminESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_HU__EMIN, oldEmin, emin, !oldEminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_HU__EMIN, oldEmin, emin,
+                    !oldEminESet ) );
     }
 
     /**
@@ -657,8 +664,9 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
         boolean oldEminESet = eminESet;
         emin = EMIN_EDEFAULT;
         eminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__EMIN,
-                oldEmin, EMIN_EDEFAULT, oldEminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__EMIN, oldEmin, EMIN_EDEFAULT,
+                    oldEminESet ) );
     }
 
     /**
@@ -692,8 +700,9 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
         imax = newImax;
         boolean oldImaxESet = imaxESet;
         imaxESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_HU__IMAX, oldImax, imax, !oldImaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_HU__IMAX, oldImax, imax,
+                    !oldImaxESet ) );
     }
 
     /**
@@ -707,8 +716,9 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
         boolean oldImaxESet = imaxESet;
         imax = IMAX_EDEFAULT;
         imaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__IMAX,
-                oldImax, IMAX_EDEFAULT, oldImaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__IMAX, oldImax, IMAX_EDEFAULT,
+                    oldImaxESet ) );
     }
 
     /**
@@ -742,8 +752,9 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
         imin = newImin;
         boolean oldIminESet = iminESet;
         iminESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_HU__IMIN, oldImin, imin, !oldIminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_HU__IMIN, oldImin, imin,
+                    !oldIminESet ) );
     }
 
     /**
@@ -757,8 +768,9 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
         boolean oldIminESet = iminESet;
         imin = IMIN_EDEFAULT;
         iminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__IMIN,
-                oldImin, IMIN_EDEFAULT, oldIminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__IMIN, oldImin, IMIN_EDEFAULT,
+                    oldIminESet ) );
     }
 
     /**
@@ -807,8 +819,9 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
         boolean oldKeESet = keESet;
         ke = KE_EDEFAULT;
         keESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__KE,
-                oldKe, KE_EDEFAULT, oldKeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__KE, oldKe, KE_EDEFAULT,
+                    oldKeESet ) );
     }
 
     /**
@@ -857,8 +870,9 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
         boolean oldKiESet = kiESet;
         ki = KI_EDEFAULT;
         kiESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__KI,
-                oldKi, KI_EDEFAULT, oldKiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__KI, oldKi, KI_EDEFAULT,
+                    oldKiESet ) );
     }
 
     /**
@@ -907,8 +921,9 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
         boolean oldTeESet = teESet;
         te = TE_EDEFAULT;
         teESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__TE,
-                oldTe, TE_EDEFAULT, oldTeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__TE, oldTe, TE_EDEFAULT,
+                    oldTeESet ) );
     }
 
     /**
@@ -957,8 +972,9 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
         boolean oldTiESet = tiESet;
         ti = TI_EDEFAULT;
         tiESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__TI,
-                oldTi, TI_EDEFAULT, oldTiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__TI, oldTi, TI_EDEFAULT,
+                    oldTiESet ) );
     }
 
     /**
@@ -1007,8 +1023,9 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
         boolean oldTrESet = trESet;
         tr = TR_EDEFAULT;
         trESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__TR,
-                oldTr, TR_EDEFAULT, oldTrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_HU__TR, oldTr, TR_EDEFAULT,
+                    oldTrESet ) );
     }
 
     /**
@@ -1198,7 +1215,7 @@ public class ExcHUImpl extends ExcitationSystemDynamicsImpl implements ExcHU {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (ae: " );
         if( aeESet )
             result.append( ae );

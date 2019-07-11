@@ -163,8 +163,9 @@ public class NameTypeAuthorityImpl extends CimObjectWithIDImpl implements NameTy
         description = newDescription;
         boolean oldDescriptionESet = descriptionESet;
         descriptionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.NAME_TYPE_AUTHORITY__DESCRIPTION, oldDescription, description, !oldDescriptionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.NAME_TYPE_AUTHORITY__DESCRIPTION,
+                    oldDescription, description, !oldDescriptionESet ) );
     }
 
     /**
@@ -214,8 +215,9 @@ public class NameTypeAuthorityImpl extends CimObjectWithIDImpl implements NameTy
         name = newName;
         boolean oldNameESet = nameESet;
         nameESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.NAME_TYPE_AUTHORITY__NAME, oldName, name, !oldNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.NAME_TYPE_AUTHORITY__NAME, oldName, name,
+                    !oldNameESet ) );
     }
 
     /**
@@ -229,8 +231,9 @@ public class NameTypeAuthorityImpl extends CimObjectWithIDImpl implements NameTy
         boolean oldNameESet = nameESet;
         name = NAME_EDEFAULT;
         nameESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.NAME_TYPE_AUTHORITY__NAME, oldName, NAME_EDEFAULT, oldNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.NAME_TYPE_AUTHORITY__NAME, oldName,
+                    NAME_EDEFAULT, oldNameESet ) );
     }
 
     /**
@@ -396,7 +399,7 @@ public class NameTypeAuthorityImpl extends CimObjectWithIDImpl implements NameTy
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (description: " );
         if( descriptionESet )
             result.append( description );

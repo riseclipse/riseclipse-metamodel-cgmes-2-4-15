@@ -235,8 +235,9 @@ public class DueImpl extends MinimalEObjectImpl.Container implements Due {
         arrears = newArrears;
         boolean oldArrearsESet = arrearsESet;
         arrearsESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DUE__ARREARS,
-                oldArrears, arrears, !oldArrearsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DUE__ARREARS, oldArrears, arrears,
+                    !oldArrearsESet ) );
     }
 
     /**
@@ -250,8 +251,9 @@ public class DueImpl extends MinimalEObjectImpl.Container implements Due {
         boolean oldArrearsESet = arrearsESet;
         arrears = ARREARS_EDEFAULT;
         arrearsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DUE__ARREARS,
-                oldArrears, ARREARS_EDEFAULT, oldArrearsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DUE__ARREARS, oldArrears,
+                    ARREARS_EDEFAULT, oldArrearsESet ) );
     }
 
     /**
@@ -285,8 +287,9 @@ public class DueImpl extends MinimalEObjectImpl.Container implements Due {
         charges = newCharges;
         boolean oldChargesESet = chargesESet;
         chargesESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DUE__CHARGES,
-                oldCharges, charges, !oldChargesESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DUE__CHARGES, oldCharges, charges,
+                    !oldChargesESet ) );
     }
 
     /**
@@ -300,8 +303,9 @@ public class DueImpl extends MinimalEObjectImpl.Container implements Due {
         boolean oldChargesESet = chargesESet;
         charges = CHARGES_EDEFAULT;
         chargesESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DUE__CHARGES,
-                oldCharges, CHARGES_EDEFAULT, oldChargesESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DUE__CHARGES, oldCharges,
+                    CHARGES_EDEFAULT, oldChargesESet ) );
     }
 
     /**
@@ -335,8 +339,9 @@ public class DueImpl extends MinimalEObjectImpl.Container implements Due {
         current = newCurrent;
         boolean oldCurrentESet = currentESet;
         currentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DUE__CURRENT,
-                oldCurrent, current, !oldCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DUE__CURRENT, oldCurrent, current,
+                    !oldCurrentESet ) );
     }
 
     /**
@@ -350,8 +355,9 @@ public class DueImpl extends MinimalEObjectImpl.Container implements Due {
         boolean oldCurrentESet = currentESet;
         current = CURRENT_EDEFAULT;
         currentESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DUE__CURRENT,
-                oldCurrent, CURRENT_EDEFAULT, oldCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DUE__CURRENT, oldCurrent,
+                    CURRENT_EDEFAULT, oldCurrentESet ) );
     }
 
     /**
@@ -385,8 +391,9 @@ public class DueImpl extends MinimalEObjectImpl.Container implements Due {
         interest = newInterest;
         boolean oldInterestESet = interestESet;
         interestESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DUE__INTEREST,
-                oldInterest, interest, !oldInterestESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DUE__INTEREST, oldInterest, interest,
+                    !oldInterestESet ) );
     }
 
     /**
@@ -400,8 +407,9 @@ public class DueImpl extends MinimalEObjectImpl.Container implements Due {
         boolean oldInterestESet = interestESet;
         interest = INTEREST_EDEFAULT;
         interestESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DUE__INTEREST, oldInterest, INTEREST_EDEFAULT, oldInterestESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DUE__INTEREST, oldInterest,
+                    INTEREST_EDEFAULT, oldInterestESet ) );
     }
 
     /**
@@ -435,8 +443,9 @@ public class DueImpl extends MinimalEObjectImpl.Container implements Due {
         principle = newPrinciple;
         boolean oldPrincipleESet = principleESet;
         principleESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DUE__PRINCIPLE,
-                oldPrinciple, principle, !oldPrincipleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DUE__PRINCIPLE, oldPrinciple, principle,
+                    !oldPrincipleESet ) );
     }
 
     /**
@@ -450,8 +459,9 @@ public class DueImpl extends MinimalEObjectImpl.Container implements Due {
         boolean oldPrincipleESet = principleESet;
         principle = PRINCIPLE_EDEFAULT;
         principleESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DUE__PRINCIPLE, oldPrinciple, PRINCIPLE_EDEFAULT, oldPrincipleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DUE__PRINCIPLE, oldPrinciple,
+                    PRINCIPLE_EDEFAULT, oldPrincipleESet ) );
     }
 
     /**
@@ -571,7 +581,7 @@ public class DueImpl extends MinimalEObjectImpl.Container implements Due {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (arrears: " );
         if( arrearsESet )
             result.append( arrears );

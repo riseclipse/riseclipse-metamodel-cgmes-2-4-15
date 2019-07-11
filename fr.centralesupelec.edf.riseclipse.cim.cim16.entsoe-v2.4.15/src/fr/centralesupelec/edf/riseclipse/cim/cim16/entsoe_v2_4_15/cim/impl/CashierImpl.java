@@ -145,10 +145,12 @@ public class CashierImpl extends IdentifiedObjectImpl implements Cashier {
     public void setElectronicAddress( ElectronicAddress newElectronicAddress ) {
         if( newElectronicAddress != electronicAddress ) {
             NotificationChain msgs = null;
-            if( electronicAddress != null ) msgs = ( ( InternalEObject ) electronicAddress ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.CASHIER__ELECTRONIC_ADDRESS, null, msgs );
-            if( newElectronicAddress != null ) msgs = ( ( InternalEObject ) newElectronicAddress ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.CASHIER__ELECTRONIC_ADDRESS, null, msgs );
+            if( electronicAddress != null )
+                msgs = ( ( InternalEObject ) electronicAddress ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.CASHIER__ELECTRONIC_ADDRESS, null, msgs );
+            if( newElectronicAddress != null )
+                msgs = ( ( InternalEObject ) newElectronicAddress ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.CASHIER__ELECTRONIC_ADDRESS, null, msgs );
             msgs = basicSetElectronicAddress( newElectronicAddress, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -199,8 +201,9 @@ public class CashierImpl extends IdentifiedObjectImpl implements Cashier {
         else {
             boolean oldElectronicAddressESet = electronicAddressESet;
             electronicAddressESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CASHIER__ELECTRONIC_ADDRESS, null, null, oldElectronicAddressESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CASHIER__ELECTRONIC_ADDRESS, null,
+                        null, oldElectronicAddressESet ) );
         }
     }
 

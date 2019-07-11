@@ -242,8 +242,16 @@ public enum RegulatingControlModeKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final RegulatingControlModeKind[] VALUES_ARRAY = new RegulatingControlModeKind[] { VOLTAGE,
-            ACTIVE_POWER, REACTIVE_POWER, CURRENT_FLOW, ADMITTANCE, TIME_SCHEDULED, TEMPERATURE, POWER_FACTOR, };
+    private static final RegulatingControlModeKind[] VALUES_ARRAY = new RegulatingControlModeKind[] {
+            VOLTAGE,
+            ACTIVE_POWER,
+            REACTIVE_POWER,
+            CURRENT_FLOW,
+            ADMITTANCE,
+            TIME_SCHEDULED,
+            TEMPERATURE,
+            POWER_FACTOR,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Regulating Control Mode Kind</b></em>' enumerators.

@@ -124,18 +124,21 @@ public class SwitchScheduleImpl extends SeasonDayTypeScheduleImpl implements Swi
     public void setSwitch( Switch newSwitch ) {
         if( newSwitch != switch_ ) {
             NotificationChain msgs = null;
-            if( switch_ != null ) msgs = ( ( InternalEObject ) switch_ ).eInverseRemove( this,
-                    CimPackage.SWITCH__SWITCH_SCHEDULES, Switch.class, msgs );
-            if( newSwitch != null ) msgs = ( ( InternalEObject ) newSwitch ).eInverseAdd( this,
-                    CimPackage.SWITCH__SWITCH_SCHEDULES, Switch.class, msgs );
+            if( switch_ != null )
+                msgs = ( ( InternalEObject ) switch_ ).eInverseRemove( this, CimPackage.SWITCH__SWITCH_SCHEDULES,
+                        Switch.class, msgs );
+            if( newSwitch != null )
+                msgs = ( ( InternalEObject ) newSwitch ).eInverseAdd( this, CimPackage.SWITCH__SWITCH_SCHEDULES,
+                        Switch.class, msgs );
             msgs = basicSetSwitch( newSwitch, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldSwitchESet = switchESet;
             switchESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SWITCH_SCHEDULE__SWITCH, newSwitch, newSwitch, !oldSwitchESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH_SCHEDULE__SWITCH, newSwitch,
+                        newSwitch, !oldSwitchESet ) );
         }
     }
 
@@ -177,8 +180,9 @@ public class SwitchScheduleImpl extends SeasonDayTypeScheduleImpl implements Swi
         else {
             boolean oldSwitchESet = switchESet;
             switchESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SWITCH_SCHEDULE__SWITCH, null, null, oldSwitchESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH_SCHEDULE__SWITCH, null,
+                        null, oldSwitchESet ) );
         }
     }
 
@@ -201,8 +205,9 @@ public class SwitchScheduleImpl extends SeasonDayTypeScheduleImpl implements Swi
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.SWITCH_SCHEDULE__SWITCH:
-            if( switch_ != null ) msgs = ( ( InternalEObject ) switch_ ).eInverseRemove( this,
-                    CimPackage.SWITCH__SWITCH_SCHEDULES, Switch.class, msgs );
+            if( switch_ != null )
+                msgs = ( ( InternalEObject ) switch_ ).eInverseRemove( this, CimPackage.SWITCH__SWITCH_SCHEDULES,
+                        Switch.class, msgs );
             return basicSetSwitch( ( Switch ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

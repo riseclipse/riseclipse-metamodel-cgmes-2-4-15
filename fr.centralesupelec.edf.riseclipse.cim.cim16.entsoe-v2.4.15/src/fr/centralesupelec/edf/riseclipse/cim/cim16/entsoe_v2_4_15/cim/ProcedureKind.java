@@ -167,8 +167,13 @@ public enum ProcedureKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final ProcedureKind[] VALUES_ARRAY = new ProcedureKind[] { INSPECTION, DIAGNOSIS, MAINTENANCE, TEST,
-            OTHER, };
+    private static final ProcedureKind[] VALUES_ARRAY = new ProcedureKind[] {
+            INSPECTION,
+            DIAGNOSIS,
+            MAINTENANCE,
+            TEST,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Procedure Kind</b></em>' enumerators.

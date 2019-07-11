@@ -135,8 +135,9 @@ public class StringMeasurementValueImpl extends MeasurementValueImpl implements 
         value = newValue;
         boolean oldValueESet = valueESet;
         valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STRING_MEASUREMENT_VALUE__VALUE, oldValue, value, !oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STRING_MEASUREMENT_VALUE__VALUE,
+                    oldValue, value, !oldValueESet ) );
     }
 
     /**
@@ -150,8 +151,9 @@ public class StringMeasurementValueImpl extends MeasurementValueImpl implements 
         boolean oldValueESet = valueESet;
         value = VALUE_EDEFAULT;
         valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STRING_MEASUREMENT_VALUE__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STRING_MEASUREMENT_VALUE__VALUE,
+                    oldValue, VALUE_EDEFAULT, oldValueESet ) );
     }
 
     /**
@@ -206,19 +208,22 @@ public class StringMeasurementValueImpl extends MeasurementValueImpl implements 
     public void setStringMeasurement( StringMeasurement newStringMeasurement ) {
         if( newStringMeasurement != stringMeasurement ) {
             NotificationChain msgs = null;
-            if( stringMeasurement != null ) msgs = ( ( InternalEObject ) stringMeasurement ).eInverseRemove( this,
-                    CimPackage.STRING_MEASUREMENT__STRING_MEASUREMENT_VALUES, StringMeasurement.class, msgs );
-            if( newStringMeasurement != null ) msgs = ( ( InternalEObject ) newStringMeasurement ).eInverseAdd( this,
-                    CimPackage.STRING_MEASUREMENT__STRING_MEASUREMENT_VALUES, StringMeasurement.class, msgs );
+            if( stringMeasurement != null )
+                msgs = ( ( InternalEObject ) stringMeasurement ).eInverseRemove( this,
+                        CimPackage.STRING_MEASUREMENT__STRING_MEASUREMENT_VALUES, StringMeasurement.class, msgs );
+            if( newStringMeasurement != null )
+                msgs = ( ( InternalEObject ) newStringMeasurement ).eInverseAdd( this,
+                        CimPackage.STRING_MEASUREMENT__STRING_MEASUREMENT_VALUES, StringMeasurement.class, msgs );
             msgs = basicSetStringMeasurement( newStringMeasurement, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldStringMeasurementESet = stringMeasurementESet;
             stringMeasurementESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.STRING_MEASUREMENT_VALUE__STRING_MEASUREMENT, newStringMeasurement, newStringMeasurement,
-                    !oldStringMeasurementESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.STRING_MEASUREMENT_VALUE__STRING_MEASUREMENT, newStringMeasurement,
+                        newStringMeasurement, !oldStringMeasurementESet ) );
         }
     }
 
@@ -261,8 +266,10 @@ public class StringMeasurementValueImpl extends MeasurementValueImpl implements 
         else {
             boolean oldStringMeasurementESet = stringMeasurementESet;
             stringMeasurementESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.STRING_MEASUREMENT_VALUE__STRING_MEASUREMENT, null, null, oldStringMeasurementESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.STRING_MEASUREMENT_VALUE__STRING_MEASUREMENT, null, null,
+                        oldStringMeasurementESet ) );
         }
     }
 
@@ -285,8 +292,9 @@ public class StringMeasurementValueImpl extends MeasurementValueImpl implements 
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.STRING_MEASUREMENT_VALUE__STRING_MEASUREMENT:
-            if( stringMeasurement != null ) msgs = ( ( InternalEObject ) stringMeasurement ).eInverseRemove( this,
-                    CimPackage.STRING_MEASUREMENT__STRING_MEASUREMENT_VALUES, StringMeasurement.class, msgs );
+            if( stringMeasurement != null )
+                msgs = ( ( InternalEObject ) stringMeasurement ).eInverseRemove( this,
+                        CimPackage.STRING_MEASUREMENT__STRING_MEASUREMENT_VALUES, StringMeasurement.class, msgs );
             return basicSetStringMeasurement( ( StringMeasurement ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -383,7 +391,7 @@ public class StringMeasurementValueImpl extends MeasurementValueImpl implements 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (value: " );
         if( valueESet )
             result.append( value );

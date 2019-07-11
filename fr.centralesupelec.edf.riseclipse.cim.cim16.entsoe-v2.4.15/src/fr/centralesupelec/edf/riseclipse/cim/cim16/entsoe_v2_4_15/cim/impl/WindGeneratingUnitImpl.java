@@ -129,9 +129,10 @@ public class WindGeneratingUnitImpl extends GeneratingUnitImpl implements WindGe
         boolean oldWindGenUnitTypeESet = windGenUnitTypeESet;
         windGenUnitType = WIND_GEN_UNIT_TYPE_EDEFAULT;
         windGenUnitTypeESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_GENERATING_UNIT__WIND_GEN_UNIT_TYPE,
-                        oldWindGenUnitType, WIND_GEN_UNIT_TYPE_EDEFAULT, oldWindGenUnitTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.WIND_GENERATING_UNIT__WIND_GEN_UNIT_TYPE, oldWindGenUnitType,
+                    WIND_GEN_UNIT_TYPE_EDEFAULT, oldWindGenUnitTypeESet ) );
     }
 
     /**
@@ -211,7 +212,7 @@ public class WindGeneratingUnitImpl extends GeneratingUnitImpl implements WindGe
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (windGenUnitType: " );
         if( windGenUnitTypeESet )
             result.append( windGenUnitType );

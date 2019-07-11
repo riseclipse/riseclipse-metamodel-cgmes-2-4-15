@@ -167,18 +167,21 @@ public class StreetAddressImpl extends MinimalEObjectImpl.Container implements S
     public void setStatus( Status newStatus ) {
         if( newStatus != status ) {
             NotificationChain msgs = null;
-            if( status != null ) msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.STREET_ADDRESS__STATUS, null, msgs );
-            if( newStatus != null ) msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.STREET_ADDRESS__STATUS, null, msgs );
+            if( status != null )
+                msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.STREET_ADDRESS__STATUS, null, msgs );
+            if( newStatus != null )
+                msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.STREET_ADDRESS__STATUS, null, msgs );
             msgs = basicSetStatus( newStatus, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldStatusESet = statusESet;
             statusESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.STREET_ADDRESS__STATUS, newStatus, newStatus, !oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STREET_ADDRESS__STATUS, newStatus,
+                        newStatus, !oldStatusESet ) );
         }
     }
 
@@ -220,8 +223,9 @@ public class StreetAddressImpl extends MinimalEObjectImpl.Container implements S
         else {
             boolean oldStatusESet = statusESet;
             statusESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.STREET_ADDRESS__STATUS, null, null, oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STREET_ADDRESS__STATUS, null, null,
+                        oldStatusESet ) );
         }
     }
 
@@ -275,10 +279,12 @@ public class StreetAddressImpl extends MinimalEObjectImpl.Container implements S
     public void setStreetDetail( StreetDetail newStreetDetail ) {
         if( newStreetDetail != streetDetail ) {
             NotificationChain msgs = null;
-            if( streetDetail != null ) msgs = ( ( InternalEObject ) streetDetail ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.STREET_ADDRESS__STREET_DETAIL, null, msgs );
-            if( newStreetDetail != null ) msgs = ( ( InternalEObject ) newStreetDetail ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.STREET_ADDRESS__STREET_DETAIL, null, msgs );
+            if( streetDetail != null )
+                msgs = ( ( InternalEObject ) streetDetail ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.STREET_ADDRESS__STREET_DETAIL, null, msgs );
+            if( newStreetDetail != null )
+                msgs = ( ( InternalEObject ) newStreetDetail ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.STREET_ADDRESS__STREET_DETAIL, null, msgs );
             msgs = basicSetStreetDetail( newStreetDetail, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -329,8 +335,9 @@ public class StreetAddressImpl extends MinimalEObjectImpl.Container implements S
         else {
             boolean oldStreetDetailESet = streetDetailESet;
             streetDetailESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.STREET_ADDRESS__STREET_DETAIL, null, null, oldStreetDetailESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STREET_ADDRESS__STREET_DETAIL,
+                        null, null, oldStreetDetailESet ) );
         }
     }
 
@@ -384,18 +391,21 @@ public class StreetAddressImpl extends MinimalEObjectImpl.Container implements S
     public void setTownDetail( TownDetail newTownDetail ) {
         if( newTownDetail != townDetail ) {
             NotificationChain msgs = null;
-            if( townDetail != null ) msgs = ( ( InternalEObject ) townDetail ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.STREET_ADDRESS__TOWN_DETAIL, null, msgs );
-            if( newTownDetail != null ) msgs = ( ( InternalEObject ) newTownDetail ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.STREET_ADDRESS__TOWN_DETAIL, null, msgs );
+            if( townDetail != null )
+                msgs = ( ( InternalEObject ) townDetail ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.STREET_ADDRESS__TOWN_DETAIL, null, msgs );
+            if( newTownDetail != null )
+                msgs = ( ( InternalEObject ) newTownDetail ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.STREET_ADDRESS__TOWN_DETAIL, null, msgs );
             msgs = basicSetTownDetail( newTownDetail, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTownDetailESet = townDetailESet;
             townDetailESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.STREET_ADDRESS__TOWN_DETAIL, newTownDetail, newTownDetail, !oldTownDetailESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STREET_ADDRESS__TOWN_DETAIL,
+                        newTownDetail, newTownDetail, !oldTownDetailESet ) );
         }
     }
 
@@ -437,8 +447,9 @@ public class StreetAddressImpl extends MinimalEObjectImpl.Container implements S
         else {
             boolean oldTownDetailESet = townDetailESet;
             townDetailESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.STREET_ADDRESS__TOWN_DETAIL, null, null, oldTownDetailESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STREET_ADDRESS__TOWN_DETAIL, null,
+                        null, oldTownDetailESet ) );
         }
     }
 

@@ -126,8 +126,9 @@ public class AssetInfoImpl extends IdentifiedObjectImpl implements AssetInfo {
             InternalEObject oldAssetModel = ( InternalEObject ) assetModel;
             assetModel = ( AssetModel ) eResolveProxy( oldAssetModel );
             if( assetModel != oldAssetModel ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.ASSET_INFO__ASSET_MODEL, oldAssetModel, assetModel ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.ASSET_INFO__ASSET_MODEL,
+                            oldAssetModel, assetModel ) );
             }
         }
         return assetModel;
@@ -172,18 +173,21 @@ public class AssetInfoImpl extends IdentifiedObjectImpl implements AssetInfo {
     public void setAssetModel( AssetModel newAssetModel ) {
         if( newAssetModel != assetModel ) {
             NotificationChain msgs = null;
-            if( assetModel != null ) msgs = ( ( InternalEObject ) assetModel ).eInverseRemove( this,
-                    CimPackage.ASSET_MODEL__ASSET_INFO, AssetModel.class, msgs );
-            if( newAssetModel != null ) msgs = ( ( InternalEObject ) newAssetModel ).eInverseAdd( this,
-                    CimPackage.ASSET_MODEL__ASSET_INFO, AssetModel.class, msgs );
+            if( assetModel != null )
+                msgs = ( ( InternalEObject ) assetModel ).eInverseRemove( this, CimPackage.ASSET_MODEL__ASSET_INFO,
+                        AssetModel.class, msgs );
+            if( newAssetModel != null )
+                msgs = ( ( InternalEObject ) newAssetModel ).eInverseAdd( this, CimPackage.ASSET_MODEL__ASSET_INFO,
+                        AssetModel.class, msgs );
             msgs = basicSetAssetModel( newAssetModel, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldAssetModelESet = assetModelESet;
             assetModelESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ASSET_INFO__ASSET_MODEL, newAssetModel, newAssetModel, !oldAssetModelESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET_INFO__ASSET_MODEL,
+                        newAssetModel, newAssetModel, !oldAssetModelESet ) );
         }
     }
 
@@ -225,8 +229,9 @@ public class AssetInfoImpl extends IdentifiedObjectImpl implements AssetInfo {
         else {
             boolean oldAssetModelESet = assetModelESet;
             assetModelESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ASSET_INFO__ASSET_MODEL, null, null, oldAssetModelESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET_INFO__ASSET_MODEL, null,
+                        null, oldAssetModelESet ) );
         }
     }
 
@@ -319,8 +324,9 @@ public class AssetInfoImpl extends IdentifiedObjectImpl implements AssetInfo {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ASSET_INFO__ASSET_MODEL:
-            if( assetModel != null ) msgs = ( ( InternalEObject ) assetModel ).eInverseRemove( this,
-                    CimPackage.ASSET_MODEL__ASSET_INFO, AssetModel.class, msgs );
+            if( assetModel != null )
+                msgs = ( ( InternalEObject ) assetModel ).eInverseRemove( this, CimPackage.ASSET_MODEL__ASSET_INFO,
+                        AssetModel.class, msgs );
             return basicSetAssetModel( ( AssetModel ) otherEnd, msgs );
         case CimPackage.ASSET_INFO__POWER_SYSTEM_RESOURCES:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getPowerSystemResources() )

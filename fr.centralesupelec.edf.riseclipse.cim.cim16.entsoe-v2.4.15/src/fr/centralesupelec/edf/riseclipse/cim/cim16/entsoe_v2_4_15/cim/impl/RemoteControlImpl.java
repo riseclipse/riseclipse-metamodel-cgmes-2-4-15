@@ -341,8 +341,9 @@ public class RemoteControlImpl extends RemotePointImpl implements RemoteControl 
             InternalEObject oldControl = ( InternalEObject ) control;
             control = ( Control ) eResolveProxy( oldControl );
             if( control != oldControl ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.REMOTE_CONTROL__CONTROL, oldControl, control ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.REMOTE_CONTROL__CONTROL,
+                            oldControl, control ) );
             }
         }
         return control;
@@ -387,18 +388,21 @@ public class RemoteControlImpl extends RemotePointImpl implements RemoteControl 
     public void setControl( Control newControl ) {
         if( newControl != control ) {
             NotificationChain msgs = null;
-            if( control != null ) msgs = ( ( InternalEObject ) control ).eInverseRemove( this,
-                    CimPackage.CONTROL__REMOTE_CONTROL, Control.class, msgs );
-            if( newControl != null ) msgs = ( ( InternalEObject ) newControl ).eInverseAdd( this,
-                    CimPackage.CONTROL__REMOTE_CONTROL, Control.class, msgs );
+            if( control != null )
+                msgs = ( ( InternalEObject ) control ).eInverseRemove( this, CimPackage.CONTROL__REMOTE_CONTROL,
+                        Control.class, msgs );
+            if( newControl != null )
+                msgs = ( ( InternalEObject ) newControl ).eInverseAdd( this, CimPackage.CONTROL__REMOTE_CONTROL,
+                        Control.class, msgs );
             msgs = basicSetControl( newControl, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldControlESet = controlESet;
             controlESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.REMOTE_CONTROL__CONTROL, newControl, newControl, !oldControlESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REMOTE_CONTROL__CONTROL, newControl,
+                        newControl, !oldControlESet ) );
         }
     }
 
@@ -440,8 +444,9 @@ public class RemoteControlImpl extends RemotePointImpl implements RemoteControl 
         else {
             boolean oldControlESet = controlESet;
             controlESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REMOTE_CONTROL__CONTROL, null, null, oldControlESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.REMOTE_CONTROL__CONTROL, null,
+                        null, oldControlESet ) );
         }
     }
 
@@ -464,8 +469,9 @@ public class RemoteControlImpl extends RemotePointImpl implements RemoteControl 
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.REMOTE_CONTROL__CONTROL:
-            if( control != null ) msgs = ( ( InternalEObject ) control ).eInverseRemove( this,
-                    CimPackage.CONTROL__REMOTE_CONTROL, Control.class, msgs );
+            if( control != null )
+                msgs = ( ( InternalEObject ) control ).eInverseRemove( this, CimPackage.CONTROL__REMOTE_CONTROL,
+                        Control.class, msgs );
             return basicSetControl( ( Control ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -583,7 +589,7 @@ public class RemoteControlImpl extends RemotePointImpl implements RemoteControl 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (actuatorMaximum: " );
         if( actuatorMaximumESet )
             result.append( actuatorMaximum );

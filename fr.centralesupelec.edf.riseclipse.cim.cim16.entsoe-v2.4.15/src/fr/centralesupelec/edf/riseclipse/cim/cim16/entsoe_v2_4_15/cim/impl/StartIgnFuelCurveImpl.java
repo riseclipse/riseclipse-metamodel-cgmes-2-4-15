@@ -152,9 +152,10 @@ public class StartIgnFuelCurveImpl extends CurveImpl implements StartIgnFuelCurv
         boolean oldIgnitionFuelTypeESet = ignitionFuelTypeESet;
         ignitionFuelType = IGNITION_FUEL_TYPE_EDEFAULT;
         ignitionFuelTypeESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.START_IGN_FUEL_CURVE__IGNITION_FUEL_TYPE,
-                        oldIgnitionFuelType, IGNITION_FUEL_TYPE_EDEFAULT, oldIgnitionFuelTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.START_IGN_FUEL_CURVE__IGNITION_FUEL_TYPE, oldIgnitionFuelType,
+                    IGNITION_FUEL_TYPE_EDEFAULT, oldIgnitionFuelTypeESet ) );
     }
 
     /**
@@ -178,8 +179,9 @@ public class StartIgnFuelCurveImpl extends CurveImpl implements StartIgnFuelCurv
             InternalEObject oldStartupModel = ( InternalEObject ) startupModel;
             startupModel = ( StartupModel ) eResolveProxy( oldStartupModel );
             if( startupModel != oldStartupModel ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.START_IGN_FUEL_CURVE__STARTUP_MODEL, oldStartupModel, startupModel ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.START_IGN_FUEL_CURVE__STARTUP_MODEL, oldStartupModel, startupModel ) );
             }
         }
         return startupModel;
@@ -225,10 +227,12 @@ public class StartIgnFuelCurveImpl extends CurveImpl implements StartIgnFuelCurv
     public void setStartupModel( StartupModel newStartupModel ) {
         if( newStartupModel != startupModel ) {
             NotificationChain msgs = null;
-            if( startupModel != null ) msgs = ( ( InternalEObject ) startupModel ).eInverseRemove( this,
-                    CimPackage.STARTUP_MODEL__START_IGN_FUEL_CURVE, StartupModel.class, msgs );
-            if( newStartupModel != null ) msgs = ( ( InternalEObject ) newStartupModel ).eInverseAdd( this,
-                    CimPackage.STARTUP_MODEL__START_IGN_FUEL_CURVE, StartupModel.class, msgs );
+            if( startupModel != null )
+                msgs = ( ( InternalEObject ) startupModel ).eInverseRemove( this,
+                        CimPackage.STARTUP_MODEL__START_IGN_FUEL_CURVE, StartupModel.class, msgs );
+            if( newStartupModel != null )
+                msgs = ( ( InternalEObject ) newStartupModel ).eInverseAdd( this,
+                        CimPackage.STARTUP_MODEL__START_IGN_FUEL_CURVE, StartupModel.class, msgs );
             msgs = basicSetStartupModel( newStartupModel, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -279,8 +283,9 @@ public class StartIgnFuelCurveImpl extends CurveImpl implements StartIgnFuelCurv
         else {
             boolean oldStartupModelESet = startupModelESet;
             startupModelESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.START_IGN_FUEL_CURVE__STARTUP_MODEL, null, null, oldStartupModelESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.START_IGN_FUEL_CURVE__STARTUP_MODEL, null, null, oldStartupModelESet ) );
         }
     }
 
@@ -303,8 +308,9 @@ public class StartIgnFuelCurveImpl extends CurveImpl implements StartIgnFuelCurv
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.START_IGN_FUEL_CURVE__STARTUP_MODEL:
-            if( startupModel != null ) msgs = ( ( InternalEObject ) startupModel ).eInverseRemove( this,
-                    CimPackage.STARTUP_MODEL__START_IGN_FUEL_CURVE, StartupModel.class, msgs );
+            if( startupModel != null )
+                msgs = ( ( InternalEObject ) startupModel ).eInverseRemove( this,
+                        CimPackage.STARTUP_MODEL__START_IGN_FUEL_CURVE, StartupModel.class, msgs );
             return basicSetStartupModel( ( StartupModel ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -402,7 +408,7 @@ public class StartIgnFuelCurveImpl extends CurveImpl implements StartIgnFuelCurv
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (ignitionFuelType: " );
         if( ignitionFuelTypeESet )
             result.append( ignitionFuelType );

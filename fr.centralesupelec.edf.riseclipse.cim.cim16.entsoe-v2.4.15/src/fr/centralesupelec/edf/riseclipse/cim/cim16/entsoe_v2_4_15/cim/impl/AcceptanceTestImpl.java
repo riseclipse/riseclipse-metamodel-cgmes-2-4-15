@@ -175,8 +175,9 @@ public class AcceptanceTestImpl extends MinimalEObjectImpl.Container implements 
         dateTime = newDateTime;
         boolean oldDateTimeESet = dateTimeESet;
         dateTimeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACCEPTANCE_TEST__DATE_TIME, oldDateTime, dateTime, !oldDateTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACCEPTANCE_TEST__DATE_TIME, oldDateTime,
+                    dateTime, !oldDateTimeESet ) );
     }
 
     /**
@@ -190,8 +191,9 @@ public class AcceptanceTestImpl extends MinimalEObjectImpl.Container implements 
         boolean oldDateTimeESet = dateTimeESet;
         dateTime = DATE_TIME_EDEFAULT;
         dateTimeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACCEPTANCE_TEST__DATE_TIME, oldDateTime, DATE_TIME_EDEFAULT, oldDateTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACCEPTANCE_TEST__DATE_TIME,
+                    oldDateTime, DATE_TIME_EDEFAULT, oldDateTimeESet ) );
     }
 
     /**
@@ -225,8 +227,9 @@ public class AcceptanceTestImpl extends MinimalEObjectImpl.Container implements 
         success = newSuccess;
         boolean oldSuccessESet = successESet;
         successESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACCEPTANCE_TEST__SUCCESS, oldSuccess, success, !oldSuccessESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACCEPTANCE_TEST__SUCCESS, oldSuccess,
+                    success, !oldSuccessESet ) );
     }
 
     /**
@@ -240,8 +243,9 @@ public class AcceptanceTestImpl extends MinimalEObjectImpl.Container implements 
         boolean oldSuccessESet = successESet;
         success = SUCCESS_EDEFAULT;
         successESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACCEPTANCE_TEST__SUCCESS, oldSuccess, SUCCESS_EDEFAULT, oldSuccessESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACCEPTANCE_TEST__SUCCESS, oldSuccess,
+                    SUCCESS_EDEFAULT, oldSuccessESet ) );
     }
 
     /**
@@ -275,8 +279,9 @@ public class AcceptanceTestImpl extends MinimalEObjectImpl.Container implements 
         type = newType;
         boolean oldTypeESet = typeESet;
         typeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACCEPTANCE_TEST__TYPE, oldType, type, !oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACCEPTANCE_TEST__TYPE, oldType, type,
+                    !oldTypeESet ) );
     }
 
     /**
@@ -290,8 +295,9 @@ public class AcceptanceTestImpl extends MinimalEObjectImpl.Container implements 
         boolean oldTypeESet = typeESet;
         type = TYPE_EDEFAULT;
         typeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACCEPTANCE_TEST__TYPE, oldType, TYPE_EDEFAULT, oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACCEPTANCE_TEST__TYPE, oldType,
+                    TYPE_EDEFAULT, oldTypeESet ) );
     }
 
     /**
@@ -391,7 +397,7 @@ public class AcceptanceTestImpl extends MinimalEObjectImpl.Container implements 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (dateTime: " );
         if( dateTimeESet )
             result.append( dateTime );

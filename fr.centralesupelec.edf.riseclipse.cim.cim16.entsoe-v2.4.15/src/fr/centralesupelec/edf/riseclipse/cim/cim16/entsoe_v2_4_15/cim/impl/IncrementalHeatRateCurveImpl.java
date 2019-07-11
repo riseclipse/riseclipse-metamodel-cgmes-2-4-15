@@ -135,9 +135,10 @@ public class IncrementalHeatRateCurveImpl extends CurveImpl implements Increment
         isNetGrossP = newIsNetGrossP;
         boolean oldIsNetGrossPESet = isNetGrossPESet;
         isNetGrossPESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.INCREMENTAL_HEAT_RATE_CURVE__IS_NET_GROSS_P,
-                        oldIsNetGrossP, isNetGrossP, !oldIsNetGrossPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.INCREMENTAL_HEAT_RATE_CURVE__IS_NET_GROSS_P, oldIsNetGrossP, isNetGrossP,
+                    !oldIsNetGrossPESet ) );
     }
 
     /**
@@ -151,9 +152,10 @@ public class IncrementalHeatRateCurveImpl extends CurveImpl implements Increment
         boolean oldIsNetGrossPESet = isNetGrossPESet;
         isNetGrossP = IS_NET_GROSS_P_EDEFAULT;
         isNetGrossPESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.INCREMENTAL_HEAT_RATE_CURVE__IS_NET_GROSS_P,
-                        oldIsNetGrossP, IS_NET_GROSS_P_EDEFAULT, oldIsNetGrossPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.INCREMENTAL_HEAT_RATE_CURVE__IS_NET_GROSS_P, oldIsNetGrossP, IS_NET_GROSS_P_EDEFAULT,
+                    oldIsNetGrossPESet ) );
     }
 
     /**
@@ -222,9 +224,10 @@ public class IncrementalHeatRateCurveImpl extends CurveImpl implements Increment
         else {
             boolean oldThermalGeneratingUnitESet = thermalGeneratingUnitESet;
             thermalGeneratingUnitESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.INCREMENTAL_HEAT_RATE_CURVE__THERMAL_GENERATING_UNIT, newThermalGeneratingUnit,
-                    newThermalGeneratingUnit, !oldThermalGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.INCREMENTAL_HEAT_RATE_CURVE__THERMAL_GENERATING_UNIT, newThermalGeneratingUnit,
+                        newThermalGeneratingUnit, !oldThermalGeneratingUnitESet ) );
         }
     }
 
@@ -268,9 +271,10 @@ public class IncrementalHeatRateCurveImpl extends CurveImpl implements Increment
         else {
             boolean oldThermalGeneratingUnitESet = thermalGeneratingUnitESet;
             thermalGeneratingUnitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.INCREMENTAL_HEAT_RATE_CURVE__THERMAL_GENERATING_UNIT, null, null,
-                    oldThermalGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.INCREMENTAL_HEAT_RATE_CURVE__THERMAL_GENERATING_UNIT, null, null,
+                        oldThermalGeneratingUnitESet ) );
         }
     }
 
@@ -393,7 +397,7 @@ public class IncrementalHeatRateCurveImpl extends CurveImpl implements Increment
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (isNetGrossP: " );
         if( isNetGrossPESet )
             result.append( isNetGrossP );

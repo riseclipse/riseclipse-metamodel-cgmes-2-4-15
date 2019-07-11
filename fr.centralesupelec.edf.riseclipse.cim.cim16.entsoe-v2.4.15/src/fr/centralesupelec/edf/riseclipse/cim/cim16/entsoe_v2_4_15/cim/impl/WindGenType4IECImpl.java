@@ -202,8 +202,9 @@ public class WindGenType4IECImpl extends WindTurbineType3or4IECImpl implements W
         dipmax = newDipmax;
         boolean oldDipmaxESet = dipmaxESet;
         dipmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_GEN_TYPE4_IEC__DIPMAX, oldDipmax, dipmax, !oldDipmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_GEN_TYPE4_IEC__DIPMAX, oldDipmax,
+                    dipmax, !oldDipmaxESet ) );
     }
 
     /**
@@ -217,8 +218,9 @@ public class WindGenType4IECImpl extends WindTurbineType3or4IECImpl implements W
         boolean oldDipmaxESet = dipmaxESet;
         dipmax = DIPMAX_EDEFAULT;
         dipmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_GEN_TYPE4_IEC__DIPMAX, oldDipmax, DIPMAX_EDEFAULT, oldDipmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_GEN_TYPE4_IEC__DIPMAX, oldDipmax,
+                    DIPMAX_EDEFAULT, oldDipmaxESet ) );
     }
 
     /**
@@ -252,8 +254,9 @@ public class WindGenType4IECImpl extends WindTurbineType3or4IECImpl implements W
         diqmax = newDiqmax;
         boolean oldDiqmaxESet = diqmaxESet;
         diqmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_GEN_TYPE4_IEC__DIQMAX, oldDiqmax, diqmax, !oldDiqmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_GEN_TYPE4_IEC__DIQMAX, oldDiqmax,
+                    diqmax, !oldDiqmaxESet ) );
     }
 
     /**
@@ -267,8 +270,9 @@ public class WindGenType4IECImpl extends WindTurbineType3or4IECImpl implements W
         boolean oldDiqmaxESet = diqmaxESet;
         diqmax = DIQMAX_EDEFAULT;
         diqmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_GEN_TYPE4_IEC__DIQMAX, oldDiqmax, DIQMAX_EDEFAULT, oldDiqmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_GEN_TYPE4_IEC__DIQMAX, oldDiqmax,
+                    DIQMAX_EDEFAULT, oldDiqmaxESet ) );
     }
 
     /**
@@ -302,8 +306,9 @@ public class WindGenType4IECImpl extends WindTurbineType3or4IECImpl implements W
         diqmin = newDiqmin;
         boolean oldDiqminESet = diqminESet;
         diqminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_GEN_TYPE4_IEC__DIQMIN, oldDiqmin, diqmin, !oldDiqminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_GEN_TYPE4_IEC__DIQMIN, oldDiqmin,
+                    diqmin, !oldDiqminESet ) );
     }
 
     /**
@@ -317,8 +322,9 @@ public class WindGenType4IECImpl extends WindTurbineType3or4IECImpl implements W
         boolean oldDiqminESet = diqminESet;
         diqmin = DIQMIN_EDEFAULT;
         diqminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_GEN_TYPE4_IEC__DIQMIN, oldDiqmin, DIQMIN_EDEFAULT, oldDiqminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_GEN_TYPE4_IEC__DIQMIN, oldDiqmin,
+                    DIQMIN_EDEFAULT, oldDiqminESet ) );
     }
 
     /**
@@ -352,8 +358,9 @@ public class WindGenType4IECImpl extends WindTurbineType3or4IECImpl implements W
         tg = newTg;
         boolean oldTgESet = tgESet;
         tgESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_GEN_TYPE4_IEC__TG, oldTg, tg, !oldTgESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_GEN_TYPE4_IEC__TG, oldTg, tg,
+                    !oldTgESet ) );
     }
 
     /**
@@ -367,8 +374,9 @@ public class WindGenType4IECImpl extends WindTurbineType3or4IECImpl implements W
         boolean oldTgESet = tgESet;
         tg = TG_EDEFAULT;
         tgESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_GEN_TYPE4_IEC__TG, oldTg, TG_EDEFAULT, oldTgESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_GEN_TYPE4_IEC__TG, oldTg,
+                    TG_EDEFAULT, oldTgESet ) );
     }
 
     /**
@@ -478,7 +486,7 @@ public class WindGenType4IECImpl extends WindTurbineType3or4IECImpl implements W
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (dipmax: " );
         if( dipmaxESet )
             result.append( dipmax );

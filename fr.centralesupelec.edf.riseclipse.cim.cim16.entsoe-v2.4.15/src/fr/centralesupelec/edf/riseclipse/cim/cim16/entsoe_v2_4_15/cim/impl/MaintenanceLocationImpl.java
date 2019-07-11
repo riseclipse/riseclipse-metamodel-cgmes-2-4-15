@@ -202,8 +202,9 @@ public class MaintenanceLocationImpl extends WorkLocationImpl implements Mainten
         block = newBlock;
         boolean oldBlockESet = blockESet;
         blockESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.MAINTENANCE_LOCATION__BLOCK, oldBlock, block, !oldBlockESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MAINTENANCE_LOCATION__BLOCK, oldBlock,
+                    block, !oldBlockESet ) );
     }
 
     /**
@@ -217,8 +218,9 @@ public class MaintenanceLocationImpl extends WorkLocationImpl implements Mainten
         boolean oldBlockESet = blockESet;
         block = BLOCK_EDEFAULT;
         blockESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MAINTENANCE_LOCATION__BLOCK, oldBlock, BLOCK_EDEFAULT, oldBlockESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MAINTENANCE_LOCATION__BLOCK, oldBlock,
+                    BLOCK_EDEFAULT, oldBlockESet ) );
     }
 
     /**
@@ -252,8 +254,9 @@ public class MaintenanceLocationImpl extends WorkLocationImpl implements Mainten
         lot = newLot;
         boolean oldLotESet = lotESet;
         lotESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.MAINTENANCE_LOCATION__LOT, oldLot, lot, !oldLotESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MAINTENANCE_LOCATION__LOT, oldLot, lot,
+                    !oldLotESet ) );
     }
 
     /**
@@ -267,8 +270,9 @@ public class MaintenanceLocationImpl extends WorkLocationImpl implements Mainten
         boolean oldLotESet = lotESet;
         lot = LOT_EDEFAULT;
         lotESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MAINTENANCE_LOCATION__LOT, oldLot, LOT_EDEFAULT, oldLotESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MAINTENANCE_LOCATION__LOT, oldLot,
+                    LOT_EDEFAULT, oldLotESet ) );
     }
 
     /**
@@ -302,9 +306,10 @@ public class MaintenanceLocationImpl extends WorkLocationImpl implements Mainten
         nearestIntersection = newNearestIntersection;
         boolean oldNearestIntersectionESet = nearestIntersectionESet;
         nearestIntersectionESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.MAINTENANCE_LOCATION__NEAREST_INTERSECTION,
-                        oldNearestIntersection, nearestIntersection, !oldNearestIntersectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.MAINTENANCE_LOCATION__NEAREST_INTERSECTION, oldNearestIntersection, nearestIntersection,
+                    !oldNearestIntersectionESet ) );
     }
 
     /**
@@ -318,9 +323,10 @@ public class MaintenanceLocationImpl extends WorkLocationImpl implements Mainten
         boolean oldNearestIntersectionESet = nearestIntersectionESet;
         nearestIntersection = NEAREST_INTERSECTION_EDEFAULT;
         nearestIntersectionESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.MAINTENANCE_LOCATION__NEAREST_INTERSECTION,
-                        oldNearestIntersection, NEAREST_INTERSECTION_EDEFAULT, oldNearestIntersectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.MAINTENANCE_LOCATION__NEAREST_INTERSECTION, oldNearestIntersection,
+                    NEAREST_INTERSECTION_EDEFAULT, oldNearestIntersectionESet ) );
     }
 
     /**
@@ -354,8 +360,9 @@ public class MaintenanceLocationImpl extends WorkLocationImpl implements Mainten
         subdivision = newSubdivision;
         boolean oldSubdivisionESet = subdivisionESet;
         subdivisionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.MAINTENANCE_LOCATION__SUBDIVISION, oldSubdivision, subdivision, !oldSubdivisionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MAINTENANCE_LOCATION__SUBDIVISION,
+                    oldSubdivision, subdivision, !oldSubdivisionESet ) );
     }
 
     /**
@@ -481,7 +488,7 @@ public class MaintenanceLocationImpl extends WorkLocationImpl implements Mainten
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (block: " );
         if( blockESet )
             result.append( block );

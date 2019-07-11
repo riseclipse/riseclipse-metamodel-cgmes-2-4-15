@@ -182,9 +182,10 @@ public class ProcedureDataSetImpl extends DocumentImpl implements ProcedureDataS
         boolean oldCompletedDateTimeESet = completedDateTimeESet;
         completedDateTime = COMPLETED_DATE_TIME_EDEFAULT;
         completedDateTimeESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PROCEDURE_DATA_SET__COMPLETED_DATE_TIME,
-                        oldCompletedDateTime, COMPLETED_DATE_TIME_EDEFAULT, oldCompletedDateTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PROCEDURE_DATA_SET__COMPLETED_DATE_TIME, oldCompletedDateTime,
+                    COMPLETED_DATE_TIME_EDEFAULT, oldCompletedDateTimeESet ) );
     }
 
     /**
@@ -272,18 +273,21 @@ public class ProcedureDataSetImpl extends DocumentImpl implements ProcedureDataS
     public void setProcedure( Procedure newProcedure ) {
         if( newProcedure != procedure ) {
             NotificationChain msgs = null;
-            if( procedure != null ) msgs = ( ( InternalEObject ) procedure ).eInverseRemove( this,
-                    CimPackage.PROCEDURE__PROCEDURE_DATA_SETS, Procedure.class, msgs );
-            if( newProcedure != null ) msgs = ( ( InternalEObject ) newProcedure ).eInverseAdd( this,
-                    CimPackage.PROCEDURE__PROCEDURE_DATA_SETS, Procedure.class, msgs );
+            if( procedure != null )
+                msgs = ( ( InternalEObject ) procedure ).eInverseRemove( this,
+                        CimPackage.PROCEDURE__PROCEDURE_DATA_SETS, Procedure.class, msgs );
+            if( newProcedure != null )
+                msgs = ( ( InternalEObject ) newProcedure ).eInverseAdd( this,
+                        CimPackage.PROCEDURE__PROCEDURE_DATA_SETS, Procedure.class, msgs );
             msgs = basicSetProcedure( newProcedure, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldProcedureESet = procedureESet;
             procedureESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROCEDURE_DATA_SET__PROCEDURE, newProcedure, newProcedure, !oldProcedureESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PROCEDURE_DATA_SET__PROCEDURE,
+                        newProcedure, newProcedure, !oldProcedureESet ) );
         }
     }
 
@@ -325,8 +329,9 @@ public class ProcedureDataSetImpl extends DocumentImpl implements ProcedureDataS
         else {
             boolean oldProcedureESet = procedureESet;
             procedureESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROCEDURE_DATA_SET__PROCEDURE, null, null, oldProcedureESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PROCEDURE_DATA_SET__PROCEDURE,
+                        null, null, oldProcedureESet ) );
         }
     }
 
@@ -391,8 +396,9 @@ public class ProcedureDataSetImpl extends DocumentImpl implements ProcedureDataS
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getProperties() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.PROCEDURE_DATA_SET__PROCEDURE:
-            if( procedure != null ) msgs = ( ( InternalEObject ) procedure ).eInverseRemove( this,
-                    CimPackage.PROCEDURE__PROCEDURE_DATA_SETS, Procedure.class, msgs );
+            if( procedure != null )
+                msgs = ( ( InternalEObject ) procedure ).eInverseRemove( this,
+                        CimPackage.PROCEDURE__PROCEDURE_DATA_SETS, Procedure.class, msgs );
             return basicSetProcedure( ( Procedure ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -516,7 +522,7 @@ public class ProcedureDataSetImpl extends DocumentImpl implements ProcedureDataS
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (completedDateTime: " );
         if( completedDateTimeESet )
             result.append( completedDateTime );

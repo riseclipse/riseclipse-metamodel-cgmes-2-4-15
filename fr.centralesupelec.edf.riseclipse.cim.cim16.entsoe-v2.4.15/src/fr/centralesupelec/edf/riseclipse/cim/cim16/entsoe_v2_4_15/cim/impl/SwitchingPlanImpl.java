@@ -208,8 +208,9 @@ public class SwitchingPlanImpl extends SwitchingStepGroupImpl implements Switchi
         purpose = newPurpose;
         boolean oldPurposeESet = purposeESet;
         purposeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SWITCHING_PLAN__PURPOSE, oldPurpose, purpose, !oldPurposeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCHING_PLAN__PURPOSE, oldPurpose,
+                    purpose, !oldPurposeESet ) );
     }
 
     /**
@@ -223,8 +224,9 @@ public class SwitchingPlanImpl extends SwitchingStepGroupImpl implements Switchi
         boolean oldPurposeESet = purposeESet;
         purpose = PURPOSE_EDEFAULT;
         purposeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SWITCHING_PLAN__PURPOSE, oldPurpose, PURPOSE_EDEFAULT, oldPurposeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCHING_PLAN__PURPOSE, oldPurpose,
+                    PURPOSE_EDEFAULT, oldPurposeESet ) );
     }
 
     /**
@@ -258,8 +260,9 @@ public class SwitchingPlanImpl extends SwitchingStepGroupImpl implements Switchi
         rank = newRank;
         boolean oldRankESet = rankESet;
         rankESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SWITCHING_PLAN__RANK, oldRank, rank, !oldRankESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCHING_PLAN__RANK, oldRank, rank,
+                    !oldRankESet ) );
     }
 
     /**
@@ -273,8 +276,9 @@ public class SwitchingPlanImpl extends SwitchingStepGroupImpl implements Switchi
         boolean oldRankESet = rankESet;
         rank = RANK_EDEFAULT;
         rankESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SWITCHING_PLAN__RANK, oldRank, RANK_EDEFAULT, oldRankESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCHING_PLAN__RANK, oldRank,
+                    RANK_EDEFAULT, oldRankESet ) );
     }
 
     /**
@@ -361,18 +365,21 @@ public class SwitchingPlanImpl extends SwitchingStepGroupImpl implements Switchi
     public void setOutage( Outage newOutage ) {
         if( newOutage != outage ) {
             NotificationChain msgs = null;
-            if( outage != null ) msgs = ( ( InternalEObject ) outage ).eInverseRemove( this,
-                    CimPackage.OUTAGE__SWITCHING_PLANS, Outage.class, msgs );
-            if( newOutage != null ) msgs = ( ( InternalEObject ) newOutage ).eInverseAdd( this,
-                    CimPackage.OUTAGE__SWITCHING_PLANS, Outage.class, msgs );
+            if( outage != null )
+                msgs = ( ( InternalEObject ) outage ).eInverseRemove( this, CimPackage.OUTAGE__SWITCHING_PLANS,
+                        Outage.class, msgs );
+            if( newOutage != null )
+                msgs = ( ( InternalEObject ) newOutage ).eInverseAdd( this, CimPackage.OUTAGE__SWITCHING_PLANS,
+                        Outage.class, msgs );
             msgs = basicSetOutage( newOutage, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldOutageESet = outageESet;
             outageESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SWITCHING_PLAN__OUTAGE, newOutage, newOutage, !oldOutageESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCHING_PLAN__OUTAGE, newOutage,
+                        newOutage, !oldOutageESet ) );
         }
     }
 
@@ -414,8 +421,9 @@ public class SwitchingPlanImpl extends SwitchingStepGroupImpl implements Switchi
         else {
             boolean oldOutageESet = outageESet;
             outageESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SWITCHING_PLAN__OUTAGE, null, null, oldOutageESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCHING_PLAN__OUTAGE, null, null,
+                        oldOutageESet ) );
         }
     }
 
@@ -517,8 +525,9 @@ public class SwitchingPlanImpl extends SwitchingStepGroupImpl implements Switchi
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getWorkTasks() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.SWITCHING_PLAN__OUTAGE:
-            if( outage != null ) msgs = ( ( InternalEObject ) outage ).eInverseRemove( this,
-                    CimPackage.OUTAGE__SWITCHING_PLANS, Outage.class, msgs );
+            if( outage != null )
+                msgs = ( ( InternalEObject ) outage ).eInverseRemove( this, CimPackage.OUTAGE__SWITCHING_PLANS,
+                        Outage.class, msgs );
             return basicSetOutage( ( Outage ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -665,7 +674,7 @@ public class SwitchingPlanImpl extends SwitchingStepGroupImpl implements Switchi
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (purpose: " );
         if( purposeESet )
             result.append( purpose );

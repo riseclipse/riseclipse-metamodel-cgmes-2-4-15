@@ -112,8 +112,9 @@ public class BasePowerImpl extends IdentifiedObjectImpl implements BasePower {
         basePower = newBasePower;
         boolean oldBasePowerESet = basePowerESet;
         basePowerESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BASE_POWER__BASE_POWER, oldBasePower, basePower, !oldBasePowerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BASE_POWER__BASE_POWER, oldBasePower,
+                    basePower, !oldBasePowerESet ) );
     }
 
     /**
@@ -127,8 +128,9 @@ public class BasePowerImpl extends IdentifiedObjectImpl implements BasePower {
         boolean oldBasePowerESet = basePowerESet;
         basePower = BASE_POWER_EDEFAULT;
         basePowerESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BASE_POWER__BASE_POWER, oldBasePower, BASE_POWER_EDEFAULT, oldBasePowerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BASE_POWER__BASE_POWER, oldBasePower,
+                    BASE_POWER_EDEFAULT, oldBasePowerESet ) );
     }
 
     /**
@@ -208,7 +210,7 @@ public class BasePowerImpl extends IdentifiedObjectImpl implements BasePower {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (basePower: " );
         if( basePowerESet )
             result.append( basePower );

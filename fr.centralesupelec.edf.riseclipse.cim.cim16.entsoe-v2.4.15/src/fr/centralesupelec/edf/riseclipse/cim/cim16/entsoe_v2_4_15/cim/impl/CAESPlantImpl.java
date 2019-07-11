@@ -238,8 +238,9 @@ public class CAESPlantImpl extends PowerSystemResourceImpl implements CAESPlant 
         ratedCapacityP = newRatedCapacityP;
         boolean oldRatedCapacityPESet = ratedCapacityPESet;
         ratedCapacityPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CAES_PLANT__RATED_CAPACITY_P, oldRatedCapacityP, ratedCapacityP, !oldRatedCapacityPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CAES_PLANT__RATED_CAPACITY_P,
+                    oldRatedCapacityP, ratedCapacityP, !oldRatedCapacityPESet ) );
     }
 
     /**
@@ -279,8 +280,9 @@ public class CAESPlantImpl extends PowerSystemResourceImpl implements CAESPlant 
             InternalEObject oldAirCompressor = ( InternalEObject ) airCompressor;
             airCompressor = ( AirCompressor ) eResolveProxy( oldAirCompressor );
             if( airCompressor != oldAirCompressor ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.CAES_PLANT__AIR_COMPRESSOR, oldAirCompressor, airCompressor ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.CAES_PLANT__AIR_COMPRESSOR,
+                            oldAirCompressor, airCompressor ) );
             }
         }
         return airCompressor;
@@ -325,10 +327,12 @@ public class CAESPlantImpl extends PowerSystemResourceImpl implements CAESPlant 
     public void setAirCompressor( AirCompressor newAirCompressor ) {
         if( newAirCompressor != airCompressor ) {
             NotificationChain msgs = null;
-            if( airCompressor != null ) msgs = ( ( InternalEObject ) airCompressor ).eInverseRemove( this,
-                    CimPackage.AIR_COMPRESSOR__CAES_PLANT, AirCompressor.class, msgs );
-            if( newAirCompressor != null ) msgs = ( ( InternalEObject ) newAirCompressor ).eInverseAdd( this,
-                    CimPackage.AIR_COMPRESSOR__CAES_PLANT, AirCompressor.class, msgs );
+            if( airCompressor != null )
+                msgs = ( ( InternalEObject ) airCompressor ).eInverseRemove( this,
+                        CimPackage.AIR_COMPRESSOR__CAES_PLANT, AirCompressor.class, msgs );
+            if( newAirCompressor != null )
+                msgs = ( ( InternalEObject ) newAirCompressor ).eInverseAdd( this,
+                        CimPackage.AIR_COMPRESSOR__CAES_PLANT, AirCompressor.class, msgs );
             msgs = basicSetAirCompressor( newAirCompressor, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -379,8 +383,9 @@ public class CAESPlantImpl extends PowerSystemResourceImpl implements CAESPlant 
         else {
             boolean oldAirCompressorESet = airCompressorESet;
             airCompressorESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CAES_PLANT__AIR_COMPRESSOR, null, null, oldAirCompressorESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CAES_PLANT__AIR_COMPRESSOR, null,
+                        null, oldAirCompressorESet ) );
         }
     }
 
@@ -493,8 +498,9 @@ public class CAESPlantImpl extends PowerSystemResourceImpl implements CAESPlant 
         else {
             boolean oldThermalGeneratingUnitESet = thermalGeneratingUnitESet;
             thermalGeneratingUnitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CAES_PLANT__THERMAL_GENERATING_UNIT, null, null, oldThermalGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CAES_PLANT__THERMAL_GENERATING_UNIT, null, null, oldThermalGeneratingUnitESet ) );
         }
     }
 
@@ -522,8 +528,9 @@ public class CAESPlantImpl extends PowerSystemResourceImpl implements CAESPlant 
                         CimPackage.THERMAL_GENERATING_UNIT__CAES_PLANT, ThermalGeneratingUnit.class, msgs );
             return basicSetThermalGeneratingUnit( ( ThermalGeneratingUnit ) otherEnd, msgs );
         case CimPackage.CAES_PLANT__AIR_COMPRESSOR:
-            if( airCompressor != null ) msgs = ( ( InternalEObject ) airCompressor ).eInverseRemove( this,
-                    CimPackage.AIR_COMPRESSOR__CAES_PLANT, AirCompressor.class, msgs );
+            if( airCompressor != null )
+                msgs = ( ( InternalEObject ) airCompressor ).eInverseRemove( this,
+                        CimPackage.AIR_COMPRESSOR__CAES_PLANT, AirCompressor.class, msgs );
             return basicSetAirCompressor( ( AirCompressor ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -643,7 +650,7 @@ public class CAESPlantImpl extends PowerSystemResourceImpl implements CAESPlant 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (energyStorageCapacity: " );
         if( energyStorageCapacityESet )
             result.append( energyStorageCapacity );

@@ -172,8 +172,9 @@ public class WindGenTurbineType3aIECImpl extends WindGenTurbineType3IECImpl impl
         kpc = newKpc;
         boolean oldKpcESet = kpcESet;
         kpcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3A_IEC__KPC, oldKpc, kpc, !oldKpcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_GEN_TURBINE_TYPE3A_IEC__KPC, oldKpc,
+                    kpc, !oldKpcESet ) );
     }
 
     /**
@@ -187,8 +188,9 @@ public class WindGenTurbineType3aIECImpl extends WindGenTurbineType3IECImpl impl
         boolean oldKpcESet = kpcESet;
         kpc = KPC_EDEFAULT;
         kpcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3A_IEC__KPC, oldKpc, KPC_EDEFAULT, oldKpcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_GEN_TURBINE_TYPE3A_IEC__KPC,
+                    oldKpc, KPC_EDEFAULT, oldKpcESet ) );
     }
 
     /**
@@ -222,8 +224,9 @@ public class WindGenTurbineType3aIECImpl extends WindGenTurbineType3IECImpl impl
         tic = newTic;
         boolean oldTicESet = ticESet;
         ticESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3A_IEC__TIC, oldTic, tic, !oldTicESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_GEN_TURBINE_TYPE3A_IEC__TIC, oldTic,
+                    tic, !oldTicESet ) );
     }
 
     /**
@@ -237,8 +240,9 @@ public class WindGenTurbineType3aIECImpl extends WindGenTurbineType3IECImpl impl
         boolean oldTicESet = ticESet;
         tic = TIC_EDEFAULT;
         ticESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3A_IEC__TIC, oldTic, TIC_EDEFAULT, oldTicESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_GEN_TURBINE_TYPE3A_IEC__TIC,
+                    oldTic, TIC_EDEFAULT, oldTicESet ) );
     }
 
     /**
@@ -272,8 +276,9 @@ public class WindGenTurbineType3aIECImpl extends WindGenTurbineType3IECImpl impl
         xs = newXs;
         boolean oldXsESet = xsESet;
         xsESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3A_IEC__XS, oldXs, xs, !oldXsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_GEN_TURBINE_TYPE3A_IEC__XS, oldXs,
+                    xs, !oldXsESet ) );
     }
 
     /**
@@ -287,8 +292,9 @@ public class WindGenTurbineType3aIECImpl extends WindGenTurbineType3IECImpl impl
         boolean oldXsESet = xsESet;
         xs = XS_EDEFAULT;
         xsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3A_IEC__XS, oldXs, XS_EDEFAULT, oldXsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_GEN_TURBINE_TYPE3A_IEC__XS, oldXs,
+                    XS_EDEFAULT, oldXsESet ) );
     }
 
     /**
@@ -388,7 +394,7 @@ public class WindGenTurbineType3aIECImpl extends WindGenTurbineType3IECImpl impl
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kpc: " );
         if( kpcESet )
             result.append( kpc );

@@ -117,8 +117,11 @@ public enum UsagePointConnectedKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final UsagePointConnectedKind[] VALUES_ARRAY = new UsagePointConnectedKind[] { CONNECTED,
-            PHYSICALLY_DISCONNECTED, LOGICALLY_DISCONNECTED, };
+    private static final UsagePointConnectedKind[] VALUES_ARRAY = new UsagePointConnectedKind[] {
+            CONNECTED,
+            PHYSICALLY_DISCONNECTED,
+            LOGICALLY_DISCONNECTED,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Usage Point Connected Kind</b></em>' enumerators.

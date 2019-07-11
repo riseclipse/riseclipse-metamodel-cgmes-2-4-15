@@ -707,9 +707,10 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
                 : newAsynchronousMachineType;
         boolean oldAsynchronousMachineTypeESet = asynchronousMachineTypeESet;
         asynchronousMachineTypeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE__ASYNCHRONOUS_MACHINE_TYPE, oldAsynchronousMachineType,
-                asynchronousMachineType, !oldAsynchronousMachineTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ASYNCHRONOUS_MACHINE__ASYNCHRONOUS_MACHINE_TYPE, oldAsynchronousMachineType,
+                    asynchronousMachineType, !oldAsynchronousMachineTypeESet ) );
     }
 
     /**
@@ -723,9 +724,10 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldAsynchronousMachineTypeESet = asynchronousMachineTypeESet;
         asynchronousMachineType = ASYNCHRONOUS_MACHINE_TYPE_EDEFAULT;
         asynchronousMachineTypeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE__ASYNCHRONOUS_MACHINE_TYPE, oldAsynchronousMachineType,
-                ASYNCHRONOUS_MACHINE_TYPE_EDEFAULT, oldAsynchronousMachineTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ASYNCHRONOUS_MACHINE__ASYNCHRONOUS_MACHINE_TYPE, oldAsynchronousMachineType,
+                    ASYNCHRONOUS_MACHINE_TYPE_EDEFAULT, oldAsynchronousMachineTypeESet ) );
     }
 
     /**
@@ -759,9 +761,10 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         converterFedDrive = newConverterFedDrive;
         boolean oldConverterFedDriveESet = converterFedDriveESet;
         converterFedDriveESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.ASYNCHRONOUS_MACHINE__CONVERTER_FED_DRIVE,
-                        oldConverterFedDrive, converterFedDrive, !oldConverterFedDriveESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ASYNCHRONOUS_MACHINE__CONVERTER_FED_DRIVE, oldConverterFedDrive, converterFedDrive,
+                    !oldConverterFedDriveESet ) );
     }
 
     /**
@@ -775,9 +778,10 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldConverterFedDriveESet = converterFedDriveESet;
         converterFedDrive = CONVERTER_FED_DRIVE_EDEFAULT;
         converterFedDriveESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.ASYNCHRONOUS_MACHINE__CONVERTER_FED_DRIVE,
-                        oldConverterFedDrive, CONVERTER_FED_DRIVE_EDEFAULT, oldConverterFedDriveESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ASYNCHRONOUS_MACHINE__CONVERTER_FED_DRIVE, oldConverterFedDrive,
+                    CONVERTER_FED_DRIVE_EDEFAULT, oldConverterFedDriveESet ) );
     }
 
     /**
@@ -811,8 +815,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         efficiency = newEfficiency;
         boolean oldEfficiencyESet = efficiencyESet;
         efficiencyESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE__EFFICIENCY, oldEfficiency, efficiency, !oldEfficiencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASYNCHRONOUS_MACHINE__EFFICIENCY,
+                    oldEfficiency, efficiency, !oldEfficiencyESet ) );
     }
 
     /**
@@ -826,8 +831,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldEfficiencyESet = efficiencyESet;
         efficiency = EFFICIENCY_EDEFAULT;
         efficiencyESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE__EFFICIENCY, oldEfficiency, EFFICIENCY_EDEFAULT, oldEfficiencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASYNCHRONOUS_MACHINE__EFFICIENCY,
+                    oldEfficiency, EFFICIENCY_EDEFAULT, oldEfficiencyESet ) );
     }
 
     /**
@@ -861,8 +867,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         iaIrRatio = newIaIrRatio;
         boolean oldIaIrRatioESet = iaIrRatioESet;
         iaIrRatioESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE__IA_IR_RATIO, oldIaIrRatio, iaIrRatio, !oldIaIrRatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASYNCHRONOUS_MACHINE__IA_IR_RATIO,
+                    oldIaIrRatio, iaIrRatio, !oldIaIrRatioESet ) );
     }
 
     /**
@@ -876,8 +883,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldIaIrRatioESet = iaIrRatioESet;
         iaIrRatio = IA_IR_RATIO_EDEFAULT;
         iaIrRatioESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE__IA_IR_RATIO, oldIaIrRatio, IA_IR_RATIO_EDEFAULT, oldIaIrRatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASYNCHRONOUS_MACHINE__IA_IR_RATIO,
+                    oldIaIrRatio, IA_IR_RATIO_EDEFAULT, oldIaIrRatioESet ) );
     }
 
     /**
@@ -927,9 +935,10 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldNominalFrequencyESet = nominalFrequencyESet;
         nominalFrequency = NOMINAL_FREQUENCY_EDEFAULT;
         nominalFrequencyESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.ASYNCHRONOUS_MACHINE__NOMINAL_FREQUENCY,
-                        oldNominalFrequency, NOMINAL_FREQUENCY_EDEFAULT, oldNominalFrequencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ASYNCHRONOUS_MACHINE__NOMINAL_FREQUENCY, oldNominalFrequency, NOMINAL_FREQUENCY_EDEFAULT,
+                    oldNominalFrequencyESet ) );
     }
 
     /**
@@ -963,8 +972,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         nominalSpeed = newNominalSpeed;
         boolean oldNominalSpeedESet = nominalSpeedESet;
         nominalSpeedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE__NOMINAL_SPEED, oldNominalSpeed, nominalSpeed, !oldNominalSpeedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASYNCHRONOUS_MACHINE__NOMINAL_SPEED,
+                    oldNominalSpeed, nominalSpeed, !oldNominalSpeedESet ) );
     }
 
     /**
@@ -1066,9 +1076,10 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         ratedMechanicalPower = newRatedMechanicalPower;
         boolean oldRatedMechanicalPowerESet = ratedMechanicalPowerESet;
         ratedMechanicalPowerESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.ASYNCHRONOUS_MACHINE__RATED_MECHANICAL_POWER,
-                        oldRatedMechanicalPower, ratedMechanicalPower, !oldRatedMechanicalPowerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ASYNCHRONOUS_MACHINE__RATED_MECHANICAL_POWER, oldRatedMechanicalPower,
+                    ratedMechanicalPower, !oldRatedMechanicalPowerESet ) );
     }
 
     /**
@@ -1082,9 +1093,10 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldRatedMechanicalPowerESet = ratedMechanicalPowerESet;
         ratedMechanicalPower = RATED_MECHANICAL_POWER_EDEFAULT;
         ratedMechanicalPowerESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE__RATED_MECHANICAL_POWER, oldRatedMechanicalPower,
-                RATED_MECHANICAL_POWER_EDEFAULT, oldRatedMechanicalPowerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ASYNCHRONOUS_MACHINE__RATED_MECHANICAL_POWER, oldRatedMechanicalPower,
+                    RATED_MECHANICAL_POWER_EDEFAULT, oldRatedMechanicalPowerESet ) );
     }
 
     /**
@@ -1118,8 +1130,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         reversible = newReversible;
         boolean oldReversibleESet = reversibleESet;
         reversibleESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE__REVERSIBLE, oldReversible, reversible, !oldReversibleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASYNCHRONOUS_MACHINE__REVERSIBLE,
+                    oldReversible, reversible, !oldReversibleESet ) );
     }
 
     /**
@@ -1133,8 +1146,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldReversibleESet = reversibleESet;
         reversible = REVERSIBLE_EDEFAULT;
         reversibleESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE__REVERSIBLE, oldReversible, REVERSIBLE_EDEFAULT, oldReversibleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASYNCHRONOUS_MACHINE__REVERSIBLE,
+                    oldReversible, REVERSIBLE_EDEFAULT, oldReversibleESet ) );
     }
 
     /**
@@ -1168,8 +1182,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         rr1 = newRr1;
         boolean oldRr1ESet = rr1ESet;
         rr1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE__RR1, oldRr1, rr1, !oldRr1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASYNCHRONOUS_MACHINE__RR1, oldRr1, rr1,
+                    !oldRr1ESet ) );
     }
 
     /**
@@ -1183,8 +1198,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldRr1ESet = rr1ESet;
         rr1 = RR1_EDEFAULT;
         rr1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE__RR1, oldRr1, RR1_EDEFAULT, oldRr1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASYNCHRONOUS_MACHINE__RR1, oldRr1,
+                    RR1_EDEFAULT, oldRr1ESet ) );
     }
 
     /**
@@ -1218,8 +1234,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         rr2 = newRr2;
         boolean oldRr2ESet = rr2ESet;
         rr2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE__RR2, oldRr2, rr2, !oldRr2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASYNCHRONOUS_MACHINE__RR2, oldRr2, rr2,
+                    !oldRr2ESet ) );
     }
 
     /**
@@ -1233,8 +1250,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldRr2ESet = rr2ESet;
         rr2 = RR2_EDEFAULT;
         rr2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE__RR2, oldRr2, RR2_EDEFAULT, oldRr2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASYNCHRONOUS_MACHINE__RR2, oldRr2,
+                    RR2_EDEFAULT, oldRr2ESet ) );
     }
 
     /**
@@ -1268,9 +1286,10 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         rxLockedRotorRatio = newRxLockedRotorRatio;
         boolean oldRxLockedRotorRatioESet = rxLockedRotorRatioESet;
         rxLockedRotorRatioESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.ASYNCHRONOUS_MACHINE__RX_LOCKED_ROTOR_RATIO,
-                        oldRxLockedRotorRatio, rxLockedRotorRatio, !oldRxLockedRotorRatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ASYNCHRONOUS_MACHINE__RX_LOCKED_ROTOR_RATIO, oldRxLockedRotorRatio, rxLockedRotorRatio,
+                    !oldRxLockedRotorRatioESet ) );
     }
 
     /**
@@ -1284,9 +1303,10 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldRxLockedRotorRatioESet = rxLockedRotorRatioESet;
         rxLockedRotorRatio = RX_LOCKED_ROTOR_RATIO_EDEFAULT;
         rxLockedRotorRatioESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.ASYNCHRONOUS_MACHINE__RX_LOCKED_ROTOR_RATIO,
-                        oldRxLockedRotorRatio, RX_LOCKED_ROTOR_RATIO_EDEFAULT, oldRxLockedRotorRatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ASYNCHRONOUS_MACHINE__RX_LOCKED_ROTOR_RATIO, oldRxLockedRotorRatio,
+                    RX_LOCKED_ROTOR_RATIO_EDEFAULT, oldRxLockedRotorRatioESet ) );
     }
 
     /**
@@ -1320,8 +1340,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         tpo = newTpo;
         boolean oldTpoESet = tpoESet;
         tpoESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE__TPO, oldTpo, tpo, !oldTpoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASYNCHRONOUS_MACHINE__TPO, oldTpo, tpo,
+                    !oldTpoESet ) );
     }
 
     /**
@@ -1335,8 +1356,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldTpoESet = tpoESet;
         tpo = TPO_EDEFAULT;
         tpoESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE__TPO, oldTpo, TPO_EDEFAULT, oldTpoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASYNCHRONOUS_MACHINE__TPO, oldTpo,
+                    TPO_EDEFAULT, oldTpoESet ) );
     }
 
     /**
@@ -1370,8 +1392,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         tppo = newTppo;
         boolean oldTppoESet = tppoESet;
         tppoESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE__TPPO, oldTppo, tppo, !oldTppoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASYNCHRONOUS_MACHINE__TPPO, oldTppo,
+                    tppo, !oldTppoESet ) );
     }
 
     /**
@@ -1385,8 +1408,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldTppoESet = tppoESet;
         tppo = TPPO_EDEFAULT;
         tppoESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE__TPPO, oldTppo, TPPO_EDEFAULT, oldTppoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASYNCHRONOUS_MACHINE__TPPO, oldTppo,
+                    TPPO_EDEFAULT, oldTppoESet ) );
     }
 
     /**
@@ -1420,8 +1444,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         xlr1 = newXlr1;
         boolean oldXlr1ESet = xlr1ESet;
         xlr1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE__XLR1, oldXlr1, xlr1, !oldXlr1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASYNCHRONOUS_MACHINE__XLR1, oldXlr1,
+                    xlr1, !oldXlr1ESet ) );
     }
 
     /**
@@ -1435,8 +1460,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldXlr1ESet = xlr1ESet;
         xlr1 = XLR1_EDEFAULT;
         xlr1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE__XLR1, oldXlr1, XLR1_EDEFAULT, oldXlr1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASYNCHRONOUS_MACHINE__XLR1, oldXlr1,
+                    XLR1_EDEFAULT, oldXlr1ESet ) );
     }
 
     /**
@@ -1470,8 +1496,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         xlr2 = newXlr2;
         boolean oldXlr2ESet = xlr2ESet;
         xlr2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE__XLR2, oldXlr2, xlr2, !oldXlr2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASYNCHRONOUS_MACHINE__XLR2, oldXlr2,
+                    xlr2, !oldXlr2ESet ) );
     }
 
     /**
@@ -1485,8 +1512,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldXlr2ESet = xlr2ESet;
         xlr2 = XLR2_EDEFAULT;
         xlr2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE__XLR2, oldXlr2, XLR2_EDEFAULT, oldXlr2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASYNCHRONOUS_MACHINE__XLR2, oldXlr2,
+                    XLR2_EDEFAULT, oldXlr2ESet ) );
     }
 
     /**
@@ -1520,8 +1548,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         xm = newXm;
         boolean oldXmESet = xmESet;
         xmESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE__XM, oldXm, xm, !oldXmESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASYNCHRONOUS_MACHINE__XM, oldXm, xm,
+                    !oldXmESet ) );
     }
 
     /**
@@ -1535,8 +1564,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldXmESet = xmESet;
         xm = XM_EDEFAULT;
         xmESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE__XM, oldXm, XM_EDEFAULT, oldXmESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASYNCHRONOUS_MACHINE__XM, oldXm,
+                    XM_EDEFAULT, oldXmESet ) );
     }
 
     /**
@@ -1570,8 +1600,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         xp = newXp;
         boolean oldXpESet = xpESet;
         xpESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE__XP, oldXp, xp, !oldXpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASYNCHRONOUS_MACHINE__XP, oldXp, xp,
+                    !oldXpESet ) );
     }
 
     /**
@@ -1585,8 +1616,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldXpESet = xpESet;
         xp = XP_EDEFAULT;
         xpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE__XP, oldXp, XP_EDEFAULT, oldXpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASYNCHRONOUS_MACHINE__XP, oldXp,
+                    XP_EDEFAULT, oldXpESet ) );
     }
 
     /**
@@ -1620,8 +1652,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         xpp = newXpp;
         boolean oldXppESet = xppESet;
         xppESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE__XPP, oldXpp, xpp, !oldXppESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASYNCHRONOUS_MACHINE__XPP, oldXpp, xpp,
+                    !oldXppESet ) );
     }
 
     /**
@@ -1635,8 +1668,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldXppESet = xppESet;
         xpp = XPP_EDEFAULT;
         xppESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE__XPP, oldXpp, XPP_EDEFAULT, oldXppESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASYNCHRONOUS_MACHINE__XPP, oldXpp,
+                    XPP_EDEFAULT, oldXppESet ) );
     }
 
     /**
@@ -1670,8 +1704,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         xs = newXs;
         boolean oldXsESet = xsESet;
         xsESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE__XS, oldXs, xs, !oldXsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASYNCHRONOUS_MACHINE__XS, oldXs, xs,
+                    !oldXsESet ) );
     }
 
     /**
@@ -1685,8 +1720,9 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         boolean oldXsESet = xsESet;
         xs = XS_EDEFAULT;
         xsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE__XS, oldXs, XS_EDEFAULT, oldXsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASYNCHRONOUS_MACHINE__XS, oldXs,
+                    XS_EDEFAULT, oldXsESet ) );
     }
 
     /**
@@ -1711,9 +1747,10 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
             asynchronousMachineDynamics = ( AsynchronousMachineDynamics ) eResolveProxy(
                     oldAsynchronousMachineDynamics );
             if( asynchronousMachineDynamics != oldAsynchronousMachineDynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.ASYNCHRONOUS_MACHINE__ASYNCHRONOUS_MACHINE_DYNAMICS, oldAsynchronousMachineDynamics,
-                        asynchronousMachineDynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.ASYNCHRONOUS_MACHINE__ASYNCHRONOUS_MACHINE_DYNAMICS,
+                            oldAsynchronousMachineDynamics, asynchronousMachineDynamics ) );
             }
         }
         return asynchronousMachineDynamics;
@@ -1774,9 +1811,10 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         else {
             boolean oldAsynchronousMachineDynamicsESet = asynchronousMachineDynamicsESet;
             asynchronousMachineDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ASYNCHRONOUS_MACHINE__ASYNCHRONOUS_MACHINE_DYNAMICS, newAsynchronousMachineDynamics,
-                    newAsynchronousMachineDynamics, !oldAsynchronousMachineDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.ASYNCHRONOUS_MACHINE__ASYNCHRONOUS_MACHINE_DYNAMICS, newAsynchronousMachineDynamics,
+                        newAsynchronousMachineDynamics, !oldAsynchronousMachineDynamicsESet ) );
         }
     }
 
@@ -1820,9 +1858,10 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
         else {
             boolean oldAsynchronousMachineDynamicsESet = asynchronousMachineDynamicsESet;
             asynchronousMachineDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ASYNCHRONOUS_MACHINE__ASYNCHRONOUS_MACHINE_DYNAMICS, null, null,
-                    oldAsynchronousMachineDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.ASYNCHRONOUS_MACHINE__ASYNCHRONOUS_MACHINE_DYNAMICS, null, null,
+                        oldAsynchronousMachineDynamicsESet ) );
         }
     }
 
@@ -2136,7 +2175,7 @@ public class AsynchronousMachineImpl extends RotatingMachineImpl implements Asyn
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (asynchronousMachineType: " );
         if( asynchronousMachineTypeESet )
             result.append( asynchronousMachineType );

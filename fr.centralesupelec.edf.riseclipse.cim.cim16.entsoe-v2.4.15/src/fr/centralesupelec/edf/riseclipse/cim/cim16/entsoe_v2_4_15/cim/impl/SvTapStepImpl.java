@@ -135,8 +135,9 @@ public class SvTapStepImpl extends StateVariableImpl implements SvTapStep {
         position = newPosition;
         boolean oldPositionESet = positionESet;
         positionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SV_TAP_STEP__POSITION, oldPosition, position, !oldPositionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SV_TAP_STEP__POSITION, oldPosition,
+                    position, !oldPositionESet ) );
     }
 
     /**
@@ -150,8 +151,9 @@ public class SvTapStepImpl extends StateVariableImpl implements SvTapStep {
         boolean oldPositionESet = positionESet;
         position = POSITION_EDEFAULT;
         positionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SV_TAP_STEP__POSITION, oldPosition, POSITION_EDEFAULT, oldPositionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SV_TAP_STEP__POSITION, oldPosition,
+                    POSITION_EDEFAULT, oldPositionESet ) );
     }
 
     /**
@@ -204,18 +206,21 @@ public class SvTapStepImpl extends StateVariableImpl implements SvTapStep {
     public void setTapChanger( TapChanger newTapChanger ) {
         if( newTapChanger != tapChanger ) {
             NotificationChain msgs = null;
-            if( tapChanger != null ) msgs = ( ( InternalEObject ) tapChanger ).eInverseRemove( this,
-                    CimPackage.TAP_CHANGER__SV_TAP_STEP, TapChanger.class, msgs );
-            if( newTapChanger != null ) msgs = ( ( InternalEObject ) newTapChanger ).eInverseAdd( this,
-                    CimPackage.TAP_CHANGER__SV_TAP_STEP, TapChanger.class, msgs );
+            if( tapChanger != null )
+                msgs = ( ( InternalEObject ) tapChanger ).eInverseRemove( this, CimPackage.TAP_CHANGER__SV_TAP_STEP,
+                        TapChanger.class, msgs );
+            if( newTapChanger != null )
+                msgs = ( ( InternalEObject ) newTapChanger ).eInverseAdd( this, CimPackage.TAP_CHANGER__SV_TAP_STEP,
+                        TapChanger.class, msgs );
             msgs = basicSetTapChanger( newTapChanger, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTapChangerESet = tapChangerESet;
             tapChangerESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SV_TAP_STEP__TAP_CHANGER, newTapChanger, newTapChanger, !oldTapChangerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SV_TAP_STEP__TAP_CHANGER,
+                        newTapChanger, newTapChanger, !oldTapChangerESet ) );
         }
     }
 
@@ -257,8 +262,9 @@ public class SvTapStepImpl extends StateVariableImpl implements SvTapStep {
         else {
             boolean oldTapChangerESet = tapChangerESet;
             tapChangerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SV_TAP_STEP__TAP_CHANGER, null, null, oldTapChangerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SV_TAP_STEP__TAP_CHANGER, null,
+                        null, oldTapChangerESet ) );
         }
     }
 
@@ -281,8 +287,9 @@ public class SvTapStepImpl extends StateVariableImpl implements SvTapStep {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.SV_TAP_STEP__TAP_CHANGER:
-            if( tapChanger != null ) msgs = ( ( InternalEObject ) tapChanger ).eInverseRemove( this,
-                    CimPackage.TAP_CHANGER__SV_TAP_STEP, TapChanger.class, msgs );
+            if( tapChanger != null )
+                msgs = ( ( InternalEObject ) tapChanger ).eInverseRemove( this, CimPackage.TAP_CHANGER__SV_TAP_STEP,
+                        TapChanger.class, msgs );
             return basicSetTapChanger( ( TapChanger ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -379,7 +386,7 @@ public class SvTapStepImpl extends StateVariableImpl implements SvTapStep {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (position: " );
         if( positionESet )
             result.append( position );

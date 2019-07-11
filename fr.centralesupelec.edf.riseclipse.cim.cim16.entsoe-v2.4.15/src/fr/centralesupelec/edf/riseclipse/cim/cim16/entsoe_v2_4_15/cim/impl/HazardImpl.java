@@ -135,8 +135,9 @@ public class HazardImpl extends IdentifiedObjectImpl implements Hazard {
         type = newType;
         boolean oldTypeESet = typeESet;
         typeESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.HAZARD__TYPE, oldType, type, !oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.HAZARD__TYPE, oldType, type,
+                    !oldTypeESet ) );
     }
 
     /**
@@ -150,8 +151,9 @@ public class HazardImpl extends IdentifiedObjectImpl implements Hazard {
         boolean oldTypeESet = typeESet;
         type = TYPE_EDEFAULT;
         typeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.HAZARD__TYPE,
-                oldType, TYPE_EDEFAULT, oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.HAZARD__TYPE, oldType, TYPE_EDEFAULT,
+                    oldTypeESet ) );
     }
 
     /**
@@ -204,18 +206,21 @@ public class HazardImpl extends IdentifiedObjectImpl implements Hazard {
     public void setStatus( Status newStatus ) {
         if( newStatus != status ) {
             NotificationChain msgs = null;
-            if( status != null ) msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.HAZARD__STATUS, null, msgs );
-            if( newStatus != null ) msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.HAZARD__STATUS, null, msgs );
+            if( status != null )
+                msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.HAZARD__STATUS, null, msgs );
+            if( newStatus != null )
+                msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.HAZARD__STATUS, null, msgs );
             msgs = basicSetStatus( newStatus, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldStatusESet = statusESet;
             statusESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.HAZARD__STATUS, newStatus, newStatus, !oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.HAZARD__STATUS, newStatus, newStatus,
+                        !oldStatusESet ) );
         }
     }
 
@@ -257,8 +262,9 @@ public class HazardImpl extends IdentifiedObjectImpl implements Hazard {
         else {
             boolean oldStatusESet = statusESet;
             statusESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.HAZARD__STATUS, null, null, oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.HAZARD__STATUS, null, null,
+                        oldStatusESet ) );
         }
     }
 
@@ -363,7 +369,7 @@ public class HazardImpl extends IdentifiedObjectImpl implements Hazard {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (type: " );
         if( typeESet )
             result.append( type );

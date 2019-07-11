@@ -226,8 +226,9 @@ public class SwitchPhaseImpl extends PowerSystemResourceImpl implements SwitchPh
         closed = newClosed;
         boolean oldClosedESet = closedESet;
         closedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SWITCH_PHASE__CLOSED, oldClosed, closed, !oldClosedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH_PHASE__CLOSED, oldClosed, closed,
+                    !oldClosedESet ) );
     }
 
     /**
@@ -241,8 +242,9 @@ public class SwitchPhaseImpl extends PowerSystemResourceImpl implements SwitchPh
         boolean oldClosedESet = closedESet;
         closed = CLOSED_EDEFAULT;
         closedESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SWITCH_PHASE__CLOSED, oldClosed, CLOSED_EDEFAULT, oldClosedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH_PHASE__CLOSED, oldClosed,
+                    CLOSED_EDEFAULT, oldClosedESet ) );
     }
 
     /**
@@ -276,8 +278,9 @@ public class SwitchPhaseImpl extends PowerSystemResourceImpl implements SwitchPh
         normalOpen = newNormalOpen;
         boolean oldNormalOpenESet = normalOpenESet;
         normalOpenESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SWITCH_PHASE__NORMAL_OPEN, oldNormalOpen, normalOpen, !oldNormalOpenESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH_PHASE__NORMAL_OPEN, oldNormalOpen,
+                    normalOpen, !oldNormalOpenESet ) );
     }
 
     /**
@@ -291,8 +294,9 @@ public class SwitchPhaseImpl extends PowerSystemResourceImpl implements SwitchPh
         boolean oldNormalOpenESet = normalOpenESet;
         normalOpen = NORMAL_OPEN_EDEFAULT;
         normalOpenESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SWITCH_PHASE__NORMAL_OPEN, oldNormalOpen, NORMAL_OPEN_EDEFAULT, oldNormalOpenESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH_PHASE__NORMAL_OPEN,
+                    oldNormalOpen, NORMAL_OPEN_EDEFAULT, oldNormalOpenESet ) );
     }
 
     /**
@@ -326,8 +330,9 @@ public class SwitchPhaseImpl extends PowerSystemResourceImpl implements SwitchPh
         phaseSide1 = newPhaseSide1 == null ? PHASE_SIDE1_EDEFAULT : newPhaseSide1;
         boolean oldPhaseSide1ESet = phaseSide1ESet;
         phaseSide1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SWITCH_PHASE__PHASE_SIDE1, oldPhaseSide1, phaseSide1, !oldPhaseSide1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH_PHASE__PHASE_SIDE1, oldPhaseSide1,
+                    phaseSide1, !oldPhaseSide1ESet ) );
     }
 
     /**
@@ -341,8 +346,9 @@ public class SwitchPhaseImpl extends PowerSystemResourceImpl implements SwitchPh
         boolean oldPhaseSide1ESet = phaseSide1ESet;
         phaseSide1 = PHASE_SIDE1_EDEFAULT;
         phaseSide1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SWITCH_PHASE__PHASE_SIDE1, oldPhaseSide1, PHASE_SIDE1_EDEFAULT, oldPhaseSide1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH_PHASE__PHASE_SIDE1,
+                    oldPhaseSide1, PHASE_SIDE1_EDEFAULT, oldPhaseSide1ESet ) );
     }
 
     /**
@@ -376,8 +382,9 @@ public class SwitchPhaseImpl extends PowerSystemResourceImpl implements SwitchPh
         phaseSide2 = newPhaseSide2 == null ? PHASE_SIDE2_EDEFAULT : newPhaseSide2;
         boolean oldPhaseSide2ESet = phaseSide2ESet;
         phaseSide2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SWITCH_PHASE__PHASE_SIDE2, oldPhaseSide2, phaseSide2, !oldPhaseSide2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH_PHASE__PHASE_SIDE2, oldPhaseSide2,
+                    phaseSide2, !oldPhaseSide2ESet ) );
     }
 
     /**
@@ -391,8 +398,9 @@ public class SwitchPhaseImpl extends PowerSystemResourceImpl implements SwitchPh
         boolean oldPhaseSide2ESet = phaseSide2ESet;
         phaseSide2 = PHASE_SIDE2_EDEFAULT;
         phaseSide2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SWITCH_PHASE__PHASE_SIDE2, oldPhaseSide2, PHASE_SIDE2_EDEFAULT, oldPhaseSide2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH_PHASE__PHASE_SIDE2,
+                    oldPhaseSide2, PHASE_SIDE2_EDEFAULT, oldPhaseSide2ESet ) );
     }
 
     /**
@@ -445,18 +453,21 @@ public class SwitchPhaseImpl extends PowerSystemResourceImpl implements SwitchPh
     public void setSwitch( Switch newSwitch ) {
         if( newSwitch != switch_ ) {
             NotificationChain msgs = null;
-            if( switch_ != null ) msgs = ( ( InternalEObject ) switch_ ).eInverseRemove( this,
-                    CimPackage.SWITCH__SWITCH_PHASE, Switch.class, msgs );
-            if( newSwitch != null ) msgs = ( ( InternalEObject ) newSwitch ).eInverseAdd( this,
-                    CimPackage.SWITCH__SWITCH_PHASE, Switch.class, msgs );
+            if( switch_ != null )
+                msgs = ( ( InternalEObject ) switch_ ).eInverseRemove( this, CimPackage.SWITCH__SWITCH_PHASE,
+                        Switch.class, msgs );
+            if( newSwitch != null )
+                msgs = ( ( InternalEObject ) newSwitch ).eInverseAdd( this, CimPackage.SWITCH__SWITCH_PHASE,
+                        Switch.class, msgs );
             msgs = basicSetSwitch( newSwitch, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldSwitchESet = switchESet;
             switchESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SWITCH_PHASE__SWITCH, newSwitch, newSwitch, !oldSwitchESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH_PHASE__SWITCH, newSwitch,
+                        newSwitch, !oldSwitchESet ) );
         }
     }
 
@@ -498,8 +509,9 @@ public class SwitchPhaseImpl extends PowerSystemResourceImpl implements SwitchPh
         else {
             boolean oldSwitchESet = switchESet;
             switchESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SWITCH_PHASE__SWITCH, null, null, oldSwitchESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH_PHASE__SWITCH, null, null,
+                        oldSwitchESet ) );
         }
     }
 
@@ -522,8 +534,9 @@ public class SwitchPhaseImpl extends PowerSystemResourceImpl implements SwitchPh
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.SWITCH_PHASE__SWITCH:
-            if( switch_ != null ) msgs = ( ( InternalEObject ) switch_ ).eInverseRemove( this,
-                    CimPackage.SWITCH__SWITCH_PHASE, Switch.class, msgs );
+            if( switch_ != null )
+                msgs = ( ( InternalEObject ) switch_ ).eInverseRemove( this, CimPackage.SWITCH__SWITCH_PHASE,
+                        Switch.class, msgs );
             return basicSetSwitch( ( Switch ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -650,7 +663,7 @@ public class SwitchPhaseImpl extends PowerSystemResourceImpl implements SwitchPh
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (closed: " );
         if( closedESet )
             result.append( closed );

@@ -117,8 +117,11 @@ public enum ExcREXSFeedbackSignalKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final ExcREXSFeedbackSignalKind[] VALUES_ARRAY = new ExcREXSFeedbackSignalKind[] { FIELD_VOLTAGE,
-            FIELD_CURRENT, OUTPUT_VOLTAGE, };
+    private static final ExcREXSFeedbackSignalKind[] VALUES_ARRAY = new ExcREXSFeedbackSignalKind[] {
+            FIELD_VOLTAGE,
+            FIELD_CURRENT,
+            OUTPUT_VOLTAGE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Exc REXS Feedback Signal Kind</b></em>' enumerators.

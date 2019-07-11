@@ -297,8 +297,9 @@ public class CustomerNotificationImpl extends CimObjectWithIDImpl implements Cus
         contactType = newContactType;
         boolean oldContactTypeESet = contactTypeESet;
         contactTypeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CUSTOMER_NOTIFICATION__CONTACT_TYPE, oldContactType, contactType, !oldContactTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER_NOTIFICATION__CONTACT_TYPE,
+                    oldContactType, contactType, !oldContactTypeESet ) );
     }
 
     /**
@@ -400,9 +401,10 @@ public class CustomerNotificationImpl extends CimObjectWithIDImpl implements Cus
         earliestDateTimeToCall = newEarliestDateTimeToCall;
         boolean oldEarliestDateTimeToCallESet = earliestDateTimeToCallESet;
         earliestDateTimeToCallESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CUSTOMER_NOTIFICATION__EARLIEST_DATE_TIME_TO_CALL, oldEarliestDateTimeToCall,
-                earliestDateTimeToCall, !oldEarliestDateTimeToCallESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CUSTOMER_NOTIFICATION__EARLIEST_DATE_TIME_TO_CALL, oldEarliestDateTimeToCall,
+                    earliestDateTimeToCall, !oldEarliestDateTimeToCallESet ) );
     }
 
     /**
@@ -416,9 +418,10 @@ public class CustomerNotificationImpl extends CimObjectWithIDImpl implements Cus
         boolean oldEarliestDateTimeToCallESet = earliestDateTimeToCallESet;
         earliestDateTimeToCall = EARLIEST_DATE_TIME_TO_CALL_EDEFAULT;
         earliestDateTimeToCallESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CUSTOMER_NOTIFICATION__EARLIEST_DATE_TIME_TO_CALL, oldEarliestDateTimeToCall,
-                EARLIEST_DATE_TIME_TO_CALL_EDEFAULT, oldEarliestDateTimeToCallESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CUSTOMER_NOTIFICATION__EARLIEST_DATE_TIME_TO_CALL, oldEarliestDateTimeToCall,
+                    EARLIEST_DATE_TIME_TO_CALL_EDEFAULT, oldEarliestDateTimeToCallESet ) );
     }
 
     /**
@@ -452,9 +455,10 @@ public class CustomerNotificationImpl extends CimObjectWithIDImpl implements Cus
         latestDateTimeToCall = newLatestDateTimeToCall;
         boolean oldLatestDateTimeToCallESet = latestDateTimeToCallESet;
         latestDateTimeToCallESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CUSTOMER_NOTIFICATION__LATEST_DATE_TIME_TO_CALL, oldLatestDateTimeToCall,
-                latestDateTimeToCall, !oldLatestDateTimeToCallESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CUSTOMER_NOTIFICATION__LATEST_DATE_TIME_TO_CALL, oldLatestDateTimeToCall,
+                    latestDateTimeToCall, !oldLatestDateTimeToCallESet ) );
     }
 
     /**
@@ -468,9 +472,10 @@ public class CustomerNotificationImpl extends CimObjectWithIDImpl implements Cus
         boolean oldLatestDateTimeToCallESet = latestDateTimeToCallESet;
         latestDateTimeToCall = LATEST_DATE_TIME_TO_CALL_EDEFAULT;
         latestDateTimeToCallESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CUSTOMER_NOTIFICATION__LATEST_DATE_TIME_TO_CALL, oldLatestDateTimeToCall,
-                LATEST_DATE_TIME_TO_CALL_EDEFAULT, oldLatestDateTimeToCallESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CUSTOMER_NOTIFICATION__LATEST_DATE_TIME_TO_CALL, oldLatestDateTimeToCall,
+                    LATEST_DATE_TIME_TO_CALL_EDEFAULT, oldLatestDateTimeToCallESet ) );
     }
 
     /**
@@ -504,8 +509,9 @@ public class CustomerNotificationImpl extends CimObjectWithIDImpl implements Cus
         trigger = newTrigger == null ? TRIGGER_EDEFAULT : newTrigger;
         boolean oldTriggerESet = triggerESet;
         triggerESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CUSTOMER_NOTIFICATION__TRIGGER, oldTrigger, trigger, !oldTriggerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER_NOTIFICATION__TRIGGER,
+                    oldTrigger, trigger, !oldTriggerESet ) );
     }
 
     /**
@@ -519,8 +525,9 @@ public class CustomerNotificationImpl extends CimObjectWithIDImpl implements Cus
         boolean oldTriggerESet = triggerESet;
         trigger = TRIGGER_EDEFAULT;
         triggerESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CUSTOMER_NOTIFICATION__TRIGGER, oldTrigger, TRIGGER_EDEFAULT, oldTriggerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUSTOMER_NOTIFICATION__TRIGGER,
+                    oldTrigger, TRIGGER_EDEFAULT, oldTriggerESet ) );
     }
 
     /**
@@ -573,18 +580,21 @@ public class CustomerNotificationImpl extends CimObjectWithIDImpl implements Cus
     public void setIncident( Incident newIncident ) {
         if( newIncident != incident ) {
             NotificationChain msgs = null;
-            if( incident != null ) msgs = ( ( InternalEObject ) incident ).eInverseRemove( this,
-                    CimPackage.INCIDENT__CUSTOMER_NOTIFICATIONS, Incident.class, msgs );
-            if( newIncident != null ) msgs = ( ( InternalEObject ) newIncident ).eInverseAdd( this,
-                    CimPackage.INCIDENT__CUSTOMER_NOTIFICATIONS, Incident.class, msgs );
+            if( incident != null )
+                msgs = ( ( InternalEObject ) incident ).eInverseRemove( this,
+                        CimPackage.INCIDENT__CUSTOMER_NOTIFICATIONS, Incident.class, msgs );
+            if( newIncident != null )
+                msgs = ( ( InternalEObject ) newIncident ).eInverseAdd( this,
+                        CimPackage.INCIDENT__CUSTOMER_NOTIFICATIONS, Incident.class, msgs );
             msgs = basicSetIncident( newIncident, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldIncidentESet = incidentESet;
             incidentESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CUSTOMER_NOTIFICATION__INCIDENT, newIncident, newIncident, !oldIncidentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER_NOTIFICATION__INCIDENT,
+                        newIncident, newIncident, !oldIncidentESet ) );
         }
     }
 
@@ -626,8 +636,9 @@ public class CustomerNotificationImpl extends CimObjectWithIDImpl implements Cus
         else {
             boolean oldIncidentESet = incidentESet;
             incidentESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CUSTOMER_NOTIFICATION__INCIDENT, null, null, oldIncidentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUSTOMER_NOTIFICATION__INCIDENT,
+                        null, null, oldIncidentESet ) );
         }
     }
 
@@ -681,18 +692,21 @@ public class CustomerNotificationImpl extends CimObjectWithIDImpl implements Cus
     public void setCustomer( Customer newCustomer ) {
         if( newCustomer != customer ) {
             NotificationChain msgs = null;
-            if( customer != null ) msgs = ( ( InternalEObject ) customer ).eInverseRemove( this,
-                    CimPackage.CUSTOMER__NOTIFICATIONS, Customer.class, msgs );
-            if( newCustomer != null ) msgs = ( ( InternalEObject ) newCustomer ).eInverseAdd( this,
-                    CimPackage.CUSTOMER__NOTIFICATIONS, Customer.class, msgs );
+            if( customer != null )
+                msgs = ( ( InternalEObject ) customer ).eInverseRemove( this, CimPackage.CUSTOMER__NOTIFICATIONS,
+                        Customer.class, msgs );
+            if( newCustomer != null )
+                msgs = ( ( InternalEObject ) newCustomer ).eInverseAdd( this, CimPackage.CUSTOMER__NOTIFICATIONS,
+                        Customer.class, msgs );
             msgs = basicSetCustomer( newCustomer, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCustomerESet = customerESet;
             customerESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CUSTOMER_NOTIFICATION__CUSTOMER, newCustomer, newCustomer, !oldCustomerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER_NOTIFICATION__CUSTOMER,
+                        newCustomer, newCustomer, !oldCustomerESet ) );
         }
     }
 
@@ -734,8 +748,9 @@ public class CustomerNotificationImpl extends CimObjectWithIDImpl implements Cus
         else {
             boolean oldCustomerESet = customerESet;
             customerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CUSTOMER_NOTIFICATION__CUSTOMER, null, null, oldCustomerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUSTOMER_NOTIFICATION__CUSTOMER,
+                        null, null, oldCustomerESet ) );
         }
     }
 
@@ -793,15 +808,17 @@ public class CustomerNotificationImpl extends CimObjectWithIDImpl implements Cus
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CUSTOMER_NOTIFICATION__INCIDENT:
-            if( incident != null ) msgs = ( ( InternalEObject ) incident ).eInverseRemove( this,
-                    CimPackage.INCIDENT__CUSTOMER_NOTIFICATIONS, Incident.class, msgs );
+            if( incident != null )
+                msgs = ( ( InternalEObject ) incident ).eInverseRemove( this,
+                        CimPackage.INCIDENT__CUSTOMER_NOTIFICATIONS, Incident.class, msgs );
             return basicSetIncident( ( Incident ) otherEnd, msgs );
         case CimPackage.CUSTOMER_NOTIFICATION__TROUBLE_TICKETS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTroubleTickets() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.CUSTOMER_NOTIFICATION__CUSTOMER:
-            if( customer != null ) msgs = ( ( InternalEObject ) customer ).eInverseRemove( this,
-                    CimPackage.CUSTOMER__NOTIFICATIONS, Customer.class, msgs );
+            if( customer != null )
+                msgs = ( ( InternalEObject ) customer ).eInverseRemove( this, CimPackage.CUSTOMER__NOTIFICATIONS,
+                        Customer.class, msgs );
             return basicSetCustomer( ( Customer ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -964,7 +981,7 @@ public class CustomerNotificationImpl extends CimObjectWithIDImpl implements Cus
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (contactType: " );
         if( contactTypeESet )
             result.append( contactType );

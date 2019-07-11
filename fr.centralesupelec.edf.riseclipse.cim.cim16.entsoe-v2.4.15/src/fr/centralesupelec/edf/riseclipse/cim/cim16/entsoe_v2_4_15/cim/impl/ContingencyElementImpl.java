@@ -124,10 +124,12 @@ public class ContingencyElementImpl extends IdentifiedObjectImpl implements Cont
     public void setContingency( Contingency newContingency ) {
         if( newContingency != contingency ) {
             NotificationChain msgs = null;
-            if( contingency != null ) msgs = ( ( InternalEObject ) contingency ).eInverseRemove( this,
-                    CimPackage.CONTINGENCY__CONTINGENCY_ELEMENT, Contingency.class, msgs );
-            if( newContingency != null ) msgs = ( ( InternalEObject ) newContingency ).eInverseAdd( this,
-                    CimPackage.CONTINGENCY__CONTINGENCY_ELEMENT, Contingency.class, msgs );
+            if( contingency != null )
+                msgs = ( ( InternalEObject ) contingency ).eInverseRemove( this,
+                        CimPackage.CONTINGENCY__CONTINGENCY_ELEMENT, Contingency.class, msgs );
+            if( newContingency != null )
+                msgs = ( ( InternalEObject ) newContingency ).eInverseAdd( this,
+                        CimPackage.CONTINGENCY__CONTINGENCY_ELEMENT, Contingency.class, msgs );
             msgs = basicSetContingency( newContingency, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -178,8 +180,9 @@ public class ContingencyElementImpl extends IdentifiedObjectImpl implements Cont
         else {
             boolean oldContingencyESet = contingencyESet;
             contingencyESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONTINGENCY_ELEMENT__CONTINGENCY, null, null, oldContingencyESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CONTINGENCY_ELEMENT__CONTINGENCY,
+                        null, null, oldContingencyESet ) );
         }
     }
 
@@ -202,8 +205,9 @@ public class ContingencyElementImpl extends IdentifiedObjectImpl implements Cont
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CONTINGENCY_ELEMENT__CONTINGENCY:
-            if( contingency != null ) msgs = ( ( InternalEObject ) contingency ).eInverseRemove( this,
-                    CimPackage.CONTINGENCY__CONTINGENCY_ELEMENT, Contingency.class, msgs );
+            if( contingency != null )
+                msgs = ( ( InternalEObject ) contingency ).eInverseRemove( this,
+                        CimPackage.CONTINGENCY__CONTINGENCY_ELEMENT, Contingency.class, msgs );
             return basicSetContingency( ( Contingency ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

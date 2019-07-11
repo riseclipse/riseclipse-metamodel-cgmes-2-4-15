@@ -435,8 +435,9 @@ public class StreetDetailImpl extends MinimalEObjectImpl.Container implements St
         buildingName = newBuildingName;
         boolean oldBuildingNameESet = buildingNameESet;
         buildingNameESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STREET_DETAIL__BUILDING_NAME, oldBuildingName, buildingName, !oldBuildingNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STREET_DETAIL__BUILDING_NAME,
+                    oldBuildingName, buildingName, !oldBuildingNameESet ) );
     }
 
     /**
@@ -486,8 +487,9 @@ public class StreetDetailImpl extends MinimalEObjectImpl.Container implements St
         code = newCode;
         boolean oldCodeESet = codeESet;
         codeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STREET_DETAIL__CODE, oldCode, code, !oldCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STREET_DETAIL__CODE, oldCode, code,
+                    !oldCodeESet ) );
     }
 
     /**
@@ -501,8 +503,9 @@ public class StreetDetailImpl extends MinimalEObjectImpl.Container implements St
         boolean oldCodeESet = codeESet;
         code = CODE_EDEFAULT;
         codeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STREET_DETAIL__CODE, oldCode, CODE_EDEFAULT, oldCodeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STREET_DETAIL__CODE, oldCode,
+                    CODE_EDEFAULT, oldCodeESet ) );
     }
 
     /**
@@ -536,8 +539,9 @@ public class StreetDetailImpl extends MinimalEObjectImpl.Container implements St
         name = newName;
         boolean oldNameESet = nameESet;
         nameESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STREET_DETAIL__NAME, oldName, name, !oldNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STREET_DETAIL__NAME, oldName, name,
+                    !oldNameESet ) );
     }
 
     /**
@@ -551,8 +555,9 @@ public class StreetDetailImpl extends MinimalEObjectImpl.Container implements St
         boolean oldNameESet = nameESet;
         name = NAME_EDEFAULT;
         nameESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STREET_DETAIL__NAME, oldName, NAME_EDEFAULT, oldNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STREET_DETAIL__NAME, oldName,
+                    NAME_EDEFAULT, oldNameESet ) );
     }
 
     /**
@@ -586,8 +591,9 @@ public class StreetDetailImpl extends MinimalEObjectImpl.Container implements St
         number = newNumber;
         boolean oldNumberESet = numberESet;
         numberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STREET_DETAIL__NUMBER, oldNumber, number, !oldNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STREET_DETAIL__NUMBER, oldNumber, number,
+                    !oldNumberESet ) );
     }
 
     /**
@@ -601,8 +607,9 @@ public class StreetDetailImpl extends MinimalEObjectImpl.Container implements St
         boolean oldNumberESet = numberESet;
         number = NUMBER_EDEFAULT;
         numberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STREET_DETAIL__NUMBER, oldNumber, NUMBER_EDEFAULT, oldNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STREET_DETAIL__NUMBER, oldNumber,
+                    NUMBER_EDEFAULT, oldNumberESet ) );
     }
 
     /**
@@ -636,8 +643,9 @@ public class StreetDetailImpl extends MinimalEObjectImpl.Container implements St
         prefix = newPrefix;
         boolean oldPrefixESet = prefixESet;
         prefixESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STREET_DETAIL__PREFIX, oldPrefix, prefix, !oldPrefixESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STREET_DETAIL__PREFIX, oldPrefix, prefix,
+                    !oldPrefixESet ) );
     }
 
     /**
@@ -651,8 +659,9 @@ public class StreetDetailImpl extends MinimalEObjectImpl.Container implements St
         boolean oldPrefixESet = prefixESet;
         prefix = PREFIX_EDEFAULT;
         prefixESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STREET_DETAIL__PREFIX, oldPrefix, PREFIX_EDEFAULT, oldPrefixESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STREET_DETAIL__PREFIX, oldPrefix,
+                    PREFIX_EDEFAULT, oldPrefixESet ) );
     }
 
     /**
@@ -686,8 +695,9 @@ public class StreetDetailImpl extends MinimalEObjectImpl.Container implements St
         suffix = newSuffix;
         boolean oldSuffixESet = suffixESet;
         suffixESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STREET_DETAIL__SUFFIX, oldSuffix, suffix, !oldSuffixESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STREET_DETAIL__SUFFIX, oldSuffix, suffix,
+                    !oldSuffixESet ) );
     }
 
     /**
@@ -701,8 +711,9 @@ public class StreetDetailImpl extends MinimalEObjectImpl.Container implements St
         boolean oldSuffixESet = suffixESet;
         suffix = SUFFIX_EDEFAULT;
         suffixESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STREET_DETAIL__SUFFIX, oldSuffix, SUFFIX_EDEFAULT, oldSuffixESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STREET_DETAIL__SUFFIX, oldSuffix,
+                    SUFFIX_EDEFAULT, oldSuffixESet ) );
     }
 
     /**
@@ -736,8 +747,9 @@ public class StreetDetailImpl extends MinimalEObjectImpl.Container implements St
         suiteNumber = newSuiteNumber;
         boolean oldSuiteNumberESet = suiteNumberESet;
         suiteNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STREET_DETAIL__SUITE_NUMBER, oldSuiteNumber, suiteNumber, !oldSuiteNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STREET_DETAIL__SUITE_NUMBER,
+                    oldSuiteNumber, suiteNumber, !oldSuiteNumberESet ) );
     }
 
     /**
@@ -751,8 +763,9 @@ public class StreetDetailImpl extends MinimalEObjectImpl.Container implements St
         boolean oldSuiteNumberESet = suiteNumberESet;
         suiteNumber = SUITE_NUMBER_EDEFAULT;
         suiteNumberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STREET_DETAIL__SUITE_NUMBER, oldSuiteNumber, SUITE_NUMBER_EDEFAULT, oldSuiteNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STREET_DETAIL__SUITE_NUMBER,
+                    oldSuiteNumber, SUITE_NUMBER_EDEFAULT, oldSuiteNumberESet ) );
     }
 
     /**
@@ -786,8 +799,9 @@ public class StreetDetailImpl extends MinimalEObjectImpl.Container implements St
         type = newType;
         boolean oldTypeESet = typeESet;
         typeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STREET_DETAIL__TYPE, oldType, type, !oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STREET_DETAIL__TYPE, oldType, type,
+                    !oldTypeESet ) );
     }
 
     /**
@@ -801,8 +815,9 @@ public class StreetDetailImpl extends MinimalEObjectImpl.Container implements St
         boolean oldTypeESet = typeESet;
         type = TYPE_EDEFAULT;
         typeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STREET_DETAIL__TYPE, oldType, TYPE_EDEFAULT, oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STREET_DETAIL__TYPE, oldType,
+                    TYPE_EDEFAULT, oldTypeESet ) );
     }
 
     /**
@@ -1024,7 +1039,7 @@ public class StreetDetailImpl extends MinimalEObjectImpl.Container implements St
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (addressGeneral: " );
         if( addressGeneralESet )
             result.append( addressGeneral );

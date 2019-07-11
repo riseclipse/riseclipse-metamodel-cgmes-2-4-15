@@ -259,8 +259,9 @@ public class AuxiliaryAccountImpl extends DocumentImpl implements AuxiliaryAccou
         balance = newBalance;
         boolean oldBalanceESet = balanceESet;
         balanceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.AUXILIARY_ACCOUNT__BALANCE, oldBalance, balance, !oldBalanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AUXILIARY_ACCOUNT__BALANCE, oldBalance,
+                    balance, !oldBalanceESet ) );
     }
 
     /**
@@ -274,8 +275,9 @@ public class AuxiliaryAccountImpl extends DocumentImpl implements AuxiliaryAccou
         boolean oldBalanceESet = balanceESet;
         balance = BALANCE_EDEFAULT;
         balanceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.AUXILIARY_ACCOUNT__BALANCE, oldBalance, BALANCE_EDEFAULT, oldBalanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AUXILIARY_ACCOUNT__BALANCE, oldBalance,
+                    BALANCE_EDEFAULT, oldBalanceESet ) );
     }
 
     /**
@@ -380,18 +382,21 @@ public class AuxiliaryAccountImpl extends DocumentImpl implements AuxiliaryAccou
     public void setDue( Due newDue ) {
         if( newDue != due ) {
             NotificationChain msgs = null;
-            if( due != null ) msgs = ( ( InternalEObject ) due ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.AUXILIARY_ACCOUNT__DUE, null, msgs );
-            if( newDue != null ) msgs = ( ( InternalEObject ) newDue ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.AUXILIARY_ACCOUNT__DUE, null, msgs );
+            if( due != null )
+                msgs = ( ( InternalEObject ) due ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.AUXILIARY_ACCOUNT__DUE, null, msgs );
+            if( newDue != null )
+                msgs = ( ( InternalEObject ) newDue ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.AUXILIARY_ACCOUNT__DUE, null, msgs );
             msgs = basicSetDue( newDue, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldDueESet = dueESet;
             dueESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.AUXILIARY_ACCOUNT__DUE, newDue, newDue, !oldDueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AUXILIARY_ACCOUNT__DUE, newDue,
+                        newDue, !oldDueESet ) );
         }
     }
 
@@ -433,8 +438,9 @@ public class AuxiliaryAccountImpl extends DocumentImpl implements AuxiliaryAccou
         else {
             boolean oldDueESet = dueESet;
             dueESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.AUXILIARY_ACCOUNT__DUE, null, null, oldDueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AUXILIARY_ACCOUNT__DUE, null, null,
+                        oldDueESet ) );
         }
     }
 
@@ -488,18 +494,21 @@ public class AuxiliaryAccountImpl extends DocumentImpl implements AuxiliaryAccou
     public void setLastCredit( AccountMovement newLastCredit ) {
         if( newLastCredit != lastCredit ) {
             NotificationChain msgs = null;
-            if( lastCredit != null ) msgs = ( ( InternalEObject ) lastCredit ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.AUXILIARY_ACCOUNT__LAST_CREDIT, null, msgs );
-            if( newLastCredit != null ) msgs = ( ( InternalEObject ) newLastCredit ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.AUXILIARY_ACCOUNT__LAST_CREDIT, null, msgs );
+            if( lastCredit != null )
+                msgs = ( ( InternalEObject ) lastCredit ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.AUXILIARY_ACCOUNT__LAST_CREDIT, null, msgs );
+            if( newLastCredit != null )
+                msgs = ( ( InternalEObject ) newLastCredit ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.AUXILIARY_ACCOUNT__LAST_CREDIT, null, msgs );
             msgs = basicSetLastCredit( newLastCredit, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldLastCreditESet = lastCreditESet;
             lastCreditESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.AUXILIARY_ACCOUNT__LAST_CREDIT, newLastCredit, newLastCredit, !oldLastCreditESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AUXILIARY_ACCOUNT__LAST_CREDIT,
+                        newLastCredit, newLastCredit, !oldLastCreditESet ) );
         }
     }
 
@@ -541,8 +550,9 @@ public class AuxiliaryAccountImpl extends DocumentImpl implements AuxiliaryAccou
         else {
             boolean oldLastCreditESet = lastCreditESet;
             lastCreditESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.AUXILIARY_ACCOUNT__LAST_CREDIT, null, null, oldLastCreditESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AUXILIARY_ACCOUNT__LAST_CREDIT,
+                        null, null, oldLastCreditESet ) );
         }
     }
 
@@ -596,18 +606,21 @@ public class AuxiliaryAccountImpl extends DocumentImpl implements AuxiliaryAccou
     public void setLastDebit( AccountMovement newLastDebit ) {
         if( newLastDebit != lastDebit ) {
             NotificationChain msgs = null;
-            if( lastDebit != null ) msgs = ( ( InternalEObject ) lastDebit ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.AUXILIARY_ACCOUNT__LAST_DEBIT, null, msgs );
-            if( newLastDebit != null ) msgs = ( ( InternalEObject ) newLastDebit ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.AUXILIARY_ACCOUNT__LAST_DEBIT, null, msgs );
+            if( lastDebit != null )
+                msgs = ( ( InternalEObject ) lastDebit ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.AUXILIARY_ACCOUNT__LAST_DEBIT, null, msgs );
+            if( newLastDebit != null )
+                msgs = ( ( InternalEObject ) newLastDebit ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.AUXILIARY_ACCOUNT__LAST_DEBIT, null, msgs );
             msgs = basicSetLastDebit( newLastDebit, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldLastDebitESet = lastDebitESet;
             lastDebitESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.AUXILIARY_ACCOUNT__LAST_DEBIT, newLastDebit, newLastDebit, !oldLastDebitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AUXILIARY_ACCOUNT__LAST_DEBIT,
+                        newLastDebit, newLastDebit, !oldLastDebitESet ) );
         }
     }
 
@@ -649,8 +662,9 @@ public class AuxiliaryAccountImpl extends DocumentImpl implements AuxiliaryAccou
         else {
             boolean oldLastDebitESet = lastDebitESet;
             lastDebitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.AUXILIARY_ACCOUNT__LAST_DEBIT, null, null, oldLastDebitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AUXILIARY_ACCOUNT__LAST_DEBIT,
+                        null, null, oldLastDebitESet ) );
         }
     }
 
@@ -706,19 +720,22 @@ public class AuxiliaryAccountImpl extends DocumentImpl implements AuxiliaryAccou
     public void setAuxiliaryAgreement( AuxiliaryAgreement newAuxiliaryAgreement ) {
         if( newAuxiliaryAgreement != auxiliaryAgreement ) {
             NotificationChain msgs = null;
-            if( auxiliaryAgreement != null ) msgs = ( ( InternalEObject ) auxiliaryAgreement ).eInverseRemove( this,
-                    CimPackage.AUXILIARY_AGREEMENT__AUXILIARY_ACCOUNTS, AuxiliaryAgreement.class, msgs );
-            if( newAuxiliaryAgreement != null ) msgs = ( ( InternalEObject ) newAuxiliaryAgreement ).eInverseAdd( this,
-                    CimPackage.AUXILIARY_AGREEMENT__AUXILIARY_ACCOUNTS, AuxiliaryAgreement.class, msgs );
+            if( auxiliaryAgreement != null )
+                msgs = ( ( InternalEObject ) auxiliaryAgreement ).eInverseRemove( this,
+                        CimPackage.AUXILIARY_AGREEMENT__AUXILIARY_ACCOUNTS, AuxiliaryAgreement.class, msgs );
+            if( newAuxiliaryAgreement != null )
+                msgs = ( ( InternalEObject ) newAuxiliaryAgreement ).eInverseAdd( this,
+                        CimPackage.AUXILIARY_AGREEMENT__AUXILIARY_ACCOUNTS, AuxiliaryAgreement.class, msgs );
             msgs = basicSetAuxiliaryAgreement( newAuxiliaryAgreement, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldAuxiliaryAgreementESet = auxiliaryAgreementESet;
             auxiliaryAgreementESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.AUXILIARY_ACCOUNT__AUXILIARY_AGREEMENT,
-                            newAuxiliaryAgreement, newAuxiliaryAgreement, !oldAuxiliaryAgreementESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.AUXILIARY_ACCOUNT__AUXILIARY_AGREEMENT, newAuxiliaryAgreement, newAuxiliaryAgreement,
+                        !oldAuxiliaryAgreementESet ) );
         }
     }
 
@@ -761,8 +778,9 @@ public class AuxiliaryAccountImpl extends DocumentImpl implements AuxiliaryAccou
         else {
             boolean oldAuxiliaryAgreementESet = auxiliaryAgreementESet;
             auxiliaryAgreementESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.AUXILIARY_ACCOUNT__AUXILIARY_AGREEMENT, null, null, oldAuxiliaryAgreementESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.AUXILIARY_ACCOUNT__AUXILIARY_AGREEMENT, null, null, oldAuxiliaryAgreementESet ) );
         }
     }
 
@@ -858,8 +876,9 @@ public class AuxiliaryAccountImpl extends DocumentImpl implements AuxiliaryAccou
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getCharges() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.AUXILIARY_ACCOUNT__AUXILIARY_AGREEMENT:
-            if( auxiliaryAgreement != null ) msgs = ( ( InternalEObject ) auxiliaryAgreement ).eInverseRemove( this,
-                    CimPackage.AUXILIARY_AGREEMENT__AUXILIARY_ACCOUNTS, AuxiliaryAgreement.class, msgs );
+            if( auxiliaryAgreement != null )
+                msgs = ( ( InternalEObject ) auxiliaryAgreement ).eInverseRemove( this,
+                        CimPackage.AUXILIARY_AGREEMENT__AUXILIARY_ACCOUNTS, AuxiliaryAgreement.class, msgs );
             return basicSetAuxiliaryAgreement( ( AuxiliaryAgreement ) otherEnd, msgs );
         case CimPackage.AUXILIARY_ACCOUNT__PAYMENT_TRANSACTIONS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getPaymentTransactions() )
@@ -1032,7 +1051,7 @@ public class AuxiliaryAccountImpl extends DocumentImpl implements AuxiliaryAccou
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (balance: " );
         if( balanceESet )
             result.append( balance );

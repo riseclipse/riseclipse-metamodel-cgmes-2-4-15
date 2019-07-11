@@ -298,8 +298,9 @@ public class DiagramObjectPointImpl extends CimObjectWithIDImpl implements Diagr
         xPosition = newXPosition;
         boolean oldXPositionESet = xPositionESet;
         xPositionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DIAGRAM_OBJECT_POINT__XPOSITION, oldXPosition, xPosition, !oldXPositionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DIAGRAM_OBJECT_POINT__XPOSITION,
+                    oldXPosition, xPosition, !oldXPositionESet ) );
     }
 
     /**
@@ -313,8 +314,9 @@ public class DiagramObjectPointImpl extends CimObjectWithIDImpl implements Diagr
         boolean oldXPositionESet = xPositionESet;
         xPosition = XPOSITION_EDEFAULT;
         xPositionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DIAGRAM_OBJECT_POINT__XPOSITION, oldXPosition, XPOSITION_EDEFAULT, oldXPositionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DIAGRAM_OBJECT_POINT__XPOSITION,
+                    oldXPosition, XPOSITION_EDEFAULT, oldXPositionESet ) );
     }
 
     /**
@@ -348,8 +350,9 @@ public class DiagramObjectPointImpl extends CimObjectWithIDImpl implements Diagr
         yPosition = newYPosition;
         boolean oldYPositionESet = yPositionESet;
         yPositionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DIAGRAM_OBJECT_POINT__YPOSITION, oldYPosition, yPosition, !oldYPositionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DIAGRAM_OBJECT_POINT__YPOSITION,
+                    oldYPosition, yPosition, !oldYPositionESet ) );
     }
 
     /**
@@ -363,8 +366,9 @@ public class DiagramObjectPointImpl extends CimObjectWithIDImpl implements Diagr
         boolean oldYPositionESet = yPositionESet;
         yPosition = YPOSITION_EDEFAULT;
         yPositionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DIAGRAM_OBJECT_POINT__YPOSITION, oldYPosition, YPOSITION_EDEFAULT, oldYPositionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DIAGRAM_OBJECT_POINT__YPOSITION,
+                    oldYPosition, YPOSITION_EDEFAULT, oldYPositionESet ) );
     }
 
     /**
@@ -398,8 +402,9 @@ public class DiagramObjectPointImpl extends CimObjectWithIDImpl implements Diagr
         zPosition = newZPosition;
         boolean oldZPositionESet = zPositionESet;
         zPositionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DIAGRAM_OBJECT_POINT__ZPOSITION, oldZPosition, zPosition, !oldZPositionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DIAGRAM_OBJECT_POINT__ZPOSITION,
+                    oldZPosition, zPosition, !oldZPositionESet ) );
     }
 
     /**
@@ -413,8 +418,9 @@ public class DiagramObjectPointImpl extends CimObjectWithIDImpl implements Diagr
         boolean oldZPositionESet = zPositionESet;
         zPosition = ZPOSITION_EDEFAULT;
         zPositionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DIAGRAM_OBJECT_POINT__ZPOSITION, oldZPosition, ZPOSITION_EDEFAULT, oldZPositionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DIAGRAM_OBJECT_POINT__ZPOSITION,
+                    oldZPosition, ZPOSITION_EDEFAULT, oldZPositionESet ) );
     }
 
     /**
@@ -468,10 +474,12 @@ public class DiagramObjectPointImpl extends CimObjectWithIDImpl implements Diagr
     public void setDiagramObject( DiagramObject newDiagramObject ) {
         if( newDiagramObject != diagramObject ) {
             NotificationChain msgs = null;
-            if( diagramObject != null ) msgs = ( ( InternalEObject ) diagramObject ).eInverseRemove( this,
-                    CimPackage.DIAGRAM_OBJECT__DIAGRAM_OBJECT_POINTS, DiagramObject.class, msgs );
-            if( newDiagramObject != null ) msgs = ( ( InternalEObject ) newDiagramObject ).eInverseAdd( this,
-                    CimPackage.DIAGRAM_OBJECT__DIAGRAM_OBJECT_POINTS, DiagramObject.class, msgs );
+            if( diagramObject != null )
+                msgs = ( ( InternalEObject ) diagramObject ).eInverseRemove( this,
+                        CimPackage.DIAGRAM_OBJECT__DIAGRAM_OBJECT_POINTS, DiagramObject.class, msgs );
+            if( newDiagramObject != null )
+                msgs = ( ( InternalEObject ) newDiagramObject ).eInverseAdd( this,
+                        CimPackage.DIAGRAM_OBJECT__DIAGRAM_OBJECT_POINTS, DiagramObject.class, msgs );
             msgs = basicSetDiagramObject( newDiagramObject, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -522,8 +530,9 @@ public class DiagramObjectPointImpl extends CimObjectWithIDImpl implements Diagr
         else {
             boolean oldDiagramObjectESet = diagramObjectESet;
             diagramObjectESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.DIAGRAM_OBJECT_POINT__DIAGRAM_OBJECT, null, null, oldDiagramObjectESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.DIAGRAM_OBJECT_POINT__DIAGRAM_OBJECT, null, null, oldDiagramObjectESet ) );
         }
     }
 
@@ -593,9 +602,10 @@ public class DiagramObjectPointImpl extends CimObjectWithIDImpl implements Diagr
         else {
             boolean oldDiagramObjectGluePointESet = diagramObjectGluePointESet;
             diagramObjectGluePointESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.DIAGRAM_OBJECT_POINT__DIAGRAM_OBJECT_GLUE_POINT, newDiagramObjectGluePoint,
-                    newDiagramObjectGluePoint, !oldDiagramObjectGluePointESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.DIAGRAM_OBJECT_POINT__DIAGRAM_OBJECT_GLUE_POINT, newDiagramObjectGluePoint,
+                        newDiagramObjectGluePoint, !oldDiagramObjectGluePointESet ) );
         }
     }
 
@@ -638,9 +648,10 @@ public class DiagramObjectPointImpl extends CimObjectWithIDImpl implements Diagr
         else {
             boolean oldDiagramObjectGluePointESet = diagramObjectGluePointESet;
             diagramObjectGluePointESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.DIAGRAM_OBJECT_POINT__DIAGRAM_OBJECT_GLUE_POINT, null, null,
-                    oldDiagramObjectGluePointESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.DIAGRAM_OBJECT_POINT__DIAGRAM_OBJECT_GLUE_POINT, null, null,
+                        oldDiagramObjectGluePointESet ) );
         }
     }
 
@@ -669,8 +680,9 @@ public class DiagramObjectPointImpl extends CimObjectWithIDImpl implements Diagr
                         msgs );
             return basicSetDiagramObjectGluePoint( ( DiagramObjectGluePoint ) otherEnd, msgs );
         case CimPackage.DIAGRAM_OBJECT_POINT__DIAGRAM_OBJECT:
-            if( diagramObject != null ) msgs = ( ( InternalEObject ) diagramObject ).eInverseRemove( this,
-                    CimPackage.DIAGRAM_OBJECT__DIAGRAM_OBJECT_POINTS, DiagramObject.class, msgs );
+            if( diagramObject != null )
+                msgs = ( ( InternalEObject ) diagramObject ).eInverseRemove( this,
+                        CimPackage.DIAGRAM_OBJECT__DIAGRAM_OBJECT_POINTS, DiagramObject.class, msgs );
             return basicSetDiagramObject( ( DiagramObject ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -809,7 +821,7 @@ public class DiagramObjectPointImpl extends CimObjectWithIDImpl implements Diagr
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (sequenceNumber: " );
         if( sequenceNumberESet )
             result.append( sequenceNumber );

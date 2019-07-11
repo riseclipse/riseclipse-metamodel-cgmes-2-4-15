@@ -193,8 +193,9 @@ public class ComModuleImpl extends AssetImpl implements ComModule {
         amrSystem = newAmrSystem;
         boolean oldAmrSystemESet = amrSystemESet;
         amrSystemESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.COM_MODULE__AMR_SYSTEM, oldAmrSystem, amrSystem, !oldAmrSystemESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.COM_MODULE__AMR_SYSTEM, oldAmrSystem,
+                    amrSystem, !oldAmrSystemESet ) );
     }
 
     /**
@@ -208,8 +209,9 @@ public class ComModuleImpl extends AssetImpl implements ComModule {
         boolean oldAmrSystemESet = amrSystemESet;
         amrSystem = AMR_SYSTEM_EDEFAULT;
         amrSystemESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.COM_MODULE__AMR_SYSTEM, oldAmrSystem, AMR_SYSTEM_EDEFAULT, oldAmrSystemESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.COM_MODULE__AMR_SYSTEM, oldAmrSystem,
+                    AMR_SYSTEM_EDEFAULT, oldAmrSystemESet ) );
     }
 
     /**
@@ -295,8 +297,9 @@ public class ComModuleImpl extends AssetImpl implements ComModule {
         timeZoneOffset = newTimeZoneOffset;
         boolean oldTimeZoneOffsetESet = timeZoneOffsetESet;
         timeZoneOffsetESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.COM_MODULE__TIME_ZONE_OFFSET, oldTimeZoneOffset, timeZoneOffset, !oldTimeZoneOffsetESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.COM_MODULE__TIME_ZONE_OFFSET,
+                    oldTimeZoneOffset, timeZoneOffset, !oldTimeZoneOffsetESet ) );
     }
 
     /**
@@ -488,7 +491,7 @@ public class ComModuleImpl extends AssetImpl implements ComModule {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (amrSystem: " );
         if( amrSystemESet )
             result.append( amrSystem );

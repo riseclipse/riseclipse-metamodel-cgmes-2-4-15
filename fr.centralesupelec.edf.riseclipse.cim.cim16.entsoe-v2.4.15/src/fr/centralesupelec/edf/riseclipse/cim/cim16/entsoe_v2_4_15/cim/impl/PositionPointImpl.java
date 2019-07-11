@@ -277,8 +277,9 @@ public class PositionPointImpl extends CimObjectWithIDImpl implements PositionPo
         xPosition = newXPosition;
         boolean oldXPositionESet = xPositionESet;
         xPositionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POSITION_POINT__XPOSITION, oldXPosition, xPosition, !oldXPositionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POSITION_POINT__XPOSITION, oldXPosition,
+                    xPosition, !oldXPositionESet ) );
     }
 
     /**
@@ -292,8 +293,9 @@ public class PositionPointImpl extends CimObjectWithIDImpl implements PositionPo
         boolean oldXPositionESet = xPositionESet;
         xPosition = XPOSITION_EDEFAULT;
         xPositionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POSITION_POINT__XPOSITION, oldXPosition, XPOSITION_EDEFAULT, oldXPositionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POSITION_POINT__XPOSITION,
+                    oldXPosition, XPOSITION_EDEFAULT, oldXPositionESet ) );
     }
 
     /**
@@ -327,8 +329,9 @@ public class PositionPointImpl extends CimObjectWithIDImpl implements PositionPo
         yPosition = newYPosition;
         boolean oldYPositionESet = yPositionESet;
         yPositionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POSITION_POINT__YPOSITION, oldYPosition, yPosition, !oldYPositionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POSITION_POINT__YPOSITION, oldYPosition,
+                    yPosition, !oldYPositionESet ) );
     }
 
     /**
@@ -342,8 +345,9 @@ public class PositionPointImpl extends CimObjectWithIDImpl implements PositionPo
         boolean oldYPositionESet = yPositionESet;
         yPosition = YPOSITION_EDEFAULT;
         yPositionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POSITION_POINT__YPOSITION, oldYPosition, YPOSITION_EDEFAULT, oldYPositionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POSITION_POINT__YPOSITION,
+                    oldYPosition, YPOSITION_EDEFAULT, oldYPositionESet ) );
     }
 
     /**
@@ -377,8 +381,9 @@ public class PositionPointImpl extends CimObjectWithIDImpl implements PositionPo
         zPosition = newZPosition;
         boolean oldZPositionESet = zPositionESet;
         zPositionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.POSITION_POINT__ZPOSITION, oldZPosition, zPosition, !oldZPositionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POSITION_POINT__ZPOSITION, oldZPosition,
+                    zPosition, !oldZPositionESet ) );
     }
 
     /**
@@ -392,8 +397,9 @@ public class PositionPointImpl extends CimObjectWithIDImpl implements PositionPo
         boolean oldZPositionESet = zPositionESet;
         zPosition = ZPOSITION_EDEFAULT;
         zPositionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.POSITION_POINT__ZPOSITION, oldZPosition, ZPOSITION_EDEFAULT, oldZPositionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POSITION_POINT__ZPOSITION,
+                    oldZPosition, ZPOSITION_EDEFAULT, oldZPositionESet ) );
     }
 
     /**
@@ -446,18 +452,21 @@ public class PositionPointImpl extends CimObjectWithIDImpl implements PositionPo
     public void setLocation( Location newLocation ) {
         if( newLocation != location ) {
             NotificationChain msgs = null;
-            if( location != null ) msgs = ( ( InternalEObject ) location ).eInverseRemove( this,
-                    CimPackage.LOCATION__POSITION_POINTS, Location.class, msgs );
-            if( newLocation != null ) msgs = ( ( InternalEObject ) newLocation ).eInverseAdd( this,
-                    CimPackage.LOCATION__POSITION_POINTS, Location.class, msgs );
+            if( location != null )
+                msgs = ( ( InternalEObject ) location ).eInverseRemove( this, CimPackage.LOCATION__POSITION_POINTS,
+                        Location.class, msgs );
+            if( newLocation != null )
+                msgs = ( ( InternalEObject ) newLocation ).eInverseAdd( this, CimPackage.LOCATION__POSITION_POINTS,
+                        Location.class, msgs );
             msgs = basicSetLocation( newLocation, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldLocationESet = locationESet;
             locationESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.POSITION_POINT__LOCATION, newLocation, newLocation, !oldLocationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.POSITION_POINT__LOCATION,
+                        newLocation, newLocation, !oldLocationESet ) );
         }
     }
 
@@ -499,8 +508,9 @@ public class PositionPointImpl extends CimObjectWithIDImpl implements PositionPo
         else {
             boolean oldLocationESet = locationESet;
             locationESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.POSITION_POINT__LOCATION, null, null, oldLocationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.POSITION_POINT__LOCATION, null,
+                        null, oldLocationESet ) );
         }
     }
 
@@ -523,8 +533,9 @@ public class PositionPointImpl extends CimObjectWithIDImpl implements PositionPo
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.POSITION_POINT__LOCATION:
-            if( location != null ) msgs = ( ( InternalEObject ) location ).eInverseRemove( this,
-                    CimPackage.LOCATION__POSITION_POINTS, Location.class, msgs );
+            if( location != null )
+                msgs = ( ( InternalEObject ) location ).eInverseRemove( this, CimPackage.LOCATION__POSITION_POINTS,
+                        Location.class, msgs );
             return basicSetLocation( ( Location ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -651,7 +662,7 @@ public class PositionPointImpl extends CimObjectWithIDImpl implements PositionPo
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (sequenceNumber: " );
         if( sequenceNumberESet )
             result.append( sequenceNumber );

@@ -117,7 +117,11 @@ public enum SupplierKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final SupplierKind[] VALUES_ARRAY = new SupplierKind[] { UTILITY, RETAILER, OTHER, };
+    private static final SupplierKind[] VALUES_ARRAY = new SupplierKind[] {
+            UTILITY,
+            RETAILER,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Supplier Kind</b></em>' enumerators.

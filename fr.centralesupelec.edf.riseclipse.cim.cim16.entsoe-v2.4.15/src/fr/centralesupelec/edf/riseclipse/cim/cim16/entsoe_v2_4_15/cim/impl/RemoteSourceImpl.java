@@ -225,8 +225,9 @@ public class RemoteSourceImpl extends RemotePointImpl implements RemoteSource {
         deadband = newDeadband;
         boolean oldDeadbandESet = deadbandESet;
         deadbandESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REMOTE_SOURCE__DEADBAND, oldDeadband, deadband, !oldDeadbandESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REMOTE_SOURCE__DEADBAND, oldDeadband,
+                    deadband, !oldDeadbandESet ) );
     }
 
     /**
@@ -240,8 +241,9 @@ public class RemoteSourceImpl extends RemotePointImpl implements RemoteSource {
         boolean oldDeadbandESet = deadbandESet;
         deadband = DEADBAND_EDEFAULT;
         deadbandESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REMOTE_SOURCE__DEADBAND, oldDeadband, DEADBAND_EDEFAULT, oldDeadbandESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.REMOTE_SOURCE__DEADBAND, oldDeadband,
+                    DEADBAND_EDEFAULT, oldDeadbandESet ) );
     }
 
     /**
@@ -275,8 +277,9 @@ public class RemoteSourceImpl extends RemotePointImpl implements RemoteSource {
         scanInterval = newScanInterval;
         boolean oldScanIntervalESet = scanIntervalESet;
         scanIntervalESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REMOTE_SOURCE__SCAN_INTERVAL, oldScanInterval, scanInterval, !oldScanIntervalESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REMOTE_SOURCE__SCAN_INTERVAL,
+                    oldScanInterval, scanInterval, !oldScanIntervalESet ) );
     }
 
     /**
@@ -326,8 +329,9 @@ public class RemoteSourceImpl extends RemotePointImpl implements RemoteSource {
         sensorMaximum = newSensorMaximum;
         boolean oldSensorMaximumESet = sensorMaximumESet;
         sensorMaximumESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REMOTE_SOURCE__SENSOR_MAXIMUM, oldSensorMaximum, sensorMaximum, !oldSensorMaximumESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REMOTE_SOURCE__SENSOR_MAXIMUM,
+                    oldSensorMaximum, sensorMaximum, !oldSensorMaximumESet ) );
     }
 
     /**
@@ -377,8 +381,9 @@ public class RemoteSourceImpl extends RemotePointImpl implements RemoteSource {
         sensorMinimum = newSensorMinimum;
         boolean oldSensorMinimumESet = sensorMinimumESet;
         sensorMinimumESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REMOTE_SOURCE__SENSOR_MINIMUM, oldSensorMinimum, sensorMinimum, !oldSensorMinimumESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REMOTE_SOURCE__SENSOR_MINIMUM,
+                    oldSensorMinimum, sensorMinimum, !oldSensorMinimumESet ) );
     }
 
     /**
@@ -418,8 +423,9 @@ public class RemoteSourceImpl extends RemotePointImpl implements RemoteSource {
             InternalEObject oldMeasurementValue = ( InternalEObject ) measurementValue;
             measurementValue = ( MeasurementValue ) eResolveProxy( oldMeasurementValue );
             if( measurementValue != oldMeasurementValue ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.REMOTE_SOURCE__MEASUREMENT_VALUE, oldMeasurementValue, measurementValue ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.REMOTE_SOURCE__MEASUREMENT_VALUE, oldMeasurementValue, measurementValue ) );
             }
         }
         return measurementValue;
@@ -465,10 +471,12 @@ public class RemoteSourceImpl extends RemotePointImpl implements RemoteSource {
     public void setMeasurementValue( MeasurementValue newMeasurementValue ) {
         if( newMeasurementValue != measurementValue ) {
             NotificationChain msgs = null;
-            if( measurementValue != null ) msgs = ( ( InternalEObject ) measurementValue ).eInverseRemove( this,
-                    CimPackage.MEASUREMENT_VALUE__REMOTE_SOURCE, MeasurementValue.class, msgs );
-            if( newMeasurementValue != null ) msgs = ( ( InternalEObject ) newMeasurementValue ).eInverseAdd( this,
-                    CimPackage.MEASUREMENT_VALUE__REMOTE_SOURCE, MeasurementValue.class, msgs );
+            if( measurementValue != null )
+                msgs = ( ( InternalEObject ) measurementValue ).eInverseRemove( this,
+                        CimPackage.MEASUREMENT_VALUE__REMOTE_SOURCE, MeasurementValue.class, msgs );
+            if( newMeasurementValue != null )
+                msgs = ( ( InternalEObject ) newMeasurementValue ).eInverseAdd( this,
+                        CimPackage.MEASUREMENT_VALUE__REMOTE_SOURCE, MeasurementValue.class, msgs );
             msgs = basicSetMeasurementValue( newMeasurementValue, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -519,8 +527,9 @@ public class RemoteSourceImpl extends RemotePointImpl implements RemoteSource {
         else {
             boolean oldMeasurementValueESet = measurementValueESet;
             measurementValueESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REMOTE_SOURCE__MEASUREMENT_VALUE, null, null, oldMeasurementValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.REMOTE_SOURCE__MEASUREMENT_VALUE,
+                        null, null, oldMeasurementValueESet ) );
         }
     }
 
@@ -543,8 +552,9 @@ public class RemoteSourceImpl extends RemotePointImpl implements RemoteSource {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.REMOTE_SOURCE__MEASUREMENT_VALUE:
-            if( measurementValue != null ) msgs = ( ( InternalEObject ) measurementValue ).eInverseRemove( this,
-                    CimPackage.MEASUREMENT_VALUE__REMOTE_SOURCE, MeasurementValue.class, msgs );
+            if( measurementValue != null )
+                msgs = ( ( InternalEObject ) measurementValue ).eInverseRemove( this,
+                        CimPackage.MEASUREMENT_VALUE__REMOTE_SOURCE, MeasurementValue.class, msgs );
             return basicSetMeasurementValue( ( MeasurementValue ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -672,7 +682,7 @@ public class RemoteSourceImpl extends RemotePointImpl implements RemoteSource {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (deadband: " );
         if( deadbandESet )
             result.append( deadband );

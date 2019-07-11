@@ -255,8 +255,9 @@ public class PanDisplayImpl extends EndDeviceActionImpl implements PanDisplay {
         priority = newPriority;
         boolean oldPriorityESet = priorityESet;
         priorityESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PAN_DISPLAY__PRIORITY, oldPriority, priority, !oldPriorityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PAN_DISPLAY__PRIORITY, oldPriority,
+                    priority, !oldPriorityESet ) );
     }
 
     /**
@@ -270,8 +271,9 @@ public class PanDisplayImpl extends EndDeviceActionImpl implements PanDisplay {
         boolean oldPriorityESet = priorityESet;
         priority = PRIORITY_EDEFAULT;
         priorityESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PAN_DISPLAY__PRIORITY, oldPriority, PRIORITY_EDEFAULT, oldPriorityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PAN_DISPLAY__PRIORITY, oldPriority,
+                    PRIORITY_EDEFAULT, oldPriorityESet ) );
     }
 
     /**
@@ -305,8 +307,9 @@ public class PanDisplayImpl extends EndDeviceActionImpl implements PanDisplay {
         textMessage = newTextMessage;
         boolean oldTextMessageESet = textMessageESet;
         textMessageESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PAN_DISPLAY__TEXT_MESSAGE, oldTextMessage, textMessage, !oldTextMessageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PAN_DISPLAY__TEXT_MESSAGE,
+                    oldTextMessage, textMessage, !oldTextMessageESet ) );
     }
 
     /**
@@ -320,8 +323,9 @@ public class PanDisplayImpl extends EndDeviceActionImpl implements PanDisplay {
         boolean oldTextMessageESet = textMessageESet;
         textMessage = TEXT_MESSAGE_EDEFAULT;
         textMessageESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PAN_DISPLAY__TEXT_MESSAGE, oldTextMessage, TEXT_MESSAGE_EDEFAULT, oldTextMessageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PAN_DISPLAY__TEXT_MESSAGE,
+                    oldTextMessage, TEXT_MESSAGE_EDEFAULT, oldTextMessageESet ) );
     }
 
     /**
@@ -483,7 +487,7 @@ public class PanDisplayImpl extends EndDeviceActionImpl implements PanDisplay {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (confirmationRequired: " );
         if( confirmationRequiredESet )
             result.append( confirmationRequired );

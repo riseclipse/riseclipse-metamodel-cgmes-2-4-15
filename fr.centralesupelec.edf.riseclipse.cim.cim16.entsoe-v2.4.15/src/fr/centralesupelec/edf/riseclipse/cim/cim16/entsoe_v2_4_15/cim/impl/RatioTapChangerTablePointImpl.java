@@ -126,9 +126,10 @@ public class RatioTapChangerTablePointImpl extends TapChangerTablePointImpl impl
     public void setRatioTapChangerTable( RatioTapChangerTable newRatioTapChangerTable ) {
         if( newRatioTapChangerTable != ratioTapChangerTable ) {
             NotificationChain msgs = null;
-            if( ratioTapChangerTable != null ) msgs = ( ( InternalEObject ) ratioTapChangerTable ).eInverseRemove( this,
-                    CimPackage.RATIO_TAP_CHANGER_TABLE__RATIO_TAP_CHANGER_TABLE_POINT, RatioTapChangerTable.class,
-                    msgs );
+            if( ratioTapChangerTable != null )
+                msgs = ( ( InternalEObject ) ratioTapChangerTable ).eInverseRemove( this,
+                        CimPackage.RATIO_TAP_CHANGER_TABLE__RATIO_TAP_CHANGER_TABLE_POINT, RatioTapChangerTable.class,
+                        msgs );
             if( newRatioTapChangerTable != null )
                 msgs = ( ( InternalEObject ) newRatioTapChangerTable ).eInverseAdd( this,
                         CimPackage.RATIO_TAP_CHANGER_TABLE__RATIO_TAP_CHANGER_TABLE_POINT, RatioTapChangerTable.class,
@@ -139,9 +140,10 @@ public class RatioTapChangerTablePointImpl extends TapChangerTablePointImpl impl
         else {
             boolean oldRatioTapChangerTableESet = ratioTapChangerTableESet;
             ratioTapChangerTableESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.RATIO_TAP_CHANGER_TABLE_POINT__RATIO_TAP_CHANGER_TABLE, newRatioTapChangerTable,
-                    newRatioTapChangerTable, !oldRatioTapChangerTableESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.RATIO_TAP_CHANGER_TABLE_POINT__RATIO_TAP_CHANGER_TABLE, newRatioTapChangerTable,
+                        newRatioTapChangerTable, !oldRatioTapChangerTableESet ) );
         }
     }
 
@@ -185,9 +187,10 @@ public class RatioTapChangerTablePointImpl extends TapChangerTablePointImpl impl
         else {
             boolean oldRatioTapChangerTableESet = ratioTapChangerTableESet;
             ratioTapChangerTableESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.RATIO_TAP_CHANGER_TABLE_POINT__RATIO_TAP_CHANGER_TABLE, null, null,
-                    oldRatioTapChangerTableESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.RATIO_TAP_CHANGER_TABLE_POINT__RATIO_TAP_CHANGER_TABLE, null, null,
+                        oldRatioTapChangerTableESet ) );
         }
     }
 
@@ -210,9 +213,10 @@ public class RatioTapChangerTablePointImpl extends TapChangerTablePointImpl impl
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.RATIO_TAP_CHANGER_TABLE_POINT__RATIO_TAP_CHANGER_TABLE:
-            if( ratioTapChangerTable != null ) msgs = ( ( InternalEObject ) ratioTapChangerTable ).eInverseRemove( this,
-                    CimPackage.RATIO_TAP_CHANGER_TABLE__RATIO_TAP_CHANGER_TABLE_POINT, RatioTapChangerTable.class,
-                    msgs );
+            if( ratioTapChangerTable != null )
+                msgs = ( ( InternalEObject ) ratioTapChangerTable ).eInverseRemove( this,
+                        CimPackage.RATIO_TAP_CHANGER_TABLE__RATIO_TAP_CHANGER_TABLE_POINT, RatioTapChangerTable.class,
+                        msgs );
             return basicSetRatioTapChangerTable( ( RatioTapChangerTable ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

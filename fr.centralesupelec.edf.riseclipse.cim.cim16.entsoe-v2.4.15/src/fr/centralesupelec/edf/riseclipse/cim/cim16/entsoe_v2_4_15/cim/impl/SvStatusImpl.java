@@ -135,8 +135,9 @@ public class SvStatusImpl extends StateVariableImpl implements SvStatus {
         inService = newInService;
         boolean oldInServiceESet = inServiceESet;
         inServiceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SV_STATUS__IN_SERVICE, oldInService, inService, !oldInServiceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SV_STATUS__IN_SERVICE, oldInService,
+                    inService, !oldInServiceESet ) );
     }
 
     /**
@@ -150,8 +151,9 @@ public class SvStatusImpl extends StateVariableImpl implements SvStatus {
         boolean oldInServiceESet = inServiceESet;
         inService = IN_SERVICE_EDEFAULT;
         inServiceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SV_STATUS__IN_SERVICE, oldInService, IN_SERVICE_EDEFAULT, oldInServiceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SV_STATUS__IN_SERVICE, oldInService,
+                    IN_SERVICE_EDEFAULT, oldInServiceESet ) );
     }
 
     /**
@@ -175,8 +177,9 @@ public class SvStatusImpl extends StateVariableImpl implements SvStatus {
             InternalEObject oldConductingEquipment = ( InternalEObject ) conductingEquipment;
             conductingEquipment = ( ConductingEquipment ) eResolveProxy( oldConductingEquipment );
             if( conductingEquipment != oldConductingEquipment ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.SV_STATUS__CONDUCTING_EQUIPMENT, oldConductingEquipment, conductingEquipment ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.SV_STATUS__CONDUCTING_EQUIPMENT, oldConductingEquipment, conductingEquipment ) );
             }
         }
         return conductingEquipment;
@@ -223,10 +226,12 @@ public class SvStatusImpl extends StateVariableImpl implements SvStatus {
     public void setConductingEquipment( ConductingEquipment newConductingEquipment ) {
         if( newConductingEquipment != conductingEquipment ) {
             NotificationChain msgs = null;
-            if( conductingEquipment != null ) msgs = ( ( InternalEObject ) conductingEquipment ).eInverseRemove( this,
-                    CimPackage.CONDUCTING_EQUIPMENT__SV_STATUS, ConductingEquipment.class, msgs );
-            if( newConductingEquipment != null ) msgs = ( ( InternalEObject ) newConductingEquipment )
-                    .eInverseAdd( this, CimPackage.CONDUCTING_EQUIPMENT__SV_STATUS, ConductingEquipment.class, msgs );
+            if( conductingEquipment != null )
+                msgs = ( ( InternalEObject ) conductingEquipment ).eInverseRemove( this,
+                        CimPackage.CONDUCTING_EQUIPMENT__SV_STATUS, ConductingEquipment.class, msgs );
+            if( newConductingEquipment != null )
+                msgs = ( ( InternalEObject ) newConductingEquipment ).eInverseAdd( this,
+                        CimPackage.CONDUCTING_EQUIPMENT__SV_STATUS, ConductingEquipment.class, msgs );
             msgs = basicSetConductingEquipment( newConductingEquipment, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -278,8 +283,9 @@ public class SvStatusImpl extends StateVariableImpl implements SvStatus {
         else {
             boolean oldConductingEquipmentESet = conductingEquipmentESet;
             conductingEquipmentESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SV_STATUS__CONDUCTING_EQUIPMENT, null, null, oldConductingEquipmentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SV_STATUS__CONDUCTING_EQUIPMENT,
+                        null, null, oldConductingEquipmentESet ) );
         }
     }
 
@@ -302,8 +308,9 @@ public class SvStatusImpl extends StateVariableImpl implements SvStatus {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.SV_STATUS__CONDUCTING_EQUIPMENT:
-            if( conductingEquipment != null ) msgs = ( ( InternalEObject ) conductingEquipment ).eInverseRemove( this,
-                    CimPackage.CONDUCTING_EQUIPMENT__SV_STATUS, ConductingEquipment.class, msgs );
+            if( conductingEquipment != null )
+                msgs = ( ( InternalEObject ) conductingEquipment ).eInverseRemove( this,
+                        CimPackage.CONDUCTING_EQUIPMENT__SV_STATUS, ConductingEquipment.class, msgs );
             return basicSetConductingEquipment( ( ConductingEquipment ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -401,7 +408,7 @@ public class SvStatusImpl extends StateVariableImpl implements SvStatus {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (inService: " );
         if( inServiceESet )
             result.append( inService );

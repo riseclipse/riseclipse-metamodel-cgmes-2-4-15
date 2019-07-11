@@ -117,7 +117,11 @@ public enum Validity implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final Validity[] VALUES_ARRAY = new Validity[] { GOOD, QUESTIONABLE, INVALID, };
+    private static final Validity[] VALUES_ARRAY = new Validity[] {
+            GOOD,
+            QUESTIONABLE,
+            INVALID,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Validity</b></em>' enumerators.

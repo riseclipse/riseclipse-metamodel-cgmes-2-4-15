@@ -145,8 +145,9 @@ public class DateIntervalImpl extends MinimalEObjectImpl.Container implements Da
         end = newEnd;
         boolean oldEndESet = endESet;
         endESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DATE_INTERVAL__END, oldEnd, end, !oldEndESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DATE_INTERVAL__END, oldEnd, end,
+                    !oldEndESet ) );
     }
 
     /**
@@ -160,8 +161,9 @@ public class DateIntervalImpl extends MinimalEObjectImpl.Container implements Da
         boolean oldEndESet = endESet;
         end = END_EDEFAULT;
         endESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DATE_INTERVAL__END, oldEnd, END_EDEFAULT, oldEndESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DATE_INTERVAL__END, oldEnd,
+                    END_EDEFAULT, oldEndESet ) );
     }
 
     /**
@@ -195,8 +197,9 @@ public class DateIntervalImpl extends MinimalEObjectImpl.Container implements Da
         start = newStart;
         boolean oldStartESet = startESet;
         startESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DATE_INTERVAL__START, oldStart, start, !oldStartESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DATE_INTERVAL__START, oldStart, start,
+                    !oldStartESet ) );
     }
 
     /**
@@ -210,8 +213,9 @@ public class DateIntervalImpl extends MinimalEObjectImpl.Container implements Da
         boolean oldStartESet = startESet;
         start = START_EDEFAULT;
         startESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DATE_INTERVAL__START, oldStart, START_EDEFAULT, oldStartESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DATE_INTERVAL__START, oldStart,
+                    START_EDEFAULT, oldStartESet ) );
     }
 
     /**
@@ -301,7 +305,7 @@ public class DateIntervalImpl extends MinimalEObjectImpl.Container implements Da
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (end: " );
         if( endESet )
             result.append( end );

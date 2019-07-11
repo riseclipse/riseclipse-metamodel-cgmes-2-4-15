@@ -244,8 +244,9 @@ public class EndDeviceInfoImpl extends AssetInfoImpl implements EndDeviceInfo {
         isSolidState = newIsSolidState;
         boolean oldIsSolidStateESet = isSolidStateESet;
         isSolidStateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_INFO__IS_SOLID_STATE, oldIsSolidState, isSolidState, !oldIsSolidStateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_INFO__IS_SOLID_STATE,
+                    oldIsSolidState, isSolidState, !oldIsSolidStateESet ) );
     }
 
     /**
@@ -295,8 +296,9 @@ public class EndDeviceInfoImpl extends AssetInfoImpl implements EndDeviceInfo {
         phaseCount = newPhaseCount;
         boolean oldPhaseCountESet = phaseCountESet;
         phaseCountESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_INFO__PHASE_COUNT, oldPhaseCount, phaseCount, !oldPhaseCountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_INFO__PHASE_COUNT,
+                    oldPhaseCount, phaseCount, !oldPhaseCountESet ) );
     }
 
     /**
@@ -310,8 +312,9 @@ public class EndDeviceInfoImpl extends AssetInfoImpl implements EndDeviceInfo {
         boolean oldPhaseCountESet = phaseCountESet;
         phaseCount = PHASE_COUNT_EDEFAULT;
         phaseCountESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_INFO__PHASE_COUNT, oldPhaseCount, PHASE_COUNT_EDEFAULT, oldPhaseCountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_INFO__PHASE_COUNT,
+                    oldPhaseCount, PHASE_COUNT_EDEFAULT, oldPhaseCountESet ) );
     }
 
     /**
@@ -345,8 +348,9 @@ public class EndDeviceInfoImpl extends AssetInfoImpl implements EndDeviceInfo {
         ratedCurrent = newRatedCurrent;
         boolean oldRatedCurrentESet = ratedCurrentESet;
         ratedCurrentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_INFO__RATED_CURRENT, oldRatedCurrent, ratedCurrent, !oldRatedCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_INFO__RATED_CURRENT,
+                    oldRatedCurrent, ratedCurrent, !oldRatedCurrentESet ) );
     }
 
     /**
@@ -396,8 +400,9 @@ public class EndDeviceInfoImpl extends AssetInfoImpl implements EndDeviceInfo {
         ratedVoltage = newRatedVoltage;
         boolean oldRatedVoltageESet = ratedVoltageESet;
         ratedVoltageESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_INFO__RATED_VOLTAGE, oldRatedVoltage, ratedVoltage, !oldRatedVoltageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_INFO__RATED_VOLTAGE,
+                    oldRatedVoltage, ratedVoltage, !oldRatedVoltageESet ) );
     }
 
     /**
@@ -466,18 +471,21 @@ public class EndDeviceInfoImpl extends AssetInfoImpl implements EndDeviceInfo {
     public void setCapability( EndDeviceCapability newCapability ) {
         if( newCapability != capability ) {
             NotificationChain msgs = null;
-            if( capability != null ) msgs = ( ( InternalEObject ) capability ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.END_DEVICE_INFO__CAPABILITY, null, msgs );
-            if( newCapability != null ) msgs = ( ( InternalEObject ) newCapability ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.END_DEVICE_INFO__CAPABILITY, null, msgs );
+            if( capability != null )
+                msgs = ( ( InternalEObject ) capability ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.END_DEVICE_INFO__CAPABILITY, null, msgs );
+            if( newCapability != null )
+                msgs = ( ( InternalEObject ) newCapability ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.END_DEVICE_INFO__CAPABILITY, null, msgs );
             msgs = basicSetCapability( newCapability, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCapabilityESet = capabilityESet;
             capabilityESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.END_DEVICE_INFO__CAPABILITY, newCapability, newCapability, !oldCapabilityESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_INFO__CAPABILITY,
+                        newCapability, newCapability, !oldCapabilityESet ) );
         }
     }
 
@@ -519,8 +527,9 @@ public class EndDeviceInfoImpl extends AssetInfoImpl implements EndDeviceInfo {
         else {
             boolean oldCapabilityESet = capabilityESet;
             capabilityESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.END_DEVICE_INFO__CAPABILITY, null, null, oldCapabilityESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_INFO__CAPABILITY, null,
+                        null, oldCapabilityESet ) );
         }
     }
 
@@ -719,7 +728,7 @@ public class EndDeviceInfoImpl extends AssetInfoImpl implements EndDeviceInfo {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (isSolidState: " );
         if( isSolidStateESet )
             result.append( isSolidState );

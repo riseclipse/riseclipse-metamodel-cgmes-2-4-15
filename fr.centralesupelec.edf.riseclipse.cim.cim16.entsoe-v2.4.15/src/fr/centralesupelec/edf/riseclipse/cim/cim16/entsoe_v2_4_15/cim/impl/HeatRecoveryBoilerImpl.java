@@ -133,9 +133,10 @@ public class HeatRecoveryBoilerImpl extends FossilSteamSupplyImpl implements Hea
         steamSupplyRating2 = newSteamSupplyRating2;
         boolean oldSteamSupplyRating2ESet = steamSupplyRating2ESet;
         steamSupplyRating2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.HEAT_RECOVERY_BOILER__STEAM_SUPPLY_RATING2,
-                        oldSteamSupplyRating2, steamSupplyRating2, !oldSteamSupplyRating2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.HEAT_RECOVERY_BOILER__STEAM_SUPPLY_RATING2, oldSteamSupplyRating2, steamSupplyRating2,
+                    !oldSteamSupplyRating2ESet ) );
     }
 
     /**
@@ -149,9 +150,10 @@ public class HeatRecoveryBoilerImpl extends FossilSteamSupplyImpl implements Hea
         boolean oldSteamSupplyRating2ESet = steamSupplyRating2ESet;
         steamSupplyRating2 = STEAM_SUPPLY_RATING2_EDEFAULT;
         steamSupplyRating2ESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.HEAT_RECOVERY_BOILER__STEAM_SUPPLY_RATING2,
-                        oldSteamSupplyRating2, STEAM_SUPPLY_RATING2_EDEFAULT, oldSteamSupplyRating2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.HEAT_RECOVERY_BOILER__STEAM_SUPPLY_RATING2, oldSteamSupplyRating2,
+                    STEAM_SUPPLY_RATING2_EDEFAULT, oldSteamSupplyRating2ESet ) );
     }
 
     /**
@@ -308,7 +310,7 @@ public class HeatRecoveryBoilerImpl extends FossilSteamSupplyImpl implements Hea
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (steamSupplyRating2: " );
         if( steamSupplyRating2ESet )
             result.append( steamSupplyRating2 );

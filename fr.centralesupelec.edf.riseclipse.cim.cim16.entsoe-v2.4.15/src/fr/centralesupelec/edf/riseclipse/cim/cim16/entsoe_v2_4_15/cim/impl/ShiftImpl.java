@@ -273,9 +273,10 @@ public class ShiftImpl extends IdentifiedObjectImpl implements Shift {
         boolean oldReceiptsGrandTotalBankableESet = receiptsGrandTotalBankableESet;
         receiptsGrandTotalBankable = RECEIPTS_GRAND_TOTAL_BANKABLE_EDEFAULT;
         receiptsGrandTotalBankableESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SHIFT__RECEIPTS_GRAND_TOTAL_BANKABLE, oldReceiptsGrandTotalBankable,
-                RECEIPTS_GRAND_TOTAL_BANKABLE_EDEFAULT, oldReceiptsGrandTotalBankableESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SHIFT__RECEIPTS_GRAND_TOTAL_BANKABLE,
+                    oldReceiptsGrandTotalBankable, RECEIPTS_GRAND_TOTAL_BANKABLE_EDEFAULT,
+                    oldReceiptsGrandTotalBankableESet ) );
     }
 
     /**
@@ -309,9 +310,10 @@ public class ShiftImpl extends IdentifiedObjectImpl implements Shift {
         receiptsGrandTotalNonBankable = newReceiptsGrandTotalNonBankable;
         boolean oldReceiptsGrandTotalNonBankableESet = receiptsGrandTotalNonBankableESet;
         receiptsGrandTotalNonBankableESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SHIFT__RECEIPTS_GRAND_TOTAL_NON_BANKABLE, oldReceiptsGrandTotalNonBankable,
-                receiptsGrandTotalNonBankable, !oldReceiptsGrandTotalNonBankableESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SHIFT__RECEIPTS_GRAND_TOTAL_NON_BANKABLE,
+                    oldReceiptsGrandTotalNonBankable, receiptsGrandTotalNonBankable,
+                    !oldReceiptsGrandTotalNonBankableESet ) );
     }
 
     /**
@@ -325,9 +327,10 @@ public class ShiftImpl extends IdentifiedObjectImpl implements Shift {
         boolean oldReceiptsGrandTotalNonBankableESet = receiptsGrandTotalNonBankableESet;
         receiptsGrandTotalNonBankable = RECEIPTS_GRAND_TOTAL_NON_BANKABLE_EDEFAULT;
         receiptsGrandTotalNonBankableESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SHIFT__RECEIPTS_GRAND_TOTAL_NON_BANKABLE, oldReceiptsGrandTotalNonBankable,
-                RECEIPTS_GRAND_TOTAL_NON_BANKABLE_EDEFAULT, oldReceiptsGrandTotalNonBankableESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SHIFT__RECEIPTS_GRAND_TOTAL_NON_BANKABLE, oldReceiptsGrandTotalNonBankable,
+                    RECEIPTS_GRAND_TOTAL_NON_BANKABLE_EDEFAULT, oldReceiptsGrandTotalNonBankableESet ) );
     }
 
     /**
@@ -377,9 +380,10 @@ public class ShiftImpl extends IdentifiedObjectImpl implements Shift {
         boolean oldReceiptsGrandTotalRoundingESet = receiptsGrandTotalRoundingESet;
         receiptsGrandTotalRounding = RECEIPTS_GRAND_TOTAL_ROUNDING_EDEFAULT;
         receiptsGrandTotalRoundingESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SHIFT__RECEIPTS_GRAND_TOTAL_ROUNDING, oldReceiptsGrandTotalRounding,
-                RECEIPTS_GRAND_TOTAL_ROUNDING_EDEFAULT, oldReceiptsGrandTotalRoundingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SHIFT__RECEIPTS_GRAND_TOTAL_ROUNDING,
+                    oldReceiptsGrandTotalRounding, RECEIPTS_GRAND_TOTAL_ROUNDING_EDEFAULT,
+                    oldReceiptsGrandTotalRoundingESet ) );
     }
 
     /**
@@ -465,9 +469,10 @@ public class ShiftImpl extends IdentifiedObjectImpl implements Shift {
         transactionsGrandTotalRounding = newTransactionsGrandTotalRounding;
         boolean oldTransactionsGrandTotalRoundingESet = transactionsGrandTotalRoundingESet;
         transactionsGrandTotalRoundingESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SHIFT__TRANSACTIONS_GRAND_TOTAL_ROUNDING, oldTransactionsGrandTotalRounding,
-                transactionsGrandTotalRounding, !oldTransactionsGrandTotalRoundingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SHIFT__TRANSACTIONS_GRAND_TOTAL_ROUNDING,
+                    oldTransactionsGrandTotalRounding, transactionsGrandTotalRounding,
+                    !oldTransactionsGrandTotalRoundingESet ) );
     }
 
     /**
@@ -481,9 +486,10 @@ public class ShiftImpl extends IdentifiedObjectImpl implements Shift {
         boolean oldTransactionsGrandTotalRoundingESet = transactionsGrandTotalRoundingESet;
         transactionsGrandTotalRounding = TRANSACTIONS_GRAND_TOTAL_ROUNDING_EDEFAULT;
         transactionsGrandTotalRoundingESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SHIFT__TRANSACTIONS_GRAND_TOTAL_ROUNDING, oldTransactionsGrandTotalRounding,
-                TRANSACTIONS_GRAND_TOTAL_ROUNDING_EDEFAULT, oldTransactionsGrandTotalRoundingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SHIFT__TRANSACTIONS_GRAND_TOTAL_ROUNDING, oldTransactionsGrandTotalRounding,
+                    TRANSACTIONS_GRAND_TOTAL_ROUNDING_EDEFAULT, oldTransactionsGrandTotalRoundingESet ) );
     }
 
     /**
@@ -537,10 +543,12 @@ public class ShiftImpl extends IdentifiedObjectImpl implements Shift {
     public void setActivityInterval( DateTimeInterval newActivityInterval ) {
         if( newActivityInterval != activityInterval ) {
             NotificationChain msgs = null;
-            if( activityInterval != null ) msgs = ( ( InternalEObject ) activityInterval ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.SHIFT__ACTIVITY_INTERVAL, null, msgs );
-            if( newActivityInterval != null ) msgs = ( ( InternalEObject ) newActivityInterval ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.SHIFT__ACTIVITY_INTERVAL, null, msgs );
+            if( activityInterval != null )
+                msgs = ( ( InternalEObject ) activityInterval ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.SHIFT__ACTIVITY_INTERVAL, null, msgs );
+            if( newActivityInterval != null )
+                msgs = ( ( InternalEObject ) newActivityInterval ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.SHIFT__ACTIVITY_INTERVAL, null, msgs );
             msgs = basicSetActivityInterval( newActivityInterval, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -591,8 +599,9 @@ public class ShiftImpl extends IdentifiedObjectImpl implements Shift {
         else {
             boolean oldActivityIntervalESet = activityIntervalESet;
             activityIntervalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SHIFT__ACTIVITY_INTERVAL, null, null, oldActivityIntervalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SHIFT__ACTIVITY_INTERVAL, null,
+                        null, oldActivityIntervalESet ) );
         }
     }
 
@@ -737,7 +746,7 @@ public class ShiftImpl extends IdentifiedObjectImpl implements Shift {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (receiptsGrandTotalBankable: " );
         if( receiptsGrandTotalBankableESet )
             result.append( receiptsGrandTotalBankable );

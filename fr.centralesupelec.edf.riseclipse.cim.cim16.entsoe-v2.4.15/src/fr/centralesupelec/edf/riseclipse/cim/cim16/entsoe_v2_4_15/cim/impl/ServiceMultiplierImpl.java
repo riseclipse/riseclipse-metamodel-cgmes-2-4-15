@@ -166,8 +166,9 @@ public class ServiceMultiplierImpl extends IdentifiedObjectImpl implements Servi
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SERVICE_MULTIPLIER__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SERVICE_MULTIPLIER__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -181,8 +182,9 @@ public class ServiceMultiplierImpl extends IdentifiedObjectImpl implements Servi
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SERVICE_MULTIPLIER__KIND, oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SERVICE_MULTIPLIER__KIND, oldKind,
+                    KIND_EDEFAULT, oldKindESet ) );
     }
 
     /**
@@ -216,8 +218,9 @@ public class ServiceMultiplierImpl extends IdentifiedObjectImpl implements Servi
         value = newValue;
         boolean oldValueESet = valueESet;
         valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SERVICE_MULTIPLIER__VALUE, oldValue, value, !oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SERVICE_MULTIPLIER__VALUE, oldValue,
+                    value, !oldValueESet ) );
     }
 
     /**
@@ -231,8 +234,9 @@ public class ServiceMultiplierImpl extends IdentifiedObjectImpl implements Servi
         boolean oldValueESet = valueESet;
         value = VALUE_EDEFAULT;
         valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SERVICE_MULTIPLIER__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SERVICE_MULTIPLIER__VALUE, oldValue,
+                    VALUE_EDEFAULT, oldValueESet ) );
     }
 
     /**
@@ -285,18 +289,21 @@ public class ServiceMultiplierImpl extends IdentifiedObjectImpl implements Servi
     public void setUsagePoint( UsagePoint newUsagePoint ) {
         if( newUsagePoint != usagePoint ) {
             NotificationChain msgs = null;
-            if( usagePoint != null ) msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this,
-                    CimPackage.USAGE_POINT__SERVICE_MULTIPLIERS, UsagePoint.class, msgs );
-            if( newUsagePoint != null ) msgs = ( ( InternalEObject ) newUsagePoint ).eInverseAdd( this,
-                    CimPackage.USAGE_POINT__SERVICE_MULTIPLIERS, UsagePoint.class, msgs );
+            if( usagePoint != null )
+                msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this,
+                        CimPackage.USAGE_POINT__SERVICE_MULTIPLIERS, UsagePoint.class, msgs );
+            if( newUsagePoint != null )
+                msgs = ( ( InternalEObject ) newUsagePoint ).eInverseAdd( this,
+                        CimPackage.USAGE_POINT__SERVICE_MULTIPLIERS, UsagePoint.class, msgs );
             msgs = basicSetUsagePoint( newUsagePoint, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldUsagePointESet = usagePointESet;
             usagePointESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SERVICE_MULTIPLIER__USAGE_POINT, newUsagePoint, newUsagePoint, !oldUsagePointESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SERVICE_MULTIPLIER__USAGE_POINT,
+                        newUsagePoint, newUsagePoint, !oldUsagePointESet ) );
         }
     }
 
@@ -338,8 +345,9 @@ public class ServiceMultiplierImpl extends IdentifiedObjectImpl implements Servi
         else {
             boolean oldUsagePointESet = usagePointESet;
             usagePointESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SERVICE_MULTIPLIER__USAGE_POINT, null, null, oldUsagePointESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SERVICE_MULTIPLIER__USAGE_POINT,
+                        null, null, oldUsagePointESet ) );
         }
     }
 
@@ -362,8 +370,9 @@ public class ServiceMultiplierImpl extends IdentifiedObjectImpl implements Servi
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.SERVICE_MULTIPLIER__USAGE_POINT:
-            if( usagePoint != null ) msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this,
-                    CimPackage.USAGE_POINT__SERVICE_MULTIPLIERS, UsagePoint.class, msgs );
+            if( usagePoint != null )
+                msgs = ( ( InternalEObject ) usagePoint ).eInverseRemove( this,
+                        CimPackage.USAGE_POINT__SERVICE_MULTIPLIERS, UsagePoint.class, msgs );
             return basicSetUsagePoint( ( UsagePoint ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -470,7 +479,7 @@ public class ServiceMultiplierImpl extends IdentifiedObjectImpl implements Servi
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kind: " );
         if( kindESet )
             result.append( kind );

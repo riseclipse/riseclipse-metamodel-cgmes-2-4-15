@@ -167,8 +167,13 @@ public enum WorkTimeScheduleKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final WorkTimeScheduleKind[] VALUES_ARRAY = new WorkTimeScheduleKind[] { ESTIMATE, REQUEST, ACTUAL,
-            EARLIEST, LATEST, };
+    private static final WorkTimeScheduleKind[] VALUES_ARRAY = new WorkTimeScheduleKind[] {
+            ESTIMATE,
+            REQUEST,
+            ACTUAL,
+            EARLIEST,
+            LATEST,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Work Time Schedule Kind</b></em>' enumerators.

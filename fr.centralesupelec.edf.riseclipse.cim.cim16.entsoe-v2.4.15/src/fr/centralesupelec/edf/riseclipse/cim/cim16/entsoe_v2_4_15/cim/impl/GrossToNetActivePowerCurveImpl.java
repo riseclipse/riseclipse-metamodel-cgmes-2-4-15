@@ -125,19 +125,22 @@ public class GrossToNetActivePowerCurveImpl extends CurveImpl implements GrossTo
     public void setGeneratingUnit( GeneratingUnit newGeneratingUnit ) {
         if( newGeneratingUnit != generatingUnit ) {
             NotificationChain msgs = null;
-            if( generatingUnit != null ) msgs = ( ( InternalEObject ) generatingUnit ).eInverseRemove( this,
-                    CimPackage.GENERATING_UNIT__GROSS_TO_NET_ACTIVE_POWER_CURVES, GeneratingUnit.class, msgs );
-            if( newGeneratingUnit != null ) msgs = ( ( InternalEObject ) newGeneratingUnit ).eInverseAdd( this,
-                    CimPackage.GENERATING_UNIT__GROSS_TO_NET_ACTIVE_POWER_CURVES, GeneratingUnit.class, msgs );
+            if( generatingUnit != null )
+                msgs = ( ( InternalEObject ) generatingUnit ).eInverseRemove( this,
+                        CimPackage.GENERATING_UNIT__GROSS_TO_NET_ACTIVE_POWER_CURVES, GeneratingUnit.class, msgs );
+            if( newGeneratingUnit != null )
+                msgs = ( ( InternalEObject ) newGeneratingUnit ).eInverseAdd( this,
+                        CimPackage.GENERATING_UNIT__GROSS_TO_NET_ACTIVE_POWER_CURVES, GeneratingUnit.class, msgs );
             msgs = basicSetGeneratingUnit( newGeneratingUnit, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldGeneratingUnitESet = generatingUnitESet;
             generatingUnitESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.GROSS_TO_NET_ACTIVE_POWER_CURVE__GENERATING_UNIT, newGeneratingUnit, newGeneratingUnit,
-                    !oldGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.GROSS_TO_NET_ACTIVE_POWER_CURVE__GENERATING_UNIT, newGeneratingUnit,
+                        newGeneratingUnit, !oldGeneratingUnitESet ) );
         }
     }
 
@@ -180,8 +183,10 @@ public class GrossToNetActivePowerCurveImpl extends CurveImpl implements GrossTo
         else {
             boolean oldGeneratingUnitESet = generatingUnitESet;
             generatingUnitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.GROSS_TO_NET_ACTIVE_POWER_CURVE__GENERATING_UNIT, null, null, oldGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.GROSS_TO_NET_ACTIVE_POWER_CURVE__GENERATING_UNIT, null, null,
+                        oldGeneratingUnitESet ) );
         }
     }
 
@@ -204,8 +209,9 @@ public class GrossToNetActivePowerCurveImpl extends CurveImpl implements GrossTo
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.GROSS_TO_NET_ACTIVE_POWER_CURVE__GENERATING_UNIT:
-            if( generatingUnit != null ) msgs = ( ( InternalEObject ) generatingUnit ).eInverseRemove( this,
-                    CimPackage.GENERATING_UNIT__GROSS_TO_NET_ACTIVE_POWER_CURVES, GeneratingUnit.class, msgs );
+            if( generatingUnit != null )
+                msgs = ( ( InternalEObject ) generatingUnit ).eInverseRemove( this,
+                        CimPackage.GENERATING_UNIT__GROSS_TO_NET_ACTIVE_POWER_CURVES, GeneratingUnit.class, msgs );
             return basicSetGeneratingUnit( ( GeneratingUnit ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

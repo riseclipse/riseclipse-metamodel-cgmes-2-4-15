@@ -413,8 +413,9 @@ public class HydroTurbineImpl extends PrimeMoverImpl implements HydroTurbine {
         gateRateLimit = newGateRateLimit;
         boolean oldGateRateLimitESet = gateRateLimitESet;
         gateRateLimitESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.HYDRO_TURBINE__GATE_RATE_LIMIT, oldGateRateLimit, gateRateLimit, !oldGateRateLimitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.HYDRO_TURBINE__GATE_RATE_LIMIT,
+                    oldGateRateLimit, gateRateLimit, !oldGateRateLimitESet ) );
     }
 
     /**
@@ -516,8 +517,9 @@ public class HydroTurbineImpl extends PrimeMoverImpl implements HydroTurbine {
         maxHeadMaxP = newMaxHeadMaxP;
         boolean oldMaxHeadMaxPESet = maxHeadMaxPESet;
         maxHeadMaxPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.HYDRO_TURBINE__MAX_HEAD_MAX_P, oldMaxHeadMaxP, maxHeadMaxP, !oldMaxHeadMaxPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.HYDRO_TURBINE__MAX_HEAD_MAX_P,
+                    oldMaxHeadMaxP, maxHeadMaxP, !oldMaxHeadMaxPESet ) );
     }
 
     /**
@@ -567,8 +569,9 @@ public class HydroTurbineImpl extends PrimeMoverImpl implements HydroTurbine {
         minHeadMaxP = newMinHeadMaxP;
         boolean oldMinHeadMaxPESet = minHeadMaxPESet;
         minHeadMaxPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.HYDRO_TURBINE__MIN_HEAD_MAX_P, oldMinHeadMaxP, minHeadMaxP, !oldMinHeadMaxPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.HYDRO_TURBINE__MIN_HEAD_MAX_P,
+                    oldMinHeadMaxP, minHeadMaxP, !oldMinHeadMaxPESet ) );
     }
 
     /**
@@ -618,8 +621,9 @@ public class HydroTurbineImpl extends PrimeMoverImpl implements HydroTurbine {
         speedRating = newSpeedRating;
         boolean oldSpeedRatingESet = speedRatingESet;
         speedRatingESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.HYDRO_TURBINE__SPEED_RATING, oldSpeedRating, speedRating, !oldSpeedRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.HYDRO_TURBINE__SPEED_RATING,
+                    oldSpeedRating, speedRating, !oldSpeedRatingESet ) );
     }
 
     /**
@@ -633,8 +637,9 @@ public class HydroTurbineImpl extends PrimeMoverImpl implements HydroTurbine {
         boolean oldSpeedRatingESet = speedRatingESet;
         speedRating = SPEED_RATING_EDEFAULT;
         speedRatingESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.HYDRO_TURBINE__SPEED_RATING, oldSpeedRating, SPEED_RATING_EDEFAULT, oldSpeedRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.HYDRO_TURBINE__SPEED_RATING,
+                    oldSpeedRating, SPEED_RATING_EDEFAULT, oldSpeedRatingESet ) );
     }
 
     /**
@@ -824,8 +829,9 @@ public class HydroTurbineImpl extends PrimeMoverImpl implements HydroTurbine {
         turbineRating = newTurbineRating;
         boolean oldTurbineRatingESet = turbineRatingESet;
         turbineRatingESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.HYDRO_TURBINE__TURBINE_RATING, oldTurbineRating, turbineRating, !oldTurbineRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.HYDRO_TURBINE__TURBINE_RATING,
+                    oldTurbineRating, turbineRating, !oldTurbineRatingESet ) );
     }
 
     /**
@@ -875,8 +881,9 @@ public class HydroTurbineImpl extends PrimeMoverImpl implements HydroTurbine {
         turbineType = newTurbineType == null ? TURBINE_TYPE_EDEFAULT : newTurbineType;
         boolean oldTurbineTypeESet = turbineTypeESet;
         turbineTypeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.HYDRO_TURBINE__TURBINE_TYPE, oldTurbineType, turbineType, !oldTurbineTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.HYDRO_TURBINE__TURBINE_TYPE,
+                    oldTurbineType, turbineType, !oldTurbineTypeESet ) );
     }
 
     /**
@@ -890,8 +897,9 @@ public class HydroTurbineImpl extends PrimeMoverImpl implements HydroTurbine {
         boolean oldTurbineTypeESet = turbineTypeESet;
         turbineType = TURBINE_TYPE_EDEFAULT;
         turbineTypeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.HYDRO_TURBINE__TURBINE_TYPE, oldTurbineType, TURBINE_TYPE_EDEFAULT, oldTurbineTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.HYDRO_TURBINE__TURBINE_TYPE,
+                    oldTurbineType, TURBINE_TYPE_EDEFAULT, oldTurbineTypeESet ) );
     }
 
     /**
@@ -1123,7 +1131,7 @@ public class HydroTurbineImpl extends PrimeMoverImpl implements HydroTurbine {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (gateRateLimit: " );
         if( gateRateLimitESet )
             result.append( gateRateLimit );

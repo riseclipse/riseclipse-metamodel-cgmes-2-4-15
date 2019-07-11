@@ -280,8 +280,9 @@ public class ControlImpl extends IdentifiedObjectImpl implements Control {
         controlType = newControlType;
         boolean oldControlTypeESet = controlTypeESet;
         controlTypeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONTROL__CONTROL_TYPE, oldControlType, controlType, !oldControlTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONTROL__CONTROL_TYPE, oldControlType,
+                    controlType, !oldControlTypeESet ) );
     }
 
     /**
@@ -295,8 +296,9 @@ public class ControlImpl extends IdentifiedObjectImpl implements Control {
         boolean oldControlTypeESet = controlTypeESet;
         controlType = CONTROL_TYPE_EDEFAULT;
         controlTypeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONTROL__CONTROL_TYPE, oldControlType, CONTROL_TYPE_EDEFAULT, oldControlTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CONTROL__CONTROL_TYPE, oldControlType,
+                    CONTROL_TYPE_EDEFAULT, oldControlTypeESet ) );
     }
 
     /**
@@ -382,8 +384,9 @@ public class ControlImpl extends IdentifiedObjectImpl implements Control {
         timeStamp = newTimeStamp;
         boolean oldTimeStampESet = timeStampESet;
         timeStampESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONTROL__TIME_STAMP, oldTimeStamp, timeStamp, !oldTimeStampESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONTROL__TIME_STAMP, oldTimeStamp,
+                    timeStamp, !oldTimeStampESet ) );
     }
 
     /**
@@ -397,8 +400,9 @@ public class ControlImpl extends IdentifiedObjectImpl implements Control {
         boolean oldTimeStampESet = timeStampESet;
         timeStamp = TIME_STAMP_EDEFAULT;
         timeStampESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONTROL__TIME_STAMP, oldTimeStamp, TIME_STAMP_EDEFAULT, oldTimeStampESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CONTROL__TIME_STAMP, oldTimeStamp,
+                    TIME_STAMP_EDEFAULT, oldTimeStampESet ) );
     }
 
     /**
@@ -432,8 +436,9 @@ public class ControlImpl extends IdentifiedObjectImpl implements Control {
         unitMultiplier = newUnitMultiplier == null ? UNIT_MULTIPLIER_EDEFAULT : newUnitMultiplier;
         boolean oldUnitMultiplierESet = unitMultiplierESet;
         unitMultiplierESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONTROL__UNIT_MULTIPLIER, oldUnitMultiplier, unitMultiplier, !oldUnitMultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONTROL__UNIT_MULTIPLIER,
+                    oldUnitMultiplier, unitMultiplier, !oldUnitMultiplierESet ) );
     }
 
     /**
@@ -483,8 +488,9 @@ public class ControlImpl extends IdentifiedObjectImpl implements Control {
         unitSymbol = newUnitSymbol == null ? UNIT_SYMBOL_EDEFAULT : newUnitSymbol;
         boolean oldUnitSymbolESet = unitSymbolESet;
         unitSymbolESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONTROL__UNIT_SYMBOL, oldUnitSymbol, unitSymbol, !oldUnitSymbolESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONTROL__UNIT_SYMBOL, oldUnitSymbol,
+                    unitSymbol, !oldUnitSymbolESet ) );
     }
 
     /**
@@ -498,8 +504,9 @@ public class ControlImpl extends IdentifiedObjectImpl implements Control {
         boolean oldUnitSymbolESet = unitSymbolESet;
         unitSymbol = UNIT_SYMBOL_EDEFAULT;
         unitSymbolESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONTROL__UNIT_SYMBOL, oldUnitSymbol, UNIT_SYMBOL_EDEFAULT, oldUnitSymbolESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CONTROL__UNIT_SYMBOL, oldUnitSymbol,
+                    UNIT_SYMBOL_EDEFAULT, oldUnitSymbolESet ) );
     }
 
     /**
@@ -554,10 +561,12 @@ public class ControlImpl extends IdentifiedObjectImpl implements Control {
     public void setPowerSystemResource( PowerSystemResource newPowerSystemResource ) {
         if( newPowerSystemResource != powerSystemResource ) {
             NotificationChain msgs = null;
-            if( powerSystemResource != null ) msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
-                    CimPackage.POWER_SYSTEM_RESOURCE__CONTROLS, PowerSystemResource.class, msgs );
-            if( newPowerSystemResource != null ) msgs = ( ( InternalEObject ) newPowerSystemResource )
-                    .eInverseAdd( this, CimPackage.POWER_SYSTEM_RESOURCE__CONTROLS, PowerSystemResource.class, msgs );
+            if( powerSystemResource != null )
+                msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
+                        CimPackage.POWER_SYSTEM_RESOURCE__CONTROLS, PowerSystemResource.class, msgs );
+            if( newPowerSystemResource != null )
+                msgs = ( ( InternalEObject ) newPowerSystemResource ).eInverseAdd( this,
+                        CimPackage.POWER_SYSTEM_RESOURCE__CONTROLS, PowerSystemResource.class, msgs );
             msgs = basicSetPowerSystemResource( newPowerSystemResource, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -609,8 +618,9 @@ public class ControlImpl extends IdentifiedObjectImpl implements Control {
         else {
             boolean oldPowerSystemResourceESet = powerSystemResourceESet;
             powerSystemResourceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONTROL__POWER_SYSTEM_RESOURCE, null, null, oldPowerSystemResourceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CONTROL__POWER_SYSTEM_RESOURCE,
+                        null, null, oldPowerSystemResourceESet ) );
         }
     }
 
@@ -664,18 +674,21 @@ public class ControlImpl extends IdentifiedObjectImpl implements Control {
     public void setRemoteControl( RemoteControl newRemoteControl ) {
         if( newRemoteControl != remoteControl ) {
             NotificationChain msgs = null;
-            if( remoteControl != null ) msgs = ( ( InternalEObject ) remoteControl ).eInverseRemove( this,
-                    CimPackage.REMOTE_CONTROL__CONTROL, RemoteControl.class, msgs );
-            if( newRemoteControl != null ) msgs = ( ( InternalEObject ) newRemoteControl ).eInverseAdd( this,
-                    CimPackage.REMOTE_CONTROL__CONTROL, RemoteControl.class, msgs );
+            if( remoteControl != null )
+                msgs = ( ( InternalEObject ) remoteControl ).eInverseRemove( this, CimPackage.REMOTE_CONTROL__CONTROL,
+                        RemoteControl.class, msgs );
+            if( newRemoteControl != null )
+                msgs = ( ( InternalEObject ) newRemoteControl ).eInverseAdd( this, CimPackage.REMOTE_CONTROL__CONTROL,
+                        RemoteControl.class, msgs );
             msgs = basicSetRemoteControl( newRemoteControl, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldRemoteControlESet = remoteControlESet;
             remoteControlESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CONTROL__REMOTE_CONTROL, newRemoteControl, newRemoteControl, !oldRemoteControlESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONTROL__REMOTE_CONTROL,
+                        newRemoteControl, newRemoteControl, !oldRemoteControlESet ) );
         }
     }
 
@@ -717,8 +730,9 @@ public class ControlImpl extends IdentifiedObjectImpl implements Control {
         else {
             boolean oldRemoteControlESet = remoteControlESet;
             remoteControlESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONTROL__REMOTE_CONTROL, null, null, oldRemoteControlESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CONTROL__REMOTE_CONTROL, null,
+                        null, oldRemoteControlESet ) );
         }
     }
 
@@ -741,12 +755,14 @@ public class ControlImpl extends IdentifiedObjectImpl implements Control {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CONTROL__REMOTE_CONTROL:
-            if( remoteControl != null ) msgs = ( ( InternalEObject ) remoteControl ).eInverseRemove( this,
-                    CimPackage.REMOTE_CONTROL__CONTROL, RemoteControl.class, msgs );
+            if( remoteControl != null )
+                msgs = ( ( InternalEObject ) remoteControl ).eInverseRemove( this, CimPackage.REMOTE_CONTROL__CONTROL,
+                        RemoteControl.class, msgs );
             return basicSetRemoteControl( ( RemoteControl ) otherEnd, msgs );
         case CimPackage.CONTROL__POWER_SYSTEM_RESOURCE:
-            if( powerSystemResource != null ) msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
-                    CimPackage.POWER_SYSTEM_RESOURCE__CONTROLS, PowerSystemResource.class, msgs );
+            if( powerSystemResource != null )
+                msgs = ( ( InternalEObject ) powerSystemResource ).eInverseRemove( this,
+                        CimPackage.POWER_SYSTEM_RESOURCE__CONTROLS, PowerSystemResource.class, msgs );
             return basicSetPowerSystemResource( ( PowerSystemResource ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -895,7 +911,7 @@ public class ControlImpl extends IdentifiedObjectImpl implements Control {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (controlType: " );
         if( controlTypeESet )
             result.append( controlType );

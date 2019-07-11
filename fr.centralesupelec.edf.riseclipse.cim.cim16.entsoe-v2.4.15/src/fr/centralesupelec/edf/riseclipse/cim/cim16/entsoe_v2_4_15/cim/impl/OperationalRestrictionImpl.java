@@ -186,19 +186,22 @@ public class OperationalRestrictionImpl extends DocumentImpl implements Operatio
     public void setActivePeriod( DateTimeInterval newActivePeriod ) {
         if( newActivePeriod != activePeriod ) {
             NotificationChain msgs = null;
-            if( activePeriod != null ) msgs = ( ( InternalEObject ) activePeriod ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.OPERATIONAL_RESTRICTION__ACTIVE_PERIOD, null, msgs );
-            if( newActivePeriod != null ) msgs = ( ( InternalEObject ) newActivePeriod ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.OPERATIONAL_RESTRICTION__ACTIVE_PERIOD, null, msgs );
+            if( activePeriod != null )
+                msgs = ( ( InternalEObject ) activePeriod ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.OPERATIONAL_RESTRICTION__ACTIVE_PERIOD, null, msgs );
+            if( newActivePeriod != null )
+                msgs = ( ( InternalEObject ) newActivePeriod ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.OPERATIONAL_RESTRICTION__ACTIVE_PERIOD, null, msgs );
             msgs = basicSetActivePeriod( newActivePeriod, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldActivePeriodESet = activePeriodESet;
             activePeriodESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.OPERATIONAL_RESTRICTION__ACTIVE_PERIOD,
-                            newActivePeriod, newActivePeriod, !oldActivePeriodESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.OPERATIONAL_RESTRICTION__ACTIVE_PERIOD, newActivePeriod, newActivePeriod,
+                        !oldActivePeriodESet ) );
         }
     }
 
@@ -240,8 +243,9 @@ public class OperationalRestrictionImpl extends DocumentImpl implements Operatio
         else {
             boolean oldActivePeriodESet = activePeriodESet;
             activePeriodESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OPERATIONAL_RESTRICTION__ACTIVE_PERIOD, null, null, oldActivePeriodESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.OPERATIONAL_RESTRICTION__ACTIVE_PERIOD, null, null, oldActivePeriodESet ) );
         }
     }
 
@@ -296,19 +300,22 @@ public class OperationalRestrictionImpl extends DocumentImpl implements Operatio
     public void setRestrictedValue( FloatQuantity newRestrictedValue ) {
         if( newRestrictedValue != restrictedValue ) {
             NotificationChain msgs = null;
-            if( restrictedValue != null ) msgs = ( ( InternalEObject ) restrictedValue ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.OPERATIONAL_RESTRICTION__RESTRICTED_VALUE, null, msgs );
-            if( newRestrictedValue != null ) msgs = ( ( InternalEObject ) newRestrictedValue ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.OPERATIONAL_RESTRICTION__RESTRICTED_VALUE, null, msgs );
+            if( restrictedValue != null )
+                msgs = ( ( InternalEObject ) restrictedValue ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.OPERATIONAL_RESTRICTION__RESTRICTED_VALUE, null, msgs );
+            if( newRestrictedValue != null )
+                msgs = ( ( InternalEObject ) newRestrictedValue ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.OPERATIONAL_RESTRICTION__RESTRICTED_VALUE, null, msgs );
             msgs = basicSetRestrictedValue( newRestrictedValue, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldRestrictedValueESet = restrictedValueESet;
             restrictedValueESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.OPERATIONAL_RESTRICTION__RESTRICTED_VALUE,
-                            newRestrictedValue, newRestrictedValue, !oldRestrictedValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.OPERATIONAL_RESTRICTION__RESTRICTED_VALUE, newRestrictedValue, newRestrictedValue,
+                        !oldRestrictedValueESet ) );
         }
     }
 
@@ -351,8 +358,9 @@ public class OperationalRestrictionImpl extends DocumentImpl implements Operatio
         else {
             boolean oldRestrictedValueESet = restrictedValueESet;
             restrictedValueESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OPERATIONAL_RESTRICTION__RESTRICTED_VALUE, null, null, oldRestrictedValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.OPERATIONAL_RESTRICTION__RESTRICTED_VALUE, null, null, oldRestrictedValueESet ) );
         }
     }
 
@@ -443,19 +451,22 @@ public class OperationalRestrictionImpl extends DocumentImpl implements Operatio
     public void setProductAssetModel( ProductAssetModel newProductAssetModel ) {
         if( newProductAssetModel != productAssetModel ) {
             NotificationChain msgs = null;
-            if( productAssetModel != null ) msgs = ( ( InternalEObject ) productAssetModel ).eInverseRemove( this,
-                    CimPackage.PRODUCT_ASSET_MODEL__OPERATIONAL_RESTRICTIONS, ProductAssetModel.class, msgs );
-            if( newProductAssetModel != null ) msgs = ( ( InternalEObject ) newProductAssetModel ).eInverseAdd( this,
-                    CimPackage.PRODUCT_ASSET_MODEL__OPERATIONAL_RESTRICTIONS, ProductAssetModel.class, msgs );
+            if( productAssetModel != null )
+                msgs = ( ( InternalEObject ) productAssetModel ).eInverseRemove( this,
+                        CimPackage.PRODUCT_ASSET_MODEL__OPERATIONAL_RESTRICTIONS, ProductAssetModel.class, msgs );
+            if( newProductAssetModel != null )
+                msgs = ( ( InternalEObject ) newProductAssetModel ).eInverseAdd( this,
+                        CimPackage.PRODUCT_ASSET_MODEL__OPERATIONAL_RESTRICTIONS, ProductAssetModel.class, msgs );
             msgs = basicSetProductAssetModel( newProductAssetModel, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldProductAssetModelESet = productAssetModelESet;
             productAssetModelESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.OPERATIONAL_RESTRICTION__PRODUCT_ASSET_MODEL, newProductAssetModel, newProductAssetModel,
-                    !oldProductAssetModelESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.OPERATIONAL_RESTRICTION__PRODUCT_ASSET_MODEL, newProductAssetModel,
+                        newProductAssetModel, !oldProductAssetModelESet ) );
         }
     }
 
@@ -498,8 +509,10 @@ public class OperationalRestrictionImpl extends DocumentImpl implements Operatio
         else {
             boolean oldProductAssetModelESet = productAssetModelESet;
             productAssetModelESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OPERATIONAL_RESTRICTION__PRODUCT_ASSET_MODEL, null, null, oldProductAssetModelESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.OPERATIONAL_RESTRICTION__PRODUCT_ASSET_MODEL, null, null,
+                        oldProductAssetModelESet ) );
         }
     }
 
@@ -526,8 +539,9 @@ public class OperationalRestrictionImpl extends DocumentImpl implements Operatio
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getEquipments() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.OPERATIONAL_RESTRICTION__PRODUCT_ASSET_MODEL:
-            if( productAssetModel != null ) msgs = ( ( InternalEObject ) productAssetModel ).eInverseRemove( this,
-                    CimPackage.PRODUCT_ASSET_MODEL__OPERATIONAL_RESTRICTIONS, ProductAssetModel.class, msgs );
+            if( productAssetModel != null )
+                msgs = ( ( InternalEObject ) productAssetModel ).eInverseRemove( this,
+                        CimPackage.PRODUCT_ASSET_MODEL__OPERATIONAL_RESTRICTIONS, ProductAssetModel.class, msgs );
             return basicSetProductAssetModel( ( ProductAssetModel ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

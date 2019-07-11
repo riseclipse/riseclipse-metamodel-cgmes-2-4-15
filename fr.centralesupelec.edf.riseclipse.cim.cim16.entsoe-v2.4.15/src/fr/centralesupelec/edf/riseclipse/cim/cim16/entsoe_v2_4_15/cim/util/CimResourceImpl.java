@@ -45,7 +45,7 @@ public class CimResourceImpl extends AbstractCim16Resource {
      */
     public CimResourceImpl( URI uri ) {
         super( uri );
-        
+
         // We cannot register the CimPackage with entsoe_URI because resourceSet is null when the resource is created !
     }
 
@@ -58,7 +58,7 @@ public class CimResourceImpl extends AbstractCim16Resource {
     @Override
     public String getID( EObject eObject ) {
         if( eObject instanceof CimObjectWithID ) {
-            return (( CimObjectWithID ) eObject ).getID();
+            return ( ( CimObjectWithID ) eObject ).getID();
         }
         return super.getID( eObject );
     }
@@ -67,7 +67,7 @@ public class CimResourceImpl extends AbstractCim16Resource {
     @Override
     public void setID( EObject eObject, String id ) {
         if( eObject instanceof CimObjectWithID ) {
-            (( CimObjectWithID ) eObject ).setID( id );
+            ( ( CimObjectWithID ) eObject ).setID( id );
         }
         super.setID( eObject, id );
     }

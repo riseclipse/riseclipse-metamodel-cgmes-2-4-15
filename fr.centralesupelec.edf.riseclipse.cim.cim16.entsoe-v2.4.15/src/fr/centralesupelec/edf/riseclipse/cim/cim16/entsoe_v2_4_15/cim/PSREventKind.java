@@ -217,8 +217,15 @@ public enum PSREventKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final PSREventKind[] VALUES_ARRAY = new PSREventKind[] { IN_SERVICE, OUT_OF_SERVICE, PENDING_ADD,
-            PENDING_REMOVE, PENDING_REPLACE, OTHER, UNKNOWN, };
+    private static final PSREventKind[] VALUES_ARRAY = new PSREventKind[] {
+            IN_SERVICE,
+            OUT_OF_SERVICE,
+            PENDING_ADD,
+            PENDING_REMOVE,
+            PENDING_REPLACE,
+            OTHER,
+            UNKNOWN,
+    };
 
     /**
      * A public read-only list of all the '<em><b>PSR Event Kind</b></em>' enumerators.

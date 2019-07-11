@@ -92,7 +92,10 @@ public enum CurveStyle implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final CurveStyle[] VALUES_ARRAY = new CurveStyle[] { CONSTANT_YVALUE, STRAIGHT_LINE_YVALUES, };
+    private static final CurveStyle[] VALUES_ARRAY = new CurveStyle[] {
+            CONSTANT_YVALUE,
+            STRAIGHT_LINE_YVALUES,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Curve Style</b></em>' enumerators.

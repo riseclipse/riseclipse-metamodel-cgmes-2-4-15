@@ -189,18 +189,21 @@ public class CrewImpl extends IdentifiedObjectImpl implements Crew {
     public void setStatus( Status newStatus ) {
         if( newStatus != status ) {
             NotificationChain msgs = null;
-            if( status != null ) msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.CREW__STATUS, null, msgs );
-            if( newStatus != null ) msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.CREW__STATUS, null, msgs );
+            if( status != null )
+                msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.CREW__STATUS, null, msgs );
+            if( newStatus != null )
+                msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.CREW__STATUS, null, msgs );
             msgs = basicSetStatus( newStatus, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldStatusESet = statusESet;
             statusESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CREW__STATUS, newStatus, newStatus, !oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CREW__STATUS, newStatus, newStatus,
+                        !oldStatusESet ) );
         }
     }
 
@@ -242,8 +245,9 @@ public class CrewImpl extends IdentifiedObjectImpl implements Crew {
         else {
             boolean oldStatusESet = statusESet;
             statusESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CREW__STATUS, null, null, oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CREW__STATUS, null, null,
+                        oldStatusESet ) );
         }
     }
 
@@ -399,18 +403,21 @@ public class CrewImpl extends IdentifiedObjectImpl implements Crew {
     public void setCrewType( CrewType newCrewType ) {
         if( newCrewType != crewType ) {
             NotificationChain msgs = null;
-            if( crewType != null ) msgs = ( ( InternalEObject ) crewType ).eInverseRemove( this,
-                    CimPackage.CREW_TYPE__CREWS, CrewType.class, msgs );
-            if( newCrewType != null ) msgs = ( ( InternalEObject ) newCrewType ).eInverseAdd( this,
-                    CimPackage.CREW_TYPE__CREWS, CrewType.class, msgs );
+            if( crewType != null )
+                msgs = ( ( InternalEObject ) crewType ).eInverseRemove( this, CimPackage.CREW_TYPE__CREWS,
+                        CrewType.class, msgs );
+            if( newCrewType != null )
+                msgs = ( ( InternalEObject ) newCrewType ).eInverseAdd( this, CimPackage.CREW_TYPE__CREWS,
+                        CrewType.class, msgs );
             msgs = basicSetCrewType( newCrewType, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCrewTypeESet = crewTypeESet;
             crewTypeESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CREW__CREW_TYPE, newCrewType, newCrewType, !oldCrewTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CREW__CREW_TYPE, newCrewType,
+                        newCrewType, !oldCrewTypeESet ) );
         }
     }
 
@@ -452,8 +459,9 @@ public class CrewImpl extends IdentifiedObjectImpl implements Crew {
         else {
             boolean oldCrewTypeESet = crewTypeESet;
             crewTypeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CREW__CREW_TYPE, null, null, oldCrewTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CREW__CREW_TYPE, null, null,
+                        oldCrewTypeESet ) );
         }
     }
 
@@ -477,8 +485,9 @@ public class CrewImpl extends IdentifiedObjectImpl implements Crew {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CREW__CREW_TYPE:
-            if( crewType != null ) msgs = ( ( InternalEObject ) crewType ).eInverseRemove( this,
-                    CimPackage.CREW_TYPE__CREWS, CrewType.class, msgs );
+            if( crewType != null )
+                msgs = ( ( InternalEObject ) crewType ).eInverseRemove( this, CimPackage.CREW_TYPE__CREWS,
+                        CrewType.class, msgs );
             return basicSetCrewType( ( CrewType ) otherEnd, msgs );
         case CimPackage.CREW__WORK_TASKS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getWorkTasks() ).basicAdd( otherEnd,

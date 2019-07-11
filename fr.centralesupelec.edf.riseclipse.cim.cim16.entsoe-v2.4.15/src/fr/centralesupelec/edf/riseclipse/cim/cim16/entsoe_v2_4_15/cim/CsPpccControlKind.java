@@ -117,8 +117,11 @@ public enum CsPpccControlKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final CsPpccControlKind[] VALUES_ARRAY = new CsPpccControlKind[] { ACTIVE_POWER, DC_VOLTAGE,
-            DC_CURRENT, };
+    private static final CsPpccControlKind[] VALUES_ARRAY = new CsPpccControlKind[] {
+            ACTIVE_POWER,
+            DC_VOLTAGE,
+            DC_CURRENT,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Cs Ppcc Control Kind</b></em>' enumerators.

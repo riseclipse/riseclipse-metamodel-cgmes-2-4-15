@@ -179,10 +179,12 @@ public class TransformerTankImpl extends EquipmentImpl implements TransformerTan
     public void setPowerTransformer( PowerTransformer newPowerTransformer ) {
         if( newPowerTransformer != powerTransformer ) {
             NotificationChain msgs = null;
-            if( powerTransformer != null ) msgs = ( ( InternalEObject ) powerTransformer ).eInverseRemove( this,
-                    CimPackage.POWER_TRANSFORMER__TRANSFORMER_TANKS, PowerTransformer.class, msgs );
-            if( newPowerTransformer != null ) msgs = ( ( InternalEObject ) newPowerTransformer ).eInverseAdd( this,
-                    CimPackage.POWER_TRANSFORMER__TRANSFORMER_TANKS, PowerTransformer.class, msgs );
+            if( powerTransformer != null )
+                msgs = ( ( InternalEObject ) powerTransformer ).eInverseRemove( this,
+                        CimPackage.POWER_TRANSFORMER__TRANSFORMER_TANKS, PowerTransformer.class, msgs );
+            if( newPowerTransformer != null )
+                msgs = ( ( InternalEObject ) newPowerTransformer ).eInverseAdd( this,
+                        CimPackage.POWER_TRANSFORMER__TRANSFORMER_TANKS, PowerTransformer.class, msgs );
             msgs = basicSetPowerTransformer( newPowerTransformer, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -234,8 +236,9 @@ public class TransformerTankImpl extends EquipmentImpl implements TransformerTan
         else {
             boolean oldPowerTransformerESet = powerTransformerESet;
             powerTransformerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSFORMER_TANK__POWER_TRANSFORMER, null, null, oldPowerTransformerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.TRANSFORMER_TANK__POWER_TRANSFORMER, null, null, oldPowerTransformerESet ) );
         }
     }
 
@@ -262,8 +265,9 @@ public class TransformerTankImpl extends EquipmentImpl implements TransformerTan
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTransformerTankEnds() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.TRANSFORMER_TANK__POWER_TRANSFORMER:
-            if( powerTransformer != null ) msgs = ( ( InternalEObject ) powerTransformer ).eInverseRemove( this,
-                    CimPackage.POWER_TRANSFORMER__TRANSFORMER_TANKS, PowerTransformer.class, msgs );
+            if( powerTransformer != null )
+                msgs = ( ( InternalEObject ) powerTransformer ).eInverseRemove( this,
+                        CimPackage.POWER_TRANSFORMER__TRANSFORMER_TANKS, PowerTransformer.class, msgs );
             return basicSetPowerTransformer( ( PowerTransformer ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

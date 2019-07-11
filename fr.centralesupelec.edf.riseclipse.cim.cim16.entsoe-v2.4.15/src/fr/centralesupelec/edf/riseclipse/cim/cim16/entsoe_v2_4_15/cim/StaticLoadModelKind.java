@@ -142,8 +142,12 @@ public enum StaticLoadModelKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final StaticLoadModelKind[] VALUES_ARRAY = new StaticLoadModelKind[] { EXPONENTIAL, ZIP1, ZIP2,
-            CONSTANT_Z, };
+    private static final StaticLoadModelKind[] VALUES_ARRAY = new StaticLoadModelKind[] {
+            EXPONENTIAL,
+            ZIP1,
+            ZIP2,
+            CONSTANT_Z,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Static Load Model Kind</b></em>' enumerators.

@@ -165,8 +165,9 @@ public class AnalogControlImpl extends ControlImpl implements AnalogControl {
         maxValue = newMaxValue;
         boolean oldMaxValueESet = maxValueESet;
         maxValueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ANALOG_CONTROL__MAX_VALUE, oldMaxValue, maxValue, !oldMaxValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ANALOG_CONTROL__MAX_VALUE, oldMaxValue,
+                    maxValue, !oldMaxValueESet ) );
     }
 
     /**
@@ -180,8 +181,9 @@ public class AnalogControlImpl extends ControlImpl implements AnalogControl {
         boolean oldMaxValueESet = maxValueESet;
         maxValue = MAX_VALUE_EDEFAULT;
         maxValueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ANALOG_CONTROL__MAX_VALUE, oldMaxValue, MAX_VALUE_EDEFAULT, oldMaxValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ANALOG_CONTROL__MAX_VALUE, oldMaxValue,
+                    MAX_VALUE_EDEFAULT, oldMaxValueESet ) );
     }
 
     /**
@@ -215,8 +217,9 @@ public class AnalogControlImpl extends ControlImpl implements AnalogControl {
         minValue = newMinValue;
         boolean oldMinValueESet = minValueESet;
         minValueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ANALOG_CONTROL__MIN_VALUE, oldMinValue, minValue, !oldMinValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ANALOG_CONTROL__MIN_VALUE, oldMinValue,
+                    minValue, !oldMinValueESet ) );
     }
 
     /**
@@ -230,8 +233,9 @@ public class AnalogControlImpl extends ControlImpl implements AnalogControl {
         boolean oldMinValueESet = minValueESet;
         minValue = MIN_VALUE_EDEFAULT;
         minValueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ANALOG_CONTROL__MIN_VALUE, oldMinValue, MIN_VALUE_EDEFAULT, oldMinValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ANALOG_CONTROL__MIN_VALUE, oldMinValue,
+                    MIN_VALUE_EDEFAULT, oldMinValueESet ) );
     }
 
     /**
@@ -255,8 +259,9 @@ public class AnalogControlImpl extends ControlImpl implements AnalogControl {
             InternalEObject oldAnalogValue = ( InternalEObject ) analogValue;
             analogValue = ( AnalogValue ) eResolveProxy( oldAnalogValue );
             if( analogValue != oldAnalogValue ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.ANALOG_CONTROL__ANALOG_VALUE, oldAnalogValue, analogValue ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.ANALOG_CONTROL__ANALOG_VALUE,
+                            oldAnalogValue, analogValue ) );
             }
         }
         return analogValue;
@@ -301,18 +306,21 @@ public class AnalogControlImpl extends ControlImpl implements AnalogControl {
     public void setAnalogValue( AnalogValue newAnalogValue ) {
         if( newAnalogValue != analogValue ) {
             NotificationChain msgs = null;
-            if( analogValue != null ) msgs = ( ( InternalEObject ) analogValue ).eInverseRemove( this,
-                    CimPackage.ANALOG_VALUE__ANALOG_CONTROL, AnalogValue.class, msgs );
-            if( newAnalogValue != null ) msgs = ( ( InternalEObject ) newAnalogValue ).eInverseAdd( this,
-                    CimPackage.ANALOG_VALUE__ANALOG_CONTROL, AnalogValue.class, msgs );
+            if( analogValue != null )
+                msgs = ( ( InternalEObject ) analogValue ).eInverseRemove( this,
+                        CimPackage.ANALOG_VALUE__ANALOG_CONTROL, AnalogValue.class, msgs );
+            if( newAnalogValue != null )
+                msgs = ( ( InternalEObject ) newAnalogValue ).eInverseAdd( this,
+                        CimPackage.ANALOG_VALUE__ANALOG_CONTROL, AnalogValue.class, msgs );
             msgs = basicSetAnalogValue( newAnalogValue, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldAnalogValueESet = analogValueESet;
             analogValueESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ANALOG_CONTROL__ANALOG_VALUE, newAnalogValue, newAnalogValue, !oldAnalogValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ANALOG_CONTROL__ANALOG_VALUE,
+                        newAnalogValue, newAnalogValue, !oldAnalogValueESet ) );
         }
     }
 
@@ -354,8 +362,9 @@ public class AnalogControlImpl extends ControlImpl implements AnalogControl {
         else {
             boolean oldAnalogValueESet = analogValueESet;
             analogValueESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ANALOG_CONTROL__ANALOG_VALUE, null, null, oldAnalogValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ANALOG_CONTROL__ANALOG_VALUE, null,
+                        null, oldAnalogValueESet ) );
         }
     }
 
@@ -378,8 +387,9 @@ public class AnalogControlImpl extends ControlImpl implements AnalogControl {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ANALOG_CONTROL__ANALOG_VALUE:
-            if( analogValue != null ) msgs = ( ( InternalEObject ) analogValue ).eInverseRemove( this,
-                    CimPackage.ANALOG_VALUE__ANALOG_CONTROL, AnalogValue.class, msgs );
+            if( analogValue != null )
+                msgs = ( ( InternalEObject ) analogValue ).eInverseRemove( this,
+                        CimPackage.ANALOG_VALUE__ANALOG_CONTROL, AnalogValue.class, msgs );
             return basicSetAnalogValue( ( AnalogValue ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -487,7 +497,7 @@ public class AnalogControlImpl extends ControlImpl implements AnalogControl {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (maxValue: " );
         if( maxValueESet )
             result.append( maxValue );

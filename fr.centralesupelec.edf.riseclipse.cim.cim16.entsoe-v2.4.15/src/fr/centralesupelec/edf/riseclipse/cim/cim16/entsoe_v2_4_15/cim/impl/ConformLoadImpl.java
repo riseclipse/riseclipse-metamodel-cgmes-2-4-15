@@ -124,18 +124,21 @@ public class ConformLoadImpl extends EnergyConsumerImpl implements ConformLoad {
     public void setLoadGroup( ConformLoadGroup newLoadGroup ) {
         if( newLoadGroup != loadGroup ) {
             NotificationChain msgs = null;
-            if( loadGroup != null ) msgs = ( ( InternalEObject ) loadGroup ).eInverseRemove( this,
-                    CimPackage.CONFORM_LOAD_GROUP__ENERGY_CONSUMERS, ConformLoadGroup.class, msgs );
-            if( newLoadGroup != null ) msgs = ( ( InternalEObject ) newLoadGroup ).eInverseAdd( this,
-                    CimPackage.CONFORM_LOAD_GROUP__ENERGY_CONSUMERS, ConformLoadGroup.class, msgs );
+            if( loadGroup != null )
+                msgs = ( ( InternalEObject ) loadGroup ).eInverseRemove( this,
+                        CimPackage.CONFORM_LOAD_GROUP__ENERGY_CONSUMERS, ConformLoadGroup.class, msgs );
+            if( newLoadGroup != null )
+                msgs = ( ( InternalEObject ) newLoadGroup ).eInverseAdd( this,
+                        CimPackage.CONFORM_LOAD_GROUP__ENERGY_CONSUMERS, ConformLoadGroup.class, msgs );
             msgs = basicSetLoadGroup( newLoadGroup, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldLoadGroupESet = loadGroupESet;
             loadGroupESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CONFORM_LOAD__LOAD_GROUP, newLoadGroup, newLoadGroup, !oldLoadGroupESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONFORM_LOAD__LOAD_GROUP,
+                        newLoadGroup, newLoadGroup, !oldLoadGroupESet ) );
         }
     }
 
@@ -177,8 +180,9 @@ public class ConformLoadImpl extends EnergyConsumerImpl implements ConformLoad {
         else {
             boolean oldLoadGroupESet = loadGroupESet;
             loadGroupESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONFORM_LOAD__LOAD_GROUP, null, null, oldLoadGroupESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CONFORM_LOAD__LOAD_GROUP, null,
+                        null, oldLoadGroupESet ) );
         }
     }
 
@@ -201,8 +205,9 @@ public class ConformLoadImpl extends EnergyConsumerImpl implements ConformLoad {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CONFORM_LOAD__LOAD_GROUP:
-            if( loadGroup != null ) msgs = ( ( InternalEObject ) loadGroup ).eInverseRemove( this,
-                    CimPackage.CONFORM_LOAD_GROUP__ENERGY_CONSUMERS, ConformLoadGroup.class, msgs );
+            if( loadGroup != null )
+                msgs = ( ( InternalEObject ) loadGroup ).eInverseRemove( this,
+                        CimPackage.CONFORM_LOAD_GROUP__ENERGY_CONSUMERS, ConformLoadGroup.class, msgs );
             return basicSetLoadGroup( ( ConformLoadGroup ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

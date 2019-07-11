@@ -92,8 +92,10 @@ public enum PotentialTransformerKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final PotentialTransformerKind[] VALUES_ARRAY = new PotentialTransformerKind[] { INDUCTIVE,
-            CAPACITIVE_COUPLING, };
+    private static final PotentialTransformerKind[] VALUES_ARRAY = new PotentialTransformerKind[] {
+            INDUCTIVE,
+            CAPACITIVE_COUPLING,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Potential Transformer Kind</b></em>' enumerators.

@@ -425,8 +425,9 @@ public class FossilFuelImpl extends IdentifiedObjectImpl implements FossilFuel {
         fossilFuelType = newFossilFuelType == null ? FOSSIL_FUEL_TYPE_EDEFAULT : newFossilFuelType;
         boolean oldFossilFuelTypeESet = fossilFuelTypeESet;
         fossilFuelTypeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FOSSIL_FUEL__FOSSIL_FUEL_TYPE, oldFossilFuelType, fossilFuelType, !oldFossilFuelTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_FUEL__FOSSIL_FUEL_TYPE,
+                    oldFossilFuelType, fossilFuelType, !oldFossilFuelTypeESet ) );
     }
 
     /**
@@ -476,8 +477,9 @@ public class FossilFuelImpl extends IdentifiedObjectImpl implements FossilFuel {
         fuelCost = newFuelCost;
         boolean oldFuelCostESet = fuelCostESet;
         fuelCostESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FOSSIL_FUEL__FUEL_COST, oldFuelCost, fuelCost, !oldFuelCostESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_FUEL__FUEL_COST, oldFuelCost,
+                    fuelCost, !oldFuelCostESet ) );
     }
 
     /**
@@ -491,8 +493,9 @@ public class FossilFuelImpl extends IdentifiedObjectImpl implements FossilFuel {
         boolean oldFuelCostESet = fuelCostESet;
         fuelCost = FUEL_COST_EDEFAULT;
         fuelCostESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FOSSIL_FUEL__FUEL_COST, oldFuelCost, FUEL_COST_EDEFAULT, oldFuelCostESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FOSSIL_FUEL__FUEL_COST, oldFuelCost,
+                    FUEL_COST_EDEFAULT, oldFuelCostESet ) );
     }
 
     /**
@@ -578,8 +581,9 @@ public class FossilFuelImpl extends IdentifiedObjectImpl implements FossilFuel {
         fuelEffFactor = newFuelEffFactor;
         boolean oldFuelEffFactorESet = fuelEffFactorESet;
         fuelEffFactorESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FOSSIL_FUEL__FUEL_EFF_FACTOR, oldFuelEffFactor, fuelEffFactor, !oldFuelEffFactorESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_FUEL__FUEL_EFF_FACTOR,
+                    oldFuelEffFactor, fuelEffFactor, !oldFuelEffFactorESet ) );
     }
 
     /**
@@ -733,8 +737,9 @@ public class FossilFuelImpl extends IdentifiedObjectImpl implements FossilFuel {
         fuelMixture = newFuelMixture;
         boolean oldFuelMixtureESet = fuelMixtureESet;
         fuelMixtureESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FOSSIL_FUEL__FUEL_MIXTURE, oldFuelMixture, fuelMixture, !oldFuelMixtureESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_FUEL__FUEL_MIXTURE,
+                    oldFuelMixture, fuelMixture, !oldFuelMixtureESet ) );
     }
 
     /**
@@ -748,8 +753,9 @@ public class FossilFuelImpl extends IdentifiedObjectImpl implements FossilFuel {
         boolean oldFuelMixtureESet = fuelMixtureESet;
         fuelMixture = FUEL_MIXTURE_EDEFAULT;
         fuelMixtureESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FOSSIL_FUEL__FUEL_MIXTURE, oldFuelMixture, FUEL_MIXTURE_EDEFAULT, oldFuelMixtureESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FOSSIL_FUEL__FUEL_MIXTURE,
+                    oldFuelMixture, FUEL_MIXTURE_EDEFAULT, oldFuelMixtureESet ) );
     }
 
     /**
@@ -783,8 +789,9 @@ public class FossilFuelImpl extends IdentifiedObjectImpl implements FossilFuel {
         fuelSulfur = newFuelSulfur;
         boolean oldFuelSulfurESet = fuelSulfurESet;
         fuelSulfurESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FOSSIL_FUEL__FUEL_SULFUR, oldFuelSulfur, fuelSulfur, !oldFuelSulfurESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_FUEL__FUEL_SULFUR, oldFuelSulfur,
+                    fuelSulfur, !oldFuelSulfurESet ) );
     }
 
     /**
@@ -798,8 +805,9 @@ public class FossilFuelImpl extends IdentifiedObjectImpl implements FossilFuel {
         boolean oldFuelSulfurESet = fuelSulfurESet;
         fuelSulfur = FUEL_SULFUR_EDEFAULT;
         fuelSulfurESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FOSSIL_FUEL__FUEL_SULFUR, oldFuelSulfur, FUEL_SULFUR_EDEFAULT, oldFuelSulfurESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FOSSIL_FUEL__FUEL_SULFUR,
+                    oldFuelSulfur, FUEL_SULFUR_EDEFAULT, oldFuelSulfurESet ) );
     }
 
     /**
@@ -885,8 +893,9 @@ public class FossilFuelImpl extends IdentifiedObjectImpl implements FossilFuel {
         lowBreakpointP = newLowBreakpointP;
         boolean oldLowBreakpointPESet = lowBreakpointPESet;
         lowBreakpointPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FOSSIL_FUEL__LOW_BREAKPOINT_P, oldLowBreakpointP, lowBreakpointP, !oldLowBreakpointPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FOSSIL_FUEL__LOW_BREAKPOINT_P,
+                    oldLowBreakpointP, lowBreakpointP, !oldLowBreakpointPESet ) );
     }
 
     /**
@@ -1049,8 +1058,9 @@ public class FossilFuelImpl extends IdentifiedObjectImpl implements FossilFuel {
         else {
             boolean oldThermalGeneratingUnitESet = thermalGeneratingUnitESet;
             thermalGeneratingUnitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.FOSSIL_FUEL__THERMAL_GENERATING_UNIT, null, null, oldThermalGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.FOSSIL_FUEL__THERMAL_GENERATING_UNIT, null, null, oldThermalGeneratingUnitESet ) );
         }
     }
 
@@ -1280,7 +1290,7 @@ public class FossilFuelImpl extends IdentifiedObjectImpl implements FossilFuel {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (fossilFuelType: " );
         if( fossilFuelTypeESet )
             result.append( fossilFuelType );

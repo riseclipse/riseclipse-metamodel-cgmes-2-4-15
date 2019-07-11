@@ -345,8 +345,9 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
         firstName = newFirstName;
         boolean oldFirstNameESet = firstNameESet;
         firstNameESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PERSON__FIRST_NAME, oldFirstName, firstName, !oldFirstNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PERSON__FIRST_NAME, oldFirstName,
+                    firstName, !oldFirstNameESet ) );
     }
 
     /**
@@ -360,8 +361,9 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
         boolean oldFirstNameESet = firstNameESet;
         firstName = FIRST_NAME_EDEFAULT;
         firstNameESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PERSON__FIRST_NAME, oldFirstName, FIRST_NAME_EDEFAULT, oldFirstNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PERSON__FIRST_NAME, oldFirstName,
+                    FIRST_NAME_EDEFAULT, oldFirstNameESet ) );
     }
 
     /**
@@ -395,8 +397,9 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
         lastName = newLastName;
         boolean oldLastNameESet = lastNameESet;
         lastNameESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PERSON__LAST_NAME, oldLastName, lastName, !oldLastNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PERSON__LAST_NAME, oldLastName, lastName,
+                    !oldLastNameESet ) );
     }
 
     /**
@@ -410,8 +413,9 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
         boolean oldLastNameESet = lastNameESet;
         lastName = LAST_NAME_EDEFAULT;
         lastNameESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PERSON__LAST_NAME, oldLastName, LAST_NAME_EDEFAULT, oldLastNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PERSON__LAST_NAME, oldLastName,
+                    LAST_NAME_EDEFAULT, oldLastNameESet ) );
     }
 
     /**
@@ -445,8 +449,9 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
         mName = newMName;
         boolean oldMNameESet = mNameESet;
         mNameESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PERSON__MNAME,
-                oldMName, mName, !oldMNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PERSON__MNAME, oldMName, mName,
+                    !oldMNameESet ) );
     }
 
     /**
@@ -460,8 +465,9 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
         boolean oldMNameESet = mNameESet;
         mName = MNAME_EDEFAULT;
         mNameESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PERSON__MNAME, oldMName, MNAME_EDEFAULT, oldMNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PERSON__MNAME, oldMName,
+                    MNAME_EDEFAULT, oldMNameESet ) );
     }
 
     /**
@@ -495,8 +501,9 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
         prefix = newPrefix;
         boolean oldPrefixESet = prefixESet;
         prefixESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PERSON__PREFIX,
-                oldPrefix, prefix, !oldPrefixESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PERSON__PREFIX, oldPrefix, prefix,
+                    !oldPrefixESet ) );
     }
 
     /**
@@ -510,8 +517,9 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
         boolean oldPrefixESet = prefixESet;
         prefix = PREFIX_EDEFAULT;
         prefixESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PERSON__PREFIX, oldPrefix, PREFIX_EDEFAULT, oldPrefixESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PERSON__PREFIX, oldPrefix,
+                    PREFIX_EDEFAULT, oldPrefixESet ) );
     }
 
     /**
@@ -545,8 +553,9 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
         specialNeed = newSpecialNeed;
         boolean oldSpecialNeedESet = specialNeedESet;
         specialNeedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PERSON__SPECIAL_NEED, oldSpecialNeed, specialNeed, !oldSpecialNeedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PERSON__SPECIAL_NEED, oldSpecialNeed,
+                    specialNeed, !oldSpecialNeedESet ) );
     }
 
     /**
@@ -560,8 +569,9 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
         boolean oldSpecialNeedESet = specialNeedESet;
         specialNeed = SPECIAL_NEED_EDEFAULT;
         specialNeedESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PERSON__SPECIAL_NEED, oldSpecialNeed, SPECIAL_NEED_EDEFAULT, oldSpecialNeedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PERSON__SPECIAL_NEED, oldSpecialNeed,
+                    SPECIAL_NEED_EDEFAULT, oldSpecialNeedESet ) );
     }
 
     /**
@@ -595,8 +605,9 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
         suffix = newSuffix;
         boolean oldSuffixESet = suffixESet;
         suffixESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PERSON__SUFFIX,
-                oldSuffix, suffix, !oldSuffixESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PERSON__SUFFIX, oldSuffix, suffix,
+                    !oldSuffixESet ) );
     }
 
     /**
@@ -610,8 +621,9 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
         boolean oldSuffixESet = suffixESet;
         suffix = SUFFIX_EDEFAULT;
         suffixESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PERSON__SUFFIX, oldSuffix, SUFFIX_EDEFAULT, oldSuffixESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PERSON__SUFFIX, oldSuffix,
+                    SUFFIX_EDEFAULT, oldSuffixESet ) );
     }
 
     /**
@@ -666,10 +678,12 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
     public void setElectronicAddress( ElectronicAddress newElectronicAddress ) {
         if( newElectronicAddress != electronicAddress ) {
             NotificationChain msgs = null;
-            if( electronicAddress != null ) msgs = ( ( InternalEObject ) electronicAddress ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.PERSON__ELECTRONIC_ADDRESS, null, msgs );
-            if( newElectronicAddress != null ) msgs = ( ( InternalEObject ) newElectronicAddress ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.PERSON__ELECTRONIC_ADDRESS, null, msgs );
+            if( electronicAddress != null )
+                msgs = ( ( InternalEObject ) electronicAddress ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.PERSON__ELECTRONIC_ADDRESS, null, msgs );
+            if( newElectronicAddress != null )
+                msgs = ( ( InternalEObject ) newElectronicAddress ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.PERSON__ELECTRONIC_ADDRESS, null, msgs );
             msgs = basicSetElectronicAddress( newElectronicAddress, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -720,8 +734,9 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
         else {
             boolean oldElectronicAddressESet = electronicAddressESet;
             electronicAddressESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PERSON__ELECTRONIC_ADDRESS, null, null, oldElectronicAddressESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PERSON__ELECTRONIC_ADDRESS, null,
+                        null, oldElectronicAddressESet ) );
         }
     }
 
@@ -775,18 +790,21 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
     public void setLandlinePhone( TelephoneNumber newLandlinePhone ) {
         if( newLandlinePhone != landlinePhone ) {
             NotificationChain msgs = null;
-            if( landlinePhone != null ) msgs = ( ( InternalEObject ) landlinePhone ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.PERSON__LANDLINE_PHONE, null, msgs );
-            if( newLandlinePhone != null ) msgs = ( ( InternalEObject ) newLandlinePhone ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.PERSON__LANDLINE_PHONE, null, msgs );
+            if( landlinePhone != null )
+                msgs = ( ( InternalEObject ) landlinePhone ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.PERSON__LANDLINE_PHONE, null, msgs );
+            if( newLandlinePhone != null )
+                msgs = ( ( InternalEObject ) newLandlinePhone ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.PERSON__LANDLINE_PHONE, null, msgs );
             msgs = basicSetLandlinePhone( newLandlinePhone, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldLandlinePhoneESet = landlinePhoneESet;
             landlinePhoneESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PERSON__LANDLINE_PHONE, newLandlinePhone, newLandlinePhone, !oldLandlinePhoneESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PERSON__LANDLINE_PHONE,
+                        newLandlinePhone, newLandlinePhone, !oldLandlinePhoneESet ) );
         }
     }
 
@@ -828,8 +846,9 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
         else {
             boolean oldLandlinePhoneESet = landlinePhoneESet;
             landlinePhoneESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PERSON__LANDLINE_PHONE, null, null, oldLandlinePhoneESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PERSON__LANDLINE_PHONE, null, null,
+                        oldLandlinePhoneESet ) );
         }
     }
 
@@ -883,18 +902,21 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
     public void setMobilePhone( TelephoneNumber newMobilePhone ) {
         if( newMobilePhone != mobilePhone ) {
             NotificationChain msgs = null;
-            if( mobilePhone != null ) msgs = ( ( InternalEObject ) mobilePhone ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.PERSON__MOBILE_PHONE, null, msgs );
-            if( newMobilePhone != null ) msgs = ( ( InternalEObject ) newMobilePhone ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.PERSON__MOBILE_PHONE, null, msgs );
+            if( mobilePhone != null )
+                msgs = ( ( InternalEObject ) mobilePhone ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.PERSON__MOBILE_PHONE, null, msgs );
+            if( newMobilePhone != null )
+                msgs = ( ( InternalEObject ) newMobilePhone ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.PERSON__MOBILE_PHONE, null, msgs );
             msgs = basicSetMobilePhone( newMobilePhone, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldMobilePhoneESet = mobilePhoneESet;
             mobilePhoneESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PERSON__MOBILE_PHONE, newMobilePhone, newMobilePhone, !oldMobilePhoneESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PERSON__MOBILE_PHONE, newMobilePhone,
+                        newMobilePhone, !oldMobilePhoneESet ) );
         }
     }
 
@@ -936,8 +958,9 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
         else {
             boolean oldMobilePhoneESet = mobilePhoneESet;
             mobilePhoneESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PERSON__MOBILE_PHONE, null, null, oldMobilePhoneESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PERSON__MOBILE_PHONE, null, null,
+                        oldMobilePhoneESet ) );
         }
     }
 
@@ -1180,7 +1203,7 @@ public class PersonImpl extends IdentifiedObjectImpl implements Person {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (firstName: " );
         if( firstNameESet )
             result.append( firstName );

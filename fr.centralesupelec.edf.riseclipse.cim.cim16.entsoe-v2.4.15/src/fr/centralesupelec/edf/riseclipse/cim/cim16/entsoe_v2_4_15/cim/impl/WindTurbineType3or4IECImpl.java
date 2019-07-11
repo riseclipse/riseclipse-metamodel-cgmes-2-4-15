@@ -137,9 +137,10 @@ public class WindTurbineType3or4IECImpl extends WindTurbineType3or4DynamicsImpl 
             InternalEObject oldWindProtectionIEC = ( InternalEObject ) windProtectionIEC;
             windProtectionIEC = ( WindProtectionIEC ) eResolveProxy( oldWindProtectionIEC );
             if( windProtectionIEC != oldWindProtectionIEC ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_PROTECTION_IEC, oldWindProtectionIEC,
-                        windProtectionIEC ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_PROTECTION_IEC, oldWindProtectionIEC,
+                            windProtectionIEC ) );
             }
         }
         return windProtectionIEC;
@@ -186,19 +187,22 @@ public class WindTurbineType3or4IECImpl extends WindTurbineType3or4DynamicsImpl 
     public void setWindProtectionIEC( WindProtectionIEC newWindProtectionIEC ) {
         if( newWindProtectionIEC != windProtectionIEC ) {
             NotificationChain msgs = null;
-            if( windProtectionIEC != null ) msgs = ( ( InternalEObject ) windProtectionIEC ).eInverseRemove( this,
-                    CimPackage.WIND_PROTECTION_IEC__WIND_TURBINE_TYPE3OR4_IEC, WindProtectionIEC.class, msgs );
-            if( newWindProtectionIEC != null ) msgs = ( ( InternalEObject ) newWindProtectionIEC ).eInverseAdd( this,
-                    CimPackage.WIND_PROTECTION_IEC__WIND_TURBINE_TYPE3OR4_IEC, WindProtectionIEC.class, msgs );
+            if( windProtectionIEC != null )
+                msgs = ( ( InternalEObject ) windProtectionIEC ).eInverseRemove( this,
+                        CimPackage.WIND_PROTECTION_IEC__WIND_TURBINE_TYPE3OR4_IEC, WindProtectionIEC.class, msgs );
+            if( newWindProtectionIEC != null )
+                msgs = ( ( InternalEObject ) newWindProtectionIEC ).eInverseAdd( this,
+                        CimPackage.WIND_PROTECTION_IEC__WIND_TURBINE_TYPE3OR4_IEC, WindProtectionIEC.class, msgs );
             msgs = basicSetWindProtectionIEC( newWindProtectionIEC, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWindProtectionIECESet = windProtectionIECESet;
             windProtectionIECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_PROTECTION_IEC, newWindProtectionIEC,
-                    newWindProtectionIEC, !oldWindProtectionIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_PROTECTION_IEC, newWindProtectionIEC,
+                        newWindProtectionIEC, !oldWindProtectionIECESet ) );
         }
     }
 
@@ -241,8 +245,10 @@ public class WindTurbineType3or4IECImpl extends WindTurbineType3or4DynamicsImpl 
         else {
             boolean oldWindProtectionIECESet = windProtectionIECESet;
             windProtectionIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_PROTECTION_IEC, null, null, oldWindProtectionIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_PROTECTION_IEC, null, null,
+                        oldWindProtectionIECESet ) );
         }
     }
 
@@ -267,9 +273,10 @@ public class WindTurbineType3or4IECImpl extends WindTurbineType3or4DynamicsImpl 
             InternalEObject oldWindContCurrLimIEC = ( InternalEObject ) windContCurrLimIEC;
             windContCurrLimIEC = ( WindContCurrLimIEC ) eResolveProxy( oldWindContCurrLimIEC );
             if( windContCurrLimIEC != oldWindContCurrLimIEC ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_CONT_CURR_LIM_IEC, oldWindContCurrLimIEC,
-                        windContCurrLimIEC ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_CONT_CURR_LIM_IEC, oldWindContCurrLimIEC,
+                            windContCurrLimIEC ) );
             }
         }
         return windContCurrLimIEC;
@@ -316,19 +323,22 @@ public class WindTurbineType3or4IECImpl extends WindTurbineType3or4DynamicsImpl 
     public void setWindContCurrLimIEC( WindContCurrLimIEC newWindContCurrLimIEC ) {
         if( newWindContCurrLimIEC != windContCurrLimIEC ) {
             NotificationChain msgs = null;
-            if( windContCurrLimIEC != null ) msgs = ( ( InternalEObject ) windContCurrLimIEC ).eInverseRemove( this,
-                    CimPackage.WIND_CONT_CURR_LIM_IEC__WIND_TURBINE_TYPE3OR4_IEC, WindContCurrLimIEC.class, msgs );
-            if( newWindContCurrLimIEC != null ) msgs = ( ( InternalEObject ) newWindContCurrLimIEC ).eInverseAdd( this,
-                    CimPackage.WIND_CONT_CURR_LIM_IEC__WIND_TURBINE_TYPE3OR4_IEC, WindContCurrLimIEC.class, msgs );
+            if( windContCurrLimIEC != null )
+                msgs = ( ( InternalEObject ) windContCurrLimIEC ).eInverseRemove( this,
+                        CimPackage.WIND_CONT_CURR_LIM_IEC__WIND_TURBINE_TYPE3OR4_IEC, WindContCurrLimIEC.class, msgs );
+            if( newWindContCurrLimIEC != null )
+                msgs = ( ( InternalEObject ) newWindContCurrLimIEC ).eInverseAdd( this,
+                        CimPackage.WIND_CONT_CURR_LIM_IEC__WIND_TURBINE_TYPE3OR4_IEC, WindContCurrLimIEC.class, msgs );
             msgs = basicSetWindContCurrLimIEC( newWindContCurrLimIEC, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWindContCurrLimIECESet = windContCurrLimIECESet;
             windContCurrLimIECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_CONT_CURR_LIM_IEC, newWindContCurrLimIEC,
-                    newWindContCurrLimIEC, !oldWindContCurrLimIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_CONT_CURR_LIM_IEC, newWindContCurrLimIEC,
+                        newWindContCurrLimIEC, !oldWindContCurrLimIECESet ) );
         }
     }
 
@@ -371,9 +381,10 @@ public class WindTurbineType3or4IECImpl extends WindTurbineType3or4DynamicsImpl 
         else {
             boolean oldWindContCurrLimIECESet = windContCurrLimIECESet;
             windContCurrLimIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_CONT_CURR_LIM_IEC, null, null,
-                    oldWindContCurrLimIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_CONT_CURR_LIM_IEC, null, null,
+                        oldWindContCurrLimIECESet ) );
         }
     }
 
@@ -398,8 +409,9 @@ public class WindTurbineType3or4IECImpl extends WindTurbineType3or4DynamicsImpl 
             InternalEObject oldWIndContQIEC = ( InternalEObject ) wIndContQIEC;
             wIndContQIEC = ( WindContQIEC ) eResolveProxy( oldWIndContQIEC );
             if( wIndContQIEC != oldWIndContQIEC ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_CONT_QIEC, oldWIndContQIEC, wIndContQIEC ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_CONT_QIEC, oldWIndContQIEC, wIndContQIEC ) );
             }
         }
         return wIndContQIEC;
@@ -445,19 +457,22 @@ public class WindTurbineType3or4IECImpl extends WindTurbineType3or4DynamicsImpl 
     public void setWIndContQIEC( WindContQIEC newWIndContQIEC ) {
         if( newWIndContQIEC != wIndContQIEC ) {
             NotificationChain msgs = null;
-            if( wIndContQIEC != null ) msgs = ( ( InternalEObject ) wIndContQIEC ).eInverseRemove( this,
-                    CimPackage.WIND_CONT_QIEC__WIND_TURBINE_TYPE3OR4_IEC, WindContQIEC.class, msgs );
-            if( newWIndContQIEC != null ) msgs = ( ( InternalEObject ) newWIndContQIEC ).eInverseAdd( this,
-                    CimPackage.WIND_CONT_QIEC__WIND_TURBINE_TYPE3OR4_IEC, WindContQIEC.class, msgs );
+            if( wIndContQIEC != null )
+                msgs = ( ( InternalEObject ) wIndContQIEC ).eInverseRemove( this,
+                        CimPackage.WIND_CONT_QIEC__WIND_TURBINE_TYPE3OR4_IEC, WindContQIEC.class, msgs );
+            if( newWIndContQIEC != null )
+                msgs = ( ( InternalEObject ) newWIndContQIEC ).eInverseAdd( this,
+                        CimPackage.WIND_CONT_QIEC__WIND_TURBINE_TYPE3OR4_IEC, WindContQIEC.class, msgs );
             msgs = basicSetWIndContQIEC( newWIndContQIEC, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWIndContQIECESet = wIndContQIECESet;
             wIndContQIECESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_CONT_QIEC,
-                            newWIndContQIEC, newWIndContQIEC, !oldWIndContQIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_CONT_QIEC, newWIndContQIEC, newWIndContQIEC,
+                        !oldWIndContQIECESet ) );
         }
     }
 
@@ -499,8 +514,9 @@ public class WindTurbineType3or4IECImpl extends WindTurbineType3or4DynamicsImpl 
         else {
             boolean oldWIndContQIECESet = wIndContQIECESet;
             wIndContQIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_CONT_QIEC, null, null, oldWIndContQIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_CONT_QIEC, null, null, oldWIndContQIECESet ) );
         }
     }
 
@@ -523,16 +539,19 @@ public class WindTurbineType3or4IECImpl extends WindTurbineType3or4DynamicsImpl 
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_PROTECTION_IEC:
-            if( windProtectionIEC != null ) msgs = ( ( InternalEObject ) windProtectionIEC ).eInverseRemove( this,
-                    CimPackage.WIND_PROTECTION_IEC__WIND_TURBINE_TYPE3OR4_IEC, WindProtectionIEC.class, msgs );
+            if( windProtectionIEC != null )
+                msgs = ( ( InternalEObject ) windProtectionIEC ).eInverseRemove( this,
+                        CimPackage.WIND_PROTECTION_IEC__WIND_TURBINE_TYPE3OR4_IEC, WindProtectionIEC.class, msgs );
             return basicSetWindProtectionIEC( ( WindProtectionIEC ) otherEnd, msgs );
         case CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_CONT_CURR_LIM_IEC:
-            if( windContCurrLimIEC != null ) msgs = ( ( InternalEObject ) windContCurrLimIEC ).eInverseRemove( this,
-                    CimPackage.WIND_CONT_CURR_LIM_IEC__WIND_TURBINE_TYPE3OR4_IEC, WindContCurrLimIEC.class, msgs );
+            if( windContCurrLimIEC != null )
+                msgs = ( ( InternalEObject ) windContCurrLimIEC ).eInverseRemove( this,
+                        CimPackage.WIND_CONT_CURR_LIM_IEC__WIND_TURBINE_TYPE3OR4_IEC, WindContCurrLimIEC.class, msgs );
             return basicSetWindContCurrLimIEC( ( WindContCurrLimIEC ) otherEnd, msgs );
         case CimPackage.WIND_TURBINE_TYPE3OR4_IEC__WIND_CONT_QIEC:
-            if( wIndContQIEC != null ) msgs = ( ( InternalEObject ) wIndContQIEC ).eInverseRemove( this,
-                    CimPackage.WIND_CONT_QIEC__WIND_TURBINE_TYPE3OR4_IEC, WindContQIEC.class, msgs );
+            if( wIndContQIEC != null )
+                msgs = ( ( InternalEObject ) wIndContQIEC ).eInverseRemove( this,
+                        CimPackage.WIND_CONT_QIEC__WIND_TURBINE_TYPE3OR4_IEC, WindContQIEC.class, msgs );
             return basicSetWIndContQIEC( ( WindContQIEC ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

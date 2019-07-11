@@ -92,7 +92,10 @@ public enum SVCControlMode implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final SVCControlMode[] VALUES_ARRAY = new SVCControlMode[] { REACTIVE_POWER, VOLTAGE, };
+    private static final SVCControlMode[] VALUES_ARRAY = new SVCControlMode[] {
+            REACTIVE_POWER,
+            VOLTAGE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>SVC Control Mode</b></em>' enumerators.

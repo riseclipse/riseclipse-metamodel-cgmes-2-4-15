@@ -155,8 +155,9 @@ public class ReadingImpl extends BaseReadingImpl implements Reading {
         reason = newReason == null ? REASON_EDEFAULT : newReason;
         boolean oldReasonESet = reasonESet;
         reasonESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING__REASON, oldReason, reason, !oldReasonESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING__REASON, oldReason, reason,
+                    !oldReasonESet ) );
     }
 
     /**
@@ -170,8 +171,9 @@ public class ReadingImpl extends BaseReadingImpl implements Reading {
         boolean oldReasonESet = reasonESet;
         reason = REASON_EDEFAULT;
         reasonESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.READING__REASON, oldReason, REASON_EDEFAULT, oldReasonESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING__REASON, oldReason,
+                    REASON_EDEFAULT, oldReasonESet ) );
     }
 
     /**
@@ -224,18 +226,21 @@ public class ReadingImpl extends BaseReadingImpl implements Reading {
     public void setReadingType( ReadingType newReadingType ) {
         if( newReadingType != readingType ) {
             NotificationChain msgs = null;
-            if( readingType != null ) msgs = ( ( InternalEObject ) readingType ).eInverseRemove( this,
-                    CimPackage.READING_TYPE__READINGS, ReadingType.class, msgs );
-            if( newReadingType != null ) msgs = ( ( InternalEObject ) newReadingType ).eInverseAdd( this,
-                    CimPackage.READING_TYPE__READINGS, ReadingType.class, msgs );
+            if( readingType != null )
+                msgs = ( ( InternalEObject ) readingType ).eInverseRemove( this, CimPackage.READING_TYPE__READINGS,
+                        ReadingType.class, msgs );
+            if( newReadingType != null )
+                msgs = ( ( InternalEObject ) newReadingType ).eInverseAdd( this, CimPackage.READING_TYPE__READINGS,
+                        ReadingType.class, msgs );
             msgs = basicSetReadingType( newReadingType, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldReadingTypeESet = readingTypeESet;
             readingTypeESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.READING__READING_TYPE, newReadingType, newReadingType, !oldReadingTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING__READING_TYPE,
+                        newReadingType, newReadingType, !oldReadingTypeESet ) );
         }
     }
 
@@ -277,8 +282,9 @@ public class ReadingImpl extends BaseReadingImpl implements Reading {
         else {
             boolean oldReadingTypeESet = readingTypeESet;
             readingTypeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.READING__READING_TYPE, null, null, oldReadingTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING__READING_TYPE, null, null,
+                        oldReadingTypeESet ) );
         }
     }
 
@@ -336,8 +342,9 @@ public class ReadingImpl extends BaseReadingImpl implements Reading {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.READING__READING_TYPE:
-            if( readingType != null ) msgs = ( ( InternalEObject ) readingType ).eInverseRemove( this,
-                    CimPackage.READING_TYPE__READINGS, ReadingType.class, msgs );
+            if( readingType != null )
+                msgs = ( ( InternalEObject ) readingType ).eInverseRemove( this, CimPackage.READING_TYPE__READINGS,
+                        ReadingType.class, msgs );
             return basicSetReadingType( ( ReadingType ) otherEnd, msgs );
         case CimPackage.READING__METER_READINGS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getMeterReadings() )
@@ -451,7 +458,7 @@ public class ReadingImpl extends BaseReadingImpl implements Reading {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (reason: " );
         if( reasonESet )
             result.append( reason );

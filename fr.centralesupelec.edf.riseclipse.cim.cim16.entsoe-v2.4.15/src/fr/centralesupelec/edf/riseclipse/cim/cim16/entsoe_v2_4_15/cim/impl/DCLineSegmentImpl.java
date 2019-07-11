@@ -225,8 +225,9 @@ public class DCLineSegmentImpl extends DCConductingEquipmentImpl implements DCLi
         capacitance = newCapacitance;
         boolean oldCapacitanceESet = capacitanceESet;
         capacitanceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DC_LINE_SEGMENT__CAPACITANCE, oldCapacitance, capacitance, !oldCapacitanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DC_LINE_SEGMENT__CAPACITANCE,
+                    oldCapacitance, capacitance, !oldCapacitanceESet ) );
     }
 
     /**
@@ -240,8 +241,9 @@ public class DCLineSegmentImpl extends DCConductingEquipmentImpl implements DCLi
         boolean oldCapacitanceESet = capacitanceESet;
         capacitance = CAPACITANCE_EDEFAULT;
         capacitanceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DC_LINE_SEGMENT__CAPACITANCE, oldCapacitance, CAPACITANCE_EDEFAULT, oldCapacitanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DC_LINE_SEGMENT__CAPACITANCE,
+                    oldCapacitance, CAPACITANCE_EDEFAULT, oldCapacitanceESet ) );
     }
 
     /**
@@ -275,8 +277,9 @@ public class DCLineSegmentImpl extends DCConductingEquipmentImpl implements DCLi
         inductance = newInductance;
         boolean oldInductanceESet = inductanceESet;
         inductanceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DC_LINE_SEGMENT__INDUCTANCE, oldInductance, inductance, !oldInductanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DC_LINE_SEGMENT__INDUCTANCE,
+                    oldInductance, inductance, !oldInductanceESet ) );
     }
 
     /**
@@ -290,8 +293,9 @@ public class DCLineSegmentImpl extends DCConductingEquipmentImpl implements DCLi
         boolean oldInductanceESet = inductanceESet;
         inductance = INDUCTANCE_EDEFAULT;
         inductanceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DC_LINE_SEGMENT__INDUCTANCE, oldInductance, INDUCTANCE_EDEFAULT, oldInductanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DC_LINE_SEGMENT__INDUCTANCE,
+                    oldInductance, INDUCTANCE_EDEFAULT, oldInductanceESet ) );
     }
 
     /**
@@ -325,8 +329,9 @@ public class DCLineSegmentImpl extends DCConductingEquipmentImpl implements DCLi
         length = newLength;
         boolean oldLengthESet = lengthESet;
         lengthESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DC_LINE_SEGMENT__LENGTH, oldLength, length, !oldLengthESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DC_LINE_SEGMENT__LENGTH, oldLength,
+                    length, !oldLengthESet ) );
     }
 
     /**
@@ -340,8 +345,9 @@ public class DCLineSegmentImpl extends DCConductingEquipmentImpl implements DCLi
         boolean oldLengthESet = lengthESet;
         length = LENGTH_EDEFAULT;
         lengthESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DC_LINE_SEGMENT__LENGTH, oldLength, LENGTH_EDEFAULT, oldLengthESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DC_LINE_SEGMENT__LENGTH, oldLength,
+                    LENGTH_EDEFAULT, oldLengthESet ) );
     }
 
     /**
@@ -375,8 +381,9 @@ public class DCLineSegmentImpl extends DCConductingEquipmentImpl implements DCLi
         resistance = newResistance;
         boolean oldResistanceESet = resistanceESet;
         resistanceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DC_LINE_SEGMENT__RESISTANCE, oldResistance, resistance, !oldResistanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DC_LINE_SEGMENT__RESISTANCE,
+                    oldResistance, resistance, !oldResistanceESet ) );
     }
 
     /**
@@ -390,8 +397,9 @@ public class DCLineSegmentImpl extends DCConductingEquipmentImpl implements DCLi
         boolean oldResistanceESet = resistanceESet;
         resistance = RESISTANCE_EDEFAULT;
         resistanceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DC_LINE_SEGMENT__RESISTANCE, oldResistance, RESISTANCE_EDEFAULT, oldResistanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DC_LINE_SEGMENT__RESISTANCE,
+                    oldResistance, RESISTANCE_EDEFAULT, oldResistanceESet ) );
     }
 
     /**
@@ -446,19 +454,24 @@ public class DCLineSegmentImpl extends DCConductingEquipmentImpl implements DCLi
     public void setPerLengthParameter( PerLengthDCLineParameter newPerLengthParameter ) {
         if( newPerLengthParameter != perLengthParameter ) {
             NotificationChain msgs = null;
-            if( perLengthParameter != null ) msgs = ( ( InternalEObject ) perLengthParameter ).eInverseRemove( this,
-                    CimPackage.PER_LENGTH_DC_LINE_PARAMETER__DC_LINE_SEGMENTS, PerLengthDCLineParameter.class, msgs );
-            if( newPerLengthParameter != null ) msgs = ( ( InternalEObject ) newPerLengthParameter ).eInverseAdd( this,
-                    CimPackage.PER_LENGTH_DC_LINE_PARAMETER__DC_LINE_SEGMENTS, PerLengthDCLineParameter.class, msgs );
+            if( perLengthParameter != null )
+                msgs = ( ( InternalEObject ) perLengthParameter ).eInverseRemove( this,
+                        CimPackage.PER_LENGTH_DC_LINE_PARAMETER__DC_LINE_SEGMENTS, PerLengthDCLineParameter.class,
+                        msgs );
+            if( newPerLengthParameter != null )
+                msgs = ( ( InternalEObject ) newPerLengthParameter ).eInverseAdd( this,
+                        CimPackage.PER_LENGTH_DC_LINE_PARAMETER__DC_LINE_SEGMENTS, PerLengthDCLineParameter.class,
+                        msgs );
             msgs = basicSetPerLengthParameter( newPerLengthParameter, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldPerLengthParameterESet = perLengthParameterESet;
             perLengthParameterESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.DC_LINE_SEGMENT__PER_LENGTH_PARAMETER,
-                            newPerLengthParameter, newPerLengthParameter, !oldPerLengthParameterESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.DC_LINE_SEGMENT__PER_LENGTH_PARAMETER, newPerLengthParameter, newPerLengthParameter,
+                        !oldPerLengthParameterESet ) );
         }
     }
 
@@ -501,8 +514,9 @@ public class DCLineSegmentImpl extends DCConductingEquipmentImpl implements DCLi
         else {
             boolean oldPerLengthParameterESet = perLengthParameterESet;
             perLengthParameterESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.DC_LINE_SEGMENT__PER_LENGTH_PARAMETER, null, null, oldPerLengthParameterESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.DC_LINE_SEGMENT__PER_LENGTH_PARAMETER, null, null, oldPerLengthParameterESet ) );
         }
     }
 
@@ -525,8 +539,10 @@ public class DCLineSegmentImpl extends DCConductingEquipmentImpl implements DCLi
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.DC_LINE_SEGMENT__PER_LENGTH_PARAMETER:
-            if( perLengthParameter != null ) msgs = ( ( InternalEObject ) perLengthParameter ).eInverseRemove( this,
-                    CimPackage.PER_LENGTH_DC_LINE_PARAMETER__DC_LINE_SEGMENTS, PerLengthDCLineParameter.class, msgs );
+            if( perLengthParameter != null )
+                msgs = ( ( InternalEObject ) perLengthParameter ).eInverseRemove( this,
+                        CimPackage.PER_LENGTH_DC_LINE_PARAMETER__DC_LINE_SEGMENTS, PerLengthDCLineParameter.class,
+                        msgs );
             return basicSetPerLengthParameter( ( PerLengthDCLineParameter ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -653,7 +669,7 @@ public class DCLineSegmentImpl extends DCConductingEquipmentImpl implements DCLi
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (capacitance: " );
         if( capacitanceESet )
             result.append( capacitance );

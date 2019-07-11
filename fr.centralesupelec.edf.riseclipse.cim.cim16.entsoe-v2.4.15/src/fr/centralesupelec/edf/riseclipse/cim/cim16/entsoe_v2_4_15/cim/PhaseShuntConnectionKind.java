@@ -142,7 +142,12 @@ public enum PhaseShuntConnectionKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final PhaseShuntConnectionKind[] VALUES_ARRAY = new PhaseShuntConnectionKind[] { D, Y, YN, I, };
+    private static final PhaseShuntConnectionKind[] VALUES_ARRAY = new PhaseShuntConnectionKind[] {
+            D,
+            Y,
+            YN,
+            I,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Phase Shunt Connection Kind</b></em>' enumerators.

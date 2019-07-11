@@ -645,8 +645,9 @@ public class CableInfoImpl extends WireInfoImpl implements CableInfo {
         isStrandFill = newIsStrandFill;
         boolean oldIsStrandFillESet = isStrandFillESet;
         isStrandFillESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CABLE_INFO__IS_STRAND_FILL, oldIsStrandFill, isStrandFill, !oldIsStrandFillESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CABLE_INFO__IS_STRAND_FILL,
+                    oldIsStrandFill, isStrandFill, !oldIsStrandFillESet ) );
     }
 
     /**
@@ -852,8 +853,9 @@ public class CableInfoImpl extends WireInfoImpl implements CableInfo {
         shieldMaterial = newShieldMaterial == null ? SHIELD_MATERIAL_EDEFAULT : newShieldMaterial;
         boolean oldShieldMaterialESet = shieldMaterialESet;
         shieldMaterialESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CABLE_INFO__SHIELD_MATERIAL, oldShieldMaterial, shieldMaterial, !oldShieldMaterialESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CABLE_INFO__SHIELD_MATERIAL,
+                    oldShieldMaterial, shieldMaterial, !oldShieldMaterialESet ) );
     }
 
     /**
@@ -1039,7 +1041,7 @@ public class CableInfoImpl extends WireInfoImpl implements CableInfo {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (constructionKind: " );
         if( constructionKindESet )
             result.append( constructionKind );

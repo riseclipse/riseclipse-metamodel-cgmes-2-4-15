@@ -223,8 +223,9 @@ public class EndDeviceControlTypeImpl extends IdentifiedObjectImpl implements En
         domain = newDomain;
         boolean oldDomainESet = domainESet;
         domainESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_CONTROL_TYPE__DOMAIN, oldDomain, domain, !oldDomainESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_CONTROL_TYPE__DOMAIN,
+                    oldDomain, domain, !oldDomainESet ) );
     }
 
     /**
@@ -238,8 +239,9 @@ public class EndDeviceControlTypeImpl extends IdentifiedObjectImpl implements En
         boolean oldDomainESet = domainESet;
         domain = DOMAIN_EDEFAULT;
         domainESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_CONTROL_TYPE__DOMAIN, oldDomain, DOMAIN_EDEFAULT, oldDomainESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_CONTROL_TYPE__DOMAIN,
+                    oldDomain, DOMAIN_EDEFAULT, oldDomainESet ) );
     }
 
     /**
@@ -289,9 +291,10 @@ public class EndDeviceControlTypeImpl extends IdentifiedObjectImpl implements En
         boolean oldEventOrActionESet = eventOrActionESet;
         eventOrAction = EVENT_OR_ACTION_EDEFAULT;
         eventOrActionESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_CONTROL_TYPE__EVENT_OR_ACTION,
-                        oldEventOrAction, EVENT_OR_ACTION_EDEFAULT, oldEventOrActionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.END_DEVICE_CONTROL_TYPE__EVENT_OR_ACTION, oldEventOrAction, EVENT_OR_ACTION_EDEFAULT,
+                    oldEventOrActionESet ) );
     }
 
     /**
@@ -325,8 +328,9 @@ public class EndDeviceControlTypeImpl extends IdentifiedObjectImpl implements En
         subDomain = newSubDomain;
         boolean oldSubDomainESet = subDomainESet;
         subDomainESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_CONTROL_TYPE__SUB_DOMAIN, oldSubDomain, subDomain, !oldSubDomainESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_CONTROL_TYPE__SUB_DOMAIN,
+                    oldSubDomain, subDomain, !oldSubDomainESet ) );
     }
 
     /**
@@ -340,8 +344,9 @@ public class EndDeviceControlTypeImpl extends IdentifiedObjectImpl implements En
         boolean oldSubDomainESet = subDomainESet;
         subDomain = SUB_DOMAIN_EDEFAULT;
         subDomainESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_CONTROL_TYPE__SUB_DOMAIN, oldSubDomain, SUB_DOMAIN_EDEFAULT, oldSubDomainESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_CONTROL_TYPE__SUB_DOMAIN,
+                    oldSubDomain, SUB_DOMAIN_EDEFAULT, oldSubDomainESet ) );
     }
 
     /**
@@ -375,8 +380,9 @@ public class EndDeviceControlTypeImpl extends IdentifiedObjectImpl implements En
         type = newType;
         boolean oldTypeESet = typeESet;
         typeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_CONTROL_TYPE__TYPE, oldType, type, !oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_CONTROL_TYPE__TYPE, oldType,
+                    type, !oldTypeESet ) );
     }
 
     /**
@@ -390,8 +396,9 @@ public class EndDeviceControlTypeImpl extends IdentifiedObjectImpl implements En
         boolean oldTypeESet = typeESet;
         type = TYPE_EDEFAULT;
         typeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_CONTROL_TYPE__TYPE, oldType, TYPE_EDEFAULT, oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_CONTROL_TYPE__TYPE, oldType,
+                    TYPE_EDEFAULT, oldTypeESet ) );
     }
 
     /**
@@ -578,7 +585,7 @@ public class EndDeviceControlTypeImpl extends IdentifiedObjectImpl implements En
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (domain: " );
         if( domainESet )
             result.append( domain );

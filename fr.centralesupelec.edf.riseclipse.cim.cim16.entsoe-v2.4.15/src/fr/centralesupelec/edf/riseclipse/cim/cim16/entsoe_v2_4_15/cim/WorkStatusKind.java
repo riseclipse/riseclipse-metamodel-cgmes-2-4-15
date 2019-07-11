@@ -342,9 +342,20 @@ public enum WorkStatusKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final WorkStatusKind[] VALUES_ARRAY = new WorkStatusKind[] { WAITING_ON_APPROVAL, APPROVED,
-            CANCELLED, WAITING_TO_BE_SCHEDULED, SCHEDULED, WAITING_ON_MATERIAL, IN_PROGRESS, COMPLETED, CLOSED,
-            DISPATCHED, ENROUTE, ON_SITE, };
+    private static final WorkStatusKind[] VALUES_ARRAY = new WorkStatusKind[] {
+            WAITING_ON_APPROVAL,
+            APPROVED,
+            CANCELLED,
+            WAITING_TO_BE_SCHEDULED,
+            SCHEDULED,
+            WAITING_ON_MATERIAL,
+            IN_PROGRESS,
+            COMPLETED,
+            CLOSED,
+            DISPATCHED,
+            ENROUTE,
+            ON_SITE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Work Status Kind</b></em>' enumerators.

@@ -147,19 +147,22 @@ public class VoltageCompensatorDynamicsImpl extends DynamicsFunctionBlockImpl im
     public void setRemoteInputSignal( RemoteInputSignal newRemoteInputSignal ) {
         if( newRemoteInputSignal != remoteInputSignal ) {
             NotificationChain msgs = null;
-            if( remoteInputSignal != null ) msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__VOLTAGE_COMPENSATOR_DYNAMICS, RemoteInputSignal.class, msgs );
-            if( newRemoteInputSignal != null ) msgs = ( ( InternalEObject ) newRemoteInputSignal ).eInverseAdd( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__VOLTAGE_COMPENSATOR_DYNAMICS, RemoteInputSignal.class, msgs );
+            if( remoteInputSignal != null )
+                msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__VOLTAGE_COMPENSATOR_DYNAMICS, RemoteInputSignal.class, msgs );
+            if( newRemoteInputSignal != null )
+                msgs = ( ( InternalEObject ) newRemoteInputSignal ).eInverseAdd( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__VOLTAGE_COMPENSATOR_DYNAMICS, RemoteInputSignal.class, msgs );
             msgs = basicSetRemoteInputSignal( newRemoteInputSignal, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldRemoteInputSignalESet = remoteInputSignalESet;
             remoteInputSignalESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.VOLTAGE_COMPENSATOR_DYNAMICS__REMOTE_INPUT_SIGNAL, newRemoteInputSignal,
-                    newRemoteInputSignal, !oldRemoteInputSignalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.VOLTAGE_COMPENSATOR_DYNAMICS__REMOTE_INPUT_SIGNAL, newRemoteInputSignal,
+                        newRemoteInputSignal, !oldRemoteInputSignalESet ) );
         }
     }
 
@@ -202,9 +205,10 @@ public class VoltageCompensatorDynamicsImpl extends DynamicsFunctionBlockImpl im
         else {
             boolean oldRemoteInputSignalESet = remoteInputSignalESet;
             remoteInputSignalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.VOLTAGE_COMPENSATOR_DYNAMICS__REMOTE_INPUT_SIGNAL, null, null,
-                    oldRemoteInputSignalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.VOLTAGE_COMPENSATOR_DYNAMICS__REMOTE_INPUT_SIGNAL, null, null,
+                        oldRemoteInputSignalESet ) );
         }
     }
 
@@ -274,9 +278,10 @@ public class VoltageCompensatorDynamicsImpl extends DynamicsFunctionBlockImpl im
         else {
             boolean oldExcitationSystemDynamicsESet = excitationSystemDynamicsESet;
             excitationSystemDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.VOLTAGE_COMPENSATOR_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS, newExcitationSystemDynamics,
-                    newExcitationSystemDynamics, !oldExcitationSystemDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.VOLTAGE_COMPENSATOR_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS,
+                        newExcitationSystemDynamics, newExcitationSystemDynamics, !oldExcitationSystemDynamicsESet ) );
         }
     }
 
@@ -320,9 +325,10 @@ public class VoltageCompensatorDynamicsImpl extends DynamicsFunctionBlockImpl im
         else {
             boolean oldExcitationSystemDynamicsESet = excitationSystemDynamicsESet;
             excitationSystemDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.VOLTAGE_COMPENSATOR_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS, null, null,
-                    oldExcitationSystemDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.VOLTAGE_COMPENSATOR_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS, null, null,
+                        oldExcitationSystemDynamicsESet ) );
         }
     }
 
@@ -345,8 +351,9 @@ public class VoltageCompensatorDynamicsImpl extends DynamicsFunctionBlockImpl im
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.VOLTAGE_COMPENSATOR_DYNAMICS__REMOTE_INPUT_SIGNAL:
-            if( remoteInputSignal != null ) msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__VOLTAGE_COMPENSATOR_DYNAMICS, RemoteInputSignal.class, msgs );
+            if( remoteInputSignal != null )
+                msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__VOLTAGE_COMPENSATOR_DYNAMICS, RemoteInputSignal.class, msgs );
             return basicSetRemoteInputSignal( ( RemoteInputSignal ) otherEnd, msgs );
         case CimPackage.VOLTAGE_COMPENSATOR_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS:
             if( excitationSystemDynamics != null )

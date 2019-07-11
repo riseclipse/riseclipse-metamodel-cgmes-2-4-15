@@ -136,8 +136,9 @@ public class TransformerTankEndImpl extends TransformerEndImpl implements Transf
         phases = newPhases == null ? PHASES_EDEFAULT : newPhases;
         boolean oldPhasesESet = phasesESet;
         phasesESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_TANK_END__PHASES, oldPhases, phases, !oldPhasesESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_TANK_END__PHASES, oldPhases,
+                    phases, !oldPhasesESet ) );
     }
 
     /**
@@ -151,8 +152,9 @@ public class TransformerTankEndImpl extends TransformerEndImpl implements Transf
         boolean oldPhasesESet = phasesESet;
         phases = PHASES_EDEFAULT;
         phasesESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_TANK_END__PHASES, oldPhases, PHASES_EDEFAULT, oldPhasesESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_TANK_END__PHASES,
+                    oldPhases, PHASES_EDEFAULT, oldPhasesESet ) );
     }
 
     /**
@@ -206,19 +208,22 @@ public class TransformerTankEndImpl extends TransformerEndImpl implements Transf
     public void setTransformerTank( TransformerTank newTransformerTank ) {
         if( newTransformerTank != transformerTank ) {
             NotificationChain msgs = null;
-            if( transformerTank != null ) msgs = ( ( InternalEObject ) transformerTank ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_TANK__TRANSFORMER_TANK_ENDS, TransformerTank.class, msgs );
-            if( newTransformerTank != null ) msgs = ( ( InternalEObject ) newTransformerTank ).eInverseAdd( this,
-                    CimPackage.TRANSFORMER_TANK__TRANSFORMER_TANK_ENDS, TransformerTank.class, msgs );
+            if( transformerTank != null )
+                msgs = ( ( InternalEObject ) transformerTank ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_TANK__TRANSFORMER_TANK_ENDS, TransformerTank.class, msgs );
+            if( newTransformerTank != null )
+                msgs = ( ( InternalEObject ) newTransformerTank ).eInverseAdd( this,
+                        CimPackage.TRANSFORMER_TANK__TRANSFORMER_TANK_ENDS, TransformerTank.class, msgs );
             msgs = basicSetTransformerTank( newTransformerTank, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTransformerTankESet = transformerTankESet;
             transformerTankESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_TANK_END__TRANSFORMER_TANK,
-                            newTransformerTank, newTransformerTank, !oldTransformerTankESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.TRANSFORMER_TANK_END__TRANSFORMER_TANK, newTransformerTank, newTransformerTank,
+                        !oldTransformerTankESet ) );
         }
     }
 
@@ -261,8 +266,9 @@ public class TransformerTankEndImpl extends TransformerEndImpl implements Transf
         else {
             boolean oldTransformerTankESet = transformerTankESet;
             transformerTankESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSFORMER_TANK_END__TRANSFORMER_TANK, null, null, oldTransformerTankESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.TRANSFORMER_TANK_END__TRANSFORMER_TANK, null, null, oldTransformerTankESet ) );
         }
     }
 
@@ -285,8 +291,9 @@ public class TransformerTankEndImpl extends TransformerEndImpl implements Transf
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.TRANSFORMER_TANK_END__TRANSFORMER_TANK:
-            if( transformerTank != null ) msgs = ( ( InternalEObject ) transformerTank ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_TANK__TRANSFORMER_TANK_ENDS, TransformerTank.class, msgs );
+            if( transformerTank != null )
+                msgs = ( ( InternalEObject ) transformerTank ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_TANK__TRANSFORMER_TANK_ENDS, TransformerTank.class, msgs );
             return basicSetTransformerTank( ( TransformerTank ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -383,7 +390,7 @@ public class TransformerTankEndImpl extends TransformerEndImpl implements Transf
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (phases: " );
         if( phasesESet )
             result.append( phases );

@@ -186,10 +186,12 @@ public class IntervalBlockImpl extends CimObjectWithIDImpl implements IntervalBl
     public void setPendingCalculation( PendingCalculation newPendingCalculation ) {
         if( newPendingCalculation != pendingCalculation ) {
             NotificationChain msgs = null;
-            if( pendingCalculation != null ) msgs = ( ( InternalEObject ) pendingCalculation ).eInverseRemove( this,
-                    CimPackage.PENDING_CALCULATION__INTERVAL_BLOCKS, PendingCalculation.class, msgs );
-            if( newPendingCalculation != null ) msgs = ( ( InternalEObject ) newPendingCalculation ).eInverseAdd( this,
-                    CimPackage.PENDING_CALCULATION__INTERVAL_BLOCKS, PendingCalculation.class, msgs );
+            if( pendingCalculation != null )
+                msgs = ( ( InternalEObject ) pendingCalculation ).eInverseRemove( this,
+                        CimPackage.PENDING_CALCULATION__INTERVAL_BLOCKS, PendingCalculation.class, msgs );
+            if( newPendingCalculation != null )
+                msgs = ( ( InternalEObject ) newPendingCalculation ).eInverseAdd( this,
+                        CimPackage.PENDING_CALCULATION__INTERVAL_BLOCKS, PendingCalculation.class, msgs );
             msgs = basicSetPendingCalculation( newPendingCalculation, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -241,8 +243,9 @@ public class IntervalBlockImpl extends CimObjectWithIDImpl implements IntervalBl
         else {
             boolean oldPendingCalculationESet = pendingCalculationESet;
             pendingCalculationESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.INTERVAL_BLOCK__PENDING_CALCULATION, null, null, oldPendingCalculationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.INTERVAL_BLOCK__PENDING_CALCULATION, null, null, oldPendingCalculationESet ) );
         }
     }
 
@@ -331,10 +334,12 @@ public class IntervalBlockImpl extends CimObjectWithIDImpl implements IntervalBl
     public void setMeterReading( MeterReading newMeterReading ) {
         if( newMeterReading != meterReading ) {
             NotificationChain msgs = null;
-            if( meterReading != null ) msgs = ( ( InternalEObject ) meterReading ).eInverseRemove( this,
-                    CimPackage.METER_READING__INTERVAL_BLOCKS, MeterReading.class, msgs );
-            if( newMeterReading != null ) msgs = ( ( InternalEObject ) newMeterReading ).eInverseAdd( this,
-                    CimPackage.METER_READING__INTERVAL_BLOCKS, MeterReading.class, msgs );
+            if( meterReading != null )
+                msgs = ( ( InternalEObject ) meterReading ).eInverseRemove( this,
+                        CimPackage.METER_READING__INTERVAL_BLOCKS, MeterReading.class, msgs );
+            if( newMeterReading != null )
+                msgs = ( ( InternalEObject ) newMeterReading ).eInverseAdd( this,
+                        CimPackage.METER_READING__INTERVAL_BLOCKS, MeterReading.class, msgs );
             msgs = basicSetMeterReading( newMeterReading, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -385,8 +390,9 @@ public class IntervalBlockImpl extends CimObjectWithIDImpl implements IntervalBl
         else {
             boolean oldMeterReadingESet = meterReadingESet;
             meterReadingESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.INTERVAL_BLOCK__METER_READING, null, null, oldMeterReadingESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.INTERVAL_BLOCK__METER_READING,
+                        null, null, oldMeterReadingESet ) );
         }
     }
 
@@ -440,18 +446,21 @@ public class IntervalBlockImpl extends CimObjectWithIDImpl implements IntervalBl
     public void setReadingType( ReadingType newReadingType ) {
         if( newReadingType != readingType ) {
             NotificationChain msgs = null;
-            if( readingType != null ) msgs = ( ( InternalEObject ) readingType ).eInverseRemove( this,
-                    CimPackage.READING_TYPE__INTERVAL_BLOCKS, ReadingType.class, msgs );
-            if( newReadingType != null ) msgs = ( ( InternalEObject ) newReadingType ).eInverseAdd( this,
-                    CimPackage.READING_TYPE__INTERVAL_BLOCKS, ReadingType.class, msgs );
+            if( readingType != null )
+                msgs = ( ( InternalEObject ) readingType ).eInverseRemove( this,
+                        CimPackage.READING_TYPE__INTERVAL_BLOCKS, ReadingType.class, msgs );
+            if( newReadingType != null )
+                msgs = ( ( InternalEObject ) newReadingType ).eInverseAdd( this,
+                        CimPackage.READING_TYPE__INTERVAL_BLOCKS, ReadingType.class, msgs );
             msgs = basicSetReadingType( newReadingType, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldReadingTypeESet = readingTypeESet;
             readingTypeESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.INTERVAL_BLOCK__READING_TYPE, newReadingType, newReadingType, !oldReadingTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.INTERVAL_BLOCK__READING_TYPE,
+                        newReadingType, newReadingType, !oldReadingTypeESet ) );
         }
     }
 
@@ -493,8 +502,9 @@ public class IntervalBlockImpl extends CimObjectWithIDImpl implements IntervalBl
         else {
             boolean oldReadingTypeESet = readingTypeESet;
             readingTypeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.INTERVAL_BLOCK__READING_TYPE, null, null, oldReadingTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.INTERVAL_BLOCK__READING_TYPE, null,
+                        null, oldReadingTypeESet ) );
         }
     }
 
@@ -518,19 +528,22 @@ public class IntervalBlockImpl extends CimObjectWithIDImpl implements IntervalBl
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.INTERVAL_BLOCK__METER_READING:
-            if( meterReading != null ) msgs = ( ( InternalEObject ) meterReading ).eInverseRemove( this,
-                    CimPackage.METER_READING__INTERVAL_BLOCKS, MeterReading.class, msgs );
+            if( meterReading != null )
+                msgs = ( ( InternalEObject ) meterReading ).eInverseRemove( this,
+                        CimPackage.METER_READING__INTERVAL_BLOCKS, MeterReading.class, msgs );
             return basicSetMeterReading( ( MeterReading ) otherEnd, msgs );
         case CimPackage.INTERVAL_BLOCK__READING_TYPE:
-            if( readingType != null ) msgs = ( ( InternalEObject ) readingType ).eInverseRemove( this,
-                    CimPackage.READING_TYPE__INTERVAL_BLOCKS, ReadingType.class, msgs );
+            if( readingType != null )
+                msgs = ( ( InternalEObject ) readingType ).eInverseRemove( this,
+                        CimPackage.READING_TYPE__INTERVAL_BLOCKS, ReadingType.class, msgs );
             return basicSetReadingType( ( ReadingType ) otherEnd, msgs );
         case CimPackage.INTERVAL_BLOCK__INTERVAL_READINGS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getIntervalReadings() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.INTERVAL_BLOCK__PENDING_CALCULATION:
-            if( pendingCalculation != null ) msgs = ( ( InternalEObject ) pendingCalculation ).eInverseRemove( this,
-                    CimPackage.PENDING_CALCULATION__INTERVAL_BLOCKS, PendingCalculation.class, msgs );
+            if( pendingCalculation != null )
+                msgs = ( ( InternalEObject ) pendingCalculation ).eInverseRemove( this,
+                        CimPackage.PENDING_CALCULATION__INTERVAL_BLOCKS, PendingCalculation.class, msgs );
             return basicSetPendingCalculation( ( PendingCalculation ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

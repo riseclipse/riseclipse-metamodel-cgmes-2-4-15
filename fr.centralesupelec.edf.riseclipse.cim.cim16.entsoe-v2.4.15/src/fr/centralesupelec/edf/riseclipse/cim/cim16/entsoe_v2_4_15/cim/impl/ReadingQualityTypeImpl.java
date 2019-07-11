@@ -193,8 +193,9 @@ public class ReadingQualityTypeImpl extends IdentifiedObjectImpl implements Read
         category = newCategory;
         boolean oldCategoryESet = categoryESet;
         categoryESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_QUALITY_TYPE__CATEGORY, oldCategory, category, !oldCategoryESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_QUALITY_TYPE__CATEGORY,
+                    oldCategory, category, !oldCategoryESet ) );
     }
 
     /**
@@ -208,8 +209,9 @@ public class ReadingQualityTypeImpl extends IdentifiedObjectImpl implements Read
         boolean oldCategoryESet = categoryESet;
         category = CATEGORY_EDEFAULT;
         categoryESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.READING_QUALITY_TYPE__CATEGORY, oldCategory, CATEGORY_EDEFAULT, oldCategoryESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_QUALITY_TYPE__CATEGORY,
+                    oldCategory, CATEGORY_EDEFAULT, oldCategoryESet ) );
     }
 
     /**
@@ -243,8 +245,9 @@ public class ReadingQualityTypeImpl extends IdentifiedObjectImpl implements Read
         subCategory = newSubCategory;
         boolean oldSubCategoryESet = subCategoryESet;
         subCategoryESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_QUALITY_TYPE__SUB_CATEGORY, oldSubCategory, subCategory, !oldSubCategoryESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_QUALITY_TYPE__SUB_CATEGORY,
+                    oldSubCategory, subCategory, !oldSubCategoryESet ) );
     }
 
     /**
@@ -294,8 +297,9 @@ public class ReadingQualityTypeImpl extends IdentifiedObjectImpl implements Read
         systemId = newSystemId;
         boolean oldSystemIdESet = systemIdESet;
         systemIdESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_QUALITY_TYPE__SYSTEM_ID, oldSystemId, systemId, !oldSystemIdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_QUALITY_TYPE__SYSTEM_ID,
+                    oldSystemId, systemId, !oldSystemIdESet ) );
     }
 
     /**
@@ -309,8 +313,9 @@ public class ReadingQualityTypeImpl extends IdentifiedObjectImpl implements Read
         boolean oldSystemIdESet = systemIdESet;
         systemId = SYSTEM_ID_EDEFAULT;
         systemIdESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.READING_QUALITY_TYPE__SYSTEM_ID, oldSystemId, SYSTEM_ID_EDEFAULT, oldSystemIdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_QUALITY_TYPE__SYSTEM_ID,
+                    oldSystemId, SYSTEM_ID_EDEFAULT, oldSystemIdESet ) );
     }
 
     /**
@@ -487,7 +492,7 @@ public class ReadingQualityTypeImpl extends IdentifiedObjectImpl implements Read
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (category: " );
         if( categoryESet )
             result.append( category );

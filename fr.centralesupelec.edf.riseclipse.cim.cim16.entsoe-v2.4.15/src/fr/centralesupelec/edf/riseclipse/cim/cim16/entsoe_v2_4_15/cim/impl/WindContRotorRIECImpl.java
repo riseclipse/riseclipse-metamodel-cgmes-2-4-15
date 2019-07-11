@@ -364,8 +364,9 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         kirr = newKirr;
         boolean oldKirrESet = kirrESet;
         kirrESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_ROTOR_RIEC__KIRR, oldKirr, kirr, !oldKirrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_ROTOR_RIEC__KIRR, oldKirr,
+                    kirr, !oldKirrESet ) );
     }
 
     /**
@@ -379,8 +380,9 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldKirrESet = kirrESet;
         kirr = KIRR_EDEFAULT;
         kirrESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_ROTOR_RIEC__KIRR, oldKirr, KIRR_EDEFAULT, oldKirrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_ROTOR_RIEC__KIRR, oldKirr,
+                    KIRR_EDEFAULT, oldKirrESet ) );
     }
 
     /**
@@ -414,8 +416,9 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         komegafilt = newKomegafilt;
         boolean oldKomegafiltESet = komegafiltESet;
         komegafiltESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_ROTOR_RIEC__KOMEGAFILT, oldKomegafilt, komegafilt, !oldKomegafiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_ROTOR_RIEC__KOMEGAFILT,
+                    oldKomegafilt, komegafilt, !oldKomegafiltESet ) );
     }
 
     /**
@@ -429,8 +432,9 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldKomegafiltESet = komegafiltESet;
         komegafilt = KOMEGAFILT_EDEFAULT;
         komegafiltESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_ROTOR_RIEC__KOMEGAFILT, oldKomegafilt, KOMEGAFILT_EDEFAULT, oldKomegafiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_ROTOR_RIEC__KOMEGAFILT,
+                    oldKomegafilt, KOMEGAFILT_EDEFAULT, oldKomegafiltESet ) );
     }
 
     /**
@@ -464,8 +468,9 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         kpfilt = newKpfilt;
         boolean oldKpfiltESet = kpfiltESet;
         kpfiltESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_ROTOR_RIEC__KPFILT, oldKpfilt, kpfilt, !oldKpfiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_ROTOR_RIEC__KPFILT, oldKpfilt,
+                    kpfilt, !oldKpfiltESet ) );
     }
 
     /**
@@ -479,8 +484,9 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldKpfiltESet = kpfiltESet;
         kpfilt = KPFILT_EDEFAULT;
         kpfiltESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_ROTOR_RIEC__KPFILT, oldKpfilt, KPFILT_EDEFAULT, oldKpfiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_ROTOR_RIEC__KPFILT,
+                    oldKpfilt, KPFILT_EDEFAULT, oldKpfiltESet ) );
     }
 
     /**
@@ -514,8 +520,9 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         kprr = newKprr;
         boolean oldKprrESet = kprrESet;
         kprrESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_ROTOR_RIEC__KPRR, oldKprr, kprr, !oldKprrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_ROTOR_RIEC__KPRR, oldKprr,
+                    kprr, !oldKprrESet ) );
     }
 
     /**
@@ -529,8 +536,9 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldKprrESet = kprrESet;
         kprr = KPRR_EDEFAULT;
         kprrESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_ROTOR_RIEC__KPRR, oldKprr, KPRR_EDEFAULT, oldKprrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_ROTOR_RIEC__KPRR, oldKprr,
+                    KPRR_EDEFAULT, oldKprrESet ) );
     }
 
     /**
@@ -564,8 +572,9 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         rmax = newRmax;
         boolean oldRmaxESet = rmaxESet;
         rmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_ROTOR_RIEC__RMAX, oldRmax, rmax, !oldRmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_ROTOR_RIEC__RMAX, oldRmax,
+                    rmax, !oldRmaxESet ) );
     }
 
     /**
@@ -579,8 +588,9 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldRmaxESet = rmaxESet;
         rmax = RMAX_EDEFAULT;
         rmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_ROTOR_RIEC__RMAX, oldRmax, RMAX_EDEFAULT, oldRmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_ROTOR_RIEC__RMAX, oldRmax,
+                    RMAX_EDEFAULT, oldRmaxESet ) );
     }
 
     /**
@@ -614,8 +624,9 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         rmin = newRmin;
         boolean oldRminESet = rminESet;
         rminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_ROTOR_RIEC__RMIN, oldRmin, rmin, !oldRminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_ROTOR_RIEC__RMIN, oldRmin,
+                    rmin, !oldRminESet ) );
     }
 
     /**
@@ -629,8 +640,9 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldRminESet = rminESet;
         rmin = RMIN_EDEFAULT;
         rminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_ROTOR_RIEC__RMIN, oldRmin, RMIN_EDEFAULT, oldRminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_ROTOR_RIEC__RMIN, oldRmin,
+                    RMIN_EDEFAULT, oldRminESet ) );
     }
 
     /**
@@ -664,8 +676,9 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         tomegafilt = newTomegafilt;
         boolean oldTomegafiltESet = tomegafiltESet;
         tomegafiltESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_ROTOR_RIEC__TOMEGAFILT, oldTomegafilt, tomegafilt, !oldTomegafiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_ROTOR_RIEC__TOMEGAFILT,
+                    oldTomegafilt, tomegafilt, !oldTomegafiltESet ) );
     }
 
     /**
@@ -679,8 +692,9 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldTomegafiltESet = tomegafiltESet;
         tomegafilt = TOMEGAFILT_EDEFAULT;
         tomegafiltESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_ROTOR_RIEC__TOMEGAFILT, oldTomegafilt, TOMEGAFILT_EDEFAULT, oldTomegafiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_ROTOR_RIEC__TOMEGAFILT,
+                    oldTomegafilt, TOMEGAFILT_EDEFAULT, oldTomegafiltESet ) );
     }
 
     /**
@@ -714,8 +728,9 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         tpfilt = newTpfilt;
         boolean oldTpfiltESet = tpfiltESet;
         tpfiltESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_CONT_ROTOR_RIEC__TPFILT, oldTpfilt, tpfilt, !oldTpfiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_CONT_ROTOR_RIEC__TPFILT, oldTpfilt,
+                    tpfilt, !oldTpfiltESet ) );
     }
 
     /**
@@ -729,8 +744,9 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         boolean oldTpfiltESet = tpfiltESet;
         tpfilt = TPFILT_EDEFAULT;
         tpfiltESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_CONT_ROTOR_RIEC__TPFILT, oldTpfilt, TPFILT_EDEFAULT, oldTpfiltESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_CONT_ROTOR_RIEC__TPFILT,
+                    oldTpfilt, TPFILT_EDEFAULT, oldTpfiltESet ) );
     }
 
     /**
@@ -799,9 +815,10 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         else {
             boolean oldWindGenTurbineType2IECESet = windGenTurbineType2IECESet;
             windGenTurbineType2IECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_CONT_ROTOR_RIEC__WIND_GEN_TURBINE_TYPE2_IEC, newWindGenTurbineType2IEC,
-                    newWindGenTurbineType2IEC, !oldWindGenTurbineType2IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_CONT_ROTOR_RIEC__WIND_GEN_TURBINE_TYPE2_IEC, newWindGenTurbineType2IEC,
+                        newWindGenTurbineType2IEC, !oldWindGenTurbineType2IECESet ) );
         }
     }
 
@@ -844,9 +861,10 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
         else {
             boolean oldWindGenTurbineType2IECESet = windGenTurbineType2IECESet;
             windGenTurbineType2IECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_CONT_ROTOR_RIEC__WIND_GEN_TURBINE_TYPE2_IEC, null, null,
-                    oldWindGenTurbineType2IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_CONT_ROTOR_RIEC__WIND_GEN_TURBINE_TYPE2_IEC, null, null,
+                        oldWindGenTurbineType2IECESet ) );
         }
     }
 
@@ -1092,7 +1110,7 @@ public class WindContRotorRIECImpl extends IdentifiedObjectImpl implements WindC
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kirr: " );
         if( kirrESet )
             result.append( kirr );

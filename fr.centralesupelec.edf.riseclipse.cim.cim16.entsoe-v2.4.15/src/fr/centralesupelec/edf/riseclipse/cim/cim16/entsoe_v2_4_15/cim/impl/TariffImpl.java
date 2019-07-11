@@ -175,8 +175,9 @@ public class TariffImpl extends DocumentImpl implements Tariff {
         endDate = newEndDate;
         boolean oldEndDateESet = endDateESet;
         endDateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TARIFF__END_DATE, oldEndDate, endDate, !oldEndDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TARIFF__END_DATE, oldEndDate, endDate,
+                    !oldEndDateESet ) );
     }
 
     /**
@@ -190,8 +191,9 @@ public class TariffImpl extends DocumentImpl implements Tariff {
         boolean oldEndDateESet = endDateESet;
         endDate = END_DATE_EDEFAULT;
         endDateESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TARIFF__END_DATE, oldEndDate, END_DATE_EDEFAULT, oldEndDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TARIFF__END_DATE, oldEndDate,
+                    END_DATE_EDEFAULT, oldEndDateESet ) );
     }
 
     /**
@@ -225,8 +227,9 @@ public class TariffImpl extends DocumentImpl implements Tariff {
         startDate = newStartDate;
         boolean oldStartDateESet = startDateESet;
         startDateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TARIFF__START_DATE, oldStartDate, startDate, !oldStartDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TARIFF__START_DATE, oldStartDate,
+                    startDate, !oldStartDateESet ) );
     }
 
     /**
@@ -240,8 +243,9 @@ public class TariffImpl extends DocumentImpl implements Tariff {
         boolean oldStartDateESet = startDateESet;
         startDate = START_DATE_EDEFAULT;
         startDateESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TARIFF__START_DATE, oldStartDate, START_DATE_EDEFAULT, oldStartDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TARIFF__START_DATE, oldStartDate,
+                    START_DATE_EDEFAULT, oldStartDateESet ) );
     }
 
     /**
@@ -458,7 +462,7 @@ public class TariffImpl extends DocumentImpl implements Tariff {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (endDate: " );
         if( endDateESet )
             result.append( endDate );

@@ -205,8 +205,9 @@ public class ScheduledEventImpl extends IdentifiedObjectImpl implements Schedule
         duration = newDuration;
         boolean oldDurationESet = durationESet;
         durationESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SCHEDULED_EVENT__DURATION, oldDuration, duration, !oldDurationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SCHEDULED_EVENT__DURATION, oldDuration,
+                    duration, !oldDurationESet ) );
     }
 
     /**
@@ -220,8 +221,9 @@ public class ScheduledEventImpl extends IdentifiedObjectImpl implements Schedule
         boolean oldDurationESet = durationESet;
         duration = DURATION_EDEFAULT;
         durationESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SCHEDULED_EVENT__DURATION, oldDuration, DURATION_EDEFAULT, oldDurationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SCHEDULED_EVENT__DURATION, oldDuration,
+                    DURATION_EDEFAULT, oldDurationESet ) );
     }
 
     /**
@@ -255,8 +257,9 @@ public class ScheduledEventImpl extends IdentifiedObjectImpl implements Schedule
         type = newType;
         boolean oldTypeESet = typeESet;
         typeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SCHEDULED_EVENT__TYPE, oldType, type, !oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SCHEDULED_EVENT__TYPE, oldType, type,
+                    !oldTypeESet ) );
     }
 
     /**
@@ -270,8 +273,9 @@ public class ScheduledEventImpl extends IdentifiedObjectImpl implements Schedule
         boolean oldTypeESet = typeESet;
         type = TYPE_EDEFAULT;
         typeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SCHEDULED_EVENT__TYPE, oldType, TYPE_EDEFAULT, oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SCHEDULED_EVENT__TYPE, oldType,
+                    TYPE_EDEFAULT, oldTypeESet ) );
     }
 
     /**
@@ -324,18 +328,21 @@ public class ScheduledEventImpl extends IdentifiedObjectImpl implements Schedule
     public void setStatus( Status newStatus ) {
         if( newStatus != status ) {
             NotificationChain msgs = null;
-            if( status != null ) msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.SCHEDULED_EVENT__STATUS, null, msgs );
-            if( newStatus != null ) msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.SCHEDULED_EVENT__STATUS, null, msgs );
+            if( status != null )
+                msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.SCHEDULED_EVENT__STATUS, null, msgs );
+            if( newStatus != null )
+                msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.SCHEDULED_EVENT__STATUS, null, msgs );
             msgs = basicSetStatus( newStatus, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldStatusESet = statusESet;
             statusESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SCHEDULED_EVENT__STATUS, newStatus, newStatus, !oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SCHEDULED_EVENT__STATUS, newStatus,
+                        newStatus, !oldStatusESet ) );
         }
     }
 
@@ -377,8 +384,9 @@ public class ScheduledEventImpl extends IdentifiedObjectImpl implements Schedule
         else {
             boolean oldStatusESet = statusESet;
             statusESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SCHEDULED_EVENT__STATUS, null, null, oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SCHEDULED_EVENT__STATUS, null,
+                        null, oldStatusESet ) );
         }
     }
 
@@ -434,19 +442,22 @@ public class ScheduledEventImpl extends IdentifiedObjectImpl implements Schedule
     public void setScheduledEventData( ScheduledEventData newScheduledEventData ) {
         if( newScheduledEventData != scheduledEventData ) {
             NotificationChain msgs = null;
-            if( scheduledEventData != null ) msgs = ( ( InternalEObject ) scheduledEventData ).eInverseRemove( this,
-                    CimPackage.SCHEDULED_EVENT_DATA__SCHEDULED_EVENTS, ScheduledEventData.class, msgs );
-            if( newScheduledEventData != null ) msgs = ( ( InternalEObject ) newScheduledEventData ).eInverseAdd( this,
-                    CimPackage.SCHEDULED_EVENT_DATA__SCHEDULED_EVENTS, ScheduledEventData.class, msgs );
+            if( scheduledEventData != null )
+                msgs = ( ( InternalEObject ) scheduledEventData ).eInverseRemove( this,
+                        CimPackage.SCHEDULED_EVENT_DATA__SCHEDULED_EVENTS, ScheduledEventData.class, msgs );
+            if( newScheduledEventData != null )
+                msgs = ( ( InternalEObject ) newScheduledEventData ).eInverseAdd( this,
+                        CimPackage.SCHEDULED_EVENT_DATA__SCHEDULED_EVENTS, ScheduledEventData.class, msgs );
             msgs = basicSetScheduledEventData( newScheduledEventData, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldScheduledEventDataESet = scheduledEventDataESet;
             scheduledEventDataESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.SCHEDULED_EVENT__SCHEDULED_EVENT_DATA,
-                            newScheduledEventData, newScheduledEventData, !oldScheduledEventDataESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.SCHEDULED_EVENT__SCHEDULED_EVENT_DATA, newScheduledEventData, newScheduledEventData,
+                        !oldScheduledEventDataESet ) );
         }
     }
 
@@ -489,8 +500,9 @@ public class ScheduledEventImpl extends IdentifiedObjectImpl implements Schedule
         else {
             boolean oldScheduledEventDataESet = scheduledEventDataESet;
             scheduledEventDataESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SCHEDULED_EVENT__SCHEDULED_EVENT_DATA, null, null, oldScheduledEventDataESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.SCHEDULED_EVENT__SCHEDULED_EVENT_DATA, null, null, oldScheduledEventDataESet ) );
         }
     }
 
@@ -548,8 +560,9 @@ public class ScheduledEventImpl extends IdentifiedObjectImpl implements Schedule
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.SCHEDULED_EVENT__SCHEDULED_EVENT_DATA:
-            if( scheduledEventData != null ) msgs = ( ( InternalEObject ) scheduledEventData ).eInverseRemove( this,
-                    CimPackage.SCHEDULED_EVENT_DATA__SCHEDULED_EVENTS, ScheduledEventData.class, msgs );
+            if( scheduledEventData != null )
+                msgs = ( ( InternalEObject ) scheduledEventData ).eInverseRemove( this,
+                        CimPackage.SCHEDULED_EVENT_DATA__SCHEDULED_EVENTS, ScheduledEventData.class, msgs );
             return basicSetScheduledEventData( ( ScheduledEventData ) otherEnd, msgs );
         case CimPackage.SCHEDULED_EVENT__ASSETS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getAssets() ).basicAdd( otherEnd,
@@ -685,7 +698,7 @@ public class ScheduledEventImpl extends IdentifiedObjectImpl implements Schedule
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (duration: " );
         if( durationESet )
             result.append( duration );

@@ -579,8 +579,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         boolean oldKhESet = khESet;
         kh = KH_EDEFAULT;
         khESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__KH,
-                oldKh, KH_EDEFAULT, oldKhESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__KH, oldKh, KH_EDEFAULT,
+                    oldKhESet ) );
     }
 
     /**
@@ -614,8 +615,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         kia = newKia;
         boolean oldKiaESet = kiaESet;
         kiaESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ST7B__KIA, oldKia, kia, !oldKiaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ST7B__KIA, oldKia, kia,
+                    !oldKiaESet ) );
     }
 
     /**
@@ -629,8 +631,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         boolean oldKiaESet = kiaESet;
         kia = KIA_EDEFAULT;
         kiaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ST7B__KIA, oldKia, KIA_EDEFAULT, oldKiaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__KIA, oldKia, KIA_EDEFAULT,
+                    oldKiaESet ) );
     }
 
     /**
@@ -679,8 +682,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         boolean oldKlESet = klESet;
         kl = KL_EDEFAULT;
         klESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__KL,
-                oldKl, KL_EDEFAULT, oldKlESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__KL, oldKl, KL_EDEFAULT,
+                    oldKlESet ) );
     }
 
     /**
@@ -714,8 +718,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         kpa = newKpa;
         boolean oldKpaESet = kpaESet;
         kpaESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ST7B__KPA, oldKpa, kpa, !oldKpaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ST7B__KPA, oldKpa, kpa,
+                    !oldKpaESet ) );
     }
 
     /**
@@ -729,8 +734,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         boolean oldKpaESet = kpaESet;
         kpa = KPA_EDEFAULT;
         kpaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ST7B__KPA, oldKpa, KPA_EDEFAULT, oldKpaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__KPA, oldKpa, KPA_EDEFAULT,
+                    oldKpaESet ) );
     }
 
     /**
@@ -764,8 +770,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         oelin = newOelin == null ? OELIN_EDEFAULT : newOelin;
         boolean oldOelinESet = oelinESet;
         oelinESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_ST7B__OELIN, oldOelin, oelin, !oldOelinESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ST7B__OELIN, oldOelin, oelin,
+                    !oldOelinESet ) );
     }
 
     /**
@@ -779,8 +786,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         boolean oldOelinESet = oelinESet;
         oelin = OELIN_EDEFAULT;
         oelinESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ST7B__OELIN, oldOelin, OELIN_EDEFAULT, oldOelinESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__OELIN, oldOelin,
+                    OELIN_EDEFAULT, oldOelinESet ) );
     }
 
     /**
@@ -829,8 +837,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         boolean oldTbESet = tbESet;
         tb = TB_EDEFAULT;
         tbESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__TB,
-                oldTb, TB_EDEFAULT, oldTbESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__TB, oldTb, TB_EDEFAULT,
+                    oldTbESet ) );
     }
 
     /**
@@ -879,8 +888,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         boolean oldTcESet = tcESet;
         tc = TC_EDEFAULT;
         tcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__TC,
-                oldTc, TC_EDEFAULT, oldTcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__TC, oldTc, TC_EDEFAULT,
+                    oldTcESet ) );
     }
 
     /**
@@ -929,8 +939,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         boolean oldTfESet = tfESet;
         tf = TF_EDEFAULT;
         tfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__TF,
-                oldTf, TF_EDEFAULT, oldTfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__TF, oldTf, TF_EDEFAULT,
+                    oldTfESet ) );
     }
 
     /**
@@ -979,8 +990,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         boolean oldTgESet = tgESet;
         tg = TG_EDEFAULT;
         tgESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__TG,
-                oldTg, TG_EDEFAULT, oldTgESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__TG, oldTg, TG_EDEFAULT,
+                    oldTgESet ) );
     }
 
     /**
@@ -1014,8 +1026,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         tia = newTia;
         boolean oldTiaESet = tiaESet;
         tiaESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ST7B__TIA, oldTia, tia, !oldTiaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ST7B__TIA, oldTia, tia,
+                    !oldTiaESet ) );
     }
 
     /**
@@ -1029,8 +1042,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         boolean oldTiaESet = tiaESet;
         tia = TIA_EDEFAULT;
         tiaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ST7B__TIA, oldTia, TIA_EDEFAULT, oldTiaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__TIA, oldTia, TIA_EDEFAULT,
+                    oldTiaESet ) );
     }
 
     /**
@@ -1079,8 +1093,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         boolean oldTsESet = tsESet;
         ts = TS_EDEFAULT;
         tsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__TS,
-                oldTs, TS_EDEFAULT, oldTsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__TS, oldTs, TS_EDEFAULT,
+                    oldTsESet ) );
     }
 
     /**
@@ -1114,8 +1129,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         uelin = newUelin == null ? UELIN_EDEFAULT : newUelin;
         boolean oldUelinESet = uelinESet;
         uelinESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_ST7B__UELIN, oldUelin, uelin, !oldUelinESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ST7B__UELIN, oldUelin, uelin,
+                    !oldUelinESet ) );
     }
 
     /**
@@ -1129,8 +1145,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         boolean oldUelinESet = uelinESet;
         uelin = UELIN_EDEFAULT;
         uelinESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ST7B__UELIN, oldUelin, UELIN_EDEFAULT, oldUelinESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__UELIN, oldUelin,
+                    UELIN_EDEFAULT, oldUelinESet ) );
     }
 
     /**
@@ -1164,8 +1181,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         vmax = newVmax;
         boolean oldVmaxESet = vmaxESet;
         vmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ST7B__VMAX,
-                oldVmax, vmax, !oldVmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ST7B__VMAX, oldVmax, vmax,
+                    !oldVmaxESet ) );
     }
 
     /**
@@ -1179,8 +1197,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         boolean oldVmaxESet = vmaxESet;
         vmax = VMAX_EDEFAULT;
         vmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ST7B__VMAX, oldVmax, VMAX_EDEFAULT, oldVmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__VMAX, oldVmax, VMAX_EDEFAULT,
+                    oldVmaxESet ) );
     }
 
     /**
@@ -1214,8 +1233,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         vmin = newVmin;
         boolean oldVminESet = vminESet;
         vminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ST7B__VMIN,
-                oldVmin, vmin, !oldVminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ST7B__VMIN, oldVmin, vmin,
+                    !oldVminESet ) );
     }
 
     /**
@@ -1229,8 +1249,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         boolean oldVminESet = vminESet;
         vmin = VMIN_EDEFAULT;
         vminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ST7B__VMIN, oldVmin, VMIN_EDEFAULT, oldVminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__VMIN, oldVmin, VMIN_EDEFAULT,
+                    oldVminESet ) );
     }
 
     /**
@@ -1264,8 +1285,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         vrmax = newVrmax;
         boolean oldVrmaxESet = vrmaxESet;
         vrmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_ST7B__VRMAX, oldVrmax, vrmax, !oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ST7B__VRMAX, oldVrmax, vrmax,
+                    !oldVrmaxESet ) );
     }
 
     /**
@@ -1279,8 +1301,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         boolean oldVrmaxESet = vrmaxESet;
         vrmax = VRMAX_EDEFAULT;
         vrmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ST7B__VRMAX, oldVrmax, VRMAX_EDEFAULT, oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__VRMAX, oldVrmax,
+                    VRMAX_EDEFAULT, oldVrmaxESet ) );
     }
 
     /**
@@ -1314,8 +1337,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         vrmin = newVrmin;
         boolean oldVrminESet = vrminESet;
         vrminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_ST7B__VRMIN, oldVrmin, vrmin, !oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_ST7B__VRMIN, oldVrmin, vrmin,
+                    !oldVrminESet ) );
     }
 
     /**
@@ -1329,8 +1353,9 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
         boolean oldVrminESet = vrminESet;
         vrmin = VRMIN_EDEFAULT;
         vrminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_ST7B__VRMIN, oldVrmin, VRMIN_EDEFAULT, oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_ST7B__VRMIN, oldVrmin,
+                    VRMIN_EDEFAULT, oldVrminESet ) );
     }
 
     /**
@@ -1560,7 +1585,7 @@ public class ExcST7BImpl extends ExcitationSystemDynamicsImpl implements ExcST7B
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kh: " );
         if( khESet )
             result.append( kh );

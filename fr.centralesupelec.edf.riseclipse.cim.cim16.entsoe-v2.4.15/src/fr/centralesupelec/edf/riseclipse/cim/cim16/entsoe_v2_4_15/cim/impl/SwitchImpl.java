@@ -372,8 +372,9 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
         normalOpen = newNormalOpen;
         boolean oldNormalOpenESet = normalOpenESet;
         normalOpenESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SWITCH__NORMAL_OPEN, oldNormalOpen, normalOpen, !oldNormalOpenESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH__NORMAL_OPEN, oldNormalOpen,
+                    normalOpen, !oldNormalOpenESet ) );
     }
 
     /**
@@ -387,8 +388,9 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
         boolean oldNormalOpenESet = normalOpenESet;
         normalOpen = NORMAL_OPEN_EDEFAULT;
         normalOpenESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SWITCH__NORMAL_OPEN, oldNormalOpen, NORMAL_OPEN_EDEFAULT, oldNormalOpenESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH__NORMAL_OPEN, oldNormalOpen,
+                    NORMAL_OPEN_EDEFAULT, oldNormalOpenESet ) );
     }
 
     /**
@@ -422,8 +424,9 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
         open = newOpen;
         boolean oldOpenESet = openESet;
         openESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH__OPEN, oldOpen, open, !oldOpenESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH__OPEN, oldOpen, open,
+                    !oldOpenESet ) );
     }
 
     /**
@@ -437,8 +440,9 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
         boolean oldOpenESet = openESet;
         open = OPEN_EDEFAULT;
         openESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH__OPEN,
-                oldOpen, OPEN_EDEFAULT, oldOpenESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH__OPEN, oldOpen, OPEN_EDEFAULT,
+                    oldOpenESet ) );
     }
 
     /**
@@ -472,8 +476,9 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
         ratedCurrent = newRatedCurrent;
         boolean oldRatedCurrentESet = ratedCurrentESet;
         ratedCurrentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SWITCH__RATED_CURRENT, oldRatedCurrent, ratedCurrent, !oldRatedCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH__RATED_CURRENT, oldRatedCurrent,
+                    ratedCurrent, !oldRatedCurrentESet ) );
     }
 
     /**
@@ -487,8 +492,9 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
         boolean oldRatedCurrentESet = ratedCurrentESet;
         ratedCurrent = RATED_CURRENT_EDEFAULT;
         ratedCurrentESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SWITCH__RATED_CURRENT, oldRatedCurrent, RATED_CURRENT_EDEFAULT, oldRatedCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH__RATED_CURRENT, oldRatedCurrent,
+                    RATED_CURRENT_EDEFAULT, oldRatedCurrentESet ) );
     }
 
     /**
@@ -522,8 +528,9 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
         retained = newRetained;
         boolean oldRetainedESet = retainedESet;
         retainedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SWITCH__RETAINED, oldRetained, retained, !oldRetainedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH__RETAINED, oldRetained, retained,
+                    !oldRetainedESet ) );
     }
 
     /**
@@ -537,8 +544,9 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
         boolean oldRetainedESet = retainedESet;
         retained = RETAINED_EDEFAULT;
         retainedESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SWITCH__RETAINED, oldRetained, RETAINED_EDEFAULT, oldRetainedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH__RETAINED, oldRetained,
+                    RETAINED_EDEFAULT, oldRetainedESet ) );
     }
 
     /**
@@ -572,8 +580,9 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
         switchOnCount = newSwitchOnCount;
         boolean oldSwitchOnCountESet = switchOnCountESet;
         switchOnCountESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SWITCH__SWITCH_ON_COUNT, oldSwitchOnCount, switchOnCount, !oldSwitchOnCountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH__SWITCH_ON_COUNT,
+                    oldSwitchOnCount, switchOnCount, !oldSwitchOnCountESet ) );
     }
 
     /**
@@ -623,8 +632,9 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
         switchOnDate = newSwitchOnDate;
         boolean oldSwitchOnDateESet = switchOnDateESet;
         switchOnDateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SWITCH__SWITCH_ON_DATE, oldSwitchOnDate, switchOnDate, !oldSwitchOnDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH__SWITCH_ON_DATE, oldSwitchOnDate,
+                    switchOnDate, !oldSwitchOnDateESet ) );
     }
 
     /**
@@ -638,8 +648,9 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
         boolean oldSwitchOnDateESet = switchOnDateESet;
         switchOnDate = SWITCH_ON_DATE_EDEFAULT;
         switchOnDateESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SWITCH__SWITCH_ON_DATE, oldSwitchOnDate, SWITCH_ON_DATE_EDEFAULT, oldSwitchOnDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH__SWITCH_ON_DATE,
+                    oldSwitchOnDate, SWITCH_ON_DATE_EDEFAULT, oldSwitchOnDateESet ) );
     }
 
     /**
@@ -692,18 +703,21 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
     public void setOutage( Outage newOutage ) {
         if( newOutage != outage ) {
             NotificationChain msgs = null;
-            if( outage != null ) msgs = ( ( InternalEObject ) outage ).eInverseRemove( this,
-                    CimPackage.OUTAGE__OPENED_SWITCHES, Outage.class, msgs );
-            if( newOutage != null ) msgs = ( ( InternalEObject ) newOutage ).eInverseAdd( this,
-                    CimPackage.OUTAGE__OPENED_SWITCHES, Outage.class, msgs );
+            if( outage != null )
+                msgs = ( ( InternalEObject ) outage ).eInverseRemove( this, CimPackage.OUTAGE__OPENED_SWITCHES,
+                        Outage.class, msgs );
+            if( newOutage != null )
+                msgs = ( ( InternalEObject ) newOutage ).eInverseAdd( this, CimPackage.OUTAGE__OPENED_SWITCHES,
+                        Outage.class, msgs );
             msgs = basicSetOutage( newOutage, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldOutageESet = outageESet;
             outageESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SWITCH__OUTAGE, newOutage, newOutage, !oldOutageESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH__OUTAGE, newOutage, newOutage,
+                        !oldOutageESet ) );
         }
     }
 
@@ -745,8 +759,9 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
         else {
             boolean oldOutageESet = outageESet;
             outageESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SWITCH__OUTAGE, null, null, oldOutageESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH__OUTAGE, null, null,
+                        oldOutageESet ) );
         }
     }
 
@@ -834,18 +849,21 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
     public void setSwitchAction( SwitchAction newSwitchAction ) {
         if( newSwitchAction != switchAction ) {
             NotificationChain msgs = null;
-            if( switchAction != null ) msgs = ( ( InternalEObject ) switchAction ).eInverseRemove( this,
-                    CimPackage.SWITCH_ACTION__OPERATED_SWITCH, SwitchAction.class, msgs );
-            if( newSwitchAction != null ) msgs = ( ( InternalEObject ) newSwitchAction ).eInverseAdd( this,
-                    CimPackage.SWITCH_ACTION__OPERATED_SWITCH, SwitchAction.class, msgs );
+            if( switchAction != null )
+                msgs = ( ( InternalEObject ) switchAction ).eInverseRemove( this,
+                        CimPackage.SWITCH_ACTION__OPERATED_SWITCH, SwitchAction.class, msgs );
+            if( newSwitchAction != null )
+                msgs = ( ( InternalEObject ) newSwitchAction ).eInverseAdd( this,
+                        CimPackage.SWITCH_ACTION__OPERATED_SWITCH, SwitchAction.class, msgs );
             msgs = basicSetSwitchAction( newSwitchAction, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldSwitchActionESet = switchActionESet;
             switchActionESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SWITCH__SWITCH_ACTION, newSwitchAction, newSwitchAction, !oldSwitchActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH__SWITCH_ACTION,
+                        newSwitchAction, newSwitchAction, !oldSwitchActionESet ) );
         }
     }
 
@@ -887,8 +905,9 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
         else {
             boolean oldSwitchActionESet = switchActionESet;
             switchActionESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SWITCH__SWITCH_ACTION, null, null, oldSwitchActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH__SWITCH_ACTION, null, null,
+                        oldSwitchActionESet ) );
         }
     }
 
@@ -980,10 +999,12 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
     public void setCompositeSwitch( CompositeSwitch newCompositeSwitch ) {
         if( newCompositeSwitch != compositeSwitch ) {
             NotificationChain msgs = null;
-            if( compositeSwitch != null ) msgs = ( ( InternalEObject ) compositeSwitch ).eInverseRemove( this,
-                    CimPackage.COMPOSITE_SWITCH__SWITCHES, CompositeSwitch.class, msgs );
-            if( newCompositeSwitch != null ) msgs = ( ( InternalEObject ) newCompositeSwitch ).eInverseAdd( this,
-                    CimPackage.COMPOSITE_SWITCH__SWITCHES, CompositeSwitch.class, msgs );
+            if( compositeSwitch != null )
+                msgs = ( ( InternalEObject ) compositeSwitch ).eInverseRemove( this,
+                        CimPackage.COMPOSITE_SWITCH__SWITCHES, CompositeSwitch.class, msgs );
+            if( newCompositeSwitch != null )
+                msgs = ( ( InternalEObject ) newCompositeSwitch ).eInverseAdd( this,
+                        CimPackage.COMPOSITE_SWITCH__SWITCHES, CompositeSwitch.class, msgs );
             msgs = basicSetCompositeSwitch( newCompositeSwitch, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1034,8 +1055,9 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
         else {
             boolean oldCompositeSwitchESet = compositeSwitchESet;
             compositeSwitchESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SWITCH__COMPOSITE_SWITCH, null, null, oldCompositeSwitchESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH__COMPOSITE_SWITCH, null,
+                        null, oldCompositeSwitchESet ) );
         }
     }
 
@@ -1102,16 +1124,19 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getSwitchSchedules() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.SWITCH__COMPOSITE_SWITCH:
-            if( compositeSwitch != null ) msgs = ( ( InternalEObject ) compositeSwitch ).eInverseRemove( this,
-                    CimPackage.COMPOSITE_SWITCH__SWITCHES, CompositeSwitch.class, msgs );
+            if( compositeSwitch != null )
+                msgs = ( ( InternalEObject ) compositeSwitch ).eInverseRemove( this,
+                        CimPackage.COMPOSITE_SWITCH__SWITCHES, CompositeSwitch.class, msgs );
             return basicSetCompositeSwitch( ( CompositeSwitch ) otherEnd, msgs );
         case CimPackage.SWITCH__OUTAGE:
-            if( outage != null ) msgs = ( ( InternalEObject ) outage ).eInverseRemove( this,
-                    CimPackage.OUTAGE__OPENED_SWITCHES, Outage.class, msgs );
+            if( outage != null )
+                msgs = ( ( InternalEObject ) outage ).eInverseRemove( this, CimPackage.OUTAGE__OPENED_SWITCHES,
+                        Outage.class, msgs );
             return basicSetOutage( ( Outage ) otherEnd, msgs );
         case CimPackage.SWITCH__SWITCH_ACTION:
-            if( switchAction != null ) msgs = ( ( InternalEObject ) switchAction ).eInverseRemove( this,
-                    CimPackage.SWITCH_ACTION__OPERATED_SWITCH, SwitchAction.class, msgs );
+            if( switchAction != null )
+                msgs = ( ( InternalEObject ) switchAction ).eInverseRemove( this,
+                        CimPackage.SWITCH_ACTION__OPERATED_SWITCH, SwitchAction.class, msgs );
             return basicSetSwitchAction( ( SwitchAction ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1322,7 +1347,7 @@ public class SwitchImpl extends ConductingEquipmentImpl implements Switch {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (normalOpen: " );
         if( normalOpenESet )
             result.append( normalOpen );

@@ -232,8 +232,9 @@ public class FrequencyConverterImpl extends RegulatingCondEqImpl implements Freq
         frequency = newFrequency;
         boolean oldFrequencyESet = frequencyESet;
         frequencyESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FREQUENCY_CONVERTER__FREQUENCY, oldFrequency, frequency, !oldFrequencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FREQUENCY_CONVERTER__FREQUENCY,
+                    oldFrequency, frequency, !oldFrequencyESet ) );
     }
 
     /**
@@ -247,8 +248,9 @@ public class FrequencyConverterImpl extends RegulatingCondEqImpl implements Freq
         boolean oldFrequencyESet = frequencyESet;
         frequency = FREQUENCY_EDEFAULT;
         frequencyESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FREQUENCY_CONVERTER__FREQUENCY, oldFrequency, FREQUENCY_EDEFAULT, oldFrequencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FREQUENCY_CONVERTER__FREQUENCY,
+                    oldFrequency, FREQUENCY_EDEFAULT, oldFrequencyESet ) );
     }
 
     /**
@@ -282,8 +284,9 @@ public class FrequencyConverterImpl extends RegulatingCondEqImpl implements Freq
         maxP = newMaxP;
         boolean oldMaxPESet = maxPESet;
         maxPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FREQUENCY_CONVERTER__MAX_P, oldMaxP, maxP, !oldMaxPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FREQUENCY_CONVERTER__MAX_P, oldMaxP,
+                    maxP, !oldMaxPESet ) );
     }
 
     /**
@@ -297,8 +300,9 @@ public class FrequencyConverterImpl extends RegulatingCondEqImpl implements Freq
         boolean oldMaxPESet = maxPESet;
         maxP = MAX_P_EDEFAULT;
         maxPESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FREQUENCY_CONVERTER__MAX_P, oldMaxP, MAX_P_EDEFAULT, oldMaxPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FREQUENCY_CONVERTER__MAX_P, oldMaxP,
+                    MAX_P_EDEFAULT, oldMaxPESet ) );
     }
 
     /**
@@ -332,8 +336,9 @@ public class FrequencyConverterImpl extends RegulatingCondEqImpl implements Freq
         maxU = newMaxU;
         boolean oldMaxUESet = maxUESet;
         maxUESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FREQUENCY_CONVERTER__MAX_U, oldMaxU, maxU, !oldMaxUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FREQUENCY_CONVERTER__MAX_U, oldMaxU,
+                    maxU, !oldMaxUESet ) );
     }
 
     /**
@@ -347,8 +352,9 @@ public class FrequencyConverterImpl extends RegulatingCondEqImpl implements Freq
         boolean oldMaxUESet = maxUESet;
         maxU = MAX_U_EDEFAULT;
         maxUESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FREQUENCY_CONVERTER__MAX_U, oldMaxU, MAX_U_EDEFAULT, oldMaxUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FREQUENCY_CONVERTER__MAX_U, oldMaxU,
+                    MAX_U_EDEFAULT, oldMaxUESet ) );
     }
 
     /**
@@ -382,8 +388,9 @@ public class FrequencyConverterImpl extends RegulatingCondEqImpl implements Freq
         minP = newMinP;
         boolean oldMinPESet = minPESet;
         minPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FREQUENCY_CONVERTER__MIN_P, oldMinP, minP, !oldMinPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FREQUENCY_CONVERTER__MIN_P, oldMinP,
+                    minP, !oldMinPESet ) );
     }
 
     /**
@@ -397,8 +404,9 @@ public class FrequencyConverterImpl extends RegulatingCondEqImpl implements Freq
         boolean oldMinPESet = minPESet;
         minP = MIN_P_EDEFAULT;
         minPESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FREQUENCY_CONVERTER__MIN_P, oldMinP, MIN_P_EDEFAULT, oldMinPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FREQUENCY_CONVERTER__MIN_P, oldMinP,
+                    MIN_P_EDEFAULT, oldMinPESet ) );
     }
 
     /**
@@ -432,8 +440,9 @@ public class FrequencyConverterImpl extends RegulatingCondEqImpl implements Freq
         minU = newMinU;
         boolean oldMinUESet = minUESet;
         minUESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FREQUENCY_CONVERTER__MIN_U, oldMinU, minU, !oldMinUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FREQUENCY_CONVERTER__MIN_U, oldMinU,
+                    minU, !oldMinUESet ) );
     }
 
     /**
@@ -447,8 +456,9 @@ public class FrequencyConverterImpl extends RegulatingCondEqImpl implements Freq
         boolean oldMinUESet = minUESet;
         minU = MIN_U_EDEFAULT;
         minUESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FREQUENCY_CONVERTER__MIN_U, oldMinU, MIN_U_EDEFAULT, oldMinUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FREQUENCY_CONVERTER__MIN_U, oldMinU,
+                    MIN_U_EDEFAULT, oldMinUESet ) );
     }
 
     /**
@@ -568,7 +578,7 @@ public class FrequencyConverterImpl extends RegulatingCondEqImpl implements Freq
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (frequency: " );
         if( frequencyESet )
             result.append( frequency );

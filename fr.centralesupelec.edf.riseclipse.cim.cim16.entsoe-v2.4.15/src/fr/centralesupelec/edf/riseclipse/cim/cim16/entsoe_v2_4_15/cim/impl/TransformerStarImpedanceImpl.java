@@ -244,8 +244,9 @@ public class TransformerStarImpedanceImpl extends IdentifiedObjectImpl implement
         r = newR;
         boolean oldRESet = rESet;
         rESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_STAR_IMPEDANCE__R, oldR, r, !oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_STAR_IMPEDANCE__R, oldR, r,
+                    !oldRESet ) );
     }
 
     /**
@@ -259,8 +260,9 @@ public class TransformerStarImpedanceImpl extends IdentifiedObjectImpl implement
         boolean oldRESet = rESet;
         r = R_EDEFAULT;
         rESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_STAR_IMPEDANCE__R, oldR, R_EDEFAULT, oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_STAR_IMPEDANCE__R, oldR,
+                    R_EDEFAULT, oldRESet ) );
     }
 
     /**
@@ -294,8 +296,9 @@ public class TransformerStarImpedanceImpl extends IdentifiedObjectImpl implement
         r0 = newR0;
         boolean oldR0ESet = r0ESet;
         r0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_STAR_IMPEDANCE__R0, oldR0, r0, !oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_STAR_IMPEDANCE__R0, oldR0,
+                    r0, !oldR0ESet ) );
     }
 
     /**
@@ -309,8 +312,9 @@ public class TransformerStarImpedanceImpl extends IdentifiedObjectImpl implement
         boolean oldR0ESet = r0ESet;
         r0 = R0_EDEFAULT;
         r0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_STAR_IMPEDANCE__R0, oldR0, R0_EDEFAULT, oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_STAR_IMPEDANCE__R0, oldR0,
+                    R0_EDEFAULT, oldR0ESet ) );
     }
 
     /**
@@ -344,8 +348,9 @@ public class TransformerStarImpedanceImpl extends IdentifiedObjectImpl implement
         x = newX;
         boolean oldXESet = xESet;
         xESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_STAR_IMPEDANCE__X, oldX, x, !oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_STAR_IMPEDANCE__X, oldX, x,
+                    !oldXESet ) );
     }
 
     /**
@@ -359,8 +364,9 @@ public class TransformerStarImpedanceImpl extends IdentifiedObjectImpl implement
         boolean oldXESet = xESet;
         x = X_EDEFAULT;
         xESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_STAR_IMPEDANCE__X, oldX, X_EDEFAULT, oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_STAR_IMPEDANCE__X, oldX,
+                    X_EDEFAULT, oldXESet ) );
     }
 
     /**
@@ -394,8 +400,9 @@ public class TransformerStarImpedanceImpl extends IdentifiedObjectImpl implement
         x0 = newX0;
         boolean oldX0ESet = x0ESet;
         x0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_STAR_IMPEDANCE__X0, oldX0, x0, !oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_STAR_IMPEDANCE__X0, oldX0,
+                    x0, !oldX0ESet ) );
     }
 
     /**
@@ -409,8 +416,9 @@ public class TransformerStarImpedanceImpl extends IdentifiedObjectImpl implement
         boolean oldX0ESet = x0ESet;
         x0 = X0_EDEFAULT;
         x0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_STAR_IMPEDANCE__X0, oldX0, X0_EDEFAULT, oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_STAR_IMPEDANCE__X0, oldX0,
+                    X0_EDEFAULT, oldX0ESet ) );
     }
 
     /**
@@ -434,9 +442,10 @@ public class TransformerStarImpedanceImpl extends IdentifiedObjectImpl implement
             InternalEObject oldTransformerEndInfo = ( InternalEObject ) transformerEndInfo;
             transformerEndInfo = ( TransformerEndInfo ) eResolveProxy( oldTransformerEndInfo );
             if( transformerEndInfo != oldTransformerEndInfo ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.TRANSFORMER_STAR_IMPEDANCE__TRANSFORMER_END_INFO, oldTransformerEndInfo,
-                        transformerEndInfo ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.TRANSFORMER_STAR_IMPEDANCE__TRANSFORMER_END_INFO, oldTransformerEndInfo,
+                            transformerEndInfo ) );
             }
         }
         return transformerEndInfo;
@@ -483,19 +492,22 @@ public class TransformerStarImpedanceImpl extends IdentifiedObjectImpl implement
     public void setTransformerEndInfo( TransformerEndInfo newTransformerEndInfo ) {
         if( newTransformerEndInfo != transformerEndInfo ) {
             NotificationChain msgs = null;
-            if( transformerEndInfo != null ) msgs = ( ( InternalEObject ) transformerEndInfo ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_END_INFO__TRANSFORMER_STAR_IMPEDANCE, TransformerEndInfo.class, msgs );
-            if( newTransformerEndInfo != null ) msgs = ( ( InternalEObject ) newTransformerEndInfo ).eInverseAdd( this,
-                    CimPackage.TRANSFORMER_END_INFO__TRANSFORMER_STAR_IMPEDANCE, TransformerEndInfo.class, msgs );
+            if( transformerEndInfo != null )
+                msgs = ( ( InternalEObject ) transformerEndInfo ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_END_INFO__TRANSFORMER_STAR_IMPEDANCE, TransformerEndInfo.class, msgs );
+            if( newTransformerEndInfo != null )
+                msgs = ( ( InternalEObject ) newTransformerEndInfo ).eInverseAdd( this,
+                        CimPackage.TRANSFORMER_END_INFO__TRANSFORMER_STAR_IMPEDANCE, TransformerEndInfo.class, msgs );
             msgs = basicSetTransformerEndInfo( newTransformerEndInfo, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTransformerEndInfoESet = transformerEndInfoESet;
             transformerEndInfoESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TRANSFORMER_STAR_IMPEDANCE__TRANSFORMER_END_INFO, newTransformerEndInfo,
-                    newTransformerEndInfo, !oldTransformerEndInfoESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.TRANSFORMER_STAR_IMPEDANCE__TRANSFORMER_END_INFO, newTransformerEndInfo,
+                        newTransformerEndInfo, !oldTransformerEndInfoESet ) );
         }
     }
 
@@ -538,9 +550,10 @@ public class TransformerStarImpedanceImpl extends IdentifiedObjectImpl implement
         else {
             boolean oldTransformerEndInfoESet = transformerEndInfoESet;
             transformerEndInfoESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSFORMER_STAR_IMPEDANCE__TRANSFORMER_END_INFO, null, null,
-                    oldTransformerEndInfoESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.TRANSFORMER_STAR_IMPEDANCE__TRANSFORMER_END_INFO, null, null,
+                        oldTransformerEndInfoESet ) );
         }
     }
 
@@ -599,8 +612,9 @@ public class TransformerStarImpedanceImpl extends IdentifiedObjectImpl implement
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.TRANSFORMER_STAR_IMPEDANCE__TRANSFORMER_END_INFO:
-            if( transformerEndInfo != null ) msgs = ( ( InternalEObject ) transformerEndInfo ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_END_INFO__TRANSFORMER_STAR_IMPEDANCE, TransformerEndInfo.class, msgs );
+            if( transformerEndInfo != null )
+                msgs = ( ( InternalEObject ) transformerEndInfo ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_END_INFO__TRANSFORMER_STAR_IMPEDANCE, TransformerEndInfo.class, msgs );
             return basicSetTransformerEndInfo( ( TransformerEndInfo ) otherEnd, msgs );
         case CimPackage.TRANSFORMER_STAR_IMPEDANCE__TRANSFORMER_END:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTransformerEnd() )
@@ -745,7 +759,7 @@ public class TransformerStarImpedanceImpl extends IdentifiedObjectImpl implement
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (r: " );
         if( rESet )
             result.append( r );

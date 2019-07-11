@@ -784,8 +784,9 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
         startupCost = newStartupCost;
         boolean oldStartupCostESet = startupCostESet;
         startupCostESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STARTUP_MODEL__STARTUP_COST, oldStartupCost, startupCost, !oldStartupCostESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STARTUP_MODEL__STARTUP_COST,
+                    oldStartupCost, startupCost, !oldStartupCostESet ) );
     }
 
     /**
@@ -799,8 +800,9 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
         boolean oldStartupCostESet = startupCostESet;
         startupCost = STARTUP_COST_EDEFAULT;
         startupCostESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STARTUP_MODEL__STARTUP_COST, oldStartupCost, STARTUP_COST_EDEFAULT, oldStartupCostESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STARTUP_MODEL__STARTUP_COST,
+                    oldStartupCost, STARTUP_COST_EDEFAULT, oldStartupCostESet ) );
     }
 
     /**
@@ -834,8 +836,9 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
         startupDate = newStartupDate;
         boolean oldStartupDateESet = startupDateESet;
         startupDateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STARTUP_MODEL__STARTUP_DATE, oldStartupDate, startupDate, !oldStartupDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STARTUP_MODEL__STARTUP_DATE,
+                    oldStartupDate, startupDate, !oldStartupDateESet ) );
     }
 
     /**
@@ -849,8 +852,9 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
         boolean oldStartupDateESet = startupDateESet;
         startupDate = STARTUP_DATE_EDEFAULT;
         startupDateESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STARTUP_MODEL__STARTUP_DATE, oldStartupDate, STARTUP_DATE_EDEFAULT, oldStartupDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STARTUP_MODEL__STARTUP_DATE,
+                    oldStartupDate, STARTUP_DATE_EDEFAULT, oldStartupDateESet ) );
     }
 
     /**
@@ -936,8 +940,9 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
         stbyAuxP = newStbyAuxP;
         boolean oldStbyAuxPESet = stbyAuxPESet;
         stbyAuxPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STARTUP_MODEL__STBY_AUX_P, oldStbyAuxP, stbyAuxP, !oldStbyAuxPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STARTUP_MODEL__STBY_AUX_P, oldStbyAuxP,
+                    stbyAuxP, !oldStbyAuxPESet ) );
     }
 
     /**
@@ -951,8 +956,9 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
         boolean oldStbyAuxPESet = stbyAuxPESet;
         stbyAuxP = STBY_AUX_P_EDEFAULT;
         stbyAuxPESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STARTUP_MODEL__STBY_AUX_P, oldStbyAuxP, STBY_AUX_P_EDEFAULT, oldStbyAuxPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STARTUP_MODEL__STBY_AUX_P, oldStbyAuxP,
+                    STBY_AUX_P_EDEFAULT, oldStbyAuxPESet ) );
     }
 
     /**
@@ -976,8 +982,10 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
             InternalEObject oldStartMainFuelCurve = ( InternalEObject ) startMainFuelCurve;
             startMainFuelCurve = ( StartMainFuelCurve ) eResolveProxy( oldStartMainFuelCurve );
             if( startMainFuelCurve != oldStartMainFuelCurve ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.STARTUP_MODEL__START_MAIN_FUEL_CURVE, oldStartMainFuelCurve, startMainFuelCurve ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.STARTUP_MODEL__START_MAIN_FUEL_CURVE, oldStartMainFuelCurve,
+                            startMainFuelCurve ) );
             }
         }
         return startMainFuelCurve;
@@ -1024,10 +1032,12 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
     public void setStartMainFuelCurve( StartMainFuelCurve newStartMainFuelCurve ) {
         if( newStartMainFuelCurve != startMainFuelCurve ) {
             NotificationChain msgs = null;
-            if( startMainFuelCurve != null ) msgs = ( ( InternalEObject ) startMainFuelCurve ).eInverseRemove( this,
-                    CimPackage.START_MAIN_FUEL_CURVE__STARTUP_MODEL, StartMainFuelCurve.class, msgs );
-            if( newStartMainFuelCurve != null ) msgs = ( ( InternalEObject ) newStartMainFuelCurve ).eInverseAdd( this,
-                    CimPackage.START_MAIN_FUEL_CURVE__STARTUP_MODEL, StartMainFuelCurve.class, msgs );
+            if( startMainFuelCurve != null )
+                msgs = ( ( InternalEObject ) startMainFuelCurve ).eInverseRemove( this,
+                        CimPackage.START_MAIN_FUEL_CURVE__STARTUP_MODEL, StartMainFuelCurve.class, msgs );
+            if( newStartMainFuelCurve != null )
+                msgs = ( ( InternalEObject ) newStartMainFuelCurve ).eInverseAdd( this,
+                        CimPackage.START_MAIN_FUEL_CURVE__STARTUP_MODEL, StartMainFuelCurve.class, msgs );
             msgs = basicSetStartMainFuelCurve( newStartMainFuelCurve, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1079,8 +1089,9 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
         else {
             boolean oldStartMainFuelCurveESet = startMainFuelCurveESet;
             startMainFuelCurveESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.STARTUP_MODEL__START_MAIN_FUEL_CURVE, null, null, oldStartMainFuelCurveESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.STARTUP_MODEL__START_MAIN_FUEL_CURVE, null, null, oldStartMainFuelCurveESet ) );
         }
     }
 
@@ -1135,10 +1146,12 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
     public void setStartRampCurve( StartRampCurve newStartRampCurve ) {
         if( newStartRampCurve != startRampCurve ) {
             NotificationChain msgs = null;
-            if( startRampCurve != null ) msgs = ( ( InternalEObject ) startRampCurve ).eInverseRemove( this,
-                    CimPackage.START_RAMP_CURVE__STARTUP_MODEL, StartRampCurve.class, msgs );
-            if( newStartRampCurve != null ) msgs = ( ( InternalEObject ) newStartRampCurve ).eInverseAdd( this,
-                    CimPackage.START_RAMP_CURVE__STARTUP_MODEL, StartRampCurve.class, msgs );
+            if( startRampCurve != null )
+                msgs = ( ( InternalEObject ) startRampCurve ).eInverseRemove( this,
+                        CimPackage.START_RAMP_CURVE__STARTUP_MODEL, StartRampCurve.class, msgs );
+            if( newStartRampCurve != null )
+                msgs = ( ( InternalEObject ) newStartRampCurve ).eInverseAdd( this,
+                        CimPackage.START_RAMP_CURVE__STARTUP_MODEL, StartRampCurve.class, msgs );
             msgs = basicSetStartRampCurve( newStartRampCurve, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1189,8 +1202,9 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
         else {
             boolean oldStartRampCurveESet = startRampCurveESet;
             startRampCurveESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.STARTUP_MODEL__START_RAMP_CURVE, null, null, oldStartRampCurveESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STARTUP_MODEL__START_RAMP_CURVE,
+                        null, null, oldStartRampCurveESet ) );
         }
     }
 
@@ -1246,10 +1260,12 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
     public void setStartIgnFuelCurve( StartIgnFuelCurve newStartIgnFuelCurve ) {
         if( newStartIgnFuelCurve != startIgnFuelCurve ) {
             NotificationChain msgs = null;
-            if( startIgnFuelCurve != null ) msgs = ( ( InternalEObject ) startIgnFuelCurve ).eInverseRemove( this,
-                    CimPackage.START_IGN_FUEL_CURVE__STARTUP_MODEL, StartIgnFuelCurve.class, msgs );
-            if( newStartIgnFuelCurve != null ) msgs = ( ( InternalEObject ) newStartIgnFuelCurve ).eInverseAdd( this,
-                    CimPackage.START_IGN_FUEL_CURVE__STARTUP_MODEL, StartIgnFuelCurve.class, msgs );
+            if( startIgnFuelCurve != null )
+                msgs = ( ( InternalEObject ) startIgnFuelCurve ).eInverseRemove( this,
+                        CimPackage.START_IGN_FUEL_CURVE__STARTUP_MODEL, StartIgnFuelCurve.class, msgs );
+            if( newStartIgnFuelCurve != null )
+                msgs = ( ( InternalEObject ) newStartIgnFuelCurve ).eInverseAdd( this,
+                        CimPackage.START_IGN_FUEL_CURVE__STARTUP_MODEL, StartIgnFuelCurve.class, msgs );
             msgs = basicSetStartIgnFuelCurve( newStartIgnFuelCurve, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1301,8 +1317,9 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
         else {
             boolean oldStartIgnFuelCurveESet = startIgnFuelCurveESet;
             startIgnFuelCurveESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.STARTUP_MODEL__START_IGN_FUEL_CURVE, null, null, oldStartIgnFuelCurveESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.STARTUP_MODEL__START_IGN_FUEL_CURVE, null, null, oldStartIgnFuelCurveESet ) );
         }
     }
 
@@ -1370,9 +1387,10 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
         else {
             boolean oldThermalGeneratingUnitESet = thermalGeneratingUnitESet;
             thermalGeneratingUnitESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.STARTUP_MODEL__THERMAL_GENERATING_UNIT,
-                            newThermalGeneratingUnit, newThermalGeneratingUnit, !oldThermalGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.STARTUP_MODEL__THERMAL_GENERATING_UNIT, newThermalGeneratingUnit,
+                        newThermalGeneratingUnit, !oldThermalGeneratingUnitESet ) );
         }
     }
 
@@ -1415,8 +1433,9 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
         else {
             boolean oldThermalGeneratingUnitESet = thermalGeneratingUnitESet;
             thermalGeneratingUnitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.STARTUP_MODEL__THERMAL_GENERATING_UNIT, null, null, oldThermalGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.STARTUP_MODEL__THERMAL_GENERATING_UNIT, null, null, oldThermalGeneratingUnitESet ) );
         }
     }
 
@@ -1439,8 +1458,9 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.STARTUP_MODEL__START_RAMP_CURVE:
-            if( startRampCurve != null ) msgs = ( ( InternalEObject ) startRampCurve ).eInverseRemove( this,
-                    CimPackage.START_RAMP_CURVE__STARTUP_MODEL, StartRampCurve.class, msgs );
+            if( startRampCurve != null )
+                msgs = ( ( InternalEObject ) startRampCurve ).eInverseRemove( this,
+                        CimPackage.START_RAMP_CURVE__STARTUP_MODEL, StartRampCurve.class, msgs );
             return basicSetStartRampCurve( ( StartRampCurve ) otherEnd, msgs );
         case CimPackage.STARTUP_MODEL__THERMAL_GENERATING_UNIT:
             if( thermalGeneratingUnit != null )
@@ -1448,12 +1468,14 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
                         CimPackage.THERMAL_GENERATING_UNIT__STARTUP_MODEL, ThermalGeneratingUnit.class, msgs );
             return basicSetThermalGeneratingUnit( ( ThermalGeneratingUnit ) otherEnd, msgs );
         case CimPackage.STARTUP_MODEL__START_IGN_FUEL_CURVE:
-            if( startIgnFuelCurve != null ) msgs = ( ( InternalEObject ) startIgnFuelCurve ).eInverseRemove( this,
-                    CimPackage.START_IGN_FUEL_CURVE__STARTUP_MODEL, StartIgnFuelCurve.class, msgs );
+            if( startIgnFuelCurve != null )
+                msgs = ( ( InternalEObject ) startIgnFuelCurve ).eInverseRemove( this,
+                        CimPackage.START_IGN_FUEL_CURVE__STARTUP_MODEL, StartIgnFuelCurve.class, msgs );
             return basicSetStartIgnFuelCurve( ( StartIgnFuelCurve ) otherEnd, msgs );
         case CimPackage.STARTUP_MODEL__START_MAIN_FUEL_CURVE:
-            if( startMainFuelCurve != null ) msgs = ( ( InternalEObject ) startMainFuelCurve ).eInverseRemove( this,
-                    CimPackage.START_MAIN_FUEL_CURVE__STARTUP_MODEL, StartMainFuelCurve.class, msgs );
+            if( startMainFuelCurve != null )
+                msgs = ( ( InternalEObject ) startMainFuelCurve ).eInverseRemove( this,
+                        CimPackage.START_MAIN_FUEL_CURVE__STARTUP_MODEL, StartMainFuelCurve.class, msgs );
             return basicSetStartMainFuelCurve( ( StartMainFuelCurve ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1677,7 +1699,7 @@ public class StartupModelImpl extends IdentifiedObjectImpl implements StartupMod
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (fixedMaintCost: " );
         if( fixedMaintCostESet )
             result.append( fixedMaintCost );

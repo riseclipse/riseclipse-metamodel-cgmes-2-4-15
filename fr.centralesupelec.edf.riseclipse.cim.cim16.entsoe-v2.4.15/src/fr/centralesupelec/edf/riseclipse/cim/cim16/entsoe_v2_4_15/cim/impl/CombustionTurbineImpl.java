@@ -387,8 +387,9 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
         ambientTemp = newAmbientTemp;
         boolean oldAmbientTempESet = ambientTempESet;
         ambientTempESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.COMBUSTION_TURBINE__AMBIENT_TEMP, oldAmbientTemp, ambientTemp, !oldAmbientTempESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.COMBUSTION_TURBINE__AMBIENT_TEMP,
+                    oldAmbientTemp, ambientTemp, !oldAmbientTempESet ) );
     }
 
     /**
@@ -438,9 +439,10 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
         auxPowerVersusFrequency = newAuxPowerVersusFrequency;
         boolean oldAuxPowerVersusFrequencyESet = auxPowerVersusFrequencyESet;
         auxPowerVersusFrequencyESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.COMBUSTION_TURBINE__AUX_POWER_VERSUS_FREQUENCY, oldAuxPowerVersusFrequency,
-                auxPowerVersusFrequency, !oldAuxPowerVersusFrequencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.COMBUSTION_TURBINE__AUX_POWER_VERSUS_FREQUENCY, oldAuxPowerVersusFrequency,
+                    auxPowerVersusFrequency, !oldAuxPowerVersusFrequencyESet ) );
     }
 
     /**
@@ -454,9 +456,10 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
         boolean oldAuxPowerVersusFrequencyESet = auxPowerVersusFrequencyESet;
         auxPowerVersusFrequency = AUX_POWER_VERSUS_FREQUENCY_EDEFAULT;
         auxPowerVersusFrequencyESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.COMBUSTION_TURBINE__AUX_POWER_VERSUS_FREQUENCY, oldAuxPowerVersusFrequency,
-                AUX_POWER_VERSUS_FREQUENCY_EDEFAULT, oldAuxPowerVersusFrequencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.COMBUSTION_TURBINE__AUX_POWER_VERSUS_FREQUENCY, oldAuxPowerVersusFrequency,
+                    AUX_POWER_VERSUS_FREQUENCY_EDEFAULT, oldAuxPowerVersusFrequencyESet ) );
     }
 
     /**
@@ -490,9 +493,10 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
         auxPowerVersusVoltage = newAuxPowerVersusVoltage;
         boolean oldAuxPowerVersusVoltageESet = auxPowerVersusVoltageESet;
         auxPowerVersusVoltageESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.COMBUSTION_TURBINE__AUX_POWER_VERSUS_VOLTAGE,
-                        oldAuxPowerVersusVoltage, auxPowerVersusVoltage, !oldAuxPowerVersusVoltageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.COMBUSTION_TURBINE__AUX_POWER_VERSUS_VOLTAGE, oldAuxPowerVersusVoltage,
+                    auxPowerVersusVoltage, !oldAuxPowerVersusVoltageESet ) );
     }
 
     /**
@@ -506,9 +510,10 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
         boolean oldAuxPowerVersusVoltageESet = auxPowerVersusVoltageESet;
         auxPowerVersusVoltage = AUX_POWER_VERSUS_VOLTAGE_EDEFAULT;
         auxPowerVersusVoltageESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.COMBUSTION_TURBINE__AUX_POWER_VERSUS_VOLTAGE, oldAuxPowerVersusVoltage,
-                AUX_POWER_VERSUS_VOLTAGE_EDEFAULT, oldAuxPowerVersusVoltageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.COMBUSTION_TURBINE__AUX_POWER_VERSUS_VOLTAGE, oldAuxPowerVersusVoltage,
+                    AUX_POWER_VERSUS_VOLTAGE_EDEFAULT, oldAuxPowerVersusVoltageESet ) );
     }
 
     /**
@@ -542,9 +547,10 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
         capabilityVersusFrequency = newCapabilityVersusFrequency;
         boolean oldCapabilityVersusFrequencyESet = capabilityVersusFrequencyESet;
         capabilityVersusFrequencyESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.COMBUSTION_TURBINE__CAPABILITY_VERSUS_FREQUENCY, oldCapabilityVersusFrequency,
-                capabilityVersusFrequency, !oldCapabilityVersusFrequencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.COMBUSTION_TURBINE__CAPABILITY_VERSUS_FREQUENCY, oldCapabilityVersusFrequency,
+                    capabilityVersusFrequency, !oldCapabilityVersusFrequencyESet ) );
     }
 
     /**
@@ -558,9 +564,10 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
         boolean oldCapabilityVersusFrequencyESet = capabilityVersusFrequencyESet;
         capabilityVersusFrequency = CAPABILITY_VERSUS_FREQUENCY_EDEFAULT;
         capabilityVersusFrequencyESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.COMBUSTION_TURBINE__CAPABILITY_VERSUS_FREQUENCY, oldCapabilityVersusFrequency,
-                CAPABILITY_VERSUS_FREQUENCY_EDEFAULT, oldCapabilityVersusFrequencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.COMBUSTION_TURBINE__CAPABILITY_VERSUS_FREQUENCY, oldCapabilityVersusFrequency,
+                    CAPABILITY_VERSUS_FREQUENCY_EDEFAULT, oldCapabilityVersusFrequencyESet ) );
     }
 
     /**
@@ -646,9 +653,10 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
         powerVariationByTemp = newPowerVariationByTemp;
         boolean oldPowerVariationByTempESet = powerVariationByTempESet;
         powerVariationByTempESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.COMBUSTION_TURBINE__POWER_VARIATION_BY_TEMP,
-                        oldPowerVariationByTemp, powerVariationByTemp, !oldPowerVariationByTempESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.COMBUSTION_TURBINE__POWER_VARIATION_BY_TEMP, oldPowerVariationByTemp,
+                    powerVariationByTemp, !oldPowerVariationByTempESet ) );
     }
 
     /**
@@ -662,9 +670,10 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
         boolean oldPowerVariationByTempESet = powerVariationByTempESet;
         powerVariationByTemp = POWER_VARIATION_BY_TEMP_EDEFAULT;
         powerVariationByTempESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.COMBUSTION_TURBINE__POWER_VARIATION_BY_TEMP,
-                        oldPowerVariationByTemp, POWER_VARIATION_BY_TEMP_EDEFAULT, oldPowerVariationByTempESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.COMBUSTION_TURBINE__POWER_VARIATION_BY_TEMP, oldPowerVariationByTemp,
+                    POWER_VARIATION_BY_TEMP_EDEFAULT, oldPowerVariationByTempESet ) );
     }
 
     /**
@@ -750,8 +759,9 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
         timeConstant = newTimeConstant;
         boolean oldTimeConstantESet = timeConstantESet;
         timeConstantESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.COMBUSTION_TURBINE__TIME_CONSTANT, oldTimeConstant, timeConstant, !oldTimeConstantESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.COMBUSTION_TURBINE__TIME_CONSTANT,
+                    oldTimeConstant, timeConstant, !oldTimeConstantESet ) );
     }
 
     /**
@@ -791,8 +801,9 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
             InternalEObject oldAirCompressor = ( InternalEObject ) airCompressor;
             airCompressor = ( AirCompressor ) eResolveProxy( oldAirCompressor );
             if( airCompressor != oldAirCompressor ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.COMBUSTION_TURBINE__AIR_COMPRESSOR, oldAirCompressor, airCompressor ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.COMBUSTION_TURBINE__AIR_COMPRESSOR, oldAirCompressor, airCompressor ) );
             }
         }
         return airCompressor;
@@ -838,10 +849,12 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
     public void setAirCompressor( AirCompressor newAirCompressor ) {
         if( newAirCompressor != airCompressor ) {
             NotificationChain msgs = null;
-            if( airCompressor != null ) msgs = ( ( InternalEObject ) airCompressor ).eInverseRemove( this,
-                    CimPackage.AIR_COMPRESSOR__COMBUSTION_TURBINE, AirCompressor.class, msgs );
-            if( newAirCompressor != null ) msgs = ( ( InternalEObject ) newAirCompressor ).eInverseAdd( this,
-                    CimPackage.AIR_COMPRESSOR__COMBUSTION_TURBINE, AirCompressor.class, msgs );
+            if( airCompressor != null )
+                msgs = ( ( InternalEObject ) airCompressor ).eInverseRemove( this,
+                        CimPackage.AIR_COMPRESSOR__COMBUSTION_TURBINE, AirCompressor.class, msgs );
+            if( newAirCompressor != null )
+                msgs = ( ( InternalEObject ) newAirCompressor ).eInverseAdd( this,
+                        CimPackage.AIR_COMPRESSOR__COMBUSTION_TURBINE, AirCompressor.class, msgs );
             msgs = basicSetAirCompressor( newAirCompressor, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -892,8 +905,9 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
         else {
             boolean oldAirCompressorESet = airCompressorESet;
             airCompressorESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.COMBUSTION_TURBINE__AIR_COMPRESSOR, null, null, oldAirCompressorESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.COMBUSTION_TURBINE__AIR_COMPRESSOR,
+                        null, null, oldAirCompressorESet ) );
         }
     }
 
@@ -918,9 +932,10 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
             InternalEObject oldCTTempActivePowerCurve = ( InternalEObject ) ctTempActivePowerCurve;
             ctTempActivePowerCurve = ( CTTempActivePowerCurve ) eResolveProxy( oldCTTempActivePowerCurve );
             if( ctTempActivePowerCurve != oldCTTempActivePowerCurve ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.COMBUSTION_TURBINE__CT_TEMP_ACTIVE_POWER_CURVE, oldCTTempActivePowerCurve,
-                        ctTempActivePowerCurve ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.COMBUSTION_TURBINE__CT_TEMP_ACTIVE_POWER_CURVE, oldCTTempActivePowerCurve,
+                            ctTempActivePowerCurve ) );
             }
         }
         return ctTempActivePowerCurve;
@@ -979,9 +994,10 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
         else {
             boolean oldCTTempActivePowerCurveESet = ctTempActivePowerCurveESet;
             ctTempActivePowerCurveESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.COMBUSTION_TURBINE__CT_TEMP_ACTIVE_POWER_CURVE, newCTTempActivePowerCurve,
-                    newCTTempActivePowerCurve, !oldCTTempActivePowerCurveESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.COMBUSTION_TURBINE__CT_TEMP_ACTIVE_POWER_CURVE, newCTTempActivePowerCurve,
+                        newCTTempActivePowerCurve, !oldCTTempActivePowerCurveESet ) );
         }
     }
 
@@ -1024,9 +1040,10 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
         else {
             boolean oldCTTempActivePowerCurveESet = ctTempActivePowerCurveESet;
             ctTempActivePowerCurveESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.COMBUSTION_TURBINE__CT_TEMP_ACTIVE_POWER_CURVE, null, null,
-                    oldCTTempActivePowerCurveESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.COMBUSTION_TURBINE__CT_TEMP_ACTIVE_POWER_CURVE, null, null,
+                        oldCTTempActivePowerCurveESet ) );
         }
     }
 
@@ -1082,19 +1099,22 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
     public void setHeatRecoveryBoiler( HeatRecoveryBoiler newHeatRecoveryBoiler ) {
         if( newHeatRecoveryBoiler != heatRecoveryBoiler ) {
             NotificationChain msgs = null;
-            if( heatRecoveryBoiler != null ) msgs = ( ( InternalEObject ) heatRecoveryBoiler ).eInverseRemove( this,
-                    CimPackage.HEAT_RECOVERY_BOILER__COMBUSTION_TURBINES, HeatRecoveryBoiler.class, msgs );
-            if( newHeatRecoveryBoiler != null ) msgs = ( ( InternalEObject ) newHeatRecoveryBoiler ).eInverseAdd( this,
-                    CimPackage.HEAT_RECOVERY_BOILER__COMBUSTION_TURBINES, HeatRecoveryBoiler.class, msgs );
+            if( heatRecoveryBoiler != null )
+                msgs = ( ( InternalEObject ) heatRecoveryBoiler ).eInverseRemove( this,
+                        CimPackage.HEAT_RECOVERY_BOILER__COMBUSTION_TURBINES, HeatRecoveryBoiler.class, msgs );
+            if( newHeatRecoveryBoiler != null )
+                msgs = ( ( InternalEObject ) newHeatRecoveryBoiler ).eInverseAdd( this,
+                        CimPackage.HEAT_RECOVERY_BOILER__COMBUSTION_TURBINES, HeatRecoveryBoiler.class, msgs );
             msgs = basicSetHeatRecoveryBoiler( newHeatRecoveryBoiler, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldHeatRecoveryBoilerESet = heatRecoveryBoilerESet;
             heatRecoveryBoilerESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.COMBUSTION_TURBINE__HEAT_RECOVERY_BOILER,
-                            newHeatRecoveryBoiler, newHeatRecoveryBoiler, !oldHeatRecoveryBoilerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.COMBUSTION_TURBINE__HEAT_RECOVERY_BOILER, newHeatRecoveryBoiler,
+                        newHeatRecoveryBoiler, !oldHeatRecoveryBoilerESet ) );
         }
     }
 
@@ -1137,8 +1157,9 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
         else {
             boolean oldHeatRecoveryBoilerESet = heatRecoveryBoilerESet;
             heatRecoveryBoilerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.COMBUSTION_TURBINE__HEAT_RECOVERY_BOILER, null, null, oldHeatRecoveryBoilerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.COMBUSTION_TURBINE__HEAT_RECOVERY_BOILER, null, null, oldHeatRecoveryBoilerESet ) );
         }
     }
 
@@ -1161,8 +1182,9 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.COMBUSTION_TURBINE__HEAT_RECOVERY_BOILER:
-            if( heatRecoveryBoiler != null ) msgs = ( ( InternalEObject ) heatRecoveryBoiler ).eInverseRemove( this,
-                    CimPackage.HEAT_RECOVERY_BOILER__COMBUSTION_TURBINES, HeatRecoveryBoiler.class, msgs );
+            if( heatRecoveryBoiler != null )
+                msgs = ( ( InternalEObject ) heatRecoveryBoiler ).eInverseRemove( this,
+                        CimPackage.HEAT_RECOVERY_BOILER__COMBUSTION_TURBINES, HeatRecoveryBoiler.class, msgs );
             return basicSetHeatRecoveryBoiler( ( HeatRecoveryBoiler ) otherEnd, msgs );
         case CimPackage.COMBUSTION_TURBINE__CT_TEMP_ACTIVE_POWER_CURVE:
             if( ctTempActivePowerCurve != null )
@@ -1170,8 +1192,9 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
                         CimPackage.CT_TEMP_ACTIVE_POWER_CURVE__COMBUSTION_TURBINE, CTTempActivePowerCurve.class, msgs );
             return basicSetCTTempActivePowerCurve( ( CTTempActivePowerCurve ) otherEnd, msgs );
         case CimPackage.COMBUSTION_TURBINE__AIR_COMPRESSOR:
-            if( airCompressor != null ) msgs = ( ( InternalEObject ) airCompressor ).eInverseRemove( this,
-                    CimPackage.AIR_COMPRESSOR__COMBUSTION_TURBINE, AirCompressor.class, msgs );
+            if( airCompressor != null )
+                msgs = ( ( InternalEObject ) airCompressor ).eInverseRemove( this,
+                        CimPackage.AIR_COMPRESSOR__COMBUSTION_TURBINE, AirCompressor.class, msgs );
             return basicSetAirCompressor( ( AirCompressor ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1364,7 +1387,7 @@ public class CombustionTurbineImpl extends PrimeMoverImpl implements CombustionT
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (ambientTemp: " );
         if( ambientTempESet )
             result.append( ambientTemp );

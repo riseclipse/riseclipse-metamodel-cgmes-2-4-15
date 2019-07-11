@@ -297,8 +297,9 @@ public class ProtectionEquipmentImpl extends EquipmentImpl implements Protection
         highLimit = newHighLimit;
         boolean oldHighLimitESet = highLimitESet;
         highLimitESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PROTECTION_EQUIPMENT__HIGH_LIMIT, oldHighLimit, highLimit, !oldHighLimitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PROTECTION_EQUIPMENT__HIGH_LIMIT,
+                    oldHighLimit, highLimit, !oldHighLimitESet ) );
     }
 
     /**
@@ -312,8 +313,9 @@ public class ProtectionEquipmentImpl extends EquipmentImpl implements Protection
         boolean oldHighLimitESet = highLimitESet;
         highLimit = HIGH_LIMIT_EDEFAULT;
         highLimitESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PROTECTION_EQUIPMENT__HIGH_LIMIT, oldHighLimit, HIGH_LIMIT_EDEFAULT, oldHighLimitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PROTECTION_EQUIPMENT__HIGH_LIMIT,
+                    oldHighLimit, HIGH_LIMIT_EDEFAULT, oldHighLimitESet ) );
     }
 
     /**
@@ -347,8 +349,9 @@ public class ProtectionEquipmentImpl extends EquipmentImpl implements Protection
         lowLimit = newLowLimit;
         boolean oldLowLimitESet = lowLimitESet;
         lowLimitESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PROTECTION_EQUIPMENT__LOW_LIMIT, oldLowLimit, lowLimit, !oldLowLimitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PROTECTION_EQUIPMENT__LOW_LIMIT,
+                    oldLowLimit, lowLimit, !oldLowLimitESet ) );
     }
 
     /**
@@ -362,8 +365,9 @@ public class ProtectionEquipmentImpl extends EquipmentImpl implements Protection
         boolean oldLowLimitESet = lowLimitESet;
         lowLimit = LOW_LIMIT_EDEFAULT;
         lowLimitESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PROTECTION_EQUIPMENT__LOW_LIMIT, oldLowLimit, LOW_LIMIT_EDEFAULT, oldLowLimitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PROTECTION_EQUIPMENT__LOW_LIMIT,
+                    oldLowLimit, LOW_LIMIT_EDEFAULT, oldLowLimitESet ) );
     }
 
     /**
@@ -397,9 +401,10 @@ public class ProtectionEquipmentImpl extends EquipmentImpl implements Protection
         powerDirectionFlag = newPowerDirectionFlag;
         boolean oldPowerDirectionFlagESet = powerDirectionFlagESet;
         powerDirectionFlagESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PROTECTION_EQUIPMENT__POWER_DIRECTION_FLAG,
-                        oldPowerDirectionFlag, powerDirectionFlag, !oldPowerDirectionFlagESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PROTECTION_EQUIPMENT__POWER_DIRECTION_FLAG, oldPowerDirectionFlag, powerDirectionFlag,
+                    !oldPowerDirectionFlagESet ) );
     }
 
     /**
@@ -413,9 +418,10 @@ public class ProtectionEquipmentImpl extends EquipmentImpl implements Protection
         boolean oldPowerDirectionFlagESet = powerDirectionFlagESet;
         powerDirectionFlag = POWER_DIRECTION_FLAG_EDEFAULT;
         powerDirectionFlagESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PROTECTION_EQUIPMENT__POWER_DIRECTION_FLAG,
-                        oldPowerDirectionFlag, POWER_DIRECTION_FLAG_EDEFAULT, oldPowerDirectionFlagESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PROTECTION_EQUIPMENT__POWER_DIRECTION_FLAG, oldPowerDirectionFlag,
+                    POWER_DIRECTION_FLAG_EDEFAULT, oldPowerDirectionFlagESet ) );
     }
 
     /**
@@ -553,8 +559,9 @@ public class ProtectionEquipmentImpl extends EquipmentImpl implements Protection
         unitSymbol = newUnitSymbol == null ? UNIT_SYMBOL_EDEFAULT : newUnitSymbol;
         boolean oldUnitSymbolESet = unitSymbolESet;
         unitSymbolESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PROTECTION_EQUIPMENT__UNIT_SYMBOL, oldUnitSymbol, unitSymbol, !oldUnitSymbolESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PROTECTION_EQUIPMENT__UNIT_SYMBOL,
+                    oldUnitSymbol, unitSymbol, !oldUnitSymbolESet ) );
     }
 
     /**
@@ -828,7 +835,7 @@ public class ProtectionEquipmentImpl extends EquipmentImpl implements Protection
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (highLimit: " );
         if( highLimitESet )
             result.append( highLimit );

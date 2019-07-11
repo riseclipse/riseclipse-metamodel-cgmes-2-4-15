@@ -196,8 +196,9 @@ public class WirePositionImpl extends IdentifiedObjectImpl implements WirePositi
         phase = newPhase == null ? PHASE_EDEFAULT : newPhase;
         boolean oldPhaseESet = phaseESet;
         phaseESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIRE_POSITION__PHASE, oldPhase, phase, !oldPhaseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIRE_POSITION__PHASE, oldPhase, phase,
+                    !oldPhaseESet ) );
     }
 
     /**
@@ -211,8 +212,9 @@ public class WirePositionImpl extends IdentifiedObjectImpl implements WirePositi
         boolean oldPhaseESet = phaseESet;
         phase = PHASE_EDEFAULT;
         phaseESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIRE_POSITION__PHASE, oldPhase, PHASE_EDEFAULT, oldPhaseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIRE_POSITION__PHASE, oldPhase,
+                    PHASE_EDEFAULT, oldPhaseESet ) );
     }
 
     /**
@@ -246,8 +248,9 @@ public class WirePositionImpl extends IdentifiedObjectImpl implements WirePositi
         xCoord = newXCoord;
         boolean oldXCoordESet = xCoordESet;
         xCoordESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIRE_POSITION__XCOORD, oldXCoord, xCoord, !oldXCoordESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIRE_POSITION__XCOORD, oldXCoord, xCoord,
+                    !oldXCoordESet ) );
     }
 
     /**
@@ -261,8 +264,9 @@ public class WirePositionImpl extends IdentifiedObjectImpl implements WirePositi
         boolean oldXCoordESet = xCoordESet;
         xCoord = XCOORD_EDEFAULT;
         xCoordESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIRE_POSITION__XCOORD, oldXCoord, XCOORD_EDEFAULT, oldXCoordESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIRE_POSITION__XCOORD, oldXCoord,
+                    XCOORD_EDEFAULT, oldXCoordESet ) );
     }
 
     /**
@@ -296,8 +300,9 @@ public class WirePositionImpl extends IdentifiedObjectImpl implements WirePositi
         yCoord = newYCoord;
         boolean oldYCoordESet = yCoordESet;
         yCoordESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIRE_POSITION__YCOORD, oldYCoord, yCoord, !oldYCoordESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIRE_POSITION__YCOORD, oldYCoord, yCoord,
+                    !oldYCoordESet ) );
     }
 
     /**
@@ -311,8 +316,9 @@ public class WirePositionImpl extends IdentifiedObjectImpl implements WirePositi
         boolean oldYCoordESet = yCoordESet;
         yCoord = YCOORD_EDEFAULT;
         yCoordESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIRE_POSITION__YCOORD, oldYCoord, YCOORD_EDEFAULT, oldYCoordESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIRE_POSITION__YCOORD, oldYCoord,
+                    YCOORD_EDEFAULT, oldYCoordESet ) );
     }
 
     /**
@@ -366,10 +372,12 @@ public class WirePositionImpl extends IdentifiedObjectImpl implements WirePositi
     public void setWireSpacingInfo( WireSpacingInfo newWireSpacingInfo ) {
         if( newWireSpacingInfo != wireSpacingInfo ) {
             NotificationChain msgs = null;
-            if( wireSpacingInfo != null ) msgs = ( ( InternalEObject ) wireSpacingInfo ).eInverseRemove( this,
-                    CimPackage.WIRE_SPACING_INFO__WIRE_POSITIONS, WireSpacingInfo.class, msgs );
-            if( newWireSpacingInfo != null ) msgs = ( ( InternalEObject ) newWireSpacingInfo ).eInverseAdd( this,
-                    CimPackage.WIRE_SPACING_INFO__WIRE_POSITIONS, WireSpacingInfo.class, msgs );
+            if( wireSpacingInfo != null )
+                msgs = ( ( InternalEObject ) wireSpacingInfo ).eInverseRemove( this,
+                        CimPackage.WIRE_SPACING_INFO__WIRE_POSITIONS, WireSpacingInfo.class, msgs );
+            if( newWireSpacingInfo != null )
+                msgs = ( ( InternalEObject ) newWireSpacingInfo ).eInverseAdd( this,
+                        CimPackage.WIRE_SPACING_INFO__WIRE_POSITIONS, WireSpacingInfo.class, msgs );
             msgs = basicSetWireSpacingInfo( newWireSpacingInfo, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -420,8 +428,9 @@ public class WirePositionImpl extends IdentifiedObjectImpl implements WirePositi
         else {
             boolean oldWireSpacingInfoESet = wireSpacingInfoESet;
             wireSpacingInfoESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIRE_POSITION__WIRE_SPACING_INFO, null, null, oldWireSpacingInfoESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIRE_POSITION__WIRE_SPACING_INFO,
+                        null, null, oldWireSpacingInfoESet ) );
         }
     }
 
@@ -444,8 +453,9 @@ public class WirePositionImpl extends IdentifiedObjectImpl implements WirePositi
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.WIRE_POSITION__WIRE_SPACING_INFO:
-            if( wireSpacingInfo != null ) msgs = ( ( InternalEObject ) wireSpacingInfo ).eInverseRemove( this,
-                    CimPackage.WIRE_SPACING_INFO__WIRE_POSITIONS, WireSpacingInfo.class, msgs );
+            if( wireSpacingInfo != null )
+                msgs = ( ( InternalEObject ) wireSpacingInfo ).eInverseRemove( this,
+                        CimPackage.WIRE_SPACING_INFO__WIRE_POSITIONS, WireSpacingInfo.class, msgs );
             return basicSetWireSpacingInfo( ( WireSpacingInfo ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -562,7 +572,7 @@ public class WirePositionImpl extends IdentifiedObjectImpl implements WirePositi
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (phase: " );
         if( phaseESet )
             result.append( phase );

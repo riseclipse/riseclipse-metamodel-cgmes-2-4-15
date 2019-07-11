@@ -135,8 +135,9 @@ public class OperationalUpdatedRatingImpl extends OperationalRestrictionImpl imp
         changeType = newChangeType;
         boolean oldChangeTypeESet = changeTypeESet;
         changeTypeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.OPERATIONAL_UPDATED_RATING__CHANGE_TYPE, oldChangeType, changeType, !oldChangeTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.OPERATIONAL_UPDATED_RATING__CHANGE_TYPE,
+                    oldChangeType, changeType, !oldChangeTypeESet ) );
     }
 
     /**
@@ -150,9 +151,10 @@ public class OperationalUpdatedRatingImpl extends OperationalRestrictionImpl imp
         boolean oldChangeTypeESet = changeTypeESet;
         changeType = CHANGE_TYPE_EDEFAULT;
         changeTypeESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.OPERATIONAL_UPDATED_RATING__CHANGE_TYPE,
-                        oldChangeType, CHANGE_TYPE_EDEFAULT, oldChangeTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.OPERATIONAL_UPDATED_RATING__CHANGE_TYPE, oldChangeType, CHANGE_TYPE_EDEFAULT,
+                    oldChangeTypeESet ) );
     }
 
     /**
@@ -206,19 +208,22 @@ public class OperationalUpdatedRatingImpl extends OperationalRestrictionImpl imp
     public void setPlannedOutage( Outage newPlannedOutage ) {
         if( newPlannedOutage != plannedOutage ) {
             NotificationChain msgs = null;
-            if( plannedOutage != null ) msgs = ( ( InternalEObject ) plannedOutage ).eInverseRemove( this,
-                    CimPackage.OUTAGE__UPDATED_RATINGS, Outage.class, msgs );
-            if( newPlannedOutage != null ) msgs = ( ( InternalEObject ) newPlannedOutage ).eInverseAdd( this,
-                    CimPackage.OUTAGE__UPDATED_RATINGS, Outage.class, msgs );
+            if( plannedOutage != null )
+                msgs = ( ( InternalEObject ) plannedOutage ).eInverseRemove( this, CimPackage.OUTAGE__UPDATED_RATINGS,
+                        Outage.class, msgs );
+            if( newPlannedOutage != null )
+                msgs = ( ( InternalEObject ) newPlannedOutage ).eInverseAdd( this, CimPackage.OUTAGE__UPDATED_RATINGS,
+                        Outage.class, msgs );
             msgs = basicSetPlannedOutage( newPlannedOutage, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldPlannedOutageESet = plannedOutageESet;
             plannedOutageESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.OPERATIONAL_UPDATED_RATING__PLANNED_OUTAGE, newPlannedOutage, newPlannedOutage,
-                    !oldPlannedOutageESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.OPERATIONAL_UPDATED_RATING__PLANNED_OUTAGE, newPlannedOutage, newPlannedOutage,
+                        !oldPlannedOutageESet ) );
         }
     }
 
@@ -261,8 +266,9 @@ public class OperationalUpdatedRatingImpl extends OperationalRestrictionImpl imp
         else {
             boolean oldPlannedOutageESet = plannedOutageESet;
             plannedOutageESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.OPERATIONAL_UPDATED_RATING__PLANNED_OUTAGE, null, null, oldPlannedOutageESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.OPERATIONAL_UPDATED_RATING__PLANNED_OUTAGE, null, null, oldPlannedOutageESet ) );
         }
     }
 
@@ -285,8 +291,9 @@ public class OperationalUpdatedRatingImpl extends OperationalRestrictionImpl imp
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.OPERATIONAL_UPDATED_RATING__PLANNED_OUTAGE:
-            if( plannedOutage != null ) msgs = ( ( InternalEObject ) plannedOutage ).eInverseRemove( this,
-                    CimPackage.OUTAGE__UPDATED_RATINGS, Outage.class, msgs );
+            if( plannedOutage != null )
+                msgs = ( ( InternalEObject ) plannedOutage ).eInverseRemove( this, CimPackage.OUTAGE__UPDATED_RATINGS,
+                        Outage.class, msgs );
             return basicSetPlannedOutage( ( Outage ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -383,7 +390,7 @@ public class OperationalUpdatedRatingImpl extends OperationalRestrictionImpl imp
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (changeType: " );
         if( changeTypeESet )
             result.append( changeType );

@@ -197,8 +197,9 @@ public class EndDeviceTimingImpl extends MinimalEObjectImpl.Container implements
         duration = newDuration;
         boolean oldDurationESet = durationESet;
         durationESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_TIMING__DURATION, oldDuration, duration, !oldDurationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_TIMING__DURATION, oldDuration,
+                    duration, !oldDurationESet ) );
     }
 
     /**
@@ -212,8 +213,9 @@ public class EndDeviceTimingImpl extends MinimalEObjectImpl.Container implements
         boolean oldDurationESet = durationESet;
         duration = DURATION_EDEFAULT;
         durationESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_TIMING__DURATION, oldDuration, DURATION_EDEFAULT, oldDurationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_TIMING__DURATION,
+                    oldDuration, DURATION_EDEFAULT, oldDurationESet ) );
     }
 
     /**
@@ -299,8 +301,9 @@ public class EndDeviceTimingImpl extends MinimalEObjectImpl.Container implements
         randomisation = newRandomisation == null ? RANDOMISATION_EDEFAULT : newRandomisation;
         boolean oldRandomisationESet = randomisationESet;
         randomisationESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_TIMING__RANDOMISATION, oldRandomisation, randomisation, !oldRandomisationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_TIMING__RANDOMISATION,
+                    oldRandomisation, randomisation, !oldRandomisationESet ) );
     }
 
     /**
@@ -369,18 +372,21 @@ public class EndDeviceTimingImpl extends MinimalEObjectImpl.Container implements
     public void setInterval( DateTimeInterval newInterval ) {
         if( newInterval != interval ) {
             NotificationChain msgs = null;
-            if( interval != null ) msgs = ( ( InternalEObject ) interval ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.END_DEVICE_TIMING__INTERVAL, null, msgs );
-            if( newInterval != null ) msgs = ( ( InternalEObject ) newInterval ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.END_DEVICE_TIMING__INTERVAL, null, msgs );
+            if( interval != null )
+                msgs = ( ( InternalEObject ) interval ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.END_DEVICE_TIMING__INTERVAL, null, msgs );
+            if( newInterval != null )
+                msgs = ( ( InternalEObject ) newInterval ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.END_DEVICE_TIMING__INTERVAL, null, msgs );
             msgs = basicSetInterval( newInterval, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldIntervalESet = intervalESet;
             intervalESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.END_DEVICE_TIMING__INTERVAL, newInterval, newInterval, !oldIntervalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_TIMING__INTERVAL,
+                        newInterval, newInterval, !oldIntervalESet ) );
         }
     }
 
@@ -422,8 +428,9 @@ public class EndDeviceTimingImpl extends MinimalEObjectImpl.Container implements
         else {
             boolean oldIntervalESet = intervalESet;
             intervalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.END_DEVICE_TIMING__INTERVAL, null, null, oldIntervalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_TIMING__INTERVAL, null,
+                        null, oldIntervalESet ) );
         }
     }
 
@@ -548,7 +555,7 @@ public class EndDeviceTimingImpl extends MinimalEObjectImpl.Container implements
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (duration: " );
         if( durationESet )
             result.append( duration );

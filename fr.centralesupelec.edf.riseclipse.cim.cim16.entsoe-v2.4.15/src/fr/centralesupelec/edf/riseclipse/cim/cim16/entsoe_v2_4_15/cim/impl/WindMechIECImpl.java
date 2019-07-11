@@ -267,8 +267,9 @@ public class WindMechIECImpl extends IdentifiedObjectImpl implements WindMechIEC
         cdrt = newCdrt;
         boolean oldCdrtESet = cdrtESet;
         cdrtESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_MECH_IEC__CDRT, oldCdrt, cdrt, !oldCdrtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_MECH_IEC__CDRT, oldCdrt, cdrt,
+                    !oldCdrtESet ) );
     }
 
     /**
@@ -282,8 +283,9 @@ public class WindMechIECImpl extends IdentifiedObjectImpl implements WindMechIEC
         boolean oldCdrtESet = cdrtESet;
         cdrt = CDRT_EDEFAULT;
         cdrtESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_MECH_IEC__CDRT, oldCdrt, CDRT_EDEFAULT, oldCdrtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_MECH_IEC__CDRT, oldCdrt,
+                    CDRT_EDEFAULT, oldCdrtESet ) );
     }
 
     /**
@@ -317,8 +319,9 @@ public class WindMechIECImpl extends IdentifiedObjectImpl implements WindMechIEC
         hgen = newHgen;
         boolean oldHgenESet = hgenESet;
         hgenESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_MECH_IEC__HGEN, oldHgen, hgen, !oldHgenESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_MECH_IEC__HGEN, oldHgen, hgen,
+                    !oldHgenESet ) );
     }
 
     /**
@@ -332,8 +335,9 @@ public class WindMechIECImpl extends IdentifiedObjectImpl implements WindMechIEC
         boolean oldHgenESet = hgenESet;
         hgen = HGEN_EDEFAULT;
         hgenESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_MECH_IEC__HGEN, oldHgen, HGEN_EDEFAULT, oldHgenESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_MECH_IEC__HGEN, oldHgen,
+                    HGEN_EDEFAULT, oldHgenESet ) );
     }
 
     /**
@@ -367,8 +371,9 @@ public class WindMechIECImpl extends IdentifiedObjectImpl implements WindMechIEC
         hwtr = newHwtr;
         boolean oldHwtrESet = hwtrESet;
         hwtrESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_MECH_IEC__HWTR, oldHwtr, hwtr, !oldHwtrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_MECH_IEC__HWTR, oldHwtr, hwtr,
+                    !oldHwtrESet ) );
     }
 
     /**
@@ -382,8 +387,9 @@ public class WindMechIECImpl extends IdentifiedObjectImpl implements WindMechIEC
         boolean oldHwtrESet = hwtrESet;
         hwtr = HWTR_EDEFAULT;
         hwtrESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_MECH_IEC__HWTR, oldHwtr, HWTR_EDEFAULT, oldHwtrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_MECH_IEC__HWTR, oldHwtr,
+                    HWTR_EDEFAULT, oldHwtrESet ) );
     }
 
     /**
@@ -417,8 +423,9 @@ public class WindMechIECImpl extends IdentifiedObjectImpl implements WindMechIEC
         kdrt = newKdrt;
         boolean oldKdrtESet = kdrtESet;
         kdrtESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_MECH_IEC__KDRT, oldKdrt, kdrt, !oldKdrtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_MECH_IEC__KDRT, oldKdrt, kdrt,
+                    !oldKdrtESet ) );
     }
 
     /**
@@ -432,8 +439,9 @@ public class WindMechIECImpl extends IdentifiedObjectImpl implements WindMechIEC
         boolean oldKdrtESet = kdrtESet;
         kdrt = KDRT_EDEFAULT;
         kdrtESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_MECH_IEC__KDRT, oldKdrt, KDRT_EDEFAULT, oldKdrtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_MECH_IEC__KDRT, oldKdrt,
+                    KDRT_EDEFAULT, oldKdrtESet ) );
     }
 
     /**
@@ -500,9 +508,10 @@ public class WindMechIECImpl extends IdentifiedObjectImpl implements WindMechIEC
         else {
             boolean oldWindGenTurbineType3IECESet = windGenTurbineType3IECESet;
             windGenTurbineType3IECESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.WIND_MECH_IEC__WIND_GEN_TURBINE_TYPE3_IEC,
-                            newWindGenTurbineType3IEC, newWindGenTurbineType3IEC, !oldWindGenTurbineType3IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_MECH_IEC__WIND_GEN_TURBINE_TYPE3_IEC, newWindGenTurbineType3IEC,
+                        newWindGenTurbineType3IEC, !oldWindGenTurbineType3IECESet ) );
         }
     }
 
@@ -545,8 +554,10 @@ public class WindMechIECImpl extends IdentifiedObjectImpl implements WindMechIEC
         else {
             boolean oldWindGenTurbineType3IECESet = windGenTurbineType3IECESet;
             windGenTurbineType3IECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_MECH_IEC__WIND_GEN_TURBINE_TYPE3_IEC, null, null, oldWindGenTurbineType3IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_MECH_IEC__WIND_GEN_TURBINE_TYPE3_IEC, null, null,
+                        oldWindGenTurbineType3IECESet ) );
         }
     }
 
@@ -614,9 +625,10 @@ public class WindMechIECImpl extends IdentifiedObjectImpl implements WindMechIEC
         else {
             boolean oldWindTurbineType1or2IECESet = windTurbineType1or2IECESet;
             windTurbineType1or2IECESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.WIND_MECH_IEC__WIND_TURBINE_TYPE1OR2_IEC,
-                            newWindTurbineType1or2IEC, newWindTurbineType1or2IEC, !oldWindTurbineType1or2IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_MECH_IEC__WIND_TURBINE_TYPE1OR2_IEC, newWindTurbineType1or2IEC,
+                        newWindTurbineType1or2IEC, !oldWindTurbineType1or2IECESet ) );
         }
     }
 
@@ -659,8 +671,10 @@ public class WindMechIECImpl extends IdentifiedObjectImpl implements WindMechIEC
         else {
             boolean oldWindTurbineType1or2IECESet = windTurbineType1or2IECESet;
             windTurbineType1or2IECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_MECH_IEC__WIND_TURBINE_TYPE1OR2_IEC, null, null, oldWindTurbineType1or2IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_MECH_IEC__WIND_TURBINE_TYPE1OR2_IEC, null, null,
+                        oldWindTurbineType1or2IECESet ) );
         }
     }
 
@@ -716,8 +730,9 @@ public class WindMechIECImpl extends IdentifiedObjectImpl implements WindMechIEC
     public void setWindTurbineType4bIEC( WindTurbineType4bIEC newWindTurbineType4bIEC ) {
         if( newWindTurbineType4bIEC != windTurbineType4bIEC ) {
             NotificationChain msgs = null;
-            if( windTurbineType4bIEC != null ) msgs = ( ( InternalEObject ) windTurbineType4bIEC ).eInverseRemove( this,
-                    CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_MECH_IEC, WindTurbineType4bIEC.class, msgs );
+            if( windTurbineType4bIEC != null )
+                msgs = ( ( InternalEObject ) windTurbineType4bIEC ).eInverseRemove( this,
+                        CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_MECH_IEC, WindTurbineType4bIEC.class, msgs );
             if( newWindTurbineType4bIEC != null )
                 msgs = ( ( InternalEObject ) newWindTurbineType4bIEC ).eInverseAdd( this,
                         CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_MECH_IEC, WindTurbineType4bIEC.class, msgs );
@@ -727,9 +742,10 @@ public class WindMechIECImpl extends IdentifiedObjectImpl implements WindMechIEC
         else {
             boolean oldWindTurbineType4bIECESet = windTurbineType4bIECESet;
             windTurbineType4bIECESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.WIND_MECH_IEC__WIND_TURBINE_TYPE4B_IEC,
-                            newWindTurbineType4bIEC, newWindTurbineType4bIEC, !oldWindTurbineType4bIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_MECH_IEC__WIND_TURBINE_TYPE4B_IEC, newWindTurbineType4bIEC,
+                        newWindTurbineType4bIEC, !oldWindTurbineType4bIECESet ) );
         }
     }
 
@@ -772,8 +788,9 @@ public class WindMechIECImpl extends IdentifiedObjectImpl implements WindMechIEC
         else {
             boolean oldWindTurbineType4bIECESet = windTurbineType4bIECESet;
             windTurbineType4bIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_MECH_IEC__WIND_TURBINE_TYPE4B_IEC, null, null, oldWindTurbineType4bIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_MECH_IEC__WIND_TURBINE_TYPE4B_IEC, null, null, oldWindTurbineType4bIECESet ) );
         }
     }
 
@@ -801,8 +818,9 @@ public class WindMechIECImpl extends IdentifiedObjectImpl implements WindMechIEC
                         CimPackage.WIND_GEN_TURBINE_TYPE3_IEC__WIND_MECH_IEC, WindGenTurbineType3IEC.class, msgs );
             return basicSetWindGenTurbineType3IEC( ( WindGenTurbineType3IEC ) otherEnd, msgs );
         case CimPackage.WIND_MECH_IEC__WIND_TURBINE_TYPE4B_IEC:
-            if( windTurbineType4bIEC != null ) msgs = ( ( InternalEObject ) windTurbineType4bIEC ).eInverseRemove( this,
-                    CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_MECH_IEC, WindTurbineType4bIEC.class, msgs );
+            if( windTurbineType4bIEC != null )
+                msgs = ( ( InternalEObject ) windTurbineType4bIEC ).eInverseRemove( this,
+                        CimPackage.WIND_TURBINE_TYPE4B_IEC__WIND_MECH_IEC, WindTurbineType4bIEC.class, msgs );
             return basicSetWindTurbineType4bIEC( ( WindTurbineType4bIEC ) otherEnd, msgs );
         case CimPackage.WIND_MECH_IEC__WIND_TURBINE_TYPE1OR2_IEC:
             if( windTurbineType1or2IEC != null )
@@ -958,7 +976,7 @@ public class WindMechIECImpl extends IdentifiedObjectImpl implements WindMechIEC
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (cdrt: " );
         if( cdrtESet )
             result.append( cdrt );

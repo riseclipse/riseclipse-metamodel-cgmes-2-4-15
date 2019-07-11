@@ -112,8 +112,9 @@ public class ConductorImpl extends ConductingEquipmentImpl implements Conductor 
         length = newLength;
         boolean oldLengthESet = lengthESet;
         lengthESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONDUCTOR__LENGTH, oldLength, length, !oldLengthESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONDUCTOR__LENGTH, oldLength, length,
+                    !oldLengthESet ) );
     }
 
     /**
@@ -127,8 +128,9 @@ public class ConductorImpl extends ConductingEquipmentImpl implements Conductor 
         boolean oldLengthESet = lengthESet;
         length = LENGTH_EDEFAULT;
         lengthESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONDUCTOR__LENGTH, oldLength, LENGTH_EDEFAULT, oldLengthESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CONDUCTOR__LENGTH, oldLength,
+                    LENGTH_EDEFAULT, oldLengthESet ) );
     }
 
     /**
@@ -208,7 +210,7 @@ public class ConductorImpl extends ConductingEquipmentImpl implements Conductor 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (length: " );
         if( lengthESet )
             result.append( length );

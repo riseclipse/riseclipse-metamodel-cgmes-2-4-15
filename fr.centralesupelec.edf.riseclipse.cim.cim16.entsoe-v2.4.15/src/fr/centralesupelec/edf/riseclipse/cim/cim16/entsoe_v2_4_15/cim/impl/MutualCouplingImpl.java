@@ -365,8 +365,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         b0ch = newB0ch;
         boolean oldB0chESet = b0chESet;
         b0chESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.MUTUAL_COUPLING__B0CH, oldB0ch, b0ch, !oldB0chESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MUTUAL_COUPLING__B0CH, oldB0ch, b0ch,
+                    !oldB0chESet ) );
     }
 
     /**
@@ -380,8 +381,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         boolean oldB0chESet = b0chESet;
         b0ch = B0CH_EDEFAULT;
         b0chESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MUTUAL_COUPLING__B0CH, oldB0ch, B0CH_EDEFAULT, oldB0chESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MUTUAL_COUPLING__B0CH, oldB0ch,
+                    B0CH_EDEFAULT, oldB0chESet ) );
     }
 
     /**
@@ -415,8 +417,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         distance11 = newDistance11;
         boolean oldDistance11ESet = distance11ESet;
         distance11ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.MUTUAL_COUPLING__DISTANCE11, oldDistance11, distance11, !oldDistance11ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MUTUAL_COUPLING__DISTANCE11,
+                    oldDistance11, distance11, !oldDistance11ESet ) );
     }
 
     /**
@@ -430,8 +433,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         boolean oldDistance11ESet = distance11ESet;
         distance11 = DISTANCE11_EDEFAULT;
         distance11ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MUTUAL_COUPLING__DISTANCE11, oldDistance11, DISTANCE11_EDEFAULT, oldDistance11ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MUTUAL_COUPLING__DISTANCE11,
+                    oldDistance11, DISTANCE11_EDEFAULT, oldDistance11ESet ) );
     }
 
     /**
@@ -465,8 +469,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         distance12 = newDistance12;
         boolean oldDistance12ESet = distance12ESet;
         distance12ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.MUTUAL_COUPLING__DISTANCE12, oldDistance12, distance12, !oldDistance12ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MUTUAL_COUPLING__DISTANCE12,
+                    oldDistance12, distance12, !oldDistance12ESet ) );
     }
 
     /**
@@ -480,8 +485,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         boolean oldDistance12ESet = distance12ESet;
         distance12 = DISTANCE12_EDEFAULT;
         distance12ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MUTUAL_COUPLING__DISTANCE12, oldDistance12, DISTANCE12_EDEFAULT, oldDistance12ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MUTUAL_COUPLING__DISTANCE12,
+                    oldDistance12, DISTANCE12_EDEFAULT, oldDistance12ESet ) );
     }
 
     /**
@@ -515,8 +521,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         distance21 = newDistance21;
         boolean oldDistance21ESet = distance21ESet;
         distance21ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.MUTUAL_COUPLING__DISTANCE21, oldDistance21, distance21, !oldDistance21ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MUTUAL_COUPLING__DISTANCE21,
+                    oldDistance21, distance21, !oldDistance21ESet ) );
     }
 
     /**
@@ -530,8 +537,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         boolean oldDistance21ESet = distance21ESet;
         distance21 = DISTANCE21_EDEFAULT;
         distance21ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MUTUAL_COUPLING__DISTANCE21, oldDistance21, DISTANCE21_EDEFAULT, oldDistance21ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MUTUAL_COUPLING__DISTANCE21,
+                    oldDistance21, DISTANCE21_EDEFAULT, oldDistance21ESet ) );
     }
 
     /**
@@ -565,8 +573,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         distance22 = newDistance22;
         boolean oldDistance22ESet = distance22ESet;
         distance22ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.MUTUAL_COUPLING__DISTANCE22, oldDistance22, distance22, !oldDistance22ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MUTUAL_COUPLING__DISTANCE22,
+                    oldDistance22, distance22, !oldDistance22ESet ) );
     }
 
     /**
@@ -580,8 +589,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         boolean oldDistance22ESet = distance22ESet;
         distance22 = DISTANCE22_EDEFAULT;
         distance22ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MUTUAL_COUPLING__DISTANCE22, oldDistance22, DISTANCE22_EDEFAULT, oldDistance22ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MUTUAL_COUPLING__DISTANCE22,
+                    oldDistance22, DISTANCE22_EDEFAULT, oldDistance22ESet ) );
     }
 
     /**
@@ -615,8 +625,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         g0ch = newG0ch;
         boolean oldG0chESet = g0chESet;
         g0chESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.MUTUAL_COUPLING__G0CH, oldG0ch, g0ch, !oldG0chESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MUTUAL_COUPLING__G0CH, oldG0ch, g0ch,
+                    !oldG0chESet ) );
     }
 
     /**
@@ -630,8 +641,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         boolean oldG0chESet = g0chESet;
         g0ch = G0CH_EDEFAULT;
         g0chESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MUTUAL_COUPLING__G0CH, oldG0ch, G0CH_EDEFAULT, oldG0chESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MUTUAL_COUPLING__G0CH, oldG0ch,
+                    G0CH_EDEFAULT, oldG0chESet ) );
     }
 
     /**
@@ -665,8 +677,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         r0 = newR0;
         boolean oldR0ESet = r0ESet;
         r0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.MUTUAL_COUPLING__R0, oldR0, r0, !oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MUTUAL_COUPLING__R0, oldR0, r0,
+                    !oldR0ESet ) );
     }
 
     /**
@@ -680,8 +693,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         boolean oldR0ESet = r0ESet;
         r0 = R0_EDEFAULT;
         r0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MUTUAL_COUPLING__R0, oldR0, R0_EDEFAULT, oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MUTUAL_COUPLING__R0, oldR0,
+                    R0_EDEFAULT, oldR0ESet ) );
     }
 
     /**
@@ -715,8 +729,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         x0 = newX0;
         boolean oldX0ESet = x0ESet;
         x0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.MUTUAL_COUPLING__X0, oldX0, x0, !oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MUTUAL_COUPLING__X0, oldX0, x0,
+                    !oldX0ESet ) );
     }
 
     /**
@@ -730,8 +745,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         boolean oldX0ESet = x0ESet;
         x0 = X0_EDEFAULT;
         x0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MUTUAL_COUPLING__X0, oldX0, X0_EDEFAULT, oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MUTUAL_COUPLING__X0, oldX0,
+                    X0_EDEFAULT, oldX0ESet ) );
     }
 
     /**
@@ -785,10 +801,12 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
     public void setSecond_Terminal( Terminal newSecond_Terminal ) {
         if( newSecond_Terminal != second_Terminal ) {
             NotificationChain msgs = null;
-            if( second_Terminal != null ) msgs = ( ( InternalEObject ) second_Terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__HAS_SECOND_MUTUAL_COUPLING, Terminal.class, msgs );
-            if( newSecond_Terminal != null ) msgs = ( ( InternalEObject ) newSecond_Terminal ).eInverseAdd( this,
-                    CimPackage.TERMINAL__HAS_SECOND_MUTUAL_COUPLING, Terminal.class, msgs );
+            if( second_Terminal != null )
+                msgs = ( ( InternalEObject ) second_Terminal ).eInverseRemove( this,
+                        CimPackage.TERMINAL__HAS_SECOND_MUTUAL_COUPLING, Terminal.class, msgs );
+            if( newSecond_Terminal != null )
+                msgs = ( ( InternalEObject ) newSecond_Terminal ).eInverseAdd( this,
+                        CimPackage.TERMINAL__HAS_SECOND_MUTUAL_COUPLING, Terminal.class, msgs );
             msgs = basicSetSecond_Terminal( newSecond_Terminal, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -839,8 +857,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         else {
             boolean oldSecond_TerminalESet = second_TerminalESet;
             second_TerminalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.MUTUAL_COUPLING__SECOND_TERMINAL, null, null, oldSecond_TerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MUTUAL_COUPLING__SECOND_TERMINAL,
+                        null, null, oldSecond_TerminalESet ) );
         }
     }
 
@@ -895,10 +914,12 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
     public void setFirst_Terminal( Terminal newFirst_Terminal ) {
         if( newFirst_Terminal != first_Terminal ) {
             NotificationChain msgs = null;
-            if( first_Terminal != null ) msgs = ( ( InternalEObject ) first_Terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__HAS_FIRST_MUTUAL_COUPLING, Terminal.class, msgs );
-            if( newFirst_Terminal != null ) msgs = ( ( InternalEObject ) newFirst_Terminal ).eInverseAdd( this,
-                    CimPackage.TERMINAL__HAS_FIRST_MUTUAL_COUPLING, Terminal.class, msgs );
+            if( first_Terminal != null )
+                msgs = ( ( InternalEObject ) first_Terminal ).eInverseRemove( this,
+                        CimPackage.TERMINAL__HAS_FIRST_MUTUAL_COUPLING, Terminal.class, msgs );
+            if( newFirst_Terminal != null )
+                msgs = ( ( InternalEObject ) newFirst_Terminal ).eInverseAdd( this,
+                        CimPackage.TERMINAL__HAS_FIRST_MUTUAL_COUPLING, Terminal.class, msgs );
             msgs = basicSetFirst_Terminal( newFirst_Terminal, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -949,8 +970,9 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
         else {
             boolean oldFirst_TerminalESet = first_TerminalESet;
             first_TerminalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.MUTUAL_COUPLING__FIRST_TERMINAL, null, null, oldFirst_TerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MUTUAL_COUPLING__FIRST_TERMINAL,
+                        null, null, oldFirst_TerminalESet ) );
         }
     }
 
@@ -973,12 +995,14 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.MUTUAL_COUPLING__FIRST_TERMINAL:
-            if( first_Terminal != null ) msgs = ( ( InternalEObject ) first_Terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__HAS_FIRST_MUTUAL_COUPLING, Terminal.class, msgs );
+            if( first_Terminal != null )
+                msgs = ( ( InternalEObject ) first_Terminal ).eInverseRemove( this,
+                        CimPackage.TERMINAL__HAS_FIRST_MUTUAL_COUPLING, Terminal.class, msgs );
             return basicSetFirst_Terminal( ( Terminal ) otherEnd, msgs );
         case CimPackage.MUTUAL_COUPLING__SECOND_TERMINAL:
-            if( second_Terminal != null ) msgs = ( ( InternalEObject ) second_Terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__HAS_SECOND_MUTUAL_COUPLING, Terminal.class, msgs );
+            if( second_Terminal != null )
+                msgs = ( ( InternalEObject ) second_Terminal ).eInverseRemove( this,
+                        CimPackage.TERMINAL__HAS_SECOND_MUTUAL_COUPLING, Terminal.class, msgs );
             return basicSetSecond_Terminal( ( Terminal ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1157,7 +1181,7 @@ public class MutualCouplingImpl extends IdentifiedObjectImpl implements MutualCo
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (b0ch: " );
         if( b0chESet )
             result.append( b0ch );

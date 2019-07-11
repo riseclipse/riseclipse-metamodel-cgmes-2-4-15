@@ -92,7 +92,10 @@ public enum EmissionValueSource implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final EmissionValueSource[] VALUES_ARRAY = new EmissionValueSource[] { MEASURED, CALCULATED, };
+    private static final EmissionValueSource[] VALUES_ARRAY = new EmissionValueSource[] {
+            MEASURED,
+            CALCULATED,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Emission Value Source</b></em>' enumerators.

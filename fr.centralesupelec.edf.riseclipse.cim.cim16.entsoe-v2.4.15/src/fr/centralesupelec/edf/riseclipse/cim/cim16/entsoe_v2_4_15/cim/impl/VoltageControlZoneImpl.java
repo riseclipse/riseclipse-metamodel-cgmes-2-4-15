@@ -146,10 +146,12 @@ public class VoltageControlZoneImpl extends PowerSystemResourceImpl implements V
     public void setBusbarSection( BusbarSection newBusbarSection ) {
         if( newBusbarSection != busbarSection ) {
             NotificationChain msgs = null;
-            if( busbarSection != null ) msgs = ( ( InternalEObject ) busbarSection ).eInverseRemove( this,
-                    CimPackage.BUSBAR_SECTION__VOLTAGE_CONTROL_ZONE, BusbarSection.class, msgs );
-            if( newBusbarSection != null ) msgs = ( ( InternalEObject ) newBusbarSection ).eInverseAdd( this,
-                    CimPackage.BUSBAR_SECTION__VOLTAGE_CONTROL_ZONE, BusbarSection.class, msgs );
+            if( busbarSection != null )
+                msgs = ( ( InternalEObject ) busbarSection ).eInverseRemove( this,
+                        CimPackage.BUSBAR_SECTION__VOLTAGE_CONTROL_ZONE, BusbarSection.class, msgs );
+            if( newBusbarSection != null )
+                msgs = ( ( InternalEObject ) newBusbarSection ).eInverseAdd( this,
+                        CimPackage.BUSBAR_SECTION__VOLTAGE_CONTROL_ZONE, BusbarSection.class, msgs );
             msgs = basicSetBusbarSection( newBusbarSection, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -200,8 +202,9 @@ public class VoltageControlZoneImpl extends PowerSystemResourceImpl implements V
         else {
             boolean oldBusbarSectionESet = busbarSectionESet;
             busbarSectionESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.VOLTAGE_CONTROL_ZONE__BUSBAR_SECTION, null, null, oldBusbarSectionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.VOLTAGE_CONTROL_ZONE__BUSBAR_SECTION, null, null, oldBusbarSectionESet ) );
         }
     }
 
@@ -257,19 +260,22 @@ public class VoltageControlZoneImpl extends PowerSystemResourceImpl implements V
     public void setRegulationSchedule( RegulationSchedule newRegulationSchedule ) {
         if( newRegulationSchedule != regulationSchedule ) {
             NotificationChain msgs = null;
-            if( regulationSchedule != null ) msgs = ( ( InternalEObject ) regulationSchedule ).eInverseRemove( this,
-                    CimPackage.REGULATION_SCHEDULE__VOLTAGE_CONTROL_ZONES, RegulationSchedule.class, msgs );
-            if( newRegulationSchedule != null ) msgs = ( ( InternalEObject ) newRegulationSchedule ).eInverseAdd( this,
-                    CimPackage.REGULATION_SCHEDULE__VOLTAGE_CONTROL_ZONES, RegulationSchedule.class, msgs );
+            if( regulationSchedule != null )
+                msgs = ( ( InternalEObject ) regulationSchedule ).eInverseRemove( this,
+                        CimPackage.REGULATION_SCHEDULE__VOLTAGE_CONTROL_ZONES, RegulationSchedule.class, msgs );
+            if( newRegulationSchedule != null )
+                msgs = ( ( InternalEObject ) newRegulationSchedule ).eInverseAdd( this,
+                        CimPackage.REGULATION_SCHEDULE__VOLTAGE_CONTROL_ZONES, RegulationSchedule.class, msgs );
             msgs = basicSetRegulationSchedule( newRegulationSchedule, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldRegulationScheduleESet = regulationScheduleESet;
             regulationScheduleESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.VOLTAGE_CONTROL_ZONE__REGULATION_SCHEDULE,
-                            newRegulationSchedule, newRegulationSchedule, !oldRegulationScheduleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.VOLTAGE_CONTROL_ZONE__REGULATION_SCHEDULE, newRegulationSchedule,
+                        newRegulationSchedule, !oldRegulationScheduleESet ) );
         }
     }
 
@@ -312,8 +318,9 @@ public class VoltageControlZoneImpl extends PowerSystemResourceImpl implements V
         else {
             boolean oldRegulationScheduleESet = regulationScheduleESet;
             regulationScheduleESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.VOLTAGE_CONTROL_ZONE__REGULATION_SCHEDULE, null, null, oldRegulationScheduleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.VOLTAGE_CONTROL_ZONE__REGULATION_SCHEDULE, null, null, oldRegulationScheduleESet ) );
         }
     }
 
@@ -336,12 +343,14 @@ public class VoltageControlZoneImpl extends PowerSystemResourceImpl implements V
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.VOLTAGE_CONTROL_ZONE__BUSBAR_SECTION:
-            if( busbarSection != null ) msgs = ( ( InternalEObject ) busbarSection ).eInverseRemove( this,
-                    CimPackage.BUSBAR_SECTION__VOLTAGE_CONTROL_ZONE, BusbarSection.class, msgs );
+            if( busbarSection != null )
+                msgs = ( ( InternalEObject ) busbarSection ).eInverseRemove( this,
+                        CimPackage.BUSBAR_SECTION__VOLTAGE_CONTROL_ZONE, BusbarSection.class, msgs );
             return basicSetBusbarSection( ( BusbarSection ) otherEnd, msgs );
         case CimPackage.VOLTAGE_CONTROL_ZONE__REGULATION_SCHEDULE:
-            if( regulationSchedule != null ) msgs = ( ( InternalEObject ) regulationSchedule ).eInverseRemove( this,
-                    CimPackage.REGULATION_SCHEDULE__VOLTAGE_CONTROL_ZONES, RegulationSchedule.class, msgs );
+            if( regulationSchedule != null )
+                msgs = ( ( InternalEObject ) regulationSchedule ).eInverseRemove( this,
+                        CimPackage.REGULATION_SCHEDULE__VOLTAGE_CONTROL_ZONES, RegulationSchedule.class, msgs );
             return basicSetRegulationSchedule( ( RegulationSchedule ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

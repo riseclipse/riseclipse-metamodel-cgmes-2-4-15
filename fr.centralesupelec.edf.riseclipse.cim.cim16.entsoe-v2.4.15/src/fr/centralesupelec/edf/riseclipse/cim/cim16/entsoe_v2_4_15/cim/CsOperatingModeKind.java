@@ -92,7 +92,10 @@ public enum CsOperatingModeKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final CsOperatingModeKind[] VALUES_ARRAY = new CsOperatingModeKind[] { INVERTER, RECTIFIER, };
+    private static final CsOperatingModeKind[] VALUES_ARRAY = new CsOperatingModeKind[] {
+            INVERTER,
+            RECTIFIER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Cs Operating Mode Kind</b></em>' enumerators.

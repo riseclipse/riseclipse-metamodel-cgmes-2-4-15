@@ -217,8 +217,15 @@ public enum AmiBillingReadyKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final AmiBillingReadyKind[] VALUES_ARRAY = new AmiBillingReadyKind[] { ENABLED, OPERABLE,
-            BILLING_APPROVED, NON_AMI, AMI_DISABLED, AMI_CAPABLE, NON_METERED, };
+    private static final AmiBillingReadyKind[] VALUES_ARRAY = new AmiBillingReadyKind[] {
+            ENABLED,
+            OPERABLE,
+            BILLING_APPROVED,
+            NON_AMI,
+            AMI_DISABLED,
+            AMI_CAPABLE,
+            NON_METERED,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Ami Billing Ready Kind</b></em>' enumerators.

@@ -126,8 +126,9 @@ public class PenstockLossCurveImpl extends CurveImpl implements PenstockLossCurv
     public void setHydroGeneratingUnit( HydroGeneratingUnit newHydroGeneratingUnit ) {
         if( newHydroGeneratingUnit != hydroGeneratingUnit ) {
             NotificationChain msgs = null;
-            if( hydroGeneratingUnit != null ) msgs = ( ( InternalEObject ) hydroGeneratingUnit ).eInverseRemove( this,
-                    CimPackage.HYDRO_GENERATING_UNIT__PENSTOCK_LOSS_CURVE, HydroGeneratingUnit.class, msgs );
+            if( hydroGeneratingUnit != null )
+                msgs = ( ( InternalEObject ) hydroGeneratingUnit ).eInverseRemove( this,
+                        CimPackage.HYDRO_GENERATING_UNIT__PENSTOCK_LOSS_CURVE, HydroGeneratingUnit.class, msgs );
             if( newHydroGeneratingUnit != null )
                 msgs = ( ( InternalEObject ) newHydroGeneratingUnit ).eInverseAdd( this,
                         CimPackage.HYDRO_GENERATING_UNIT__PENSTOCK_LOSS_CURVE, HydroGeneratingUnit.class, msgs );
@@ -137,9 +138,10 @@ public class PenstockLossCurveImpl extends CurveImpl implements PenstockLossCurv
         else {
             boolean oldHydroGeneratingUnitESet = hydroGeneratingUnitESet;
             hydroGeneratingUnitESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PENSTOCK_LOSS_CURVE__HYDRO_GENERATING_UNIT, newHydroGeneratingUnit,
-                    newHydroGeneratingUnit, !oldHydroGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PENSTOCK_LOSS_CURVE__HYDRO_GENERATING_UNIT, newHydroGeneratingUnit,
+                        newHydroGeneratingUnit, !oldHydroGeneratingUnitESet ) );
         }
     }
 
@@ -182,8 +184,10 @@ public class PenstockLossCurveImpl extends CurveImpl implements PenstockLossCurv
         else {
             boolean oldHydroGeneratingUnitESet = hydroGeneratingUnitESet;
             hydroGeneratingUnitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PENSTOCK_LOSS_CURVE__HYDRO_GENERATING_UNIT, null, null, oldHydroGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PENSTOCK_LOSS_CURVE__HYDRO_GENERATING_UNIT, null, null,
+                        oldHydroGeneratingUnitESet ) );
         }
     }
 
@@ -206,8 +210,9 @@ public class PenstockLossCurveImpl extends CurveImpl implements PenstockLossCurv
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.PENSTOCK_LOSS_CURVE__HYDRO_GENERATING_UNIT:
-            if( hydroGeneratingUnit != null ) msgs = ( ( InternalEObject ) hydroGeneratingUnit ).eInverseRemove( this,
-                    CimPackage.HYDRO_GENERATING_UNIT__PENSTOCK_LOSS_CURVE, HydroGeneratingUnit.class, msgs );
+            if( hydroGeneratingUnit != null )
+                msgs = ( ( InternalEObject ) hydroGeneratingUnit ).eInverseRemove( this,
+                        CimPackage.HYDRO_GENERATING_UNIT__PENSTOCK_LOSS_CURVE, HydroGeneratingUnit.class, msgs );
             return basicSetHydroGeneratingUnit( ( HydroGeneratingUnit ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

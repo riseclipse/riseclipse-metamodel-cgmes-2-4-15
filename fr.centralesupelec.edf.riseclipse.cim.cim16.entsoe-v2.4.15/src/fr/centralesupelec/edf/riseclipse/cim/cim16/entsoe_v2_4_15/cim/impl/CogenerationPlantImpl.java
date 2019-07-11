@@ -274,9 +274,10 @@ public class CogenerationPlantImpl extends PowerSystemResourceImpl implements Co
         cogenHPSendoutRating = newCogenHPSendoutRating;
         boolean oldCogenHPSendoutRatingESet = cogenHPSendoutRatingESet;
         cogenHPSendoutRatingESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.COGENERATION_PLANT__COGEN_HP_SENDOUT_RATING,
-                        oldCogenHPSendoutRating, cogenHPSendoutRating, !oldCogenHPSendoutRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.COGENERATION_PLANT__COGEN_HP_SENDOUT_RATING, oldCogenHPSendoutRating,
+                    cogenHPSendoutRating, !oldCogenHPSendoutRatingESet ) );
     }
 
     /**
@@ -290,9 +291,10 @@ public class CogenerationPlantImpl extends PowerSystemResourceImpl implements Co
         boolean oldCogenHPSendoutRatingESet = cogenHPSendoutRatingESet;
         cogenHPSendoutRating = COGEN_HP_SENDOUT_RATING_EDEFAULT;
         cogenHPSendoutRatingESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.COGENERATION_PLANT__COGEN_HP_SENDOUT_RATING,
-                        oldCogenHPSendoutRating, COGEN_HP_SENDOUT_RATING_EDEFAULT, oldCogenHPSendoutRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.COGENERATION_PLANT__COGEN_HP_SENDOUT_RATING, oldCogenHPSendoutRating,
+                    COGEN_HP_SENDOUT_RATING_EDEFAULT, oldCogenHPSendoutRatingESet ) );
     }
 
     /**
@@ -326,9 +328,10 @@ public class CogenerationPlantImpl extends PowerSystemResourceImpl implements Co
         cogenHPSteamRating = newCogenHPSteamRating;
         boolean oldCogenHPSteamRatingESet = cogenHPSteamRatingESet;
         cogenHPSteamRatingESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.COGENERATION_PLANT__COGEN_HP_STEAM_RATING,
-                        oldCogenHPSteamRating, cogenHPSteamRating, !oldCogenHPSteamRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.COGENERATION_PLANT__COGEN_HP_STEAM_RATING, oldCogenHPSteamRating, cogenHPSteamRating,
+                    !oldCogenHPSteamRatingESet ) );
     }
 
     /**
@@ -342,9 +345,10 @@ public class CogenerationPlantImpl extends PowerSystemResourceImpl implements Co
         boolean oldCogenHPSteamRatingESet = cogenHPSteamRatingESet;
         cogenHPSteamRating = COGEN_HP_STEAM_RATING_EDEFAULT;
         cogenHPSteamRatingESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.COGENERATION_PLANT__COGEN_HP_STEAM_RATING,
-                        oldCogenHPSteamRating, COGEN_HP_STEAM_RATING_EDEFAULT, oldCogenHPSteamRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.COGENERATION_PLANT__COGEN_HP_STEAM_RATING, oldCogenHPSteamRating,
+                    COGEN_HP_STEAM_RATING_EDEFAULT, oldCogenHPSteamRatingESet ) );
     }
 
     /**
@@ -378,9 +382,10 @@ public class CogenerationPlantImpl extends PowerSystemResourceImpl implements Co
         cogenLPSendoutRating = newCogenLPSendoutRating;
         boolean oldCogenLPSendoutRatingESet = cogenLPSendoutRatingESet;
         cogenLPSendoutRatingESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.COGENERATION_PLANT__COGEN_LP_SENDOUT_RATING,
-                        oldCogenLPSendoutRating, cogenLPSendoutRating, !oldCogenLPSendoutRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.COGENERATION_PLANT__COGEN_LP_SENDOUT_RATING, oldCogenLPSendoutRating,
+                    cogenLPSendoutRating, !oldCogenLPSendoutRatingESet ) );
     }
 
     /**
@@ -394,9 +399,10 @@ public class CogenerationPlantImpl extends PowerSystemResourceImpl implements Co
         boolean oldCogenLPSendoutRatingESet = cogenLPSendoutRatingESet;
         cogenLPSendoutRating = COGEN_LP_SENDOUT_RATING_EDEFAULT;
         cogenLPSendoutRatingESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.COGENERATION_PLANT__COGEN_LP_SENDOUT_RATING,
-                        oldCogenLPSendoutRating, COGEN_LP_SENDOUT_RATING_EDEFAULT, oldCogenLPSendoutRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.COGENERATION_PLANT__COGEN_LP_SENDOUT_RATING, oldCogenLPSendoutRating,
+                    COGEN_LP_SENDOUT_RATING_EDEFAULT, oldCogenLPSendoutRatingESet ) );
     }
 
     /**
@@ -430,9 +436,10 @@ public class CogenerationPlantImpl extends PowerSystemResourceImpl implements Co
         cogenLPSteamRating = newCogenLPSteamRating;
         boolean oldCogenLPSteamRatingESet = cogenLPSteamRatingESet;
         cogenLPSteamRatingESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.COGENERATION_PLANT__COGEN_LP_STEAM_RATING,
-                        oldCogenLPSteamRating, cogenLPSteamRating, !oldCogenLPSteamRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.COGENERATION_PLANT__COGEN_LP_STEAM_RATING, oldCogenLPSteamRating, cogenLPSteamRating,
+                    !oldCogenLPSteamRatingESet ) );
     }
 
     /**
@@ -446,9 +453,10 @@ public class CogenerationPlantImpl extends PowerSystemResourceImpl implements Co
         boolean oldCogenLPSteamRatingESet = cogenLPSteamRatingESet;
         cogenLPSteamRating = COGEN_LP_STEAM_RATING_EDEFAULT;
         cogenLPSteamRatingESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.COGENERATION_PLANT__COGEN_LP_STEAM_RATING,
-                        oldCogenLPSteamRating, COGEN_LP_STEAM_RATING_EDEFAULT, oldCogenLPSteamRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.COGENERATION_PLANT__COGEN_LP_STEAM_RATING, oldCogenLPSteamRating,
+                    COGEN_LP_STEAM_RATING_EDEFAULT, oldCogenLPSteamRatingESet ) );
     }
 
     /**
@@ -482,8 +490,9 @@ public class CogenerationPlantImpl extends PowerSystemResourceImpl implements Co
         ratedP = newRatedP;
         boolean oldRatedPESet = ratedPESet;
         ratedPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.COGENERATION_PLANT__RATED_P, oldRatedP, ratedP, !oldRatedPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.COGENERATION_PLANT__RATED_P, oldRatedP,
+                    ratedP, !oldRatedPESet ) );
     }
 
     /**
@@ -497,8 +506,9 @@ public class CogenerationPlantImpl extends PowerSystemResourceImpl implements Co
         boolean oldRatedPESet = ratedPESet;
         ratedP = RATED_P_EDEFAULT;
         ratedPESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.COGENERATION_PLANT__RATED_P, oldRatedP, RATED_P_EDEFAULT, oldRatedPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.COGENERATION_PLANT__RATED_P, oldRatedP,
+                    RATED_P_EDEFAULT, oldRatedPESet ) );
     }
 
     /**
@@ -553,8 +563,9 @@ public class CogenerationPlantImpl extends PowerSystemResourceImpl implements Co
     public void setSteamSendoutSchedule( SteamSendoutSchedule newSteamSendoutSchedule ) {
         if( newSteamSendoutSchedule != steamSendoutSchedule ) {
             NotificationChain msgs = null;
-            if( steamSendoutSchedule != null ) msgs = ( ( InternalEObject ) steamSendoutSchedule ).eInverseRemove( this,
-                    CimPackage.STEAM_SENDOUT_SCHEDULE__COGENERATION_PLANT, SteamSendoutSchedule.class, msgs );
+            if( steamSendoutSchedule != null )
+                msgs = ( ( InternalEObject ) steamSendoutSchedule ).eInverseRemove( this,
+                        CimPackage.STEAM_SENDOUT_SCHEDULE__COGENERATION_PLANT, SteamSendoutSchedule.class, msgs );
             if( newSteamSendoutSchedule != null )
                 msgs = ( ( InternalEObject ) newSteamSendoutSchedule ).eInverseAdd( this,
                         CimPackage.STEAM_SENDOUT_SCHEDULE__COGENERATION_PLANT, SteamSendoutSchedule.class, msgs );
@@ -564,9 +575,10 @@ public class CogenerationPlantImpl extends PowerSystemResourceImpl implements Co
         else {
             boolean oldSteamSendoutScheduleESet = steamSendoutScheduleESet;
             steamSendoutScheduleESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.COGENERATION_PLANT__STEAM_SENDOUT_SCHEDULE, newSteamSendoutSchedule,
-                    newSteamSendoutSchedule, !oldSteamSendoutScheduleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.COGENERATION_PLANT__STEAM_SENDOUT_SCHEDULE, newSteamSendoutSchedule,
+                        newSteamSendoutSchedule, !oldSteamSendoutScheduleESet ) );
         }
     }
 
@@ -609,8 +621,10 @@ public class CogenerationPlantImpl extends PowerSystemResourceImpl implements Co
         else {
             boolean oldSteamSendoutScheduleESet = steamSendoutScheduleESet;
             steamSendoutScheduleESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.COGENERATION_PLANT__STEAM_SENDOUT_SCHEDULE, null, null, oldSteamSendoutScheduleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.COGENERATION_PLANT__STEAM_SENDOUT_SCHEDULE, null, null,
+                        oldSteamSendoutScheduleESet ) );
         }
     }
 
@@ -669,8 +683,9 @@ public class CogenerationPlantImpl extends PowerSystemResourceImpl implements Co
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.COGENERATION_PLANT__STEAM_SENDOUT_SCHEDULE:
-            if( steamSendoutSchedule != null ) msgs = ( ( InternalEObject ) steamSendoutSchedule ).eInverseRemove( this,
-                    CimPackage.STEAM_SENDOUT_SCHEDULE__COGENERATION_PLANT, SteamSendoutSchedule.class, msgs );
+            if( steamSendoutSchedule != null )
+                msgs = ( ( InternalEObject ) steamSendoutSchedule ).eInverseRemove( this,
+                        CimPackage.STEAM_SENDOUT_SCHEDULE__COGENERATION_PLANT, SteamSendoutSchedule.class, msgs );
             return basicSetSteamSendoutSchedule( ( SteamSendoutSchedule ) otherEnd, msgs );
         case CimPackage.COGENERATION_PLANT__THERMAL_GENERATING_UNITS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getThermalGeneratingUnits() )
@@ -824,7 +839,7 @@ public class CogenerationPlantImpl extends PowerSystemResourceImpl implements Co
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (cogenHPSendoutRating: " );
         if( cogenHPSendoutRatingESet )
             result.append( cogenHPSendoutRating );

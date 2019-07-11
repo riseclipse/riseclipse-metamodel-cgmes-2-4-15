@@ -190,8 +190,10 @@ public class AsynchronousMachineDynamicsImpl extends RotatingMachineDynamicsImpl
     public void setAsynchronousMachine( AsynchronousMachine newAsynchronousMachine ) {
         if( newAsynchronousMachine != asynchronousMachine ) {
             NotificationChain msgs = null;
-            if( asynchronousMachine != null ) msgs = ( ( InternalEObject ) asynchronousMachine ).eInverseRemove( this,
-                    CimPackage.ASYNCHRONOUS_MACHINE__ASYNCHRONOUS_MACHINE_DYNAMICS, AsynchronousMachine.class, msgs );
+            if( asynchronousMachine != null )
+                msgs = ( ( InternalEObject ) asynchronousMachine ).eInverseRemove( this,
+                        CimPackage.ASYNCHRONOUS_MACHINE__ASYNCHRONOUS_MACHINE_DYNAMICS, AsynchronousMachine.class,
+                        msgs );
             if( newAsynchronousMachine != null )
                 msgs = ( ( InternalEObject ) newAsynchronousMachine ).eInverseAdd( this,
                         CimPackage.ASYNCHRONOUS_MACHINE__ASYNCHRONOUS_MACHINE_DYNAMICS, AsynchronousMachine.class,
@@ -202,9 +204,10 @@ public class AsynchronousMachineDynamicsImpl extends RotatingMachineDynamicsImpl
         else {
             boolean oldAsynchronousMachineESet = asynchronousMachineESet;
             asynchronousMachineESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__ASYNCHRONOUS_MACHINE, newAsynchronousMachine,
-                    newAsynchronousMachine, !oldAsynchronousMachineESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__ASYNCHRONOUS_MACHINE, newAsynchronousMachine,
+                        newAsynchronousMachine, !oldAsynchronousMachineESet ) );
         }
     }
 
@@ -247,9 +250,10 @@ public class AsynchronousMachineDynamicsImpl extends RotatingMachineDynamicsImpl
         else {
             boolean oldAsynchronousMachineESet = asynchronousMachineESet;
             asynchronousMachineESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__ASYNCHRONOUS_MACHINE, null, null,
-                    oldAsynchronousMachineESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__ASYNCHRONOUS_MACHINE, null, null,
+                        oldAsynchronousMachineESet ) );
         }
     }
 
@@ -319,9 +323,10 @@ public class AsynchronousMachineDynamicsImpl extends RotatingMachineDynamicsImpl
         else {
             boolean oldTurbineGovernorDynamicsESet = turbineGovernorDynamicsESet;
             turbineGovernorDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__TURBINE_GOVERNOR_DYNAMICS, newTurbineGovernorDynamics,
-                    newTurbineGovernorDynamics, !oldTurbineGovernorDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__TURBINE_GOVERNOR_DYNAMICS, newTurbineGovernorDynamics,
+                        newTurbineGovernorDynamics, !oldTurbineGovernorDynamicsESet ) );
         }
     }
 
@@ -365,9 +370,10 @@ public class AsynchronousMachineDynamicsImpl extends RotatingMachineDynamicsImpl
         else {
             boolean oldTurbineGovernorDynamicsESet = turbineGovernorDynamicsESet;
             turbineGovernorDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__TURBINE_GOVERNOR_DYNAMICS, null, null,
-                    oldTurbineGovernorDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__TURBINE_GOVERNOR_DYNAMICS, null, null,
+                        oldTurbineGovernorDynamicsESet ) );
         }
     }
 
@@ -438,10 +444,11 @@ public class AsynchronousMachineDynamicsImpl extends RotatingMachineDynamicsImpl
         else {
             boolean oldWindTurbineType1or2DynamicsESet = windTurbineType1or2DynamicsESet;
             windTurbineType1or2DynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__WIND_TURBINE_TYPE1OR2_DYNAMICS,
-                    newWindTurbineType1or2Dynamics, newWindTurbineType1or2Dynamics,
-                    !oldWindTurbineType1or2DynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__WIND_TURBINE_TYPE1OR2_DYNAMICS,
+                        newWindTurbineType1or2Dynamics, newWindTurbineType1or2Dynamics,
+                        !oldWindTurbineType1or2DynamicsESet ) );
         }
     }
 
@@ -485,9 +492,10 @@ public class AsynchronousMachineDynamicsImpl extends RotatingMachineDynamicsImpl
         else {
             boolean oldWindTurbineType1or2DynamicsESet = windTurbineType1or2DynamicsESet;
             windTurbineType1or2DynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__WIND_TURBINE_TYPE1OR2_DYNAMICS, null, null,
-                    oldWindTurbineType1or2DynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__WIND_TURBINE_TYPE1OR2_DYNAMICS, null, null,
+                        oldWindTurbineType1or2DynamicsESet ) );
         }
     }
 
@@ -557,9 +565,10 @@ public class AsynchronousMachineDynamicsImpl extends RotatingMachineDynamicsImpl
         else {
             boolean oldMechanicalLoadDynamicsESet = mechanicalLoadDynamicsESet;
             mechanicalLoadDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__MECHANICAL_LOAD_DYNAMICS, newMechanicalLoadDynamics,
-                    newMechanicalLoadDynamics, !oldMechanicalLoadDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__MECHANICAL_LOAD_DYNAMICS, newMechanicalLoadDynamics,
+                        newMechanicalLoadDynamics, !oldMechanicalLoadDynamicsESet ) );
         }
     }
 
@@ -603,9 +612,10 @@ public class AsynchronousMachineDynamicsImpl extends RotatingMachineDynamicsImpl
         else {
             boolean oldMechanicalLoadDynamicsESet = mechanicalLoadDynamicsESet;
             mechanicalLoadDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__MECHANICAL_LOAD_DYNAMICS, null, null,
-                    oldMechanicalLoadDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__MECHANICAL_LOAD_DYNAMICS, null, null,
+                        oldMechanicalLoadDynamicsESet ) );
         }
     }
 
@@ -628,8 +638,10 @@ public class AsynchronousMachineDynamicsImpl extends RotatingMachineDynamicsImpl
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__ASYNCHRONOUS_MACHINE:
-            if( asynchronousMachine != null ) msgs = ( ( InternalEObject ) asynchronousMachine ).eInverseRemove( this,
-                    CimPackage.ASYNCHRONOUS_MACHINE__ASYNCHRONOUS_MACHINE_DYNAMICS, AsynchronousMachine.class, msgs );
+            if( asynchronousMachine != null )
+                msgs = ( ( InternalEObject ) asynchronousMachine ).eInverseRemove( this,
+                        CimPackage.ASYNCHRONOUS_MACHINE__ASYNCHRONOUS_MACHINE_DYNAMICS, AsynchronousMachine.class,
+                        msgs );
             return basicSetAsynchronousMachine( ( AsynchronousMachine ) otherEnd, msgs );
         case CimPackage.ASYNCHRONOUS_MACHINE_DYNAMICS__WIND_TURBINE_TYPE1OR2_DYNAMICS:
             if( windTurbineType1or2Dynamics != null )

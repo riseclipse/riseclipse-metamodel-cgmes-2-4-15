@@ -117,8 +117,11 @@ public enum HydroPlantStorageKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final HydroPlantStorageKind[] VALUES_ARRAY = new HydroPlantStorageKind[] { RUN_OF_RIVER,
-            PUMPED_STORAGE, STORAGE, };
+    private static final HydroPlantStorageKind[] VALUES_ARRAY = new HydroPlantStorageKind[] {
+            RUN_OF_RIVER,
+            PUMPED_STORAGE,
+            STORAGE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Hydro Plant Storage Kind</b></em>' enumerators.

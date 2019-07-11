@@ -172,8 +172,9 @@ public class DCSeriesDeviceImpl extends DCConductingEquipmentImpl implements DCS
         inductance = newInductance;
         boolean oldInductanceESet = inductanceESet;
         inductanceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DC_SERIES_DEVICE__INDUCTANCE, oldInductance, inductance, !oldInductanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DC_SERIES_DEVICE__INDUCTANCE,
+                    oldInductance, inductance, !oldInductanceESet ) );
     }
 
     /**
@@ -187,8 +188,9 @@ public class DCSeriesDeviceImpl extends DCConductingEquipmentImpl implements DCS
         boolean oldInductanceESet = inductanceESet;
         inductance = INDUCTANCE_EDEFAULT;
         inductanceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DC_SERIES_DEVICE__INDUCTANCE, oldInductance, INDUCTANCE_EDEFAULT, oldInductanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DC_SERIES_DEVICE__INDUCTANCE,
+                    oldInductance, INDUCTANCE_EDEFAULT, oldInductanceESet ) );
     }
 
     /**
@@ -222,8 +224,9 @@ public class DCSeriesDeviceImpl extends DCConductingEquipmentImpl implements DCS
         ratedUdc = newRatedUdc;
         boolean oldRatedUdcESet = ratedUdcESet;
         ratedUdcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DC_SERIES_DEVICE__RATED_UDC, oldRatedUdc, ratedUdc, !oldRatedUdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DC_SERIES_DEVICE__RATED_UDC, oldRatedUdc,
+                    ratedUdc, !oldRatedUdcESet ) );
     }
 
     /**
@@ -237,8 +240,9 @@ public class DCSeriesDeviceImpl extends DCConductingEquipmentImpl implements DCS
         boolean oldRatedUdcESet = ratedUdcESet;
         ratedUdc = RATED_UDC_EDEFAULT;
         ratedUdcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DC_SERIES_DEVICE__RATED_UDC, oldRatedUdc, RATED_UDC_EDEFAULT, oldRatedUdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DC_SERIES_DEVICE__RATED_UDC,
+                    oldRatedUdc, RATED_UDC_EDEFAULT, oldRatedUdcESet ) );
     }
 
     /**
@@ -272,8 +276,9 @@ public class DCSeriesDeviceImpl extends DCConductingEquipmentImpl implements DCS
         resistance = newResistance;
         boolean oldResistanceESet = resistanceESet;
         resistanceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DC_SERIES_DEVICE__RESISTANCE, oldResistance, resistance, !oldResistanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DC_SERIES_DEVICE__RESISTANCE,
+                    oldResistance, resistance, !oldResistanceESet ) );
     }
 
     /**
@@ -287,8 +292,9 @@ public class DCSeriesDeviceImpl extends DCConductingEquipmentImpl implements DCS
         boolean oldResistanceESet = resistanceESet;
         resistance = RESISTANCE_EDEFAULT;
         resistanceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DC_SERIES_DEVICE__RESISTANCE, oldResistance, RESISTANCE_EDEFAULT, oldResistanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DC_SERIES_DEVICE__RESISTANCE,
+                    oldResistance, RESISTANCE_EDEFAULT, oldResistanceESet ) );
     }
 
     /**
@@ -388,7 +394,7 @@ public class DCSeriesDeviceImpl extends DCConductingEquipmentImpl implements DCS
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (inductance: " );
         if( inductanceESet )
             result.append( inductance );

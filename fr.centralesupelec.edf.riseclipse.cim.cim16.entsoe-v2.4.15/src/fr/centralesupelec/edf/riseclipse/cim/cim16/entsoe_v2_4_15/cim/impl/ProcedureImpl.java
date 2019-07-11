@@ -230,8 +230,9 @@ public class ProcedureImpl extends DocumentImpl implements Procedure {
         instruction = newInstruction;
         boolean oldInstructionESet = instructionESet;
         instructionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PROCEDURE__INSTRUCTION, oldInstruction, instruction, !oldInstructionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PROCEDURE__INSTRUCTION, oldInstruction,
+                    instruction, !oldInstructionESet ) );
     }
 
     /**
@@ -245,8 +246,9 @@ public class ProcedureImpl extends DocumentImpl implements Procedure {
         boolean oldInstructionESet = instructionESet;
         instruction = INSTRUCTION_EDEFAULT;
         instructionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PROCEDURE__INSTRUCTION, oldInstruction, INSTRUCTION_EDEFAULT, oldInstructionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PROCEDURE__INSTRUCTION, oldInstruction,
+                    INSTRUCTION_EDEFAULT, oldInstructionESet ) );
     }
 
     /**
@@ -280,8 +282,9 @@ public class ProcedureImpl extends DocumentImpl implements Procedure {
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PROCEDURE__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PROCEDURE__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -295,8 +298,9 @@ public class ProcedureImpl extends DocumentImpl implements Procedure {
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PROCEDURE__KIND, oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PROCEDURE__KIND, oldKind,
+                    KIND_EDEFAULT, oldKindESet ) );
     }
 
     /**
@@ -330,8 +334,9 @@ public class ProcedureImpl extends DocumentImpl implements Procedure {
         sequenceNumber = newSequenceNumber;
         boolean oldSequenceNumberESet = sequenceNumberESet;
         sequenceNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PROCEDURE__SEQUENCE_NUMBER, oldSequenceNumber, sequenceNumber, !oldSequenceNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PROCEDURE__SEQUENCE_NUMBER,
+                    oldSequenceNumber, sequenceNumber, !oldSequenceNumberESet ) );
     }
 
     /**
@@ -674,7 +679,7 @@ public class ProcedureImpl extends DocumentImpl implements Procedure {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (instruction: " );
         if( instructionESet )
             result.append( instruction );

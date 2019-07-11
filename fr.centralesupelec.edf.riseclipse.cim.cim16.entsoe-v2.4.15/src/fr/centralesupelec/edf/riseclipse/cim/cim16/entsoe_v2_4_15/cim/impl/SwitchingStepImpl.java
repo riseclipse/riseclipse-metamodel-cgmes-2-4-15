@@ -278,8 +278,9 @@ public class SwitchingStepImpl extends CimObjectWithIDImpl implements SwitchingS
         description = newDescription;
         boolean oldDescriptionESet = descriptionESet;
         descriptionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SWITCHING_STEP__DESCRIPTION, oldDescription, description, !oldDescriptionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCHING_STEP__DESCRIPTION,
+                    oldDescription, description, !oldDescriptionESet ) );
     }
 
     /**
@@ -293,8 +294,9 @@ public class SwitchingStepImpl extends CimObjectWithIDImpl implements SwitchingS
         boolean oldDescriptionESet = descriptionESet;
         description = DESCRIPTION_EDEFAULT;
         descriptionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SWITCHING_STEP__DESCRIPTION, oldDescription, DESCRIPTION_EDEFAULT, oldDescriptionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCHING_STEP__DESCRIPTION,
+                    oldDescription, DESCRIPTION_EDEFAULT, oldDescriptionESet ) );
     }
 
     /**
@@ -555,18 +557,21 @@ public class SwitchingStepImpl extends CimObjectWithIDImpl implements SwitchingS
     public void setCrewMember( CrewMember newCrewMember ) {
         if( newCrewMember != crewMember ) {
             NotificationChain msgs = null;
-            if( crewMember != null ) msgs = ( ( InternalEObject ) crewMember ).eInverseRemove( this,
-                    CimPackage.CREW_MEMBER__SWITCHING_STEPS, CrewMember.class, msgs );
-            if( newCrewMember != null ) msgs = ( ( InternalEObject ) newCrewMember ).eInverseAdd( this,
-                    CimPackage.CREW_MEMBER__SWITCHING_STEPS, CrewMember.class, msgs );
+            if( crewMember != null )
+                msgs = ( ( InternalEObject ) crewMember ).eInverseRemove( this, CimPackage.CREW_MEMBER__SWITCHING_STEPS,
+                        CrewMember.class, msgs );
+            if( newCrewMember != null )
+                msgs = ( ( InternalEObject ) newCrewMember ).eInverseAdd( this, CimPackage.CREW_MEMBER__SWITCHING_STEPS,
+                        CrewMember.class, msgs );
             msgs = basicSetCrewMember( newCrewMember, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCrewMemberESet = crewMemberESet;
             crewMemberESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SWITCHING_STEP__CREW_MEMBER, newCrewMember, newCrewMember, !oldCrewMemberESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCHING_STEP__CREW_MEMBER,
+                        newCrewMember, newCrewMember, !oldCrewMemberESet ) );
         }
     }
 
@@ -608,8 +613,9 @@ public class SwitchingStepImpl extends CimObjectWithIDImpl implements SwitchingS
         else {
             boolean oldCrewMemberESet = crewMemberESet;
             crewMemberESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SWITCHING_STEP__CREW_MEMBER, null, null, oldCrewMemberESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCHING_STEP__CREW_MEMBER, null,
+                        null, oldCrewMemberESet ) );
         }
     }
 
@@ -663,18 +669,21 @@ public class SwitchingStepImpl extends CimObjectWithIDImpl implements SwitchingS
     public void setOperator( Operator newOperator ) {
         if( newOperator != operator ) {
             NotificationChain msgs = null;
-            if( operator != null ) msgs = ( ( InternalEObject ) operator ).eInverseRemove( this,
-                    CimPackage.OPERATOR__SWITCHING_STEPS, Operator.class, msgs );
-            if( newOperator != null ) msgs = ( ( InternalEObject ) newOperator ).eInverseAdd( this,
-                    CimPackage.OPERATOR__SWITCHING_STEPS, Operator.class, msgs );
+            if( operator != null )
+                msgs = ( ( InternalEObject ) operator ).eInverseRemove( this, CimPackage.OPERATOR__SWITCHING_STEPS,
+                        Operator.class, msgs );
+            if( newOperator != null )
+                msgs = ( ( InternalEObject ) newOperator ).eInverseAdd( this, CimPackage.OPERATOR__SWITCHING_STEPS,
+                        Operator.class, msgs );
             msgs = basicSetOperator( newOperator, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldOperatorESet = operatorESet;
             operatorESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SWITCHING_STEP__OPERATOR, newOperator, newOperator, !oldOperatorESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCHING_STEP__OPERATOR,
+                        newOperator, newOperator, !oldOperatorESet ) );
         }
     }
 
@@ -716,8 +725,9 @@ public class SwitchingStepImpl extends CimObjectWithIDImpl implements SwitchingS
         else {
             boolean oldOperatorESet = operatorESet;
             operatorESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SWITCHING_STEP__OPERATOR, null, null, oldOperatorESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCHING_STEP__OPERATOR, null,
+                        null, oldOperatorESet ) );
         }
     }
 
@@ -740,12 +750,14 @@ public class SwitchingStepImpl extends CimObjectWithIDImpl implements SwitchingS
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.SWITCHING_STEP__CREW_MEMBER:
-            if( crewMember != null ) msgs = ( ( InternalEObject ) crewMember ).eInverseRemove( this,
-                    CimPackage.CREW_MEMBER__SWITCHING_STEPS, CrewMember.class, msgs );
+            if( crewMember != null )
+                msgs = ( ( InternalEObject ) crewMember ).eInverseRemove( this, CimPackage.CREW_MEMBER__SWITCHING_STEPS,
+                        CrewMember.class, msgs );
             return basicSetCrewMember( ( CrewMember ) otherEnd, msgs );
         case CimPackage.SWITCHING_STEP__OPERATOR:
-            if( operator != null ) msgs = ( ( InternalEObject ) operator ).eInverseRemove( this,
-                    CimPackage.OPERATOR__SWITCHING_STEPS, Operator.class, msgs );
+            if( operator != null )
+                msgs = ( ( InternalEObject ) operator ).eInverseRemove( this, CimPackage.OPERATOR__SWITCHING_STEPS,
+                        Operator.class, msgs );
             return basicSetOperator( ( Operator ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -894,7 +906,7 @@ public class SwitchingStepImpl extends CimObjectWithIDImpl implements SwitchingS
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (description: " );
         if( descriptionESet )
             result.append( description );

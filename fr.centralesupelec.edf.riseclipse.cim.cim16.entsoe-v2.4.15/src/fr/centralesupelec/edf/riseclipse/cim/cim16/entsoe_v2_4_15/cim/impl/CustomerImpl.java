@@ -357,8 +357,9 @@ public class CustomerImpl extends OrganisationRoleImpl implements Customer {
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER__KIND,
-                oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -372,8 +373,9 @@ public class CustomerImpl extends OrganisationRoleImpl implements Customer {
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CUSTOMER__KIND, oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUSTOMER__KIND, oldKind, KIND_EDEFAULT,
+                    oldKindESet ) );
     }
 
     /**
@@ -407,8 +409,9 @@ public class CustomerImpl extends OrganisationRoleImpl implements Customer {
         locale = newLocale;
         boolean oldLocaleESet = localeESet;
         localeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CUSTOMER__LOCALE, oldLocale, locale, !oldLocaleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER__LOCALE, oldLocale, locale,
+                    !oldLocaleESet ) );
     }
 
     /**
@@ -422,8 +425,9 @@ public class CustomerImpl extends OrganisationRoleImpl implements Customer {
         boolean oldLocaleESet = localeESet;
         locale = LOCALE_EDEFAULT;
         localeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CUSTOMER__LOCALE, oldLocale, LOCALE_EDEFAULT, oldLocaleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUSTOMER__LOCALE, oldLocale,
+                    LOCALE_EDEFAULT, oldLocaleESet ) );
     }
 
     /**
@@ -457,8 +461,9 @@ public class CustomerImpl extends OrganisationRoleImpl implements Customer {
         pucNumber = newPucNumber;
         boolean oldPucNumberESet = pucNumberESet;
         pucNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CUSTOMER__PUC_NUMBER, oldPucNumber, pucNumber, !oldPucNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER__PUC_NUMBER, oldPucNumber,
+                    pucNumber, !oldPucNumberESet ) );
     }
 
     /**
@@ -472,8 +477,9 @@ public class CustomerImpl extends OrganisationRoleImpl implements Customer {
         boolean oldPucNumberESet = pucNumberESet;
         pucNumber = PUC_NUMBER_EDEFAULT;
         pucNumberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CUSTOMER__PUC_NUMBER, oldPucNumber, PUC_NUMBER_EDEFAULT, oldPucNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUSTOMER__PUC_NUMBER, oldPucNumber,
+                    PUC_NUMBER_EDEFAULT, oldPucNumberESet ) );
     }
 
     /**
@@ -507,8 +513,9 @@ public class CustomerImpl extends OrganisationRoleImpl implements Customer {
         specialNeed = newSpecialNeed;
         boolean oldSpecialNeedESet = specialNeedESet;
         specialNeedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CUSTOMER__SPECIAL_NEED, oldSpecialNeed, specialNeed, !oldSpecialNeedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER__SPECIAL_NEED, oldSpecialNeed,
+                    specialNeed, !oldSpecialNeedESet ) );
     }
 
     /**
@@ -522,8 +529,9 @@ public class CustomerImpl extends OrganisationRoleImpl implements Customer {
         boolean oldSpecialNeedESet = specialNeedESet;
         specialNeed = SPECIAL_NEED_EDEFAULT;
         specialNeedESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CUSTOMER__SPECIAL_NEED, oldSpecialNeed, SPECIAL_NEED_EDEFAULT, oldSpecialNeedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUSTOMER__SPECIAL_NEED, oldSpecialNeed,
+                    SPECIAL_NEED_EDEFAULT, oldSpecialNeedESet ) );
     }
 
     /**
@@ -557,8 +565,9 @@ public class CustomerImpl extends OrganisationRoleImpl implements Customer {
         vip = newVip;
         boolean oldVipESet = vipESet;
         vipESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER__VIP, oldVip, vip, !oldVipESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER__VIP, oldVip, vip,
+                    !oldVipESet ) );
     }
 
     /**
@@ -572,8 +581,9 @@ public class CustomerImpl extends OrganisationRoleImpl implements Customer {
         boolean oldVipESet = vipESet;
         vip = VIP_EDEFAULT;
         vipESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CUSTOMER__VIP, oldVip, VIP_EDEFAULT, oldVipESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUSTOMER__VIP, oldVip, VIP_EDEFAULT,
+                    oldVipESet ) );
     }
 
     /**
@@ -626,18 +636,21 @@ public class CustomerImpl extends OrganisationRoleImpl implements Customer {
     public void setPriority( Priority newPriority ) {
         if( newPriority != priority ) {
             NotificationChain msgs = null;
-            if( priority != null ) msgs = ( ( InternalEObject ) priority ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.CUSTOMER__PRIORITY, null, msgs );
-            if( newPriority != null ) msgs = ( ( InternalEObject ) newPriority ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.CUSTOMER__PRIORITY, null, msgs );
+            if( priority != null )
+                msgs = ( ( InternalEObject ) priority ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.CUSTOMER__PRIORITY, null, msgs );
+            if( newPriority != null )
+                msgs = ( ( InternalEObject ) newPriority ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.CUSTOMER__PRIORITY, null, msgs );
             msgs = basicSetPriority( newPriority, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldPriorityESet = priorityESet;
             priorityESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CUSTOMER__PRIORITY, newPriority, newPriority, !oldPriorityESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER__PRIORITY, newPriority,
+                        newPriority, !oldPriorityESet ) );
         }
     }
 
@@ -679,8 +692,9 @@ public class CustomerImpl extends OrganisationRoleImpl implements Customer {
         else {
             boolean oldPriorityESet = priorityESet;
             priorityESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CUSTOMER__PRIORITY, null, null, oldPriorityESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUSTOMER__PRIORITY, null, null,
+                        oldPriorityESet ) );
         }
     }
 
@@ -734,18 +748,21 @@ public class CustomerImpl extends OrganisationRoleImpl implements Customer {
     public void setStatus( Status newStatus ) {
         if( newStatus != status ) {
             NotificationChain msgs = null;
-            if( status != null ) msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.CUSTOMER__STATUS, null, msgs );
-            if( newStatus != null ) msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.CUSTOMER__STATUS, null, msgs );
+            if( status != null )
+                msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.CUSTOMER__STATUS, null, msgs );
+            if( newStatus != null )
+                msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.CUSTOMER__STATUS, null, msgs );
             msgs = basicSetStatus( newStatus, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldStatusESet = statusESet;
             statusESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CUSTOMER__STATUS, newStatus, newStatus, !oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER__STATUS, newStatus,
+                        newStatus, !oldStatusESet ) );
         }
     }
 
@@ -787,8 +804,9 @@ public class CustomerImpl extends OrganisationRoleImpl implements Customer {
         else {
             boolean oldStatusESet = statusESet;
             statusESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CUSTOMER__STATUS, null, null, oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUSTOMER__STATUS, null, null,
+                        oldStatusESet ) );
         }
     }
 
@@ -1262,7 +1280,7 @@ public class CustomerImpl extends OrganisationRoleImpl implements Customer {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kind: " );
         if( kindESet )
             result.append( kind );

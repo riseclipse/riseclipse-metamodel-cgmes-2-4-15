@@ -225,8 +225,9 @@ public class PhaseImpedanceDataImpl extends CimObjectWithIDImpl implements Phase
         b = newB;
         boolean oldBESet = bESet;
         bESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PHASE_IMPEDANCE_DATA__B, oldB, b, !oldBESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PHASE_IMPEDANCE_DATA__B, oldB, b,
+                    !oldBESet ) );
     }
 
     /**
@@ -240,8 +241,9 @@ public class PhaseImpedanceDataImpl extends CimObjectWithIDImpl implements Phase
         boolean oldBESet = bESet;
         b = B_EDEFAULT;
         bESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PHASE_IMPEDANCE_DATA__B, oldB, B_EDEFAULT, oldBESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PHASE_IMPEDANCE_DATA__B, oldB,
+                    B_EDEFAULT, oldBESet ) );
     }
 
     /**
@@ -275,8 +277,9 @@ public class PhaseImpedanceDataImpl extends CimObjectWithIDImpl implements Phase
         r = newR;
         boolean oldRESet = rESet;
         rESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PHASE_IMPEDANCE_DATA__R, oldR, r, !oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PHASE_IMPEDANCE_DATA__R, oldR, r,
+                    !oldRESet ) );
     }
 
     /**
@@ -290,8 +293,9 @@ public class PhaseImpedanceDataImpl extends CimObjectWithIDImpl implements Phase
         boolean oldRESet = rESet;
         r = R_EDEFAULT;
         rESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PHASE_IMPEDANCE_DATA__R, oldR, R_EDEFAULT, oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PHASE_IMPEDANCE_DATA__R, oldR,
+                    R_EDEFAULT, oldRESet ) );
     }
 
     /**
@@ -377,8 +381,9 @@ public class PhaseImpedanceDataImpl extends CimObjectWithIDImpl implements Phase
         x = newX;
         boolean oldXESet = xESet;
         xESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PHASE_IMPEDANCE_DATA__X, oldX, x, !oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PHASE_IMPEDANCE_DATA__X, oldX, x,
+                    !oldXESet ) );
     }
 
     /**
@@ -392,8 +397,9 @@ public class PhaseImpedanceDataImpl extends CimObjectWithIDImpl implements Phase
         boolean oldXESet = xESet;
         x = X_EDEFAULT;
         xESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PHASE_IMPEDANCE_DATA__X, oldX, X_EDEFAULT, oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PHASE_IMPEDANCE_DATA__X, oldX,
+                    X_EDEFAULT, oldXESet ) );
     }
 
     /**
@@ -448,19 +454,24 @@ public class PhaseImpedanceDataImpl extends CimObjectWithIDImpl implements Phase
     public void setPhaseImpedance( PerLengthPhaseImpedance newPhaseImpedance ) {
         if( newPhaseImpedance != phaseImpedance ) {
             NotificationChain msgs = null;
-            if( phaseImpedance != null ) msgs = ( ( InternalEObject ) phaseImpedance ).eInverseRemove( this,
-                    CimPackage.PER_LENGTH_PHASE_IMPEDANCE__PHASE_IMPEDANCE_DATA, PerLengthPhaseImpedance.class, msgs );
-            if( newPhaseImpedance != null ) msgs = ( ( InternalEObject ) newPhaseImpedance ).eInverseAdd( this,
-                    CimPackage.PER_LENGTH_PHASE_IMPEDANCE__PHASE_IMPEDANCE_DATA, PerLengthPhaseImpedance.class, msgs );
+            if( phaseImpedance != null )
+                msgs = ( ( InternalEObject ) phaseImpedance ).eInverseRemove( this,
+                        CimPackage.PER_LENGTH_PHASE_IMPEDANCE__PHASE_IMPEDANCE_DATA, PerLengthPhaseImpedance.class,
+                        msgs );
+            if( newPhaseImpedance != null )
+                msgs = ( ( InternalEObject ) newPhaseImpedance ).eInverseAdd( this,
+                        CimPackage.PER_LENGTH_PHASE_IMPEDANCE__PHASE_IMPEDANCE_DATA, PerLengthPhaseImpedance.class,
+                        msgs );
             msgs = basicSetPhaseImpedance( newPhaseImpedance, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldPhaseImpedanceESet = phaseImpedanceESet;
             phaseImpedanceESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.PHASE_IMPEDANCE_DATA__PHASE_IMPEDANCE,
-                            newPhaseImpedance, newPhaseImpedance, !oldPhaseImpedanceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PHASE_IMPEDANCE_DATA__PHASE_IMPEDANCE, newPhaseImpedance, newPhaseImpedance,
+                        !oldPhaseImpedanceESet ) );
         }
     }
 
@@ -502,8 +513,9 @@ public class PhaseImpedanceDataImpl extends CimObjectWithIDImpl implements Phase
         else {
             boolean oldPhaseImpedanceESet = phaseImpedanceESet;
             phaseImpedanceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PHASE_IMPEDANCE_DATA__PHASE_IMPEDANCE, null, null, oldPhaseImpedanceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PHASE_IMPEDANCE_DATA__PHASE_IMPEDANCE, null, null, oldPhaseImpedanceESet ) );
         }
     }
 
@@ -526,8 +538,10 @@ public class PhaseImpedanceDataImpl extends CimObjectWithIDImpl implements Phase
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.PHASE_IMPEDANCE_DATA__PHASE_IMPEDANCE:
-            if( phaseImpedance != null ) msgs = ( ( InternalEObject ) phaseImpedance ).eInverseRemove( this,
-                    CimPackage.PER_LENGTH_PHASE_IMPEDANCE__PHASE_IMPEDANCE_DATA, PerLengthPhaseImpedance.class, msgs );
+            if( phaseImpedance != null )
+                msgs = ( ( InternalEObject ) phaseImpedance ).eInverseRemove( this,
+                        CimPackage.PER_LENGTH_PHASE_IMPEDANCE__PHASE_IMPEDANCE_DATA, PerLengthPhaseImpedance.class,
+                        msgs );
             return basicSetPhaseImpedance( ( PerLengthPhaseImpedance ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -654,7 +668,7 @@ public class PhaseImpedanceDataImpl extends CimObjectWithIDImpl implements Phase
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (b: " );
         if( bESet )
             result.append( b );

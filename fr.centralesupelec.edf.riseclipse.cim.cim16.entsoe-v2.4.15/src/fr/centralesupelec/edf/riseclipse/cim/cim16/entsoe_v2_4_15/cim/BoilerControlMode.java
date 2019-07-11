@@ -67,7 +67,9 @@ public enum BoilerControlMode implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final BoilerControlMode[] VALUES_ARRAY = new BoilerControlMode[] { FOLLOWING, };
+    private static final BoilerControlMode[] VALUES_ARRAY = new BoilerControlMode[] {
+            FOLLOWING,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Boiler Control Mode</b></em>' enumerators.

@@ -177,8 +177,9 @@ public class StartRampCurveImpl extends CurveImpl implements StartRampCurve {
             InternalEObject oldStartupModel = ( InternalEObject ) startupModel;
             startupModel = ( StartupModel ) eResolveProxy( oldStartupModel );
             if( startupModel != oldStartupModel ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.START_RAMP_CURVE__STARTUP_MODEL, oldStartupModel, startupModel ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.START_RAMP_CURVE__STARTUP_MODEL, oldStartupModel, startupModel ) );
             }
         }
         return startupModel;
@@ -224,10 +225,12 @@ public class StartRampCurveImpl extends CurveImpl implements StartRampCurve {
     public void setStartupModel( StartupModel newStartupModel ) {
         if( newStartupModel != startupModel ) {
             NotificationChain msgs = null;
-            if( startupModel != null ) msgs = ( ( InternalEObject ) startupModel ).eInverseRemove( this,
-                    CimPackage.STARTUP_MODEL__START_RAMP_CURVE, StartupModel.class, msgs );
-            if( newStartupModel != null ) msgs = ( ( InternalEObject ) newStartupModel ).eInverseAdd( this,
-                    CimPackage.STARTUP_MODEL__START_RAMP_CURVE, StartupModel.class, msgs );
+            if( startupModel != null )
+                msgs = ( ( InternalEObject ) startupModel ).eInverseRemove( this,
+                        CimPackage.STARTUP_MODEL__START_RAMP_CURVE, StartupModel.class, msgs );
+            if( newStartupModel != null )
+                msgs = ( ( InternalEObject ) newStartupModel ).eInverseAdd( this,
+                        CimPackage.STARTUP_MODEL__START_RAMP_CURVE, StartupModel.class, msgs );
             msgs = basicSetStartupModel( newStartupModel, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -278,8 +281,9 @@ public class StartRampCurveImpl extends CurveImpl implements StartRampCurve {
         else {
             boolean oldStartupModelESet = startupModelESet;
             startupModelESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.START_RAMP_CURVE__STARTUP_MODEL, null, null, oldStartupModelESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.START_RAMP_CURVE__STARTUP_MODEL,
+                        null, null, oldStartupModelESet ) );
         }
     }
 
@@ -302,8 +306,9 @@ public class StartRampCurveImpl extends CurveImpl implements StartRampCurve {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.START_RAMP_CURVE__STARTUP_MODEL:
-            if( startupModel != null ) msgs = ( ( InternalEObject ) startupModel ).eInverseRemove( this,
-                    CimPackage.STARTUP_MODEL__START_RAMP_CURVE, StartupModel.class, msgs );
+            if( startupModel != null )
+                msgs = ( ( InternalEObject ) startupModel ).eInverseRemove( this,
+                        CimPackage.STARTUP_MODEL__START_RAMP_CURVE, StartupModel.class, msgs );
             return basicSetStartupModel( ( StartupModel ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -401,7 +406,7 @@ public class StartRampCurveImpl extends CurveImpl implements StartRampCurve {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (hotStandbyRamp: " );
         if( hotStandbyRampESet )
             result.append( hotStandbyRamp );

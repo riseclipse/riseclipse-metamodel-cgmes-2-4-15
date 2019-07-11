@@ -612,8 +612,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         critical = newCritical;
         boolean oldCriticalESet = criticalESet;
         criticalESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASSET__CRITICAL, oldCritical, critical, !oldCriticalESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET__CRITICAL, oldCritical, critical,
+                    !oldCriticalESet ) );
     }
 
     /**
@@ -627,8 +628,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         boolean oldCriticalESet = criticalESet;
         critical = CRITICAL_EDEFAULT;
         criticalESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASSET__CRITICAL, oldCritical, CRITICAL_EDEFAULT, oldCriticalESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET__CRITICAL, oldCritical,
+                    CRITICAL_EDEFAULT, oldCriticalESet ) );
     }
 
     /**
@@ -766,8 +768,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         lotNumber = newLotNumber;
         boolean oldLotNumberESet = lotNumberESet;
         lotNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASSET__LOT_NUMBER, oldLotNumber, lotNumber, !oldLotNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET__LOT_NUMBER, oldLotNumber,
+                    lotNumber, !oldLotNumberESet ) );
     }
 
     /**
@@ -781,8 +784,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         boolean oldLotNumberESet = lotNumberESet;
         lotNumber = LOT_NUMBER_EDEFAULT;
         lotNumberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASSET__LOT_NUMBER, oldLotNumber, LOT_NUMBER_EDEFAULT, oldLotNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET__LOT_NUMBER, oldLotNumber,
+                    LOT_NUMBER_EDEFAULT, oldLotNumberESet ) );
     }
 
     /**
@@ -816,8 +820,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         purchasePrice = newPurchasePrice;
         boolean oldPurchasePriceESet = purchasePriceESet;
         purchasePriceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASSET__PURCHASE_PRICE, oldPurchasePrice, purchasePrice, !oldPurchasePriceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET__PURCHASE_PRICE, oldPurchasePrice,
+                    purchasePrice, !oldPurchasePriceESet ) );
     }
 
     /**
@@ -831,8 +836,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         boolean oldPurchasePriceESet = purchasePriceESet;
         purchasePrice = PURCHASE_PRICE_EDEFAULT;
         purchasePriceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASSET__PURCHASE_PRICE, oldPurchasePrice, PURCHASE_PRICE_EDEFAULT, oldPurchasePriceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET__PURCHASE_PRICE,
+                    oldPurchasePrice, PURCHASE_PRICE_EDEFAULT, oldPurchasePriceESet ) );
     }
 
     /**
@@ -866,8 +872,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         serialNumber = newSerialNumber;
         boolean oldSerialNumberESet = serialNumberESet;
         serialNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASSET__SERIAL_NUMBER, oldSerialNumber, serialNumber, !oldSerialNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET__SERIAL_NUMBER, oldSerialNumber,
+                    serialNumber, !oldSerialNumberESet ) );
     }
 
     /**
@@ -881,8 +888,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         boolean oldSerialNumberESet = serialNumberESet;
         serialNumber = SERIAL_NUMBER_EDEFAULT;
         serialNumberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASSET__SERIAL_NUMBER, oldSerialNumber, SERIAL_NUMBER_EDEFAULT, oldSerialNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET__SERIAL_NUMBER, oldSerialNumber,
+                    SERIAL_NUMBER_EDEFAULT, oldSerialNumberESet ) );
     }
 
     /**
@@ -916,8 +924,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         type = newType;
         boolean oldTypeESet = typeESet;
         typeESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.ASSET__TYPE, oldType, type, !oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET__TYPE, oldType, type,
+                    !oldTypeESet ) );
     }
 
     /**
@@ -931,8 +940,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         boolean oldTypeESet = typeESet;
         type = TYPE_EDEFAULT;
         typeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET__TYPE,
-                oldType, TYPE_EDEFAULT, oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET__TYPE, oldType, TYPE_EDEFAULT,
+                    oldTypeESet ) );
     }
 
     /**
@@ -966,8 +976,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         utcNumber = newUtcNumber;
         boolean oldUtcNumberESet = utcNumberESet;
         utcNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASSET__UTC_NUMBER, oldUtcNumber, utcNumber, !oldUtcNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET__UTC_NUMBER, oldUtcNumber,
+                    utcNumber, !oldUtcNumberESet ) );
     }
 
     /**
@@ -981,8 +992,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         boolean oldUtcNumberESet = utcNumberESet;
         utcNumber = UTC_NUMBER_EDEFAULT;
         utcNumberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASSET__UTC_NUMBER, oldUtcNumber, UTC_NUMBER_EDEFAULT, oldUtcNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET__UTC_NUMBER, oldUtcNumber,
+                    UTC_NUMBER_EDEFAULT, oldUtcNumberESet ) );
     }
 
     /**
@@ -1035,18 +1047,21 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
     public void setAcceptanceTest( AcceptanceTest newAcceptanceTest ) {
         if( newAcceptanceTest != acceptanceTest ) {
             NotificationChain msgs = null;
-            if( acceptanceTest != null ) msgs = ( ( InternalEObject ) acceptanceTest ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ASSET__ACCEPTANCE_TEST, null, msgs );
-            if( newAcceptanceTest != null ) msgs = ( ( InternalEObject ) newAcceptanceTest ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ASSET__ACCEPTANCE_TEST, null, msgs );
+            if( acceptanceTest != null )
+                msgs = ( ( InternalEObject ) acceptanceTest ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ASSET__ACCEPTANCE_TEST, null, msgs );
+            if( newAcceptanceTest != null )
+                msgs = ( ( InternalEObject ) newAcceptanceTest ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ASSET__ACCEPTANCE_TEST, null, msgs );
             msgs = basicSetAcceptanceTest( newAcceptanceTest, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldAcceptanceTestESet = acceptanceTestESet;
             acceptanceTestESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ASSET__ACCEPTANCE_TEST, newAcceptanceTest, newAcceptanceTest, !oldAcceptanceTestESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET__ACCEPTANCE_TEST,
+                        newAcceptanceTest, newAcceptanceTest, !oldAcceptanceTestESet ) );
         }
     }
 
@@ -1088,8 +1103,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         else {
             boolean oldAcceptanceTestESet = acceptanceTestESet;
             acceptanceTestESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ASSET__ACCEPTANCE_TEST, null, null, oldAcceptanceTestESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET__ACCEPTANCE_TEST, null, null,
+                        oldAcceptanceTestESet ) );
         }
     }
 
@@ -1145,10 +1161,12 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
     public void setElectronicAddress( ElectronicAddress newElectronicAddress ) {
         if( newElectronicAddress != electronicAddress ) {
             NotificationChain msgs = null;
-            if( electronicAddress != null ) msgs = ( ( InternalEObject ) electronicAddress ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ASSET__ELECTRONIC_ADDRESS, null, msgs );
-            if( newElectronicAddress != null ) msgs = ( ( InternalEObject ) newElectronicAddress ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ASSET__ELECTRONIC_ADDRESS, null, msgs );
+            if( electronicAddress != null )
+                msgs = ( ( InternalEObject ) electronicAddress ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ASSET__ELECTRONIC_ADDRESS, null, msgs );
+            if( newElectronicAddress != null )
+                msgs = ( ( InternalEObject ) newElectronicAddress ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ASSET__ELECTRONIC_ADDRESS, null, msgs );
             msgs = basicSetElectronicAddress( newElectronicAddress, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1199,8 +1217,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         else {
             boolean oldElectronicAddressESet = electronicAddressESet;
             electronicAddressESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ASSET__ELECTRONIC_ADDRESS, null, null, oldElectronicAddressESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET__ELECTRONIC_ADDRESS, null,
+                        null, oldElectronicAddressESet ) );
         }
     }
 
@@ -1254,18 +1273,21 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
     public void setLifecycle( LifecycleDate newLifecycle ) {
         if( newLifecycle != lifecycle ) {
             NotificationChain msgs = null;
-            if( lifecycle != null ) msgs = ( ( InternalEObject ) lifecycle ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ASSET__LIFECYCLE, null, msgs );
-            if( newLifecycle != null ) msgs = ( ( InternalEObject ) newLifecycle ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ASSET__LIFECYCLE, null, msgs );
+            if( lifecycle != null )
+                msgs = ( ( InternalEObject ) lifecycle ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ASSET__LIFECYCLE, null, msgs );
+            if( newLifecycle != null )
+                msgs = ( ( InternalEObject ) newLifecycle ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ASSET__LIFECYCLE, null, msgs );
             msgs = basicSetLifecycle( newLifecycle, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldLifecycleESet = lifecycleESet;
             lifecycleESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ASSET__LIFECYCLE, newLifecycle, newLifecycle, !oldLifecycleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET__LIFECYCLE, newLifecycle,
+                        newLifecycle, !oldLifecycleESet ) );
         }
     }
 
@@ -1307,8 +1329,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         else {
             boolean oldLifecycleESet = lifecycleESet;
             lifecycleESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ASSET__LIFECYCLE, null, null, oldLifecycleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET__LIFECYCLE, null, null,
+                        oldLifecycleESet ) );
         }
     }
 
@@ -1362,18 +1385,21 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
     public void setStatus( Status newStatus ) {
         if( newStatus != status ) {
             NotificationChain msgs = null;
-            if( status != null ) msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ASSET__STATUS, null, msgs );
-            if( newStatus != null ) msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ASSET__STATUS, null, msgs );
+            if( status != null )
+                msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ASSET__STATUS, null, msgs );
+            if( newStatus != null )
+                msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ASSET__STATUS, null, msgs );
             msgs = basicSetStatus( newStatus, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldStatusESet = statusESet;
             statusESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ASSET__STATUS, newStatus, newStatus, !oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET__STATUS, newStatus, newStatus,
+                        !oldStatusESet ) );
         }
     }
 
@@ -1415,8 +1441,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         else {
             boolean oldStatusESet = statusESet;
             statusESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ASSET__STATUS, null, null, oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET__STATUS, null, null,
+                        oldStatusESet ) );
         }
     }
 
@@ -1574,18 +1601,21 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
     public void setAssetContainer( AssetContainer newAssetContainer ) {
         if( newAssetContainer != assetContainer ) {
             NotificationChain msgs = null;
-            if( assetContainer != null ) msgs = ( ( InternalEObject ) assetContainer ).eInverseRemove( this,
-                    CimPackage.ASSET_CONTAINER__ASSETS, AssetContainer.class, msgs );
-            if( newAssetContainer != null ) msgs = ( ( InternalEObject ) newAssetContainer ).eInverseAdd( this,
-                    CimPackage.ASSET_CONTAINER__ASSETS, AssetContainer.class, msgs );
+            if( assetContainer != null )
+                msgs = ( ( InternalEObject ) assetContainer ).eInverseRemove( this, CimPackage.ASSET_CONTAINER__ASSETS,
+                        AssetContainer.class, msgs );
+            if( newAssetContainer != null )
+                msgs = ( ( InternalEObject ) newAssetContainer ).eInverseAdd( this, CimPackage.ASSET_CONTAINER__ASSETS,
+                        AssetContainer.class, msgs );
             msgs = basicSetAssetContainer( newAssetContainer, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldAssetContainerESet = assetContainerESet;
             assetContainerESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ASSET__ASSET_CONTAINER, newAssetContainer, newAssetContainer, !oldAssetContainerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET__ASSET_CONTAINER,
+                        newAssetContainer, newAssetContainer, !oldAssetContainerESet ) );
         }
     }
 
@@ -1627,8 +1657,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         else {
             boolean oldAssetContainerESet = assetContainerESet;
             assetContainerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ASSET__ASSET_CONTAINER, null, null, oldAssetContainerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET__ASSET_CONTAINER, null, null,
+                        oldAssetContainerESet ) );
         }
     }
 
@@ -1785,18 +1816,21 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
     public void setAssetInfo( AssetInfo newAssetInfo ) {
         if( newAssetInfo != assetInfo ) {
             NotificationChain msgs = null;
-            if( assetInfo != null ) msgs = ( ( InternalEObject ) assetInfo ).eInverseRemove( this,
-                    CimPackage.ASSET_INFO__ASSETS, AssetInfo.class, msgs );
-            if( newAssetInfo != null ) msgs = ( ( InternalEObject ) newAssetInfo ).eInverseAdd( this,
-                    CimPackage.ASSET_INFO__ASSETS, AssetInfo.class, msgs );
+            if( assetInfo != null )
+                msgs = ( ( InternalEObject ) assetInfo ).eInverseRemove( this, CimPackage.ASSET_INFO__ASSETS,
+                        AssetInfo.class, msgs );
+            if( newAssetInfo != null )
+                msgs = ( ( InternalEObject ) newAssetInfo ).eInverseAdd( this, CimPackage.ASSET_INFO__ASSETS,
+                        AssetInfo.class, msgs );
             msgs = basicSetAssetInfo( newAssetInfo, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldAssetInfoESet = assetInfoESet;
             assetInfoESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ASSET__ASSET_INFO, newAssetInfo, newAssetInfo, !oldAssetInfoESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET__ASSET_INFO, newAssetInfo,
+                        newAssetInfo, !oldAssetInfoESet ) );
         }
     }
 
@@ -1838,8 +1872,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         else {
             boolean oldAssetInfoESet = assetInfoESet;
             assetInfoESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ASSET__ASSET_INFO, null, null, oldAssetInfoESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET__ASSET_INFO, null, null,
+                        oldAssetInfoESet ) );
         }
     }
 
@@ -1927,18 +1962,21 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
     public void setLocation( Location newLocation ) {
         if( newLocation != location ) {
             NotificationChain msgs = null;
-            if( location != null ) msgs = ( ( InternalEObject ) location ).eInverseRemove( this,
-                    CimPackage.LOCATION__ASSETS, Location.class, msgs );
-            if( newLocation != null ) msgs = ( ( InternalEObject ) newLocation ).eInverseAdd( this,
-                    CimPackage.LOCATION__ASSETS, Location.class, msgs );
+            if( location != null )
+                msgs = ( ( InternalEObject ) location ).eInverseRemove( this, CimPackage.LOCATION__ASSETS,
+                        Location.class, msgs );
+            if( newLocation != null )
+                msgs = ( ( InternalEObject ) newLocation ).eInverseAdd( this, CimPackage.LOCATION__ASSETS,
+                        Location.class, msgs );
             msgs = basicSetLocation( newLocation, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldLocationESet = locationESet;
             locationESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ASSET__LOCATION, newLocation, newLocation, !oldLocationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET__LOCATION, newLocation,
+                        newLocation, !oldLocationESet ) );
         }
     }
 
@@ -1980,8 +2018,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
         else {
             boolean oldLocationESet = locationESet;
             locationESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ASSET__LOCATION, null, null, oldLocationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET__LOCATION, null, null,
+                        oldLocationESet ) );
         }
     }
 
@@ -2161,8 +2200,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getOperationTags() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.ASSET__ASSET_CONTAINER:
-            if( assetContainer != null ) msgs = ( ( InternalEObject ) assetContainer ).eInverseRemove( this,
-                    CimPackage.ASSET_CONTAINER__ASSETS, AssetContainer.class, msgs );
+            if( assetContainer != null )
+                msgs = ( ( InternalEObject ) assetContainer ).eInverseRemove( this, CimPackage.ASSET_CONTAINER__ASSETS,
+                        AssetContainer.class, msgs );
             return basicSetAssetContainer( ( AssetContainer ) otherEnd, msgs );
         case CimPackage.ASSET__MEASUREMENTS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getMeasurements() ).basicAdd( otherEnd,
@@ -2174,8 +2214,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getOrganisationRoles() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.ASSET__LOCATION:
-            if( location != null ) msgs = ( ( InternalEObject ) location ).eInverseRemove( this,
-                    CimPackage.LOCATION__ASSETS, Location.class, msgs );
+            if( location != null )
+                msgs = ( ( InternalEObject ) location ).eInverseRemove( this, CimPackage.LOCATION__ASSETS,
+                        Location.class, msgs );
             return basicSetLocation( ( Location ) otherEnd, msgs );
         case CimPackage.ASSET__OWNERSHIPS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getOwnerships() ).basicAdd( otherEnd,
@@ -2184,8 +2225,9 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getReplacementWorkTasks() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.ASSET__ASSET_INFO:
-            if( assetInfo != null ) msgs = ( ( InternalEObject ) assetInfo ).eInverseRemove( this,
-                    CimPackage.ASSET_INFO__ASSETS, AssetInfo.class, msgs );
+            if( assetInfo != null )
+                msgs = ( ( InternalEObject ) assetInfo ).eInverseRemove( this, CimPackage.ASSET_INFO__ASSETS,
+                        AssetInfo.class, msgs );
             return basicSetAssetInfo( ( AssetInfo ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -2568,7 +2610,7 @@ public class AssetImpl extends IdentifiedObjectImpl implements Asset {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (critical: " );
         if( criticalESet )
             result.append( critical );

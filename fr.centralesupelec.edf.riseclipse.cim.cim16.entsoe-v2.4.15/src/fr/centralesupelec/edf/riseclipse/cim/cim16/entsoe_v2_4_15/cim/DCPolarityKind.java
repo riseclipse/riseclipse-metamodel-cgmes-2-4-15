@@ -117,7 +117,11 @@ public enum DCPolarityKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final DCPolarityKind[] VALUES_ARRAY = new DCPolarityKind[] { POSITIVE, MIDDLE, NEGATIVE, };
+    private static final DCPolarityKind[] VALUES_ARRAY = new DCPolarityKind[] {
+            POSITIVE,
+            MIDDLE,
+            NEGATIVE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>DC Polarity Kind</b></em>' enumerators.

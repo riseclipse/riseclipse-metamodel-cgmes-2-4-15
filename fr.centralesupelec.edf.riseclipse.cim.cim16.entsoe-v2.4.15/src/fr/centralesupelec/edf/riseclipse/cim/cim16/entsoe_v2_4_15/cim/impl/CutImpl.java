@@ -227,18 +227,21 @@ public class CutImpl extends SwitchImpl implements Cut {
     public void setACLineSegment( ACLineSegment newACLineSegment ) {
         if( newACLineSegment != acLineSegment ) {
             NotificationChain msgs = null;
-            if( acLineSegment != null ) msgs = ( ( InternalEObject ) acLineSegment ).eInverseRemove( this,
-                    CimPackage.AC_LINE_SEGMENT__CUT, ACLineSegment.class, msgs );
-            if( newACLineSegment != null ) msgs = ( ( InternalEObject ) newACLineSegment ).eInverseAdd( this,
-                    CimPackage.AC_LINE_SEGMENT__CUT, ACLineSegment.class, msgs );
+            if( acLineSegment != null )
+                msgs = ( ( InternalEObject ) acLineSegment ).eInverseRemove( this, CimPackage.AC_LINE_SEGMENT__CUT,
+                        ACLineSegment.class, msgs );
+            if( newACLineSegment != null )
+                msgs = ( ( InternalEObject ) newACLineSegment ).eInverseAdd( this, CimPackage.AC_LINE_SEGMENT__CUT,
+                        ACLineSegment.class, msgs );
             msgs = basicSetACLineSegment( newACLineSegment, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldACLineSegmentESet = acLineSegmentESet;
             acLineSegmentESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CUT__AC_LINE_SEGMENT, newACLineSegment, newACLineSegment, !oldACLineSegmentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUT__AC_LINE_SEGMENT,
+                        newACLineSegment, newACLineSegment, !oldACLineSegmentESet ) );
         }
     }
 
@@ -280,8 +283,9 @@ public class CutImpl extends SwitchImpl implements Cut {
         else {
             boolean oldACLineSegmentESet = acLineSegmentESet;
             acLineSegmentESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CUT__AC_LINE_SEGMENT, null, null, oldACLineSegmentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUT__AC_LINE_SEGMENT, null, null,
+                        oldACLineSegmentESet ) );
         }
     }
 
@@ -306,8 +310,9 @@ public class CutImpl extends SwitchImpl implements Cut {
             InternalEObject oldCutAction = ( InternalEObject ) cutAction;
             cutAction = ( CutAction ) eResolveProxy( oldCutAction );
             if( cutAction != oldCutAction ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.CUT__CUT_ACTION, oldCutAction, cutAction ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.CUT__CUT_ACTION,
+                            oldCutAction, cutAction ) );
             }
         }
         return cutAction;
@@ -352,18 +357,21 @@ public class CutImpl extends SwitchImpl implements Cut {
     public void setCutAction( CutAction newCutAction ) {
         if( newCutAction != cutAction ) {
             NotificationChain msgs = null;
-            if( cutAction != null ) msgs = ( ( InternalEObject ) cutAction ).eInverseRemove( this,
-                    CimPackage.CUT_ACTION__CUT, CutAction.class, msgs );
-            if( newCutAction != null ) msgs = ( ( InternalEObject ) newCutAction ).eInverseAdd( this,
-                    CimPackage.CUT_ACTION__CUT, CutAction.class, msgs );
+            if( cutAction != null )
+                msgs = ( ( InternalEObject ) cutAction ).eInverseRemove( this, CimPackage.CUT_ACTION__CUT,
+                        CutAction.class, msgs );
+            if( newCutAction != null )
+                msgs = ( ( InternalEObject ) newCutAction ).eInverseAdd( this, CimPackage.CUT_ACTION__CUT,
+                        CutAction.class, msgs );
             msgs = basicSetCutAction( newCutAction, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCutActionESet = cutActionESet;
             cutActionESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CUT__CUT_ACTION, newCutAction, newCutAction, !oldCutActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUT__CUT_ACTION, newCutAction,
+                        newCutAction, !oldCutActionESet ) );
         }
     }
 
@@ -405,8 +413,9 @@ public class CutImpl extends SwitchImpl implements Cut {
         else {
             boolean oldCutActionESet = cutActionESet;
             cutActionESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CUT__CUT_ACTION, null, null, oldCutActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUT__CUT_ACTION, null, null,
+                        oldCutActionESet ) );
         }
     }
 
@@ -429,12 +438,14 @@ public class CutImpl extends SwitchImpl implements Cut {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CUT__AC_LINE_SEGMENT:
-            if( acLineSegment != null ) msgs = ( ( InternalEObject ) acLineSegment ).eInverseRemove( this,
-                    CimPackage.AC_LINE_SEGMENT__CUT, ACLineSegment.class, msgs );
+            if( acLineSegment != null )
+                msgs = ( ( InternalEObject ) acLineSegment ).eInverseRemove( this, CimPackage.AC_LINE_SEGMENT__CUT,
+                        ACLineSegment.class, msgs );
             return basicSetACLineSegment( ( ACLineSegment ) otherEnd, msgs );
         case CimPackage.CUT__CUT_ACTION:
-            if( cutAction != null ) msgs = ( ( InternalEObject ) cutAction ).eInverseRemove( this,
-                    CimPackage.CUT_ACTION__CUT, CutAction.class, msgs );
+            if( cutAction != null )
+                msgs = ( ( InternalEObject ) cutAction ).eInverseRemove( this, CimPackage.CUT_ACTION__CUT,
+                        CutAction.class, msgs );
             return basicSetCutAction( ( CutAction ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -544,7 +555,7 @@ public class CutImpl extends SwitchImpl implements Cut {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (lengthFromTerminal1: " );
         if( lengthFromTerminal1ESet )
             result.append( lengthFromTerminal1 );

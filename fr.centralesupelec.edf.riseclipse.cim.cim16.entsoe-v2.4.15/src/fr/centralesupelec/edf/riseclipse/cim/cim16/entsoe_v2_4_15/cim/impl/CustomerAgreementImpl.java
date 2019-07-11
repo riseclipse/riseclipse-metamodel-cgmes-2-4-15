@@ -278,8 +278,9 @@ public class CustomerAgreementImpl extends AgreementImpl implements CustomerAgre
         loadMgmt = newLoadMgmt;
         boolean oldLoadMgmtESet = loadMgmtESet;
         loadMgmtESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CUSTOMER_AGREEMENT__LOAD_MGMT, oldLoadMgmt, loadMgmt, !oldLoadMgmtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER_AGREEMENT__LOAD_MGMT,
+                    oldLoadMgmt, loadMgmt, !oldLoadMgmtESet ) );
     }
 
     /**
@@ -293,8 +294,9 @@ public class CustomerAgreementImpl extends AgreementImpl implements CustomerAgre
         boolean oldLoadMgmtESet = loadMgmtESet;
         loadMgmt = LOAD_MGMT_EDEFAULT;
         loadMgmtESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CUSTOMER_AGREEMENT__LOAD_MGMT, oldLoadMgmt, LOAD_MGMT_EDEFAULT, oldLoadMgmtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUSTOMER_AGREEMENT__LOAD_MGMT,
+                    oldLoadMgmt, LOAD_MGMT_EDEFAULT, oldLoadMgmtESet ) );
     }
 
     /**
@@ -348,10 +350,12 @@ public class CustomerAgreementImpl extends AgreementImpl implements CustomerAgre
     public void setServiceSupplier( ServiceSupplier newServiceSupplier ) {
         if( newServiceSupplier != serviceSupplier ) {
             NotificationChain msgs = null;
-            if( serviceSupplier != null ) msgs = ( ( InternalEObject ) serviceSupplier ).eInverseRemove( this,
-                    CimPackage.SERVICE_SUPPLIER__CUSTOMER_AGREEMENTS, ServiceSupplier.class, msgs );
-            if( newServiceSupplier != null ) msgs = ( ( InternalEObject ) newServiceSupplier ).eInverseAdd( this,
-                    CimPackage.SERVICE_SUPPLIER__CUSTOMER_AGREEMENTS, ServiceSupplier.class, msgs );
+            if( serviceSupplier != null )
+                msgs = ( ( InternalEObject ) serviceSupplier ).eInverseRemove( this,
+                        CimPackage.SERVICE_SUPPLIER__CUSTOMER_AGREEMENTS, ServiceSupplier.class, msgs );
+            if( newServiceSupplier != null )
+                msgs = ( ( InternalEObject ) newServiceSupplier ).eInverseAdd( this,
+                        CimPackage.SERVICE_SUPPLIER__CUSTOMER_AGREEMENTS, ServiceSupplier.class, msgs );
             msgs = basicSetServiceSupplier( newServiceSupplier, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -402,8 +406,9 @@ public class CustomerAgreementImpl extends AgreementImpl implements CustomerAgre
         else {
             boolean oldServiceSupplierESet = serviceSupplierESet;
             serviceSupplierESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CUSTOMER_AGREEMENT__SERVICE_SUPPLIER, null, null, oldServiceSupplierESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CUSTOMER_AGREEMENT__SERVICE_SUPPLIER, null, null, oldServiceSupplierESet ) );
         }
     }
 
@@ -561,18 +566,21 @@ public class CustomerAgreementImpl extends AgreementImpl implements CustomerAgre
     public void setCustomer( Customer newCustomer ) {
         if( newCustomer != customer ) {
             NotificationChain msgs = null;
-            if( customer != null ) msgs = ( ( InternalEObject ) customer ).eInverseRemove( this,
-                    CimPackage.CUSTOMER__CUSTOMER_AGREEMENTS, Customer.class, msgs );
-            if( newCustomer != null ) msgs = ( ( InternalEObject ) newCustomer ).eInverseAdd( this,
-                    CimPackage.CUSTOMER__CUSTOMER_AGREEMENTS, Customer.class, msgs );
+            if( customer != null )
+                msgs = ( ( InternalEObject ) customer ).eInverseRemove( this, CimPackage.CUSTOMER__CUSTOMER_AGREEMENTS,
+                        Customer.class, msgs );
+            if( newCustomer != null )
+                msgs = ( ( InternalEObject ) newCustomer ).eInverseAdd( this, CimPackage.CUSTOMER__CUSTOMER_AGREEMENTS,
+                        Customer.class, msgs );
             msgs = basicSetCustomer( newCustomer, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCustomerESet = customerESet;
             customerESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CUSTOMER_AGREEMENT__CUSTOMER, newCustomer, newCustomer, !oldCustomerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CUSTOMER_AGREEMENT__CUSTOMER,
+                        newCustomer, newCustomer, !oldCustomerESet ) );
         }
     }
 
@@ -614,8 +622,9 @@ public class CustomerAgreementImpl extends AgreementImpl implements CustomerAgre
         else {
             boolean oldCustomerESet = customerESet;
             customerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CUSTOMER_AGREEMENT__CUSTOMER, null, null, oldCustomerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CUSTOMER_AGREEMENT__CUSTOMER, null,
+                        null, oldCustomerESet ) );
         }
     }
 
@@ -739,10 +748,12 @@ public class CustomerAgreementImpl extends AgreementImpl implements CustomerAgre
     public void setCustomerAccount( CustomerAccount newCustomerAccount ) {
         if( newCustomerAccount != customerAccount ) {
             NotificationChain msgs = null;
-            if( customerAccount != null ) msgs = ( ( InternalEObject ) customerAccount ).eInverseRemove( this,
-                    CimPackage.CUSTOMER_ACCOUNT__CUSTOMER_AGREEMENTS, CustomerAccount.class, msgs );
-            if( newCustomerAccount != null ) msgs = ( ( InternalEObject ) newCustomerAccount ).eInverseAdd( this,
-                    CimPackage.CUSTOMER_ACCOUNT__CUSTOMER_AGREEMENTS, CustomerAccount.class, msgs );
+            if( customerAccount != null )
+                msgs = ( ( InternalEObject ) customerAccount ).eInverseRemove( this,
+                        CimPackage.CUSTOMER_ACCOUNT__CUSTOMER_AGREEMENTS, CustomerAccount.class, msgs );
+            if( newCustomerAccount != null )
+                msgs = ( ( InternalEObject ) newCustomerAccount ).eInverseAdd( this,
+                        CimPackage.CUSTOMER_ACCOUNT__CUSTOMER_AGREEMENTS, CustomerAccount.class, msgs );
             msgs = basicSetCustomerAccount( newCustomerAccount, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -793,8 +804,9 @@ public class CustomerAgreementImpl extends AgreementImpl implements CustomerAgre
         else {
             boolean oldCustomerAccountESet = customerAccountESet;
             customerAccountESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CUSTOMER_AGREEMENT__CUSTOMER_ACCOUNT, null, null, oldCustomerAccountESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CUSTOMER_AGREEMENT__CUSTOMER_ACCOUNT, null, null, oldCustomerAccountESet ) );
         }
     }
 
@@ -884,10 +896,12 @@ public class CustomerAgreementImpl extends AgreementImpl implements CustomerAgre
     public void setServiceCategory( ServiceCategory newServiceCategory ) {
         if( newServiceCategory != serviceCategory ) {
             NotificationChain msgs = null;
-            if( serviceCategory != null ) msgs = ( ( InternalEObject ) serviceCategory ).eInverseRemove( this,
-                    CimPackage.SERVICE_CATEGORY__CUSTOMER_AGREEMENTS, ServiceCategory.class, msgs );
-            if( newServiceCategory != null ) msgs = ( ( InternalEObject ) newServiceCategory ).eInverseAdd( this,
-                    CimPackage.SERVICE_CATEGORY__CUSTOMER_AGREEMENTS, ServiceCategory.class, msgs );
+            if( serviceCategory != null )
+                msgs = ( ( InternalEObject ) serviceCategory ).eInverseRemove( this,
+                        CimPackage.SERVICE_CATEGORY__CUSTOMER_AGREEMENTS, ServiceCategory.class, msgs );
+            if( newServiceCategory != null )
+                msgs = ( ( InternalEObject ) newServiceCategory ).eInverseAdd( this,
+                        CimPackage.SERVICE_CATEGORY__CUSTOMER_AGREEMENTS, ServiceCategory.class, msgs );
             msgs = basicSetServiceCategory( newServiceCategory, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -938,8 +952,9 @@ public class CustomerAgreementImpl extends AgreementImpl implements CustomerAgre
         else {
             boolean oldServiceCategoryESet = serviceCategoryESet;
             serviceCategoryESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CUSTOMER_AGREEMENT__SERVICE_CATEGORY, null, null, oldServiceCategoryESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CUSTOMER_AGREEMENT__SERVICE_CATEGORY, null, null, oldServiceCategoryESet ) );
         }
     }
 
@@ -972,26 +987,30 @@ public class CustomerAgreementImpl extends AgreementImpl implements CustomerAgre
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getAuxiliaryAgreements() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.CUSTOMER_AGREEMENT__SERVICE_SUPPLIER:
-            if( serviceSupplier != null ) msgs = ( ( InternalEObject ) serviceSupplier ).eInverseRemove( this,
-                    CimPackage.SERVICE_SUPPLIER__CUSTOMER_AGREEMENTS, ServiceSupplier.class, msgs );
+            if( serviceSupplier != null )
+                msgs = ( ( InternalEObject ) serviceSupplier ).eInverseRemove( this,
+                        CimPackage.SERVICE_SUPPLIER__CUSTOMER_AGREEMENTS, ServiceSupplier.class, msgs );
             return basicSetServiceSupplier( ( ServiceSupplier ) otherEnd, msgs );
         case CimPackage.CUSTOMER_AGREEMENT__CUSTOMER:
-            if( customer != null ) msgs = ( ( InternalEObject ) customer ).eInverseRemove( this,
-                    CimPackage.CUSTOMER__CUSTOMER_AGREEMENTS, Customer.class, msgs );
+            if( customer != null )
+                msgs = ( ( InternalEObject ) customer ).eInverseRemove( this, CimPackage.CUSTOMER__CUSTOMER_AGREEMENTS,
+                        Customer.class, msgs );
             return basicSetCustomer( ( Customer ) otherEnd, msgs );
         case CimPackage.CUSTOMER_AGREEMENT__METER_READINGS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getMeterReadings() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.CUSTOMER_AGREEMENT__SERVICE_CATEGORY:
-            if( serviceCategory != null ) msgs = ( ( InternalEObject ) serviceCategory ).eInverseRemove( this,
-                    CimPackage.SERVICE_CATEGORY__CUSTOMER_AGREEMENTS, ServiceCategory.class, msgs );
+            if( serviceCategory != null )
+                msgs = ( ( InternalEObject ) serviceCategory ).eInverseRemove( this,
+                        CimPackage.SERVICE_CATEGORY__CUSTOMER_AGREEMENTS, ServiceCategory.class, msgs );
             return basicSetServiceCategory( ( ServiceCategory ) otherEnd, msgs );
         case CimPackage.CUSTOMER_AGREEMENT__USAGE_POINTS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getUsagePoints() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.CUSTOMER_AGREEMENT__CUSTOMER_ACCOUNT:
-            if( customerAccount != null ) msgs = ( ( InternalEObject ) customerAccount ).eInverseRemove( this,
-                    CimPackage.CUSTOMER_ACCOUNT__CUSTOMER_AGREEMENTS, CustomerAccount.class, msgs );
+            if( customerAccount != null )
+                msgs = ( ( InternalEObject ) customerAccount ).eInverseRemove( this,
+                        CimPackage.CUSTOMER_ACCOUNT__CUSTOMER_AGREEMENTS, CustomerAccount.class, msgs );
             return basicSetCustomerAccount( ( CustomerAccount ) otherEnd, msgs );
         case CimPackage.CUSTOMER_AGREEMENT__DEMAND_RESPONSE_PROGRAMS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getDemandResponsePrograms() )
@@ -1206,7 +1225,7 @@ public class CustomerAgreementImpl extends AgreementImpl implements CustomerAgre
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (loadMgmt: " );
         if( loadMgmtESet )
             result.append( loadMgmt );

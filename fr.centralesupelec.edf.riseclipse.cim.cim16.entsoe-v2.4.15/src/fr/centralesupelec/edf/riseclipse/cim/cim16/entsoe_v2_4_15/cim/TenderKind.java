@@ -167,7 +167,13 @@ public enum TenderKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final TenderKind[] VALUES_ARRAY = new TenderKind[] { CHEQUE, CARD, CASH, UNSPECIFIED, OTHER, };
+    private static final TenderKind[] VALUES_ARRAY = new TenderKind[] {
+            CHEQUE,
+            CARD,
+            CASH,
+            UNSPECIFIED,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Tender Kind</b></em>' enumerators.

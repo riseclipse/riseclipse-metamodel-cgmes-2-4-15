@@ -459,9 +459,10 @@ public class ShortCircuitTestImpl extends TransformerTestImpl implements ShortCi
         leakageImpedanceZero = newLeakageImpedanceZero;
         boolean oldLeakageImpedanceZeroESet = leakageImpedanceZeroESet;
         leakageImpedanceZeroESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.SHORT_CIRCUIT_TEST__LEAKAGE_IMPEDANCE_ZERO,
-                        oldLeakageImpedanceZero, leakageImpedanceZero, !oldLeakageImpedanceZeroESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SHORT_CIRCUIT_TEST__LEAKAGE_IMPEDANCE_ZERO, oldLeakageImpedanceZero,
+                    leakageImpedanceZero, !oldLeakageImpedanceZeroESet ) );
     }
 
     /**
@@ -475,9 +476,10 @@ public class ShortCircuitTestImpl extends TransformerTestImpl implements ShortCi
         boolean oldLeakageImpedanceZeroESet = leakageImpedanceZeroESet;
         leakageImpedanceZero = LEAKAGE_IMPEDANCE_ZERO_EDEFAULT;
         leakageImpedanceZeroESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.SHORT_CIRCUIT_TEST__LEAKAGE_IMPEDANCE_ZERO,
-                        oldLeakageImpedanceZero, LEAKAGE_IMPEDANCE_ZERO_EDEFAULT, oldLeakageImpedanceZeroESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SHORT_CIRCUIT_TEST__LEAKAGE_IMPEDANCE_ZERO, oldLeakageImpedanceZero,
+                    LEAKAGE_IMPEDANCE_ZERO_EDEFAULT, oldLeakageImpedanceZeroESet ) );
     }
 
     /**
@@ -511,8 +513,9 @@ public class ShortCircuitTestImpl extends TransformerTestImpl implements ShortCi
         loss = newLoss;
         boolean oldLossESet = lossESet;
         lossESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SHORT_CIRCUIT_TEST__LOSS, oldLoss, loss, !oldLossESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SHORT_CIRCUIT_TEST__LOSS, oldLoss, loss,
+                    !oldLossESet ) );
     }
 
     /**
@@ -526,8 +529,9 @@ public class ShortCircuitTestImpl extends TransformerTestImpl implements ShortCi
         boolean oldLossESet = lossESet;
         loss = LOSS_EDEFAULT;
         lossESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SHORT_CIRCUIT_TEST__LOSS, oldLoss, LOSS_EDEFAULT, oldLossESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SHORT_CIRCUIT_TEST__LOSS, oldLoss,
+                    LOSS_EDEFAULT, oldLossESet ) );
     }
 
     /**
@@ -561,8 +565,9 @@ public class ShortCircuitTestImpl extends TransformerTestImpl implements ShortCi
         lossZero = newLossZero;
         boolean oldLossZeroESet = lossZeroESet;
         lossZeroESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SHORT_CIRCUIT_TEST__LOSS_ZERO, oldLossZero, lossZero, !oldLossZeroESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SHORT_CIRCUIT_TEST__LOSS_ZERO,
+                    oldLossZero, lossZero, !oldLossZeroESet ) );
     }
 
     /**
@@ -576,8 +581,9 @@ public class ShortCircuitTestImpl extends TransformerTestImpl implements ShortCi
         boolean oldLossZeroESet = lossZeroESet;
         lossZero = LOSS_ZERO_EDEFAULT;
         lossZeroESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SHORT_CIRCUIT_TEST__LOSS_ZERO, oldLossZero, LOSS_ZERO_EDEFAULT, oldLossZeroESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SHORT_CIRCUIT_TEST__LOSS_ZERO,
+                    oldLossZero, LOSS_ZERO_EDEFAULT, oldLossZeroESet ) );
     }
 
     /**
@@ -666,12 +672,14 @@ public class ShortCircuitTestImpl extends TransformerTestImpl implements ShortCi
     public void setEnergisedEnd( TransformerEndInfo newEnergisedEnd ) {
         if( newEnergisedEnd != energisedEnd ) {
             NotificationChain msgs = null;
-            if( energisedEnd != null ) msgs = ( ( InternalEObject ) energisedEnd ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_SHORT_CIRCUIT_TESTS, TransformerEndInfo.class,
-                    msgs );
-            if( newEnergisedEnd != null ) msgs = ( ( InternalEObject ) newEnergisedEnd ).eInverseAdd( this,
-                    CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_SHORT_CIRCUIT_TESTS, TransformerEndInfo.class,
-                    msgs );
+            if( energisedEnd != null )
+                msgs = ( ( InternalEObject ) energisedEnd ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_SHORT_CIRCUIT_TESTS, TransformerEndInfo.class,
+                        msgs );
+            if( newEnergisedEnd != null )
+                msgs = ( ( InternalEObject ) newEnergisedEnd ).eInverseAdd( this,
+                        CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_SHORT_CIRCUIT_TESTS, TransformerEndInfo.class,
+                        msgs );
             msgs = basicSetEnergisedEnd( newEnergisedEnd, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -723,8 +731,9 @@ public class ShortCircuitTestImpl extends TransformerTestImpl implements ShortCi
         else {
             boolean oldEnergisedEndESet = energisedEndESet;
             energisedEndESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SHORT_CIRCUIT_TEST__ENERGISED_END, null, null, oldEnergisedEndESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SHORT_CIRCUIT_TEST__ENERGISED_END,
+                        null, null, oldEnergisedEndESet ) );
         }
     }
 
@@ -751,9 +760,10 @@ public class ShortCircuitTestImpl extends TransformerTestImpl implements ShortCi
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getGroundedEnds() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.SHORT_CIRCUIT_TEST__ENERGISED_END:
-            if( energisedEnd != null ) msgs = ( ( InternalEObject ) energisedEnd ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_SHORT_CIRCUIT_TESTS, TransformerEndInfo.class,
-                    msgs );
+            if( energisedEnd != null )
+                msgs = ( ( InternalEObject ) energisedEnd ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_END_INFO__ENERGISED_END_SHORT_CIRCUIT_TESTS, TransformerEndInfo.class,
+                        msgs );
             return basicSetEnergisedEnd( ( TransformerEndInfo ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -914,7 +924,7 @@ public class ShortCircuitTestImpl extends TransformerTestImpl implements ShortCi
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (energisedEndStep: " );
         if( energisedEndStepESet )
             result.append( energisedEndStep );

@@ -167,8 +167,13 @@ public enum SynchronousMachineModelKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final SynchronousMachineModelKind[] VALUES_ARRAY = new SynchronousMachineModelKind[] { SUBTRANSIENT,
-            SUBTRANSIENT_TYPE_F, SUBTRANSIENT_TYPE_J, SUBTRANSIENT_SIMPLIFIED, SUBTRANSIENT_SIMPLIFIED_DIRECT_AXIS, };
+    private static final SynchronousMachineModelKind[] VALUES_ARRAY = new SynchronousMachineModelKind[] {
+            SUBTRANSIENT,
+            SUBTRANSIENT_TYPE_F,
+            SUBTRANSIENT_TYPE_J,
+            SUBTRANSIENT_SIMPLIFIED,
+            SUBTRANSIENT_SIMPLIFIED_DIRECT_AXIS,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Synchronous Machine Model Kind</b></em>' enumerators.

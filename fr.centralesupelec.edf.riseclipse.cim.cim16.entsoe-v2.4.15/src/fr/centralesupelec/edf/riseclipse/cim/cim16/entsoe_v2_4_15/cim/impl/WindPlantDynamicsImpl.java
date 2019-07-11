@@ -152,9 +152,10 @@ public class WindPlantDynamicsImpl extends DynamicsFunctionBlockImpl implements 
             InternalEObject oldRemoteInputSignal = ( InternalEObject ) remoteInputSignal;
             remoteInputSignal = ( RemoteInputSignal ) eResolveProxy( oldRemoteInputSignal );
             if( remoteInputSignal != oldRemoteInputSignal ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.WIND_PLANT_DYNAMICS__REMOTE_INPUT_SIGNAL, oldRemoteInputSignal,
-                        remoteInputSignal ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.WIND_PLANT_DYNAMICS__REMOTE_INPUT_SIGNAL, oldRemoteInputSignal,
+                            remoteInputSignal ) );
             }
         }
         return remoteInputSignal;
@@ -201,19 +202,22 @@ public class WindPlantDynamicsImpl extends DynamicsFunctionBlockImpl implements 
     public void setRemoteInputSignal( RemoteInputSignal newRemoteInputSignal ) {
         if( newRemoteInputSignal != remoteInputSignal ) {
             NotificationChain msgs = null;
-            if( remoteInputSignal != null ) msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__WIND_PLANT_DYNAMICS, RemoteInputSignal.class, msgs );
-            if( newRemoteInputSignal != null ) msgs = ( ( InternalEObject ) newRemoteInputSignal ).eInverseAdd( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__WIND_PLANT_DYNAMICS, RemoteInputSignal.class, msgs );
+            if( remoteInputSignal != null )
+                msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__WIND_PLANT_DYNAMICS, RemoteInputSignal.class, msgs );
+            if( newRemoteInputSignal != null )
+                msgs = ( ( InternalEObject ) newRemoteInputSignal ).eInverseAdd( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__WIND_PLANT_DYNAMICS, RemoteInputSignal.class, msgs );
             msgs = basicSetRemoteInputSignal( newRemoteInputSignal, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldRemoteInputSignalESet = remoteInputSignalESet;
             remoteInputSignalESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PLANT_DYNAMICS__REMOTE_INPUT_SIGNAL,
-                            newRemoteInputSignal, newRemoteInputSignal, !oldRemoteInputSignalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_PLANT_DYNAMICS__REMOTE_INPUT_SIGNAL, newRemoteInputSignal, newRemoteInputSignal,
+                        !oldRemoteInputSignalESet ) );
         }
     }
 
@@ -256,8 +260,9 @@ public class WindPlantDynamicsImpl extends DynamicsFunctionBlockImpl implements 
         else {
             boolean oldRemoteInputSignalESet = remoteInputSignalESet;
             remoteInputSignalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_PLANT_DYNAMICS__REMOTE_INPUT_SIGNAL, null, null, oldRemoteInputSignalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_PLANT_DYNAMICS__REMOTE_INPUT_SIGNAL, null, null, oldRemoteInputSignalESet ) );
         }
     }
 
@@ -284,8 +289,9 @@ public class WindPlantDynamicsImpl extends DynamicsFunctionBlockImpl implements 
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getWindTurbineType3or4Dynamics() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.WIND_PLANT_DYNAMICS__REMOTE_INPUT_SIGNAL:
-            if( remoteInputSignal != null ) msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
-                    CimPackage.REMOTE_INPUT_SIGNAL__WIND_PLANT_DYNAMICS, RemoteInputSignal.class, msgs );
+            if( remoteInputSignal != null )
+                msgs = ( ( InternalEObject ) remoteInputSignal ).eInverseRemove( this,
+                        CimPackage.REMOTE_INPUT_SIGNAL__WIND_PLANT_DYNAMICS, RemoteInputSignal.class, msgs );
             return basicSetRemoteInputSignal( ( RemoteInputSignal ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

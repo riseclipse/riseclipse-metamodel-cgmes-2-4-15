@@ -217,8 +217,9 @@ public class ServiceLocationImpl extends WorkLocationImpl implements ServiceLoca
         accessMethod = newAccessMethod;
         boolean oldAccessMethodESet = accessMethodESet;
         accessMethodESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SERVICE_LOCATION__ACCESS_METHOD, oldAccessMethod, accessMethod, !oldAccessMethodESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SERVICE_LOCATION__ACCESS_METHOD,
+                    oldAccessMethod, accessMethod, !oldAccessMethodESet ) );
     }
 
     /**
@@ -615,7 +616,7 @@ public class ServiceLocationImpl extends WorkLocationImpl implements ServiceLoca
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (accessMethod: " );
         if( accessMethodESet )
             result.append( accessMethod );

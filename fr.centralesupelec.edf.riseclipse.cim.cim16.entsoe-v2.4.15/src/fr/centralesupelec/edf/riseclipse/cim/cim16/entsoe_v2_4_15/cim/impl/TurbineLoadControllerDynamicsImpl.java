@@ -96,9 +96,10 @@ public class TurbineLoadControllerDynamicsImpl extends DynamicsFunctionBlockImpl
             InternalEObject oldTurbineGovernorDynamics = ( InternalEObject ) turbineGovernorDynamics;
             turbineGovernorDynamics = ( TurbineGovernorDynamics ) eResolveProxy( oldTurbineGovernorDynamics );
             if( turbineGovernorDynamics != oldTurbineGovernorDynamics ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.TURBINE_LOAD_CONTROLLER_DYNAMICS__TURBINE_GOVERNOR_DYNAMICS,
-                        oldTurbineGovernorDynamics, turbineGovernorDynamics ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.TURBINE_LOAD_CONTROLLER_DYNAMICS__TURBINE_GOVERNOR_DYNAMICS,
+                            oldTurbineGovernorDynamics, turbineGovernorDynamics ) );
             }
         }
         return turbineGovernorDynamics;
@@ -159,9 +160,10 @@ public class TurbineLoadControllerDynamicsImpl extends DynamicsFunctionBlockImpl
         else {
             boolean oldTurbineGovernorDynamicsESet = turbineGovernorDynamicsESet;
             turbineGovernorDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TURBINE_LOAD_CONTROLLER_DYNAMICS__TURBINE_GOVERNOR_DYNAMICS, newTurbineGovernorDynamics,
-                    newTurbineGovernorDynamics, !oldTurbineGovernorDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.TURBINE_LOAD_CONTROLLER_DYNAMICS__TURBINE_GOVERNOR_DYNAMICS,
+                        newTurbineGovernorDynamics, newTurbineGovernorDynamics, !oldTurbineGovernorDynamicsESet ) );
         }
     }
 
@@ -205,9 +207,10 @@ public class TurbineLoadControllerDynamicsImpl extends DynamicsFunctionBlockImpl
         else {
             boolean oldTurbineGovernorDynamicsESet = turbineGovernorDynamicsESet;
             turbineGovernorDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TURBINE_LOAD_CONTROLLER_DYNAMICS__TURBINE_GOVERNOR_DYNAMICS, null, null,
-                    oldTurbineGovernorDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.TURBINE_LOAD_CONTROLLER_DYNAMICS__TURBINE_GOVERNOR_DYNAMICS, null, null,
+                        oldTurbineGovernorDynamicsESet ) );
         }
     }
 

@@ -191,9 +191,10 @@ public class TopologicalIslandImpl extends IdentifiedObjectImpl implements Topol
         else {
             boolean oldAngleRefTopologicalNodeESet = angleRefTopologicalNodeESet;
             angleRefTopologicalNodeESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TOPOLOGICAL_ISLAND__ANGLE_REF_TOPOLOGICAL_NODE, newAngleRefTopologicalNode,
-                    newAngleRefTopologicalNode, !oldAngleRefTopologicalNodeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.TOPOLOGICAL_ISLAND__ANGLE_REF_TOPOLOGICAL_NODE, newAngleRefTopologicalNode,
+                        newAngleRefTopologicalNode, !oldAngleRefTopologicalNodeESet ) );
         }
     }
 
@@ -236,9 +237,10 @@ public class TopologicalIslandImpl extends IdentifiedObjectImpl implements Topol
         else {
             boolean oldAngleRefTopologicalNodeESet = angleRefTopologicalNodeESet;
             angleRefTopologicalNodeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TOPOLOGICAL_ISLAND__ANGLE_REF_TOPOLOGICAL_NODE, null, null,
-                    oldAngleRefTopologicalNodeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.TOPOLOGICAL_ISLAND__ANGLE_REF_TOPOLOGICAL_NODE, null, null,
+                        oldAngleRefTopologicalNodeESet ) );
         }
     }
 

@@ -339,9 +339,10 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
         boolean oldEffectiveDateTimeESet = effectiveDateTimeESet;
         effectiveDateTime = EFFECTIVE_DATE_TIME_EDEFAULT;
         effectiveDateTimeESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.CONFIGURATION_EVENT__EFFECTIVE_DATE_TIME,
-                        oldEffectiveDateTime, EFFECTIVE_DATE_TIME_EDEFAULT, oldEffectiveDateTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONFIGURATION_EVENT__EFFECTIVE_DATE_TIME, oldEffectiveDateTime,
+                    EFFECTIVE_DATE_TIME_EDEFAULT, oldEffectiveDateTimeESet ) );
     }
 
     /**
@@ -375,8 +376,9 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
         modifiedBy = newModifiedBy;
         boolean oldModifiedByESet = modifiedByESet;
         modifiedByESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONFIGURATION_EVENT__MODIFIED_BY, oldModifiedBy, modifiedBy, !oldModifiedByESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONFIGURATION_EVENT__MODIFIED_BY,
+                    oldModifiedBy, modifiedBy, !oldModifiedByESet ) );
     }
 
     /**
@@ -390,8 +392,9 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
         boolean oldModifiedByESet = modifiedByESet;
         modifiedBy = MODIFIED_BY_EDEFAULT;
         modifiedByESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONFIGURATION_EVENT__MODIFIED_BY, oldModifiedBy, MODIFIED_BY_EDEFAULT, oldModifiedByESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CONFIGURATION_EVENT__MODIFIED_BY,
+                    oldModifiedBy, MODIFIED_BY_EDEFAULT, oldModifiedByESet ) );
     }
 
     /**
@@ -425,8 +428,9 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
         remark = newRemark;
         boolean oldRemarkESet = remarkESet;
         remarkESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONFIGURATION_EVENT__REMARK, oldRemark, remark, !oldRemarkESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CONFIGURATION_EVENT__REMARK, oldRemark,
+                    remark, !oldRemarkESet ) );
     }
 
     /**
@@ -440,8 +444,9 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
         boolean oldRemarkESet = remarkESet;
         remark = REMARK_EDEFAULT;
         remarkESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONFIGURATION_EVENT__REMARK, oldRemark, REMARK_EDEFAULT, oldRemarkESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CONFIGURATION_EVENT__REMARK, oldRemark,
+                    REMARK_EDEFAULT, oldRemarkESet ) );
     }
 
     /**
@@ -508,9 +513,10 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
         else {
             boolean oldChangedOrganisationRoleESet = changedOrganisationRoleESet;
             changedOrganisationRoleESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CONFIGURATION_EVENT__CHANGED_ORGANISATION_ROLE, newChangedOrganisationRole,
-                    newChangedOrganisationRole, !oldChangedOrganisationRoleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.CONFIGURATION_EVENT__CHANGED_ORGANISATION_ROLE, newChangedOrganisationRole,
+                        newChangedOrganisationRole, !oldChangedOrganisationRoleESet ) );
         }
     }
 
@@ -553,9 +559,10 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
         else {
             boolean oldChangedOrganisationRoleESet = changedOrganisationRoleESet;
             changedOrganisationRoleESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONFIGURATION_EVENT__CHANGED_ORGANISATION_ROLE, null, null,
-                    oldChangedOrganisationRoleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CONFIGURATION_EVENT__CHANGED_ORGANISATION_ROLE, null, null,
+                        oldChangedOrganisationRoleESet ) );
         }
     }
 
@@ -610,19 +617,22 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
     public void setChangedLocation( Location newChangedLocation ) {
         if( newChangedLocation != changedLocation ) {
             NotificationChain msgs = null;
-            if( changedLocation != null ) msgs = ( ( InternalEObject ) changedLocation ).eInverseRemove( this,
-                    CimPackage.LOCATION__CONFIGURATION_EVENTS, Location.class, msgs );
-            if( newChangedLocation != null ) msgs = ( ( InternalEObject ) newChangedLocation ).eInverseAdd( this,
-                    CimPackage.LOCATION__CONFIGURATION_EVENTS, Location.class, msgs );
+            if( changedLocation != null )
+                msgs = ( ( InternalEObject ) changedLocation ).eInverseRemove( this,
+                        CimPackage.LOCATION__CONFIGURATION_EVENTS, Location.class, msgs );
+            if( newChangedLocation != null )
+                msgs = ( ( InternalEObject ) newChangedLocation ).eInverseAdd( this,
+                        CimPackage.LOCATION__CONFIGURATION_EVENTS, Location.class, msgs );
             msgs = basicSetChangedLocation( newChangedLocation, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldChangedLocationESet = changedLocationESet;
             changedLocationESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.CONFIGURATION_EVENT__CHANGED_LOCATION,
-                            newChangedLocation, newChangedLocation, !oldChangedLocationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.CONFIGURATION_EVENT__CHANGED_LOCATION, newChangedLocation, newChangedLocation,
+                        !oldChangedLocationESet ) );
         }
     }
 
@@ -665,8 +675,9 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
         else {
             boolean oldChangedLocationESet = changedLocationESet;
             changedLocationESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONFIGURATION_EVENT__CHANGED_LOCATION, null, null, oldChangedLocationESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CONFIGURATION_EVENT__CHANGED_LOCATION, null, null, oldChangedLocationESet ) );
         }
     }
 
@@ -721,19 +732,22 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
     public void setChangedPersonRole( PersonRole newChangedPersonRole ) {
         if( newChangedPersonRole != changedPersonRole ) {
             NotificationChain msgs = null;
-            if( changedPersonRole != null ) msgs = ( ( InternalEObject ) changedPersonRole ).eInverseRemove( this,
-                    CimPackage.PERSON_ROLE__CONFIGURATION_EVENTS, PersonRole.class, msgs );
-            if( newChangedPersonRole != null ) msgs = ( ( InternalEObject ) newChangedPersonRole ).eInverseAdd( this,
-                    CimPackage.PERSON_ROLE__CONFIGURATION_EVENTS, PersonRole.class, msgs );
+            if( changedPersonRole != null )
+                msgs = ( ( InternalEObject ) changedPersonRole ).eInverseRemove( this,
+                        CimPackage.PERSON_ROLE__CONFIGURATION_EVENTS, PersonRole.class, msgs );
+            if( newChangedPersonRole != null )
+                msgs = ( ( InternalEObject ) newChangedPersonRole ).eInverseAdd( this,
+                        CimPackage.PERSON_ROLE__CONFIGURATION_EVENTS, PersonRole.class, msgs );
             msgs = basicSetChangedPersonRole( newChangedPersonRole, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldChangedPersonRoleESet = changedPersonRoleESet;
             changedPersonRoleESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.CONFIGURATION_EVENT__CHANGED_PERSON_ROLE,
-                            newChangedPersonRole, newChangedPersonRole, !oldChangedPersonRoleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.CONFIGURATION_EVENT__CHANGED_PERSON_ROLE, newChangedPersonRole, newChangedPersonRole,
+                        !oldChangedPersonRoleESet ) );
         }
     }
 
@@ -776,8 +790,9 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
         else {
             boolean oldChangedPersonRoleESet = changedPersonRoleESet;
             changedPersonRoleESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONFIGURATION_EVENT__CHANGED_PERSON_ROLE, null, null, oldChangedPersonRoleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CONFIGURATION_EVENT__CHANGED_PERSON_ROLE, null, null, oldChangedPersonRoleESet ) );
         }
     }
 
@@ -832,19 +847,22 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
     public void setChangedUsagePoint( UsagePoint newChangedUsagePoint ) {
         if( newChangedUsagePoint != changedUsagePoint ) {
             NotificationChain msgs = null;
-            if( changedUsagePoint != null ) msgs = ( ( InternalEObject ) changedUsagePoint ).eInverseRemove( this,
-                    CimPackage.USAGE_POINT__CONFIGURATION_EVENTS, UsagePoint.class, msgs );
-            if( newChangedUsagePoint != null ) msgs = ( ( InternalEObject ) newChangedUsagePoint ).eInverseAdd( this,
-                    CimPackage.USAGE_POINT__CONFIGURATION_EVENTS, UsagePoint.class, msgs );
+            if( changedUsagePoint != null )
+                msgs = ( ( InternalEObject ) changedUsagePoint ).eInverseRemove( this,
+                        CimPackage.USAGE_POINT__CONFIGURATION_EVENTS, UsagePoint.class, msgs );
+            if( newChangedUsagePoint != null )
+                msgs = ( ( InternalEObject ) newChangedUsagePoint ).eInverseAdd( this,
+                        CimPackage.USAGE_POINT__CONFIGURATION_EVENTS, UsagePoint.class, msgs );
             msgs = basicSetChangedUsagePoint( newChangedUsagePoint, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldChangedUsagePointESet = changedUsagePointESet;
             changedUsagePointESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.CONFIGURATION_EVENT__CHANGED_USAGE_POINT,
-                            newChangedUsagePoint, newChangedUsagePoint, !oldChangedUsagePointESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.CONFIGURATION_EVENT__CHANGED_USAGE_POINT, newChangedUsagePoint, newChangedUsagePoint,
+                        !oldChangedUsagePointESet ) );
         }
     }
 
@@ -887,8 +905,9 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
         else {
             boolean oldChangedUsagePointESet = changedUsagePointESet;
             changedUsagePointESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONFIGURATION_EVENT__CHANGED_USAGE_POINT, null, null, oldChangedUsagePointESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CONFIGURATION_EVENT__CHANGED_USAGE_POINT, null, null, oldChangedUsagePointESet ) );
         }
     }
 
@@ -943,19 +962,22 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
     public void setChangedDocument( Document newChangedDocument ) {
         if( newChangedDocument != changedDocument ) {
             NotificationChain msgs = null;
-            if( changedDocument != null ) msgs = ( ( InternalEObject ) changedDocument ).eInverseRemove( this,
-                    CimPackage.DOCUMENT__CONFIGURATION_EVENTS, Document.class, msgs );
-            if( newChangedDocument != null ) msgs = ( ( InternalEObject ) newChangedDocument ).eInverseAdd( this,
-                    CimPackage.DOCUMENT__CONFIGURATION_EVENTS, Document.class, msgs );
+            if( changedDocument != null )
+                msgs = ( ( InternalEObject ) changedDocument ).eInverseRemove( this,
+                        CimPackage.DOCUMENT__CONFIGURATION_EVENTS, Document.class, msgs );
+            if( newChangedDocument != null )
+                msgs = ( ( InternalEObject ) newChangedDocument ).eInverseAdd( this,
+                        CimPackage.DOCUMENT__CONFIGURATION_EVENTS, Document.class, msgs );
             msgs = basicSetChangedDocument( newChangedDocument, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldChangedDocumentESet = changedDocumentESet;
             changedDocumentESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.CONFIGURATION_EVENT__CHANGED_DOCUMENT,
-                            newChangedDocument, newChangedDocument, !oldChangedDocumentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.CONFIGURATION_EVENT__CHANGED_DOCUMENT, newChangedDocument, newChangedDocument,
+                        !oldChangedDocumentESet ) );
         }
     }
 
@@ -998,8 +1020,9 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
         else {
             boolean oldChangedDocumentESet = changedDocumentESet;
             changedDocumentESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONFIGURATION_EVENT__CHANGED_DOCUMENT, null, null, oldChangedDocumentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CONFIGURATION_EVENT__CHANGED_DOCUMENT, null, null, oldChangedDocumentESet ) );
         }
     }
 
@@ -1067,9 +1090,10 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
         else {
             boolean oldChangedServiceCategoryESet = changedServiceCategoryESet;
             changedServiceCategoryESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CONFIGURATION_EVENT__CHANGED_SERVICE_CATEGORY, newChangedServiceCategory,
-                    newChangedServiceCategory, !oldChangedServiceCategoryESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.CONFIGURATION_EVENT__CHANGED_SERVICE_CATEGORY, newChangedServiceCategory,
+                        newChangedServiceCategory, !oldChangedServiceCategoryESet ) );
         }
     }
 
@@ -1112,9 +1136,10 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
         else {
             boolean oldChangedServiceCategoryESet = changedServiceCategoryESet;
             changedServiceCategoryESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONFIGURATION_EVENT__CHANGED_SERVICE_CATEGORY, null, null,
-                    oldChangedServiceCategoryESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.CONFIGURATION_EVENT__CHANGED_SERVICE_CATEGORY, null, null,
+                        oldChangedServiceCategoryESet ) );
         }
     }
 
@@ -1169,10 +1194,12 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
     public void setChangedAsset( Asset newChangedAsset ) {
         if( newChangedAsset != changedAsset ) {
             NotificationChain msgs = null;
-            if( changedAsset != null ) msgs = ( ( InternalEObject ) changedAsset ).eInverseRemove( this,
-                    CimPackage.ASSET__CONFIGURATION_EVENTS, Asset.class, msgs );
-            if( newChangedAsset != null ) msgs = ( ( InternalEObject ) newChangedAsset ).eInverseAdd( this,
-                    CimPackage.ASSET__CONFIGURATION_EVENTS, Asset.class, msgs );
+            if( changedAsset != null )
+                msgs = ( ( InternalEObject ) changedAsset ).eInverseRemove( this,
+                        CimPackage.ASSET__CONFIGURATION_EVENTS, Asset.class, msgs );
+            if( newChangedAsset != null )
+                msgs = ( ( InternalEObject ) newChangedAsset ).eInverseAdd( this,
+                        CimPackage.ASSET__CONFIGURATION_EVENTS, Asset.class, msgs );
             msgs = basicSetChangedAsset( newChangedAsset, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1223,8 +1250,9 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
         else {
             boolean oldChangedAssetESet = changedAssetESet;
             changedAssetESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CONFIGURATION_EVENT__CHANGED_ASSET, null, null, oldChangedAssetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CONFIGURATION_EVENT__CHANGED_ASSET,
+                        null, null, oldChangedAssetESet ) );
         }
     }
 
@@ -1247,8 +1275,9 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CONFIGURATION_EVENT__CHANGED_PERSON_ROLE:
-            if( changedPersonRole != null ) msgs = ( ( InternalEObject ) changedPersonRole ).eInverseRemove( this,
-                    CimPackage.PERSON_ROLE__CONFIGURATION_EVENTS, PersonRole.class, msgs );
+            if( changedPersonRole != null )
+                msgs = ( ( InternalEObject ) changedPersonRole ).eInverseRemove( this,
+                        CimPackage.PERSON_ROLE__CONFIGURATION_EVENTS, PersonRole.class, msgs );
             return basicSetChangedPersonRole( ( PersonRole ) otherEnd, msgs );
         case CimPackage.CONFIGURATION_EVENT__CHANGED_ORGANISATION_ROLE:
             if( changedOrganisationRole != null )
@@ -1256,8 +1285,9 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
                         CimPackage.ORGANISATION_ROLE__CONFIGURATION_EVENTS, OrganisationRole.class, msgs );
             return basicSetChangedOrganisationRole( ( OrganisationRole ) otherEnd, msgs );
         case CimPackage.CONFIGURATION_EVENT__CHANGED_LOCATION:
-            if( changedLocation != null ) msgs = ( ( InternalEObject ) changedLocation ).eInverseRemove( this,
-                    CimPackage.LOCATION__CONFIGURATION_EVENTS, Location.class, msgs );
+            if( changedLocation != null )
+                msgs = ( ( InternalEObject ) changedLocation ).eInverseRemove( this,
+                        CimPackage.LOCATION__CONFIGURATION_EVENTS, Location.class, msgs );
             return basicSetChangedLocation( ( Location ) otherEnd, msgs );
         case CimPackage.CONFIGURATION_EVENT__CHANGED_SERVICE_CATEGORY:
             if( changedServiceCategory != null )
@@ -1265,16 +1295,19 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
                         CimPackage.SERVICE_CATEGORY__CONFIGURATION_EVENTS, ServiceCategory.class, msgs );
             return basicSetChangedServiceCategory( ( ServiceCategory ) otherEnd, msgs );
         case CimPackage.CONFIGURATION_EVENT__CHANGED_USAGE_POINT:
-            if( changedUsagePoint != null ) msgs = ( ( InternalEObject ) changedUsagePoint ).eInverseRemove( this,
-                    CimPackage.USAGE_POINT__CONFIGURATION_EVENTS, UsagePoint.class, msgs );
+            if( changedUsagePoint != null )
+                msgs = ( ( InternalEObject ) changedUsagePoint ).eInverseRemove( this,
+                        CimPackage.USAGE_POINT__CONFIGURATION_EVENTS, UsagePoint.class, msgs );
             return basicSetChangedUsagePoint( ( UsagePoint ) otherEnd, msgs );
         case CimPackage.CONFIGURATION_EVENT__CHANGED_DOCUMENT:
-            if( changedDocument != null ) msgs = ( ( InternalEObject ) changedDocument ).eInverseRemove( this,
-                    CimPackage.DOCUMENT__CONFIGURATION_EVENTS, Document.class, msgs );
+            if( changedDocument != null )
+                msgs = ( ( InternalEObject ) changedDocument ).eInverseRemove( this,
+                        CimPackage.DOCUMENT__CONFIGURATION_EVENTS, Document.class, msgs );
             return basicSetChangedDocument( ( Document ) otherEnd, msgs );
         case CimPackage.CONFIGURATION_EVENT__CHANGED_ASSET:
-            if( changedAsset != null ) msgs = ( ( InternalEObject ) changedAsset ).eInverseRemove( this,
-                    CimPackage.ASSET__CONFIGURATION_EVENTS, Asset.class, msgs );
+            if( changedAsset != null )
+                msgs = ( ( InternalEObject ) changedAsset ).eInverseRemove( this,
+                        CimPackage.ASSET__CONFIGURATION_EVENTS, Asset.class, msgs );
             return basicSetChangedAsset( ( Asset ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1463,7 +1496,7 @@ public class ConfigurationEventImpl extends ActivityRecordImpl implements Config
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (effectiveDateTime: " );
         if( effectiveDateTimeESet )
             result.append( effectiveDateTime );

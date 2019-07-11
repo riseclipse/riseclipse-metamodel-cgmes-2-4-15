@@ -193,9 +193,10 @@ public class PerLengthDCLineParameterImpl extends PerLengthLineParameterImpl imp
         capacitance = newCapacitance;
         boolean oldCapacitanceESet = capacitanceESet;
         capacitanceESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.PER_LENGTH_DC_LINE_PARAMETER__CAPACITANCE,
-                        oldCapacitance, capacitance, !oldCapacitanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PER_LENGTH_DC_LINE_PARAMETER__CAPACITANCE, oldCapacitance, capacitance,
+                    !oldCapacitanceESet ) );
     }
 
     /**
@@ -209,9 +210,10 @@ public class PerLengthDCLineParameterImpl extends PerLengthLineParameterImpl imp
         boolean oldCapacitanceESet = capacitanceESet;
         capacitance = CAPACITANCE_EDEFAULT;
         capacitanceESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PER_LENGTH_DC_LINE_PARAMETER__CAPACITANCE,
-                        oldCapacitance, CAPACITANCE_EDEFAULT, oldCapacitanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PER_LENGTH_DC_LINE_PARAMETER__CAPACITANCE, oldCapacitance, CAPACITANCE_EDEFAULT,
+                    oldCapacitanceESet ) );
     }
 
     /**
@@ -245,8 +247,9 @@ public class PerLengthDCLineParameterImpl extends PerLengthLineParameterImpl imp
         inductance = newInductance;
         boolean oldInductanceESet = inductanceESet;
         inductanceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PER_LENGTH_DC_LINE_PARAMETER__INDUCTANCE, oldInductance, inductance, !oldInductanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PER_LENGTH_DC_LINE_PARAMETER__INDUCTANCE,
+                    oldInductance, inductance, !oldInductanceESet ) );
     }
 
     /**
@@ -260,9 +263,10 @@ public class PerLengthDCLineParameterImpl extends PerLengthLineParameterImpl imp
         boolean oldInductanceESet = inductanceESet;
         inductance = INDUCTANCE_EDEFAULT;
         inductanceESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PER_LENGTH_DC_LINE_PARAMETER__INDUCTANCE,
-                        oldInductance, INDUCTANCE_EDEFAULT, oldInductanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PER_LENGTH_DC_LINE_PARAMETER__INDUCTANCE, oldInductance, INDUCTANCE_EDEFAULT,
+                    oldInductanceESet ) );
     }
 
     /**
@@ -296,8 +300,9 @@ public class PerLengthDCLineParameterImpl extends PerLengthLineParameterImpl imp
         resistance = newResistance;
         boolean oldResistanceESet = resistanceESet;
         resistanceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PER_LENGTH_DC_LINE_PARAMETER__RESISTANCE, oldResistance, resistance, !oldResistanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PER_LENGTH_DC_LINE_PARAMETER__RESISTANCE,
+                    oldResistance, resistance, !oldResistanceESet ) );
     }
 
     /**
@@ -311,9 +316,10 @@ public class PerLengthDCLineParameterImpl extends PerLengthLineParameterImpl imp
         boolean oldResistanceESet = resistanceESet;
         resistance = RESISTANCE_EDEFAULT;
         resistanceESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PER_LENGTH_DC_LINE_PARAMETER__RESISTANCE,
-                        oldResistance, RESISTANCE_EDEFAULT, oldResistanceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PER_LENGTH_DC_LINE_PARAMETER__RESISTANCE, oldResistance, RESISTANCE_EDEFAULT,
+                    oldResistanceESet ) );
     }
 
     /**
@@ -490,7 +496,7 @@ public class PerLengthDCLineParameterImpl extends PerLengthLineParameterImpl imp
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (capacitance: " );
         if( capacitanceESet )
             result.append( capacitance );

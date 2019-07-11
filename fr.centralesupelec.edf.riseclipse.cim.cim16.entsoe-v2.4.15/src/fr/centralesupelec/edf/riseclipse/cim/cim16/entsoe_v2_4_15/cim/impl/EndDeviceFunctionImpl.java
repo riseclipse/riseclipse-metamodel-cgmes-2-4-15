@@ -154,8 +154,9 @@ public class EndDeviceFunctionImpl extends AssetFunctionImpl implements EndDevic
         enabled = newEnabled;
         boolean oldEnabledESet = enabledESet;
         enabledESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_FUNCTION__ENABLED, oldEnabled, enabled, !oldEnabledESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_FUNCTION__ENABLED, oldEnabled,
+                    enabled, !oldEnabledESet ) );
     }
 
     /**
@@ -169,8 +170,9 @@ public class EndDeviceFunctionImpl extends AssetFunctionImpl implements EndDevic
         boolean oldEnabledESet = enabledESet;
         enabled = ENABLED_EDEFAULT;
         enabledESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_FUNCTION__ENABLED, oldEnabled, ENABLED_EDEFAULT, oldEnabledESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_FUNCTION__ENABLED,
+                    oldEnabled, ENABLED_EDEFAULT, oldEnabledESet ) );
     }
 
     /**
@@ -223,18 +225,21 @@ public class EndDeviceFunctionImpl extends AssetFunctionImpl implements EndDevic
     public void setEndDevice( EndDevice newEndDevice ) {
         if( newEndDevice != endDevice ) {
             NotificationChain msgs = null;
-            if( endDevice != null ) msgs = ( ( InternalEObject ) endDevice ).eInverseRemove( this,
-                    CimPackage.END_DEVICE__END_DEVICE_FUNCTIONS, EndDevice.class, msgs );
-            if( newEndDevice != null ) msgs = ( ( InternalEObject ) newEndDevice ).eInverseAdd( this,
-                    CimPackage.END_DEVICE__END_DEVICE_FUNCTIONS, EndDevice.class, msgs );
+            if( endDevice != null )
+                msgs = ( ( InternalEObject ) endDevice ).eInverseRemove( this,
+                        CimPackage.END_DEVICE__END_DEVICE_FUNCTIONS, EndDevice.class, msgs );
+            if( newEndDevice != null )
+                msgs = ( ( InternalEObject ) newEndDevice ).eInverseAdd( this,
+                        CimPackage.END_DEVICE__END_DEVICE_FUNCTIONS, EndDevice.class, msgs );
             msgs = basicSetEndDevice( newEndDevice, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldEndDeviceESet = endDeviceESet;
             endDeviceESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.END_DEVICE_FUNCTION__END_DEVICE, newEndDevice, newEndDevice, !oldEndDeviceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_FUNCTION__END_DEVICE,
+                        newEndDevice, newEndDevice, !oldEndDeviceESet ) );
         }
     }
 
@@ -276,8 +281,9 @@ public class EndDeviceFunctionImpl extends AssetFunctionImpl implements EndDevic
         else {
             boolean oldEndDeviceESet = endDeviceESet;
             endDeviceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.END_DEVICE_FUNCTION__END_DEVICE, null, null, oldEndDeviceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_FUNCTION__END_DEVICE,
+                        null, null, oldEndDeviceESet ) );
         }
     }
 
@@ -335,8 +341,9 @@ public class EndDeviceFunctionImpl extends AssetFunctionImpl implements EndDevic
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.END_DEVICE_FUNCTION__END_DEVICE:
-            if( endDevice != null ) msgs = ( ( InternalEObject ) endDevice ).eInverseRemove( this,
-                    CimPackage.END_DEVICE__END_DEVICE_FUNCTIONS, EndDevice.class, msgs );
+            if( endDevice != null )
+                msgs = ( ( InternalEObject ) endDevice ).eInverseRemove( this,
+                        CimPackage.END_DEVICE__END_DEVICE_FUNCTIONS, EndDevice.class, msgs );
             return basicSetEndDevice( ( EndDevice ) otherEnd, msgs );
         case CimPackage.END_DEVICE_FUNCTION__REGISTERS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getRegisters() ).basicAdd( otherEnd,
@@ -450,7 +457,7 @@ public class EndDeviceFunctionImpl extends AssetFunctionImpl implements EndDevic
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (enabled: " );
         if( enabledESet )
             result.append( enabled );

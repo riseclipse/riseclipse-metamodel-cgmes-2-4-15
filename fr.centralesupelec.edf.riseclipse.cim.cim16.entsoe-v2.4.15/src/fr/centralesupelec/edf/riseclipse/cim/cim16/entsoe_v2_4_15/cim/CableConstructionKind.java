@@ -217,8 +217,15 @@ public enum CableConstructionKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final CableConstructionKind[] VALUES_ARRAY = new CableConstructionKind[] { COMPACTED, COMPRESSED,
-            SECTOR, SEGMENTAL, SOLID, STRANDED, OTHER, };
+    private static final CableConstructionKind[] VALUES_ARRAY = new CableConstructionKind[] {
+            COMPACTED,
+            COMPRESSED,
+            SECTOR,
+            SEGMENTAL,
+            SOLID,
+            STRANDED,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Cable Construction Kind</b></em>' enumerators.

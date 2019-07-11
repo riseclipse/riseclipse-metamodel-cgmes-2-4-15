@@ -399,8 +399,9 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
         direction = newDirection;
         boolean oldDirectionESet = directionESet;
         directionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOCATION__DIRECTION, oldDirection, direction, !oldDirectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOCATION__DIRECTION, oldDirection,
+                    direction, !oldDirectionESet ) );
     }
 
     /**
@@ -414,8 +415,9 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
         boolean oldDirectionESet = directionESet;
         direction = DIRECTION_EDEFAULT;
         directionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOCATION__DIRECTION, oldDirection, DIRECTION_EDEFAULT, oldDirectionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOCATION__DIRECTION, oldDirection,
+                    DIRECTION_EDEFAULT, oldDirectionESet ) );
     }
 
     /**
@@ -501,8 +503,9 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
         type = newType;
         boolean oldTypeESet = typeESet;
         typeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOCATION__TYPE,
-                oldType, type, !oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOCATION__TYPE, oldType, type,
+                    !oldTypeESet ) );
     }
 
     /**
@@ -516,8 +519,9 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
         boolean oldTypeESet = typeESet;
         type = TYPE_EDEFAULT;
         typeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOCATION__TYPE, oldType, TYPE_EDEFAULT, oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOCATION__TYPE, oldType, TYPE_EDEFAULT,
+                    oldTypeESet ) );
     }
 
     /**
@@ -572,10 +576,12 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
     public void setElectronicAddress( ElectronicAddress newElectronicAddress ) {
         if( newElectronicAddress != electronicAddress ) {
             NotificationChain msgs = null;
-            if( electronicAddress != null ) msgs = ( ( InternalEObject ) electronicAddress ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__ELECTRONIC_ADDRESS, null, msgs );
-            if( newElectronicAddress != null ) msgs = ( ( InternalEObject ) newElectronicAddress ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__ELECTRONIC_ADDRESS, null, msgs );
+            if( electronicAddress != null )
+                msgs = ( ( InternalEObject ) electronicAddress ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__ELECTRONIC_ADDRESS, null, msgs );
+            if( newElectronicAddress != null )
+                msgs = ( ( InternalEObject ) newElectronicAddress ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__ELECTRONIC_ADDRESS, null, msgs );
             msgs = basicSetElectronicAddress( newElectronicAddress, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -626,8 +632,9 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
         else {
             boolean oldElectronicAddressESet = electronicAddressESet;
             electronicAddressESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.LOCATION__ELECTRONIC_ADDRESS, null, null, oldElectronicAddressESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOCATION__ELECTRONIC_ADDRESS, null,
+                        null, oldElectronicAddressESet ) );
         }
     }
 
@@ -681,18 +688,21 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
     public void setMainAddress( StreetAddress newMainAddress ) {
         if( newMainAddress != mainAddress ) {
             NotificationChain msgs = null;
-            if( mainAddress != null ) msgs = ( ( InternalEObject ) mainAddress ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__MAIN_ADDRESS, null, msgs );
-            if( newMainAddress != null ) msgs = ( ( InternalEObject ) newMainAddress ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__MAIN_ADDRESS, null, msgs );
+            if( mainAddress != null )
+                msgs = ( ( InternalEObject ) mainAddress ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__MAIN_ADDRESS, null, msgs );
+            if( newMainAddress != null )
+                msgs = ( ( InternalEObject ) newMainAddress ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__MAIN_ADDRESS, null, msgs );
             msgs = basicSetMainAddress( newMainAddress, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldMainAddressESet = mainAddressESet;
             mainAddressESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.LOCATION__MAIN_ADDRESS, newMainAddress, newMainAddress, !oldMainAddressESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOCATION__MAIN_ADDRESS,
+                        newMainAddress, newMainAddress, !oldMainAddressESet ) );
         }
     }
 
@@ -734,8 +744,9 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
         else {
             boolean oldMainAddressESet = mainAddressESet;
             mainAddressESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.LOCATION__MAIN_ADDRESS, null, null, oldMainAddressESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOCATION__MAIN_ADDRESS, null, null,
+                        oldMainAddressESet ) );
         }
     }
 
@@ -789,18 +800,21 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
     public void setPhone1( TelephoneNumber newPhone1 ) {
         if( newPhone1 != phone1 ) {
             NotificationChain msgs = null;
-            if( phone1 != null ) msgs = ( ( InternalEObject ) phone1 ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__PHONE1, null, msgs );
-            if( newPhone1 != null ) msgs = ( ( InternalEObject ) newPhone1 ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__PHONE1, null, msgs );
+            if( phone1 != null )
+                msgs = ( ( InternalEObject ) phone1 ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__PHONE1, null, msgs );
+            if( newPhone1 != null )
+                msgs = ( ( InternalEObject ) newPhone1 ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__PHONE1, null, msgs );
             msgs = basicSetPhone1( newPhone1, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldPhone1ESet = phone1ESet;
             phone1ESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.LOCATION__PHONE1, newPhone1, newPhone1, !oldPhone1ESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOCATION__PHONE1, newPhone1,
+                        newPhone1, !oldPhone1ESet ) );
         }
     }
 
@@ -842,8 +856,9 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
         else {
             boolean oldPhone1ESet = phone1ESet;
             phone1ESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.LOCATION__PHONE1, null, null, oldPhone1ESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOCATION__PHONE1, null, null,
+                        oldPhone1ESet ) );
         }
     }
 
@@ -897,18 +912,21 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
     public void setPhone2( TelephoneNumber newPhone2 ) {
         if( newPhone2 != phone2 ) {
             NotificationChain msgs = null;
-            if( phone2 != null ) msgs = ( ( InternalEObject ) phone2 ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__PHONE2, null, msgs );
-            if( newPhone2 != null ) msgs = ( ( InternalEObject ) newPhone2 ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__PHONE2, null, msgs );
+            if( phone2 != null )
+                msgs = ( ( InternalEObject ) phone2 ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__PHONE2, null, msgs );
+            if( newPhone2 != null )
+                msgs = ( ( InternalEObject ) newPhone2 ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__PHONE2, null, msgs );
             msgs = basicSetPhone2( newPhone2, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldPhone2ESet = phone2ESet;
             phone2ESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.LOCATION__PHONE2, newPhone2, newPhone2, !oldPhone2ESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOCATION__PHONE2, newPhone2,
+                        newPhone2, !oldPhone2ESet ) );
         }
     }
 
@@ -950,8 +968,9 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
         else {
             boolean oldPhone2ESet = phone2ESet;
             phone2ESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.LOCATION__PHONE2, null, null, oldPhone2ESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOCATION__PHONE2, null, null,
+                        oldPhone2ESet ) );
         }
     }
 
@@ -1006,10 +1025,12 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
     public void setSecondaryAddress( StreetAddress newSecondaryAddress ) {
         if( newSecondaryAddress != secondaryAddress ) {
             NotificationChain msgs = null;
-            if( secondaryAddress != null ) msgs = ( ( InternalEObject ) secondaryAddress ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__SECONDARY_ADDRESS, null, msgs );
-            if( newSecondaryAddress != null ) msgs = ( ( InternalEObject ) newSecondaryAddress ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__SECONDARY_ADDRESS, null, msgs );
+            if( secondaryAddress != null )
+                msgs = ( ( InternalEObject ) secondaryAddress ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__SECONDARY_ADDRESS, null, msgs );
+            if( newSecondaryAddress != null )
+                msgs = ( ( InternalEObject ) newSecondaryAddress ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__SECONDARY_ADDRESS, null, msgs );
             msgs = basicSetSecondaryAddress( newSecondaryAddress, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1060,8 +1081,9 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
         else {
             boolean oldSecondaryAddressESet = secondaryAddressESet;
             secondaryAddressESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.LOCATION__SECONDARY_ADDRESS, null, null, oldSecondaryAddressESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOCATION__SECONDARY_ADDRESS, null,
+                        null, oldSecondaryAddressESet ) );
         }
     }
 
@@ -1115,18 +1137,21 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
     public void setStatus( Status newStatus ) {
         if( newStatus != status ) {
             NotificationChain msgs = null;
-            if( status != null ) msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__STATUS, null, msgs );
-            if( newStatus != null ) msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__STATUS, null, msgs );
+            if( status != null )
+                msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__STATUS, null, msgs );
+            if( newStatus != null )
+                msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.LOCATION__STATUS, null, msgs );
             msgs = basicSetStatus( newStatus, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldStatusESet = statusESet;
             statusESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.LOCATION__STATUS, newStatus, newStatus, !oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOCATION__STATUS, newStatus,
+                        newStatus, !oldStatusESet ) );
         }
     }
 
@@ -1168,8 +1193,9 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
         else {
             boolean oldStatusESet = statusESet;
             statusESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.LOCATION__STATUS, null, null, oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOCATION__STATUS, null, null,
+                        oldStatusESet ) );
         }
     }
 
@@ -1328,10 +1354,12 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
     public void setCoordinateSystem( CoordinateSystem newCoordinateSystem ) {
         if( newCoordinateSystem != coordinateSystem ) {
             NotificationChain msgs = null;
-            if( coordinateSystem != null ) msgs = ( ( InternalEObject ) coordinateSystem ).eInverseRemove( this,
-                    CimPackage.COORDINATE_SYSTEM__LOCATIONS, CoordinateSystem.class, msgs );
-            if( newCoordinateSystem != null ) msgs = ( ( InternalEObject ) newCoordinateSystem ).eInverseAdd( this,
-                    CimPackage.COORDINATE_SYSTEM__LOCATIONS, CoordinateSystem.class, msgs );
+            if( coordinateSystem != null )
+                msgs = ( ( InternalEObject ) coordinateSystem ).eInverseRemove( this,
+                        CimPackage.COORDINATE_SYSTEM__LOCATIONS, CoordinateSystem.class, msgs );
+            if( newCoordinateSystem != null )
+                msgs = ( ( InternalEObject ) newCoordinateSystem ).eInverseAdd( this,
+                        CimPackage.COORDINATE_SYSTEM__LOCATIONS, CoordinateSystem.class, msgs );
             msgs = basicSetCoordinateSystem( newCoordinateSystem, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1382,8 +1410,9 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
         else {
             boolean oldCoordinateSystemESet = coordinateSystemESet;
             coordinateSystemESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.LOCATION__COORDINATE_SYSTEM, null, null, oldCoordinateSystemESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOCATION__COORDINATE_SYSTEM, null,
+                        null, oldCoordinateSystemESet ) );
         }
     }
 
@@ -1528,8 +1557,9 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getAssets() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.LOCATION__COORDINATE_SYSTEM:
-            if( coordinateSystem != null ) msgs = ( ( InternalEObject ) coordinateSystem ).eInverseRemove( this,
-                    CimPackage.COORDINATE_SYSTEM__LOCATIONS, CoordinateSystem.class, msgs );
+            if( coordinateSystem != null )
+                msgs = ( ( InternalEObject ) coordinateSystem ).eInverseRemove( this,
+                        CimPackage.COORDINATE_SYSTEM__LOCATIONS, CoordinateSystem.class, msgs );
             return basicSetCoordinateSystem( ( CoordinateSystem ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1797,7 +1827,7 @@ public class LocationImpl extends IdentifiedObjectImpl implements Location {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (direction: " );
         if( directionESet )
             result.append( direction );

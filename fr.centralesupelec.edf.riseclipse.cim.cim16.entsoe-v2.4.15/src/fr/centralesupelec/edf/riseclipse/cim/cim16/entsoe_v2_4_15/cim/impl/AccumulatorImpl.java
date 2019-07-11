@@ -146,8 +146,9 @@ public class AccumulatorImpl extends MeasurementImpl implements Accumulator {
         maxValue = newMaxValue;
         boolean oldMaxValueESet = maxValueESet;
         maxValueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACCUMULATOR__MAX_VALUE, oldMaxValue, maxValue, !oldMaxValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACCUMULATOR__MAX_VALUE, oldMaxValue,
+                    maxValue, !oldMaxValueESet ) );
     }
 
     /**
@@ -161,8 +162,9 @@ public class AccumulatorImpl extends MeasurementImpl implements Accumulator {
         boolean oldMaxValueESet = maxValueESet;
         maxValue = MAX_VALUE_EDEFAULT;
         maxValueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACCUMULATOR__MAX_VALUE, oldMaxValue, MAX_VALUE_EDEFAULT, oldMaxValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACCUMULATOR__MAX_VALUE, oldMaxValue,
+                    MAX_VALUE_EDEFAULT, oldMaxValueESet ) );
     }
 
     /**
@@ -370,7 +372,7 @@ public class AccumulatorImpl extends MeasurementImpl implements Accumulator {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (maxValue: " );
         if( maxValueESet )
             result.append( maxValue );

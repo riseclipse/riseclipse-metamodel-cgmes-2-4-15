@@ -143,8 +143,9 @@ public class ReadingInterharmonicImpl extends MinimalEObjectImpl.Container imple
         denominator = newDenominator;
         boolean oldDenominatorESet = denominatorESet;
         denominatorESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_INTERHARMONIC__DENOMINATOR, oldDenominator, denominator, !oldDenominatorESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_INTERHARMONIC__DENOMINATOR,
+                    oldDenominator, denominator, !oldDenominatorESet ) );
     }
 
     /**
@@ -194,8 +195,9 @@ public class ReadingInterharmonicImpl extends MinimalEObjectImpl.Container imple
         numerator = newNumerator;
         boolean oldNumeratorESet = numeratorESet;
         numeratorESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.READING_INTERHARMONIC__NUMERATOR, oldNumerator, numerator, !oldNumeratorESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.READING_INTERHARMONIC__NUMERATOR,
+                    oldNumerator, numerator, !oldNumeratorESet ) );
     }
 
     /**
@@ -209,8 +211,9 @@ public class ReadingInterharmonicImpl extends MinimalEObjectImpl.Container imple
         boolean oldNumeratorESet = numeratorESet;
         numerator = NUMERATOR_EDEFAULT;
         numeratorESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.READING_INTERHARMONIC__NUMERATOR, oldNumerator, NUMERATOR_EDEFAULT, oldNumeratorESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.READING_INTERHARMONIC__NUMERATOR,
+                    oldNumerator, NUMERATOR_EDEFAULT, oldNumeratorESet ) );
     }
 
     /**
@@ -300,7 +303,7 @@ public class ReadingInterharmonicImpl extends MinimalEObjectImpl.Container imple
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (denominator: " );
         if( denominatorESet )
             result.append( denominator );

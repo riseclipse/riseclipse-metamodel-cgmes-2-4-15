@@ -293,8 +293,9 @@ public class PFVArType2IEEEPFControllerImpl extends PFVArControllerType2Dynamics
         exlon = newExlon;
         boolean oldExlonESet = exlonESet;
         exlonESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__EXLON, oldExlon, exlon, !oldExlonESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__EXLON,
+                    oldExlon, exlon, !oldExlonESet ) );
     }
 
     /**
@@ -308,8 +309,9 @@ public class PFVArType2IEEEPFControllerImpl extends PFVArControllerType2Dynamics
         boolean oldExlonESet = exlonESet;
         exlon = EXLON_EDEFAULT;
         exlonESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__EXLON, oldExlon, EXLON_EDEFAULT, oldExlonESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__EXLON,
+                    oldExlon, EXLON_EDEFAULT, oldExlonESet ) );
     }
 
     /**
@@ -343,8 +345,9 @@ public class PFVArType2IEEEPFControllerImpl extends PFVArControllerType2Dynamics
         ki = newKi;
         boolean oldKiESet = kiESet;
         kiESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__KI, oldKi, ki, !oldKiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__KI,
+                    oldKi, ki, !oldKiESet ) );
     }
 
     /**
@@ -358,8 +361,9 @@ public class PFVArType2IEEEPFControllerImpl extends PFVArControllerType2Dynamics
         boolean oldKiESet = kiESet;
         ki = KI_EDEFAULT;
         kiESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__KI, oldKi, KI_EDEFAULT, oldKiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__KI,
+                    oldKi, KI_EDEFAULT, oldKiESet ) );
     }
 
     /**
@@ -393,8 +397,9 @@ public class PFVArType2IEEEPFControllerImpl extends PFVArControllerType2Dynamics
         kp = newKp;
         boolean oldKpESet = kpESet;
         kpESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__KP, oldKp, kp, !oldKpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__KP,
+                    oldKp, kp, !oldKpESet ) );
     }
 
     /**
@@ -408,8 +413,9 @@ public class PFVArType2IEEEPFControllerImpl extends PFVArControllerType2Dynamics
         boolean oldKpESet = kpESet;
         kp = KP_EDEFAULT;
         kpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__KP, oldKp, KP_EDEFAULT, oldKpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__KP,
+                    oldKp, KP_EDEFAULT, oldKpESet ) );
     }
 
     /**
@@ -443,8 +449,9 @@ public class PFVArType2IEEEPFControllerImpl extends PFVArControllerType2Dynamics
         pfref = newPfref;
         boolean oldPfrefESet = pfrefESet;
         pfrefESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__PFREF, oldPfref, pfref, !oldPfrefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__PFREF,
+                    oldPfref, pfref, !oldPfrefESet ) );
     }
 
     /**
@@ -458,8 +465,9 @@ public class PFVArType2IEEEPFControllerImpl extends PFVArControllerType2Dynamics
         boolean oldPfrefESet = pfrefESet;
         pfref = PFREF_EDEFAULT;
         pfrefESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__PFREF, oldPfref, PFREF_EDEFAULT, oldPfrefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__PFREF,
+                    oldPfref, PFREF_EDEFAULT, oldPfrefESet ) );
     }
 
     /**
@@ -493,8 +501,9 @@ public class PFVArType2IEEEPFControllerImpl extends PFVArControllerType2Dynamics
         vclmt = newVclmt;
         boolean oldVclmtESet = vclmtESet;
         vclmtESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__VCLMT, oldVclmt, vclmt, !oldVclmtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__VCLMT,
+                    oldVclmt, vclmt, !oldVclmtESet ) );
     }
 
     /**
@@ -508,8 +517,9 @@ public class PFVArType2IEEEPFControllerImpl extends PFVArControllerType2Dynamics
         boolean oldVclmtESet = vclmtESet;
         vclmt = VCLMT_EDEFAULT;
         vclmtESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__VCLMT, oldVclmt, VCLMT_EDEFAULT, oldVclmtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__VCLMT,
+                    oldVclmt, VCLMT_EDEFAULT, oldVclmtESet ) );
     }
 
     /**
@@ -543,8 +553,9 @@ public class PFVArType2IEEEPFControllerImpl extends PFVArControllerType2Dynamics
         vref = newVref;
         boolean oldVrefESet = vrefESet;
         vrefESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__VREF, oldVref, vref, !oldVrefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__VREF,
+                    oldVref, vref, !oldVrefESet ) );
     }
 
     /**
@@ -558,8 +569,9 @@ public class PFVArType2IEEEPFControllerImpl extends PFVArControllerType2Dynamics
         boolean oldVrefESet = vrefESet;
         vref = VREF_EDEFAULT;
         vrefESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__VREF, oldVref, VREF_EDEFAULT, oldVrefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__VREF,
+                    oldVref, VREF_EDEFAULT, oldVrefESet ) );
     }
 
     /**
@@ -593,8 +605,9 @@ public class PFVArType2IEEEPFControllerImpl extends PFVArControllerType2Dynamics
         vs = newVs;
         boolean oldVsESet = vsESet;
         vsESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__VS, oldVs, vs, !oldVsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__VS,
+                    oldVs, vs, !oldVsESet ) );
     }
 
     /**
@@ -608,8 +621,9 @@ public class PFVArType2IEEEPFControllerImpl extends PFVArControllerType2Dynamics
         boolean oldVsESet = vsESet;
         vs = VS_EDEFAULT;
         vsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__VS, oldVs, VS_EDEFAULT, oldVsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE2_IEEEPF_CONTROLLER__VS,
+                    oldVs, VS_EDEFAULT, oldVsESet ) );
     }
 
     /**
@@ -749,7 +763,7 @@ public class PFVArType2IEEEPFControllerImpl extends PFVArControllerType2Dynamics
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (exlon: " );
         if( exlonESet )
             result.append( exlon );

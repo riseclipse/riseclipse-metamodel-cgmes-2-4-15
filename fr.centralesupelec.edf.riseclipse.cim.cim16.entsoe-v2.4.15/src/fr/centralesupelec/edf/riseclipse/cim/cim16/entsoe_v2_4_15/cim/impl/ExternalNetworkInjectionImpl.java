@@ -638,9 +638,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldGovernorSCDESet = governorSCDESet;
         governorSCD = GOVERNOR_SCD_EDEFAULT;
         governorSCDESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.EXTERNAL_NETWORK_INJECTION__GOVERNOR_SCD,
-                        oldGovernorSCD, GOVERNOR_SCD_EDEFAULT, oldGovernorSCDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__GOVERNOR_SCD, oldGovernorSCD, GOVERNOR_SCD_EDEFAULT,
+                    oldGovernorSCDESet ) );
     }
 
     /**
@@ -674,8 +675,9 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         ikSecond = newIkSecond;
         boolean oldIkSecondESet = ikSecondESet;
         ikSecondESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__IK_SECOND, oldIkSecond, ikSecond, !oldIkSecondESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXTERNAL_NETWORK_INJECTION__IK_SECOND,
+                    oldIkSecond, ikSecond, !oldIkSecondESet ) );
     }
 
     /**
@@ -689,8 +691,9 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldIkSecondESet = ikSecondESet;
         ikSecond = IK_SECOND_EDEFAULT;
         ikSecondESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__IK_SECOND, oldIkSecond, IK_SECOND_EDEFAULT, oldIkSecondESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXTERNAL_NETWORK_INJECTION__IK_SECOND,
+                    oldIkSecond, IK_SECOND_EDEFAULT, oldIkSecondESet ) );
     }
 
     /**
@@ -724,9 +727,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         maxInitialSymShCCurrent = newMaxInitialSymShCCurrent;
         boolean oldMaxInitialSymShCCurrentESet = maxInitialSymShCCurrentESet;
         maxInitialSymShCCurrentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_INITIAL_SYM_SH_CCURRENT, oldMaxInitialSymShCCurrent,
-                maxInitialSymShCCurrent, !oldMaxInitialSymShCCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_INITIAL_SYM_SH_CCURRENT, oldMaxInitialSymShCCurrent,
+                    maxInitialSymShCCurrent, !oldMaxInitialSymShCCurrentESet ) );
     }
 
     /**
@@ -740,9 +744,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldMaxInitialSymShCCurrentESet = maxInitialSymShCCurrentESet;
         maxInitialSymShCCurrent = MAX_INITIAL_SYM_SH_CCURRENT_EDEFAULT;
         maxInitialSymShCCurrentESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_INITIAL_SYM_SH_CCURRENT, oldMaxInitialSymShCCurrent,
-                MAX_INITIAL_SYM_SH_CCURRENT_EDEFAULT, oldMaxInitialSymShCCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_INITIAL_SYM_SH_CCURRENT, oldMaxInitialSymShCCurrent,
+                    MAX_INITIAL_SYM_SH_CCURRENT_EDEFAULT, oldMaxInitialSymShCCurrentESet ) );
     }
 
     /**
@@ -776,8 +781,9 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         maxP = newMaxP;
         boolean oldMaxPESet = maxPESet;
         maxPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_P, oldMaxP, maxP, !oldMaxPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_P,
+                    oldMaxP, maxP, !oldMaxPESet ) );
     }
 
     /**
@@ -791,8 +797,9 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldMaxPESet = maxPESet;
         maxP = MAX_P_EDEFAULT;
         maxPESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_P, oldMaxP, MAX_P_EDEFAULT, oldMaxPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_P,
+                    oldMaxP, MAX_P_EDEFAULT, oldMaxPESet ) );
     }
 
     /**
@@ -826,8 +833,9 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         maxQ = newMaxQ;
         boolean oldMaxQESet = maxQESet;
         maxQESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_Q, oldMaxQ, maxQ, !oldMaxQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_Q,
+                    oldMaxQ, maxQ, !oldMaxQESet ) );
     }
 
     /**
@@ -841,8 +849,9 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldMaxQESet = maxQESet;
         maxQ = MAX_Q_EDEFAULT;
         maxQESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_Q, oldMaxQ, MAX_Q_EDEFAULT, oldMaxQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_Q,
+                    oldMaxQ, MAX_Q_EDEFAULT, oldMaxQESet ) );
     }
 
     /**
@@ -876,9 +885,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         maxR0ToX0Ratio = newMaxR0ToX0Ratio;
         boolean oldMaxR0ToX0RatioESet = maxR0ToX0RatioESet;
         maxR0ToX0RatioESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_R0_TO_X0_RATIO, oldMaxR0ToX0Ratio, maxR0ToX0Ratio,
-                !oldMaxR0ToX0RatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_R0_TO_X0_RATIO, oldMaxR0ToX0Ratio, maxR0ToX0Ratio,
+                    !oldMaxR0ToX0RatioESet ) );
     }
 
     /**
@@ -892,9 +902,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldMaxR0ToX0RatioESet = maxR0ToX0RatioESet;
         maxR0ToX0Ratio = MAX_R0_TO_X0_RATIO_EDEFAULT;
         maxR0ToX0RatioESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_R0_TO_X0_RATIO, oldMaxR0ToX0Ratio,
-                MAX_R0_TO_X0_RATIO_EDEFAULT, oldMaxR0ToX0RatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_R0_TO_X0_RATIO, oldMaxR0ToX0Ratio,
+                    MAX_R0_TO_X0_RATIO_EDEFAULT, oldMaxR0ToX0RatioESet ) );
     }
 
     /**
@@ -928,9 +939,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         maxR1ToX1Ratio = newMaxR1ToX1Ratio;
         boolean oldMaxR1ToX1RatioESet = maxR1ToX1RatioESet;
         maxR1ToX1RatioESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_R1_TO_X1_RATIO, oldMaxR1ToX1Ratio, maxR1ToX1Ratio,
-                !oldMaxR1ToX1RatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_R1_TO_X1_RATIO, oldMaxR1ToX1Ratio, maxR1ToX1Ratio,
+                    !oldMaxR1ToX1RatioESet ) );
     }
 
     /**
@@ -944,9 +956,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldMaxR1ToX1RatioESet = maxR1ToX1RatioESet;
         maxR1ToX1Ratio = MAX_R1_TO_X1_RATIO_EDEFAULT;
         maxR1ToX1RatioESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_R1_TO_X1_RATIO, oldMaxR1ToX1Ratio,
-                MAX_R1_TO_X1_RATIO_EDEFAULT, oldMaxR1ToX1RatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_R1_TO_X1_RATIO, oldMaxR1ToX1Ratio,
+                    MAX_R1_TO_X1_RATIO_EDEFAULT, oldMaxR1ToX1RatioESet ) );
     }
 
     /**
@@ -980,9 +993,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         maxZ0ToZ1Ratio = newMaxZ0ToZ1Ratio;
         boolean oldMaxZ0ToZ1RatioESet = maxZ0ToZ1RatioESet;
         maxZ0ToZ1RatioESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_Z0_TO_Z1_RATIO, oldMaxZ0ToZ1Ratio, maxZ0ToZ1Ratio,
-                !oldMaxZ0ToZ1RatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_Z0_TO_Z1_RATIO, oldMaxZ0ToZ1Ratio, maxZ0ToZ1Ratio,
+                    !oldMaxZ0ToZ1RatioESet ) );
     }
 
     /**
@@ -996,9 +1010,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldMaxZ0ToZ1RatioESet = maxZ0ToZ1RatioESet;
         maxZ0ToZ1Ratio = MAX_Z0_TO_Z1_RATIO_EDEFAULT;
         maxZ0ToZ1RatioESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_Z0_TO_Z1_RATIO, oldMaxZ0ToZ1Ratio,
-                MAX_Z0_TO_Z1_RATIO_EDEFAULT, oldMaxZ0ToZ1RatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__MAX_Z0_TO_Z1_RATIO, oldMaxZ0ToZ1Ratio,
+                    MAX_Z0_TO_Z1_RATIO_EDEFAULT, oldMaxZ0ToZ1RatioESet ) );
     }
 
     /**
@@ -1032,9 +1047,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         minInitialSymShCCurrent = newMinInitialSymShCCurrent;
         boolean oldMinInitialSymShCCurrentESet = minInitialSymShCCurrentESet;
         minInitialSymShCCurrentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_INITIAL_SYM_SH_CCURRENT, oldMinInitialSymShCCurrent,
-                minInitialSymShCCurrent, !oldMinInitialSymShCCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_INITIAL_SYM_SH_CCURRENT, oldMinInitialSymShCCurrent,
+                    minInitialSymShCCurrent, !oldMinInitialSymShCCurrentESet ) );
     }
 
     /**
@@ -1048,9 +1064,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldMinInitialSymShCCurrentESet = minInitialSymShCCurrentESet;
         minInitialSymShCCurrent = MIN_INITIAL_SYM_SH_CCURRENT_EDEFAULT;
         minInitialSymShCCurrentESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_INITIAL_SYM_SH_CCURRENT, oldMinInitialSymShCCurrent,
-                MIN_INITIAL_SYM_SH_CCURRENT_EDEFAULT, oldMinInitialSymShCCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_INITIAL_SYM_SH_CCURRENT, oldMinInitialSymShCCurrent,
+                    MIN_INITIAL_SYM_SH_CCURRENT_EDEFAULT, oldMinInitialSymShCCurrentESet ) );
     }
 
     /**
@@ -1084,8 +1101,9 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         minP = newMinP;
         boolean oldMinPESet = minPESet;
         minPESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_P, oldMinP, minP, !oldMinPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_P,
+                    oldMinP, minP, !oldMinPESet ) );
     }
 
     /**
@@ -1099,8 +1117,9 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldMinPESet = minPESet;
         minP = MIN_P_EDEFAULT;
         minPESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_P, oldMinP, MIN_P_EDEFAULT, oldMinPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_P,
+                    oldMinP, MIN_P_EDEFAULT, oldMinPESet ) );
     }
 
     /**
@@ -1134,8 +1153,9 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         minQ = newMinQ;
         boolean oldMinQESet = minQESet;
         minQESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_Q, oldMinQ, minQ, !oldMinQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_Q,
+                    oldMinQ, minQ, !oldMinQESet ) );
     }
 
     /**
@@ -1149,8 +1169,9 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldMinQESet = minQESet;
         minQ = MIN_Q_EDEFAULT;
         minQESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_Q, oldMinQ, MIN_Q_EDEFAULT, oldMinQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_Q,
+                    oldMinQ, MIN_Q_EDEFAULT, oldMinQESet ) );
     }
 
     /**
@@ -1184,9 +1205,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         minR0ToX0Ratio = newMinR0ToX0Ratio;
         boolean oldMinR0ToX0RatioESet = minR0ToX0RatioESet;
         minR0ToX0RatioESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_R0_TO_X0_RATIO, oldMinR0ToX0Ratio, minR0ToX0Ratio,
-                !oldMinR0ToX0RatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_R0_TO_X0_RATIO, oldMinR0ToX0Ratio, minR0ToX0Ratio,
+                    !oldMinR0ToX0RatioESet ) );
     }
 
     /**
@@ -1200,9 +1222,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldMinR0ToX0RatioESet = minR0ToX0RatioESet;
         minR0ToX0Ratio = MIN_R0_TO_X0_RATIO_EDEFAULT;
         minR0ToX0RatioESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_R0_TO_X0_RATIO, oldMinR0ToX0Ratio,
-                MIN_R0_TO_X0_RATIO_EDEFAULT, oldMinR0ToX0RatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_R0_TO_X0_RATIO, oldMinR0ToX0Ratio,
+                    MIN_R0_TO_X0_RATIO_EDEFAULT, oldMinR0ToX0RatioESet ) );
     }
 
     /**
@@ -1236,9 +1259,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         minR1ToX1Ratio = newMinR1ToX1Ratio;
         boolean oldMinR1ToX1RatioESet = minR1ToX1RatioESet;
         minR1ToX1RatioESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_R1_TO_X1_RATIO, oldMinR1ToX1Ratio, minR1ToX1Ratio,
-                !oldMinR1ToX1RatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_R1_TO_X1_RATIO, oldMinR1ToX1Ratio, minR1ToX1Ratio,
+                    !oldMinR1ToX1RatioESet ) );
     }
 
     /**
@@ -1252,9 +1276,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldMinR1ToX1RatioESet = minR1ToX1RatioESet;
         minR1ToX1Ratio = MIN_R1_TO_X1_RATIO_EDEFAULT;
         minR1ToX1RatioESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_R1_TO_X1_RATIO, oldMinR1ToX1Ratio,
-                MIN_R1_TO_X1_RATIO_EDEFAULT, oldMinR1ToX1RatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_R1_TO_X1_RATIO, oldMinR1ToX1Ratio,
+                    MIN_R1_TO_X1_RATIO_EDEFAULT, oldMinR1ToX1RatioESet ) );
     }
 
     /**
@@ -1288,9 +1313,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         minZ0ToZ1Ratio = newMinZ0ToZ1Ratio;
         boolean oldMinZ0ToZ1RatioESet = minZ0ToZ1RatioESet;
         minZ0ToZ1RatioESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_Z0_TO_Z1_RATIO, oldMinZ0ToZ1Ratio, minZ0ToZ1Ratio,
-                !oldMinZ0ToZ1RatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_Z0_TO_Z1_RATIO, oldMinZ0ToZ1Ratio, minZ0ToZ1Ratio,
+                    !oldMinZ0ToZ1RatioESet ) );
     }
 
     /**
@@ -1304,9 +1330,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldMinZ0ToZ1RatioESet = minZ0ToZ1RatioESet;
         minZ0ToZ1Ratio = MIN_Z0_TO_Z1_RATIO_EDEFAULT;
         minZ0ToZ1RatioESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_Z0_TO_Z1_RATIO, oldMinZ0ToZ1Ratio,
-                MIN_Z0_TO_Z1_RATIO_EDEFAULT, oldMinZ0ToZ1RatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__MIN_Z0_TO_Z1_RATIO, oldMinZ0ToZ1Ratio,
+                    MIN_Z0_TO_Z1_RATIO_EDEFAULT, oldMinZ0ToZ1RatioESet ) );
     }
 
     /**
@@ -1340,8 +1367,9 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         p = newP;
         boolean oldPESet = pESet;
         pESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__P, oldP, p, !oldPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXTERNAL_NETWORK_INJECTION__P, oldP, p,
+                    !oldPESet ) );
     }
 
     /**
@@ -1355,8 +1383,9 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldPESet = pESet;
         p = P_EDEFAULT;
         pESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__P, oldP, P_EDEFAULT, oldPESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXTERNAL_NETWORK_INJECTION__P, oldP,
+                    P_EDEFAULT, oldPESet ) );
     }
 
     /**
@@ -1390,8 +1419,9 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         q = newQ;
         boolean oldQESet = qESet;
         qESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__Q, oldQ, q, !oldQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXTERNAL_NETWORK_INJECTION__Q, oldQ, q,
+                    !oldQESet ) );
     }
 
     /**
@@ -1405,8 +1435,9 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldQESet = qESet;
         q = Q_EDEFAULT;
         qESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__Q, oldQ, Q_EDEFAULT, oldQESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXTERNAL_NETWORK_INJECTION__Q, oldQ,
+                    Q_EDEFAULT, oldQESet ) );
     }
 
     /**
@@ -1440,9 +1471,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         referencePriority = newReferencePriority;
         boolean oldReferencePriorityESet = referencePriorityESet;
         referencePriorityESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__REFERENCE_PRIORITY, oldReferencePriority, referencePriority,
-                !oldReferencePriorityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__REFERENCE_PRIORITY, oldReferencePriority, referencePriority,
+                    !oldReferencePriorityESet ) );
     }
 
     /**
@@ -1456,9 +1488,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldReferencePriorityESet = referencePriorityESet;
         referencePriority = REFERENCE_PRIORITY_EDEFAULT;
         referencePriorityESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXTERNAL_NETWORK_INJECTION__REFERENCE_PRIORITY, oldReferencePriority,
-                REFERENCE_PRIORITY_EDEFAULT, oldReferencePriorityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__REFERENCE_PRIORITY, oldReferencePriority,
+                    REFERENCE_PRIORITY_EDEFAULT, oldReferencePriorityESet ) );
     }
 
     /**
@@ -1492,9 +1525,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         voltageFactor = newVoltageFactor;
         boolean oldVoltageFactorESet = voltageFactorESet;
         voltageFactorESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXTERNAL_NETWORK_INJECTION__VOLTAGE_FACTOR,
-                        oldVoltageFactor, voltageFactor, !oldVoltageFactorESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__VOLTAGE_FACTOR, oldVoltageFactor, voltageFactor,
+                    !oldVoltageFactorESet ) );
     }
 
     /**
@@ -1508,9 +1542,10 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
         boolean oldVoltageFactorESet = voltageFactorESet;
         voltageFactor = VOLTAGE_FACTOR_EDEFAULT;
         voltageFactorESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.EXTERNAL_NETWORK_INJECTION__VOLTAGE_FACTOR,
-                        oldVoltageFactor, VOLTAGE_FACTOR_EDEFAULT, oldVoltageFactorESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.EXTERNAL_NETWORK_INJECTION__VOLTAGE_FACTOR, oldVoltageFactor, VOLTAGE_FACTOR_EDEFAULT,
+                    oldVoltageFactorESet ) );
     }
 
     /**
@@ -1760,7 +1795,7 @@ public class ExternalNetworkInjectionImpl extends RegulatingCondEqImpl implement
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (governorSCD: " );
         if( governorSCDESet )
             result.append( governorSCD );

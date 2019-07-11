@@ -203,8 +203,9 @@ public class FaultImpedanceImpl extends MinimalEObjectImpl.Container implements 
         rGround = newRGround;
         boolean oldRGroundESet = rGroundESet;
         rGroundESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FAULT_IMPEDANCE__RGROUND, oldRGround, rGround, !oldRGroundESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FAULT_IMPEDANCE__RGROUND, oldRGround,
+                    rGround, !oldRGroundESet ) );
     }
 
     /**
@@ -218,8 +219,9 @@ public class FaultImpedanceImpl extends MinimalEObjectImpl.Container implements 
         boolean oldRGroundESet = rGroundESet;
         rGround = RGROUND_EDEFAULT;
         rGroundESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FAULT_IMPEDANCE__RGROUND, oldRGround, RGROUND_EDEFAULT, oldRGroundESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FAULT_IMPEDANCE__RGROUND, oldRGround,
+                    RGROUND_EDEFAULT, oldRGroundESet ) );
     }
 
     /**
@@ -253,8 +255,9 @@ public class FaultImpedanceImpl extends MinimalEObjectImpl.Container implements 
         rLineToLine = newRLineToLine;
         boolean oldRLineToLineESet = rLineToLineESet;
         rLineToLineESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FAULT_IMPEDANCE__RLINE_TO_LINE, oldRLineToLine, rLineToLine, !oldRLineToLineESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FAULT_IMPEDANCE__RLINE_TO_LINE,
+                    oldRLineToLine, rLineToLine, !oldRLineToLineESet ) );
     }
 
     /**
@@ -304,8 +307,9 @@ public class FaultImpedanceImpl extends MinimalEObjectImpl.Container implements 
         xGround = newXGround;
         boolean oldXGroundESet = xGroundESet;
         xGroundESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FAULT_IMPEDANCE__XGROUND, oldXGround, xGround, !oldXGroundESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FAULT_IMPEDANCE__XGROUND, oldXGround,
+                    xGround, !oldXGroundESet ) );
     }
 
     /**
@@ -319,8 +323,9 @@ public class FaultImpedanceImpl extends MinimalEObjectImpl.Container implements 
         boolean oldXGroundESet = xGroundESet;
         xGround = XGROUND_EDEFAULT;
         xGroundESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FAULT_IMPEDANCE__XGROUND, oldXGround, XGROUND_EDEFAULT, oldXGroundESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FAULT_IMPEDANCE__XGROUND, oldXGround,
+                    XGROUND_EDEFAULT, oldXGroundESet ) );
     }
 
     /**
@@ -354,8 +359,9 @@ public class FaultImpedanceImpl extends MinimalEObjectImpl.Container implements 
         xLineToLine = newXLineToLine;
         boolean oldXLineToLineESet = xLineToLineESet;
         xLineToLineESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.FAULT_IMPEDANCE__XLINE_TO_LINE, oldXLineToLine, xLineToLine, !oldXLineToLineESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FAULT_IMPEDANCE__XLINE_TO_LINE,
+                    oldXLineToLine, xLineToLine, !oldXLineToLineESet ) );
     }
 
     /**
@@ -481,7 +487,7 @@ public class FaultImpedanceImpl extends MinimalEObjectImpl.Container implements 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (rGround: " );
         if( rGroundESet )
             result.append( rGround );

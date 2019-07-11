@@ -233,8 +233,9 @@ public class AsynchronousMachineTimeConstantReactanceImpl extends AsynchronousMa
         tpo = newTpo;
         boolean oldTpoESet = tpoESet;
         tpoESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPO, oldTpo, tpo, !oldTpoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPO, oldTpo, tpo, !oldTpoESet ) );
     }
 
     /**
@@ -248,8 +249,9 @@ public class AsynchronousMachineTimeConstantReactanceImpl extends AsynchronousMa
         boolean oldTpoESet = tpoESet;
         tpo = TPO_EDEFAULT;
         tpoESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPO, oldTpo, TPO_EDEFAULT, oldTpoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPO, oldTpo, TPO_EDEFAULT, oldTpoESet ) );
     }
 
     /**
@@ -283,8 +285,9 @@ public class AsynchronousMachineTimeConstantReactanceImpl extends AsynchronousMa
         tppo = newTppo;
         boolean oldTppoESet = tppoESet;
         tppoESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPPO, oldTppo, tppo, !oldTppoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPPO, oldTppo, tppo, !oldTppoESet ) );
     }
 
     /**
@@ -298,8 +301,10 @@ public class AsynchronousMachineTimeConstantReactanceImpl extends AsynchronousMa
         boolean oldTppoESet = tppoESet;
         tppo = TPPO_EDEFAULT;
         tppoESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPPO, oldTppo, TPPO_EDEFAULT, oldTppoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPPO, oldTppo, TPPO_EDEFAULT,
+                    oldTppoESet ) );
     }
 
     /**
@@ -333,8 +338,9 @@ public class AsynchronousMachineTimeConstantReactanceImpl extends AsynchronousMa
         xp = newXp;
         boolean oldXpESet = xpESet;
         xpESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XP, oldXp, xp, !oldXpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XP, oldXp, xp, !oldXpESet ) );
     }
 
     /**
@@ -348,8 +354,9 @@ public class AsynchronousMachineTimeConstantReactanceImpl extends AsynchronousMa
         boolean oldXpESet = xpESet;
         xp = XP_EDEFAULT;
         xpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XP, oldXp, XP_EDEFAULT, oldXpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XP, oldXp, XP_EDEFAULT, oldXpESet ) );
     }
 
     /**
@@ -383,8 +390,9 @@ public class AsynchronousMachineTimeConstantReactanceImpl extends AsynchronousMa
         xpp = newXpp;
         boolean oldXppESet = xppESet;
         xppESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XPP, oldXpp, xpp, !oldXppESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XPP, oldXpp, xpp, !oldXppESet ) );
     }
 
     /**
@@ -398,8 +406,9 @@ public class AsynchronousMachineTimeConstantReactanceImpl extends AsynchronousMa
         boolean oldXppESet = xppESet;
         xpp = XPP_EDEFAULT;
         xppESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XPP, oldXpp, XPP_EDEFAULT, oldXppESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XPP, oldXpp, XPP_EDEFAULT, oldXppESet ) );
     }
 
     /**
@@ -433,8 +442,9 @@ public class AsynchronousMachineTimeConstantReactanceImpl extends AsynchronousMa
         xs = newXs;
         boolean oldXsESet = xsESet;
         xsESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XS, oldXs, xs, !oldXsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XS, oldXs, xs, !oldXsESet ) );
     }
 
     /**
@@ -448,8 +458,9 @@ public class AsynchronousMachineTimeConstantReactanceImpl extends AsynchronousMa
         boolean oldXsESet = xsESet;
         xs = XS_EDEFAULT;
         xsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XS, oldXs, XS_EDEFAULT, oldXsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.ASYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XS, oldXs, XS_EDEFAULT, oldXsESet ) );
     }
 
     /**
@@ -569,7 +580,7 @@ public class AsynchronousMachineTimeConstantReactanceImpl extends AsynchronousMa
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (tpo: " );
         if( tpoESet )
             result.append( tpo );

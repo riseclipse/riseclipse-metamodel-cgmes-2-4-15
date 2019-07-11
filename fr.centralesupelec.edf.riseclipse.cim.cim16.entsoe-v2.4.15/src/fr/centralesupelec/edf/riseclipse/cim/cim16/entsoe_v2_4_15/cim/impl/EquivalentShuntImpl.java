@@ -142,8 +142,9 @@ public class EquivalentShuntImpl extends EquivalentEquipmentImpl implements Equi
         b = newB;
         boolean oldBESet = bESet;
         bESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_SHUNT__B, oldB, b, !oldBESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_SHUNT__B, oldB, b,
+                    !oldBESet ) );
     }
 
     /**
@@ -157,8 +158,9 @@ public class EquivalentShuntImpl extends EquivalentEquipmentImpl implements Equi
         boolean oldBESet = bESet;
         b = B_EDEFAULT;
         bESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_SHUNT__B, oldB, B_EDEFAULT, oldBESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_SHUNT__B, oldB, B_EDEFAULT,
+                    oldBESet ) );
     }
 
     /**
@@ -192,8 +194,9 @@ public class EquivalentShuntImpl extends EquivalentEquipmentImpl implements Equi
         g = newG;
         boolean oldGESet = gESet;
         gESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_SHUNT__G, oldG, g, !oldGESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_SHUNT__G, oldG, g,
+                    !oldGESet ) );
     }
 
     /**
@@ -207,8 +210,9 @@ public class EquivalentShuntImpl extends EquivalentEquipmentImpl implements Equi
         boolean oldGESet = gESet;
         g = G_EDEFAULT;
         gESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_SHUNT__G, oldG, G_EDEFAULT, oldGESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_SHUNT__G, oldG, G_EDEFAULT,
+                    oldGESet ) );
     }
 
     /**
@@ -298,7 +302,7 @@ public class EquivalentShuntImpl extends EquivalentEquipmentImpl implements Equi
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (b: " );
         if( bESet )
             result.append( b );

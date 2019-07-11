@@ -117,7 +117,11 @@ public enum ControlAreaTypeKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final ControlAreaTypeKind[] VALUES_ARRAY = new ControlAreaTypeKind[] { AGC, FORECAST, INTERCHANGE, };
+    private static final ControlAreaTypeKind[] VALUES_ARRAY = new ControlAreaTypeKind[] {
+            AGC,
+            FORECAST,
+            INTERCHANGE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Control Area Type Kind</b></em>' enumerators.

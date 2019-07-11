@@ -451,8 +451,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         bmagSat = newBmagSat;
         boolean oldBmagSatESet = bmagSatESet;
         bmagSatESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_END__BMAG_SAT, oldBmagSat, bmagSat, !oldBmagSatESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_END__BMAG_SAT, oldBmagSat,
+                    bmagSat, !oldBmagSatESet ) );
     }
 
     /**
@@ -466,8 +467,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         boolean oldBmagSatESet = bmagSatESet;
         bmagSat = BMAG_SAT_EDEFAULT;
         bmagSatESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_END__BMAG_SAT, oldBmagSat, BMAG_SAT_EDEFAULT, oldBmagSatESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END__BMAG_SAT, oldBmagSat,
+                    BMAG_SAT_EDEFAULT, oldBmagSatESet ) );
     }
 
     /**
@@ -501,8 +503,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         endNumber = newEndNumber;
         boolean oldEndNumberESet = endNumberESet;
         endNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_END__END_NUMBER, oldEndNumber, endNumber, !oldEndNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_END__END_NUMBER,
+                    oldEndNumber, endNumber, !oldEndNumberESet ) );
     }
 
     /**
@@ -516,8 +519,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         boolean oldEndNumberESet = endNumberESet;
         endNumber = END_NUMBER_EDEFAULT;
         endNumberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_END__END_NUMBER, oldEndNumber, END_NUMBER_EDEFAULT, oldEndNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END__END_NUMBER,
+                    oldEndNumber, END_NUMBER_EDEFAULT, oldEndNumberESet ) );
     }
 
     /**
@@ -551,8 +555,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         grounded = newGrounded;
         boolean oldGroundedESet = groundedESet;
         groundedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_END__GROUNDED, oldGrounded, grounded, !oldGroundedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_END__GROUNDED, oldGrounded,
+                    grounded, !oldGroundedESet ) );
     }
 
     /**
@@ -566,8 +571,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         boolean oldGroundedESet = groundedESet;
         grounded = GROUNDED_EDEFAULT;
         groundedESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_END__GROUNDED, oldGrounded, GROUNDED_EDEFAULT, oldGroundedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END__GROUNDED, oldGrounded,
+                    GROUNDED_EDEFAULT, oldGroundedESet ) );
     }
 
     /**
@@ -601,8 +607,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         magBaseU = newMagBaseU;
         boolean oldMagBaseUESet = magBaseUESet;
         magBaseUESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_END__MAG_BASE_U, oldMagBaseU, magBaseU, !oldMagBaseUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_END__MAG_BASE_U, oldMagBaseU,
+                    magBaseU, !oldMagBaseUESet ) );
     }
 
     /**
@@ -616,8 +623,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         boolean oldMagBaseUESet = magBaseUESet;
         magBaseU = MAG_BASE_U_EDEFAULT;
         magBaseUESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_END__MAG_BASE_U, oldMagBaseU, MAG_BASE_U_EDEFAULT, oldMagBaseUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END__MAG_BASE_U,
+                    oldMagBaseU, MAG_BASE_U_EDEFAULT, oldMagBaseUESet ) );
     }
 
     /**
@@ -651,8 +659,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         magSatFlux = newMagSatFlux;
         boolean oldMagSatFluxESet = magSatFluxESet;
         magSatFluxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_END__MAG_SAT_FLUX, oldMagSatFlux, magSatFlux, !oldMagSatFluxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_END__MAG_SAT_FLUX,
+                    oldMagSatFlux, magSatFlux, !oldMagSatFluxESet ) );
     }
 
     /**
@@ -666,8 +675,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         boolean oldMagSatFluxESet = magSatFluxESet;
         magSatFlux = MAG_SAT_FLUX_EDEFAULT;
         magSatFluxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_END__MAG_SAT_FLUX, oldMagSatFlux, MAG_SAT_FLUX_EDEFAULT, oldMagSatFluxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END__MAG_SAT_FLUX,
+                    oldMagSatFlux, MAG_SAT_FLUX_EDEFAULT, oldMagSatFluxESet ) );
     }
 
     /**
@@ -701,8 +711,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         rground = newRground;
         boolean oldRgroundESet = rgroundESet;
         rgroundESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_END__RGROUND, oldRground, rground, !oldRgroundESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_END__RGROUND, oldRground,
+                    rground, !oldRgroundESet ) );
     }
 
     /**
@@ -716,8 +727,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         boolean oldRgroundESet = rgroundESet;
         rground = RGROUND_EDEFAULT;
         rgroundESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_END__RGROUND, oldRground, RGROUND_EDEFAULT, oldRgroundESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END__RGROUND, oldRground,
+                    RGROUND_EDEFAULT, oldRgroundESet ) );
     }
 
     /**
@@ -751,8 +763,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         xground = newXground;
         boolean oldXgroundESet = xgroundESet;
         xgroundESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_END__XGROUND, oldXground, xground, !oldXgroundESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_END__XGROUND, oldXground,
+                    xground, !oldXgroundESet ) );
     }
 
     /**
@@ -766,8 +779,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         boolean oldXgroundESet = xgroundESet;
         xground = XGROUND_EDEFAULT;
         xgroundESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_END__XGROUND, oldXground, XGROUND_EDEFAULT, oldXgroundESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END__XGROUND, oldXground,
+                    XGROUND_EDEFAULT, oldXgroundESet ) );
     }
 
     /**
@@ -855,18 +869,21 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
     public void setTerminal( Terminal newTerminal ) {
         if( newTerminal != terminal ) {
             NotificationChain msgs = null;
-            if( terminal != null ) msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__TRANSFORMER_END, Terminal.class, msgs );
-            if( newTerminal != null ) msgs = ( ( InternalEObject ) newTerminal ).eInverseAdd( this,
-                    CimPackage.TERMINAL__TRANSFORMER_END, Terminal.class, msgs );
+            if( terminal != null )
+                msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this, CimPackage.TERMINAL__TRANSFORMER_END,
+                        Terminal.class, msgs );
+            if( newTerminal != null )
+                msgs = ( ( InternalEObject ) newTerminal ).eInverseAdd( this, CimPackage.TERMINAL__TRANSFORMER_END,
+                        Terminal.class, msgs );
             msgs = basicSetTerminal( newTerminal, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTerminalESet = terminalESet;
             terminalESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TRANSFORMER_END__TERMINAL, newTerminal, newTerminal, !oldTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_END__TERMINAL,
+                        newTerminal, newTerminal, !oldTerminalESet ) );
         }
     }
 
@@ -908,8 +925,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         else {
             boolean oldTerminalESet = terminalESet;
             terminalESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSFORMER_END__TERMINAL, null, null, oldTerminalESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END__TERMINAL, null,
+                        null, oldTerminalESet ) );
         }
     }
 
@@ -965,10 +983,12 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
     public void setStarImpedance( TransformerStarImpedance newStarImpedance ) {
         if( newStarImpedance != starImpedance ) {
             NotificationChain msgs = null;
-            if( starImpedance != null ) msgs = ( ( InternalEObject ) starImpedance ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_STAR_IMPEDANCE__TRANSFORMER_END, TransformerStarImpedance.class, msgs );
-            if( newStarImpedance != null ) msgs = ( ( InternalEObject ) newStarImpedance ).eInverseAdd( this,
-                    CimPackage.TRANSFORMER_STAR_IMPEDANCE__TRANSFORMER_END, TransformerStarImpedance.class, msgs );
+            if( starImpedance != null )
+                msgs = ( ( InternalEObject ) starImpedance ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_STAR_IMPEDANCE__TRANSFORMER_END, TransformerStarImpedance.class, msgs );
+            if( newStarImpedance != null )
+                msgs = ( ( InternalEObject ) newStarImpedance ).eInverseAdd( this,
+                        CimPackage.TRANSFORMER_STAR_IMPEDANCE__TRANSFORMER_END, TransformerStarImpedance.class, msgs );
             msgs = basicSetStarImpedance( newStarImpedance, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1019,8 +1039,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         else {
             boolean oldStarImpedanceESet = starImpedanceESet;
             starImpedanceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSFORMER_END__STAR_IMPEDANCE, null, null, oldStarImpedanceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END__STAR_IMPEDANCE,
+                        null, null, oldStarImpedanceESet ) );
         }
     }
 
@@ -1109,18 +1130,21 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
     public void setBaseVoltage( BaseVoltage newBaseVoltage ) {
         if( newBaseVoltage != baseVoltage ) {
             NotificationChain msgs = null;
-            if( baseVoltage != null ) msgs = ( ( InternalEObject ) baseVoltage ).eInverseRemove( this,
-                    CimPackage.BASE_VOLTAGE__TRANSFORMER_ENDS, BaseVoltage.class, msgs );
-            if( newBaseVoltage != null ) msgs = ( ( InternalEObject ) newBaseVoltage ).eInverseAdd( this,
-                    CimPackage.BASE_VOLTAGE__TRANSFORMER_ENDS, BaseVoltage.class, msgs );
+            if( baseVoltage != null )
+                msgs = ( ( InternalEObject ) baseVoltage ).eInverseRemove( this,
+                        CimPackage.BASE_VOLTAGE__TRANSFORMER_ENDS, BaseVoltage.class, msgs );
+            if( newBaseVoltage != null )
+                msgs = ( ( InternalEObject ) newBaseVoltage ).eInverseAdd( this,
+                        CimPackage.BASE_VOLTAGE__TRANSFORMER_ENDS, BaseVoltage.class, msgs );
             msgs = basicSetBaseVoltage( newBaseVoltage, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldBaseVoltageESet = baseVoltageESet;
             baseVoltageESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TRANSFORMER_END__BASE_VOLTAGE, newBaseVoltage, newBaseVoltage, !oldBaseVoltageESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_END__BASE_VOLTAGE,
+                        newBaseVoltage, newBaseVoltage, !oldBaseVoltageESet ) );
         }
     }
 
@@ -1162,8 +1186,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         else {
             boolean oldBaseVoltageESet = baseVoltageESet;
             baseVoltageESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSFORMER_END__BASE_VOLTAGE, null, null, oldBaseVoltageESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END__BASE_VOLTAGE,
+                        null, null, oldBaseVoltageESet ) );
         }
     }
 
@@ -1219,10 +1244,14 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
     public void setCoreAdmittance( TransformerCoreAdmittance newCoreAdmittance ) {
         if( newCoreAdmittance != coreAdmittance ) {
             NotificationChain msgs = null;
-            if( coreAdmittance != null ) msgs = ( ( InternalEObject ) coreAdmittance ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_CORE_ADMITTANCE__TRANSFORMER_END, TransformerCoreAdmittance.class, msgs );
-            if( newCoreAdmittance != null ) msgs = ( ( InternalEObject ) newCoreAdmittance ).eInverseAdd( this,
-                    CimPackage.TRANSFORMER_CORE_ADMITTANCE__TRANSFORMER_END, TransformerCoreAdmittance.class, msgs );
+            if( coreAdmittance != null )
+                msgs = ( ( InternalEObject ) coreAdmittance ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_CORE_ADMITTANCE__TRANSFORMER_END, TransformerCoreAdmittance.class,
+                        msgs );
+            if( newCoreAdmittance != null )
+                msgs = ( ( InternalEObject ) newCoreAdmittance ).eInverseAdd( this,
+                        CimPackage.TRANSFORMER_CORE_ADMITTANCE__TRANSFORMER_END, TransformerCoreAdmittance.class,
+                        msgs );
             msgs = basicSetCoreAdmittance( newCoreAdmittance, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1273,8 +1302,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         else {
             boolean oldCoreAdmittanceESet = coreAdmittanceESet;
             coreAdmittanceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSFORMER_END__CORE_ADMITTANCE, null, null, oldCoreAdmittanceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END__CORE_ADMITTANCE,
+                        null, null, oldCoreAdmittanceESet ) );
         }
     }
 
@@ -1329,10 +1359,12 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
     public void setPhaseTapChanger( PhaseTapChanger newPhaseTapChanger ) {
         if( newPhaseTapChanger != phaseTapChanger ) {
             NotificationChain msgs = null;
-            if( phaseTapChanger != null ) msgs = ( ( InternalEObject ) phaseTapChanger ).eInverseRemove( this,
-                    CimPackage.PHASE_TAP_CHANGER__TRANSFORMER_END, PhaseTapChanger.class, msgs );
-            if( newPhaseTapChanger != null ) msgs = ( ( InternalEObject ) newPhaseTapChanger ).eInverseAdd( this,
-                    CimPackage.PHASE_TAP_CHANGER__TRANSFORMER_END, PhaseTapChanger.class, msgs );
+            if( phaseTapChanger != null )
+                msgs = ( ( InternalEObject ) phaseTapChanger ).eInverseRemove( this,
+                        CimPackage.PHASE_TAP_CHANGER__TRANSFORMER_END, PhaseTapChanger.class, msgs );
+            if( newPhaseTapChanger != null )
+                msgs = ( ( InternalEObject ) newPhaseTapChanger ).eInverseAdd( this,
+                        CimPackage.PHASE_TAP_CHANGER__TRANSFORMER_END, PhaseTapChanger.class, msgs );
             msgs = basicSetPhaseTapChanger( newPhaseTapChanger, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1383,8 +1415,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         else {
             boolean oldPhaseTapChangerESet = phaseTapChangerESet;
             phaseTapChangerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSFORMER_END__PHASE_TAP_CHANGER, null, null, oldPhaseTapChangerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END__PHASE_TAP_CHANGER,
+                        null, null, oldPhaseTapChangerESet ) );
         }
     }
 
@@ -1439,10 +1472,12 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
     public void setRatioTapChanger( RatioTapChanger newRatioTapChanger ) {
         if( newRatioTapChanger != ratioTapChanger ) {
             NotificationChain msgs = null;
-            if( ratioTapChanger != null ) msgs = ( ( InternalEObject ) ratioTapChanger ).eInverseRemove( this,
-                    CimPackage.RATIO_TAP_CHANGER__TRANSFORMER_END, RatioTapChanger.class, msgs );
-            if( newRatioTapChanger != null ) msgs = ( ( InternalEObject ) newRatioTapChanger ).eInverseAdd( this,
-                    CimPackage.RATIO_TAP_CHANGER__TRANSFORMER_END, RatioTapChanger.class, msgs );
+            if( ratioTapChanger != null )
+                msgs = ( ( InternalEObject ) ratioTapChanger ).eInverseRemove( this,
+                        CimPackage.RATIO_TAP_CHANGER__TRANSFORMER_END, RatioTapChanger.class, msgs );
+            if( newRatioTapChanger != null )
+                msgs = ( ( InternalEObject ) newRatioTapChanger ).eInverseAdd( this,
+                        CimPackage.RATIO_TAP_CHANGER__TRANSFORMER_END, RatioTapChanger.class, msgs );
             msgs = basicSetRatioTapChanger( newRatioTapChanger, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1493,8 +1528,9 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
         else {
             boolean oldRatioTapChangerESet = ratioTapChangerESet;
             ratioTapChangerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSFORMER_END__RATIO_TAP_CHANGER, null, null, oldRatioTapChangerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END__RATIO_TAP_CHANGER,
+                        null, null, oldRatioTapChangerESet ) );
         }
     }
 
@@ -1521,31 +1557,38 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getToMeshImpedance() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.TRANSFORMER_END__RATIO_TAP_CHANGER:
-            if( ratioTapChanger != null ) msgs = ( ( InternalEObject ) ratioTapChanger ).eInverseRemove( this,
-                    CimPackage.RATIO_TAP_CHANGER__TRANSFORMER_END, RatioTapChanger.class, msgs );
+            if( ratioTapChanger != null )
+                msgs = ( ( InternalEObject ) ratioTapChanger ).eInverseRemove( this,
+                        CimPackage.RATIO_TAP_CHANGER__TRANSFORMER_END, RatioTapChanger.class, msgs );
             return basicSetRatioTapChanger( ( RatioTapChanger ) otherEnd, msgs );
         case CimPackage.TRANSFORMER_END__BASE_VOLTAGE:
-            if( baseVoltage != null ) msgs = ( ( InternalEObject ) baseVoltage ).eInverseRemove( this,
-                    CimPackage.BASE_VOLTAGE__TRANSFORMER_ENDS, BaseVoltage.class, msgs );
+            if( baseVoltage != null )
+                msgs = ( ( InternalEObject ) baseVoltage ).eInverseRemove( this,
+                        CimPackage.BASE_VOLTAGE__TRANSFORMER_ENDS, BaseVoltage.class, msgs );
             return basicSetBaseVoltage( ( BaseVoltage ) otherEnd, msgs );
         case CimPackage.TRANSFORMER_END__CORE_ADMITTANCE:
-            if( coreAdmittance != null ) msgs = ( ( InternalEObject ) coreAdmittance ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_CORE_ADMITTANCE__TRANSFORMER_END, TransformerCoreAdmittance.class, msgs );
+            if( coreAdmittance != null )
+                msgs = ( ( InternalEObject ) coreAdmittance ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_CORE_ADMITTANCE__TRANSFORMER_END, TransformerCoreAdmittance.class,
+                        msgs );
             return basicSetCoreAdmittance( ( TransformerCoreAdmittance ) otherEnd, msgs );
         case CimPackage.TRANSFORMER_END__FROM_MESH_IMPEDANCE:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getFromMeshImpedance() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.TRANSFORMER_END__TERMINAL:
-            if( terminal != null ) msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this,
-                    CimPackage.TERMINAL__TRANSFORMER_END, Terminal.class, msgs );
+            if( terminal != null )
+                msgs = ( ( InternalEObject ) terminal ).eInverseRemove( this, CimPackage.TERMINAL__TRANSFORMER_END,
+                        Terminal.class, msgs );
             return basicSetTerminal( ( Terminal ) otherEnd, msgs );
         case CimPackage.TRANSFORMER_END__PHASE_TAP_CHANGER:
-            if( phaseTapChanger != null ) msgs = ( ( InternalEObject ) phaseTapChanger ).eInverseRemove( this,
-                    CimPackage.PHASE_TAP_CHANGER__TRANSFORMER_END, PhaseTapChanger.class, msgs );
+            if( phaseTapChanger != null )
+                msgs = ( ( InternalEObject ) phaseTapChanger ).eInverseRemove( this,
+                        CimPackage.PHASE_TAP_CHANGER__TRANSFORMER_END, PhaseTapChanger.class, msgs );
             return basicSetPhaseTapChanger( ( PhaseTapChanger ) otherEnd, msgs );
         case CimPackage.TRANSFORMER_END__STAR_IMPEDANCE:
-            if( starImpedance != null ) msgs = ( ( InternalEObject ) starImpedance ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_STAR_IMPEDANCE__TRANSFORMER_END, TransformerStarImpedance.class, msgs );
+            if( starImpedance != null )
+                msgs = ( ( InternalEObject ) starImpedance ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_STAR_IMPEDANCE__TRANSFORMER_END, TransformerStarImpedance.class, msgs );
             return basicSetStarImpedance( ( TransformerStarImpedance ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1789,7 +1832,7 @@ public class TransformerEndImpl extends IdentifiedObjectImpl implements Transfor
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (bmagSat: " );
         if( bmagSatESet )
             result.append( bmagSat );

@@ -623,8 +623,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         esc = newEsc;
         boolean oldEscESet = escESet;
         escESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__ESC, oldEsc, esc, !oldEscESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__ESC, oldEsc,
+                    esc, !oldEscESet ) );
     }
 
     /**
@@ -638,8 +639,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldEscESet = escESet;
         esc = ESC_EDEFAULT;
         escESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__ESC, oldEsc, ESC_EDEFAULT, oldEscESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__ESC, oldEsc,
+                    ESC_EDEFAULT, oldEscESet ) );
     }
 
     /**
@@ -673,8 +675,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         kan = newKan;
         boolean oldKanESet = kanESet;
         kanESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__KAN, oldKan, kan, !oldKanESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__KAN, oldKan,
+                    kan, !oldKanESet ) );
     }
 
     /**
@@ -688,8 +691,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldKanESet = kanESet;
         kan = KAN_EDEFAULT;
         kanESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__KAN, oldKan, KAN_EDEFAULT, oldKanESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__KAN, oldKan,
+                    KAN_EDEFAULT, oldKanESet ) );
     }
 
     /**
@@ -723,8 +727,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         ketl = newKetl;
         boolean oldKetlESet = ketlESet;
         ketlESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__KETL, oldKetl, ketl, !oldKetlESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__KETL, oldKetl,
+                    ketl, !oldKetlESet ) );
     }
 
     /**
@@ -738,8 +743,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldKetlESet = ketlESet;
         ketl = KETL_EDEFAULT;
         ketlESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__KETL, oldKetl, KETL_EDEFAULT, oldKetlESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__KETL, oldKetl,
+                    KETL_EDEFAULT, oldKetlESet ) );
     }
 
     /**
@@ -773,8 +779,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         tan = newTan;
         boolean oldTanESet = tanESet;
         tanESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__TAN, oldTan, tan, !oldTanESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__TAN, oldTan,
+                    tan, !oldTanESet ) );
     }
 
     /**
@@ -788,8 +795,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldTanESet = tanESet;
         tan = TAN_EDEFAULT;
         tanESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__TAN, oldTan, TAN_EDEFAULT, oldTanESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__TAN, oldTan,
+                    TAN_EDEFAULT, oldTanESet ) );
     }
 
     /**
@@ -823,8 +831,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         td = newTd;
         boolean oldTdESet = tdESet;
         tdESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__TD, oldTd, td, !oldTdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__TD, oldTd, td,
+                    !oldTdESet ) );
     }
 
     /**
@@ -838,8 +847,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldTdESet = tdESet;
         td = TD_EDEFAULT;
         tdESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__TD, oldTd, TD_EDEFAULT, oldTdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__TD, oldTd,
+                    TD_EDEFAULT, oldTdESet ) );
     }
 
     /**
@@ -873,8 +883,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         tl1 = newTl1;
         boolean oldTl1ESet = tl1ESet;
         tl1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__TL1, oldTl1, tl1, !oldTl1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__TL1, oldTl1,
+                    tl1, !oldTl1ESet ) );
     }
 
     /**
@@ -888,8 +899,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldTl1ESet = tl1ESet;
         tl1 = TL1_EDEFAULT;
         tl1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__TL1, oldTl1, TL1_EDEFAULT, oldTl1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__TL1, oldTl1,
+                    TL1_EDEFAULT, oldTl1ESet ) );
     }
 
     /**
@@ -923,8 +935,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         tl2 = newTl2;
         boolean oldTl2ESet = tl2ESet;
         tl2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__TL2, oldTl2, tl2, !oldTl2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__TL2, oldTl2,
+                    tl2, !oldTl2ESet ) );
     }
 
     /**
@@ -938,8 +951,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldTl2ESet = tl2ESet;
         tl2 = TL2_EDEFAULT;
         tl2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__TL2, oldTl2, TL2_EDEFAULT, oldTl2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__TL2, oldTl2,
+                    TL2_EDEFAULT, oldTl2ESet ) );
     }
 
     /**
@@ -973,8 +987,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         tw5 = newTw5;
         boolean oldTw5ESet = tw5ESet;
         tw5ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__TW5, oldTw5, tw5, !oldTw5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__TW5, oldTw5,
+                    tw5, !oldTw5ESet ) );
     }
 
     /**
@@ -988,8 +1003,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldTw5ESet = tw5ESet;
         tw5 = TW5_EDEFAULT;
         tw5ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__TW5, oldTw5, TW5_EDEFAULT, oldTw5ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__TW5, oldTw5,
+                    TW5_EDEFAULT, oldTw5ESet ) );
     }
 
     /**
@@ -1023,8 +1039,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         val = newVal;
         boolean oldValESet = valESet;
         valESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VAL, oldVal, val, !oldValESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VAL, oldVal,
+                    val, !oldValESet ) );
     }
 
     /**
@@ -1038,8 +1055,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldValESet = valESet;
         val = VAL_EDEFAULT;
         valESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VAL, oldVal, VAL_EDEFAULT, oldValESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VAL, oldVal,
+                    VAL_EDEFAULT, oldValESet ) );
     }
 
     /**
@@ -1073,8 +1091,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         vanmax = newVanmax;
         boolean oldVanmaxESet = vanmaxESet;
         vanmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VANMAX, oldVanmax, vanmax, !oldVanmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VANMAX,
+                    oldVanmax, vanmax, !oldVanmaxESet ) );
     }
 
     /**
@@ -1088,8 +1107,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldVanmaxESet = vanmaxESet;
         vanmax = VANMAX_EDEFAULT;
         vanmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VANMAX, oldVanmax, VANMAX_EDEFAULT, oldVanmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VANMAX,
+                    oldVanmax, VANMAX_EDEFAULT, oldVanmaxESet ) );
     }
 
     /**
@@ -1123,8 +1143,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         vomax = newVomax;
         boolean oldVomaxESet = vomaxESet;
         vomaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VOMAX, oldVomax, vomax, !oldVomaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VOMAX, oldVomax,
+                    vomax, !oldVomaxESet ) );
     }
 
     /**
@@ -1138,8 +1159,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldVomaxESet = vomaxESet;
         vomax = VOMAX_EDEFAULT;
         vomaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VOMAX, oldVomax, VOMAX_EDEFAULT, oldVomaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VOMAX,
+                    oldVomax, VOMAX_EDEFAULT, oldVomaxESet ) );
     }
 
     /**
@@ -1173,8 +1195,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         vomin = newVomin;
         boolean oldVominESet = vominESet;
         vominESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VOMIN, oldVomin, vomin, !oldVominESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VOMIN, oldVomin,
+                    vomin, !oldVominESet ) );
     }
 
     /**
@@ -1188,8 +1211,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldVominESet = vominESet;
         vomin = VOMIN_EDEFAULT;
         vominESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VOMIN, oldVomin, VOMIN_EDEFAULT, oldVominESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VOMIN,
+                    oldVomin, VOMIN_EDEFAULT, oldVominESet ) );
     }
 
     /**
@@ -1223,8 +1247,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         vsmax = newVsmax;
         boolean oldVsmaxESet = vsmaxESet;
         vsmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VSMAX, oldVsmax, vsmax, !oldVsmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VSMAX, oldVsmax,
+                    vsmax, !oldVsmaxESet ) );
     }
 
     /**
@@ -1238,8 +1263,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldVsmaxESet = vsmaxESet;
         vsmax = VSMAX_EDEFAULT;
         vsmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VSMAX, oldVsmax, VSMAX_EDEFAULT, oldVsmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VSMAX,
+                    oldVsmax, VSMAX_EDEFAULT, oldVsmaxESet ) );
     }
 
     /**
@@ -1273,8 +1299,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         vsmin = newVsmin;
         boolean oldVsminESet = vsminESet;
         vsminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VSMIN, oldVsmin, vsmin, !oldVsminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VSMIN, oldVsmin,
+                    vsmin, !oldVsminESet ) );
     }
 
     /**
@@ -1288,8 +1315,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldVsminESet = vsminESet;
         vsmin = VSMIN_EDEFAULT;
         vsminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VSMIN, oldVsmin, VSMIN_EDEFAULT, oldVsminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VSMIN,
+                    oldVsmin, VSMIN_EDEFAULT, oldVsminESet ) );
     }
 
     /**
@@ -1323,8 +1351,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         vtc = newVtc;
         boolean oldVtcESet = vtcESet;
         vtcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VTC, oldVtc, vtc, !oldVtcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VTC, oldVtc,
+                    vtc, !oldVtcESet ) );
     }
 
     /**
@@ -1338,8 +1367,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldVtcESet = vtcESet;
         vtc = VTC_EDEFAULT;
         vtcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VTC, oldVtc, VTC_EDEFAULT, oldVtcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VTC, oldVtc,
+                    VTC_EDEFAULT, oldVtcESet ) );
     }
 
     /**
@@ -1373,8 +1403,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         vtlmt = newVtlmt;
         boolean oldVtlmtESet = vtlmtESet;
         vtlmtESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VTLMT, oldVtlmt, vtlmt, !oldVtlmtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VTLMT, oldVtlmt,
+                    vtlmt, !oldVtlmtESet ) );
     }
 
     /**
@@ -1388,8 +1419,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldVtlmtESet = vtlmtESet;
         vtlmt = VTLMT_EDEFAULT;
         vtlmtESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VTLMT, oldVtlmt, VTLMT_EDEFAULT, oldVtlmtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VTLMT,
+                    oldVtlmt, VTLMT_EDEFAULT, oldVtlmtESet ) );
     }
 
     /**
@@ -1423,8 +1455,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         vtm = newVtm;
         boolean oldVtmESet = vtmESet;
         vtmESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VTM, oldVtm, vtm, !oldVtmESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VTM, oldVtm,
+                    vtm, !oldVtmESet ) );
     }
 
     /**
@@ -1438,8 +1471,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldVtmESet = vtmESet;
         vtm = VTM_EDEFAULT;
         vtmESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VTM, oldVtm, VTM_EDEFAULT, oldVtmESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VTM, oldVtm,
+                    VTM_EDEFAULT, oldVtmESet ) );
     }
 
     /**
@@ -1473,8 +1507,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         vtn = newVtn;
         boolean oldVtnESet = vtnESet;
         vtnESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VTN, oldVtn, vtn, !oldVtnESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VTN, oldVtn,
+                    vtn, !oldVtnESet ) );
     }
 
     /**
@@ -1488,8 +1523,9 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
         boolean oldVtnESet = vtnESet;
         vtn = VTN_EDEFAULT;
         vtnESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC1A__VTN, oldVtn, VTN_EDEFAULT, oldVtnESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC1A__VTN, oldVtn,
+                    VTN_EDEFAULT, oldVtnESet ) );
     }
 
     /**
@@ -1739,7 +1775,7 @@ public class DiscExcContIEEEDEC1AImpl extends DiscontinuousExcitationControlDyna
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (esc: " );
         if( escESet )
             result.append( esc );

@@ -443,9 +443,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         isElectricVehicle = newIsElectricVehicle;
         boolean oldIsElectricVehicleESet = isElectricVehicleESet;
         isElectricVehicleESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.CONTROLLED_APPLIANCE__IS_ELECTRIC_VEHICLE,
-                        oldIsElectricVehicle, isElectricVehicle, !oldIsElectricVehicleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_ELECTRIC_VEHICLE, oldIsElectricVehicle, isElectricVehicle,
+                    !oldIsElectricVehicleESet ) );
     }
 
     /**
@@ -459,9 +460,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         boolean oldIsElectricVehicleESet = isElectricVehicleESet;
         isElectricVehicle = IS_ELECTRIC_VEHICLE_EDEFAULT;
         isElectricVehicleESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.CONTROLLED_APPLIANCE__IS_ELECTRIC_VEHICLE,
-                        oldIsElectricVehicle, IS_ELECTRIC_VEHICLE_EDEFAULT, oldIsElectricVehicleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_ELECTRIC_VEHICLE, oldIsElectricVehicle,
+                    IS_ELECTRIC_VEHICLE_EDEFAULT, oldIsElectricVehicleESet ) );
     }
 
     /**
@@ -495,9 +497,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         isExteriorLighting = newIsExteriorLighting;
         boolean oldIsExteriorLightingESet = isExteriorLightingESet;
         isExteriorLightingESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.CONTROLLED_APPLIANCE__IS_EXTERIOR_LIGHTING,
-                        oldIsExteriorLighting, isExteriorLighting, !oldIsExteriorLightingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_EXTERIOR_LIGHTING, oldIsExteriorLighting, isExteriorLighting,
+                    !oldIsExteriorLightingESet ) );
     }
 
     /**
@@ -511,9 +514,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         boolean oldIsExteriorLightingESet = isExteriorLightingESet;
         isExteriorLighting = IS_EXTERIOR_LIGHTING_EDEFAULT;
         isExteriorLightingESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.CONTROLLED_APPLIANCE__IS_EXTERIOR_LIGHTING,
-                        oldIsExteriorLighting, IS_EXTERIOR_LIGHTING_EDEFAULT, oldIsExteriorLightingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_EXTERIOR_LIGHTING, oldIsExteriorLighting,
+                    IS_EXTERIOR_LIGHTING_EDEFAULT, oldIsExteriorLightingESet ) );
     }
 
     /**
@@ -547,9 +551,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         isGenerationSystem = newIsGenerationSystem;
         boolean oldIsGenerationSystemESet = isGenerationSystemESet;
         isGenerationSystemESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.CONTROLLED_APPLIANCE__IS_GENERATION_SYSTEM,
-                        oldIsGenerationSystem, isGenerationSystem, !oldIsGenerationSystemESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_GENERATION_SYSTEM, oldIsGenerationSystem, isGenerationSystem,
+                    !oldIsGenerationSystemESet ) );
     }
 
     /**
@@ -563,9 +568,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         boolean oldIsGenerationSystemESet = isGenerationSystemESet;
         isGenerationSystem = IS_GENERATION_SYSTEM_EDEFAULT;
         isGenerationSystemESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.CONTROLLED_APPLIANCE__IS_GENERATION_SYSTEM,
-                        oldIsGenerationSystem, IS_GENERATION_SYSTEM_EDEFAULT, oldIsGenerationSystemESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_GENERATION_SYSTEM, oldIsGenerationSystem,
+                    IS_GENERATION_SYSTEM_EDEFAULT, oldIsGenerationSystemESet ) );
     }
 
     /**
@@ -599,9 +605,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         isHvacCompressorOrFurnace = newIsHvacCompressorOrFurnace;
         boolean oldIsHvacCompressorOrFurnaceESet = isHvacCompressorOrFurnaceESet;
         isHvacCompressorOrFurnaceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONTROLLED_APPLIANCE__IS_HVAC_COMPRESSOR_OR_FURNACE, oldIsHvacCompressorOrFurnace,
-                isHvacCompressorOrFurnace, !oldIsHvacCompressorOrFurnaceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_HVAC_COMPRESSOR_OR_FURNACE, oldIsHvacCompressorOrFurnace,
+                    isHvacCompressorOrFurnace, !oldIsHvacCompressorOrFurnaceESet ) );
     }
 
     /**
@@ -615,9 +622,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         boolean oldIsHvacCompressorOrFurnaceESet = isHvacCompressorOrFurnaceESet;
         isHvacCompressorOrFurnace = IS_HVAC_COMPRESSOR_OR_FURNACE_EDEFAULT;
         isHvacCompressorOrFurnaceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONTROLLED_APPLIANCE__IS_HVAC_COMPRESSOR_OR_FURNACE, oldIsHvacCompressorOrFurnace,
-                IS_HVAC_COMPRESSOR_OR_FURNACE_EDEFAULT, oldIsHvacCompressorOrFurnaceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_HVAC_COMPRESSOR_OR_FURNACE, oldIsHvacCompressorOrFurnace,
+                    IS_HVAC_COMPRESSOR_OR_FURNACE_EDEFAULT, oldIsHvacCompressorOrFurnaceESet ) );
     }
 
     /**
@@ -651,9 +659,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         isInteriorLighting = newIsInteriorLighting;
         boolean oldIsInteriorLightingESet = isInteriorLightingESet;
         isInteriorLightingESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.CONTROLLED_APPLIANCE__IS_INTERIOR_LIGHTING,
-                        oldIsInteriorLighting, isInteriorLighting, !oldIsInteriorLightingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_INTERIOR_LIGHTING, oldIsInteriorLighting, isInteriorLighting,
+                    !oldIsInteriorLightingESet ) );
     }
 
     /**
@@ -667,9 +676,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         boolean oldIsInteriorLightingESet = isInteriorLightingESet;
         isInteriorLighting = IS_INTERIOR_LIGHTING_EDEFAULT;
         isInteriorLightingESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.CONTROLLED_APPLIANCE__IS_INTERIOR_LIGHTING,
-                        oldIsInteriorLighting, IS_INTERIOR_LIGHTING_EDEFAULT, oldIsInteriorLightingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_INTERIOR_LIGHTING, oldIsInteriorLighting,
+                    IS_INTERIOR_LIGHTING_EDEFAULT, oldIsInteriorLightingESet ) );
     }
 
     /**
@@ -719,9 +729,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         boolean oldIsIrrigationPumpESet = isIrrigationPumpESet;
         isIrrigationPump = IS_IRRIGATION_PUMP_EDEFAULT;
         isIrrigationPumpESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.CONTROLLED_APPLIANCE__IS_IRRIGATION_PUMP,
-                        oldIsIrrigationPump, IS_IRRIGATION_PUMP_EDEFAULT, oldIsIrrigationPumpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_IRRIGATION_PUMP, oldIsIrrigationPump,
+                    IS_IRRIGATION_PUMP_EDEFAULT, oldIsIrrigationPumpESet ) );
     }
 
     /**
@@ -755,10 +766,11 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         isManagedCommercialIndustrialLoad = newIsManagedCommercialIndustrialLoad;
         boolean oldIsManagedCommercialIndustrialLoadESet = isManagedCommercialIndustrialLoadESet;
         isManagedCommercialIndustrialLoadESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONTROLLED_APPLIANCE__IS_MANAGED_COMMERCIAL_INDUSTRIAL_LOAD,
-                oldIsManagedCommercialIndustrialLoad, isManagedCommercialIndustrialLoad,
-                !oldIsManagedCommercialIndustrialLoadESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_MANAGED_COMMERCIAL_INDUSTRIAL_LOAD,
+                    oldIsManagedCommercialIndustrialLoad, isManagedCommercialIndustrialLoad,
+                    !oldIsManagedCommercialIndustrialLoadESet ) );
     }
 
     /**
@@ -772,10 +784,11 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         boolean oldIsManagedCommercialIndustrialLoadESet = isManagedCommercialIndustrialLoadESet;
         isManagedCommercialIndustrialLoad = IS_MANAGED_COMMERCIAL_INDUSTRIAL_LOAD_EDEFAULT;
         isManagedCommercialIndustrialLoadESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONTROLLED_APPLIANCE__IS_MANAGED_COMMERCIAL_INDUSTRIAL_LOAD,
-                oldIsManagedCommercialIndustrialLoad, IS_MANAGED_COMMERCIAL_INDUSTRIAL_LOAD_EDEFAULT,
-                oldIsManagedCommercialIndustrialLoadESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_MANAGED_COMMERCIAL_INDUSTRIAL_LOAD,
+                    oldIsManagedCommercialIndustrialLoad, IS_MANAGED_COMMERCIAL_INDUSTRIAL_LOAD_EDEFAULT,
+                    oldIsManagedCommercialIndustrialLoadESet ) );
     }
 
     /**
@@ -809,9 +822,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         isPoolPumpSpaJacuzzi = newIsPoolPumpSpaJacuzzi;
         boolean oldIsPoolPumpSpaJacuzziESet = isPoolPumpSpaJacuzziESet;
         isPoolPumpSpaJacuzziESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONTROLLED_APPLIANCE__IS_POOL_PUMP_SPA_JACUZZI, oldIsPoolPumpSpaJacuzzi,
-                isPoolPumpSpaJacuzzi, !oldIsPoolPumpSpaJacuzziESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_POOL_PUMP_SPA_JACUZZI, oldIsPoolPumpSpaJacuzzi,
+                    isPoolPumpSpaJacuzzi, !oldIsPoolPumpSpaJacuzziESet ) );
     }
 
     /**
@@ -825,9 +839,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         boolean oldIsPoolPumpSpaJacuzziESet = isPoolPumpSpaJacuzziESet;
         isPoolPumpSpaJacuzzi = IS_POOL_PUMP_SPA_JACUZZI_EDEFAULT;
         isPoolPumpSpaJacuzziESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONTROLLED_APPLIANCE__IS_POOL_PUMP_SPA_JACUZZI, oldIsPoolPumpSpaJacuzzi,
-                IS_POOL_PUMP_SPA_JACUZZI_EDEFAULT, oldIsPoolPumpSpaJacuzziESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_POOL_PUMP_SPA_JACUZZI, oldIsPoolPumpSpaJacuzzi,
+                    IS_POOL_PUMP_SPA_JACUZZI_EDEFAULT, oldIsPoolPumpSpaJacuzziESet ) );
     }
 
     /**
@@ -861,9 +876,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         isSimpleMiscLoad = newIsSimpleMiscLoad;
         boolean oldIsSimpleMiscLoadESet = isSimpleMiscLoadESet;
         isSimpleMiscLoadESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.CONTROLLED_APPLIANCE__IS_SIMPLE_MISC_LOAD,
-                        oldIsSimpleMiscLoad, isSimpleMiscLoad, !oldIsSimpleMiscLoadESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_SIMPLE_MISC_LOAD, oldIsSimpleMiscLoad, isSimpleMiscLoad,
+                    !oldIsSimpleMiscLoadESet ) );
     }
 
     /**
@@ -877,9 +893,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         boolean oldIsSimpleMiscLoadESet = isSimpleMiscLoadESet;
         isSimpleMiscLoad = IS_SIMPLE_MISC_LOAD_EDEFAULT;
         isSimpleMiscLoadESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.CONTROLLED_APPLIANCE__IS_SIMPLE_MISC_LOAD,
-                        oldIsSimpleMiscLoad, IS_SIMPLE_MISC_LOAD_EDEFAULT, oldIsSimpleMiscLoadESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_SIMPLE_MISC_LOAD, oldIsSimpleMiscLoad,
+                    IS_SIMPLE_MISC_LOAD_EDEFAULT, oldIsSimpleMiscLoadESet ) );
     }
 
     /**
@@ -929,9 +946,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         boolean oldIsSmartApplianceESet = isSmartApplianceESet;
         isSmartAppliance = IS_SMART_APPLIANCE_EDEFAULT;
         isSmartApplianceESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.CONTROLLED_APPLIANCE__IS_SMART_APPLIANCE,
-                        oldIsSmartAppliance, IS_SMART_APPLIANCE_EDEFAULT, oldIsSmartApplianceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_SMART_APPLIANCE, oldIsSmartAppliance,
+                    IS_SMART_APPLIANCE_EDEFAULT, oldIsSmartApplianceESet ) );
     }
 
     /**
@@ -965,9 +983,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         isStripAndBaseboardHeater = newIsStripAndBaseboardHeater;
         boolean oldIsStripAndBaseboardHeaterESet = isStripAndBaseboardHeaterESet;
         isStripAndBaseboardHeaterESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CONTROLLED_APPLIANCE__IS_STRIP_AND_BASEBOARD_HEATER, oldIsStripAndBaseboardHeater,
-                isStripAndBaseboardHeater, !oldIsStripAndBaseboardHeaterESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_STRIP_AND_BASEBOARD_HEATER, oldIsStripAndBaseboardHeater,
+                    isStripAndBaseboardHeater, !oldIsStripAndBaseboardHeaterESet ) );
     }
 
     /**
@@ -981,9 +1000,10 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
         boolean oldIsStripAndBaseboardHeaterESet = isStripAndBaseboardHeaterESet;
         isStripAndBaseboardHeater = IS_STRIP_AND_BASEBOARD_HEATER_EDEFAULT;
         isStripAndBaseboardHeaterESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CONTROLLED_APPLIANCE__IS_STRIP_AND_BASEBOARD_HEATER, oldIsStripAndBaseboardHeater,
-                IS_STRIP_AND_BASEBOARD_HEATER_EDEFAULT, oldIsStripAndBaseboardHeaterESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.CONTROLLED_APPLIANCE__IS_STRIP_AND_BASEBOARD_HEATER, oldIsStripAndBaseboardHeater,
+                    IS_STRIP_AND_BASEBOARD_HEATER_EDEFAULT, oldIsStripAndBaseboardHeaterESet ) );
     }
 
     /**
@@ -1225,7 +1245,7 @@ public class ControlledApplianceImpl extends MinimalEObjectImpl.Container implem
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (isElectricVehicle: " );
         if( isElectricVehicleESet )
             result.append( isElectricVehicle );

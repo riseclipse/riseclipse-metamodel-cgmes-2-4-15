@@ -133,8 +133,9 @@ public class BusNameMarkerImpl extends IdentifiedObjectImpl implements BusNameMa
         priority = newPriority;
         boolean oldPriorityESet = priorityESet;
         priorityESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BUS_NAME_MARKER__PRIORITY, oldPriority, priority, !oldPriorityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BUS_NAME_MARKER__PRIORITY, oldPriority,
+                    priority, !oldPriorityESet ) );
     }
 
     /**
@@ -148,8 +149,9 @@ public class BusNameMarkerImpl extends IdentifiedObjectImpl implements BusNameMa
         boolean oldPriorityESet = priorityESet;
         priority = PRIORITY_EDEFAULT;
         priorityESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BUS_NAME_MARKER__PRIORITY, oldPriority, PRIORITY_EDEFAULT, oldPriorityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BUS_NAME_MARKER__PRIORITY, oldPriority,
+                    PRIORITY_EDEFAULT, oldPriorityESet ) );
     }
 
     /**
@@ -305,7 +307,7 @@ public class BusNameMarkerImpl extends IdentifiedObjectImpl implements BusNameMa
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (priority: " );
         if( priorityESet )
             result.append( priority );

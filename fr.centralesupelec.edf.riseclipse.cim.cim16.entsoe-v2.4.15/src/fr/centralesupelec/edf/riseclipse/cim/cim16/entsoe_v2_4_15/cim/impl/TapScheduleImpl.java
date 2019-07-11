@@ -124,18 +124,21 @@ public class TapScheduleImpl extends SeasonDayTypeScheduleImpl implements TapSch
     public void setTapChanger( TapChanger newTapChanger ) {
         if( newTapChanger != tapChanger ) {
             NotificationChain msgs = null;
-            if( tapChanger != null ) msgs = ( ( InternalEObject ) tapChanger ).eInverseRemove( this,
-                    CimPackage.TAP_CHANGER__TAP_SCHEDULES, TapChanger.class, msgs );
-            if( newTapChanger != null ) msgs = ( ( InternalEObject ) newTapChanger ).eInverseAdd( this,
-                    CimPackage.TAP_CHANGER__TAP_SCHEDULES, TapChanger.class, msgs );
+            if( tapChanger != null )
+                msgs = ( ( InternalEObject ) tapChanger ).eInverseRemove( this, CimPackage.TAP_CHANGER__TAP_SCHEDULES,
+                        TapChanger.class, msgs );
+            if( newTapChanger != null )
+                msgs = ( ( InternalEObject ) newTapChanger ).eInverseAdd( this, CimPackage.TAP_CHANGER__TAP_SCHEDULES,
+                        TapChanger.class, msgs );
             msgs = basicSetTapChanger( newTapChanger, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTapChangerESet = tapChangerESet;
             tapChangerESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TAP_SCHEDULE__TAP_CHANGER, newTapChanger, newTapChanger, !oldTapChangerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_SCHEDULE__TAP_CHANGER,
+                        newTapChanger, newTapChanger, !oldTapChangerESet ) );
         }
     }
 
@@ -177,8 +180,9 @@ public class TapScheduleImpl extends SeasonDayTypeScheduleImpl implements TapSch
         else {
             boolean oldTapChangerESet = tapChangerESet;
             tapChangerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TAP_SCHEDULE__TAP_CHANGER, null, null, oldTapChangerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_SCHEDULE__TAP_CHANGER, null,
+                        null, oldTapChangerESet ) );
         }
     }
 
@@ -201,8 +205,9 @@ public class TapScheduleImpl extends SeasonDayTypeScheduleImpl implements TapSch
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.TAP_SCHEDULE__TAP_CHANGER:
-            if( tapChanger != null ) msgs = ( ( InternalEObject ) tapChanger ).eInverseRemove( this,
-                    CimPackage.TAP_CHANGER__TAP_SCHEDULES, TapChanger.class, msgs );
+            if( tapChanger != null )
+                msgs = ( ( InternalEObject ) tapChanger ).eInverseRemove( this, CimPackage.TAP_CHANGER__TAP_SCHEDULES,
+                        TapChanger.class, msgs );
             return basicSetTapChanger( ( TapChanger ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

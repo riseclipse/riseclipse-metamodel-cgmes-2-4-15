@@ -532,8 +532,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         bil = newBil;
         boolean oldBilESet = bilESet;
         bilESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_INFO__BIL, oldBil, bil, !oldBilESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_INFO__BIL, oldBil, bil,
+                    !oldBilESet ) );
     }
 
     /**
@@ -547,8 +548,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         boolean oldBilESet = bilESet;
         bil = BIL_EDEFAULT;
         bilESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER_INFO__BIL, oldBil, BIL_EDEFAULT, oldBilESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_INFO__BIL, oldBil,
+                    BIL_EDEFAULT, oldBilESet ) );
     }
 
     /**
@@ -582,8 +584,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         ctRating = newCtRating;
         boolean oldCtRatingESet = ctRatingESet;
         ctRatingESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_INFO__CT_RATING, oldCtRating, ctRating, !oldCtRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_INFO__CT_RATING, oldCtRating,
+                    ctRating, !oldCtRatingESet ) );
     }
 
     /**
@@ -597,8 +600,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         boolean oldCtRatingESet = ctRatingESet;
         ctRating = CT_RATING_EDEFAULT;
         ctRatingESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER_INFO__CT_RATING, oldCtRating, CT_RATING_EDEFAULT, oldCtRatingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_INFO__CT_RATING,
+                    oldCtRating, CT_RATING_EDEFAULT, oldCtRatingESet ) );
     }
 
     /**
@@ -632,8 +636,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         ctRatio = newCtRatio;
         boolean oldCtRatioESet = ctRatioESet;
         ctRatioESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_INFO__CT_RATIO, oldCtRatio, ctRatio, !oldCtRatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_INFO__CT_RATIO, oldCtRatio,
+                    ctRatio, !oldCtRatioESet ) );
     }
 
     /**
@@ -647,8 +652,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         boolean oldCtRatioESet = ctRatioESet;
         ctRatio = CT_RATIO_EDEFAULT;
         ctRatioESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER_INFO__CT_RATIO, oldCtRatio, CT_RATIO_EDEFAULT, oldCtRatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_INFO__CT_RATIO, oldCtRatio,
+                    CT_RATIO_EDEFAULT, oldCtRatioESet ) );
     }
 
     /**
@@ -682,8 +688,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         frequency = newFrequency;
         boolean oldFrequencyESet = frequencyESet;
         frequencyESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_INFO__FREQUENCY, oldFrequency, frequency, !oldFrequencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_INFO__FREQUENCY,
+                    oldFrequency, frequency, !oldFrequencyESet ) );
     }
 
     /**
@@ -697,8 +704,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         boolean oldFrequencyESet = frequencyESet;
         frequency = FREQUENCY_EDEFAULT;
         frequencyESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER_INFO__FREQUENCY, oldFrequency, FREQUENCY_EDEFAULT, oldFrequencyESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_INFO__FREQUENCY,
+                    oldFrequency, FREQUENCY_EDEFAULT, oldFrequencyESet ) );
     }
 
     /**
@@ -732,8 +740,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         highStep = newHighStep;
         boolean oldHighStepESet = highStepESet;
         highStepESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_INFO__HIGH_STEP, oldHighStep, highStep, !oldHighStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_INFO__HIGH_STEP, oldHighStep,
+                    highStep, !oldHighStepESet ) );
     }
 
     /**
@@ -747,8 +756,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         boolean oldHighStepESet = highStepESet;
         highStep = HIGH_STEP_EDEFAULT;
         highStepESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER_INFO__HIGH_STEP, oldHighStep, HIGH_STEP_EDEFAULT, oldHighStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_INFO__HIGH_STEP,
+                    oldHighStep, HIGH_STEP_EDEFAULT, oldHighStepESet ) );
     }
 
     /**
@@ -782,8 +792,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         isTcul = newIsTcul;
         boolean oldIsTculESet = isTculESet;
         isTculESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_INFO__IS_TCUL, oldIsTcul, isTcul, !oldIsTculESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_INFO__IS_TCUL, oldIsTcul,
+                    isTcul, !oldIsTculESet ) );
     }
 
     /**
@@ -797,8 +808,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         boolean oldIsTculESet = isTculESet;
         isTcul = IS_TCUL_EDEFAULT;
         isTculESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER_INFO__IS_TCUL, oldIsTcul, IS_TCUL_EDEFAULT, oldIsTculESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_INFO__IS_TCUL, oldIsTcul,
+                    IS_TCUL_EDEFAULT, oldIsTculESet ) );
     }
 
     /**
@@ -832,8 +844,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         lowStep = newLowStep;
         boolean oldLowStepESet = lowStepESet;
         lowStepESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_INFO__LOW_STEP, oldLowStep, lowStep, !oldLowStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_INFO__LOW_STEP, oldLowStep,
+                    lowStep, !oldLowStepESet ) );
     }
 
     /**
@@ -847,8 +860,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         boolean oldLowStepESet = lowStepESet;
         lowStep = LOW_STEP_EDEFAULT;
         lowStepESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER_INFO__LOW_STEP, oldLowStep, LOW_STEP_EDEFAULT, oldLowStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_INFO__LOW_STEP, oldLowStep,
+                    LOW_STEP_EDEFAULT, oldLowStepESet ) );
     }
 
     /**
@@ -882,8 +896,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         neutralStep = newNeutralStep;
         boolean oldNeutralStepESet = neutralStepESet;
         neutralStepESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_INFO__NEUTRAL_STEP, oldNeutralStep, neutralStep, !oldNeutralStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_INFO__NEUTRAL_STEP,
+                    oldNeutralStep, neutralStep, !oldNeutralStepESet ) );
     }
 
     /**
@@ -933,8 +948,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         neutralU = newNeutralU;
         boolean oldNeutralUESet = neutralUESet;
         neutralUESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_INFO__NEUTRAL_U, oldNeutralU, neutralU, !oldNeutralUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_INFO__NEUTRAL_U, oldNeutralU,
+                    neutralU, !oldNeutralUESet ) );
     }
 
     /**
@@ -948,8 +964,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         boolean oldNeutralUESet = neutralUESet;
         neutralU = NEUTRAL_U_EDEFAULT;
         neutralUESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER_INFO__NEUTRAL_U, oldNeutralU, NEUTRAL_U_EDEFAULT, oldNeutralUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_INFO__NEUTRAL_U,
+                    oldNeutralU, NEUTRAL_U_EDEFAULT, oldNeutralUESet ) );
     }
 
     /**
@@ -983,8 +1000,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         ptRatio = newPtRatio;
         boolean oldPtRatioESet = ptRatioESet;
         ptRatioESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_INFO__PT_RATIO, oldPtRatio, ptRatio, !oldPtRatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_INFO__PT_RATIO, oldPtRatio,
+                    ptRatio, !oldPtRatioESet ) );
     }
 
     /**
@@ -998,8 +1016,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         boolean oldPtRatioESet = ptRatioESet;
         ptRatio = PT_RATIO_EDEFAULT;
         ptRatioESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER_INFO__PT_RATIO, oldPtRatio, PT_RATIO_EDEFAULT, oldPtRatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_INFO__PT_RATIO, oldPtRatio,
+                    PT_RATIO_EDEFAULT, oldPtRatioESet ) );
     }
 
     /**
@@ -1085,8 +1104,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         ratedCurrent = newRatedCurrent;
         boolean oldRatedCurrentESet = ratedCurrentESet;
         ratedCurrentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_INFO__RATED_CURRENT, oldRatedCurrent, ratedCurrent, !oldRatedCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_INFO__RATED_CURRENT,
+                    oldRatedCurrent, ratedCurrent, !oldRatedCurrentESet ) );
     }
 
     /**
@@ -1136,8 +1156,9 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         ratedVoltage = newRatedVoltage;
         boolean oldRatedVoltageESet = ratedVoltageESet;
         ratedVoltageESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_INFO__RATED_VOLTAGE, oldRatedVoltage, ratedVoltage, !oldRatedVoltageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_INFO__RATED_VOLTAGE,
+                    oldRatedVoltage, ratedVoltage, !oldRatedVoltageESet ) );
     }
 
     /**
@@ -1255,9 +1276,10 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
         boolean oldStepVoltageIncrementESet = stepVoltageIncrementESet;
         stepVoltageIncrement = STEP_VOLTAGE_INCREMENT_EDEFAULT;
         stepVoltageIncrementESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_INFO__STEP_VOLTAGE_INCREMENT,
-                        oldStepVoltageIncrement, STEP_VOLTAGE_INCREMENT_EDEFAULT, oldStepVoltageIncrementESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.TAP_CHANGER_INFO__STEP_VOLTAGE_INCREMENT, oldStepVoltageIncrement,
+                    STEP_VOLTAGE_INCREMENT_EDEFAULT, oldStepVoltageIncrementESet ) );
     }
 
     /**
@@ -1477,7 +1499,7 @@ public class TapChangerInfoImpl extends AssetInfoImpl implements TapChangerInfo 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (bil: " );
         if( bilESet )
             result.append( bil );

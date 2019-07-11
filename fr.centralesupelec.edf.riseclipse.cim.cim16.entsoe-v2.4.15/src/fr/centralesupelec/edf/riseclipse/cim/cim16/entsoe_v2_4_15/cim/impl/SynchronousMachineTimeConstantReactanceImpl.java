@@ -505,8 +505,9 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         ks = newKs;
         boolean oldKsESet = ksESet;
         ksESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__KS, oldKs, ks, !oldKsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__KS, oldKs, ks, !oldKsESet ) );
     }
 
     /**
@@ -520,8 +521,9 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         boolean oldKsESet = ksESet;
         ks = KS_EDEFAULT;
         ksESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__KS, oldKs, KS_EDEFAULT, oldKsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__KS, oldKs, KS_EDEFAULT, oldKsESet ) );
     }
 
     /**
@@ -555,9 +557,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         modelType = newModelType == null ? MODEL_TYPE_EDEFAULT : newModelType;
         boolean oldModelTypeESet = modelTypeESet;
         modelTypeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__MODEL_TYPE, oldModelType, modelType,
-                !oldModelTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__MODEL_TYPE, oldModelType, modelType,
+                    !oldModelTypeESet ) );
     }
 
     /**
@@ -571,9 +574,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         boolean oldModelTypeESet = modelTypeESet;
         modelType = MODEL_TYPE_EDEFAULT;
         modelTypeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__MODEL_TYPE, oldModelType, MODEL_TYPE_EDEFAULT,
-                oldModelTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__MODEL_TYPE, oldModelType,
+                    MODEL_TYPE_EDEFAULT, oldModelTypeESet ) );
     }
 
     /**
@@ -607,9 +611,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         rotorType = newRotorType == null ? ROTOR_TYPE_EDEFAULT : newRotorType;
         boolean oldRotorTypeESet = rotorTypeESet;
         rotorTypeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__ROTOR_TYPE, oldRotorType, rotorType,
-                !oldRotorTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__ROTOR_TYPE, oldRotorType, rotorType,
+                    !oldRotorTypeESet ) );
     }
 
     /**
@@ -623,9 +628,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         boolean oldRotorTypeESet = rotorTypeESet;
         rotorType = ROTOR_TYPE_EDEFAULT;
         rotorTypeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__ROTOR_TYPE, oldRotorType, ROTOR_TYPE_EDEFAULT,
-                oldRotorTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__ROTOR_TYPE, oldRotorType,
+                    ROTOR_TYPE_EDEFAULT, oldRotorTypeESet ) );
     }
 
     /**
@@ -659,8 +665,9 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         tc = newTc;
         boolean oldTcESet = tcESet;
         tcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TC, oldTc, tc, !oldTcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TC, oldTc, tc, !oldTcESet ) );
     }
 
     /**
@@ -674,8 +681,9 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         boolean oldTcESet = tcESet;
         tc = TC_EDEFAULT;
         tcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TC, oldTc, TC_EDEFAULT, oldTcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TC, oldTc, TC_EDEFAULT, oldTcESet ) );
     }
 
     /**
@@ -709,8 +717,9 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         tpdo = newTpdo;
         boolean oldTpdoESet = tpdoESet;
         tpdoESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPDO, oldTpdo, tpdo, !oldTpdoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPDO, oldTpdo, tpdo, !oldTpdoESet ) );
     }
 
     /**
@@ -724,8 +733,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         boolean oldTpdoESet = tpdoESet;
         tpdo = TPDO_EDEFAULT;
         tpdoESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPDO, oldTpdo, TPDO_EDEFAULT, oldTpdoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPDO, oldTpdo, TPDO_EDEFAULT,
+                    oldTpdoESet ) );
     }
 
     /**
@@ -759,8 +770,9 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         tppdo = newTppdo;
         boolean oldTppdoESet = tppdoESet;
         tppdoESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPPDO, oldTppdo, tppdo, !oldTppdoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPPDO, oldTppdo, tppdo, !oldTppdoESet ) );
     }
 
     /**
@@ -774,9 +786,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         boolean oldTppdoESet = tppdoESet;
         tppdo = TPPDO_EDEFAULT;
         tppdoESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPPDO, oldTppdo, TPPDO_EDEFAULT,
-                oldTppdoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPPDO, oldTppdo, TPPDO_EDEFAULT,
+                    oldTppdoESet ) );
     }
 
     /**
@@ -810,8 +823,9 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         tppqo = newTppqo;
         boolean oldTppqoESet = tppqoESet;
         tppqoESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPPQO, oldTppqo, tppqo, !oldTppqoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPPQO, oldTppqo, tppqo, !oldTppqoESet ) );
     }
 
     /**
@@ -825,9 +839,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         boolean oldTppqoESet = tppqoESet;
         tppqo = TPPQO_EDEFAULT;
         tppqoESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPPQO, oldTppqo, TPPQO_EDEFAULT,
-                oldTppqoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPPQO, oldTppqo, TPPQO_EDEFAULT,
+                    oldTppqoESet ) );
     }
 
     /**
@@ -861,8 +876,9 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         tpqo = newTpqo;
         boolean oldTpqoESet = tpqoESet;
         tpqoESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPQO, oldTpqo, tpqo, !oldTpqoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPQO, oldTpqo, tpqo, !oldTpqoESet ) );
     }
 
     /**
@@ -876,8 +892,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         boolean oldTpqoESet = tpqoESet;
         tpqo = TPQO_EDEFAULT;
         tpqoESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPQO, oldTpqo, TPQO_EDEFAULT, oldTpqoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__TPQO, oldTpqo, TPQO_EDEFAULT,
+                    oldTpqoESet ) );
     }
 
     /**
@@ -911,9 +929,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         xDirectSubtrans = newXDirectSubtrans;
         boolean oldXDirectSubtransESet = xDirectSubtransESet;
         xDirectSubtransESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XDIRECT_SUBTRANS, oldXDirectSubtrans,
-                xDirectSubtrans, !oldXDirectSubtransESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XDIRECT_SUBTRANS, oldXDirectSubtrans,
+                    xDirectSubtrans, !oldXDirectSubtransESet ) );
     }
 
     /**
@@ -927,9 +946,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         boolean oldXDirectSubtransESet = xDirectSubtransESet;
         xDirectSubtrans = XDIRECT_SUBTRANS_EDEFAULT;
         xDirectSubtransESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XDIRECT_SUBTRANS, oldXDirectSubtrans,
-                XDIRECT_SUBTRANS_EDEFAULT, oldXDirectSubtransESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XDIRECT_SUBTRANS, oldXDirectSubtrans,
+                    XDIRECT_SUBTRANS_EDEFAULT, oldXDirectSubtransESet ) );
     }
 
     /**
@@ -963,9 +983,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         xDirectSync = newXDirectSync;
         boolean oldXDirectSyncESet = xDirectSyncESet;
         xDirectSyncESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XDIRECT_SYNC, oldXDirectSync, xDirectSync,
-                !oldXDirectSyncESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XDIRECT_SYNC, oldXDirectSync, xDirectSync,
+                    !oldXDirectSyncESet ) );
     }
 
     /**
@@ -979,9 +1000,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         boolean oldXDirectSyncESet = xDirectSyncESet;
         xDirectSync = XDIRECT_SYNC_EDEFAULT;
         xDirectSyncESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XDIRECT_SYNC, oldXDirectSync,
-                XDIRECT_SYNC_EDEFAULT, oldXDirectSyncESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XDIRECT_SYNC, oldXDirectSync,
+                    XDIRECT_SYNC_EDEFAULT, oldXDirectSyncESet ) );
     }
 
     /**
@@ -1015,9 +1037,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         xDirectTrans = newXDirectTrans;
         boolean oldXDirectTransESet = xDirectTransESet;
         xDirectTransESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XDIRECT_TRANS, oldXDirectTrans, xDirectTrans,
-                !oldXDirectTransESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XDIRECT_TRANS, oldXDirectTrans,
+                    xDirectTrans, !oldXDirectTransESet ) );
     }
 
     /**
@@ -1031,9 +1054,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         boolean oldXDirectTransESet = xDirectTransESet;
         xDirectTrans = XDIRECT_TRANS_EDEFAULT;
         xDirectTransESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XDIRECT_TRANS, oldXDirectTrans,
-                XDIRECT_TRANS_EDEFAULT, oldXDirectTransESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XDIRECT_TRANS, oldXDirectTrans,
+                    XDIRECT_TRANS_EDEFAULT, oldXDirectTransESet ) );
     }
 
     /**
@@ -1067,9 +1091,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         xQuadSubtrans = newXQuadSubtrans;
         boolean oldXQuadSubtransESet = xQuadSubtransESet;
         xQuadSubtransESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XQUAD_SUBTRANS, oldXQuadSubtrans, xQuadSubtrans,
-                !oldXQuadSubtransESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XQUAD_SUBTRANS, oldXQuadSubtrans,
+                    xQuadSubtrans, !oldXQuadSubtransESet ) );
     }
 
     /**
@@ -1083,9 +1108,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         boolean oldXQuadSubtransESet = xQuadSubtransESet;
         xQuadSubtrans = XQUAD_SUBTRANS_EDEFAULT;
         xQuadSubtransESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XQUAD_SUBTRANS, oldXQuadSubtrans,
-                XQUAD_SUBTRANS_EDEFAULT, oldXQuadSubtransESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XQUAD_SUBTRANS, oldXQuadSubtrans,
+                    XQUAD_SUBTRANS_EDEFAULT, oldXQuadSubtransESet ) );
     }
 
     /**
@@ -1119,9 +1145,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         xQuadSync = newXQuadSync;
         boolean oldXQuadSyncESet = xQuadSyncESet;
         xQuadSyncESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XQUAD_SYNC, oldXQuadSync, xQuadSync,
-                !oldXQuadSyncESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XQUAD_SYNC, oldXQuadSync, xQuadSync,
+                    !oldXQuadSyncESet ) );
     }
 
     /**
@@ -1135,9 +1162,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         boolean oldXQuadSyncESet = xQuadSyncESet;
         xQuadSync = XQUAD_SYNC_EDEFAULT;
         xQuadSyncESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XQUAD_SYNC, oldXQuadSync, XQUAD_SYNC_EDEFAULT,
-                oldXQuadSyncESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XQUAD_SYNC, oldXQuadSync,
+                    XQUAD_SYNC_EDEFAULT, oldXQuadSyncESet ) );
     }
 
     /**
@@ -1171,9 +1199,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         xQuadTrans = newXQuadTrans;
         boolean oldXQuadTransESet = xQuadTransESet;
         xQuadTransESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XQUAD_TRANS, oldXQuadTrans, xQuadTrans,
-                !oldXQuadTransESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XQUAD_TRANS, oldXQuadTrans, xQuadTrans,
+                    !oldXQuadTransESet ) );
     }
 
     /**
@@ -1187,9 +1216,10 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
         boolean oldXQuadTransESet = xQuadTransESet;
         xQuadTrans = XQUAD_TRANS_EDEFAULT;
         xQuadTransESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XQUAD_TRANS, oldXQuadTrans,
-                XQUAD_TRANS_EDEFAULT, oldXQuadTransESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_TIME_CONSTANT_REACTANCE__XQUAD_TRANS, oldXQuadTrans,
+                    XQUAD_TRANS_EDEFAULT, oldXQuadTransESet ) );
     }
 
     /**
@@ -1399,7 +1429,7 @@ public class SynchronousMachineTimeConstantReactanceImpl extends SynchronousMach
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (ks: " );
         if( ksESet )
             result.append( ks );

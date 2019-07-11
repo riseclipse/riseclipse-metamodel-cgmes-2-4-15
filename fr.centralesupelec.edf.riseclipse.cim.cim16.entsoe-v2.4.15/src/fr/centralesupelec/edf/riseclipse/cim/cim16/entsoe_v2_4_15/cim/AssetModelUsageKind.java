@@ -242,8 +242,16 @@ public enum AssetModelUsageKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final AssetModelUsageKind[] VALUES_ARRAY = new AssetModelUsageKind[] { DISTRIBUTION_OVERHEAD,
-            DISTRIBUTION_UNDERGROUND, TRANSMISSION, SUBSTATION, STREETLIGHT, CUSTOMER_SUBSTATION, UNKNOWN, OTHER, };
+    private static final AssetModelUsageKind[] VALUES_ARRAY = new AssetModelUsageKind[] {
+            DISTRIBUTION_OVERHEAD,
+            DISTRIBUTION_UNDERGROUND,
+            TRANSMISSION,
+            SUBSTATION,
+            STREETLIGHT,
+            CUSTOMER_SUBSTATION,
+            UNKNOWN,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Asset Model Usage Kind</b></em>' enumerators.

@@ -284,8 +284,9 @@ public class SwitchInfoImpl extends AssetInfoImpl implements SwitchInfo {
         isSinglePhase = newIsSinglePhase;
         boolean oldIsSinglePhaseESet = isSinglePhaseESet;
         isSinglePhaseESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SWITCH_INFO__IS_SINGLE_PHASE, oldIsSinglePhase, isSinglePhase, !oldIsSinglePhaseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH_INFO__IS_SINGLE_PHASE,
+                    oldIsSinglePhase, isSinglePhase, !oldIsSinglePhaseESet ) );
     }
 
     /**
@@ -335,8 +336,9 @@ public class SwitchInfoImpl extends AssetInfoImpl implements SwitchInfo {
         isUnganged = newIsUnganged;
         boolean oldIsUngangedESet = isUngangedESet;
         isUngangedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SWITCH_INFO__IS_UNGANGED, oldIsUnganged, isUnganged, !oldIsUngangedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH_INFO__IS_UNGANGED, oldIsUnganged,
+                    isUnganged, !oldIsUngangedESet ) );
     }
 
     /**
@@ -350,8 +352,9 @@ public class SwitchInfoImpl extends AssetInfoImpl implements SwitchInfo {
         boolean oldIsUngangedESet = isUngangedESet;
         isUnganged = IS_UNGANGED_EDEFAULT;
         isUngangedESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SWITCH_INFO__IS_UNGANGED, oldIsUnganged, IS_UNGANGED_EDEFAULT, oldIsUngangedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH_INFO__IS_UNGANGED,
+                    oldIsUnganged, IS_UNGANGED_EDEFAULT, oldIsUngangedESet ) );
     }
 
     /**
@@ -385,8 +388,9 @@ public class SwitchInfoImpl extends AssetInfoImpl implements SwitchInfo {
         ratedCurrent = newRatedCurrent;
         boolean oldRatedCurrentESet = ratedCurrentESet;
         ratedCurrentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SWITCH_INFO__RATED_CURRENT, oldRatedCurrent, ratedCurrent, !oldRatedCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH_INFO__RATED_CURRENT,
+                    oldRatedCurrent, ratedCurrent, !oldRatedCurrentESet ) );
     }
 
     /**
@@ -400,8 +404,9 @@ public class SwitchInfoImpl extends AssetInfoImpl implements SwitchInfo {
         boolean oldRatedCurrentESet = ratedCurrentESet;
         ratedCurrent = RATED_CURRENT_EDEFAULT;
         ratedCurrentESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SWITCH_INFO__RATED_CURRENT, oldRatedCurrent, RATED_CURRENT_EDEFAULT, oldRatedCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH_INFO__RATED_CURRENT,
+                    oldRatedCurrent, RATED_CURRENT_EDEFAULT, oldRatedCurrentESet ) );
     }
 
     /**
@@ -435,8 +440,9 @@ public class SwitchInfoImpl extends AssetInfoImpl implements SwitchInfo {
         ratedVoltage = newRatedVoltage;
         boolean oldRatedVoltageESet = ratedVoltageESet;
         ratedVoltageESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SWITCH_INFO__RATED_VOLTAGE, oldRatedVoltage, ratedVoltage, !oldRatedVoltageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SWITCH_INFO__RATED_VOLTAGE,
+                    oldRatedVoltage, ratedVoltage, !oldRatedVoltageESet ) );
     }
 
     /**
@@ -450,8 +456,9 @@ public class SwitchInfoImpl extends AssetInfoImpl implements SwitchInfo {
         boolean oldRatedVoltageESet = ratedVoltageESet;
         ratedVoltage = RATED_VOLTAGE_EDEFAULT;
         ratedVoltageESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SWITCH_INFO__RATED_VOLTAGE, oldRatedVoltage, RATED_VOLTAGE_EDEFAULT, oldRatedVoltageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SWITCH_INFO__RATED_VOLTAGE,
+                    oldRatedVoltage, RATED_VOLTAGE_EDEFAULT, oldRatedVoltageESet ) );
     }
 
     /**
@@ -571,7 +578,7 @@ public class SwitchInfoImpl extends AssetInfoImpl implements SwitchInfo {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (breakingCapacity: " );
         if( breakingCapacityESet )
             result.append( breakingCapacity );

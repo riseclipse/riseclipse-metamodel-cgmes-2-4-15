@@ -637,8 +637,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldAESet = aESet;
         a = A_EDEFAULT;
         aESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__A, oldA, A_EDEFAULT, oldAESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__A, oldA, A_EDEFAULT,
+                    oldAESet ) );
     }
 
     /**
@@ -672,8 +673,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         efd1 = newEfd1;
         boolean oldEfd1ESet = efd1ESet;
         efd1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC5A__EFD1,
-                oldEfd1, efd1, !oldEfd1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC5A__EFD1, oldEfd1, efd1,
+                    !oldEfd1ESet ) );
     }
 
     /**
@@ -687,8 +689,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldEfd1ESet = efd1ESet;
         efd1 = EFD1_EDEFAULT;
         efd1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AC5A__EFD1, oldEfd1, EFD1_EDEFAULT, oldEfd1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__EFD1, oldEfd1, EFD1_EDEFAULT,
+                    oldEfd1ESet ) );
     }
 
     /**
@@ -722,8 +725,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         efd2 = newEfd2;
         boolean oldEfd2ESet = efd2ESet;
         efd2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC5A__EFD2,
-                oldEfd2, efd2, !oldEfd2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC5A__EFD2, oldEfd2, efd2,
+                    !oldEfd2ESet ) );
     }
 
     /**
@@ -737,8 +741,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldEfd2ESet = efd2ESet;
         efd2 = EFD2_EDEFAULT;
         efd2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AC5A__EFD2, oldEfd2, EFD2_EDEFAULT, oldEfd2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__EFD2, oldEfd2, EFD2_EDEFAULT,
+                    oldEfd2ESet ) );
     }
 
     /**
@@ -787,8 +792,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldKaESet = kaESet;
         ka = KA_EDEFAULT;
         kaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__KA,
-                oldKa, KA_EDEFAULT, oldKaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__KA, oldKa, KA_EDEFAULT,
+                    oldKaESet ) );
     }
 
     /**
@@ -837,8 +843,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldKeESet = keESet;
         ke = KE_EDEFAULT;
         keESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__KE,
-                oldKe, KE_EDEFAULT, oldKeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__KE, oldKe, KE_EDEFAULT,
+                    oldKeESet ) );
     }
 
     /**
@@ -887,8 +894,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldKfESet = kfESet;
         kf = KF_EDEFAULT;
         kfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__KF,
-                oldKf, KF_EDEFAULT, oldKfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__KF, oldKf, KF_EDEFAULT,
+                    oldKfESet ) );
     }
 
     /**
@@ -937,8 +945,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldKsESet = ksESet;
         ks = KS_EDEFAULT;
         ksESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__KS,
-                oldKs, KS_EDEFAULT, oldKsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__KS, oldKs, KS_EDEFAULT,
+                    oldKsESet ) );
     }
 
     /**
@@ -972,8 +981,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         seefd1 = newSeefd1;
         boolean oldSeefd1ESet = seefd1ESet;
         seefd1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_AC5A__SEEFD1, oldSeefd1, seefd1, !oldSeefd1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC5A__SEEFD1, oldSeefd1, seefd1,
+                    !oldSeefd1ESet ) );
     }
 
     /**
@@ -987,8 +997,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldSeefd1ESet = seefd1ESet;
         seefd1 = SEEFD1_EDEFAULT;
         seefd1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AC5A__SEEFD1, oldSeefd1, SEEFD1_EDEFAULT, oldSeefd1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__SEEFD1, oldSeefd1,
+                    SEEFD1_EDEFAULT, oldSeefd1ESet ) );
     }
 
     /**
@@ -1022,8 +1033,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         seefd2 = newSeefd2;
         boolean oldSeefd2ESet = seefd2ESet;
         seefd2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_AC5A__SEEFD2, oldSeefd2, seefd2, !oldSeefd2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC5A__SEEFD2, oldSeefd2, seefd2,
+                    !oldSeefd2ESet ) );
     }
 
     /**
@@ -1037,8 +1049,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldSeefd2ESet = seefd2ESet;
         seefd2 = SEEFD2_EDEFAULT;
         seefd2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AC5A__SEEFD2, oldSeefd2, SEEFD2_EDEFAULT, oldSeefd2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__SEEFD2, oldSeefd2,
+                    SEEFD2_EDEFAULT, oldSeefd2ESet ) );
     }
 
     /**
@@ -1087,8 +1100,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldTaESet = taESet;
         ta = TA_EDEFAULT;
         taESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__TA,
-                oldTa, TA_EDEFAULT, oldTaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__TA, oldTa, TA_EDEFAULT,
+                    oldTaESet ) );
     }
 
     /**
@@ -1137,8 +1151,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldTbESet = tbESet;
         tb = TB_EDEFAULT;
         tbESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__TB,
-                oldTb, TB_EDEFAULT, oldTbESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__TB, oldTb, TB_EDEFAULT,
+                    oldTbESet ) );
     }
 
     /**
@@ -1187,8 +1202,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldTcESet = tcESet;
         tc = TC_EDEFAULT;
         tcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__TC,
-                oldTc, TC_EDEFAULT, oldTcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__TC, oldTc, TC_EDEFAULT,
+                    oldTcESet ) );
     }
 
     /**
@@ -1237,8 +1253,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldTeESet = teESet;
         te = TE_EDEFAULT;
         teESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__TE,
-                oldTe, TE_EDEFAULT, oldTeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__TE, oldTe, TE_EDEFAULT,
+                    oldTeESet ) );
     }
 
     /**
@@ -1272,8 +1289,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         tf1 = newTf1;
         boolean oldTf1ESet = tf1ESet;
         tf1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC5A__TF1, oldTf1, tf1, !oldTf1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC5A__TF1, oldTf1, tf1,
+                    !oldTf1ESet ) );
     }
 
     /**
@@ -1287,8 +1305,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldTf1ESet = tf1ESet;
         tf1 = TF1_EDEFAULT;
         tf1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AC5A__TF1, oldTf1, TF1_EDEFAULT, oldTf1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__TF1, oldTf1, TF1_EDEFAULT,
+                    oldTf1ESet ) );
     }
 
     /**
@@ -1322,8 +1341,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         tf2 = newTf2;
         boolean oldTf2ESet = tf2ESet;
         tf2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC5A__TF2, oldTf2, tf2, !oldTf2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC5A__TF2, oldTf2, tf2,
+                    !oldTf2ESet ) );
     }
 
     /**
@@ -1337,8 +1357,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldTf2ESet = tf2ESet;
         tf2 = TF2_EDEFAULT;
         tf2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AC5A__TF2, oldTf2, TF2_EDEFAULT, oldTf2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__TF2, oldTf2, TF2_EDEFAULT,
+                    oldTf2ESet ) );
     }
 
     /**
@@ -1372,8 +1393,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         tf3 = newTf3;
         boolean oldTf3ESet = tf3ESet;
         tf3ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC5A__TF3, oldTf3, tf3, !oldTf3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC5A__TF3, oldTf3, tf3,
+                    !oldTf3ESet ) );
     }
 
     /**
@@ -1387,8 +1409,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldTf3ESet = tf3ESet;
         tf3 = TF3_EDEFAULT;
         tf3ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AC5A__TF3, oldTf3, TF3_EDEFAULT, oldTf3ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__TF3, oldTf3, TF3_EDEFAULT,
+                    oldTf3ESet ) );
     }
 
     /**
@@ -1422,8 +1445,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         vrmax = newVrmax;
         boolean oldVrmaxESet = vrmaxESet;
         vrmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_AC5A__VRMAX, oldVrmax, vrmax, !oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC5A__VRMAX, oldVrmax, vrmax,
+                    !oldVrmaxESet ) );
     }
 
     /**
@@ -1437,8 +1461,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldVrmaxESet = vrmaxESet;
         vrmax = VRMAX_EDEFAULT;
         vrmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AC5A__VRMAX, oldVrmax, VRMAX_EDEFAULT, oldVrmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__VRMAX, oldVrmax,
+                    VRMAX_EDEFAULT, oldVrmaxESet ) );
     }
 
     /**
@@ -1472,8 +1497,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         vrmin = newVrmin;
         boolean oldVrminESet = vrminESet;
         vrminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EXC_AC5A__VRMIN, oldVrmin, vrmin, !oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AC5A__VRMIN, oldVrmin, vrmin,
+                    !oldVrminESet ) );
     }
 
     /**
@@ -1487,8 +1513,9 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
         boolean oldVrminESet = vrminESet;
         vrmin = VRMIN_EDEFAULT;
         vrminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AC5A__VRMIN, oldVrmin, VRMIN_EDEFAULT, oldVrminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AC5A__VRMIN, oldVrmin,
+                    VRMIN_EDEFAULT, oldVrminESet ) );
     }
 
     /**
@@ -1738,7 +1765,7 @@ public class ExcAC5AImpl extends ExcitationSystemDynamicsImpl implements ExcAC5A
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (a: " );
         if( aESet )
             result.append( a );

@@ -143,8 +143,9 @@ public class DiscExcContIEEEDEC3AImpl extends DiscontinuousExcitationControlDyna
         tdr = newTdr;
         boolean oldTdrESet = tdrESet;
         tdrESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC3A__TDR, oldTdr, tdr, !oldTdrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC3A__TDR, oldTdr,
+                    tdr, !oldTdrESet ) );
     }
 
     /**
@@ -158,8 +159,9 @@ public class DiscExcContIEEEDEC3AImpl extends DiscontinuousExcitationControlDyna
         boolean oldTdrESet = tdrESet;
         tdr = TDR_EDEFAULT;
         tdrESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC3A__TDR, oldTdr, TDR_EDEFAULT, oldTdrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC3A__TDR, oldTdr,
+                    TDR_EDEFAULT, oldTdrESet ) );
     }
 
     /**
@@ -193,8 +195,9 @@ public class DiscExcContIEEEDEC3AImpl extends DiscontinuousExcitationControlDyna
         vtmin = newVtmin;
         boolean oldVtminESet = vtminESet;
         vtminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC3A__VTMIN, oldVtmin, vtmin, !oldVtminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.DISC_EXC_CONT_IEEEDEC3A__VTMIN, oldVtmin,
+                    vtmin, !oldVtminESet ) );
     }
 
     /**
@@ -208,8 +211,9 @@ public class DiscExcContIEEEDEC3AImpl extends DiscontinuousExcitationControlDyna
         boolean oldVtminESet = vtminESet;
         vtmin = VTMIN_EDEFAULT;
         vtminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.DISC_EXC_CONT_IEEEDEC3A__VTMIN, oldVtmin, VTMIN_EDEFAULT, oldVtminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.DISC_EXC_CONT_IEEEDEC3A__VTMIN,
+                    oldVtmin, VTMIN_EDEFAULT, oldVtminESet ) );
     }
 
     /**
@@ -299,7 +303,7 @@ public class DiscExcContIEEEDEC3AImpl extends DiscontinuousExcitationControlDyna
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (tdr: " );
         if( tdrESet )
             result.append( tdr );

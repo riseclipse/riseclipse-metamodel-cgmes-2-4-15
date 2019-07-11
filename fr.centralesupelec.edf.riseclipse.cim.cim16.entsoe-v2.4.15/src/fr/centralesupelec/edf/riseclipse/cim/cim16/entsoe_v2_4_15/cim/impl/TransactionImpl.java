@@ -534,8 +534,9 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
         donorReference = newDonorReference;
         boolean oldDonorReferenceESet = donorReferenceESet;
         donorReferenceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSACTION__DONOR_REFERENCE, oldDonorReference, donorReference, !oldDonorReferenceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSACTION__DONOR_REFERENCE,
+                    oldDonorReference, donorReference, !oldDonorReferenceESet ) );
     }
 
     /**
@@ -585,8 +586,9 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSACTION__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSACTION__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -600,8 +602,9 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSACTION__KIND, oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSACTION__KIND, oldKind,
+                    KIND_EDEFAULT, oldKindESet ) );
     }
 
     /**
@@ -687,8 +690,9 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
         reversedId = newReversedId;
         boolean oldReversedIdESet = reversedIdESet;
         reversedIdESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSACTION__REVERSED_ID, oldReversedId, reversedId, !oldReversedIdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSACTION__REVERSED_ID, oldReversedId,
+                    reversedId, !oldReversedIdESet ) );
     }
 
     /**
@@ -702,8 +706,9 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
         boolean oldReversedIdESet = reversedIdESet;
         reversedId = REVERSED_ID_EDEFAULT;
         reversedIdESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSACTION__REVERSED_ID, oldReversedId, REVERSED_ID_EDEFAULT, oldReversedIdESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSACTION__REVERSED_ID,
+                    oldReversedId, REVERSED_ID_EDEFAULT, oldReversedIdESet ) );
     }
 
     /**
@@ -860,18 +865,21 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
     public void setLine( LineDetail newLine ) {
         if( newLine != line ) {
             NotificationChain msgs = null;
-            if( line != null ) msgs = ( ( InternalEObject ) line ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.TRANSACTION__LINE, null, msgs );
-            if( newLine != null ) msgs = ( ( InternalEObject ) newLine ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.TRANSACTION__LINE, null, msgs );
+            if( line != null )
+                msgs = ( ( InternalEObject ) line ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.TRANSACTION__LINE, null, msgs );
+            if( newLine != null )
+                msgs = ( ( InternalEObject ) newLine ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.TRANSACTION__LINE, null, msgs );
             msgs = basicSetLine( newLine, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldLineESet = lineESet;
             lineESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TRANSACTION__LINE, newLine, newLine, !oldLineESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSACTION__LINE, newLine, newLine,
+                        !oldLineESet ) );
         }
     }
 
@@ -913,8 +921,9 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
         else {
             boolean oldLineESet = lineESet;
             lineESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSACTION__LINE, null, null, oldLineESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSACTION__LINE, null, null,
+                        oldLineESet ) );
         }
     }
 
@@ -969,10 +978,12 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
     public void setCustomerAccount( CustomerAccount newCustomerAccount ) {
         if( newCustomerAccount != customerAccount ) {
             NotificationChain msgs = null;
-            if( customerAccount != null ) msgs = ( ( InternalEObject ) customerAccount ).eInverseRemove( this,
-                    CimPackage.CUSTOMER_ACCOUNT__PAYMENT_TRANSACTIONS, CustomerAccount.class, msgs );
-            if( newCustomerAccount != null ) msgs = ( ( InternalEObject ) newCustomerAccount ).eInverseAdd( this,
-                    CimPackage.CUSTOMER_ACCOUNT__PAYMENT_TRANSACTIONS, CustomerAccount.class, msgs );
+            if( customerAccount != null )
+                msgs = ( ( InternalEObject ) customerAccount ).eInverseRemove( this,
+                        CimPackage.CUSTOMER_ACCOUNT__PAYMENT_TRANSACTIONS, CustomerAccount.class, msgs );
+            if( newCustomerAccount != null )
+                msgs = ( ( InternalEObject ) newCustomerAccount ).eInverseAdd( this,
+                        CimPackage.CUSTOMER_ACCOUNT__PAYMENT_TRANSACTIONS, CustomerAccount.class, msgs );
             msgs = basicSetCustomerAccount( newCustomerAccount, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1023,8 +1034,9 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
         else {
             boolean oldCustomerAccountESet = customerAccountESet;
             customerAccountESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSACTION__CUSTOMER_ACCOUNT, null, null, oldCustomerAccountESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSACTION__CUSTOMER_ACCOUNT,
+                        null, null, oldCustomerAccountESet ) );
         }
     }
 
@@ -1078,18 +1090,21 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
     public void setReceipt( Receipt newReceipt ) {
         if( newReceipt != receipt ) {
             NotificationChain msgs = null;
-            if( receipt != null ) msgs = ( ( InternalEObject ) receipt ).eInverseRemove( this,
-                    CimPackage.RECEIPT__TRANSACTIONS, Receipt.class, msgs );
-            if( newReceipt != null ) msgs = ( ( InternalEObject ) newReceipt ).eInverseAdd( this,
-                    CimPackage.RECEIPT__TRANSACTIONS, Receipt.class, msgs );
+            if( receipt != null )
+                msgs = ( ( InternalEObject ) receipt ).eInverseRemove( this, CimPackage.RECEIPT__TRANSACTIONS,
+                        Receipt.class, msgs );
+            if( newReceipt != null )
+                msgs = ( ( InternalEObject ) newReceipt ).eInverseAdd( this, CimPackage.RECEIPT__TRANSACTIONS,
+                        Receipt.class, msgs );
             msgs = basicSetReceipt( newReceipt, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldReceiptESet = receiptESet;
             receiptESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TRANSACTION__RECEIPT, newReceipt, newReceipt, !oldReceiptESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSACTION__RECEIPT, newReceipt,
+                        newReceipt, !oldReceiptESet ) );
         }
     }
 
@@ -1131,8 +1146,9 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
         else {
             boolean oldReceiptESet = receiptESet;
             receiptESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSACTION__RECEIPT, null, null, oldReceiptESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSACTION__RECEIPT, null, null,
+                        oldReceiptESet ) );
         }
     }
 
@@ -1186,18 +1202,21 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
     public void setMeter( Meter newMeter ) {
         if( newMeter != meter ) {
             NotificationChain msgs = null;
-            if( meter != null ) msgs = ( ( InternalEObject ) meter ).eInverseRemove( this,
-                    CimPackage.METER__VENDING_TRANSACTIONS, Meter.class, msgs );
-            if( newMeter != null ) msgs = ( ( InternalEObject ) newMeter ).eInverseAdd( this,
-                    CimPackage.METER__VENDING_TRANSACTIONS, Meter.class, msgs );
+            if( meter != null )
+                msgs = ( ( InternalEObject ) meter ).eInverseRemove( this, CimPackage.METER__VENDING_TRANSACTIONS,
+                        Meter.class, msgs );
+            if( newMeter != null )
+                msgs = ( ( InternalEObject ) newMeter ).eInverseAdd( this, CimPackage.METER__VENDING_TRANSACTIONS,
+                        Meter.class, msgs );
             msgs = basicSetMeter( newMeter, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldMeterESet = meterESet;
             meterESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TRANSACTION__METER, newMeter, newMeter, !oldMeterESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSACTION__METER, newMeter,
+                        newMeter, !oldMeterESet ) );
         }
     }
 
@@ -1239,8 +1258,9 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
         else {
             boolean oldMeterESet = meterESet;
             meterESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSACTION__METER, null, null, oldMeterESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSACTION__METER, null, null,
+                        oldMeterESet ) );
         }
     }
 
@@ -1294,18 +1314,21 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
     public void setCashierShift( CashierShift newCashierShift ) {
         if( newCashierShift != cashierShift ) {
             NotificationChain msgs = null;
-            if( cashierShift != null ) msgs = ( ( InternalEObject ) cashierShift ).eInverseRemove( this,
-                    CimPackage.CASHIER_SHIFT__TRANSACTIONS, CashierShift.class, msgs );
-            if( newCashierShift != null ) msgs = ( ( InternalEObject ) newCashierShift ).eInverseAdd( this,
-                    CimPackage.CASHIER_SHIFT__TRANSACTIONS, CashierShift.class, msgs );
+            if( cashierShift != null )
+                msgs = ( ( InternalEObject ) cashierShift ).eInverseRemove( this,
+                        CimPackage.CASHIER_SHIFT__TRANSACTIONS, CashierShift.class, msgs );
+            if( newCashierShift != null )
+                msgs = ( ( InternalEObject ) newCashierShift ).eInverseAdd( this,
+                        CimPackage.CASHIER_SHIFT__TRANSACTIONS, CashierShift.class, msgs );
             msgs = basicSetCashierShift( newCashierShift, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCashierShiftESet = cashierShiftESet;
             cashierShiftESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TRANSACTION__CASHIER_SHIFT, newCashierShift, newCashierShift, !oldCashierShiftESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSACTION__CASHIER_SHIFT,
+                        newCashierShift, newCashierShift, !oldCashierShiftESet ) );
         }
     }
 
@@ -1347,8 +1370,9 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
         else {
             boolean oldCashierShiftESet = cashierShiftESet;
             cashierShiftESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSACTION__CASHIER_SHIFT, null, null, oldCashierShiftESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSACTION__CASHIER_SHIFT, null,
+                        null, oldCashierShiftESet ) );
         }
     }
 
@@ -1403,10 +1427,12 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
     public void setPricingStructure( PricingStructure newPricingStructure ) {
         if( newPricingStructure != pricingStructure ) {
             NotificationChain msgs = null;
-            if( pricingStructure != null ) msgs = ( ( InternalEObject ) pricingStructure ).eInverseRemove( this,
-                    CimPackage.PRICING_STRUCTURE__TRANSACTIONS, PricingStructure.class, msgs );
-            if( newPricingStructure != null ) msgs = ( ( InternalEObject ) newPricingStructure ).eInverseAdd( this,
-                    CimPackage.PRICING_STRUCTURE__TRANSACTIONS, PricingStructure.class, msgs );
+            if( pricingStructure != null )
+                msgs = ( ( InternalEObject ) pricingStructure ).eInverseRemove( this,
+                        CimPackage.PRICING_STRUCTURE__TRANSACTIONS, PricingStructure.class, msgs );
+            if( newPricingStructure != null )
+                msgs = ( ( InternalEObject ) newPricingStructure ).eInverseAdd( this,
+                        CimPackage.PRICING_STRUCTURE__TRANSACTIONS, PricingStructure.class, msgs );
             msgs = basicSetPricingStructure( newPricingStructure, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1457,8 +1483,9 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
         else {
             boolean oldPricingStructureESet = pricingStructureESet;
             pricingStructureESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSACTION__PRICING_STRUCTURE, null, null, oldPricingStructureESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSACTION__PRICING_STRUCTURE,
+                        null, null, oldPricingStructureESet ) );
         }
     }
 
@@ -1513,10 +1540,12 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
     public void setAuxiliaryAccount( AuxiliaryAccount newAuxiliaryAccount ) {
         if( newAuxiliaryAccount != auxiliaryAccount ) {
             NotificationChain msgs = null;
-            if( auxiliaryAccount != null ) msgs = ( ( InternalEObject ) auxiliaryAccount ).eInverseRemove( this,
-                    CimPackage.AUXILIARY_ACCOUNT__PAYMENT_TRANSACTIONS, AuxiliaryAccount.class, msgs );
-            if( newAuxiliaryAccount != null ) msgs = ( ( InternalEObject ) newAuxiliaryAccount ).eInverseAdd( this,
-                    CimPackage.AUXILIARY_ACCOUNT__PAYMENT_TRANSACTIONS, AuxiliaryAccount.class, msgs );
+            if( auxiliaryAccount != null )
+                msgs = ( ( InternalEObject ) auxiliaryAccount ).eInverseRemove( this,
+                        CimPackage.AUXILIARY_ACCOUNT__PAYMENT_TRANSACTIONS, AuxiliaryAccount.class, msgs );
+            if( newAuxiliaryAccount != null )
+                msgs = ( ( InternalEObject ) newAuxiliaryAccount ).eInverseAdd( this,
+                        CimPackage.AUXILIARY_ACCOUNT__PAYMENT_TRANSACTIONS, AuxiliaryAccount.class, msgs );
             msgs = basicSetAuxiliaryAccount( newAuxiliaryAccount, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1567,8 +1596,9 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
         else {
             boolean oldAuxiliaryAccountESet = auxiliaryAccountESet;
             auxiliaryAccountESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSACTION__AUXILIARY_ACCOUNT, null, null, oldAuxiliaryAccountESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSACTION__AUXILIARY_ACCOUNT,
+                        null, null, oldAuxiliaryAccountESet ) );
         }
     }
 
@@ -1622,18 +1652,21 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
     public void setVendorShift( VendorShift newVendorShift ) {
         if( newVendorShift != vendorShift ) {
             NotificationChain msgs = null;
-            if( vendorShift != null ) msgs = ( ( InternalEObject ) vendorShift ).eInverseRemove( this,
-                    CimPackage.VENDOR_SHIFT__TRANSACTIONS, VendorShift.class, msgs );
-            if( newVendorShift != null ) msgs = ( ( InternalEObject ) newVendorShift ).eInverseAdd( this,
-                    CimPackage.VENDOR_SHIFT__TRANSACTIONS, VendorShift.class, msgs );
+            if( vendorShift != null )
+                msgs = ( ( InternalEObject ) vendorShift ).eInverseRemove( this, CimPackage.VENDOR_SHIFT__TRANSACTIONS,
+                        VendorShift.class, msgs );
+            if( newVendorShift != null )
+                msgs = ( ( InternalEObject ) newVendorShift ).eInverseAdd( this, CimPackage.VENDOR_SHIFT__TRANSACTIONS,
+                        VendorShift.class, msgs );
             msgs = basicSetVendorShift( newVendorShift, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldVendorShiftESet = vendorShiftESet;
             vendorShiftESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TRANSACTION__VENDOR_SHIFT, newVendorShift, newVendorShift, !oldVendorShiftESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSACTION__VENDOR_SHIFT,
+                        newVendorShift, newVendorShift, !oldVendorShiftESet ) );
         }
     }
 
@@ -1675,8 +1708,9 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
         else {
             boolean oldVendorShiftESet = vendorShiftESet;
             vendorShiftESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSACTION__VENDOR_SHIFT, null, null, oldVendorShiftESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSACTION__VENDOR_SHIFT, null,
+                        null, oldVendorShiftESet ) );
         }
     }
 
@@ -1734,35 +1768,42 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.TRANSACTION__METER:
-            if( meter != null ) msgs = ( ( InternalEObject ) meter ).eInverseRemove( this,
-                    CimPackage.METER__VENDING_TRANSACTIONS, Meter.class, msgs );
+            if( meter != null )
+                msgs = ( ( InternalEObject ) meter ).eInverseRemove( this, CimPackage.METER__VENDING_TRANSACTIONS,
+                        Meter.class, msgs );
             return basicSetMeter( ( Meter ) otherEnd, msgs );
         case CimPackage.TRANSACTION__USER_ATTRIBUTES:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getUserAttributes() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.TRANSACTION__CUSTOMER_ACCOUNT:
-            if( customerAccount != null ) msgs = ( ( InternalEObject ) customerAccount ).eInverseRemove( this,
-                    CimPackage.CUSTOMER_ACCOUNT__PAYMENT_TRANSACTIONS, CustomerAccount.class, msgs );
+            if( customerAccount != null )
+                msgs = ( ( InternalEObject ) customerAccount ).eInverseRemove( this,
+                        CimPackage.CUSTOMER_ACCOUNT__PAYMENT_TRANSACTIONS, CustomerAccount.class, msgs );
             return basicSetCustomerAccount( ( CustomerAccount ) otherEnd, msgs );
         case CimPackage.TRANSACTION__VENDOR_SHIFT:
-            if( vendorShift != null ) msgs = ( ( InternalEObject ) vendorShift ).eInverseRemove( this,
-                    CimPackage.VENDOR_SHIFT__TRANSACTIONS, VendorShift.class, msgs );
+            if( vendorShift != null )
+                msgs = ( ( InternalEObject ) vendorShift ).eInverseRemove( this, CimPackage.VENDOR_SHIFT__TRANSACTIONS,
+                        VendorShift.class, msgs );
             return basicSetVendorShift( ( VendorShift ) otherEnd, msgs );
         case CimPackage.TRANSACTION__AUXILIARY_ACCOUNT:
-            if( auxiliaryAccount != null ) msgs = ( ( InternalEObject ) auxiliaryAccount ).eInverseRemove( this,
-                    CimPackage.AUXILIARY_ACCOUNT__PAYMENT_TRANSACTIONS, AuxiliaryAccount.class, msgs );
+            if( auxiliaryAccount != null )
+                msgs = ( ( InternalEObject ) auxiliaryAccount ).eInverseRemove( this,
+                        CimPackage.AUXILIARY_ACCOUNT__PAYMENT_TRANSACTIONS, AuxiliaryAccount.class, msgs );
             return basicSetAuxiliaryAccount( ( AuxiliaryAccount ) otherEnd, msgs );
         case CimPackage.TRANSACTION__PRICING_STRUCTURE:
-            if( pricingStructure != null ) msgs = ( ( InternalEObject ) pricingStructure ).eInverseRemove( this,
-                    CimPackage.PRICING_STRUCTURE__TRANSACTIONS, PricingStructure.class, msgs );
+            if( pricingStructure != null )
+                msgs = ( ( InternalEObject ) pricingStructure ).eInverseRemove( this,
+                        CimPackage.PRICING_STRUCTURE__TRANSACTIONS, PricingStructure.class, msgs );
             return basicSetPricingStructure( ( PricingStructure ) otherEnd, msgs );
         case CimPackage.TRANSACTION__CASHIER_SHIFT:
-            if( cashierShift != null ) msgs = ( ( InternalEObject ) cashierShift ).eInverseRemove( this,
-                    CimPackage.CASHIER_SHIFT__TRANSACTIONS, CashierShift.class, msgs );
+            if( cashierShift != null )
+                msgs = ( ( InternalEObject ) cashierShift ).eInverseRemove( this,
+                        CimPackage.CASHIER_SHIFT__TRANSACTIONS, CashierShift.class, msgs );
             return basicSetCashierShift( ( CashierShift ) otherEnd, msgs );
         case CimPackage.TRANSACTION__RECEIPT:
-            if( receipt != null ) msgs = ( ( InternalEObject ) receipt ).eInverseRemove( this,
-                    CimPackage.RECEIPT__TRANSACTIONS, Receipt.class, msgs );
+            if( receipt != null )
+                msgs = ( ( InternalEObject ) receipt ).eInverseRemove( this, CimPackage.RECEIPT__TRANSACTIONS,
+                        Receipt.class, msgs );
             return basicSetReceipt( ( Receipt ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -2017,7 +2058,7 @@ public class TransactionImpl extends IdentifiedObjectImpl implements Transaction
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (diverseReference: " );
         if( diverseReferenceESet )
             result.append( diverseReference );

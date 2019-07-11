@@ -283,8 +283,9 @@ public class TapChangerControlImpl extends RegulatingControlImpl implements TapC
         limitVoltage = newLimitVoltage;
         boolean oldLimitVoltageESet = limitVoltageESet;
         limitVoltageESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_CONTROL__LIMIT_VOLTAGE, oldLimitVoltage, limitVoltage, !oldLimitVoltageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_CONTROL__LIMIT_VOLTAGE,
+                    oldLimitVoltage, limitVoltage, !oldLimitVoltageESet ) );
     }
 
     /**
@@ -334,9 +335,10 @@ public class TapChangerControlImpl extends RegulatingControlImpl implements TapC
         lineDropCompensation = newLineDropCompensation;
         boolean oldLineDropCompensationESet = lineDropCompensationESet;
         lineDropCompensationESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_CONTROL__LINE_DROP_COMPENSATION,
-                        oldLineDropCompensation, lineDropCompensation, !oldLineDropCompensationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.TAP_CHANGER_CONTROL__LINE_DROP_COMPENSATION, oldLineDropCompensation,
+                    lineDropCompensation, !oldLineDropCompensationESet ) );
     }
 
     /**
@@ -350,9 +352,10 @@ public class TapChangerControlImpl extends RegulatingControlImpl implements TapC
         boolean oldLineDropCompensationESet = lineDropCompensationESet;
         lineDropCompensation = LINE_DROP_COMPENSATION_EDEFAULT;
         lineDropCompensationESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_CONTROL__LINE_DROP_COMPENSATION,
-                        oldLineDropCompensation, LINE_DROP_COMPENSATION_EDEFAULT, oldLineDropCompensationESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.TAP_CHANGER_CONTROL__LINE_DROP_COMPENSATION, oldLineDropCompensation,
+                    LINE_DROP_COMPENSATION_EDEFAULT, oldLineDropCompensationESet ) );
     }
 
     /**
@@ -386,8 +389,9 @@ public class TapChangerControlImpl extends RegulatingControlImpl implements TapC
         lineDropR = newLineDropR;
         boolean oldLineDropRESet = lineDropRESet;
         lineDropRESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_CONTROL__LINE_DROP_R, oldLineDropR, lineDropR, !oldLineDropRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_CONTROL__LINE_DROP_R,
+                    oldLineDropR, lineDropR, !oldLineDropRESet ) );
     }
 
     /**
@@ -401,8 +405,9 @@ public class TapChangerControlImpl extends RegulatingControlImpl implements TapC
         boolean oldLineDropRESet = lineDropRESet;
         lineDropR = LINE_DROP_R_EDEFAULT;
         lineDropRESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER_CONTROL__LINE_DROP_R, oldLineDropR, LINE_DROP_R_EDEFAULT, oldLineDropRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_CONTROL__LINE_DROP_R,
+                    oldLineDropR, LINE_DROP_R_EDEFAULT, oldLineDropRESet ) );
     }
 
     /**
@@ -436,8 +441,9 @@ public class TapChangerControlImpl extends RegulatingControlImpl implements TapC
         lineDropX = newLineDropX;
         boolean oldLineDropXESet = lineDropXESet;
         lineDropXESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER_CONTROL__LINE_DROP_X, oldLineDropX, lineDropX, !oldLineDropXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER_CONTROL__LINE_DROP_X,
+                    oldLineDropX, lineDropX, !oldLineDropXESet ) );
     }
 
     /**
@@ -451,8 +457,9 @@ public class TapChangerControlImpl extends RegulatingControlImpl implements TapC
         boolean oldLineDropXESet = lineDropXESet;
         lineDropX = LINE_DROP_X_EDEFAULT;
         lineDropXESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER_CONTROL__LINE_DROP_X, oldLineDropX, LINE_DROP_X_EDEFAULT, oldLineDropXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_CONTROL__LINE_DROP_X,
+                    oldLineDropX, LINE_DROP_X_EDEFAULT, oldLineDropXESet ) );
     }
 
     /**
@@ -502,9 +509,10 @@ public class TapChangerControlImpl extends RegulatingControlImpl implements TapC
         boolean oldReverseLineDropRESet = reverseLineDropRESet;
         reverseLineDropR = REVERSE_LINE_DROP_R_EDEFAULT;
         reverseLineDropRESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_CONTROL__REVERSE_LINE_DROP_R,
-                        oldReverseLineDropR, REVERSE_LINE_DROP_R_EDEFAULT, oldReverseLineDropRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.TAP_CHANGER_CONTROL__REVERSE_LINE_DROP_R, oldReverseLineDropR,
+                    REVERSE_LINE_DROP_R_EDEFAULT, oldReverseLineDropRESet ) );
     }
 
     /**
@@ -554,9 +562,10 @@ public class TapChangerControlImpl extends RegulatingControlImpl implements TapC
         boolean oldReverseLineDropXESet = reverseLineDropXESet;
         reverseLineDropX = REVERSE_LINE_DROP_X_EDEFAULT;
         reverseLineDropXESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER_CONTROL__REVERSE_LINE_DROP_X,
-                        oldReverseLineDropX, REVERSE_LINE_DROP_X_EDEFAULT, oldReverseLineDropXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.TAP_CHANGER_CONTROL__REVERSE_LINE_DROP_X, oldReverseLineDropX,
+                    REVERSE_LINE_DROP_X_EDEFAULT, oldReverseLineDropXESet ) );
     }
 
     /**
@@ -762,7 +771,7 @@ public class TapChangerControlImpl extends RegulatingControlImpl implements TapC
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (limitVoltage: " );
         if( limitVoltageESet )
             result.append( limitVoltage );

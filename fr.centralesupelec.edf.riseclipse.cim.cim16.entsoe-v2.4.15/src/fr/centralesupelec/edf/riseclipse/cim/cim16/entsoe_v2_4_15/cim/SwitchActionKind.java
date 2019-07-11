@@ -142,8 +142,12 @@ public enum SwitchActionKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final SwitchActionKind[] VALUES_ARRAY = new SwitchActionKind[] { OPEN, CLOSE, DISABLE_RECLOSING,
-            ENABLE_RECLOSING, };
+    private static final SwitchActionKind[] VALUES_ARRAY = new SwitchActionKind[] {
+            OPEN,
+            CLOSE,
+            DISABLE_RECLOSING,
+            ENABLE_RECLOSING,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Switch Action Kind</b></em>' enumerators.

@@ -269,10 +269,17 @@ public enum RemoteSignalKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final RemoteSignalKind[] VALUES_ARRAY = new RemoteSignalKind[] { REMOTE_BUS_VOLTAGE_FREQUENCY,
-            REMOTE_BUS_VOLTAGE_FREQUENCY_DEVIATION, REMOTE_BUS_FREQUENCY, REMOTE_BUS_FREQUENCY_DEVIATION,
-            REMOTE_BUS_VOLTAGE_AMPLITUDE, REMOTE_BUS_VOLTAGE, REMOTE_BRANCH_CURRENT_AMPLITUDE,
-            REMOTE_BUS_VOLTAGE_AMPLITUDE_DERIVATIVE, REMOTE_PU_BUS_VOLTAGE_DERIVATIVE, };
+    private static final RemoteSignalKind[] VALUES_ARRAY = new RemoteSignalKind[] {
+            REMOTE_BUS_VOLTAGE_FREQUENCY,
+            REMOTE_BUS_VOLTAGE_FREQUENCY_DEVIATION,
+            REMOTE_BUS_FREQUENCY,
+            REMOTE_BUS_FREQUENCY_DEVIATION,
+            REMOTE_BUS_VOLTAGE_AMPLITUDE,
+            REMOTE_BUS_VOLTAGE,
+            REMOTE_BRANCH_CURRENT_AMPLITUDE,
+            REMOTE_BUS_VOLTAGE_AMPLITUDE_DERIVATIVE,
+            REMOTE_PU_BUS_VOLTAGE_DERIVATIVE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Remote Signal Kind</b></em>' enumerators.

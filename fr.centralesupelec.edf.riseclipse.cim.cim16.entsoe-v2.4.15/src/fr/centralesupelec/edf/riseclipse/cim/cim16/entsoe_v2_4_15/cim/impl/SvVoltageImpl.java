@@ -165,8 +165,9 @@ public class SvVoltageImpl extends StateVariableImpl implements SvVoltage {
         angle = newAngle;
         boolean oldAngleESet = angleESet;
         angleESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SV_VOLTAGE__ANGLE, oldAngle, angle, !oldAngleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SV_VOLTAGE__ANGLE, oldAngle, angle,
+                    !oldAngleESet ) );
     }
 
     /**
@@ -180,8 +181,9 @@ public class SvVoltageImpl extends StateVariableImpl implements SvVoltage {
         boolean oldAngleESet = angleESet;
         angle = ANGLE_EDEFAULT;
         angleESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SV_VOLTAGE__ANGLE, oldAngle, ANGLE_EDEFAULT, oldAngleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SV_VOLTAGE__ANGLE, oldAngle,
+                    ANGLE_EDEFAULT, oldAngleESet ) );
     }
 
     /**
@@ -230,8 +232,9 @@ public class SvVoltageImpl extends StateVariableImpl implements SvVoltage {
         boolean oldVESet = vESet;
         v = V_EDEFAULT;
         vESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SV_VOLTAGE__V, oldV, V_EDEFAULT, oldVESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SV_VOLTAGE__V, oldV, V_EDEFAULT,
+                    oldVESet ) );
     }
 
     /**
@@ -285,10 +288,12 @@ public class SvVoltageImpl extends StateVariableImpl implements SvVoltage {
     public void setTopologicalNode( TopologicalNode newTopologicalNode ) {
         if( newTopologicalNode != topologicalNode ) {
             NotificationChain msgs = null;
-            if( topologicalNode != null ) msgs = ( ( InternalEObject ) topologicalNode ).eInverseRemove( this,
-                    CimPackage.TOPOLOGICAL_NODE__SV_VOLTAGE, TopologicalNode.class, msgs );
-            if( newTopologicalNode != null ) msgs = ( ( InternalEObject ) newTopologicalNode ).eInverseAdd( this,
-                    CimPackage.TOPOLOGICAL_NODE__SV_VOLTAGE, TopologicalNode.class, msgs );
+            if( topologicalNode != null )
+                msgs = ( ( InternalEObject ) topologicalNode ).eInverseRemove( this,
+                        CimPackage.TOPOLOGICAL_NODE__SV_VOLTAGE, TopologicalNode.class, msgs );
+            if( newTopologicalNode != null )
+                msgs = ( ( InternalEObject ) newTopologicalNode ).eInverseAdd( this,
+                        CimPackage.TOPOLOGICAL_NODE__SV_VOLTAGE, TopologicalNode.class, msgs );
             msgs = basicSetTopologicalNode( newTopologicalNode, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -339,8 +344,9 @@ public class SvVoltageImpl extends StateVariableImpl implements SvVoltage {
         else {
             boolean oldTopologicalNodeESet = topologicalNodeESet;
             topologicalNodeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SV_VOLTAGE__TOPOLOGICAL_NODE, null, null, oldTopologicalNodeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SV_VOLTAGE__TOPOLOGICAL_NODE, null,
+                        null, oldTopologicalNodeESet ) );
         }
     }
 
@@ -363,8 +369,9 @@ public class SvVoltageImpl extends StateVariableImpl implements SvVoltage {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.SV_VOLTAGE__TOPOLOGICAL_NODE:
-            if( topologicalNode != null ) msgs = ( ( InternalEObject ) topologicalNode ).eInverseRemove( this,
-                    CimPackage.TOPOLOGICAL_NODE__SV_VOLTAGE, TopologicalNode.class, msgs );
+            if( topologicalNode != null )
+                msgs = ( ( InternalEObject ) topologicalNode ).eInverseRemove( this,
+                        CimPackage.TOPOLOGICAL_NODE__SV_VOLTAGE, TopologicalNode.class, msgs );
             return basicSetTopologicalNode( ( TopologicalNode ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -471,7 +478,7 @@ public class SvVoltageImpl extends StateVariableImpl implements SvVoltage {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (angle: " );
         if( angleESet )
             result.append( angle );

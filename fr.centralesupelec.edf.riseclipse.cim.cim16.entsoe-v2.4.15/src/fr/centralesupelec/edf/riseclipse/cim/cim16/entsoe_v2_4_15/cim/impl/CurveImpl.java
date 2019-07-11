@@ -376,8 +376,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         curveStyle = newCurveStyle == null ? CURVE_STYLE_EDEFAULT : newCurveStyle;
         boolean oldCurveStyleESet = curveStyleESet;
         curveStyleESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURVE__CURVE_STYLE, oldCurveStyle, curveStyle, !oldCurveStyleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE__CURVE_STYLE, oldCurveStyle,
+                    curveStyle, !oldCurveStyleESet ) );
     }
 
     /**
@@ -391,8 +392,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         boolean oldCurveStyleESet = curveStyleESet;
         curveStyle = CURVE_STYLE_EDEFAULT;
         curveStyleESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURVE__CURVE_STYLE, oldCurveStyle, CURVE_STYLE_EDEFAULT, oldCurveStyleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURVE__CURVE_STYLE, oldCurveStyle,
+                    CURVE_STYLE_EDEFAULT, oldCurveStyleESet ) );
     }
 
     /**
@@ -426,8 +428,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         xMultiplier = newXMultiplier == null ? XMULTIPLIER_EDEFAULT : newXMultiplier;
         boolean oldXMultiplierESet = xMultiplierESet;
         xMultiplierESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURVE__XMULTIPLIER, oldXMultiplier, xMultiplier, !oldXMultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE__XMULTIPLIER, oldXMultiplier,
+                    xMultiplier, !oldXMultiplierESet ) );
     }
 
     /**
@@ -441,8 +444,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         boolean oldXMultiplierESet = xMultiplierESet;
         xMultiplier = XMULTIPLIER_EDEFAULT;
         xMultiplierESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURVE__XMULTIPLIER, oldXMultiplier, XMULTIPLIER_EDEFAULT, oldXMultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURVE__XMULTIPLIER, oldXMultiplier,
+                    XMULTIPLIER_EDEFAULT, oldXMultiplierESet ) );
     }
 
     /**
@@ -476,8 +480,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         xUnit = newXUnit == null ? XUNIT_EDEFAULT : newXUnit;
         boolean oldXUnitESet = xUnitESet;
         xUnitESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE__XUNIT,
-                oldXUnit, xUnit, !oldXUnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE__XUNIT, oldXUnit, xUnit,
+                    !oldXUnitESet ) );
     }
 
     /**
@@ -491,8 +496,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         boolean oldXUnitESet = xUnitESet;
         xUnit = XUNIT_EDEFAULT;
         xUnitESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURVE__XUNIT,
-                oldXUnit, XUNIT_EDEFAULT, oldXUnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURVE__XUNIT, oldXUnit, XUNIT_EDEFAULT,
+                    oldXUnitESet ) );
     }
 
     /**
@@ -526,8 +532,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         y1Multiplier = newY1Multiplier == null ? Y1_MULTIPLIER_EDEFAULT : newY1Multiplier;
         boolean oldY1MultiplierESet = y1MultiplierESet;
         y1MultiplierESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURVE__Y1_MULTIPLIER, oldY1Multiplier, y1Multiplier, !oldY1MultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE__Y1_MULTIPLIER, oldY1Multiplier,
+                    y1Multiplier, !oldY1MultiplierESet ) );
     }
 
     /**
@@ -541,8 +548,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         boolean oldY1MultiplierESet = y1MultiplierESet;
         y1Multiplier = Y1_MULTIPLIER_EDEFAULT;
         y1MultiplierESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURVE__Y1_MULTIPLIER, oldY1Multiplier, Y1_MULTIPLIER_EDEFAULT, oldY1MultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURVE__Y1_MULTIPLIER, oldY1Multiplier,
+                    Y1_MULTIPLIER_EDEFAULT, oldY1MultiplierESet ) );
     }
 
     /**
@@ -576,8 +584,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         y1Unit = newY1Unit == null ? Y1_UNIT_EDEFAULT : newY1Unit;
         boolean oldY1UnitESet = y1UnitESet;
         y1UnitESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE__Y1_UNIT,
-                oldY1Unit, y1Unit, !oldY1UnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE__Y1_UNIT, oldY1Unit, y1Unit,
+                    !oldY1UnitESet ) );
     }
 
     /**
@@ -591,8 +600,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         boolean oldY1UnitESet = y1UnitESet;
         y1Unit = Y1_UNIT_EDEFAULT;
         y1UnitESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURVE__Y1_UNIT, oldY1Unit, Y1_UNIT_EDEFAULT, oldY1UnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURVE__Y1_UNIT, oldY1Unit,
+                    Y1_UNIT_EDEFAULT, oldY1UnitESet ) );
     }
 
     /**
@@ -626,8 +636,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         y2Multiplier = newY2Multiplier == null ? Y2_MULTIPLIER_EDEFAULT : newY2Multiplier;
         boolean oldY2MultiplierESet = y2MultiplierESet;
         y2MultiplierESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURVE__Y2_MULTIPLIER, oldY2Multiplier, y2Multiplier, !oldY2MultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE__Y2_MULTIPLIER, oldY2Multiplier,
+                    y2Multiplier, !oldY2MultiplierESet ) );
     }
 
     /**
@@ -641,8 +652,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         boolean oldY2MultiplierESet = y2MultiplierESet;
         y2Multiplier = Y2_MULTIPLIER_EDEFAULT;
         y2MultiplierESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURVE__Y2_MULTIPLIER, oldY2Multiplier, Y2_MULTIPLIER_EDEFAULT, oldY2MultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURVE__Y2_MULTIPLIER, oldY2Multiplier,
+                    Y2_MULTIPLIER_EDEFAULT, oldY2MultiplierESet ) );
     }
 
     /**
@@ -676,8 +688,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         y2Unit = newY2Unit == null ? Y2_UNIT_EDEFAULT : newY2Unit;
         boolean oldY2UnitESet = y2UnitESet;
         y2UnitESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE__Y2_UNIT,
-                oldY2Unit, y2Unit, !oldY2UnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE__Y2_UNIT, oldY2Unit, y2Unit,
+                    !oldY2UnitESet ) );
     }
 
     /**
@@ -691,8 +704,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         boolean oldY2UnitESet = y2UnitESet;
         y2Unit = Y2_UNIT_EDEFAULT;
         y2UnitESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURVE__Y2_UNIT, oldY2Unit, Y2_UNIT_EDEFAULT, oldY2UnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURVE__Y2_UNIT, oldY2Unit,
+                    Y2_UNIT_EDEFAULT, oldY2UnitESet ) );
     }
 
     /**
@@ -726,8 +740,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         y3Multiplier = newY3Multiplier == null ? Y3_MULTIPLIER_EDEFAULT : newY3Multiplier;
         boolean oldY3MultiplierESet = y3MultiplierESet;
         y3MultiplierESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURVE__Y3_MULTIPLIER, oldY3Multiplier, y3Multiplier, !oldY3MultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE__Y3_MULTIPLIER, oldY3Multiplier,
+                    y3Multiplier, !oldY3MultiplierESet ) );
     }
 
     /**
@@ -741,8 +756,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         boolean oldY3MultiplierESet = y3MultiplierESet;
         y3Multiplier = Y3_MULTIPLIER_EDEFAULT;
         y3MultiplierESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURVE__Y3_MULTIPLIER, oldY3Multiplier, Y3_MULTIPLIER_EDEFAULT, oldY3MultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURVE__Y3_MULTIPLIER, oldY3Multiplier,
+                    Y3_MULTIPLIER_EDEFAULT, oldY3MultiplierESet ) );
     }
 
     /**
@@ -776,8 +792,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         y3Unit = newY3Unit == null ? Y3_UNIT_EDEFAULT : newY3Unit;
         boolean oldY3UnitESet = y3UnitESet;
         y3UnitESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE__Y3_UNIT,
-                oldY3Unit, y3Unit, !oldY3UnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE__Y3_UNIT, oldY3Unit, y3Unit,
+                    !oldY3UnitESet ) );
     }
 
     /**
@@ -791,8 +808,9 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
         boolean oldY3UnitESet = y3UnitESet;
         y3Unit = Y3_UNIT_EDEFAULT;
         y3UnitESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURVE__Y3_UNIT, oldY3Unit, Y3_UNIT_EDEFAULT, oldY3UnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURVE__Y3_UNIT, oldY3Unit,
+                    Y3_UNIT_EDEFAULT, oldY3UnitESet ) );
     }
 
     /**
@@ -1028,7 +1046,7 @@ public class CurveImpl extends IdentifiedObjectImpl implements Curve {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (curveStyle: " );
         if( curveStyleESet )
             result.append( curveStyle );

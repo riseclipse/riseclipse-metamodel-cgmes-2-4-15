@@ -279,8 +279,9 @@ public class MeasurementValueImpl extends IdentifiedObjectImpl implements Measur
         timeStamp = newTimeStamp;
         boolean oldTimeStampESet = timeStampESet;
         timeStampESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.MEASUREMENT_VALUE__TIME_STAMP, oldTimeStamp, timeStamp, !oldTimeStampESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.MEASUREMENT_VALUE__TIME_STAMP,
+                    oldTimeStamp, timeStamp, !oldTimeStampESet ) );
     }
 
     /**
@@ -294,8 +295,9 @@ public class MeasurementValueImpl extends IdentifiedObjectImpl implements Measur
         boolean oldTimeStampESet = timeStampESet;
         timeStamp = TIME_STAMP_EDEFAULT;
         timeStampESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.MEASUREMENT_VALUE__TIME_STAMP, oldTimeStamp, TIME_STAMP_EDEFAULT, oldTimeStampESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MEASUREMENT_VALUE__TIME_STAMP,
+                    oldTimeStamp, TIME_STAMP_EDEFAULT, oldTimeStampESet ) );
     }
 
     /**
@@ -362,9 +364,10 @@ public class MeasurementValueImpl extends IdentifiedObjectImpl implements Measur
         else {
             boolean oldMeasurementValueSourceESet = measurementValueSourceESet;
             measurementValueSourceESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.MEASUREMENT_VALUE__MEASUREMENT_VALUE_SOURCE, newMeasurementValueSource,
-                    newMeasurementValueSource, !oldMeasurementValueSourceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.MEASUREMENT_VALUE__MEASUREMENT_VALUE_SOURCE, newMeasurementValueSource,
+                        newMeasurementValueSource, !oldMeasurementValueSourceESet ) );
         }
     }
 
@@ -407,9 +410,10 @@ public class MeasurementValueImpl extends IdentifiedObjectImpl implements Measur
         else {
             boolean oldMeasurementValueSourceESet = measurementValueSourceESet;
             measurementValueSourceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.MEASUREMENT_VALUE__MEASUREMENT_VALUE_SOURCE, null, null,
-                    oldMeasurementValueSourceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.MEASUREMENT_VALUE__MEASUREMENT_VALUE_SOURCE, null, null,
+                        oldMeasurementValueSourceESet ) );
         }
     }
 
@@ -512,9 +516,10 @@ public class MeasurementValueImpl extends IdentifiedObjectImpl implements Measur
         else {
             boolean oldMeasurementValueQualityESet = measurementValueQualityESet;
             measurementValueQualityESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.MEASUREMENT_VALUE__MEASUREMENT_VALUE_QUALITY, newMeasurementValueQuality,
-                    newMeasurementValueQuality, !oldMeasurementValueQualityESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.MEASUREMENT_VALUE__MEASUREMENT_VALUE_QUALITY, newMeasurementValueQuality,
+                        newMeasurementValueQuality, !oldMeasurementValueQualityESet ) );
         }
     }
 
@@ -557,9 +562,10 @@ public class MeasurementValueImpl extends IdentifiedObjectImpl implements Measur
         else {
             boolean oldMeasurementValueQualityESet = measurementValueQualityESet;
             measurementValueQualityESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.MEASUREMENT_VALUE__MEASUREMENT_VALUE_QUALITY, null, null,
-                    oldMeasurementValueQualityESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.MEASUREMENT_VALUE__MEASUREMENT_VALUE_QUALITY, null, null,
+                        oldMeasurementValueQualityESet ) );
         }
     }
 
@@ -614,10 +620,12 @@ public class MeasurementValueImpl extends IdentifiedObjectImpl implements Measur
     public void setRemoteSource( RemoteSource newRemoteSource ) {
         if( newRemoteSource != remoteSource ) {
             NotificationChain msgs = null;
-            if( remoteSource != null ) msgs = ( ( InternalEObject ) remoteSource ).eInverseRemove( this,
-                    CimPackage.REMOTE_SOURCE__MEASUREMENT_VALUE, RemoteSource.class, msgs );
-            if( newRemoteSource != null ) msgs = ( ( InternalEObject ) newRemoteSource ).eInverseAdd( this,
-                    CimPackage.REMOTE_SOURCE__MEASUREMENT_VALUE, RemoteSource.class, msgs );
+            if( remoteSource != null )
+                msgs = ( ( InternalEObject ) remoteSource ).eInverseRemove( this,
+                        CimPackage.REMOTE_SOURCE__MEASUREMENT_VALUE, RemoteSource.class, msgs );
+            if( newRemoteSource != null )
+                msgs = ( ( InternalEObject ) newRemoteSource ).eInverseAdd( this,
+                        CimPackage.REMOTE_SOURCE__MEASUREMENT_VALUE, RemoteSource.class, msgs );
             msgs = basicSetRemoteSource( newRemoteSource, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -668,8 +676,9 @@ public class MeasurementValueImpl extends IdentifiedObjectImpl implements Measur
         else {
             boolean oldRemoteSourceESet = remoteSourceESet;
             remoteSourceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.MEASUREMENT_VALUE__REMOTE_SOURCE, null, null, oldRemoteSourceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.MEASUREMENT_VALUE__REMOTE_SOURCE,
+                        null, null, oldRemoteSourceESet ) );
         }
     }
 
@@ -698,8 +707,9 @@ public class MeasurementValueImpl extends IdentifiedObjectImpl implements Measur
                         CimPackage.MEASUREMENT_VALUE_SOURCE__MEASUREMENT_VALUES, MeasurementValueSource.class, msgs );
             return basicSetMeasurementValueSource( ( MeasurementValueSource ) otherEnd, msgs );
         case CimPackage.MEASUREMENT_VALUE__REMOTE_SOURCE:
-            if( remoteSource != null ) msgs = ( ( InternalEObject ) remoteSource ).eInverseRemove( this,
-                    CimPackage.REMOTE_SOURCE__MEASUREMENT_VALUE, RemoteSource.class, msgs );
+            if( remoteSource != null )
+                msgs = ( ( InternalEObject ) remoteSource ).eInverseRemove( this,
+                        CimPackage.REMOTE_SOURCE__MEASUREMENT_VALUE, RemoteSource.class, msgs );
             return basicSetRemoteSource( ( RemoteSource ) otherEnd, msgs );
         case CimPackage.MEASUREMENT_VALUE__PROCEDURE_DATA_SETS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getProcedureDataSets() )
@@ -852,7 +862,7 @@ public class MeasurementValueImpl extends IdentifiedObjectImpl implements Measur
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (sensorAccuracy: " );
         if( sensorAccuracyESet )
             result.append( sensorAccuracy );

@@ -227,8 +227,9 @@ public class FaultImpl extends IdentifiedObjectImpl implements Fault {
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.FAULT__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FAULT__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -242,8 +243,9 @@ public class FaultImpl extends IdentifiedObjectImpl implements Fault {
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FAULT__KIND,
-                oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FAULT__KIND, oldKind, KIND_EDEFAULT,
+                    oldKindESet ) );
     }
 
     /**
@@ -277,8 +279,9 @@ public class FaultImpl extends IdentifiedObjectImpl implements Fault {
         phases = newPhases == null ? PHASES_EDEFAULT : newPhases;
         boolean oldPhasesESet = phasesESet;
         phasesESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FAULT__PHASES,
-                oldPhases, phases, !oldPhasesESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FAULT__PHASES, oldPhases, phases,
+                    !oldPhasesESet ) );
     }
 
     /**
@@ -292,8 +295,9 @@ public class FaultImpl extends IdentifiedObjectImpl implements Fault {
         boolean oldPhasesESet = phasesESet;
         phases = PHASES_EDEFAULT;
         phasesESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.FAULT__PHASES, oldPhases, PHASES_EDEFAULT, oldPhasesESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FAULT__PHASES, oldPhases,
+                    PHASES_EDEFAULT, oldPhasesESet ) );
     }
 
     /**
@@ -346,18 +350,21 @@ public class FaultImpl extends IdentifiedObjectImpl implements Fault {
     public void setImpedance( FaultImpedance newImpedance ) {
         if( newImpedance != impedance ) {
             NotificationChain msgs = null;
-            if( impedance != null ) msgs = ( ( InternalEObject ) impedance ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.FAULT__IMPEDANCE, null, msgs );
-            if( newImpedance != null ) msgs = ( ( InternalEObject ) newImpedance ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.FAULT__IMPEDANCE, null, msgs );
+            if( impedance != null )
+                msgs = ( ( InternalEObject ) impedance ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.FAULT__IMPEDANCE, null, msgs );
+            if( newImpedance != null )
+                msgs = ( ( InternalEObject ) newImpedance ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.FAULT__IMPEDANCE, null, msgs );
             msgs = basicSetImpedance( newImpedance, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldImpedanceESet = impedanceESet;
             impedanceESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.FAULT__IMPEDANCE, newImpedance, newImpedance, !oldImpedanceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FAULT__IMPEDANCE, newImpedance,
+                        newImpedance, !oldImpedanceESet ) );
         }
     }
 
@@ -399,8 +406,9 @@ public class FaultImpl extends IdentifiedObjectImpl implements Fault {
         else {
             boolean oldImpedanceESet = impedanceESet;
             impedanceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.FAULT__IMPEDANCE, null, null, oldImpedanceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FAULT__IMPEDANCE, null, null,
+                        oldImpedanceESet ) );
         }
     }
 
@@ -455,10 +463,12 @@ public class FaultImpl extends IdentifiedObjectImpl implements Fault {
     public void setFaultyEquipment( Equipment newFaultyEquipment ) {
         if( newFaultyEquipment != faultyEquipment ) {
             NotificationChain msgs = null;
-            if( faultyEquipment != null ) msgs = ( ( InternalEObject ) faultyEquipment ).eInverseRemove( this,
-                    CimPackage.EQUIPMENT__FAULTS, Equipment.class, msgs );
-            if( newFaultyEquipment != null ) msgs = ( ( InternalEObject ) newFaultyEquipment ).eInverseAdd( this,
-                    CimPackage.EQUIPMENT__FAULTS, Equipment.class, msgs );
+            if( faultyEquipment != null )
+                msgs = ( ( InternalEObject ) faultyEquipment ).eInverseRemove( this, CimPackage.EQUIPMENT__FAULTS,
+                        Equipment.class, msgs );
+            if( newFaultyEquipment != null )
+                msgs = ( ( InternalEObject ) newFaultyEquipment ).eInverseAdd( this, CimPackage.EQUIPMENT__FAULTS,
+                        Equipment.class, msgs );
             msgs = basicSetFaultyEquipment( newFaultyEquipment, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -509,8 +519,9 @@ public class FaultImpl extends IdentifiedObjectImpl implements Fault {
         else {
             boolean oldFaultyEquipmentESet = faultyEquipmentESet;
             faultyEquipmentESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.FAULT__FAULTY_EQUIPMENT, null, null, oldFaultyEquipmentESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FAULT__FAULTY_EQUIPMENT, null,
+                        null, oldFaultyEquipmentESet ) );
         }
     }
 
@@ -564,18 +575,21 @@ public class FaultImpl extends IdentifiedObjectImpl implements Fault {
     public void setOutage( Outage newOutage ) {
         if( newOutage != outage ) {
             NotificationChain msgs = null;
-            if( outage != null ) msgs = ( ( InternalEObject ) outage ).eInverseRemove( this, CimPackage.OUTAGE__FAULTS,
-                    Outage.class, msgs );
-            if( newOutage != null ) msgs = ( ( InternalEObject ) newOutage ).eInverseAdd( this,
-                    CimPackage.OUTAGE__FAULTS, Outage.class, msgs );
+            if( outage != null )
+                msgs = ( ( InternalEObject ) outage ).eInverseRemove( this, CimPackage.OUTAGE__FAULTS, Outage.class,
+                        msgs );
+            if( newOutage != null )
+                msgs = ( ( InternalEObject ) newOutage ).eInverseAdd( this, CimPackage.OUTAGE__FAULTS, Outage.class,
+                        msgs );
             msgs = basicSetOutage( newOutage, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldOutageESet = outageESet;
             outageESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.FAULT__OUTAGE, newOutage, newOutage, !oldOutageESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.FAULT__OUTAGE, newOutage, newOutage,
+                        !oldOutageESet ) );
         }
     }
 
@@ -616,8 +630,9 @@ public class FaultImpl extends IdentifiedObjectImpl implements Fault {
         else {
             boolean oldOutageESet = outageESet;
             outageESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.FAULT__OUTAGE, null, null, oldOutageESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.FAULT__OUTAGE, null, null,
+                        oldOutageESet ) );
         }
     }
 
@@ -679,12 +694,14 @@ public class FaultImpl extends IdentifiedObjectImpl implements Fault {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getFaultCauseTypes() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.FAULT__OUTAGE:
-            if( outage != null ) msgs = ( ( InternalEObject ) outage ).eInverseRemove( this, CimPackage.OUTAGE__FAULTS,
-                    Outage.class, msgs );
+            if( outage != null )
+                msgs = ( ( InternalEObject ) outage ).eInverseRemove( this, CimPackage.OUTAGE__FAULTS, Outage.class,
+                        msgs );
             return basicSetOutage( ( Outage ) otherEnd, msgs );
         case CimPackage.FAULT__FAULTY_EQUIPMENT:
-            if( faultyEquipment != null ) msgs = ( ( InternalEObject ) faultyEquipment ).eInverseRemove( this,
-                    CimPackage.EQUIPMENT__FAULTS, Equipment.class, msgs );
+            if( faultyEquipment != null )
+                msgs = ( ( InternalEObject ) faultyEquipment ).eInverseRemove( this, CimPackage.EQUIPMENT__FAULTS,
+                        Equipment.class, msgs );
             return basicSetFaultyEquipment( ( Equipment ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -829,7 +846,7 @@ public class FaultImpl extends IdentifiedObjectImpl implements Fault {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kind: " );
         if( kindESet )
             result.append( kind );

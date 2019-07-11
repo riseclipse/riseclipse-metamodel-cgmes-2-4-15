@@ -141,10 +141,11 @@ public class VoltageAdjusterDynamicsImpl extends DynamicsFunctionBlockImpl imple
         else {
             boolean oldPFVArControllerType1DynamicsESet = pfvArControllerType1DynamicsESet;
             pfvArControllerType1DynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.VOLTAGE_ADJUSTER_DYNAMICS__PFV_AR_CONTROLLER_TYPE1_DYNAMICS,
-                    newPFVArControllerType1Dynamics, newPFVArControllerType1Dynamics,
-                    !oldPFVArControllerType1DynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.VOLTAGE_ADJUSTER_DYNAMICS__PFV_AR_CONTROLLER_TYPE1_DYNAMICS,
+                        newPFVArControllerType1Dynamics, newPFVArControllerType1Dynamics,
+                        !oldPFVArControllerType1DynamicsESet ) );
         }
     }
 
@@ -188,9 +189,10 @@ public class VoltageAdjusterDynamicsImpl extends DynamicsFunctionBlockImpl imple
         else {
             boolean oldPFVArControllerType1DynamicsESet = pfvArControllerType1DynamicsESet;
             pfvArControllerType1DynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.VOLTAGE_ADJUSTER_DYNAMICS__PFV_AR_CONTROLLER_TYPE1_DYNAMICS, null, null,
-                    oldPFVArControllerType1DynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.VOLTAGE_ADJUSTER_DYNAMICS__PFV_AR_CONTROLLER_TYPE1_DYNAMICS, null, null,
+                        oldPFVArControllerType1DynamicsESet ) );
         }
     }
 

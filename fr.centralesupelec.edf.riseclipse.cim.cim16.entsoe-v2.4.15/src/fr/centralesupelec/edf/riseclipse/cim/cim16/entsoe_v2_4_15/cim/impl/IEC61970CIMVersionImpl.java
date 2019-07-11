@@ -144,8 +144,9 @@ public class IEC61970CIMVersionImpl extends CimObjectWithIDImpl implements IEC61
         date = newDate;
         boolean oldDateESet = dateESet;
         dateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.IEC61970CIM_VERSION__DATE, oldDate, date, !oldDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.IEC61970CIM_VERSION__DATE, oldDate, date,
+                    !oldDateESet ) );
     }
 
     /**
@@ -159,8 +160,9 @@ public class IEC61970CIMVersionImpl extends CimObjectWithIDImpl implements IEC61
         boolean oldDateESet = dateESet;
         date = DATE_EDEFAULT;
         dateESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.IEC61970CIM_VERSION__DATE, oldDate, DATE_EDEFAULT, oldDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.IEC61970CIM_VERSION__DATE, oldDate,
+                    DATE_EDEFAULT, oldDateESet ) );
     }
 
     /**
@@ -194,8 +196,9 @@ public class IEC61970CIMVersionImpl extends CimObjectWithIDImpl implements IEC61
         version = newVersion;
         boolean oldVersionESet = versionESet;
         versionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.IEC61970CIM_VERSION__VERSION, oldVersion, version, !oldVersionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.IEC61970CIM_VERSION__VERSION, oldVersion,
+                    version, !oldVersionESet ) );
     }
 
     /**
@@ -209,8 +212,9 @@ public class IEC61970CIMVersionImpl extends CimObjectWithIDImpl implements IEC61
         boolean oldVersionESet = versionESet;
         version = VERSION_EDEFAULT;
         versionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.IEC61970CIM_VERSION__VERSION, oldVersion, VERSION_EDEFAULT, oldVersionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.IEC61970CIM_VERSION__VERSION,
+                    oldVersion, VERSION_EDEFAULT, oldVersionESet ) );
     }
 
     /**
@@ -300,7 +304,7 @@ public class IEC61970CIMVersionImpl extends CimObjectWithIDImpl implements IEC61
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (date: " );
         if( dateESet )
             result.append( date );

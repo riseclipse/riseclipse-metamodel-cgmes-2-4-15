@@ -292,9 +292,18 @@ public enum EndDeviceFunctionKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final EndDeviceFunctionKind[] VALUES_ARRAY = new EndDeviceFunctionKind[] { REVERSE_FLOW,
-            DEMAND_RESPONSE, METROLOGY, OUTAGE_HISTORY, RELAYS_PROGRAMMING, ON_REQUEST_READ, AUTONOMOUS_DST,
-            ELECTRIC_METERING, GAS_METERING, WATER_METERING, };
+    private static final EndDeviceFunctionKind[] VALUES_ARRAY = new EndDeviceFunctionKind[] {
+            REVERSE_FLOW,
+            DEMAND_RESPONSE,
+            METROLOGY,
+            OUTAGE_HISTORY,
+            RELAYS_PROGRAMMING,
+            ON_REQUEST_READ,
+            AUTONOMOUS_DST,
+            ELECTRIC_METERING,
+            GAS_METERING,
+            WATER_METERING,
+    };
 
     /**
      * A public read-only list of all the '<em><b>End Device Function Kind</b></em>' enumerators.

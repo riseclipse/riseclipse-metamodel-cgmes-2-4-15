@@ -232,8 +232,9 @@ public class WindGenTurbineType3bIECImpl extends WindGenTurbineType3IECImpl impl
         fducw = newFducw;
         boolean oldFducwESet = fducwESet;
         fducwESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__FDUCW, oldFducw, fducw, !oldFducwESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__FDUCW,
+                    oldFducw, fducw, !oldFducwESet ) );
     }
 
     /**
@@ -247,8 +248,9 @@ public class WindGenTurbineType3bIECImpl extends WindGenTurbineType3IECImpl impl
         boolean oldFducwESet = fducwESet;
         fducw = FDUCW_EDEFAULT;
         fducwESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__FDUCW, oldFducw, FDUCW_EDEFAULT, oldFducwESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__FDUCW,
+                    oldFducw, FDUCW_EDEFAULT, oldFducwESet ) );
     }
 
     /**
@@ -282,8 +284,9 @@ public class WindGenTurbineType3bIECImpl extends WindGenTurbineType3IECImpl impl
         mwtcwp = newMwtcwp;
         boolean oldMwtcwpESet = mwtcwpESet;
         mwtcwpESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__MWTCWP, oldMwtcwp, mwtcwp, !oldMwtcwpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__MWTCWP,
+                    oldMwtcwp, mwtcwp, !oldMwtcwpESet ) );
     }
 
     /**
@@ -297,8 +300,9 @@ public class WindGenTurbineType3bIECImpl extends WindGenTurbineType3IECImpl impl
         boolean oldMwtcwpESet = mwtcwpESet;
         mwtcwp = MWTCWP_EDEFAULT;
         mwtcwpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__MWTCWP, oldMwtcwp, MWTCWP_EDEFAULT, oldMwtcwpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__MWTCWP,
+                    oldMwtcwp, MWTCWP_EDEFAULT, oldMwtcwpESet ) );
     }
 
     /**
@@ -332,8 +336,9 @@ public class WindGenTurbineType3bIECImpl extends WindGenTurbineType3IECImpl impl
         tg = newTg;
         boolean oldTgESet = tgESet;
         tgESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__TG, oldTg, tg, !oldTgESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__TG, oldTg,
+                    tg, !oldTgESet ) );
     }
 
     /**
@@ -347,8 +352,9 @@ public class WindGenTurbineType3bIECImpl extends WindGenTurbineType3IECImpl impl
         boolean oldTgESet = tgESet;
         tg = TG_EDEFAULT;
         tgESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__TG, oldTg, TG_EDEFAULT, oldTgESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__TG, oldTg,
+                    TG_EDEFAULT, oldTgESet ) );
     }
 
     /**
@@ -382,8 +388,9 @@ public class WindGenTurbineType3bIECImpl extends WindGenTurbineType3IECImpl impl
         two = newTwo;
         boolean oldTwoESet = twoESet;
         twoESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__TWO, oldTwo, two, !oldTwoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__TWO, oldTwo,
+                    two, !oldTwoESet ) );
     }
 
     /**
@@ -397,8 +404,9 @@ public class WindGenTurbineType3bIECImpl extends WindGenTurbineType3IECImpl impl
         boolean oldTwoESet = twoESet;
         two = TWO_EDEFAULT;
         twoESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__TWO, oldTwo, TWO_EDEFAULT, oldTwoESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__TWO,
+                    oldTwo, TWO_EDEFAULT, oldTwoESet ) );
     }
 
     /**
@@ -432,8 +440,9 @@ public class WindGenTurbineType3bIECImpl extends WindGenTurbineType3IECImpl impl
         xs = newXs;
         boolean oldXsESet = xsESet;
         xsESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__XS, oldXs, xs, !oldXsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__XS, oldXs,
+                    xs, !oldXsESet ) );
     }
 
     /**
@@ -447,8 +456,9 @@ public class WindGenTurbineType3bIECImpl extends WindGenTurbineType3IECImpl impl
         boolean oldXsESet = xsESet;
         xs = XS_EDEFAULT;
         xsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__XS, oldXs, XS_EDEFAULT, oldXsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_GEN_TURBINE_TYPE3B_IEC__XS, oldXs,
+                    XS_EDEFAULT, oldXsESet ) );
     }
 
     /**
@@ -568,7 +578,7 @@ public class WindGenTurbineType3bIECImpl extends WindGenTurbineType3IECImpl impl
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (fducw: " );
         if( fducwESet )
             result.append( fducw );

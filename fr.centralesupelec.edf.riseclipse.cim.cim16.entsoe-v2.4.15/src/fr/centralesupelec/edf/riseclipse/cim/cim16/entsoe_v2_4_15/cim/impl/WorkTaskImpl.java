@@ -310,8 +310,9 @@ public class WorkTaskImpl extends BaseWorkImpl implements WorkTask {
         crewETA = newCrewETA;
         boolean oldCrewETAESet = crewETAESet;
         crewETAESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WORK_TASK__CREW_ETA, oldCrewETA, crewETA, !oldCrewETAESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WORK_TASK__CREW_ETA, oldCrewETA, crewETA,
+                    !oldCrewETAESet ) );
     }
 
     /**
@@ -325,8 +326,9 @@ public class WorkTaskImpl extends BaseWorkImpl implements WorkTask {
         boolean oldCrewETAESet = crewETAESet;
         crewETA = CREW_ETA_EDEFAULT;
         crewETAESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WORK_TASK__CREW_ETA, oldCrewETA, CREW_ETA_EDEFAULT, oldCrewETAESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WORK_TASK__CREW_ETA, oldCrewETA,
+                    CREW_ETA_EDEFAULT, oldCrewETAESet ) );
     }
 
     /**
@@ -360,8 +362,9 @@ public class WorkTaskImpl extends BaseWorkImpl implements WorkTask {
         instruction = newInstruction;
         boolean oldInstructionESet = instructionESet;
         instructionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WORK_TASK__INSTRUCTION, oldInstruction, instruction, !oldInstructionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WORK_TASK__INSTRUCTION, oldInstruction,
+                    instruction, !oldInstructionESet ) );
     }
 
     /**
@@ -375,8 +378,9 @@ public class WorkTaskImpl extends BaseWorkImpl implements WorkTask {
         boolean oldInstructionESet = instructionESet;
         instruction = INSTRUCTION_EDEFAULT;
         instructionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WORK_TASK__INSTRUCTION, oldInstruction, INSTRUCTION_EDEFAULT, oldInstructionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WORK_TASK__INSTRUCTION, oldInstruction,
+                    INSTRUCTION_EDEFAULT, oldInstructionESet ) );
     }
 
     /**
@@ -410,8 +414,9 @@ public class WorkTaskImpl extends BaseWorkImpl implements WorkTask {
         schedOverride = newSchedOverride;
         boolean oldSchedOverrideESet = schedOverrideESet;
         schedOverrideESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WORK_TASK__SCHED_OVERRIDE, oldSchedOverride, schedOverride, !oldSchedOverrideESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WORK_TASK__SCHED_OVERRIDE,
+                    oldSchedOverride, schedOverride, !oldSchedOverrideESet ) );
     }
 
     /**
@@ -461,8 +466,9 @@ public class WorkTaskImpl extends BaseWorkImpl implements WorkTask {
         taskKind = newTaskKind == null ? TASK_KIND_EDEFAULT : newTaskKind;
         boolean oldTaskKindESet = taskKindESet;
         taskKindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WORK_TASK__TASK_KIND, oldTaskKind, taskKind, !oldTaskKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WORK_TASK__TASK_KIND, oldTaskKind,
+                    taskKind, !oldTaskKindESet ) );
     }
 
     /**
@@ -476,8 +482,9 @@ public class WorkTaskImpl extends BaseWorkImpl implements WorkTask {
         boolean oldTaskKindESet = taskKindESet;
         taskKind = TASK_KIND_EDEFAULT;
         taskKindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WORK_TASK__TASK_KIND, oldTaskKind, TASK_KIND_EDEFAULT, oldTaskKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WORK_TASK__TASK_KIND, oldTaskKind,
+                    TASK_KIND_EDEFAULT, oldTaskKindESet ) );
     }
 
     /**
@@ -598,18 +605,21 @@ public class WorkTaskImpl extends BaseWorkImpl implements WorkTask {
     public void setOldAsset( Asset newOldAsset ) {
         if( newOldAsset != oldAsset ) {
             NotificationChain msgs = null;
-            if( oldAsset != null ) msgs = ( ( InternalEObject ) oldAsset ).eInverseRemove( this,
-                    CimPackage.ASSET__REPLACEMENT_WORK_TASKS, Asset.class, msgs );
-            if( newOldAsset != null ) msgs = ( ( InternalEObject ) newOldAsset ).eInverseAdd( this,
-                    CimPackage.ASSET__REPLACEMENT_WORK_TASKS, Asset.class, msgs );
+            if( oldAsset != null )
+                msgs = ( ( InternalEObject ) oldAsset ).eInverseRemove( this, CimPackage.ASSET__REPLACEMENT_WORK_TASKS,
+                        Asset.class, msgs );
+            if( newOldAsset != null )
+                msgs = ( ( InternalEObject ) newOldAsset ).eInverseAdd( this, CimPackage.ASSET__REPLACEMENT_WORK_TASKS,
+                        Asset.class, msgs );
             msgs = basicSetOldAsset( newOldAsset, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldOldAssetESet = oldAssetESet;
             oldAssetESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WORK_TASK__OLD_ASSET, newOldAsset, newOldAsset, !oldOldAssetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WORK_TASK__OLD_ASSET, newOldAsset,
+                        newOldAsset, !oldOldAssetESet ) );
         }
     }
 
@@ -651,8 +661,9 @@ public class WorkTaskImpl extends BaseWorkImpl implements WorkTask {
         else {
             boolean oldOldAssetESet = oldAssetESet;
             oldAssetESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WORK_TASK__OLD_ASSET, null, null, oldOldAssetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WORK_TASK__OLD_ASSET, null, null,
+                        oldOldAssetESet ) );
         }
     }
 
@@ -740,18 +751,21 @@ public class WorkTaskImpl extends BaseWorkImpl implements WorkTask {
     public void setSwitchingPlan( SwitchingPlan newSwitchingPlan ) {
         if( newSwitchingPlan != switchingPlan ) {
             NotificationChain msgs = null;
-            if( switchingPlan != null ) msgs = ( ( InternalEObject ) switchingPlan ).eInverseRemove( this,
-                    CimPackage.SWITCHING_PLAN__WORK_TASKS, SwitchingPlan.class, msgs );
-            if( newSwitchingPlan != null ) msgs = ( ( InternalEObject ) newSwitchingPlan ).eInverseAdd( this,
-                    CimPackage.SWITCHING_PLAN__WORK_TASKS, SwitchingPlan.class, msgs );
+            if( switchingPlan != null )
+                msgs = ( ( InternalEObject ) switchingPlan ).eInverseRemove( this,
+                        CimPackage.SWITCHING_PLAN__WORK_TASKS, SwitchingPlan.class, msgs );
+            if( newSwitchingPlan != null )
+                msgs = ( ( InternalEObject ) newSwitchingPlan ).eInverseAdd( this,
+                        CimPackage.SWITCHING_PLAN__WORK_TASKS, SwitchingPlan.class, msgs );
             msgs = basicSetSwitchingPlan( newSwitchingPlan, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldSwitchingPlanESet = switchingPlanESet;
             switchingPlanESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WORK_TASK__SWITCHING_PLAN, newSwitchingPlan, newSwitchingPlan, !oldSwitchingPlanESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WORK_TASK__SWITCHING_PLAN,
+                        newSwitchingPlan, newSwitchingPlan, !oldSwitchingPlanESet ) );
         }
     }
 
@@ -793,8 +807,9 @@ public class WorkTaskImpl extends BaseWorkImpl implements WorkTask {
         else {
             boolean oldSwitchingPlanESet = switchingPlanESet;
             switchingPlanESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WORK_TASK__SWITCHING_PLAN, null, null, oldSwitchingPlanESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WORK_TASK__SWITCHING_PLAN, null,
+                        null, oldSwitchingPlanESet ) );
         }
     }
 
@@ -848,18 +863,21 @@ public class WorkTaskImpl extends BaseWorkImpl implements WorkTask {
     public void setWork( Work newWork ) {
         if( newWork != work ) {
             NotificationChain msgs = null;
-            if( work != null ) msgs = ( ( InternalEObject ) work ).eInverseRemove( this, CimPackage.WORK__WORK_TASKS,
-                    Work.class, msgs );
-            if( newWork != null ) msgs = ( ( InternalEObject ) newWork ).eInverseAdd( this, CimPackage.WORK__WORK_TASKS,
-                    Work.class, msgs );
+            if( work != null )
+                msgs = ( ( InternalEObject ) work ).eInverseRemove( this, CimPackage.WORK__WORK_TASKS, Work.class,
+                        msgs );
+            if( newWork != null )
+                msgs = ( ( InternalEObject ) newWork ).eInverseAdd( this, CimPackage.WORK__WORK_TASKS, Work.class,
+                        msgs );
             msgs = basicSetWork( newWork, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWorkESet = workESet;
             workESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WORK_TASK__WORK, newWork, newWork, !oldWorkESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WORK_TASK__WORK, newWork, newWork,
+                        !oldWorkESet ) );
         }
     }
 
@@ -900,8 +918,9 @@ public class WorkTaskImpl extends BaseWorkImpl implements WorkTask {
         else {
             boolean oldWorkESet = workESet;
             workESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WORK_TASK__WORK, null, null, oldWorkESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WORK_TASK__WORK, null, null,
+                        oldWorkESet ) );
         }
     }
 
@@ -931,19 +950,22 @@ public class WorkTaskImpl extends BaseWorkImpl implements WorkTask {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getAssets() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.WORK_TASK__SWITCHING_PLAN:
-            if( switchingPlan != null ) msgs = ( ( InternalEObject ) switchingPlan ).eInverseRemove( this,
-                    CimPackage.SWITCHING_PLAN__WORK_TASKS, SwitchingPlan.class, msgs );
+            if( switchingPlan != null )
+                msgs = ( ( InternalEObject ) switchingPlan ).eInverseRemove( this,
+                        CimPackage.SWITCHING_PLAN__WORK_TASKS, SwitchingPlan.class, msgs );
             return basicSetSwitchingPlan( ( SwitchingPlan ) otherEnd, msgs );
         case CimPackage.WORK_TASK__OLD_ASSET:
-            if( oldAsset != null ) msgs = ( ( InternalEObject ) oldAsset ).eInverseRemove( this,
-                    CimPackage.ASSET__REPLACEMENT_WORK_TASKS, Asset.class, msgs );
+            if( oldAsset != null )
+                msgs = ( ( InternalEObject ) oldAsset ).eInverseRemove( this, CimPackage.ASSET__REPLACEMENT_WORK_TASKS,
+                        Asset.class, msgs );
             return basicSetOldAsset( ( Asset ) otherEnd, msgs );
         case CimPackage.WORK_TASK__MATERIAL_ITEMS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getMaterialItems() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.WORK_TASK__WORK:
-            if( work != null ) msgs = ( ( InternalEObject ) work ).eInverseRemove( this, CimPackage.WORK__WORK_TASKS,
-                    Work.class, msgs );
+            if( work != null )
+                msgs = ( ( InternalEObject ) work ).eInverseRemove( this, CimPackage.WORK__WORK_TASKS, Work.class,
+                        msgs );
             return basicSetWork( ( Work ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1134,7 +1156,7 @@ public class WorkTaskImpl extends BaseWorkImpl implements WorkTask {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (crewETA: " );
         if( crewETAESet )
             result.append( crewETA );

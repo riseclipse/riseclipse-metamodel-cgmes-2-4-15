@@ -125,10 +125,12 @@ public class SafetyDocumentImpl extends DocumentImpl implements SafetyDocument {
     public void setSwitchingPlan( SwitchingPlan newSwitchingPlan ) {
         if( newSwitchingPlan != switchingPlan ) {
             NotificationChain msgs = null;
-            if( switchingPlan != null ) msgs = ( ( InternalEObject ) switchingPlan ).eInverseRemove( this,
-                    CimPackage.SWITCHING_PLAN__SAFETY_DOCUMENTS, SwitchingPlan.class, msgs );
-            if( newSwitchingPlan != null ) msgs = ( ( InternalEObject ) newSwitchingPlan ).eInverseAdd( this,
-                    CimPackage.SWITCHING_PLAN__SAFETY_DOCUMENTS, SwitchingPlan.class, msgs );
+            if( switchingPlan != null )
+                msgs = ( ( InternalEObject ) switchingPlan ).eInverseRemove( this,
+                        CimPackage.SWITCHING_PLAN__SAFETY_DOCUMENTS, SwitchingPlan.class, msgs );
+            if( newSwitchingPlan != null )
+                msgs = ( ( InternalEObject ) newSwitchingPlan ).eInverseAdd( this,
+                        CimPackage.SWITCHING_PLAN__SAFETY_DOCUMENTS, SwitchingPlan.class, msgs );
             msgs = basicSetSwitchingPlan( newSwitchingPlan, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -179,8 +181,9 @@ public class SafetyDocumentImpl extends DocumentImpl implements SafetyDocument {
         else {
             boolean oldSwitchingPlanESet = switchingPlanESet;
             switchingPlanESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SAFETY_DOCUMENT__SWITCHING_PLAN, null, null, oldSwitchingPlanESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SAFETY_DOCUMENT__SWITCHING_PLAN,
+                        null, null, oldSwitchingPlanESet ) );
         }
     }
 
@@ -203,8 +206,9 @@ public class SafetyDocumentImpl extends DocumentImpl implements SafetyDocument {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.SAFETY_DOCUMENT__SWITCHING_PLAN:
-            if( switchingPlan != null ) msgs = ( ( InternalEObject ) switchingPlan ).eInverseRemove( this,
-                    CimPackage.SWITCHING_PLAN__SAFETY_DOCUMENTS, SwitchingPlan.class, msgs );
+            if( switchingPlan != null )
+                msgs = ( ( InternalEObject ) switchingPlan ).eInverseRemove( this,
+                        CimPackage.SWITCHING_PLAN__SAFETY_DOCUMENTS, SwitchingPlan.class, msgs );
             return basicSetSwitchingPlan( ( SwitchingPlan ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

@@ -448,8 +448,9 @@ public class AuxiliaryAgreementImpl extends AgreementImpl implements AuxiliaryAg
         auxCycle = newAuxCycle;
         boolean oldAuxCycleESet = auxCycleESet;
         auxCycleESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.AUXILIARY_AGREEMENT__AUX_CYCLE, oldAuxCycle, auxCycle, !oldAuxCycleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AUXILIARY_AGREEMENT__AUX_CYCLE,
+                    oldAuxCycle, auxCycle, !oldAuxCycleESet ) );
     }
 
     /**
@@ -463,8 +464,9 @@ public class AuxiliaryAgreementImpl extends AgreementImpl implements AuxiliaryAg
         boolean oldAuxCycleESet = auxCycleESet;
         auxCycle = AUX_CYCLE_EDEFAULT;
         auxCycleESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.AUXILIARY_AGREEMENT__AUX_CYCLE, oldAuxCycle, AUX_CYCLE_EDEFAULT, oldAuxCycleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AUXILIARY_AGREEMENT__AUX_CYCLE,
+                    oldAuxCycle, AUX_CYCLE_EDEFAULT, oldAuxCycleESet ) );
     }
 
     /**
@@ -550,8 +552,9 @@ public class AuxiliaryAgreementImpl extends AgreementImpl implements AuxiliaryAg
         fixedAmount = newFixedAmount;
         boolean oldFixedAmountESet = fixedAmountESet;
         fixedAmountESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.AUXILIARY_AGREEMENT__FIXED_AMOUNT, oldFixedAmount, fixedAmount, !oldFixedAmountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AUXILIARY_AGREEMENT__FIXED_AMOUNT,
+                    oldFixedAmount, fixedAmount, !oldFixedAmountESet ) );
     }
 
     /**
@@ -601,8 +604,9 @@ public class AuxiliaryAgreementImpl extends AgreementImpl implements AuxiliaryAg
         minAmount = newMinAmount;
         boolean oldMinAmountESet = minAmountESet;
         minAmountESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.AUXILIARY_AGREEMENT__MIN_AMOUNT, oldMinAmount, minAmount, !oldMinAmountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AUXILIARY_AGREEMENT__MIN_AMOUNT,
+                    oldMinAmount, minAmount, !oldMinAmountESet ) );
     }
 
     /**
@@ -616,8 +620,9 @@ public class AuxiliaryAgreementImpl extends AgreementImpl implements AuxiliaryAg
         boolean oldMinAmountESet = minAmountESet;
         minAmount = MIN_AMOUNT_EDEFAULT;
         minAmountESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.AUXILIARY_AGREEMENT__MIN_AMOUNT, oldMinAmount, MIN_AMOUNT_EDEFAULT, oldMinAmountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AUXILIARY_AGREEMENT__MIN_AMOUNT,
+                    oldMinAmount, MIN_AMOUNT_EDEFAULT, oldMinAmountESet ) );
     }
 
     /**
@@ -651,8 +656,9 @@ public class AuxiliaryAgreementImpl extends AgreementImpl implements AuxiliaryAg
         payCycle = newPayCycle;
         boolean oldPayCycleESet = payCycleESet;
         payCycleESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.AUXILIARY_AGREEMENT__PAY_CYCLE, oldPayCycle, payCycle, !oldPayCycleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AUXILIARY_AGREEMENT__PAY_CYCLE,
+                    oldPayCycle, payCycle, !oldPayCycleESet ) );
     }
 
     /**
@@ -666,8 +672,9 @@ public class AuxiliaryAgreementImpl extends AgreementImpl implements AuxiliaryAg
         boolean oldPayCycleESet = payCycleESet;
         payCycle = PAY_CYCLE_EDEFAULT;
         payCycleESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.AUXILIARY_AGREEMENT__PAY_CYCLE, oldPayCycle, PAY_CYCLE_EDEFAULT, oldPayCycleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AUXILIARY_AGREEMENT__PAY_CYCLE,
+                    oldPayCycle, PAY_CYCLE_EDEFAULT, oldPayCycleESet ) );
     }
 
     /**
@@ -701,8 +708,9 @@ public class AuxiliaryAgreementImpl extends AgreementImpl implements AuxiliaryAg
         subType = newSubType;
         boolean oldSubTypeESet = subTypeESet;
         subTypeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.AUXILIARY_AGREEMENT__SUB_TYPE, oldSubType, subType, !oldSubTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AUXILIARY_AGREEMENT__SUB_TYPE,
+                    oldSubType, subType, !oldSubTypeESet ) );
     }
 
     /**
@@ -716,8 +724,9 @@ public class AuxiliaryAgreementImpl extends AgreementImpl implements AuxiliaryAg
         boolean oldSubTypeESet = subTypeESet;
         subType = SUB_TYPE_EDEFAULT;
         subTypeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.AUXILIARY_AGREEMENT__SUB_TYPE, oldSubType, SUB_TYPE_EDEFAULT, oldSubTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AUXILIARY_AGREEMENT__SUB_TYPE,
+                    oldSubType, SUB_TYPE_EDEFAULT, oldSubTypeESet ) );
     }
 
     /**
@@ -751,8 +760,9 @@ public class AuxiliaryAgreementImpl extends AgreementImpl implements AuxiliaryAg
         vendPortion = newVendPortion;
         boolean oldVendPortionESet = vendPortionESet;
         vendPortionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.AUXILIARY_AGREEMENT__VEND_PORTION, oldVendPortion, vendPortion, !oldVendPortionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AUXILIARY_AGREEMENT__VEND_PORTION,
+                    oldVendPortion, vendPortion, !oldVendPortionESet ) );
     }
 
     /**
@@ -818,9 +828,10 @@ public class AuxiliaryAgreementImpl extends AgreementImpl implements AuxiliaryAg
         boolean oldVendPortionArrearESet = vendPortionArrearESet;
         vendPortionArrear = VEND_PORTION_ARREAR_EDEFAULT;
         vendPortionArrearESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.AUXILIARY_AGREEMENT__VEND_PORTION_ARREAR,
-                        oldVendPortionArrear, VEND_PORTION_ARREAR_EDEFAULT, oldVendPortionArrearESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.AUXILIARY_AGREEMENT__VEND_PORTION_ARREAR, oldVendPortionArrear,
+                    VEND_PORTION_ARREAR_EDEFAULT, oldVendPortionArrearESet ) );
     }
 
     /**
@@ -875,19 +886,22 @@ public class AuxiliaryAgreementImpl extends AgreementImpl implements AuxiliaryAg
     public void setCustomerAgreement( CustomerAgreement newCustomerAgreement ) {
         if( newCustomerAgreement != customerAgreement ) {
             NotificationChain msgs = null;
-            if( customerAgreement != null ) msgs = ( ( InternalEObject ) customerAgreement ).eInverseRemove( this,
-                    CimPackage.CUSTOMER_AGREEMENT__AUXILIARY_AGREEMENTS, CustomerAgreement.class, msgs );
-            if( newCustomerAgreement != null ) msgs = ( ( InternalEObject ) newCustomerAgreement ).eInverseAdd( this,
-                    CimPackage.CUSTOMER_AGREEMENT__AUXILIARY_AGREEMENTS, CustomerAgreement.class, msgs );
+            if( customerAgreement != null )
+                msgs = ( ( InternalEObject ) customerAgreement ).eInverseRemove( this,
+                        CimPackage.CUSTOMER_AGREEMENT__AUXILIARY_AGREEMENTS, CustomerAgreement.class, msgs );
+            if( newCustomerAgreement != null )
+                msgs = ( ( InternalEObject ) newCustomerAgreement ).eInverseAdd( this,
+                        CimPackage.CUSTOMER_AGREEMENT__AUXILIARY_AGREEMENTS, CustomerAgreement.class, msgs );
             msgs = basicSetCustomerAgreement( newCustomerAgreement, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCustomerAgreementESet = customerAgreementESet;
             customerAgreementESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.AUXILIARY_AGREEMENT__CUSTOMER_AGREEMENT,
-                            newCustomerAgreement, newCustomerAgreement, !oldCustomerAgreementESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.AUXILIARY_AGREEMENT__CUSTOMER_AGREEMENT, newCustomerAgreement, newCustomerAgreement,
+                        !oldCustomerAgreementESet ) );
         }
     }
 
@@ -930,8 +944,9 @@ public class AuxiliaryAgreementImpl extends AgreementImpl implements AuxiliaryAg
         else {
             boolean oldCustomerAgreementESet = customerAgreementESet;
             customerAgreementESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.AUXILIARY_AGREEMENT__CUSTOMER_AGREEMENT, null, null, oldCustomerAgreementESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.AUXILIARY_AGREEMENT__CUSTOMER_AGREEMENT, null, null, oldCustomerAgreementESet ) );
         }
     }
 
@@ -993,8 +1008,9 @@ public class AuxiliaryAgreementImpl extends AgreementImpl implements AuxiliaryAg
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getAuxiliaryAccounts() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.AUXILIARY_AGREEMENT__CUSTOMER_AGREEMENT:
-            if( customerAgreement != null ) msgs = ( ( InternalEObject ) customerAgreement ).eInverseRemove( this,
-                    CimPackage.CUSTOMER_AGREEMENT__AUXILIARY_AGREEMENTS, CustomerAgreement.class, msgs );
+            if( customerAgreement != null )
+                msgs = ( ( InternalEObject ) customerAgreement ).eInverseRemove( this,
+                        CimPackage.CUSTOMER_AGREEMENT__AUXILIARY_AGREEMENTS, CustomerAgreement.class, msgs );
             return basicSetCustomerAgreement( ( CustomerAgreement ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1185,7 +1201,7 @@ public class AuxiliaryAgreementImpl extends AgreementImpl implements AuxiliaryAg
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (arrearsInterest: " );
         if( arrearsInterestESet )
             result.append( arrearsInterest );

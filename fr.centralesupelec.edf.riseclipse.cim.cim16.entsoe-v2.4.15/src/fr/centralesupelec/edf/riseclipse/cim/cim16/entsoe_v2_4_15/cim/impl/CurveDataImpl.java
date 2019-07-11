@@ -225,8 +225,9 @@ public class CurveDataImpl extends CimObjectWithIDImpl implements CurveData {
         xvalue = newXvalue;
         boolean oldXvalueESet = xvalueESet;
         xvalueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURVE_DATA__XVALUE, oldXvalue, xvalue, !oldXvalueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE_DATA__XVALUE, oldXvalue, xvalue,
+                    !oldXvalueESet ) );
     }
 
     /**
@@ -240,8 +241,9 @@ public class CurveDataImpl extends CimObjectWithIDImpl implements CurveData {
         boolean oldXvalueESet = xvalueESet;
         xvalue = XVALUE_EDEFAULT;
         xvalueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURVE_DATA__XVALUE, oldXvalue, XVALUE_EDEFAULT, oldXvalueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURVE_DATA__XVALUE, oldXvalue,
+                    XVALUE_EDEFAULT, oldXvalueESet ) );
     }
 
     /**
@@ -275,8 +277,9 @@ public class CurveDataImpl extends CimObjectWithIDImpl implements CurveData {
         y1value = newY1value;
         boolean oldY1valueESet = y1valueESet;
         y1valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURVE_DATA__Y1VALUE, oldY1value, y1value, !oldY1valueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE_DATA__Y1VALUE, oldY1value, y1value,
+                    !oldY1valueESet ) );
     }
 
     /**
@@ -290,8 +293,9 @@ public class CurveDataImpl extends CimObjectWithIDImpl implements CurveData {
         boolean oldY1valueESet = y1valueESet;
         y1value = Y1VALUE_EDEFAULT;
         y1valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURVE_DATA__Y1VALUE, oldY1value, Y1VALUE_EDEFAULT, oldY1valueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURVE_DATA__Y1VALUE, oldY1value,
+                    Y1VALUE_EDEFAULT, oldY1valueESet ) );
     }
 
     /**
@@ -325,8 +329,9 @@ public class CurveDataImpl extends CimObjectWithIDImpl implements CurveData {
         y2value = newY2value;
         boolean oldY2valueESet = y2valueESet;
         y2valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURVE_DATA__Y2VALUE, oldY2value, y2value, !oldY2valueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE_DATA__Y2VALUE, oldY2value, y2value,
+                    !oldY2valueESet ) );
     }
 
     /**
@@ -340,8 +345,9 @@ public class CurveDataImpl extends CimObjectWithIDImpl implements CurveData {
         boolean oldY2valueESet = y2valueESet;
         y2value = Y2VALUE_EDEFAULT;
         y2valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURVE_DATA__Y2VALUE, oldY2value, Y2VALUE_EDEFAULT, oldY2valueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURVE_DATA__Y2VALUE, oldY2value,
+                    Y2VALUE_EDEFAULT, oldY2valueESet ) );
     }
 
     /**
@@ -375,8 +381,9 @@ public class CurveDataImpl extends CimObjectWithIDImpl implements CurveData {
         y3value = newY3value;
         boolean oldY3valueESet = y3valueESet;
         y3valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURVE_DATA__Y3VALUE, oldY3value, y3value, !oldY3valueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE_DATA__Y3VALUE, oldY3value, y3value,
+                    !oldY3valueESet ) );
     }
 
     /**
@@ -390,8 +397,9 @@ public class CurveDataImpl extends CimObjectWithIDImpl implements CurveData {
         boolean oldY3valueESet = y3valueESet;
         y3value = Y3VALUE_EDEFAULT;
         y3valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURVE_DATA__Y3VALUE, oldY3value, Y3VALUE_EDEFAULT, oldY3valueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURVE_DATA__Y3VALUE, oldY3value,
+                    Y3VALUE_EDEFAULT, oldY3valueESet ) );
     }
 
     /**
@@ -444,18 +452,21 @@ public class CurveDataImpl extends CimObjectWithIDImpl implements CurveData {
     public void setCurve( Curve newCurve ) {
         if( newCurve != curve ) {
             NotificationChain msgs = null;
-            if( curve != null ) msgs = ( ( InternalEObject ) curve ).eInverseRemove( this,
-                    CimPackage.CURVE__CURVE_DATAS, Curve.class, msgs );
-            if( newCurve != null ) msgs = ( ( InternalEObject ) newCurve ).eInverseAdd( this,
-                    CimPackage.CURVE__CURVE_DATAS, Curve.class, msgs );
+            if( curve != null )
+                msgs = ( ( InternalEObject ) curve ).eInverseRemove( this, CimPackage.CURVE__CURVE_DATAS, Curve.class,
+                        msgs );
+            if( newCurve != null )
+                msgs = ( ( InternalEObject ) newCurve ).eInverseAdd( this, CimPackage.CURVE__CURVE_DATAS, Curve.class,
+                        msgs );
             msgs = basicSetCurve( newCurve, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCurveESet = curveESet;
             curveESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CURVE_DATA__CURVE, newCurve, newCurve, !oldCurveESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURVE_DATA__CURVE, newCurve,
+                        newCurve, !oldCurveESet ) );
         }
     }
 
@@ -497,8 +508,9 @@ public class CurveDataImpl extends CimObjectWithIDImpl implements CurveData {
         else {
             boolean oldCurveESet = curveESet;
             curveESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CURVE_DATA__CURVE, null, null, oldCurveESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURVE_DATA__CURVE, null, null,
+                        oldCurveESet ) );
         }
     }
 
@@ -521,8 +533,9 @@ public class CurveDataImpl extends CimObjectWithIDImpl implements CurveData {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CURVE_DATA__CURVE:
-            if( curve != null ) msgs = ( ( InternalEObject ) curve ).eInverseRemove( this,
-                    CimPackage.CURVE__CURVE_DATAS, Curve.class, msgs );
+            if( curve != null )
+                msgs = ( ( InternalEObject ) curve ).eInverseRemove( this, CimPackage.CURVE__CURVE_DATAS, Curve.class,
+                        msgs );
             return basicSetCurve( ( Curve ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -649,7 +662,7 @@ public class CurveDataImpl extends CimObjectWithIDImpl implements CurveData {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (xvalue: " );
         if( xvalueESet )
             result.append( xvalue );

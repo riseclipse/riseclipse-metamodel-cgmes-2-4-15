@@ -135,8 +135,9 @@ public class BusbarSectionImpl extends ConnectorImpl implements BusbarSection {
         ipMax = newIpMax;
         boolean oldIpMaxESet = ipMaxESet;
         ipMaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BUSBAR_SECTION__IP_MAX, oldIpMax, ipMax, !oldIpMaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BUSBAR_SECTION__IP_MAX, oldIpMax, ipMax,
+                    !oldIpMaxESet ) );
     }
 
     /**
@@ -150,8 +151,9 @@ public class BusbarSectionImpl extends ConnectorImpl implements BusbarSection {
         boolean oldIpMaxESet = ipMaxESet;
         ipMax = IP_MAX_EDEFAULT;
         ipMaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BUSBAR_SECTION__IP_MAX, oldIpMax, IP_MAX_EDEFAULT, oldIpMaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BUSBAR_SECTION__IP_MAX, oldIpMax,
+                    IP_MAX_EDEFAULT, oldIpMaxESet ) );
     }
 
     /**
@@ -175,8 +177,10 @@ public class BusbarSectionImpl extends ConnectorImpl implements BusbarSection {
             InternalEObject oldVoltageControlZone = ( InternalEObject ) voltageControlZone;
             voltageControlZone = ( VoltageControlZone ) eResolveProxy( oldVoltageControlZone );
             if( voltageControlZone != oldVoltageControlZone ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.BUSBAR_SECTION__VOLTAGE_CONTROL_ZONE, oldVoltageControlZone, voltageControlZone ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.BUSBAR_SECTION__VOLTAGE_CONTROL_ZONE, oldVoltageControlZone,
+                            voltageControlZone ) );
             }
         }
         return voltageControlZone;
@@ -223,10 +227,12 @@ public class BusbarSectionImpl extends ConnectorImpl implements BusbarSection {
     public void setVoltageControlZone( VoltageControlZone newVoltageControlZone ) {
         if( newVoltageControlZone != voltageControlZone ) {
             NotificationChain msgs = null;
-            if( voltageControlZone != null ) msgs = ( ( InternalEObject ) voltageControlZone ).eInverseRemove( this,
-                    CimPackage.VOLTAGE_CONTROL_ZONE__BUSBAR_SECTION, VoltageControlZone.class, msgs );
-            if( newVoltageControlZone != null ) msgs = ( ( InternalEObject ) newVoltageControlZone ).eInverseAdd( this,
-                    CimPackage.VOLTAGE_CONTROL_ZONE__BUSBAR_SECTION, VoltageControlZone.class, msgs );
+            if( voltageControlZone != null )
+                msgs = ( ( InternalEObject ) voltageControlZone ).eInverseRemove( this,
+                        CimPackage.VOLTAGE_CONTROL_ZONE__BUSBAR_SECTION, VoltageControlZone.class, msgs );
+            if( newVoltageControlZone != null )
+                msgs = ( ( InternalEObject ) newVoltageControlZone ).eInverseAdd( this,
+                        CimPackage.VOLTAGE_CONTROL_ZONE__BUSBAR_SECTION, VoltageControlZone.class, msgs );
             msgs = basicSetVoltageControlZone( newVoltageControlZone, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -278,8 +284,9 @@ public class BusbarSectionImpl extends ConnectorImpl implements BusbarSection {
         else {
             boolean oldVoltageControlZoneESet = voltageControlZoneESet;
             voltageControlZoneESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.BUSBAR_SECTION__VOLTAGE_CONTROL_ZONE, null, null, oldVoltageControlZoneESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.BUSBAR_SECTION__VOLTAGE_CONTROL_ZONE, null, null, oldVoltageControlZoneESet ) );
         }
     }
 
@@ -302,8 +309,9 @@ public class BusbarSectionImpl extends ConnectorImpl implements BusbarSection {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.BUSBAR_SECTION__VOLTAGE_CONTROL_ZONE:
-            if( voltageControlZone != null ) msgs = ( ( InternalEObject ) voltageControlZone ).eInverseRemove( this,
-                    CimPackage.VOLTAGE_CONTROL_ZONE__BUSBAR_SECTION, VoltageControlZone.class, msgs );
+            if( voltageControlZone != null )
+                msgs = ( ( InternalEObject ) voltageControlZone ).eInverseRemove( this,
+                        CimPackage.VOLTAGE_CONTROL_ZONE__BUSBAR_SECTION, VoltageControlZone.class, msgs );
             return basicSetVoltageControlZone( ( VoltageControlZone ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -401,7 +409,7 @@ public class BusbarSectionImpl extends ConnectorImpl implements BusbarSection {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (ipMax: " );
         if( ipMaxESet )
             result.append( ipMax );

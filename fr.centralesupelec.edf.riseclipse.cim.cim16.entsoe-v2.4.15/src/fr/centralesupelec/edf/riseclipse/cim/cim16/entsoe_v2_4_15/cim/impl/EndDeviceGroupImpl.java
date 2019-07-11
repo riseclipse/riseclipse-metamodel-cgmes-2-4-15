@@ -156,8 +156,9 @@ public class EndDeviceGroupImpl extends IdentifiedObjectImpl implements EndDevic
         type = newType;
         boolean oldTypeESet = typeESet;
         typeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.END_DEVICE_GROUP__TYPE, oldType, type, !oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.END_DEVICE_GROUP__TYPE, oldType, type,
+                    !oldTypeESet ) );
     }
 
     /**
@@ -171,8 +172,9 @@ public class EndDeviceGroupImpl extends IdentifiedObjectImpl implements EndDevic
         boolean oldTypeESet = typeESet;
         type = TYPE_EDEFAULT;
         typeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.END_DEVICE_GROUP__TYPE, oldType, TYPE_EDEFAULT, oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.END_DEVICE_GROUP__TYPE, oldType,
+                    TYPE_EDEFAULT, oldTypeESet ) );
     }
 
     /**
@@ -430,7 +432,7 @@ public class EndDeviceGroupImpl extends IdentifiedObjectImpl implements EndDevic
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (type: " );
         if( typeESet )
             result.append( type );

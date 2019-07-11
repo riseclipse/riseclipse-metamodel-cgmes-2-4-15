@@ -187,8 +187,9 @@ public class ExcAVR5Impl extends ExcitationSystemDynamicsImpl implements ExcAVR5
         boolean oldKaESet = kaESet;
         ka = KA_EDEFAULT;
         kaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR5__KA,
-                oldKa, KA_EDEFAULT, oldKaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR5__KA, oldKa, KA_EDEFAULT,
+                    oldKaESet ) );
     }
 
     /**
@@ -222,8 +223,9 @@ public class ExcAVR5Impl extends ExcitationSystemDynamicsImpl implements ExcAVR5
         rex = newRex;
         boolean oldRexESet = rexESet;
         rexESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AVR5__REX, oldRex, rex, !oldRexESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AVR5__REX, oldRex, rex,
+                    !oldRexESet ) );
     }
 
     /**
@@ -237,8 +239,9 @@ public class ExcAVR5Impl extends ExcitationSystemDynamicsImpl implements ExcAVR5
         boolean oldRexESet = rexESet;
         rex = REX_EDEFAULT;
         rexESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AVR5__REX, oldRex, REX_EDEFAULT, oldRexESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR5__REX, oldRex, REX_EDEFAULT,
+                    oldRexESet ) );
     }
 
     /**
@@ -287,8 +290,9 @@ public class ExcAVR5Impl extends ExcitationSystemDynamicsImpl implements ExcAVR5
         boolean oldTaESet = taESet;
         ta = TA_EDEFAULT;
         taESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR5__TA,
-                oldTa, TA_EDEFAULT, oldTaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR5__TA, oldTa, TA_EDEFAULT,
+                    oldTaESet ) );
     }
 
     /**
@@ -388,7 +392,7 @@ public class ExcAVR5Impl extends ExcitationSystemDynamicsImpl implements ExcAVR5
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (ka: " );
         if( kaESet )
             result.append( ka );

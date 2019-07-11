@@ -240,10 +240,12 @@ public class OrganisationImpl extends IdentifiedObjectImpl implements Organisati
     public void setElectronicAddress( ElectronicAddress newElectronicAddress ) {
         if( newElectronicAddress != electronicAddress ) {
             NotificationChain msgs = null;
-            if( electronicAddress != null ) msgs = ( ( InternalEObject ) electronicAddress ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__ELECTRONIC_ADDRESS, null, msgs );
-            if( newElectronicAddress != null ) msgs = ( ( InternalEObject ) newElectronicAddress ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__ELECTRONIC_ADDRESS, null, msgs );
+            if( electronicAddress != null )
+                msgs = ( ( InternalEObject ) electronicAddress ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__ELECTRONIC_ADDRESS, null, msgs );
+            if( newElectronicAddress != null )
+                msgs = ( ( InternalEObject ) newElectronicAddress ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__ELECTRONIC_ADDRESS, null, msgs );
             msgs = basicSetElectronicAddress( newElectronicAddress, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -294,8 +296,9 @@ public class OrganisationImpl extends IdentifiedObjectImpl implements Organisati
         else {
             boolean oldElectronicAddressESet = electronicAddressESet;
             electronicAddressESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ORGANISATION__ELECTRONIC_ADDRESS, null, null, oldElectronicAddressESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ORGANISATION__ELECTRONIC_ADDRESS,
+                        null, null, oldElectronicAddressESet ) );
         }
     }
 
@@ -349,18 +352,21 @@ public class OrganisationImpl extends IdentifiedObjectImpl implements Organisati
     public void setPhone1( TelephoneNumber newPhone1 ) {
         if( newPhone1 != phone1 ) {
             NotificationChain msgs = null;
-            if( phone1 != null ) msgs = ( ( InternalEObject ) phone1 ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__PHONE1, null, msgs );
-            if( newPhone1 != null ) msgs = ( ( InternalEObject ) newPhone1 ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__PHONE1, null, msgs );
+            if( phone1 != null )
+                msgs = ( ( InternalEObject ) phone1 ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__PHONE1, null, msgs );
+            if( newPhone1 != null )
+                msgs = ( ( InternalEObject ) newPhone1 ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__PHONE1, null, msgs );
             msgs = basicSetPhone1( newPhone1, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldPhone1ESet = phone1ESet;
             phone1ESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ORGANISATION__PHONE1, newPhone1, newPhone1, !oldPhone1ESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ORGANISATION__PHONE1, newPhone1,
+                        newPhone1, !oldPhone1ESet ) );
         }
     }
 
@@ -402,8 +408,9 @@ public class OrganisationImpl extends IdentifiedObjectImpl implements Organisati
         else {
             boolean oldPhone1ESet = phone1ESet;
             phone1ESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ORGANISATION__PHONE1, null, null, oldPhone1ESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ORGANISATION__PHONE1, null, null,
+                        oldPhone1ESet ) );
         }
     }
 
@@ -457,18 +464,21 @@ public class OrganisationImpl extends IdentifiedObjectImpl implements Organisati
     public void setPhone2( TelephoneNumber newPhone2 ) {
         if( newPhone2 != phone2 ) {
             NotificationChain msgs = null;
-            if( phone2 != null ) msgs = ( ( InternalEObject ) phone2 ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__PHONE2, null, msgs );
-            if( newPhone2 != null ) msgs = ( ( InternalEObject ) newPhone2 ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__PHONE2, null, msgs );
+            if( phone2 != null )
+                msgs = ( ( InternalEObject ) phone2 ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__PHONE2, null, msgs );
+            if( newPhone2 != null )
+                msgs = ( ( InternalEObject ) newPhone2 ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__PHONE2, null, msgs );
             msgs = basicSetPhone2( newPhone2, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldPhone2ESet = phone2ESet;
             phone2ESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ORGANISATION__PHONE2, newPhone2, newPhone2, !oldPhone2ESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ORGANISATION__PHONE2, newPhone2,
+                        newPhone2, !oldPhone2ESet ) );
         }
     }
 
@@ -510,8 +520,9 @@ public class OrganisationImpl extends IdentifiedObjectImpl implements Organisati
         else {
             boolean oldPhone2ESet = phone2ESet;
             phone2ESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ORGANISATION__PHONE2, null, null, oldPhone2ESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ORGANISATION__PHONE2, null, null,
+                        oldPhone2ESet ) );
         }
     }
 
@@ -566,10 +577,12 @@ public class OrganisationImpl extends IdentifiedObjectImpl implements Organisati
     public void setPostalAddress( PostalAddress newPostalAddress ) {
         if( newPostalAddress != postalAddress ) {
             NotificationChain msgs = null;
-            if( postalAddress != null ) msgs = ( ( InternalEObject ) postalAddress ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__POSTAL_ADDRESS, null, msgs );
-            if( newPostalAddress != null ) msgs = ( ( InternalEObject ) newPostalAddress ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__POSTAL_ADDRESS, null, msgs );
+            if( postalAddress != null )
+                msgs = ( ( InternalEObject ) postalAddress ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__POSTAL_ADDRESS, null, msgs );
+            if( newPostalAddress != null )
+                msgs = ( ( InternalEObject ) newPostalAddress ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__POSTAL_ADDRESS, null, msgs );
             msgs = basicSetPostalAddress( newPostalAddress, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -620,8 +633,9 @@ public class OrganisationImpl extends IdentifiedObjectImpl implements Organisati
         else {
             boolean oldPostalAddressESet = postalAddressESet;
             postalAddressESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ORGANISATION__POSTAL_ADDRESS, null, null, oldPostalAddressESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ORGANISATION__POSTAL_ADDRESS, null,
+                        null, oldPostalAddressESet ) );
         }
     }
 
@@ -676,10 +690,12 @@ public class OrganisationImpl extends IdentifiedObjectImpl implements Organisati
     public void setStreetAddress( StreetAddress newStreetAddress ) {
         if( newStreetAddress != streetAddress ) {
             NotificationChain msgs = null;
-            if( streetAddress != null ) msgs = ( ( InternalEObject ) streetAddress ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__STREET_ADDRESS, null, msgs );
-            if( newStreetAddress != null ) msgs = ( ( InternalEObject ) newStreetAddress ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__STREET_ADDRESS, null, msgs );
+            if( streetAddress != null )
+                msgs = ( ( InternalEObject ) streetAddress ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__STREET_ADDRESS, null, msgs );
+            if( newStreetAddress != null )
+                msgs = ( ( InternalEObject ) newStreetAddress ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ORGANISATION__STREET_ADDRESS, null, msgs );
             msgs = basicSetStreetAddress( newStreetAddress, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -730,8 +746,9 @@ public class OrganisationImpl extends IdentifiedObjectImpl implements Organisati
         else {
             boolean oldStreetAddressESet = streetAddressESet;
             streetAddressESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ORGANISATION__STREET_ADDRESS, null, null, oldStreetAddressESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ORGANISATION__STREET_ADDRESS, null,
+                        null, oldStreetAddressESet ) );
         }
     }
 

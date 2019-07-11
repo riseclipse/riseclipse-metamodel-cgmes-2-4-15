@@ -117,7 +117,11 @@ public enum Source implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final Source[] VALUES_ARRAY = new Source[] { PROCESS, DEFAULTED, SUBSTITUTED, };
+    private static final Source[] VALUES_ARRAY = new Source[] {
+            PROCESS,
+            DEFAULTED,
+            SUBSTITUTED,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Source</b></em>' enumerators.

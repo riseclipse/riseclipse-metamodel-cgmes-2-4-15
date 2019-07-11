@@ -178,19 +178,22 @@ public class PerLengthLineParameterImpl extends IdentifiedObjectImpl implements 
     public void setWireSpacingInfo( WireSpacingInfo newWireSpacingInfo ) {
         if( newWireSpacingInfo != wireSpacingInfo ) {
             NotificationChain msgs = null;
-            if( wireSpacingInfo != null ) msgs = ( ( InternalEObject ) wireSpacingInfo ).eInverseRemove( this,
-                    CimPackage.WIRE_SPACING_INFO__PER_LENGTH_PARAMETERS, WireSpacingInfo.class, msgs );
-            if( newWireSpacingInfo != null ) msgs = ( ( InternalEObject ) newWireSpacingInfo ).eInverseAdd( this,
-                    CimPackage.WIRE_SPACING_INFO__PER_LENGTH_PARAMETERS, WireSpacingInfo.class, msgs );
+            if( wireSpacingInfo != null )
+                msgs = ( ( InternalEObject ) wireSpacingInfo ).eInverseRemove( this,
+                        CimPackage.WIRE_SPACING_INFO__PER_LENGTH_PARAMETERS, WireSpacingInfo.class, msgs );
+            if( newWireSpacingInfo != null )
+                msgs = ( ( InternalEObject ) newWireSpacingInfo ).eInverseAdd( this,
+                        CimPackage.WIRE_SPACING_INFO__PER_LENGTH_PARAMETERS, WireSpacingInfo.class, msgs );
             msgs = basicSetWireSpacingInfo( newWireSpacingInfo, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWireSpacingInfoESet = wireSpacingInfoESet;
             wireSpacingInfoESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PER_LENGTH_LINE_PARAMETER__WIRE_SPACING_INFO, newWireSpacingInfo, newWireSpacingInfo,
-                    !oldWireSpacingInfoESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PER_LENGTH_LINE_PARAMETER__WIRE_SPACING_INFO, newWireSpacingInfo, newWireSpacingInfo,
+                        !oldWireSpacingInfoESet ) );
         }
     }
 
@@ -233,8 +236,9 @@ public class PerLengthLineParameterImpl extends IdentifiedObjectImpl implements 
         else {
             boolean oldWireSpacingInfoESet = wireSpacingInfoESet;
             wireSpacingInfoESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PER_LENGTH_LINE_PARAMETER__WIRE_SPACING_INFO, null, null, oldWireSpacingInfoESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PER_LENGTH_LINE_PARAMETER__WIRE_SPACING_INFO, null, null, oldWireSpacingInfoESet ) );
         }
     }
 
@@ -258,8 +262,9 @@ public class PerLengthLineParameterImpl extends IdentifiedObjectImpl implements 
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.PER_LENGTH_LINE_PARAMETER__WIRE_SPACING_INFO:
-            if( wireSpacingInfo != null ) msgs = ( ( InternalEObject ) wireSpacingInfo ).eInverseRemove( this,
-                    CimPackage.WIRE_SPACING_INFO__PER_LENGTH_PARAMETERS, WireSpacingInfo.class, msgs );
+            if( wireSpacingInfo != null )
+                msgs = ( ( InternalEObject ) wireSpacingInfo ).eInverseRemove( this,
+                        CimPackage.WIRE_SPACING_INFO__PER_LENGTH_PARAMETERS, WireSpacingInfo.class, msgs );
             return basicSetWireSpacingInfo( ( WireSpacingInfo ) otherEnd, msgs );
         case CimPackage.PER_LENGTH_LINE_PARAMETER__WIRE_INFOS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getWireInfos() ).basicAdd( otherEnd,

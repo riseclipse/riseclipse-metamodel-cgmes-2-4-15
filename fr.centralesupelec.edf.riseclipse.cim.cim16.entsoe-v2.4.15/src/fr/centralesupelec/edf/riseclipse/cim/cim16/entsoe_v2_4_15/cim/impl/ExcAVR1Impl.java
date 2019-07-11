@@ -457,8 +457,9 @@ public class ExcAVR1Impl extends ExcitationSystemDynamicsImpl implements ExcAVR1
         boolean oldE1ESet = e1ESet;
         e1 = E1_EDEFAULT;
         e1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__E1,
-                oldE1, E1_EDEFAULT, oldE1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__E1, oldE1, E1_EDEFAULT,
+                    oldE1ESet ) );
     }
 
     /**
@@ -507,8 +508,9 @@ public class ExcAVR1Impl extends ExcitationSystemDynamicsImpl implements ExcAVR1
         boolean oldE2ESet = e2ESet;
         e2 = E2_EDEFAULT;
         e2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__E2,
-                oldE2, E2_EDEFAULT, oldE2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__E2, oldE2, E2_EDEFAULT,
+                    oldE2ESet ) );
     }
 
     /**
@@ -557,8 +559,9 @@ public class ExcAVR1Impl extends ExcitationSystemDynamicsImpl implements ExcAVR1
         boolean oldKaESet = kaESet;
         ka = KA_EDEFAULT;
         kaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__KA,
-                oldKa, KA_EDEFAULT, oldKaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__KA, oldKa, KA_EDEFAULT,
+                    oldKaESet ) );
     }
 
     /**
@@ -607,8 +610,9 @@ public class ExcAVR1Impl extends ExcitationSystemDynamicsImpl implements ExcAVR1
         boolean oldKfESet = kfESet;
         kf = KF_EDEFAULT;
         kfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__KF,
-                oldKf, KF_EDEFAULT, oldKfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__KF, oldKf, KF_EDEFAULT,
+                    oldKfESet ) );
     }
 
     /**
@@ -642,8 +646,9 @@ public class ExcAVR1Impl extends ExcitationSystemDynamicsImpl implements ExcAVR1
         se1 = newSe1;
         boolean oldSe1ESet = se1ESet;
         se1ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AVR1__SE1, oldSe1, se1, !oldSe1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AVR1__SE1, oldSe1, se1,
+                    !oldSe1ESet ) );
     }
 
     /**
@@ -657,8 +662,9 @@ public class ExcAVR1Impl extends ExcitationSystemDynamicsImpl implements ExcAVR1
         boolean oldSe1ESet = se1ESet;
         se1 = SE1_EDEFAULT;
         se1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AVR1__SE1, oldSe1, SE1_EDEFAULT, oldSe1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__SE1, oldSe1, SE1_EDEFAULT,
+                    oldSe1ESet ) );
     }
 
     /**
@@ -692,8 +698,9 @@ public class ExcAVR1Impl extends ExcitationSystemDynamicsImpl implements ExcAVR1
         se2 = newSe2;
         boolean oldSe2ESet = se2ESet;
         se2ESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AVR1__SE2, oldSe2, se2, !oldSe2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AVR1__SE2, oldSe2, se2,
+                    !oldSe2ESet ) );
     }
 
     /**
@@ -707,8 +714,9 @@ public class ExcAVR1Impl extends ExcitationSystemDynamicsImpl implements ExcAVR1
         boolean oldSe2ESet = se2ESet;
         se2 = SE2_EDEFAULT;
         se2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AVR1__SE2, oldSe2, SE2_EDEFAULT, oldSe2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__SE2, oldSe2, SE2_EDEFAULT,
+                    oldSe2ESet ) );
     }
 
     /**
@@ -757,8 +765,9 @@ public class ExcAVR1Impl extends ExcitationSystemDynamicsImpl implements ExcAVR1
         boolean oldTaESet = taESet;
         ta = TA_EDEFAULT;
         taESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__TA,
-                oldTa, TA_EDEFAULT, oldTaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__TA, oldTa, TA_EDEFAULT,
+                    oldTaESet ) );
     }
 
     /**
@@ -807,8 +816,9 @@ public class ExcAVR1Impl extends ExcitationSystemDynamicsImpl implements ExcAVR1
         boolean oldTbESet = tbESet;
         tb = TB_EDEFAULT;
         tbESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__TB,
-                oldTb, TB_EDEFAULT, oldTbESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__TB, oldTb, TB_EDEFAULT,
+                    oldTbESet ) );
     }
 
     /**
@@ -857,8 +867,9 @@ public class ExcAVR1Impl extends ExcitationSystemDynamicsImpl implements ExcAVR1
         boolean oldTeESet = teESet;
         te = TE_EDEFAULT;
         teESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__TE,
-                oldTe, TE_EDEFAULT, oldTeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__TE, oldTe, TE_EDEFAULT,
+                    oldTeESet ) );
     }
 
     /**
@@ -907,8 +918,9 @@ public class ExcAVR1Impl extends ExcitationSystemDynamicsImpl implements ExcAVR1
         boolean oldTfESet = tfESet;
         tf = TF_EDEFAULT;
         tfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__TF,
-                oldTf, TF_EDEFAULT, oldTfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__TF, oldTf, TF_EDEFAULT,
+                    oldTfESet ) );
     }
 
     /**
@@ -942,8 +954,9 @@ public class ExcAVR1Impl extends ExcitationSystemDynamicsImpl implements ExcAVR1
         vrmn = newVrmn;
         boolean oldVrmnESet = vrmnESet;
         vrmnESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AVR1__VRMN,
-                oldVrmn, vrmn, !oldVrmnESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AVR1__VRMN, oldVrmn, vrmn,
+                    !oldVrmnESet ) );
     }
 
     /**
@@ -957,8 +970,9 @@ public class ExcAVR1Impl extends ExcitationSystemDynamicsImpl implements ExcAVR1
         boolean oldVrmnESet = vrmnESet;
         vrmn = VRMN_EDEFAULT;
         vrmnESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AVR1__VRMN, oldVrmn, VRMN_EDEFAULT, oldVrmnESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__VRMN, oldVrmn, VRMN_EDEFAULT,
+                    oldVrmnESet ) );
     }
 
     /**
@@ -992,8 +1006,9 @@ public class ExcAVR1Impl extends ExcitationSystemDynamicsImpl implements ExcAVR1
         vrmx = newVrmx;
         boolean oldVrmxESet = vrmxESet;
         vrmxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AVR1__VRMX,
-                oldVrmx, vrmx, !oldVrmxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EXC_AVR1__VRMX, oldVrmx, vrmx,
+                    !oldVrmxESet ) );
     }
 
     /**
@@ -1007,8 +1022,9 @@ public class ExcAVR1Impl extends ExcitationSystemDynamicsImpl implements ExcAVR1
         boolean oldVrmxESet = vrmxESet;
         vrmx = VRMX_EDEFAULT;
         vrmxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EXC_AVR1__VRMX, oldVrmx, VRMX_EDEFAULT, oldVrmxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EXC_AVR1__VRMX, oldVrmx, VRMX_EDEFAULT,
+                    oldVrmxESet ) );
     }
 
     /**
@@ -1198,7 +1214,7 @@ public class ExcAVR1Impl extends ExcitationSystemDynamicsImpl implements ExcAVR1
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (e1: " );
         if( e1ESet )
             result.append( e1 );

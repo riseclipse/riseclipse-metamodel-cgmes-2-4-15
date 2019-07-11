@@ -229,10 +229,12 @@ public class AirCompressorImpl extends PowerSystemResourceImpl implements AirCom
     public void setCombustionTurbine( CombustionTurbine newCombustionTurbine ) {
         if( newCombustionTurbine != combustionTurbine ) {
             NotificationChain msgs = null;
-            if( combustionTurbine != null ) msgs = ( ( InternalEObject ) combustionTurbine ).eInverseRemove( this,
-                    CimPackage.COMBUSTION_TURBINE__AIR_COMPRESSOR, CombustionTurbine.class, msgs );
-            if( newCombustionTurbine != null ) msgs = ( ( InternalEObject ) newCombustionTurbine ).eInverseAdd( this,
-                    CimPackage.COMBUSTION_TURBINE__AIR_COMPRESSOR, CombustionTurbine.class, msgs );
+            if( combustionTurbine != null )
+                msgs = ( ( InternalEObject ) combustionTurbine ).eInverseRemove( this,
+                        CimPackage.COMBUSTION_TURBINE__AIR_COMPRESSOR, CombustionTurbine.class, msgs );
+            if( newCombustionTurbine != null )
+                msgs = ( ( InternalEObject ) newCombustionTurbine ).eInverseAdd( this,
+                        CimPackage.COMBUSTION_TURBINE__AIR_COMPRESSOR, CombustionTurbine.class, msgs );
             msgs = basicSetCombustionTurbine( newCombustionTurbine, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -284,8 +286,9 @@ public class AirCompressorImpl extends PowerSystemResourceImpl implements AirCom
         else {
             boolean oldCombustionTurbineESet = combustionTurbineESet;
             combustionTurbineESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.AIR_COMPRESSOR__COMBUSTION_TURBINE, null, null, oldCombustionTurbineESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AIR_COMPRESSOR__COMBUSTION_TURBINE,
+                        null, null, oldCombustionTurbineESet ) );
         }
     }
 
@@ -339,18 +342,21 @@ public class AirCompressorImpl extends PowerSystemResourceImpl implements AirCom
     public void setCAESPlant( CAESPlant newCAESPlant ) {
         if( newCAESPlant != caesPlant ) {
             NotificationChain msgs = null;
-            if( caesPlant != null ) msgs = ( ( InternalEObject ) caesPlant ).eInverseRemove( this,
-                    CimPackage.CAES_PLANT__AIR_COMPRESSOR, CAESPlant.class, msgs );
-            if( newCAESPlant != null ) msgs = ( ( InternalEObject ) newCAESPlant ).eInverseAdd( this,
-                    CimPackage.CAES_PLANT__AIR_COMPRESSOR, CAESPlant.class, msgs );
+            if( caesPlant != null )
+                msgs = ( ( InternalEObject ) caesPlant ).eInverseRemove( this, CimPackage.CAES_PLANT__AIR_COMPRESSOR,
+                        CAESPlant.class, msgs );
+            if( newCAESPlant != null )
+                msgs = ( ( InternalEObject ) newCAESPlant ).eInverseAdd( this, CimPackage.CAES_PLANT__AIR_COMPRESSOR,
+                        CAESPlant.class, msgs );
             msgs = basicSetCAESPlant( newCAESPlant, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCAESPlantESet = caesPlantESet;
             caesPlantESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.AIR_COMPRESSOR__CAES_PLANT, newCAESPlant, newCAESPlant, !oldCAESPlantESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.AIR_COMPRESSOR__CAES_PLANT,
+                        newCAESPlant, newCAESPlant, !oldCAESPlantESet ) );
         }
     }
 
@@ -392,8 +398,9 @@ public class AirCompressorImpl extends PowerSystemResourceImpl implements AirCom
         else {
             boolean oldCAESPlantESet = caesPlantESet;
             caesPlantESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.AIR_COMPRESSOR__CAES_PLANT, null, null, oldCAESPlantESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.AIR_COMPRESSOR__CAES_PLANT, null,
+                        null, oldCAESPlantESet ) );
         }
     }
 
@@ -416,12 +423,14 @@ public class AirCompressorImpl extends PowerSystemResourceImpl implements AirCom
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.AIR_COMPRESSOR__COMBUSTION_TURBINE:
-            if( combustionTurbine != null ) msgs = ( ( InternalEObject ) combustionTurbine ).eInverseRemove( this,
-                    CimPackage.COMBUSTION_TURBINE__AIR_COMPRESSOR, CombustionTurbine.class, msgs );
+            if( combustionTurbine != null )
+                msgs = ( ( InternalEObject ) combustionTurbine ).eInverseRemove( this,
+                        CimPackage.COMBUSTION_TURBINE__AIR_COMPRESSOR, CombustionTurbine.class, msgs );
             return basicSetCombustionTurbine( ( CombustionTurbine ) otherEnd, msgs );
         case CimPackage.AIR_COMPRESSOR__CAES_PLANT:
-            if( caesPlant != null ) msgs = ( ( InternalEObject ) caesPlant ).eInverseRemove( this,
-                    CimPackage.CAES_PLANT__AIR_COMPRESSOR, CAESPlant.class, msgs );
+            if( caesPlant != null )
+                msgs = ( ( InternalEObject ) caesPlant ).eInverseRemove( this, CimPackage.CAES_PLANT__AIR_COMPRESSOR,
+                        CAESPlant.class, msgs );
             return basicSetCAESPlant( ( CAESPlant ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -530,7 +539,7 @@ public class AirCompressorImpl extends PowerSystemResourceImpl implements AirCom
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (airCompressorRating: " );
         if( airCompressorRatingESet )
             result.append( airCompressorRating );

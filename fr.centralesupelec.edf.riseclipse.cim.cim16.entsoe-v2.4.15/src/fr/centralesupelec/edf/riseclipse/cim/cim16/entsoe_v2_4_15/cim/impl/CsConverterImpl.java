@@ -504,8 +504,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         alpha = newAlpha;
         boolean oldAlphaESet = alphaESet;
         alphaESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CS_CONVERTER__ALPHA, oldAlpha, alpha, !oldAlphaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CS_CONVERTER__ALPHA, oldAlpha, alpha,
+                    !oldAlphaESet ) );
     }
 
     /**
@@ -519,8 +520,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         boolean oldAlphaESet = alphaESet;
         alpha = ALPHA_EDEFAULT;
         alphaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CS_CONVERTER__ALPHA, oldAlpha, ALPHA_EDEFAULT, oldAlphaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CS_CONVERTER__ALPHA, oldAlpha,
+                    ALPHA_EDEFAULT, oldAlphaESet ) );
     }
 
     /**
@@ -554,8 +556,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         gamma = newGamma;
         boolean oldGammaESet = gammaESet;
         gammaESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CS_CONVERTER__GAMMA, oldGamma, gamma, !oldGammaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CS_CONVERTER__GAMMA, oldGamma, gamma,
+                    !oldGammaESet ) );
     }
 
     /**
@@ -569,8 +572,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         boolean oldGammaESet = gammaESet;
         gamma = GAMMA_EDEFAULT;
         gammaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CS_CONVERTER__GAMMA, oldGamma, GAMMA_EDEFAULT, oldGammaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CS_CONVERTER__GAMMA, oldGamma,
+                    GAMMA_EDEFAULT, oldGammaESet ) );
     }
 
     /**
@@ -604,8 +608,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         maxAlpha = newMaxAlpha;
         boolean oldMaxAlphaESet = maxAlphaESet;
         maxAlphaESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CS_CONVERTER__MAX_ALPHA, oldMaxAlpha, maxAlpha, !oldMaxAlphaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CS_CONVERTER__MAX_ALPHA, oldMaxAlpha,
+                    maxAlpha, !oldMaxAlphaESet ) );
     }
 
     /**
@@ -619,8 +624,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         boolean oldMaxAlphaESet = maxAlphaESet;
         maxAlpha = MAX_ALPHA_EDEFAULT;
         maxAlphaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CS_CONVERTER__MAX_ALPHA, oldMaxAlpha, MAX_ALPHA_EDEFAULT, oldMaxAlphaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CS_CONVERTER__MAX_ALPHA, oldMaxAlpha,
+                    MAX_ALPHA_EDEFAULT, oldMaxAlphaESet ) );
     }
 
     /**
@@ -654,8 +660,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         maxGamma = newMaxGamma;
         boolean oldMaxGammaESet = maxGammaESet;
         maxGammaESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CS_CONVERTER__MAX_GAMMA, oldMaxGamma, maxGamma, !oldMaxGammaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CS_CONVERTER__MAX_GAMMA, oldMaxGamma,
+                    maxGamma, !oldMaxGammaESet ) );
     }
 
     /**
@@ -669,8 +676,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         boolean oldMaxGammaESet = maxGammaESet;
         maxGamma = MAX_GAMMA_EDEFAULT;
         maxGammaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CS_CONVERTER__MAX_GAMMA, oldMaxGamma, MAX_GAMMA_EDEFAULT, oldMaxGammaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CS_CONVERTER__MAX_GAMMA, oldMaxGamma,
+                    MAX_GAMMA_EDEFAULT, oldMaxGammaESet ) );
     }
 
     /**
@@ -704,8 +712,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         maxIdc = newMaxIdc;
         boolean oldMaxIdcESet = maxIdcESet;
         maxIdcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CS_CONVERTER__MAX_IDC, oldMaxIdc, maxIdc, !oldMaxIdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CS_CONVERTER__MAX_IDC, oldMaxIdc, maxIdc,
+                    !oldMaxIdcESet ) );
     }
 
     /**
@@ -719,8 +728,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         boolean oldMaxIdcESet = maxIdcESet;
         maxIdc = MAX_IDC_EDEFAULT;
         maxIdcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CS_CONVERTER__MAX_IDC, oldMaxIdc, MAX_IDC_EDEFAULT, oldMaxIdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CS_CONVERTER__MAX_IDC, oldMaxIdc,
+                    MAX_IDC_EDEFAULT, oldMaxIdcESet ) );
     }
 
     /**
@@ -754,8 +764,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         minAlpha = newMinAlpha;
         boolean oldMinAlphaESet = minAlphaESet;
         minAlphaESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CS_CONVERTER__MIN_ALPHA, oldMinAlpha, minAlpha, !oldMinAlphaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CS_CONVERTER__MIN_ALPHA, oldMinAlpha,
+                    minAlpha, !oldMinAlphaESet ) );
     }
 
     /**
@@ -769,8 +780,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         boolean oldMinAlphaESet = minAlphaESet;
         minAlpha = MIN_ALPHA_EDEFAULT;
         minAlphaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CS_CONVERTER__MIN_ALPHA, oldMinAlpha, MIN_ALPHA_EDEFAULT, oldMinAlphaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CS_CONVERTER__MIN_ALPHA, oldMinAlpha,
+                    MIN_ALPHA_EDEFAULT, oldMinAlphaESet ) );
     }
 
     /**
@@ -804,8 +816,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         minGamma = newMinGamma;
         boolean oldMinGammaESet = minGammaESet;
         minGammaESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CS_CONVERTER__MIN_GAMMA, oldMinGamma, minGamma, !oldMinGammaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CS_CONVERTER__MIN_GAMMA, oldMinGamma,
+                    minGamma, !oldMinGammaESet ) );
     }
 
     /**
@@ -819,8 +832,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         boolean oldMinGammaESet = minGammaESet;
         minGamma = MIN_GAMMA_EDEFAULT;
         minGammaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CS_CONVERTER__MIN_GAMMA, oldMinGamma, MIN_GAMMA_EDEFAULT, oldMinGammaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CS_CONVERTER__MIN_GAMMA, oldMinGamma,
+                    MIN_GAMMA_EDEFAULT, oldMinGammaESet ) );
     }
 
     /**
@@ -854,8 +868,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         minIdc = newMinIdc;
         boolean oldMinIdcESet = minIdcESet;
         minIdcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CS_CONVERTER__MIN_IDC, oldMinIdc, minIdc, !oldMinIdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CS_CONVERTER__MIN_IDC, oldMinIdc, minIdc,
+                    !oldMinIdcESet ) );
     }
 
     /**
@@ -869,8 +884,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         boolean oldMinIdcESet = minIdcESet;
         minIdc = MIN_IDC_EDEFAULT;
         minIdcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CS_CONVERTER__MIN_IDC, oldMinIdc, MIN_IDC_EDEFAULT, oldMinIdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CS_CONVERTER__MIN_IDC, oldMinIdc,
+                    MIN_IDC_EDEFAULT, oldMinIdcESet ) );
     }
 
     /**
@@ -904,8 +920,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         operatingMode = newOperatingMode == null ? OPERATING_MODE_EDEFAULT : newOperatingMode;
         boolean oldOperatingModeESet = operatingModeESet;
         operatingModeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CS_CONVERTER__OPERATING_MODE, oldOperatingMode, operatingMode, !oldOperatingModeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CS_CONVERTER__OPERATING_MODE,
+                    oldOperatingMode, operatingMode, !oldOperatingModeESet ) );
     }
 
     /**
@@ -955,8 +972,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         pPccControl = newPPccControl == null ? PPCC_CONTROL_EDEFAULT : newPPccControl;
         boolean oldPPccControlESet = pPccControlESet;
         pPccControlESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CS_CONVERTER__PPCC_CONTROL, oldPPccControl, pPccControl, !oldPPccControlESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CS_CONVERTER__PPCC_CONTROL,
+                    oldPPccControl, pPccControl, !oldPPccControlESet ) );
     }
 
     /**
@@ -970,8 +988,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         boolean oldPPccControlESet = pPccControlESet;
         pPccControl = PPCC_CONTROL_EDEFAULT;
         pPccControlESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CS_CONVERTER__PPCC_CONTROL, oldPPccControl, PPCC_CONTROL_EDEFAULT, oldPPccControlESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CS_CONVERTER__PPCC_CONTROL,
+                    oldPPccControl, PPCC_CONTROL_EDEFAULT, oldPPccControlESet ) );
     }
 
     /**
@@ -1005,8 +1024,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         ratedIdc = newRatedIdc;
         boolean oldRatedIdcESet = ratedIdcESet;
         ratedIdcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CS_CONVERTER__RATED_IDC, oldRatedIdc, ratedIdc, !oldRatedIdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CS_CONVERTER__RATED_IDC, oldRatedIdc,
+                    ratedIdc, !oldRatedIdcESet ) );
     }
 
     /**
@@ -1020,8 +1040,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         boolean oldRatedIdcESet = ratedIdcESet;
         ratedIdc = RATED_IDC_EDEFAULT;
         ratedIdcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CS_CONVERTER__RATED_IDC, oldRatedIdc, RATED_IDC_EDEFAULT, oldRatedIdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CS_CONVERTER__RATED_IDC, oldRatedIdc,
+                    RATED_IDC_EDEFAULT, oldRatedIdcESet ) );
     }
 
     /**
@@ -1055,8 +1076,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         targetAlpha = newTargetAlpha;
         boolean oldTargetAlphaESet = targetAlphaESet;
         targetAlphaESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CS_CONVERTER__TARGET_ALPHA, oldTargetAlpha, targetAlpha, !oldTargetAlphaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CS_CONVERTER__TARGET_ALPHA,
+                    oldTargetAlpha, targetAlpha, !oldTargetAlphaESet ) );
     }
 
     /**
@@ -1070,8 +1092,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         boolean oldTargetAlphaESet = targetAlphaESet;
         targetAlpha = TARGET_ALPHA_EDEFAULT;
         targetAlphaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CS_CONVERTER__TARGET_ALPHA, oldTargetAlpha, TARGET_ALPHA_EDEFAULT, oldTargetAlphaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CS_CONVERTER__TARGET_ALPHA,
+                    oldTargetAlpha, TARGET_ALPHA_EDEFAULT, oldTargetAlphaESet ) );
     }
 
     /**
@@ -1105,8 +1128,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         targetGamma = newTargetGamma;
         boolean oldTargetGammaESet = targetGammaESet;
         targetGammaESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CS_CONVERTER__TARGET_GAMMA, oldTargetGamma, targetGamma, !oldTargetGammaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CS_CONVERTER__TARGET_GAMMA,
+                    oldTargetGamma, targetGamma, !oldTargetGammaESet ) );
     }
 
     /**
@@ -1120,8 +1144,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         boolean oldTargetGammaESet = targetGammaESet;
         targetGamma = TARGET_GAMMA_EDEFAULT;
         targetGammaESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CS_CONVERTER__TARGET_GAMMA, oldTargetGamma, TARGET_GAMMA_EDEFAULT, oldTargetGammaESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CS_CONVERTER__TARGET_GAMMA,
+                    oldTargetGamma, TARGET_GAMMA_EDEFAULT, oldTargetGammaESet ) );
     }
 
     /**
@@ -1155,8 +1180,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         targetIdc = newTargetIdc;
         boolean oldTargetIdcESet = targetIdcESet;
         targetIdcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CS_CONVERTER__TARGET_IDC, oldTargetIdc, targetIdc, !oldTargetIdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CS_CONVERTER__TARGET_IDC, oldTargetIdc,
+                    targetIdc, !oldTargetIdcESet ) );
     }
 
     /**
@@ -1170,8 +1196,9 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
         boolean oldTargetIdcESet = targetIdcESet;
         targetIdc = TARGET_IDC_EDEFAULT;
         targetIdcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CS_CONVERTER__TARGET_IDC, oldTargetIdc, TARGET_IDC_EDEFAULT, oldTargetIdcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CS_CONVERTER__TARGET_IDC, oldTargetIdc,
+                    TARGET_IDC_EDEFAULT, oldTargetIdcESet ) );
     }
 
     /**
@@ -1381,7 +1408,7 @@ public class CsConverterImpl extends ACDCConverterImpl implements CsConverter {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (alpha: " );
         if( alphaESet )
             result.append( alpha );

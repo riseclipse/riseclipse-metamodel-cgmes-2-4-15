@@ -336,8 +336,9 @@ public class CurrentTransformerImpl extends SensorImpl implements CurrentTransfo
         coreBurden = newCoreBurden;
         boolean oldCoreBurdenESet = coreBurdenESet;
         coreBurdenESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURRENT_TRANSFORMER__CORE_BURDEN, oldCoreBurden, coreBurden, !oldCoreBurdenESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURRENT_TRANSFORMER__CORE_BURDEN,
+                    oldCoreBurden, coreBurden, !oldCoreBurdenESet ) );
     }
 
     /**
@@ -351,8 +352,9 @@ public class CurrentTransformerImpl extends SensorImpl implements CurrentTransfo
         boolean oldCoreBurdenESet = coreBurdenESet;
         coreBurden = CORE_BURDEN_EDEFAULT;
         coreBurdenESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURRENT_TRANSFORMER__CORE_BURDEN, oldCoreBurden, CORE_BURDEN_EDEFAULT, oldCoreBurdenESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURRENT_TRANSFORMER__CORE_BURDEN,
+                    oldCoreBurden, CORE_BURDEN_EDEFAULT, oldCoreBurdenESet ) );
     }
 
     /**
@@ -386,8 +388,9 @@ public class CurrentTransformerImpl extends SensorImpl implements CurrentTransfo
         ctClass = newCtClass;
         boolean oldCtClassESet = ctClassESet;
         ctClassESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURRENT_TRANSFORMER__CT_CLASS, oldCtClass, ctClass, !oldCtClassESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURRENT_TRANSFORMER__CT_CLASS,
+                    oldCtClass, ctClass, !oldCtClassESet ) );
     }
 
     /**
@@ -401,8 +404,9 @@ public class CurrentTransformerImpl extends SensorImpl implements CurrentTransfo
         boolean oldCtClassESet = ctClassESet;
         ctClass = CT_CLASS_EDEFAULT;
         ctClassESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURRENT_TRANSFORMER__CT_CLASS, oldCtClass, CT_CLASS_EDEFAULT, oldCtClassESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURRENT_TRANSFORMER__CT_CLASS,
+                    oldCtClass, CT_CLASS_EDEFAULT, oldCtClassESet ) );
     }
 
     /**
@@ -436,8 +440,9 @@ public class CurrentTransformerImpl extends SensorImpl implements CurrentTransfo
         usage = newUsage;
         boolean oldUsageESet = usageESet;
         usageESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CURRENT_TRANSFORMER__USAGE, oldUsage, usage, !oldUsageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CURRENT_TRANSFORMER__USAGE, oldUsage,
+                    usage, !oldUsageESet ) );
     }
 
     /**
@@ -451,8 +456,9 @@ public class CurrentTransformerImpl extends SensorImpl implements CurrentTransfo
         boolean oldUsageESet = usageESet;
         usage = USAGE_EDEFAULT;
         usageESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CURRENT_TRANSFORMER__USAGE, oldUsage, USAGE_EDEFAULT, oldUsageESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CURRENT_TRANSFORMER__USAGE, oldUsage,
+                    USAGE_EDEFAULT, oldUsageESet ) );
     }
 
     /**
@@ -572,7 +578,7 @@ public class CurrentTransformerImpl extends SensorImpl implements CurrentTransfo
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (accuracyClass: " );
         if( accuracyClassESet )
             result.append( accuracyClass );

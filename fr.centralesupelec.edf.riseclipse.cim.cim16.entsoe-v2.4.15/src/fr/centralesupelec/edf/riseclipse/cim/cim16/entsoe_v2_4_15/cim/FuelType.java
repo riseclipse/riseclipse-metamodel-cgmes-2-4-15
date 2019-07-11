@@ -192,7 +192,14 @@ public enum FuelType implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final FuelType[] VALUES_ARRAY = new FuelType[] { COAL, OIL, GAS, LIGNITE, HARD_COAL, OIL_SHALE, };
+    private static final FuelType[] VALUES_ARRAY = new FuelType[] {
+            COAL,
+            OIL,
+            GAS,
+            LIGNITE,
+            HARD_COAL,
+            OIL_SHALE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Fuel Type</b></em>' enumerators.

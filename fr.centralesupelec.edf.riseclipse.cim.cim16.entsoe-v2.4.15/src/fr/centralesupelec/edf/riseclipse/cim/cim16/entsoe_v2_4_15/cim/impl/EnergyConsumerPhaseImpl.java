@@ -256,8 +256,9 @@ public class EnergyConsumerPhaseImpl extends PowerSystemResourceImpl implements 
         pfixed = newPfixed;
         boolean oldPfixedESet = pfixedESet;
         pfixedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ENERGY_CONSUMER_PHASE__PFIXED, oldPfixed, pfixed, !oldPfixedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_CONSUMER_PHASE__PFIXED, oldPfixed,
+                    pfixed, !oldPfixedESet ) );
     }
 
     /**
@@ -271,8 +272,9 @@ public class EnergyConsumerPhaseImpl extends PowerSystemResourceImpl implements 
         boolean oldPfixedESet = pfixedESet;
         pfixed = PFIXED_EDEFAULT;
         pfixedESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_CONSUMER_PHASE__PFIXED, oldPfixed, PFIXED_EDEFAULT, oldPfixedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_CONSUMER_PHASE__PFIXED,
+                    oldPfixed, PFIXED_EDEFAULT, oldPfixedESet ) );
     }
 
     /**
@@ -306,8 +308,9 @@ public class EnergyConsumerPhaseImpl extends PowerSystemResourceImpl implements 
         pfixedPct = newPfixedPct;
         boolean oldPfixedPctESet = pfixedPctESet;
         pfixedPctESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ENERGY_CONSUMER_PHASE__PFIXED_PCT, oldPfixedPct, pfixedPct, !oldPfixedPctESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_CONSUMER_PHASE__PFIXED_PCT,
+                    oldPfixedPct, pfixedPct, !oldPfixedPctESet ) );
     }
 
     /**
@@ -321,8 +324,9 @@ public class EnergyConsumerPhaseImpl extends PowerSystemResourceImpl implements 
         boolean oldPfixedPctESet = pfixedPctESet;
         pfixedPct = PFIXED_PCT_EDEFAULT;
         pfixedPctESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_CONSUMER_PHASE__PFIXED_PCT, oldPfixedPct, PFIXED_PCT_EDEFAULT, oldPfixedPctESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_CONSUMER_PHASE__PFIXED_PCT,
+                    oldPfixedPct, PFIXED_PCT_EDEFAULT, oldPfixedPctESet ) );
     }
 
     /**
@@ -356,8 +360,9 @@ public class EnergyConsumerPhaseImpl extends PowerSystemResourceImpl implements 
         phase = newPhase == null ? PHASE_EDEFAULT : newPhase;
         boolean oldPhaseESet = phaseESet;
         phaseESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ENERGY_CONSUMER_PHASE__PHASE, oldPhase, phase, !oldPhaseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_CONSUMER_PHASE__PHASE, oldPhase,
+                    phase, !oldPhaseESet ) );
     }
 
     /**
@@ -371,8 +376,9 @@ public class EnergyConsumerPhaseImpl extends PowerSystemResourceImpl implements 
         boolean oldPhaseESet = phaseESet;
         phase = PHASE_EDEFAULT;
         phaseESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_CONSUMER_PHASE__PHASE, oldPhase, PHASE_EDEFAULT, oldPhaseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_CONSUMER_PHASE__PHASE, oldPhase,
+                    PHASE_EDEFAULT, oldPhaseESet ) );
     }
 
     /**
@@ -406,8 +412,9 @@ public class EnergyConsumerPhaseImpl extends PowerSystemResourceImpl implements 
         qfixed = newQfixed;
         boolean oldQfixedESet = qfixedESet;
         qfixedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ENERGY_CONSUMER_PHASE__QFIXED, oldQfixed, qfixed, !oldQfixedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_CONSUMER_PHASE__QFIXED, oldQfixed,
+                    qfixed, !oldQfixedESet ) );
     }
 
     /**
@@ -421,8 +428,9 @@ public class EnergyConsumerPhaseImpl extends PowerSystemResourceImpl implements 
         boolean oldQfixedESet = qfixedESet;
         qfixed = QFIXED_EDEFAULT;
         qfixedESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_CONSUMER_PHASE__QFIXED, oldQfixed, QFIXED_EDEFAULT, oldQfixedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_CONSUMER_PHASE__QFIXED,
+                    oldQfixed, QFIXED_EDEFAULT, oldQfixedESet ) );
     }
 
     /**
@@ -456,8 +464,9 @@ public class EnergyConsumerPhaseImpl extends PowerSystemResourceImpl implements 
         qfixedPct = newQfixedPct;
         boolean oldQfixedPctESet = qfixedPctESet;
         qfixedPctESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ENERGY_CONSUMER_PHASE__QFIXED_PCT, oldQfixedPct, qfixedPct, !oldQfixedPctESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_CONSUMER_PHASE__QFIXED_PCT,
+                    oldQfixedPct, qfixedPct, !oldQfixedPctESet ) );
     }
 
     /**
@@ -471,8 +480,9 @@ public class EnergyConsumerPhaseImpl extends PowerSystemResourceImpl implements 
         boolean oldQfixedPctESet = qfixedPctESet;
         qfixedPct = QFIXED_PCT_EDEFAULT;
         qfixedPctESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ENERGY_CONSUMER_PHASE__QFIXED_PCT, oldQfixedPct, QFIXED_PCT_EDEFAULT, oldQfixedPctESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ENERGY_CONSUMER_PHASE__QFIXED_PCT,
+                    oldQfixedPct, QFIXED_PCT_EDEFAULT, oldQfixedPctESet ) );
     }
 
     /**
@@ -526,19 +536,22 @@ public class EnergyConsumerPhaseImpl extends PowerSystemResourceImpl implements 
     public void setEnergyConsumer( EnergyConsumer newEnergyConsumer ) {
         if( newEnergyConsumer != energyConsumer ) {
             NotificationChain msgs = null;
-            if( energyConsumer != null ) msgs = ( ( InternalEObject ) energyConsumer ).eInverseRemove( this,
-                    CimPackage.ENERGY_CONSUMER__ENERGY_CONSUMER_PHASE, EnergyConsumer.class, msgs );
-            if( newEnergyConsumer != null ) msgs = ( ( InternalEObject ) newEnergyConsumer ).eInverseAdd( this,
-                    CimPackage.ENERGY_CONSUMER__ENERGY_CONSUMER_PHASE, EnergyConsumer.class, msgs );
+            if( energyConsumer != null )
+                msgs = ( ( InternalEObject ) energyConsumer ).eInverseRemove( this,
+                        CimPackage.ENERGY_CONSUMER__ENERGY_CONSUMER_PHASE, EnergyConsumer.class, msgs );
+            if( newEnergyConsumer != null )
+                msgs = ( ( InternalEObject ) newEnergyConsumer ).eInverseAdd( this,
+                        CimPackage.ENERGY_CONSUMER__ENERGY_CONSUMER_PHASE, EnergyConsumer.class, msgs );
             msgs = basicSetEnergyConsumer( newEnergyConsumer, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldEnergyConsumerESet = energyConsumerESet;
             energyConsumerESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.ENERGY_CONSUMER_PHASE__ENERGY_CONSUMER,
-                            newEnergyConsumer, newEnergyConsumer, !oldEnergyConsumerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.ENERGY_CONSUMER_PHASE__ENERGY_CONSUMER, newEnergyConsumer, newEnergyConsumer,
+                        !oldEnergyConsumerESet ) );
         }
     }
 
@@ -580,8 +593,9 @@ public class EnergyConsumerPhaseImpl extends PowerSystemResourceImpl implements 
         else {
             boolean oldEnergyConsumerESet = energyConsumerESet;
             energyConsumerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ENERGY_CONSUMER_PHASE__ENERGY_CONSUMER, null, null, oldEnergyConsumerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.ENERGY_CONSUMER_PHASE__ENERGY_CONSUMER, null, null, oldEnergyConsumerESet ) );
         }
     }
 
@@ -604,8 +618,9 @@ public class EnergyConsumerPhaseImpl extends PowerSystemResourceImpl implements 
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ENERGY_CONSUMER_PHASE__ENERGY_CONSUMER:
-            if( energyConsumer != null ) msgs = ( ( InternalEObject ) energyConsumer ).eInverseRemove( this,
-                    CimPackage.ENERGY_CONSUMER__ENERGY_CONSUMER_PHASE, EnergyConsumer.class, msgs );
+            if( energyConsumer != null )
+                msgs = ( ( InternalEObject ) energyConsumer ).eInverseRemove( this,
+                        CimPackage.ENERGY_CONSUMER__ENERGY_CONSUMER_PHASE, EnergyConsumer.class, msgs );
             return basicSetEnergyConsumer( ( EnergyConsumer ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -742,7 +757,7 @@ public class EnergyConsumerPhaseImpl extends PowerSystemResourceImpl implements 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (pfixed: " );
         if( pfixedESet )
             result.append( pfixed );

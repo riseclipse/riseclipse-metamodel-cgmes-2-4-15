@@ -167,8 +167,13 @@ public enum RandomisationKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final RandomisationKind[] VALUES_ARRAY = new RandomisationKind[] { START, END, START_AND_END,
-            DEFAULT, NONE, };
+    private static final RandomisationKind[] VALUES_ARRAY = new RandomisationKind[] {
+            START,
+            END,
+            START_AND_END,
+            DEFAULT,
+            NONE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Randomisation Kind</b></em>' enumerators.

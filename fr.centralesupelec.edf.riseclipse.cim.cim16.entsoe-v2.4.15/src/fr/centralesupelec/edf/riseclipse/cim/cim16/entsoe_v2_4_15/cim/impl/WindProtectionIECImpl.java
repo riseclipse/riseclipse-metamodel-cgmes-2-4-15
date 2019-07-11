@@ -366,8 +366,9 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         fover = newFover;
         boolean oldFoverESet = foverESet;
         foverESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PROTECTION_IEC__FOVER, oldFover, fover, !oldFoverESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PROTECTION_IEC__FOVER, oldFover,
+                    fover, !oldFoverESet ) );
     }
 
     /**
@@ -381,8 +382,9 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         boolean oldFoverESet = foverESet;
         fover = FOVER_EDEFAULT;
         foverESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PROTECTION_IEC__FOVER, oldFover, FOVER_EDEFAULT, oldFoverESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PROTECTION_IEC__FOVER, oldFover,
+                    FOVER_EDEFAULT, oldFoverESet ) );
     }
 
     /**
@@ -416,8 +418,9 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         funder = newFunder;
         boolean oldFunderESet = funderESet;
         funderESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PROTECTION_IEC__FUNDER, oldFunder, funder, !oldFunderESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PROTECTION_IEC__FUNDER, oldFunder,
+                    funder, !oldFunderESet ) );
     }
 
     /**
@@ -431,8 +434,9 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         boolean oldFunderESet = funderESet;
         funder = FUNDER_EDEFAULT;
         funderESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PROTECTION_IEC__FUNDER, oldFunder, FUNDER_EDEFAULT, oldFunderESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PROTECTION_IEC__FUNDER, oldFunder,
+                    FUNDER_EDEFAULT, oldFunderESet ) );
     }
 
     /**
@@ -466,8 +470,9 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         tfover = newTfover;
         boolean oldTfoverESet = tfoverESet;
         tfoverESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PROTECTION_IEC__TFOVER, oldTfover, tfover, !oldTfoverESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PROTECTION_IEC__TFOVER, oldTfover,
+                    tfover, !oldTfoverESet ) );
     }
 
     /**
@@ -481,8 +486,9 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         boolean oldTfoverESet = tfoverESet;
         tfover = TFOVER_EDEFAULT;
         tfoverESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PROTECTION_IEC__TFOVER, oldTfover, TFOVER_EDEFAULT, oldTfoverESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PROTECTION_IEC__TFOVER, oldTfover,
+                    TFOVER_EDEFAULT, oldTfoverESet ) );
     }
 
     /**
@@ -516,8 +522,9 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         tfunder = newTfunder;
         boolean oldTfunderESet = tfunderESet;
         tfunderESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PROTECTION_IEC__TFUNDER, oldTfunder, tfunder, !oldTfunderESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PROTECTION_IEC__TFUNDER, oldTfunder,
+                    tfunder, !oldTfunderESet ) );
     }
 
     /**
@@ -531,8 +538,9 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         boolean oldTfunderESet = tfunderESet;
         tfunder = TFUNDER_EDEFAULT;
         tfunderESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PROTECTION_IEC__TFUNDER, oldTfunder, TFUNDER_EDEFAULT, oldTfunderESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PROTECTION_IEC__TFUNDER,
+                    oldTfunder, TFUNDER_EDEFAULT, oldTfunderESet ) );
     }
 
     /**
@@ -566,8 +574,9 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         tuover = newTuover;
         boolean oldTuoverESet = tuoverESet;
         tuoverESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PROTECTION_IEC__TUOVER, oldTuover, tuover, !oldTuoverESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PROTECTION_IEC__TUOVER, oldTuover,
+                    tuover, !oldTuoverESet ) );
     }
 
     /**
@@ -581,8 +590,9 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         boolean oldTuoverESet = tuoverESet;
         tuover = TUOVER_EDEFAULT;
         tuoverESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PROTECTION_IEC__TUOVER, oldTuover, TUOVER_EDEFAULT, oldTuoverESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PROTECTION_IEC__TUOVER, oldTuover,
+                    TUOVER_EDEFAULT, oldTuoverESet ) );
     }
 
     /**
@@ -616,8 +626,9 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         tuunder = newTuunder;
         boolean oldTuunderESet = tuunderESet;
         tuunderESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PROTECTION_IEC__TUUNDER, oldTuunder, tuunder, !oldTuunderESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PROTECTION_IEC__TUUNDER, oldTuunder,
+                    tuunder, !oldTuunderESet ) );
     }
 
     /**
@@ -631,8 +642,9 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         boolean oldTuunderESet = tuunderESet;
         tuunder = TUUNDER_EDEFAULT;
         tuunderESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PROTECTION_IEC__TUUNDER, oldTuunder, TUUNDER_EDEFAULT, oldTuunderESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PROTECTION_IEC__TUUNDER,
+                    oldTuunder, TUUNDER_EDEFAULT, oldTuunderESet ) );
     }
 
     /**
@@ -666,8 +678,9 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         uover = newUover;
         boolean oldUoverESet = uoverESet;
         uoverESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PROTECTION_IEC__UOVER, oldUover, uover, !oldUoverESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PROTECTION_IEC__UOVER, oldUover,
+                    uover, !oldUoverESet ) );
     }
 
     /**
@@ -681,8 +694,9 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         boolean oldUoverESet = uoverESet;
         uover = UOVER_EDEFAULT;
         uoverESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PROTECTION_IEC__UOVER, oldUover, UOVER_EDEFAULT, oldUoverESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PROTECTION_IEC__UOVER, oldUover,
+                    UOVER_EDEFAULT, oldUoverESet ) );
     }
 
     /**
@@ -716,8 +730,9 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         uunder = newUunder;
         boolean oldUunderESet = uunderESet;
         uunderESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PROTECTION_IEC__UUNDER, oldUunder, uunder, !oldUunderESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PROTECTION_IEC__UUNDER, oldUunder,
+                    uunder, !oldUunderESet ) );
     }
 
     /**
@@ -731,8 +746,9 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         boolean oldUunderESet = uunderESet;
         uunder = UUNDER_EDEFAULT;
         uunderESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIND_PROTECTION_IEC__UUNDER, oldUunder, UUNDER_EDEFAULT, oldUunderESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIND_PROTECTION_IEC__UUNDER, oldUunder,
+                    UUNDER_EDEFAULT, oldUunderESet ) );
     }
 
     /**
@@ -799,9 +815,10 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         else {
             boolean oldWindTurbineType3or4IECESet = windTurbineType3or4IECESet;
             windTurbineType3or4IECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_PROTECTION_IEC__WIND_TURBINE_TYPE3OR4_IEC, newWindTurbineType3or4IEC,
-                    newWindTurbineType3or4IEC, !oldWindTurbineType3or4IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_PROTECTION_IEC__WIND_TURBINE_TYPE3OR4_IEC, newWindTurbineType3or4IEC,
+                        newWindTurbineType3or4IEC, !oldWindTurbineType3or4IECESet ) );
         }
     }
 
@@ -844,9 +861,10 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         else {
             boolean oldWindTurbineType3or4IECESet = windTurbineType3or4IECESet;
             windTurbineType3or4IECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_PROTECTION_IEC__WIND_TURBINE_TYPE3OR4_IEC, null, null,
-                    oldWindTurbineType3or4IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_PROTECTION_IEC__WIND_TURBINE_TYPE3OR4_IEC, null, null,
+                        oldWindTurbineType3or4IECESet ) );
         }
     }
 
@@ -914,9 +932,10 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         else {
             boolean oldWindTurbineType1or2IECESet = windTurbineType1or2IECESet;
             windTurbineType1or2IECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_PROTECTION_IEC__WIND_TURBINE_TYPE1OR2_IEC, newWindTurbineType1or2IEC,
-                    newWindTurbineType1or2IEC, !oldWindTurbineType1or2IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_PROTECTION_IEC__WIND_TURBINE_TYPE1OR2_IEC, newWindTurbineType1or2IEC,
+                        newWindTurbineType1or2IEC, !oldWindTurbineType1or2IECESet ) );
         }
     }
 
@@ -959,9 +978,10 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
         else {
             boolean oldWindTurbineType1or2IECESet = windTurbineType1or2IECESet;
             windTurbineType1or2IECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_PROTECTION_IEC__WIND_TURBINE_TYPE1OR2_IEC, null, null,
-                    oldWindTurbineType1or2IECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_PROTECTION_IEC__WIND_TURBINE_TYPE1OR2_IEC, null, null,
+                        oldWindTurbineType1or2IECESet ) );
         }
     }
 
@@ -1170,7 +1190,7 @@ public class WindProtectionIECImpl extends IdentifiedObjectImpl implements WindP
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (fover: " );
         if( foverESet )
             result.append( fover );

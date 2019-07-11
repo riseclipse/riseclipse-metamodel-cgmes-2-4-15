@@ -275,8 +275,9 @@ public class TransformerMeshImpedanceImpl extends IdentifiedObjectImpl implement
         r = newR;
         boolean oldRESet = rESet;
         rESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_MESH_IMPEDANCE__R, oldR, r, !oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_MESH_IMPEDANCE__R, oldR, r,
+                    !oldRESet ) );
     }
 
     /**
@@ -290,8 +291,9 @@ public class TransformerMeshImpedanceImpl extends IdentifiedObjectImpl implement
         boolean oldRESet = rESet;
         r = R_EDEFAULT;
         rESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_MESH_IMPEDANCE__R, oldR, R_EDEFAULT, oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_MESH_IMPEDANCE__R, oldR,
+                    R_EDEFAULT, oldRESet ) );
     }
 
     /**
@@ -325,8 +327,9 @@ public class TransformerMeshImpedanceImpl extends IdentifiedObjectImpl implement
         r0 = newR0;
         boolean oldR0ESet = r0ESet;
         r0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_MESH_IMPEDANCE__R0, oldR0, r0, !oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_MESH_IMPEDANCE__R0, oldR0,
+                    r0, !oldR0ESet ) );
     }
 
     /**
@@ -340,8 +343,9 @@ public class TransformerMeshImpedanceImpl extends IdentifiedObjectImpl implement
         boolean oldR0ESet = r0ESet;
         r0 = R0_EDEFAULT;
         r0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_MESH_IMPEDANCE__R0, oldR0, R0_EDEFAULT, oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_MESH_IMPEDANCE__R0, oldR0,
+                    R0_EDEFAULT, oldR0ESet ) );
     }
 
     /**
@@ -375,8 +379,9 @@ public class TransformerMeshImpedanceImpl extends IdentifiedObjectImpl implement
         x = newX;
         boolean oldXESet = xESet;
         xESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_MESH_IMPEDANCE__X, oldX, x, !oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_MESH_IMPEDANCE__X, oldX, x,
+                    !oldXESet ) );
     }
 
     /**
@@ -390,8 +395,9 @@ public class TransformerMeshImpedanceImpl extends IdentifiedObjectImpl implement
         boolean oldXESet = xESet;
         x = X_EDEFAULT;
         xESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_MESH_IMPEDANCE__X, oldX, X_EDEFAULT, oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_MESH_IMPEDANCE__X, oldX,
+                    X_EDEFAULT, oldXESet ) );
     }
 
     /**
@@ -425,8 +431,9 @@ public class TransformerMeshImpedanceImpl extends IdentifiedObjectImpl implement
         x0 = newX0;
         boolean oldX0ESet = x0ESet;
         x0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_MESH_IMPEDANCE__X0, oldX0, x0, !oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_MESH_IMPEDANCE__X0, oldX0,
+                    x0, !oldX0ESet ) );
     }
 
     /**
@@ -440,8 +447,9 @@ public class TransformerMeshImpedanceImpl extends IdentifiedObjectImpl implement
         boolean oldX0ESet = x0ESet;
         x0 = X0_EDEFAULT;
         x0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_MESH_IMPEDANCE__X0, oldX0, X0_EDEFAULT, oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_MESH_IMPEDANCE__X0, oldX0,
+                    X0_EDEFAULT, oldX0ESet ) );
     }
 
     /**
@@ -543,9 +551,10 @@ public class TransformerMeshImpedanceImpl extends IdentifiedObjectImpl implement
         else {
             boolean oldFromTransformerEndInfoESet = fromTransformerEndInfoESet;
             fromTransformerEndInfoESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TRANSFORMER_MESH_IMPEDANCE__FROM_TRANSFORMER_END_INFO, newFromTransformerEndInfo,
-                    newFromTransformerEndInfo, !oldFromTransformerEndInfoESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.TRANSFORMER_MESH_IMPEDANCE__FROM_TRANSFORMER_END_INFO, newFromTransformerEndInfo,
+                        newFromTransformerEndInfo, !oldFromTransformerEndInfoESet ) );
         }
     }
 
@@ -588,9 +597,10 @@ public class TransformerMeshImpedanceImpl extends IdentifiedObjectImpl implement
         else {
             boolean oldFromTransformerEndInfoESet = fromTransformerEndInfoESet;
             fromTransformerEndInfoESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSFORMER_MESH_IMPEDANCE__FROM_TRANSFORMER_END_INFO, null, null,
-                    oldFromTransformerEndInfoESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.TRANSFORMER_MESH_IMPEDANCE__FROM_TRANSFORMER_END_INFO, null, null,
+                        oldFromTransformerEndInfoESet ) );
         }
     }
 
@@ -646,19 +656,22 @@ public class TransformerMeshImpedanceImpl extends IdentifiedObjectImpl implement
     public void setFromTransformerEnd( TransformerEnd newFromTransformerEnd ) {
         if( newFromTransformerEnd != fromTransformerEnd ) {
             NotificationChain msgs = null;
-            if( fromTransformerEnd != null ) msgs = ( ( InternalEObject ) fromTransformerEnd ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_END__FROM_MESH_IMPEDANCE, TransformerEnd.class, msgs );
-            if( newFromTransformerEnd != null ) msgs = ( ( InternalEObject ) newFromTransformerEnd ).eInverseAdd( this,
-                    CimPackage.TRANSFORMER_END__FROM_MESH_IMPEDANCE, TransformerEnd.class, msgs );
+            if( fromTransformerEnd != null )
+                msgs = ( ( InternalEObject ) fromTransformerEnd ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_END__FROM_MESH_IMPEDANCE, TransformerEnd.class, msgs );
+            if( newFromTransformerEnd != null )
+                msgs = ( ( InternalEObject ) newFromTransformerEnd ).eInverseAdd( this,
+                        CimPackage.TRANSFORMER_END__FROM_MESH_IMPEDANCE, TransformerEnd.class, msgs );
             msgs = basicSetFromTransformerEnd( newFromTransformerEnd, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldFromTransformerEndESet = fromTransformerEndESet;
             fromTransformerEndESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TRANSFORMER_MESH_IMPEDANCE__FROM_TRANSFORMER_END, newFromTransformerEnd,
-                    newFromTransformerEnd, !oldFromTransformerEndESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.TRANSFORMER_MESH_IMPEDANCE__FROM_TRANSFORMER_END, newFromTransformerEnd,
+                        newFromTransformerEnd, !oldFromTransformerEndESet ) );
         }
     }
 
@@ -701,9 +714,10 @@ public class TransformerMeshImpedanceImpl extends IdentifiedObjectImpl implement
         else {
             boolean oldFromTransformerEndESet = fromTransformerEndESet;
             fromTransformerEndESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSFORMER_MESH_IMPEDANCE__FROM_TRANSFORMER_END, null, null,
-                    oldFromTransformerEndESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.TRANSFORMER_MESH_IMPEDANCE__FROM_TRANSFORMER_END, null, null,
+                        oldFromTransformerEndESet ) );
         }
     }
 
@@ -767,8 +781,9 @@ public class TransformerMeshImpedanceImpl extends IdentifiedObjectImpl implement
                         CimPackage.TRANSFORMER_END_INFO__FROM_MESH_IMPEDANCES, TransformerEndInfo.class, msgs );
             return basicSetFromTransformerEndInfo( ( TransformerEndInfo ) otherEnd, msgs );
         case CimPackage.TRANSFORMER_MESH_IMPEDANCE__FROM_TRANSFORMER_END:
-            if( fromTransformerEnd != null ) msgs = ( ( InternalEObject ) fromTransformerEnd ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_END__FROM_MESH_IMPEDANCE, TransformerEnd.class, msgs );
+            if( fromTransformerEnd != null )
+                msgs = ( ( InternalEObject ) fromTransformerEnd ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_END__FROM_MESH_IMPEDANCE, TransformerEnd.class, msgs );
             return basicSetFromTransformerEnd( ( TransformerEnd ) otherEnd, msgs );
         case CimPackage.TRANSFORMER_MESH_IMPEDANCE__TO_TRANSFORMER_END_INFOS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getToTransformerEndInfos() )
@@ -940,7 +955,7 @@ public class TransformerMeshImpedanceImpl extends IdentifiedObjectImpl implement
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (r: " );
         if( rESet )
             result.append( r );

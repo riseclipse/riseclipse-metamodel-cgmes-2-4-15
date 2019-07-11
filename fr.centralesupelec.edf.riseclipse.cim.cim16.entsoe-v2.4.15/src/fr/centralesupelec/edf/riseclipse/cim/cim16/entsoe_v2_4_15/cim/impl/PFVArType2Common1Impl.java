@@ -232,8 +232,9 @@ public class PFVArType2Common1Impl extends PFVArControllerType2DynamicsImpl impl
         j = newJ;
         boolean oldJESet = jESet;
         jESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE2_COMMON1__J, oldJ, j, !oldJESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE2_COMMON1__J, oldJ, j,
+                    !oldJESet ) );
     }
 
     /**
@@ -247,8 +248,9 @@ public class PFVArType2Common1Impl extends PFVArControllerType2DynamicsImpl impl
         boolean oldJESet = jESet;
         j = J_EDEFAULT;
         jESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE2_COMMON1__J, oldJ, J_EDEFAULT, oldJESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE2_COMMON1__J, oldJ,
+                    J_EDEFAULT, oldJESet ) );
     }
 
     /**
@@ -282,8 +284,9 @@ public class PFVArType2Common1Impl extends PFVArControllerType2DynamicsImpl impl
         ki = newKi;
         boolean oldKiESet = kiESet;
         kiESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE2_COMMON1__KI, oldKi, ki, !oldKiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE2_COMMON1__KI, oldKi, ki,
+                    !oldKiESet ) );
     }
 
     /**
@@ -297,8 +300,9 @@ public class PFVArType2Common1Impl extends PFVArControllerType2DynamicsImpl impl
         boolean oldKiESet = kiESet;
         ki = KI_EDEFAULT;
         kiESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE2_COMMON1__KI, oldKi, KI_EDEFAULT, oldKiESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE2_COMMON1__KI, oldKi,
+                    KI_EDEFAULT, oldKiESet ) );
     }
 
     /**
@@ -332,8 +336,9 @@ public class PFVArType2Common1Impl extends PFVArControllerType2DynamicsImpl impl
         kp = newKp;
         boolean oldKpESet = kpESet;
         kpESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE2_COMMON1__KP, oldKp, kp, !oldKpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE2_COMMON1__KP, oldKp, kp,
+                    !oldKpESet ) );
     }
 
     /**
@@ -347,8 +352,9 @@ public class PFVArType2Common1Impl extends PFVArControllerType2DynamicsImpl impl
         boolean oldKpESet = kpESet;
         kp = KP_EDEFAULT;
         kpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE2_COMMON1__KP, oldKp, KP_EDEFAULT, oldKpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE2_COMMON1__KP, oldKp,
+                    KP_EDEFAULT, oldKpESet ) );
     }
 
     /**
@@ -382,8 +388,9 @@ public class PFVArType2Common1Impl extends PFVArControllerType2DynamicsImpl impl
         max = newMax;
         boolean oldMaxESet = maxESet;
         maxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE2_COMMON1__MAX, oldMax, max, !oldMaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE2_COMMON1__MAX, oldMax, max,
+                    !oldMaxESet ) );
     }
 
     /**
@@ -397,8 +404,9 @@ public class PFVArType2Common1Impl extends PFVArControllerType2DynamicsImpl impl
         boolean oldMaxESet = maxESet;
         max = MAX_EDEFAULT;
         maxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE2_COMMON1__MAX, oldMax, MAX_EDEFAULT, oldMaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE2_COMMON1__MAX, oldMax,
+                    MAX_EDEFAULT, oldMaxESet ) );
     }
 
     /**
@@ -432,8 +440,9 @@ public class PFVArType2Common1Impl extends PFVArControllerType2DynamicsImpl impl
         ref = newRef;
         boolean oldRefESet = refESet;
         refESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE2_COMMON1__REF, oldRef, ref, !oldRefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE2_COMMON1__REF, oldRef, ref,
+                    !oldRefESet ) );
     }
 
     /**
@@ -447,8 +456,9 @@ public class PFVArType2Common1Impl extends PFVArControllerType2DynamicsImpl impl
         boolean oldRefESet = refESet;
         ref = REF_EDEFAULT;
         refESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE2_COMMON1__REF, oldRef, REF_EDEFAULT, oldRefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE2_COMMON1__REF, oldRef,
+                    REF_EDEFAULT, oldRefESet ) );
     }
 
     /**
@@ -568,7 +578,7 @@ public class PFVArType2Common1Impl extends PFVArControllerType2DynamicsImpl impl
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (j: " );
         if( jESet )
             result.append( j );

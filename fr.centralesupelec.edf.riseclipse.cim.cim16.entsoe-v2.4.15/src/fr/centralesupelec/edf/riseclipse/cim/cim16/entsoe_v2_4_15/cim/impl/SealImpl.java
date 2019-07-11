@@ -229,8 +229,9 @@ public class SealImpl extends IdentifiedObjectImpl implements Seal {
         appliedDateTime = newAppliedDateTime;
         boolean oldAppliedDateTimeESet = appliedDateTimeESet;
         appliedDateTimeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SEAL__APPLIED_DATE_TIME, oldAppliedDateTime, appliedDateTime, !oldAppliedDateTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SEAL__APPLIED_DATE_TIME,
+                    oldAppliedDateTime, appliedDateTime, !oldAppliedDateTimeESet ) );
     }
 
     /**
@@ -280,8 +281,9 @@ public class SealImpl extends IdentifiedObjectImpl implements Seal {
         condition = newCondition == null ? CONDITION_EDEFAULT : newCondition;
         boolean oldConditionESet = conditionESet;
         conditionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SEAL__CONDITION, oldCondition, condition, !oldConditionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SEAL__CONDITION, oldCondition, condition,
+                    !oldConditionESet ) );
     }
 
     /**
@@ -295,8 +297,9 @@ public class SealImpl extends IdentifiedObjectImpl implements Seal {
         boolean oldConditionESet = conditionESet;
         condition = CONDITION_EDEFAULT;
         conditionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SEAL__CONDITION, oldCondition, CONDITION_EDEFAULT, oldConditionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SEAL__CONDITION, oldCondition,
+                    CONDITION_EDEFAULT, oldConditionESet ) );
     }
 
     /**
@@ -330,8 +333,9 @@ public class SealImpl extends IdentifiedObjectImpl implements Seal {
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.SEAL__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SEAL__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -345,8 +349,9 @@ public class SealImpl extends IdentifiedObjectImpl implements Seal {
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SEAL__KIND,
-                oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SEAL__KIND, oldKind, KIND_EDEFAULT,
+                    oldKindESet ) );
     }
 
     /**
@@ -380,8 +385,9 @@ public class SealImpl extends IdentifiedObjectImpl implements Seal {
         sealNumber = newSealNumber;
         boolean oldSealNumberESet = sealNumberESet;
         sealNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SEAL__SEAL_NUMBER, oldSealNumber, sealNumber, !oldSealNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SEAL__SEAL_NUMBER, oldSealNumber,
+                    sealNumber, !oldSealNumberESet ) );
     }
 
     /**
@@ -395,8 +401,9 @@ public class SealImpl extends IdentifiedObjectImpl implements Seal {
         boolean oldSealNumberESet = sealNumberESet;
         sealNumber = SEAL_NUMBER_EDEFAULT;
         sealNumberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SEAL__SEAL_NUMBER, oldSealNumber, SEAL_NUMBER_EDEFAULT, oldSealNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SEAL__SEAL_NUMBER, oldSealNumber,
+                    SEAL_NUMBER_EDEFAULT, oldSealNumberESet ) );
     }
 
     /**
@@ -449,18 +456,21 @@ public class SealImpl extends IdentifiedObjectImpl implements Seal {
     public void setAssetContainer( AssetContainer newAssetContainer ) {
         if( newAssetContainer != assetContainer ) {
             NotificationChain msgs = null;
-            if( assetContainer != null ) msgs = ( ( InternalEObject ) assetContainer ).eInverseRemove( this,
-                    CimPackage.ASSET_CONTAINER__SEALS, AssetContainer.class, msgs );
-            if( newAssetContainer != null ) msgs = ( ( InternalEObject ) newAssetContainer ).eInverseAdd( this,
-                    CimPackage.ASSET_CONTAINER__SEALS, AssetContainer.class, msgs );
+            if( assetContainer != null )
+                msgs = ( ( InternalEObject ) assetContainer ).eInverseRemove( this, CimPackage.ASSET_CONTAINER__SEALS,
+                        AssetContainer.class, msgs );
+            if( newAssetContainer != null )
+                msgs = ( ( InternalEObject ) newAssetContainer ).eInverseAdd( this, CimPackage.ASSET_CONTAINER__SEALS,
+                        AssetContainer.class, msgs );
             msgs = basicSetAssetContainer( newAssetContainer, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldAssetContainerESet = assetContainerESet;
             assetContainerESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SEAL__ASSET_CONTAINER, newAssetContainer, newAssetContainer, !oldAssetContainerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SEAL__ASSET_CONTAINER,
+                        newAssetContainer, newAssetContainer, !oldAssetContainerESet ) );
         }
     }
 
@@ -502,8 +512,9 @@ public class SealImpl extends IdentifiedObjectImpl implements Seal {
         else {
             boolean oldAssetContainerESet = assetContainerESet;
             assetContainerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SEAL__ASSET_CONTAINER, null, null, oldAssetContainerESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.SEAL__ASSET_CONTAINER, null, null,
+                        oldAssetContainerESet ) );
         }
     }
 
@@ -526,8 +537,9 @@ public class SealImpl extends IdentifiedObjectImpl implements Seal {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.SEAL__ASSET_CONTAINER:
-            if( assetContainer != null ) msgs = ( ( InternalEObject ) assetContainer ).eInverseRemove( this,
-                    CimPackage.ASSET_CONTAINER__SEALS, AssetContainer.class, msgs );
+            if( assetContainer != null )
+                msgs = ( ( InternalEObject ) assetContainer ).eInverseRemove( this, CimPackage.ASSET_CONTAINER__SEALS,
+                        AssetContainer.class, msgs );
             return basicSetAssetContainer( ( AssetContainer ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -654,7 +666,7 @@ public class SealImpl extends IdentifiedObjectImpl implements Seal {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (appliedDateTime: " );
         if( appliedDateTimeESet )
             result.append( appliedDateTime );

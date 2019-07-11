@@ -342,9 +342,20 @@ public enum ReadingReasonKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final ReadingReasonKind[] VALUES_ARRAY = new ReadingReasonKind[] { INSTALLATION, REMOVAL, INQUIRY,
-            BILLING, MOVE_IN, MOVE_OUT, DEMAND_RESET, SERVICE_DISCONNECT, SERVICE_CONNECT, LOAD_MANAGEMENT,
-            LOAD_RESEARCH, OTHER, };
+    private static final ReadingReasonKind[] VALUES_ARRAY = new ReadingReasonKind[] {
+            INSTALLATION,
+            REMOVAL,
+            INQUIRY,
+            BILLING,
+            MOVE_IN,
+            MOVE_OUT,
+            DEMAND_RESET,
+            SERVICE_DISCONNECT,
+            SERVICE_CONNECT,
+            LOAD_MANAGEMENT,
+            LOAD_RESEARCH,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Reading Reason Kind</b></em>' enumerators.

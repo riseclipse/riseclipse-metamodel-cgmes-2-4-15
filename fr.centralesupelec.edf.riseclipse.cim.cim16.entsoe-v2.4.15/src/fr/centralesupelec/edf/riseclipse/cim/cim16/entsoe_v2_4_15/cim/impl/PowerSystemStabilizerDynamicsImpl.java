@@ -160,9 +160,10 @@ public class PowerSystemStabilizerDynamicsImpl extends DynamicsFunctionBlockImpl
         else {
             boolean oldExcitationSystemDynamicsESet = excitationSystemDynamicsESet;
             excitationSystemDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.POWER_SYSTEM_STABILIZER_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS,
-                    newExcitationSystemDynamics, newExcitationSystemDynamics, !oldExcitationSystemDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.POWER_SYSTEM_STABILIZER_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS,
+                        newExcitationSystemDynamics, newExcitationSystemDynamics, !oldExcitationSystemDynamicsESet ) );
         }
     }
 
@@ -206,9 +207,10 @@ public class PowerSystemStabilizerDynamicsImpl extends DynamicsFunctionBlockImpl
         else {
             boolean oldExcitationSystemDynamicsESet = excitationSystemDynamicsESet;
             excitationSystemDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.POWER_SYSTEM_STABILIZER_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS, null, null,
-                    oldExcitationSystemDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.POWER_SYSTEM_STABILIZER_DYNAMICS__EXCITATION_SYSTEM_DYNAMICS, null, null,
+                        oldExcitationSystemDynamicsESet ) );
         }
     }
 

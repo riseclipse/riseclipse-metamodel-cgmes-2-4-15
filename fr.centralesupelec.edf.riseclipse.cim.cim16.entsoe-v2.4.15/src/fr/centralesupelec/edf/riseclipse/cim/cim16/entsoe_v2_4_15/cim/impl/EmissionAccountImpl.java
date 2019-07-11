@@ -167,8 +167,9 @@ public class EmissionAccountImpl extends CurveImpl implements EmissionAccount {
         emissionType = newEmissionType == null ? EMISSION_TYPE_EDEFAULT : newEmissionType;
         boolean oldEmissionTypeESet = emissionTypeESet;
         emissionTypeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EMISSION_ACCOUNT__EMISSION_TYPE, oldEmissionType, emissionType, !oldEmissionTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EMISSION_ACCOUNT__EMISSION_TYPE,
+                    oldEmissionType, emissionType, !oldEmissionTypeESet ) );
     }
 
     /**
@@ -234,9 +235,10 @@ public class EmissionAccountImpl extends CurveImpl implements EmissionAccount {
         boolean oldEmissionValueSourceESet = emissionValueSourceESet;
         emissionValueSource = EMISSION_VALUE_SOURCE_EDEFAULT;
         emissionValueSourceESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.EMISSION_ACCOUNT__EMISSION_VALUE_SOURCE,
-                        oldEmissionValueSource, EMISSION_VALUE_SOURCE_EDEFAULT, oldEmissionValueSourceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.EMISSION_ACCOUNT__EMISSION_VALUE_SOURCE, oldEmissionValueSource,
+                    EMISSION_VALUE_SOURCE_EDEFAULT, oldEmissionValueSourceESet ) );
     }
 
     /**
@@ -303,9 +305,10 @@ public class EmissionAccountImpl extends CurveImpl implements EmissionAccount {
         else {
             boolean oldThermalGeneratingUnitESet = thermalGeneratingUnitESet;
             thermalGeneratingUnitESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.EMISSION_ACCOUNT__THERMAL_GENERATING_UNIT,
-                            newThermalGeneratingUnit, newThermalGeneratingUnit, !oldThermalGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.EMISSION_ACCOUNT__THERMAL_GENERATING_UNIT, newThermalGeneratingUnit,
+                        newThermalGeneratingUnit, !oldThermalGeneratingUnitESet ) );
         }
     }
 
@@ -348,8 +351,10 @@ public class EmissionAccountImpl extends CurveImpl implements EmissionAccount {
         else {
             boolean oldThermalGeneratingUnitESet = thermalGeneratingUnitESet;
             thermalGeneratingUnitESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.EMISSION_ACCOUNT__THERMAL_GENERATING_UNIT, null, null, oldThermalGeneratingUnitESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.EMISSION_ACCOUNT__THERMAL_GENERATING_UNIT, null, null,
+                        oldThermalGeneratingUnitESet ) );
         }
     }
 
@@ -481,7 +486,7 @@ public class EmissionAccountImpl extends CurveImpl implements EmissionAccount {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (emissionType: " );
         if( emissionTypeESet )
             result.append( emissionType );

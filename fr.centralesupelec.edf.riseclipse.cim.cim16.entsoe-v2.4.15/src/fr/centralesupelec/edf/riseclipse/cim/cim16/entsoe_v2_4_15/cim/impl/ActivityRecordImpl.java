@@ -309,8 +309,9 @@ public class ActivityRecordImpl extends IdentifiedObjectImpl implements Activity
         reason = newReason;
         boolean oldReasonESet = reasonESet;
         reasonESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACTIVITY_RECORD__REASON, oldReason, reason, !oldReasonESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACTIVITY_RECORD__REASON, oldReason,
+                    reason, !oldReasonESet ) );
     }
 
     /**
@@ -324,8 +325,9 @@ public class ActivityRecordImpl extends IdentifiedObjectImpl implements Activity
         boolean oldReasonESet = reasonESet;
         reason = REASON_EDEFAULT;
         reasonESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACTIVITY_RECORD__REASON, oldReason, REASON_EDEFAULT, oldReasonESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACTIVITY_RECORD__REASON, oldReason,
+                    REASON_EDEFAULT, oldReasonESet ) );
     }
 
     /**
@@ -359,8 +361,9 @@ public class ActivityRecordImpl extends IdentifiedObjectImpl implements Activity
         severity = newSeverity;
         boolean oldSeverityESet = severityESet;
         severityESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACTIVITY_RECORD__SEVERITY, oldSeverity, severity, !oldSeverityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACTIVITY_RECORD__SEVERITY, oldSeverity,
+                    severity, !oldSeverityESet ) );
     }
 
     /**
@@ -374,8 +377,9 @@ public class ActivityRecordImpl extends IdentifiedObjectImpl implements Activity
         boolean oldSeverityESet = severityESet;
         severity = SEVERITY_EDEFAULT;
         severityESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACTIVITY_RECORD__SEVERITY, oldSeverity, SEVERITY_EDEFAULT, oldSeverityESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACTIVITY_RECORD__SEVERITY, oldSeverity,
+                    SEVERITY_EDEFAULT, oldSeverityESet ) );
     }
 
     /**
@@ -409,8 +413,9 @@ public class ActivityRecordImpl extends IdentifiedObjectImpl implements Activity
         type = newType;
         boolean oldTypeESet = typeESet;
         typeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACTIVITY_RECORD__TYPE, oldType, type, !oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACTIVITY_RECORD__TYPE, oldType, type,
+                    !oldTypeESet ) );
     }
 
     /**
@@ -424,8 +429,9 @@ public class ActivityRecordImpl extends IdentifiedObjectImpl implements Activity
         boolean oldTypeESet = typeESet;
         type = TYPE_EDEFAULT;
         typeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACTIVITY_RECORD__TYPE, oldType, TYPE_EDEFAULT, oldTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACTIVITY_RECORD__TYPE, oldType,
+                    TYPE_EDEFAULT, oldTypeESet ) );
     }
 
     /**
@@ -478,18 +484,21 @@ public class ActivityRecordImpl extends IdentifiedObjectImpl implements Activity
     public void setStatus( Status newStatus ) {
         if( newStatus != status ) {
             NotificationChain msgs = null;
-            if( status != null ) msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ACTIVITY_RECORD__STATUS, null, msgs );
-            if( newStatus != null ) msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.ACTIVITY_RECORD__STATUS, null, msgs );
+            if( status != null )
+                msgs = ( ( InternalEObject ) status ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ACTIVITY_RECORD__STATUS, null, msgs );
+            if( newStatus != null )
+                msgs = ( ( InternalEObject ) newStatus ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.ACTIVITY_RECORD__STATUS, null, msgs );
             msgs = basicSetStatus( newStatus, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldStatusESet = statusESet;
             statusESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ACTIVITY_RECORD__STATUS, newStatus, newStatus, !oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACTIVITY_RECORD__STATUS, newStatus,
+                        newStatus, !oldStatusESet ) );
         }
     }
 
@@ -531,8 +540,9 @@ public class ActivityRecordImpl extends IdentifiedObjectImpl implements Activity
         else {
             boolean oldStatusESet = statusESet;
             statusESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ACTIVITY_RECORD__STATUS, null, null, oldStatusESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACTIVITY_RECORD__STATUS, null,
+                        null, oldStatusESet ) );
         }
     }
 
@@ -781,7 +791,7 @@ public class ActivityRecordImpl extends IdentifiedObjectImpl implements Activity
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (createdDateTime: " );
         if( createdDateTimeESet )
             result.append( createdDateTime );

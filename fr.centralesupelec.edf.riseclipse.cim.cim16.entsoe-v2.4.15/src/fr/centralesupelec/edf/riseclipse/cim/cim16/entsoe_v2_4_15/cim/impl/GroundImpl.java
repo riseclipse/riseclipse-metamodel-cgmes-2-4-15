@@ -124,18 +124,21 @@ public class GroundImpl extends ConductingEquipmentImpl implements Ground {
     public void setGroundAction( GroundAction newGroundAction ) {
         if( newGroundAction != groundAction ) {
             NotificationChain msgs = null;
-            if( groundAction != null ) msgs = ( ( InternalEObject ) groundAction ).eInverseRemove( this,
-                    CimPackage.GROUND_ACTION__GROUND, GroundAction.class, msgs );
-            if( newGroundAction != null ) msgs = ( ( InternalEObject ) newGroundAction ).eInverseAdd( this,
-                    CimPackage.GROUND_ACTION__GROUND, GroundAction.class, msgs );
+            if( groundAction != null )
+                msgs = ( ( InternalEObject ) groundAction ).eInverseRemove( this, CimPackage.GROUND_ACTION__GROUND,
+                        GroundAction.class, msgs );
+            if( newGroundAction != null )
+                msgs = ( ( InternalEObject ) newGroundAction ).eInverseAdd( this, CimPackage.GROUND_ACTION__GROUND,
+                        GroundAction.class, msgs );
             msgs = basicSetGroundAction( newGroundAction, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldGroundActionESet = groundActionESet;
             groundActionESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.GROUND__GROUND_ACTION, newGroundAction, newGroundAction, !oldGroundActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GROUND__GROUND_ACTION,
+                        newGroundAction, newGroundAction, !oldGroundActionESet ) );
         }
     }
 
@@ -177,8 +180,9 @@ public class GroundImpl extends ConductingEquipmentImpl implements Ground {
         else {
             boolean oldGroundActionESet = groundActionESet;
             groundActionESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.GROUND__GROUND_ACTION, null, null, oldGroundActionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GROUND__GROUND_ACTION, null, null,
+                        oldGroundActionESet ) );
         }
     }
 
@@ -201,8 +205,9 @@ public class GroundImpl extends ConductingEquipmentImpl implements Ground {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.GROUND__GROUND_ACTION:
-            if( groundAction != null ) msgs = ( ( InternalEObject ) groundAction ).eInverseRemove( this,
-                    CimPackage.GROUND_ACTION__GROUND, GroundAction.class, msgs );
+            if( groundAction != null )
+                msgs = ( ( InternalEObject ) groundAction ).eInverseRemove( this, CimPackage.GROUND_ACTION__GROUND,
+                        GroundAction.class, msgs );
             return basicSetGroundAction( ( GroundAction ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

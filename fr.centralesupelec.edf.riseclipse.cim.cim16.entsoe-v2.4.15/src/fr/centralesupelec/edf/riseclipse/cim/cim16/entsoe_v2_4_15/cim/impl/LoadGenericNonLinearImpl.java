@@ -353,8 +353,9 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
         bs = newBs;
         boolean oldBsESet = bsESet;
         bsESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__BS, oldBs, bs, !oldBsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_GENERIC_NON_LINEAR__BS, oldBs, bs,
+                    !oldBsESet ) );
     }
 
     /**
@@ -368,8 +369,9 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
         boolean oldBsESet = bsESet;
         bs = BS_EDEFAULT;
         bsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__BS, oldBs, BS_EDEFAULT, oldBsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_GENERIC_NON_LINEAR__BS, oldBs,
+                    BS_EDEFAULT, oldBsESet ) );
     }
 
     /**
@@ -403,8 +405,9 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
         bt = newBt;
         boolean oldBtESet = btESet;
         btESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__BT, oldBt, bt, !oldBtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_GENERIC_NON_LINEAR__BT, oldBt, bt,
+                    !oldBtESet ) );
     }
 
     /**
@@ -418,8 +421,9 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
         boolean oldBtESet = btESet;
         bt = BT_EDEFAULT;
         btESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__BT, oldBt, BT_EDEFAULT, oldBtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_GENERIC_NON_LINEAR__BT, oldBt,
+                    BT_EDEFAULT, oldBtESet ) );
     }
 
     /**
@@ -455,10 +459,11 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
                 : newGenericNonLinearLoadModelType;
         boolean oldGenericNonLinearLoadModelTypeESet = genericNonLinearLoadModelTypeESet;
         genericNonLinearLoadModelTypeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__GENERIC_NON_LINEAR_LOAD_MODEL_TYPE,
-                oldGenericNonLinearLoadModelType, genericNonLinearLoadModelType,
-                !oldGenericNonLinearLoadModelTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.LOAD_GENERIC_NON_LINEAR__GENERIC_NON_LINEAR_LOAD_MODEL_TYPE,
+                    oldGenericNonLinearLoadModelType, genericNonLinearLoadModelType,
+                    !oldGenericNonLinearLoadModelTypeESet ) );
     }
 
     /**
@@ -472,10 +477,11 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
         boolean oldGenericNonLinearLoadModelTypeESet = genericNonLinearLoadModelTypeESet;
         genericNonLinearLoadModelType = GENERIC_NON_LINEAR_LOAD_MODEL_TYPE_EDEFAULT;
         genericNonLinearLoadModelTypeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__GENERIC_NON_LINEAR_LOAD_MODEL_TYPE,
-                oldGenericNonLinearLoadModelType, GENERIC_NON_LINEAR_LOAD_MODEL_TYPE_EDEFAULT,
-                oldGenericNonLinearLoadModelTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.LOAD_GENERIC_NON_LINEAR__GENERIC_NON_LINEAR_LOAD_MODEL_TYPE,
+                    oldGenericNonLinearLoadModelType, GENERIC_NON_LINEAR_LOAD_MODEL_TYPE_EDEFAULT,
+                    oldGenericNonLinearLoadModelTypeESet ) );
     }
 
     /**
@@ -509,8 +515,9 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
         ls = newLs;
         boolean oldLsESet = lsESet;
         lsESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__LS, oldLs, ls, !oldLsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_GENERIC_NON_LINEAR__LS, oldLs, ls,
+                    !oldLsESet ) );
     }
 
     /**
@@ -524,8 +531,9 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
         boolean oldLsESet = lsESet;
         ls = LS_EDEFAULT;
         lsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__LS, oldLs, LS_EDEFAULT, oldLsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_GENERIC_NON_LINEAR__LS, oldLs,
+                    LS_EDEFAULT, oldLsESet ) );
     }
 
     /**
@@ -559,8 +567,9 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
         lt = newLt;
         boolean oldLtESet = ltESet;
         ltESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__LT, oldLt, lt, !oldLtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_GENERIC_NON_LINEAR__LT, oldLt, lt,
+                    !oldLtESet ) );
     }
 
     /**
@@ -574,8 +583,9 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
         boolean oldLtESet = ltESet;
         lt = LT_EDEFAULT;
         ltESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__LT, oldLt, LT_EDEFAULT, oldLtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_GENERIC_NON_LINEAR__LT, oldLt,
+                    LT_EDEFAULT, oldLtESet ) );
     }
 
     /**
@@ -609,8 +619,9 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
         pt = newPt;
         boolean oldPtESet = ptESet;
         ptESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__PT, oldPt, pt, !oldPtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_GENERIC_NON_LINEAR__PT, oldPt, pt,
+                    !oldPtESet ) );
     }
 
     /**
@@ -624,8 +635,9 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
         boolean oldPtESet = ptESet;
         pt = PT_EDEFAULT;
         ptESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__PT, oldPt, PT_EDEFAULT, oldPtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_GENERIC_NON_LINEAR__PT, oldPt,
+                    PT_EDEFAULT, oldPtESet ) );
     }
 
     /**
@@ -659,8 +671,9 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
         qt = newQt;
         boolean oldQtESet = qtESet;
         qtESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__QT, oldQt, qt, !oldQtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_GENERIC_NON_LINEAR__QT, oldQt, qt,
+                    !oldQtESet ) );
     }
 
     /**
@@ -674,8 +687,9 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
         boolean oldQtESet = qtESet;
         qt = QT_EDEFAULT;
         qtESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__QT, oldQt, QT_EDEFAULT, oldQtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_GENERIC_NON_LINEAR__QT, oldQt,
+                    QT_EDEFAULT, oldQtESet ) );
     }
 
     /**
@@ -709,8 +723,9 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
         tp = newTp;
         boolean oldTpESet = tpESet;
         tpESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__TP, oldTp, tp, !oldTpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_GENERIC_NON_LINEAR__TP, oldTp, tp,
+                    !oldTpESet ) );
     }
 
     /**
@@ -724,8 +739,9 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
         boolean oldTpESet = tpESet;
         tp = TP_EDEFAULT;
         tpESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__TP, oldTp, TP_EDEFAULT, oldTpESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_GENERIC_NON_LINEAR__TP, oldTp,
+                    TP_EDEFAULT, oldTpESet ) );
     }
 
     /**
@@ -759,8 +775,9 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
         tq = newTq;
         boolean oldTqESet = tqESet;
         tqESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__TQ, oldTq, tq, !oldTqESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.LOAD_GENERIC_NON_LINEAR__TQ, oldTq, tq,
+                    !oldTqESet ) );
     }
 
     /**
@@ -774,8 +791,9 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
         boolean oldTqESet = tqESet;
         tq = TQ_EDEFAULT;
         tqESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.LOAD_GENERIC_NON_LINEAR__TQ, oldTq, TQ_EDEFAULT, oldTqESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.LOAD_GENERIC_NON_LINEAR__TQ, oldTq,
+                    TQ_EDEFAULT, oldTqESet ) );
     }
 
     /**
@@ -935,7 +953,7 @@ public class LoadGenericNonLinearImpl extends LoadDynamicsImpl implements LoadGe
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (bs: " );
         if( bsESet )
             result.append( bs );

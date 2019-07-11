@@ -453,9 +453,10 @@ public class PanDemandResponseImpl extends EndDeviceActionImpl implements PanDem
         boolean oldAvgLoadAdjustmentESet = avgLoadAdjustmentESet;
         avgLoadAdjustment = AVG_LOAD_ADJUSTMENT_EDEFAULT;
         avgLoadAdjustmentESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PAN_DEMAND_RESPONSE__AVG_LOAD_ADJUSTMENT,
-                        oldAvgLoadAdjustment, AVG_LOAD_ADJUSTMENT_EDEFAULT, oldAvgLoadAdjustmentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PAN_DEMAND_RESPONSE__AVG_LOAD_ADJUSTMENT, oldAvgLoadAdjustment,
+                    AVG_LOAD_ADJUSTMENT_EDEFAULT, oldAvgLoadAdjustmentESet ) );
     }
 
     /**
@@ -505,9 +506,10 @@ public class PanDemandResponseImpl extends EndDeviceActionImpl implements PanDem
         boolean oldCancelControlModeESet = cancelControlModeESet;
         cancelControlMode = CANCEL_CONTROL_MODE_EDEFAULT;
         cancelControlModeESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PAN_DEMAND_RESPONSE__CANCEL_CONTROL_MODE,
-                        oldCancelControlMode, CANCEL_CONTROL_MODE_EDEFAULT, oldCancelControlModeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PAN_DEMAND_RESPONSE__CANCEL_CONTROL_MODE, oldCancelControlMode,
+                    CANCEL_CONTROL_MODE_EDEFAULT, oldCancelControlModeESet ) );
     }
 
     /**
@@ -593,8 +595,9 @@ public class PanDemandResponseImpl extends EndDeviceActionImpl implements PanDem
         cancelNow = newCancelNow;
         boolean oldCancelNowESet = cancelNowESet;
         cancelNowESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PAN_DEMAND_RESPONSE__CANCEL_NOW, oldCancelNow, cancelNow, !oldCancelNowESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PAN_DEMAND_RESPONSE__CANCEL_NOW,
+                    oldCancelNow, cancelNow, !oldCancelNowESet ) );
     }
 
     /**
@@ -608,8 +611,9 @@ public class PanDemandResponseImpl extends EndDeviceActionImpl implements PanDem
         boolean oldCancelNowESet = cancelNowESet;
         cancelNow = CANCEL_NOW_EDEFAULT;
         cancelNowESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PAN_DEMAND_RESPONSE__CANCEL_NOW, oldCancelNow, CANCEL_NOW_EDEFAULT, oldCancelNowESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PAN_DEMAND_RESPONSE__CANCEL_NOW,
+                    oldCancelNow, CANCEL_NOW_EDEFAULT, oldCancelNowESet ) );
     }
 
     /**
@@ -799,8 +803,9 @@ public class PanDemandResponseImpl extends EndDeviceActionImpl implements PanDem
         dutyCycle = newDutyCycle;
         boolean oldDutyCycleESet = dutyCycleESet;
         dutyCycleESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PAN_DEMAND_RESPONSE__DUTY_CYCLE, oldDutyCycle, dutyCycle, !oldDutyCycleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PAN_DEMAND_RESPONSE__DUTY_CYCLE,
+                    oldDutyCycle, dutyCycle, !oldDutyCycleESet ) );
     }
 
     /**
@@ -814,8 +819,9 @@ public class PanDemandResponseImpl extends EndDeviceActionImpl implements PanDem
         boolean oldDutyCycleESet = dutyCycleESet;
         dutyCycle = DUTY_CYCLE_EDEFAULT;
         dutyCycleESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PAN_DEMAND_RESPONSE__DUTY_CYCLE, oldDutyCycle, DUTY_CYCLE_EDEFAULT, oldDutyCycleESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PAN_DEMAND_RESPONSE__DUTY_CYCLE,
+                    oldDutyCycle, DUTY_CYCLE_EDEFAULT, oldDutyCycleESet ) );
     }
 
     /**
@@ -1024,18 +1030,21 @@ public class PanDemandResponseImpl extends EndDeviceActionImpl implements PanDem
     public void setAppliance( ControlledAppliance newAppliance ) {
         if( newAppliance != appliance ) {
             NotificationChain msgs = null;
-            if( appliance != null ) msgs = ( ( InternalEObject ) appliance ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.PAN_DEMAND_RESPONSE__APPLIANCE, null, msgs );
-            if( newAppliance != null ) msgs = ( ( InternalEObject ) newAppliance ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.PAN_DEMAND_RESPONSE__APPLIANCE, null, msgs );
+            if( appliance != null )
+                msgs = ( ( InternalEObject ) appliance ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.PAN_DEMAND_RESPONSE__APPLIANCE, null, msgs );
+            if( newAppliance != null )
+                msgs = ( ( InternalEObject ) newAppliance ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.PAN_DEMAND_RESPONSE__APPLIANCE, null, msgs );
             msgs = basicSetAppliance( newAppliance, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldApplianceESet = applianceESet;
             applianceESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PAN_DEMAND_RESPONSE__APPLIANCE, newAppliance, newAppliance, !oldApplianceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PAN_DEMAND_RESPONSE__APPLIANCE,
+                        newAppliance, newAppliance, !oldApplianceESet ) );
         }
     }
 
@@ -1077,8 +1086,9 @@ public class PanDemandResponseImpl extends EndDeviceActionImpl implements PanDem
         else {
             boolean oldApplianceESet = applianceESet;
             applianceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PAN_DEMAND_RESPONSE__APPLIANCE, null, null, oldApplianceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PAN_DEMAND_RESPONSE__APPLIANCE,
+                        null, null, oldApplianceESet ) );
         }
     }
 
@@ -1283,7 +1293,7 @@ public class PanDemandResponseImpl extends EndDeviceActionImpl implements PanDem
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (avgLoadAdjustment: " );
         if( avgLoadAdjustmentESet )
             result.append( avgLoadAdjustment );

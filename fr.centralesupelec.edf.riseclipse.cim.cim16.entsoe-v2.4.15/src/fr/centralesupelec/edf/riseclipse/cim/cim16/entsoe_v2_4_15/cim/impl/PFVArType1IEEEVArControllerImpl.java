@@ -263,8 +263,9 @@ public class PFVArType1IEEEVArControllerImpl extends PFVArControllerType1Dynamic
         tvarc = newTvarc;
         boolean oldTvarcESet = tvarcESet;
         tvarcESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__TVARC, oldTvarc, tvarc, !oldTvarcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__TVARC,
+                    oldTvarc, tvarc, !oldTvarcESet ) );
     }
 
     /**
@@ -278,8 +279,9 @@ public class PFVArType1IEEEVArControllerImpl extends PFVArControllerType1Dynamic
         boolean oldTvarcESet = tvarcESet;
         tvarc = TVARC_EDEFAULT;
         tvarcESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__TVARC, oldTvarc, TVARC_EDEFAULT, oldTvarcESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__TVARC, oldTvarc, TVARC_EDEFAULT, oldTvarcESet ) );
     }
 
     /**
@@ -313,8 +315,9 @@ public class PFVArType1IEEEVArControllerImpl extends PFVArControllerType1Dynamic
         vvar = newVvar;
         boolean oldVvarESet = vvarESet;
         vvarESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVAR, oldVvar, vvar, !oldVvarESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVAR,
+                    oldVvar, vvar, !oldVvarESet ) );
     }
 
     /**
@@ -328,8 +331,9 @@ public class PFVArType1IEEEVArControllerImpl extends PFVArControllerType1Dynamic
         boolean oldVvarESet = vvarESet;
         vvar = VVAR_EDEFAULT;
         vvarESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVAR, oldVvar, VVAR_EDEFAULT, oldVvarESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVAR,
+                    oldVvar, VVAR_EDEFAULT, oldVvarESet ) );
     }
 
     /**
@@ -363,8 +367,9 @@ public class PFVArType1IEEEVArControllerImpl extends PFVArControllerType1Dynamic
         vvarcbw = newVvarcbw;
         boolean oldVvarcbwESet = vvarcbwESet;
         vvarcbwESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVARCBW, oldVvarcbw, vvarcbw, !oldVvarcbwESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVARCBW, oldVvarcbw, vvarcbw, !oldVvarcbwESet ) );
     }
 
     /**
@@ -378,8 +383,10 @@ public class PFVArType1IEEEVArControllerImpl extends PFVArControllerType1Dynamic
         boolean oldVvarcbwESet = vvarcbwESet;
         vvarcbw = VVARCBW_EDEFAULT;
         vvarcbwESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVARCBW, oldVvarcbw, VVARCBW_EDEFAULT, oldVvarcbwESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVARCBW, oldVvarcbw, VVARCBW_EDEFAULT,
+                    oldVvarcbwESet ) );
     }
 
     /**
@@ -413,8 +420,9 @@ public class PFVArType1IEEEVArControllerImpl extends PFVArControllerType1Dynamic
         vvarref = newVvarref;
         boolean oldVvarrefESet = vvarrefESet;
         vvarrefESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVARREF, oldVvarref, vvarref, !oldVvarrefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVARREF, oldVvarref, vvarref, !oldVvarrefESet ) );
     }
 
     /**
@@ -428,8 +436,10 @@ public class PFVArType1IEEEVArControllerImpl extends PFVArControllerType1Dynamic
         boolean oldVvarrefESet = vvarrefESet;
         vvarref = VVARREF_EDEFAULT;
         vvarrefESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVARREF, oldVvarref, VVARREF_EDEFAULT, oldVvarrefESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVARREF, oldVvarref, VVARREF_EDEFAULT,
+                    oldVvarrefESet ) );
     }
 
     /**
@@ -463,8 +473,9 @@ public class PFVArType1IEEEVArControllerImpl extends PFVArControllerType1Dynamic
         vvtmax = newVvtmax;
         boolean oldVvtmaxESet = vvtmaxESet;
         vvtmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVTMAX, oldVvtmax, vvtmax, !oldVvtmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVTMAX,
+                    oldVvtmax, vvtmax, !oldVvtmaxESet ) );
     }
 
     /**
@@ -478,8 +489,9 @@ public class PFVArType1IEEEVArControllerImpl extends PFVArControllerType1Dynamic
         boolean oldVvtmaxESet = vvtmaxESet;
         vvtmax = VVTMAX_EDEFAULT;
         vvtmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVTMAX, oldVvtmax, VVTMAX_EDEFAULT, oldVvtmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVTMAX, oldVvtmax, VVTMAX_EDEFAULT, oldVvtmaxESet ) );
     }
 
     /**
@@ -513,8 +525,9 @@ public class PFVArType1IEEEVArControllerImpl extends PFVArControllerType1Dynamic
         vvtmin = newVvtmin;
         boolean oldVvtminESet = vvtminESet;
         vvtminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVTMIN, oldVvtmin, vvtmin, !oldVvtminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVTMIN,
+                    oldVvtmin, vvtmin, !oldVvtminESet ) );
     }
 
     /**
@@ -528,8 +541,9 @@ public class PFVArType1IEEEVArControllerImpl extends PFVArControllerType1Dynamic
         boolean oldVvtminESet = vvtminESet;
         vvtmin = VVTMIN_EDEFAULT;
         vvtminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVTMIN, oldVvtmin, VVTMIN_EDEFAULT, oldVvtminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PFV_AR_TYPE1_IEEEV_AR_CONTROLLER__VVTMIN, oldVvtmin, VVTMIN_EDEFAULT, oldVvtminESet ) );
     }
 
     /**
@@ -659,7 +673,7 @@ public class PFVArType1IEEEVArControllerImpl extends PFVArControllerType1Dynamic
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (tvarc: " );
         if( tvarcESet )
             result.append( tvarc );

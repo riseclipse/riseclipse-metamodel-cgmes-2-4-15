@@ -92,7 +92,10 @@ public enum WindGenUnitKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final WindGenUnitKind[] VALUES_ARRAY = new WindGenUnitKind[] { OFFSHORE, ONSHORE, };
+    private static final WindGenUnitKind[] VALUES_ARRAY = new WindGenUnitKind[] {
+            OFFSHORE,
+            ONSHORE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Wind Gen Unit Kind</b></em>' enumerators.

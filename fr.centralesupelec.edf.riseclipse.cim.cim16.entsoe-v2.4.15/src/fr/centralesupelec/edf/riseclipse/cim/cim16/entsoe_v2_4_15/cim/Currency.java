@@ -392,8 +392,22 @@ public enum Currency implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final Currency[] VALUES_ARRAY = new Currency[] { USD, EUR, AUD, CAD, CHF, CNY, DKK, GBP, JPY, NOK,
-            RUR, SEK, INR, OTHER, };
+    private static final Currency[] VALUES_ARRAY = new Currency[] {
+            USD,
+            EUR,
+            AUD,
+            CAD,
+            CHF,
+            CNY,
+            DKK,
+            GBP,
+            JPY,
+            NOK,
+            RUR,
+            SEK,
+            INR,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Currency</b></em>' enumerators.

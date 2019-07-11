@@ -562,8 +562,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         negativeR12 = newNegativeR12;
         boolean oldNegativeR12ESet = negativeR12ESet;
         negativeR12ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_BRANCH__NEGATIVE_R12, oldNegativeR12, negativeR12, !oldNegativeR12ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__NEGATIVE_R12,
+                    oldNegativeR12, negativeR12, !oldNegativeR12ESet ) );
     }
 
     /**
@@ -613,8 +614,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         negativeR21 = newNegativeR21;
         boolean oldNegativeR21ESet = negativeR21ESet;
         negativeR21ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_BRANCH__NEGATIVE_R21, oldNegativeR21, negativeR21, !oldNegativeR21ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__NEGATIVE_R21,
+                    oldNegativeR21, negativeR21, !oldNegativeR21ESet ) );
     }
 
     /**
@@ -664,8 +666,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         negativeX12 = newNegativeX12;
         boolean oldNegativeX12ESet = negativeX12ESet;
         negativeX12ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_BRANCH__NEGATIVE_X12, oldNegativeX12, negativeX12, !oldNegativeX12ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__NEGATIVE_X12,
+                    oldNegativeX12, negativeX12, !oldNegativeX12ESet ) );
     }
 
     /**
@@ -715,8 +718,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         negativeX21 = newNegativeX21;
         boolean oldNegativeX21ESet = negativeX21ESet;
         negativeX21ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_BRANCH__NEGATIVE_X21, oldNegativeX21, negativeX21, !oldNegativeX21ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__NEGATIVE_X21,
+                    oldNegativeX21, negativeX21, !oldNegativeX21ESet ) );
     }
 
     /**
@@ -766,8 +770,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         positiveR12 = newPositiveR12;
         boolean oldPositiveR12ESet = positiveR12ESet;
         positiveR12ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_BRANCH__POSITIVE_R12, oldPositiveR12, positiveR12, !oldPositiveR12ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__POSITIVE_R12,
+                    oldPositiveR12, positiveR12, !oldPositiveR12ESet ) );
     }
 
     /**
@@ -817,8 +822,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         positiveR21 = newPositiveR21;
         boolean oldPositiveR21ESet = positiveR21ESet;
         positiveR21ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_BRANCH__POSITIVE_R21, oldPositiveR21, positiveR21, !oldPositiveR21ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__POSITIVE_R21,
+                    oldPositiveR21, positiveR21, !oldPositiveR21ESet ) );
     }
 
     /**
@@ -868,8 +874,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         positiveX12 = newPositiveX12;
         boolean oldPositiveX12ESet = positiveX12ESet;
         positiveX12ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_BRANCH__POSITIVE_X12, oldPositiveX12, positiveX12, !oldPositiveX12ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__POSITIVE_X12,
+                    oldPositiveX12, positiveX12, !oldPositiveX12ESet ) );
     }
 
     /**
@@ -919,8 +926,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         positiveX21 = newPositiveX21;
         boolean oldPositiveX21ESet = positiveX21ESet;
         positiveX21ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_BRANCH__POSITIVE_X21, oldPositiveX21, positiveX21, !oldPositiveX21ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__POSITIVE_X21,
+                    oldPositiveX21, positiveX21, !oldPositiveX21ESet ) );
     }
 
     /**
@@ -970,8 +978,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         r = newR;
         boolean oldRESet = rESet;
         rESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__R, oldR, r, !oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__R, oldR, r,
+                    !oldRESet ) );
     }
 
     /**
@@ -985,8 +994,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         boolean oldRESet = rESet;
         r = R_EDEFAULT;
         rESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_BRANCH__R, oldR, R_EDEFAULT, oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_BRANCH__R, oldR, R_EDEFAULT,
+                    oldRESet ) );
     }
 
     /**
@@ -1020,8 +1030,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         r21 = newR21;
         boolean oldR21ESet = r21ESet;
         r21ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_BRANCH__R21, oldR21, r21, !oldR21ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__R21, oldR21, r21,
+                    !oldR21ESet ) );
     }
 
     /**
@@ -1035,8 +1046,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         boolean oldR21ESet = r21ESet;
         r21 = R21_EDEFAULT;
         r21ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_BRANCH__R21, oldR21, R21_EDEFAULT, oldR21ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_BRANCH__R21, oldR21,
+                    R21_EDEFAULT, oldR21ESet ) );
     }
 
     /**
@@ -1070,8 +1082,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         x = newX;
         boolean oldXESet = xESet;
         xESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__X, oldX, x, !oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__X, oldX, x,
+                    !oldXESet ) );
     }
 
     /**
@@ -1085,8 +1098,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         boolean oldXESet = xESet;
         x = X_EDEFAULT;
         xESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_BRANCH__X, oldX, X_EDEFAULT, oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_BRANCH__X, oldX, X_EDEFAULT,
+                    oldXESet ) );
     }
 
     /**
@@ -1120,8 +1134,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         x21 = newX21;
         boolean oldX21ESet = x21ESet;
         x21ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_BRANCH__X21, oldX21, x21, !oldX21ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__X21, oldX21, x21,
+                    !oldX21ESet ) );
     }
 
     /**
@@ -1135,8 +1150,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         boolean oldX21ESet = x21ESet;
         x21 = X21_EDEFAULT;
         x21ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_BRANCH__X21, oldX21, X21_EDEFAULT, oldX21ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_BRANCH__X21, oldX21,
+                    X21_EDEFAULT, oldX21ESet ) );
     }
 
     /**
@@ -1170,8 +1186,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         zeroR12 = newZeroR12;
         boolean oldZeroR12ESet = zeroR12ESet;
         zeroR12ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_BRANCH__ZERO_R12, oldZeroR12, zeroR12, !oldZeroR12ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__ZERO_R12, oldZeroR12,
+                    zeroR12, !oldZeroR12ESet ) );
     }
 
     /**
@@ -1185,8 +1202,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         boolean oldZeroR12ESet = zeroR12ESet;
         zeroR12 = ZERO_R12_EDEFAULT;
         zeroR12ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_BRANCH__ZERO_R12, oldZeroR12, ZERO_R12_EDEFAULT, oldZeroR12ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_BRANCH__ZERO_R12,
+                    oldZeroR12, ZERO_R12_EDEFAULT, oldZeroR12ESet ) );
     }
 
     /**
@@ -1220,8 +1238,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         zeroR21 = newZeroR21;
         boolean oldZeroR21ESet = zeroR21ESet;
         zeroR21ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_BRANCH__ZERO_R21, oldZeroR21, zeroR21, !oldZeroR21ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__ZERO_R21, oldZeroR21,
+                    zeroR21, !oldZeroR21ESet ) );
     }
 
     /**
@@ -1235,8 +1254,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         boolean oldZeroR21ESet = zeroR21ESet;
         zeroR21 = ZERO_R21_EDEFAULT;
         zeroR21ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_BRANCH__ZERO_R21, oldZeroR21, ZERO_R21_EDEFAULT, oldZeroR21ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_BRANCH__ZERO_R21,
+                    oldZeroR21, ZERO_R21_EDEFAULT, oldZeroR21ESet ) );
     }
 
     /**
@@ -1270,8 +1290,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         zeroX12 = newZeroX12;
         boolean oldZeroX12ESet = zeroX12ESet;
         zeroX12ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_BRANCH__ZERO_X12, oldZeroX12, zeroX12, !oldZeroX12ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__ZERO_X12, oldZeroX12,
+                    zeroX12, !oldZeroX12ESet ) );
     }
 
     /**
@@ -1285,8 +1306,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         boolean oldZeroX12ESet = zeroX12ESet;
         zeroX12 = ZERO_X12_EDEFAULT;
         zeroX12ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_BRANCH__ZERO_X12, oldZeroX12, ZERO_X12_EDEFAULT, oldZeroX12ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_BRANCH__ZERO_X12,
+                    oldZeroX12, ZERO_X12_EDEFAULT, oldZeroX12ESet ) );
     }
 
     /**
@@ -1320,8 +1342,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         zeroX21 = newZeroX21;
         boolean oldZeroX21ESet = zeroX21ESet;
         zeroX21ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.EQUIVALENT_BRANCH__ZERO_X21, oldZeroX21, zeroX21, !oldZeroX21ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.EQUIVALENT_BRANCH__ZERO_X21, oldZeroX21,
+                    zeroX21, !oldZeroX21ESet ) );
     }
 
     /**
@@ -1335,8 +1358,9 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
         boolean oldZeroX21ESet = zeroX21ESet;
         zeroX21 = ZERO_X21_EDEFAULT;
         zeroX21ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.EQUIVALENT_BRANCH__ZERO_X21, oldZeroX21, ZERO_X21_EDEFAULT, oldZeroX21ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.EQUIVALENT_BRANCH__ZERO_X21,
+                    oldZeroX21, ZERO_X21_EDEFAULT, oldZeroX21ESet ) );
     }
 
     /**
@@ -1566,7 +1590,7 @@ public class EquivalentBranchImpl extends EquivalentEquipmentImpl implements Equ
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (negativeR12: " );
         if( negativeR12ESet )
             result.append( negativeR12 );

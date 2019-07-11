@@ -195,8 +195,9 @@ public class IrregularTimePointImpl extends CimObjectWithIDImpl implements Irreg
         time = newTime;
         boolean oldTimeESet = timeESet;
         timeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.IRREGULAR_TIME_POINT__TIME, oldTime, time, !oldTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.IRREGULAR_TIME_POINT__TIME, oldTime,
+                    time, !oldTimeESet ) );
     }
 
     /**
@@ -210,8 +211,9 @@ public class IrregularTimePointImpl extends CimObjectWithIDImpl implements Irreg
         boolean oldTimeESet = timeESet;
         time = TIME_EDEFAULT;
         timeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.IRREGULAR_TIME_POINT__TIME, oldTime, TIME_EDEFAULT, oldTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.IRREGULAR_TIME_POINT__TIME, oldTime,
+                    TIME_EDEFAULT, oldTimeESet ) );
     }
 
     /**
@@ -245,8 +247,9 @@ public class IrregularTimePointImpl extends CimObjectWithIDImpl implements Irreg
         value1 = newValue1;
         boolean oldValue1ESet = value1ESet;
         value1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.IRREGULAR_TIME_POINT__VALUE1, oldValue1, value1, !oldValue1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.IRREGULAR_TIME_POINT__VALUE1, oldValue1,
+                    value1, !oldValue1ESet ) );
     }
 
     /**
@@ -260,8 +263,9 @@ public class IrregularTimePointImpl extends CimObjectWithIDImpl implements Irreg
         boolean oldValue1ESet = value1ESet;
         value1 = VALUE1_EDEFAULT;
         value1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.IRREGULAR_TIME_POINT__VALUE1, oldValue1, VALUE1_EDEFAULT, oldValue1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.IRREGULAR_TIME_POINT__VALUE1,
+                    oldValue1, VALUE1_EDEFAULT, oldValue1ESet ) );
     }
 
     /**
@@ -295,8 +299,9 @@ public class IrregularTimePointImpl extends CimObjectWithIDImpl implements Irreg
         value2 = newValue2;
         boolean oldValue2ESet = value2ESet;
         value2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.IRREGULAR_TIME_POINT__VALUE2, oldValue2, value2, !oldValue2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.IRREGULAR_TIME_POINT__VALUE2, oldValue2,
+                    value2, !oldValue2ESet ) );
     }
 
     /**
@@ -310,8 +315,9 @@ public class IrregularTimePointImpl extends CimObjectWithIDImpl implements Irreg
         boolean oldValue2ESet = value2ESet;
         value2 = VALUE2_EDEFAULT;
         value2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.IRREGULAR_TIME_POINT__VALUE2, oldValue2, VALUE2_EDEFAULT, oldValue2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.IRREGULAR_TIME_POINT__VALUE2,
+                    oldValue2, VALUE2_EDEFAULT, oldValue2ESet ) );
     }
 
     /**
@@ -366,19 +372,22 @@ public class IrregularTimePointImpl extends CimObjectWithIDImpl implements Irreg
     public void setIntervalSchedule( IrregularIntervalSchedule newIntervalSchedule ) {
         if( newIntervalSchedule != intervalSchedule ) {
             NotificationChain msgs = null;
-            if( intervalSchedule != null ) msgs = ( ( InternalEObject ) intervalSchedule ).eInverseRemove( this,
-                    CimPackage.IRREGULAR_INTERVAL_SCHEDULE__TIME_POINTS, IrregularIntervalSchedule.class, msgs );
-            if( newIntervalSchedule != null ) msgs = ( ( InternalEObject ) newIntervalSchedule ).eInverseAdd( this,
-                    CimPackage.IRREGULAR_INTERVAL_SCHEDULE__TIME_POINTS, IrregularIntervalSchedule.class, msgs );
+            if( intervalSchedule != null )
+                msgs = ( ( InternalEObject ) intervalSchedule ).eInverseRemove( this,
+                        CimPackage.IRREGULAR_INTERVAL_SCHEDULE__TIME_POINTS, IrregularIntervalSchedule.class, msgs );
+            if( newIntervalSchedule != null )
+                msgs = ( ( InternalEObject ) newIntervalSchedule ).eInverseAdd( this,
+                        CimPackage.IRREGULAR_INTERVAL_SCHEDULE__TIME_POINTS, IrregularIntervalSchedule.class, msgs );
             msgs = basicSetIntervalSchedule( newIntervalSchedule, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldIntervalScheduleESet = intervalScheduleESet;
             intervalScheduleESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.IRREGULAR_TIME_POINT__INTERVAL_SCHEDULE,
-                            newIntervalSchedule, newIntervalSchedule, !oldIntervalScheduleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.IRREGULAR_TIME_POINT__INTERVAL_SCHEDULE, newIntervalSchedule, newIntervalSchedule,
+                        !oldIntervalScheduleESet ) );
         }
     }
 
@@ -421,8 +430,9 @@ public class IrregularTimePointImpl extends CimObjectWithIDImpl implements Irreg
         else {
             boolean oldIntervalScheduleESet = intervalScheduleESet;
             intervalScheduleESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.IRREGULAR_TIME_POINT__INTERVAL_SCHEDULE, null, null, oldIntervalScheduleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.IRREGULAR_TIME_POINT__INTERVAL_SCHEDULE, null, null, oldIntervalScheduleESet ) );
         }
     }
 
@@ -445,8 +455,9 @@ public class IrregularTimePointImpl extends CimObjectWithIDImpl implements Irreg
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.IRREGULAR_TIME_POINT__INTERVAL_SCHEDULE:
-            if( intervalSchedule != null ) msgs = ( ( InternalEObject ) intervalSchedule ).eInverseRemove( this,
-                    CimPackage.IRREGULAR_INTERVAL_SCHEDULE__TIME_POINTS, IrregularIntervalSchedule.class, msgs );
+            if( intervalSchedule != null )
+                msgs = ( ( InternalEObject ) intervalSchedule ).eInverseRemove( this,
+                        CimPackage.IRREGULAR_INTERVAL_SCHEDULE__TIME_POINTS, IrregularIntervalSchedule.class, msgs );
             return basicSetIntervalSchedule( ( IrregularIntervalSchedule ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -563,7 +574,7 @@ public class IrregularTimePointImpl extends CimObjectWithIDImpl implements Irreg
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (time: " );
         if( timeESet )
             result.append( time );

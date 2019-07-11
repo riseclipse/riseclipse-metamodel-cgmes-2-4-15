@@ -559,8 +559,9 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
         emergencyS = newEmergencyS;
         boolean oldEmergencySESet = emergencySESet;
         emergencySESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_END_INFO__EMERGENCY_S, oldEmergencyS, emergencyS, !oldEmergencySESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_END_INFO__EMERGENCY_S,
+                    oldEmergencyS, emergencyS, !oldEmergencySESet ) );
     }
 
     /**
@@ -610,8 +611,9 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
         endNumber = newEndNumber;
         boolean oldEndNumberESet = endNumberESet;
         endNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_END_INFO__END_NUMBER, oldEndNumber, endNumber, !oldEndNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_END_INFO__END_NUMBER,
+                    oldEndNumber, endNumber, !oldEndNumberESet ) );
     }
 
     /**
@@ -625,8 +627,9 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
         boolean oldEndNumberESet = endNumberESet;
         endNumber = END_NUMBER_EDEFAULT;
         endNumberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_END_INFO__END_NUMBER, oldEndNumber, END_NUMBER_EDEFAULT, oldEndNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END_INFO__END_NUMBER,
+                    oldEndNumber, END_NUMBER_EDEFAULT, oldEndNumberESet ) );
     }
 
     /**
@@ -660,8 +663,9 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
         insulationU = newInsulationU;
         boolean oldInsulationUESet = insulationUESet;
         insulationUESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_END_INFO__INSULATION_U, oldInsulationU, insulationU, !oldInsulationUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_END_INFO__INSULATION_U,
+                    oldInsulationU, insulationU, !oldInsulationUESet ) );
     }
 
     /**
@@ -727,9 +731,10 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
         boolean oldPhaseAngleClockESet = phaseAngleClockESet;
         phaseAngleClock = PHASE_ANGLE_CLOCK_EDEFAULT;
         phaseAngleClockESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END_INFO__PHASE_ANGLE_CLOCK,
-                        oldPhaseAngleClock, PHASE_ANGLE_CLOCK_EDEFAULT, oldPhaseAngleClockESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.TRANSFORMER_END_INFO__PHASE_ANGLE_CLOCK, oldPhaseAngleClock, PHASE_ANGLE_CLOCK_EDEFAULT,
+                    oldPhaseAngleClockESet ) );
     }
 
     /**
@@ -763,8 +768,9 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
         r = newR;
         boolean oldRESet = rESet;
         rESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_END_INFO__R, oldR, r, !oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_END_INFO__R, oldR, r,
+                    !oldRESet ) );
     }
 
     /**
@@ -778,8 +784,9 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
         boolean oldRESet = rESet;
         r = R_EDEFAULT;
         rESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_END_INFO__R, oldR, R_EDEFAULT, oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END_INFO__R, oldR,
+                    R_EDEFAULT, oldRESet ) );
     }
 
     /**
@@ -813,8 +820,9 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
         ratedS = newRatedS;
         boolean oldRatedSESet = ratedSESet;
         ratedSESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_END_INFO__RATED_S, oldRatedS, ratedS, !oldRatedSESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_END_INFO__RATED_S, oldRatedS,
+                    ratedS, !oldRatedSESet ) );
     }
 
     /**
@@ -828,8 +836,9 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
         boolean oldRatedSESet = ratedSESet;
         ratedS = RATED_S_EDEFAULT;
         ratedSESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_END_INFO__RATED_S, oldRatedS, RATED_S_EDEFAULT, oldRatedSESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END_INFO__RATED_S,
+                    oldRatedS, RATED_S_EDEFAULT, oldRatedSESet ) );
     }
 
     /**
@@ -863,8 +872,9 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
         ratedU = newRatedU;
         boolean oldRatedUESet = ratedUESet;
         ratedUESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_END_INFO__RATED_U, oldRatedU, ratedU, !oldRatedUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_END_INFO__RATED_U, oldRatedU,
+                    ratedU, !oldRatedUESet ) );
     }
 
     /**
@@ -878,8 +888,9 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
         boolean oldRatedUESet = ratedUESet;
         ratedU = RATED_U_EDEFAULT;
         ratedUESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TRANSFORMER_END_INFO__RATED_U, oldRatedU, RATED_U_EDEFAULT, oldRatedUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TRANSFORMER_END_INFO__RATED_U,
+                    oldRatedU, RATED_U_EDEFAULT, oldRatedUESet ) );
     }
 
     /**
@@ -913,8 +924,9 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
         shortTermS = newShortTermS;
         boolean oldShortTermSESet = shortTermSESet;
         shortTermSESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TRANSFORMER_END_INFO__SHORT_TERM_S, oldShortTermS, shortTermS, !oldShortTermSESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_END_INFO__SHORT_TERM_S,
+                    oldShortTermS, shortTermS, !oldShortTermSESet ) );
     }
 
     /**
@@ -1092,8 +1104,9 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
     public void setTransformerTankInfo( TransformerTankInfo newTransformerTankInfo ) {
         if( newTransformerTankInfo != transformerTankInfo ) {
             NotificationChain msgs = null;
-            if( transformerTankInfo != null ) msgs = ( ( InternalEObject ) transformerTankInfo ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_TANK_INFO__TRANSFORMER_END_INFOS, TransformerTankInfo.class, msgs );
+            if( transformerTankInfo != null )
+                msgs = ( ( InternalEObject ) transformerTankInfo ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_TANK_INFO__TRANSFORMER_END_INFOS, TransformerTankInfo.class, msgs );
             if( newTransformerTankInfo != null )
                 msgs = ( ( InternalEObject ) newTransformerTankInfo ).eInverseAdd( this,
                         CimPackage.TRANSFORMER_TANK_INFO__TRANSFORMER_END_INFOS, TransformerTankInfo.class, msgs );
@@ -1103,9 +1116,10 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
         else {
             boolean oldTransformerTankInfoESet = transformerTankInfoESet;
             transformerTankInfoESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TRANSFORMER_END_INFO__TRANSFORMER_TANK_INFO, newTransformerTankInfo,
-                    newTransformerTankInfo, !oldTransformerTankInfoESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.TRANSFORMER_END_INFO__TRANSFORMER_TANK_INFO, newTransformerTankInfo,
+                        newTransformerTankInfo, !oldTransformerTankInfoESet ) );
         }
     }
 
@@ -1148,8 +1162,10 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
         else {
             boolean oldTransformerTankInfoESet = transformerTankInfoESet;
             transformerTankInfoESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSFORMER_END_INFO__TRANSFORMER_TANK_INFO, null, null, oldTransformerTankInfoESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.TRANSFORMER_END_INFO__TRANSFORMER_TANK_INFO, null, null,
+                        oldTransformerTankInfoESet ) );
         }
     }
 
@@ -1205,21 +1221,24 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
     public void setCoreAdmittance( TransformerCoreAdmittance newCoreAdmittance ) {
         if( newCoreAdmittance != coreAdmittance ) {
             NotificationChain msgs = null;
-            if( coreAdmittance != null ) msgs = ( ( InternalEObject ) coreAdmittance ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_CORE_ADMITTANCE__TRANSFORMER_END_INFO, TransformerCoreAdmittance.class,
-                    msgs );
-            if( newCoreAdmittance != null ) msgs = ( ( InternalEObject ) newCoreAdmittance ).eInverseAdd( this,
-                    CimPackage.TRANSFORMER_CORE_ADMITTANCE__TRANSFORMER_END_INFO, TransformerCoreAdmittance.class,
-                    msgs );
+            if( coreAdmittance != null )
+                msgs = ( ( InternalEObject ) coreAdmittance ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_CORE_ADMITTANCE__TRANSFORMER_END_INFO, TransformerCoreAdmittance.class,
+                        msgs );
+            if( newCoreAdmittance != null )
+                msgs = ( ( InternalEObject ) newCoreAdmittance ).eInverseAdd( this,
+                        CimPackage.TRANSFORMER_CORE_ADMITTANCE__TRANSFORMER_END_INFO, TransformerCoreAdmittance.class,
+                        msgs );
             msgs = basicSetCoreAdmittance( newCoreAdmittance, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldCoreAdmittanceESet = coreAdmittanceESet;
             coreAdmittanceESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.TRANSFORMER_END_INFO__CORE_ADMITTANCE,
-                            newCoreAdmittance, newCoreAdmittance, !oldCoreAdmittanceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.TRANSFORMER_END_INFO__CORE_ADMITTANCE, newCoreAdmittance, newCoreAdmittance,
+                        !oldCoreAdmittanceESet ) );
         }
     }
 
@@ -1262,8 +1281,9 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
         else {
             boolean oldCoreAdmittanceESet = coreAdmittanceESet;
             coreAdmittanceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSFORMER_END_INFO__CORE_ADMITTANCE, null, null, oldCoreAdmittanceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.TRANSFORMER_END_INFO__CORE_ADMITTANCE, null, null, oldCoreAdmittanceESet ) );
         }
     }
 
@@ -1477,9 +1497,10 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
         else {
             boolean oldTransformerStarImpedanceESet = transformerStarImpedanceESet;
             transformerStarImpedanceESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TRANSFORMER_END_INFO__TRANSFORMER_STAR_IMPEDANCE, newTransformerStarImpedance,
-                    newTransformerStarImpedance, !oldTransformerStarImpedanceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.TRANSFORMER_END_INFO__TRANSFORMER_STAR_IMPEDANCE, newTransformerStarImpedance,
+                        newTransformerStarImpedance, !oldTransformerStarImpedanceESet ) );
         }
     }
 
@@ -1522,9 +1543,10 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
         else {
             boolean oldTransformerStarImpedanceESet = transformerStarImpedanceESet;
             transformerStarImpedanceESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TRANSFORMER_END_INFO__TRANSFORMER_STAR_IMPEDANCE, null, null,
-                    oldTransformerStarImpedanceESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.TRANSFORMER_END_INFO__TRANSFORMER_STAR_IMPEDANCE, null, null,
+                        oldTransformerStarImpedanceESet ) );
         }
     }
 
@@ -1548,13 +1570,15 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.TRANSFORMER_END_INFO__TRANSFORMER_TANK_INFO:
-            if( transformerTankInfo != null ) msgs = ( ( InternalEObject ) transformerTankInfo ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_TANK_INFO__TRANSFORMER_END_INFOS, TransformerTankInfo.class, msgs );
+            if( transformerTankInfo != null )
+                msgs = ( ( InternalEObject ) transformerTankInfo ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_TANK_INFO__TRANSFORMER_END_INFOS, TransformerTankInfo.class, msgs );
             return basicSetTransformerTankInfo( ( TransformerTankInfo ) otherEnd, msgs );
         case CimPackage.TRANSFORMER_END_INFO__CORE_ADMITTANCE:
-            if( coreAdmittance != null ) msgs = ( ( InternalEObject ) coreAdmittance ).eInverseRemove( this,
-                    CimPackage.TRANSFORMER_CORE_ADMITTANCE__TRANSFORMER_END_INFO, TransformerCoreAdmittance.class,
-                    msgs );
+            if( coreAdmittance != null )
+                msgs = ( ( InternalEObject ) coreAdmittance ).eInverseRemove( this,
+                        CimPackage.TRANSFORMER_CORE_ADMITTANCE__TRANSFORMER_END_INFO, TransformerCoreAdmittance.class,
+                        msgs );
             return basicSetCoreAdmittance( ( TransformerCoreAdmittance ) otherEnd, msgs );
         case CimPackage.TRANSFORMER_END_INFO__OPEN_END_OPEN_CIRCUIT_TESTS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getOpenEndOpenCircuitTests() )
@@ -1874,7 +1898,7 @@ public class TransformerEndInfoImpl extends AssetInfoImpl implements Transformer
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (connectionKind: " );
         if( connectionKindESet )
             result.append( connectionKind );

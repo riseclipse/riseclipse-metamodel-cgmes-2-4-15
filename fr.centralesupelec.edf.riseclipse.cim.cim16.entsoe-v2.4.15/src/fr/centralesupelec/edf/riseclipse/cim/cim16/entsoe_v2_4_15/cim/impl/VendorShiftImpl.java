@@ -271,8 +271,9 @@ public class VendorShiftImpl extends ShiftImpl implements VendorShift {
         posted = newPosted;
         boolean oldPostedESet = postedESet;
         postedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VENDOR_SHIFT__POSTED, oldPosted, posted, !oldPostedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VENDOR_SHIFT__POSTED, oldPosted, posted,
+                    !oldPostedESet ) );
     }
 
     /**
@@ -286,8 +287,9 @@ public class VendorShiftImpl extends ShiftImpl implements VendorShift {
         boolean oldPostedESet = postedESet;
         posted = POSTED_EDEFAULT;
         postedESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.VENDOR_SHIFT__POSTED, oldPosted, POSTED_EDEFAULT, oldPostedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VENDOR_SHIFT__POSTED, oldPosted,
+                    POSTED_EDEFAULT, oldPostedESet ) );
     }
 
     /**
@@ -340,18 +342,21 @@ public class VendorShiftImpl extends ShiftImpl implements VendorShift {
     public void setVendor( Vendor newVendor ) {
         if( newVendor != vendor ) {
             NotificationChain msgs = null;
-            if( vendor != null ) msgs = ( ( InternalEObject ) vendor ).eInverseRemove( this,
-                    CimPackage.VENDOR__VENDOR_SHIFTS, Vendor.class, msgs );
-            if( newVendor != null ) msgs = ( ( InternalEObject ) newVendor ).eInverseAdd( this,
-                    CimPackage.VENDOR__VENDOR_SHIFTS, Vendor.class, msgs );
+            if( vendor != null )
+                msgs = ( ( InternalEObject ) vendor ).eInverseRemove( this, CimPackage.VENDOR__VENDOR_SHIFTS,
+                        Vendor.class, msgs );
+            if( newVendor != null )
+                msgs = ( ( InternalEObject ) newVendor ).eInverseAdd( this, CimPackage.VENDOR__VENDOR_SHIFTS,
+                        Vendor.class, msgs );
             msgs = basicSetVendor( newVendor, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldVendorESet = vendorESet;
             vendorESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.VENDOR_SHIFT__VENDOR, newVendor, newVendor, !oldVendorESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VENDOR_SHIFT__VENDOR, newVendor,
+                        newVendor, !oldVendorESet ) );
         }
     }
 
@@ -393,8 +398,9 @@ public class VendorShiftImpl extends ShiftImpl implements VendorShift {
         else {
             boolean oldVendorESet = vendorESet;
             vendorESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.VENDOR_SHIFT__VENDOR, null, null, oldVendorESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VENDOR_SHIFT__VENDOR, null, null,
+                        oldVendorESet ) );
         }
     }
 
@@ -483,10 +489,12 @@ public class VendorShiftImpl extends ShiftImpl implements VendorShift {
     public void setMerchantAccount( MerchantAccount newMerchantAccount ) {
         if( newMerchantAccount != merchantAccount ) {
             NotificationChain msgs = null;
-            if( merchantAccount != null ) msgs = ( ( InternalEObject ) merchantAccount ).eInverseRemove( this,
-                    CimPackage.MERCHANT_ACCOUNT__VENDOR_SHIFTS, MerchantAccount.class, msgs );
-            if( newMerchantAccount != null ) msgs = ( ( InternalEObject ) newMerchantAccount ).eInverseAdd( this,
-                    CimPackage.MERCHANT_ACCOUNT__VENDOR_SHIFTS, MerchantAccount.class, msgs );
+            if( merchantAccount != null )
+                msgs = ( ( InternalEObject ) merchantAccount ).eInverseRemove( this,
+                        CimPackage.MERCHANT_ACCOUNT__VENDOR_SHIFTS, MerchantAccount.class, msgs );
+            if( newMerchantAccount != null )
+                msgs = ( ( InternalEObject ) newMerchantAccount ).eInverseAdd( this,
+                        CimPackage.MERCHANT_ACCOUNT__VENDOR_SHIFTS, MerchantAccount.class, msgs );
             msgs = basicSetMerchantAccount( newMerchantAccount, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -537,8 +545,9 @@ public class VendorShiftImpl extends ShiftImpl implements VendorShift {
         else {
             boolean oldMerchantAccountESet = merchantAccountESet;
             merchantAccountESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.VENDOR_SHIFT__MERCHANT_ACCOUNT, null, null, oldMerchantAccountESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.VENDOR_SHIFT__MERCHANT_ACCOUNT,
+                        null, null, oldMerchantAccountESet ) );
         }
     }
 
@@ -599,12 +608,14 @@ public class VendorShiftImpl extends ShiftImpl implements VendorShift {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTransactions() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.VENDOR_SHIFT__MERCHANT_ACCOUNT:
-            if( merchantAccount != null ) msgs = ( ( InternalEObject ) merchantAccount ).eInverseRemove( this,
-                    CimPackage.MERCHANT_ACCOUNT__VENDOR_SHIFTS, MerchantAccount.class, msgs );
+            if( merchantAccount != null )
+                msgs = ( ( InternalEObject ) merchantAccount ).eInverseRemove( this,
+                        CimPackage.MERCHANT_ACCOUNT__VENDOR_SHIFTS, MerchantAccount.class, msgs );
             return basicSetMerchantAccount( ( MerchantAccount ) otherEnd, msgs );
         case CimPackage.VENDOR_SHIFT__VENDOR:
-            if( vendor != null ) msgs = ( ( InternalEObject ) vendor ).eInverseRemove( this,
-                    CimPackage.VENDOR__VENDOR_SHIFTS, Vendor.class, msgs );
+            if( vendor != null )
+                msgs = ( ( InternalEObject ) vendor ).eInverseRemove( this, CimPackage.VENDOR__VENDOR_SHIFTS,
+                        Vendor.class, msgs );
             return basicSetVendor( ( Vendor ) otherEnd, msgs );
         case CimPackage.VENDOR_SHIFT__RECEIPTS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getReceipts() ).basicAdd( otherEnd,
@@ -753,7 +764,7 @@ public class VendorShiftImpl extends ShiftImpl implements VendorShift {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (merchantDebitAmount: " );
         if( merchantDebitAmountESet )
             result.append( merchantDebitAmount );

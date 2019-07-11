@@ -290,9 +290,10 @@ public class PendingCalculationImpl extends CimObjectWithIDImpl implements Pendi
         boolean oldMultiplyBeforeAddESet = multiplyBeforeAddESet;
         multiplyBeforeAdd = MULTIPLY_BEFORE_ADD_EDEFAULT;
         multiplyBeforeAddESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PENDING_CALCULATION__MULTIPLY_BEFORE_ADD,
-                        oldMultiplyBeforeAdd, MULTIPLY_BEFORE_ADD_EDEFAULT, oldMultiplyBeforeAddESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PENDING_CALCULATION__MULTIPLY_BEFORE_ADD, oldMultiplyBeforeAdd,
+                    MULTIPLY_BEFORE_ADD_EDEFAULT, oldMultiplyBeforeAddESet ) );
     }
 
     /**
@@ -326,8 +327,9 @@ public class PendingCalculationImpl extends CimObjectWithIDImpl implements Pendi
         offset = newOffset;
         boolean oldOffsetESet = offsetESet;
         offsetESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PENDING_CALCULATION__OFFSET, oldOffset, offset, !oldOffsetESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PENDING_CALCULATION__OFFSET, oldOffset,
+                    offset, !oldOffsetESet ) );
     }
 
     /**
@@ -341,8 +343,9 @@ public class PendingCalculationImpl extends CimObjectWithIDImpl implements Pendi
         boolean oldOffsetESet = offsetESet;
         offset = OFFSET_EDEFAULT;
         offsetESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PENDING_CALCULATION__OFFSET, oldOffset, OFFSET_EDEFAULT, oldOffsetESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PENDING_CALCULATION__OFFSET, oldOffset,
+                    OFFSET_EDEFAULT, oldOffsetESet ) );
     }
 
     /**
@@ -392,9 +395,10 @@ public class PendingCalculationImpl extends CimObjectWithIDImpl implements Pendi
         boolean oldScalarDenominatorESet = scalarDenominatorESet;
         scalarDenominator = SCALAR_DENOMINATOR_EDEFAULT;
         scalarDenominatorESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.PENDING_CALCULATION__SCALAR_DENOMINATOR,
-                        oldScalarDenominator, SCALAR_DENOMINATOR_EDEFAULT, oldScalarDenominatorESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PENDING_CALCULATION__SCALAR_DENOMINATOR, oldScalarDenominator,
+                    SCALAR_DENOMINATOR_EDEFAULT, oldScalarDenominatorESet ) );
     }
 
     /**
@@ -428,8 +432,9 @@ public class PendingCalculationImpl extends CimObjectWithIDImpl implements Pendi
         scalarFloat = newScalarFloat;
         boolean oldScalarFloatESet = scalarFloatESet;
         scalarFloatESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PENDING_CALCULATION__SCALAR_FLOAT, oldScalarFloat, scalarFloat, !oldScalarFloatESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PENDING_CALCULATION__SCALAR_FLOAT,
+                    oldScalarFloat, scalarFloat, !oldScalarFloatESet ) );
     }
 
     /**
@@ -521,8 +526,9 @@ public class PendingCalculationImpl extends CimObjectWithIDImpl implements Pendi
             InternalEObject oldReadingType = ( InternalEObject ) readingType;
             readingType = ( ReadingType ) eResolveProxy( oldReadingType );
             if( readingType != oldReadingType ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.PENDING_CALCULATION__READING_TYPE, oldReadingType, readingType ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.PENDING_CALCULATION__READING_TYPE, oldReadingType, readingType ) );
             }
         }
         return readingType;
@@ -567,10 +573,12 @@ public class PendingCalculationImpl extends CimObjectWithIDImpl implements Pendi
     public void setReadingType( ReadingType newReadingType ) {
         if( newReadingType != readingType ) {
             NotificationChain msgs = null;
-            if( readingType != null ) msgs = ( ( InternalEObject ) readingType ).eInverseRemove( this,
-                    CimPackage.READING_TYPE__PENDING_CALCULATION, ReadingType.class, msgs );
-            if( newReadingType != null ) msgs = ( ( InternalEObject ) newReadingType ).eInverseAdd( this,
-                    CimPackage.READING_TYPE__PENDING_CALCULATION, ReadingType.class, msgs );
+            if( readingType != null )
+                msgs = ( ( InternalEObject ) readingType ).eInverseRemove( this,
+                        CimPackage.READING_TYPE__PENDING_CALCULATION, ReadingType.class, msgs );
+            if( newReadingType != null )
+                msgs = ( ( InternalEObject ) newReadingType ).eInverseAdd( this,
+                        CimPackage.READING_TYPE__PENDING_CALCULATION, ReadingType.class, msgs );
             msgs = basicSetReadingType( newReadingType, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -621,8 +629,9 @@ public class PendingCalculationImpl extends CimObjectWithIDImpl implements Pendi
         else {
             boolean oldReadingTypeESet = readingTypeESet;
             readingTypeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PENDING_CALCULATION__READING_TYPE, null, null, oldReadingTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PENDING_CALCULATION__READING_TYPE,
+                        null, null, oldReadingTypeESet ) );
         }
     }
 
@@ -684,8 +693,9 @@ public class PendingCalculationImpl extends CimObjectWithIDImpl implements Pendi
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getIntervalBlocks() )
                     .basicAdd( otherEnd, msgs );
         case CimPackage.PENDING_CALCULATION__READING_TYPE:
-            if( readingType != null ) msgs = ( ( InternalEObject ) readingType ).eInverseRemove( this,
-                    CimPackage.READING_TYPE__PENDING_CALCULATION, ReadingType.class, msgs );
+            if( readingType != null )
+                msgs = ( ( InternalEObject ) readingType ).eInverseRemove( this,
+                        CimPackage.READING_TYPE__PENDING_CALCULATION, ReadingType.class, msgs );
             return basicSetReadingType( ( ReadingType ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -837,7 +847,7 @@ public class PendingCalculationImpl extends CimObjectWithIDImpl implements Pendi
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (multiplyBeforeAdd: " );
         if( multiplyBeforeAddESet )
             result.append( multiplyBeforeAdd );

@@ -172,8 +172,9 @@ public class SynchrocheckRelayImpl extends ProtectionEquipmentImpl implements Sy
         maxAngleDiff = newMaxAngleDiff;
         boolean oldMaxAngleDiffESet = maxAngleDiffESet;
         maxAngleDiffESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHROCHECK_RELAY__MAX_ANGLE_DIFF, oldMaxAngleDiff, maxAngleDiff, !oldMaxAngleDiffESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SYNCHROCHECK_RELAY__MAX_ANGLE_DIFF,
+                    oldMaxAngleDiff, maxAngleDiff, !oldMaxAngleDiffESet ) );
     }
 
     /**
@@ -223,8 +224,9 @@ public class SynchrocheckRelayImpl extends ProtectionEquipmentImpl implements Sy
         maxFreqDiff = newMaxFreqDiff;
         boolean oldMaxFreqDiffESet = maxFreqDiffESet;
         maxFreqDiffESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHROCHECK_RELAY__MAX_FREQ_DIFF, oldMaxFreqDiff, maxFreqDiff, !oldMaxFreqDiffESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SYNCHROCHECK_RELAY__MAX_FREQ_DIFF,
+                    oldMaxFreqDiff, maxFreqDiff, !oldMaxFreqDiffESet ) );
     }
 
     /**
@@ -274,8 +276,9 @@ public class SynchrocheckRelayImpl extends ProtectionEquipmentImpl implements Sy
         maxVoltDiff = newMaxVoltDiff;
         boolean oldMaxVoltDiffESet = maxVoltDiffESet;
         maxVoltDiffESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHROCHECK_RELAY__MAX_VOLT_DIFF, oldMaxVoltDiff, maxVoltDiff, !oldMaxVoltDiffESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SYNCHROCHECK_RELAY__MAX_VOLT_DIFF,
+                    oldMaxVoltDiff, maxVoltDiff, !oldMaxVoltDiffESet ) );
     }
 
     /**
@@ -391,7 +394,7 @@ public class SynchrocheckRelayImpl extends ProtectionEquipmentImpl implements Sy
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (maxAngleDiff: " );
         if( maxAngleDiffESet )
             result.append( maxAngleDiff );

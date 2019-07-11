@@ -117,7 +117,11 @@ public enum ChequeKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final ChequeKind[] VALUES_ARRAY = new ChequeKind[] { POSTAL_ORDER, BANK_ORDER, OTHER, };
+    private static final ChequeKind[] VALUES_ARRAY = new ChequeKind[] {
+            POSTAL_ORDER,
+            BANK_ORDER,
+            OTHER,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Cheque Kind</b></em>' enumerators.

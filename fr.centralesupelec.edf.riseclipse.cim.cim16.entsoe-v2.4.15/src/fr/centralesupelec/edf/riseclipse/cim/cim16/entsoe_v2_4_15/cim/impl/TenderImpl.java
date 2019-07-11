@@ -240,8 +240,9 @@ public class TenderImpl extends IdentifiedObjectImpl implements Tender {
         amount = newAmount;
         boolean oldAmountESet = amountESet;
         amountESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TENDER__AMOUNT,
-                oldAmount, amount, !oldAmountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TENDER__AMOUNT, oldAmount, amount,
+                    !oldAmountESet ) );
     }
 
     /**
@@ -255,8 +256,9 @@ public class TenderImpl extends IdentifiedObjectImpl implements Tender {
         boolean oldAmountESet = amountESet;
         amount = AMOUNT_EDEFAULT;
         amountESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TENDER__AMOUNT, oldAmount, AMOUNT_EDEFAULT, oldAmountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TENDER__AMOUNT, oldAmount,
+                    AMOUNT_EDEFAULT, oldAmountESet ) );
     }
 
     /**
@@ -290,8 +292,9 @@ public class TenderImpl extends IdentifiedObjectImpl implements Tender {
         change = newChange;
         boolean oldChangeESet = changeESet;
         changeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TENDER__CHANGE,
-                oldChange, change, !oldChangeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TENDER__CHANGE, oldChange, change,
+                    !oldChangeESet ) );
     }
 
     /**
@@ -305,8 +308,9 @@ public class TenderImpl extends IdentifiedObjectImpl implements Tender {
         boolean oldChangeESet = changeESet;
         change = CHANGE_EDEFAULT;
         changeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TENDER__CHANGE, oldChange, CHANGE_EDEFAULT, oldChangeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TENDER__CHANGE, oldChange,
+                    CHANGE_EDEFAULT, oldChangeESet ) );
     }
 
     /**
@@ -340,8 +344,9 @@ public class TenderImpl extends IdentifiedObjectImpl implements Tender {
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.TENDER__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TENDER__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -355,8 +360,9 @@ public class TenderImpl extends IdentifiedObjectImpl implements Tender {
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TENDER__KIND,
-                oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TENDER__KIND, oldKind, KIND_EDEFAULT,
+                    oldKindESet ) );
     }
 
     /**
@@ -409,18 +415,21 @@ public class TenderImpl extends IdentifiedObjectImpl implements Tender {
     public void setReceipt( Receipt newReceipt ) {
         if( newReceipt != receipt ) {
             NotificationChain msgs = null;
-            if( receipt != null ) msgs = ( ( InternalEObject ) receipt ).eInverseRemove( this,
-                    CimPackage.RECEIPT__TENDERS, Receipt.class, msgs );
-            if( newReceipt != null ) msgs = ( ( InternalEObject ) newReceipt ).eInverseAdd( this,
-                    CimPackage.RECEIPT__TENDERS, Receipt.class, msgs );
+            if( receipt != null )
+                msgs = ( ( InternalEObject ) receipt ).eInverseRemove( this, CimPackage.RECEIPT__TENDERS, Receipt.class,
+                        msgs );
+            if( newReceipt != null )
+                msgs = ( ( InternalEObject ) newReceipt ).eInverseAdd( this, CimPackage.RECEIPT__TENDERS, Receipt.class,
+                        msgs );
             msgs = basicSetReceipt( newReceipt, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldReceiptESet = receiptESet;
             receiptESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TENDER__RECEIPT, newReceipt, newReceipt, !oldReceiptESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TENDER__RECEIPT, newReceipt,
+                        newReceipt, !oldReceiptESet ) );
         }
     }
 
@@ -462,8 +471,9 @@ public class TenderImpl extends IdentifiedObjectImpl implements Tender {
         else {
             boolean oldReceiptESet = receiptESet;
             receiptESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TENDER__RECEIPT, null, null, oldReceiptESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TENDER__RECEIPT, null, null,
+                        oldReceiptESet ) );
         }
     }
 
@@ -488,8 +498,9 @@ public class TenderImpl extends IdentifiedObjectImpl implements Tender {
             InternalEObject oldCheque = ( InternalEObject ) cheque;
             cheque = ( Cheque ) eResolveProxy( oldCheque );
             if( cheque != oldCheque ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.TENDER__CHEQUE, oldCheque, cheque ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.TENDER__CHEQUE, oldCheque,
+                            cheque ) );
             }
         }
         return cheque;
@@ -534,18 +545,21 @@ public class TenderImpl extends IdentifiedObjectImpl implements Tender {
     public void setCheque( Cheque newCheque ) {
         if( newCheque != cheque ) {
             NotificationChain msgs = null;
-            if( cheque != null ) msgs = ( ( InternalEObject ) cheque ).eInverseRemove( this, CimPackage.CHEQUE__TENDER,
-                    Cheque.class, msgs );
-            if( newCheque != null ) msgs = ( ( InternalEObject ) newCheque ).eInverseAdd( this,
-                    CimPackage.CHEQUE__TENDER, Cheque.class, msgs );
+            if( cheque != null )
+                msgs = ( ( InternalEObject ) cheque ).eInverseRemove( this, CimPackage.CHEQUE__TENDER, Cheque.class,
+                        msgs );
+            if( newCheque != null )
+                msgs = ( ( InternalEObject ) newCheque ).eInverseAdd( this, CimPackage.CHEQUE__TENDER, Cheque.class,
+                        msgs );
             msgs = basicSetCheque( newCheque, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldChequeESet = chequeESet;
             chequeESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TENDER__CHEQUE, newCheque, newCheque, !oldChequeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TENDER__CHEQUE, newCheque, newCheque,
+                        !oldChequeESet ) );
         }
     }
 
@@ -586,8 +600,9 @@ public class TenderImpl extends IdentifiedObjectImpl implements Tender {
         else {
             boolean oldChequeESet = chequeESet;
             chequeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TENDER__CHEQUE, null, null, oldChequeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TENDER__CHEQUE, null, null,
+                        oldChequeESet ) );
         }
     }
 
@@ -612,8 +627,9 @@ public class TenderImpl extends IdentifiedObjectImpl implements Tender {
             InternalEObject oldCard = ( InternalEObject ) card;
             card = ( Card ) eResolveProxy( oldCard );
             if( card != oldCard ) {
-                if( eNotificationRequired() ) eNotify(
-                        new ENotificationImpl( this, Notification.RESOLVE, CimPackage.TENDER__CARD, oldCard, card ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.TENDER__CARD, oldCard,
+                            card ) );
             }
         }
         return card;
@@ -668,8 +684,9 @@ public class TenderImpl extends IdentifiedObjectImpl implements Tender {
         else {
             boolean oldCardESet = cardESet;
             cardESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TENDER__CARD, newCard, newCard, !oldCardESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TENDER__CARD, newCard, newCard,
+                        !oldCardESet ) );
         }
     }
 
@@ -710,8 +727,9 @@ public class TenderImpl extends IdentifiedObjectImpl implements Tender {
         else {
             boolean oldCardESet = cardESet;
             cardESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TENDER__CARD, null, null, oldCardESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TENDER__CARD, null, null,
+                        oldCardESet ) );
         }
     }
 
@@ -734,16 +752,18 @@ public class TenderImpl extends IdentifiedObjectImpl implements Tender {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.TENDER__RECEIPT:
-            if( receipt != null ) msgs = ( ( InternalEObject ) receipt ).eInverseRemove( this,
-                    CimPackage.RECEIPT__TENDERS, Receipt.class, msgs );
+            if( receipt != null )
+                msgs = ( ( InternalEObject ) receipt ).eInverseRemove( this, CimPackage.RECEIPT__TENDERS, Receipt.class,
+                        msgs );
             return basicSetReceipt( ( Receipt ) otherEnd, msgs );
         case CimPackage.TENDER__CARD:
             if( card != null )
                 msgs = ( ( InternalEObject ) card ).eInverseRemove( this, CimPackage.CARD__TENDER, Card.class, msgs );
             return basicSetCard( ( Card ) otherEnd, msgs );
         case CimPackage.TENDER__CHEQUE:
-            if( cheque != null ) msgs = ( ( InternalEObject ) cheque ).eInverseRemove( this, CimPackage.CHEQUE__TENDER,
-                    Cheque.class, msgs );
+            if( cheque != null )
+                msgs = ( ( InternalEObject ) cheque ).eInverseRemove( this, CimPackage.CHEQUE__TENDER, Cheque.class,
+                        msgs );
             return basicSetCheque( ( Cheque ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -886,7 +906,7 @@ public class TenderImpl extends IdentifiedObjectImpl implements Tender {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (amount: " );
         if( amountESet )
             result.append( amount );

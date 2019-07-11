@@ -156,8 +156,9 @@ public class ChannelImpl extends IdentifiedObjectImpl implements Channel {
         isVirtual = newIsVirtual;
         boolean oldIsVirtualESet = isVirtualESet;
         isVirtualESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CHANNEL__IS_VIRTUAL, oldIsVirtual, isVirtual, !oldIsVirtualESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CHANNEL__IS_VIRTUAL, oldIsVirtual,
+                    isVirtual, !oldIsVirtualESet ) );
     }
 
     /**
@@ -171,8 +172,9 @@ public class ChannelImpl extends IdentifiedObjectImpl implements Channel {
         boolean oldIsVirtualESet = isVirtualESet;
         isVirtual = IS_VIRTUAL_EDEFAULT;
         isVirtualESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CHANNEL__IS_VIRTUAL, oldIsVirtual, IS_VIRTUAL_EDEFAULT, oldIsVirtualESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CHANNEL__IS_VIRTUAL, oldIsVirtual,
+                    IS_VIRTUAL_EDEFAULT, oldIsVirtualESet ) );
     }
 
     /**
@@ -225,18 +227,21 @@ public class ChannelImpl extends IdentifiedObjectImpl implements Channel {
     public void setRegister( Register newRegister ) {
         if( newRegister != register ) {
             NotificationChain msgs = null;
-            if( register != null ) msgs = ( ( InternalEObject ) register ).eInverseRemove( this,
-                    CimPackage.REGISTER__CHANNELS, Register.class, msgs );
-            if( newRegister != null ) msgs = ( ( InternalEObject ) newRegister ).eInverseAdd( this,
-                    CimPackage.REGISTER__CHANNELS, Register.class, msgs );
+            if( register != null )
+                msgs = ( ( InternalEObject ) register ).eInverseRemove( this, CimPackage.REGISTER__CHANNELS,
+                        Register.class, msgs );
+            if( newRegister != null )
+                msgs = ( ( InternalEObject ) newRegister ).eInverseAdd( this, CimPackage.REGISTER__CHANNELS,
+                        Register.class, msgs );
             msgs = basicSetRegister( newRegister, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldRegisterESet = registerESet;
             registerESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CHANNEL__REGISTER, newRegister, newRegister, !oldRegisterESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CHANNEL__REGISTER, newRegister,
+                        newRegister, !oldRegisterESet ) );
         }
     }
 
@@ -278,8 +283,9 @@ public class ChannelImpl extends IdentifiedObjectImpl implements Channel {
         else {
             boolean oldRegisterESet = registerESet;
             registerESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CHANNEL__REGISTER, null, null, oldRegisterESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CHANNEL__REGISTER, null, null,
+                        oldRegisterESet ) );
         }
     }
 
@@ -333,18 +339,21 @@ public class ChannelImpl extends IdentifiedObjectImpl implements Channel {
     public void setReadingType( ReadingType newReadingType ) {
         if( newReadingType != readingType ) {
             NotificationChain msgs = null;
-            if( readingType != null ) msgs = ( ( InternalEObject ) readingType ).eInverseRemove( this,
-                    CimPackage.READING_TYPE__CHANNEL, ReadingType.class, msgs );
-            if( newReadingType != null ) msgs = ( ( InternalEObject ) newReadingType ).eInverseAdd( this,
-                    CimPackage.READING_TYPE__CHANNEL, ReadingType.class, msgs );
+            if( readingType != null )
+                msgs = ( ( InternalEObject ) readingType ).eInverseRemove( this, CimPackage.READING_TYPE__CHANNEL,
+                        ReadingType.class, msgs );
+            if( newReadingType != null )
+                msgs = ( ( InternalEObject ) newReadingType ).eInverseAdd( this, CimPackage.READING_TYPE__CHANNEL,
+                        ReadingType.class, msgs );
             msgs = basicSetReadingType( newReadingType, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldReadingTypeESet = readingTypeESet;
             readingTypeESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CHANNEL__READING_TYPE, newReadingType, newReadingType, !oldReadingTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CHANNEL__READING_TYPE,
+                        newReadingType, newReadingType, !oldReadingTypeESet ) );
         }
     }
 
@@ -386,8 +395,9 @@ public class ChannelImpl extends IdentifiedObjectImpl implements Channel {
         else {
             boolean oldReadingTypeESet = readingTypeESet;
             readingTypeESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CHANNEL__READING_TYPE, null, null, oldReadingTypeESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CHANNEL__READING_TYPE, null, null,
+                        oldReadingTypeESet ) );
         }
     }
 
@@ -410,12 +420,14 @@ public class ChannelImpl extends IdentifiedObjectImpl implements Channel {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CHANNEL__REGISTER:
-            if( register != null ) msgs = ( ( InternalEObject ) register ).eInverseRemove( this,
-                    CimPackage.REGISTER__CHANNELS, Register.class, msgs );
+            if( register != null )
+                msgs = ( ( InternalEObject ) register ).eInverseRemove( this, CimPackage.REGISTER__CHANNELS,
+                        Register.class, msgs );
             return basicSetRegister( ( Register ) otherEnd, msgs );
         case CimPackage.CHANNEL__READING_TYPE:
-            if( readingType != null ) msgs = ( ( InternalEObject ) readingType ).eInverseRemove( this,
-                    CimPackage.READING_TYPE__CHANNEL, ReadingType.class, msgs );
+            if( readingType != null )
+                msgs = ( ( InternalEObject ) readingType ).eInverseRemove( this, CimPackage.READING_TYPE__CHANNEL,
+                        ReadingType.class, msgs );
             return basicSetReadingType( ( ReadingType ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -524,7 +536,7 @@ public class ChannelImpl extends IdentifiedObjectImpl implements Channel {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (isVirtual: " );
         if( isVirtualESet )
             result.append( isVirtual );

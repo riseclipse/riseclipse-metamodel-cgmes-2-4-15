@@ -267,8 +267,9 @@ public class BaseReadingImpl extends MeasurementValueImpl implements BaseReading
         source = newSource;
         boolean oldSourceESet = sourceESet;
         sourceESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BASE_READING__SOURCE, oldSource, source, !oldSourceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BASE_READING__SOURCE, oldSource, source,
+                    !oldSourceESet ) );
     }
 
     /**
@@ -282,8 +283,9 @@ public class BaseReadingImpl extends MeasurementValueImpl implements BaseReading
         boolean oldSourceESet = sourceESet;
         source = SOURCE_EDEFAULT;
         sourceESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BASE_READING__SOURCE, oldSource, SOURCE_EDEFAULT, oldSourceESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BASE_READING__SOURCE, oldSource,
+                    SOURCE_EDEFAULT, oldSourceESet ) );
     }
 
     /**
@@ -317,8 +319,9 @@ public class BaseReadingImpl extends MeasurementValueImpl implements BaseReading
         value = newValue;
         boolean oldValueESet = valueESet;
         valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.BASE_READING__VALUE, oldValue, value, !oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BASE_READING__VALUE, oldValue, value,
+                    !oldValueESet ) );
     }
 
     /**
@@ -332,8 +335,9 @@ public class BaseReadingImpl extends MeasurementValueImpl implements BaseReading
         boolean oldValueESet = valueESet;
         value = VALUE_EDEFAULT;
         valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.BASE_READING__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BASE_READING__VALUE, oldValue,
+                    VALUE_EDEFAULT, oldValueESet ) );
     }
 
     /**
@@ -386,18 +390,21 @@ public class BaseReadingImpl extends MeasurementValueImpl implements BaseReading
     public void setTimePeriod( DateTimeInterval newTimePeriod ) {
         if( newTimePeriod != timePeriod ) {
             NotificationChain msgs = null;
-            if( timePeriod != null ) msgs = ( ( InternalEObject ) timePeriod ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.BASE_READING__TIME_PERIOD, null, msgs );
-            if( newTimePeriod != null ) msgs = ( ( InternalEObject ) newTimePeriod ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.BASE_READING__TIME_PERIOD, null, msgs );
+            if( timePeriod != null )
+                msgs = ( ( InternalEObject ) timePeriod ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.BASE_READING__TIME_PERIOD, null, msgs );
+            if( newTimePeriod != null )
+                msgs = ( ( InternalEObject ) newTimePeriod ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.BASE_READING__TIME_PERIOD, null, msgs );
             msgs = basicSetTimePeriod( newTimePeriod, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTimePeriodESet = timePeriodESet;
             timePeriodESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.BASE_READING__TIME_PERIOD, newTimePeriod, newTimePeriod, !oldTimePeriodESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.BASE_READING__TIME_PERIOD,
+                        newTimePeriod, newTimePeriod, !oldTimePeriodESet ) );
         }
     }
 
@@ -439,8 +446,9 @@ public class BaseReadingImpl extends MeasurementValueImpl implements BaseReading
         else {
             boolean oldTimePeriodESet = timePeriodESet;
             timePeriodESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.BASE_READING__TIME_PERIOD, null, null, oldTimePeriodESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.BASE_READING__TIME_PERIOD, null,
+                        null, oldTimePeriodESet ) );
         }
     }
 
@@ -629,7 +637,7 @@ public class BaseReadingImpl extends MeasurementValueImpl implements BaseReading
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (reportedDateTime: " );
         if( reportedDateTimeESet )
             result.append( reportedDateTime );

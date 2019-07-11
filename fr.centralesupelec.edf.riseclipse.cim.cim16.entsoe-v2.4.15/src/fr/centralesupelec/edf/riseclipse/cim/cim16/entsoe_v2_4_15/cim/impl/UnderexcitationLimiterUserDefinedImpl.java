@@ -134,9 +134,10 @@ public class UnderexcitationLimiterUserDefinedImpl extends UnderexcitationLimite
         proprietary = newProprietary;
         boolean oldProprietaryESet = proprietaryESet;
         proprietaryESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.UNDEREXCITATION_LIMITER_USER_DEFINED__PROPRIETARY, oldProprietary, proprietary,
-                !oldProprietaryESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.UNDEREXCITATION_LIMITER_USER_DEFINED__PROPRIETARY, oldProprietary, proprietary,
+                    !oldProprietaryESet ) );
     }
 
     /**
@@ -150,9 +151,10 @@ public class UnderexcitationLimiterUserDefinedImpl extends UnderexcitationLimite
         boolean oldProprietaryESet = proprietaryESet;
         proprietary = PROPRIETARY_EDEFAULT;
         proprietaryESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.UNDEREXCITATION_LIMITER_USER_DEFINED__PROPRIETARY, oldProprietary, PROPRIETARY_EDEFAULT,
-                oldProprietaryESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.UNDEREXCITATION_LIMITER_USER_DEFINED__PROPRIETARY, oldProprietary, PROPRIETARY_EDEFAULT,
+                    oldProprietaryESet ) );
     }
 
     /**
@@ -313,7 +315,7 @@ public class UnderexcitationLimiterUserDefinedImpl extends UnderexcitationLimite
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (proprietary: " );
         if( proprietaryESet )
             result.append( proprietary );

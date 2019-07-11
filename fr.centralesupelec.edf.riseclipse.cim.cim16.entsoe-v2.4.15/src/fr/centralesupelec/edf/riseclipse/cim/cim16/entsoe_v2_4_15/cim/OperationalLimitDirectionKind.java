@@ -117,8 +117,11 @@ public enum OperationalLimitDirectionKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final OperationalLimitDirectionKind[] VALUES_ARRAY = new OperationalLimitDirectionKind[] { HIGH, LOW,
-            ABSOLUTE_VALUE, };
+    private static final OperationalLimitDirectionKind[] VALUES_ARRAY = new OperationalLimitDirectionKind[] {
+            HIGH,
+            LOW,
+            ABSOLUTE_VALUE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Operational Limit Direction Kind</b></em>' enumerators.

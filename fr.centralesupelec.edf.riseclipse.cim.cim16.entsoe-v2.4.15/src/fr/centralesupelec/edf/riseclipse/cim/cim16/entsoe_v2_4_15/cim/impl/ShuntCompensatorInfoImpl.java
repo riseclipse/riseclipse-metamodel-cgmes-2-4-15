@@ -306,9 +306,10 @@ public class ShuntCompensatorInfoImpl extends AssetInfoImpl implements ShuntComp
         ratedReactivePower = newRatedReactivePower;
         boolean oldRatedReactivePowerESet = ratedReactivePowerESet;
         ratedReactivePowerESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.SHUNT_COMPENSATOR_INFO__RATED_REACTIVE_POWER,
-                        oldRatedReactivePower, ratedReactivePower, !oldRatedReactivePowerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SHUNT_COMPENSATOR_INFO__RATED_REACTIVE_POWER, oldRatedReactivePower, ratedReactivePower,
+                    !oldRatedReactivePowerESet ) );
     }
 
     /**
@@ -322,9 +323,10 @@ public class ShuntCompensatorInfoImpl extends AssetInfoImpl implements ShuntComp
         boolean oldRatedReactivePowerESet = ratedReactivePowerESet;
         ratedReactivePower = RATED_REACTIVE_POWER_EDEFAULT;
         ratedReactivePowerESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SHUNT_COMPENSATOR_INFO__RATED_REACTIVE_POWER, oldRatedReactivePower,
-                RATED_REACTIVE_POWER_EDEFAULT, oldRatedReactivePowerESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SHUNT_COMPENSATOR_INFO__RATED_REACTIVE_POWER, oldRatedReactivePower,
+                    RATED_REACTIVE_POWER_EDEFAULT, oldRatedReactivePowerESet ) );
     }
 
     /**
@@ -486,7 +488,7 @@ public class ShuntCompensatorInfoImpl extends AssetInfoImpl implements ShuntComp
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (maxPowerLoss: " );
         if( maxPowerLossESet )
             result.append( maxPowerLoss );

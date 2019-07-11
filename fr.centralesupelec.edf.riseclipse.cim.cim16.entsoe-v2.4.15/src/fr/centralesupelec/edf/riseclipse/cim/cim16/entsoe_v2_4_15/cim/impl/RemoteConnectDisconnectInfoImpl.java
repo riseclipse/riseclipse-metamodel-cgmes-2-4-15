@@ -446,9 +446,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         armedTimeout = newArmedTimeout;
         boolean oldArmedTimeoutESet = armedTimeoutESet;
         armedTimeoutESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__ARMED_TIMEOUT,
-                        oldArmedTimeout, armedTimeout, !oldArmedTimeoutESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__ARMED_TIMEOUT, oldArmedTimeout, armedTimeout,
+                    !oldArmedTimeoutESet ) );
     }
 
     /**
@@ -462,9 +463,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         boolean oldArmedTimeoutESet = armedTimeoutESet;
         armedTimeout = ARMED_TIMEOUT_EDEFAULT;
         armedTimeoutESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__ARMED_TIMEOUT, oldArmedTimeout, ARMED_TIMEOUT_EDEFAULT,
-                oldArmedTimeoutESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__ARMED_TIMEOUT, oldArmedTimeout, ARMED_TIMEOUT_EDEFAULT,
+                    oldArmedTimeoutESet ) );
     }
 
     /**
@@ -498,9 +500,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         customerVoltageLimit = newCustomerVoltageLimit;
         boolean oldCustomerVoltageLimitESet = customerVoltageLimitESet;
         customerVoltageLimitESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__CUSTOMER_VOLTAGE_LIMIT, oldCustomerVoltageLimit,
-                customerVoltageLimit, !oldCustomerVoltageLimitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__CUSTOMER_VOLTAGE_LIMIT, oldCustomerVoltageLimit,
+                    customerVoltageLimit, !oldCustomerVoltageLimitESet ) );
     }
 
     /**
@@ -514,9 +517,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         boolean oldCustomerVoltageLimitESet = customerVoltageLimitESet;
         customerVoltageLimit = CUSTOMER_VOLTAGE_LIMIT_EDEFAULT;
         customerVoltageLimitESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__CUSTOMER_VOLTAGE_LIMIT, oldCustomerVoltageLimit,
-                CUSTOMER_VOLTAGE_LIMIT_EDEFAULT, oldCustomerVoltageLimitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__CUSTOMER_VOLTAGE_LIMIT, oldCustomerVoltageLimit,
+                    CUSTOMER_VOLTAGE_LIMIT_EDEFAULT, oldCustomerVoltageLimitESet ) );
     }
 
     /**
@@ -550,9 +554,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         energyLimit = newEnergyLimit;
         boolean oldEnergyLimitESet = energyLimitESet;
         energyLimitESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__ENERGY_LIMIT,
-                        oldEnergyLimit, energyLimit, !oldEnergyLimitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__ENERGY_LIMIT, oldEnergyLimit, energyLimit,
+                    !oldEnergyLimitESet ) );
     }
 
     /**
@@ -566,9 +571,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         boolean oldEnergyLimitESet = energyLimitESet;
         energyLimit = ENERGY_LIMIT_EDEFAULT;
         energyLimitESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__ENERGY_LIMIT, oldEnergyLimit, ENERGY_LIMIT_EDEFAULT,
-                oldEnergyLimitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__ENERGY_LIMIT, oldEnergyLimit, ENERGY_LIMIT_EDEFAULT,
+                    oldEnergyLimitESet ) );
     }
 
     /**
@@ -602,9 +608,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         energyUsageStartDateTime = newEnergyUsageStartDateTime;
         boolean oldEnergyUsageStartDateTimeESet = energyUsageStartDateTimeESet;
         energyUsageStartDateTimeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__ENERGY_USAGE_START_DATE_TIME, oldEnergyUsageStartDateTime,
-                energyUsageStartDateTime, !oldEnergyUsageStartDateTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__ENERGY_USAGE_START_DATE_TIME,
+                    oldEnergyUsageStartDateTime, energyUsageStartDateTime, !oldEnergyUsageStartDateTimeESet ) );
     }
 
     /**
@@ -618,9 +625,11 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         boolean oldEnergyUsageStartDateTimeESet = energyUsageStartDateTimeESet;
         energyUsageStartDateTime = ENERGY_USAGE_START_DATE_TIME_EDEFAULT;
         energyUsageStartDateTimeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__ENERGY_USAGE_START_DATE_TIME, oldEnergyUsageStartDateTime,
-                ENERGY_USAGE_START_DATE_TIME_EDEFAULT, oldEnergyUsageStartDateTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__ENERGY_USAGE_START_DATE_TIME,
+                    oldEnergyUsageStartDateTime, ENERGY_USAGE_START_DATE_TIME_EDEFAULT,
+                    oldEnergyUsageStartDateTimeESet ) );
     }
 
     /**
@@ -654,9 +663,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         energyUsageWarning = newEnergyUsageWarning;
         boolean oldEnergyUsageWarningESet = energyUsageWarningESet;
         energyUsageWarningESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__ENERGY_USAGE_WARNING, oldEnergyUsageWarning,
-                energyUsageWarning, !oldEnergyUsageWarningESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__ENERGY_USAGE_WARNING, oldEnergyUsageWarning,
+                    energyUsageWarning, !oldEnergyUsageWarningESet ) );
     }
 
     /**
@@ -670,9 +680,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         boolean oldEnergyUsageWarningESet = energyUsageWarningESet;
         energyUsageWarning = ENERGY_USAGE_WARNING_EDEFAULT;
         energyUsageWarningESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__ENERGY_USAGE_WARNING, oldEnergyUsageWarning,
-                ENERGY_USAGE_WARNING_EDEFAULT, oldEnergyUsageWarningESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__ENERGY_USAGE_WARNING, oldEnergyUsageWarning,
+                    ENERGY_USAGE_WARNING_EDEFAULT, oldEnergyUsageWarningESet ) );
     }
 
     /**
@@ -706,9 +717,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         isArmConnect = newIsArmConnect;
         boolean oldIsArmConnectESet = isArmConnectESet;
         isArmConnectESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__IS_ARM_CONNECT, oldIsArmConnect, isArmConnect,
-                !oldIsArmConnectESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__IS_ARM_CONNECT, oldIsArmConnect, isArmConnect,
+                    !oldIsArmConnectESet ) );
     }
 
     /**
@@ -722,9 +734,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         boolean oldIsArmConnectESet = isArmConnectESet;
         isArmConnect = IS_ARM_CONNECT_EDEFAULT;
         isArmConnectESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__IS_ARM_CONNECT, oldIsArmConnect, IS_ARM_CONNECT_EDEFAULT,
-                oldIsArmConnectESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__IS_ARM_CONNECT, oldIsArmConnect, IS_ARM_CONNECT_EDEFAULT,
+                    oldIsArmConnectESet ) );
     }
 
     /**
@@ -758,9 +771,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         isArmDisconnect = newIsArmDisconnect;
         boolean oldIsArmDisconnectESet = isArmDisconnectESet;
         isArmDisconnectESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__IS_ARM_DISCONNECT, oldIsArmDisconnect, isArmDisconnect,
-                !oldIsArmDisconnectESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__IS_ARM_DISCONNECT, oldIsArmDisconnect, isArmDisconnect,
+                    !oldIsArmDisconnectESet ) );
     }
 
     /**
@@ -774,9 +788,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         boolean oldIsArmDisconnectESet = isArmDisconnectESet;
         isArmDisconnect = IS_ARM_DISCONNECT_EDEFAULT;
         isArmDisconnectESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__IS_ARM_DISCONNECT, oldIsArmDisconnect,
-                IS_ARM_DISCONNECT_EDEFAULT, oldIsArmDisconnectESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__IS_ARM_DISCONNECT, oldIsArmDisconnect,
+                    IS_ARM_DISCONNECT_EDEFAULT, oldIsArmDisconnectESet ) );
     }
 
     /**
@@ -810,9 +825,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         isEnergyLimiting = newIsEnergyLimiting;
         boolean oldIsEnergyLimitingESet = isEnergyLimitingESet;
         isEnergyLimitingESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__IS_ENERGY_LIMITING, oldIsEnergyLimiting, isEnergyLimiting,
-                !oldIsEnergyLimitingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__IS_ENERGY_LIMITING, oldIsEnergyLimiting,
+                    isEnergyLimiting, !oldIsEnergyLimitingESet ) );
     }
 
     /**
@@ -826,9 +842,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         boolean oldIsEnergyLimitingESet = isEnergyLimitingESet;
         isEnergyLimiting = IS_ENERGY_LIMITING_EDEFAULT;
         isEnergyLimitingESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__IS_ENERGY_LIMITING, oldIsEnergyLimiting,
-                IS_ENERGY_LIMITING_EDEFAULT, oldIsEnergyLimitingESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__IS_ENERGY_LIMITING, oldIsEnergyLimiting,
+                    IS_ENERGY_LIMITING_EDEFAULT, oldIsEnergyLimitingESet ) );
     }
 
     /**
@@ -862,9 +879,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         needsPowerLimitCheck = newNeedsPowerLimitCheck;
         boolean oldNeedsPowerLimitCheckESet = needsPowerLimitCheckESet;
         needsPowerLimitCheckESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__NEEDS_POWER_LIMIT_CHECK, oldNeedsPowerLimitCheck,
-                needsPowerLimitCheck, !oldNeedsPowerLimitCheckESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__NEEDS_POWER_LIMIT_CHECK, oldNeedsPowerLimitCheck,
+                    needsPowerLimitCheck, !oldNeedsPowerLimitCheckESet ) );
     }
 
     /**
@@ -878,9 +896,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         boolean oldNeedsPowerLimitCheckESet = needsPowerLimitCheckESet;
         needsPowerLimitCheck = NEEDS_POWER_LIMIT_CHECK_EDEFAULT;
         needsPowerLimitCheckESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__NEEDS_POWER_LIMIT_CHECK, oldNeedsPowerLimitCheck,
-                NEEDS_POWER_LIMIT_CHECK_EDEFAULT, oldNeedsPowerLimitCheckESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__NEEDS_POWER_LIMIT_CHECK, oldNeedsPowerLimitCheck,
+                    NEEDS_POWER_LIMIT_CHECK_EDEFAULT, oldNeedsPowerLimitCheckESet ) );
     }
 
     /**
@@ -914,9 +933,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         needsVoltageLimitCheck = newNeedsVoltageLimitCheck;
         boolean oldNeedsVoltageLimitCheckESet = needsVoltageLimitCheckESet;
         needsVoltageLimitCheckESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__NEEDS_VOLTAGE_LIMIT_CHECK, oldNeedsVoltageLimitCheck,
-                needsVoltageLimitCheck, !oldNeedsVoltageLimitCheckESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__NEEDS_VOLTAGE_LIMIT_CHECK, oldNeedsVoltageLimitCheck,
+                    needsVoltageLimitCheck, !oldNeedsVoltageLimitCheckESet ) );
     }
 
     /**
@@ -930,9 +950,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         boolean oldNeedsVoltageLimitCheckESet = needsVoltageLimitCheckESet;
         needsVoltageLimitCheck = NEEDS_VOLTAGE_LIMIT_CHECK_EDEFAULT;
         needsVoltageLimitCheckESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__NEEDS_VOLTAGE_LIMIT_CHECK, oldNeedsVoltageLimitCheck,
-                NEEDS_VOLTAGE_LIMIT_CHECK_EDEFAULT, oldNeedsVoltageLimitCheckESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__NEEDS_VOLTAGE_LIMIT_CHECK, oldNeedsVoltageLimitCheck,
+                    NEEDS_VOLTAGE_LIMIT_CHECK_EDEFAULT, oldNeedsVoltageLimitCheckESet ) );
     }
 
     /**
@@ -966,9 +987,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         powerLimit = newPowerLimit;
         boolean oldPowerLimitESet = powerLimitESet;
         powerLimitESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__POWER_LIMIT,
-                        oldPowerLimit, powerLimit, !oldPowerLimitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__POWER_LIMIT, oldPowerLimit, powerLimit,
+                    !oldPowerLimitESet ) );
     }
 
     /**
@@ -982,9 +1004,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         boolean oldPowerLimitESet = powerLimitESet;
         powerLimit = POWER_LIMIT_EDEFAULT;
         powerLimitESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__POWER_LIMIT,
-                        oldPowerLimit, POWER_LIMIT_EDEFAULT, oldPowerLimitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__POWER_LIMIT, oldPowerLimit, POWER_LIMIT_EDEFAULT,
+                    oldPowerLimitESet ) );
     }
 
     /**
@@ -1018,9 +1041,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         usePushbutton = newUsePushbutton;
         boolean oldUsePushbuttonESet = usePushbuttonESet;
         usePushbuttonESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__USE_PUSHBUTTON, oldUsePushbutton, usePushbutton,
-                !oldUsePushbuttonESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__USE_PUSHBUTTON, oldUsePushbutton, usePushbutton,
+                    !oldUsePushbuttonESet ) );
     }
 
     /**
@@ -1034,9 +1058,10 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
         boolean oldUsePushbuttonESet = usePushbuttonESet;
         usePushbutton = USE_PUSHBUTTON_EDEFAULT;
         usePushbuttonESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__USE_PUSHBUTTON, oldUsePushbutton, USE_PUSHBUTTON_EDEFAULT,
-                oldUsePushbuttonESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.REMOTE_CONNECT_DISCONNECT_INFO__USE_PUSHBUTTON, oldUsePushbutton,
+                    USE_PUSHBUTTON_EDEFAULT, oldUsePushbuttonESet ) );
     }
 
     /**
@@ -1226,7 +1251,7 @@ public class RemoteConnectDisconnectInfoImpl extends MinimalEObjectImpl.Containe
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (armedTimeout: " );
         if( armedTimeoutESet )
             result.append( armedTimeout );

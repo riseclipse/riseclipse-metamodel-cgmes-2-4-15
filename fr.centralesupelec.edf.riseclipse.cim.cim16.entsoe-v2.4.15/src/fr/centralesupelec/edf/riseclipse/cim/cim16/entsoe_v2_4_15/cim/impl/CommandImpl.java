@@ -186,8 +186,9 @@ public class CommandImpl extends ControlImpl implements Command {
         normalValue = newNormalValue;
         boolean oldNormalValueESet = normalValueESet;
         normalValueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.COMMAND__NORMAL_VALUE, oldNormalValue, normalValue, !oldNormalValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.COMMAND__NORMAL_VALUE, oldNormalValue,
+                    normalValue, !oldNormalValueESet ) );
     }
 
     /**
@@ -201,8 +202,9 @@ public class CommandImpl extends ControlImpl implements Command {
         boolean oldNormalValueESet = normalValueESet;
         normalValue = NORMAL_VALUE_EDEFAULT;
         normalValueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.COMMAND__NORMAL_VALUE, oldNormalValue, NORMAL_VALUE_EDEFAULT, oldNormalValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.COMMAND__NORMAL_VALUE, oldNormalValue,
+                    NORMAL_VALUE_EDEFAULT, oldNormalValueESet ) );
     }
 
     /**
@@ -236,8 +238,9 @@ public class CommandImpl extends ControlImpl implements Command {
         value = newValue;
         boolean oldValueESet = valueESet;
         valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.COMMAND__VALUE,
-                oldValue, value, !oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.COMMAND__VALUE, oldValue, value,
+                    !oldValueESet ) );
     }
 
     /**
@@ -251,8 +254,9 @@ public class CommandImpl extends ControlImpl implements Command {
         boolean oldValueESet = valueESet;
         value = VALUE_EDEFAULT;
         valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.COMMAND__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.COMMAND__VALUE, oldValue,
+                    VALUE_EDEFAULT, oldValueESet ) );
     }
 
     /**
@@ -276,8 +280,9 @@ public class CommandImpl extends ControlImpl implements Command {
             InternalEObject oldDiscreteValue = ( InternalEObject ) discreteValue;
             discreteValue = ( DiscreteValue ) eResolveProxy( oldDiscreteValue );
             if( discreteValue != oldDiscreteValue ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.COMMAND__DISCRETE_VALUE, oldDiscreteValue, discreteValue ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.COMMAND__DISCRETE_VALUE,
+                            oldDiscreteValue, discreteValue ) );
             }
         }
         return discreteValue;
@@ -322,18 +327,21 @@ public class CommandImpl extends ControlImpl implements Command {
     public void setDiscreteValue( DiscreteValue newDiscreteValue ) {
         if( newDiscreteValue != discreteValue ) {
             NotificationChain msgs = null;
-            if( discreteValue != null ) msgs = ( ( InternalEObject ) discreteValue ).eInverseRemove( this,
-                    CimPackage.DISCRETE_VALUE__COMMAND, DiscreteValue.class, msgs );
-            if( newDiscreteValue != null ) msgs = ( ( InternalEObject ) newDiscreteValue ).eInverseAdd( this,
-                    CimPackage.DISCRETE_VALUE__COMMAND, DiscreteValue.class, msgs );
+            if( discreteValue != null )
+                msgs = ( ( InternalEObject ) discreteValue ).eInverseRemove( this, CimPackage.DISCRETE_VALUE__COMMAND,
+                        DiscreteValue.class, msgs );
+            if( newDiscreteValue != null )
+                msgs = ( ( InternalEObject ) newDiscreteValue ).eInverseAdd( this, CimPackage.DISCRETE_VALUE__COMMAND,
+                        DiscreteValue.class, msgs );
             msgs = basicSetDiscreteValue( newDiscreteValue, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldDiscreteValueESet = discreteValueESet;
             discreteValueESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.COMMAND__DISCRETE_VALUE, newDiscreteValue, newDiscreteValue, !oldDiscreteValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.COMMAND__DISCRETE_VALUE,
+                        newDiscreteValue, newDiscreteValue, !oldDiscreteValueESet ) );
         }
     }
 
@@ -375,8 +383,9 @@ public class CommandImpl extends ControlImpl implements Command {
         else {
             boolean oldDiscreteValueESet = discreteValueESet;
             discreteValueESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.COMMAND__DISCRETE_VALUE, null, null, oldDiscreteValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.COMMAND__DISCRETE_VALUE, null,
+                        null, oldDiscreteValueESet ) );
         }
     }
 
@@ -430,18 +439,21 @@ public class CommandImpl extends ControlImpl implements Command {
     public void setValueAliasSet( ValueAliasSet newValueAliasSet ) {
         if( newValueAliasSet != valueAliasSet ) {
             NotificationChain msgs = null;
-            if( valueAliasSet != null ) msgs = ( ( InternalEObject ) valueAliasSet ).eInverseRemove( this,
-                    CimPackage.VALUE_ALIAS_SET__COMMANDS, ValueAliasSet.class, msgs );
-            if( newValueAliasSet != null ) msgs = ( ( InternalEObject ) newValueAliasSet ).eInverseAdd( this,
-                    CimPackage.VALUE_ALIAS_SET__COMMANDS, ValueAliasSet.class, msgs );
+            if( valueAliasSet != null )
+                msgs = ( ( InternalEObject ) valueAliasSet ).eInverseRemove( this, CimPackage.VALUE_ALIAS_SET__COMMANDS,
+                        ValueAliasSet.class, msgs );
+            if( newValueAliasSet != null )
+                msgs = ( ( InternalEObject ) newValueAliasSet ).eInverseAdd( this, CimPackage.VALUE_ALIAS_SET__COMMANDS,
+                        ValueAliasSet.class, msgs );
             msgs = basicSetValueAliasSet( newValueAliasSet, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldValueAliasSetESet = valueAliasSetESet;
             valueAliasSetESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.COMMAND__VALUE_ALIAS_SET, newValueAliasSet, newValueAliasSet, !oldValueAliasSetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.COMMAND__VALUE_ALIAS_SET,
+                        newValueAliasSet, newValueAliasSet, !oldValueAliasSetESet ) );
         }
     }
 
@@ -483,8 +495,9 @@ public class CommandImpl extends ControlImpl implements Command {
         else {
             boolean oldValueAliasSetESet = valueAliasSetESet;
             valueAliasSetESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.COMMAND__VALUE_ALIAS_SET, null, null, oldValueAliasSetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.COMMAND__VALUE_ALIAS_SET, null,
+                        null, oldValueAliasSetESet ) );
         }
     }
 
@@ -507,12 +520,14 @@ public class CommandImpl extends ControlImpl implements Command {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.COMMAND__VALUE_ALIAS_SET:
-            if( valueAliasSet != null ) msgs = ( ( InternalEObject ) valueAliasSet ).eInverseRemove( this,
-                    CimPackage.VALUE_ALIAS_SET__COMMANDS, ValueAliasSet.class, msgs );
+            if( valueAliasSet != null )
+                msgs = ( ( InternalEObject ) valueAliasSet ).eInverseRemove( this, CimPackage.VALUE_ALIAS_SET__COMMANDS,
+                        ValueAliasSet.class, msgs );
             return basicSetValueAliasSet( ( ValueAliasSet ) otherEnd, msgs );
         case CimPackage.COMMAND__DISCRETE_VALUE:
-            if( discreteValue != null ) msgs = ( ( InternalEObject ) discreteValue ).eInverseRemove( this,
-                    CimPackage.DISCRETE_VALUE__COMMAND, DiscreteValue.class, msgs );
+            if( discreteValue != null )
+                msgs = ( ( InternalEObject ) discreteValue ).eInverseRemove( this, CimPackage.DISCRETE_VALUE__COMMAND,
+                        DiscreteValue.class, msgs );
             return basicSetDiscreteValue( ( DiscreteValue ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -632,7 +647,7 @@ public class CommandImpl extends ControlImpl implements Command {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (normalValue: " );
         if( normalValueESet )
             result.append( normalValue );

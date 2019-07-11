@@ -175,8 +175,9 @@ public class StringQuantityImpl extends MinimalEObjectImpl.Container implements 
         multiplier = newMultiplier == null ? MULTIPLIER_EDEFAULT : newMultiplier;
         boolean oldMultiplierESet = multiplierESet;
         multiplierESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STRING_QUANTITY__MULTIPLIER, oldMultiplier, multiplier, !oldMultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STRING_QUANTITY__MULTIPLIER,
+                    oldMultiplier, multiplier, !oldMultiplierESet ) );
     }
 
     /**
@@ -190,8 +191,9 @@ public class StringQuantityImpl extends MinimalEObjectImpl.Container implements 
         boolean oldMultiplierESet = multiplierESet;
         multiplier = MULTIPLIER_EDEFAULT;
         multiplierESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STRING_QUANTITY__MULTIPLIER, oldMultiplier, MULTIPLIER_EDEFAULT, oldMultiplierESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STRING_QUANTITY__MULTIPLIER,
+                    oldMultiplier, MULTIPLIER_EDEFAULT, oldMultiplierESet ) );
     }
 
     /**
@@ -225,8 +227,9 @@ public class StringQuantityImpl extends MinimalEObjectImpl.Container implements 
         unit = newUnit == null ? UNIT_EDEFAULT : newUnit;
         boolean oldUnitESet = unitESet;
         unitESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STRING_QUANTITY__UNIT, oldUnit, unit, !oldUnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STRING_QUANTITY__UNIT, oldUnit, unit,
+                    !oldUnitESet ) );
     }
 
     /**
@@ -240,8 +243,9 @@ public class StringQuantityImpl extends MinimalEObjectImpl.Container implements 
         boolean oldUnitESet = unitESet;
         unit = UNIT_EDEFAULT;
         unitESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STRING_QUANTITY__UNIT, oldUnit, UNIT_EDEFAULT, oldUnitESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STRING_QUANTITY__UNIT, oldUnit,
+                    UNIT_EDEFAULT, oldUnitESet ) );
     }
 
     /**
@@ -275,8 +279,9 @@ public class StringQuantityImpl extends MinimalEObjectImpl.Container implements 
         value = newValue;
         boolean oldValueESet = valueESet;
         valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.STRING_QUANTITY__VALUE, oldValue, value, !oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.STRING_QUANTITY__VALUE, oldValue, value,
+                    !oldValueESet ) );
     }
 
     /**
@@ -290,8 +295,9 @@ public class StringQuantityImpl extends MinimalEObjectImpl.Container implements 
         boolean oldValueESet = valueESet;
         value = VALUE_EDEFAULT;
         valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.STRING_QUANTITY__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.STRING_QUANTITY__VALUE, oldValue,
+                    VALUE_EDEFAULT, oldValueESet ) );
     }
 
     /**
@@ -391,7 +397,7 @@ public class StringQuantityImpl extends MinimalEObjectImpl.Container implements 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (multiplier: " );
         if( multiplierESet )
             result.append( multiplier );

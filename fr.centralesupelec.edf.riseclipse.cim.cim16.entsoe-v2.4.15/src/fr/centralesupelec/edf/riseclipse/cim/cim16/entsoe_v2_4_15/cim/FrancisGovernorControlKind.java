@@ -119,8 +119,10 @@ public enum FrancisGovernorControlKind implements Enumerator {
      * @generated
      */
     private static final FrancisGovernorControlKind[] VALUES_ARRAY = new FrancisGovernorControlKind[] {
-            MECHANIC_HYDROLIC_TACHO_ACCELERATOR, MECHANIC_HYDRAULIC_TRANSIENT_FEEDBACK,
-            ELECTROMECHANICAL_ELECTROHYDRAULIC, };
+            MECHANIC_HYDROLIC_TACHO_ACCELERATOR,
+            MECHANIC_HYDRAULIC_TRANSIENT_FEEDBACK,
+            ELECTROMECHANICAL_ELECTROHYDRAULIC,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Francis Governor Control Kind</b></em>' enumerators.

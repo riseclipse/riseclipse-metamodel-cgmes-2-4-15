@@ -502,8 +502,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         at = newAt;
         boolean oldAtESet = atESet;
         atESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__AT, oldAt, at, !oldAtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__AT, oldAt, at,
+                    !oldAtESet ) );
     }
 
     /**
@@ -517,8 +518,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         boolean oldAtESet = atESet;
         at = AT_EDEFAULT;
         atESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_HYDRO1__AT, oldAt, AT_EDEFAULT, oldAtESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_HYDRO1__AT, oldAt, AT_EDEFAULT,
+                    oldAtESet ) );
     }
 
     /**
@@ -552,8 +554,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         dturb = newDturb;
         boolean oldDturbESet = dturbESet;
         dturbESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_HYDRO1__DTURB, oldDturb, dturb, !oldDturbESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__DTURB, oldDturb, dturb,
+                    !oldDturbESet ) );
     }
 
     /**
@@ -567,8 +570,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         boolean oldDturbESet = dturbESet;
         dturb = DTURB_EDEFAULT;
         dturbESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_HYDRO1__DTURB, oldDturb, DTURB_EDEFAULT, oldDturbESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_HYDRO1__DTURB, oldDturb,
+                    DTURB_EDEFAULT, oldDturbESet ) );
     }
 
     /**
@@ -602,8 +606,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         gmax = newGmax;
         boolean oldGmaxESet = gmaxESet;
         gmaxESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_HYDRO1__GMAX, oldGmax, gmax, !oldGmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__GMAX, oldGmax, gmax,
+                    !oldGmaxESet ) );
     }
 
     /**
@@ -617,8 +622,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         boolean oldGmaxESet = gmaxESet;
         gmax = GMAX_EDEFAULT;
         gmaxESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_HYDRO1__GMAX, oldGmax, GMAX_EDEFAULT, oldGmaxESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_HYDRO1__GMAX, oldGmax,
+                    GMAX_EDEFAULT, oldGmaxESet ) );
     }
 
     /**
@@ -652,8 +658,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         gmin = newGmin;
         boolean oldGminESet = gminESet;
         gminESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_HYDRO1__GMIN, oldGmin, gmin, !oldGminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__GMIN, oldGmin, gmin,
+                    !oldGminESet ) );
     }
 
     /**
@@ -667,8 +674,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         boolean oldGminESet = gminESet;
         gmin = GMIN_EDEFAULT;
         gminESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_HYDRO1__GMIN, oldGmin, GMIN_EDEFAULT, oldGminESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_HYDRO1__GMIN, oldGmin,
+                    GMIN_EDEFAULT, oldGminESet ) );
     }
 
     /**
@@ -702,8 +710,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         hdam = newHdam;
         boolean oldHdamESet = hdamESet;
         hdamESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_HYDRO1__HDAM, oldHdam, hdam, !oldHdamESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__HDAM, oldHdam, hdam,
+                    !oldHdamESet ) );
     }
 
     /**
@@ -717,8 +726,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         boolean oldHdamESet = hdamESet;
         hdam = HDAM_EDEFAULT;
         hdamESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_HYDRO1__HDAM, oldHdam, HDAM_EDEFAULT, oldHdamESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_HYDRO1__HDAM, oldHdam,
+                    HDAM_EDEFAULT, oldHdamESet ) );
     }
 
     /**
@@ -752,8 +762,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         mwbase = newMwbase;
         boolean oldMwbaseESet = mwbaseESet;
         mwbaseESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_HYDRO1__MWBASE, oldMwbase, mwbase, !oldMwbaseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__MWBASE, oldMwbase, mwbase,
+                    !oldMwbaseESet ) );
     }
 
     /**
@@ -767,8 +778,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         boolean oldMwbaseESet = mwbaseESet;
         mwbase = MWBASE_EDEFAULT;
         mwbaseESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_HYDRO1__MWBASE, oldMwbase, MWBASE_EDEFAULT, oldMwbaseESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_HYDRO1__MWBASE, oldMwbase,
+                    MWBASE_EDEFAULT, oldMwbaseESet ) );
     }
 
     /**
@@ -802,8 +814,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         qnl = newQnl;
         boolean oldQnlESet = qnlESet;
         qnlESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__QNL, oldQnl, qnl, !oldQnlESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__QNL, oldQnl, qnl,
+                    !oldQnlESet ) );
     }
 
     /**
@@ -817,8 +830,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         boolean oldQnlESet = qnlESet;
         qnl = QNL_EDEFAULT;
         qnlESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_HYDRO1__QNL, oldQnl, QNL_EDEFAULT, oldQnlESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_HYDRO1__QNL, oldQnl, QNL_EDEFAULT,
+                    oldQnlESet ) );
     }
 
     /**
@@ -852,8 +866,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         rperm = newRperm;
         boolean oldRpermESet = rpermESet;
         rpermESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_HYDRO1__RPERM, oldRperm, rperm, !oldRpermESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__RPERM, oldRperm, rperm,
+                    !oldRpermESet ) );
     }
 
     /**
@@ -867,8 +882,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         boolean oldRpermESet = rpermESet;
         rperm = RPERM_EDEFAULT;
         rpermESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_HYDRO1__RPERM, oldRperm, RPERM_EDEFAULT, oldRpermESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_HYDRO1__RPERM, oldRperm,
+                    RPERM_EDEFAULT, oldRpermESet ) );
     }
 
     /**
@@ -902,8 +918,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         rtemp = newRtemp;
         boolean oldRtempESet = rtempESet;
         rtempESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_HYDRO1__RTEMP, oldRtemp, rtemp, !oldRtempESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__RTEMP, oldRtemp, rtemp,
+                    !oldRtempESet ) );
     }
 
     /**
@@ -917,8 +934,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         boolean oldRtempESet = rtempESet;
         rtemp = RTEMP_EDEFAULT;
         rtempESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_HYDRO1__RTEMP, oldRtemp, RTEMP_EDEFAULT, oldRtempESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_HYDRO1__RTEMP, oldRtemp,
+                    RTEMP_EDEFAULT, oldRtempESet ) );
     }
 
     /**
@@ -952,8 +970,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         tf = newTf;
         boolean oldTfESet = tfESet;
         tfESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__TF, oldTf, tf, !oldTfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__TF, oldTf, tf,
+                    !oldTfESet ) );
     }
 
     /**
@@ -967,8 +986,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         boolean oldTfESet = tfESet;
         tf = TF_EDEFAULT;
         tfESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_HYDRO1__TF, oldTf, TF_EDEFAULT, oldTfESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_HYDRO1__TF, oldTf, TF_EDEFAULT,
+                    oldTfESet ) );
     }
 
     /**
@@ -1002,8 +1022,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         tg = newTg;
         boolean oldTgESet = tgESet;
         tgESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__TG, oldTg, tg, !oldTgESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__TG, oldTg, tg,
+                    !oldTgESet ) );
     }
 
     /**
@@ -1017,8 +1038,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         boolean oldTgESet = tgESet;
         tg = TG_EDEFAULT;
         tgESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_HYDRO1__TG, oldTg, TG_EDEFAULT, oldTgESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_HYDRO1__TG, oldTg, TG_EDEFAULT,
+                    oldTgESet ) );
     }
 
     /**
@@ -1052,8 +1074,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         tr = newTr;
         boolean oldTrESet = trESet;
         trESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__TR, oldTr, tr, !oldTrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__TR, oldTr, tr,
+                    !oldTrESet ) );
     }
 
     /**
@@ -1067,8 +1090,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         boolean oldTrESet = trESet;
         tr = TR_EDEFAULT;
         trESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_HYDRO1__TR, oldTr, TR_EDEFAULT, oldTrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_HYDRO1__TR, oldTr, TR_EDEFAULT,
+                    oldTrESet ) );
     }
 
     /**
@@ -1102,8 +1126,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         tw = newTw;
         boolean oldTwESet = twESet;
         twESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__TW, oldTw, tw, !oldTwESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__TW, oldTw, tw,
+                    !oldTwESet ) );
     }
 
     /**
@@ -1117,8 +1142,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         boolean oldTwESet = twESet;
         tw = TW_EDEFAULT;
         twESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_HYDRO1__TW, oldTw, TW_EDEFAULT, oldTwESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_HYDRO1__TW, oldTw, TW_EDEFAULT,
+                    oldTwESet ) );
     }
 
     /**
@@ -1152,8 +1178,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         velm = newVelm;
         boolean oldVelmESet = velmESet;
         velmESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GOV_HYDRO1__VELM, oldVelm, velm, !oldVelmESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GOV_HYDRO1__VELM, oldVelm, velm,
+                    !oldVelmESet ) );
     }
 
     /**
@@ -1167,8 +1194,9 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
         boolean oldVelmESet = velmESet;
         velm = VELM_EDEFAULT;
         velmESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GOV_HYDRO1__VELM, oldVelm, VELM_EDEFAULT, oldVelmESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GOV_HYDRO1__VELM, oldVelm,
+                    VELM_EDEFAULT, oldVelmESet ) );
     }
 
     /**
@@ -1378,7 +1406,7 @@ public class GovHydro1Impl extends TurbineGovernorDynamicsImpl implements GovHyd
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (at: " );
         if( atESet )
             result.append( at );

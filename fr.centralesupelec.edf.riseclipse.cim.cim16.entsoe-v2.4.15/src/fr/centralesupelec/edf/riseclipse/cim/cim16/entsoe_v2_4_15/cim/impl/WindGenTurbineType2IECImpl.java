@@ -116,9 +116,10 @@ public class WindGenTurbineType2IECImpl extends WindTurbineType1or2IECImpl imple
             InternalEObject oldWindContRotorRIEC = ( InternalEObject ) windContRotorRIEC;
             windContRotorRIEC = ( WindContRotorRIEC ) eResolveProxy( oldWindContRotorRIEC );
             if( windContRotorRIEC != oldWindContRotorRIEC ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.WIND_GEN_TURBINE_TYPE2_IEC__WIND_CONT_ROTOR_RIEC, oldWindContRotorRIEC,
-                        windContRotorRIEC ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.WIND_GEN_TURBINE_TYPE2_IEC__WIND_CONT_ROTOR_RIEC, oldWindContRotorRIEC,
+                            windContRotorRIEC ) );
             }
         }
         return windContRotorRIEC;
@@ -165,19 +166,22 @@ public class WindGenTurbineType2IECImpl extends WindTurbineType1or2IECImpl imple
     public void setWindContRotorRIEC( WindContRotorRIEC newWindContRotorRIEC ) {
         if( newWindContRotorRIEC != windContRotorRIEC ) {
             NotificationChain msgs = null;
-            if( windContRotorRIEC != null ) msgs = ( ( InternalEObject ) windContRotorRIEC ).eInverseRemove( this,
-                    CimPackage.WIND_CONT_ROTOR_RIEC__WIND_GEN_TURBINE_TYPE2_IEC, WindContRotorRIEC.class, msgs );
-            if( newWindContRotorRIEC != null ) msgs = ( ( InternalEObject ) newWindContRotorRIEC ).eInverseAdd( this,
-                    CimPackage.WIND_CONT_ROTOR_RIEC__WIND_GEN_TURBINE_TYPE2_IEC, WindContRotorRIEC.class, msgs );
+            if( windContRotorRIEC != null )
+                msgs = ( ( InternalEObject ) windContRotorRIEC ).eInverseRemove( this,
+                        CimPackage.WIND_CONT_ROTOR_RIEC__WIND_GEN_TURBINE_TYPE2_IEC, WindContRotorRIEC.class, msgs );
+            if( newWindContRotorRIEC != null )
+                msgs = ( ( InternalEObject ) newWindContRotorRIEC ).eInverseAdd( this,
+                        CimPackage.WIND_CONT_ROTOR_RIEC__WIND_GEN_TURBINE_TYPE2_IEC, WindContRotorRIEC.class, msgs );
             msgs = basicSetWindContRotorRIEC( newWindContRotorRIEC, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldWindContRotorRIECESet = windContRotorRIECESet;
             windContRotorRIECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_GEN_TURBINE_TYPE2_IEC__WIND_CONT_ROTOR_RIEC, newWindContRotorRIEC,
-                    newWindContRotorRIEC, !oldWindContRotorRIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_GEN_TURBINE_TYPE2_IEC__WIND_CONT_ROTOR_RIEC, newWindContRotorRIEC,
+                        newWindContRotorRIEC, !oldWindContRotorRIECESet ) );
         }
     }
 
@@ -220,9 +224,10 @@ public class WindGenTurbineType2IECImpl extends WindTurbineType1or2IECImpl imple
         else {
             boolean oldWindContRotorRIECESet = windContRotorRIECESet;
             windContRotorRIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_GEN_TURBINE_TYPE2_IEC__WIND_CONT_ROTOR_RIEC, null, null,
-                    oldWindContRotorRIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_GEN_TURBINE_TYPE2_IEC__WIND_CONT_ROTOR_RIEC, null, null,
+                        oldWindContRotorRIECESet ) );
         }
     }
 
@@ -247,9 +252,10 @@ public class WindGenTurbineType2IECImpl extends WindTurbineType1or2IECImpl imple
             InternalEObject oldWindPitchContEmulIEC = ( InternalEObject ) windPitchContEmulIEC;
             windPitchContEmulIEC = ( WindPitchContEmulIEC ) eResolveProxy( oldWindPitchContEmulIEC );
             if( windPitchContEmulIEC != oldWindPitchContEmulIEC ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.WIND_GEN_TURBINE_TYPE2_IEC__WIND_PITCH_CONT_EMUL_IEC, oldWindPitchContEmulIEC,
-                        windPitchContEmulIEC ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.WIND_GEN_TURBINE_TYPE2_IEC__WIND_PITCH_CONT_EMUL_IEC, oldWindPitchContEmulIEC,
+                            windPitchContEmulIEC ) );
             }
         }
         return windPitchContEmulIEC;
@@ -296,8 +302,10 @@ public class WindGenTurbineType2IECImpl extends WindTurbineType1or2IECImpl imple
     public void setWindPitchContEmulIEC( WindPitchContEmulIEC newWindPitchContEmulIEC ) {
         if( newWindPitchContEmulIEC != windPitchContEmulIEC ) {
             NotificationChain msgs = null;
-            if( windPitchContEmulIEC != null ) msgs = ( ( InternalEObject ) windPitchContEmulIEC ).eInverseRemove( this,
-                    CimPackage.WIND_PITCH_CONT_EMUL_IEC__WIND_GEN_TURBINE_TYPE2_IEC, WindPitchContEmulIEC.class, msgs );
+            if( windPitchContEmulIEC != null )
+                msgs = ( ( InternalEObject ) windPitchContEmulIEC ).eInverseRemove( this,
+                        CimPackage.WIND_PITCH_CONT_EMUL_IEC__WIND_GEN_TURBINE_TYPE2_IEC, WindPitchContEmulIEC.class,
+                        msgs );
             if( newWindPitchContEmulIEC != null )
                 msgs = ( ( InternalEObject ) newWindPitchContEmulIEC ).eInverseAdd( this,
                         CimPackage.WIND_PITCH_CONT_EMUL_IEC__WIND_GEN_TURBINE_TYPE2_IEC, WindPitchContEmulIEC.class,
@@ -308,9 +316,10 @@ public class WindGenTurbineType2IECImpl extends WindTurbineType1or2IECImpl imple
         else {
             boolean oldWindPitchContEmulIECESet = windPitchContEmulIECESet;
             windPitchContEmulIECESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.WIND_GEN_TURBINE_TYPE2_IEC__WIND_PITCH_CONT_EMUL_IEC, newWindPitchContEmulIEC,
-                    newWindPitchContEmulIEC, !oldWindPitchContEmulIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.WIND_GEN_TURBINE_TYPE2_IEC__WIND_PITCH_CONT_EMUL_IEC, newWindPitchContEmulIEC,
+                        newWindPitchContEmulIEC, !oldWindPitchContEmulIECESet ) );
         }
     }
 
@@ -353,9 +362,10 @@ public class WindGenTurbineType2IECImpl extends WindTurbineType1or2IECImpl imple
         else {
             boolean oldWindPitchContEmulIECESet = windPitchContEmulIECESet;
             windPitchContEmulIECESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.WIND_GEN_TURBINE_TYPE2_IEC__WIND_PITCH_CONT_EMUL_IEC, null, null,
-                    oldWindPitchContEmulIECESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.WIND_GEN_TURBINE_TYPE2_IEC__WIND_PITCH_CONT_EMUL_IEC, null, null,
+                        oldWindPitchContEmulIECESet ) );
         }
     }
 
@@ -378,12 +388,15 @@ public class WindGenTurbineType2IECImpl extends WindTurbineType1or2IECImpl imple
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.WIND_GEN_TURBINE_TYPE2_IEC__WIND_PITCH_CONT_EMUL_IEC:
-            if( windPitchContEmulIEC != null ) msgs = ( ( InternalEObject ) windPitchContEmulIEC ).eInverseRemove( this,
-                    CimPackage.WIND_PITCH_CONT_EMUL_IEC__WIND_GEN_TURBINE_TYPE2_IEC, WindPitchContEmulIEC.class, msgs );
+            if( windPitchContEmulIEC != null )
+                msgs = ( ( InternalEObject ) windPitchContEmulIEC ).eInverseRemove( this,
+                        CimPackage.WIND_PITCH_CONT_EMUL_IEC__WIND_GEN_TURBINE_TYPE2_IEC, WindPitchContEmulIEC.class,
+                        msgs );
             return basicSetWindPitchContEmulIEC( ( WindPitchContEmulIEC ) otherEnd, msgs );
         case CimPackage.WIND_GEN_TURBINE_TYPE2_IEC__WIND_CONT_ROTOR_RIEC:
-            if( windContRotorRIEC != null ) msgs = ( ( InternalEObject ) windContRotorRIEC ).eInverseRemove( this,
-                    CimPackage.WIND_CONT_ROTOR_RIEC__WIND_GEN_TURBINE_TYPE2_IEC, WindContRotorRIEC.class, msgs );
+            if( windContRotorRIEC != null )
+                msgs = ( ( InternalEObject ) windContRotorRIEC ).eInverseRemove( this,
+                        CimPackage.WIND_CONT_ROTOR_RIEC__WIND_GEN_TURBINE_TYPE2_IEC, WindContRotorRIEC.class, msgs );
             return basicSetWindContRotorRIEC( ( WindContRotorRIEC ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

@@ -184,8 +184,9 @@ public class NameTypeImpl extends CimObjectWithIDImpl implements NameType {
         description = newDescription;
         boolean oldDescriptionESet = descriptionESet;
         descriptionESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.NAME_TYPE__DESCRIPTION, oldDescription, description, !oldDescriptionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.NAME_TYPE__DESCRIPTION, oldDescription,
+                    description, !oldDescriptionESet ) );
     }
 
     /**
@@ -199,8 +200,9 @@ public class NameTypeImpl extends CimObjectWithIDImpl implements NameType {
         boolean oldDescriptionESet = descriptionESet;
         description = DESCRIPTION_EDEFAULT;
         descriptionESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.NAME_TYPE__DESCRIPTION, oldDescription, DESCRIPTION_EDEFAULT, oldDescriptionESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.NAME_TYPE__DESCRIPTION, oldDescription,
+                    DESCRIPTION_EDEFAULT, oldDescriptionESet ) );
     }
 
     /**
@@ -234,8 +236,9 @@ public class NameTypeImpl extends CimObjectWithIDImpl implements NameType {
         name = newName;
         boolean oldNameESet = nameESet;
         nameESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.NAME_TYPE__NAME, oldName, name, !oldNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.NAME_TYPE__NAME, oldName, name,
+                    !oldNameESet ) );
     }
 
     /**
@@ -249,8 +252,9 @@ public class NameTypeImpl extends CimObjectWithIDImpl implements NameType {
         boolean oldNameESet = nameESet;
         name = NAME_EDEFAULT;
         nameESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.NAME_TYPE__NAME, oldName, NAME_EDEFAULT, oldNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.NAME_TYPE__NAME, oldName,
+                    NAME_EDEFAULT, oldNameESet ) );
     }
 
     /**
@@ -339,10 +343,12 @@ public class NameTypeImpl extends CimObjectWithIDImpl implements NameType {
     public void setNameTypeAuthority( NameTypeAuthority newNameTypeAuthority ) {
         if( newNameTypeAuthority != nameTypeAuthority ) {
             NotificationChain msgs = null;
-            if( nameTypeAuthority != null ) msgs = ( ( InternalEObject ) nameTypeAuthority ).eInverseRemove( this,
-                    CimPackage.NAME_TYPE_AUTHORITY__NAME_TYPES, NameTypeAuthority.class, msgs );
-            if( newNameTypeAuthority != null ) msgs = ( ( InternalEObject ) newNameTypeAuthority ).eInverseAdd( this,
-                    CimPackage.NAME_TYPE_AUTHORITY__NAME_TYPES, NameTypeAuthority.class, msgs );
+            if( nameTypeAuthority != null )
+                msgs = ( ( InternalEObject ) nameTypeAuthority ).eInverseRemove( this,
+                        CimPackage.NAME_TYPE_AUTHORITY__NAME_TYPES, NameTypeAuthority.class, msgs );
+            if( newNameTypeAuthority != null )
+                msgs = ( ( InternalEObject ) newNameTypeAuthority ).eInverseAdd( this,
+                        CimPackage.NAME_TYPE_AUTHORITY__NAME_TYPES, NameTypeAuthority.class, msgs );
             msgs = basicSetNameTypeAuthority( newNameTypeAuthority, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -393,8 +399,9 @@ public class NameTypeImpl extends CimObjectWithIDImpl implements NameType {
         else {
             boolean oldNameTypeAuthorityESet = nameTypeAuthorityESet;
             nameTypeAuthorityESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.NAME_TYPE__NAME_TYPE_AUTHORITY, null, null, oldNameTypeAuthorityESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.NAME_TYPE__NAME_TYPE_AUTHORITY,
+                        null, null, oldNameTypeAuthorityESet ) );
         }
     }
 
@@ -421,8 +428,9 @@ public class NameTypeImpl extends CimObjectWithIDImpl implements NameType {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getNames() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.NAME_TYPE__NAME_TYPE_AUTHORITY:
-            if( nameTypeAuthority != null ) msgs = ( ( InternalEObject ) nameTypeAuthority ).eInverseRemove( this,
-                    CimPackage.NAME_TYPE_AUTHORITY__NAME_TYPES, NameTypeAuthority.class, msgs );
+            if( nameTypeAuthority != null )
+                msgs = ( ( InternalEObject ) nameTypeAuthority ).eInverseRemove( this,
+                        CimPackage.NAME_TYPE_AUTHORITY__NAME_TYPES, NameTypeAuthority.class, msgs );
             return basicSetNameTypeAuthority( ( NameTypeAuthority ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -543,7 +551,7 @@ public class NameTypeImpl extends CimObjectWithIDImpl implements NameType {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (description: " );
         if( descriptionESet )
             result.append( description );

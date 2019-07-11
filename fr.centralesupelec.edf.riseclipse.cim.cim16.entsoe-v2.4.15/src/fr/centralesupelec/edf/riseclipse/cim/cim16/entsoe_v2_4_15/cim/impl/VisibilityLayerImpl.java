@@ -133,8 +133,9 @@ public class VisibilityLayerImpl extends IdentifiedObjectImpl implements Visibil
         drawingOrder = newDrawingOrder;
         boolean oldDrawingOrderESet = drawingOrderESet;
         drawingOrderESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.VISIBILITY_LAYER__DRAWING_ORDER, oldDrawingOrder, drawingOrder, !oldDrawingOrderESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.VISIBILITY_LAYER__DRAWING_ORDER,
+                    oldDrawingOrder, drawingOrder, !oldDrawingOrderESet ) );
     }
 
     /**
@@ -307,7 +308,7 @@ public class VisibilityLayerImpl extends IdentifiedObjectImpl implements Visibil
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (drawingOrder: " );
         if( drawingOrderESet )
             result.append( drawingOrder );

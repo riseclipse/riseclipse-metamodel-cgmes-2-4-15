@@ -224,18 +224,21 @@ public class PersonRoleImpl extends IdentifiedObjectImpl implements PersonRole {
     public void setPerson( Person newPerson ) {
         if( newPerson != person ) {
             NotificationChain msgs = null;
-            if( person != null ) msgs = ( ( InternalEObject ) person ).eInverseRemove( this, CimPackage.PERSON__ROLES,
-                    Person.class, msgs );
-            if( newPerson != null ) msgs = ( ( InternalEObject ) newPerson ).eInverseAdd( this,
-                    CimPackage.PERSON__ROLES, Person.class, msgs );
+            if( person != null )
+                msgs = ( ( InternalEObject ) person ).eInverseRemove( this, CimPackage.PERSON__ROLES, Person.class,
+                        msgs );
+            if( newPerson != null )
+                msgs = ( ( InternalEObject ) newPerson ).eInverseAdd( this, CimPackage.PERSON__ROLES, Person.class,
+                        msgs );
             msgs = basicSetPerson( newPerson, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldPersonESet = personESet;
             personESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PERSON_ROLE__PERSON, newPerson, newPerson, !oldPersonESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PERSON_ROLE__PERSON, newPerson,
+                        newPerson, !oldPersonESet ) );
         }
     }
 
@@ -276,8 +279,9 @@ public class PersonRoleImpl extends IdentifiedObjectImpl implements PersonRole {
         else {
             boolean oldPersonESet = personESet;
             personESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PERSON_ROLE__PERSON, null, null, oldPersonESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PERSON_ROLE__PERSON, null, null,
+                        oldPersonESet ) );
         }
     }
 
@@ -301,8 +305,9 @@ public class PersonRoleImpl extends IdentifiedObjectImpl implements PersonRole {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.PERSON_ROLE__PERSON:
-            if( person != null ) msgs = ( ( InternalEObject ) person ).eInverseRemove( this, CimPackage.PERSON__ROLES,
-                    Person.class, msgs );
+            if( person != null )
+                msgs = ( ( InternalEObject ) person ).eInverseRemove( this, CimPackage.PERSON__ROLES, Person.class,
+                        msgs );
             return basicSetPerson( ( Person ) otherEnd, msgs );
         case CimPackage.PERSON_ROLE__CONFIGURATION_EVENTS:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getConfigurationEvents() )

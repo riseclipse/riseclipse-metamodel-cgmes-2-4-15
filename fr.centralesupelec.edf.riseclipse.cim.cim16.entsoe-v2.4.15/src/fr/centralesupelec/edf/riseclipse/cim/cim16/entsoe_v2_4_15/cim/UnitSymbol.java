@@ -717,8 +717,35 @@ public enum UnitSymbol implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final UnitSymbol[] VALUES_ARRAY = new UnitSymbol[] { VA, W, VAR, VAH, WH, VARH, V, OHM, A, F, HENRI,
-            DEG_C, S, MIN, H, DEG, RAD, J, N, SIEMENS, NONE, HZ, G, PA, MILLI, M2, M3, };
+    private static final UnitSymbol[] VALUES_ARRAY = new UnitSymbol[] {
+            VA,
+            W,
+            VAR,
+            VAH,
+            WH,
+            VARH,
+            V,
+            OHM,
+            A,
+            F,
+            HENRI,
+            DEG_C,
+            S,
+            MIN,
+            H,
+            DEG,
+            RAD,
+            J,
+            N,
+            SIEMENS,
+            NONE,
+            HZ,
+            G,
+            PA,
+            MILLI,
+            M2,
+            M3,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Unit Symbol</b></em>' enumerators.

@@ -247,8 +247,9 @@ public class RegularTimePointImpl extends CimObjectWithIDImpl implements Regular
         value1 = newValue1;
         boolean oldValue1ESet = value1ESet;
         value1ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REGULAR_TIME_POINT__VALUE1, oldValue1, value1, !oldValue1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REGULAR_TIME_POINT__VALUE1, oldValue1,
+                    value1, !oldValue1ESet ) );
     }
 
     /**
@@ -262,8 +263,9 @@ public class RegularTimePointImpl extends CimObjectWithIDImpl implements Regular
         boolean oldValue1ESet = value1ESet;
         value1 = VALUE1_EDEFAULT;
         value1ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REGULAR_TIME_POINT__VALUE1, oldValue1, VALUE1_EDEFAULT, oldValue1ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.REGULAR_TIME_POINT__VALUE1, oldValue1,
+                    VALUE1_EDEFAULT, oldValue1ESet ) );
     }
 
     /**
@@ -297,8 +299,9 @@ public class RegularTimePointImpl extends CimObjectWithIDImpl implements Regular
         value2 = newValue2;
         boolean oldValue2ESet = value2ESet;
         value2ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REGULAR_TIME_POINT__VALUE2, oldValue2, value2, !oldValue2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REGULAR_TIME_POINT__VALUE2, oldValue2,
+                    value2, !oldValue2ESet ) );
     }
 
     /**
@@ -312,8 +315,9 @@ public class RegularTimePointImpl extends CimObjectWithIDImpl implements Regular
         boolean oldValue2ESet = value2ESet;
         value2 = VALUE2_EDEFAULT;
         value2ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REGULAR_TIME_POINT__VALUE2, oldValue2, VALUE2_EDEFAULT, oldValue2ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.REGULAR_TIME_POINT__VALUE2, oldValue2,
+                    VALUE2_EDEFAULT, oldValue2ESet ) );
     }
 
     /**
@@ -368,19 +372,22 @@ public class RegularTimePointImpl extends CimObjectWithIDImpl implements Regular
     public void setIntervalSchedule( RegularIntervalSchedule newIntervalSchedule ) {
         if( newIntervalSchedule != intervalSchedule ) {
             NotificationChain msgs = null;
-            if( intervalSchedule != null ) msgs = ( ( InternalEObject ) intervalSchedule ).eInverseRemove( this,
-                    CimPackage.REGULAR_INTERVAL_SCHEDULE__TIME_POINTS, RegularIntervalSchedule.class, msgs );
-            if( newIntervalSchedule != null ) msgs = ( ( InternalEObject ) newIntervalSchedule ).eInverseAdd( this,
-                    CimPackage.REGULAR_INTERVAL_SCHEDULE__TIME_POINTS, RegularIntervalSchedule.class, msgs );
+            if( intervalSchedule != null )
+                msgs = ( ( InternalEObject ) intervalSchedule ).eInverseRemove( this,
+                        CimPackage.REGULAR_INTERVAL_SCHEDULE__TIME_POINTS, RegularIntervalSchedule.class, msgs );
+            if( newIntervalSchedule != null )
+                msgs = ( ( InternalEObject ) newIntervalSchedule ).eInverseAdd( this,
+                        CimPackage.REGULAR_INTERVAL_SCHEDULE__TIME_POINTS, RegularIntervalSchedule.class, msgs );
             msgs = basicSetIntervalSchedule( newIntervalSchedule, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldIntervalScheduleESet = intervalScheduleESet;
             intervalScheduleESet = true;
-            if( eNotificationRequired() ) eNotify(
-                    new ENotificationImpl( this, Notification.SET, CimPackage.REGULAR_TIME_POINT__INTERVAL_SCHEDULE,
-                            newIntervalSchedule, newIntervalSchedule, !oldIntervalScheduleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.REGULAR_TIME_POINT__INTERVAL_SCHEDULE, newIntervalSchedule, newIntervalSchedule,
+                        !oldIntervalScheduleESet ) );
         }
     }
 
@@ -423,8 +430,9 @@ public class RegularTimePointImpl extends CimObjectWithIDImpl implements Regular
         else {
             boolean oldIntervalScheduleESet = intervalScheduleESet;
             intervalScheduleESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REGULAR_TIME_POINT__INTERVAL_SCHEDULE, null, null, oldIntervalScheduleESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.REGULAR_TIME_POINT__INTERVAL_SCHEDULE, null, null, oldIntervalScheduleESet ) );
         }
     }
 
@@ -447,8 +455,9 @@ public class RegularTimePointImpl extends CimObjectWithIDImpl implements Regular
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.REGULAR_TIME_POINT__INTERVAL_SCHEDULE:
-            if( intervalSchedule != null ) msgs = ( ( InternalEObject ) intervalSchedule ).eInverseRemove( this,
-                    CimPackage.REGULAR_INTERVAL_SCHEDULE__TIME_POINTS, RegularIntervalSchedule.class, msgs );
+            if( intervalSchedule != null )
+                msgs = ( ( InternalEObject ) intervalSchedule ).eInverseRemove( this,
+                        CimPackage.REGULAR_INTERVAL_SCHEDULE__TIME_POINTS, RegularIntervalSchedule.class, msgs );
             return basicSetIntervalSchedule( ( RegularIntervalSchedule ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -565,7 +574,7 @@ public class RegularTimePointImpl extends CimObjectWithIDImpl implements Regular
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (sequenceNumber: " );
         if( sequenceNumberESet )
             result.append( sequenceNumber );

@@ -445,8 +445,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         controlEnabled = newControlEnabled;
         boolean oldControlEnabledESet = controlEnabledESet;
         controlEnabledESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER__CONTROL_ENABLED, oldControlEnabled, controlEnabled, !oldControlEnabledESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER__CONTROL_ENABLED,
+                    oldControlEnabled, controlEnabled, !oldControlEnabledESet ) );
     }
 
     /**
@@ -496,8 +497,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         highStep = newHighStep;
         boolean oldHighStepESet = highStepESet;
         highStepESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER__HIGH_STEP, oldHighStep, highStep, !oldHighStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER__HIGH_STEP, oldHighStep,
+                    highStep, !oldHighStepESet ) );
     }
 
     /**
@@ -511,8 +513,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         boolean oldHighStepESet = highStepESet;
         highStep = HIGH_STEP_EDEFAULT;
         highStepESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER__HIGH_STEP, oldHighStep, HIGH_STEP_EDEFAULT, oldHighStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER__HIGH_STEP, oldHighStep,
+                    HIGH_STEP_EDEFAULT, oldHighStepESet ) );
     }
 
     /**
@@ -546,8 +549,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         initialDelay = newInitialDelay;
         boolean oldInitialDelayESet = initialDelayESet;
         initialDelayESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER__INITIAL_DELAY, oldInitialDelay, initialDelay, !oldInitialDelayESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER__INITIAL_DELAY,
+                    oldInitialDelay, initialDelay, !oldInitialDelayESet ) );
     }
 
     /**
@@ -561,8 +565,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         boolean oldInitialDelayESet = initialDelayESet;
         initialDelay = INITIAL_DELAY_EDEFAULT;
         initialDelayESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER__INITIAL_DELAY, oldInitialDelay, INITIAL_DELAY_EDEFAULT, oldInitialDelayESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER__INITIAL_DELAY,
+                    oldInitialDelay, INITIAL_DELAY_EDEFAULT, oldInitialDelayESet ) );
     }
 
     /**
@@ -596,8 +601,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         lowStep = newLowStep;
         boolean oldLowStepESet = lowStepESet;
         lowStepESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER__LOW_STEP, oldLowStep, lowStep, !oldLowStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER__LOW_STEP, oldLowStep,
+                    lowStep, !oldLowStepESet ) );
     }
 
     /**
@@ -611,8 +617,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         boolean oldLowStepESet = lowStepESet;
         lowStep = LOW_STEP_EDEFAULT;
         lowStepESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER__LOW_STEP, oldLowStep, LOW_STEP_EDEFAULT, oldLowStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER__LOW_STEP, oldLowStep,
+                    LOW_STEP_EDEFAULT, oldLowStepESet ) );
     }
 
     /**
@@ -646,8 +653,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         ltcFlag = newLtcFlag;
         boolean oldLtcFlagESet = ltcFlagESet;
         ltcFlagESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER__LTC_FLAG, oldLtcFlag, ltcFlag, !oldLtcFlagESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER__LTC_FLAG, oldLtcFlag,
+                    ltcFlag, !oldLtcFlagESet ) );
     }
 
     /**
@@ -661,8 +669,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         boolean oldLtcFlagESet = ltcFlagESet;
         ltcFlag = LTC_FLAG_EDEFAULT;
         ltcFlagESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER__LTC_FLAG, oldLtcFlag, LTC_FLAG_EDEFAULT, oldLtcFlagESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER__LTC_FLAG, oldLtcFlag,
+                    LTC_FLAG_EDEFAULT, oldLtcFlagESet ) );
     }
 
     /**
@@ -696,8 +705,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         neutralStep = newNeutralStep;
         boolean oldNeutralStepESet = neutralStepESet;
         neutralStepESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER__NEUTRAL_STEP, oldNeutralStep, neutralStep, !oldNeutralStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER__NEUTRAL_STEP,
+                    oldNeutralStep, neutralStep, !oldNeutralStepESet ) );
     }
 
     /**
@@ -711,8 +721,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         boolean oldNeutralStepESet = neutralStepESet;
         neutralStep = NEUTRAL_STEP_EDEFAULT;
         neutralStepESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER__NEUTRAL_STEP, oldNeutralStep, NEUTRAL_STEP_EDEFAULT, oldNeutralStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER__NEUTRAL_STEP,
+                    oldNeutralStep, NEUTRAL_STEP_EDEFAULT, oldNeutralStepESet ) );
     }
 
     /**
@@ -746,8 +757,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         neutralU = newNeutralU;
         boolean oldNeutralUESet = neutralUESet;
         neutralUESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER__NEUTRAL_U, oldNeutralU, neutralU, !oldNeutralUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER__NEUTRAL_U, oldNeutralU,
+                    neutralU, !oldNeutralUESet ) );
     }
 
     /**
@@ -761,8 +773,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         boolean oldNeutralUESet = neutralUESet;
         neutralU = NEUTRAL_U_EDEFAULT;
         neutralUESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER__NEUTRAL_U, oldNeutralU, NEUTRAL_U_EDEFAULT, oldNeutralUESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER__NEUTRAL_U, oldNeutralU,
+                    NEUTRAL_U_EDEFAULT, oldNeutralUESet ) );
     }
 
     /**
@@ -796,8 +809,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         normalStep = newNormalStep;
         boolean oldNormalStepESet = normalStepESet;
         normalStepESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER__NORMAL_STEP, oldNormalStep, normalStep, !oldNormalStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER__NORMAL_STEP, oldNormalStep,
+                    normalStep, !oldNormalStepESet ) );
     }
 
     /**
@@ -811,8 +825,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         boolean oldNormalStepESet = normalStepESet;
         normalStep = NORMAL_STEP_EDEFAULT;
         normalStepESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER__NORMAL_STEP, oldNormalStep, NORMAL_STEP_EDEFAULT, oldNormalStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER__NORMAL_STEP,
+                    oldNormalStep, NORMAL_STEP_EDEFAULT, oldNormalStepESet ) );
     }
 
     /**
@@ -846,8 +861,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         step = newStep;
         boolean oldStepESet = stepESet;
         stepESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TAP_CHANGER__STEP, oldStep, step, !oldStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER__STEP, oldStep, step,
+                    !oldStepESet ) );
     }
 
     /**
@@ -861,8 +877,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         boolean oldStepESet = stepESet;
         step = STEP_EDEFAULT;
         stepESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TAP_CHANGER__STEP, oldStep, STEP_EDEFAULT, oldStepESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER__STEP, oldStep,
+                    STEP_EDEFAULT, oldStepESet ) );
     }
 
     /**
@@ -969,10 +986,12 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
     public void setTapChangerControl( TapChangerControl newTapChangerControl ) {
         if( newTapChangerControl != tapChangerControl ) {
             NotificationChain msgs = null;
-            if( tapChangerControl != null ) msgs = ( ( InternalEObject ) tapChangerControl ).eInverseRemove( this,
-                    CimPackage.TAP_CHANGER_CONTROL__TAP_CHANGER, TapChangerControl.class, msgs );
-            if( newTapChangerControl != null ) msgs = ( ( InternalEObject ) newTapChangerControl ).eInverseAdd( this,
-                    CimPackage.TAP_CHANGER_CONTROL__TAP_CHANGER, TapChangerControl.class, msgs );
+            if( tapChangerControl != null )
+                msgs = ( ( InternalEObject ) tapChangerControl ).eInverseRemove( this,
+                        CimPackage.TAP_CHANGER_CONTROL__TAP_CHANGER, TapChangerControl.class, msgs );
+            if( newTapChangerControl != null )
+                msgs = ( ( InternalEObject ) newTapChangerControl ).eInverseAdd( this,
+                        CimPackage.TAP_CHANGER_CONTROL__TAP_CHANGER, TapChangerControl.class, msgs );
             msgs = basicSetTapChangerControl( newTapChangerControl, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -1023,8 +1042,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         else {
             boolean oldTapChangerControlESet = tapChangerControlESet;
             tapChangerControlESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TAP_CHANGER__TAP_CHANGER_CONTROL, null, null, oldTapChangerControlESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER__TAP_CHANGER_CONTROL,
+                        null, null, oldTapChangerControlESet ) );
         }
     }
 
@@ -1049,8 +1069,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
             InternalEObject oldSvTapStep = ( InternalEObject ) svTapStep;
             svTapStep = ( SvTapStep ) eResolveProxy( oldSvTapStep );
             if( svTapStep != oldSvTapStep ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.TAP_CHANGER__SV_TAP_STEP, oldSvTapStep, svTapStep ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE, CimPackage.TAP_CHANGER__SV_TAP_STEP,
+                            oldSvTapStep, svTapStep ) );
             }
         }
         return svTapStep;
@@ -1095,18 +1116,21 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
     public void setSvTapStep( SvTapStep newSvTapStep ) {
         if( newSvTapStep != svTapStep ) {
             NotificationChain msgs = null;
-            if( svTapStep != null ) msgs = ( ( InternalEObject ) svTapStep ).eInverseRemove( this,
-                    CimPackage.SV_TAP_STEP__TAP_CHANGER, SvTapStep.class, msgs );
-            if( newSvTapStep != null ) msgs = ( ( InternalEObject ) newSvTapStep ).eInverseAdd( this,
-                    CimPackage.SV_TAP_STEP__TAP_CHANGER, SvTapStep.class, msgs );
+            if( svTapStep != null )
+                msgs = ( ( InternalEObject ) svTapStep ).eInverseRemove( this, CimPackage.SV_TAP_STEP__TAP_CHANGER,
+                        SvTapStep.class, msgs );
+            if( newSvTapStep != null )
+                msgs = ( ( InternalEObject ) newSvTapStep ).eInverseAdd( this, CimPackage.SV_TAP_STEP__TAP_CHANGER,
+                        SvTapStep.class, msgs );
             msgs = basicSetSvTapStep( newSvTapStep, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldSvTapStepESet = svTapStepESet;
             svTapStepESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.TAP_CHANGER__SV_TAP_STEP, newSvTapStep, newSvTapStep, !oldSvTapStepESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TAP_CHANGER__SV_TAP_STEP,
+                        newSvTapStep, newSvTapStep, !oldSvTapStepESet ) );
         }
     }
 
@@ -1148,8 +1172,9 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
         else {
             boolean oldSvTapStepESet = svTapStepESet;
             svTapStepESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.TAP_CHANGER__SV_TAP_STEP, null, null, oldSvTapStepESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TAP_CHANGER__SV_TAP_STEP, null,
+                        null, oldSvTapStepESet ) );
         }
     }
 
@@ -1207,15 +1232,17 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.TAP_CHANGER__TAP_CHANGER_CONTROL:
-            if( tapChangerControl != null ) msgs = ( ( InternalEObject ) tapChangerControl ).eInverseRemove( this,
-                    CimPackage.TAP_CHANGER_CONTROL__TAP_CHANGER, TapChangerControl.class, msgs );
+            if( tapChangerControl != null )
+                msgs = ( ( InternalEObject ) tapChangerControl ).eInverseRemove( this,
+                        CimPackage.TAP_CHANGER_CONTROL__TAP_CHANGER, TapChangerControl.class, msgs );
             return basicSetTapChangerControl( ( TapChangerControl ) otherEnd, msgs );
         case CimPackage.TAP_CHANGER__TAP_SCHEDULES:
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getTapSchedules() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.TAP_CHANGER__SV_TAP_STEP:
-            if( svTapStep != null ) msgs = ( ( InternalEObject ) svTapStep ).eInverseRemove( this,
-                    CimPackage.SV_TAP_STEP__TAP_CHANGER, SvTapStep.class, msgs );
+            if( svTapStep != null )
+                msgs = ( ( InternalEObject ) svTapStep ).eInverseRemove( this, CimPackage.SV_TAP_STEP__TAP_CHANGER,
+                        SvTapStep.class, msgs );
             return basicSetSvTapStep( ( SvTapStep ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -1429,7 +1456,7 @@ public class TapChangerImpl extends PowerSystemResourceImpl implements TapChange
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (controlEnabled: " );
         if( controlEnabledESet )
             result.append( controlEnabled );

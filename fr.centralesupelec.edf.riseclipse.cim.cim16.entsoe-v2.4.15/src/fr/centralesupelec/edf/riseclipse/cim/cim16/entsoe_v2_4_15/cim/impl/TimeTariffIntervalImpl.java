@@ -241,8 +241,9 @@ public class TimeTariffIntervalImpl extends CimObjectWithIDImpl implements TimeT
         startTime = newStartTime;
         boolean oldStartTimeESet = startTimeESet;
         startTimeESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.TIME_TARIFF_INTERVAL__START_TIME, oldStartTime, startTime, !oldStartTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.TIME_TARIFF_INTERVAL__START_TIME,
+                    oldStartTime, startTime, !oldStartTimeESet ) );
     }
 
     /**
@@ -256,8 +257,9 @@ public class TimeTariffIntervalImpl extends CimObjectWithIDImpl implements TimeT
         boolean oldStartTimeESet = startTimeESet;
         startTime = START_TIME_EDEFAULT;
         startTimeESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.TIME_TARIFF_INTERVAL__START_TIME, oldStartTime, START_TIME_EDEFAULT, oldStartTimeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.TIME_TARIFF_INTERVAL__START_TIME,
+                    oldStartTime, START_TIME_EDEFAULT, oldStartTimeESet ) );
     }
 
     /**
@@ -528,7 +530,7 @@ public class TimeTariffIntervalImpl extends CimObjectWithIDImpl implements TimeT
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (sequenceNumber: " );
         if( sequenceNumberESet )
             result.append( sequenceNumber );

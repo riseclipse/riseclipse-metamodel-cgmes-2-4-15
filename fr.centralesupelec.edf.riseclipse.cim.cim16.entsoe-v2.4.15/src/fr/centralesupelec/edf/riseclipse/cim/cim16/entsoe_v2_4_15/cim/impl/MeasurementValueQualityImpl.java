@@ -95,9 +95,10 @@ public class MeasurementValueQualityImpl extends Quality61850Impl implements Mea
             InternalEObject oldMeasurementValue = ( InternalEObject ) measurementValue;
             measurementValue = ( MeasurementValue ) eResolveProxy( oldMeasurementValue );
             if( measurementValue != oldMeasurementValue ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.MEASUREMENT_VALUE_QUALITY__MEASUREMENT_VALUE, oldMeasurementValue,
-                        measurementValue ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.MEASUREMENT_VALUE_QUALITY__MEASUREMENT_VALUE, oldMeasurementValue,
+                            measurementValue ) );
             }
         }
         return measurementValue;
@@ -143,19 +144,22 @@ public class MeasurementValueQualityImpl extends Quality61850Impl implements Mea
     public void setMeasurementValue( MeasurementValue newMeasurementValue ) {
         if( newMeasurementValue != measurementValue ) {
             NotificationChain msgs = null;
-            if( measurementValue != null ) msgs = ( ( InternalEObject ) measurementValue ).eInverseRemove( this,
-                    CimPackage.MEASUREMENT_VALUE__MEASUREMENT_VALUE_QUALITY, MeasurementValue.class, msgs );
-            if( newMeasurementValue != null ) msgs = ( ( InternalEObject ) newMeasurementValue ).eInverseAdd( this,
-                    CimPackage.MEASUREMENT_VALUE__MEASUREMENT_VALUE_QUALITY, MeasurementValue.class, msgs );
+            if( measurementValue != null )
+                msgs = ( ( InternalEObject ) measurementValue ).eInverseRemove( this,
+                        CimPackage.MEASUREMENT_VALUE__MEASUREMENT_VALUE_QUALITY, MeasurementValue.class, msgs );
+            if( newMeasurementValue != null )
+                msgs = ( ( InternalEObject ) newMeasurementValue ).eInverseAdd( this,
+                        CimPackage.MEASUREMENT_VALUE__MEASUREMENT_VALUE_QUALITY, MeasurementValue.class, msgs );
             msgs = basicSetMeasurementValue( newMeasurementValue, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldMeasurementValueESet = measurementValueESet;
             measurementValueESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.MEASUREMENT_VALUE_QUALITY__MEASUREMENT_VALUE, newMeasurementValue, newMeasurementValue,
-                    !oldMeasurementValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.MEASUREMENT_VALUE_QUALITY__MEASUREMENT_VALUE, newMeasurementValue,
+                        newMeasurementValue, !oldMeasurementValueESet ) );
         }
     }
 
@@ -198,8 +202,10 @@ public class MeasurementValueQualityImpl extends Quality61850Impl implements Mea
         else {
             boolean oldMeasurementValueESet = measurementValueESet;
             measurementValueESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.MEASUREMENT_VALUE_QUALITY__MEASUREMENT_VALUE, null, null, oldMeasurementValueESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.MEASUREMENT_VALUE_QUALITY__MEASUREMENT_VALUE, null, null,
+                        oldMeasurementValueESet ) );
         }
     }
 
@@ -222,8 +228,9 @@ public class MeasurementValueQualityImpl extends Quality61850Impl implements Mea
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.MEASUREMENT_VALUE_QUALITY__MEASUREMENT_VALUE:
-            if( measurementValue != null ) msgs = ( ( InternalEObject ) measurementValue ).eInverseRemove( this,
-                    CimPackage.MEASUREMENT_VALUE__MEASUREMENT_VALUE_QUALITY, MeasurementValue.class, msgs );
+            if( measurementValue != null )
+                msgs = ( ( InternalEObject ) measurementValue ).eInverseRemove( this,
+                        CimPackage.MEASUREMENT_VALUE__MEASUREMENT_VALUE_QUALITY, MeasurementValue.class, msgs );
             return basicSetMeasurementValue( ( MeasurementValue ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

@@ -135,8 +135,9 @@ public class SvShuntCompensatorSectionsImpl extends StateVariableImpl implements
         sections = newSections;
         boolean oldSectionsESet = sectionsESet;
         sectionsESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SV_SHUNT_COMPENSATOR_SECTIONS__SECTIONS, oldSections, sections, !oldSectionsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.SV_SHUNT_COMPENSATOR_SECTIONS__SECTIONS,
+                    oldSections, sections, !oldSectionsESet ) );
     }
 
     /**
@@ -150,8 +151,10 @@ public class SvShuntCompensatorSectionsImpl extends StateVariableImpl implements
         boolean oldSectionsESet = sectionsESet;
         sections = SECTIONS_EDEFAULT;
         sectionsESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SV_SHUNT_COMPENSATOR_SECTIONS__SECTIONS, oldSections, SECTIONS_EDEFAULT, oldSectionsESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SV_SHUNT_COMPENSATOR_SECTIONS__SECTIONS, oldSections, SECTIONS_EDEFAULT,
+                    oldSectionsESet ) );
     }
 
     /**
@@ -175,9 +178,10 @@ public class SvShuntCompensatorSectionsImpl extends StateVariableImpl implements
             InternalEObject oldShuntCompensator = ( InternalEObject ) shuntCompensator;
             shuntCompensator = ( ShuntCompensator ) eResolveProxy( oldShuntCompensator );
             if( shuntCompensator != oldShuntCompensator ) {
-                if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.RESOLVE,
-                        CimPackage.SV_SHUNT_COMPENSATOR_SECTIONS__SHUNT_COMPENSATOR, oldShuntCompensator,
-                        shuntCompensator ) );
+                if( eNotificationRequired() )
+                    eNotify( new ENotificationImpl( this, Notification.RESOLVE,
+                            CimPackage.SV_SHUNT_COMPENSATOR_SECTIONS__SHUNT_COMPENSATOR, oldShuntCompensator,
+                            shuntCompensator ) );
             }
         }
         return shuntCompensator;
@@ -223,19 +227,22 @@ public class SvShuntCompensatorSectionsImpl extends StateVariableImpl implements
     public void setShuntCompensator( ShuntCompensator newShuntCompensator ) {
         if( newShuntCompensator != shuntCompensator ) {
             NotificationChain msgs = null;
-            if( shuntCompensator != null ) msgs = ( ( InternalEObject ) shuntCompensator ).eInverseRemove( this,
-                    CimPackage.SHUNT_COMPENSATOR__SV_SHUNT_COMPENSATOR_SECTIONS, ShuntCompensator.class, msgs );
-            if( newShuntCompensator != null ) msgs = ( ( InternalEObject ) newShuntCompensator ).eInverseAdd( this,
-                    CimPackage.SHUNT_COMPENSATOR__SV_SHUNT_COMPENSATOR_SECTIONS, ShuntCompensator.class, msgs );
+            if( shuntCompensator != null )
+                msgs = ( ( InternalEObject ) shuntCompensator ).eInverseRemove( this,
+                        CimPackage.SHUNT_COMPENSATOR__SV_SHUNT_COMPENSATOR_SECTIONS, ShuntCompensator.class, msgs );
+            if( newShuntCompensator != null )
+                msgs = ( ( InternalEObject ) newShuntCompensator ).eInverseAdd( this,
+                        CimPackage.SHUNT_COMPENSATOR__SV_SHUNT_COMPENSATOR_SECTIONS, ShuntCompensator.class, msgs );
             msgs = basicSetShuntCompensator( newShuntCompensator, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldShuntCompensatorESet = shuntCompensatorESet;
             shuntCompensatorESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.SV_SHUNT_COMPENSATOR_SECTIONS__SHUNT_COMPENSATOR, newShuntCompensator,
-                    newShuntCompensator, !oldShuntCompensatorESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.SV_SHUNT_COMPENSATOR_SECTIONS__SHUNT_COMPENSATOR, newShuntCompensator,
+                        newShuntCompensator, !oldShuntCompensatorESet ) );
         }
     }
 
@@ -278,9 +285,10 @@ public class SvShuntCompensatorSectionsImpl extends StateVariableImpl implements
         else {
             boolean oldShuntCompensatorESet = shuntCompensatorESet;
             shuntCompensatorESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.SV_SHUNT_COMPENSATOR_SECTIONS__SHUNT_COMPENSATOR, null, null,
-                    oldShuntCompensatorESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.SV_SHUNT_COMPENSATOR_SECTIONS__SHUNT_COMPENSATOR, null, null,
+                        oldShuntCompensatorESet ) );
         }
     }
 
@@ -303,8 +311,9 @@ public class SvShuntCompensatorSectionsImpl extends StateVariableImpl implements
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.SV_SHUNT_COMPENSATOR_SECTIONS__SHUNT_COMPENSATOR:
-            if( shuntCompensator != null ) msgs = ( ( InternalEObject ) shuntCompensator ).eInverseRemove( this,
-                    CimPackage.SHUNT_COMPENSATOR__SV_SHUNT_COMPENSATOR_SECTIONS, ShuntCompensator.class, msgs );
+            if( shuntCompensator != null )
+                msgs = ( ( InternalEObject ) shuntCompensator ).eInverseRemove( this,
+                        CimPackage.SHUNT_COMPENSATOR__SV_SHUNT_COMPENSATOR_SECTIONS, ShuntCompensator.class, msgs );
             return basicSetShuntCompensator( ( ShuntCompensator ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -402,7 +411,7 @@ public class SvShuntCompensatorSectionsImpl extends StateVariableImpl implements
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (sections: " );
         if( sectionsESet )
             result.append( sections );

@@ -186,8 +186,9 @@ public class GenICompensationForGenJImpl extends IdentifiedObjectImpl implements
         rcij = newRcij;
         boolean oldRcijESet = rcijESet;
         rcijESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__RCIJ, oldRcij, rcij, !oldRcijESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__RCIJ,
+                    oldRcij, rcij, !oldRcijESet ) );
     }
 
     /**
@@ -201,8 +202,9 @@ public class GenICompensationForGenJImpl extends IdentifiedObjectImpl implements
         boolean oldRcijESet = rcijESet;
         rcij = RCIJ_EDEFAULT;
         rcijESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__RCIJ, oldRcij, RCIJ_EDEFAULT, oldRcijESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__RCIJ,
+                    oldRcij, RCIJ_EDEFAULT, oldRcijESet ) );
     }
 
     /**
@@ -236,8 +238,9 @@ public class GenICompensationForGenJImpl extends IdentifiedObjectImpl implements
         xcij = newXcij;
         boolean oldXcijESet = xcijESet;
         xcijESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__XCIJ, oldXcij, xcij, !oldXcijESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__XCIJ,
+                    oldXcij, xcij, !oldXcijESet ) );
     }
 
     /**
@@ -251,8 +254,9 @@ public class GenICompensationForGenJImpl extends IdentifiedObjectImpl implements
         boolean oldXcijESet = xcijESet;
         xcij = XCIJ_EDEFAULT;
         xcijESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__XCIJ, oldXcij, XCIJ_EDEFAULT, oldXcijESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__XCIJ,
+                    oldXcij, XCIJ_EDEFAULT, oldXcijESet ) );
     }
 
     /**
@@ -321,9 +325,11 @@ public class GenICompensationForGenJImpl extends IdentifiedObjectImpl implements
         else {
             boolean oldSynchronousMachineDynamicsESet = synchronousMachineDynamicsESet;
             synchronousMachineDynamicsESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__SYNCHRONOUS_MACHINE_DYNAMICS, newSynchronousMachineDynamics,
-                    newSynchronousMachineDynamics, !oldSynchronousMachineDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__SYNCHRONOUS_MACHINE_DYNAMICS,
+                        newSynchronousMachineDynamics, newSynchronousMachineDynamics,
+                        !oldSynchronousMachineDynamicsESet ) );
         }
     }
 
@@ -367,9 +373,10 @@ public class GenICompensationForGenJImpl extends IdentifiedObjectImpl implements
         else {
             boolean oldSynchronousMachineDynamicsESet = synchronousMachineDynamicsESet;
             synchronousMachineDynamicsESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__SYNCHRONOUS_MACHINE_DYNAMICS, null, null,
-                    oldSynchronousMachineDynamicsESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__SYNCHRONOUS_MACHINE_DYNAMICS, null, null,
+                        oldSynchronousMachineDynamicsESet ) );
         }
     }
 
@@ -424,19 +431,22 @@ public class GenICompensationForGenJImpl extends IdentifiedObjectImpl implements
     public void setVcompIEEEType2( VCompIEEEType2 newVcompIEEEType2 ) {
         if( newVcompIEEEType2 != vcompIEEEType2 ) {
             NotificationChain msgs = null;
-            if( vcompIEEEType2 != null ) msgs = ( ( InternalEObject ) vcompIEEEType2 ).eInverseRemove( this,
-                    CimPackage.VCOMP_IEEE_TYPE2__GEN_ICOMPENSATION_FOR_GEN_J, VCompIEEEType2.class, msgs );
-            if( newVcompIEEEType2 != null ) msgs = ( ( InternalEObject ) newVcompIEEEType2 ).eInverseAdd( this,
-                    CimPackage.VCOMP_IEEE_TYPE2__GEN_ICOMPENSATION_FOR_GEN_J, VCompIEEEType2.class, msgs );
+            if( vcompIEEEType2 != null )
+                msgs = ( ( InternalEObject ) vcompIEEEType2 ).eInverseRemove( this,
+                        CimPackage.VCOMP_IEEE_TYPE2__GEN_ICOMPENSATION_FOR_GEN_J, VCompIEEEType2.class, msgs );
+            if( newVcompIEEEType2 != null )
+                msgs = ( ( InternalEObject ) newVcompIEEEType2 ).eInverseAdd( this,
+                        CimPackage.VCOMP_IEEE_TYPE2__GEN_ICOMPENSATION_FOR_GEN_J, VCompIEEEType2.class, msgs );
             msgs = basicSetVcompIEEEType2( newVcompIEEEType2, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldVcompIEEEType2ESet = vcompIEEEType2ESet;
             vcompIEEEType2ESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__VCOMP_IEEE_TYPE2, newVcompIEEEType2, newVcompIEEEType2,
-                    !oldVcompIEEEType2ESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__VCOMP_IEEE_TYPE2, newVcompIEEEType2, newVcompIEEEType2,
+                        !oldVcompIEEEType2ESet ) );
         }
     }
 
@@ -479,8 +489,9 @@ public class GenICompensationForGenJImpl extends IdentifiedObjectImpl implements
         else {
             boolean oldVcompIEEEType2ESet = vcompIEEEType2ESet;
             vcompIEEEType2ESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__VCOMP_IEEE_TYPE2, null, null, oldVcompIEEEType2ESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__VCOMP_IEEE_TYPE2, null, null, oldVcompIEEEType2ESet ) );
         }
     }
 
@@ -503,8 +514,9 @@ public class GenICompensationForGenJImpl extends IdentifiedObjectImpl implements
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__VCOMP_IEEE_TYPE2:
-            if( vcompIEEEType2 != null ) msgs = ( ( InternalEObject ) vcompIEEEType2 ).eInverseRemove( this,
-                    CimPackage.VCOMP_IEEE_TYPE2__GEN_ICOMPENSATION_FOR_GEN_J, VCompIEEEType2.class, msgs );
+            if( vcompIEEEType2 != null )
+                msgs = ( ( InternalEObject ) vcompIEEEType2 ).eInverseRemove( this,
+                        CimPackage.VCOMP_IEEE_TYPE2__GEN_ICOMPENSATION_FOR_GEN_J, VCompIEEEType2.class, msgs );
             return basicSetVcompIEEEType2( ( VCompIEEEType2 ) otherEnd, msgs );
         case CimPackage.GEN_ICOMPENSATION_FOR_GEN_J__SYNCHRONOUS_MACHINE_DYNAMICS:
             if( synchronousMachineDynamics != null )
@@ -629,7 +641,7 @@ public class GenICompensationForGenJImpl extends IdentifiedObjectImpl implements
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (rcij: " );
         if( rcijESet )
             result.append( rcij );

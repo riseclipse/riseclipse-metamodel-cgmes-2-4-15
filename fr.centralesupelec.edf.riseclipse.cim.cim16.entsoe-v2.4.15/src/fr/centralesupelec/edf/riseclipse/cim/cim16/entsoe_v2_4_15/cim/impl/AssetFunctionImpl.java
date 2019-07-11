@@ -232,8 +232,9 @@ public class AssetFunctionImpl extends IdentifiedObjectImpl implements AssetFunc
         configID = newConfigID;
         boolean oldConfigIDESet = configIDESet;
         configIDESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASSET_FUNCTION__CONFIG_ID, oldConfigID, configID, !oldConfigIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET_FUNCTION__CONFIG_ID, oldConfigID,
+                    configID, !oldConfigIDESet ) );
     }
 
     /**
@@ -247,8 +248,9 @@ public class AssetFunctionImpl extends IdentifiedObjectImpl implements AssetFunc
         boolean oldConfigIDESet = configIDESet;
         configID = CONFIG_ID_EDEFAULT;
         configIDESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASSET_FUNCTION__CONFIG_ID, oldConfigID, CONFIG_ID_EDEFAULT, oldConfigIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET_FUNCTION__CONFIG_ID, oldConfigID,
+                    CONFIG_ID_EDEFAULT, oldConfigIDESet ) );
     }
 
     /**
@@ -282,8 +284,9 @@ public class AssetFunctionImpl extends IdentifiedObjectImpl implements AssetFunc
         firmwareID = newFirmwareID;
         boolean oldFirmwareIDESet = firmwareIDESet;
         firmwareIDESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASSET_FUNCTION__FIRMWARE_ID, oldFirmwareID, firmwareID, !oldFirmwareIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET_FUNCTION__FIRMWARE_ID,
+                    oldFirmwareID, firmwareID, !oldFirmwareIDESet ) );
     }
 
     /**
@@ -297,8 +300,9 @@ public class AssetFunctionImpl extends IdentifiedObjectImpl implements AssetFunc
         boolean oldFirmwareIDESet = firmwareIDESet;
         firmwareID = FIRMWARE_ID_EDEFAULT;
         firmwareIDESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASSET_FUNCTION__FIRMWARE_ID, oldFirmwareID, FIRMWARE_ID_EDEFAULT, oldFirmwareIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET_FUNCTION__FIRMWARE_ID,
+                    oldFirmwareID, FIRMWARE_ID_EDEFAULT, oldFirmwareIDESet ) );
     }
 
     /**
@@ -332,8 +336,9 @@ public class AssetFunctionImpl extends IdentifiedObjectImpl implements AssetFunc
         hardwareID = newHardwareID;
         boolean oldHardwareIDESet = hardwareIDESet;
         hardwareIDESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASSET_FUNCTION__HARDWARE_ID, oldHardwareID, hardwareID, !oldHardwareIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET_FUNCTION__HARDWARE_ID,
+                    oldHardwareID, hardwareID, !oldHardwareIDESet ) );
     }
 
     /**
@@ -347,8 +352,9 @@ public class AssetFunctionImpl extends IdentifiedObjectImpl implements AssetFunc
         boolean oldHardwareIDESet = hardwareIDESet;
         hardwareID = HARDWARE_ID_EDEFAULT;
         hardwareIDESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASSET_FUNCTION__HARDWARE_ID, oldHardwareID, HARDWARE_ID_EDEFAULT, oldHardwareIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET_FUNCTION__HARDWARE_ID,
+                    oldHardwareID, HARDWARE_ID_EDEFAULT, oldHardwareIDESet ) );
     }
 
     /**
@@ -382,8 +388,9 @@ public class AssetFunctionImpl extends IdentifiedObjectImpl implements AssetFunc
         password = newPassword;
         boolean oldPasswordESet = passwordESet;
         passwordESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASSET_FUNCTION__PASSWORD, oldPassword, password, !oldPasswordESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET_FUNCTION__PASSWORD, oldPassword,
+                    password, !oldPasswordESet ) );
     }
 
     /**
@@ -397,8 +404,9 @@ public class AssetFunctionImpl extends IdentifiedObjectImpl implements AssetFunc
         boolean oldPasswordESet = passwordESet;
         password = PASSWORD_EDEFAULT;
         passwordESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASSET_FUNCTION__PASSWORD, oldPassword, PASSWORD_EDEFAULT, oldPasswordESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET_FUNCTION__PASSWORD, oldPassword,
+                    PASSWORD_EDEFAULT, oldPasswordESet ) );
     }
 
     /**
@@ -432,8 +440,9 @@ public class AssetFunctionImpl extends IdentifiedObjectImpl implements AssetFunc
         programID = newProgramID;
         boolean oldProgramIDESet = programIDESet;
         programIDESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ASSET_FUNCTION__PROGRAM_ID, oldProgramID, programID, !oldProgramIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ASSET_FUNCTION__PROGRAM_ID, oldProgramID,
+                    programID, !oldProgramIDESet ) );
     }
 
     /**
@@ -447,8 +456,9 @@ public class AssetFunctionImpl extends IdentifiedObjectImpl implements AssetFunc
         boolean oldProgramIDESet = programIDESet;
         programID = PROGRAM_ID_EDEFAULT;
         programIDESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ASSET_FUNCTION__PROGRAM_ID, oldProgramID, PROGRAM_ID_EDEFAULT, oldProgramIDESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ASSET_FUNCTION__PROGRAM_ID,
+                    oldProgramID, PROGRAM_ID_EDEFAULT, oldProgramIDESet ) );
     }
 
     /**
@@ -568,7 +578,7 @@ public class AssetFunctionImpl extends IdentifiedObjectImpl implements AssetFunc
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (configID: " );
         if( configIDESet )
             result.append( configID );

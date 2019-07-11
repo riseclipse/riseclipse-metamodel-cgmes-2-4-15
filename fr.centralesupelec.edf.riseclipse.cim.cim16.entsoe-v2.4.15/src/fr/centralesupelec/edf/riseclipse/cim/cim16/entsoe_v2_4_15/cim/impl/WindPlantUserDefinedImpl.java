@@ -133,8 +133,9 @@ public class WindPlantUserDefinedImpl extends WindPlantDynamicsImpl implements W
         proprietary = newProprietary;
         boolean oldProprietaryESet = proprietaryESet;
         proprietaryESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIND_PLANT_USER_DEFINED__PROPRIETARY, oldProprietary, proprietary, !oldProprietaryESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIND_PLANT_USER_DEFINED__PROPRIETARY,
+                    oldProprietary, proprietary, !oldProprietaryESet ) );
     }
 
     /**
@@ -311,7 +312,7 @@ public class WindPlantUserDefinedImpl extends WindPlantDynamicsImpl implements W
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (proprietary: " );
         if( proprietaryESet )
             result.append( proprietary );

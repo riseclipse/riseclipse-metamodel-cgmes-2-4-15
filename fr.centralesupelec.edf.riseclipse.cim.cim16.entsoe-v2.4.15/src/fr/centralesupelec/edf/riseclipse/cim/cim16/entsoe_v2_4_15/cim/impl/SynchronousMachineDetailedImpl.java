@@ -234,9 +234,10 @@ public class SynchronousMachineDetailedImpl extends SynchronousMachineDynamicsIm
         efdBaseRatio = newEfdBaseRatio;
         boolean oldEfdBaseRatioESet = efdBaseRatioESet;
         efdBaseRatioESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.SYNCHRONOUS_MACHINE_DETAILED__EFD_BASE_RATIO,
-                        oldEfdBaseRatio, efdBaseRatio, !oldEfdBaseRatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_DETAILED__EFD_BASE_RATIO, oldEfdBaseRatio, efdBaseRatio,
+                    !oldEfdBaseRatioESet ) );
     }
 
     /**
@@ -250,9 +251,10 @@ public class SynchronousMachineDetailedImpl extends SynchronousMachineDynamicsIm
         boolean oldEfdBaseRatioESet = efdBaseRatioESet;
         efdBaseRatio = EFD_BASE_RATIO_EDEFAULT;
         efdBaseRatioESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_DETAILED__EFD_BASE_RATIO, oldEfdBaseRatio, EFD_BASE_RATIO_EDEFAULT,
-                oldEfdBaseRatioESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_DETAILED__EFD_BASE_RATIO, oldEfdBaseRatio, EFD_BASE_RATIO_EDEFAULT,
+                    oldEfdBaseRatioESet ) );
     }
 
     /**
@@ -286,9 +288,10 @@ public class SynchronousMachineDetailedImpl extends SynchronousMachineDynamicsIm
         ifdBaseType = newIfdBaseType == null ? IFD_BASE_TYPE_EDEFAULT : newIfdBaseType;
         boolean oldIfdBaseTypeESet = ifdBaseTypeESet;
         ifdBaseTypeESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.SYNCHRONOUS_MACHINE_DETAILED__IFD_BASE_TYPE,
-                        oldIfdBaseType, ifdBaseType, !oldIfdBaseTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_DETAILED__IFD_BASE_TYPE, oldIfdBaseType, ifdBaseType,
+                    !oldIfdBaseTypeESet ) );
     }
 
     /**
@@ -302,9 +305,10 @@ public class SynchronousMachineDetailedImpl extends SynchronousMachineDynamicsIm
         boolean oldIfdBaseTypeESet = ifdBaseTypeESet;
         ifdBaseType = IFD_BASE_TYPE_EDEFAULT;
         ifdBaseTypeESet = false;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.UNSET, CimPackage.SYNCHRONOUS_MACHINE_DETAILED__IFD_BASE_TYPE,
-                        oldIfdBaseType, IFD_BASE_TYPE_EDEFAULT, oldIfdBaseTypeESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_DETAILED__IFD_BASE_TYPE, oldIfdBaseType, IFD_BASE_TYPE_EDEFAULT,
+                    oldIfdBaseTypeESet ) );
     }
 
     /**
@@ -338,9 +342,10 @@ public class SynchronousMachineDetailedImpl extends SynchronousMachineDynamicsIm
         ifdBaseValue = newIfdBaseValue;
         boolean oldIfdBaseValueESet = ifdBaseValueESet;
         ifdBaseValueESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.SYNCHRONOUS_MACHINE_DETAILED__IFD_BASE_VALUE,
-                        oldIfdBaseValue, ifdBaseValue, !oldIfdBaseValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_DETAILED__IFD_BASE_VALUE, oldIfdBaseValue, ifdBaseValue,
+                    !oldIfdBaseValueESet ) );
     }
 
     /**
@@ -354,9 +359,10 @@ public class SynchronousMachineDetailedImpl extends SynchronousMachineDynamicsIm
         boolean oldIfdBaseValueESet = ifdBaseValueESet;
         ifdBaseValue = IFD_BASE_VALUE_EDEFAULT;
         ifdBaseValueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_DETAILED__IFD_BASE_VALUE, oldIfdBaseValue, IFD_BASE_VALUE_EDEFAULT,
-                oldIfdBaseValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_DETAILED__IFD_BASE_VALUE, oldIfdBaseValue, IFD_BASE_VALUE_EDEFAULT,
+                    oldIfdBaseValueESet ) );
     }
 
     /**
@@ -390,9 +396,10 @@ public class SynchronousMachineDetailedImpl extends SynchronousMachineDynamicsIm
         saturationFactor120QAxis = newSaturationFactor120QAxis;
         boolean oldSaturationFactor120QAxisESet = saturationFactor120QAxisESet;
         saturationFactor120QAxisESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_DETAILED__SATURATION_FACTOR120_QAXIS, oldSaturationFactor120QAxis,
-                saturationFactor120QAxis, !oldSaturationFactor120QAxisESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_DETAILED__SATURATION_FACTOR120_QAXIS, oldSaturationFactor120QAxis,
+                    saturationFactor120QAxis, !oldSaturationFactor120QAxisESet ) );
     }
 
     /**
@@ -406,9 +413,10 @@ public class SynchronousMachineDetailedImpl extends SynchronousMachineDynamicsIm
         boolean oldSaturationFactor120QAxisESet = saturationFactor120QAxisESet;
         saturationFactor120QAxis = SATURATION_FACTOR120_QAXIS_EDEFAULT;
         saturationFactor120QAxisESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_DETAILED__SATURATION_FACTOR120_QAXIS, oldSaturationFactor120QAxis,
-                SATURATION_FACTOR120_QAXIS_EDEFAULT, oldSaturationFactor120QAxisESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_DETAILED__SATURATION_FACTOR120_QAXIS, oldSaturationFactor120QAxis,
+                    SATURATION_FACTOR120_QAXIS_EDEFAULT, oldSaturationFactor120QAxisESet ) );
     }
 
     /**
@@ -442,9 +450,10 @@ public class SynchronousMachineDetailedImpl extends SynchronousMachineDynamicsIm
         saturationFactorQAxis = newSaturationFactorQAxis;
         boolean oldSaturationFactorQAxisESet = saturationFactorQAxisESet;
         saturationFactorQAxisESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.SYNCHRONOUS_MACHINE_DETAILED__SATURATION_FACTOR_QAXIS, oldSaturationFactorQAxis,
-                saturationFactorQAxis, !oldSaturationFactorQAxisESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.SYNCHRONOUS_MACHINE_DETAILED__SATURATION_FACTOR_QAXIS, oldSaturationFactorQAxis,
+                    saturationFactorQAxis, !oldSaturationFactorQAxisESet ) );
     }
 
     /**
@@ -458,9 +467,10 @@ public class SynchronousMachineDetailedImpl extends SynchronousMachineDynamicsIm
         boolean oldSaturationFactorQAxisESet = saturationFactorQAxisESet;
         saturationFactorQAxis = SATURATION_FACTOR_QAXIS_EDEFAULT;
         saturationFactorQAxisESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.SYNCHRONOUS_MACHINE_DETAILED__SATURATION_FACTOR_QAXIS, oldSaturationFactorQAxis,
-                SATURATION_FACTOR_QAXIS_EDEFAULT, oldSaturationFactorQAxisESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.SYNCHRONOUS_MACHINE_DETAILED__SATURATION_FACTOR_QAXIS, oldSaturationFactorQAxis,
+                    SATURATION_FACTOR_QAXIS_EDEFAULT, oldSaturationFactorQAxisESet ) );
     }
 
     /**
@@ -580,7 +590,7 @@ public class SynchronousMachineDetailedImpl extends SynchronousMachineDynamicsIm
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (efdBaseRatio: " );
         if( efdBaseRatioESet )
             result.append( efdBaseRatio );

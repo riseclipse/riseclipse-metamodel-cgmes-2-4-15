@@ -322,8 +322,9 @@ public class PerLengthSequenceImpedanceImpl extends PerLengthImpedanceImpl imple
         b0ch = newB0ch;
         boolean oldB0chESet = b0chESet;
         b0chESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__B0CH, oldB0ch, b0ch, !oldB0chESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__B0CH,
+                    oldB0ch, b0ch, !oldB0chESet ) );
     }
 
     /**
@@ -337,8 +338,9 @@ public class PerLengthSequenceImpedanceImpl extends PerLengthImpedanceImpl imple
         boolean oldB0chESet = b0chESet;
         b0ch = B0CH_EDEFAULT;
         b0chESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__B0CH, oldB0ch, B0CH_EDEFAULT, oldB0chESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__B0CH,
+                    oldB0ch, B0CH_EDEFAULT, oldB0chESet ) );
     }
 
     /**
@@ -372,8 +374,9 @@ public class PerLengthSequenceImpedanceImpl extends PerLengthImpedanceImpl imple
         bch = newBch;
         boolean oldBchESet = bchESet;
         bchESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__BCH, oldBch, bch, !oldBchESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__BCH,
+                    oldBch, bch, !oldBchESet ) );
     }
 
     /**
@@ -387,8 +390,9 @@ public class PerLengthSequenceImpedanceImpl extends PerLengthImpedanceImpl imple
         boolean oldBchESet = bchESet;
         bch = BCH_EDEFAULT;
         bchESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__BCH, oldBch, BCH_EDEFAULT, oldBchESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__BCH,
+                    oldBch, BCH_EDEFAULT, oldBchESet ) );
     }
 
     /**
@@ -422,8 +426,9 @@ public class PerLengthSequenceImpedanceImpl extends PerLengthImpedanceImpl imple
         g0ch = newG0ch;
         boolean oldG0chESet = g0chESet;
         g0chESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__G0CH, oldG0ch, g0ch, !oldG0chESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__G0CH,
+                    oldG0ch, g0ch, !oldG0chESet ) );
     }
 
     /**
@@ -437,8 +442,9 @@ public class PerLengthSequenceImpedanceImpl extends PerLengthImpedanceImpl imple
         boolean oldG0chESet = g0chESet;
         g0ch = G0CH_EDEFAULT;
         g0chESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__G0CH, oldG0ch, G0CH_EDEFAULT, oldG0chESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__G0CH,
+                    oldG0ch, G0CH_EDEFAULT, oldG0chESet ) );
     }
 
     /**
@@ -472,8 +478,9 @@ public class PerLengthSequenceImpedanceImpl extends PerLengthImpedanceImpl imple
         gch = newGch;
         boolean oldGchESet = gchESet;
         gchESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__GCH, oldGch, gch, !oldGchESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__GCH,
+                    oldGch, gch, !oldGchESet ) );
     }
 
     /**
@@ -487,8 +494,9 @@ public class PerLengthSequenceImpedanceImpl extends PerLengthImpedanceImpl imple
         boolean oldGchESet = gchESet;
         gch = GCH_EDEFAULT;
         gchESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__GCH, oldGch, GCH_EDEFAULT, oldGchESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__GCH,
+                    oldGch, GCH_EDEFAULT, oldGchESet ) );
     }
 
     /**
@@ -522,8 +530,9 @@ public class PerLengthSequenceImpedanceImpl extends PerLengthImpedanceImpl imple
         r = newR;
         boolean oldRESet = rESet;
         rESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__R, oldR, r, !oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__R, oldR,
+                    r, !oldRESet ) );
     }
 
     /**
@@ -537,8 +546,9 @@ public class PerLengthSequenceImpedanceImpl extends PerLengthImpedanceImpl imple
         boolean oldRESet = rESet;
         r = R_EDEFAULT;
         rESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__R, oldR, R_EDEFAULT, oldRESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__R, oldR,
+                    R_EDEFAULT, oldRESet ) );
     }
 
     /**
@@ -572,8 +582,9 @@ public class PerLengthSequenceImpedanceImpl extends PerLengthImpedanceImpl imple
         r0 = newR0;
         boolean oldR0ESet = r0ESet;
         r0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__R0, oldR0, r0, !oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__R0, oldR0,
+                    r0, !oldR0ESet ) );
     }
 
     /**
@@ -587,8 +598,9 @@ public class PerLengthSequenceImpedanceImpl extends PerLengthImpedanceImpl imple
         boolean oldR0ESet = r0ESet;
         r0 = R0_EDEFAULT;
         r0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__R0, oldR0, R0_EDEFAULT, oldR0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__R0,
+                    oldR0, R0_EDEFAULT, oldR0ESet ) );
     }
 
     /**
@@ -622,8 +634,9 @@ public class PerLengthSequenceImpedanceImpl extends PerLengthImpedanceImpl imple
         x = newX;
         boolean oldXESet = xESet;
         xESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__X, oldX, x, !oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__X, oldX,
+                    x, !oldXESet ) );
     }
 
     /**
@@ -637,8 +650,9 @@ public class PerLengthSequenceImpedanceImpl extends PerLengthImpedanceImpl imple
         boolean oldXESet = xESet;
         x = X_EDEFAULT;
         xESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__X, oldX, X_EDEFAULT, oldXESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__X, oldX,
+                    X_EDEFAULT, oldXESet ) );
     }
 
     /**
@@ -672,8 +686,9 @@ public class PerLengthSequenceImpedanceImpl extends PerLengthImpedanceImpl imple
         x0 = newX0;
         boolean oldX0ESet = x0ESet;
         x0ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__X0, oldX0, x0, !oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__X0, oldX0,
+                    x0, !oldX0ESet ) );
     }
 
     /**
@@ -687,8 +702,9 @@ public class PerLengthSequenceImpedanceImpl extends PerLengthImpedanceImpl imple
         boolean oldX0ESet = x0ESet;
         x0 = X0_EDEFAULT;
         x0ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__X0, oldX0, X0_EDEFAULT, oldX0ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.PER_LENGTH_SEQUENCE_IMPEDANCE__X0,
+                    oldX0, X0_EDEFAULT, oldX0ESet ) );
     }
 
     /**
@@ -838,7 +854,7 @@ public class PerLengthSequenceImpedanceImpl extends PerLengthImpedanceImpl imple
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (b0ch: " );
         if( b0chESet )
             result.append( b0ch );

@@ -135,8 +135,9 @@ public class AccumulatorLimitImpl extends LimitImpl implements AccumulatorLimit 
         value = newValue;
         boolean oldValueESet = valueESet;
         valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.ACCUMULATOR_LIMIT__VALUE, oldValue, value, !oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACCUMULATOR_LIMIT__VALUE, oldValue,
+                    value, !oldValueESet ) );
     }
 
     /**
@@ -150,8 +151,9 @@ public class AccumulatorLimitImpl extends LimitImpl implements AccumulatorLimit 
         boolean oldValueESet = valueESet;
         value = VALUE_EDEFAULT;
         valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.ACCUMULATOR_LIMIT__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACCUMULATOR_LIMIT__VALUE, oldValue,
+                    VALUE_EDEFAULT, oldValueESet ) );
     }
 
     /**
@@ -204,18 +206,21 @@ public class AccumulatorLimitImpl extends LimitImpl implements AccumulatorLimit 
     public void setLimitSet( AccumulatorLimitSet newLimitSet ) {
         if( newLimitSet != limitSet ) {
             NotificationChain msgs = null;
-            if( limitSet != null ) msgs = ( ( InternalEObject ) limitSet ).eInverseRemove( this,
-                    CimPackage.ACCUMULATOR_LIMIT_SET__LIMITS, AccumulatorLimitSet.class, msgs );
-            if( newLimitSet != null ) msgs = ( ( InternalEObject ) newLimitSet ).eInverseAdd( this,
-                    CimPackage.ACCUMULATOR_LIMIT_SET__LIMITS, AccumulatorLimitSet.class, msgs );
+            if( limitSet != null )
+                msgs = ( ( InternalEObject ) limitSet ).eInverseRemove( this, CimPackage.ACCUMULATOR_LIMIT_SET__LIMITS,
+                        AccumulatorLimitSet.class, msgs );
+            if( newLimitSet != null )
+                msgs = ( ( InternalEObject ) newLimitSet ).eInverseAdd( this, CimPackage.ACCUMULATOR_LIMIT_SET__LIMITS,
+                        AccumulatorLimitSet.class, msgs );
             msgs = basicSetLimitSet( newLimitSet, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldLimitSetESet = limitSetESet;
             limitSetESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.ACCUMULATOR_LIMIT__LIMIT_SET, newLimitSet, newLimitSet, !oldLimitSetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.ACCUMULATOR_LIMIT__LIMIT_SET,
+                        newLimitSet, newLimitSet, !oldLimitSetESet ) );
         }
     }
 
@@ -257,8 +262,9 @@ public class AccumulatorLimitImpl extends LimitImpl implements AccumulatorLimit 
         else {
             boolean oldLimitSetESet = limitSetESet;
             limitSetESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.ACCUMULATOR_LIMIT__LIMIT_SET, null, null, oldLimitSetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.ACCUMULATOR_LIMIT__LIMIT_SET, null,
+                        null, oldLimitSetESet ) );
         }
     }
 
@@ -281,8 +287,9 @@ public class AccumulatorLimitImpl extends LimitImpl implements AccumulatorLimit 
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.ACCUMULATOR_LIMIT__LIMIT_SET:
-            if( limitSet != null ) msgs = ( ( InternalEObject ) limitSet ).eInverseRemove( this,
-                    CimPackage.ACCUMULATOR_LIMIT_SET__LIMITS, AccumulatorLimitSet.class, msgs );
+            if( limitSet != null )
+                msgs = ( ( InternalEObject ) limitSet ).eInverseRemove( this, CimPackage.ACCUMULATOR_LIMIT_SET__LIMITS,
+                        AccumulatorLimitSet.class, msgs );
             return basicSetLimitSet( ( AccumulatorLimitSet ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -379,7 +386,7 @@ public class AccumulatorLimitImpl extends LimitImpl implements AccumulatorLimit 
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (value: " );
         if( valueESet )
             result.append( value );

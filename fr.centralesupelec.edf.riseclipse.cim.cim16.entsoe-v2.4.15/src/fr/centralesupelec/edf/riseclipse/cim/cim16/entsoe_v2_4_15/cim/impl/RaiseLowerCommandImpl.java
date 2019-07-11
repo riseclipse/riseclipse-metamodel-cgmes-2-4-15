@@ -125,10 +125,12 @@ public class RaiseLowerCommandImpl extends AnalogControlImpl implements RaiseLow
     public void setValueAliasSet( ValueAliasSet newValueAliasSet ) {
         if( newValueAliasSet != valueAliasSet ) {
             NotificationChain msgs = null;
-            if( valueAliasSet != null ) msgs = ( ( InternalEObject ) valueAliasSet ).eInverseRemove( this,
-                    CimPackage.VALUE_ALIAS_SET__RAISE_LOWER_COMMANDS, ValueAliasSet.class, msgs );
-            if( newValueAliasSet != null ) msgs = ( ( InternalEObject ) newValueAliasSet ).eInverseAdd( this,
-                    CimPackage.VALUE_ALIAS_SET__RAISE_LOWER_COMMANDS, ValueAliasSet.class, msgs );
+            if( valueAliasSet != null )
+                msgs = ( ( InternalEObject ) valueAliasSet ).eInverseRemove( this,
+                        CimPackage.VALUE_ALIAS_SET__RAISE_LOWER_COMMANDS, ValueAliasSet.class, msgs );
+            if( newValueAliasSet != null )
+                msgs = ( ( InternalEObject ) newValueAliasSet ).eInverseAdd( this,
+                        CimPackage.VALUE_ALIAS_SET__RAISE_LOWER_COMMANDS, ValueAliasSet.class, msgs );
             msgs = basicSetValueAliasSet( newValueAliasSet, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -179,8 +181,9 @@ public class RaiseLowerCommandImpl extends AnalogControlImpl implements RaiseLow
         else {
             boolean oldValueAliasSetESet = valueAliasSetESet;
             valueAliasSetESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.RAISE_LOWER_COMMAND__VALUE_ALIAS_SET, null, null, oldValueAliasSetESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.RAISE_LOWER_COMMAND__VALUE_ALIAS_SET, null, null, oldValueAliasSetESet ) );
         }
     }
 
@@ -203,8 +206,9 @@ public class RaiseLowerCommandImpl extends AnalogControlImpl implements RaiseLow
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.RAISE_LOWER_COMMAND__VALUE_ALIAS_SET:
-            if( valueAliasSet != null ) msgs = ( ( InternalEObject ) valueAliasSet ).eInverseRemove( this,
-                    CimPackage.VALUE_ALIAS_SET__RAISE_LOWER_COMMANDS, ValueAliasSet.class, msgs );
+            if( valueAliasSet != null )
+                msgs = ( ( InternalEObject ) valueAliasSet ).eInverseRemove( this,
+                        CimPackage.VALUE_ALIAS_SET__RAISE_LOWER_COMMANDS, ValueAliasSet.class, msgs );
             return basicSetValueAliasSet( ( ValueAliasSet ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );

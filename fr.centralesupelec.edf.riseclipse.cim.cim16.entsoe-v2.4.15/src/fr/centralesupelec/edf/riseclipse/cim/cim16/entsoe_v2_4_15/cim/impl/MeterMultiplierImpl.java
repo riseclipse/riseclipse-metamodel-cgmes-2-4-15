@@ -166,8 +166,9 @@ public class MeterMultiplierImpl extends IdentifiedObjectImpl implements MeterMu
         kind = newKind == null ? KIND_EDEFAULT : newKind;
         boolean oldKindESet = kindESet;
         kindESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.METER_MULTIPLIER__KIND, oldKind, kind, !oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.METER_MULTIPLIER__KIND, oldKind, kind,
+                    !oldKindESet ) );
     }
 
     /**
@@ -181,8 +182,9 @@ public class MeterMultiplierImpl extends IdentifiedObjectImpl implements MeterMu
         boolean oldKindESet = kindESet;
         kind = KIND_EDEFAULT;
         kindESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.METER_MULTIPLIER__KIND, oldKind, KIND_EDEFAULT, oldKindESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.METER_MULTIPLIER__KIND, oldKind,
+                    KIND_EDEFAULT, oldKindESet ) );
     }
 
     /**
@@ -216,8 +218,9 @@ public class MeterMultiplierImpl extends IdentifiedObjectImpl implements MeterMu
         value = newValue;
         boolean oldValueESet = valueESet;
         valueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.METER_MULTIPLIER__VALUE, oldValue, value, !oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.METER_MULTIPLIER__VALUE, oldValue, value,
+                    !oldValueESet ) );
     }
 
     /**
@@ -231,8 +234,9 @@ public class MeterMultiplierImpl extends IdentifiedObjectImpl implements MeterMu
         boolean oldValueESet = valueESet;
         value = VALUE_EDEFAULT;
         valueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.METER_MULTIPLIER__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.METER_MULTIPLIER__VALUE, oldValue,
+                    VALUE_EDEFAULT, oldValueESet ) );
     }
 
     /**
@@ -285,18 +289,21 @@ public class MeterMultiplierImpl extends IdentifiedObjectImpl implements MeterMu
     public void setMeter( Meter newMeter ) {
         if( newMeter != meter ) {
             NotificationChain msgs = null;
-            if( meter != null ) msgs = ( ( InternalEObject ) meter ).eInverseRemove( this,
-                    CimPackage.METER__METER_MULTIPLIERS, Meter.class, msgs );
-            if( newMeter != null ) msgs = ( ( InternalEObject ) newMeter ).eInverseAdd( this,
-                    CimPackage.METER__METER_MULTIPLIERS, Meter.class, msgs );
+            if( meter != null )
+                msgs = ( ( InternalEObject ) meter ).eInverseRemove( this, CimPackage.METER__METER_MULTIPLIERS,
+                        Meter.class, msgs );
+            if( newMeter != null )
+                msgs = ( ( InternalEObject ) newMeter ).eInverseAdd( this, CimPackage.METER__METER_MULTIPLIERS,
+                        Meter.class, msgs );
             msgs = basicSetMeter( newMeter, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldMeterESet = meterESet;
             meterESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.METER_MULTIPLIER__METER, newMeter, newMeter, !oldMeterESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.METER_MULTIPLIER__METER, newMeter,
+                        newMeter, !oldMeterESet ) );
         }
     }
 
@@ -338,8 +345,9 @@ public class MeterMultiplierImpl extends IdentifiedObjectImpl implements MeterMu
         else {
             boolean oldMeterESet = meterESet;
             meterESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.METER_MULTIPLIER__METER, null, null, oldMeterESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.METER_MULTIPLIER__METER, null,
+                        null, oldMeterESet ) );
         }
     }
 
@@ -362,8 +370,9 @@ public class MeterMultiplierImpl extends IdentifiedObjectImpl implements MeterMu
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.METER_MULTIPLIER__METER:
-            if( meter != null ) msgs = ( ( InternalEObject ) meter ).eInverseRemove( this,
-                    CimPackage.METER__METER_MULTIPLIERS, Meter.class, msgs );
+            if( meter != null )
+                msgs = ( ( InternalEObject ) meter ).eInverseRemove( this, CimPackage.METER__METER_MULTIPLIERS,
+                        Meter.class, msgs );
             return basicSetMeter( ( Meter ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -470,7 +479,7 @@ public class MeterMultiplierImpl extends IdentifiedObjectImpl implements MeterMu
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (kind: " );
         if( kindESet )
             result.append( kind );

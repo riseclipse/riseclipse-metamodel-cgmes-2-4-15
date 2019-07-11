@@ -582,9 +582,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         booleanParameterValue = newBooleanParameterValue;
         boolean oldBooleanParameterValueESet = booleanParameterValueESet;
         booleanParameterValueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__BOOLEAN_PARAMETER_VALUE, oldBooleanParameterValue,
-                booleanParameterValue, !oldBooleanParameterValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__BOOLEAN_PARAMETER_VALUE, oldBooleanParameterValue,
+                    booleanParameterValue, !oldBooleanParameterValueESet ) );
     }
 
     /**
@@ -598,9 +599,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         boolean oldBooleanParameterValueESet = booleanParameterValueESet;
         booleanParameterValue = BOOLEAN_PARAMETER_VALUE_EDEFAULT;
         booleanParameterValueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__BOOLEAN_PARAMETER_VALUE, oldBooleanParameterValue,
-                BOOLEAN_PARAMETER_VALUE_EDEFAULT, oldBooleanParameterValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__BOOLEAN_PARAMETER_VALUE, oldBooleanParameterValue,
+                    BOOLEAN_PARAMETER_VALUE_EDEFAULT, oldBooleanParameterValueESet ) );
     }
 
     /**
@@ -634,9 +636,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         floatParameterValue = newFloatParameterValue;
         boolean oldFloatParameterValueESet = floatParameterValueESet;
         floatParameterValueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__FLOAT_PARAMETER_VALUE, oldFloatParameterValue,
-                floatParameterValue, !oldFloatParameterValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__FLOAT_PARAMETER_VALUE, oldFloatParameterValue,
+                    floatParameterValue, !oldFloatParameterValueESet ) );
     }
 
     /**
@@ -650,9 +653,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         boolean oldFloatParameterValueESet = floatParameterValueESet;
         floatParameterValue = FLOAT_PARAMETER_VALUE_EDEFAULT;
         floatParameterValueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__FLOAT_PARAMETER_VALUE, oldFloatParameterValue,
-                FLOAT_PARAMETER_VALUE_EDEFAULT, oldFloatParameterValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__FLOAT_PARAMETER_VALUE, oldFloatParameterValue,
+                    FLOAT_PARAMETER_VALUE_EDEFAULT, oldFloatParameterValueESet ) );
     }
 
     /**
@@ -686,9 +690,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         integerParameterValue = newIntegerParameterValue;
         boolean oldIntegerParameterValueESet = integerParameterValueESet;
         integerParameterValueESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__INTEGER_PARAMETER_VALUE, oldIntegerParameterValue,
-                integerParameterValue, !oldIntegerParameterValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__INTEGER_PARAMETER_VALUE, oldIntegerParameterValue,
+                    integerParameterValue, !oldIntegerParameterValueESet ) );
     }
 
     /**
@@ -702,9 +707,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         boolean oldIntegerParameterValueESet = integerParameterValueESet;
         integerParameterValue = INTEGER_PARAMETER_VALUE_EDEFAULT;
         integerParameterValueESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__INTEGER_PARAMETER_VALUE, oldIntegerParameterValue,
-                INTEGER_PARAMETER_VALUE_EDEFAULT, oldIntegerParameterValueESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__INTEGER_PARAMETER_VALUE, oldIntegerParameterValue,
+                    INTEGER_PARAMETER_VALUE_EDEFAULT, oldIntegerParameterValueESet ) );
     }
 
     /**
@@ -738,9 +744,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         parameterNumber = newParameterNumber;
         boolean oldParameterNumberESet = parameterNumberESet;
         parameterNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__PARAMETER_NUMBER, oldParameterNumber, parameterNumber,
-                !oldParameterNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET,
+                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__PARAMETER_NUMBER, oldParameterNumber, parameterNumber,
+                    !oldParameterNumberESet ) );
     }
 
     /**
@@ -754,9 +761,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         boolean oldParameterNumberESet = parameterNumberESet;
         parameterNumber = PARAMETER_NUMBER_EDEFAULT;
         parameterNumberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__PARAMETER_NUMBER, oldParameterNumber,
-                PARAMETER_NUMBER_EDEFAULT, oldParameterNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET,
+                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__PARAMETER_NUMBER, oldParameterNumber,
+                    PARAMETER_NUMBER_EDEFAULT, oldParameterNumberESet ) );
     }
 
     /**
@@ -825,10 +833,11 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldVoltageAdjusterUserDefinedESet = voltageAdjusterUserDefinedESet;
             voltageAdjusterUserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__VOLTAGE_ADJUSTER_USER_DEFINED,
-                    newVoltageAdjusterUserDefined, newVoltageAdjusterUserDefined,
-                    !oldVoltageAdjusterUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__VOLTAGE_ADJUSTER_USER_DEFINED,
+                        newVoltageAdjusterUserDefined, newVoltageAdjusterUserDefined,
+                        !oldVoltageAdjusterUserDefinedESet ) );
         }
     }
 
@@ -872,9 +881,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldVoltageAdjusterUserDefinedESet = voltageAdjusterUserDefinedESet;
             voltageAdjusterUserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__VOLTAGE_ADJUSTER_USER_DEFINED, null, null,
-                    oldVoltageAdjusterUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__VOLTAGE_ADJUSTER_USER_DEFINED, null, null,
+                        oldVoltageAdjusterUserDefinedESet ) );
         }
     }
 
@@ -929,19 +939,22 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
     public void setLoadUserDefined( LoadUserDefined newLoadUserDefined ) {
         if( newLoadUserDefined != loadUserDefined ) {
             NotificationChain msgs = null;
-            if( loadUserDefined != null ) msgs = ( ( InternalEObject ) loadUserDefined ).eInverseRemove( this,
-                    CimPackage.LOAD_USER_DEFINED__PROPRIETARY_PARAMETER_DYNAMICS, LoadUserDefined.class, msgs );
-            if( newLoadUserDefined != null ) msgs = ( ( InternalEObject ) newLoadUserDefined ).eInverseAdd( this,
-                    CimPackage.LOAD_USER_DEFINED__PROPRIETARY_PARAMETER_DYNAMICS, LoadUserDefined.class, msgs );
+            if( loadUserDefined != null )
+                msgs = ( ( InternalEObject ) loadUserDefined ).eInverseRemove( this,
+                        CimPackage.LOAD_USER_DEFINED__PROPRIETARY_PARAMETER_DYNAMICS, LoadUserDefined.class, msgs );
+            if( newLoadUserDefined != null )
+                msgs = ( ( InternalEObject ) newLoadUserDefined ).eInverseAdd( this,
+                        CimPackage.LOAD_USER_DEFINED__PROPRIETARY_PARAMETER_DYNAMICS, LoadUserDefined.class, msgs );
             msgs = basicSetLoadUserDefined( newLoadUserDefined, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldLoadUserDefinedESet = loadUserDefinedESet;
             loadUserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__LOAD_USER_DEFINED, newLoadUserDefined,
-                    newLoadUserDefined, !oldLoadUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__LOAD_USER_DEFINED, newLoadUserDefined,
+                        newLoadUserDefined, !oldLoadUserDefinedESet ) );
         }
     }
 
@@ -984,9 +997,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldLoadUserDefinedESet = loadUserDefinedESet;
             loadUserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__LOAD_USER_DEFINED, null, null,
-                    oldLoadUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__LOAD_USER_DEFINED, null, null,
+                        oldLoadUserDefinedESet ) );
         }
     }
 
@@ -1058,10 +1072,11 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldPowerSystemStabilizerUserDefinedESet = powerSystemStabilizerUserDefinedESet;
             powerSystemStabilizerUserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__POWER_SYSTEM_STABILIZER_USER_DEFINED,
-                    newPowerSystemStabilizerUserDefined, newPowerSystemStabilizerUserDefined,
-                    !oldPowerSystemStabilizerUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__POWER_SYSTEM_STABILIZER_USER_DEFINED,
+                        newPowerSystemStabilizerUserDefined, newPowerSystemStabilizerUserDefined,
+                        !oldPowerSystemStabilizerUserDefinedESet ) );
         }
     }
 
@@ -1105,9 +1120,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldPowerSystemStabilizerUserDefinedESet = powerSystemStabilizerUserDefinedESet;
             powerSystemStabilizerUserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__POWER_SYSTEM_STABILIZER_USER_DEFINED, null, null,
-                    oldPowerSystemStabilizerUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__POWER_SYSTEM_STABILIZER_USER_DEFINED, null, null,
+                        oldPowerSystemStabilizerUserDefinedESet ) );
         }
     }
 
@@ -1179,10 +1195,11 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldUnderexcitationLimiterUserDefinedESet = underexcitationLimiterUserDefinedESet;
             underexcitationLimiterUserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__UNDEREXCITATION_LIMITER_USER_DEFINED,
-                    newUnderexcitationLimiterUserDefined, newUnderexcitationLimiterUserDefined,
-                    !oldUnderexcitationLimiterUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__UNDEREXCITATION_LIMITER_USER_DEFINED,
+                        newUnderexcitationLimiterUserDefined, newUnderexcitationLimiterUserDefined,
+                        !oldUnderexcitationLimiterUserDefinedESet ) );
         }
     }
 
@@ -1226,9 +1243,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldUnderexcitationLimiterUserDefinedESet = underexcitationLimiterUserDefinedESet;
             underexcitationLimiterUserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__UNDEREXCITATION_LIMITER_USER_DEFINED, null, null,
-                    oldUnderexcitationLimiterUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__UNDEREXCITATION_LIMITER_USER_DEFINED, null, null,
+                        oldUnderexcitationLimiterUserDefinedESet ) );
         }
     }
 
@@ -1299,10 +1317,11 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldExcitationSystemUserDefinedESet = excitationSystemUserDefinedESet;
             excitationSystemUserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__EXCITATION_SYSTEM_USER_DEFINED,
-                    newExcitationSystemUserDefined, newExcitationSystemUserDefined,
-                    !oldExcitationSystemUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__EXCITATION_SYSTEM_USER_DEFINED,
+                        newExcitationSystemUserDefined, newExcitationSystemUserDefined,
+                        !oldExcitationSystemUserDefinedESet ) );
         }
     }
 
@@ -1346,9 +1365,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldExcitationSystemUserDefinedESet = excitationSystemUserDefinedESet;
             excitationSystemUserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__EXCITATION_SYSTEM_USER_DEFINED, null, null,
-                    oldExcitationSystemUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__EXCITATION_SYSTEM_USER_DEFINED, null, null,
+                        oldExcitationSystemUserDefinedESet ) );
         }
     }
 
@@ -1419,10 +1439,11 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldVoltageCompensatorUserDefinedESet = voltageCompensatorUserDefinedESet;
             voltageCompensatorUserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__VOLTAGE_COMPENSATOR_USER_DEFINED,
-                    newVoltageCompensatorUserDefined, newVoltageCompensatorUserDefined,
-                    !oldVoltageCompensatorUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__VOLTAGE_COMPENSATOR_USER_DEFINED,
+                        newVoltageCompensatorUserDefined, newVoltageCompensatorUserDefined,
+                        !oldVoltageCompensatorUserDefinedESet ) );
         }
     }
 
@@ -1466,9 +1487,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldVoltageCompensatorUserDefinedESet = voltageCompensatorUserDefinedESet;
             voltageCompensatorUserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__VOLTAGE_COMPENSATOR_USER_DEFINED, null, null,
-                    oldVoltageCompensatorUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__VOLTAGE_COMPENSATOR_USER_DEFINED, null, null,
+                        oldVoltageCompensatorUserDefinedESet ) );
         }
     }
 
@@ -1540,10 +1562,11 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldTurbineLoadControllerUserDefinedESet = turbineLoadControllerUserDefinedESet;
             turbineLoadControllerUserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__TURBINE_LOAD_CONTROLLER_USER_DEFINED,
-                    newTurbineLoadControllerUserDefined, newTurbineLoadControllerUserDefined,
-                    !oldTurbineLoadControllerUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__TURBINE_LOAD_CONTROLLER_USER_DEFINED,
+                        newTurbineLoadControllerUserDefined, newTurbineLoadControllerUserDefined,
+                        !oldTurbineLoadControllerUserDefinedESet ) );
         }
     }
 
@@ -1587,9 +1610,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldTurbineLoadControllerUserDefinedESet = turbineLoadControllerUserDefinedESet;
             turbineLoadControllerUserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__TURBINE_LOAD_CONTROLLER_USER_DEFINED, null, null,
-                    oldTurbineLoadControllerUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__TURBINE_LOAD_CONTROLLER_USER_DEFINED, null, null,
+                        oldTurbineLoadControllerUserDefinedESet ) );
         }
     }
 
@@ -1659,9 +1683,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldWindType3or4UserDefinedESet = windType3or4UserDefinedESet;
             windType3or4UserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__WIND_TYPE3OR4_USER_DEFINED, newWindType3or4UserDefined,
-                    newWindType3or4UserDefined, !oldWindType3or4UserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__WIND_TYPE3OR4_USER_DEFINED,
+                        newWindType3or4UserDefined, newWindType3or4UserDefined, !oldWindType3or4UserDefinedESet ) );
         }
     }
 
@@ -1705,9 +1730,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldWindType3or4UserDefinedESet = windType3or4UserDefinedESet;
             windType3or4UserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__WIND_TYPE3OR4_USER_DEFINED, null, null,
-                    oldWindType3or4UserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__WIND_TYPE3OR4_USER_DEFINED, null, null,
+                        oldWindType3or4UserDefinedESet ) );
         }
     }
 
@@ -1777,10 +1803,11 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldTurbineGovernorUserDefinedESet = turbineGovernorUserDefinedESet;
             turbineGovernorUserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__TURBINE_GOVERNOR_USER_DEFINED,
-                    newTurbineGovernorUserDefined, newTurbineGovernorUserDefined,
-                    !oldTurbineGovernorUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__TURBINE_GOVERNOR_USER_DEFINED,
+                        newTurbineGovernorUserDefined, newTurbineGovernorUserDefined,
+                        !oldTurbineGovernorUserDefinedESet ) );
         }
     }
 
@@ -1824,9 +1851,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldTurbineGovernorUserDefinedESet = turbineGovernorUserDefinedESet;
             turbineGovernorUserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__TURBINE_GOVERNOR_USER_DEFINED, null, null,
-                    oldTurbineGovernorUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__TURBINE_GOVERNOR_USER_DEFINED, null, null,
+                        oldTurbineGovernorUserDefinedESet ) );
         }
     }
 
@@ -1898,10 +1926,11 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldOverexcitationLimiterUserDefinedESet = overexcitationLimiterUserDefinedESet;
             overexcitationLimiterUserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__OVEREXCITATION_LIMITER_USER_DEFINED,
-                    newOverexcitationLimiterUserDefined, newOverexcitationLimiterUserDefined,
-                    !oldOverexcitationLimiterUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__OVEREXCITATION_LIMITER_USER_DEFINED,
+                        newOverexcitationLimiterUserDefined, newOverexcitationLimiterUserDefined,
+                        !oldOverexcitationLimiterUserDefinedESet ) );
         }
     }
 
@@ -1945,9 +1974,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldOverexcitationLimiterUserDefinedESet = overexcitationLimiterUserDefinedESet;
             overexcitationLimiterUserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__OVEREXCITATION_LIMITER_USER_DEFINED, null, null,
-                    oldOverexcitationLimiterUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__OVEREXCITATION_LIMITER_USER_DEFINED, null, null,
+                        oldOverexcitationLimiterUserDefinedESet ) );
         }
     }
 
@@ -2018,10 +2048,11 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldSynchronousMachineUserDefinedESet = synchronousMachineUserDefinedESet;
             synchronousMachineUserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__SYNCHRONOUS_MACHINE_USER_DEFINED,
-                    newSynchronousMachineUserDefined, newSynchronousMachineUserDefined,
-                    !oldSynchronousMachineUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__SYNCHRONOUS_MACHINE_USER_DEFINED,
+                        newSynchronousMachineUserDefined, newSynchronousMachineUserDefined,
+                        !oldSynchronousMachineUserDefinedESet ) );
         }
     }
 
@@ -2065,9 +2096,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldSynchronousMachineUserDefinedESet = synchronousMachineUserDefinedESet;
             synchronousMachineUserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__SYNCHRONOUS_MACHINE_USER_DEFINED, null, null,
-                    oldSynchronousMachineUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__SYNCHRONOUS_MACHINE_USER_DEFINED, null, null,
+                        oldSynchronousMachineUserDefinedESet ) );
         }
     }
 
@@ -2138,10 +2170,11 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldAsynchronousMachineUserDefinedESet = asynchronousMachineUserDefinedESet;
             asynchronousMachineUserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__ASYNCHRONOUS_MACHINE_USER_DEFINED,
-                    newAsynchronousMachineUserDefined, newAsynchronousMachineUserDefined,
-                    !oldAsynchronousMachineUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__ASYNCHRONOUS_MACHINE_USER_DEFINED,
+                        newAsynchronousMachineUserDefined, newAsynchronousMachineUserDefined,
+                        !oldAsynchronousMachineUserDefinedESet ) );
         }
     }
 
@@ -2185,9 +2218,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldAsynchronousMachineUserDefinedESet = asynchronousMachineUserDefinedESet;
             asynchronousMachineUserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__ASYNCHRONOUS_MACHINE_USER_DEFINED, null, null,
-                    oldAsynchronousMachineUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__ASYNCHRONOUS_MACHINE_USER_DEFINED, null, null,
+                        oldAsynchronousMachineUserDefinedESet ) );
         }
     }
 
@@ -2259,10 +2293,11 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldPFVArControllerType2UserDefinedESet = pfvArControllerType2UserDefinedESet;
             pfvArControllerType2UserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__PFV_AR_CONTROLLER_TYPE2_USER_DEFINED,
-                    newPFVArControllerType2UserDefined, newPFVArControllerType2UserDefined,
-                    !oldPFVArControllerType2UserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__PFV_AR_CONTROLLER_TYPE2_USER_DEFINED,
+                        newPFVArControllerType2UserDefined, newPFVArControllerType2UserDefined,
+                        !oldPFVArControllerType2UserDefinedESet ) );
         }
     }
 
@@ -2306,9 +2341,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldPFVArControllerType2UserDefinedESet = pfvArControllerType2UserDefinedESet;
             pfvArControllerType2UserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__PFV_AR_CONTROLLER_TYPE2_USER_DEFINED, null, null,
-                    oldPFVArControllerType2UserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__PFV_AR_CONTROLLER_TYPE2_USER_DEFINED, null, null,
+                        oldPFVArControllerType2UserDefinedESet ) );
         }
     }
 
@@ -2382,10 +2418,11 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldDiscontinuousExcitationControlUserDefinedESet = discontinuousExcitationControlUserDefinedESet;
             discontinuousExcitationControlUserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__DISCONTINUOUS_EXCITATION_CONTROL_USER_DEFINED,
-                    newDiscontinuousExcitationControlUserDefined, newDiscontinuousExcitationControlUserDefined,
-                    !oldDiscontinuousExcitationControlUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__DISCONTINUOUS_EXCITATION_CONTROL_USER_DEFINED,
+                        newDiscontinuousExcitationControlUserDefined, newDiscontinuousExcitationControlUserDefined,
+                        !oldDiscontinuousExcitationControlUserDefinedESet ) );
         }
     }
 
@@ -2430,9 +2467,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldDiscontinuousExcitationControlUserDefinedESet = discontinuousExcitationControlUserDefinedESet;
             discontinuousExcitationControlUserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__DISCONTINUOUS_EXCITATION_CONTROL_USER_DEFINED, null,
-                    null, oldDiscontinuousExcitationControlUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__DISCONTINUOUS_EXCITATION_CONTROL_USER_DEFINED, null,
+                        null, oldDiscontinuousExcitationControlUserDefinedESet ) );
         }
     }
 
@@ -2488,9 +2526,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
     public void setWindPlantUserDefined( WindPlantUserDefined newWindPlantUserDefined ) {
         if( newWindPlantUserDefined != windPlantUserDefined ) {
             NotificationChain msgs = null;
-            if( windPlantUserDefined != null ) msgs = ( ( InternalEObject ) windPlantUserDefined ).eInverseRemove( this,
-                    CimPackage.WIND_PLANT_USER_DEFINED__PROPRIETARY_PARAMETER_DYNAMICS, WindPlantUserDefined.class,
-                    msgs );
+            if( windPlantUserDefined != null )
+                msgs = ( ( InternalEObject ) windPlantUserDefined ).eInverseRemove( this,
+                        CimPackage.WIND_PLANT_USER_DEFINED__PROPRIETARY_PARAMETER_DYNAMICS, WindPlantUserDefined.class,
+                        msgs );
             if( newWindPlantUserDefined != null )
                 msgs = ( ( InternalEObject ) newWindPlantUserDefined ).eInverseAdd( this,
                         CimPackage.WIND_PLANT_USER_DEFINED__PROPRIETARY_PARAMETER_DYNAMICS, WindPlantUserDefined.class,
@@ -2501,9 +2540,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldWindPlantUserDefinedESet = windPlantUserDefinedESet;
             windPlantUserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__WIND_PLANT_USER_DEFINED, newWindPlantUserDefined,
-                    newWindPlantUserDefined, !oldWindPlantUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__WIND_PLANT_USER_DEFINED, newWindPlantUserDefined,
+                        newWindPlantUserDefined, !oldWindPlantUserDefinedESet ) );
         }
     }
 
@@ -2547,9 +2587,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldWindPlantUserDefinedESet = windPlantUserDefinedESet;
             windPlantUserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__WIND_PLANT_USER_DEFINED, null, null,
-                    oldWindPlantUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__WIND_PLANT_USER_DEFINED, null, null,
+                        oldWindPlantUserDefinedESet ) );
         }
     }
 
@@ -2619,9 +2660,11 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldMechanicalLoadUserDefinedESet = mechanicalLoadUserDefinedESet;
             mechanicalLoadUserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__MECHANICAL_LOAD_USER_DEFINED,
-                    newMechanicalLoadUserDefined, newMechanicalLoadUserDefined, !oldMechanicalLoadUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__MECHANICAL_LOAD_USER_DEFINED,
+                        newMechanicalLoadUserDefined, newMechanicalLoadUserDefined,
+                        !oldMechanicalLoadUserDefinedESet ) );
         }
     }
 
@@ -2665,9 +2708,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldMechanicalLoadUserDefinedESet = mechanicalLoadUserDefinedESet;
             mechanicalLoadUserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__MECHANICAL_LOAD_USER_DEFINED, null, null,
-                    oldMechanicalLoadUserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__MECHANICAL_LOAD_USER_DEFINED, null, null,
+                        oldMechanicalLoadUserDefinedESet ) );
         }
     }
 
@@ -2737,9 +2781,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldWindType1or2UserDefinedESet = windType1or2UserDefinedESet;
             windType1or2UserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__WIND_TYPE1OR2_USER_DEFINED, newWindType1or2UserDefined,
-                    newWindType1or2UserDefined, !oldWindType1or2UserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__WIND_TYPE1OR2_USER_DEFINED,
+                        newWindType1or2UserDefined, newWindType1or2UserDefined, !oldWindType1or2UserDefinedESet ) );
         }
     }
 
@@ -2783,9 +2828,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldWindType1or2UserDefinedESet = windType1or2UserDefinedESet;
             windType1or2UserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__WIND_TYPE1OR2_USER_DEFINED, null, null,
-                    oldWindType1or2UserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__WIND_TYPE1OR2_USER_DEFINED, null, null,
+                        oldWindType1or2UserDefinedESet ) );
         }
     }
 
@@ -2857,10 +2903,11 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldPFVArControllerType1UserDefinedESet = pfvArControllerType1UserDefinedESet;
             pfvArControllerType1UserDefinedESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__PFV_AR_CONTROLLER_TYPE1_USER_DEFINED,
-                    newPFVArControllerType1UserDefined, newPFVArControllerType1UserDefined,
-                    !oldPFVArControllerType1UserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__PFV_AR_CONTROLLER_TYPE1_USER_DEFINED,
+                        newPFVArControllerType1UserDefined, newPFVArControllerType1UserDefined,
+                        !oldPFVArControllerType1UserDefinedESet ) );
         }
     }
 
@@ -2904,9 +2951,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
         else {
             boolean oldPFVArControllerType1UserDefinedESet = pfvArControllerType1UserDefinedESet;
             pfvArControllerType1UserDefinedESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__PFV_AR_CONTROLLER_TYPE1_USER_DEFINED, null, null,
-                    oldPFVArControllerType1UserDefinedESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET,
+                        CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__PFV_AR_CONTROLLER_TYPE1_USER_DEFINED, null, null,
+                        oldPFVArControllerType1UserDefinedESet ) );
         }
     }
 
@@ -2941,9 +2989,10 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
                         AsynchronousMachineUserDefined.class, msgs );
             return basicSetAsynchronousMachineUserDefined( ( AsynchronousMachineUserDefined ) otherEnd, msgs );
         case CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__WIND_PLANT_USER_DEFINED:
-            if( windPlantUserDefined != null ) msgs = ( ( InternalEObject ) windPlantUserDefined ).eInverseRemove( this,
-                    CimPackage.WIND_PLANT_USER_DEFINED__PROPRIETARY_PARAMETER_DYNAMICS, WindPlantUserDefined.class,
-                    msgs );
+            if( windPlantUserDefined != null )
+                msgs = ( ( InternalEObject ) windPlantUserDefined ).eInverseRemove( this,
+                        CimPackage.WIND_PLANT_USER_DEFINED__PROPRIETARY_PARAMETER_DYNAMICS, WindPlantUserDefined.class,
+                        msgs );
             return basicSetWindPlantUserDefined( ( WindPlantUserDefined ) otherEnd, msgs );
         case CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__SYNCHRONOUS_MACHINE_USER_DEFINED:
             if( synchronousMachineUserDefined != null )
@@ -2982,8 +3031,9 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
                         PFVArControllerType1UserDefined.class, msgs );
             return basicSetPFVArControllerType1UserDefined( ( PFVArControllerType1UserDefined ) otherEnd, msgs );
         case CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__LOAD_USER_DEFINED:
-            if( loadUserDefined != null ) msgs = ( ( InternalEObject ) loadUserDefined ).eInverseRemove( this,
-                    CimPackage.LOAD_USER_DEFINED__PROPRIETARY_PARAMETER_DYNAMICS, LoadUserDefined.class, msgs );
+            if( loadUserDefined != null )
+                msgs = ( ( InternalEObject ) loadUserDefined ).eInverseRemove( this,
+                        CimPackage.LOAD_USER_DEFINED__PROPRIETARY_PARAMETER_DYNAMICS, LoadUserDefined.class, msgs );
             return basicSetLoadUserDefined( ( LoadUserDefined ) otherEnd, msgs );
         case CimPackage.PROPRIETARY_PARAMETER_DYNAMICS__DISCONTINUOUS_EXCITATION_CONTROL_USER_DEFINED:
             if( discontinuousExcitationControlUserDefined != null )
@@ -3363,7 +3413,7 @@ public class ProprietaryParameterDynamicsImpl extends CimObjectWithIDImpl implem
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (booleanParameterValue: " );
         if( booleanParameterValueESet )
             result.append( booleanParameterValue );

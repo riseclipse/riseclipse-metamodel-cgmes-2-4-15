@@ -279,8 +279,9 @@ public class CardImpl extends CimObjectWithIDImpl implements Card {
         cvNumber = newCvNumber;
         boolean oldCvNumberESet = cvNumberESet;
         cvNumberESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CARD__CV_NUMBER, oldCvNumber, cvNumber, !oldCvNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CARD__CV_NUMBER, oldCvNumber, cvNumber,
+                    !oldCvNumberESet ) );
     }
 
     /**
@@ -294,8 +295,9 @@ public class CardImpl extends CimObjectWithIDImpl implements Card {
         boolean oldCvNumberESet = cvNumberESet;
         cvNumber = CV_NUMBER_EDEFAULT;
         cvNumberESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CARD__CV_NUMBER, oldCvNumber, CV_NUMBER_EDEFAULT, oldCvNumberESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CARD__CV_NUMBER, oldCvNumber,
+                    CV_NUMBER_EDEFAULT, oldCvNumberESet ) );
     }
 
     /**
@@ -329,8 +331,9 @@ public class CardImpl extends CimObjectWithIDImpl implements Card {
         expiryDate = newExpiryDate;
         boolean oldExpiryDateESet = expiryDateESet;
         expiryDateESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.CARD__EXPIRY_DATE, oldExpiryDate, expiryDate, !oldExpiryDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CARD__EXPIRY_DATE, oldExpiryDate,
+                    expiryDate, !oldExpiryDateESet ) );
     }
 
     /**
@@ -344,8 +347,9 @@ public class CardImpl extends CimObjectWithIDImpl implements Card {
         boolean oldExpiryDateESet = expiryDateESet;
         expiryDate = EXPIRY_DATE_EDEFAULT;
         expiryDateESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.CARD__EXPIRY_DATE, oldExpiryDate, EXPIRY_DATE_EDEFAULT, oldExpiryDateESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CARD__EXPIRY_DATE, oldExpiryDate,
+                    EXPIRY_DATE_EDEFAULT, oldExpiryDateESet ) );
     }
 
     /**
@@ -394,8 +398,9 @@ public class CardImpl extends CimObjectWithIDImpl implements Card {
         boolean oldPanESet = panESet;
         pan = PAN_EDEFAULT;
         panESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CARD__PAN,
-                oldPan, PAN_EDEFAULT, oldPanESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CARD__PAN, oldPan, PAN_EDEFAULT,
+                    oldPanESet ) );
     }
 
     /**
@@ -448,18 +453,21 @@ public class CardImpl extends CimObjectWithIDImpl implements Card {
     public void setTender( Tender newTender ) {
         if( newTender != tender ) {
             NotificationChain msgs = null;
-            if( tender != null ) msgs = ( ( InternalEObject ) tender ).eInverseRemove( this, CimPackage.TENDER__CARD,
-                    Tender.class, msgs );
-            if( newTender != null ) msgs = ( ( InternalEObject ) newTender ).eInverseAdd( this, CimPackage.TENDER__CARD,
-                    Tender.class, msgs );
+            if( tender != null )
+                msgs = ( ( InternalEObject ) tender ).eInverseRemove( this, CimPackage.TENDER__CARD, Tender.class,
+                        msgs );
+            if( newTender != null )
+                msgs = ( ( InternalEObject ) newTender ).eInverseAdd( this, CimPackage.TENDER__CARD, Tender.class,
+                        msgs );
             msgs = basicSetTender( newTender, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTenderESet = tenderESet;
             tenderESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.CARD__TENDER, newTender, newTender, !oldTenderESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.CARD__TENDER, newTender, newTender,
+                        !oldTenderESet ) );
         }
     }
 
@@ -500,8 +508,9 @@ public class CardImpl extends CimObjectWithIDImpl implements Card {
         else {
             boolean oldTenderESet = tenderESet;
             tenderESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.CARD__TENDER, null, null, oldTenderESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.CARD__TENDER, null, null,
+                        oldTenderESet ) );
         }
     }
 
@@ -524,8 +533,9 @@ public class CardImpl extends CimObjectWithIDImpl implements Card {
     public NotificationChain eInverseAdd( InternalEObject otherEnd, int featureID, NotificationChain msgs ) {
         switch( featureID ) {
         case CimPackage.CARD__TENDER:
-            if( tender != null ) msgs = ( ( InternalEObject ) tender ).eInverseRemove( this, CimPackage.TENDER__CARD,
-                    Tender.class, msgs );
+            if( tender != null )
+                msgs = ( ( InternalEObject ) tender ).eInverseRemove( this, CimPackage.TENDER__CARD, Tender.class,
+                        msgs );
             return basicSetTender( ( Tender ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -652,7 +662,7 @@ public class CardImpl extends CimObjectWithIDImpl implements Card {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (accountHolderName: " );
         if( accountHolderNameESet )
             result.append( accountHolderName );

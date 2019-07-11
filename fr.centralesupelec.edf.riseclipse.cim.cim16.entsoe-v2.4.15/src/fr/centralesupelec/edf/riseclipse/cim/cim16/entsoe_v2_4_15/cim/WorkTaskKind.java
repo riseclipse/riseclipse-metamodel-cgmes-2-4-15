@@ -142,7 +142,12 @@ public enum WorkTaskKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    private static final WorkTaskKind[] VALUES_ARRAY = new WorkTaskKind[] { INSTALL, REMOVE, EXCHANGE, INVESTIGATE, };
+    private static final WorkTaskKind[] VALUES_ARRAY = new WorkTaskKind[] {
+            INSTALL,
+            REMOVE,
+            EXCHANGE,
+            INVESTIGATE,
+    };
 
     /**
      * A public read-only list of all the '<em><b>Work Task Kind</b></em>' enumerators.

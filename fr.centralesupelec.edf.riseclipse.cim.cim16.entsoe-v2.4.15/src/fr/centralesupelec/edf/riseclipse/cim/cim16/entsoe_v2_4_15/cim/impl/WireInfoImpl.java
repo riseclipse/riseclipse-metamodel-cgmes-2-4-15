@@ -555,8 +555,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         coreRadius = newCoreRadius;
         boolean oldCoreRadiusESet = coreRadiusESet;
         coreRadiusESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIRE_INFO__CORE_RADIUS, oldCoreRadius, coreRadius, !oldCoreRadiusESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIRE_INFO__CORE_RADIUS, oldCoreRadius,
+                    coreRadius, !oldCoreRadiusESet ) );
     }
 
     /**
@@ -570,8 +571,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         boolean oldCoreRadiusESet = coreRadiusESet;
         coreRadius = CORE_RADIUS_EDEFAULT;
         coreRadiusESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIRE_INFO__CORE_RADIUS, oldCoreRadius, CORE_RADIUS_EDEFAULT, oldCoreRadiusESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIRE_INFO__CORE_RADIUS, oldCoreRadius,
+                    CORE_RADIUS_EDEFAULT, oldCoreRadiusESet ) );
     }
 
     /**
@@ -657,8 +659,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         gmr = newGmr;
         boolean oldGmrESet = gmrESet;
         gmrESet = true;
-        if( eNotificationRequired() ) eNotify(
-                new ENotificationImpl( this, Notification.SET, CimPackage.WIRE_INFO__GMR, oldGmr, gmr, !oldGmrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIRE_INFO__GMR, oldGmr, gmr,
+                    !oldGmrESet ) );
     }
 
     /**
@@ -672,8 +675,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         boolean oldGmrESet = gmrESet;
         gmr = GMR_EDEFAULT;
         gmrESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIRE_INFO__GMR, oldGmr, GMR_EDEFAULT, oldGmrESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIRE_INFO__GMR, oldGmr, GMR_EDEFAULT,
+                    oldGmrESet ) );
     }
 
     /**
@@ -707,8 +711,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         insulated = newInsulated;
         boolean oldInsulatedESet = insulatedESet;
         insulatedESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIRE_INFO__INSULATED, oldInsulated, insulated, !oldInsulatedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIRE_INFO__INSULATED, oldInsulated,
+                    insulated, !oldInsulatedESet ) );
     }
 
     /**
@@ -722,8 +727,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         boolean oldInsulatedESet = insulatedESet;
         insulated = INSULATED_EDEFAULT;
         insulatedESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIRE_INFO__INSULATED, oldInsulated, INSULATED_EDEFAULT, oldInsulatedESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIRE_INFO__INSULATED, oldInsulated,
+                    INSULATED_EDEFAULT, oldInsulatedESet ) );
     }
 
     /**
@@ -861,8 +867,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         material = newMaterial == null ? MATERIAL_EDEFAULT : newMaterial;
         boolean oldMaterialESet = materialESet;
         materialESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIRE_INFO__MATERIAL, oldMaterial, material, !oldMaterialESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIRE_INFO__MATERIAL, oldMaterial,
+                    material, !oldMaterialESet ) );
     }
 
     /**
@@ -876,8 +883,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         boolean oldMaterialESet = materialESet;
         material = MATERIAL_EDEFAULT;
         materialESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIRE_INFO__MATERIAL, oldMaterial, MATERIAL_EDEFAULT, oldMaterialESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIRE_INFO__MATERIAL, oldMaterial,
+                    MATERIAL_EDEFAULT, oldMaterialESet ) );
     }
 
     /**
@@ -911,8 +919,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         rAC25 = newRAC25;
         boolean oldRAC25ESet = rAC25ESet;
         rAC25ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIRE_INFO__RAC25, oldRAC25, rAC25, !oldRAC25ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIRE_INFO__RAC25, oldRAC25, rAC25,
+                    !oldRAC25ESet ) );
     }
 
     /**
@@ -926,8 +935,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         boolean oldRAC25ESet = rAC25ESet;
         rAC25 = RAC25_EDEFAULT;
         rAC25ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIRE_INFO__RAC25, oldRAC25, RAC25_EDEFAULT, oldRAC25ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIRE_INFO__RAC25, oldRAC25,
+                    RAC25_EDEFAULT, oldRAC25ESet ) );
     }
 
     /**
@@ -961,8 +971,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         rAC50 = newRAC50;
         boolean oldRAC50ESet = rAC50ESet;
         rAC50ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIRE_INFO__RAC50, oldRAC50, rAC50, !oldRAC50ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIRE_INFO__RAC50, oldRAC50, rAC50,
+                    !oldRAC50ESet ) );
     }
 
     /**
@@ -976,8 +987,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         boolean oldRAC50ESet = rAC50ESet;
         rAC50 = RAC50_EDEFAULT;
         rAC50ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIRE_INFO__RAC50, oldRAC50, RAC50_EDEFAULT, oldRAC50ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIRE_INFO__RAC50, oldRAC50,
+                    RAC50_EDEFAULT, oldRAC50ESet ) );
     }
 
     /**
@@ -1011,8 +1023,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         rAC75 = newRAC75;
         boolean oldRAC75ESet = rAC75ESet;
         rAC75ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIRE_INFO__RAC75, oldRAC75, rAC75, !oldRAC75ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIRE_INFO__RAC75, oldRAC75, rAC75,
+                    !oldRAC75ESet ) );
     }
 
     /**
@@ -1026,8 +1039,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         boolean oldRAC75ESet = rAC75ESet;
         rAC75 = RAC75_EDEFAULT;
         rAC75ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIRE_INFO__RAC75, oldRAC75, RAC75_EDEFAULT, oldRAC75ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIRE_INFO__RAC75, oldRAC75,
+                    RAC75_EDEFAULT, oldRAC75ESet ) );
     }
 
     /**
@@ -1061,8 +1075,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         radius = newRadius;
         boolean oldRadiusESet = radiusESet;
         radiusESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIRE_INFO__RADIUS, oldRadius, radius, !oldRadiusESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIRE_INFO__RADIUS, oldRadius, radius,
+                    !oldRadiusESet ) );
     }
 
     /**
@@ -1076,8 +1091,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         boolean oldRadiusESet = radiusESet;
         radius = RADIUS_EDEFAULT;
         radiusESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIRE_INFO__RADIUS, oldRadius, RADIUS_EDEFAULT, oldRadiusESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIRE_INFO__RADIUS, oldRadius,
+                    RADIUS_EDEFAULT, oldRadiusESet ) );
     }
 
     /**
@@ -1111,8 +1127,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         ratedCurrent = newRatedCurrent;
         boolean oldRatedCurrentESet = ratedCurrentESet;
         ratedCurrentESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIRE_INFO__RATED_CURRENT, oldRatedCurrent, ratedCurrent, !oldRatedCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIRE_INFO__RATED_CURRENT,
+                    oldRatedCurrent, ratedCurrent, !oldRatedCurrentESet ) );
     }
 
     /**
@@ -1126,8 +1143,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         boolean oldRatedCurrentESet = ratedCurrentESet;
         ratedCurrent = RATED_CURRENT_EDEFAULT;
         ratedCurrentESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIRE_INFO__RATED_CURRENT, oldRatedCurrent, RATED_CURRENT_EDEFAULT, oldRatedCurrentESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIRE_INFO__RATED_CURRENT,
+                    oldRatedCurrent, RATED_CURRENT_EDEFAULT, oldRatedCurrentESet ) );
     }
 
     /**
@@ -1161,8 +1179,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         rDC20 = newRDC20;
         boolean oldRDC20ESet = rDC20ESet;
         rDC20ESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIRE_INFO__RDC20, oldRDC20, rDC20, !oldRDC20ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIRE_INFO__RDC20, oldRDC20, rDC20,
+                    !oldRDC20ESet ) );
     }
 
     /**
@@ -1176,8 +1195,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         boolean oldRDC20ESet = rDC20ESet;
         rDC20 = RDC20_EDEFAULT;
         rDC20ESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIRE_INFO__RDC20, oldRDC20, RDC20_EDEFAULT, oldRDC20ESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIRE_INFO__RDC20, oldRDC20,
+                    RDC20_EDEFAULT, oldRDC20ESet ) );
     }
 
     /**
@@ -1263,8 +1283,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         strandCount = newStrandCount;
         boolean oldStrandCountESet = strandCountESet;
         strandCountESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.WIRE_INFO__STRAND_COUNT, oldStrandCount, strandCount, !oldStrandCountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.WIRE_INFO__STRAND_COUNT, oldStrandCount,
+                    strandCount, !oldStrandCountESet ) );
     }
 
     /**
@@ -1278,8 +1299,9 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
         boolean oldStrandCountESet = strandCountESet;
         strandCount = STRAND_COUNT_EDEFAULT;
         strandCountESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.WIRE_INFO__STRAND_COUNT, oldStrandCount, STRAND_COUNT_EDEFAULT, oldStrandCountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.WIRE_INFO__STRAND_COUNT,
+                    oldStrandCount, STRAND_COUNT_EDEFAULT, oldStrandCountESet ) );
     }
 
     /**
@@ -1576,7 +1598,7 @@ public class WireInfoImpl extends AssetInfoImpl implements WireInfo {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (coreRadius: " );
         if( coreRadiusESet )
             result.append( coreRadius );

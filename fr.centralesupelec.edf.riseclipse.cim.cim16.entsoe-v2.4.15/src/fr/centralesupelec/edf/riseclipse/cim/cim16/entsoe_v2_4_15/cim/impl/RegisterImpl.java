@@ -265,8 +265,9 @@ public class RegisterImpl extends IdentifiedObjectImpl implements Register {
         isVirtual = newIsVirtual;
         boolean oldIsVirtualESet = isVirtualESet;
         isVirtualESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REGISTER__IS_VIRTUAL, oldIsVirtual, isVirtual, !oldIsVirtualESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REGISTER__IS_VIRTUAL, oldIsVirtual,
+                    isVirtual, !oldIsVirtualESet ) );
     }
 
     /**
@@ -280,8 +281,9 @@ public class RegisterImpl extends IdentifiedObjectImpl implements Register {
         boolean oldIsVirtualESet = isVirtualESet;
         isVirtual = IS_VIRTUAL_EDEFAULT;
         isVirtualESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REGISTER__IS_VIRTUAL, oldIsVirtual, IS_VIRTUAL_EDEFAULT, oldIsVirtualESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.REGISTER__IS_VIRTUAL, oldIsVirtual,
+                    IS_VIRTUAL_EDEFAULT, oldIsVirtualESet ) );
     }
 
     /**
@@ -315,8 +317,9 @@ public class RegisterImpl extends IdentifiedObjectImpl implements Register {
         leftDigitCount = newLeftDigitCount;
         boolean oldLeftDigitCountESet = leftDigitCountESet;
         leftDigitCountESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REGISTER__LEFT_DIGIT_COUNT, oldLeftDigitCount, leftDigitCount, !oldLeftDigitCountESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REGISTER__LEFT_DIGIT_COUNT,
+                    oldLeftDigitCount, leftDigitCount, !oldLeftDigitCountESet ) );
     }
 
     /**
@@ -418,8 +421,9 @@ public class RegisterImpl extends IdentifiedObjectImpl implements Register {
         touTierName = newTouTierName;
         boolean oldTouTierNameESet = touTierNameESet;
         touTierNameESet = true;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                CimPackage.REGISTER__TOU_TIER_NAME, oldTouTierName, touTierName, !oldTouTierNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REGISTER__TOU_TIER_NAME, oldTouTierName,
+                    touTierName, !oldTouTierNameESet ) );
     }
 
     /**
@@ -433,8 +437,9 @@ public class RegisterImpl extends IdentifiedObjectImpl implements Register {
         boolean oldTouTierNameESet = touTierNameESet;
         touTierName = TOU_TIER_NAME_EDEFAULT;
         touTierNameESet = false;
-        if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                CimPackage.REGISTER__TOU_TIER_NAME, oldTouTierName, TOU_TIER_NAME_EDEFAULT, oldTouTierNameESet ) );
+        if( eNotificationRequired() )
+            eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.REGISTER__TOU_TIER_NAME,
+                    oldTouTierName, TOU_TIER_NAME_EDEFAULT, oldTouTierNameESet ) );
     }
 
     /**
@@ -487,18 +492,21 @@ public class RegisterImpl extends IdentifiedObjectImpl implements Register {
     public void setTouTier( TimeInterval newTouTier ) {
         if( newTouTier != touTier ) {
             NotificationChain msgs = null;
-            if( touTier != null ) msgs = ( ( InternalEObject ) touTier ).eInverseRemove( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.REGISTER__TOU_TIER, null, msgs );
-            if( newTouTier != null ) msgs = ( ( InternalEObject ) newTouTier ).eInverseAdd( this,
-                    EOPPOSITE_FEATURE_BASE - CimPackage.REGISTER__TOU_TIER, null, msgs );
+            if( touTier != null )
+                msgs = ( ( InternalEObject ) touTier ).eInverseRemove( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.REGISTER__TOU_TIER, null, msgs );
+            if( newTouTier != null )
+                msgs = ( ( InternalEObject ) newTouTier ).eInverseAdd( this,
+                        EOPPOSITE_FEATURE_BASE - CimPackage.REGISTER__TOU_TIER, null, msgs );
             msgs = basicSetTouTier( newTouTier, msgs );
             if( msgs != null ) msgs.dispatch();
         }
         else {
             boolean oldTouTierESet = touTierESet;
             touTierESet = true;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.SET,
-                    CimPackage.REGISTER__TOU_TIER, newTouTier, newTouTier, !oldTouTierESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.SET, CimPackage.REGISTER__TOU_TIER, newTouTier,
+                        newTouTier, !oldTouTierESet ) );
         }
     }
 
@@ -540,8 +548,9 @@ public class RegisterImpl extends IdentifiedObjectImpl implements Register {
         else {
             boolean oldTouTierESet = touTierESet;
             touTierESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REGISTER__TOU_TIER, null, null, oldTouTierESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.REGISTER__TOU_TIER, null, null,
+                        oldTouTierESet ) );
         }
     }
 
@@ -597,10 +606,12 @@ public class RegisterImpl extends IdentifiedObjectImpl implements Register {
     public void setEndDeviceFunction( EndDeviceFunction newEndDeviceFunction ) {
         if( newEndDeviceFunction != endDeviceFunction ) {
             NotificationChain msgs = null;
-            if( endDeviceFunction != null ) msgs = ( ( InternalEObject ) endDeviceFunction ).eInverseRemove( this,
-                    CimPackage.END_DEVICE_FUNCTION__REGISTERS, EndDeviceFunction.class, msgs );
-            if( newEndDeviceFunction != null ) msgs = ( ( InternalEObject ) newEndDeviceFunction ).eInverseAdd( this,
-                    CimPackage.END_DEVICE_FUNCTION__REGISTERS, EndDeviceFunction.class, msgs );
+            if( endDeviceFunction != null )
+                msgs = ( ( InternalEObject ) endDeviceFunction ).eInverseRemove( this,
+                        CimPackage.END_DEVICE_FUNCTION__REGISTERS, EndDeviceFunction.class, msgs );
+            if( newEndDeviceFunction != null )
+                msgs = ( ( InternalEObject ) newEndDeviceFunction ).eInverseAdd( this,
+                        CimPackage.END_DEVICE_FUNCTION__REGISTERS, EndDeviceFunction.class, msgs );
             msgs = basicSetEndDeviceFunction( newEndDeviceFunction, msgs );
             if( msgs != null ) msgs.dispatch();
         }
@@ -651,8 +662,9 @@ public class RegisterImpl extends IdentifiedObjectImpl implements Register {
         else {
             boolean oldEndDeviceFunctionESet = endDeviceFunctionESet;
             endDeviceFunctionESet = false;
-            if( eNotificationRequired() ) eNotify( new ENotificationImpl( this, Notification.UNSET,
-                    CimPackage.REGISTER__END_DEVICE_FUNCTION, null, null, oldEndDeviceFunctionESet ) );
+            if( eNotificationRequired() )
+                eNotify( new ENotificationImpl( this, Notification.UNSET, CimPackage.REGISTER__END_DEVICE_FUNCTION,
+                        null, null, oldEndDeviceFunctionESet ) );
         }
     }
 
@@ -713,8 +725,9 @@ public class RegisterImpl extends IdentifiedObjectImpl implements Register {
             return ( ( InternalEList< InternalEObject > ) ( InternalEList< ? > ) getChannels() ).basicAdd( otherEnd,
                     msgs );
         case CimPackage.REGISTER__END_DEVICE_FUNCTION:
-            if( endDeviceFunction != null ) msgs = ( ( InternalEObject ) endDeviceFunction ).eInverseRemove( this,
-                    CimPackage.END_DEVICE_FUNCTION__REGISTERS, EndDeviceFunction.class, msgs );
+            if( endDeviceFunction != null )
+                msgs = ( ( InternalEObject ) endDeviceFunction ).eInverseRemove( this,
+                        CimPackage.END_DEVICE_FUNCTION__REGISTERS, EndDeviceFunction.class, msgs );
             return basicSetEndDeviceFunction( ( EndDeviceFunction ) otherEnd, msgs );
         }
         return super.eInverseAdd( otherEnd, featureID, msgs );
@@ -867,7 +880,7 @@ public class RegisterImpl extends IdentifiedObjectImpl implements Register {
     public String toString() {
         if( eIsProxy() ) return super.toString();
 
-        StringBuffer result = new StringBuffer( super.toString() );
+        StringBuilder result = new StringBuilder( super.toString() );
         result.append( " (isVirtual: " );
         if( isVirtualESet )
             result.append( isVirtual );
