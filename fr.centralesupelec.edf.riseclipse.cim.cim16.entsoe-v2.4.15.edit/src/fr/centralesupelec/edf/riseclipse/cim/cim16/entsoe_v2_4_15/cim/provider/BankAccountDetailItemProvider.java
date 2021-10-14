@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,17 +20,12 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.BankAccountDetail;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -41,6 +36,9 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.BankAccountDetail;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.BankAccountDetail} object.
@@ -87,13 +85,19 @@ public class BankAccountDetailItemProvider extends ItemProviderAdapter implement
      * @generated
      */
     protected void addAccountNumberPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_BankAccountDetail_accountNumber_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_BankAccountDetail_accountNumber_feature",
-                        "_UI_BankAccountDetail_type" ),
-                CimPackage.eINSTANCE.getBankAccountDetail_AccountNumber(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_BankAccountDetail_accountNumber_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_BankAccountDetail_accountNumber_feature",
+                                "_UI_BankAccountDetail_type" ),
+                        CimPackage.eINSTANCE.getBankAccountDetail_AccountNumber(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -105,11 +109,17 @@ public class BankAccountDetailItemProvider extends ItemProviderAdapter implement
     protected void addBankNamePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_BankAccountDetail_bankName_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_BankAccountDetail_bankName_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_BankAccountDetail_bankName_feature",
                                 "_UI_BankAccountDetail_type" ),
-                        CimPackage.eINSTANCE.getBankAccountDetail_BankName(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getBankAccountDetail_BankName(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -121,11 +131,17 @@ public class BankAccountDetailItemProvider extends ItemProviderAdapter implement
     protected void addBranchCodePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_BankAccountDetail_branchCode_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_BankAccountDetail_branchCode_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_BankAccountDetail_branchCode_feature",
                                 "_UI_BankAccountDetail_type" ),
-                        CimPackage.eINSTANCE.getBankAccountDetail_BranchCode(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getBankAccountDetail_BranchCode(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -137,11 +153,17 @@ public class BankAccountDetailItemProvider extends ItemProviderAdapter implement
     protected void addHolderIDPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_BankAccountDetail_holderID_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_BankAccountDetail_holderID_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_BankAccountDetail_holderID_feature",
                                 "_UI_BankAccountDetail_type" ),
-                        CimPackage.eINSTANCE.getBankAccountDetail_HolderID(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getBankAccountDetail_HolderID(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -153,11 +175,17 @@ public class BankAccountDetailItemProvider extends ItemProviderAdapter implement
     protected void addHolderNamePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_BankAccountDetail_holderName_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_BankAccountDetail_holderName_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_BankAccountDetail_holderName_feature",
                                 "_UI_BankAccountDetail_type" ),
-                        CimPackage.eINSTANCE.getBankAccountDetail_HolderName(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getBankAccountDetail_HolderName(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -227,7 +255,7 @@ public class BankAccountDetailItemProvider extends ItemProviderAdapter implement
      */
     @Override
     public ResourceLocator getResourceLocator() {
-        return Entsoe_v2_4_15EditPlugin.INSTANCE;
+        return entsoev2415EditPlugin.INSTANCE;
     }
 
 }

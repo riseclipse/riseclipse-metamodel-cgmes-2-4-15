@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindGenTurbineType3IEC;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindGenTurbineType3IEC;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindGenTurbineType3IEC} object.
@@ -79,13 +78,19 @@ public class WindGenTurbineType3IECItemProvider extends WindTurbineType3or4IECIt
      * @generated
      */
     protected void addDipmaxPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_WindGenTurbineType3IEC_dipmax_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_WindGenTurbineType3IEC_dipmax_feature",
-                        "_UI_WindGenTurbineType3IEC_type" ),
-                CimPackage.eINSTANCE.getWindGenTurbineType3IEC_Dipmax(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_WindGenTurbineType3IEC_dipmax_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_WindGenTurbineType3IEC_dipmax_feature",
+                                "_UI_WindGenTurbineType3IEC_type" ),
+                        CimPackage.eINSTANCE.getWindGenTurbineType3IEC_Dipmax(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -95,13 +100,19 @@ public class WindGenTurbineType3IECItemProvider extends WindTurbineType3or4IECIt
      * @generated
      */
     protected void addDiqmaxPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_WindGenTurbineType3IEC_diqmax_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_WindGenTurbineType3IEC_diqmax_feature",
-                        "_UI_WindGenTurbineType3IEC_type" ),
-                CimPackage.eINSTANCE.getWindGenTurbineType3IEC_Diqmax(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_WindGenTurbineType3IEC_diqmax_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_WindGenTurbineType3IEC_diqmax_feature",
+                                "_UI_WindGenTurbineType3IEC_type" ),
+                        CimPackage.eINSTANCE.getWindGenTurbineType3IEC_Diqmax(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -112,11 +123,17 @@ public class WindGenTurbineType3IECItemProvider extends WindTurbineType3or4IECIt
      */
     protected void addWindAeroLinearIECPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_WindGenTurbineType3IEC_WindAeroLinearIEC_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_WindGenTurbineType3IEC_WindAeroLinearIEC_feature",
                         "_UI_WindGenTurbineType3IEC_type" ),
-                CimPackage.eINSTANCE.getWindGenTurbineType3IEC_WindAeroLinearIEC(), true, false, true, null, null,
+                CimPackage.eINSTANCE.getWindGenTurbineType3IEC_WindAeroLinearIEC(),
+                true,
+                false,
+                true,
+                null,
+                null,
                 null ) );
     }
 
@@ -127,12 +144,19 @@ public class WindGenTurbineType3IECItemProvider extends WindTurbineType3or4IECIt
      * @generated
      */
     protected void addWindMechIECPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_WindGenTurbineType3IEC_WindMechIEC_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_WindGenTurbineType3IEC_WindMechIEC_feature",
-                        "_UI_WindGenTurbineType3IEC_type" ),
-                CimPackage.eINSTANCE.getWindGenTurbineType3IEC_WindMechIEC(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_WindGenTurbineType3IEC_WindMechIEC_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_WindGenTurbineType3IEC_WindMechIEC_feature", "_UI_WindGenTurbineType3IEC_type" ),
+                        CimPackage.eINSTANCE.getWindGenTurbineType3IEC_WindMechIEC(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -143,11 +167,17 @@ public class WindGenTurbineType3IECItemProvider extends WindTurbineType3or4IECIt
      */
     protected void addWindContPType3IECPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_WindGenTurbineType3IEC_WindContPType3IEC_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_WindGenTurbineType3IEC_WindContPType3IEC_feature",
                         "_UI_WindGenTurbineType3IEC_type" ),
-                CimPackage.eINSTANCE.getWindGenTurbineType3IEC_WindContPType3IEC(), true, false, true, null, null,
+                CimPackage.eINSTANCE.getWindGenTurbineType3IEC_WindContPType3IEC(),
+                true,
+                false,
+                true,
+                null,
+                null,
                 null ) );
     }
 
@@ -159,11 +189,17 @@ public class WindGenTurbineType3IECItemProvider extends WindTurbineType3or4IECIt
      */
     protected void addWindContPitchAngleIECPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_WindGenTurbineType3IEC_WindContPitchAngleIEC_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_WindGenTurbineType3IEC_WindContPitchAngleIEC_feature", "_UI_WindGenTurbineType3IEC_type" ),
-                CimPackage.eINSTANCE.getWindGenTurbineType3IEC_WindContPitchAngleIEC(), true, false, true, null, null,
+                CimPackage.eINSTANCE.getWindGenTurbineType3IEC_WindContPitchAngleIEC(),
+                true,
+                false,
+                true,
+                null,
+                null,
                 null ) );
     }
 

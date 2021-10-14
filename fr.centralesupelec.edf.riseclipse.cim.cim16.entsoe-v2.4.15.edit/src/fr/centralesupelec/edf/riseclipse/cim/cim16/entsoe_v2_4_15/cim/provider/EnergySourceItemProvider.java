@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.EnergySource;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.EnergySource;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.EnergySource} object.
@@ -89,11 +88,17 @@ public class EnergySourceItemProvider extends ConductingEquipmentItemProvider {
     protected void addActivePowerPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EnergySource_activePower_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EnergySource_activePower_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EnergySource_activePower_feature",
                                 "_UI_EnergySource_type" ),
-                        CimPackage.eINSTANCE.getEnergySource_ActivePower(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEnergySource_ActivePower(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -105,11 +110,17 @@ public class EnergySourceItemProvider extends ConductingEquipmentItemProvider {
     protected void addNominalVoltagePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EnergySource_nominalVoltage_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EnergySource_nominalVoltage_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EnergySource_nominalVoltage_feature",
                                 "_UI_EnergySource_type" ),
-                        CimPackage.eINSTANCE.getEnergySource_NominalVoltage(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEnergySource_NominalVoltage(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -121,11 +132,17 @@ public class EnergySourceItemProvider extends ConductingEquipmentItemProvider {
     protected void addRPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EnergySource_r_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EnergySource_r_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EnergySource_r_feature",
                                 "_UI_EnergySource_type" ),
-                        CimPackage.eINSTANCE.getEnergySource_R(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEnergySource_R(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -137,11 +154,17 @@ public class EnergySourceItemProvider extends ConductingEquipmentItemProvider {
     protected void addR0PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EnergySource_r0_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EnergySource_r0_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EnergySource_r0_feature",
                                 "_UI_EnergySource_type" ),
-                        CimPackage.eINSTANCE.getEnergySource_R0(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEnergySource_R0(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -153,11 +176,17 @@ public class EnergySourceItemProvider extends ConductingEquipmentItemProvider {
     protected void addReactivePowerPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EnergySource_reactivePower_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EnergySource_reactivePower_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EnergySource_reactivePower_feature",
                                 "_UI_EnergySource_type" ),
-                        CimPackage.eINSTANCE.getEnergySource_ReactivePower(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEnergySource_ReactivePower(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -169,11 +198,17 @@ public class EnergySourceItemProvider extends ConductingEquipmentItemProvider {
     protected void addRnPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EnergySource_rn_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EnergySource_rn_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EnergySource_rn_feature",
                                 "_UI_EnergySource_type" ),
-                        CimPackage.eINSTANCE.getEnergySource_Rn(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEnergySource_Rn(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -185,11 +220,17 @@ public class EnergySourceItemProvider extends ConductingEquipmentItemProvider {
     protected void addVoltageAnglePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EnergySource_voltageAngle_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EnergySource_voltageAngle_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EnergySource_voltageAngle_feature",
                                 "_UI_EnergySource_type" ),
-                        CimPackage.eINSTANCE.getEnergySource_VoltageAngle(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEnergySource_VoltageAngle(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -201,11 +242,17 @@ public class EnergySourceItemProvider extends ConductingEquipmentItemProvider {
     protected void addVoltageMagnitudePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EnergySource_voltageMagnitude_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EnergySource_voltageMagnitude_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EnergySource_voltageMagnitude_feature",
                                 "_UI_EnergySource_type" ),
-                        CimPackage.eINSTANCE.getEnergySource_VoltageMagnitude(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEnergySource_VoltageMagnitude(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -217,11 +264,17 @@ public class EnergySourceItemProvider extends ConductingEquipmentItemProvider {
     protected void addXPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EnergySource_x_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EnergySource_x_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EnergySource_x_feature",
                                 "_UI_EnergySource_type" ),
-                        CimPackage.eINSTANCE.getEnergySource_X(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEnergySource_X(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -233,11 +286,17 @@ public class EnergySourceItemProvider extends ConductingEquipmentItemProvider {
     protected void addX0PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EnergySource_x0_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EnergySource_x0_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EnergySource_x0_feature",
                                 "_UI_EnergySource_type" ),
-                        CimPackage.eINSTANCE.getEnergySource_X0(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEnergySource_X0(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -249,11 +308,17 @@ public class EnergySourceItemProvider extends ConductingEquipmentItemProvider {
     protected void addXnPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EnergySource_xn_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EnergySource_xn_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EnergySource_xn_feature",
                                 "_UI_EnergySource_type" ),
-                        CimPackage.eINSTANCE.getEnergySource_Xn(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEnergySource_Xn(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -263,13 +328,19 @@ public class EnergySourceItemProvider extends ConductingEquipmentItemProvider {
      * @generated
      */
     protected void addWindTurbineType3or4DynamicsPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_EnergySource_WindTurbineType3or4Dynamics_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_EnergySource_WindTurbineType3or4Dynamics_feature",
-                        "_UI_EnergySource_type" ),
-                CimPackage.eINSTANCE.getEnergySource_WindTurbineType3or4Dynamics(), true, false, true, null, null,
-                null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_EnergySource_WindTurbineType3or4Dynamics_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_EnergySource_WindTurbineType3or4Dynamics_feature", "_UI_EnergySource_type" ),
+                        CimPackage.eINSTANCE.getEnergySource_WindTurbineType3or4Dynamics(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -281,10 +352,16 @@ public class EnergySourceItemProvider extends ConductingEquipmentItemProvider {
     protected void addEnergySourceActionPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EnergySource_EnergySourceAction_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EnergySource_EnergySourceAction_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EnergySource_EnergySourceAction_feature",
                                 "_UI_EnergySource_type" ),
-                        CimPackage.eINSTANCE.getEnergySource_EnergySourceAction(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getEnergySource_EnergySourceAction(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 
@@ -295,12 +372,19 @@ public class EnergySourceItemProvider extends ConductingEquipmentItemProvider {
      * @generated
      */
     protected void addEnergySchedulingTypePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_EnergySource_EnergySchedulingType_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_EnergySource_EnergySchedulingType_feature",
-                        "_UI_EnergySource_type" ),
-                CimPackage.eINSTANCE.getEnergySource_EnergySchedulingType(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_EnergySource_EnergySchedulingType_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_EnergySource_EnergySchedulingType_feature", "_UI_EnergySource_type" ),
+                        CimPackage.eINSTANCE.getEnergySource_EnergySchedulingType(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

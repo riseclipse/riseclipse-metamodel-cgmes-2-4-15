@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.OpenCircuitTest;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.OpenCircuitTest;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.OpenCircuitTest} object.
@@ -80,13 +79,19 @@ public class OpenCircuitTestItemProvider extends TransformerTestItemProvider {
      * @generated
      */
     protected void addEnergisedEndStepPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_OpenCircuitTest_energisedEndStep_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_OpenCircuitTest_energisedEndStep_feature",
-                        "_UI_OpenCircuitTest_type" ),
-                CimPackage.eINSTANCE.getOpenCircuitTest_EnergisedEndStep(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_OpenCircuitTest_energisedEndStep_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_OpenCircuitTest_energisedEndStep_feature",
+                                "_UI_OpenCircuitTest_type" ),
+                        CimPackage.eINSTANCE.getOpenCircuitTest_EnergisedEndStep(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -96,13 +101,19 @@ public class OpenCircuitTestItemProvider extends TransformerTestItemProvider {
      * @generated
      */
     protected void addEnergisedEndVoltagePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_OpenCircuitTest_energisedEndVoltage_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_OpenCircuitTest_energisedEndVoltage_feature",
-                        "_UI_OpenCircuitTest_type" ),
-                CimPackage.eINSTANCE.getOpenCircuitTest_EnergisedEndVoltage(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_OpenCircuitTest_energisedEndVoltage_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_OpenCircuitTest_energisedEndVoltage_feature", "_UI_OpenCircuitTest_type" ),
+                        CimPackage.eINSTANCE.getOpenCircuitTest_EnergisedEndVoltage(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -114,11 +125,17 @@ public class OpenCircuitTestItemProvider extends TransformerTestItemProvider {
     protected void addOpenEndStepPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_OpenCircuitTest_openEndStep_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_OpenCircuitTest_openEndStep_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_OpenCircuitTest_openEndStep_feature",
                                 "_UI_OpenCircuitTest_type" ),
-                        CimPackage.eINSTANCE.getOpenCircuitTest_OpenEndStep(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getOpenCircuitTest_OpenEndStep(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -130,11 +147,17 @@ public class OpenCircuitTestItemProvider extends TransformerTestItemProvider {
     protected void addOpenEndVoltagePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_OpenCircuitTest_openEndVoltage_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_OpenCircuitTest_openEndVoltage_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_OpenCircuitTest_openEndVoltage_feature",
                                 "_UI_OpenCircuitTest_type" ),
-                        CimPackage.eINSTANCE.getOpenCircuitTest_OpenEndVoltage(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getOpenCircuitTest_OpenEndVoltage(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -146,11 +169,17 @@ public class OpenCircuitTestItemProvider extends TransformerTestItemProvider {
     protected void addPhaseShiftPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_OpenCircuitTest_phaseShift_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_OpenCircuitTest_phaseShift_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_OpenCircuitTest_phaseShift_feature",
                                 "_UI_OpenCircuitTest_type" ),
-                        CimPackage.eINSTANCE.getOpenCircuitTest_PhaseShift(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getOpenCircuitTest_PhaseShift(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -162,10 +191,17 @@ public class OpenCircuitTestItemProvider extends TransformerTestItemProvider {
     protected void addOpenEndPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_OpenCircuitTest_OpenEnd_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_OpenCircuitTest_OpenEnd_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_OpenCircuitTest_OpenEnd_feature",
                                 "_UI_OpenCircuitTest_type" ),
-                        CimPackage.eINSTANCE.getOpenCircuitTest_OpenEnd(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getOpenCircuitTest_OpenEnd(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -177,10 +213,17 @@ public class OpenCircuitTestItemProvider extends TransformerTestItemProvider {
     protected void addEnergisedEndPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_OpenCircuitTest_EnergisedEnd_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_OpenCircuitTest_EnergisedEnd_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_OpenCircuitTest_EnergisedEnd_feature",
                                 "_UI_OpenCircuitTest_type" ),
-                        CimPackage.eINSTANCE.getOpenCircuitTest_EnergisedEnd(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getOpenCircuitTest_EnergisedEnd(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

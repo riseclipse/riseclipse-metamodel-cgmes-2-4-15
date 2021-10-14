@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TapChanger;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TapChanger;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TapChanger} object.
@@ -88,11 +87,17 @@ public class TapChangerItemProvider extends PowerSystemResourceItemProvider {
     protected void addControlEnabledPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TapChanger_controlEnabled_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TapChanger_controlEnabled_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TapChanger_controlEnabled_feature",
                                 "_UI_TapChanger_type" ),
-                        CimPackage.eINSTANCE.getTapChanger_ControlEnabled(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTapChanger_ControlEnabled(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -104,11 +109,17 @@ public class TapChangerItemProvider extends PowerSystemResourceItemProvider {
     protected void addHighStepPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TapChanger_highStep_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TapChanger_highStep_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TapChanger_highStep_feature",
                                 "_UI_TapChanger_type" ),
-                        CimPackage.eINSTANCE.getTapChanger_HighStep(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTapChanger_HighStep(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -120,11 +131,17 @@ public class TapChangerItemProvider extends PowerSystemResourceItemProvider {
     protected void addInitialDelayPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TapChanger_initialDelay_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TapChanger_initialDelay_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TapChanger_initialDelay_feature",
                                 "_UI_TapChanger_type" ),
-                        CimPackage.eINSTANCE.getTapChanger_InitialDelay(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTapChanger_InitialDelay(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -136,11 +153,17 @@ public class TapChangerItemProvider extends PowerSystemResourceItemProvider {
     protected void addLowStepPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TapChanger_lowStep_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TapChanger_lowStep_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TapChanger_lowStep_feature",
                                 "_UI_TapChanger_type" ),
-                        CimPackage.eINSTANCE.getTapChanger_LowStep(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTapChanger_LowStep(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -152,11 +175,17 @@ public class TapChangerItemProvider extends PowerSystemResourceItemProvider {
     protected void addLtcFlagPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TapChanger_ltcFlag_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TapChanger_ltcFlag_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TapChanger_ltcFlag_feature",
                                 "_UI_TapChanger_type" ),
-                        CimPackage.eINSTANCE.getTapChanger_LtcFlag(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTapChanger_LtcFlag(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -168,11 +197,17 @@ public class TapChangerItemProvider extends PowerSystemResourceItemProvider {
     protected void addNeutralStepPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TapChanger_neutralStep_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TapChanger_neutralStep_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TapChanger_neutralStep_feature",
                                 "_UI_TapChanger_type" ),
-                        CimPackage.eINSTANCE.getTapChanger_NeutralStep(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTapChanger_NeutralStep(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -184,11 +219,17 @@ public class TapChangerItemProvider extends PowerSystemResourceItemProvider {
     protected void addNeutralUPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TapChanger_neutralU_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TapChanger_neutralU_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TapChanger_neutralU_feature",
                                 "_UI_TapChanger_type" ),
-                        CimPackage.eINSTANCE.getTapChanger_NeutralU(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTapChanger_NeutralU(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -200,11 +241,17 @@ public class TapChangerItemProvider extends PowerSystemResourceItemProvider {
     protected void addNormalStepPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TapChanger_normalStep_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TapChanger_normalStep_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TapChanger_normalStep_feature",
                                 "_UI_TapChanger_type" ),
-                        CimPackage.eINSTANCE.getTapChanger_NormalStep(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTapChanger_NormalStep(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -216,11 +263,17 @@ public class TapChangerItemProvider extends PowerSystemResourceItemProvider {
     protected void addStepPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TapChanger_step_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TapChanger_step_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TapChanger_step_feature",
                                 "_UI_TapChanger_type" ),
-                        CimPackage.eINSTANCE.getTapChanger_Step(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTapChanger_Step(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -232,11 +285,17 @@ public class TapChangerItemProvider extends PowerSystemResourceItemProvider {
     protected void addSubsequentDelayPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TapChanger_subsequentDelay_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TapChanger_subsequentDelay_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TapChanger_subsequentDelay_feature",
                                 "_UI_TapChanger_type" ),
-                        CimPackage.eINSTANCE.getTapChanger_SubsequentDelay(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTapChanger_SubsequentDelay(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -248,10 +307,17 @@ public class TapChangerItemProvider extends PowerSystemResourceItemProvider {
     protected void addTapChangerControlPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TapChanger_TapChangerControl_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TapChanger_TapChangerControl_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TapChanger_TapChangerControl_feature",
                                 "_UI_TapChanger_type" ),
-                        CimPackage.eINSTANCE.getTapChanger_TapChangerControl(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getTapChanger_TapChangerControl(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -263,10 +329,17 @@ public class TapChangerItemProvider extends PowerSystemResourceItemProvider {
     protected void addSvTapStepPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TapChanger_SvTapStep_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TapChanger_SvTapStep_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TapChanger_SvTapStep_feature",
                                 "_UI_TapChanger_type" ),
-                        CimPackage.eINSTANCE.getTapChanger_SvTapStep(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getTapChanger_SvTapStep(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -278,10 +351,17 @@ public class TapChangerItemProvider extends PowerSystemResourceItemProvider {
     protected void addTapSchedulesPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TapChanger_TapSchedules_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TapChanger_TapSchedules_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TapChanger_TapSchedules_feature",
                                 "_UI_TapChanger_type" ),
-                        CimPackage.eINSTANCE.getTapChanger_TapSchedules(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getTapChanger_TapSchedules(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

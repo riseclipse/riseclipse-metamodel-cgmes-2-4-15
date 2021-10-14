@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Control;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Control;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Control} object.
@@ -82,11 +81,17 @@ public class ControlItemProvider extends IdentifiedObjectItemProvider {
     protected void addControlTypePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Control_controlType_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Control_controlType_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Control_controlType_feature",
                                 "_UI_Control_type" ),
-                        CimPackage.eINSTANCE.getControl_ControlType(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getControl_ControlType(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -98,11 +103,17 @@ public class ControlItemProvider extends IdentifiedObjectItemProvider {
     protected void addOperationInProgressPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Control_operationInProgress_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Control_operationInProgress_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Control_operationInProgress_feature",
                                 "_UI_Control_type" ),
-                        CimPackage.eINSTANCE.getControl_OperationInProgress(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getControl_OperationInProgress(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -114,11 +125,17 @@ public class ControlItemProvider extends IdentifiedObjectItemProvider {
     protected void addTimeStampPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Control_timeStamp_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Control_timeStamp_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Control_timeStamp_feature",
                                 "_UI_Control_type" ),
-                        CimPackage.eINSTANCE.getControl_TimeStamp(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getControl_TimeStamp(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -130,11 +147,17 @@ public class ControlItemProvider extends IdentifiedObjectItemProvider {
     protected void addUnitMultiplierPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Control_unitMultiplier_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Control_unitMultiplier_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Control_unitMultiplier_feature",
                                 "_UI_Control_type" ),
-                        CimPackage.eINSTANCE.getControl_UnitMultiplier(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getControl_UnitMultiplier(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -146,11 +169,17 @@ public class ControlItemProvider extends IdentifiedObjectItemProvider {
     protected void addUnitSymbolPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Control_unitSymbol_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Control_unitSymbol_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Control_unitSymbol_feature",
                                 "_UI_Control_type" ),
-                        CimPackage.eINSTANCE.getControl_UnitSymbol(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getControl_UnitSymbol(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -162,10 +191,17 @@ public class ControlItemProvider extends IdentifiedObjectItemProvider {
     protected void addPowerSystemResourcePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Control_PowerSystemResource_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Control_PowerSystemResource_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Control_PowerSystemResource_feature",
                                 "_UI_Control_type" ),
-                        CimPackage.eINSTANCE.getControl_PowerSystemResource(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getControl_PowerSystemResource(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -177,10 +213,17 @@ public class ControlItemProvider extends IdentifiedObjectItemProvider {
     protected void addRemoteControlPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Control_RemoteControl_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Control_RemoteControl_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Control_RemoteControl_feature",
                                 "_UI_Control_type" ),
-                        CimPackage.eINSTANCE.getControl_RemoteControl(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getControl_RemoteControl(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

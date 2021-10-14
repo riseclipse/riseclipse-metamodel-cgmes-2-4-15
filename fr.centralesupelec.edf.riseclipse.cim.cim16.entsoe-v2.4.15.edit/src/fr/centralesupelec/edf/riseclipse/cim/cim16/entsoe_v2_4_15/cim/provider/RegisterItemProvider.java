@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Register;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Register;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Register} object.
@@ -82,11 +81,17 @@ public class RegisterItemProvider extends IdentifiedObjectItemProvider {
     protected void addIsVirtualPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Register_isVirtual_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Register_isVirtual_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Register_isVirtual_feature",
                                 "_UI_Register_type" ),
-                        CimPackage.eINSTANCE.getRegister_IsVirtual(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getRegister_IsVirtual(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -98,11 +103,17 @@ public class RegisterItemProvider extends IdentifiedObjectItemProvider {
     protected void addLeftDigitCountPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Register_leftDigitCount_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Register_leftDigitCount_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Register_leftDigitCount_feature",
                                 "_UI_Register_type" ),
-                        CimPackage.eINSTANCE.getRegister_LeftDigitCount(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getRegister_LeftDigitCount(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -114,11 +125,17 @@ public class RegisterItemProvider extends IdentifiedObjectItemProvider {
     protected void addRightDigitCountPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Register_rightDigitCount_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Register_rightDigitCount_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Register_rightDigitCount_feature",
                                 "_UI_Register_type" ),
-                        CimPackage.eINSTANCE.getRegister_RightDigitCount(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getRegister_RightDigitCount(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -130,11 +147,17 @@ public class RegisterItemProvider extends IdentifiedObjectItemProvider {
     protected void addTouTierNamePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Register_touTierName_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Register_touTierName_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Register_touTierName_feature",
                                 "_UI_Register_type" ),
-                        CimPackage.eINSTANCE.getRegister_TouTierName(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getRegister_TouTierName(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -146,10 +169,17 @@ public class RegisterItemProvider extends IdentifiedObjectItemProvider {
     protected void addTouTierPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Register_touTier_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Register_touTier_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Register_touTier_feature",
                                 "_UI_Register_type" ),
-                        CimPackage.eINSTANCE.getRegister_TouTier(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getRegister_TouTier(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -161,10 +191,17 @@ public class RegisterItemProvider extends IdentifiedObjectItemProvider {
     protected void addEndDeviceFunctionPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Register_EndDeviceFunction_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Register_EndDeviceFunction_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Register_EndDeviceFunction_feature",
                                 "_UI_Register_type" ),
-                        CimPackage.eINSTANCE.getRegister_EndDeviceFunction(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getRegister_EndDeviceFunction(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -176,10 +213,17 @@ public class RegisterItemProvider extends IdentifiedObjectItemProvider {
     protected void addChannelsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Register_Channels_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Register_Channels_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Register_Channels_feature",
                                 "_UI_Register_type" ),
-                        CimPackage.eINSTANCE.getRegister_Channels(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getRegister_Channels(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,17 +20,16 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PersonRole;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PersonRole;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PersonRole} object.
@@ -76,10 +75,16 @@ public class PersonRoleItemProvider extends IdentifiedObjectItemProvider {
     protected void addConfigurationEventsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PersonRole_ConfigurationEvents_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PersonRole_ConfigurationEvents_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PersonRole_ConfigurationEvents_feature",
                                 "_UI_PersonRole_type" ),
-                        CimPackage.eINSTANCE.getPersonRole_ConfigurationEvents(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getPersonRole_ConfigurationEvents(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 
@@ -92,10 +97,17 @@ public class PersonRoleItemProvider extends IdentifiedObjectItemProvider {
     protected void addAppointmentsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PersonRole_Appointments_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PersonRole_Appointments_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PersonRole_Appointments_feature",
                                 "_UI_PersonRole_type" ),
-                        CimPackage.eINSTANCE.getPersonRole_Appointments(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getPersonRole_Appointments(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -107,10 +119,17 @@ public class PersonRoleItemProvider extends IdentifiedObjectItemProvider {
     protected void addPersonPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PersonRole_Person_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PersonRole_Person_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PersonRole_Person_feature",
                                 "_UI_PersonRole_type" ),
-                        CimPackage.eINSTANCE.getPersonRole_Person(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getPersonRole_Person(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

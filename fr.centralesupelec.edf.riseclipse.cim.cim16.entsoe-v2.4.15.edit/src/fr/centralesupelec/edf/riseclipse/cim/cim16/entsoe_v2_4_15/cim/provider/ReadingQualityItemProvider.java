@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ReadingQuality;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ReadingQuality;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ReadingQuality} object.
@@ -80,11 +79,17 @@ public class ReadingQualityItemProvider extends CimObjectWithIDItemProvider {
     protected void addCommentPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ReadingQuality_comment_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ReadingQuality_comment_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ReadingQuality_comment_feature",
                                 "_UI_ReadingQuality_type" ),
-                        CimPackage.eINSTANCE.getReadingQuality_Comment(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getReadingQuality_Comment(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -96,11 +101,17 @@ public class ReadingQualityItemProvider extends CimObjectWithIDItemProvider {
     protected void addSourcePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ReadingQuality_source_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ReadingQuality_source_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ReadingQuality_source_feature",
                                 "_UI_ReadingQuality_type" ),
-                        CimPackage.eINSTANCE.getReadingQuality_Source(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getReadingQuality_Source(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -112,11 +123,17 @@ public class ReadingQualityItemProvider extends CimObjectWithIDItemProvider {
     protected void addTimeStampPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ReadingQuality_timeStamp_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ReadingQuality_timeStamp_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ReadingQuality_timeStamp_feature",
                                 "_UI_ReadingQuality_type" ),
-                        CimPackage.eINSTANCE.getReadingQuality_TimeStamp(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getReadingQuality_TimeStamp(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -128,10 +145,17 @@ public class ReadingQualityItemProvider extends CimObjectWithIDItemProvider {
     protected void addReadingPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ReadingQuality_Reading_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ReadingQuality_Reading_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ReadingQuality_Reading_feature",
                                 "_UI_ReadingQuality_type" ),
-                        CimPackage.eINSTANCE.getReadingQuality_Reading(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getReadingQuality_Reading(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -141,12 +165,19 @@ public class ReadingQualityItemProvider extends CimObjectWithIDItemProvider {
      * @generated
      */
     protected void addReadingQualityTypePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ReadingQuality_ReadingQualityType_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ReadingQuality_ReadingQualityType_feature",
-                        "_UI_ReadingQuality_type" ),
-                CimPackage.eINSTANCE.getReadingQuality_ReadingQualityType(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ReadingQuality_ReadingQualityType_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ReadingQuality_ReadingQualityType_feature", "_UI_ReadingQuality_type" ),
+                        CimPackage.eINSTANCE.getReadingQuality_ReadingQualityType(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

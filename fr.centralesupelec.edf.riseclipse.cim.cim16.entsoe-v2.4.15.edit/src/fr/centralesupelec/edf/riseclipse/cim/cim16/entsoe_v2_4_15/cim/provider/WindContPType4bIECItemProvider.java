@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindContPType4bIEC;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindContPType4bIEC;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindContPType4bIEC} object.
@@ -80,11 +79,17 @@ public class WindContPType4bIECItemProvider extends IdentifiedObjectItemProvider
     protected void addDpmaxPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContPType4bIEC_dpmax_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContPType4bIEC_dpmax_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContPType4bIEC_dpmax_feature",
                                 "_UI_WindContPType4bIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContPType4bIEC_Dpmax(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContPType4bIEC_Dpmax(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -96,11 +101,17 @@ public class WindContPType4bIECItemProvider extends IdentifiedObjectItemProvider
     protected void addTpaeroPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContPType4bIEC_tpaero_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContPType4bIEC_tpaero_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContPType4bIEC_tpaero_feature",
                                 "_UI_WindContPType4bIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContPType4bIEC_Tpaero(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContPType4bIEC_Tpaero(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -112,11 +123,17 @@ public class WindContPType4bIECItemProvider extends IdentifiedObjectItemProvider
     protected void addTpordPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContPType4bIEC_tpord_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContPType4bIEC_tpord_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContPType4bIEC_tpord_feature",
                                 "_UI_WindContPType4bIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContPType4bIEC_Tpord(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContPType4bIEC_Tpord(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -128,11 +145,17 @@ public class WindContPType4bIECItemProvider extends IdentifiedObjectItemProvider
     protected void addTufiltPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContPType4bIEC_tufilt_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContPType4bIEC_tufilt_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContPType4bIEC_tufilt_feature",
                                 "_UI_WindContPType4bIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContPType4bIEC_Tufilt(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContPType4bIEC_Tufilt(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -144,11 +167,17 @@ public class WindContPType4bIECItemProvider extends IdentifiedObjectItemProvider
     protected void addWindTurbineType4bIECPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContPType4bIEC_WindTurbineType4bIEC_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContPType4bIEC_WindTurbineType4bIEC_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_WindContPType4bIEC_WindTurbineType4bIEC_feature", "_UI_WindContPType4bIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContPType4bIEC_WindTurbineType4bIEC(), true, false, true, null,
-                        null, null ) );
+                        CimPackage.eINSTANCE.getWindContPType4bIEC_WindTurbineType4bIEC(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

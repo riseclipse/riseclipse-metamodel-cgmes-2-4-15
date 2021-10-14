@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ProprietaryParameterDynamics;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ProprietaryParameterDynamics;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ProprietaryParameterDynamics} object.
@@ -95,14 +94,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addBooleanParameterValuePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_booleanParameterValue_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_booleanParameterValue_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_BooleanParameterValue(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_booleanParameterValue_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_booleanParameterValue_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_BooleanParameterValue(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -112,14 +117,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addFloatParameterValuePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_floatParameterValue_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_floatParameterValue_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_FloatParameterValue(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_floatParameterValue_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_floatParameterValue_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_FloatParameterValue(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -129,14 +140,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addIntegerParameterValuePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_integerParameterValue_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_integerParameterValue_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_IntegerParameterValue(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_integerParameterValue_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_integerParameterValue_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_IntegerParameterValue(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -148,12 +165,18 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
     protected void addParameterNumberPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ProprietaryParameterDynamics_parameterNumber_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_parameterNumber_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_ProprietaryParameterDynamics_parameterNumber_feature",
                                 "_UI_ProprietaryParameterDynamics_type" ),
-                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_ParameterNumber(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_ParameterNumber(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -163,14 +186,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addVoltageAdjusterUserDefinedPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_VoltageAdjusterUserDefined_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_VoltageAdjusterUserDefined_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_VoltageAdjusterUserDefined(), true, false, true,
-                null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_VoltageAdjusterUserDefined_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_VoltageAdjusterUserDefined_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_VoltageAdjusterUserDefined(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -182,12 +211,18 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
     protected void addLoadUserDefinedPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ProprietaryParameterDynamics_LoadUserDefined_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_LoadUserDefined_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_ProprietaryParameterDynamics_LoadUserDefined_feature",
                                 "_UI_ProprietaryParameterDynamics_type" ),
-                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_LoadUserDefined(), true, false, true, null,
-                        null, null ) );
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_LoadUserDefined(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -197,14 +232,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addPowerSystemStabilizerUserDefinedPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_PowerSystemStabilizerUserDefined_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_PowerSystemStabilizerUserDefined_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_PowerSystemStabilizerUserDefined(), true, false,
-                true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_PowerSystemStabilizerUserDefined_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_PowerSystemStabilizerUserDefined_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_PowerSystemStabilizerUserDefined(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -214,14 +255,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addUnderexcitationLimiterUserDefinedPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_UnderexcitationLimiterUserDefined_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_UnderexcitationLimiterUserDefined_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_UnderexcitationLimiterUserDefined(), true, false,
-                true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_UnderexcitationLimiterUserDefined_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_UnderexcitationLimiterUserDefined_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_UnderexcitationLimiterUserDefined(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -231,14 +278,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addExcitationSystemUserDefinedPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_ExcitationSystemUserDefined_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_ExcitationSystemUserDefined_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_ExcitationSystemUserDefined(), true, false, true,
-                null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_ExcitationSystemUserDefined_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_ExcitationSystemUserDefined_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_ExcitationSystemUserDefined(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -248,14 +301,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addVoltageCompensatorUserDefinedPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_VoltageCompensatorUserDefined_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_VoltageCompensatorUserDefined_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_VoltageCompensatorUserDefined(), true, false, true,
-                null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_VoltageCompensatorUserDefined_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_VoltageCompensatorUserDefined_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_VoltageCompensatorUserDefined(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -265,14 +324,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addTurbineLoadControllerUserDefinedPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_TurbineLoadControllerUserDefined_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_TurbineLoadControllerUserDefined_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_TurbineLoadControllerUserDefined(), true, false,
-                true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_TurbineLoadControllerUserDefined_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_TurbineLoadControllerUserDefined_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_TurbineLoadControllerUserDefined(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -282,14 +347,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addWindType3or4UserDefinedPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_WindType3or4UserDefined_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_WindType3or4UserDefined_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_WindType3or4UserDefined(), true, false, true, null,
-                null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_WindType3or4UserDefined_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_WindType3or4UserDefined_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_WindType3or4UserDefined(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -299,14 +370,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addTurbineGovernorUserDefinedPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_TurbineGovernorUserDefined_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_TurbineGovernorUserDefined_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_TurbineGovernorUserDefined(), true, false, true,
-                null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_TurbineGovernorUserDefined_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_TurbineGovernorUserDefined_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_TurbineGovernorUserDefined(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -316,14 +393,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addOverexcitationLimiterUserDefinedPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_OverexcitationLimiterUserDefined_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_OverexcitationLimiterUserDefined_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_OverexcitationLimiterUserDefined(), true, false,
-                true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_OverexcitationLimiterUserDefined_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_OverexcitationLimiterUserDefined_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_OverexcitationLimiterUserDefined(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -333,14 +416,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addSynchronousMachineUserDefinedPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_SynchronousMachineUserDefined_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_SynchronousMachineUserDefined_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_SynchronousMachineUserDefined(), true, false, true,
-                null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_SynchronousMachineUserDefined_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_SynchronousMachineUserDefined_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_SynchronousMachineUserDefined(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -350,14 +439,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addAsynchronousMachineUserDefinedPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_AsynchronousMachineUserDefined_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_AsynchronousMachineUserDefined_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_AsynchronousMachineUserDefined(), true, false,
-                true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_AsynchronousMachineUserDefined_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_AsynchronousMachineUserDefined_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_AsynchronousMachineUserDefined(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -367,14 +462,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addPFVArControllerType2UserDefinedPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_PFVArControllerType2UserDefined_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_PFVArControllerType2UserDefined_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_PFVArControllerType2UserDefined(), true, false,
-                true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_PFVArControllerType2UserDefined_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_PFVArControllerType2UserDefined_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_PFVArControllerType2UserDefined(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -385,13 +486,19 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      */
     protected void addDiscontinuousExcitationControlUserDefinedPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_ProprietaryParameterDynamics_DiscontinuousExcitationControlUserDefined_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_ProprietaryParameterDynamics_DiscontinuousExcitationControlUserDefined_feature",
                         "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_DiscontinuousExcitationControlUserDefined(), true,
-                false, true, null, null, null ) );
+                CimPackage.eINSTANCE.getProprietaryParameterDynamics_DiscontinuousExcitationControlUserDefined(),
+                true,
+                false,
+                true,
+                null,
+                null,
+                null ) );
     }
 
     /**
@@ -401,14 +508,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addWindPlantUserDefinedPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_WindPlantUserDefined_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_WindPlantUserDefined_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_WindPlantUserDefined(), true, false, true, null,
-                null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_WindPlantUserDefined_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_WindPlantUserDefined_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_WindPlantUserDefined(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -418,14 +531,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addMechanicalLoadUserDefinedPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_MechanicalLoadUserDefined_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_MechanicalLoadUserDefined_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_MechanicalLoadUserDefined(), true, false, true,
-                null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_MechanicalLoadUserDefined_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_MechanicalLoadUserDefined_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_MechanicalLoadUserDefined(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -435,14 +554,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addWindType1or2UserDefinedPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_WindType1or2UserDefined_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_WindType1or2UserDefined_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_WindType1or2UserDefined(), true, false, true, null,
-                null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_WindType1or2UserDefined_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_WindType1or2UserDefined_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_WindType1or2UserDefined(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -452,14 +577,20 @@ public class ProprietaryParameterDynamicsItemProvider extends CimObjectWithIDIte
      * @generated
      */
     protected void addPFVArControllerType1UserDefinedPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProprietaryParameterDynamics_PFVArControllerType1UserDefined_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_ProprietaryParameterDynamics_PFVArControllerType1UserDefined_feature",
-                        "_UI_ProprietaryParameterDynamics_type" ),
-                CimPackage.eINSTANCE.getProprietaryParameterDynamics_PFVArControllerType1UserDefined(), true, false,
-                true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProprietaryParameterDynamics_PFVArControllerType1UserDefined_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProprietaryParameterDynamics_PFVArControllerType1UserDefined_feature",
+                                "_UI_ProprietaryParameterDynamics_type" ),
+                        CimPackage.eINSTANCE.getProprietaryParameterDynamics_PFVArControllerType1UserDefined(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

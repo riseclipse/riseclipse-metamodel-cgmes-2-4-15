@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Season;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Season;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Season} object.
@@ -78,11 +77,17 @@ public class SeasonItemProvider extends IdentifiedObjectItemProvider {
     protected void addEndDatePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Season_endDate_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Season_endDate_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Season_endDate_feature",
                                 "_UI_Season_type" ),
-                        CimPackage.eINSTANCE.getSeason_EndDate(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getSeason_EndDate(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -94,11 +99,17 @@ public class SeasonItemProvider extends IdentifiedObjectItemProvider {
     protected void addStartDatePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Season_startDate_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Season_startDate_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Season_startDate_feature",
                                 "_UI_Season_type" ),
-                        CimPackage.eINSTANCE.getSeason_StartDate(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getSeason_StartDate(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -110,10 +121,16 @@ public class SeasonItemProvider extends IdentifiedObjectItemProvider {
     protected void addSeasonDayTypeSchedulesPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Season_SeasonDayTypeSchedules_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Season_SeasonDayTypeSchedules_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Season_SeasonDayTypeSchedules_feature",
                                 "_UI_Season_type" ),
-                        CimPackage.eINSTANCE.getSeason_SeasonDayTypeSchedules(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getSeason_SeasonDayTypeSchedules(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 

@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ConfigurationEvent;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ConfigurationEvent;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ConfigurationEvent} object.
@@ -83,13 +82,19 @@ public class ConfigurationEventItemProvider extends ActivityRecordItemProvider {
      * @generated
      */
     protected void addEffectiveDateTimePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ConfigurationEvent_effectiveDateTime_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ConfigurationEvent_effectiveDateTime_feature",
-                        "_UI_ConfigurationEvent_type" ),
-                CimPackage.eINSTANCE.getConfigurationEvent_EffectiveDateTime(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ConfigurationEvent_effectiveDateTime_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ConfigurationEvent_effectiveDateTime_feature", "_UI_ConfigurationEvent_type" ),
+                        CimPackage.eINSTANCE.getConfigurationEvent_EffectiveDateTime(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -99,13 +104,19 @@ public class ConfigurationEventItemProvider extends ActivityRecordItemProvider {
      * @generated
      */
     protected void addModifiedByPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ConfigurationEvent_modifiedBy_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ConfigurationEvent_modifiedBy_feature",
-                        "_UI_ConfigurationEvent_type" ),
-                CimPackage.eINSTANCE.getConfigurationEvent_ModifiedBy(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ConfigurationEvent_modifiedBy_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_ConfigurationEvent_modifiedBy_feature",
+                                "_UI_ConfigurationEvent_type" ),
+                        CimPackage.eINSTANCE.getConfigurationEvent_ModifiedBy(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -117,11 +128,17 @@ public class ConfigurationEventItemProvider extends ActivityRecordItemProvider {
     protected void addRemarkPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ConfigurationEvent_remark_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ConfigurationEvent_remark_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ConfigurationEvent_remark_feature",
                                 "_UI_ConfigurationEvent_type" ),
-                        CimPackage.eINSTANCE.getConfigurationEvent_Remark(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getConfigurationEvent_Remark(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -132,11 +149,17 @@ public class ConfigurationEventItemProvider extends ActivityRecordItemProvider {
      */
     protected void addChangedOrganisationRolePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_ConfigurationEvent_ChangedOrganisationRole_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_ConfigurationEvent_ChangedOrganisationRole_feature", "_UI_ConfigurationEvent_type" ),
-                CimPackage.eINSTANCE.getConfigurationEvent_ChangedOrganisationRole(), true, false, true, null, null,
+                CimPackage.eINSTANCE.getConfigurationEvent_ChangedOrganisationRole(),
+                true,
+                false,
+                true,
+                null,
+                null,
                 null ) );
     }
 
@@ -147,12 +170,19 @@ public class ConfigurationEventItemProvider extends ActivityRecordItemProvider {
      * @generated
      */
     protected void addChangedLocationPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ConfigurationEvent_ChangedLocation_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ConfigurationEvent_ChangedLocation_feature",
-                        "_UI_ConfigurationEvent_type" ),
-                CimPackage.eINSTANCE.getConfigurationEvent_ChangedLocation(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ConfigurationEvent_ChangedLocation_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ConfigurationEvent_ChangedLocation_feature", "_UI_ConfigurationEvent_type" ),
+                        CimPackage.eINSTANCE.getConfigurationEvent_ChangedLocation(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -162,12 +192,19 @@ public class ConfigurationEventItemProvider extends ActivityRecordItemProvider {
      * @generated
      */
     protected void addChangedPersonRolePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ConfigurationEvent_ChangedPersonRole_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ConfigurationEvent_ChangedPersonRole_feature",
-                        "_UI_ConfigurationEvent_type" ),
-                CimPackage.eINSTANCE.getConfigurationEvent_ChangedPersonRole(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ConfigurationEvent_ChangedPersonRole_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ConfigurationEvent_ChangedPersonRole_feature", "_UI_ConfigurationEvent_type" ),
+                        CimPackage.eINSTANCE.getConfigurationEvent_ChangedPersonRole(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -177,12 +214,19 @@ public class ConfigurationEventItemProvider extends ActivityRecordItemProvider {
      * @generated
      */
     protected void addChangedUsagePointPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ConfigurationEvent_ChangedUsagePoint_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ConfigurationEvent_ChangedUsagePoint_feature",
-                        "_UI_ConfigurationEvent_type" ),
-                CimPackage.eINSTANCE.getConfigurationEvent_ChangedUsagePoint(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ConfigurationEvent_ChangedUsagePoint_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ConfigurationEvent_ChangedUsagePoint_feature", "_UI_ConfigurationEvent_type" ),
+                        CimPackage.eINSTANCE.getConfigurationEvent_ChangedUsagePoint(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -192,12 +236,19 @@ public class ConfigurationEventItemProvider extends ActivityRecordItemProvider {
      * @generated
      */
     protected void addChangedDocumentPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ConfigurationEvent_ChangedDocument_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ConfigurationEvent_ChangedDocument_feature",
-                        "_UI_ConfigurationEvent_type" ),
-                CimPackage.eINSTANCE.getConfigurationEvent_ChangedDocument(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ConfigurationEvent_ChangedDocument_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ConfigurationEvent_ChangedDocument_feature", "_UI_ConfigurationEvent_type" ),
+                        CimPackage.eINSTANCE.getConfigurationEvent_ChangedDocument(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -208,11 +259,17 @@ public class ConfigurationEventItemProvider extends ActivityRecordItemProvider {
      */
     protected void addChangedServiceCategoryPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_ConfigurationEvent_ChangedServiceCategory_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_ConfigurationEvent_ChangedServiceCategory_feature", "_UI_ConfigurationEvent_type" ),
-                CimPackage.eINSTANCE.getConfigurationEvent_ChangedServiceCategory(), true, false, true, null, null,
+                CimPackage.eINSTANCE.getConfigurationEvent_ChangedServiceCategory(),
+                true,
+                false,
+                true,
+                null,
+                null,
                 null ) );
     }
 
@@ -223,12 +280,19 @@ public class ConfigurationEventItemProvider extends ActivityRecordItemProvider {
      * @generated
      */
     protected void addChangedAssetPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ConfigurationEvent_ChangedAsset_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ConfigurationEvent_ChangedAsset_feature",
-                        "_UI_ConfigurationEvent_type" ),
-                CimPackage.eINSTANCE.getConfigurationEvent_ChangedAsset(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ConfigurationEvent_ChangedAsset_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_ConfigurationEvent_ChangedAsset_feature",
+                                "_UI_ConfigurationEvent_type" ),
+                        CimPackage.eINSTANCE.getConfigurationEvent_ChangedAsset(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

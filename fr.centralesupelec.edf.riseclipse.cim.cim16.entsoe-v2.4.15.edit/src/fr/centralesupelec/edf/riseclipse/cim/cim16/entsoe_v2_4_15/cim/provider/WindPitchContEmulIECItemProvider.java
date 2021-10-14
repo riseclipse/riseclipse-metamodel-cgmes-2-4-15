@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindPitchContEmulIEC;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindPitchContEmulIEC;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindPitchContEmulIEC} object.
@@ -84,13 +83,19 @@ public class WindPitchContEmulIECItemProvider extends IdentifiedObjectItemProvid
      * @generated
      */
     protected void addKdroopPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_WindPitchContEmulIEC_kdroop_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_WindPitchContEmulIEC_kdroop_feature",
-                        "_UI_WindPitchContEmulIEC_type" ),
-                CimPackage.eINSTANCE.getWindPitchContEmulIEC_Kdroop(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_WindPitchContEmulIEC_kdroop_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_WindPitchContEmulIEC_kdroop_feature",
+                                "_UI_WindPitchContEmulIEC_type" ),
+                        CimPackage.eINSTANCE.getWindPitchContEmulIEC_Kdroop(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -102,11 +107,17 @@ public class WindPitchContEmulIECItemProvider extends IdentifiedObjectItemProvid
     protected void addKipcePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindPitchContEmulIEC_kipce_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindPitchContEmulIEC_kipce_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindPitchContEmulIEC_kipce_feature",
                                 "_UI_WindPitchContEmulIEC_type" ),
-                        CimPackage.eINSTANCE.getWindPitchContEmulIEC_Kipce(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindPitchContEmulIEC_Kipce(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -116,13 +127,19 @@ public class WindPitchContEmulIECItemProvider extends IdentifiedObjectItemProvid
      * @generated
      */
     protected void addKomegaaeroPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_WindPitchContEmulIEC_komegaaero_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_WindPitchContEmulIEC_komegaaero_feature",
-                        "_UI_WindPitchContEmulIEC_type" ),
-                CimPackage.eINSTANCE.getWindPitchContEmulIEC_Komegaaero(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_WindPitchContEmulIEC_komegaaero_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_WindPitchContEmulIEC_komegaaero_feature",
+                                "_UI_WindPitchContEmulIEC_type" ),
+                        CimPackage.eINSTANCE.getWindPitchContEmulIEC_Komegaaero(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -134,11 +151,17 @@ public class WindPitchContEmulIECItemProvider extends IdentifiedObjectItemProvid
     protected void addKppcePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindPitchContEmulIEC_kppce_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindPitchContEmulIEC_kppce_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindPitchContEmulIEC_kppce_feature",
                                 "_UI_WindPitchContEmulIEC_type" ),
-                        CimPackage.eINSTANCE.getWindPitchContEmulIEC_Kppce(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindPitchContEmulIEC_Kppce(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -148,13 +171,19 @@ public class WindPitchContEmulIECItemProvider extends IdentifiedObjectItemProvid
      * @generated
      */
     protected void addOmegarefPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_WindPitchContEmulIEC_omegaref_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_WindPitchContEmulIEC_omegaref_feature",
-                        "_UI_WindPitchContEmulIEC_type" ),
-                CimPackage.eINSTANCE.getWindPitchContEmulIEC_Omegaref(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_WindPitchContEmulIEC_omegaref_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_WindPitchContEmulIEC_omegaref_feature",
+                                "_UI_WindPitchContEmulIEC_type" ),
+                        CimPackage.eINSTANCE.getWindPitchContEmulIEC_Omegaref(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -166,11 +195,17 @@ public class WindPitchContEmulIECItemProvider extends IdentifiedObjectItemProvid
     protected void addPimaxPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindPitchContEmulIEC_pimax_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindPitchContEmulIEC_pimax_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindPitchContEmulIEC_pimax_feature",
                                 "_UI_WindPitchContEmulIEC_type" ),
-                        CimPackage.eINSTANCE.getWindPitchContEmulIEC_Pimax(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindPitchContEmulIEC_Pimax(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -182,11 +217,17 @@ public class WindPitchContEmulIECItemProvider extends IdentifiedObjectItemProvid
     protected void addPiminPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindPitchContEmulIEC_pimin_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindPitchContEmulIEC_pimin_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindPitchContEmulIEC_pimin_feature",
                                 "_UI_WindPitchContEmulIEC_type" ),
-                        CimPackage.eINSTANCE.getWindPitchContEmulIEC_Pimin(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindPitchContEmulIEC_Pimin(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -198,11 +239,17 @@ public class WindPitchContEmulIECItemProvider extends IdentifiedObjectItemProvid
     protected void addT1PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindPitchContEmulIEC_t1_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindPitchContEmulIEC_t1_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindPitchContEmulIEC_t1_feature",
                                 "_UI_WindPitchContEmulIEC_type" ),
-                        CimPackage.eINSTANCE.getWindPitchContEmulIEC_T1(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindPitchContEmulIEC_T1(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -214,11 +261,17 @@ public class WindPitchContEmulIECItemProvider extends IdentifiedObjectItemProvid
     protected void addT2PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindPitchContEmulIEC_t2_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindPitchContEmulIEC_t2_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindPitchContEmulIEC_t2_feature",
                                 "_UI_WindPitchContEmulIEC_type" ),
-                        CimPackage.eINSTANCE.getWindPitchContEmulIEC_T2(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindPitchContEmulIEC_T2(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -230,11 +283,17 @@ public class WindPitchContEmulIECItemProvider extends IdentifiedObjectItemProvid
     protected void addTpePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindPitchContEmulIEC_tpe_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindPitchContEmulIEC_tpe_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindPitchContEmulIEC_tpe_feature",
                                 "_UI_WindPitchContEmulIEC_type" ),
-                        CimPackage.eINSTANCE.getWindPitchContEmulIEC_Tpe(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindPitchContEmulIEC_Tpe(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -245,11 +304,17 @@ public class WindPitchContEmulIECItemProvider extends IdentifiedObjectItemProvid
      */
     protected void addWindGenTurbineType2IECPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_WindPitchContEmulIEC_WindGenTurbineType2IEC_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_WindPitchContEmulIEC_WindGenTurbineType2IEC_feature", "_UI_WindPitchContEmulIEC_type" ),
-                CimPackage.eINSTANCE.getWindPitchContEmulIEC_WindGenTurbineType2IEC(), true, false, true, null, null,
+                CimPackage.eINSTANCE.getWindPitchContEmulIEC_WindGenTurbineType2IEC(),
+                true,
+                false,
+                true,
+                null,
+                null,
                 null ) );
     }
 

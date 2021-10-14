@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CAESPlant;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CAESPlant;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CAESPlant} object.
@@ -79,11 +78,17 @@ public class CAESPlantItemProvider extends PowerSystemResourceItemProvider {
     protected void addEnergyStorageCapacityPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_CAESPlant_energyStorageCapacity_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_CAESPlant_energyStorageCapacity_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_CAESPlant_energyStorageCapacity_feature",
                                 "_UI_CAESPlant_type" ),
-                        CimPackage.eINSTANCE.getCAESPlant_EnergyStorageCapacity(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getCAESPlant_EnergyStorageCapacity(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -95,11 +100,17 @@ public class CAESPlantItemProvider extends PowerSystemResourceItemProvider {
     protected void addRatedCapacityPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_CAESPlant_ratedCapacityP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_CAESPlant_ratedCapacityP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_CAESPlant_ratedCapacityP_feature",
                                 "_UI_CAESPlant_type" ),
-                        CimPackage.eINSTANCE.getCAESPlant_RatedCapacityP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getCAESPlant_RatedCapacityP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -111,10 +122,17 @@ public class CAESPlantItemProvider extends PowerSystemResourceItemProvider {
     protected void addAirCompressorPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_CAESPlant_AirCompressor_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_CAESPlant_AirCompressor_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_CAESPlant_AirCompressor_feature",
                                 "_UI_CAESPlant_type" ),
-                        CimPackage.eINSTANCE.getCAESPlant_AirCompressor(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getCAESPlant_AirCompressor(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -126,10 +144,16 @@ public class CAESPlantItemProvider extends PowerSystemResourceItemProvider {
     protected void addThermalGeneratingUnitPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_CAESPlant_ThermalGeneratingUnit_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_CAESPlant_ThermalGeneratingUnit_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_CAESPlant_ThermalGeneratingUnit_feature",
                                 "_UI_CAESPlant_type" ),
-                        CimPackage.eINSTANCE.getCAESPlant_ThermalGeneratingUnit(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getCAESPlant_ThermalGeneratingUnit(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 

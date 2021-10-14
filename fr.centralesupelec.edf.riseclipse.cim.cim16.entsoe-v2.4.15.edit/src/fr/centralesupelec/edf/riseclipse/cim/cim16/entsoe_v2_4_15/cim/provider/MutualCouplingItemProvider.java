@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.MutualCoupling;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.MutualCoupling;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.MutualCoupling} object.
@@ -85,11 +84,17 @@ public class MutualCouplingItemProvider extends IdentifiedObjectItemProvider {
     protected void addB0chPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_MutualCoupling_b0ch_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_MutualCoupling_b0ch_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_MutualCoupling_b0ch_feature",
                                 "_UI_MutualCoupling_type" ),
-                        CimPackage.eINSTANCE.getMutualCoupling_B0ch(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getMutualCoupling_B0ch(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -101,11 +106,17 @@ public class MutualCouplingItemProvider extends IdentifiedObjectItemProvider {
     protected void addDistance11PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_MutualCoupling_distance11_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_MutualCoupling_distance11_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_MutualCoupling_distance11_feature",
                                 "_UI_MutualCoupling_type" ),
-                        CimPackage.eINSTANCE.getMutualCoupling_Distance11(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getMutualCoupling_Distance11(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -117,11 +128,17 @@ public class MutualCouplingItemProvider extends IdentifiedObjectItemProvider {
     protected void addDistance12PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_MutualCoupling_distance12_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_MutualCoupling_distance12_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_MutualCoupling_distance12_feature",
                                 "_UI_MutualCoupling_type" ),
-                        CimPackage.eINSTANCE.getMutualCoupling_Distance12(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getMutualCoupling_Distance12(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -133,11 +150,17 @@ public class MutualCouplingItemProvider extends IdentifiedObjectItemProvider {
     protected void addDistance21PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_MutualCoupling_distance21_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_MutualCoupling_distance21_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_MutualCoupling_distance21_feature",
                                 "_UI_MutualCoupling_type" ),
-                        CimPackage.eINSTANCE.getMutualCoupling_Distance21(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getMutualCoupling_Distance21(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -149,11 +172,17 @@ public class MutualCouplingItemProvider extends IdentifiedObjectItemProvider {
     protected void addDistance22PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_MutualCoupling_distance22_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_MutualCoupling_distance22_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_MutualCoupling_distance22_feature",
                                 "_UI_MutualCoupling_type" ),
-                        CimPackage.eINSTANCE.getMutualCoupling_Distance22(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getMutualCoupling_Distance22(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -165,11 +194,17 @@ public class MutualCouplingItemProvider extends IdentifiedObjectItemProvider {
     protected void addG0chPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_MutualCoupling_g0ch_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_MutualCoupling_g0ch_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_MutualCoupling_g0ch_feature",
                                 "_UI_MutualCoupling_type" ),
-                        CimPackage.eINSTANCE.getMutualCoupling_G0ch(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getMutualCoupling_G0ch(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -181,11 +216,17 @@ public class MutualCouplingItemProvider extends IdentifiedObjectItemProvider {
     protected void addR0PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_MutualCoupling_r0_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_MutualCoupling_r0_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_MutualCoupling_r0_feature",
                                 "_UI_MutualCoupling_type" ),
-                        CimPackage.eINSTANCE.getMutualCoupling_R0(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getMutualCoupling_R0(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -197,11 +238,17 @@ public class MutualCouplingItemProvider extends IdentifiedObjectItemProvider {
     protected void addX0PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_MutualCoupling_x0_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_MutualCoupling_x0_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_MutualCoupling_x0_feature",
                                 "_UI_MutualCoupling_type" ),
-                        CimPackage.eINSTANCE.getMutualCoupling_X0(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getMutualCoupling_X0(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -213,10 +260,16 @@ public class MutualCouplingItemProvider extends IdentifiedObjectItemProvider {
     protected void addSecond_TerminalPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_MutualCoupling_Second_Terminal_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_MutualCoupling_Second_Terminal_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_MutualCoupling_Second_Terminal_feature",
                                 "_UI_MutualCoupling_type" ),
-                        CimPackage.eINSTANCE.getMutualCoupling_Second_Terminal(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getMutualCoupling_Second_Terminal(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 
@@ -229,10 +282,16 @@ public class MutualCouplingItemProvider extends IdentifiedObjectItemProvider {
     protected void addFirst_TerminalPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_MutualCoupling_First_Terminal_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_MutualCoupling_First_Terminal_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_MutualCoupling_First_Terminal_feature",
                                 "_UI_MutualCoupling_type" ),
-                        CimPackage.eINSTANCE.getMutualCoupling_First_Terminal(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getMutualCoupling_First_Terminal(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 

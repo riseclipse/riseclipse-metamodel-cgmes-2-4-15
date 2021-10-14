@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,17 +20,16 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.AsynchronousMachineDynamics;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.AsynchronousMachineDynamics;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.AsynchronousMachineDynamics} object.
@@ -75,14 +74,20 @@ public class AsynchronousMachineDynamicsItemProvider extends RotatingMachineDyna
      * @generated
      */
     protected void addAsynchronousMachinePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_AsynchronousMachineDynamics_AsynchronousMachine_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_AsynchronousMachineDynamics_AsynchronousMachine_feature",
-                        "_UI_AsynchronousMachineDynamics_type" ),
-                CimPackage.eINSTANCE.getAsynchronousMachineDynamics_AsynchronousMachine(), true, false, true, null,
-                null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachineDynamics_AsynchronousMachine_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_AsynchronousMachineDynamics_AsynchronousMachine_feature",
+                                "_UI_AsynchronousMachineDynamics_type" ),
+                        CimPackage.eINSTANCE.getAsynchronousMachineDynamics_AsynchronousMachine(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -92,14 +97,20 @@ public class AsynchronousMachineDynamicsItemProvider extends RotatingMachineDyna
      * @generated
      */
     protected void addTurbineGovernorDynamicsPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_AsynchronousMachineDynamics_TurbineGovernorDynamics_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_AsynchronousMachineDynamics_TurbineGovernorDynamics_feature",
-                        "_UI_AsynchronousMachineDynamics_type" ),
-                CimPackage.eINSTANCE.getAsynchronousMachineDynamics_TurbineGovernorDynamics(), true, false, true, null,
-                null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachineDynamics_TurbineGovernorDynamics_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_AsynchronousMachineDynamics_TurbineGovernorDynamics_feature",
+                                "_UI_AsynchronousMachineDynamics_type" ),
+                        CimPackage.eINSTANCE.getAsynchronousMachineDynamics_TurbineGovernorDynamics(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -109,14 +120,20 @@ public class AsynchronousMachineDynamicsItemProvider extends RotatingMachineDyna
      * @generated
      */
     protected void addWindTurbineType1or2DynamicsPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_AsynchronousMachineDynamics_WindTurbineType1or2Dynamics_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_AsynchronousMachineDynamics_WindTurbineType1or2Dynamics_feature",
-                        "_UI_AsynchronousMachineDynamics_type" ),
-                CimPackage.eINSTANCE.getAsynchronousMachineDynamics_WindTurbineType1or2Dynamics(), true, false, true,
-                null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachineDynamics_WindTurbineType1or2Dynamics_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_AsynchronousMachineDynamics_WindTurbineType1or2Dynamics_feature",
+                                "_UI_AsynchronousMachineDynamics_type" ),
+                        CimPackage.eINSTANCE.getAsynchronousMachineDynamics_WindTurbineType1or2Dynamics(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -126,14 +143,20 @@ public class AsynchronousMachineDynamicsItemProvider extends RotatingMachineDyna
      * @generated
      */
     protected void addMechanicalLoadDynamicsPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_AsynchronousMachineDynamics_MechanicalLoadDynamics_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_AsynchronousMachineDynamics_MechanicalLoadDynamics_feature",
-                        "_UI_AsynchronousMachineDynamics_type" ),
-                CimPackage.eINSTANCE.getAsynchronousMachineDynamics_MechanicalLoadDynamics(), true, false, true, null,
-                null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachineDynamics_MechanicalLoadDynamics_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_AsynchronousMachineDynamics_MechanicalLoadDynamics_feature",
+                                "_UI_AsynchronousMachineDynamics_type" ),
+                        CimPackage.eINSTANCE.getAsynchronousMachineDynamics_MechanicalLoadDynamics(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

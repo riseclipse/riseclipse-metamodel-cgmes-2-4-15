@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PssSH;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PssSH;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PssSH} object.
@@ -88,10 +87,16 @@ public class PssSHItemProvider extends PowerSystemStabilizerDynamicsItemProvider
     protected void addKPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PssSH_k_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PssSH_k_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PssSH_k_feature", "_UI_PssSH_type" ),
-                        CimPackage.eINSTANCE.getPssSH_K(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPssSH_K(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -103,10 +108,16 @@ public class PssSHItemProvider extends PowerSystemStabilizerDynamicsItemProvider
     protected void addK0PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PssSH_k0_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PssSH_k0_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PssSH_k0_feature", "_UI_PssSH_type" ),
-                        CimPackage.eINSTANCE.getPssSH_K0(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPssSH_K0(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -118,10 +129,16 @@ public class PssSHItemProvider extends PowerSystemStabilizerDynamicsItemProvider
     protected void addK1PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PssSH_k1_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PssSH_k1_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PssSH_k1_feature", "_UI_PssSH_type" ),
-                        CimPackage.eINSTANCE.getPssSH_K1(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPssSH_K1(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -133,10 +150,16 @@ public class PssSHItemProvider extends PowerSystemStabilizerDynamicsItemProvider
     protected void addK2PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PssSH_k2_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PssSH_k2_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PssSH_k2_feature", "_UI_PssSH_type" ),
-                        CimPackage.eINSTANCE.getPssSH_K2(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPssSH_K2(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -148,10 +171,16 @@ public class PssSHItemProvider extends PowerSystemStabilizerDynamicsItemProvider
     protected void addK3PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PssSH_k3_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PssSH_k3_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PssSH_k3_feature", "_UI_PssSH_type" ),
-                        CimPackage.eINSTANCE.getPssSH_K3(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPssSH_K3(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -163,10 +192,16 @@ public class PssSHItemProvider extends PowerSystemStabilizerDynamicsItemProvider
     protected void addK4PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PssSH_k4_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PssSH_k4_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PssSH_k4_feature", "_UI_PssSH_type" ),
-                        CimPackage.eINSTANCE.getPssSH_K4(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPssSH_K4(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -178,10 +213,16 @@ public class PssSHItemProvider extends PowerSystemStabilizerDynamicsItemProvider
     protected void addT1PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PssSH_t1_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PssSH_t1_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PssSH_t1_feature", "_UI_PssSH_type" ),
-                        CimPackage.eINSTANCE.getPssSH_T1(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPssSH_T1(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -193,10 +234,16 @@ public class PssSHItemProvider extends PowerSystemStabilizerDynamicsItemProvider
     protected void addT2PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PssSH_t2_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PssSH_t2_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PssSH_t2_feature", "_UI_PssSH_type" ),
-                        CimPackage.eINSTANCE.getPssSH_T2(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPssSH_T2(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -208,10 +255,16 @@ public class PssSHItemProvider extends PowerSystemStabilizerDynamicsItemProvider
     protected void addT3PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PssSH_t3_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PssSH_t3_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PssSH_t3_feature", "_UI_PssSH_type" ),
-                        CimPackage.eINSTANCE.getPssSH_T3(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPssSH_T3(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -223,10 +276,16 @@ public class PssSHItemProvider extends PowerSystemStabilizerDynamicsItemProvider
     protected void addT4PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PssSH_t4_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PssSH_t4_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PssSH_t4_feature", "_UI_PssSH_type" ),
-                        CimPackage.eINSTANCE.getPssSH_T4(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPssSH_T4(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -238,10 +297,16 @@ public class PssSHItemProvider extends PowerSystemStabilizerDynamicsItemProvider
     protected void addTdPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PssSH_td_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PssSH_td_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PssSH_td_feature", "_UI_PssSH_type" ),
-                        CimPackage.eINSTANCE.getPssSH_Td(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPssSH_Td(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -253,10 +318,16 @@ public class PssSHItemProvider extends PowerSystemStabilizerDynamicsItemProvider
     protected void addVsmaxPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PssSH_vsmax_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PssSH_vsmax_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PssSH_vsmax_feature", "_UI_PssSH_type" ),
-                        CimPackage.eINSTANCE.getPssSH_Vsmax(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPssSH_Vsmax(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -268,10 +339,16 @@ public class PssSHItemProvider extends PowerSystemStabilizerDynamicsItemProvider
     protected void addVsminPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PssSH_vsmin_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PssSH_vsmin_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PssSH_vsmin_feature", "_UI_PssSH_type" ),
-                        CimPackage.eINSTANCE.getPssSH_Vsmin(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPssSH_Vsmin(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**

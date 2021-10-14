@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ConnectivityNode;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ConnectivityNode;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ConnectivityNode} object.
@@ -83,12 +82,19 @@ public class ConnectivityNodeItemProvider extends IdentifiedObjectItemProvider {
      * @generated
      */
     protected void addTopologicalNodePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ConnectivityNode_TopologicalNode_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ConnectivityNode_TopologicalNode_feature",
-                        "_UI_ConnectivityNode_type" ),
-                CimPackage.eINSTANCE.getConnectivityNode_TopologicalNode(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ConnectivityNode_TopologicalNode_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_ConnectivityNode_TopologicalNode_feature",
+                                "_UI_ConnectivityNode_type" ),
+                        CimPackage.eINSTANCE.getConnectivityNode_TopologicalNode(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -100,10 +106,17 @@ public class ConnectivityNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addTerminalsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ConnectivityNode_Terminals_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ConnectivityNode_Terminals_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ConnectivityNode_Terminals_feature",
                                 "_UI_ConnectivityNode_type" ),
-                        CimPackage.eINSTANCE.getConnectivityNode_Terminals(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getConnectivityNode_Terminals(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -115,11 +128,17 @@ public class ConnectivityNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addConnectivityNodeContainerPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ConnectivityNode_ConnectivityNodeContainer_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ConnectivityNode_ConnectivityNodeContainer_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_ConnectivityNode_ConnectivityNodeContainer_feature", "_UI_ConnectivityNode_type" ),
-                        CimPackage.eINSTANCE.getConnectivityNode_ConnectivityNodeContainer(), true, false, true, null,
-                        null, null ) );
+                        CimPackage.eINSTANCE.getConnectivityNode_ConnectivityNodeContainer(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -131,11 +150,17 @@ public class ConnectivityNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addBoundaryPointPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ConnectivityNode_boundaryPoint_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ConnectivityNode_boundaryPoint_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ConnectivityNode_boundaryPoint_feature",
                                 "_UI_ConnectivityNode_type" ),
-                        CimPackage.eINSTANCE.getConnectivityNode_BoundaryPoint(), true, false, false,
-                        ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getConnectivityNode_BoundaryPoint(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -145,13 +170,19 @@ public class ConnectivityNodeItemProvider extends IdentifiedObjectItemProvider {
      * @generated
      */
     protected void addFromEndIsoCodePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ConnectivityNode_fromEndIsoCode_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ConnectivityNode_fromEndIsoCode_feature",
-                        "_UI_ConnectivityNode_type" ),
-                CimPackage.eINSTANCE.getConnectivityNode_FromEndIsoCode(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ConnectivityNode_fromEndIsoCode_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_ConnectivityNode_fromEndIsoCode_feature",
+                                "_UI_ConnectivityNode_type" ),
+                        CimPackage.eINSTANCE.getConnectivityNode_FromEndIsoCode(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -163,11 +194,17 @@ public class ConnectivityNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addFromEndNamePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ConnectivityNode_fromEndName_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ConnectivityNode_fromEndName_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ConnectivityNode_fromEndName_feature",
                                 "_UI_ConnectivityNode_type" ),
-                        CimPackage.eINSTANCE.getConnectivityNode_FromEndName(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getConnectivityNode_FromEndName(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -177,13 +214,19 @@ public class ConnectivityNodeItemProvider extends IdentifiedObjectItemProvider {
      * @generated
      */
     protected void addFromEndNameTsoPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ConnectivityNode_fromEndNameTso_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ConnectivityNode_fromEndNameTso_feature",
-                        "_UI_ConnectivityNode_type" ),
-                CimPackage.eINSTANCE.getConnectivityNode_FromEndNameTso(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ConnectivityNode_fromEndNameTso_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_ConnectivityNode_fromEndNameTso_feature",
+                                "_UI_ConnectivityNode_type" ),
+                        CimPackage.eINSTANCE.getConnectivityNode_FromEndNameTso(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -195,11 +238,17 @@ public class ConnectivityNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addToEndIsoCodePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ConnectivityNode_toEndIsoCode_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ConnectivityNode_toEndIsoCode_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ConnectivityNode_toEndIsoCode_feature",
                                 "_UI_ConnectivityNode_type" ),
-                        CimPackage.eINSTANCE.getConnectivityNode_ToEndIsoCode(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getConnectivityNode_ToEndIsoCode(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -211,11 +260,17 @@ public class ConnectivityNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addToEndNamePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ConnectivityNode_toEndName_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ConnectivityNode_toEndName_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ConnectivityNode_toEndName_feature",
                                 "_UI_ConnectivityNode_type" ),
-                        CimPackage.eINSTANCE.getConnectivityNode_ToEndName(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getConnectivityNode_ToEndName(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -227,11 +282,17 @@ public class ConnectivityNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addToEndNameTsoPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ConnectivityNode_toEndNameTso_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ConnectivityNode_toEndNameTso_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ConnectivityNode_toEndNameTso_feature",
                                 "_UI_ConnectivityNode_type" ),
-                        CimPackage.eINSTANCE.getConnectivityNode_ToEndNameTso(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getConnectivityNode_ToEndNameTso(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**

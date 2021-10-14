@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.RemoteInputSignal;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.RemoteInputSignal;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.RemoteInputSignal} object.
@@ -83,13 +82,19 @@ public class RemoteInputSignalItemProvider extends IdentifiedObjectItemProvider 
      * @generated
      */
     protected void addRemoteSignalTypePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_RemoteInputSignal_remoteSignalType_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_RemoteInputSignal_remoteSignalType_feature",
-                        "_UI_RemoteInputSignal_type" ),
-                CimPackage.eINSTANCE.getRemoteInputSignal_RemoteSignalType(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_RemoteInputSignal_remoteSignalType_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_RemoteInputSignal_remoteSignalType_feature", "_UI_RemoteInputSignal_type" ),
+                        CimPackage.eINSTANCE.getRemoteInputSignal_RemoteSignalType(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -100,12 +105,18 @@ public class RemoteInputSignalItemProvider extends IdentifiedObjectItemProvider 
      */
     protected void addUnderexcitationLimiterDynamicsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_RemoteInputSignal_UnderexcitationLimiterDynamics_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_RemoteInputSignal_UnderexcitationLimiterDynamics_feature", "_UI_RemoteInputSignal_type" ),
-                CimPackage.eINSTANCE.getRemoteInputSignal_UnderexcitationLimiterDynamics(), true, false, true, null,
-                null, null ) );
+                CimPackage.eINSTANCE.getRemoteInputSignal_UnderexcitationLimiterDynamics(),
+                true,
+                false,
+                true,
+                null,
+                null,
+                null ) );
     }
 
     /**
@@ -115,14 +126,20 @@ public class RemoteInputSignalItemProvider extends IdentifiedObjectItemProvider 
      * @generated
      */
     protected void addDiscontinuousExcitationControlDynamicsPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_RemoteInputSignal_DiscontinuousExcitationControlDynamics_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_RemoteInputSignal_DiscontinuousExcitationControlDynamics_feature",
-                        "_UI_RemoteInputSignal_type" ),
-                CimPackage.eINSTANCE.getRemoteInputSignal_DiscontinuousExcitationControlDynamics(), true, false, true,
-                null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_RemoteInputSignal_DiscontinuousExcitationControlDynamics_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_RemoteInputSignal_DiscontinuousExcitationControlDynamics_feature",
+                                "_UI_RemoteInputSignal_type" ),
+                        CimPackage.eINSTANCE.getRemoteInputSignal_DiscontinuousExcitationControlDynamics(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -133,11 +150,17 @@ public class RemoteInputSignalItemProvider extends IdentifiedObjectItemProvider 
      */
     protected void addPFVArControllerType1DynamicsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_RemoteInputSignal_PFVArControllerType1Dynamics_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_RemoteInputSignal_PFVArControllerType1Dynamics_feature", "_UI_RemoteInputSignal_type" ),
-                CimPackage.eINSTANCE.getRemoteInputSignal_PFVArControllerType1Dynamics(), true, false, true, null, null,
+                CimPackage.eINSTANCE.getRemoteInputSignal_PFVArControllerType1Dynamics(),
+                true,
+                false,
+                true,
+                null,
+                null,
                 null ) );
     }
 
@@ -149,11 +172,17 @@ public class RemoteInputSignalItemProvider extends IdentifiedObjectItemProvider 
      */
     protected void addVoltageCompensatorDynamicsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_RemoteInputSignal_VoltageCompensatorDynamics_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_RemoteInputSignal_VoltageCompensatorDynamics_feature", "_UI_RemoteInputSignal_type" ),
-                CimPackage.eINSTANCE.getRemoteInputSignal_VoltageCompensatorDynamics(), true, false, true, null, null,
+                CimPackage.eINSTANCE.getRemoteInputSignal_VoltageCompensatorDynamics(),
+                true,
+                false,
+                true,
+                null,
+                null,
                 null ) );
     }
 
@@ -165,11 +194,17 @@ public class RemoteInputSignalItemProvider extends IdentifiedObjectItemProvider 
      */
     protected void addWindTurbineType1or2DynamicsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_RemoteInputSignal_WindTurbineType1or2Dynamics_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_RemoteInputSignal_WindTurbineType1or2Dynamics_feature", "_UI_RemoteInputSignal_type" ),
-                CimPackage.eINSTANCE.getRemoteInputSignal_WindTurbineType1or2Dynamics(), true, false, true, null, null,
+                CimPackage.eINSTANCE.getRemoteInputSignal_WindTurbineType1or2Dynamics(),
+                true,
+                false,
+                true,
+                null,
+                null,
                 null ) );
     }
 
@@ -181,11 +216,17 @@ public class RemoteInputSignalItemProvider extends IdentifiedObjectItemProvider 
      */
     protected void addWindTurbineType3or4DynamicsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_RemoteInputSignal_WindTurbineType3or4Dynamics_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_RemoteInputSignal_WindTurbineType3or4Dynamics_feature", "_UI_RemoteInputSignal_type" ),
-                CimPackage.eINSTANCE.getRemoteInputSignal_WindTurbineType3or4Dynamics(), true, false, true, null, null,
+                CimPackage.eINSTANCE.getRemoteInputSignal_WindTurbineType3or4Dynamics(),
+                true,
+                false,
+                true,
+                null,
+                null,
                 null ) );
     }
 
@@ -198,10 +239,17 @@ public class RemoteInputSignalItemProvider extends IdentifiedObjectItemProvider 
     protected void addTerminalPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_RemoteInputSignal_Terminal_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_RemoteInputSignal_Terminal_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_RemoteInputSignal_Terminal_feature",
                                 "_UI_RemoteInputSignal_type" ),
-                        CimPackage.eINSTANCE.getRemoteInputSignal_Terminal(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getRemoteInputSignal_Terminal(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -212,12 +260,18 @@ public class RemoteInputSignalItemProvider extends IdentifiedObjectItemProvider 
      */
     protected void addPowerSystemStabilizerDynamicsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_RemoteInputSignal_PowerSystemStabilizerDynamics_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_RemoteInputSignal_PowerSystemStabilizerDynamics_feature", "_UI_RemoteInputSignal_type" ),
-                CimPackage.eINSTANCE.getRemoteInputSignal_PowerSystemStabilizerDynamics(), true, false, true, null,
-                null, null ) );
+                CimPackage.eINSTANCE.getRemoteInputSignal_PowerSystemStabilizerDynamics(),
+                true,
+                false,
+                true,
+                null,
+                null,
+                null ) );
     }
 
     /**
@@ -227,12 +281,19 @@ public class RemoteInputSignalItemProvider extends IdentifiedObjectItemProvider 
      * @generated
      */
     protected void addWindPlantDynamicsPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_RemoteInputSignal_WindPlantDynamics_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_RemoteInputSignal_WindPlantDynamics_feature",
-                        "_UI_RemoteInputSignal_type" ),
-                CimPackage.eINSTANCE.getRemoteInputSignal_WindPlantDynamics(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_RemoteInputSignal_WindPlantDynamics_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_RemoteInputSignal_WindPlantDynamics_feature", "_UI_RemoteInputSignal_type" ),
+                        CimPackage.eINSTANCE.getRemoteInputSignal_WindPlantDynamics(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

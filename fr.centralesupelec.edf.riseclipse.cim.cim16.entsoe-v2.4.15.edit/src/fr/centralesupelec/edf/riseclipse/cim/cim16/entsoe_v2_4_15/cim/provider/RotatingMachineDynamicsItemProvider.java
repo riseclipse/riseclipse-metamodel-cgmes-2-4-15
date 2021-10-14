@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.RotatingMachineDynamics;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.RotatingMachineDynamics;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.RotatingMachineDynamics} object.
@@ -79,13 +78,19 @@ public class RotatingMachineDynamicsItemProvider extends DynamicsFunctionBlockIt
      * @generated
      */
     protected void addDampingPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_RotatingMachineDynamics_damping_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_RotatingMachineDynamics_damping_feature",
-                        "_UI_RotatingMachineDynamics_type" ),
-                CimPackage.eINSTANCE.getRotatingMachineDynamics_Damping(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_RotatingMachineDynamics_damping_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_RotatingMachineDynamics_damping_feature",
+                                "_UI_RotatingMachineDynamics_type" ),
+                        CimPackage.eINSTANCE.getRotatingMachineDynamics_Damping(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -95,13 +100,19 @@ public class RotatingMachineDynamicsItemProvider extends DynamicsFunctionBlockIt
      * @generated
      */
     protected void addInertiaPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_RotatingMachineDynamics_inertia_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_RotatingMachineDynamics_inertia_feature",
-                        "_UI_RotatingMachineDynamics_type" ),
-                CimPackage.eINSTANCE.getRotatingMachineDynamics_Inertia(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_RotatingMachineDynamics_inertia_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_RotatingMachineDynamics_inertia_feature",
+                                "_UI_RotatingMachineDynamics_type" ),
+                        CimPackage.eINSTANCE.getRotatingMachineDynamics_Inertia(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -112,12 +123,18 @@ public class RotatingMachineDynamicsItemProvider extends DynamicsFunctionBlockIt
      */
     protected void addSaturationFactorPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_RotatingMachineDynamics_saturationFactor_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_RotatingMachineDynamics_saturationFactor_feature",
                         "_UI_RotatingMachineDynamics_type" ),
-                CimPackage.eINSTANCE.getRotatingMachineDynamics_SaturationFactor(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getRotatingMachineDynamics_SaturationFactor(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -128,12 +145,18 @@ public class RotatingMachineDynamicsItemProvider extends DynamicsFunctionBlockIt
      */
     protected void addSaturationFactor120PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_RotatingMachineDynamics_saturationFactor120_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_RotatingMachineDynamics_saturationFactor120_feature", "_UI_RotatingMachineDynamics_type" ),
-                CimPackage.eINSTANCE.getRotatingMachineDynamics_SaturationFactor120(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getRotatingMachineDynamics_SaturationFactor120(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -145,12 +168,18 @@ public class RotatingMachineDynamicsItemProvider extends DynamicsFunctionBlockIt
     protected void addStatorLeakageReactancePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_RotatingMachineDynamics_statorLeakageReactance_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_RotatingMachineDynamics_statorLeakageReactance_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_RotatingMachineDynamics_statorLeakageReactance_feature",
                                 "_UI_RotatingMachineDynamics_type" ),
-                        CimPackage.eINSTANCE.getRotatingMachineDynamics_StatorLeakageReactance(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getRotatingMachineDynamics_StatorLeakageReactance(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -161,12 +190,18 @@ public class RotatingMachineDynamicsItemProvider extends DynamicsFunctionBlockIt
      */
     protected void addStatorResistancePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_RotatingMachineDynamics_statorResistance_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_RotatingMachineDynamics_statorResistance_feature",
                         "_UI_RotatingMachineDynamics_type" ),
-                CimPackage.eINSTANCE.getRotatingMachineDynamics_StatorResistance(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getRotatingMachineDynamics_StatorResistance(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**

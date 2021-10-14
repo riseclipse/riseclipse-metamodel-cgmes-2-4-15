@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,13 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.LineDetail;
-
 import java.math.BigDecimal;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -43,6 +37,9 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.LineDetail;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.LineDetail} object.
@@ -90,11 +87,17 @@ public class LineDetailItemProvider extends ItemProviderAdapter implements IEdit
     protected void addAmountPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_LineDetail_amount_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_LineDetail_amount_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_LineDetail_amount_feature",
                                 "_UI_LineDetail_type" ),
-                        CimPackage.eINSTANCE.getLineDetail_Amount(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getLineDetail_Amount(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -106,11 +109,17 @@ public class LineDetailItemProvider extends ItemProviderAdapter implements IEdit
     protected void addDateTimePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_LineDetail_dateTime_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_LineDetail_dateTime_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_LineDetail_dateTime_feature",
                                 "_UI_LineDetail_type" ),
-                        CimPackage.eINSTANCE.getLineDetail_DateTime(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getLineDetail_DateTime(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -122,11 +131,17 @@ public class LineDetailItemProvider extends ItemProviderAdapter implements IEdit
     protected void addNotePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_LineDetail_note_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_LineDetail_note_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_LineDetail_note_feature",
                                 "_UI_LineDetail_type" ),
-                        CimPackage.eINSTANCE.getLineDetail_Note(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getLineDetail_Note(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -138,11 +153,17 @@ public class LineDetailItemProvider extends ItemProviderAdapter implements IEdit
     protected void addRoundingPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_LineDetail_rounding_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_LineDetail_rounding_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_LineDetail_rounding_feature",
                                 "_UI_LineDetail_type" ),
-                        CimPackage.eINSTANCE.getLineDetail_Rounding(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getLineDetail_Rounding(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -212,7 +233,7 @@ public class LineDetailItemProvider extends ItemProviderAdapter implements IEdit
      */
     @Override
     public ResourceLocator getResourceLocator() {
-        return Entsoe_v2_4_15EditPlugin.INSTANCE;
+        return entsoev2415EditPlugin.INSTANCE;
     }
 
 }

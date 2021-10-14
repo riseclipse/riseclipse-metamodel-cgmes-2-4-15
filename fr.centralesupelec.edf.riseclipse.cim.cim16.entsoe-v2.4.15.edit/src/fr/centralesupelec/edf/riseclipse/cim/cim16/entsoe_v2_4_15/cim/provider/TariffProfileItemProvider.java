@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TariffProfile;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TariffProfile;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TariffProfile} object.
@@ -79,11 +78,17 @@ public class TariffProfileItemProvider extends DocumentItemProvider {
     protected void addTariffCyclePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TariffProfile_tariffCycle_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TariffProfile_tariffCycle_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TariffProfile_tariffCycle_feature",
                                 "_UI_TariffProfile_type" ),
-                        CimPackage.eINSTANCE.getTariffProfile_TariffCycle(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTariffProfile_TariffCycle(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -95,10 +100,17 @@ public class TariffProfileItemProvider extends DocumentItemProvider {
     protected void addTariffsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TariffProfile_Tariffs_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TariffProfile_Tariffs_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TariffProfile_Tariffs_feature",
                                 "_UI_TariffProfile_type" ),
-                        CimPackage.eINSTANCE.getTariffProfile_Tariffs(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getTariffProfile_Tariffs(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -108,13 +120,19 @@ public class TariffProfileItemProvider extends DocumentItemProvider {
      * @generated
      */
     protected void addConsumptionTariffIntervalsPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_TariffProfile_ConsumptionTariffIntervals_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_TariffProfile_ConsumptionTariffIntervals_feature",
-                        "_UI_TariffProfile_type" ),
-                CimPackage.eINSTANCE.getTariffProfile_ConsumptionTariffIntervals(), true, false, true, null, null,
-                null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_TariffProfile_ConsumptionTariffIntervals_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_TariffProfile_ConsumptionTariffIntervals_feature", "_UI_TariffProfile_type" ),
+                        CimPackage.eINSTANCE.getTariffProfile_ConsumptionTariffIntervals(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -124,12 +142,19 @@ public class TariffProfileItemProvider extends DocumentItemProvider {
      * @generated
      */
     protected void addTimeTariffIntervalsPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_TariffProfile_TimeTariffIntervals_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_TariffProfile_TimeTariffIntervals_feature",
-                        "_UI_TariffProfile_type" ),
-                CimPackage.eINSTANCE.getTariffProfile_TimeTariffIntervals(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_TariffProfile_TimeTariffIntervals_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_TariffProfile_TimeTariffIntervals_feature", "_UI_TariffProfile_type" ),
+                        CimPackage.eINSTANCE.getTariffProfile_TimeTariffIntervals(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

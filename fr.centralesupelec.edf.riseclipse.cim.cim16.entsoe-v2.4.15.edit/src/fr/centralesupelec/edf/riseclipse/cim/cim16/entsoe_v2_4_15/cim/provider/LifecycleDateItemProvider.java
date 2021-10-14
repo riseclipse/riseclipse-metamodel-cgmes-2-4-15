@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,18 +20,13 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.LifecycleDate;
-
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -42,6 +37,9 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.LifecycleDate;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.LifecycleDate} object.
@@ -91,11 +89,17 @@ public class LifecycleDateItemProvider extends ItemProviderAdapter implements IE
     protected void addInstallationDatePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_LifecycleDate_installationDate_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_LifecycleDate_installationDate_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_LifecycleDate_installationDate_feature",
                                 "_UI_LifecycleDate_type" ),
-                        CimPackage.eINSTANCE.getLifecycleDate_InstallationDate(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getLifecycleDate_InstallationDate(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -107,11 +111,17 @@ public class LifecycleDateItemProvider extends ItemProviderAdapter implements IE
     protected void addManufacturedDatePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_LifecycleDate_manufacturedDate_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_LifecycleDate_manufacturedDate_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_LifecycleDate_manufacturedDate_feature",
                                 "_UI_LifecycleDate_type" ),
-                        CimPackage.eINSTANCE.getLifecycleDate_ManufacturedDate(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getLifecycleDate_ManufacturedDate(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -123,11 +133,17 @@ public class LifecycleDateItemProvider extends ItemProviderAdapter implements IE
     protected void addPurchaseDatePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_LifecycleDate_purchaseDate_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_LifecycleDate_purchaseDate_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_LifecycleDate_purchaseDate_feature",
                                 "_UI_LifecycleDate_type" ),
-                        CimPackage.eINSTANCE.getLifecycleDate_PurchaseDate(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getLifecycleDate_PurchaseDate(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -139,11 +155,17 @@ public class LifecycleDateItemProvider extends ItemProviderAdapter implements IE
     protected void addReceivedDatePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_LifecycleDate_receivedDate_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_LifecycleDate_receivedDate_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_LifecycleDate_receivedDate_feature",
                                 "_UI_LifecycleDate_type" ),
-                        CimPackage.eINSTANCE.getLifecycleDate_ReceivedDate(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getLifecycleDate_ReceivedDate(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -155,11 +177,17 @@ public class LifecycleDateItemProvider extends ItemProviderAdapter implements IE
     protected void addRemovalDatePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_LifecycleDate_removalDate_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_LifecycleDate_removalDate_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_LifecycleDate_removalDate_feature",
                                 "_UI_LifecycleDate_type" ),
-                        CimPackage.eINSTANCE.getLifecycleDate_RemovalDate(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getLifecycleDate_RemovalDate(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -171,11 +199,17 @@ public class LifecycleDateItemProvider extends ItemProviderAdapter implements IE
     protected void addRetiredDatePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_LifecycleDate_retiredDate_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_LifecycleDate_retiredDate_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_LifecycleDate_retiredDate_feature",
                                 "_UI_LifecycleDate_type" ),
-                        CimPackage.eINSTANCE.getLifecycleDate_RetiredDate(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getLifecycleDate_RetiredDate(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -247,7 +281,7 @@ public class LifecycleDateItemProvider extends ItemProviderAdapter implements IE
      */
     @Override
     public ResourceLocator getResourceLocator() {
-        return Entsoe_v2_4_15EditPlugin.INSTANCE;
+        return entsoev2415EditPlugin.INSTANCE;
     }
 
 }

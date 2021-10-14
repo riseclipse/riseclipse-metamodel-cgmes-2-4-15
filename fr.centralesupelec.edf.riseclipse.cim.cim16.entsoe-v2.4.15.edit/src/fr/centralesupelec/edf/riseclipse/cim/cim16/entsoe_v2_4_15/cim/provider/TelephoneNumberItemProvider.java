@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,17 +20,12 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TelephoneNumber;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -41,6 +36,9 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TelephoneNumber;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TelephoneNumber} object.
@@ -89,11 +87,17 @@ public class TelephoneNumberItemProvider extends ItemProviderAdapter implements 
     protected void addAreaCodePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TelephoneNumber_areaCode_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TelephoneNumber_areaCode_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TelephoneNumber_areaCode_feature",
                                 "_UI_TelephoneNumber_type" ),
-                        CimPackage.eINSTANCE.getTelephoneNumber_AreaCode(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTelephoneNumber_AreaCode(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -105,11 +109,17 @@ public class TelephoneNumberItemProvider extends ItemProviderAdapter implements 
     protected void addCityCodePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TelephoneNumber_cityCode_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TelephoneNumber_cityCode_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TelephoneNumber_cityCode_feature",
                                 "_UI_TelephoneNumber_type" ),
-                        CimPackage.eINSTANCE.getTelephoneNumber_CityCode(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTelephoneNumber_CityCode(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -121,11 +131,17 @@ public class TelephoneNumberItemProvider extends ItemProviderAdapter implements 
     protected void addCountryCodePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TelephoneNumber_countryCode_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TelephoneNumber_countryCode_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TelephoneNumber_countryCode_feature",
                                 "_UI_TelephoneNumber_type" ),
-                        CimPackage.eINSTANCE.getTelephoneNumber_CountryCode(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTelephoneNumber_CountryCode(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -137,11 +153,17 @@ public class TelephoneNumberItemProvider extends ItemProviderAdapter implements 
     protected void addExtensionPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TelephoneNumber_extension_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TelephoneNumber_extension_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TelephoneNumber_extension_feature",
                                 "_UI_TelephoneNumber_type" ),
-                        CimPackage.eINSTANCE.getTelephoneNumber_Extension(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTelephoneNumber_Extension(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -153,11 +175,17 @@ public class TelephoneNumberItemProvider extends ItemProviderAdapter implements 
     protected void addLocalNumberPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TelephoneNumber_localNumber_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TelephoneNumber_localNumber_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TelephoneNumber_localNumber_feature",
                                 "_UI_TelephoneNumber_type" ),
-                        CimPackage.eINSTANCE.getTelephoneNumber_LocalNumber(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTelephoneNumber_LocalNumber(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -227,7 +255,7 @@ public class TelephoneNumberItemProvider extends ItemProviderAdapter implements 
      */
     @Override
     public ResourceLocator getResourceLocator() {
-        return Entsoe_v2_4_15EditPlugin.INSTANCE;
+        return entsoev2415EditPlugin.INSTANCE;
     }
 
 }

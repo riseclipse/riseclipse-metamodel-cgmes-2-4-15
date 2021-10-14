@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TargetLevelSchedule;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TargetLevelSchedule;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TargetLevelSchedule} object.
@@ -76,13 +75,19 @@ public class TargetLevelScheduleItemProvider extends CurveItemProvider {
      * @generated
      */
     protected void addHighLevelLimitPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_TargetLevelSchedule_highLevelLimit_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_TargetLevelSchedule_highLevelLimit_feature",
-                        "_UI_TargetLevelSchedule_type" ),
-                CimPackage.eINSTANCE.getTargetLevelSchedule_HighLevelLimit(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_TargetLevelSchedule_highLevelLimit_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_TargetLevelSchedule_highLevelLimit_feature", "_UI_TargetLevelSchedule_type" ),
+                        CimPackage.eINSTANCE.getTargetLevelSchedule_HighLevelLimit(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -92,13 +97,19 @@ public class TargetLevelScheduleItemProvider extends CurveItemProvider {
      * @generated
      */
     protected void addLowLevelLimitPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_TargetLevelSchedule_lowLevelLimit_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_TargetLevelSchedule_lowLevelLimit_feature",
-                        "_UI_TargetLevelSchedule_type" ),
-                CimPackage.eINSTANCE.getTargetLevelSchedule_LowLevelLimit(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_TargetLevelSchedule_lowLevelLimit_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_TargetLevelSchedule_lowLevelLimit_feature", "_UI_TargetLevelSchedule_type" ),
+                        CimPackage.eINSTANCE.getTargetLevelSchedule_LowLevelLimit(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -108,12 +119,19 @@ public class TargetLevelScheduleItemProvider extends CurveItemProvider {
      * @generated
      */
     protected void addReservoirPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_TargetLevelSchedule_Reservoir_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_TargetLevelSchedule_Reservoir_feature",
-                        "_UI_TargetLevelSchedule_type" ),
-                CimPackage.eINSTANCE.getTargetLevelSchedule_Reservoir(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_TargetLevelSchedule_Reservoir_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_TargetLevelSchedule_Reservoir_feature",
+                                "_UI_TargetLevelSchedule_type" ),
+                        CimPackage.eINSTANCE.getTargetLevelSchedule_Reservoir(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

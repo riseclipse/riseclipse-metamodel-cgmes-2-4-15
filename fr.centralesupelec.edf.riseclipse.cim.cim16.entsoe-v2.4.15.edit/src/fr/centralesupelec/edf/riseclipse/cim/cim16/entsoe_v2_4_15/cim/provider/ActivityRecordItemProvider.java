@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ActivityRecord;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ActivityRecord;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ActivityRecord} object.
@@ -82,11 +81,17 @@ public class ActivityRecordItemProvider extends IdentifiedObjectItemProvider {
     protected void addCreatedDateTimePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ActivityRecord_createdDateTime_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ActivityRecord_createdDateTime_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ActivityRecord_createdDateTime_feature",
                                 "_UI_ActivityRecord_type" ),
-                        CimPackage.eINSTANCE.getActivityRecord_CreatedDateTime(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getActivityRecord_CreatedDateTime(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -98,11 +103,17 @@ public class ActivityRecordItemProvider extends IdentifiedObjectItemProvider {
     protected void addReasonPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ActivityRecord_reason_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ActivityRecord_reason_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ActivityRecord_reason_feature",
                                 "_UI_ActivityRecord_type" ),
-                        CimPackage.eINSTANCE.getActivityRecord_Reason(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getActivityRecord_Reason(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -114,11 +125,17 @@ public class ActivityRecordItemProvider extends IdentifiedObjectItemProvider {
     protected void addSeverityPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ActivityRecord_severity_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ActivityRecord_severity_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ActivityRecord_severity_feature",
                                 "_UI_ActivityRecord_type" ),
-                        CimPackage.eINSTANCE.getActivityRecord_Severity(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getActivityRecord_Severity(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -130,11 +147,17 @@ public class ActivityRecordItemProvider extends IdentifiedObjectItemProvider {
     protected void addTypePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ActivityRecord_type_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ActivityRecord_type_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ActivityRecord_type_feature",
                                 "_UI_ActivityRecord_type" ),
-                        CimPackage.eINSTANCE.getActivityRecord_Type(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getActivityRecord_Type(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -146,10 +169,17 @@ public class ActivityRecordItemProvider extends IdentifiedObjectItemProvider {
     protected void addStatusPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ActivityRecord_status_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ActivityRecord_status_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ActivityRecord_status_feature",
                                 "_UI_ActivityRecord_type" ),
-                        CimPackage.eINSTANCE.getActivityRecord_Status(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getActivityRecord_Status(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -161,10 +191,17 @@ public class ActivityRecordItemProvider extends IdentifiedObjectItemProvider {
     protected void addAssetsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ActivityRecord_Assets_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ActivityRecord_Assets_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ActivityRecord_Assets_feature",
                                 "_UI_ActivityRecord_type" ),
-                        CimPackage.eINSTANCE.getActivityRecord_Assets(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getActivityRecord_Assets(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -176,10 +213,17 @@ public class ActivityRecordItemProvider extends IdentifiedObjectItemProvider {
     protected void addOrganisationsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ActivityRecord_Organisations_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ActivityRecord_Organisations_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ActivityRecord_Organisations_feature",
                                 "_UI_ActivityRecord_type" ),
-                        CimPackage.eINSTANCE.getActivityRecord_Organisations(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getActivityRecord_Organisations(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

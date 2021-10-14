@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindContPType4aIEC;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindContPType4aIEC;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindContPType4aIEC} object.
@@ -79,11 +78,17 @@ public class WindContPType4aIECItemProvider extends IdentifiedObjectItemProvider
     protected void addDpmaxPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContPType4aIEC_dpmax_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContPType4aIEC_dpmax_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContPType4aIEC_dpmax_feature",
                                 "_UI_WindContPType4aIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContPType4aIEC_Dpmax(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContPType4aIEC_Dpmax(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -95,11 +100,17 @@ public class WindContPType4aIECItemProvider extends IdentifiedObjectItemProvider
     protected void addTpordPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContPType4aIEC_tpord_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContPType4aIEC_tpord_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContPType4aIEC_tpord_feature",
                                 "_UI_WindContPType4aIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContPType4aIEC_Tpord(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContPType4aIEC_Tpord(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -111,11 +122,17 @@ public class WindContPType4aIECItemProvider extends IdentifiedObjectItemProvider
     protected void addTufiltPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContPType4aIEC_tufilt_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContPType4aIEC_tufilt_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContPType4aIEC_tufilt_feature",
                                 "_UI_WindContPType4aIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContPType4aIEC_Tufilt(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContPType4aIEC_Tufilt(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -127,11 +144,17 @@ public class WindContPType4aIECItemProvider extends IdentifiedObjectItemProvider
     protected void addWindTurbineType4aIECPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContPType4aIEC_WindTurbineType4aIEC_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContPType4aIEC_WindTurbineType4aIEC_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_WindContPType4aIEC_WindTurbineType4aIEC_feature", "_UI_WindContPType4aIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContPType4aIEC_WindTurbineType4aIEC(), true, false, true, null,
-                        null, null ) );
+                        CimPackage.eINSTANCE.getWindContPType4aIEC_WindTurbineType4aIEC(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

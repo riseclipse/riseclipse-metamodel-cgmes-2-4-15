@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Tender;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Tender;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Tender} object.
@@ -81,11 +80,17 @@ public class TenderItemProvider extends IdentifiedObjectItemProvider {
     protected void addAmountPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Tender_amount_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Tender_amount_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Tender_amount_feature",
                                 "_UI_Tender_type" ),
-                        CimPackage.eINSTANCE.getTender_Amount(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTender_Amount(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -97,11 +102,17 @@ public class TenderItemProvider extends IdentifiedObjectItemProvider {
     protected void addChangePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Tender_change_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Tender_change_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Tender_change_feature",
                                 "_UI_Tender_type" ),
-                        CimPackage.eINSTANCE.getTender_Change(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTender_Change(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -113,10 +124,16 @@ public class TenderItemProvider extends IdentifiedObjectItemProvider {
     protected void addKindPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Tender_kind_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Tender_kind_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Tender_kind_feature", "_UI_Tender_type" ),
-                        CimPackage.eINSTANCE.getTender_Kind(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTender_Kind(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -128,10 +145,17 @@ public class TenderItemProvider extends IdentifiedObjectItemProvider {
     protected void addReceiptPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Tender_Receipt_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Tender_Receipt_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Tender_Receipt_feature",
                                 "_UI_Tender_type" ),
-                        CimPackage.eINSTANCE.getTender_Receipt(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getTender_Receipt(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -143,10 +167,17 @@ public class TenderItemProvider extends IdentifiedObjectItemProvider {
     protected void addChequePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Tender_Cheque_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Tender_Cheque_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Tender_Cheque_feature",
                                 "_UI_Tender_type" ),
-                        CimPackage.eINSTANCE.getTender_Cheque(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getTender_Cheque(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -158,9 +189,16 @@ public class TenderItemProvider extends IdentifiedObjectItemProvider {
     protected void addCardPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Tender_Card_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Tender_Card_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Tender_Card_feature", "_UI_Tender_type" ),
-                        CimPackage.eINSTANCE.getTender_Card(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getTender_Card(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

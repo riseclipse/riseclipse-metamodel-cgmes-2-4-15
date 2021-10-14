@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Reservoir;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Reservoir;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Reservoir} object.
@@ -93,11 +92,17 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
     protected void addActiveStorageCapacityPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reservoir_activeStorageCapacity_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_activeStorageCapacity_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_activeStorageCapacity_feature",
                                 "_UI_Reservoir_type" ),
-                        CimPackage.eINSTANCE.getReservoir_ActiveStorageCapacity(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getReservoir_ActiveStorageCapacity(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -109,11 +114,17 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
     protected void addEnergyStorageRatingPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reservoir_energyStorageRating_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_energyStorageRating_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_energyStorageRating_feature",
                                 "_UI_Reservoir_type" ),
-                        CimPackage.eINSTANCE.getReservoir_EnergyStorageRating(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getReservoir_EnergyStorageRating(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -125,11 +136,17 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
     protected void addFullSupplyLevelPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reservoir_fullSupplyLevel_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_fullSupplyLevel_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_fullSupplyLevel_feature",
                                 "_UI_Reservoir_type" ),
-                        CimPackage.eINSTANCE.getReservoir_FullSupplyLevel(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getReservoir_FullSupplyLevel(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -141,11 +158,17 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
     protected void addGrossCapacityPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reservoir_grossCapacity_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_grossCapacity_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_grossCapacity_feature",
                                 "_UI_Reservoir_type" ),
-                        CimPackage.eINSTANCE.getReservoir_GrossCapacity(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getReservoir_GrossCapacity(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -157,11 +180,17 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
     protected void addNormalMinOperateLevelPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reservoir_normalMinOperateLevel_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_normalMinOperateLevel_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_normalMinOperateLevel_feature",
                                 "_UI_Reservoir_type" ),
-                        CimPackage.eINSTANCE.getReservoir_NormalMinOperateLevel(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getReservoir_NormalMinOperateLevel(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -173,11 +202,17 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
     protected void addRiverOutletWorksPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reservoir_riverOutletWorks_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_riverOutletWorks_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_riverOutletWorks_feature",
                                 "_UI_Reservoir_type" ),
-                        CimPackage.eINSTANCE.getReservoir_RiverOutletWorks(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getReservoir_RiverOutletWorks(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -189,11 +224,17 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
     protected void addSpillTravelDelayPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reservoir_spillTravelDelay_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_spillTravelDelay_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_spillTravelDelay_feature",
                                 "_UI_Reservoir_type" ),
-                        CimPackage.eINSTANCE.getReservoir_SpillTravelDelay(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getReservoir_SpillTravelDelay(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -205,11 +246,17 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
     protected void addSpillwayCapacityPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reservoir_spillwayCapacity_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_spillwayCapacity_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_spillwayCapacity_feature",
                                 "_UI_Reservoir_type" ),
-                        CimPackage.eINSTANCE.getReservoir_SpillwayCapacity(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getReservoir_SpillwayCapacity(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -221,11 +268,17 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
     protected void addSpillwayCrestLengthPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reservoir_spillwayCrestLength_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_spillwayCrestLength_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_spillwayCrestLength_feature",
                                 "_UI_Reservoir_type" ),
-                        CimPackage.eINSTANCE.getReservoir_SpillwayCrestLength(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getReservoir_SpillwayCrestLength(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -237,11 +290,17 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
     protected void addSpillwayCrestLevelPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reservoir_spillwayCrestLevel_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_spillwayCrestLevel_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_spillwayCrestLevel_feature",
                                 "_UI_Reservoir_type" ),
-                        CimPackage.eINSTANCE.getReservoir_SpillwayCrestLevel(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getReservoir_SpillwayCrestLevel(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -253,11 +312,17 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
     protected void addSpillWayGateTypePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reservoir_spillWayGateType_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_spillWayGateType_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_spillWayGateType_feature",
                                 "_UI_Reservoir_type" ),
-                        CimPackage.eINSTANCE.getReservoir_SpillWayGateType(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getReservoir_SpillWayGateType(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -269,10 +334,17 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
     protected void addInflowForecastsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reservoir_InflowForecasts_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_InflowForecasts_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_InflowForecasts_feature",
                                 "_UI_Reservoir_type" ),
-                        CimPackage.eINSTANCE.getReservoir_InflowForecasts(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getReservoir_InflowForecasts(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -284,10 +356,17 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
     protected void addHydroPowerPlantsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reservoir_HydroPowerPlants_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_HydroPowerPlants_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_HydroPowerPlants_feature",
                                 "_UI_Reservoir_type" ),
-                        CimPackage.eINSTANCE.getReservoir_HydroPowerPlants(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getReservoir_HydroPowerPlants(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -297,13 +376,19 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
      * @generated
      */
     protected void addUpstreamFromHydroPowerPlantsPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_Reservoir_UpstreamFromHydroPowerPlants_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_UpstreamFromHydroPowerPlants_feature",
-                        "_UI_Reservoir_type" ),
-                CimPackage.eINSTANCE.getReservoir_UpstreamFromHydroPowerPlants(), true, false, true, null, null,
-                null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_UpstreamFromHydroPowerPlants_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_Reservoir_UpstreamFromHydroPowerPlants_feature", "_UI_Reservoir_type" ),
+                        CimPackage.eINSTANCE.getReservoir_UpstreamFromHydroPowerPlants(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -315,10 +400,16 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
     protected void addSpillsFromReservoirPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reservoir_SpillsFromReservoir_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_SpillsFromReservoir_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_SpillsFromReservoir_feature",
                                 "_UI_Reservoir_type" ),
-                        CimPackage.eINSTANCE.getReservoir_SpillsFromReservoir(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getReservoir_SpillsFromReservoir(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 
@@ -331,10 +422,16 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
     protected void addTargetLevelSchedulePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reservoir_TargetLevelSchedule_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_TargetLevelSchedule_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_TargetLevelSchedule_feature",
                                 "_UI_Reservoir_type" ),
-                        CimPackage.eINSTANCE.getReservoir_TargetLevelSchedule(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getReservoir_TargetLevelSchedule(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 
@@ -347,10 +444,16 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
     protected void addLevelVsVolumeCurvesPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reservoir_LevelVsVolumeCurves_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_LevelVsVolumeCurves_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_LevelVsVolumeCurves_feature",
                                 "_UI_Reservoir_type" ),
-                        CimPackage.eINSTANCE.getReservoir_LevelVsVolumeCurves(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getReservoir_LevelVsVolumeCurves(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 
@@ -363,10 +466,16 @@ public class ReservoirItemProvider extends PowerSystemResourceItemProvider {
     protected void addSpillsIntoReservoirsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reservoir_SpillsIntoReservoirs_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reservoir_SpillsIntoReservoirs_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reservoir_SpillsIntoReservoirs_feature",
                                 "_UI_Reservoir_type" ),
-                        CimPackage.eINSTANCE.getReservoir_SpillsIntoReservoirs(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getReservoir_SpillsIntoReservoirs(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 

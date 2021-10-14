@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.AssetFunction;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.AssetFunction;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.AssetFunction} object.
@@ -80,11 +79,17 @@ public class AssetFunctionItemProvider extends IdentifiedObjectItemProvider {
     protected void addConfigIDPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AssetFunction_configID_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AssetFunction_configID_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AssetFunction_configID_feature",
                                 "_UI_AssetFunction_type" ),
-                        CimPackage.eINSTANCE.getAssetFunction_ConfigID(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAssetFunction_ConfigID(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -96,11 +101,17 @@ public class AssetFunctionItemProvider extends IdentifiedObjectItemProvider {
     protected void addFirmwareIDPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AssetFunction_firmwareID_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AssetFunction_firmwareID_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AssetFunction_firmwareID_feature",
                                 "_UI_AssetFunction_type" ),
-                        CimPackage.eINSTANCE.getAssetFunction_FirmwareID(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAssetFunction_FirmwareID(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -112,11 +123,17 @@ public class AssetFunctionItemProvider extends IdentifiedObjectItemProvider {
     protected void addHardwareIDPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AssetFunction_hardwareID_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AssetFunction_hardwareID_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AssetFunction_hardwareID_feature",
                                 "_UI_AssetFunction_type" ),
-                        CimPackage.eINSTANCE.getAssetFunction_HardwareID(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAssetFunction_HardwareID(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -128,11 +145,17 @@ public class AssetFunctionItemProvider extends IdentifiedObjectItemProvider {
     protected void addPasswordPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AssetFunction_password_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AssetFunction_password_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AssetFunction_password_feature",
                                 "_UI_AssetFunction_type" ),
-                        CimPackage.eINSTANCE.getAssetFunction_Password(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAssetFunction_Password(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -144,11 +167,17 @@ public class AssetFunctionItemProvider extends IdentifiedObjectItemProvider {
     protected void addProgramIDPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AssetFunction_programID_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AssetFunction_programID_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AssetFunction_programID_feature",
                                 "_UI_AssetFunction_type" ),
-                        CimPackage.eINSTANCE.getAssetFunction_ProgramID(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAssetFunction_ProgramID(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**

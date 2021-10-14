@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.GeneratingUnit;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.GeneratingUnit;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.GeneratingUnit} object.
@@ -117,11 +116,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addAllocSpinResPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_allocSpinResP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_allocSpinResP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_allocSpinResP_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_AllocSpinResP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_AllocSpinResP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -133,11 +138,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addAutoCntrlMarginPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_autoCntrlMarginP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_autoCntrlMarginP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_autoCntrlMarginP_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_AutoCntrlMarginP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_AutoCntrlMarginP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -149,11 +160,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addBasePPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_baseP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_baseP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_baseP_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_BaseP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_BaseP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -165,11 +182,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addControlDeadbandPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_controlDeadband_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_controlDeadband_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_controlDeadband_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_ControlDeadband(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_ControlDeadband(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -181,11 +204,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addControlPulseHighPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_controlPulseHigh_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_controlPulseHigh_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_controlPulseHigh_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_ControlPulseHigh(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_ControlPulseHigh(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -197,11 +226,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addControlPulseLowPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_controlPulseLow_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_controlPulseLow_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_controlPulseLow_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_ControlPulseLow(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_ControlPulseLow(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -211,13 +246,19 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
      * @generated
      */
     protected void addControlResponseRatePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_GeneratingUnit_controlResponseRate_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_controlResponseRate_feature",
-                        "_UI_GeneratingUnit_type" ),
-                CimPackage.eINSTANCE.getGeneratingUnit_ControlResponseRate(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_controlResponseRate_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_GeneratingUnit_controlResponseRate_feature", "_UI_GeneratingUnit_type" ),
+                        CimPackage.eINSTANCE.getGeneratingUnit_ControlResponseRate(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -229,11 +270,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addEfficiencyPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_efficiency_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_efficiency_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_efficiency_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_Efficiency(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_Efficiency(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -245,11 +292,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addGenControlModePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_genControlMode_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_genControlMode_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_genControlMode_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_GenControlMode(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_GenControlMode(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -261,11 +314,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addGenControlSourcePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_genControlSource_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_genControlSource_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_genControlSource_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_GenControlSource(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_GenControlSource(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -277,11 +336,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addGovernorMPLPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_governorMPL_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_governorMPL_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_governorMPL_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_GovernorMPL(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_GovernorMPL(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -293,11 +358,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addGovernorSCDPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_governorSCD_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_governorSCD_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_governorSCD_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_GovernorSCD(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_GovernorSCD(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -309,11 +380,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addHighControlLimitPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_highControlLimit_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_highControlLimit_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_highControlLimit_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_HighControlLimit(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_HighControlLimit(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -325,11 +402,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addInitialPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_initialP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_initialP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_initialP_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_InitialP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_InitialP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -341,11 +424,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addLongPFPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_longPF_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_longPF_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_longPF_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_LongPF(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_LongPF(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -357,11 +446,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addLowControlLimitPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_lowControlLimit_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_lowControlLimit_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_lowControlLimit_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_LowControlLimit(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_LowControlLimit(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -373,11 +468,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addLowerRampRatePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_lowerRampRate_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_lowerRampRate_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_lowerRampRate_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_LowerRampRate(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_LowerRampRate(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -389,11 +490,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addMaxEconomicPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_maxEconomicP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_maxEconomicP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_maxEconomicP_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_MaxEconomicP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_MaxEconomicP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -404,12 +511,18 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
      */
     protected void addMaximumAllowableSpinningReservePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_GeneratingUnit_maximumAllowableSpinningReserve_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_GeneratingUnit_maximumAllowableSpinningReserve_feature", "_UI_GeneratingUnit_type" ),
-                CimPackage.eINSTANCE.getGeneratingUnit_MaximumAllowableSpinningReserve(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getGeneratingUnit_MaximumAllowableSpinningReserve(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -421,11 +534,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addMaxOperatingPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_maxOperatingP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_maxOperatingP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_maxOperatingP_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_MaxOperatingP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_MaxOperatingP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -437,11 +556,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addMinEconomicPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_minEconomicP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_minEconomicP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_minEconomicP_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_MinEconomicP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_MinEconomicP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -453,11 +578,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addMinimumOffTimePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_minimumOffTime_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_minimumOffTime_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_minimumOffTime_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_MinimumOffTime(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_MinimumOffTime(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -469,11 +600,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addMinOperatingPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_minOperatingP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_minOperatingP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_minOperatingP_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_MinOperatingP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_MinOperatingP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -485,11 +622,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addModelDetailPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_modelDetail_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_modelDetail_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_modelDetail_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_ModelDetail(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_ModelDetail(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -501,11 +644,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addNominalPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_nominalP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_nominalP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_nominalP_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_NominalP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_NominalP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -517,11 +666,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addNormalPFPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_normalPF_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_normalPF_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_normalPF_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_NormalPF(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_NormalPF(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -533,11 +688,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addPenaltyFactorPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_penaltyFactor_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_penaltyFactor_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_penaltyFactor_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_PenaltyFactor(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_PenaltyFactor(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -549,11 +710,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addRaiseRampRatePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_raiseRampRate_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_raiseRampRate_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_raiseRampRate_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_RaiseRampRate(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_RaiseRampRate(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -565,11 +732,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addRatedGrossMaxPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_ratedGrossMaxP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_ratedGrossMaxP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_ratedGrossMaxP_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_RatedGrossMaxP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_RatedGrossMaxP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -581,11 +754,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addRatedGrossMinPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_ratedGrossMinP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_ratedGrossMinP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_ratedGrossMinP_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_RatedGrossMinP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_RatedGrossMinP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -597,11 +776,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addRatedNetMaxPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_ratedNetMaxP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_ratedNetMaxP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_ratedNetMaxP_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_RatedNetMaxP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_RatedNetMaxP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -613,11 +798,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addShortPFPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_shortPF_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_shortPF_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_shortPF_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_ShortPF(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_ShortPF(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -629,11 +820,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addStartupCostPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_startupCost_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_startupCost_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_startupCost_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_StartupCost(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_StartupCost(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -645,11 +842,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addStartupTimePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_startupTime_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_startupTime_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_startupTime_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_StartupTime(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_StartupTime(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -661,11 +864,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addTieLinePFPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_tieLinePF_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_tieLinePF_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_tieLinePF_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_TieLinePF(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_TieLinePF(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -677,11 +886,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addTotalEfficiencyPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_totalEfficiency_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_totalEfficiency_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_totalEfficiency_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_TotalEfficiency(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_TotalEfficiency(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -693,11 +908,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addVariableCostPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_variableCost_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_variableCost_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_variableCost_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_VariableCost(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_VariableCost(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -707,12 +928,19 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
      * @generated
      */
     protected void addGenUnitOpCostCurvesPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_GeneratingUnit_GenUnitOpCostCurves_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_GenUnitOpCostCurves_feature",
-                        "_UI_GeneratingUnit_type" ),
-                CimPackage.eINSTANCE.getGeneratingUnit_GenUnitOpCostCurves(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_GenUnitOpCostCurves_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_GeneratingUnit_GenUnitOpCostCurves_feature", "_UI_GeneratingUnit_type" ),
+                        CimPackage.eINSTANCE.getGeneratingUnit_GenUnitOpCostCurves(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -722,13 +950,19 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
      * @generated
      */
     protected void addControlAreaGeneratingUnitPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_GeneratingUnit_ControlAreaGeneratingUnit_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_ControlAreaGeneratingUnit_feature",
-                        "_UI_GeneratingUnit_type" ),
-                CimPackage.eINSTANCE.getGeneratingUnit_ControlAreaGeneratingUnit(), true, false, true, null, null,
-                null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_ControlAreaGeneratingUnit_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_GeneratingUnit_ControlAreaGeneratingUnit_feature", "_UI_GeneratingUnit_type" ),
+                        CimPackage.eINSTANCE.getGeneratingUnit_ControlAreaGeneratingUnit(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -740,10 +974,16 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addRotatingMachinePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_RotatingMachine_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_RotatingMachine_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_RotatingMachine_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_RotatingMachine(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getGeneratingUnit_RotatingMachine(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 
@@ -756,10 +996,16 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addGenUnitOpSchedulePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_GenUnitOpSchedule_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_GenUnitOpSchedule_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_GeneratingUnit_GenUnitOpSchedule_feature",
                                 "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_GenUnitOpSchedule(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getGeneratingUnit_GenUnitOpSchedule(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 
@@ -772,11 +1018,17 @@ public class GeneratingUnitItemProvider extends EquipmentItemProvider {
     protected void addGrossToNetActivePowerCurvesPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_GeneratingUnit_GrossToNetActivePowerCurves_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_GeneratingUnit_GrossToNetActivePowerCurves_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_GeneratingUnit_GrossToNetActivePowerCurves_feature", "_UI_GeneratingUnit_type" ),
-                        CimPackage.eINSTANCE.getGeneratingUnit_GrossToNetActivePowerCurves(), true, false, true, null,
-                        null, null ) );
+                        CimPackage.eINSTANCE.getGeneratingUnit_GrossToNetActivePowerCurves(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

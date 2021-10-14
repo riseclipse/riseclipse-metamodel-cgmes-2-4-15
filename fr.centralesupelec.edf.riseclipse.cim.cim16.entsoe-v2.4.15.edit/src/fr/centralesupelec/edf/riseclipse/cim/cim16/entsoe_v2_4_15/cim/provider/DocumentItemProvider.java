@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Document;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Document;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Document} object.
@@ -87,11 +86,17 @@ public class DocumentItemProvider extends IdentifiedObjectItemProvider {
     protected void addAuthorNamePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Document_authorName_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Document_authorName_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Document_authorName_feature",
                                 "_UI_Document_type" ),
-                        CimPackage.eINSTANCE.getDocument_AuthorName(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getDocument_AuthorName(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -103,11 +108,17 @@ public class DocumentItemProvider extends IdentifiedObjectItemProvider {
     protected void addCommentPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Document_comment_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Document_comment_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Document_comment_feature",
                                 "_UI_Document_type" ),
-                        CimPackage.eINSTANCE.getDocument_Comment(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getDocument_Comment(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -119,11 +130,17 @@ public class DocumentItemProvider extends IdentifiedObjectItemProvider {
     protected void addCreatedDateTimePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Document_createdDateTime_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Document_createdDateTime_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Document_createdDateTime_feature",
                                 "_UI_Document_type" ),
-                        CimPackage.eINSTANCE.getDocument_CreatedDateTime(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getDocument_CreatedDateTime(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -135,11 +152,17 @@ public class DocumentItemProvider extends IdentifiedObjectItemProvider {
     protected void addLastModifiedDateTimePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Document_lastModifiedDateTime_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Document_lastModifiedDateTime_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Document_lastModifiedDateTime_feature",
                                 "_UI_Document_type" ),
-                        CimPackage.eINSTANCE.getDocument_LastModifiedDateTime(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getDocument_LastModifiedDateTime(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -151,11 +174,17 @@ public class DocumentItemProvider extends IdentifiedObjectItemProvider {
     protected void addRevisionNumberPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Document_revisionNumber_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Document_revisionNumber_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Document_revisionNumber_feature",
                                 "_UI_Document_type" ),
-                        CimPackage.eINSTANCE.getDocument_RevisionNumber(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getDocument_RevisionNumber(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -167,11 +196,17 @@ public class DocumentItemProvider extends IdentifiedObjectItemProvider {
     protected void addSubjectPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Document_subject_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Document_subject_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Document_subject_feature",
                                 "_UI_Document_type" ),
-                        CimPackage.eINSTANCE.getDocument_Subject(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getDocument_Subject(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -183,11 +218,17 @@ public class DocumentItemProvider extends IdentifiedObjectItemProvider {
     protected void addTitlePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Document_title_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Document_title_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Document_title_feature",
                                 "_UI_Document_type" ),
-                        CimPackage.eINSTANCE.getDocument_Title(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getDocument_Title(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -199,11 +240,17 @@ public class DocumentItemProvider extends IdentifiedObjectItemProvider {
     protected void addTypePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Document_type_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Document_type_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Document_type_feature",
                                 "_UI_Document_type" ),
-                        CimPackage.eINSTANCE.getDocument_Type(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getDocument_Type(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -215,10 +262,17 @@ public class DocumentItemProvider extends IdentifiedObjectItemProvider {
     protected void addDocStatusPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Document_docStatus_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Document_docStatus_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Document_docStatus_feature",
                                 "_UI_Document_type" ),
-                        CimPackage.eINSTANCE.getDocument_DocStatus(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getDocument_DocStatus(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -230,10 +284,17 @@ public class DocumentItemProvider extends IdentifiedObjectItemProvider {
     protected void addElectronicAddressPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Document_electronicAddress_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Document_electronicAddress_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Document_electronicAddress_feature",
                                 "_UI_Document_type" ),
-                        CimPackage.eINSTANCE.getDocument_ElectronicAddress(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getDocument_ElectronicAddress(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -245,10 +306,17 @@ public class DocumentItemProvider extends IdentifiedObjectItemProvider {
     protected void addStatusPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Document_status_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Document_status_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Document_status_feature",
                                 "_UI_Document_type" ),
-                        CimPackage.eINSTANCE.getDocument_Status(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getDocument_Status(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -260,10 +328,17 @@ public class DocumentItemProvider extends IdentifiedObjectItemProvider {
     protected void addConfigurationEventsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Document_ConfigurationEvents_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Document_ConfigurationEvents_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Document_ConfigurationEvents_feature",
                                 "_UI_Document_type" ),
-                        CimPackage.eINSTANCE.getDocument_ConfigurationEvents(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getDocument_ConfigurationEvents(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

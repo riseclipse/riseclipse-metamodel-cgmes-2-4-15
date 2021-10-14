@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PanPricingDetail;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PanPricingDetail;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PanPricingDetail} object.
@@ -89,11 +88,17 @@ public class PanPricingDetailItemProvider extends CimObjectWithIDItemProvider {
     protected void addAlternateCostDeliveredPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PanPricingDetail_alternateCostDelivered_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PanPricingDetail_alternateCostDelivered_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_PanPricingDetail_alternateCostDelivered_feature", "_UI_PanPricingDetail_type" ),
-                        CimPackage.eINSTANCE.getPanPricingDetail_AlternateCostDelivered(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPanPricingDetail_AlternateCostDelivered(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -103,13 +108,19 @@ public class PanPricingDetailItemProvider extends CimObjectWithIDItemProvider {
      * @generated
      */
     protected void addAlternateCostUnitPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_PanPricingDetail_alternateCostUnit_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_PanPricingDetail_alternateCostUnit_feature",
-                        "_UI_PanPricingDetail_type" ),
-                CimPackage.eINSTANCE.getPanPricingDetail_AlternateCostUnit(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_PanPricingDetail_alternateCostUnit_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_PanPricingDetail_alternateCostUnit_feature", "_UI_PanPricingDetail_type" ),
+                        CimPackage.eINSTANCE.getPanPricingDetail_AlternateCostUnit(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -119,13 +130,19 @@ public class PanPricingDetailItemProvider extends CimObjectWithIDItemProvider {
      * @generated
      */
     protected void addCurrentTimeDatePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_PanPricingDetail_currentTimeDate_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_PanPricingDetail_currentTimeDate_feature",
-                        "_UI_PanPricingDetail_type" ),
-                CimPackage.eINSTANCE.getPanPricingDetail_CurrentTimeDate(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_PanPricingDetail_currentTimeDate_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_PanPricingDetail_currentTimeDate_feature",
+                                "_UI_PanPricingDetail_type" ),
+                        CimPackage.eINSTANCE.getPanPricingDetail_CurrentTimeDate(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -135,13 +152,19 @@ public class PanPricingDetailItemProvider extends CimObjectWithIDItemProvider {
      * @generated
      */
     protected void addGenerationPricePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_PanPricingDetail_generationPrice_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_PanPricingDetail_generationPrice_feature",
-                        "_UI_PanPricingDetail_type" ),
-                CimPackage.eINSTANCE.getPanPricingDetail_GenerationPrice(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_PanPricingDetail_generationPrice_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_PanPricingDetail_generationPrice_feature",
+                                "_UI_PanPricingDetail_type" ),
+                        CimPackage.eINSTANCE.getPanPricingDetail_GenerationPrice(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -151,13 +174,19 @@ public class PanPricingDetailItemProvider extends CimObjectWithIDItemProvider {
      * @generated
      */
     protected void addGenerationPriceRatioPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_PanPricingDetail_generationPriceRatio_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_PanPricingDetail_generationPriceRatio_feature",
-                        "_UI_PanPricingDetail_type" ),
-                CimPackage.eINSTANCE.getPanPricingDetail_GenerationPriceRatio(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_PanPricingDetail_generationPriceRatio_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_PanPricingDetail_generationPriceRatio_feature", "_UI_PanPricingDetail_type" ),
+                        CimPackage.eINSTANCE.getPanPricingDetail_GenerationPriceRatio(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -169,11 +198,17 @@ public class PanPricingDetailItemProvider extends CimObjectWithIDItemProvider {
     protected void addPricePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PanPricingDetail_price_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PanPricingDetail_price_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PanPricingDetail_price_feature",
                                 "_UI_PanPricingDetail_type" ),
-                        CimPackage.eINSTANCE.getPanPricingDetail_Price(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPanPricingDetail_Price(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -185,11 +220,17 @@ public class PanPricingDetailItemProvider extends CimObjectWithIDItemProvider {
     protected void addPriceRatioPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PanPricingDetail_priceRatio_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PanPricingDetail_priceRatio_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PanPricingDetail_priceRatio_feature",
                                 "_UI_PanPricingDetail_type" ),
-                        CimPackage.eINSTANCE.getPanPricingDetail_PriceRatio(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPanPricingDetail_PriceRatio(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -201,11 +242,17 @@ public class PanPricingDetailItemProvider extends CimObjectWithIDItemProvider {
     protected void addPriceTierPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PanPricingDetail_priceTier_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PanPricingDetail_priceTier_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PanPricingDetail_priceTier_feature",
                                 "_UI_PanPricingDetail_type" ),
-                        CimPackage.eINSTANCE.getPanPricingDetail_PriceTier(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPanPricingDetail_PriceTier(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -215,13 +262,19 @@ public class PanPricingDetailItemProvider extends CimObjectWithIDItemProvider {
      * @generated
      */
     protected void addPriceTierCountPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_PanPricingDetail_priceTierCount_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_PanPricingDetail_priceTierCount_feature",
-                        "_UI_PanPricingDetail_type" ),
-                CimPackage.eINSTANCE.getPanPricingDetail_PriceTierCount(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_PanPricingDetail_priceTierCount_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_PanPricingDetail_priceTierCount_feature",
+                                "_UI_PanPricingDetail_type" ),
+                        CimPackage.eINSTANCE.getPanPricingDetail_PriceTierCount(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -231,13 +284,19 @@ public class PanPricingDetailItemProvider extends CimObjectWithIDItemProvider {
      * @generated
      */
     protected void addPriceTierLabelPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_PanPricingDetail_priceTierLabel_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_PanPricingDetail_priceTierLabel_feature",
-                        "_UI_PanPricingDetail_type" ),
-                CimPackage.eINSTANCE.getPanPricingDetail_PriceTierLabel(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_PanPricingDetail_priceTierLabel_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_PanPricingDetail_priceTierLabel_feature",
+                                "_UI_PanPricingDetail_type" ),
+                        CimPackage.eINSTANCE.getPanPricingDetail_PriceTierLabel(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -249,11 +308,17 @@ public class PanPricingDetailItemProvider extends CimObjectWithIDItemProvider {
     protected void addRateLabelPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PanPricingDetail_rateLabel_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PanPricingDetail_rateLabel_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PanPricingDetail_rateLabel_feature",
                                 "_UI_PanPricingDetail_type" ),
-                        CimPackage.eINSTANCE.getPanPricingDetail_RateLabel(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPanPricingDetail_RateLabel(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -265,11 +330,17 @@ public class PanPricingDetailItemProvider extends CimObjectWithIDItemProvider {
     protected void addRegisterTierPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PanPricingDetail_registerTier_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PanPricingDetail_registerTier_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PanPricingDetail_registerTier_feature",
                                 "_UI_PanPricingDetail_type" ),
-                        CimPackage.eINSTANCE.getPanPricingDetail_RegisterTier(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPanPricingDetail_RegisterTier(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -281,11 +352,17 @@ public class PanPricingDetailItemProvider extends CimObjectWithIDItemProvider {
     protected void addUnitOfMeasurePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PanPricingDetail_unitOfMeasure_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PanPricingDetail_unitOfMeasure_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PanPricingDetail_unitOfMeasure_feature",
                                 "_UI_PanPricingDetail_type" ),
-                        CimPackage.eINSTANCE.getPanPricingDetail_UnitOfMeasure(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPanPricingDetail_UnitOfMeasure(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -297,10 +374,17 @@ public class PanPricingDetailItemProvider extends CimObjectWithIDItemProvider {
     protected void addPanPricingPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PanPricingDetail_PanPricing_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PanPricingDetail_PanPricing_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PanPricingDetail_PanPricing_feature",
                                 "_UI_PanPricingDetail_type" ),
-                        CimPackage.eINSTANCE.getPanPricingDetail_PanPricing(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getPanPricingDetail_PanPricing(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

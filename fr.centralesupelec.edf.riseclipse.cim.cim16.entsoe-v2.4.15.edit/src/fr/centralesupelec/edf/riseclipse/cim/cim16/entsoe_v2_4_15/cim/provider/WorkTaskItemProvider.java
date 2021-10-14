@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WorkTask;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WorkTask;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WorkTask} object.
@@ -85,11 +84,17 @@ public class WorkTaskItemProvider extends BaseWorkItemProvider {
     protected void addCrewETAPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WorkTask_crewETA_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WorkTask_crewETA_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WorkTask_crewETA_feature",
                                 "_UI_WorkTask_type" ),
-                        CimPackage.eINSTANCE.getWorkTask_CrewETA(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWorkTask_CrewETA(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -101,11 +106,17 @@ public class WorkTaskItemProvider extends BaseWorkItemProvider {
     protected void addInstructionPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WorkTask_instruction_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WorkTask_instruction_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WorkTask_instruction_feature",
                                 "_UI_WorkTask_type" ),
-                        CimPackage.eINSTANCE.getWorkTask_Instruction(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWorkTask_Instruction(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -117,11 +128,17 @@ public class WorkTaskItemProvider extends BaseWorkItemProvider {
     protected void addSchedOverridePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WorkTask_schedOverride_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WorkTask_schedOverride_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WorkTask_schedOverride_feature",
                                 "_UI_WorkTask_type" ),
-                        CimPackage.eINSTANCE.getWorkTask_SchedOverride(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWorkTask_SchedOverride(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -133,11 +150,17 @@ public class WorkTaskItemProvider extends BaseWorkItemProvider {
     protected void addTaskKindPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WorkTask_taskKind_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WorkTask_taskKind_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WorkTask_taskKind_feature",
                                 "_UI_WorkTask_type" ),
-                        CimPackage.eINSTANCE.getWorkTask_TaskKind(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWorkTask_TaskKind(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -149,10 +172,17 @@ public class WorkTaskItemProvider extends BaseWorkItemProvider {
     protected void addAssetsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WorkTask_Assets_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WorkTask_Assets_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WorkTask_Assets_feature",
                                 "_UI_WorkTask_type" ),
-                        CimPackage.eINSTANCE.getWorkTask_Assets(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getWorkTask_Assets(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -164,10 +194,17 @@ public class WorkTaskItemProvider extends BaseWorkItemProvider {
     protected void addCrewsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WorkTask_Crews_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WorkTask_Crews_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WorkTask_Crews_feature",
                                 "_UI_WorkTask_type" ),
-                        CimPackage.eINSTANCE.getWorkTask_Crews(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getWorkTask_Crews(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -179,10 +216,17 @@ public class WorkTaskItemProvider extends BaseWorkItemProvider {
     protected void addOldAssetPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WorkTask_OldAsset_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WorkTask_OldAsset_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WorkTask_OldAsset_feature",
                                 "_UI_WorkTask_type" ),
-                        CimPackage.eINSTANCE.getWorkTask_OldAsset(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getWorkTask_OldAsset(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -194,10 +238,17 @@ public class WorkTaskItemProvider extends BaseWorkItemProvider {
     protected void addMaterialItemsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WorkTask_MaterialItems_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WorkTask_MaterialItems_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WorkTask_MaterialItems_feature",
                                 "_UI_WorkTask_type" ),
-                        CimPackage.eINSTANCE.getWorkTask_MaterialItems(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getWorkTask_MaterialItems(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -209,10 +260,17 @@ public class WorkTaskItemProvider extends BaseWorkItemProvider {
     protected void addSwitchingPlanPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WorkTask_SwitchingPlan_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WorkTask_SwitchingPlan_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WorkTask_SwitchingPlan_feature",
                                 "_UI_WorkTask_type" ),
-                        CimPackage.eINSTANCE.getWorkTask_SwitchingPlan(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getWorkTask_SwitchingPlan(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -224,10 +282,17 @@ public class WorkTaskItemProvider extends BaseWorkItemProvider {
     protected void addWorkPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WorkTask_Work_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WorkTask_Work_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WorkTask_Work_feature",
                                 "_UI_WorkTask_type" ),
-                        CimPackage.eINSTANCE.getWorkTask_Work(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getWorkTask_Work(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

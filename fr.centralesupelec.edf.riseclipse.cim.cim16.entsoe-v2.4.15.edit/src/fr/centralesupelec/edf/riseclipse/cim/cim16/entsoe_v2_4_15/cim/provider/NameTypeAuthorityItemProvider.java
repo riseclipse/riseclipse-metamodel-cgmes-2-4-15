@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.NameTypeAuthority;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.NameTypeAuthority;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.NameTypeAuthority} object.
@@ -78,11 +77,17 @@ public class NameTypeAuthorityItemProvider extends CimObjectWithIDItemProvider {
     protected void addDescriptionPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_NameTypeAuthority_description_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_NameTypeAuthority_description_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_NameTypeAuthority_description_feature",
                                 "_UI_NameTypeAuthority_type" ),
-                        CimPackage.eINSTANCE.getNameTypeAuthority_Description(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getNameTypeAuthority_Description(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -94,11 +99,17 @@ public class NameTypeAuthorityItemProvider extends CimObjectWithIDItemProvider {
     protected void addNamePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_NameTypeAuthority_name_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_NameTypeAuthority_name_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_NameTypeAuthority_name_feature",
                                 "_UI_NameTypeAuthority_type" ),
-                        CimPackage.eINSTANCE.getNameTypeAuthority_Name(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getNameTypeAuthority_Name(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -110,10 +121,17 @@ public class NameTypeAuthorityItemProvider extends CimObjectWithIDItemProvider {
     protected void addNameTypesPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_NameTypeAuthority_NameTypes_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_NameTypeAuthority_NameTypes_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_NameTypeAuthority_NameTypes_feature",
                                 "_UI_NameTypeAuthority_type" ),
-                        CimPackage.eINSTANCE.getNameTypeAuthority_NameTypes(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getNameTypeAuthority_NameTypes(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

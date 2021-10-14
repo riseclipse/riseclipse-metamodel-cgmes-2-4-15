@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.StartupModel;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.StartupModel;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.StartupModel} object.
@@ -89,11 +88,17 @@ public class StartupModelItemProvider extends IdentifiedObjectItemProvider {
     protected void addFixedMaintCostPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StartupModel_fixedMaintCost_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StartupModel_fixedMaintCost_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StartupModel_fixedMaintCost_feature",
                                 "_UI_StartupModel_type" ),
-                        CimPackage.eINSTANCE.getStartupModel_FixedMaintCost(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStartupModel_FixedMaintCost(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -105,11 +110,17 @@ public class StartupModelItemProvider extends IdentifiedObjectItemProvider {
     protected void addHotStandbyHeatPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StartupModel_hotStandbyHeat_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StartupModel_hotStandbyHeat_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StartupModel_hotStandbyHeat_feature",
                                 "_UI_StartupModel_type" ),
-                        CimPackage.eINSTANCE.getStartupModel_HotStandbyHeat(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStartupModel_HotStandbyHeat(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -119,13 +130,19 @@ public class StartupModelItemProvider extends IdentifiedObjectItemProvider {
      * @generated
      */
     protected void addIncrementalMaintCostPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_StartupModel_incrementalMaintCost_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_StartupModel_incrementalMaintCost_feature",
-                        "_UI_StartupModel_type" ),
-                CimPackage.eINSTANCE.getStartupModel_IncrementalMaintCost(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_StartupModel_incrementalMaintCost_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_StartupModel_incrementalMaintCost_feature", "_UI_StartupModel_type" ),
+                        CimPackage.eINSTANCE.getStartupModel_IncrementalMaintCost(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -137,11 +154,17 @@ public class StartupModelItemProvider extends IdentifiedObjectItemProvider {
     protected void addMinimumDownTimePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StartupModel_minimumDownTime_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StartupModel_minimumDownTime_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StartupModel_minimumDownTime_feature",
                                 "_UI_StartupModel_type" ),
-                        CimPackage.eINSTANCE.getStartupModel_MinimumDownTime(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStartupModel_MinimumDownTime(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -153,11 +176,17 @@ public class StartupModelItemProvider extends IdentifiedObjectItemProvider {
     protected void addMinimumRunTimePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StartupModel_minimumRunTime_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StartupModel_minimumRunTime_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StartupModel_minimumRunTime_feature",
                                 "_UI_StartupModel_type" ),
-                        CimPackage.eINSTANCE.getStartupModel_MinimumRunTime(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStartupModel_MinimumRunTime(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -169,11 +198,17 @@ public class StartupModelItemProvider extends IdentifiedObjectItemProvider {
     protected void addRiskFactorCostPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StartupModel_riskFactorCost_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StartupModel_riskFactorCost_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StartupModel_riskFactorCost_feature",
                                 "_UI_StartupModel_type" ),
-                        CimPackage.eINSTANCE.getStartupModel_RiskFactorCost(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStartupModel_RiskFactorCost(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -185,11 +220,17 @@ public class StartupModelItemProvider extends IdentifiedObjectItemProvider {
     protected void addStartupCostPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StartupModel_startupCost_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StartupModel_startupCost_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StartupModel_startupCost_feature",
                                 "_UI_StartupModel_type" ),
-                        CimPackage.eINSTANCE.getStartupModel_StartupCost(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStartupModel_StartupCost(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -201,11 +242,17 @@ public class StartupModelItemProvider extends IdentifiedObjectItemProvider {
     protected void addStartupDatePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StartupModel_startupDate_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StartupModel_startupDate_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StartupModel_startupDate_feature",
                                 "_UI_StartupModel_type" ),
-                        CimPackage.eINSTANCE.getStartupModel_StartupDate(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStartupModel_StartupDate(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -217,11 +264,17 @@ public class StartupModelItemProvider extends IdentifiedObjectItemProvider {
     protected void addStartupPriorityPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StartupModel_startupPriority_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StartupModel_startupPriority_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StartupModel_startupPriority_feature",
                                 "_UI_StartupModel_type" ),
-                        CimPackage.eINSTANCE.getStartupModel_StartupPriority(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStartupModel_StartupPriority(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -233,11 +286,17 @@ public class StartupModelItemProvider extends IdentifiedObjectItemProvider {
     protected void addStbyAuxPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StartupModel_stbyAuxP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StartupModel_stbyAuxP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StartupModel_stbyAuxP_feature",
                                 "_UI_StartupModel_type" ),
-                        CimPackage.eINSTANCE.getStartupModel_StbyAuxP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStartupModel_StbyAuxP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -249,10 +308,16 @@ public class StartupModelItemProvider extends IdentifiedObjectItemProvider {
     protected void addStartMainFuelCurvePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StartupModel_StartMainFuelCurve_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StartupModel_StartMainFuelCurve_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StartupModel_StartMainFuelCurve_feature",
                                 "_UI_StartupModel_type" ),
-                        CimPackage.eINSTANCE.getStartupModel_StartMainFuelCurve(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getStartupModel_StartMainFuelCurve(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 
@@ -265,10 +330,17 @@ public class StartupModelItemProvider extends IdentifiedObjectItemProvider {
     protected void addStartRampCurvePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StartupModel_StartRampCurve_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StartupModel_StartRampCurve_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StartupModel_StartRampCurve_feature",
                                 "_UI_StartupModel_type" ),
-                        CimPackage.eINSTANCE.getStartupModel_StartRampCurve(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getStartupModel_StartRampCurve(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -280,10 +352,16 @@ public class StartupModelItemProvider extends IdentifiedObjectItemProvider {
     protected void addStartIgnFuelCurvePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StartupModel_StartIgnFuelCurve_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StartupModel_StartIgnFuelCurve_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StartupModel_StartIgnFuelCurve_feature",
                                 "_UI_StartupModel_type" ),
-                        CimPackage.eINSTANCE.getStartupModel_StartIgnFuelCurve(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getStartupModel_StartIgnFuelCurve(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 
@@ -294,12 +372,19 @@ public class StartupModelItemProvider extends IdentifiedObjectItemProvider {
      * @generated
      */
     protected void addThermalGeneratingUnitPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_StartupModel_ThermalGeneratingUnit_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_StartupModel_ThermalGeneratingUnit_feature",
-                        "_UI_StartupModel_type" ),
-                CimPackage.eINSTANCE.getStartupModel_ThermalGeneratingUnit(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_StartupModel_ThermalGeneratingUnit_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_StartupModel_ThermalGeneratingUnit_feature", "_UI_StartupModel_type" ),
+                        CimPackage.eINSTANCE.getStartupModel_ThermalGeneratingUnit(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

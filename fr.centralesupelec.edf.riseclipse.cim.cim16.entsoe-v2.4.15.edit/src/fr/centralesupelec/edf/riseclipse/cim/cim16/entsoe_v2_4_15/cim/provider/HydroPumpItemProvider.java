@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.HydroPump;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.HydroPump;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.HydroPump} object.
@@ -82,11 +81,17 @@ public class HydroPumpItemProvider extends EquipmentItemProvider {
     protected void addPumpDischAtMaxHeadPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroPump_pumpDischAtMaxHead_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroPump_pumpDischAtMaxHead_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroPump_pumpDischAtMaxHead_feature",
                                 "_UI_HydroPump_type" ),
-                        CimPackage.eINSTANCE.getHydroPump_PumpDischAtMaxHead(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getHydroPump_PumpDischAtMaxHead(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -98,11 +103,17 @@ public class HydroPumpItemProvider extends EquipmentItemProvider {
     protected void addPumpDischAtMinHeadPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroPump_pumpDischAtMinHead_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroPump_pumpDischAtMinHead_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroPump_pumpDischAtMinHead_feature",
                                 "_UI_HydroPump_type" ),
-                        CimPackage.eINSTANCE.getHydroPump_PumpDischAtMinHead(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getHydroPump_PumpDischAtMinHead(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -114,11 +125,17 @@ public class HydroPumpItemProvider extends EquipmentItemProvider {
     protected void addPumpPowerAtMaxHeadPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroPump_pumpPowerAtMaxHead_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroPump_pumpPowerAtMaxHead_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroPump_pumpPowerAtMaxHead_feature",
                                 "_UI_HydroPump_type" ),
-                        CimPackage.eINSTANCE.getHydroPump_PumpPowerAtMaxHead(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getHydroPump_PumpPowerAtMaxHead(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -130,11 +147,17 @@ public class HydroPumpItemProvider extends EquipmentItemProvider {
     protected void addPumpPowerAtMinHeadPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroPump_pumpPowerAtMinHead_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroPump_pumpPowerAtMinHead_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroPump_pumpPowerAtMinHead_feature",
                                 "_UI_HydroPump_type" ),
-                        CimPackage.eINSTANCE.getHydroPump_PumpPowerAtMinHead(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getHydroPump_PumpPowerAtMinHead(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -146,10 +169,16 @@ public class HydroPumpItemProvider extends EquipmentItemProvider {
     protected void addHydroPumpOpSchedulePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroPump_HydroPumpOpSchedule_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroPump_HydroPumpOpSchedule_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroPump_HydroPumpOpSchedule_feature",
                                 "_UI_HydroPump_type" ),
-                        CimPackage.eINSTANCE.getHydroPump_HydroPumpOpSchedule(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getHydroPump_HydroPumpOpSchedule(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 
@@ -162,10 +191,17 @@ public class HydroPumpItemProvider extends EquipmentItemProvider {
     protected void addRotatingMachinePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroPump_RotatingMachine_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroPump_RotatingMachine_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroPump_RotatingMachine_feature",
                                 "_UI_HydroPump_type" ),
-                        CimPackage.eINSTANCE.getHydroPump_RotatingMachine(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getHydroPump_RotatingMachine(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -177,10 +213,17 @@ public class HydroPumpItemProvider extends EquipmentItemProvider {
     protected void addHydroPowerPlantPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroPump_HydroPowerPlant_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroPump_HydroPowerPlant_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroPump_HydroPowerPlant_feature",
                                 "_UI_HydroPump_type" ),
-                        CimPackage.eINSTANCE.getHydroPump_HydroPowerPlant(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getHydroPump_HydroPowerPlant(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

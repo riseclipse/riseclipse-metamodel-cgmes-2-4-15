@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.EquivalentInjection;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.EquivalentInjection;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.EquivalentInjection} object.
@@ -91,11 +90,17 @@ public class EquivalentInjectionItemProvider extends EquivalentEquipmentItemProv
     protected void addMaxPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentInjection_maxP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentInjection_maxP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentInjection_maxP_feature",
                                 "_UI_EquivalentInjection_type" ),
-                        CimPackage.eINSTANCE.getEquivalentInjection_MaxP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentInjection_MaxP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -107,11 +112,17 @@ public class EquivalentInjectionItemProvider extends EquivalentEquipmentItemProv
     protected void addMaxQPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentInjection_maxQ_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentInjection_maxQ_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentInjection_maxQ_feature",
                                 "_UI_EquivalentInjection_type" ),
-                        CimPackage.eINSTANCE.getEquivalentInjection_MaxQ(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentInjection_MaxQ(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -123,11 +134,17 @@ public class EquivalentInjectionItemProvider extends EquivalentEquipmentItemProv
     protected void addMinPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentInjection_minP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentInjection_minP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentInjection_minP_feature",
                                 "_UI_EquivalentInjection_type" ),
-                        CimPackage.eINSTANCE.getEquivalentInjection_MinP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentInjection_MinP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -139,11 +156,17 @@ public class EquivalentInjectionItemProvider extends EquivalentEquipmentItemProv
     protected void addMinQPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentInjection_minQ_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentInjection_minQ_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentInjection_minQ_feature",
                                 "_UI_EquivalentInjection_type" ),
-                        CimPackage.eINSTANCE.getEquivalentInjection_MinQ(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentInjection_MinQ(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -155,11 +178,17 @@ public class EquivalentInjectionItemProvider extends EquivalentEquipmentItemProv
     protected void addPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentInjection_p_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentInjection_p_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentInjection_p_feature",
                                 "_UI_EquivalentInjection_type" ),
-                        CimPackage.eINSTANCE.getEquivalentInjection_P(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentInjection_P(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -171,11 +200,17 @@ public class EquivalentInjectionItemProvider extends EquivalentEquipmentItemProv
     protected void addQPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentInjection_q_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentInjection_q_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentInjection_q_feature",
                                 "_UI_EquivalentInjection_type" ),
-                        CimPackage.eINSTANCE.getEquivalentInjection_Q(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentInjection_Q(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -187,11 +222,17 @@ public class EquivalentInjectionItemProvider extends EquivalentEquipmentItemProv
     protected void addRPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentInjection_r_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentInjection_r_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentInjection_r_feature",
                                 "_UI_EquivalentInjection_type" ),
-                        CimPackage.eINSTANCE.getEquivalentInjection_R(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentInjection_R(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -203,11 +244,17 @@ public class EquivalentInjectionItemProvider extends EquivalentEquipmentItemProv
     protected void addR0PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentInjection_r0_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentInjection_r0_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentInjection_r0_feature",
                                 "_UI_EquivalentInjection_type" ),
-                        CimPackage.eINSTANCE.getEquivalentInjection_R0(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentInjection_R0(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -219,11 +266,17 @@ public class EquivalentInjectionItemProvider extends EquivalentEquipmentItemProv
     protected void addR2PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentInjection_r2_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentInjection_r2_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentInjection_r2_feature",
                                 "_UI_EquivalentInjection_type" ),
-                        CimPackage.eINSTANCE.getEquivalentInjection_R2(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentInjection_R2(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -234,12 +287,18 @@ public class EquivalentInjectionItemProvider extends EquivalentEquipmentItemProv
      */
     protected void addRegulationCapabilityPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_EquivalentInjection_regulationCapability_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentInjection_regulationCapability_feature",
                         "_UI_EquivalentInjection_type" ),
-                CimPackage.eINSTANCE.getEquivalentInjection_RegulationCapability(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getEquivalentInjection_RegulationCapability(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -251,11 +310,17 @@ public class EquivalentInjectionItemProvider extends EquivalentEquipmentItemProv
     protected void addRegulationStatusPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentInjection_regulationStatus_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentInjection_regulationStatus_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_EquivalentInjection_regulationStatus_feature", "_UI_EquivalentInjection_type" ),
-                        CimPackage.eINSTANCE.getEquivalentInjection_RegulationStatus(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentInjection_RegulationStatus(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -267,11 +332,17 @@ public class EquivalentInjectionItemProvider extends EquivalentEquipmentItemProv
     protected void addRegulationTargetPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentInjection_regulationTarget_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentInjection_regulationTarget_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_EquivalentInjection_regulationTarget_feature", "_UI_EquivalentInjection_type" ),
-                        CimPackage.eINSTANCE.getEquivalentInjection_RegulationTarget(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentInjection_RegulationTarget(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -283,11 +354,17 @@ public class EquivalentInjectionItemProvider extends EquivalentEquipmentItemProv
     protected void addXPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentInjection_x_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentInjection_x_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentInjection_x_feature",
                                 "_UI_EquivalentInjection_type" ),
-                        CimPackage.eINSTANCE.getEquivalentInjection_X(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentInjection_X(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -299,11 +376,17 @@ public class EquivalentInjectionItemProvider extends EquivalentEquipmentItemProv
     protected void addX0PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentInjection_x0_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentInjection_x0_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentInjection_x0_feature",
                                 "_UI_EquivalentInjection_type" ),
-                        CimPackage.eINSTANCE.getEquivalentInjection_X0(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentInjection_X0(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -315,11 +398,17 @@ public class EquivalentInjectionItemProvider extends EquivalentEquipmentItemProv
     protected void addX2PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentInjection_x2_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentInjection_x2_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentInjection_x2_feature",
                                 "_UI_EquivalentInjection_type" ),
-                        CimPackage.eINSTANCE.getEquivalentInjection_X2(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentInjection_X2(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -330,11 +419,17 @@ public class EquivalentInjectionItemProvider extends EquivalentEquipmentItemProv
      */
     protected void addReactiveCapabilityCurvePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_EquivalentInjection_ReactiveCapabilityCurve_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_EquivalentInjection_ReactiveCapabilityCurve_feature", "_UI_EquivalentInjection_type" ),
-                CimPackage.eINSTANCE.getEquivalentInjection_ReactiveCapabilityCurve(), true, false, true, null, null,
+                CimPackage.eINSTANCE.getEquivalentInjection_ReactiveCapabilityCurve(),
+                true,
+                false,
+                true,
+                null,
+                null,
                 null ) );
     }
 

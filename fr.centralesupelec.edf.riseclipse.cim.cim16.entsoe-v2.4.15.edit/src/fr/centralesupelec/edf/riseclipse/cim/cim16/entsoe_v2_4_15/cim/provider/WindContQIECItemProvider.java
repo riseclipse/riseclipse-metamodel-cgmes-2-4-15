@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindContQIEC;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindContQIEC;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindContQIEC} object.
@@ -102,11 +101,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addIqh1PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_iqh1_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_iqh1_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_iqh1_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Iqh1(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Iqh1(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -118,11 +123,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addIqmaxPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_iqmax_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_iqmax_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_iqmax_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Iqmax(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Iqmax(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -134,11 +145,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addIqminPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_iqmin_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_iqmin_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_iqmin_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Iqmin(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Iqmin(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -150,11 +167,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addIqpostPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_iqpost_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_iqpost_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_iqpost_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Iqpost(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Iqpost(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -166,11 +189,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addKiqPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_kiq_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_kiq_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_kiq_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Kiq(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Kiq(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -182,11 +211,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addKiuPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_kiu_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_kiu_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_kiu_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Kiu(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Kiu(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -198,11 +233,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addKpqPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_kpq_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_kpq_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_kpq_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Kpq(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Kpq(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -214,11 +255,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addKpuPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_kpu_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_kpu_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_kpu_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Kpu(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Kpu(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -230,11 +277,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addKqvPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_kqv_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_kqv_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_kqv_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Kqv(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Kqv(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -246,11 +299,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addQmaxPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_qmax_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_qmax_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_qmax_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Qmax(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Qmax(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -262,11 +321,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addQminPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_qmin_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_qmin_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_qmin_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Qmin(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Qmin(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -278,11 +343,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addRdroopPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_rdroop_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_rdroop_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_rdroop_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Rdroop(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Rdroop(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -294,11 +365,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addTiqPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_tiq_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_tiq_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_tiq_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Tiq(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Tiq(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -310,11 +387,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addTpfiltPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_tpfilt_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_tpfilt_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_tpfilt_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Tpfilt(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Tpfilt(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -326,11 +409,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addTpostPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_tpost_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_tpost_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_tpost_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Tpost(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Tpost(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -342,11 +431,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addTqordPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_tqord_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_tqord_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_tqord_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Tqord(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Tqord(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -358,11 +453,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addTufiltPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_tufilt_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_tufilt_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_tufilt_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Tufilt(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Tufilt(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -374,11 +475,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addUdb1PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_udb1_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_udb1_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_udb1_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Udb1(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Udb1(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -390,11 +497,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addUdb2PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_udb2_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_udb2_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_udb2_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Udb2(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Udb2(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -406,11 +519,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addUmaxPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_umax_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_umax_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_umax_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Umax(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Umax(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -422,11 +541,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addUminPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_umin_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_umin_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_umin_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Umin(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Umin(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -438,11 +563,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addUqdipPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_uqdip_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_uqdip_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_uqdip_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Uqdip(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Uqdip(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -454,11 +585,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addUref0PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_uref0_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_uref0_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_uref0_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Uref0(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Uref0(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -468,13 +605,19 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
      * @generated
      */
     protected void addWindLVRTQcontrolModesTypePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_WindContQIEC_windLVRTQcontrolModesType_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_windLVRTQcontrolModesType_feature",
-                        "_UI_WindContQIEC_type" ),
-                CimPackage.eINSTANCE.getWindContQIEC_WindLVRTQcontrolModesType(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_windLVRTQcontrolModesType_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_WindContQIEC_windLVRTQcontrolModesType_feature", "_UI_WindContQIEC_type" ),
+                        CimPackage.eINSTANCE.getWindContQIEC_WindLVRTQcontrolModesType(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -484,13 +627,19 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
      * @generated
      */
     protected void addWindQcontrolModesTypePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_WindContQIEC_windQcontrolModesType_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_windQcontrolModesType_feature",
-                        "_UI_WindContQIEC_type" ),
-                CimPackage.eINSTANCE.getWindContQIEC_WindQcontrolModesType(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_windQcontrolModesType_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_WindContQIEC_windQcontrolModesType_feature", "_UI_WindContQIEC_type" ),
+                        CimPackage.eINSTANCE.getWindContQIEC_WindQcontrolModesType(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -502,11 +651,17 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
     protected void addXdroopPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContQIEC_xdroop_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_xdroop_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_xdroop_feature",
                                 "_UI_WindContQIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContQIEC_Xdroop(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContQIEC_Xdroop(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -516,12 +671,19 @@ public class WindContQIECItemProvider extends IdentifiedObjectItemProvider {
      * @generated
      */
     protected void addWindTurbineType3or4IECPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_WindContQIEC_WindTurbineType3or4IEC_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_WindContQIEC_WindTurbineType3or4IEC_feature",
-                        "_UI_WindContQIEC_type" ),
-                CimPackage.eINSTANCE.getWindContQIEC_WindTurbineType3or4IEC(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_WindContQIEC_WindTurbineType3or4IEC_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_WindContQIEC_WindTurbineType3or4IEC_feature", "_UI_WindContQIEC_type" ),
+                        CimPackage.eINSTANCE.getWindContQIEC_WindTurbineType3or4IEC(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

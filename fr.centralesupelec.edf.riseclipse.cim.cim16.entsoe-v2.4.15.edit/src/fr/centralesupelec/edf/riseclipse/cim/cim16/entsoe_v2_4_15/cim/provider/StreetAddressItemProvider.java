@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,16 +20,12 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -38,6 +34,8 @@ import org.eclipse.emf.edit.provider.IItemPropertySource;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.StreetAddress} object.
@@ -84,10 +82,17 @@ public class StreetAddressItemProvider extends ItemProviderAdapter implements IE
     protected void addStatusPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StreetAddress_status_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StreetAddress_status_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StreetAddress_status_feature",
                                 "_UI_StreetAddress_type" ),
-                        CimPackage.eINSTANCE.getStreetAddress_Status(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getStreetAddress_Status(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -99,10 +104,17 @@ public class StreetAddressItemProvider extends ItemProviderAdapter implements IE
     protected void addStreetDetailPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StreetAddress_streetDetail_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StreetAddress_streetDetail_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StreetAddress_streetDetail_feature",
                                 "_UI_StreetAddress_type" ),
-                        CimPackage.eINSTANCE.getStreetAddress_StreetDetail(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getStreetAddress_StreetDetail(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -114,10 +126,17 @@ public class StreetAddressItemProvider extends ItemProviderAdapter implements IE
     protected void addTownDetailPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StreetAddress_townDetail_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StreetAddress_townDetail_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StreetAddress_townDetail_feature",
                                 "_UI_StreetAddress_type" ),
-                        CimPackage.eINSTANCE.getStreetAddress_TownDetail(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getStreetAddress_TownDetail(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -175,7 +194,7 @@ public class StreetAddressItemProvider extends ItemProviderAdapter implements IE
      */
     @Override
     public ResourceLocator getResourceLocator() {
-        return Entsoe_v2_4_15EditPlugin.INSTANCE;
+        return entsoev2415EditPlugin.INSTANCE;
     }
 
 }

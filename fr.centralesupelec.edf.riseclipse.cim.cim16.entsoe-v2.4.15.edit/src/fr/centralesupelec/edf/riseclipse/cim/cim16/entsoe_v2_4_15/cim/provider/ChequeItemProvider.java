@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Cheque;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Cheque;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Cheque} object.
@@ -81,11 +80,17 @@ public class ChequeItemProvider extends CimObjectWithIDItemProvider {
     protected void addChequeNumberPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Cheque_chequeNumber_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Cheque_chequeNumber_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Cheque_chequeNumber_feature",
                                 "_UI_Cheque_type" ),
-                        CimPackage.eINSTANCE.getCheque_ChequeNumber(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getCheque_ChequeNumber(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -97,10 +102,16 @@ public class ChequeItemProvider extends CimObjectWithIDItemProvider {
     protected void addDatePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Cheque_date_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Cheque_date_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Cheque_date_feature", "_UI_Cheque_type" ),
-                        CimPackage.eINSTANCE.getCheque_Date(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getCheque_Date(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -112,10 +123,16 @@ public class ChequeItemProvider extends CimObjectWithIDItemProvider {
     protected void addKindPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Cheque_kind_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Cheque_kind_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Cheque_kind_feature", "_UI_Cheque_type" ),
-                        CimPackage.eINSTANCE.getCheque_Kind(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getCheque_Kind(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -127,11 +144,17 @@ public class ChequeItemProvider extends CimObjectWithIDItemProvider {
     protected void addMicrNumberPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Cheque_micrNumber_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Cheque_micrNumber_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Cheque_micrNumber_feature",
                                 "_UI_Cheque_type" ),
-                        CimPackage.eINSTANCE.getCheque_MicrNumber(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getCheque_MicrNumber(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -143,10 +166,17 @@ public class ChequeItemProvider extends CimObjectWithIDItemProvider {
     protected void addBankAccountDetailPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Cheque_bankAccountDetail_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Cheque_bankAccountDetail_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Cheque_bankAccountDetail_feature",
                                 "_UI_Cheque_type" ),
-                        CimPackage.eINSTANCE.getCheque_BankAccountDetail(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getCheque_BankAccountDetail(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -158,10 +188,17 @@ public class ChequeItemProvider extends CimObjectWithIDItemProvider {
     protected void addTenderPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Cheque_Tender_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Cheque_Tender_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Cheque_Tender_feature",
                                 "_UI_Cheque_type" ),
-                        CimPackage.eINSTANCE.getCheque_Tender(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getCheque_Tender(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

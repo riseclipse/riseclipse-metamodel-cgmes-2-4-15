@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PFVArType1IEEEVArController;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PFVArType1IEEEVArController;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PFVArType1IEEEVArController} object.
@@ -80,12 +79,18 @@ public class PFVArType1IEEEVArControllerItemProvider extends PFVArControllerType
      */
     protected void addTvarcPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_PFVArType1IEEEVArController_tvarc_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_PFVArType1IEEEVArController_tvarc_feature",
                         "_UI_PFVArType1IEEEVArController_type" ),
-                CimPackage.eINSTANCE.getPFVArType1IEEEVArController_Tvarc(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getPFVArType1IEEEVArController_Tvarc(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -97,11 +102,17 @@ public class PFVArType1IEEEVArControllerItemProvider extends PFVArControllerType
     protected void addVvarPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PFVArType1IEEEVArController_vvar_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PFVArType1IEEEVArController_vvar_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PFVArType1IEEEVArController_vvar_feature",
                                 "_UI_PFVArType1IEEEVArController_type" ),
-                        CimPackage.eINSTANCE.getPFVArType1IEEEVArController_Vvar(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPFVArType1IEEEVArController_Vvar(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -112,12 +123,18 @@ public class PFVArType1IEEEVArControllerItemProvider extends PFVArControllerType
      */
     protected void addVvarcbwPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_PFVArType1IEEEVArController_vvarcbw_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_PFVArType1IEEEVArController_vvarcbw_feature",
                         "_UI_PFVArType1IEEEVArController_type" ),
-                CimPackage.eINSTANCE.getPFVArType1IEEEVArController_Vvarcbw(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getPFVArType1IEEEVArController_Vvarcbw(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -128,12 +145,18 @@ public class PFVArType1IEEEVArControllerItemProvider extends PFVArControllerType
      */
     protected void addVvarrefPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_PFVArType1IEEEVArController_vvarref_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_PFVArType1IEEEVArController_vvarref_feature",
                         "_UI_PFVArType1IEEEVArController_type" ),
-                CimPackage.eINSTANCE.getPFVArType1IEEEVArController_Vvarref(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getPFVArType1IEEEVArController_Vvarref(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -144,12 +167,18 @@ public class PFVArType1IEEEVArControllerItemProvider extends PFVArControllerType
      */
     protected void addVvtmaxPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_PFVArType1IEEEVArController_vvtmax_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_PFVArType1IEEEVArController_vvtmax_feature",
                         "_UI_PFVArType1IEEEVArController_type" ),
-                CimPackage.eINSTANCE.getPFVArType1IEEEVArController_Vvtmax(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getPFVArType1IEEEVArController_Vvtmax(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -160,12 +189,18 @@ public class PFVArType1IEEEVArControllerItemProvider extends PFVArControllerType
      */
     protected void addVvtminPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_PFVArType1IEEEVArController_vvtmin_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_PFVArType1IEEEVArController_vvtmin_feature",
                         "_UI_PFVArType1IEEEVArController_type" ),
-                CimPackage.eINSTANCE.getPFVArType1IEEEVArController_Vvtmin(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getPFVArType1IEEEVArController_Vvtmin(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**

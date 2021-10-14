@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.DCSeriesDevice;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.DCSeriesDevice;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.DCSeriesDevice} object.
@@ -78,11 +77,17 @@ public class DCSeriesDeviceItemProvider extends DCConductingEquipmentItemProvide
     protected void addInductancePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_DCSeriesDevice_inductance_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_DCSeriesDevice_inductance_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_DCSeriesDevice_inductance_feature",
                                 "_UI_DCSeriesDevice_type" ),
-                        CimPackage.eINSTANCE.getDCSeriesDevice_Inductance(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getDCSeriesDevice_Inductance(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -94,11 +99,17 @@ public class DCSeriesDeviceItemProvider extends DCConductingEquipmentItemProvide
     protected void addRatedUdcPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_DCSeriesDevice_ratedUdc_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_DCSeriesDevice_ratedUdc_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_DCSeriesDevice_ratedUdc_feature",
                                 "_UI_DCSeriesDevice_type" ),
-                        CimPackage.eINSTANCE.getDCSeriesDevice_RatedUdc(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getDCSeriesDevice_RatedUdc(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -110,11 +121,17 @@ public class DCSeriesDeviceItemProvider extends DCConductingEquipmentItemProvide
     protected void addResistancePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_DCSeriesDevice_resistance_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_DCSeriesDevice_resistance_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_DCSeriesDevice_resistance_feature",
                                 "_UI_DCSeriesDevice_type" ),
-                        CimPackage.eINSTANCE.getDCSeriesDevice_Resistance(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getDCSeriesDevice_Resistance(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**

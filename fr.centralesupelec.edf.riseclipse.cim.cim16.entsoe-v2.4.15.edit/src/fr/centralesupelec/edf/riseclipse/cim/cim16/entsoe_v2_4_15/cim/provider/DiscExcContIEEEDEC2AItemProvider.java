@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.DiscExcContIEEEDEC2A;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.DiscExcContIEEEDEC2A;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.DiscExcContIEEEDEC2A} object.
@@ -80,11 +79,17 @@ public class DiscExcContIEEEDEC2AItemProvider extends DiscontinuousExcitationCon
     protected void addTd1PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_DiscExcContIEEEDEC2A_td1_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_DiscExcContIEEEDEC2A_td1_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_DiscExcContIEEEDEC2A_td1_feature",
                                 "_UI_DiscExcContIEEEDEC2A_type" ),
-                        CimPackage.eINSTANCE.getDiscExcContIEEEDEC2A_Td1(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getDiscExcContIEEEDEC2A_Td1(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -96,11 +101,17 @@ public class DiscExcContIEEEDEC2AItemProvider extends DiscontinuousExcitationCon
     protected void addTd2PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_DiscExcContIEEEDEC2A_td2_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_DiscExcContIEEEDEC2A_td2_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_DiscExcContIEEEDEC2A_td2_feature",
                                 "_UI_DiscExcContIEEEDEC2A_type" ),
-                        CimPackage.eINSTANCE.getDiscExcContIEEEDEC2A_Td2(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getDiscExcContIEEEDEC2A_Td2(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -112,11 +123,17 @@ public class DiscExcContIEEEDEC2AItemProvider extends DiscontinuousExcitationCon
     protected void addVdmaxPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_DiscExcContIEEEDEC2A_vdmax_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_DiscExcContIEEEDEC2A_vdmax_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_DiscExcContIEEEDEC2A_vdmax_feature",
                                 "_UI_DiscExcContIEEEDEC2A_type" ),
-                        CimPackage.eINSTANCE.getDiscExcContIEEEDEC2A_Vdmax(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getDiscExcContIEEEDEC2A_Vdmax(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -128,11 +145,17 @@ public class DiscExcContIEEEDEC2AItemProvider extends DiscontinuousExcitationCon
     protected void addVdminPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_DiscExcContIEEEDEC2A_vdmin_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_DiscExcContIEEEDEC2A_vdmin_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_DiscExcContIEEEDEC2A_vdmin_feature",
                                 "_UI_DiscExcContIEEEDEC2A_type" ),
-                        CimPackage.eINSTANCE.getDiscExcContIEEEDEC2A_Vdmin(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getDiscExcContIEEEDEC2A_Vdmin(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -144,11 +167,17 @@ public class DiscExcContIEEEDEC2AItemProvider extends DiscontinuousExcitationCon
     protected void addVkPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_DiscExcContIEEEDEC2A_vk_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_DiscExcContIEEEDEC2A_vk_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_DiscExcContIEEEDEC2A_vk_feature",
                                 "_UI_DiscExcContIEEEDEC2A_type" ),
-                        CimPackage.eINSTANCE.getDiscExcContIEEEDEC2A_Vk(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getDiscExcContIEEEDEC2A_Vk(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**

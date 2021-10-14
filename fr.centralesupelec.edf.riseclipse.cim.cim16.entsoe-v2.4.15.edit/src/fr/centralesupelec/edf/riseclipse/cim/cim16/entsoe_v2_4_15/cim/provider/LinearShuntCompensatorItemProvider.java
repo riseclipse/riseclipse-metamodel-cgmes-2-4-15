@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.LinearShuntCompensator;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.LinearShuntCompensator;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.LinearShuntCompensator} object.
@@ -79,11 +78,17 @@ public class LinearShuntCompensatorItemProvider extends ShuntCompensatorItemProv
     protected void addB0PerSectionPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_LinearShuntCompensator_b0PerSection_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_LinearShuntCompensator_b0PerSection_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_LinearShuntCompensator_b0PerSection_feature", "_UI_LinearShuntCompensator_type" ),
-                        CimPackage.eINSTANCE.getLinearShuntCompensator_B0PerSection(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getLinearShuntCompensator_B0PerSection(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -95,11 +100,17 @@ public class LinearShuntCompensatorItemProvider extends ShuntCompensatorItemProv
     protected void addBPerSectionPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_LinearShuntCompensator_bPerSection_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_LinearShuntCompensator_bPerSection_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_LinearShuntCompensator_bPerSection_feature", "_UI_LinearShuntCompensator_type" ),
-                        CimPackage.eINSTANCE.getLinearShuntCompensator_BPerSection(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getLinearShuntCompensator_BPerSection(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -111,11 +122,17 @@ public class LinearShuntCompensatorItemProvider extends ShuntCompensatorItemProv
     protected void addG0PerSectionPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_LinearShuntCompensator_g0PerSection_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_LinearShuntCompensator_g0PerSection_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_LinearShuntCompensator_g0PerSection_feature", "_UI_LinearShuntCompensator_type" ),
-                        CimPackage.eINSTANCE.getLinearShuntCompensator_G0PerSection(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getLinearShuntCompensator_G0PerSection(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -127,11 +144,17 @@ public class LinearShuntCompensatorItemProvider extends ShuntCompensatorItemProv
     protected void addGPerSectionPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_LinearShuntCompensator_gPerSection_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_LinearShuntCompensator_gPerSection_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_LinearShuntCompensator_gPerSection_feature", "_UI_LinearShuntCompensator_type" ),
-                        CimPackage.eINSTANCE.getLinearShuntCompensator_GPerSection(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getLinearShuntCompensator_GPerSection(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**

@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.EndDevice;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.EndDevice;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.EndDevice} object.
@@ -88,11 +87,17 @@ public class EndDeviceItemProvider extends AssetContainerItemProvider {
     protected void addAmrSystemPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EndDevice_amrSystem_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EndDevice_amrSystem_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EndDevice_amrSystem_feature",
                                 "_UI_EndDevice_type" ),
-                        CimPackage.eINSTANCE.getEndDevice_AmrSystem(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEndDevice_AmrSystem(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -104,11 +109,17 @@ public class EndDeviceItemProvider extends AssetContainerItemProvider {
     protected void addInstallCodePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EndDevice_installCode_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EndDevice_installCode_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EndDevice_installCode_feature",
                                 "_UI_EndDevice_type" ),
-                        CimPackage.eINSTANCE.getEndDevice_InstallCode(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEndDevice_InstallCode(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -120,11 +131,17 @@ public class EndDeviceItemProvider extends AssetContainerItemProvider {
     protected void addIsPanPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EndDevice_isPan_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EndDevice_isPan_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EndDevice_isPan_feature",
                                 "_UI_EndDevice_type" ),
-                        CimPackage.eINSTANCE.getEndDevice_IsPan(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEndDevice_IsPan(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -136,11 +153,17 @@ public class EndDeviceItemProvider extends AssetContainerItemProvider {
     protected void addIsVirtualPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EndDevice_isVirtual_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EndDevice_isVirtual_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EndDevice_isVirtual_feature",
                                 "_UI_EndDevice_type" ),
-                        CimPackage.eINSTANCE.getEndDevice_IsVirtual(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEndDevice_IsVirtual(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -152,11 +175,17 @@ public class EndDeviceItemProvider extends AssetContainerItemProvider {
     protected void addTimeZoneOffsetPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EndDevice_timeZoneOffset_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EndDevice_timeZoneOffset_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EndDevice_timeZoneOffset_feature",
                                 "_UI_EndDevice_type" ),
-                        CimPackage.eINSTANCE.getEndDevice_TimeZoneOffset(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEndDevice_TimeZoneOffset(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -168,10 +197,17 @@ public class EndDeviceItemProvider extends AssetContainerItemProvider {
     protected void addCustomerPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EndDevice_Customer_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EndDevice_Customer_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EndDevice_Customer_feature",
                                 "_UI_EndDevice_type" ),
-                        CimPackage.eINSTANCE.getEndDevice_Customer(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getEndDevice_Customer(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -183,10 +219,17 @@ public class EndDeviceItemProvider extends AssetContainerItemProvider {
     protected void addEndDeviceFunctionsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EndDevice_EndDeviceFunctions_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EndDevice_EndDeviceFunctions_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EndDevice_EndDeviceFunctions_feature",
                                 "_UI_EndDevice_type" ),
-                        CimPackage.eINSTANCE.getEndDevice_EndDeviceFunctions(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getEndDevice_EndDeviceFunctions(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -198,10 +241,17 @@ public class EndDeviceItemProvider extends AssetContainerItemProvider {
     protected void addEndDeviceControlsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EndDevice_EndDeviceControls_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EndDevice_EndDeviceControls_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EndDevice_EndDeviceControls_feature",
                                 "_UI_EndDevice_type" ),
-                        CimPackage.eINSTANCE.getEndDevice_EndDeviceControls(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getEndDevice_EndDeviceControls(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -213,10 +263,17 @@ public class EndDeviceItemProvider extends AssetContainerItemProvider {
     protected void addEndDeviceInfoPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EndDevice_EndDeviceInfo_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EndDevice_EndDeviceInfo_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EndDevice_EndDeviceInfo_feature",
                                 "_UI_EndDevice_type" ),
-                        CimPackage.eINSTANCE.getEndDevice_EndDeviceInfo(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getEndDevice_EndDeviceInfo(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -228,10 +285,17 @@ public class EndDeviceItemProvider extends AssetContainerItemProvider {
     protected void addUsagePointPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EndDevice_UsagePoint_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EndDevice_UsagePoint_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EndDevice_UsagePoint_feature",
                                 "_UI_EndDevice_type" ),
-                        CimPackage.eINSTANCE.getEndDevice_UsagePoint(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getEndDevice_UsagePoint(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -243,10 +307,17 @@ public class EndDeviceItemProvider extends AssetContainerItemProvider {
     protected void addEndDeviceGroupsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EndDevice_EndDeviceGroups_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EndDevice_EndDeviceGroups_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EndDevice_EndDeviceGroups_feature",
                                 "_UI_EndDevice_type" ),
-                        CimPackage.eINSTANCE.getEndDevice_EndDeviceGroups(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getEndDevice_EndDeviceGroups(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -258,10 +329,17 @@ public class EndDeviceItemProvider extends AssetContainerItemProvider {
     protected void addServiceLocationPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EndDevice_ServiceLocation_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EndDevice_ServiceLocation_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EndDevice_ServiceLocation_feature",
                                 "_UI_EndDevice_type" ),
-                        CimPackage.eINSTANCE.getEndDevice_ServiceLocation(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getEndDevice_ServiceLocation(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -273,10 +351,17 @@ public class EndDeviceItemProvider extends AssetContainerItemProvider {
     protected void addEndDeviceEventsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EndDevice_EndDeviceEvents_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EndDevice_EndDeviceEvents_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EndDevice_EndDeviceEvents_feature",
                                 "_UI_EndDevice_type" ),
-                        CimPackage.eINSTANCE.getEndDevice_EndDeviceEvents(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getEndDevice_EndDeviceEvents(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

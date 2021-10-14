@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.EquivalentBranch;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.EquivalentBranch;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.EquivalentBranch} object.
@@ -91,11 +90,17 @@ public class EquivalentBranchItemProvider extends EquivalentEquipmentItemProvide
     protected void addNegativeR12PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentBranch_negativeR12_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentBranch_negativeR12_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentBranch_negativeR12_feature",
                                 "_UI_EquivalentBranch_type" ),
-                        CimPackage.eINSTANCE.getEquivalentBranch_NegativeR12(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentBranch_NegativeR12(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -107,11 +112,17 @@ public class EquivalentBranchItemProvider extends EquivalentEquipmentItemProvide
     protected void addNegativeR21PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentBranch_negativeR21_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentBranch_negativeR21_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentBranch_negativeR21_feature",
                                 "_UI_EquivalentBranch_type" ),
-                        CimPackage.eINSTANCE.getEquivalentBranch_NegativeR21(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentBranch_NegativeR21(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -123,11 +134,17 @@ public class EquivalentBranchItemProvider extends EquivalentEquipmentItemProvide
     protected void addNegativeX12PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentBranch_negativeX12_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentBranch_negativeX12_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentBranch_negativeX12_feature",
                                 "_UI_EquivalentBranch_type" ),
-                        CimPackage.eINSTANCE.getEquivalentBranch_NegativeX12(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentBranch_NegativeX12(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -139,11 +156,17 @@ public class EquivalentBranchItemProvider extends EquivalentEquipmentItemProvide
     protected void addNegativeX21PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentBranch_negativeX21_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentBranch_negativeX21_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentBranch_negativeX21_feature",
                                 "_UI_EquivalentBranch_type" ),
-                        CimPackage.eINSTANCE.getEquivalentBranch_NegativeX21(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentBranch_NegativeX21(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -155,11 +178,17 @@ public class EquivalentBranchItemProvider extends EquivalentEquipmentItemProvide
     protected void addPositiveR12PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentBranch_positiveR12_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentBranch_positiveR12_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentBranch_positiveR12_feature",
                                 "_UI_EquivalentBranch_type" ),
-                        CimPackage.eINSTANCE.getEquivalentBranch_PositiveR12(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentBranch_PositiveR12(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -171,11 +200,17 @@ public class EquivalentBranchItemProvider extends EquivalentEquipmentItemProvide
     protected void addPositiveR21PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentBranch_positiveR21_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentBranch_positiveR21_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentBranch_positiveR21_feature",
                                 "_UI_EquivalentBranch_type" ),
-                        CimPackage.eINSTANCE.getEquivalentBranch_PositiveR21(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentBranch_PositiveR21(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -187,11 +222,17 @@ public class EquivalentBranchItemProvider extends EquivalentEquipmentItemProvide
     protected void addPositiveX12PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentBranch_positiveX12_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentBranch_positiveX12_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentBranch_positiveX12_feature",
                                 "_UI_EquivalentBranch_type" ),
-                        CimPackage.eINSTANCE.getEquivalentBranch_PositiveX12(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentBranch_PositiveX12(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -203,11 +244,17 @@ public class EquivalentBranchItemProvider extends EquivalentEquipmentItemProvide
     protected void addPositiveX21PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentBranch_positiveX21_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentBranch_positiveX21_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentBranch_positiveX21_feature",
                                 "_UI_EquivalentBranch_type" ),
-                        CimPackage.eINSTANCE.getEquivalentBranch_PositiveX21(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentBranch_PositiveX21(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -219,11 +266,17 @@ public class EquivalentBranchItemProvider extends EquivalentEquipmentItemProvide
     protected void addRPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentBranch_r_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentBranch_r_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentBranch_r_feature",
                                 "_UI_EquivalentBranch_type" ),
-                        CimPackage.eINSTANCE.getEquivalentBranch_R(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentBranch_R(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -235,11 +288,17 @@ public class EquivalentBranchItemProvider extends EquivalentEquipmentItemProvide
     protected void addR21PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentBranch_r21_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentBranch_r21_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentBranch_r21_feature",
                                 "_UI_EquivalentBranch_type" ),
-                        CimPackage.eINSTANCE.getEquivalentBranch_R21(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentBranch_R21(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -251,11 +310,17 @@ public class EquivalentBranchItemProvider extends EquivalentEquipmentItemProvide
     protected void addXPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentBranch_x_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentBranch_x_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentBranch_x_feature",
                                 "_UI_EquivalentBranch_type" ),
-                        CimPackage.eINSTANCE.getEquivalentBranch_X(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentBranch_X(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -267,11 +332,17 @@ public class EquivalentBranchItemProvider extends EquivalentEquipmentItemProvide
     protected void addX21PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentBranch_x21_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentBranch_x21_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentBranch_x21_feature",
                                 "_UI_EquivalentBranch_type" ),
-                        CimPackage.eINSTANCE.getEquivalentBranch_X21(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentBranch_X21(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -283,11 +354,17 @@ public class EquivalentBranchItemProvider extends EquivalentEquipmentItemProvide
     protected void addZeroR12PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentBranch_zeroR12_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentBranch_zeroR12_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentBranch_zeroR12_feature",
                                 "_UI_EquivalentBranch_type" ),
-                        CimPackage.eINSTANCE.getEquivalentBranch_ZeroR12(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentBranch_ZeroR12(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -299,11 +376,17 @@ public class EquivalentBranchItemProvider extends EquivalentEquipmentItemProvide
     protected void addZeroR21PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentBranch_zeroR21_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentBranch_zeroR21_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentBranch_zeroR21_feature",
                                 "_UI_EquivalentBranch_type" ),
-                        CimPackage.eINSTANCE.getEquivalentBranch_ZeroR21(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentBranch_ZeroR21(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -315,11 +398,17 @@ public class EquivalentBranchItemProvider extends EquivalentEquipmentItemProvide
     protected void addZeroX12PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentBranch_zeroX12_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentBranch_zeroX12_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentBranch_zeroX12_feature",
                                 "_UI_EquivalentBranch_type" ),
-                        CimPackage.eINSTANCE.getEquivalentBranch_ZeroX12(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentBranch_ZeroX12(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -331,11 +420,17 @@ public class EquivalentBranchItemProvider extends EquivalentEquipmentItemProvide
     protected void addZeroX21PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_EquivalentBranch_zeroX21_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_EquivalentBranch_zeroX21_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_EquivalentBranch_zeroX21_feature",
                                 "_UI_EquivalentBranch_type" ),
-                        CimPackage.eINSTANCE.getEquivalentBranch_ZeroX21(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquivalentBranch_ZeroX21(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**

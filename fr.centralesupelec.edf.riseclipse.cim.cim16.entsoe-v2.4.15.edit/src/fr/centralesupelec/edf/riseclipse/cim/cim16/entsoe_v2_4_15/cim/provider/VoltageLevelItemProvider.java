@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.VoltageLevel;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.VoltageLevel;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.VoltageLevel} object.
@@ -80,11 +79,17 @@ public class VoltageLevelItemProvider extends EquipmentContainerItemProvider {
     protected void addHighVoltageLimitPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_VoltageLevel_highVoltageLimit_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_VoltageLevel_highVoltageLimit_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_VoltageLevel_highVoltageLimit_feature",
                                 "_UI_VoltageLevel_type" ),
-                        CimPackage.eINSTANCE.getVoltageLevel_HighVoltageLimit(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getVoltageLevel_HighVoltageLimit(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -96,11 +101,17 @@ public class VoltageLevelItemProvider extends EquipmentContainerItemProvider {
     protected void addLowVoltageLimitPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_VoltageLevel_lowVoltageLimit_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_VoltageLevel_lowVoltageLimit_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_VoltageLevel_lowVoltageLimit_feature",
                                 "_UI_VoltageLevel_type" ),
-                        CimPackage.eINSTANCE.getVoltageLevel_LowVoltageLimit(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getVoltageLevel_LowVoltageLimit(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -112,10 +123,17 @@ public class VoltageLevelItemProvider extends EquipmentContainerItemProvider {
     protected void addSubstationPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_VoltageLevel_Substation_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_VoltageLevel_Substation_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_VoltageLevel_Substation_feature",
                                 "_UI_VoltageLevel_type" ),
-                        CimPackage.eINSTANCE.getVoltageLevel_Substation(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getVoltageLevel_Substation(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -127,10 +145,17 @@ public class VoltageLevelItemProvider extends EquipmentContainerItemProvider {
     protected void addBaysPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_VoltageLevel_Bays_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_VoltageLevel_Bays_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_VoltageLevel_Bays_feature",
                                 "_UI_VoltageLevel_type" ),
-                        CimPackage.eINSTANCE.getVoltageLevel_Bays(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getVoltageLevel_Bays(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -142,10 +167,17 @@ public class VoltageLevelItemProvider extends EquipmentContainerItemProvider {
     protected void addBaseVoltagePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_VoltageLevel_BaseVoltage_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_VoltageLevel_BaseVoltage_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_VoltageLevel_BaseVoltage_feature",
                                 "_UI_VoltageLevel_type" ),
-                        CimPackage.eINSTANCE.getVoltageLevel_BaseVoltage(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getVoltageLevel_BaseVoltage(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

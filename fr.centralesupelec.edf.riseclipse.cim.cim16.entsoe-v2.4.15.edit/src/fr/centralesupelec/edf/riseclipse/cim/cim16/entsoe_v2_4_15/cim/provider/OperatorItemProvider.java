@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,17 +20,16 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Operator;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Operator;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Operator} object.
@@ -75,10 +74,17 @@ public class OperatorItemProvider extends OperationPersonRoleItemProvider {
     protected void addIncidentsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Operator_Incidents_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Operator_Incidents_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Operator_Incidents_feature",
                                 "_UI_Operator_type" ),
-                        CimPackage.eINSTANCE.getOperator_Incidents(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getOperator_Incidents(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -90,10 +96,17 @@ public class OperatorItemProvider extends OperationPersonRoleItemProvider {
     protected void addSwitchingStepsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Operator_SwitchingSteps_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Operator_SwitchingSteps_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Operator_SwitchingSteps_feature",
                                 "_UI_Operator_type" ),
-                        CimPackage.eINSTANCE.getOperator_SwitchingSteps(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getOperator_SwitchingSteps(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

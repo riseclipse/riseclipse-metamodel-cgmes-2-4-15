@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Reading;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Reading;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Reading} object.
@@ -78,11 +77,17 @@ public class ReadingItemProvider extends BaseReadingItemProvider {
     protected void addReasonPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reading_reason_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reading_reason_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reading_reason_feature",
                                 "_UI_Reading_type" ),
-                        CimPackage.eINSTANCE.getReading_Reason(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getReading_Reason(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -94,10 +99,17 @@ public class ReadingItemProvider extends BaseReadingItemProvider {
     protected void addReadingTypePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reading_ReadingType_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reading_ReadingType_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reading_ReadingType_feature",
                                 "_UI_Reading_type" ),
-                        CimPackage.eINSTANCE.getReading_ReadingType(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getReading_ReadingType(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -109,10 +121,17 @@ public class ReadingItemProvider extends BaseReadingItemProvider {
     protected void addMeterReadingsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Reading_MeterReadings_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Reading_MeterReadings_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Reading_MeterReadings_feature",
                                 "_UI_Reading_type" ),
-                        CimPackage.eINSTANCE.getReading_MeterReadings(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getReading_MeterReadings(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

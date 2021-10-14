@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Pss1;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Pss1;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Pss1} object.
@@ -90,10 +89,16 @@ public class Pss1ItemProvider extends PowerSystemStabilizerDynamicsItemProvider 
     protected void addKfPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Pss1_kf_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Pss1_kf_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Pss1_kf_feature", "_UI_Pss1_type" ),
-                        CimPackage.eINSTANCE.getPss1_Kf(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPss1_Kf(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -105,10 +110,16 @@ public class Pss1ItemProvider extends PowerSystemStabilizerDynamicsItemProvider 
     protected void addKpePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Pss1_kpe_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Pss1_kpe_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Pss1_kpe_feature", "_UI_Pss1_type" ),
-                        CimPackage.eINSTANCE.getPss1_Kpe(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPss1_Kpe(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -120,10 +131,16 @@ public class Pss1ItemProvider extends PowerSystemStabilizerDynamicsItemProvider 
     protected void addKsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Pss1_ks_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Pss1_ks_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Pss1_ks_feature", "_UI_Pss1_type" ),
-                        CimPackage.eINSTANCE.getPss1_Ks(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPss1_Ks(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -135,10 +152,16 @@ public class Pss1ItemProvider extends PowerSystemStabilizerDynamicsItemProvider 
     protected void addKwPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Pss1_kw_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Pss1_kw_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Pss1_kw_feature", "_UI_Pss1_type" ),
-                        CimPackage.eINSTANCE.getPss1_Kw(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPss1_Kw(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -150,10 +173,16 @@ public class Pss1ItemProvider extends PowerSystemStabilizerDynamicsItemProvider 
     protected void addPminPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Pss1_pmin_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Pss1_pmin_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Pss1_pmin_feature", "_UI_Pss1_type" ),
-                        CimPackage.eINSTANCE.getPss1_Pmin(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPss1_Pmin(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -165,10 +194,16 @@ public class Pss1ItemProvider extends PowerSystemStabilizerDynamicsItemProvider 
     protected void addT10PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Pss1_t10_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Pss1_t10_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Pss1_t10_feature", "_UI_Pss1_type" ),
-                        CimPackage.eINSTANCE.getPss1_T10(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPss1_T10(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -180,10 +215,16 @@ public class Pss1ItemProvider extends PowerSystemStabilizerDynamicsItemProvider 
     protected void addT5PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Pss1_t5_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Pss1_t5_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Pss1_t5_feature", "_UI_Pss1_type" ),
-                        CimPackage.eINSTANCE.getPss1_T5(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPss1_T5(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -195,10 +236,16 @@ public class Pss1ItemProvider extends PowerSystemStabilizerDynamicsItemProvider 
     protected void addT6PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Pss1_t6_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Pss1_t6_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Pss1_t6_feature", "_UI_Pss1_type" ),
-                        CimPackage.eINSTANCE.getPss1_T6(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPss1_T6(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -210,10 +257,16 @@ public class Pss1ItemProvider extends PowerSystemStabilizerDynamicsItemProvider 
     protected void addT7PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Pss1_t7_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Pss1_t7_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Pss1_t7_feature", "_UI_Pss1_type" ),
-                        CimPackage.eINSTANCE.getPss1_T7(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPss1_T7(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -225,10 +278,16 @@ public class Pss1ItemProvider extends PowerSystemStabilizerDynamicsItemProvider 
     protected void addT8PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Pss1_t8_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Pss1_t8_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Pss1_t8_feature", "_UI_Pss1_type" ),
-                        CimPackage.eINSTANCE.getPss1_T8(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPss1_T8(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -240,10 +299,16 @@ public class Pss1ItemProvider extends PowerSystemStabilizerDynamicsItemProvider 
     protected void addT9PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Pss1_t9_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Pss1_t9_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Pss1_t9_feature", "_UI_Pss1_type" ),
-                        CimPackage.eINSTANCE.getPss1_T9(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPss1_T9(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -255,10 +320,16 @@ public class Pss1ItemProvider extends PowerSystemStabilizerDynamicsItemProvider 
     protected void addTpePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Pss1_tpe_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Pss1_tpe_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Pss1_tpe_feature", "_UI_Pss1_type" ),
-                        CimPackage.eINSTANCE.getPss1_Tpe(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPss1_Tpe(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -270,10 +341,16 @@ public class Pss1ItemProvider extends PowerSystemStabilizerDynamicsItemProvider 
     protected void addVadatPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Pss1_vadat_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Pss1_vadat_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Pss1_vadat_feature", "_UI_Pss1_type" ),
-                        CimPackage.eINSTANCE.getPss1_Vadat(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPss1_Vadat(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -285,10 +362,16 @@ public class Pss1ItemProvider extends PowerSystemStabilizerDynamicsItemProvider 
     protected void addVsmnPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Pss1_vsmn_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Pss1_vsmn_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Pss1_vsmn_feature", "_UI_Pss1_type" ),
-                        CimPackage.eINSTANCE.getPss1_Vsmn(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPss1_Vsmn(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -300,10 +383,16 @@ public class Pss1ItemProvider extends PowerSystemStabilizerDynamicsItemProvider 
     protected void addVsmxPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Pss1_vsmx_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Pss1_vsmx_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Pss1_vsmx_feature", "_UI_Pss1_type" ),
-                        CimPackage.eINSTANCE.getPss1_Vsmx(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPss1_Vsmx(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**

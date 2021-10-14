@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TapChangerControl;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TapChangerControl;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TapChangerControl} object.
@@ -80,13 +79,19 @@ public class TapChangerControlItemProvider extends RegulatingControlItemProvider
      * @generated
      */
     protected void addLimitVoltagePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_TapChangerControl_limitVoltage_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_TapChangerControl_limitVoltage_feature",
-                        "_UI_TapChangerControl_type" ),
-                CimPackage.eINSTANCE.getTapChangerControl_LimitVoltage(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_TapChangerControl_limitVoltage_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_TapChangerControl_limitVoltage_feature",
+                                "_UI_TapChangerControl_type" ),
+                        CimPackage.eINSTANCE.getTapChangerControl_LimitVoltage(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -98,11 +103,17 @@ public class TapChangerControlItemProvider extends RegulatingControlItemProvider
     protected void addLineDropCompensationPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TapChangerControl_lineDropCompensation_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TapChangerControl_lineDropCompensation_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_TapChangerControl_lineDropCompensation_feature", "_UI_TapChangerControl_type" ),
-                        CimPackage.eINSTANCE.getTapChangerControl_LineDropCompensation(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTapChangerControl_LineDropCompensation(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -114,11 +125,17 @@ public class TapChangerControlItemProvider extends RegulatingControlItemProvider
     protected void addLineDropRPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TapChangerControl_lineDropR_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TapChangerControl_lineDropR_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TapChangerControl_lineDropR_feature",
                                 "_UI_TapChangerControl_type" ),
-                        CimPackage.eINSTANCE.getTapChangerControl_LineDropR(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTapChangerControl_LineDropR(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -130,11 +147,17 @@ public class TapChangerControlItemProvider extends RegulatingControlItemProvider
     protected void addLineDropXPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TapChangerControl_lineDropX_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TapChangerControl_lineDropX_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TapChangerControl_lineDropX_feature",
                                 "_UI_TapChangerControl_type" ),
-                        CimPackage.eINSTANCE.getTapChangerControl_LineDropX(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTapChangerControl_LineDropX(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -144,13 +167,19 @@ public class TapChangerControlItemProvider extends RegulatingControlItemProvider
      * @generated
      */
     protected void addReverseLineDropRPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_TapChangerControl_reverseLineDropR_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_TapChangerControl_reverseLineDropR_feature",
-                        "_UI_TapChangerControl_type" ),
-                CimPackage.eINSTANCE.getTapChangerControl_ReverseLineDropR(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_TapChangerControl_reverseLineDropR_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_TapChangerControl_reverseLineDropR_feature", "_UI_TapChangerControl_type" ),
+                        CimPackage.eINSTANCE.getTapChangerControl_ReverseLineDropR(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -160,13 +189,19 @@ public class TapChangerControlItemProvider extends RegulatingControlItemProvider
      * @generated
      */
     protected void addReverseLineDropXPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_TapChangerControl_reverseLineDropX_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_TapChangerControl_reverseLineDropX_feature",
-                        "_UI_TapChangerControl_type" ),
-                CimPackage.eINSTANCE.getTapChangerControl_ReverseLineDropX(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_TapChangerControl_reverseLineDropX_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_TapChangerControl_reverseLineDropX_feature", "_UI_TapChangerControl_type" ),
+                        CimPackage.eINSTANCE.getTapChangerControl_ReverseLineDropX(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -178,10 +213,17 @@ public class TapChangerControlItemProvider extends RegulatingControlItemProvider
     protected void addTapChangerPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TapChangerControl_TapChanger_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TapChangerControl_TapChanger_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TapChangerControl_TapChanger_feature",
                                 "_UI_TapChangerControl_type" ),
-                        CimPackage.eINSTANCE.getTapChangerControl_TapChanger(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getTapChangerControl_TapChanger(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

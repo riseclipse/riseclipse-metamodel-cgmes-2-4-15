@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.UserAttribute;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.UserAttribute;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.UserAttribute} object.
@@ -80,11 +79,17 @@ public class UserAttributeItemProvider extends CimObjectWithIDItemProvider {
     protected void addNamePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UserAttribute_name_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UserAttribute_name_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UserAttribute_name_feature",
                                 "_UI_UserAttribute_type" ),
-                        CimPackage.eINSTANCE.getUserAttribute_Name(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUserAttribute_Name(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -96,11 +101,17 @@ public class UserAttributeItemProvider extends CimObjectWithIDItemProvider {
     protected void addSequenceNumberPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UserAttribute_sequenceNumber_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UserAttribute_sequenceNumber_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UserAttribute_sequenceNumber_feature",
                                 "_UI_UserAttribute_type" ),
-                        CimPackage.eINSTANCE.getUserAttribute_SequenceNumber(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUserAttribute_SequenceNumber(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -112,10 +123,17 @@ public class UserAttributeItemProvider extends CimObjectWithIDItemProvider {
     protected void addValuePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UserAttribute_value_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UserAttribute_value_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UserAttribute_value_feature",
                                 "_UI_UserAttribute_type" ),
-                        CimPackage.eINSTANCE.getUserAttribute_Value(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getUserAttribute_Value(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -127,10 +145,16 @@ public class UserAttributeItemProvider extends CimObjectWithIDItemProvider {
     protected void addProcedureDataSetsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UserAttribute_ProcedureDataSets_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UserAttribute_ProcedureDataSets_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UserAttribute_ProcedureDataSets_feature",
                                 "_UI_UserAttribute_type" ),
-                        CimPackage.eINSTANCE.getUserAttribute_ProcedureDataSets(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getUserAttribute_ProcedureDataSets(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 
@@ -143,10 +167,17 @@ public class UserAttributeItemProvider extends CimObjectWithIDItemProvider {
     protected void addTransactionPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UserAttribute_Transaction_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UserAttribute_Transaction_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UserAttribute_Transaction_feature",
                                 "_UI_UserAttribute_type" ),
-                        CimPackage.eINSTANCE.getUserAttribute_Transaction(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getUserAttribute_Transaction(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

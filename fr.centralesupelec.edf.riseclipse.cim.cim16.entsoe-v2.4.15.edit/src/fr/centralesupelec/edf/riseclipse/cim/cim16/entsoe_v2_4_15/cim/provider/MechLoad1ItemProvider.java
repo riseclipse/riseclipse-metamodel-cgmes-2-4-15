@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.MechLoad1;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.MechLoad1;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.MechLoad1} object.
@@ -79,11 +78,17 @@ public class MechLoad1ItemProvider extends MechanicalLoadDynamicsItemProvider {
     protected void addAPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_MechLoad1_a_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_MechLoad1_a_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_MechLoad1_a_feature",
                                 "_UI_MechLoad1_type" ),
-                        CimPackage.eINSTANCE.getMechLoad1_A(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getMechLoad1_A(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -95,11 +100,17 @@ public class MechLoad1ItemProvider extends MechanicalLoadDynamicsItemProvider {
     protected void addBPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_MechLoad1_b_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_MechLoad1_b_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_MechLoad1_b_feature",
                                 "_UI_MechLoad1_type" ),
-                        CimPackage.eINSTANCE.getMechLoad1_B(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getMechLoad1_B(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -111,11 +122,17 @@ public class MechLoad1ItemProvider extends MechanicalLoadDynamicsItemProvider {
     protected void addDPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_MechLoad1_d_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_MechLoad1_d_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_MechLoad1_d_feature",
                                 "_UI_MechLoad1_type" ),
-                        CimPackage.eINSTANCE.getMechLoad1_D(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getMechLoad1_D(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -127,11 +144,17 @@ public class MechLoad1ItemProvider extends MechanicalLoadDynamicsItemProvider {
     protected void addEPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_MechLoad1_e_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_MechLoad1_e_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_MechLoad1_e_feature",
                                 "_UI_MechLoad1_type" ),
-                        CimPackage.eINSTANCE.getMechLoad1_E(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getMechLoad1_E(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**

@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ShortCircuitTest;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ShortCircuitTest;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ShortCircuitTest} object.
@@ -81,13 +80,19 @@ public class ShortCircuitTestItemProvider extends TransformerTestItemProvider {
      * @generated
      */
     protected void addEnergisedEndStepPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ShortCircuitTest_energisedEndStep_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ShortCircuitTest_energisedEndStep_feature",
-                        "_UI_ShortCircuitTest_type" ),
-                CimPackage.eINSTANCE.getShortCircuitTest_EnergisedEndStep(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ShortCircuitTest_energisedEndStep_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ShortCircuitTest_energisedEndStep_feature", "_UI_ShortCircuitTest_type" ),
+                        CimPackage.eINSTANCE.getShortCircuitTest_EnergisedEndStep(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -97,13 +102,19 @@ public class ShortCircuitTestItemProvider extends TransformerTestItemProvider {
      * @generated
      */
     protected void addGroundedEndStepPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ShortCircuitTest_groundedEndStep_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ShortCircuitTest_groundedEndStep_feature",
-                        "_UI_ShortCircuitTest_type" ),
-                CimPackage.eINSTANCE.getShortCircuitTest_GroundedEndStep(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ShortCircuitTest_groundedEndStep_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_ShortCircuitTest_groundedEndStep_feature",
+                                "_UI_ShortCircuitTest_type" ),
+                        CimPackage.eINSTANCE.getShortCircuitTest_GroundedEndStep(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -113,13 +124,19 @@ public class ShortCircuitTestItemProvider extends TransformerTestItemProvider {
      * @generated
      */
     protected void addLeakageImpedancePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ShortCircuitTest_leakageImpedance_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ShortCircuitTest_leakageImpedance_feature",
-                        "_UI_ShortCircuitTest_type" ),
-                CimPackage.eINSTANCE.getShortCircuitTest_LeakageImpedance(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ShortCircuitTest_leakageImpedance_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ShortCircuitTest_leakageImpedance_feature", "_UI_ShortCircuitTest_type" ),
+                        CimPackage.eINSTANCE.getShortCircuitTest_LeakageImpedance(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -129,13 +146,19 @@ public class ShortCircuitTestItemProvider extends TransformerTestItemProvider {
      * @generated
      */
     protected void addLeakageImpedanceZeroPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ShortCircuitTest_leakageImpedanceZero_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ShortCircuitTest_leakageImpedanceZero_feature",
-                        "_UI_ShortCircuitTest_type" ),
-                CimPackage.eINSTANCE.getShortCircuitTest_LeakageImpedanceZero(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ShortCircuitTest_leakageImpedanceZero_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ShortCircuitTest_leakageImpedanceZero_feature", "_UI_ShortCircuitTest_type" ),
+                        CimPackage.eINSTANCE.getShortCircuitTest_LeakageImpedanceZero(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -147,11 +170,17 @@ public class ShortCircuitTestItemProvider extends TransformerTestItemProvider {
     protected void addLossPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ShortCircuitTest_loss_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ShortCircuitTest_loss_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ShortCircuitTest_loss_feature",
                                 "_UI_ShortCircuitTest_type" ),
-                        CimPackage.eINSTANCE.getShortCircuitTest_Loss(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getShortCircuitTest_Loss(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -163,11 +192,17 @@ public class ShortCircuitTestItemProvider extends TransformerTestItemProvider {
     protected void addLossZeroPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ShortCircuitTest_lossZero_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ShortCircuitTest_lossZero_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ShortCircuitTest_lossZero_feature",
                                 "_UI_ShortCircuitTest_type" ),
-                        CimPackage.eINSTANCE.getShortCircuitTest_LossZero(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getShortCircuitTest_LossZero(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -179,10 +214,16 @@ public class ShortCircuitTestItemProvider extends TransformerTestItemProvider {
     protected void addGroundedEndsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ShortCircuitTest_GroundedEnds_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ShortCircuitTest_GroundedEnds_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ShortCircuitTest_GroundedEnds_feature",
                                 "_UI_ShortCircuitTest_type" ),
-                        CimPackage.eINSTANCE.getShortCircuitTest_GroundedEnds(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getShortCircuitTest_GroundedEnds(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 
@@ -195,10 +236,16 @@ public class ShortCircuitTestItemProvider extends TransformerTestItemProvider {
     protected void addEnergisedEndPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ShortCircuitTest_EnergisedEnd_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ShortCircuitTest_EnergisedEnd_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ShortCircuitTest_EnergisedEnd_feature",
                                 "_UI_ShortCircuitTest_type" ),
-                        CimPackage.eINSTANCE.getShortCircuitTest_EnergisedEnd(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getShortCircuitTest_EnergisedEnd(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 

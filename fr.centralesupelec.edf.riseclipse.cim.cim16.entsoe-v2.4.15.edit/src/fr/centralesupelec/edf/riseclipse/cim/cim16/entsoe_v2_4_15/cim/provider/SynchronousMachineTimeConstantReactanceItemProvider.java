@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.SynchronousMachineTimeConstantReactance;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.SynchronousMachineTimeConstantReactance;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.SynchronousMachineTimeConstantReactance} object.
@@ -89,12 +88,18 @@ public class SynchronousMachineTimeConstantReactanceItemProvider extends Synchro
     protected void addKsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_SynchronousMachineTimeConstantReactance_ks_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_SynchronousMachineTimeConstantReactance_ks_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_SynchronousMachineTimeConstantReactance_ks_feature",
                                 "_UI_SynchronousMachineTimeConstantReactance_type" ),
-                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_Ks(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_Ks(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -104,14 +109,20 @@ public class SynchronousMachineTimeConstantReactanceItemProvider extends Synchro
      * @generated
      */
     protected void addModelTypePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_SynchronousMachineTimeConstantReactance_modelType_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_SynchronousMachineTimeConstantReactance_modelType_feature",
-                        "_UI_SynchronousMachineTimeConstantReactance_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_ModelType(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_SynchronousMachineTimeConstantReactance_modelType_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_SynchronousMachineTimeConstantReactance_modelType_feature",
+                                "_UI_SynchronousMachineTimeConstantReactance_type" ),
+                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_ModelType(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -121,14 +132,20 @@ public class SynchronousMachineTimeConstantReactanceItemProvider extends Synchro
      * @generated
      */
     protected void addRotorTypePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_SynchronousMachineTimeConstantReactance_rotorType_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_SynchronousMachineTimeConstantReactance_rotorType_feature",
-                        "_UI_SynchronousMachineTimeConstantReactance_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_RotorType(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_SynchronousMachineTimeConstantReactance_rotorType_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_SynchronousMachineTimeConstantReactance_rotorType_feature",
+                                "_UI_SynchronousMachineTimeConstantReactance_type" ),
+                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_RotorType(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -140,12 +157,18 @@ public class SynchronousMachineTimeConstantReactanceItemProvider extends Synchro
     protected void addTcPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_SynchronousMachineTimeConstantReactance_tc_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_SynchronousMachineTimeConstantReactance_tc_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_SynchronousMachineTimeConstantReactance_tc_feature",
                                 "_UI_SynchronousMachineTimeConstantReactance_type" ),
-                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_Tc(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_Tc(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -157,12 +180,18 @@ public class SynchronousMachineTimeConstantReactanceItemProvider extends Synchro
     protected void addTpdoPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_SynchronousMachineTimeConstantReactance_tpdo_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_SynchronousMachineTimeConstantReactance_tpdo_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_SynchronousMachineTimeConstantReactance_tpdo_feature",
                                 "_UI_SynchronousMachineTimeConstantReactance_type" ),
-                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_Tpdo(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_Tpdo(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -174,12 +203,18 @@ public class SynchronousMachineTimeConstantReactanceItemProvider extends Synchro
     protected void addTppdoPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_SynchronousMachineTimeConstantReactance_tppdo_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_SynchronousMachineTimeConstantReactance_tppdo_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_SynchronousMachineTimeConstantReactance_tppdo_feature",
                                 "_UI_SynchronousMachineTimeConstantReactance_type" ),
-                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_Tppdo(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_Tppdo(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -191,12 +226,18 @@ public class SynchronousMachineTimeConstantReactanceItemProvider extends Synchro
     protected void addTppqoPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_SynchronousMachineTimeConstantReactance_tppqo_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_SynchronousMachineTimeConstantReactance_tppqo_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_SynchronousMachineTimeConstantReactance_tppqo_feature",
                                 "_UI_SynchronousMachineTimeConstantReactance_type" ),
-                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_Tppqo(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_Tppqo(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -208,12 +249,18 @@ public class SynchronousMachineTimeConstantReactanceItemProvider extends Synchro
     protected void addTpqoPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_SynchronousMachineTimeConstantReactance_tpqo_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_SynchronousMachineTimeConstantReactance_tpqo_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_SynchronousMachineTimeConstantReactance_tpqo_feature",
                                 "_UI_SynchronousMachineTimeConstantReactance_type" ),
-                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_Tpqo(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_Tpqo(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -223,14 +270,20 @@ public class SynchronousMachineTimeConstantReactanceItemProvider extends Synchro
      * @generated
      */
     protected void addXDirectSubtransPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_SynchronousMachineTimeConstantReactance_xDirectSubtrans_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_SynchronousMachineTimeConstantReactance_xDirectSubtrans_feature",
-                        "_UI_SynchronousMachineTimeConstantReactance_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_XDirectSubtrans(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_SynchronousMachineTimeConstantReactance_xDirectSubtrans_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_SynchronousMachineTimeConstantReactance_xDirectSubtrans_feature",
+                                "_UI_SynchronousMachineTimeConstantReactance_type" ),
+                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_XDirectSubtrans(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -240,14 +293,20 @@ public class SynchronousMachineTimeConstantReactanceItemProvider extends Synchro
      * @generated
      */
     protected void addXDirectSyncPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_SynchronousMachineTimeConstantReactance_xDirectSync_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_SynchronousMachineTimeConstantReactance_xDirectSync_feature",
-                        "_UI_SynchronousMachineTimeConstantReactance_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_XDirectSync(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_SynchronousMachineTimeConstantReactance_xDirectSync_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_SynchronousMachineTimeConstantReactance_xDirectSync_feature",
+                                "_UI_SynchronousMachineTimeConstantReactance_type" ),
+                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_XDirectSync(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -257,14 +316,20 @@ public class SynchronousMachineTimeConstantReactanceItemProvider extends Synchro
      * @generated
      */
     protected void addXDirectTransPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_SynchronousMachineTimeConstantReactance_xDirectTrans_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_SynchronousMachineTimeConstantReactance_xDirectTrans_feature",
-                        "_UI_SynchronousMachineTimeConstantReactance_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_XDirectTrans(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_SynchronousMachineTimeConstantReactance_xDirectTrans_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_SynchronousMachineTimeConstantReactance_xDirectTrans_feature",
+                                "_UI_SynchronousMachineTimeConstantReactance_type" ),
+                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_XDirectTrans(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -274,14 +339,20 @@ public class SynchronousMachineTimeConstantReactanceItemProvider extends Synchro
      * @generated
      */
     protected void addXQuadSubtransPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_SynchronousMachineTimeConstantReactance_xQuadSubtrans_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_SynchronousMachineTimeConstantReactance_xQuadSubtrans_feature",
-                        "_UI_SynchronousMachineTimeConstantReactance_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_XQuadSubtrans(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_SynchronousMachineTimeConstantReactance_xQuadSubtrans_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_SynchronousMachineTimeConstantReactance_xQuadSubtrans_feature",
+                                "_UI_SynchronousMachineTimeConstantReactance_type" ),
+                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_XQuadSubtrans(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -291,14 +362,20 @@ public class SynchronousMachineTimeConstantReactanceItemProvider extends Synchro
      * @generated
      */
     protected void addXQuadSyncPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_SynchronousMachineTimeConstantReactance_xQuadSync_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_SynchronousMachineTimeConstantReactance_xQuadSync_feature",
-                        "_UI_SynchronousMachineTimeConstantReactance_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_XQuadSync(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_SynchronousMachineTimeConstantReactance_xQuadSync_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_SynchronousMachineTimeConstantReactance_xQuadSync_feature",
+                                "_UI_SynchronousMachineTimeConstantReactance_type" ),
+                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_XQuadSync(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -308,14 +385,20 @@ public class SynchronousMachineTimeConstantReactanceItemProvider extends Synchro
      * @generated
      */
     protected void addXQuadTransPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_SynchronousMachineTimeConstantReactance_xQuadTrans_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_SynchronousMachineTimeConstantReactance_xQuadTrans_feature",
-                        "_UI_SynchronousMachineTimeConstantReactance_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_XQuadTrans(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_SynchronousMachineTimeConstantReactance_xQuadTrans_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_SynchronousMachineTimeConstantReactance_xQuadTrans_feature",
+                                "_UI_SynchronousMachineTimeConstantReactance_type" ),
+                        CimPackage.eINSTANCE.getSynchronousMachineTimeConstantReactance_XQuadTrans(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**

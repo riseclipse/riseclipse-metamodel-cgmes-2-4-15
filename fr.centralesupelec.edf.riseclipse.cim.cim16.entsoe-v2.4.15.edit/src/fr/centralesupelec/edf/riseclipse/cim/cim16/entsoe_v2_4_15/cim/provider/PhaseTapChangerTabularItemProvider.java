@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,17 +20,16 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PhaseTapChangerTabular;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PhaseTapChangerTabular;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PhaseTapChangerTabular} object.
@@ -73,11 +72,17 @@ public class PhaseTapChangerTabularItemProvider extends PhaseTapChangerItemProvi
      */
     protected void addPhaseTapChangerTablePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_PhaseTapChangerTabular_PhaseTapChangerTable_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_PhaseTapChangerTabular_PhaseTapChangerTable_feature", "_UI_PhaseTapChangerTabular_type" ),
-                CimPackage.eINSTANCE.getPhaseTapChangerTabular_PhaseTapChangerTable(), true, false, true, null, null,
+                CimPackage.eINSTANCE.getPhaseTapChangerTabular_PhaseTapChangerTable(),
+                true,
+                false,
+                true,
+                null,
+                null,
                 null ) );
     }
 

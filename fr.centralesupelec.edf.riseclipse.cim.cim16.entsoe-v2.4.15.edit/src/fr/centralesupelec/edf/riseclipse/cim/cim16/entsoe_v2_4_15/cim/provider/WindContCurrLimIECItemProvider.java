@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindContCurrLimIEC;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindContCurrLimIEC;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindContCurrLimIEC} object.
@@ -82,11 +81,17 @@ public class WindContCurrLimIECItemProvider extends IdentifiedObjectItemProvider
     protected void addImaxPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContCurrLimIEC_imax_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContCurrLimIEC_imax_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContCurrLimIEC_imax_feature",
                                 "_UI_WindContCurrLimIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContCurrLimIEC_Imax(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContCurrLimIEC_Imax(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -98,11 +103,17 @@ public class WindContCurrLimIECItemProvider extends IdentifiedObjectItemProvider
     protected void addImaxdipPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContCurrLimIEC_imaxdip_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContCurrLimIEC_imaxdip_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContCurrLimIEC_imaxdip_feature",
                                 "_UI_WindContCurrLimIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContCurrLimIEC_Imaxdip(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContCurrLimIEC_Imaxdip(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -114,11 +125,17 @@ public class WindContCurrLimIECItemProvider extends IdentifiedObjectItemProvider
     protected void addMdfslimPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContCurrLimIEC_mdfslim_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContCurrLimIEC_mdfslim_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContCurrLimIEC_mdfslim_feature",
                                 "_UI_WindContCurrLimIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContCurrLimIEC_Mdfslim(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContCurrLimIEC_Mdfslim(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -130,11 +147,17 @@ public class WindContCurrLimIECItemProvider extends IdentifiedObjectItemProvider
     protected void addMqpriPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContCurrLimIEC_mqpri_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContCurrLimIEC_mqpri_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContCurrLimIEC_mqpri_feature",
                                 "_UI_WindContCurrLimIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContCurrLimIEC_Mqpri(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContCurrLimIEC_Mqpri(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -146,11 +169,17 @@ public class WindContCurrLimIECItemProvider extends IdentifiedObjectItemProvider
     protected void addTufiltPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_WindContCurrLimIEC_tufilt_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_WindContCurrLimIEC_tufilt_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_WindContCurrLimIEC_tufilt_feature",
                                 "_UI_WindContCurrLimIEC_type" ),
-                        CimPackage.eINSTANCE.getWindContCurrLimIEC_Tufilt(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getWindContCurrLimIEC_Tufilt(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -161,11 +190,17 @@ public class WindContCurrLimIECItemProvider extends IdentifiedObjectItemProvider
      */
     protected void addWindDynamicsLookupTablePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_WindContCurrLimIEC_WindDynamicsLookupTable_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_WindContCurrLimIEC_WindDynamicsLookupTable_feature", "_UI_WindContCurrLimIEC_type" ),
-                CimPackage.eINSTANCE.getWindContCurrLimIEC_WindDynamicsLookupTable(), true, false, true, null, null,
+                CimPackage.eINSTANCE.getWindContCurrLimIEC_WindDynamicsLookupTable(),
+                true,
+                false,
+                true,
+                null,
+                null,
                 null ) );
     }
 
@@ -177,11 +212,17 @@ public class WindContCurrLimIECItemProvider extends IdentifiedObjectItemProvider
      */
     protected void addWindTurbineType3or4IECPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_WindContCurrLimIEC_WindTurbineType3or4IEC_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_WindContCurrLimIEC_WindTurbineType3or4IEC_feature", "_UI_WindContCurrLimIEC_type" ),
-                CimPackage.eINSTANCE.getWindContCurrLimIEC_WindTurbineType3or4IEC(), true, false, true, null, null,
+                CimPackage.eINSTANCE.getWindContCurrLimIEC_WindTurbineType3or4IEC(),
+                true,
+                false,
+                true,
+                null,
+                null,
                 null ) );
     }
 

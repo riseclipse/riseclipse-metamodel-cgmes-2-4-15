@@ -5,9 +5,9 @@
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
 **  https://www.eclipse.org/legal/epl-v20.html
-** 
+**
 **  This file is part of the RiseClipse tool
-**  
+**
 **  Contributors:
 **      Computer Science Department, CentraleSupélec
 **      EDF R&D
@@ -20,19 +20,18 @@
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
 
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Person;
-
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Person;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Person} object.
@@ -85,11 +84,17 @@ public class PersonItemProvider extends IdentifiedObjectItemProvider {
     protected void addFirstNamePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Person_firstName_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Person_firstName_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Person_firstName_feature",
                                 "_UI_Person_type" ),
-                        CimPackage.eINSTANCE.getPerson_FirstName(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPerson_FirstName(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -101,11 +106,17 @@ public class PersonItemProvider extends IdentifiedObjectItemProvider {
     protected void addLastNamePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Person_lastName_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Person_lastName_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Person_lastName_feature",
                                 "_UI_Person_type" ),
-                        CimPackage.eINSTANCE.getPerson_LastName(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPerson_LastName(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -117,11 +128,17 @@ public class PersonItemProvider extends IdentifiedObjectItemProvider {
     protected void addMNamePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Person_mName_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Person_mName_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Person_mName_feature",
                                 "_UI_Person_type" ),
-                        CimPackage.eINSTANCE.getPerson_MName(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPerson_MName(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -133,11 +150,17 @@ public class PersonItemProvider extends IdentifiedObjectItemProvider {
     protected void addPrefixPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Person_prefix_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Person_prefix_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Person_prefix_feature",
                                 "_UI_Person_type" ),
-                        CimPackage.eINSTANCE.getPerson_Prefix(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPerson_Prefix(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -149,11 +172,17 @@ public class PersonItemProvider extends IdentifiedObjectItemProvider {
     protected void addSpecialNeedPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Person_specialNeed_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Person_specialNeed_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Person_specialNeed_feature",
                                 "_UI_Person_type" ),
-                        CimPackage.eINSTANCE.getPerson_SpecialNeed(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPerson_SpecialNeed(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -165,11 +194,17 @@ public class PersonItemProvider extends IdentifiedObjectItemProvider {
     protected void addSuffixPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Person_suffix_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Person_suffix_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Person_suffix_feature",
                                 "_UI_Person_type" ),
-                        CimPackage.eINSTANCE.getPerson_Suffix(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPerson_Suffix(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -181,10 +216,17 @@ public class PersonItemProvider extends IdentifiedObjectItemProvider {
     protected void addElectronicAddressPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Person_electronicAddress_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Person_electronicAddress_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Person_electronicAddress_feature",
                                 "_UI_Person_type" ),
-                        CimPackage.eINSTANCE.getPerson_ElectronicAddress(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getPerson_ElectronicAddress(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -196,10 +238,17 @@ public class PersonItemProvider extends IdentifiedObjectItemProvider {
     protected void addLandlinePhonePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Person_landlinePhone_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Person_landlinePhone_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Person_landlinePhone_feature",
                                 "_UI_Person_type" ),
-                        CimPackage.eINSTANCE.getPerson_LandlinePhone(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getPerson_LandlinePhone(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -211,10 +260,17 @@ public class PersonItemProvider extends IdentifiedObjectItemProvider {
     protected void addMobilePhonePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Person_mobilePhone_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Person_mobilePhone_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Person_mobilePhone_feature",
                                 "_UI_Person_type" ),
-                        CimPackage.eINSTANCE.getPerson_MobilePhone(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getPerson_MobilePhone(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -226,10 +282,17 @@ public class PersonItemProvider extends IdentifiedObjectItemProvider {
     protected void addRolesPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Person_Roles_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Person_Roles_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Person_Roles_feature",
                                 "_UI_Person_type" ),
-                        CimPackage.eINSTANCE.getPerson_Roles(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getPerson_Roles(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
