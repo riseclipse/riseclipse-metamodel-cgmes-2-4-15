@@ -3,11 +3,11 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe-v2.4.15;singleton:=true
 Automatic-Module-Name: fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe-v2.4.15
-Bundle-Version: 1.0.1.qualifier
+Bundle-Version: 1.1.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Export-Package: fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim,
  fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.impl,
  fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.util
