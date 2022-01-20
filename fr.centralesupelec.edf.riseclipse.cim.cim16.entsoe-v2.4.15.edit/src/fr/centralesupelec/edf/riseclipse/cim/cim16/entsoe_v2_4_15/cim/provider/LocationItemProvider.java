@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Location;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Location;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Location} object.
@@ -91,11 +90,17 @@ public class LocationItemProvider extends IdentifiedObjectItemProvider {
     protected void addDirectionPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Location_direction_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Location_direction_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Location_direction_feature",
                                 "_UI_Location_type" ),
-                        CimPackage.eINSTANCE.getLocation_Direction(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getLocation_Direction(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -107,11 +112,17 @@ public class LocationItemProvider extends IdentifiedObjectItemProvider {
     protected void addGeoInfoReferencePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Location_geoInfoReference_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Location_geoInfoReference_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Location_geoInfoReference_feature",
                                 "_UI_Location_type" ),
-                        CimPackage.eINSTANCE.getLocation_GeoInfoReference(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getLocation_GeoInfoReference(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -123,11 +134,17 @@ public class LocationItemProvider extends IdentifiedObjectItemProvider {
     protected void addTypePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Location_type_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Location_type_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Location_type_feature",
                                 "_UI_Location_type" ),
-                        CimPackage.eINSTANCE.getLocation_Type(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getLocation_Type(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -139,10 +156,17 @@ public class LocationItemProvider extends IdentifiedObjectItemProvider {
     protected void addElectronicAddressPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Location_electronicAddress_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Location_electronicAddress_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Location_electronicAddress_feature",
                                 "_UI_Location_type" ),
-                        CimPackage.eINSTANCE.getLocation_ElectronicAddress(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getLocation_ElectronicAddress(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -154,10 +178,17 @@ public class LocationItemProvider extends IdentifiedObjectItemProvider {
     protected void addMainAddressPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Location_mainAddress_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Location_mainAddress_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Location_mainAddress_feature",
                                 "_UI_Location_type" ),
-                        CimPackage.eINSTANCE.getLocation_MainAddress(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getLocation_MainAddress(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -169,10 +200,17 @@ public class LocationItemProvider extends IdentifiedObjectItemProvider {
     protected void addPhone1PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Location_phone1_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Location_phone1_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Location_phone1_feature",
                                 "_UI_Location_type" ),
-                        CimPackage.eINSTANCE.getLocation_Phone1(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getLocation_Phone1(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -184,10 +222,17 @@ public class LocationItemProvider extends IdentifiedObjectItemProvider {
     protected void addPhone2PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Location_phone2_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Location_phone2_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Location_phone2_feature",
                                 "_UI_Location_type" ),
-                        CimPackage.eINSTANCE.getLocation_Phone2(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getLocation_Phone2(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -199,10 +244,17 @@ public class LocationItemProvider extends IdentifiedObjectItemProvider {
     protected void addSecondaryAddressPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Location_secondaryAddress_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Location_secondaryAddress_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Location_secondaryAddress_feature",
                                 "_UI_Location_type" ),
-                        CimPackage.eINSTANCE.getLocation_SecondaryAddress(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getLocation_SecondaryAddress(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -214,10 +266,17 @@ public class LocationItemProvider extends IdentifiedObjectItemProvider {
     protected void addStatusPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Location_status_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Location_status_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Location_status_feature",
                                 "_UI_Location_type" ),
-                        CimPackage.eINSTANCE.getLocation_Status(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getLocation_Status(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -229,10 +288,17 @@ public class LocationItemProvider extends IdentifiedObjectItemProvider {
     protected void addConfigurationEventsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Location_ConfigurationEvents_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Location_ConfigurationEvents_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Location_ConfigurationEvents_feature",
                                 "_UI_Location_type" ),
-                        CimPackage.eINSTANCE.getLocation_ConfigurationEvents(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getLocation_ConfigurationEvents(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -244,10 +310,17 @@ public class LocationItemProvider extends IdentifiedObjectItemProvider {
     protected void addHazardsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Location_Hazards_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Location_Hazards_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Location_Hazards_feature",
                                 "_UI_Location_type" ),
-                        CimPackage.eINSTANCE.getLocation_Hazards(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getLocation_Hazards(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -259,10 +332,17 @@ public class LocationItemProvider extends IdentifiedObjectItemProvider {
     protected void addMeasurementsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Location_Measurements_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Location_Measurements_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Location_Measurements_feature",
                                 "_UI_Location_type" ),
-                        CimPackage.eINSTANCE.getLocation_Measurements(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getLocation_Measurements(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -274,10 +354,17 @@ public class LocationItemProvider extends IdentifiedObjectItemProvider {
     protected void addCoordinateSystemPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Location_CoordinateSystem_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Location_CoordinateSystem_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Location_CoordinateSystem_feature",
                                 "_UI_Location_type" ),
-                        CimPackage.eINSTANCE.getLocation_CoordinateSystem(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getLocation_CoordinateSystem(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -289,10 +376,17 @@ public class LocationItemProvider extends IdentifiedObjectItemProvider {
     protected void addAssetsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Location_Assets_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Location_Assets_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Location_Assets_feature",
                                 "_UI_Location_type" ),
-                        CimPackage.eINSTANCE.getLocation_Assets(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getLocation_Assets(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -304,10 +398,17 @@ public class LocationItemProvider extends IdentifiedObjectItemProvider {
     protected void addPositionPointsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Location_PositionPoints_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Location_PositionPoints_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Location_PositionPoints_feature",
                                 "_UI_Location_type" ),
-                        CimPackage.eINSTANCE.getLocation_PositionPoints(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getLocation_PositionPoints(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -319,10 +420,16 @@ public class LocationItemProvider extends IdentifiedObjectItemProvider {
     protected void addPowerSystemResourcesPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Location_PowerSystemResources_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Location_PowerSystemResources_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Location_PowerSystemResources_feature",
                                 "_UI_Location_type" ),
-                        CimPackage.eINSTANCE.getLocation_PowerSystemResources(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getLocation_PowerSystemResources(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 

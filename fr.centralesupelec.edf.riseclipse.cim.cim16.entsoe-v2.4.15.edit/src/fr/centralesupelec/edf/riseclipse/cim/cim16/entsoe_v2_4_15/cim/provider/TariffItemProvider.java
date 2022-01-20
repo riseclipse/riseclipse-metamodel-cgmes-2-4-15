@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Tariff;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Tariff;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Tariff} object.
@@ -79,11 +78,17 @@ public class TariffItemProvider extends DocumentItemProvider {
     protected void addEndDatePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Tariff_endDate_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Tariff_endDate_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Tariff_endDate_feature",
                                 "_UI_Tariff_type" ),
-                        CimPackage.eINSTANCE.getTariff_EndDate(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTariff_EndDate(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -95,11 +100,17 @@ public class TariffItemProvider extends DocumentItemProvider {
     protected void addStartDatePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Tariff_startDate_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Tariff_startDate_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Tariff_startDate_feature",
                                 "_UI_Tariff_type" ),
-                        CimPackage.eINSTANCE.getTariff_StartDate(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTariff_StartDate(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -111,10 +122,17 @@ public class TariffItemProvider extends DocumentItemProvider {
     protected void addTariffProfilesPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Tariff_TariffProfiles_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Tariff_TariffProfiles_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Tariff_TariffProfiles_feature",
                                 "_UI_Tariff_type" ),
-                        CimPackage.eINSTANCE.getTariff_TariffProfiles(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getTariff_TariffProfiles(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -126,10 +144,17 @@ public class TariffItemProvider extends DocumentItemProvider {
     protected void addPricingStructuresPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Tariff_PricingStructures_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Tariff_PricingStructures_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Tariff_PricingStructures_feature",
                                 "_UI_Tariff_type" ),
-                        CimPackage.eINSTANCE.getTariff_PricingStructures(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getTariff_PricingStructures(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

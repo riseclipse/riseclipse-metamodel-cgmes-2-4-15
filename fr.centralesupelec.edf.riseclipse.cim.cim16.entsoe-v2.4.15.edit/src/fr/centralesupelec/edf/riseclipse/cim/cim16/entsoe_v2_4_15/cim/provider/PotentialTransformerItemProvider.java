@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PotentialTransformer;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PotentialTransformer;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PotentialTransformer} object.
@@ -77,13 +76,19 @@ public class PotentialTransformerItemProvider extends SensorItemProvider {
      * @generated
      */
     protected void addAccuracyClassPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_PotentialTransformer_accuracyClass_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_PotentialTransformer_accuracyClass_feature",
-                        "_UI_PotentialTransformer_type" ),
-                CimPackage.eINSTANCE.getPotentialTransformer_AccuracyClass(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_PotentialTransformer_accuracyClass_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_PotentialTransformer_accuracyClass_feature", "_UI_PotentialTransformer_type" ),
+                        CimPackage.eINSTANCE.getPotentialTransformer_AccuracyClass(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -93,13 +98,19 @@ public class PotentialTransformerItemProvider extends SensorItemProvider {
      * @generated
      */
     protected void addNominalRatioPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_PotentialTransformer_nominalRatio_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_PotentialTransformer_nominalRatio_feature",
-                        "_UI_PotentialTransformer_type" ),
-                CimPackage.eINSTANCE.getPotentialTransformer_NominalRatio(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_PotentialTransformer_nominalRatio_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_PotentialTransformer_nominalRatio_feature", "_UI_PotentialTransformer_type" ),
+                        CimPackage.eINSTANCE.getPotentialTransformer_NominalRatio(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -109,13 +120,19 @@ public class PotentialTransformerItemProvider extends SensorItemProvider {
      * @generated
      */
     protected void addPtClassPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_PotentialTransformer_ptClass_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_PotentialTransformer_ptClass_feature",
-                        "_UI_PotentialTransformer_type" ),
-                CimPackage.eINSTANCE.getPotentialTransformer_PtClass(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_PotentialTransformer_ptClass_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_PotentialTransformer_ptClass_feature",
+                                "_UI_PotentialTransformer_type" ),
+                        CimPackage.eINSTANCE.getPotentialTransformer_PtClass(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -127,11 +144,17 @@ public class PotentialTransformerItemProvider extends SensorItemProvider {
     protected void addTypePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PotentialTransformer_type_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PotentialTransformer_type_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PotentialTransformer_type_feature",
                                 "_UI_PotentialTransformer_type" ),
-                        CimPackage.eINSTANCE.getPotentialTransformer_Type(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPotentialTransformer_Type(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**

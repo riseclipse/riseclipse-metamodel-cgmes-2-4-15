@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Channel;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Channel;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Channel} object.
@@ -78,11 +77,17 @@ public class ChannelItemProvider extends IdentifiedObjectItemProvider {
     protected void addIsVirtualPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Channel_isVirtual_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Channel_isVirtual_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Channel_isVirtual_feature",
                                 "_UI_Channel_type" ),
-                        CimPackage.eINSTANCE.getChannel_IsVirtual(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getChannel_IsVirtual(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -94,10 +99,17 @@ public class ChannelItemProvider extends IdentifiedObjectItemProvider {
     protected void addRegisterPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Channel_Register_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Channel_Register_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Channel_Register_feature",
                                 "_UI_Channel_type" ),
-                        CimPackage.eINSTANCE.getChannel_Register(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getChannel_Register(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -109,10 +121,17 @@ public class ChannelItemProvider extends IdentifiedObjectItemProvider {
     protected void addReadingTypePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Channel_ReadingType_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Channel_ReadingType_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Channel_ReadingType_feature",
                                 "_UI_Channel_type" ),
-                        CimPackage.eINSTANCE.getChannel_ReadingType(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getChannel_ReadingType(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

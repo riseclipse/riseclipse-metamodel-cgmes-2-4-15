@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,22 +15,17 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TownDetail;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -41,6 +36,9 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TownDetail;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TownDetail} object.
@@ -89,11 +87,17 @@ public class TownDetailItemProvider extends ItemProviderAdapter implements IEdit
     protected void addCodePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TownDetail_code_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TownDetail_code_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TownDetail_code_feature",
                                 "_UI_TownDetail_type" ),
-                        CimPackage.eINSTANCE.getTownDetail_Code(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTownDetail_Code(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -105,11 +109,17 @@ public class TownDetailItemProvider extends ItemProviderAdapter implements IEdit
     protected void addCountryPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TownDetail_country_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TownDetail_country_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TownDetail_country_feature",
                                 "_UI_TownDetail_type" ),
-                        CimPackage.eINSTANCE.getTownDetail_Country(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTownDetail_Country(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -121,11 +131,17 @@ public class TownDetailItemProvider extends ItemProviderAdapter implements IEdit
     protected void addNamePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TownDetail_name_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TownDetail_name_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TownDetail_name_feature",
                                 "_UI_TownDetail_type" ),
-                        CimPackage.eINSTANCE.getTownDetail_Name(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTownDetail_Name(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -137,11 +153,17 @@ public class TownDetailItemProvider extends ItemProviderAdapter implements IEdit
     protected void addSectionPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TownDetail_section_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TownDetail_section_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TownDetail_section_feature",
                                 "_UI_TownDetail_type" ),
-                        CimPackage.eINSTANCE.getTownDetail_Section(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTownDetail_Section(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -153,11 +175,17 @@ public class TownDetailItemProvider extends ItemProviderAdapter implements IEdit
     protected void addStateOrProvincePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TownDetail_stateOrProvince_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TownDetail_stateOrProvince_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TownDetail_stateOrProvince_feature",
                                 "_UI_TownDetail_type" ),
-                        CimPackage.eINSTANCE.getTownDetail_StateOrProvince(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTownDetail_StateOrProvince(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -227,7 +255,7 @@ public class TownDetailItemProvider extends ItemProviderAdapter implements IEdit
      */
     @Override
     public ResourceLocator getResourceLocator() {
-        return Entsoe_v2_4_15EditPlugin.INSTANCE;
+        return entsoev2415EditPlugin.INSTANCE;
     }
 
 }

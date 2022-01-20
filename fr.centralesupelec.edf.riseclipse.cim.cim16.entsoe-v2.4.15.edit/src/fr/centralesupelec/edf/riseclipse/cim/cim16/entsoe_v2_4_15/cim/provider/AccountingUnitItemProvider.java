@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,22 +15,17 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.AccountingUnit;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -41,6 +36,9 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.AccountingUnit;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.AccountingUnit} object.
@@ -88,11 +86,17 @@ public class AccountingUnitItemProvider extends ItemProviderAdapter implements I
     protected void addEnergyUnitPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AccountingUnit_energyUnit_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AccountingUnit_energyUnit_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AccountingUnit_energyUnit_feature",
                                 "_UI_AccountingUnit_type" ),
-                        CimPackage.eINSTANCE.getAccountingUnit_EnergyUnit(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAccountingUnit_EnergyUnit(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -104,11 +108,17 @@ public class AccountingUnitItemProvider extends ItemProviderAdapter implements I
     protected void addMonetaryUnitPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AccountingUnit_monetaryUnit_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AccountingUnit_monetaryUnit_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AccountingUnit_monetaryUnit_feature",
                                 "_UI_AccountingUnit_type" ),
-                        CimPackage.eINSTANCE.getAccountingUnit_MonetaryUnit(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAccountingUnit_MonetaryUnit(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -120,11 +130,17 @@ public class AccountingUnitItemProvider extends ItemProviderAdapter implements I
     protected void addMultiplierPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AccountingUnit_multiplier_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AccountingUnit_multiplier_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AccountingUnit_multiplier_feature",
                                 "_UI_AccountingUnit_type" ),
-                        CimPackage.eINSTANCE.getAccountingUnit_Multiplier(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAccountingUnit_Multiplier(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -136,11 +152,17 @@ public class AccountingUnitItemProvider extends ItemProviderAdapter implements I
     protected void addValuePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AccountingUnit_value_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AccountingUnit_value_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AccountingUnit_value_feature",
                                 "_UI_AccountingUnit_type" ),
-                        CimPackage.eINSTANCE.getAccountingUnit_Value(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAccountingUnit_Value(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -210,7 +232,7 @@ public class AccountingUnitItemProvider extends ItemProviderAdapter implements I
      */
     @Override
     public ResourceLocator getResourceLocator() {
-        return Entsoe_v2_4_15EditPlugin.INSTANCE;
+        return entsoev2415EditPlugin.INSTANCE;
     }
 
 }

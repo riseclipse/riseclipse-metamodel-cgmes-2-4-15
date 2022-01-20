@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ACLineSegmentPhase;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ACLineSegmentPhase;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ACLineSegmentPhase} object.
@@ -77,11 +76,17 @@ public class ACLineSegmentPhaseItemProvider extends PowerSystemResourceItemProvi
     protected void addPhasePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ACLineSegmentPhase_phase_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ACLineSegmentPhase_phase_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ACLineSegmentPhase_phase_feature",
                                 "_UI_ACLineSegmentPhase_type" ),
-                        CimPackage.eINSTANCE.getACLineSegmentPhase_Phase(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getACLineSegmentPhase_Phase(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -91,12 +96,19 @@ public class ACLineSegmentPhaseItemProvider extends PowerSystemResourceItemProvi
      * @generated
      */
     protected void addACLineSegmentPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ACLineSegmentPhase_ACLineSegment_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ACLineSegmentPhase_ACLineSegment_feature",
-                        "_UI_ACLineSegmentPhase_type" ),
-                CimPackage.eINSTANCE.getACLineSegmentPhase_ACLineSegment(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ACLineSegmentPhase_ACLineSegment_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_ACLineSegmentPhase_ACLineSegment_feature",
+                                "_UI_ACLineSegmentPhase_type" ),
+                        CimPackage.eINSTANCE.getACLineSegmentPhase_ACLineSegment(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

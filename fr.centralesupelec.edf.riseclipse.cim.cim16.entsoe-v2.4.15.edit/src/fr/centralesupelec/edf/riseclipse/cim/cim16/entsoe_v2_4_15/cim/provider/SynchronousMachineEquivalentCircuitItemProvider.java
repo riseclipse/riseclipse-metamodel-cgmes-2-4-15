@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.SynchronousMachineEquivalentCircuit;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.SynchronousMachineEquivalentCircuit;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.SynchronousMachineEquivalentCircuit} object.
@@ -85,12 +84,18 @@ public class SynchronousMachineEquivalentCircuitItemProvider extends Synchronous
      */
     protected void addR1dPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_SynchronousMachineEquivalentCircuit_r1d_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_SynchronousMachineEquivalentCircuit_r1d_feature",
                         "_UI_SynchronousMachineEquivalentCircuit_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_R1d(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_R1d(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -101,12 +106,18 @@ public class SynchronousMachineEquivalentCircuitItemProvider extends Synchronous
      */
     protected void addR1qPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_SynchronousMachineEquivalentCircuit_r1q_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_SynchronousMachineEquivalentCircuit_r1q_feature",
                         "_UI_SynchronousMachineEquivalentCircuit_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_R1q(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_R1q(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -117,12 +128,18 @@ public class SynchronousMachineEquivalentCircuitItemProvider extends Synchronous
      */
     protected void addR2qPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_SynchronousMachineEquivalentCircuit_r2q_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_SynchronousMachineEquivalentCircuit_r2q_feature",
                         "_UI_SynchronousMachineEquivalentCircuit_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_R2q(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_R2q(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -133,12 +150,18 @@ public class SynchronousMachineEquivalentCircuitItemProvider extends Synchronous
      */
     protected void addRfdPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_SynchronousMachineEquivalentCircuit_rfd_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_SynchronousMachineEquivalentCircuit_rfd_feature",
                         "_UI_SynchronousMachineEquivalentCircuit_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_Rfd(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_Rfd(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -149,12 +172,18 @@ public class SynchronousMachineEquivalentCircuitItemProvider extends Synchronous
      */
     protected void addX1dPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_SynchronousMachineEquivalentCircuit_x1d_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_SynchronousMachineEquivalentCircuit_x1d_feature",
                         "_UI_SynchronousMachineEquivalentCircuit_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_X1d(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_X1d(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -165,12 +194,18 @@ public class SynchronousMachineEquivalentCircuitItemProvider extends Synchronous
      */
     protected void addX1qPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_SynchronousMachineEquivalentCircuit_x1q_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_SynchronousMachineEquivalentCircuit_x1q_feature",
                         "_UI_SynchronousMachineEquivalentCircuit_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_X1q(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_X1q(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -181,12 +216,18 @@ public class SynchronousMachineEquivalentCircuitItemProvider extends Synchronous
      */
     protected void addX2qPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_SynchronousMachineEquivalentCircuit_x2q_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_SynchronousMachineEquivalentCircuit_x2q_feature",
                         "_UI_SynchronousMachineEquivalentCircuit_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_X2q(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_X2q(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -197,12 +238,18 @@ public class SynchronousMachineEquivalentCircuitItemProvider extends Synchronous
      */
     protected void addXadPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_SynchronousMachineEquivalentCircuit_xad_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_SynchronousMachineEquivalentCircuit_xad_feature",
                         "_UI_SynchronousMachineEquivalentCircuit_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_Xad(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_Xad(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -213,12 +260,18 @@ public class SynchronousMachineEquivalentCircuitItemProvider extends Synchronous
      */
     protected void addXaqPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_SynchronousMachineEquivalentCircuit_xaq_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_SynchronousMachineEquivalentCircuit_xaq_feature",
                         "_UI_SynchronousMachineEquivalentCircuit_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_Xaq(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_Xaq(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -229,12 +282,18 @@ public class SynchronousMachineEquivalentCircuitItemProvider extends Synchronous
      */
     protected void addXf1dPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_SynchronousMachineEquivalentCircuit_xf1d_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_SynchronousMachineEquivalentCircuit_xf1d_feature",
                         "_UI_SynchronousMachineEquivalentCircuit_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_Xf1d(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_Xf1d(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -245,12 +304,18 @@ public class SynchronousMachineEquivalentCircuitItemProvider extends Synchronous
      */
     protected void addXfdPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_SynchronousMachineEquivalentCircuit_xfd_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_SynchronousMachineEquivalentCircuit_xfd_feature",
                         "_UI_SynchronousMachineEquivalentCircuit_type" ),
-                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_Xfd(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getSynchronousMachineEquivalentCircuit_Xfd(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**

@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.BranchGroup;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.BranchGroup;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.BranchGroup} object.
@@ -82,11 +81,17 @@ public class BranchGroupItemProvider extends IdentifiedObjectItemProvider {
     protected void addMaximumActivePowerPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_BranchGroup_maximumActivePower_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_BranchGroup_maximumActivePower_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_BranchGroup_maximumActivePower_feature",
                                 "_UI_BranchGroup_type" ),
-                        CimPackage.eINSTANCE.getBranchGroup_MaximumActivePower(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getBranchGroup_MaximumActivePower(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -98,11 +103,17 @@ public class BranchGroupItemProvider extends IdentifiedObjectItemProvider {
     protected void addMaximumReactivePowerPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_BranchGroup_maximumReactivePower_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_BranchGroup_maximumReactivePower_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_BranchGroup_maximumReactivePower_feature",
                                 "_UI_BranchGroup_type" ),
-                        CimPackage.eINSTANCE.getBranchGroup_MaximumReactivePower(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getBranchGroup_MaximumReactivePower(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -114,11 +125,17 @@ public class BranchGroupItemProvider extends IdentifiedObjectItemProvider {
     protected void addMinimumActivePowerPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_BranchGroup_minimumActivePower_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_BranchGroup_minimumActivePower_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_BranchGroup_minimumActivePower_feature",
                                 "_UI_BranchGroup_type" ),
-                        CimPackage.eINSTANCE.getBranchGroup_MinimumActivePower(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getBranchGroup_MinimumActivePower(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -130,11 +147,17 @@ public class BranchGroupItemProvider extends IdentifiedObjectItemProvider {
     protected void addMinimumReactivePowerPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_BranchGroup_minimumReactivePower_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_BranchGroup_minimumReactivePower_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_BranchGroup_minimumReactivePower_feature",
                                 "_UI_BranchGroup_type" ),
-                        CimPackage.eINSTANCE.getBranchGroup_MinimumReactivePower(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getBranchGroup_MinimumReactivePower(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -146,11 +169,17 @@ public class BranchGroupItemProvider extends IdentifiedObjectItemProvider {
     protected void addMonitorActivePowerPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_BranchGroup_monitorActivePower_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_BranchGroup_monitorActivePower_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_BranchGroup_monitorActivePower_feature",
                                 "_UI_BranchGroup_type" ),
-                        CimPackage.eINSTANCE.getBranchGroup_MonitorActivePower(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getBranchGroup_MonitorActivePower(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -162,11 +191,17 @@ public class BranchGroupItemProvider extends IdentifiedObjectItemProvider {
     protected void addMonitorReactivePowerPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_BranchGroup_monitorReactivePower_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_BranchGroup_monitorReactivePower_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_BranchGroup_monitorReactivePower_feature",
                                 "_UI_BranchGroup_type" ),
-                        CimPackage.eINSTANCE.getBranchGroup_MonitorReactivePower(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getBranchGroup_MonitorReactivePower(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -178,10 +213,16 @@ public class BranchGroupItemProvider extends IdentifiedObjectItemProvider {
     protected void addBranchGroupTerminalPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_BranchGroup_BranchGroupTerminal_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_BranchGroup_BranchGroupTerminal_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_BranchGroup_BranchGroupTerminal_feature",
                                 "_UI_BranchGroup_type" ),
-                        CimPackage.eINSTANCE.getBranchGroup_BranchGroupTerminal(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getBranchGroup_BranchGroupTerminal(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 

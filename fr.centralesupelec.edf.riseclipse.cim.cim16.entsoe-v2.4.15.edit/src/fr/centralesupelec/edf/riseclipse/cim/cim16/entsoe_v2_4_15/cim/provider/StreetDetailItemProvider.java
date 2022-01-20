@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,22 +15,17 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.StreetDetail;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -41,6 +36,9 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.StreetDetail;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.StreetDetail} object.
@@ -94,11 +92,17 @@ public class StreetDetailItemProvider extends ItemProviderAdapter implements IEd
     protected void addAddressGeneralPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StreetDetail_addressGeneral_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StreetDetail_addressGeneral_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StreetDetail_addressGeneral_feature",
                                 "_UI_StreetDetail_type" ),
-                        CimPackage.eINSTANCE.getStreetDetail_AddressGeneral(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStreetDetail_AddressGeneral(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -110,11 +114,17 @@ public class StreetDetailItemProvider extends ItemProviderAdapter implements IEd
     protected void addBuildingNamePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StreetDetail_buildingName_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StreetDetail_buildingName_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StreetDetail_buildingName_feature",
                                 "_UI_StreetDetail_type" ),
-                        CimPackage.eINSTANCE.getStreetDetail_BuildingName(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStreetDetail_BuildingName(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -126,11 +136,17 @@ public class StreetDetailItemProvider extends ItemProviderAdapter implements IEd
     protected void addCodePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StreetDetail_code_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StreetDetail_code_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StreetDetail_code_feature",
                                 "_UI_StreetDetail_type" ),
-                        CimPackage.eINSTANCE.getStreetDetail_Code(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStreetDetail_Code(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -142,11 +158,17 @@ public class StreetDetailItemProvider extends ItemProviderAdapter implements IEd
     protected void addNamePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StreetDetail_name_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StreetDetail_name_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StreetDetail_name_feature",
                                 "_UI_StreetDetail_type" ),
-                        CimPackage.eINSTANCE.getStreetDetail_Name(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStreetDetail_Name(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -158,11 +180,17 @@ public class StreetDetailItemProvider extends ItemProviderAdapter implements IEd
     protected void addNumberPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StreetDetail_number_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StreetDetail_number_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StreetDetail_number_feature",
                                 "_UI_StreetDetail_type" ),
-                        CimPackage.eINSTANCE.getStreetDetail_Number(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStreetDetail_Number(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -174,11 +202,17 @@ public class StreetDetailItemProvider extends ItemProviderAdapter implements IEd
     protected void addPrefixPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StreetDetail_prefix_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StreetDetail_prefix_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StreetDetail_prefix_feature",
                                 "_UI_StreetDetail_type" ),
-                        CimPackage.eINSTANCE.getStreetDetail_Prefix(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStreetDetail_Prefix(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -190,11 +224,17 @@ public class StreetDetailItemProvider extends ItemProviderAdapter implements IEd
     protected void addSuffixPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StreetDetail_suffix_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StreetDetail_suffix_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StreetDetail_suffix_feature",
                                 "_UI_StreetDetail_type" ),
-                        CimPackage.eINSTANCE.getStreetDetail_Suffix(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStreetDetail_Suffix(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -206,11 +246,17 @@ public class StreetDetailItemProvider extends ItemProviderAdapter implements IEd
     protected void addSuiteNumberPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StreetDetail_suiteNumber_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StreetDetail_suiteNumber_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StreetDetail_suiteNumber_feature",
                                 "_UI_StreetDetail_type" ),
-                        CimPackage.eINSTANCE.getStreetDetail_SuiteNumber(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStreetDetail_SuiteNumber(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -222,11 +268,17 @@ public class StreetDetailItemProvider extends ItemProviderAdapter implements IEd
     protected void addTypePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StreetDetail_type_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StreetDetail_type_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StreetDetail_type_feature",
                                 "_UI_StreetDetail_type" ),
-                        CimPackage.eINSTANCE.getStreetDetail_Type(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStreetDetail_Type(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -238,11 +290,17 @@ public class StreetDetailItemProvider extends ItemProviderAdapter implements IEd
     protected void addWithinTownLimitsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_StreetDetail_withinTownLimits_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_StreetDetail_withinTownLimits_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_StreetDetail_withinTownLimits_feature",
                                 "_UI_StreetDetail_type" ),
-                        CimPackage.eINSTANCE.getStreetDetail_WithinTownLimits(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getStreetDetail_WithinTownLimits(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -317,7 +375,7 @@ public class StreetDetailItemProvider extends ItemProviderAdapter implements IEd
      */
     @Override
     public ResourceLocator getResourceLocator() {
-        return Entsoe_v2_4_15EditPlugin.INSTANCE;
+        return entsoev2415EditPlugin.INSTANCE;
     }
 
 }

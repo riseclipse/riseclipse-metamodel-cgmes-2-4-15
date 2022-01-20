@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PetersenCoil;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PetersenCoil;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.PetersenCoil} object.
@@ -82,11 +81,17 @@ public class PetersenCoilItemProvider extends EarthFaultCompensatorItemProvider 
     protected void addModePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PetersenCoil_mode_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PetersenCoil_mode_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PetersenCoil_mode_feature",
                                 "_UI_PetersenCoil_type" ),
-                        CimPackage.eINSTANCE.getPetersenCoil_Mode(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPetersenCoil_Mode(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -98,11 +103,17 @@ public class PetersenCoilItemProvider extends EarthFaultCompensatorItemProvider 
     protected void addNominalUPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PetersenCoil_nominalU_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PetersenCoil_nominalU_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PetersenCoil_nominalU_feature",
                                 "_UI_PetersenCoil_type" ),
-                        CimPackage.eINSTANCE.getPetersenCoil_NominalU(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPetersenCoil_NominalU(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -114,11 +125,17 @@ public class PetersenCoilItemProvider extends EarthFaultCompensatorItemProvider 
     protected void addOffsetCurrentPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PetersenCoil_offsetCurrent_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PetersenCoil_offsetCurrent_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PetersenCoil_offsetCurrent_feature",
                                 "_UI_PetersenCoil_type" ),
-                        CimPackage.eINSTANCE.getPetersenCoil_OffsetCurrent(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPetersenCoil_OffsetCurrent(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -130,11 +147,17 @@ public class PetersenCoilItemProvider extends EarthFaultCompensatorItemProvider 
     protected void addPositionCurrentPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PetersenCoil_positionCurrent_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PetersenCoil_positionCurrent_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PetersenCoil_positionCurrent_feature",
                                 "_UI_PetersenCoil_type" ),
-                        CimPackage.eINSTANCE.getPetersenCoil_PositionCurrent(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPetersenCoil_PositionCurrent(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -146,11 +169,17 @@ public class PetersenCoilItemProvider extends EarthFaultCompensatorItemProvider 
     protected void addXGroundMaxPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PetersenCoil_xGroundMax_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PetersenCoil_xGroundMax_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PetersenCoil_xGroundMax_feature",
                                 "_UI_PetersenCoil_type" ),
-                        CimPackage.eINSTANCE.getPetersenCoil_XGroundMax(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPetersenCoil_XGroundMax(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -162,11 +191,17 @@ public class PetersenCoilItemProvider extends EarthFaultCompensatorItemProvider 
     protected void addXGroundMinPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PetersenCoil_xGroundMin_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PetersenCoil_xGroundMin_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PetersenCoil_xGroundMin_feature",
                                 "_UI_PetersenCoil_type" ),
-                        CimPackage.eINSTANCE.getPetersenCoil_XGroundMin(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPetersenCoil_XGroundMin(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -178,11 +213,17 @@ public class PetersenCoilItemProvider extends EarthFaultCompensatorItemProvider 
     protected void addXGroundNominalPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_PetersenCoil_xGroundNominal_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_PetersenCoil_xGroundNominal_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_PetersenCoil_xGroundNominal_feature",
                                 "_UI_PetersenCoil_type" ),
-                        CimPackage.eINSTANCE.getPetersenCoil_XGroundNominal(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getPetersenCoil_XGroundNominal(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**

@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CableInfo;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CableInfo;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CableInfo} object.
@@ -85,11 +84,17 @@ public class CableInfoItemProvider extends WireInfoItemProvider {
     protected void addConstructionKindPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_CableInfo_constructionKind_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_CableInfo_constructionKind_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_CableInfo_constructionKind_feature",
                                 "_UI_CableInfo_type" ),
-                        CimPackage.eINSTANCE.getCableInfo_ConstructionKind(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getCableInfo_ConstructionKind(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -101,11 +106,17 @@ public class CableInfoItemProvider extends WireInfoItemProvider {
     protected void addDiameterOverCorePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_CableInfo_diameterOverCore_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_CableInfo_diameterOverCore_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_CableInfo_diameterOverCore_feature",
                                 "_UI_CableInfo_type" ),
-                        CimPackage.eINSTANCE.getCableInfo_DiameterOverCore(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getCableInfo_DiameterOverCore(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -117,11 +128,17 @@ public class CableInfoItemProvider extends WireInfoItemProvider {
     protected void addDiameterOverInsulationPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_CableInfo_diameterOverInsulation_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_CableInfo_diameterOverInsulation_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_CableInfo_diameterOverInsulation_feature",
                                 "_UI_CableInfo_type" ),
-                        CimPackage.eINSTANCE.getCableInfo_DiameterOverInsulation(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getCableInfo_DiameterOverInsulation(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -133,11 +150,17 @@ public class CableInfoItemProvider extends WireInfoItemProvider {
     protected void addDiameterOverJacketPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_CableInfo_diameterOverJacket_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_CableInfo_diameterOverJacket_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_CableInfo_diameterOverJacket_feature",
                                 "_UI_CableInfo_type" ),
-                        CimPackage.eINSTANCE.getCableInfo_DiameterOverJacket(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getCableInfo_DiameterOverJacket(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -149,11 +172,17 @@ public class CableInfoItemProvider extends WireInfoItemProvider {
     protected void addDiameterOverScreenPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_CableInfo_diameterOverScreen_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_CableInfo_diameterOverScreen_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_CableInfo_diameterOverScreen_feature",
                                 "_UI_CableInfo_type" ),
-                        CimPackage.eINSTANCE.getCableInfo_DiameterOverScreen(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getCableInfo_DiameterOverScreen(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -165,11 +194,17 @@ public class CableInfoItemProvider extends WireInfoItemProvider {
     protected void addIsStrandFillPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_CableInfo_isStrandFill_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_CableInfo_isStrandFill_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_CableInfo_isStrandFill_feature",
                                 "_UI_CableInfo_type" ),
-                        CimPackage.eINSTANCE.getCableInfo_IsStrandFill(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getCableInfo_IsStrandFill(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -181,11 +216,17 @@ public class CableInfoItemProvider extends WireInfoItemProvider {
     protected void addNominalTemperaturePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_CableInfo_nominalTemperature_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_CableInfo_nominalTemperature_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_CableInfo_nominalTemperature_feature",
                                 "_UI_CableInfo_type" ),
-                        CimPackage.eINSTANCE.getCableInfo_NominalTemperature(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getCableInfo_NominalTemperature(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -197,11 +238,17 @@ public class CableInfoItemProvider extends WireInfoItemProvider {
     protected void addOuterJacketKindPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_CableInfo_outerJacketKind_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_CableInfo_outerJacketKind_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_CableInfo_outerJacketKind_feature",
                                 "_UI_CableInfo_type" ),
-                        CimPackage.eINSTANCE.getCableInfo_OuterJacketKind(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getCableInfo_OuterJacketKind(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -213,11 +260,17 @@ public class CableInfoItemProvider extends WireInfoItemProvider {
     protected void addSheathAsNeutralPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_CableInfo_sheathAsNeutral_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_CableInfo_sheathAsNeutral_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_CableInfo_sheathAsNeutral_feature",
                                 "_UI_CableInfo_type" ),
-                        CimPackage.eINSTANCE.getCableInfo_SheathAsNeutral(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getCableInfo_SheathAsNeutral(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -229,11 +282,17 @@ public class CableInfoItemProvider extends WireInfoItemProvider {
     protected void addShieldMaterialPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_CableInfo_shieldMaterial_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_CableInfo_shieldMaterial_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_CableInfo_shieldMaterial_feature",
                                 "_UI_CableInfo_type" ),
-                        CimPackage.eINSTANCE.getCableInfo_ShieldMaterial(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getCableInfo_ShieldMaterial(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**

@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.VendorShift;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.VendorShift;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.VendorShift} object.
@@ -81,11 +80,17 @@ public class VendorShiftItemProvider extends ShiftItemProvider {
     protected void addMerchantDebitAmountPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_VendorShift_merchantDebitAmount_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_VendorShift_merchantDebitAmount_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_VendorShift_merchantDebitAmount_feature",
                                 "_UI_VendorShift_type" ),
-                        CimPackage.eINSTANCE.getVendorShift_MerchantDebitAmount(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getVendorShift_MerchantDebitAmount(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -97,11 +102,17 @@ public class VendorShiftItemProvider extends ShiftItemProvider {
     protected void addPostedPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_VendorShift_posted_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_VendorShift_posted_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_VendorShift_posted_feature",
                                 "_UI_VendorShift_type" ),
-                        CimPackage.eINSTANCE.getVendorShift_Posted(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getVendorShift_Posted(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -113,10 +124,17 @@ public class VendorShiftItemProvider extends ShiftItemProvider {
     protected void addVendorPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_VendorShift_Vendor_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_VendorShift_Vendor_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_VendorShift_Vendor_feature",
                                 "_UI_VendorShift_type" ),
-                        CimPackage.eINSTANCE.getVendorShift_Vendor(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getVendorShift_Vendor(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -128,10 +146,17 @@ public class VendorShiftItemProvider extends ShiftItemProvider {
     protected void addTransactionsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_VendorShift_Transactions_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_VendorShift_Transactions_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_VendorShift_Transactions_feature",
                                 "_UI_VendorShift_type" ),
-                        CimPackage.eINSTANCE.getVendorShift_Transactions(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getVendorShift_Transactions(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -143,10 +168,17 @@ public class VendorShiftItemProvider extends ShiftItemProvider {
     protected void addMerchantAccountPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_VendorShift_MerchantAccount_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_VendorShift_MerchantAccount_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_VendorShift_MerchantAccount_feature",
                                 "_UI_VendorShift_type" ),
-                        CimPackage.eINSTANCE.getVendorShift_MerchantAccount(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getVendorShift_MerchantAccount(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -158,10 +190,17 @@ public class VendorShiftItemProvider extends ShiftItemProvider {
     protected void addReceiptsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_VendorShift_Receipts_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_VendorShift_Receipts_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_VendorShift_Receipts_feature",
                                 "_UI_VendorShift_type" ),
-                        CimPackage.eINSTANCE.getVendorShift_Receipts(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getVendorShift_Receipts(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.RemoteControl;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.RemoteControl;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.RemoteControl} object.
@@ -79,11 +78,17 @@ public class RemoteControlItemProvider extends RemotePointItemProvider {
     protected void addActuatorMaximumPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_RemoteControl_actuatorMaximum_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_RemoteControl_actuatorMaximum_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_RemoteControl_actuatorMaximum_feature",
                                 "_UI_RemoteControl_type" ),
-                        CimPackage.eINSTANCE.getRemoteControl_ActuatorMaximum(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getRemoteControl_ActuatorMaximum(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -95,11 +100,17 @@ public class RemoteControlItemProvider extends RemotePointItemProvider {
     protected void addActuatorMinimumPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_RemoteControl_actuatorMinimum_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_RemoteControl_actuatorMinimum_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_RemoteControl_actuatorMinimum_feature",
                                 "_UI_RemoteControl_type" ),
-                        CimPackage.eINSTANCE.getRemoteControl_ActuatorMinimum(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getRemoteControl_ActuatorMinimum(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -111,11 +122,17 @@ public class RemoteControlItemProvider extends RemotePointItemProvider {
     protected void addRemoteControlledPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_RemoteControl_remoteControlled_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_RemoteControl_remoteControlled_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_RemoteControl_remoteControlled_feature",
                                 "_UI_RemoteControl_type" ),
-                        CimPackage.eINSTANCE.getRemoteControl_RemoteControlled(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getRemoteControl_RemoteControlled(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -127,10 +144,17 @@ public class RemoteControlItemProvider extends RemotePointItemProvider {
     protected void addControlPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_RemoteControl_Control_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_RemoteControl_Control_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_RemoteControl_Control_feature",
                                 "_UI_RemoteControl_type" ),
-                        CimPackage.eINSTANCE.getRemoteControl_Control(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getRemoteControl_Control(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

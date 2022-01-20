@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Measurement;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Measurement;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Measurement} object.
@@ -84,11 +83,17 @@ public class MeasurementItemProvider extends IdentifiedObjectItemProvider {
     protected void addMeasurementTypePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Measurement_measurementType_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Measurement_measurementType_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Measurement_measurementType_feature",
                                 "_UI_Measurement_type" ),
-                        CimPackage.eINSTANCE.getMeasurement_MeasurementType(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getMeasurement_MeasurementType(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -100,11 +105,17 @@ public class MeasurementItemProvider extends IdentifiedObjectItemProvider {
     protected void addPhasesPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Measurement_phases_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Measurement_phases_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Measurement_phases_feature",
                                 "_UI_Measurement_type" ),
-                        CimPackage.eINSTANCE.getMeasurement_Phases(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getMeasurement_Phases(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -116,11 +127,17 @@ public class MeasurementItemProvider extends IdentifiedObjectItemProvider {
     protected void addUnitMultiplierPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Measurement_unitMultiplier_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Measurement_unitMultiplier_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Measurement_unitMultiplier_feature",
                                 "_UI_Measurement_type" ),
-                        CimPackage.eINSTANCE.getMeasurement_UnitMultiplier(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getMeasurement_UnitMultiplier(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -132,11 +149,17 @@ public class MeasurementItemProvider extends IdentifiedObjectItemProvider {
     protected void addUnitSymbolPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Measurement_unitSymbol_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Measurement_unitSymbol_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Measurement_unitSymbol_feature",
                                 "_UI_Measurement_type" ),
-                        CimPackage.eINSTANCE.getMeasurement_UnitSymbol(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getMeasurement_UnitSymbol(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -148,10 +171,17 @@ public class MeasurementItemProvider extends IdentifiedObjectItemProvider {
     protected void addTerminalPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Measurement_Terminal_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Measurement_Terminal_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Measurement_Terminal_feature",
                                 "_UI_Measurement_type" ),
-                        CimPackage.eINSTANCE.getMeasurement_Terminal(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getMeasurement_Terminal(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -163,10 +193,16 @@ public class MeasurementItemProvider extends IdentifiedObjectItemProvider {
     protected void addPowerSystemResourcePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Measurement_PowerSystemResource_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Measurement_PowerSystemResource_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Measurement_PowerSystemResource_feature",
                                 "_UI_Measurement_type" ),
-                        CimPackage.eINSTANCE.getMeasurement_PowerSystemResource(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getMeasurement_PowerSystemResource(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 
@@ -179,10 +215,17 @@ public class MeasurementItemProvider extends IdentifiedObjectItemProvider {
     protected void addProceduresPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Measurement_Procedures_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Measurement_Procedures_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Measurement_Procedures_feature",
                                 "_UI_Measurement_type" ),
-                        CimPackage.eINSTANCE.getMeasurement_Procedures(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getMeasurement_Procedures(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -194,10 +237,17 @@ public class MeasurementItemProvider extends IdentifiedObjectItemProvider {
     protected void addLocationsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Measurement_Locations_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Measurement_Locations_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Measurement_Locations_feature",
                                 "_UI_Measurement_type" ),
-                        CimPackage.eINSTANCE.getMeasurement_Locations(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getMeasurement_Locations(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -209,10 +259,17 @@ public class MeasurementItemProvider extends IdentifiedObjectItemProvider {
     protected void addAssetPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Measurement_Asset_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Measurement_Asset_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Measurement_Asset_feature",
                                 "_UI_Measurement_type" ),
-                        CimPackage.eINSTANCE.getMeasurement_Asset(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getMeasurement_Asset(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

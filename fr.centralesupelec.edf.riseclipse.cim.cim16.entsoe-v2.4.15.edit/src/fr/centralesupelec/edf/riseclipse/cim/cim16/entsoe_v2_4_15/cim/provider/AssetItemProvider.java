@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Asset;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Asset;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Asset} object.
@@ -101,11 +100,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addCriticalPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_critical_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_critical_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_critical_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_Critical(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_Critical(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -117,11 +122,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addInitialConditionPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_initialCondition_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_initialCondition_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_initialCondition_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_InitialCondition(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_InitialCondition(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -133,11 +144,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addInitialLossOfLifePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_initialLossOfLife_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_initialLossOfLife_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_initialLossOfLife_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_InitialLossOfLife(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_InitialLossOfLife(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -149,11 +166,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addLotNumberPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_lotNumber_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_lotNumber_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_lotNumber_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_LotNumber(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_LotNumber(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -165,11 +188,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addPurchasePricePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_purchasePrice_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_purchasePrice_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_purchasePrice_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_PurchasePrice(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_PurchasePrice(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -181,11 +210,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addSerialNumberPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_serialNumber_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_serialNumber_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_serialNumber_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_SerialNumber(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_SerialNumber(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -197,10 +232,16 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addTypePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_type_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_type_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_type_feature", "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_Type(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_Type(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -212,11 +253,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addUtcNumberPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_utcNumber_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_utcNumber_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_utcNumber_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_UtcNumber(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_UtcNumber(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -228,10 +275,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addAcceptanceTestPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_acceptanceTest_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_acceptanceTest_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_acceptanceTest_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_AcceptanceTest(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_AcceptanceTest(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -243,10 +297,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addElectronicAddressPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_electronicAddress_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_electronicAddress_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_electronicAddress_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_ElectronicAddress(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_ElectronicAddress(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -258,10 +319,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addLifecyclePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_lifecycle_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_lifecycle_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_lifecycle_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_Lifecycle(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_Lifecycle(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -273,9 +341,16 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addStatusPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_status_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_status_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_status_feature", "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_Status(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_Status(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -287,10 +362,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addMeasurementsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_Measurements_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_Measurements_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_Measurements_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_Measurements(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_Measurements(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -302,10 +384,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addOrganisationRolesPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_OrganisationRoles_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_OrganisationRoles_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_OrganisationRoles_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_OrganisationRoles(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_OrganisationRoles(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -317,10 +406,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addConfigurationEventsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_ConfigurationEvents_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_ConfigurationEvents_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_ConfigurationEvents_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_ConfigurationEvents(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_ConfigurationEvents(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -332,10 +428,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addAssetContainerPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_AssetContainer_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_AssetContainer_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_AssetContainer_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_AssetContainer(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_AssetContainer(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -347,10 +450,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addScheduledEventsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_ScheduledEvents_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_ScheduledEvents_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_ScheduledEvents_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_ScheduledEvents(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_ScheduledEvents(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -362,10 +472,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addOperationTagsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_OperationTags_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_OperationTags_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_OperationTags_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_OperationTags(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_OperationTags(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -377,10 +494,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addWorkTasksPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_WorkTasks_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_WorkTasks_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_WorkTasks_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_WorkTasks(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_WorkTasks(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -392,10 +516,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addAssetInfoPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_AssetInfo_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_AssetInfo_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_AssetInfo_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_AssetInfo(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_AssetInfo(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -407,10 +538,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addProceduresPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_Procedures_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_Procedures_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_Procedures_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_Procedures(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_Procedures(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -422,10 +560,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addLocationPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_Location_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_Location_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_Location_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_Location(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_Location(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -437,10 +582,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addPowerSystemResourcesPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_PowerSystemResources_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_PowerSystemResources_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_PowerSystemResources_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_PowerSystemResources(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_PowerSystemResources(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -452,10 +604,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addActivityRecordsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_ActivityRecords_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_ActivityRecords_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_ActivityRecords_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_ActivityRecords(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_ActivityRecords(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -467,10 +626,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addOwnershipsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_Ownerships_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_Ownerships_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_Ownerships_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_Ownerships(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_Ownerships(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -482,10 +648,17 @@ public class AssetItemProvider extends IdentifiedObjectItemProvider {
     protected void addReplacementWorkTasksPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Asset_ReplacementWorkTasks_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Asset_ReplacementWorkTasks_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Asset_ReplacementWorkTasks_feature",
                                 "_UI_Asset_type" ),
-                        CimPackage.eINSTANCE.getAsset_ReplacementWorkTasks(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getAsset_ReplacementWorkTasks(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

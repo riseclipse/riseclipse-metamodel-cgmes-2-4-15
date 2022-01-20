@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,22 +15,21 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.OrganisationRole;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.OrganisationRole;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.OrganisationRole} object.
@@ -73,12 +72,19 @@ public class OrganisationRoleItemProvider extends IdentifiedObjectItemProvider {
      * @generated
      */
     protected void addConfigurationEventsPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_OrganisationRole_ConfigurationEvents_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_OrganisationRole_ConfigurationEvents_feature",
-                        "_UI_OrganisationRole_type" ),
-                CimPackage.eINSTANCE.getOrganisationRole_ConfigurationEvents(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_OrganisationRole_ConfigurationEvents_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_OrganisationRole_ConfigurationEvents_feature", "_UI_OrganisationRole_type" ),
+                        CimPackage.eINSTANCE.getOrganisationRole_ConfigurationEvents(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -90,10 +96,16 @@ public class OrganisationRoleItemProvider extends IdentifiedObjectItemProvider {
     protected void addOrganisationPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_OrganisationRole_Organisation_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_OrganisationRole_Organisation_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_OrganisationRole_Organisation_feature",
                                 "_UI_OrganisationRole_type" ),
-                        CimPackage.eINSTANCE.getOrganisationRole_Organisation(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getOrganisationRole_Organisation(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 

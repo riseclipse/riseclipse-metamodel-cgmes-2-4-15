@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.HydroTurbine;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.HydroTurbine;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.HydroTurbine} object.
@@ -86,11 +85,17 @@ public class HydroTurbineItemProvider extends PrimeMoverItemProvider {
     protected void addGateRateLimitPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroTurbine_gateRateLimit_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroTurbine_gateRateLimit_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroTurbine_gateRateLimit_feature",
                                 "_UI_HydroTurbine_type" ),
-                        CimPackage.eINSTANCE.getHydroTurbine_GateRateLimit(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getHydroTurbine_GateRateLimit(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -102,11 +107,17 @@ public class HydroTurbineItemProvider extends PrimeMoverItemProvider {
     protected void addGateUpperLimitPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroTurbine_gateUpperLimit_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroTurbine_gateUpperLimit_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroTurbine_gateUpperLimit_feature",
                                 "_UI_HydroTurbine_type" ),
-                        CimPackage.eINSTANCE.getHydroTurbine_GateUpperLimit(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getHydroTurbine_GateUpperLimit(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -118,11 +129,17 @@ public class HydroTurbineItemProvider extends PrimeMoverItemProvider {
     protected void addMaxHeadMaxPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroTurbine_maxHeadMaxP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroTurbine_maxHeadMaxP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroTurbine_maxHeadMaxP_feature",
                                 "_UI_HydroTurbine_type" ),
-                        CimPackage.eINSTANCE.getHydroTurbine_MaxHeadMaxP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getHydroTurbine_MaxHeadMaxP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -134,11 +151,17 @@ public class HydroTurbineItemProvider extends PrimeMoverItemProvider {
     protected void addMinHeadMaxPPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroTurbine_minHeadMaxP_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroTurbine_minHeadMaxP_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroTurbine_minHeadMaxP_feature",
                                 "_UI_HydroTurbine_type" ),
-                        CimPackage.eINSTANCE.getHydroTurbine_MinHeadMaxP(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getHydroTurbine_MinHeadMaxP(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -150,11 +173,17 @@ public class HydroTurbineItemProvider extends PrimeMoverItemProvider {
     protected void addSpeedRatingPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroTurbine_speedRating_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroTurbine_speedRating_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroTurbine_speedRating_feature",
                                 "_UI_HydroTurbine_type" ),
-                        CimPackage.eINSTANCE.getHydroTurbine_SpeedRating(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getHydroTurbine_SpeedRating(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -166,11 +195,17 @@ public class HydroTurbineItemProvider extends PrimeMoverItemProvider {
     protected void addSpeedRegulationPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroTurbine_speedRegulation_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroTurbine_speedRegulation_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroTurbine_speedRegulation_feature",
                                 "_UI_HydroTurbine_type" ),
-                        CimPackage.eINSTANCE.getHydroTurbine_SpeedRegulation(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getHydroTurbine_SpeedRegulation(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -182,11 +217,17 @@ public class HydroTurbineItemProvider extends PrimeMoverItemProvider {
     protected void addTransientDroopTimePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroTurbine_transientDroopTime_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroTurbine_transientDroopTime_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroTurbine_transientDroopTime_feature",
                                 "_UI_HydroTurbine_type" ),
-                        CimPackage.eINSTANCE.getHydroTurbine_TransientDroopTime(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getHydroTurbine_TransientDroopTime(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -198,11 +239,17 @@ public class HydroTurbineItemProvider extends PrimeMoverItemProvider {
     protected void addTransientRegulationPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroTurbine_transientRegulation_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroTurbine_transientRegulation_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroTurbine_transientRegulation_feature",
                                 "_UI_HydroTurbine_type" ),
-                        CimPackage.eINSTANCE.getHydroTurbine_TransientRegulation(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getHydroTurbine_TransientRegulation(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -214,11 +261,17 @@ public class HydroTurbineItemProvider extends PrimeMoverItemProvider {
     protected void addTurbineRatingPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroTurbine_turbineRating_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroTurbine_turbineRating_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroTurbine_turbineRating_feature",
                                 "_UI_HydroTurbine_type" ),
-                        CimPackage.eINSTANCE.getHydroTurbine_TurbineRating(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getHydroTurbine_TurbineRating(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -230,11 +283,17 @@ public class HydroTurbineItemProvider extends PrimeMoverItemProvider {
     protected void addTurbineTypePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroTurbine_turbineType_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroTurbine_turbineType_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroTurbine_turbineType_feature",
                                 "_UI_HydroTurbine_type" ),
-                        CimPackage.eINSTANCE.getHydroTurbine_TurbineType(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getHydroTurbine_TurbineType(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -246,11 +305,17 @@ public class HydroTurbineItemProvider extends PrimeMoverItemProvider {
     protected void addWaterStartingTimePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_HydroTurbine_waterStartingTime_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_HydroTurbine_waterStartingTime_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_HydroTurbine_waterStartingTime_feature",
                                 "_UI_HydroTurbine_type" ),
-                        CimPackage.eINSTANCE.getHydroTurbine_WaterStartingTime(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getHydroTurbine_WaterStartingTime(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**

@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,22 +15,21 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.MeterServiceWork;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.MeterServiceWork;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.MeterServiceWork} object.
@@ -76,10 +75,17 @@ public class MeterServiceWorkItemProvider extends WorkItemProvider {
     protected void addOldMeterPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_MeterServiceWork_OldMeter_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_MeterServiceWork_OldMeter_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_MeterServiceWork_OldMeter_feature",
                                 "_UI_MeterServiceWork_type" ),
-                        CimPackage.eINSTANCE.getMeterServiceWork_OldMeter(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getMeterServiceWork_OldMeter(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -91,10 +97,17 @@ public class MeterServiceWorkItemProvider extends WorkItemProvider {
     protected void addMeterPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_MeterServiceWork_Meter_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_MeterServiceWork_Meter_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_MeterServiceWork_Meter_feature",
                                 "_UI_MeterServiceWork_type" ),
-                        CimPackage.eINSTANCE.getMeterServiceWork_Meter(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getMeterServiceWork_Meter(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -106,10 +119,17 @@ public class MeterServiceWorkItemProvider extends WorkItemProvider {
     protected void addUsagePointPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_MeterServiceWork_UsagePoint_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_MeterServiceWork_UsagePoint_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_MeterServiceWork_UsagePoint_feature",
                                 "_UI_MeterServiceWork_type" ),
-                        CimPackage.eINSTANCE.getMeterServiceWork_UsagePoint(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getMeterServiceWork_UsagePoint(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

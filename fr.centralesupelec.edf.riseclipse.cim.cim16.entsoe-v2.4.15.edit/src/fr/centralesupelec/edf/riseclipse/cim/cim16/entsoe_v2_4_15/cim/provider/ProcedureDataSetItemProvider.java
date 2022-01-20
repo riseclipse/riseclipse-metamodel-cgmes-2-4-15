@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ProcedureDataSet;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ProcedureDataSet;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.ProcedureDataSet} object.
@@ -77,13 +76,19 @@ public class ProcedureDataSetItemProvider extends DocumentItemProvider {
      * @generated
      */
     protected void addCompletedDateTimePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProcedureDataSet_completedDateTime_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ProcedureDataSet_completedDateTime_feature",
-                        "_UI_ProcedureDataSet_type" ),
-                CimPackage.eINSTANCE.getProcedureDataSet_CompletedDateTime(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProcedureDataSet_completedDateTime_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProcedureDataSet_completedDateTime_feature", "_UI_ProcedureDataSet_type" ),
+                        CimPackage.eINSTANCE.getProcedureDataSet_CompletedDateTime(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -95,10 +100,17 @@ public class ProcedureDataSetItemProvider extends DocumentItemProvider {
     protected void addPropertiesPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ProcedureDataSet_Properties_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ProcedureDataSet_Properties_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ProcedureDataSet_Properties_feature",
                                 "_UI_ProcedureDataSet_type" ),
-                        CimPackage.eINSTANCE.getProcedureDataSet_Properties(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getProcedureDataSet_Properties(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -110,10 +122,17 @@ public class ProcedureDataSetItemProvider extends DocumentItemProvider {
     protected void addProcedurePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_ProcedureDataSet_Procedure_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_ProcedureDataSet_Procedure_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_ProcedureDataSet_Procedure_feature",
                                 "_UI_ProcedureDataSet_type" ),
-                        CimPackage.eINSTANCE.getProcedureDataSet_Procedure(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getProcedureDataSet_Procedure(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -123,12 +142,19 @@ public class ProcedureDataSetItemProvider extends DocumentItemProvider {
      * @generated
      */
     protected void addMeasurementValuesPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_ProcedureDataSet_MeasurementValues_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_ProcedureDataSet_MeasurementValues_feature",
-                        "_UI_ProcedureDataSet_type" ),
-                CimPackage.eINSTANCE.getProcedureDataSet_MeasurementValues(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_ProcedureDataSet_MeasurementValues_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_ProcedureDataSet_MeasurementValues_feature", "_UI_ProcedureDataSet_type" ),
+                        CimPackage.eINSTANCE.getProcedureDataSet_MeasurementValues(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

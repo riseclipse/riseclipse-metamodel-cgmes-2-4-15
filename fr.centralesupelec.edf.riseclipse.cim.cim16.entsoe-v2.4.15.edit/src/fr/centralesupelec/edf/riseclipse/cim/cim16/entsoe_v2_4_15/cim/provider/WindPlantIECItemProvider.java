@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,22 +15,21 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindPlantIEC;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindPlantIEC;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.WindPlantIEC} object.
@@ -73,13 +72,19 @@ public class WindPlantIECItemProvider extends WindPlantDynamicsItemProvider {
      * @generated
      */
     protected void addWindPlantFreqPcontrolIECPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_WindPlantIEC_WindPlantFreqPcontrolIEC_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_WindPlantIEC_WindPlantFreqPcontrolIEC_feature",
-                        "_UI_WindPlantIEC_type" ),
-                CimPackage.eINSTANCE.getWindPlantIEC_WindPlantFreqPcontrolIEC(), true, false, true, null, null,
-                null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_WindPlantIEC_WindPlantFreqPcontrolIEC_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_WindPlantIEC_WindPlantFreqPcontrolIEC_feature", "_UI_WindPlantIEC_type" ),
+                        CimPackage.eINSTANCE.getWindPlantIEC_WindPlantFreqPcontrolIEC(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -89,13 +94,19 @@ public class WindPlantIECItemProvider extends WindPlantDynamicsItemProvider {
      * @generated
      */
     protected void addWindPlantReactiveControlIECPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_WindPlantIEC_WindPlantReactiveControlIEC_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_WindPlantIEC_WindPlantReactiveControlIEC_feature",
-                        "_UI_WindPlantIEC_type" ),
-                CimPackage.eINSTANCE.getWindPlantIEC_WindPlantReactiveControlIEC(), true, false, true, null, null,
-                null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_WindPlantIEC_WindPlantReactiveControlIEC_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_WindPlantIEC_WindPlantReactiveControlIEC_feature", "_UI_WindPlantIEC_type" ),
+                        CimPackage.eINSTANCE.getWindPlantIEC_WindPlantReactiveControlIEC(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

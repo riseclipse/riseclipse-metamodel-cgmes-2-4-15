@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.UnderexcLimIEEE2;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.UnderexcLimIEEE2;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.UnderexcLimIEEE2} object.
@@ -115,11 +114,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addK1PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_k1_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_k1_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_k1_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_K1(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_K1(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -131,11 +136,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addK2PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_k2_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_k2_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_k2_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_K2(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_K2(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -147,11 +158,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addKfbPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_kfb_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_kfb_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_kfb_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Kfb(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Kfb(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -163,11 +180,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addKufPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_kuf_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_kuf_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_kuf_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Kuf(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Kuf(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -179,11 +202,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addKuiPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_kui_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_kui_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_kui_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Kui(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Kui(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -195,11 +224,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addKulPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_kul_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_kul_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_kul_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Kul(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Kul(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -211,11 +246,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addP0PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_p0_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_p0_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_p0_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P0(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P0(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -227,11 +268,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addP1PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_p1_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_p1_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_p1_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P1(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P1(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -243,11 +290,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addP10PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_p10_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_p10_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_p10_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P10(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P10(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -259,11 +312,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addP2PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_p2_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_p2_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_p2_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P2(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P2(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -275,11 +334,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addP3PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_p3_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_p3_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_p3_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P3(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P3(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -291,11 +356,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addP4PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_p4_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_p4_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_p4_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P4(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P4(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -307,11 +378,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addP5PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_p5_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_p5_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_p5_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P5(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P5(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -323,11 +400,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addP6PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_p6_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_p6_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_p6_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P6(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P6(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -339,11 +422,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addP7PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_p7_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_p7_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_p7_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P7(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P7(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -355,11 +444,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addP8PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_p8_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_p8_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_p8_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P8(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P8(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -371,11 +466,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addP9PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_p9_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_p9_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_p9_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P9(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_P9(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -387,11 +488,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addQ0PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_q0_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_q0_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_q0_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q0(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q0(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -403,11 +510,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addQ1PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_q1_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_q1_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_q1_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q1(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q1(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -419,11 +532,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addQ10PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_q10_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_q10_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_q10_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q10(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q10(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -435,11 +554,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addQ2PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_q2_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_q2_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_q2_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q2(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q2(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -451,11 +576,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addQ3PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_q3_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_q3_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_q3_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q3(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q3(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -467,11 +598,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addQ4PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_q4_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_q4_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_q4_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q4(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q4(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -483,11 +620,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addQ5PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_q5_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_q5_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_q5_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q5(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q5(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -499,11 +642,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addQ6PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_q6_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_q6_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_q6_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q6(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q6(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -515,11 +664,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addQ7PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_q7_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_q7_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_q7_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q7(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q7(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -531,11 +686,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addQ8PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_q8_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_q8_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_q8_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q8(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q8(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -547,11 +708,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addQ9PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_q9_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_q9_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_q9_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q9(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Q9(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -563,11 +730,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addTu1PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_tu1_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_tu1_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_tu1_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Tu1(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Tu1(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -579,11 +752,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addTu2PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_tu2_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_tu2_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_tu2_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Tu2(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Tu2(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -595,11 +774,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addTu3PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_tu3_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_tu3_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_tu3_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Tu3(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Tu3(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -611,11 +796,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addTu4PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_tu4_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_tu4_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_tu4_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Tu4(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Tu4(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -627,11 +818,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addTulPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_tul_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_tul_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_tul_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Tul(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Tul(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -643,11 +840,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addTupPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_tup_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_tup_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_tup_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Tup(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Tup(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -659,11 +862,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addTuqPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_tuq_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_tuq_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_tuq_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Tuq(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Tuq(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -675,11 +884,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addTuvPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_tuv_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_tuv_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_tuv_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Tuv(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Tuv(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -691,11 +906,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addVuimaxPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_vuimax_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_vuimax_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_vuimax_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Vuimax(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Vuimax(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -707,11 +928,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addVuiminPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_vuimin_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_vuimin_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_vuimin_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Vuimin(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Vuimin(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -723,11 +950,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addVulmaxPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_vulmax_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_vulmax_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_vulmax_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Vulmax(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Vulmax(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -739,11 +972,17 @@ public class UnderexcLimIEEE2ItemProvider extends UnderexcitationLimiterDynamics
     protected void addVulminPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_UnderexcLimIEEE2_vulmin_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_UnderexcLimIEEE2_vulmin_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_UnderexcLimIEEE2_vulmin_feature",
                                 "_UI_UnderexcLimIEEE2_type" ),
-                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Vulmin(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getUnderexcLimIEEE2_Vulmin(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**

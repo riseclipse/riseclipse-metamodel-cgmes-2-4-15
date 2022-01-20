@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.AsynchronousMachine;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.AsynchronousMachine;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.AsynchronousMachine} object.
@@ -95,12 +94,18 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
      */
     protected void addAsynchronousMachineTypePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_AsynchronousMachine_asynchronousMachineType_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_AsynchronousMachine_asynchronousMachineType_feature", "_UI_AsynchronousMachine_type" ),
-                CimPackage.eINSTANCE.getAsynchronousMachine_AsynchronousMachineType(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getAsynchronousMachine_AsynchronousMachineType(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -112,11 +117,17 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
     protected void addConverterFedDrivePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AsynchronousMachine_converterFedDrive_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_converterFedDrive_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_AsynchronousMachine_converterFedDrive_feature", "_UI_AsynchronousMachine_type" ),
-                        CimPackage.eINSTANCE.getAsynchronousMachine_ConverterFedDrive(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsynchronousMachine_ConverterFedDrive(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -126,13 +137,19 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
      * @generated
      */
     protected void addEfficiencyPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_AsynchronousMachine_efficiency_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_efficiency_feature",
-                        "_UI_AsynchronousMachine_type" ),
-                CimPackage.eINSTANCE.getAsynchronousMachine_Efficiency(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_efficiency_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_efficiency_feature",
+                                "_UI_AsynchronousMachine_type" ),
+                        CimPackage.eINSTANCE.getAsynchronousMachine_Efficiency(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -142,13 +159,19 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
      * @generated
      */
     protected void addIaIrRatioPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_AsynchronousMachine_iaIrRatio_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_iaIrRatio_feature",
-                        "_UI_AsynchronousMachine_type" ),
-                CimPackage.eINSTANCE.getAsynchronousMachine_IaIrRatio(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_iaIrRatio_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_iaIrRatio_feature",
+                                "_UI_AsynchronousMachine_type" ),
+                        CimPackage.eINSTANCE.getAsynchronousMachine_IaIrRatio(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -160,11 +183,17 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
     protected void addNominalFrequencyPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AsynchronousMachine_nominalFrequency_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_nominalFrequency_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_AsynchronousMachine_nominalFrequency_feature", "_UI_AsynchronousMachine_type" ),
-                        CimPackage.eINSTANCE.getAsynchronousMachine_NominalFrequency(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsynchronousMachine_NominalFrequency(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -174,13 +203,19 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
      * @generated
      */
     protected void addNominalSpeedPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_AsynchronousMachine_nominalSpeed_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_nominalSpeed_feature",
-                        "_UI_AsynchronousMachine_type" ),
-                CimPackage.eINSTANCE.getAsynchronousMachine_NominalSpeed(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_nominalSpeed_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_nominalSpeed_feature",
+                                "_UI_AsynchronousMachine_type" ),
+                        CimPackage.eINSTANCE.getAsynchronousMachine_NominalSpeed(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -190,13 +225,19 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
      * @generated
      */
     protected void addPolePairNumberPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_AsynchronousMachine_polePairNumber_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_polePairNumber_feature",
-                        "_UI_AsynchronousMachine_type" ),
-                CimPackage.eINSTANCE.getAsynchronousMachine_PolePairNumber(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_polePairNumber_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_AsynchronousMachine_polePairNumber_feature", "_UI_AsynchronousMachine_type" ),
+                        CimPackage.eINSTANCE.getAsynchronousMachine_PolePairNumber(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -207,12 +248,18 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
      */
     protected void addRatedMechanicalPowerPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_AsynchronousMachine_ratedMechanicalPower_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_ratedMechanicalPower_feature",
                         "_UI_AsynchronousMachine_type" ),
-                CimPackage.eINSTANCE.getAsynchronousMachine_RatedMechanicalPower(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getAsynchronousMachine_RatedMechanicalPower(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -222,13 +269,19 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
      * @generated
      */
     protected void addReversiblePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_AsynchronousMachine_reversible_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_reversible_feature",
-                        "_UI_AsynchronousMachine_type" ),
-                CimPackage.eINSTANCE.getAsynchronousMachine_Reversible(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_reversible_feature" ),
+                        getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_reversible_feature",
+                                "_UI_AsynchronousMachine_type" ),
+                        CimPackage.eINSTANCE.getAsynchronousMachine_Reversible(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -240,11 +293,17 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
     protected void addRr1PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AsynchronousMachine_rr1_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_rr1_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_rr1_feature",
                                 "_UI_AsynchronousMachine_type" ),
-                        CimPackage.eINSTANCE.getAsynchronousMachine_Rr1(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsynchronousMachine_Rr1(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -256,11 +315,17 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
     protected void addRr2PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AsynchronousMachine_rr2_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_rr2_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_rr2_feature",
                                 "_UI_AsynchronousMachine_type" ),
-                        CimPackage.eINSTANCE.getAsynchronousMachine_Rr2(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsynchronousMachine_Rr2(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -272,11 +337,17 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
     protected void addRxLockedRotorRatioPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AsynchronousMachine_rxLockedRotorRatio_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_rxLockedRotorRatio_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_AsynchronousMachine_rxLockedRotorRatio_feature", "_UI_AsynchronousMachine_type" ),
-                        CimPackage.eINSTANCE.getAsynchronousMachine_RxLockedRotorRatio(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsynchronousMachine_RxLockedRotorRatio(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -288,11 +359,17 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
     protected void addTpoPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AsynchronousMachine_tpo_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_tpo_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_tpo_feature",
                                 "_UI_AsynchronousMachine_type" ),
-                        CimPackage.eINSTANCE.getAsynchronousMachine_Tpo(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsynchronousMachine_Tpo(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -304,11 +381,17 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
     protected void addTppoPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AsynchronousMachine_tppo_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_tppo_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_tppo_feature",
                                 "_UI_AsynchronousMachine_type" ),
-                        CimPackage.eINSTANCE.getAsynchronousMachine_Tppo(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsynchronousMachine_Tppo(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -320,11 +403,17 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
     protected void addXlr1PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AsynchronousMachine_xlr1_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_xlr1_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_xlr1_feature",
                                 "_UI_AsynchronousMachine_type" ),
-                        CimPackage.eINSTANCE.getAsynchronousMachine_Xlr1(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsynchronousMachine_Xlr1(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -336,11 +425,17 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
     protected void addXlr2PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AsynchronousMachine_xlr2_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_xlr2_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_xlr2_feature",
                                 "_UI_AsynchronousMachine_type" ),
-                        CimPackage.eINSTANCE.getAsynchronousMachine_Xlr2(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsynchronousMachine_Xlr2(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -352,11 +447,17 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
     protected void addXmPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AsynchronousMachine_xm_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_xm_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_xm_feature",
                                 "_UI_AsynchronousMachine_type" ),
-                        CimPackage.eINSTANCE.getAsynchronousMachine_Xm(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsynchronousMachine_Xm(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -368,11 +469,17 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
     protected void addXpPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AsynchronousMachine_xp_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_xp_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_xp_feature",
                                 "_UI_AsynchronousMachine_type" ),
-                        CimPackage.eINSTANCE.getAsynchronousMachine_Xp(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsynchronousMachine_Xp(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -384,11 +491,17 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
     protected void addXppPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AsynchronousMachine_xpp_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_xpp_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_xpp_feature",
                                 "_UI_AsynchronousMachine_type" ),
-                        CimPackage.eINSTANCE.getAsynchronousMachine_Xpp(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsynchronousMachine_Xpp(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -400,11 +513,17 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
     protected void addXsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_AsynchronousMachine_xs_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_AsynchronousMachine_xs_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_AsynchronousMachine_xs_feature",
                                 "_UI_AsynchronousMachine_type" ),
-                        CimPackage.eINSTANCE.getAsynchronousMachine_Xs(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getAsynchronousMachine_Xs(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -415,12 +534,18 @@ public class AsynchronousMachineItemProvider extends RotatingMachineItemProvider
      */
     protected void addAsynchronousMachineDynamicsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_AsynchronousMachine_AsynchronousMachineDynamics_feature" ),
                 getString( "_UI_PropertyDescriptor_description",
                         "_UI_AsynchronousMachine_AsynchronousMachineDynamics_feature", "_UI_AsynchronousMachine_type" ),
-                CimPackage.eINSTANCE.getAsynchronousMachine_AsynchronousMachineDynamics(), true, false, true, null,
-                null, null ) );
+                CimPackage.eINSTANCE.getAsynchronousMachine_AsynchronousMachineDynamics(),
+                true,
+                false,
+                true,
+                null,
+                null,
+                null ) );
     }
 
     /**

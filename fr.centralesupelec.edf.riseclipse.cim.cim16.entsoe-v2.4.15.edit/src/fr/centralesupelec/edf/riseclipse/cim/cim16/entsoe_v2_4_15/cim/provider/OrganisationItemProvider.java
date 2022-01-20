@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,22 +15,21 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Organisation;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Organisation;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Organisation} object.
@@ -80,10 +79,16 @@ public class OrganisationItemProvider extends IdentifiedObjectItemProvider {
     protected void addElectronicAddressPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Organisation_electronicAddress_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Organisation_electronicAddress_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Organisation_electronicAddress_feature",
                                 "_UI_Organisation_type" ),
-                        CimPackage.eINSTANCE.getOrganisation_ElectronicAddress(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getOrganisation_ElectronicAddress(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 
@@ -96,10 +101,17 @@ public class OrganisationItemProvider extends IdentifiedObjectItemProvider {
     protected void addPhone1PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Organisation_phone1_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Organisation_phone1_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Organisation_phone1_feature",
                                 "_UI_Organisation_type" ),
-                        CimPackage.eINSTANCE.getOrganisation_Phone1(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getOrganisation_Phone1(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -111,10 +123,17 @@ public class OrganisationItemProvider extends IdentifiedObjectItemProvider {
     protected void addPhone2PropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Organisation_phone2_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Organisation_phone2_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Organisation_phone2_feature",
                                 "_UI_Organisation_type" ),
-                        CimPackage.eINSTANCE.getOrganisation_Phone2(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getOrganisation_Phone2(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -126,10 +145,17 @@ public class OrganisationItemProvider extends IdentifiedObjectItemProvider {
     protected void addPostalAddressPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Organisation_postalAddress_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Organisation_postalAddress_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Organisation_postalAddress_feature",
                                 "_UI_Organisation_type" ),
-                        CimPackage.eINSTANCE.getOrganisation_PostalAddress(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getOrganisation_PostalAddress(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -141,10 +167,17 @@ public class OrganisationItemProvider extends IdentifiedObjectItemProvider {
     protected void addStreetAddressPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Organisation_streetAddress_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Organisation_streetAddress_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Organisation_streetAddress_feature",
                                 "_UI_Organisation_type" ),
-                        CimPackage.eINSTANCE.getOrganisation_StreetAddress(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getOrganisation_StreetAddress(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -156,10 +189,17 @@ public class OrganisationItemProvider extends IdentifiedObjectItemProvider {
     protected void addActivityRecordsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Organisation_ActivityRecords_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Organisation_ActivityRecords_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Organisation_ActivityRecords_feature",
                                 "_UI_Organisation_type" ),
-                        CimPackage.eINSTANCE.getOrganisation_ActivityRecords(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getOrganisation_ActivityRecords(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -171,10 +211,17 @@ public class OrganisationItemProvider extends IdentifiedObjectItemProvider {
     protected void addRolesPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Organisation_Roles_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Organisation_Roles_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Organisation_Roles_feature",
                                 "_UI_Organisation_type" ),
-                        CimPackage.eINSTANCE.getOrganisation_Roles(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getOrganisation_Roles(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**

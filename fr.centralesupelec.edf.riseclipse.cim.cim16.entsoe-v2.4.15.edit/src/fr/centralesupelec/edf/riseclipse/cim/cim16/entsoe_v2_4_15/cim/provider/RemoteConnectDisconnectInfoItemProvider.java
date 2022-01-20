@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,22 +15,17 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.RemoteConnectDisconnectInfo;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -41,6 +36,9 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.RemoteConnectDisconnectInfo;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.RemoteConnectDisconnectInfo} object.
@@ -95,12 +93,18 @@ public class RemoteConnectDisconnectInfoItemProvider extends ItemProviderAdapter
      */
     protected void addArmedTimeoutPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_RemoteConnectDisconnectInfo_armedTimeout_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_RemoteConnectDisconnectInfo_armedTimeout_feature",
                         "_UI_RemoteConnectDisconnectInfo_type" ),
-                CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_ArmedTimeout(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_ArmedTimeout(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -110,14 +114,20 @@ public class RemoteConnectDisconnectInfoItemProvider extends ItemProviderAdapter
      * @generated
      */
     protected void addCustomerVoltageLimitPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_RemoteConnectDisconnectInfo_customerVoltageLimit_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_RemoteConnectDisconnectInfo_customerVoltageLimit_feature",
-                        "_UI_RemoteConnectDisconnectInfo_type" ),
-                CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_CustomerVoltageLimit(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_RemoteConnectDisconnectInfo_customerVoltageLimit_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_RemoteConnectDisconnectInfo_customerVoltageLimit_feature",
+                                "_UI_RemoteConnectDisconnectInfo_type" ),
+                        CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_CustomerVoltageLimit(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -128,12 +138,18 @@ public class RemoteConnectDisconnectInfoItemProvider extends ItemProviderAdapter
      */
     protected void addEnergyLimitPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_RemoteConnectDisconnectInfo_energyLimit_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_RemoteConnectDisconnectInfo_energyLimit_feature",
                         "_UI_RemoteConnectDisconnectInfo_type" ),
-                CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_EnergyLimit(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_EnergyLimit(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -143,14 +159,20 @@ public class RemoteConnectDisconnectInfoItemProvider extends ItemProviderAdapter
      * @generated
      */
     protected void addEnergyUsageStartDateTimePropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_RemoteConnectDisconnectInfo_energyUsageStartDateTime_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_RemoteConnectDisconnectInfo_energyUsageStartDateTime_feature",
-                        "_UI_RemoteConnectDisconnectInfo_type" ),
-                CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_EnergyUsageStartDateTime(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_RemoteConnectDisconnectInfo_energyUsageStartDateTime_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_RemoteConnectDisconnectInfo_energyUsageStartDateTime_feature",
+                                "_UI_RemoteConnectDisconnectInfo_type" ),
+                        CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_EnergyUsageStartDateTime(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -162,12 +184,18 @@ public class RemoteConnectDisconnectInfoItemProvider extends ItemProviderAdapter
     protected void addEnergyUsageWarningPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_RemoteConnectDisconnectInfo_energyUsageWarning_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_RemoteConnectDisconnectInfo_energyUsageWarning_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_RemoteConnectDisconnectInfo_energyUsageWarning_feature",
                                 "_UI_RemoteConnectDisconnectInfo_type" ),
-                        CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_EnergyUsageWarning(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_EnergyUsageWarning(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -178,12 +206,18 @@ public class RemoteConnectDisconnectInfoItemProvider extends ItemProviderAdapter
      */
     protected void addIsArmConnectPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_RemoteConnectDisconnectInfo_isArmConnect_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_RemoteConnectDisconnectInfo_isArmConnect_feature",
                         "_UI_RemoteConnectDisconnectInfo_type" ),
-                CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_IsArmConnect(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_IsArmConnect(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -195,12 +229,18 @@ public class RemoteConnectDisconnectInfoItemProvider extends ItemProviderAdapter
     protected void addIsArmDisconnectPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_RemoteConnectDisconnectInfo_isArmDisconnect_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_RemoteConnectDisconnectInfo_isArmDisconnect_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_RemoteConnectDisconnectInfo_isArmDisconnect_feature",
                                 "_UI_RemoteConnectDisconnectInfo_type" ),
-                        CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_IsArmDisconnect(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_IsArmDisconnect(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -212,12 +252,18 @@ public class RemoteConnectDisconnectInfoItemProvider extends ItemProviderAdapter
     protected void addIsEnergyLimitingPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_RemoteConnectDisconnectInfo_isEnergyLimiting_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_RemoteConnectDisconnectInfo_isEnergyLimiting_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_RemoteConnectDisconnectInfo_isEnergyLimiting_feature",
                                 "_UI_RemoteConnectDisconnectInfo_type" ),
-                        CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_IsEnergyLimiting(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_IsEnergyLimiting(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -227,14 +273,20 @@ public class RemoteConnectDisconnectInfoItemProvider extends ItemProviderAdapter
      * @generated
      */
     protected void addNeedsPowerLimitCheckPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_RemoteConnectDisconnectInfo_needsPowerLimitCheck_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_RemoteConnectDisconnectInfo_needsPowerLimitCheck_feature",
-                        "_UI_RemoteConnectDisconnectInfo_type" ),
-                CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_NeedsPowerLimitCheck(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_RemoteConnectDisconnectInfo_needsPowerLimitCheck_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_RemoteConnectDisconnectInfo_needsPowerLimitCheck_feature",
+                                "_UI_RemoteConnectDisconnectInfo_type" ),
+                        CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_NeedsPowerLimitCheck(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -244,14 +296,20 @@ public class RemoteConnectDisconnectInfoItemProvider extends ItemProviderAdapter
      * @generated
      */
     protected void addNeedsVoltageLimitCheckPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_RemoteConnectDisconnectInfo_needsVoltageLimitCheck_feature" ),
-                getString( "_UI_PropertyDescriptor_description",
-                        "_UI_RemoteConnectDisconnectInfo_needsVoltageLimitCheck_feature",
-                        "_UI_RemoteConnectDisconnectInfo_type" ),
-                CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_NeedsVoltageLimitCheck(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_RemoteConnectDisconnectInfo_needsVoltageLimitCheck_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_RemoteConnectDisconnectInfo_needsVoltageLimitCheck_feature",
+                                "_UI_RemoteConnectDisconnectInfo_type" ),
+                        CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_NeedsVoltageLimitCheck(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -262,12 +320,18 @@ public class RemoteConnectDisconnectInfoItemProvider extends ItemProviderAdapter
      */
     protected void addPowerLimitPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_RemoteConnectDisconnectInfo_powerLimit_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_RemoteConnectDisconnectInfo_powerLimit_feature",
                         "_UI_RemoteConnectDisconnectInfo_type" ),
-                CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_PowerLimit(), true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_PowerLimit(),
+                true,
+                false,
+                false,
+                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                null,
+                null ) );
     }
 
     /**
@@ -279,12 +343,18 @@ public class RemoteConnectDisconnectInfoItemProvider extends ItemProviderAdapter
     protected void addUsePushbuttonPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_RemoteConnectDisconnectInfo_usePushbutton_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_RemoteConnectDisconnectInfo_usePushbutton_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_RemoteConnectDisconnectInfo_usePushbutton_feature",
                                 "_UI_RemoteConnectDisconnectInfo_type" ),
-                        CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_UsePushbutton(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getRemoteConnectDisconnectInfo_UsePushbutton(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -362,7 +432,7 @@ public class RemoteConnectDisconnectInfoItemProvider extends ItemProviderAdapter
      */
     @Override
     public ResourceLocator getResourceLocator() {
-        return Entsoe_v2_4_15EditPlugin.INSTANCE;
+        return entsoev2415EditPlugin.INSTANCE;
     }
 
 }

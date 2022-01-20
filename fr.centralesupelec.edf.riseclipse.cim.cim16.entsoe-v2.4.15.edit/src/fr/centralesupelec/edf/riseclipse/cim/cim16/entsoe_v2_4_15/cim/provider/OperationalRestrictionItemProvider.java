@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,22 +15,21 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.OperationalRestriction;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.OperationalRestriction;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.OperationalRestriction} object.
@@ -75,12 +74,19 @@ public class OperationalRestrictionItemProvider extends DocumentItemProvider {
      * @generated
      */
     protected void addActivePeriodPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_OperationalRestriction_activePeriod_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_OperationalRestriction_activePeriod_feature",
-                        "_UI_OperationalRestriction_type" ),
-                CimPackage.eINSTANCE.getOperationalRestriction_ActivePeriod(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_OperationalRestriction_activePeriod_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_OperationalRestriction_activePeriod_feature", "_UI_OperationalRestriction_type" ),
+                        CimPackage.eINSTANCE.getOperationalRestriction_ActivePeriod(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -91,11 +97,17 @@ public class OperationalRestrictionItemProvider extends DocumentItemProvider {
      */
     protected void addRestrictedValuePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_OperationalRestriction_restrictedValue_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_OperationalRestriction_restrictedValue_feature",
                         "_UI_OperationalRestriction_type" ),
-                CimPackage.eINSTANCE.getOperationalRestriction_RestrictedValue(), true, false, true, null, null,
+                CimPackage.eINSTANCE.getOperationalRestriction_RestrictedValue(),
+                true,
+                false,
+                true,
+                null,
+                null,
                 null ) );
     }
 
@@ -106,12 +118,19 @@ public class OperationalRestrictionItemProvider extends DocumentItemProvider {
      * @generated
      */
     protected void addEquipmentsPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_OperationalRestriction_Equipments_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_OperationalRestriction_Equipments_feature",
-                        "_UI_OperationalRestriction_type" ),
-                CimPackage.eINSTANCE.getOperationalRestriction_Equipments(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_OperationalRestriction_Equipments_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_OperationalRestriction_Equipments_feature", "_UI_OperationalRestriction_type" ),
+                        CimPackage.eINSTANCE.getOperationalRestriction_Equipments(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -122,11 +141,17 @@ public class OperationalRestrictionItemProvider extends DocumentItemProvider {
      */
     protected void addProductAssetModelPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
+                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                getResourceLocator(),
                 getString( "_UI_OperationalRestriction_ProductAssetModel_feature" ),
                 getString( "_UI_PropertyDescriptor_description", "_UI_OperationalRestriction_ProductAssetModel_feature",
                         "_UI_OperationalRestriction_type" ),
-                CimPackage.eINSTANCE.getOperationalRestriction_ProductAssetModel(), true, false, true, null, null,
+                CimPackage.eINSTANCE.getOperationalRestriction_ProductAssetModel(),
+                true,
+                false,
+                true,
+                null,
+                null,
                 null ) );
     }
 

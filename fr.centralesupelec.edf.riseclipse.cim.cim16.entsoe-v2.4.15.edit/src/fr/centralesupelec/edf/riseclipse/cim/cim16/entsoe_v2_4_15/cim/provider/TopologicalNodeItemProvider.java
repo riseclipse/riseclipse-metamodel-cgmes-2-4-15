@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TopologicalNode;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TopologicalNode;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.TopologicalNode} object.
@@ -92,11 +91,17 @@ public class TopologicalNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addPInjectionPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TopologicalNode_pInjection_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TopologicalNode_pInjection_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TopologicalNode_pInjection_feature",
                                 "_UI_TopologicalNode_type" ),
-                        CimPackage.eINSTANCE.getTopologicalNode_PInjection(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTopologicalNode_PInjection(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -108,11 +113,17 @@ public class TopologicalNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addQInjectionPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TopologicalNode_qInjection_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TopologicalNode_qInjection_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TopologicalNode_qInjection_feature",
                                 "_UI_TopologicalNode_type" ),
-                        CimPackage.eINSTANCE.getTopologicalNode_QInjection(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTopologicalNode_QInjection(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -124,10 +135,17 @@ public class TopologicalNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addTerminalPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TopologicalNode_Terminal_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TopologicalNode_Terminal_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TopologicalNode_Terminal_feature",
                                 "_UI_TopologicalNode_type" ),
-                        CimPackage.eINSTANCE.getTopologicalNode_Terminal(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getTopologicalNode_Terminal(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -139,10 +157,17 @@ public class TopologicalNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addSvVoltagePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TopologicalNode_SvVoltage_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TopologicalNode_SvVoltage_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TopologicalNode_SvVoltage_feature",
                                 "_UI_TopologicalNode_type" ),
-                        CimPackage.eINSTANCE.getTopologicalNode_SvVoltage(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getTopologicalNode_SvVoltage(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -154,10 +179,17 @@ public class TopologicalNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addBaseVoltagePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TopologicalNode_BaseVoltage_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TopologicalNode_BaseVoltage_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TopologicalNode_BaseVoltage_feature",
                                 "_UI_TopologicalNode_type" ),
-                        CimPackage.eINSTANCE.getTopologicalNode_BaseVoltage(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getTopologicalNode_BaseVoltage(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -167,12 +199,19 @@ public class TopologicalNodeItemProvider extends IdentifiedObjectItemProvider {
      * @generated
      */
     protected void addConnectivityNodesPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_TopologicalNode_ConnectivityNodes_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_TopologicalNode_ConnectivityNodes_feature",
-                        "_UI_TopologicalNode_type" ),
-                CimPackage.eINSTANCE.getTopologicalNode_ConnectivityNodes(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_TopologicalNode_ConnectivityNodes_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_TopologicalNode_ConnectivityNodes_feature", "_UI_TopologicalNode_type" ),
+                        CimPackage.eINSTANCE.getTopologicalNode_ConnectivityNodes(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -184,11 +223,17 @@ public class TopologicalNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addAngleRefTopologicalIslandPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TopologicalNode_AngleRefTopologicalIsland_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TopologicalNode_AngleRefTopologicalIsland_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_TopologicalNode_AngleRefTopologicalIsland_feature", "_UI_TopologicalNode_type" ),
-                        CimPackage.eINSTANCE.getTopologicalNode_AngleRefTopologicalIsland(), true, false, true, null,
-                        null, null ) );
+                        CimPackage.eINSTANCE.getTopologicalNode_AngleRefTopologicalIsland(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -200,11 +245,17 @@ public class TopologicalNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addConnectivityNodeContainerPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TopologicalNode_ConnectivityNodeContainer_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TopologicalNode_ConnectivityNodeContainer_feature" ),
                         getString( "_UI_PropertyDescriptor_description",
                                 "_UI_TopologicalNode_ConnectivityNodeContainer_feature", "_UI_TopologicalNode_type" ),
-                        CimPackage.eINSTANCE.getTopologicalNode_ConnectivityNodeContainer(), true, false, true, null,
-                        null, null ) );
+                        CimPackage.eINSTANCE.getTopologicalNode_ConnectivityNodeContainer(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -216,10 +267,17 @@ public class TopologicalNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addSvInjectionPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TopologicalNode_SvInjection_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TopologicalNode_SvInjection_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TopologicalNode_SvInjection_feature",
                                 "_UI_TopologicalNode_type" ),
-                        CimPackage.eINSTANCE.getTopologicalNode_SvInjection(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getTopologicalNode_SvInjection(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -229,12 +287,19 @@ public class TopologicalNodeItemProvider extends IdentifiedObjectItemProvider {
      * @generated
      */
     protected void addTopologicalIslandPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_TopologicalNode_TopologicalIsland_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_TopologicalNode_TopologicalIsland_feature",
-                        "_UI_TopologicalNode_type" ),
-                CimPackage.eINSTANCE.getTopologicalNode_TopologicalIsland(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_TopologicalNode_TopologicalIsland_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_TopologicalNode_TopologicalIsland_feature", "_UI_TopologicalNode_type" ),
+                        CimPackage.eINSTANCE.getTopologicalNode_TopologicalIsland(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -246,11 +311,17 @@ public class TopologicalNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addBoundaryPointPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TopologicalNode_boundaryPoint_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TopologicalNode_boundaryPoint_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TopologicalNode_boundaryPoint_feature",
                                 "_UI_TopologicalNode_type" ),
-                        CimPackage.eINSTANCE.getTopologicalNode_BoundaryPoint(), true, false, false,
-                        ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTopologicalNode_BoundaryPoint(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -262,11 +333,17 @@ public class TopologicalNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addFromEndIsoCodePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TopologicalNode_fromEndIsoCode_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TopologicalNode_fromEndIsoCode_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TopologicalNode_fromEndIsoCode_feature",
                                 "_UI_TopologicalNode_type" ),
-                        CimPackage.eINSTANCE.getTopologicalNode_FromEndIsoCode(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTopologicalNode_FromEndIsoCode(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -278,11 +355,17 @@ public class TopologicalNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addFromEndNamePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TopologicalNode_fromEndName_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TopologicalNode_fromEndName_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TopologicalNode_fromEndName_feature",
                                 "_UI_TopologicalNode_type" ),
-                        CimPackage.eINSTANCE.getTopologicalNode_FromEndName(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTopologicalNode_FromEndName(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -294,11 +377,17 @@ public class TopologicalNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addFromEndNameTsoPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TopologicalNode_fromEndNameTso_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TopologicalNode_fromEndNameTso_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TopologicalNode_fromEndNameTso_feature",
                                 "_UI_TopologicalNode_type" ),
-                        CimPackage.eINSTANCE.getTopologicalNode_FromEndNameTso(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTopologicalNode_FromEndNameTso(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -310,11 +399,17 @@ public class TopologicalNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addToEndIsoCodePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TopologicalNode_toEndIsoCode_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TopologicalNode_toEndIsoCode_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TopologicalNode_toEndIsoCode_feature",
                                 "_UI_TopologicalNode_type" ),
-                        CimPackage.eINSTANCE.getTopologicalNode_ToEndIsoCode(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTopologicalNode_ToEndIsoCode(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -326,11 +421,17 @@ public class TopologicalNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addToEndNamePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TopologicalNode_toEndName_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TopologicalNode_toEndName_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TopologicalNode_toEndName_feature",
                                 "_UI_TopologicalNode_type" ),
-                        CimPackage.eINSTANCE.getTopologicalNode_ToEndName(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTopologicalNode_ToEndName(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -342,11 +443,17 @@ public class TopologicalNodeItemProvider extends IdentifiedObjectItemProvider {
     protected void addToEndNameTsoPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_TopologicalNode_toEndNameTso_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_TopologicalNode_toEndNameTso_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_TopologicalNode_toEndNameTso_feature",
                                 "_UI_TopologicalNode_type" ),
-                        CimPackage.eINSTANCE.getTopologicalNode_ToEndNameTso(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getTopologicalNode_ToEndNameTso(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**

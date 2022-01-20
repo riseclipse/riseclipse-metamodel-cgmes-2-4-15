@@ -1,6 +1,6 @@
 /*
 *************************************************************************
-**  Copyright (c) 2019 CentraleSupélec & EDF.
+**  Copyright (c) 2016-2021 CentraleSupélec & EDF.
 **  All rights reserved. This program and the accompanying materials
 **  are made available under the terms of the Eclipse Public License v2.0
 **  which accompanies this distribution, and is available at
@@ -15,24 +15,23 @@
 **      dominique.marcadet@centralesupelec.fr
 **      aurelie.dehouck-neveu@edf.fr
 **  Web site:
-**      http://wdi.supelec.fr/software/RiseClipse/
+**      https://riseclipse.github.io/
 *************************************************************************
 */
 package fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.provider;
-
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
-import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Equipment;
 
 import java.util.Collection;
 import java.util.List;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.CimPackage;
+import fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Equipment;
 
 /**
  * This is the item provider adapter for a {@link fr.centralesupelec.edf.riseclipse.cim.cim16.entsoe_v2_4_15.cim.Equipment} object.
@@ -84,11 +83,17 @@ public class EquipmentItemProvider extends PowerSystemResourceItemProvider {
     protected void addAggregatePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Equipment_aggregate_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Equipment_aggregate_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Equipment_aggregate_feature",
                                 "_UI_Equipment_type" ),
-                        CimPackage.eINSTANCE.getEquipment_Aggregate(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquipment_Aggregate(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -100,11 +105,17 @@ public class EquipmentItemProvider extends PowerSystemResourceItemProvider {
     protected void addNormallyInServicePropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Equipment_normallyInService_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Equipment_normallyInService_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Equipment_normallyInService_feature",
                                 "_UI_Equipment_type" ),
-                        CimPackage.eINSTANCE.getEquipment_NormallyInService(), true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null ) );
+                        CimPackage.eINSTANCE.getEquipment_NormallyInService(),
+                        true,
+                        false,
+                        false,
+                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                        null,
+                        null ) );
     }
 
     /**
@@ -116,10 +127,17 @@ public class EquipmentItemProvider extends PowerSystemResourceItemProvider {
     protected void addOutagesPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Equipment_Outages_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Equipment_Outages_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Equipment_Outages_feature",
                                 "_UI_Equipment_type" ),
-                        CimPackage.eINSTANCE.getEquipment_Outages(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getEquipment_Outages(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -129,12 +147,19 @@ public class EquipmentItemProvider extends PowerSystemResourceItemProvider {
      * @generated
      */
     protected void addOperationalRestrictionsPropertyDescriptor( Object object ) {
-        itemPropertyDescriptors.add( createItemPropertyDescriptor(
-                ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(), getResourceLocator(),
-                getString( "_UI_Equipment_OperationalRestrictions_feature" ),
-                getString( "_UI_PropertyDescriptor_description", "_UI_Equipment_OperationalRestrictions_feature",
-                        "_UI_Equipment_type" ),
-                CimPackage.eINSTANCE.getEquipment_OperationalRestrictions(), true, false, true, null, null, null ) );
+        itemPropertyDescriptors.add(
+                createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
+                        getResourceLocator(),
+                        getString( "_UI_Equipment_OperationalRestrictions_feature" ),
+                        getString( "_UI_PropertyDescriptor_description",
+                                "_UI_Equipment_OperationalRestrictions_feature", "_UI_Equipment_type" ),
+                        CimPackage.eINSTANCE.getEquipment_OperationalRestrictions(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -146,10 +171,17 @@ public class EquipmentItemProvider extends PowerSystemResourceItemProvider {
     protected void addFaultsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Equipment_Faults_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Equipment_Faults_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Equipment_Faults_feature",
                                 "_UI_Equipment_type" ),
-                        CimPackage.eINSTANCE.getEquipment_Faults(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getEquipment_Faults(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -161,10 +193,17 @@ public class EquipmentItemProvider extends PowerSystemResourceItemProvider {
     protected void addEquipmentContainerPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Equipment_EquipmentContainer_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Equipment_EquipmentContainer_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Equipment_EquipmentContainer_feature",
                                 "_UI_Equipment_type" ),
-                        CimPackage.eINSTANCE.getEquipment_EquipmentContainer(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getEquipment_EquipmentContainer(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -176,10 +215,17 @@ public class EquipmentItemProvider extends PowerSystemResourceItemProvider {
     protected void addUsagePointsPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Equipment_UsagePoints_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Equipment_UsagePoints_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Equipment_UsagePoints_feature",
                                 "_UI_Equipment_type" ),
-                        CimPackage.eINSTANCE.getEquipment_UsagePoints(), true, false, true, null, null, null ) );
+                        CimPackage.eINSTANCE.getEquipment_UsagePoints(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
+                        null ) );
     }
 
     /**
@@ -191,10 +237,16 @@ public class EquipmentItemProvider extends PowerSystemResourceItemProvider {
     protected void addContingencyEquipmentPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Equipment_ContingencyEquipment_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Equipment_ContingencyEquipment_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Equipment_ContingencyEquipment_feature",
                                 "_UI_Equipment_type" ),
-                        CimPackage.eINSTANCE.getEquipment_ContingencyEquipment(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getEquipment_ContingencyEquipment(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 
@@ -207,10 +259,16 @@ public class EquipmentItemProvider extends PowerSystemResourceItemProvider {
     protected void addOperationalLimitSetPropertyDescriptor( Object object ) {
         itemPropertyDescriptors.add(
                 createItemPropertyDescriptor( ( ( ComposeableAdapterFactory ) adapterFactory ).getRootAdapterFactory(),
-                        getResourceLocator(), getString( "_UI_Equipment_OperationalLimitSet_feature" ),
+                        getResourceLocator(),
+                        getString( "_UI_Equipment_OperationalLimitSet_feature" ),
                         getString( "_UI_PropertyDescriptor_description", "_UI_Equipment_OperationalLimitSet_feature",
                                 "_UI_Equipment_type" ),
-                        CimPackage.eINSTANCE.getEquipment_OperationalLimitSet(), true, false, true, null, null,
+                        CimPackage.eINSTANCE.getEquipment_OperationalLimitSet(),
+                        true,
+                        false,
+                        true,
+                        null,
+                        null,
                         null ) );
     }
 
